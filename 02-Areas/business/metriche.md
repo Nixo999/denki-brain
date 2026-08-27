@@ -52,6 +52,34 @@ quella dal 24 al 30 agosto 2026.
 |---|---|---|---|---|
 | 2026-W35 | | | | |
 
+## La capacità di Giulia, e cosa ne consegue
+
+**Un'ora al giorno**, circa cinque a settimana (2026-08-28). Può crescere se
+cresce il guadagno, e in quel caso crescono anche i target qui sopra.
+
+> [!note] Analisi di Claude — 2026-08-28
+> Il conto, fatto con le proporzioni normali di una chiamata a freddo: su 50
+> numeri, più o meno 28 non rispondono (mezzo minuto ciascuno), 11 finiscono in
+> un centralino o nella persona sbagliata (un minuto), 11 diventano una
+> conversazione vera (quattro-cinque minuti). **Totale: circa due ore, comprese
+> le note sul foglio.**
+>
+> Giulia ne ha cinque. **Il target di 50 chiamate occupa meno di metà del suo
+> tempo disponibile**, e questo cambia la diagnosi: il limite non è quanto può
+> chiamare, è quanto ha da chiamare.
+>
+> Due conseguenze pratiche:
+>
+> 1. **La lista settimanale va dimensionata a 70-80 contatti, non a 50.**
+>    Altrimenti finisce i numeri il giovedì e l'ora del venerdì è persa.
+> 2. **Alzare il target a 50 chiamate non costa nulla in ore**, ma non serve
+>    finché la lista non c'è. È il motivo per cui [[metodo-liste]] viene prima
+>    di qualunque revisione dei numeri.
+>
+> ⚠️ Con un'ora al giorno, **quando la si chiama conta quanto chi si chiama**:
+> un'ora sbagliata su un segmento sbagliato è una giornata buttata, e ne avete
+> solo cinque. Le fasce per segmento stanno in [[metodo-liste]].
+
 ## Cosa non stiamo misurando, e dovremmo
 
 > [!note] Analisi di Claude — 2026-08-28

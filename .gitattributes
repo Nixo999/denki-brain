@@ -1,0 +1,15 @@
+# Nicola lavora da Windows e da Mac. Senza questa riga, ogni file toccato da
+# una macchina risulta "modificato" sull'altra per un fine riga invisibile, e
+# ogni pull diventa un conflitto su note che nessuno ha davvero cambiato.
+* text=auto eol=lf
+
+# Binari: mai toccare i byte
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.svg text
+*.pdf binary
+*.zip binary
+*.ico binary

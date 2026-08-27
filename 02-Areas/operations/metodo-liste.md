@@ -11,9 +11,10 @@ prodotto: denkishift
 > Metodo proposto, non ancora provato sul campo. Va testato su 40 chiamate
 > prima di considerarlo buono. Vedi [[generazione-lead]].
 
-Serve a produrre **40-50 contatti profilati in mezz'ora**, ripetibile ogni
-settimana. Risolve il problema del volume; l'angolo di attacco sta in
-[[script-giulia-denkishift]].
+Serve a produrre **70-80 contatti profilati in mezz'ora**, ripetibile ogni
+settimana. È la dimensione che riempie l'ora al giorno di Giulia senza lasciarla
+a secco il venerdì — il conto sta in [[metriche]]. Risolve il problema del
+volume; l'angolo di attacco sta in [[script-giulia-denkishift]].
 
 ## Chi è il cliente di DenkiShift
 
@@ -45,6 +46,31 @@ Il dolore vero sta dove si lavora **H24 o su fasce spezzate**.
 
 **Si parte dai primi tre.** Sono anche i meno battuti: chi vende software fa i
 ristoranti, non le imprese di pulizie.
+
+## Quando chiamare — conta quanto chi chiamare
+
+Giulia ha **un'ora al giorno** ([[metriche]]). Con quel budget, sbagliare la
+fascia oraria significa buttare una giornata su cinque: il decisore c'è, ma è
+in mezzo al lavoro e riattacca per forza.
+
+| Segmento | Quando chiamare | Da evitare |
+|---|---|---|
+| **RSA, cooperative** | 10:00-12:00 · 14:30-16:00 | Il cambio turno (7, 14, 22) e la prima mattina |
+| **Imprese di pulizie** | 9:30-11:30 | Prima delle 9: sono sui cantieri |
+| **Vigilanza** | 10:00-12:00 | Notte e primo mattino |
+| **Logistica, magazzini** | 10:00-12:00 · 14:00-16:00 | Apertura e chiusura turno |
+| **Ristorazione** | 15:00-17:30 | **Mai** 12-14:30 e dopo le 19 |
+| **Panetterie, pasticcerie** | 9:00-11:00 | Alba: sono in laboratorio |
+| **Supermercati, alimentari** | 9:30-11:00 · 14:30-16:00 | Sabato e ore di punta |
+| **Palestre** | 10:00-12:00 · 14:00-16:00 | 7-9 e 18-21, quando è pieno |
+| **Poliambulatori** | 10:00-12:00 | Apertura, quando c'è la coda |
+
+**Regola operativa**: si costruisce la lista di un segmento e si chiama nella
+sua fascia. Mescolare i segmenti nella stessa ora costringe a chiamare qualcuno
+nel momento sbagliato.
+
+Ricade sulla dimensione della lista: **70-80 contatti a settimana**, non 50 —
+il conto delle ore sta in [[metriche]].
 
 ## Il segnale — cosa si legge senza chiamare
 

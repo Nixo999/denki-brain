@@ -35,6 +35,11 @@ Tre persone. Sotto, chi fa cosa **davvero** — non i titoli.
 **Il primo contatto telefonico.**
 
 - Chiama sulle liste che le passa Patrick
+- **Disponibilità: circa un'ora al giorno** (2026-08-28), quindi ~5 ore a
+  settimana. Può crescere se cresce il guadagno — e in quel caso crescono anche
+  i target di [[metriche]]
+- Chiama dal **numero personale**, con WhatsApp attivo: il messaggio di
+  follow-up parte dallo stesso numero della telefonata
 - Usa script per i 4 flussi ([[flusso-vendita]])
 - Aggiorna gli stati sul Google Sheet ("Non risponde", "Fissato incontro", ...)
 - **Non chiude mai**: passa a Patrick
@@ -42,8 +47,6 @@ Tre persone. Sotto, chi fa cosa **davvero** — non i titoli.
 
 ### Provvigioni
 
-| Prodotto | Provvigione |
-|---|---|
 **Schema definitivo, dettato da Patrick il 28 agosto 2026.** Sostituisce ogni
 versione precedente.
 
@@ -68,9 +71,6 @@ restano interi a DenkiCode.
 Su **C** la percentuale è ancora aperta e **non è bloccante**: Patrick e Giulia
 condividono le finanze private, quindi la divisione al centesimo su quel
 prodotto si definisce in corsa. Non è un buco da rincorrere.
-
-Il principio è costante: **Giulia prende sul primo incasso, mai sul
-ricorrente.** Il ricorrente resta interamente a DenkiCode.
 
 ⚠️ **Contesto che cambia la lettura dei numeri**: Patrick e Giulia sono partner
 anche nella vita privata e condividono le finanze. La provvigione è quindi una
@@ -99,7 +99,7 @@ Patrick genera lista  →  Giulia chiama  →  Giulia fissa
 
 ## Da definire
 
-- [ ] Provvigione di Giulia su DenkiShift
+- [ ] Provvigione di Giulia su DenkiShift — **non bloccante**
 - [ ] Chi tiene aggiornato questo vault, e quando
 
 ## Collegamenti
