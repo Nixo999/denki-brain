@@ -65,10 +65,33 @@ Nicola ha risposto in serata. Cosa è cambiato:
 - ✅ Riscritta [[metriche]] perché non era chiara: adesso dice esattamente quali
   due numeri servono, dove si prendono e come si scrivono
 
+## Quarto giro — provvigioni definitive e la questione ricevute
+
+**Schema provvigioni dettato da Patrick.** Sostituisce tutto quello che avevo
+scritto prima — le mie versioni precedenti (20% su A, 20% su D) erano sbagliate:
+
+| Prodotto | Giulia prende |
+|---|---|
+| A — Vetrina | **25% sull'anticipo**, 0% sui canoni |
+| B — E-commerce | **25% sull'anticipo**, 0% sui canoni, **0% sulle royalty** |
+| C — DenkiShift | **TBD**, e non è bloccante |
+| D — Custom | **25% del totale venduto** — una tantum o annuale |
+
+Il principio: **prende su quello che il cliente paga per *avere* la cosa, mai su
+quello che paga per *tenerla*.** Aggiornati [[ruoli-e-responsabilita]],
+[[prodotti-e-listino]], [[flusso-vendita]], [[denkishift]].
+
+Due cose emerse di contorno: le royalty degli e-commerce sono **1-2%**, non 1%
+fisso; e i gestionali custom si possono vendere **anche ad abbonamento
+annuale**, non solo una tantum.
+
+**I 400 € di OperO non hanno ricevuta**: accordo fra privati. Non consumano il
+tetto di nessuno, ma non sono nemmeno un'entrata dimostrabile. Aggiornato il
+conto in [[vincoli-fiscali]]: a Patrick, incassati i 2.000 €, restano ~3.000 €.
+
 ## Aperto adesso
 
-- ⬜ **Confermare la provvigione su DenkiShift** con Patrick
-- ⬜ **Come si tratta l'1% sulle vendite** senza P.IVA → [[vincoli-fiscali]]
+- ⬜ **Come si trattano le royalty 1-2%** senza P.IVA → [[vincoli-fiscali]]
 - ⬜ **Cosa c'è in galleria oggi**, e aggiungerci [[albybike]] con una
   testimonianza → [[sito-denkicode]]
 - ⬜ Numeri della settimana in [[metriche]]

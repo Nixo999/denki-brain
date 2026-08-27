@@ -50,7 +50,8 @@ del padre. È la sua prima installazione reale, non un prototipo.
 | Pattuito | **2.400 €** |
 | Incassato | **400 €** (al 2026-08-28) |
 | **Credito aperto** | **2.000 €** |
-| Ricevuta intestata a | **Patrick** → [[vincoli-fiscali]] |
+| I 400 € presi | **Nessuna ricevuta emessa** — accordo fra privati |
+| I 2.000 € da incassare | Ricevuta per prestazione occasionale su **Patrick** → [[vincoli-fiscali]] |
 
 ## Come si comporta
 
@@ -98,7 +99,7 @@ Osservato dal lavoro di agosto 2026:
 
 ## Aperto
 
-- [ ] Incassare i **2.000 €** — ricevuta intestata a Patrick
+- [ ] Incassare i **2.000 €** — ricevuta su Patrick
 - [ ] Quotare l'XML SDI prima di svilupparlo
 - [ ] Correggere il PDF del piano sulle funzioni rinunciate
 - [ ] `TODO` — come è arrivato a noi? Serve a [[generazione-lead]]

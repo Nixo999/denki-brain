@@ -35,7 +35,7 @@ Giulia chiama → "abbiamo già preparato una bozza grafica"
 ```
 
 **Supporto**: volantini ([[materiale-offline]]).
-**Provvigione Giulia**: 20% sull'anticipo.
+**Provvigione Giulia**: **25% sull'anticipo**. 0% sui canoni.
 
 ### B — E-commerce
 
@@ -43,10 +43,10 @@ Stesso flusso di A, focus sull'aumento delle vendite online.
 Bozza approvata → sviluppo Nicola → chiusura Patrick.
 
 **Prezzo**: da definire caso per caso, **a partire da 500 €** + canone
-**30-100 €/mese** + **1% sulle vendite**.
-**Provvigione Giulia**: 25% sull'incasso iniziale. Niente su mensilità e 1%.
+**30-100 €/mese** + **royalty dell'1-2% sulle vendite**.
+**Provvigione Giulia**: **25% sull'anticipo**. 0% sui canoni, 0% sulle royalty.
 
-⚠️ L'1% sulle vendite non è incassabile in modo pulito senza P.IVA: leggere
+⚠️ Le royalty non sono incassabili in modo pulito senza P.IVA: leggere
 [[prodotti-e-listino]] prima di proporlo a voce.
 
 ### C — DenkiShift, gestione turni · *prodotto di punta*
@@ -61,7 +61,7 @@ Giulia fa leva sull'ottimizzazione del personale
 ```
 
 **Supporto**: biglietti da visita dedicati ([[materiale-offline]]).
-**Provvigione Giulia**: TBD.
+**Provvigione Giulia**: **TBD**, non bloccante — si definisce in corsa.
 
 ⚠️ Il prodotto **non è ancora installabile in produzione** → [[denkishift]].
 Non promettere date di attivazione.
@@ -78,7 +78,8 @@ Form compilato → Nicola sviluppa un prototipo mirato
               → Patrick contatta per la vendita vera
 ```
 
-**Provvigione Giulia**: 20% sul totale.
+**Provvigione Giulia**: **25% del totale venduto**, sia una tantum sia su un
+abbonamento annuale (in quel caso, 25% ogni anno).
 
 ## Gestione preventivi
 
@@ -105,7 +106,7 @@ indicativo.
 - [ ] **Generare il template di proposta commerciale** (PDF/Docs) per i
       gestionali — copy da scrivere, lessico da [[vincoli-fiscali]]
 - [ ] Definire il prezzo dei siti e-commerce (flusso B)
-- [ ] Definire la provvigione di Giulia su DenkiShift
+- [ ] Definire la provvigione di Giulia su DenkiShift — **non bloccante**
 - [ ] Aggiungere al Google Sheet le colonne esito appuntamento → [[metriche]]
 
 ## Collegamenti

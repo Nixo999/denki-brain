@@ -57,11 +57,12 @@ immagini, creazione account). Vedi [[2026-08-11-opero-scope-allargato]].
 | Prezzo pattuito | **2.400 €** |
 | Incassato al 2026-08-28 | **400 €** |
 | **Da incassare** | **2.000 €** |
-| Ricevuta intestata a | **Patrick** → [[vincoli-fiscali]] |
-| Forma | Ricevuta per prestazione occasionale — nessuna P.IVA |
+| I 400 € già presi | **Senza ricevuta** — accordo fra privati |
+| I 2.000 € futuri | Ricevuta per prestazione occasionale intestata a **Patrick** → [[vincoli-fiscali]] |
 
-⚠️ Da soli, i 2.400 € di questo progetto occupano **quasi metà** del tetto
-annuo dei 5.000 € di Patrick.
+⚠️ I 2.000 € futuri si mangiano il **40%** del tetto annuo di Patrick in un
+colpo solo. I 400 € già presi non lo toccano, perché non è stata emessa nessuna
+ricevuta.
 
 ⚠️ **Il credito dipende dall'impresa di Seba, non da un budget IT.** Lui ha un
 cliente pagante (suo padre) e un secondo in attesa. Se quel secondo non firma,
@@ -141,7 +142,7 @@ misurando con `getComputedStyle` / `getBoundingClientRect`. Vedi [[convenzioni]]
 
 ## Aperto
 
-- [ ] Incassare i **2.000 €** residui — decidere su chi emettere la ricevuta
+- [ ] Incassare i **2.000 €** residui — ricevuta su Patrick
 - [ ] **Quotare l'XML SDI** come lavoro nuovo, non regalarlo
 - [ ] **Correggere il PDF consegnato** al cliente sulle funzioni rinunciate
 - [ ] Migrazione dello storico: almeno stimarla

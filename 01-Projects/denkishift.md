@@ -58,7 +58,7 @@ demo dal vivo o in call, gestita da Patrick. Supporto: i **200 biglietti da
 visita** dedicati ([[materiale-offline]]).
 
 Prezzo: **~2 €/mese per dipendente**, pagato dal datore di lavoro.
-Provvigione Giulia: **TBD** ([[flusso-vendita]]).
+Provvigione Giulia: **TBD**, e non è bloccante ([[ruoli-e-responsabilita]]).
 
 **Clienti paganti al 2026-08-28: zero.** Obiettivo a 6 mesi: **20**
 ([[obiettivi-6-mesi]]).
@@ -89,7 +89,7 @@ una trattativa è un argomento a favore, non un dettaglio.
 - [ ] Provare nel browser le 8 schermate mai viste
 - [ ] Interfaccia della generazione automatica
 - [ ] Pubblicare su `denkishift.it`
-- [ ] Definire la provvigione di Giulia sul prodotto turni
+- [ ] Definire la provvigione di Giulia sul prodotto turni — non bloccante
 - [ ] Primo cliente pilota — anche gratis, per avere un caso reale
 
 ## Collegamenti

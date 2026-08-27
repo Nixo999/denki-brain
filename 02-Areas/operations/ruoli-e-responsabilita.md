@@ -44,16 +44,30 @@ Tre persone. Sotto, chi fa cosa **davvero** — non i titoli.
 
 | Prodotto | Provvigione |
 |---|---|
-| A — Siti vetrina | **20% sull'anticipo** (su 200 € → 40 €). Niente sulle mensilità |
-| B — E-commerce | **25% sull'incasso iniziale** (su 500 € → 125 €). Niente sulle mensilità, niente sull'1% sulle vendite |
-| C — DenkiShift (turni) | **20% sul totale**, come i gestionali a pacchetto |
-| D — Gestionali a pacchetto | **20% sul totale** (su 2.000 € una tantum **o 2.000 €/anno** → 400 €) |
+**Schema definitivo, dettato da Patrick il 28 agosto 2026.** Sostituisce ogni
+versione precedente.
 
-⚠️ **Su C, verificare con Patrick.** Nicola ha detto "le provvigioni sono quelle
-elencate in precedenza", e l'unica voce che copre un ricavo annuale è quella dei
-gestionali a pacchetto — che nel testo originale di Patrick dice esplicitamente
-*"2.000 € una tantum **o 2.000 €/anno**"*. Su un cliente da 15 dipendenti
-(~360 €/anno) fa **~72 €**. Se l'intenzione era diversa, si corregge qui.
+| Prodotto | Provvigione | Su cosa NON prende |
+|---|---|---|
+| **A — Siti vetrina** | **25% sull'anticipo** (su 200 € → 50 €) | 0% sui canoni di manutenzione |
+| **B — E-commerce** | **25% sull'anticipo** (su 500 € → 125 €) | 0% sui canoni · **0% sulle royalty** (l'1-2% che tratteniamo sulle vendite) |
+| **C — DenkiShift (turni)** | **TBD** — si definisce in corsa | — |
+| **D — Gestionali custom** | **25% del totale venduto** | — |
+
+**Il dettaglio su D**: la percentuale segue la forma della vendita.
+
+| Come è venduto | Giulia prende |
+|---|---|
+| Una tantum, es. 2.000 € | **500 €**, una volta |
+| Abbonamento annuale, es. 500 €/anno | **125 € all'anno**, finché dura |
+
+**Il principio, in una riga: Giulia prende il 25% su quello che il cliente paga
+per *avere* la cosa, mai su quello che paga per *tenerla*.** Canoni e royalty
+restano interi a DenkiCode.
+
+Su **C** la percentuale è ancora aperta e **non è bloccante**: Patrick e Giulia
+condividono le finanze private, quindi la divisione al centesimo su quel
+prodotto si definisce in corsa. Non è un buco da rincorrere.
 
 Il principio è costante: **Giulia prende sul primo incasso, mai sul
 ricorrente.** Il ricorrente resta interamente a DenkiCode.
