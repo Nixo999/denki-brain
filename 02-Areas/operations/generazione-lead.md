@@ -1,0 +1,92 @@
+---
+type: area
+updated: 2026-08-28
+source: denkicode
+priorita: massima
+---
+
+# Generazione lead — il collo di bottiglia
+
+⚠️ **Questo è il problema numero uno dell'azienda al 28 agosto 2026.** Non il
+closing, non lo sviluppo. Quando si valuta cosa fare, si passa da qui.
+
+## Il problema, in parole di Nicola
+
+> "Non abbiamo ancora un flusso automatico abbastanza veloce per fornire a
+> Giulia liste di qualità e in grande quantità da chiamare ogni giorno. Spesso
+> abbiamo la sensazione di *parlare col vuoto*. Le attività non ci ascoltano o
+> non sembrano interessate al primo contatto."
+
+Due problemi distinti dentro una frase sola:
+
+| Problema | Natura |
+|---|---|
+| **Volume** — non ci sono abbastanza contatti da chiamare | Processo: la generazione liste è manuale e sta su Patrick |
+| **Indifferenza** — chi risponde non ascolta | Messaggio: l'angolo d'attacco non rompe l'abitudine |
+
+Vanno risolti separatamente: liste migliori non salvano uno script debole, e
+uno script forte su una lista sbagliata suona come tutti gli altri.
+
+## Fonti di contatti — quelle in uso
+
+| Fonte | Chi | Nota |
+|---|---|---|
+| Google Maps | Patrick | Attività locali per categoria e zona |
+| Pagine Gialle web | Patrick | |
+| **Instagram, profili suggeriti** | Patrick | Tecnica mirata su chi **non ha il sito** |
+| Porta-a-porta | Patrick | Territorio, flusso secondario |
+
+## Il compito assegnato a Claude
+
+Testuale, da Nicola:
+
+> "Il tuo compito principale, da ora in avanti, sarà aiutarmi a superare questo
+> scoglio: devi crearmi **angoli d'attacco migliori**, **script telefonici per
+> Giulia che rompano gli schemi** (pattern interrupt) e **metodi per scaldare i
+> lead prima di contattarli**, in modo da smettere di sbattere contro un muro
+> di indifferenza."
+
+Tre filoni di lavoro, da tenere distinti:
+
+1. **Angoli d'attacco** — perché *questa* azienda, *adesso*, dovrebbe ascoltare
+2. **Script pattern interrupt** — i primi 8 secondi di chiamata
+3. **Riscaldamento** — cosa succede *prima* che il telefono squilli
+
+## Punto di partenza per il lavoro futuro
+
+> [!note] Analisi di Claude — 2026-08-28. Ipotesi da validare sul campo, non conclusioni.
+>
+> **Sul volume.** La generazione liste è l'unica attività della catena che non
+> richiede un umano. Oggi occupa Patrick, che è anche l'unico che chiude e
+> l'unico che assiste. Spostarla libera la persona più costosa che avete.
+>
+> **Sull'indifferenza.** L'esca attuale — *"abbiamo già preparato una bozza"* —
+> è forte, perché regala valore prima di chiedere. Ma è la stessa per tutti, e
+> un negoziante che riceve tre chiamate simili a settimana la classifica come
+> pubblicità in due secondi. L'ipotesi da provare: **la bozza convince quando è
+> visibilmente su misura** — nome dell'attività, foto vere, un dettaglio che
+> solo chi ha guardato quel negozio può sapere.
+>
+> **Il segnale più sottovalutato che avete già**: la tecnica dei profili
+> suggeriti su Instagram individua attività **senza sito**. Quello non è un
+> contatto, è un **movente** — un'azienda che vende su Instagram e non ha un
+> sito ha già dimostrato di volersi far vedere. Vale più di mille numeri presi
+> da Pagine Gialle.
+>
+> **Il flusso D è sottoutilizzato.** La "ricerca di mercato" che scopre le
+> falle organizzative è, di fatto, un modo di scaldare un lead senza vendere
+> niente. È già progettata per il problema che avete, ma è confinata ai
+> gestionali custom.
+
+## Aperto
+
+- [ ] Costruire un processo ripetibile di generazione liste
+- [ ] Scrivere gli script pattern interrupt per i 4 flussi
+- [ ] Definire e provare un metodo di riscaldamento pre-chiamata
+- [ ] Misurare i contatti nuovi in lista a settimana → [[metriche]]
+- [ ] Testare l'ipotesi "bozza su misura vs bozza generica" su 20 chiamate
+
+## Collegamenti
+
+[[flusso-vendita]] · [[metriche]] · [[stato-azienda]] ·
+[[ruoli-e-responsabilita]] · [[prodotti-e-listino]] · [[materiale-offline]]

@@ -1,0 +1,109 @@
+---
+type: area
+updated: 2026-08-28
+source: denkicode
+---
+
+# Flusso di vendita
+
+Come si vende in DenkiCode. Quattro flussi, un metodo.
+
+## Il metodo — Straight Line System
+
+Ispirato a Straight Line (Belfort), SPIN Selling e ai formati ad alta
+conversione.
+
+1. **L'esca: valore anticipato.** Si propone sempre qualcosa di concreto
+   *prima* di chiedere — una bozza grafica gratuita o un'indagine strutturata.
+   Serve ad abbassare la resistenza del primo contatto.
+2. **I 3 Dieci.** Certezza su: (1) il prodotto, (2) le persone — Giulia al
+   telefono, Patrick in chiusura, (3) DenkiCode.
+3. **Looping.** Le obiezioni si validano, non si contraddicono, e si riporta il
+   focus sul valore.
+
+## I quattro flussi
+
+### A — Siti vetrina · *cassa rapida*
+
+**Prezzo**: 200-300 € + canone. Indicativo, si adatta alla richiesta.
+
+```
+Giulia chiama → "abbiamo già preparato una bozza grafica"
+     → chiede di mandarla su WhatsApp/mail o mostrarla dal vivo
+     → se il cliente accetta: Nicola crea la bozza vera
+     → Patrick subentra per trattativa e chiusura
+```
+
+**Supporto**: volantini ([[materiale-offline]]).
+**Provvigione Giulia**: 20% sull'anticipo.
+
+### B — E-commerce
+
+Stesso flusso di A, focus sull'aumento delle vendite online.
+Bozza approvata → sviluppo Nicola → chiusura Patrick.
+**Prezzo**: `TODO`.
+
+### C — DenkiShift, gestione turni · *prodotto di punta*
+
+**Prezzo**: ~2 €/mese per dipendente, paga il datore di lavoro.
+
+```
+Giulia fa leva sull'ottimizzazione del personale
+     (ferie, malattie, coperture)
+     → spinge per una demo dal vivo o in call
+     → la demo la gestisce Patrick
+```
+
+**Supporto**: biglietti da visita dedicati ([[materiale-offline]]).
+**Provvigione Giulia**: TBD.
+
+⚠️ Il prodotto **non è ancora installabile in produzione** → [[denkishift]].
+Non promettere date di attivazione.
+
+### D — Gestionali custom · *flusso inverso*
+
+**Giulia qui NON vende.** L'approccio è una ricerca di mercato: si scoprono le
+falle organizzative dell'azienda. Obiettivo unico: far compilare il form.
+
+`https://docs.google.com/forms/d/e/1FAIpQLSe2cCfeAx8IVLRq-ocJe4MUpq43u_1D95IpBPjqOYX-90a9JA/viewform`
+
+```
+Form compilato → Nicola sviluppa un prototipo mirato
+              → Patrick contatta per la vendita vera
+```
+
+**Provvigione Giulia**: 20% sul totale.
+
+## Gestione preventivi
+
+| Prodotto | Come si formalizza |
+|---|---|
+| Siti vetrina | Messaggio riepilogativo su WhatsApp/email + ricevuta all'acconto. Nessun documento complesso |
+| Gestionali custom / turni | PDF impaginato, tipo *"Piano di Sviluppo"* |
+
+⚠️ **Il template del PDF non esiste ancora.** È un compito aperto: generare il
+copy di una proposta commerciale standard (Google Docs / Canva). Vedi sotto.
+
+Lessico obbligatorio nei preventivi: [[vincoli-fiscali]].
+
+## Le liste
+
+**Google Sheets su Drive.** Patrick (e Claude) generano, Giulia aggiorna gli
+stati: "Non risponde", "Fissato incontro", ecc.
+
+Colonne di una lista: nome, telefono, settore, **prodotto da spingere**, prezzo
+indicativo.
+
+## Aperto
+
+- [ ] **Generare il template di proposta commerciale** (PDF/Docs) per i
+      gestionali — copy da scrivere, lessico da [[vincoli-fiscali]]
+- [ ] Definire il prezzo dei siti e-commerce (flusso B)
+- [ ] Definire la provvigione di Giulia su DenkiShift
+- [ ] Aggiungere al Google Sheet le colonne esito appuntamento → [[metriche]]
+
+## Collegamenti
+
+[[generazione-lead]] · [[prodotti-e-listino]] · [[stile-comunicazione]] ·
+[[ruoli-e-responsabilita]] · [[materiale-offline]] · [[vincoli-fiscali]] ·
+[[metriche]]

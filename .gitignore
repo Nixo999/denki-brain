@@ -1,0 +1,27 @@
+# --- Obsidian: si tiene la configurazione, si buttano stato e cache ---
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/plugins/*/data.json
+
+# Tracciati apposta (NON toglierli da qui):
+#   .obsidian/app.json       impostazioni dell'editor
+#   .obsidian/plugins/       i plugin ti seguono sugli altri PC
+#   .obsidian/appearance.json
+
+# --- Cestino di Obsidian ---
+.trash/
+
+# --- Segreti ---
+.env
+.env.*
+!.env.example
+.mcp.json
+
+# --- Roba solo tua, che Patrick non deve vedere ---
+Personal/
+
+# --- Sistema ---
+.DS_Store
+Thumbs.db
+desktop.ini
