@@ -89,8 +89,29 @@ annuale**, non solo una tantum.
 tetto di nessuno, ma non sono nemmeno un'entrata dimostrabile. Aggiornato il
 conto in [[vincoli-fiscali]]: a Patrick, incassati i 2.000 €, restano ~3.000 €.
 
+## Quinto giro — si attacca il collo di bottiglia
+
+Priorità decisa: **DenkiShift**, senza chiudere gli altri prodotti. Zona:
+**Brianza**, scelta da Claude perché è dove biglietto e telefonata si sommano.
+
+Scritti due documenti, tutti e due `source: claude` e **da provare su 40
+chiamate** prima di considerarli buoni:
+
+- [[metodo-liste]] — chi è davvero il cliente (8-50 dipendenti, turni variabili,
+  non catene), i nove segmenti in ordine di dolore, il **segnale osservabile**
+  (orario H24 / 7 su 7 / annuncio di lavoro attivo), le colonne del foglio e la
+  regola «una lista = un segmento + un comune»
+- [[script-giulia-denkishift]] — apertura pattern interrupt, la domanda che apre
+  il dolore, sei obiezioni col looping, cosa Giulia deve portare a Patrick, i
+  due messaggi WhatsApp, e la tabella di quello che non si dice mai
+
+Il rilievo che conta: **il segmento ovvio è quello sbagliato.** "Negozi" viene
+in mente per primo ed è il più debole. Il dolore vero sta in RSA, imprese di
+pulizie e vigilanza — H24, sostituzioni continue, e nessuno li chiama.
+
 ## Aperto adesso
 
+- ⬜ **Provare lo script su 40 chiamate** di un solo segmento
 - ⬜ **Come si trattano le royalty 1-2%** senza P.IVA → [[vincoli-fiscali]]
 - ⬜ **Cosa c'è in galleria oggi**, e aggiungerci [[albybike]] con una
   testimonianza → [[sito-denkicode]]

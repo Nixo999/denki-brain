@@ -36,7 +36,8 @@ prodotto di punta), gestionali custom. Dettaglio in [[prodotti-e-listino]].
    apertura di meeting. Vedi [[stile-comunicazione]].
 4. **Il collo di bottiglia è la generazione lead**, non il closing e non lo
    sviluppo. Quando proponi qualcosa, chiediti prima se aiuta lì. Vedi
-   [[generazione-lead]].
+   [[generazione-lead]], e il materiale operativo in [[metodo-liste]] e
+   [[script-giulia-denkishift]].
 5. **DenkiShift non è "pronto".** Il materiale di vendita dice che lo è: è
    ottimismo commerciale. È dimostrabile, non installabile in produzione.
    Non promettere date senza leggere [[denkishift]].

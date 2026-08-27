@@ -78,11 +78,35 @@ Tre filoni di lavoro, da tenere distinti:
 > niente. È già progettata per il problema che avete, ma è confinata ai
 > gestionali custom.
 
+## Il primo attacco — deciso il 28 agosto 2026
+
+**Priorità: [[denkishift]].** Nicola: *"vogliamo spingere di più su DenkiShift,
+ma non disdegnamo nulla perché siamo capaci e vogliosi di fare tutto."* Gli
+altri prodotti restano aperti, ma il materiale si costruisce prima per il
+prodotto di punta.
+
+**Zona: Brianza.** È l'unico posto dove il biglietto da visita di Patrick e la
+chiamata di Giulia si sommano invece di essere due azioni scollegate.
+
+Due documenti pronti, tutti e due **da provare, non da dare per buoni**:
+
+| Documento | Risolve |
+|---|---|
+| [[metodo-liste]] | Il **volume**: 40-50 contatti profilati in mezz'ora, ripetibile |
+| [[script-giulia-denkishift]] | L'**indifferenza**: apertura pattern interrupt, sei obiezioni, follow-up |
+
+⚠️ **Nessuno dei due promette date di attivazione.** L'obiettivo della chiamata
+è la demo, che si può fare oggi; l'installazione in produzione no →
+[[denkishift]].
+
 ## Aperto
 
-- [ ] Costruire un processo ripetibile di generazione liste
-- [ ] Scrivere gli script pattern interrupt per i 4 flussi
-- [ ] Definire e provare un metodo di riscaldamento pre-chiamata
+- [x] Costruire un processo ripetibile di generazione liste → [[metodo-liste]]
+- [x] Scrivere lo script pattern interrupt per DenkiShift →
+      [[script-giulia-denkishift]]
+- [ ] **Provarlo su 40 chiamate di un solo segmento** e scrivere l'esito
+- [ ] Scrivere gli script per i flussi A, B e D
+- [ ] Provare il riscaldamento: biglietto di Patrick → chiamata entro 48 ore
 - [ ] Misurare i contatti nuovi in lista a settimana → [[metriche]]
 - [ ] Testare l'ipotesi "bozza su misura vs bozza generica" su 20 chiamate
 
