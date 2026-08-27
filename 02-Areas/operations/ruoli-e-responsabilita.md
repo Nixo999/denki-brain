@@ -46,8 +46,14 @@ Tre persone. Sotto, chi fa cosa **davvero** — non i titoli.
 |---|---|
 | A — Siti vetrina | **20% sull'anticipo** (su 200 € → 40 €). Niente sulle mensilità |
 | B — E-commerce | **25% sull'incasso iniziale** (su 500 € → 125 €). Niente sulle mensilità, niente sull'1% sulle vendite |
-| C — DenkiShift (turni) | **TBD** — da definire |
-| D — Gestionali a pacchetto | **20% sul totale** (su 2.000 € → 400 €) |
+| C — DenkiShift (turni) | **20% sul totale**, come i gestionali a pacchetto |
+| D — Gestionali a pacchetto | **20% sul totale** (su 2.000 € una tantum **o 2.000 €/anno** → 400 €) |
+
+⚠️ **Su C, verificare con Patrick.** Nicola ha detto "le provvigioni sono quelle
+elencate in precedenza", e l'unica voce che copre un ricavo annuale è quella dei
+gestionali a pacchetto — che nel testo originale di Patrick dice esplicitamente
+*"2.000 € una tantum **o 2.000 €/anno**"*. Su un cliente da 15 dipendenti
+(~360 €/anno) fa **~72 €**. Se l'intenzione era diversa, si corregge qui.
 
 Il principio è costante: **Giulia prende sul primo incasso, mai sul
 ricorrente.** Il ricorrente resta interamente a DenkiCode.

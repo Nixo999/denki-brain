@@ -156,6 +156,7 @@ una certezza inventata — è la stessa regola che vale nei repo di codice.
 | [[opero]] | [[sebastian-torres]] | 🟡 ~60%, in correzione | 2.000€ da incassare, storico mai migrato, XML SDI da quotare |
 | [[denkishift]] | prodotto interno | 🟡 quasi completo, non pubblicato | SMTP proprio, UI generazione turni, 0 clienti |
 | [[sito-albybike]] | [[albybike]] | 🟢 Online | Mai pagato, dominio in scadenza fra un anno |
+| [[sito-denkicode]] | interno | 🟢 Online | È la **galleria dei lavori**: strumento di vendita, non vetrina passiva |
 
 Archiviati: [[cococat]] (bozza mai riscontrata — lead ancora vivo),
 [[sito-dropout]] (eventi di Patrick, sito da galleria), [[webolt-v1]] (vuoto).

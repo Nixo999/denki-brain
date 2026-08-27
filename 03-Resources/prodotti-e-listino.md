@@ -53,7 +53,7 @@ cliente.
 | Leva di vendita | Ottimizzazione del personale: ferie, malattie, coperture |
 | Obiettivo del contatto | Fissare una demo dal vivo o in call, gestita da Patrick |
 | Supporto | Biglietti da visita dedicati (200 disponibili) |
-| Provvigione Giulia | **TBD** |
+| Provvigione Giulia | **20% sul totale**, come i gestionali a pacchetto — da confermare con Patrick |
 | Clienti attivi | **0** |
 
 ⚠️ Il software **non è ancora installabile in produzione** → [[denkishift]].
@@ -81,8 +81,8 @@ Form: `https://docs.google.com/forms/d/e/1FAIpQLSe2cCfeAx8IVLRq-ocJe4MUpq43u_1D9
 | D — Custom | 2.000-2.500 € una tantum | ❌ | 1 |
 
 **Provvigioni di Giulia**, per confronto: 20% sull'anticipo (A), **25%
-sull'incasso iniziale** (B), 20% sul totale (D), **TBD** (C). Mai sulle
-mensilità, mai sull'1%.
+sull'incasso iniziale** (B), 20% sul totale (C e D). Mai sulle mensilità, mai
+sull'1%. Dettaglio in [[ruoli-e-responsabilita]].
 
 > [!note] Analisi di Claude — 2026-08-28
 > **L'unico prodotto che oggi porta soldi è quello che non si ripete.** I tre

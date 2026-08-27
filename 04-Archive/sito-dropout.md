@@ -32,11 +32,15 @@ push **11 maggio 2026**. Generato con **Google AI Studio**.
 > pena che sia usabile come tale — e oggi non lo è, perché nessuno sa dove sia
 > questa galleria né se DROP OUT ci figuri ancora.
 >
-> **Dove sta la galleria?** È la domanda vera che apre questa nota. Se esiste
-> un posto dove mostrate i lavori fatti, quel posto è uno strumento
-> commerciale e merita una nota sua in `02-Areas/operations/`: cosa contiene,
-> chi lo aggiorna, e a chi si manda. Se invece non esiste ancora, allora avete
-> due siti fatti apposta per una vetrina che non c'è.
+> **La galleria sta su [[sito-denkicode|denkicode.com]].** Quindi questo sito
+> non è un progetto morto: è **materiale di vendita**, e va giudicato come
+> tale. La domanda giusta non è "serve ancora?" ma "**fa una buona figura
+> accanto agli altri?**" — perché è quello che un cliente vede dopo la chiamata
+> di Giulia.
+>
+> ⚠️ Un evento universitario in galleria dice *sappiamo fare siti*. Non dice
+> *abbiamo clienti*. Sono due messaggi diversi, e il secondo è quello che
+> chiude. Vedi [[sito-denkicode]].
 >
 > **Un secondo uso, gratis.** DROP OUT porta Patrick dentro un locale in
 > Bicocca, con i suoi gestori e il suo giro. È un canale di contatti reale in
@@ -45,7 +49,7 @@ push **11 maggio 2026**. Generato con **Google AI Studio**.
 
 ## Aperto
 
-- [ ] `TODO` — **dove sta la galleria dei lavori?** Sito, PDF, cartella?
+- [x] Dove sta la galleria → **denkicode.com** ([[sito-denkicode]])
 - [ ] Verificare se il sito DROP OUT è ancora online e presentabile
 - [ ] Chiedere a Patrick se dal giro degli eventi escono contatti utili →
       [[generazione-lead]]

@@ -53,14 +53,26 @@ Nicola ha risposto in serata. Cosa è cambiato:
    il sito è stato fatto **per riempire la galleria** → [[sito-dropout]].
 7. ⬜ Numeri di [[metriche]] — ancora da compilare.
 
+## Terzo giro — le ultime risposte
+
+- ✅ **La galleria sta su denkicode.com.** Creata la scheda [[sito-denkicode]]:
+  è un progetto attivo, perché è lo strumento di vendita più usato che avete.
+  Rilevati due punti: un commento `TODO` del template rimasto nel sorgente
+  pubblico, e il fatto che in galleria ci siano *lavori* ma non *clienti*
+- ✅ **Provvigione su DenkiShift**: 20% sul totale, come i gestionali a
+  pacchetto. Interpretazione da confermare con Patrick, segnata nella nota
+- ✅ **Secondo cliente di Seba**: si saprà nella settimana del 31 agosto
+- ✅ Riscritta [[metriche]] perché non era chiara: adesso dice esattamente quali
+  due numeri servono, dove si prendono e come si scrivono
+
 ## Aperto adesso
 
-- ⬜ **Provvigione di Giulia su DenkiShift** — unico buco rimasto sul listino
-- ⬜ **Dove sta la galleria dei lavori?** Due siti sono stati fatti apposta per
-  riempirla e nessuno sa dove sia → [[sito-dropout]]
-- ⬜ **A che punto è il secondo cliente di Seba?** I 2.000 € dipendono da quello
+- ⬜ **Confermare la provvigione su DenkiShift** con Patrick
 - ⬜ **Come si tratta l'1% sulle vendite** senza P.IVA → [[vincoli-fiscali]]
+- ⬜ **Cosa c'è in galleria oggi**, e aggiungerci [[albybike]] con una
+  testimonianza → [[sito-denkicode]]
 - ⬜ Numeri della settimana in [[metriche]]
+- ⬜ Secondo cliente di Seba, appena si sa
 
 ## Prossimi passi
 

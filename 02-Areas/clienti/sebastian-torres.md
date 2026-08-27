@@ -103,8 +103,8 @@ Osservato dal lavoro di agosto 2026:
 - [ ] Correggere il PDF del piano sulle funzioni rinunciate
 - [ ] `TODO` — come è arrivato a noi? Serve a [[generazione-lead]]
 - [ ] `TODO` — nome dell'azienda del padre (è la prima installazione reale)
-- [ ] Capire a che punto è il suo **secondo cliente**: è la cosa da cui dipende
-      il nostro incasso, e oggi non la sappiamo
+- [ ] **Secondo cliente di Seba: si saprà nella settimana del 31 agosto 2026.**
+      È la cosa da cui dipende il nostro incasso — segnarlo qui appena si sa
 
 ## Collegamenti
 
