@@ -44,9 +44,13 @@ Tre persone. Sotto, chi fa cosa **davvero** — non i titoli.
 
 | Prodotto | Provvigione |
 |---|---|
-| Siti vetrina | **20% sull'anticipo** (su 200 € → 40 €). Niente sulle mensilità |
-| Gestionali a pacchetto | **20% sul totale** (su 2.000 € → 400 €) |
-| DenkiShift (turni) | **TBD** — da definire |
+| A — Siti vetrina | **20% sull'anticipo** (su 200 € → 40 €). Niente sulle mensilità |
+| B — E-commerce | **25% sull'incasso iniziale** (su 500 € → 125 €). Niente sulle mensilità, niente sull'1% sulle vendite |
+| C — DenkiShift (turni) | **TBD** — da definire |
+| D — Gestionali a pacchetto | **20% sul totale** (su 2.000 € → 400 €) |
+
+Il principio è costante: **Giulia prende sul primo incasso, mai sul
+ricorrente.** Il ricorrente resta interamente a DenkiCode.
 
 ⚠️ **Contesto che cambia la lettura dei numeri**: Patrick e Giulia sono partner
 anche nella vita privata e condividono le finanze. La provvigione è quindi una

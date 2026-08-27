@@ -28,21 +28,39 @@ punto di partenza invece di una cartella muta.
   rischio resta scritto
 - [[2026-08-28-stack-non-uniforme]] — aperta, da chiudere
 
-## Aperto — i `TODO` che contano
+## Secondo giro — i sette `TODO`, chiusi in sei
 
-I buchi non sono stati riempiti con supposizioni. Questi sono quelli che
-pesano di più:
+Nicola ha risposto in serata. Cosa è cambiato:
 
-1. **Nome vero del cliente di OperO** e del suo referente →
-   [[cliente-opero]]. È il cliente che vi deve 2.000 €
-2. **Su chi si emettono le ricevute** dei prossimi incassi →
-   [[vincoli-fiscali]]
-3. **Prezzo del prodotto B** (e-commerce) e **provvigione su DenkiShift** →
-   [[prodotti-e-listino]]
-4. **Cosa non usiamo mai** → [[stack]]
-5. **Perché cococat ha detto di no** → [[cococat]]
-6. **Cos'è DROP OUT** → [[sito-dropout]]
-7. Numeri attuali di [[metriche]]: chiamate e appuntamenti di questa settimana
+1. ✅ **Il cliente di OperO è Sebastian Torres, "Seba"** — e non è un'azienda di
+   traslochi: è **un privato che sta aprendo la sua attività, e l'attività è
+   OperO**. Noi siamo i suoi sviluppatori; lui rivende l'app alle aziende. Il
+   suo primo cliente è **suo padre**, il secondo è in attesa. Riscritta
+   [[sebastian-torres]], rinominato il file, propagato ovunque, riscritta
+   l'apertura di [[opero]] e aggiunta la regola 6 in `CLAUDE.md`.
+2. ✅ **Le ricevute si emettono su Patrick.** Conto del tetto aggiornato in
+   [[vincoli-fiscali]]: a OperO saldato gli restano ~2.600 €.
+3. ✅ **Prodotto B**: da 500 € + canone 30-100 €/mese + **1% sulle vendite**.
+   Giulia prende il **25% sull'incasso iniziale**, niente su mensilità e 1%.
+   → [[prodotti-e-listino]]. **La provvigione su DenkiShift resta TBD**: era
+   nella stessa domanda ed è l'unico pezzo rimasto scoperto.
+4. ✅ **Niente è escluso per principio**: si può proporre qualunque strumento,
+   purché la proposta dica cosa migliora e cosa costa mantenerlo → [[stack]].
+5. ✅ **cococat non ha detto no: non ha risposto.** Cambia l'esito da "rifiutata"
+   a "nessun riscontro" — è un lead **ancora vivo**, con una bozza già pronta.
+6. ✅ **DROP OUT** sono gli eventi universitari di Patrick e di un gruppo di
+   ragazzi, in un locale in Bicocca. Guadagno bassissimo, estraneo a DenkiCode:
+   il sito è stato fatto **per riempire la galleria** → [[sito-dropout]].
+7. ⬜ Numeri di [[metriche]] — ancora da compilare.
+
+## Aperto adesso
+
+- ⬜ **Provvigione di Giulia su DenkiShift** — unico buco rimasto sul listino
+- ⬜ **Dove sta la galleria dei lavori?** Due siti sono stati fatti apposta per
+  riempirla e nessuno sa dove sia → [[sito-dropout]]
+- ⬜ **A che punto è il secondo cliente di Seba?** I 2.000 € dipendono da quello
+- ⬜ **Come si tratta l'1% sulle vendite** senza P.IVA → [[vincoli-fiscali]]
+- ⬜ Numeri della settimana in [[metriche]]
 
 ## Prossimi passi
 

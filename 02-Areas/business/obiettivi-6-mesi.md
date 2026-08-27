@@ -16,7 +16,7 @@ clienti**. Non oltre novembre.
 
 **Da cosa dipende**: dal cashflow dei siti a 200 € e dalle prime vendite dei
 gestionali. Oggi il cashflow è 400 € incassati e 2.000 € di credito su
-[[cliente-opero]].
+[[sebastian-torres]].
 
 Vincoli e lessico da usare fino ad allora: [[vincoli-fiscali]].
 

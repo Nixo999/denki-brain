@@ -40,9 +40,13 @@ prodotto di punta), gestionali custom. Dettaglio in [[prodotti-e-listino]].
 5. **DenkiShift non è "pronto".** Il materiale di vendita dice che lo è: è
    ottimismo commerciale. È dimostrabile, non installabile in produzione.
    Non promettere date senza leggere [[denkishift]].
-6. **I prezzi a listino sono indicativi.** 200-300€ è l'aggancio costruito
+6. **OperO non è il gestionale di un cliente: è il prodotto di un cliente.**
+   [[sebastian-torres]] è un privato che sta aprendo la sua attività, e la sua
+   attività è quell'app. Lui la rivende alle aziende — la prima è l'impresa di
+   suo padre. Chi tocca l'area Super Admin sta toccando il suo conto economico.
+7. **I prezzi a listino sono indicativi.** 200-300€ è l'aggancio costruito
    sulla bozza che immaginiamo noi; il prezzo vero si adatta alla richiesta.
-7. **Due gestionali, due stack diversi.** OperO è Vite 8 + Tailwind 3, commenti
+8. **Due gestionali, due stack diversi.** OperO è Vite 8 + Tailwind 3, commenti
    in inglese. DenkiShift è Next 16 + Tailwind 4, commenti in italiano. Non
    confonderli e non "uniformare" niente di tua iniziativa: è una
    [[2026-08-28-stack-non-uniforme|decisione aperta]].
@@ -134,7 +138,7 @@ una certezza inventata — è la stessa regola che vale nei repo di codice.
    `/settimana` e il controllo dei progetti fermi.
 3. **Le decisioni non si riscrivono.** Se una scelta cambia, si crea una nota
    nuova in `05-Decisioni/` che cita quella vecchia. La storia serve.
-4. **I wikilink si mettono generosamente.** `[[opero]]`, `[[cliente-opero]]`,
+4. **I wikilink si mettono generosamente.** `[[opero]]`, `[[sebastian-torres]]`,
    `[[stack]]`. Un link a una nota che non esiste ancora non è un errore: è un
    promemoria di cosa manca.
 5. **Numeri con la data accanto.** "400€ incassati" senza data invecchia male e
@@ -149,11 +153,12 @@ una certezza inventata — è la stessa regola che vale nei repo di codice.
 
 | Progetto | Cliente | Stato | Nodo aperto |
 |---|---|---|---|
-| [[opero]] | [[cliente-opero]] | 🟡 ~60%, in correzione | 2.000€ da incassare, storico mai migrato, XML SDI da quotare |
+| [[opero]] | [[sebastian-torres]] | 🟡 ~60%, in correzione | 2.000€ da incassare, storico mai migrato, XML SDI da quotare |
 | [[denkishift]] | prodotto interno | 🟡 quasi completo, non pubblicato | SMTP proprio, UI generazione turni, 0 clienti |
 | [[sito-albybike]] | [[albybike]] | 🟢 Online | Mai pagato, dominio in scadenza fra un anno |
 
-Archiviati: [[cococat]] (bozza rifiutata), [[sito-dropout]], [[webolt-v1]].
+Archiviati: [[cococat]] (bozza mai riscontrata — lead ancora vivo),
+[[sito-dropout]] (eventi di Patrick, sito da galleria), [[webolt-v1]] (vuoto).
 
 ## Dove sta il codice
 

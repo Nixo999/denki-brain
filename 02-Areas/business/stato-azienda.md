@@ -23,7 +23,7 @@ clienti, e un imbuto commerciale che in cima non tira.
 | Persone | 3 — [[ruoli-e-responsabilita]] |
 | Forma | **Nessuna P.IVA**, prestazione occasionale → [[vincoli-fiscali]] |
 | Incassato ad oggi | **400 €** ([[opero]]) |
-| Crediti aperti | **2.000 €** ([[cliente-opero]]) |
+| Crediti aperti | **2.000 €** ([[sebastian-torres]]) |
 | Clienti paganti attivi | **1** |
 | Clienti a canone | **0** |
 | Clienti su DenkiShift | **0** |
@@ -58,8 +58,11 @@ Analisi e piano di attacco: [[generazione-lead]].
 >
 > 1. **I 2.000 € di OperO non arrivano.** È il 100% del vostro fatturato
 >    residuo previsto e finanzia l'apertura della P.IVA. Il progetto è oltre la
->    data promessa e lo scope continua a muoversi. Se scivola a novembre,
->    scivola anche l'obiettivo P.IVA.
+>    data promessa e lo scope continua a muoversi. E c'è un secondo strato: il
+>    committente è **un privato che sta aprendo la sua attività** con un solo
+>    cliente pagante — suo padre — e un secondo in attesa. Quei 2.000 € non
+>    escono da un budget IT, escono dalla sua impresa che deve funzionare.
+>    Vedi [[sebastian-torres]].
 > 2. **DenkiShift resta a zero clienti.** Il prodotto con il ricavo ricorrente
 >    migliore è anche quello che non si può ancora installare. Ogni settimana
 >    senza SMTP è una settimana in cui non è vendibile davvero, e nel frattempo

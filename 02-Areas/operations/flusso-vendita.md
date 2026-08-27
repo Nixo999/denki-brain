@@ -41,7 +41,13 @@ Giulia chiama → "abbiamo già preparato una bozza grafica"
 
 Stesso flusso di A, focus sull'aumento delle vendite online.
 Bozza approvata → sviluppo Nicola → chiusura Patrick.
-**Prezzo**: `TODO`.
+
+**Prezzo**: da definire caso per caso, **a partire da 500 €** + canone
+**30-100 €/mese** + **1% sulle vendite**.
+**Provvigione Giulia**: 25% sull'incasso iniziale. Niente su mensilità e 1%.
+
+⚠️ L'1% sulle vendite non è incassabile in modo pulito senza P.IVA: leggere
+[[prodotti-e-listino]] prima di proporlo a voce.
 
 ### C — DenkiShift, gestione turni · *prodotto di punta*
 

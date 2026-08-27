@@ -1,7 +1,7 @@
 ---
 type: progetto
 status: attivo
-client: cliente-opero
+client: sebastian-torres
 stack: [react-19, typescript, vite-8, tailwind-3, react-router-7, tanstack-query, supabase, capacitor-6]
 started: 2026-07-20
 deadline: TODO
@@ -13,9 +13,25 @@ incassato: 400
 
 # OperO — gestionale cantieri e fatturazione
 
-Gestionale multi-azienda per un'impresa di **facchinaggio, allestimenti e
-traslochi**. La segreteria gestisce clienti, cantieri, squadre, conti dei
-lavoratori e la fatturazione. Cliente: [[cliente-opero]].
+⚠️ **OperO non è il gestionale di un nostro cliente: è il prodotto che il
+nostro cliente sta lanciando.** Committente: **[[sebastian-torres]]**, un
+privato che sta aprendo la sua attività, e la sua attività è questa app. Noi
+siamo i suoi sviluppatori; lui la rivende alle aziende.
+
+```
+DenkiCode ──sviluppa──▶ OperO ──venduto da Seba a──▶ aziende
+                                                      └─ 1ª: l'impresa del padre
+                                                      └─ 2ª: in attesa
+```
+
+Cosa fa il software: gestionale **multi-azienda** per imprese di
+**facchinaggio, allestimenti e traslochi**. La segreteria gestisce clienti,
+cantieri, squadre, conti dei lavoratori e la fatturazione.
+
+Il "multi-azienda" e l'area Super Admin con il cruscotto di **quanto ogni
+workspace paga a OperO** (`lib/pianoWorkspace.ts`, listino datato in
+`workspace_plans`) non sono funzioni di comodo: **sono il modello di ricavo di
+Seba**. Chi le tocca sta toccando il suo conto economico.
 
 **Repo**: `github.com/Nixo999/opero-sito` (npm: `opero-core`)
 **Memoria tecnica**: `CLAUDE.md` + `docs/handoff.md` nel repo — 4.400 righe di
@@ -23,10 +39,11 @@ storico. Leggerli prima di toccare qualsiasi cosa.
 
 ## Cos'è davvero
 
-Non è un'app nuova: è la **ricostruzione pulita** di `sebapp-bolanos`, un'app
-già in produzione presso il cliente, costruita con **Lovable**. La regola
-fondante era *stessa app, codice migliore* — nessuna funzione in più, nessuna in
-meno, e l'app vecchia resta la specifica di riferimento.
+Non è un'app nuova: è la **ricostruzione pulita** di `sebapp-bolanos`, costruita
+con **Lovable**, che è **in produzione oggi presso l'impresa del padre di
+Seba** — la sua prima installazione reale, non un prototipo. La regola fondante
+era *stessa app, codice migliore* — nessuna funzione in più, nessuna in meno, e
+l'app vecchia resta la specifica di riferimento.
 
 ⚠️ **Dall'11 agosto 2026 quella regola non regge più**: il committente ha
 iniziato a chiedere funzioni che nella vecchia app non esistono (sospensione
@@ -40,11 +57,17 @@ immagini, creazione account). Vedi [[2026-08-11-opero-scope-allargato]].
 | Prezzo pattuito | **2.400 €** |
 | Incassato al 2026-08-28 | **400 €** |
 | **Da incassare** | **2.000 €** |
-| Forma | Ricevuta per prestazione occasionale — nessuna P.IVA, vedi [[vincoli-fiscali]] |
+| Ricevuta intestata a | **Patrick** → [[vincoli-fiscali]] |
+| Forma | Ricevuta per prestazione occasionale — nessuna P.IVA |
 
 ⚠️ Da soli, i 2.400 € di questo progetto occupano **quasi metà** del tetto
-annuo dei 5.000 € su una singola testa. Va deciso su chi vengono emesse le
-ricevute prima di incassare i 2.000.
+annuo dei 5.000 € di Patrick.
+
+⚠️ **Il credito dipende dall'impresa di Seba, non da un budget IT.** Lui ha un
+cliente pagante (suo padre) e un secondo in attesa. Se quel secondo non firma,
+i 2.000 € non hanno una fonte evidente. Non è un giudizio su di lui: è la
+ragione per cui vale la pena sapere a che punto è quella trattativa. Vedi
+[[sebastian-torres]].
 
 ## A che punto siamo
 
@@ -128,5 +151,5 @@ misurando con `getComputedStyle` / `getBoundingClientRect`. Vedi [[convenzioni]]
 
 ## Collegamenti
 
-[[cliente-opero]] · [[stack]] · [[convenzioni]] · [[vincoli-fiscali]] ·
+[[sebastian-torres]] · [[stack]] · [[convenzioni]] · [[vincoli-fiscali]] ·
 [[2026-08-11-opero-scope-allargato]] · [[2026-08-22-xml-sdi-da-quotare]]

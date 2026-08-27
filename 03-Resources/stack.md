@@ -70,11 +70,17 @@ Presente in tutti i progetti veri:
 
 ## Cosa non usiamo
 
-`TODO` — non è ancora stato dichiarato niente esplicitamente. Da compilare:
-framework, servizi o pratiche escluse per scelta, con il motivo. Serve a Claude
-per non proporli.
+**Niente è escluso per principio.** Posizione di Nicola, 28 agosto 2026: *"sono
+aperto a tutte le opzioni che potrebbero aiutare a migliorare il
+procedimento"*.
 
-Quello che si **deduce** dai repo (da confermare):
+Vale come istruzione operativa: **si può proporre qualunque strumento**, purché
+la proposta dica cosa migliora concretamente e cosa costa mantenerlo. Non
+esistono veti da rispettare — esiste solo il costo di avere un ambiente in più
+da ricordare, che è l'argomento di [[2026-08-28-stack-non-uniforme]].
+
+Restano le **regole di come si scrive**, che sono un'altra cosa e valgono
+sempre. Dedotte dai repo:
 
 - **Niente ORM** — si parla a Supabase direttamente
 - **Niente dati finti / localStorage come database** (regola esplicita in OperO)

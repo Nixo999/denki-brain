@@ -40,4 +40,4 @@ incassiamo noi.
 
 ## Collegamenti
 
-[[opero]] · [[cliente-opero]] · [[2026-08-11-opero-scope-allargato]]
+[[opero]] · [[sebastian-torres]] · [[2026-08-11-opero-scope-allargato]]

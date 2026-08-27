@@ -70,7 +70,7 @@ Questa è la parte che rende il vault diverso da una cartella di documenti.
 Scrivendo `[[opero]]` dentro una nota, crei un **collegamento cliccabile** alla
 nota `opero.md`, ovunque essa sia nel vault.
 
-Esempio vero, preso da `02-Areas/clienti/cliente-opero.md`:
+Esempio vero, preso da `02-Areas/clienti/sebastian-torres.md`:
 
 ```markdown
 Ci ha commissionato la ricostruzione: [[opero]].
@@ -98,7 +98,7 @@ Apri `01-Projects/opero.md`. Le prime righe sono queste:
 ---
 type: progetto
 status: attivo
-client: cliente-opero
+client: sebastian-torres
 stack: [react-19, typescript, vite-8, tailwind-3, ...]
 started: 2026-07-20
 deadline: TODO

@@ -25,9 +25,25 @@ cliente.
 
 | | |
 |---|---|
-| Prezzo | `TODO` |
+| Prezzo | **Da definire caso per caso, a partire da 500 €** |
+| Canone | **30-100 €/mese**, secondo il lavoro |
+| In più | **1% sulle vendite** del negozio online |
 | Flusso | Identico ad A, focus sull'aumento delle vendite online |
+| Provvigione Giulia | **25% sull'incasso iniziale**. Niente sulle mensilità, niente sull'1% |
 | Clienti attivi | 0 |
+
+> [!warning] Analisi di Claude — 2026-08-28. Due attriti col vincolo fiscale.
+> **Il canone.** 30-100 €/mese si incassa come **quota annuale anticipata**
+> ([[vincoli-fiscali]]): sono **360-1.200 € in un colpo solo**. Su un tetto di
+> 5.000 €, tre e-commerce con canone alto lo esauriscono da soli.
+>
+> **L'1% sulle vendite.** È la voce più difficile da incassare senza P.IVA:
+> presuppone di leggere il fatturato del cliente, emettere periodicamente e per
+> importi variabili — cioè esattamente la forma che il vincolo dice di non
+> formalizzare. Due strade praticabili nel frattempo: sospendere l'1% fino
+> all'apertura della P.IVA e recuperarlo dopo, oppure trasformarlo in **scaglioni
+> di canone** (canone più alto sopra una soglia di fatturato), che si incassa
+> come quota annuale come tutto il resto. **Da decidere prima di venderne uno.**
 
 ## C — DenkiShift, gestione turni · *prodotto di punta*
 
@@ -51,7 +67,7 @@ cliente.
 | Obiettivo unico | Far compilare il form Google |
 | Poi | Nicola sviluppa un prototipo mirato → Patrick vende |
 | Provvigione Giulia | 20% sul totale |
-| Clienti attivi | **1** ([[cliente-opero]]) |
+| Clienti attivi | **1** ([[sebastian-torres]]) |
 
 Form: `https://docs.google.com/forms/d/e/1FAIpQLSe2cCfeAx8IVLRq-ocJe4MUpq43u_1D95IpBPjqOYX-90a9JA/viewform`
 
@@ -60,9 +76,13 @@ Form: `https://docs.google.com/forms/d/e/1FAIpQLSe2cCfeAx8IVLRq-ocJe4MUpq43u_1D9
 | Prodotto | Ricavo tipo | Ricorrente? | Clienti |
 |---|---|---|---|
 | A — Vetrina | 200-300 € + 120-240 €/anno | ✅ | 0 |
-| B — E-commerce | `TODO` | ✅ | 0 |
+| B — E-commerce | da 500 € + 360-1.200 €/anno + 1% vendite | ✅ | 0 |
 | C — DenkiShift | ~30 €/mese per azienda da 15 dip. | ✅ | 0 |
 | D — Custom | 2.000-2.500 € una tantum | ❌ | 1 |
+
+**Provvigioni di Giulia**, per confronto: 20% sull'anticipo (A), **25%
+sull'incasso iniziale** (B), 20% sul totale (D), **TBD** (C). Mai sulle
+mensilità, mai sull'1%.
 
 > [!note] Analisi di Claude — 2026-08-28
 > **L'unico prodotto che oggi porta soldi è quello che non si ripete.** I tre

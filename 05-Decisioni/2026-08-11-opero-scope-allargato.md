@@ -46,4 +46,4 @@ più costosa.
 
 ## Collegamenti
 
-[[opero]] · [[cliente-opero]] · [[stile-comunicazione]]
+[[opero]] · [[sebastian-torres]] · [[stile-comunicazione]]

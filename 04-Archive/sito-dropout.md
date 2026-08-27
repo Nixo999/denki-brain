@@ -1,31 +1,55 @@
 ---
 type: progetto
 status: in-pausa
-client: TODO
+esito: portfolio
+client: nessuno
 stack: [google-ai-studio, typescript]
 started: 2026-04-29
 deadline: TODO
 updated: 2026-08-28
-source: repo
+source: denkicode
 ---
 
-# DROP OUT
+# DROP OUT — eventi universitari
+
+**Non è un cliente e non è un lavoro DenkiCode.**
+
+DROP OUT è un gruppo di ragazzi — **Patrick compreso** — che organizza eventi
+universitari in un locale in **Bicocca**. Patrick partecipa, ma il guadagno è
+bassissimo e la cosa non ha niente a che vedere con DenkiCode.
+
+Il sito è stato fatto **per riempire la galleria**: serviva un lavoro in più da
+mostrare, non un cliente.
 
 **Repo**: `github.com/Nixo999/sito-dropout` — creato il 29 aprile 2026, ultimo
-push **11 maggio 2026**. Fermo da oltre tre mesi.
+push **11 maggio 2026**. Generato con **Google AI Studio**.
 
-Generato con **Google AI Studio** (`ai.studio/apps/1cc15fd7-...`). Titolo della
-pagina: "DROP OUT".
+## Cosa se ne fa
 
-## Cosa manca
+> [!note] Analisi di Claude — 2026-08-28
+> Un sito fatto per la galleria è **materiale di vendita**, non un progetto:
+> per questo sta qui in archivio e non fra i progetti attivi. Ma allora vale la
+> pena che sia usabile come tale — e oggi non lo è, perché nessuno sa dove sia
+> questa galleria né se DROP OUT ci figuri ancora.
+>
+> **Dove sta la galleria?** È la domanda vera che apre questa nota. Se esiste
+> un posto dove mostrate i lavori fatti, quel posto è uno strumento
+> commerciale e merita una nota sua in `02-Areas/operations/`: cosa contiene,
+> chi lo aggiorna, e a chi si manda. Se invece non esiste ancora, allora avete
+> due siti fatti apposta per una vetrina che non c'è.
+>
+> **Un secondo uso, gratis.** DROP OUT porta Patrick dentro un locale in
+> Bicocca, con i suoi gestori e il suo giro. È un canale di contatti reale in
+> una zona con molte attività — la stessa dove sta [[cococat]]. Vale poco come
+> lavoro, può valere qualcosa come porta d'ingresso.
 
-`TODO` — **cos'è DROP OUT?** Un cliente, un progetto personale, una prova?
-Precede l'avvio di DenkiCode (luglio 2026), quindi probabilmente non è lavoro
-aziendale.
+## Aperto
 
-Se non è nulla di rilevante, questa nota si può cancellare. Se è un cliente
-dormiente, va spostata in `01-Projects/` con una scheda cliente.
+- [ ] `TODO` — **dove sta la galleria dei lavori?** Sito, PDF, cartella?
+- [ ] Verificare se il sito DROP OUT è ancora online e presentabile
+- [ ] Chiedere a Patrick se dal giro degli eventi escono contatti utili →
+      [[generazione-lead]]
 
 ## Collegamenti
 
-[[stack]] · [[stato-azienda]]
+[[cococat]] · [[generazione-lead]] · [[materiale-offline]] · [[stack]]
