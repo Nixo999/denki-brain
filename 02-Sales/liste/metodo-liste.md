@@ -118,6 +118,12 @@ Esito | Data richiamo | Appuntamento (data) | Esito appuntamento | Note
 Le tre colonne finali sono quelle che oggi mancano: senza `Esito appuntamento`
 non si sa se il problema è la lista o la trattativa.
 
+⚠️ **Superate il 28 agosto 2026.** Lo schema operativo è quello a **8 colonne**
+di [[ciclo-settimanale]]: `Comune` e `Segnale` finiscono dentro `Nome Azienda` e
+`Note Strategiche`, e le tre colonne di tracking finiscono nel testo libero di
+`Esito e Note Giulia`. I valori di `Esito` qui sotto **restano obbligatori**:
+sono la prima parola della cella di Giulia, e sono quello su cui girano i conti.
+
 **Valori di `Esito`**, sempre gli stessi o il conteggio non torna:
 `Non risponde` · `Richiamare` · `Non è il decisore` · `No` · `Troppo piccoli` ·
 `Fissato incontro`

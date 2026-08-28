@@ -96,6 +96,7 @@ Due documenti pronti, tutti e due **da provare, non da dare per buoni**:
 | [[script-giulia-denkishift]] | L'**indifferenza**: apertura pattern interrupt, sei obiezioni, follow-up |
 | [[2026-08-28-brianza-turni]] | La **prima lista vera**: 51 contatti pronti da chiamare |
 | [[pattern-interrupt]] | Quattro aperture diverse e il piano per provarle a eliminazione |
+| [[ciclo-settimanale]] | La **cadenza**: 4 liste ogni domenica e il ritorno dal campo |
 
 ⚠️ **Nessuno dei due promette date di attivazione.** L'obiettivo della chiamata
 è la demo, che si può fare oggi; l'installazione in produzione no →
@@ -113,8 +114,10 @@ Due documenti pronti, tutti e due **da provare, non da dare per buoni**:
 - [ ] Provare il riscaldamento: biglietto di Patrick → chiamata entro 48 ore
 - [ ] Misurare i contatti nuovi in lista a settimana → [[metriche]]
 - [ ] Testare l'ipotesi "bozza su misura vs bozza generica" su 20 chiamate
+- [ ] **Far girare il primo ciclo completo** domenica → domenica →
+      [[ciclo-settimanale]]
 
 ## Collegamenti
 
-[[flusso-vendita]] · [[metriche]] · [[stato-azienda]] ·
+[[ciclo-settimanale]] · [[flusso-vendita]] · [[metriche]] · [[stato-azienda]] ·
 [[ruoli-e-responsabilita]] · [[prodotti-e-listino]] · [[materiale-offline]]

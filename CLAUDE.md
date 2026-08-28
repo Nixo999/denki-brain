@@ -67,8 +67,9 @@ in che ordine si guardano.
    apertura di meeting. Vedi [[stile-comunicazione]].
 6. **Il collo di bottiglia è la generazione lead**, non il closing e non lo
    sviluppo. Quando proponi qualcosa, chiediti prima se aiuta lì. Vedi
-   [[generazione-lead]], e il materiale operativo in [[metodo-liste]],
-   [[script-giulia-denkishift]] e [[pattern-interrupt]].
+   [[generazione-lead]], la cadenza fissa in [[ciclo-settimanale]] (4 liste
+   ogni domenica, 5 report indietro), e il materiale operativo in
+   [[metodo-liste]], [[script-giulia-denkishift]] e [[pattern-interrupt]].
 7. **Tutti e tre lavorano e studiano.** DenkiCode è il terzo impegno di
    ciascuno: ~25h di negozio e l'università in corso. Prima di proporre
    qualcosa che costa ore, leggi [[team-e-vincoli]].
