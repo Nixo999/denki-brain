@@ -61,10 +61,16 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 - ⛔ **La password del database di sviluppo non funziona più.** Ha smesso fra un
   comando e l'altro il 28/08, senza che `.env.db` cambiasse. Probabile
   rigenerazione dal pannello, che la invalida su tutte le macchine insieme
-- ⚠️ **Lo schema di produzione di DenkiShift non è mai stato verificato** da
-  nessuna macchina di sviluppo: quel progetto Supabase non è raggiungibile da
-  `.env.local`/`.env.db`. Il codice «a chiamata» è online dalle 12:09, la sua
-  migrazione lì non risulta a nessuno
+- ✅ **La produzione ha la 19** — verificato nel browser il 28/08 alle 15:0x, da
+  una sessione già autenticata: la vista **Disponibilità** si apre e spiega il
+  regime, il filtro **«A chiamata»** c'è, il tabellone della settimana 24-30
+  agosto è pieno. Quindi `availability_days` e `company_settings.regime_chiamata`
+  esistono là. **Il disallineamento è al contrario di come sembrava**: è lo
+  *sviluppo* a essere indietro rispetto alla produzione, non il viceversa
+- 🟡 Restano due errori in console (`404` e `UnrecognizedActionError: Server
+  Action non trovata`), ma sono **del caricamento precedente**: dopo un reload
+  pulito nessuna richiesta fallisce. È il caso classico della scheda rimasta
+  aperta su una build vecchia mentre ne è stata pubblicata una nuova
 
 ## Collegamenti
 
