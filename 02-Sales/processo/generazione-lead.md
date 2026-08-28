@@ -88,7 +88,7 @@ prodotto di punta.
 **Zona: Brianza.** È l'unico posto dove il biglietto da visita di Patrick e la
 chiamata di Giulia si sommano invece di essere due azioni scollegate.
 
-Due documenti pronti, tutti e due **da provare, non da dare per buoni**:
+I documenti pronti, **tutti da provare, non da dare per buoni**:
 
 | Documento | Risolve |
 |---|---|
@@ -97,6 +97,7 @@ Due documenti pronti, tutti e due **da provare, non da dare per buoni**:
 | [[2026-08-28-brianza-turni]] | La **prima lista vera**: 51 contatti pronti da chiamare |
 | [[pattern-interrupt]] | Quattro aperture diverse e il piano per provarle a eliminazione |
 | [[ciclo-settimanale]] | La **cadenza**: 4 liste ogni domenica e il ritorno dal campo |
+| [[presidi-volantini]] | La **terza via**: far girare i volantini senza consumare ore. 10 presìdi in [[2026-08-28-presidi-volantini]] |
 
 ⚠️ **Nessuno dei due promette date di attivazione.** L'obiettivo della chiamata
 è la demo, che si può fare oggi; l'installazione in produzione no →
@@ -112,6 +113,8 @@ Due documenti pronti, tutti e due **da provare, non da dare per buoni**:
 - [x] Quattro pattern interrupt da testare → [[pattern-interrupt]]
 - [ ] Scrivere gli script per i flussi A, B e D
 - [ ] Provare il riscaldamento: biglietto di Patrick → chiamata entro 48 ore
+- [ ] **Primo giro dei 10 presìdi**, settimana del 31 agosto →
+      [[2026-08-28-presidi-volantini]]
 - [ ] Misurare i contatti nuovi in lista a settimana → [[metriche]]
 - [ ] Testare l'ipotesi "bozza su misura vs bozza generica" su 20 chiamate
 - [ ] **Far girare il primo ciclo completo** domenica → domenica →
@@ -120,4 +123,5 @@ Due documenti pronti, tutti e due **da provare, non da dare per buoni**:
 ## Collegamenti
 
 [[ciclo-settimanale]] · [[flusso-vendita]] · [[metriche]] · [[stato-azienda]] ·
-[[ruoli-e-responsabilita]] · [[prodotti-e-listino]] · [[materiale-offline]]
+[[ruoli-e-responsabilita]] · [[prodotti-e-listino]] · [[materiale-offline]] ·
+[[presidi-volantini]]

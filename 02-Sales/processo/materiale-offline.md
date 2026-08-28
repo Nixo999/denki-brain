@@ -56,6 +56,11 @@ materiale per una RSA — lì va il biglietto.
 
 ## Il metodo di distribuzione
 
+Due vie, e non vanno confuse: il **blitz** (Patrick consegna al cliente) e i
+**presìdi** (il volantino lo deposita chi il cliente vede ogni giorno) →
+[[presidi-volantini]], che è la terza via di acquisizione aperta il 28 agosto
+2026.
+
 > [!note] Analisi di Claude — 2026-08-28. Da provare, non è ancora stato fatto.
 >
 > Mille volantini a pioggia producono zero lead: il volantino **non è un
@@ -98,4 +103,5 @@ materiale per una RSA — lì va il biglietto.
 ## Collegamenti
 
 [[flusso-vendita]] · [[generazione-lead]] · [[prodotti-e-listino]] ·
-[[ruoli-e-responsabilita]] · [[identita-visiva]] · [[metriche]]
+[[ruoli-e-responsabilita]] · [[identita-visiva]] · [[metriche]] ·
+[[presidi-volantini]]

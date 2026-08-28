@@ -97,6 +97,10 @@ Sei sono aggancio sito, quattro sono aggancio turni. Il gancio d'ingresso di
 ciascuno dice **cosa guardare prima di entrare**, non cosa dire: la frase esce
 da quello che vedi.
 
+Nella stessa uscita ci sono anche i **10 presìdi** di
+[[2026-08-28-presidi-volantini]]: sono 20 fermate, ma di natura diversa — dal
+blitz si esce con un appuntamento, dal presidio con 30 volantini appoggiati.
+
 ⚠️ Sui quattro DenkiShift la qualifica va fatta **sulla soglia**: sotto le 8
 persone non è un cliente, ed è scritto nel gancio.
 
