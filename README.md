@@ -418,6 +418,32 @@ Da qui discendono due cose pratiche:
 - **Se scrivi nel vault ma non fai push, l'altro non lo vede.** Il push è il
   momento in cui la cosa diventa memoria condivisa, non prima
 
+### Come si apre una sessione senza bruciare crediti
+
+**Il primo comando di ogni sessione è `/stato`.**
+
+```
+/stato
+```
+
+Fa il `git pull`, legge **una sola nota** — l'ultima di `06-Daily/` — e risponde
+in otto righe: dov'è la situazione, cosa è aperto, qual è il prossimo passo. Poi
+si ferma.
+
+Non serve raccontargli chi siete: il `CLAUDE.md` viene caricato da solo
+all'apertura della cartella, e contiene già l'azienda, le regole e l'indice dei
+progetti attivi.
+
+⚠️ **Quello da non scrivere mai**: *«leggi tutto il vault e dimmi come siamo
+messi»*. Sono più di cinquanta note, le legge davvero, e ha speso metà della
+conversazione prima di aver fatto qualcosa di utile. Se serve una nota
+specifica, si chiede quella: *«apri la scheda di Seba»*.
+
+Se preferisce scriverlo a mano invece di usare il comando, la versione breve è:
+
+> «Sono [nome]. Fai `git pull`, leggi solo l'ultima nota in `06-Daily/` e dimmi
+> in cinque righe cosa è aperto. Non leggere altro finché non te lo chiedo.»
+
 **Il modo giusto di chiedere**: dagli il contesto che ha in testa un umano.
 Non *"scrivi uno script"* ma *"scrivi lo script per un ferramenta di Seveso, che
 ha 4 dipendenti e non risponde mai al telefono la mattina"*. La differenza è

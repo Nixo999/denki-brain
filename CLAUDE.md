@@ -205,6 +205,7 @@ tecnico e il vault sul commerciale.
 
 | Comando | Cosa fa |
 |---|---|
+| `/stato` | **Da lanciare per primo a ogni sessione.** Pull, legge solo l'ultima nota di giornata, risponde in otto righe |
 | `/chiudi-sessione` | Handoff di fine giornata, aggiorna `updated`, commit + push |
 | `/aggiorna-progetti` | Scansiona i progetti, guarda i commit dei repo, segnala i fermi da 14+ giorni |
 | `/settimana` | Cosa è cambiato nel vault negli ultimi 7 giorni |
