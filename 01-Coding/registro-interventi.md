@@ -41,7 +41,7 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
 |---|---|---|---|---|---|---|
-| 01:1x | Nicola +claude | [[opero]] | `opero-sito` | ✅ **sviluppo: `20260829120000_opero_choice.sql` eseguita** (`db push`), e con lei `20260829100000_super_admin_torres_ritenta.sql` che era rimasta indietro. Edge function `send-push` ridistribuita | **OperO Choice**: il Super Admin sceglie una o piu` persone fra tutti gli account di tutte le aziende, scrive, e alla loro prossima apertura esce un messaggio a schermo pieno col pulsante bloccato 5 secondi. Funzione **nuova**, senza originale in OperO 1 → da quotare. ⛔ **Non aperta nel browser**: serviva un accesso | `01495b9` |
+| 01:1x | Nicola +claude | [[opero]] | `opero-sito` | ✅ **sviluppo: `20260829120000_opero_choice.sql` eseguita** (`db push`), e con lei `20260829100000_super_admin_torres_ritenta.sql` che era rimasta indietro. Edge function `send-push` ridistribuita | **OperO Choice**: il Super Admin sceglie una o piu` persone fra tutti gli account di tutte le aziende, scrive, e alla loro prossima apertura esce un messaggio a schermo pieno col pulsante bloccato 5 secondi. Funzione **nuova**, senza originale in OperO 1 → da quotare. ✅ **Verificato nel browser** con Nicola dentro: blocco di 5 s misurato, esce una volta sola, `seen_at` scritto, `send-push` risponde 200 al Super Admin. Resta scoperta la consegna su un telefono vero | `01495b9` `760dda3` |
 
 ## 2026-08-28
 
