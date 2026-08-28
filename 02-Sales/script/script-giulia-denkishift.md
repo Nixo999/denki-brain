@@ -225,6 +225,7 @@ Si torna qui e si scrive cosa è successo. Le tre domande:
 
 ## Collegamenti
 
-[[metodo-liste]] · [[generazione-lead]] · [[denkishift]] ·
+[[core-commerciale]] · [[metodo-liste]] · [[generazione-lead]] ·
+[[denkishift]] ·
 [[stile-comunicazione]] · [[vincoli-fiscali]] · [[flusso-vendita]] ·
 [[metriche]] · [[sito-denkicode]]

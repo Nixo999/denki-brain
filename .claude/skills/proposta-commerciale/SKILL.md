@@ -12,6 +12,9 @@ Leggi:
 1. `02-Sales/processo/prodotti-e-listino.md` — prezzi e cosa comprende ogni prodotto
 2. `03-Storage/azienda/vincoli-fiscali.md` — **il lessico è vincolante**
 3. `02-Sales/processo/stile-comunicazione.md` — la voce è quella di Patrick
+4. `02-Sales/processo/core-commerciale.md` — il prezzo non si giustifica mai: si
+   sposta il conto sul valore (Gitomer, Challenger). Se c'è un'obiezione da
+   anticipare, si isola come in Blount
 
 ## Due formati, non uno
 

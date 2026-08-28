@@ -5,13 +5,20 @@ description: Scrive script telefonici per Giulia e angoli d'attacco per i quattr
 
 # Script di vendita DenkiCode
 
-## Prima di scrivere: leggi questi tre file
+## Prima di scrivere: leggi questi quattro file
 
-1. `02-Sales/processo/flusso-vendita.md` — i quattro flussi e il metodo
-2. `02-Sales/processo/stile-comunicazione.md` — tono, "Lei"/"Tu", lessico obbligatorio
-3. `03-Storage/azienda/vincoli-fiscali.md` — le parole vietate
+1. `02-Sales/processo/core-commerciale.md` — **i framework, e quale si usa per
+   quale lavoro**. Nessuno script si scrive a sentimento
+2. `02-Sales/processo/flusso-vendita.md` — i quattro flussi e il metodo
+3. `02-Sales/processo/stile-comunicazione.md` — tono, "Lei"/"Tu", lessico obbligatorio
+4. `03-Storage/azienda/vincoli-fiscali.md` — le parole vietate
 
 Non scrivere niente prima di averli letti: le regole cambiano da flusso a flusso.
+
+**Ogni script consegnato dichiara il framework che ha usato** (Voss
+sull'apertura, Blount sui rifiuti istintivi, SPIN sull'indagine, Belfort sul
+looping). Un testo di cui non si sa la provenienza non si può correggere dopo
+le prime 40 chiamate.
 
 ## Le regole che non si violano mai
 

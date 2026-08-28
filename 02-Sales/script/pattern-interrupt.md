@@ -170,5 +170,6 @@ settimana si contano gli appuntamenti per sigla e si scrive qui sotto.
 
 ## Collegamenti
 
-[[script-giulia-denkishift]] · [[metodo-liste]] · [[2026-08-28-brianza-turni]] ·
+[[core-commerciale]] · [[script-giulia-denkishift]] · [[metodo-liste]] ·
+[[2026-08-28-brianza-turni]] ·
 [[generazione-lead]] · [[metriche]] · [[flusso-vendita]] · [[materiale-offline]]

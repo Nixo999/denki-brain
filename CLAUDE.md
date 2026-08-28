@@ -86,6 +86,11 @@ in che ordine si guardano.
    in inglese. DenkiShift è Next 16 + Tailwind 4, commenti in italiano. Non
    confonderli e non "uniformare" niente di tua iniziativa: è una
    [[2026-08-28-stack-non-uniforme|decisione aperta]].
+12. **Gli script non si improvvisano.** Ogni testo commerciale — script di
+   Giulia, obiezioni, aperture di blitz, chiusure, analisi dei report — si
+   costruisce su uno dei framework di [[core-commerciale]], e si dichiara
+   quale. Il consiglio di vendita generico è vietato dal 28 agosto 2026, vedi
+   [[2026-08-28-core-commerciale]].
 
 ## Mappa delle cartelle
 

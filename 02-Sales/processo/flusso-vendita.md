@@ -11,7 +11,9 @@ Come si vende in DenkiCode. Quattro flussi, un metodo.
 ## Il metodo — Straight Line System
 
 Ispirato a Straight Line (Belfort), SPIN Selling e ai formati ad alta
-conversione.
+conversione. **I framework per esteso stanno in [[core-commerciale]]**: qui c'è
+il *cosa* si vende e in che ordine, là c'è il *come si scrive* quello che si
+dice.
 
 1. **L'esca: valore anticipato.** Si propone sempre qualcosa di concreto
    *prima* di chiedere — una bozza grafica gratuita o un'indagine strutturata.
@@ -111,6 +113,7 @@ indicativo.
 
 ## Collegamenti
 
-[[generazione-lead]] · [[prodotti-e-listino]] · [[stile-comunicazione]] ·
+[[core-commerciale]] · [[generazione-lead]] · [[prodotti-e-listino]] ·
+[[stile-comunicazione]] ·
 [[ruoli-e-responsabilita]] · [[materiale-offline]] · [[vincoli-fiscali]] ·
 [[metriche]]
