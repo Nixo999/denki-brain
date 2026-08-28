@@ -146,8 +146,26 @@ chiudersi. E **l'Osmo Action di Patrick è l'unico strumento in casa
 completamente inutilizzato**: una demo filmata di DenkiShift si manda su
 WhatsApp prima della chiamata e scalda il lead senza consumare ore.
 
+## Ottavo giro — il Mac di Patrick
+
+Scritta [[setup-macchina-nuova]]: procedura completa per rendere il MacBook di
+Patrick una macchina di lavoro a tutti gli effetti — brain, repo, push su
+GitHub e migrazioni.
+
+Due cose emerse preparandola:
+
+- ⚠️ **«Push su Supabase» esiste solo su [[opero]].** Su [[denkishift]] le
+  migrazioni si incollano a mano nel SQL Editor: cercare un comando che non
+  c'è è mezz'ora persa
+- ✅ Controllato `.env.production` di OperO, che è **tracciato da git**: contiene
+  solo URL e chiave *anon*, committati apposta perché Netlify compila dal
+  repository e quei valori finiscono comunque nel bundle. La `service_role` non
+  è lì dentro. Entrambi i `.gitignore` coprono correttamente i file veri
+
 ## Aperto adesso
 
+- ⬜ **Decidere chi si autentica sul Mac** — Nicola o Patrick →
+  [[setup-macchina-nuova]]
 - ⬜ **Chiamare la lista**, cominciando dalle RSA
 - ⬜ **Estendere la lista a 130-150 contatti** — le 51 attuali bastano 2 giorni
 - ⬜ `TODO` — Nicola lavora dal MacBook di Patrick? → [[team-e-vincoli]]

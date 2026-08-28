@@ -109,6 +109,15 @@ Presenti in tutti e due i repo, quindi valgono per DenkiCode:
 - Una chiave di servizio **non deve mai avere il prefisso `NEXT_PUBLIC_`**:
   quel prefisso la manda nel browser, e quella chiave scavalca ogni regola
 
+## Mettere in piedi una macchina nuova
+
+Procedura completa — strumenti, GitHub, `.env`, Supabase, JDK, Obsidian — in
+[[setup-macchina-nuova]].
+
+⚠️ **«Push su Supabase» esiste solo su [[opero]]** (`npx supabase db push`). Su
+[[denkishift]] le migrazioni si incollano a mano nel SQL Editor, in ordine
+numerico, e l'allineamento si controlla con `verifica-schema.mjs`.
+
 ## Convenzioni del vault
 
 - File in `kebab-case`. Note datate `YYYY-MM-DD-titolo.md`

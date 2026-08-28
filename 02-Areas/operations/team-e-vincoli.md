@@ -96,6 +96,9 @@ sul Mac". Ma l'unico Mac dichiarato qui è il MacBook Air di Patrick.
 Non è una curiosità: se il Mac è di Patrick, quelle otto schermate si possono
 provare solo quando lui è presente, e va tenuto in conto.
 
+Al 28 agosto 2026 è in corso la messa in opera di quel Mac come macchina di
+lavoro completa → [[setup-macchina-nuova]].
+
 ## Collegamenti
 
 [[ruoli-e-responsabilita]] · [[metriche]] · [[generazione-lead]] ·
