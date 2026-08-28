@@ -35,8 +35,8 @@ proprio nome, e nella storia di git si vede chi ha fatto cosa.
 | Il **second brain** | ✅ Sì | È la sua metà del vault: clienti, soldi, strategia |
 | **Claude Code** | ✅ Sì | Per interrogare il brain e farsi scrivere script e liste |
 | **Obsidian** | ✅ Sì | Per leggere il vault senza il terminale |
-| I repo **`smooth-duty`** e **`opero-sito`** | ⚪ Solo se serve | Patrick non scrive codice. Si clonano il giorno in cui gli servono davvero |
-| Le chiavi **Supabase** e i file `.env` | ❌ No | Non gli servono, e ogni copia in più di una chiave è un rischio in più |
+| I repo **`smooth-duty`** e **`opero-sito`** | ⚪ Solo se serve | Patrick non scrive codice. Si clonano il giorno in cui gli servono davvero — **e quel giorno è arrivato**, vedi 7-ter |
+| Le chiavi **Supabase** e i file `.env` | ⚠️ Una alla volta | Ognuna si aggiunge quando serve, per un progetto alla volta, mai in blocco. Vedi [[2026-08-28-supabase-denkishift-sul-mac]] |
 
 > [!note] Analisi di Claude — 2026-08-28
 > **Non installare a Patrick quello che non gli serve** non è pigrizia: la
@@ -189,20 +189,26 @@ PC di Nicola.
 
 ---
 
-## 5. Supabase — attenzione, «push» esiste solo su OperO
+## 5. Supabase — «pushare» vuol dire due cose diverse
 
-> [!warning] I due progetti si comportano in modo diverso
-> **OperO** usa la CLI: `npx supabase db push` applica le migrazioni.
+> [!warning] I due progetti non si aggiornano allo stesso modo
+> **OperO** usa la CLI di Supabase: `npx supabase db push`.
 >
-> **DenkiShift no.** Le sue migrazioni **si incollano a mano nel SQL Editor**,
-> in ordine numerico, e non esiste una tabella che registri cosa è già stato
-> eseguito (`docs/08-aperto.md`). Cercare un comando che non c'è è il modo più
-> rapido di perdere mezz'ora.
+> **DenkiShift non ha `db push`** — le sue migrazioni non stanno in
+> `supabase/migrations/` e non c'è un `config.toml`, quindi la CLI non le vede.
+> Ha **un comando suo**, `esegui-sql.mjs`, ed è quello l'equivalente del push.
+> Cercare `db push` su DenkiShift è il modo più rapido di perdere mezz'ora.
+
+> [!note] Correzione del 28 agosto 2026
+> Fino a oggi qui c'era scritto che le migrazioni di DenkiShift **si incollano a
+> mano nel SQL Editor**. È superato: `docs/06-ambiente.md` del repo dice
+> testualmente che «si possono eseguire da qui, senza passare dal SQL Editor».
+> Sul tecnico ha ragione il repo, e questa nota è stata riallineata.
 
 **Per OperO:**
 ```bash
 supabase login
-cd ~/denkicode/opero-sito
+cd ~/Desktop/opero-sito          # su altre macchine: ~/denkicode/opero-sito
 supabase link --project-ref oyoltwisdwujitsryzax
 ```
 `link` chiede la password del database e ricrea `supabase/.temp/`, che non sta
@@ -212,14 +218,40 @@ npx supabase db push                                                  # migrazio
 npx supabase gen types typescript --linked > src/lib/database.types.ts  # tipi
 ```
 
-**Per DenkiShift**, il comando da lanciare dopo ogni `git pull` è un altro — e
-va lanciato sempre:
+### Per DenkiShift — il push si chiama `esegui-sql.mjs`
+
+Due comandi, sempre in quest'ordine. Il primo **dice cosa manca**, il secondo
+**lo applica**:
+
 ```bash
-cd ~/denkicode/smooth-duty
+cd ~/Desktop/smoothduty          # su Windows: C:\Users\User\Desktop\turni
+
+# 1. cosa manca al database rispetto al codice — dopo OGNI git pull
 node --env-file=.env.local --env-file=.env.db scripts/verifica-schema.mjs
+
+# 2. applica la migrazione che il comando sopra ha nominato
+node --env-file=.env.local --env-file=.env.db scripts/esegui-sql.mjs supabase/17-turno-spostato.sql
 ```
-Dice se il database è allineato al codice. Senza, un tabellone vuoto sembra un
-tabellone cancellato.
+
+Le migrazioni stanno in `supabase/`, numerate da `01-` in su, e si eseguono
+**in ordine**. Sono ri-eseguibili (`if not exists`, `drop ... if exists`) e
+nessuna cancella turni: nel dubbio si rilanciano. Senza il passo 1, un
+tabellone vuoto sembra un tabellone cancellato — è già successo il 25 agosto,
+con 429 turni spariti alla vista che invece c'erano tutti.
+
+⚠️ **`pg` non è dichiarato nel `package.json` del repo**, ma `scripts/lib-db.mjs`
+lo importa: su una macchina appena installata i due comandi qui sopra si
+fermano con `Cannot find package 'pg'`. Si rimedia senza sporcare il repo:
+```bash
+npm install pg --no-save --no-package-lock
+```
+È una cosa da segnalare a Nicola, non da sistemare per conto proprio: la
+correzione vera è una riga nel `package.json`, e sta nel suo repo.
+
+⚠️ **Il database di produzione è un altro progetto.** `denkishift.it` gira su
+un progetto Supabase separato da quello di sviluppo, e lì le migrazioni **non
+partono col deploy**: prima la migrazione sul database, poi il deploy. Toccare
+la produzione è una cosa che si decide, non che si fa di passaggio.
 
 ---
 
@@ -335,7 +367,10 @@ serve a sapere cosa manca ancora senza rifare il giro dei comandi.
 | `gh auth` | ⚠️ Autenticato come **`Nixo999`**: il push parte ancora a nome di Nicola |
 | Obsidian | ❌ Non installato — il vault si legge solo dal terminale |
 | Claude Code desktop | ⚪ Non installato: c'è la versione da terminale, che basta |
-| Repo di codice, chiavi Supabase | ⚪ Assenti **per scelta**, vedi il punto 0 |
+| Repo di codice | ✅ **Presenti**, sul Desktop e non in `~/denkicode/`: `smoothduty`, `opero-sito`, `opero-core`, `capacitor` |
+| Chiavi di **OperO** | ⚠️ `opero-sito/.env.local` è già su questa macchina |
+| Chiavi di **DenkiShift** | 🟡 File `.env.local` e `.env.db` predisposti il 28/08, **da riempire**: mancano anon key, service_role e password del database |
+| Migrazioni DenkiShift da qui | 🟡 Catena provata fino al database — l'host `aws-1-eu-west-1.pooler.supabase.com` risponde, si ferma solo sulla password |
 
 > [!note] Analisi di Claude — 2026-08-28
 > Le righe non verdi non bloccano il lavoro: da qui si scrive nel vault, si

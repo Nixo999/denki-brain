@@ -50,6 +50,11 @@ Excel/CSV, trascinamento, generazione, pubblicazione.
 `.env.local` su quella macchina). Passano build, lint e i 132 controlli — che
 non è la stessa cosa. L'elenco ordinato sta in `docs/08-aperto.md`.
 
+Il motivo si sta togliendo: il 28 agosto 2026 il Mac è stato predisposto per
+parlare col database di sviluppo — mancano solo tre valori da incollare, vedi
+[[2026-08-28-supabase-denkishift-sul-mac]]. Da quel momento quelle otto
+schermate si possono finalmente **guardare**, che è l'unica verifica che conta.
+
 ## Come si vende, oggi
 
 Prodotto **C** del listino ([[prodotti-e-listino]]). Giulia fa leva
