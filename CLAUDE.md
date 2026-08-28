@@ -211,3 +211,12 @@ tecnico e il vault sul commerciale.
 | `/settimana` | Cosa è cambiato nel vault negli ultimi 7 giorni |
 | `/nuovo-progetto` | Intervista guidata → nota progetto con frontmatter giusto |
 | `/nuovo-cliente` | Intervista guidata → nota cliente |
+| `/nicola` | **Modalità sviluppo**: aggancia il brain e prepara il lavoro sui progetti software |
+| `/patrick` | **Modalità commerciale**: lead, trattative, preventivi, testi che escono verso il cliente |
+| `/giulia` | **Modalità telefonate**: liste, script, aperture, obiezioni. Materiale *per* Giulia, che il vault non ce l'ha |
+
+Gli ultimi tre sono **modalità di lavoro**, non procedure: trovano il vault da
+soli, leggono solo `CLAUDE.md` e l'ultima nota di giornata, e allargano la
+lettura a domanda. Girano da qualunque cartella se copiati anche in
+`~/.claude/commands/` — qui dentro sono versionati, così valgono su ogni
+macchina.
