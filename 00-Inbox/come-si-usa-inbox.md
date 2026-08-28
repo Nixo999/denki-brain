@@ -22,10 +22,10 @@ nota va a casa sua:
 
 | Se la nota parla di... | Va in... |
 |---|---|
-| un progetto | `01-Projects/` — dentro la nota del progetto |
-| un cliente | `02-Areas/clienti/` |
+| un progetto | `01-Coding/progetti/` — dentro la nota del progetto |
+| un cliente | `02-Sales/clienti/` |
 | una scelta fatta | `05-Decisioni/`, con la data |
-| come si fa una cosa | `02-Areas/operations/` o `03-Resources/` |
+| come si fa una cosa | `02-Sales/processo/` o `01-Coding/stack/` |
 | niente di utile | cestino, senza sensi di colpa |
 
 Puoi anche chiedere a Claude: **"svuota l'inbox"**, e lo fa lui proponendoti

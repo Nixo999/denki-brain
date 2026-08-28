@@ -115,7 +115,7 @@ Questa è la parte che rende il vault diverso da una cartella di documenti.
 Scrivendo `[[opero]]` dentro una nota, crei un **collegamento cliccabile** alla
 nota `opero.md`, ovunque essa sia nel vault.
 
-Esempio vero, preso da `02-Areas/clienti/sebastian-torres.md`:
+Esempio vero, preso da `02-Sales/clienti/sebastian-torres.md`:
 
 ```markdown
 Ci ha commissionato la ricostruzione: [[opero]].
@@ -123,7 +123,7 @@ Ci ha commissionato la ricostruzione: [[opero]].
 
 Clicchi su `opero` e sei nella scheda del progetto.
 
-**La cosa utile viene dopo.** Apri `01-Projects/opero.md` e guarda in fondo:
+**La cosa utile viene dopo.** Apri `01-Coding/progetti/opero.md` e guarda in fondo:
 c'è un pannello **"Backlinks"** (se non lo vedi: menu in alto a destra della
 nota → *Backlinks*). Ti mostra **tutte le note che parlano di OperO**, senza che
 tu le abbia mai elencate. Al momento sono la scheda cliente, due decisioni, la
@@ -137,7 +137,7 @@ la crea.
 
 ### Il frontmatter — il blocco in cima con i trattini
 
-Apri `01-Projects/opero.md`. Le prime righe sono queste:
+Apri `01-Coding/progetti/opero.md`. Le prime righe sono queste:
 
 ```yaml
 ---
@@ -212,7 +212,7 @@ TABLE WITHOUT ID
   client AS "Cliente",
   status AS "Stato",
   updated AS "Aggiornato"
-FROM "01-Projects"
+FROM "01-Coding/progetti"
 WHERE type = "progetto" AND status != "completato"
 SORT updated ASC
 ```
@@ -498,7 +498,7 @@ quando torni al PC dopo qualche giorno, forzalo a mano dal comando
 2. **Tu e Patrick scrivete in note diverse.** Git risolve da solo le modifiche
    a file diversi. Se invece scrivete tutti e due in `stato-azienda.md` nello
    stesso pomeriggio, il conflitto arriva. Regola pratica: **Patrick tocca
-   `02-Areas/clienti/` e `business/`, tu il resto** — e se dovete lavorare
+   `02-Sales/` e `03-Storage/azienda/`, tu il resto** — e se dovete lavorare
    insieme sullo stesso file, sentitevi prima
 
 ### Se il conflitto succede lo stesso

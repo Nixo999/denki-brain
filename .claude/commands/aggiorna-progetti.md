@@ -7,7 +7,7 @@ Fai il giro di controllo dei progetti DenkiCode.
 
 ## 1. Leggere lo stato dichiarato
 
-Leggi ogni file in `01-Projects/` e raccogli dal frontmatter: `status`,
+Leggi ogni file in `01-Coding/progetti/` e raccogli dal frontmatter: `status`,
 `updated`, `deadline`, `client`, `valore`, `incassato`.
 
 ## 2. Confrontarlo con la realtà dei repo
@@ -50,7 +50,7 @@ Se risponde "in pausa", metti `status: in-pausa`. Se "finito", spostalo in
 - Progetti con `valore` > `incassato` → mostra il credito aperto e da quanto
   tempo è fermo
 - Somma i crediti aperti e confrontala col tetto in
-  `02-Areas/business/vincoli-fiscali.md`
+  `03-Storage/azienda/vincoli-fiscali.md`
 
 ## 5. Aggiornare
 

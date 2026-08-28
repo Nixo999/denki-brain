@@ -30,9 +30,9 @@ Se il vault non si trova, **chiedi il percorso**. Non cercarlo a tappeto.
    (sessione partita dentro il vault).
 2. L'ultima nota di `06-Daily/`. Oltre le 200 righe, le ultime 120: il nuovo
    sta in fondo.
-3. **Solo se** `$ARGUMENTS` nomina un progetto: `01-Projects/<slug>.md`.
+3. **Solo se** `$ARGUMENTS` nomina un progetto: `01-Coding/progetti/<slug>.md`.
 
-Nient'altro. Niente `02-Areas/`, niente dashboard, niente scansioni di
+Nient'altro. Niente `02-Sales/`, niente `03-Storage/`, niente dashboard, niente scansioni di
 cartelle. Se dopo questo manca un dato, **chiedilo**: una domanda costa meno
 di cinque file letti.
 
@@ -50,7 +50,7 @@ di cinque file letti.
   pusha dopo ogni pezzo finito. Il **vault** invece si pusha sempre e subito,
   anche per una riga.
 - **Credenziali mai nel vault.** È su GitHub: una chiave scritta in una nota è
-  scritta per sempre. Vedi `02-Areas/operations/credenziali.md`.
+  scritta per sempre. Vedi `03-Storage/sistemi/credenziali.md`.
 - **Se emerge una scelta, va nel brain**: nota nuova in `05-Decisioni/` (le
   vecchie non si riscrivono) o `updated` nel progetto, poi commit e push.
   Marca come tuo quello che generi: `source: claude`.

@@ -26,7 +26,7 @@ for p in "$V" "$HOME/Desktop/denkicode volt" "/c/Users/User/Desktop/denkicode vo
 done
 cd "$V" && git pull --rebase -q 2>&1 | tail -2
 ls -1 "$V/06-Daily" | sort | tail -1
-ls -1 "$V/02-Areas/operations/liste/" | sort | tail -1
+ls -1 "$V/02-Sales/liste/" | sort | tail -1
 ```
 
 Vault non trovato → **chiedi il percorso**, non cercarlo a tappeto.
@@ -40,10 +40,10 @@ Poi **solo il file che serve al compito**:
 
 | Se il compito è | Leggi |
 |---|---|
-| una battuta, un'obiezione, il flusso della chiamata | `02-Areas/operations/script-giulia-denkishift.md` |
-| l'apertura, il primo colpo | `02-Areas/operations/pattern-interrupt.md` |
-| costruire o allargare una lista | `02-Areas/operations/metodo-liste.md` + l'ultima lista in `operations/liste/` |
-| quante chiamate, quanto rende | `02-Areas/business/metriche.md` |
+| una battuta, un'obiezione, il flusso della chiamata | `02-Sales/script/script-giulia-denkishift.md` |
+| l'apertura, il primo colpo | `02-Sales/script/pattern-interrupt.md` |
+| costruire o allargare una lista | `02-Sales/liste/metodo-liste.md` + l'ultima lista in `operations/liste/` |
+| quante chiamate, quanto rende | `02-Sales/report/metriche.md` |
 
 ## 3. Quello che va tenuto a mente ogni volta
 

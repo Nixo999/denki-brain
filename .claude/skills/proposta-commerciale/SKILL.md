@@ -9,9 +9,9 @@ description: Genera preventivi e proposte commerciali DenkiCode - messaggio What
 
 Leggi:
 
-1. `03-Resources/prodotti-e-listino.md` — prezzi e cosa comprende ogni prodotto
-2. `02-Areas/business/vincoli-fiscali.md` — **il lessico è vincolante**
-3. `03-Resources/stile-comunicazione.md` — la voce è quella di Patrick
+1. `02-Sales/processo/prodotti-e-listino.md` — prezzi e cosa comprende ogni prodotto
+2. `03-Storage/azienda/vincoli-fiscali.md` — **il lessico è vincolante**
+3. `02-Sales/processo/stile-comunicazione.md` — la voce è quella di Patrick
 
 ## Due formati, non uno
 

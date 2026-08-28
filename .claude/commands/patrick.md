@@ -37,11 +37,11 @@ Poi **solo il file che serve al compito**, mai la lista intera:
 
 | Se il compito è | Leggi |
 |---|---|
-| un preventivo o un prezzo | `03-Resources/prodotti-e-listino.md` + la scheda del cliente in `02-Areas/clienti/` |
-| un testo che va a un cliente | `03-Resources/stile-comunicazione.md` |
-| soldi, incassi, tetti | `02-Areas/business/metriche.md` + `vincoli-fiscali.md` |
-| una lista o un nuovo canale | `02-Areas/operations/metodo-liste.md` + `generazione-lead.md` |
-| dove è fermo un lead | `02-Areas/operations/flusso-vendita.md` |
+| un preventivo o un prezzo | `02-Sales/processo/prodotti-e-listino.md` + la scheda del cliente in `02-Sales/clienti/` |
+| un testo che va a un cliente | `02-Sales/processo/stile-comunicazione.md` |
+| soldi, incassi, tetti | `02-Sales/report/metriche.md` + `vincoli-fiscali.md` |
+| una lista o un nuovo canale | `02-Sales/liste/metodo-liste.md` + `generazione-lead.md` |
+| dove è fermo un lead | `02-Sales/processo/flusso-vendita.md` |
 
 Manca un dato dopo questo? **Chiedilo.** Una domanda costa meno di cinque file.
 
@@ -53,7 +53,7 @@ Manca un dato dopo questo? **Chiedilo.** Una domanda costa meno di cinque file.
   finché Nicola non dà il via libera.
 - **DenkiShift non è pronto.** Il materiale di vendita dice il contrario: è
   ottimismo. È dimostrabile, non installabile in produzione. **Nessuna data
-  promessa** senza aver letto `01-Projects/denkishift.md`.
+  promessa** senza aver letto `01-Coding/progetti/denkishift.md`.
 - **I prezzi a listino sono agganci, non tariffe.** Il prezzo vero si adatta
   alla richiesta.
 - **"Lei" e "Tu" sono posizione, non gusto.** Giulia sempre "Lei"; Patrick apre
@@ -61,7 +61,7 @@ Manca un dato dopo questo? **Chiedilo.** Una domanda costa meno di cinque file.
 - **Il collo di bottiglia è la generazione lead**, non il closing. Prima di
   proporre qualcosa, chiediti se aiuta lì: se non aiuta, dillo.
 - **Le ore sono poche.** Tutti e tre studiano e lavorano ~25h altrove: prima di
-  proporre qualcosa che costa tempo, leggi `02-Areas/operations/team-e-vincoli.md`.
+  proporre qualcosa che costa tempo, leggi `03-Storage/team/team-e-vincoli.md`.
 - **Prima di improvvisare, usa le skill del vault**: `proposta-commerciale` per
   preventivi e PDF, `script-vendita` per script e angoli d'attacco.
 - **Quello che generi è materiale derivato**: `source: claude`, da verificare

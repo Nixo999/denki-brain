@@ -71,19 +71,37 @@ prodotto di punta), gestionali custom. Dettaglio in [[prodotti-e-listino]].
 
 ## Mappa delle cartelle
 
+Tre cartelle per il **lavoro**, divise per lato: tecnico, commerciale, il resto.
+Le altre non sono argomenti, sono strati di tempo e di stato — una nota ci passa,
+non ci abita.
+
 ```
 00-Inbox/        catture al volo, non ancora sistemate. Si svuota, non si accumula
-01-Projects/     un file per progetto ATTIVO. Chiuso → si sposta in 04-Archive/
-02-Areas/
+01-Coding/       il lato tecnico
+  progetti/      un file per progetto ATTIVO. Chiuso → si sposta in 04-Archive/
+  stack/         tecnologie e convenzioni di codice
+  strumenti/     gli attrezzi e come sono configurati
+  skills/        quale skill si usa per quale lavoro
+02-Sales/        il lato commerciale
   clienti/       un file per cliente o per lead qualificato
-  business/      stato azienda, metriche, obiettivi, vincoli fiscali
-  operations/    processi ricorrenti: vendita, lead, ruoli, materiale offline
-03-Resources/    stack, convenzioni, stile di comunicazione, listino
+  script/        cosa si dice: aperture, script, obiezioni
+  liste/         chi si chiama: il metodo e le liste vere
+  contratti/     accordi e ricevute
+  report/        i numeri del funnel
+  processo/      come si vende: flusso, lead, listino, stile, materiale offline
+03-Storage/      il resto del materiale di lavoro
+  azienda/       stato, obiettivi, vincoli fiscali
+  team/          chi fa cosa, orari, macchine
+  sistemi/       dove stanno le credenziali — mai quali sono
 04-Archive/      progetti chiusi e lead persi. Non si cancella niente: si archivia
 05-Decisioni/    una decisione per file, datata. Non si riscrive: se ne aggiunge una nuova
 06-Daily/        note di giornata e handoff di fine sessione
 99-Templates/    template da copiare quando si crea una nota nuova
 ```
+
+**Un progetto sta in `01-Coding/progetti/`, il cliente che lo paga in
+`02-Sales/clienti/`.** Sono due note diverse che si linkano: la prima dice com'è
+fatto, la seconda quanto vale e a che punto è la trattativa.
 
 ## Naming
 
@@ -101,7 +119,7 @@ campo scritto male non dà errore, fa **sparire la nota** dalla tabella.
 # Progetto
 type: progetto
 status: attivo | in-pausa | completato
-client: nome-cliente        # slug del file in 02-Areas/clienti/
+client: nome-cliente        # slug del file in 02-Sales/clienti/
 stack: [next, supabase]
 started: YYYY-MM-DD
 deadline: YYYY-MM-DD        # o TODO

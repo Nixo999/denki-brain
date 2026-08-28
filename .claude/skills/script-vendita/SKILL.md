@@ -7,9 +7,9 @@ description: Scrive script telefonici per Giulia e angoli d'attacco per i quattr
 
 ## Prima di scrivere: leggi questi tre file
 
-1. `02-Areas/operations/flusso-vendita.md` — i quattro flussi e il metodo
-2. `03-Resources/stile-comunicazione.md` — tono, "Lei"/"Tu", lessico obbligatorio
-3. `02-Areas/business/vincoli-fiscali.md` — le parole vietate
+1. `02-Sales/processo/flusso-vendita.md` — i quattro flussi e il metodo
+2. `02-Sales/processo/stile-comunicazione.md` — tono, "Lei"/"Tu", lessico obbligatorio
+3. `03-Storage/azienda/vincoli-fiscali.md` — le parole vietate
 
 Non scrivere niente prima di averli letti: le regole cambiano da flusso a flusso.
 
@@ -74,4 +74,4 @@ Il problema dichiarato è che *"le attività non ci ascoltano"*. Uno script che
 suona come tutti gli altri script non risolve niente. Se quello che hai scritto
 potrebbe essere di qualunque agenzia, riscrivilo.
 
-Contesto completo: `02-Areas/operations/generazione-lead.md`.
+Contesto completo: `02-Sales/processo/generazione-lead.md`.

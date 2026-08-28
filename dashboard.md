@@ -22,7 +22,7 @@ TABLE WITHOUT ID
   status AS "Stato",
   deadline AS "Scadenza",
   updated AS "Aggiornato"
-FROM "01-Projects"
+FROM "01-Coding/progetti"
 WHERE type = "progetto" AND status != "completato"
 SORT updated ASC
 ```
@@ -36,7 +36,7 @@ TABLE WITHOUT ID
   file.link AS "Progetto",
   updated AS "Ultimo aggiornamento",
   (date(today) - date(updated)).days AS "Giorni fermo"
-FROM "01-Projects"
+FROM "01-Coding/progetti"
 WHERE type = "progetto" AND status = "attivo"
   AND date(updated) < date(today) - dur(14 days)
 SORT updated ASC
@@ -50,7 +50,7 @@ TABLE WITHOUT ID
   valore AS "Pattuito",
   incassato AS "Incassato",
   (valore - incassato) AS "Da incassare"
-FROM "01-Projects"
+FROM "01-Coding/progetti"
 WHERE valore
 SORT (valore - incassato) DESC
 ```
@@ -64,7 +64,7 @@ TABLE WITHOUT ID
   settore AS "Settore",
   progetti AS "Progetti",
   updated AS "Aggiornato"
-FROM "02-Areas/clienti"
+FROM "02-Sales/clienti"
 WHERE type = "cliente"
 SORT status ASC, updated DESC
 ```
@@ -99,7 +99,7 @@ Raccoglie ogni casella `- [ ]` non spuntata, ovunque sia scritta.
 
 ```dataview
 TASK
-FROM "01-Projects" OR "02-Areas" OR "03-Resources"
+FROM "01-Coding" OR "02-Sales" OR "03-Storage"
 WHERE !completed
 GROUP BY file.link
 ```

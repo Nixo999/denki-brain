@@ -39,7 +39,7 @@ Questa è la parte utile. Elenca:
 
 ## 4. I numeri
 
-Leggi `02-Areas/business/metriche.md`. Se lo storico settimanale non è stato
+Leggi `02-Sales/report/metriche.md`. Se lo storico settimanale non è stato
 compilato, **chiedi i due numeri**: chiamate fatte da Giulia e appuntamenti
 fissati. Poi scrivili nella tabella dello storico.
 

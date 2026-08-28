@@ -10,7 +10,7 @@ Allinea la sessione allo stato attuale di DenkiCode. **Deve costare poco.**
 1. **`CLAUDE.md` è già nel tuo contesto**: non rileggerlo, non riassumerlo e non
    ripetere all'utente cose che ci sono già scritte.
 2. **Leggi un solo file**: la nota più recente in `06-Daily/`. Nient'altro.
-3. **Non aprire** `01-Projects/`, `02-Areas/`, `03-Resources/`, né la dashboard.
+3. **Non aprire** `01-Coding/`, `02-Sales/`, `03-Storage/`, né la dashboard.
    L'indice dei progetti attivi ce l'hai già in `CLAUDE.md`.
 4. Se dopo questo manca qualcosa, **chiedi invece di cercare**. Una domanda
    costa meno di cinque file letti.
