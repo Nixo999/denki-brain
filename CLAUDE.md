@@ -204,10 +204,18 @@ una certezza inventata — è la stessa regola che vale nei repo di codice.
    eccezione è che l'utente dica esplicitamente di non pushare.** Se il push non
    passa, non si forza: `git pull --rebase` e si riprova. Decisione del
    28 agosto 2026, vedi [[2026-08-28-push-automatico]].
-7. **Fine sessione: `/chiudi-sessione`.** Scrive l'handoff, aggiorna `updated`,
+7. **Ogni modifica a un progetto va in due posti.** Nel repository del
+   progetto (commit col perché, e voce nel diario del repo se ce l'ha) **e**
+   in [[registro-interventi]], una riga: chi, quando, che progetto, che
+   repository, **che database**. Quest'ultima colonna è il motivo per cui il
+   registro esiste: il push porta il codice e non lo schema, e una migrazione
+   non eseguita resta invisibile finché non apre un tabellone vuoto. La riga si
+   scrive a lavoro finito, prima di chiudere la sessione. Decisione del
+   28 agosto 2026, vedi [[2026-08-28-registro-interventi]].
+8. **Fine sessione: `/chiudi-sessione`.** Scrive l'handoff, aggiorna `updated`,
    committa e pusha. Non sostituisce il punto 6: è il riepilogo della giornata,
    non il primo momento in cui il lavoro esce dal portatile.
-8. **`git pull` prima di cominciare.** Nicola lavora da più macchine e Patrick
+9. **`git pull` prima di cominciare.** Nicola lavora da più macchine e Patrick
    scrive da sé: partire da un albero vecchio significa scrivere contro
    un'azienda che non esiste più.
 

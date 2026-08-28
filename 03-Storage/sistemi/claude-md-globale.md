@@ -55,6 +55,15 @@ va verificato; un buco dichiarato vale più di una certezza inventata.
 | serve il registro completo, o si sta per rispondere male | `03-Storage/azienda/registro-jarvis.md` |
 | si entra in un repository di codice | il suo `CLAUDE.md` e i suoi `docs/` |
 
+## Ogni modifica a un progetto si scrive in due posti
+
+Nel **repository del progetto** (commit col perché, più la voce nel diario se il
+repo ce l'ha) **e** nel brain, in `01-Coding/registro-interventi.md`: una riga
+con chi, quando, che progetto, che repository e **che database**. La colonna del
+database è il motivo per cui il registro esiste — il push porta il codice e non
+lo schema, e una migrazione non eseguita resta invisibile finché non apre un
+tabellone vuoto. Si scrive a lavoro finito, prima di chiudere.
+
 **Sul tecnico ha ragione il repo, non il vault.** Il vault dice quanto vale un
 progetto e chi lo paga; il `CLAUDE.md` del repository dice com'è fatto e come ci
 si lavora — e le sue regole vincono su qualunque riassunto.

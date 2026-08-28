@@ -1,0 +1,72 @@
+---
+type: risorsa
+updated: 2026-08-28
+source: denkicode
+tags: [registro, interventi, repo, database]
+---
+
+# Registro degli interventi — chi ha toccato cosa, quando, e dove
+
+Una riga per **intervento**, non per commit. Il più recente in cima.
+
+Serve a rispondere in dieci secondi a tre domande che altrimenti costano
+mezz'ora di `git log` su due macchine: *chi ha cambiato questa cosa*, *quando*,
+e soprattutto **se il database è andato dietro al codice** — perché il push
+porta il codice e non lo schema, ed è il modo in cui questo progetto si è già
+rotto due volte.
+
+## La regola
+
+**Ogni modifica a un progetto va in due posti**, sempre, dal 28 agosto 2026:
+
+1. **Nel repository del progetto** — commit con il *perché*, e voce nel diario
+   del repo se ce l'ha (`docs/07-diario.md` su [[denkishift]],
+   `docs/handoff.md` su [[opero]]).
+2. **Qui**, una riga. Si scrive **quando il lavoro è finito**, non quando si
+   comincia, e prima di chiudere la sessione.
+
+Le regole di push restano quelle di ciascun repo — su [[denkishift]] si pusha
+dopo ogni pezzo, su [[opero]] si chiede prima — e il vault si pusha sempre.
+
+⚠️ **La colonna che conta è `Database`.** Se un intervento cambia lo schema e la
+migrazione non è stata eseguita, la riga si scrive lo stesso, con ⬜ e il nome
+del file: è l'unico posto in cui quel debito resta visibile. Un codice
+pubblicato senza la sua migrazione apre un tabellone vuoto.
+
+Colonne: **Quando** (data e ora) · **Chi** (persona, e `+claude` se il lavoro è
+stato fatto in sessione) · **Progetto** · **Repository** · **Database**
+(`—` se non toccato, `sviluppo`/`produzione` + stato) · **Cosa** · **Commit**.
+
+## 2026-08-28
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| 14:5x | Nicola +claude | tutti | `denki-brain` + `smooth-duty` + `opero-sito` | — | **Regola nuova**: ogni modifica va nel repo *e* qui. Registro creato e agganciato ai tre `CLAUDE.md` | `1763144` + questo |
+| 14:26 | Nicola +claude | — | `denki-brain` | — | Controllo incrociato dei due repo, guida e nota database allineate alla decisione «non più in locale» | `665e9f0` |
+| 14:16 | Nicola +claude | [[denkishift]] | `smooth-duty` | — | **Decisione**: non si avvia più niente in locale, si guarda su `denkishift.it`; migrazione in produzione *prima* del push | `ee6ae92` |
+| 14:10 | Nicola +claude | [[denkishift]] | `smooth-duty` | — | `pg` dichiarato in `devDependencies`: su macchina nuova gli script del database non si fermano più | `201f939` `6e31ab9` `d7018da` |
+| 14:14 | Nicola +claude | — | `denki-brain` | — | [[patrick-modifica-denkishift]]: guida passo passo per chi non scrive codice | `72eb66e` |
+| 13:36 | Patrick +claude | — | `denki-brain` | — | Modulo Word del report settimanale, `.gitattributes` per i binari | `dc13ec5` |
+| 13:18 | Nicola +claude | [[denkishift]] | `smooth-duty` | ⬜ **sviluppo: `19-lavoratori-a-chiamata.sql` non eseguita** | Disponibilità del responsabile nel tabellone | `d6a4335` |
+| 13:10 | Patrick +claude | — | `denki-brain` | — | Ciclo settimanale: 4 liste la domenica, 5 report indietro | `bdbb8a3` |
+| 12:13 | Nicola +claude | — | `denki-brain` | — | Protocollo JARVIS come livello base a ogni avvio | `f563e75` `f84f378` |
+| 12:09 | Nicola +claude | [[denkishift]] | `smooth-duty` | ⬜ **sviluppo: `19-lavoratori-a-chiamata.sql` non eseguita** | Lavoratori a chiamata: chi tace non ha accettato | `1b160ea` |
+| ~12:00 | Patrick +claude | [[denkishift]] | `denki-brain` | 🟡 sviluppo: catena provata fino alla password, `.env` predisposti e vuoti | Corretta la fotografia del Mac in [[setup-macchina-nuova]]; su DenkiShift `db push` non esiste | `9358c87` |
+
+## Il debito aperto, in chiaro
+
+- ⬜ **`19-lavoratori-a-chiamata.sql` non è sullo sviluppo.** Verificato il
+  28/08 alle 14:2x: 18 migrazioni su 19 a posto. Mancano `availability_days`
+  con le sue policy, `company_settings.regime_chiamata` e due colonne
+- ⛔ **La password del database di sviluppo non funziona più.** Ha smesso fra un
+  comando e l'altro il 28/08, senza che `.env.db` cambiasse. Probabile
+  rigenerazione dal pannello, che la invalida su tutte le macchine insieme
+- ⚠️ **Lo schema di produzione di DenkiShift non è mai stato verificato** da
+  nessuna macchina di sviluppo: quel progetto Supabase non è raggiungibile da
+  `.env.local`/`.env.db`. Il codice «a chiamata» è online dalle 12:09, la sua
+  migrazione lì non risulta a nessuno
+
+## Collegamenti
+
+[[denkishift]] · [[opero]] · [[modifiche-al-database]] ·
+[[patrick-modifica-denkishift]] · [[2026-08-28-registro-interventi]]
