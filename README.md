@@ -39,6 +39,51 @@ Ora vedi a sinistra le cartelle da `00-Inbox` a `99-Templates`.
 Apri `dashboard.md`. Per ora vedrai dei blocchi di codice grigi invece di
 tabelle: è normale, manca un plugin. Lo installi al punto 3.
 
+### «Come collego Claude a Obsidian?»
+
+**Non lo colleghi. Sono già sulla stessa cosa.**
+
+È la domanda che viene in mente a tutti, e la risposta è che non esiste nessuna
+integrazione da configurare, nessun plugin da installare, nessuna chiave da
+incollare. Obsidian e Claude Code **lavorano sulla stessa cartella di file**:
+
+```
+       ~/Desktop/denki-brain/          ← una cartella di file .md
+              ↑              ↑
+        Obsidian        Claude Code
+      (li mostra)     (li legge e scrive)
+```
+
+Obsidian non è un database: è una finestra che apre file di testo. Claude Code
+è un programma che apre gli stessi file. Quando io modifico una nota, **Obsidian
+la ricarica da sé nel giro di un istante** — non devi premere niente. Quando la
+scrivi tu, io la trovo aggiornata alla domanda dopo.
+
+L'unica accortezza: **non farmi modificare una nota mentre la stai scrivendo tu
+in Obsidian**, o uno dei due sovrascrive l'altro. Vale come per due persone sullo
+stesso foglio.
+
+> Esiste anche il modo di far vedere il vault alla **chat di Claude.ai** (con un
+> connettore che gli dà accesso ai file). Non serve, e per ora è complessità
+> inutile: Claude Code il vault ce l'ha già in mano.
+
+### ⚠️ Chi installa Obsidian per primo, faccia una cosa
+
+Al 28 agosto 2026 **nessuno l'ha ancora aperto**: nel repository non c'è ancora
+la cartella `.obsidian/`, che è dove Obsidian tiene plugin e impostazioni.
+
+Chi lo apre per primo, dopo aver installato i plugin del punto 3, **committi e
+pushi anche quella cartella**:
+
+```bash
+git add .obsidian && git commit -m "Obsidian configurato: i plugin seguono il vault" && git push
+```
+
+Il `.gitignore` è già scritto per tenere ciò che serve — plugin e impostazioni —
+e buttare via lo stato delle finestre, che genererebbe conflitti a ogni
+salvataggio. Chi apre il vault dopo si ritrova tutto configurato senza rifare
+niente.
+
 ---
 
 ## 2. Le quattro cose che devi capire
