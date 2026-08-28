@@ -180,6 +180,8 @@ davvero presso l'impresa del padre.
 
 ### Come si trasferiscono i valori
 
+⚠️ Procedura completa, e cosa fare se una chiave esce: [[credenziali]].
+
 **Mai su WhatsApp, mai per email.** Una chiave incollata in chat resta nella
 cronologia di due telefoni e in un backup cloud, per sempre.
 
