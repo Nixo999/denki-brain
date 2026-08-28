@@ -249,43 +249,74 @@ Plugin e impostazioni arrivano già col repository. Da installare a parte solo
 
 ---
 
-## 7-bis. Il percorso breve per Patrick
+## 7-bis. Il percorso di Patrick — con o senza terminale
 
-Se serve solo il brain — che è il caso di Patrick — bastano questi passaggi:
-**1** (solo `xcode-select` e Homebrew), **2**, **3** (solo `denki-brain`), il
-blocco Claude Code qui sotto e **7**. Gli altri si saltano.
+Claude Code esiste **anche come applicazione desktop** per Mac e Windows, oltre
+che da terminale, dal web (`claude.ai/code`) e come estensione per gli editor.
+Stesso motore, stesso vault, stesso `CLAUDE.md`, stessi slash command: cambia
+solo l'involucro.
 
-### Installare Claude Code
+⚠️ **Sul Mac di Patrick la versione da terminale è già installata e funziona**
+(vedi 7-ter). Quanto segue non è da rifare: serve a decidere se passare
+all'app, e a impostare la prossima macchina.
+
+### Quale conviene a chi
+
+| | Desktop | Terminale |
+|---|---|---|
+| **Patrick** | ✅ Non scrive codice e non ha nulla da guadagnare dal terminale. Vede le modifiche ai file in modo leggibile invece che come testo che scorre | Funziona, ed è quello che ha oggi |
+| **Nicola** | Va bene per il vault | ✅ Per i progetti: `npm run dev`, gli script, il pannello browser |
+
+### Il percorso senza terminale, per una macchina nuova
+
+| # | Cosa | Dove |
+|---|---|---|
+| 1 | **GitHub Desktop** | `desktop.github.com` |
+| 2 | **Claude Code**, versione desktop | dal sito di Claude Code |
+| 3 | **Obsidian** | `obsidian.md` |
+| 4 | Nel vault, il plugin **Obsidian Git** | dentro Obsidian |
+
+**1 — GitHub Desktop.** Si accede col proprio account, poi *Clone a repository*
+→ `Nixo999/denki-brain`. Porta con sé anche `git`, che serve al plugin di
+Obsidian. Da qui in avanti «scaricare le novità» e «mandare le modifiche» sono
+due bottoni, e il `pull --rebase` del punto 8 lo gestisce lui.
+
+⚠️ GitHub Desktop autentica il push **e** imposta l'identità dei commit: sostituisce
+sia il punto 2 sia il 2-bis. È il motivo principale per preferirlo su una
+macchina non tecnica.
+
+**2 — Claude Code desktop.** Si accede col proprio account Claude e si apre la
+cartella del vault. Legge il `CLAUDE.md` da solo.
+
+**3 e 4 — Obsidian** con *Open folder as vault* sulla stessa cartella, più il
+plugin **Obsidian Git** con *Pull updates on startup* acceso: il vault si
+allinea da sé all'apertura.
+
+⚠️ Se nell'app desktop non compaiono `/chiudi-sessione`, `/settimana` e gli
+altri, dirlo: stanno in `.claude/commands/` dentro il vault e dovrebbero essere
+letti allo stesso modo, ma va verificato una volta invece che dato per scontato.
+Da terminale, sul Mac di Patrick, si vedono tutti e cinque.
+
+### Il percorso da terminale
 
 ```bash
 curl -fsSL https://claude.ai/install.sh | bash
+cd ~/Desktop/denki-brain   # su altre macchine: ~/denkicode/denki-brain
+claude
 ```
-
-Non richiede Node: si installa da sé. Se al comando successivo il terminale
-risponde `command not found`, il percorso non è ancora nel `PATH`:
-
+Se risponde `command not found`:
 ```bash
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 ```
 
-Poi, **dentro la cartella del brain**:
-
-```bash
-cd ~/Desktop/denki-brain   # su altre macchine: ~/denkicode/denki-brain
-claude
-```
-
-Al primo avvio chiede di accedere — si apre il browser — e se ci si fida della
-cartella: **sì**, l'abbiamo scritta noi.
-
-⚠️ **Claude Code richiede un abbonamento Claude a testa.** Non è condivisibile
-fra due persone, quindi è un costo ricorrente in più da mettere in conto
-insieme a quelli di [[vincoli-fiscali]].
+⚠️ **Claude Code richiede un abbonamento Claude a testa**, non è condivisibile
+fra due persone. È un costo ricorrente da mettere accanto a quelli di
+[[vincoli-fiscali]].
 
 ### La prima cosa da scrivere
 
 Il vault ha il suo `CLAUDE.md`: alla prima riga di conversazione Claude sa già
-chi siamo, cosa stiamo facendo e quanto ci devono. A Patrick basta scrivere:
+chi siamo, cosa stiamo facendo e quanto ci devono. A Patrick basta:
 
 > «Sono Patrick. Leggi il CLAUDE.md e dimmi a che punto siamo.»
 
@@ -302,6 +333,7 @@ serve a sapere cosa manca ancora senza rifare il giro dei comandi.
 | Identità dei commit | ✅ `patricksappa26` — impostata il 28/08, prima mancava del tutto |
 | `gh auth` | ⚠️ Autenticato come **`Nixo999`**: il push parte ancora a nome di Nicola |
 | Obsidian | ❌ Non installato — il vault si legge solo dal terminale |
+| Claude Code desktop | ⚪ Non installato: c'è la versione da terminale, che basta |
 | Repo di codice, chiavi Supabase | ⚪ Assenti **per scelta**, vedi il punto 0 |
 
 > [!note] Analisi di Claude — 2026-08-28
