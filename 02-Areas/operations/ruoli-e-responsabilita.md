@@ -8,6 +8,10 @@ source: denkicode
 
 Tre persone. Sotto, chi fa cosa **davvero** — non i titoli.
 
+⚠️ Tutti e tre **lavorano e studiano**: DenkiCode è il terzo impegno di
+ciascuno. Orari, università e hardware stanno in [[team-e-vincoli]], e vanno
+letti prima di proporre qualsiasi cosa che costi ore.
+
 ## Patrick Sappa — 21 anni, co-founder
 
 **L'unica voce commerciale dell'azienda.**

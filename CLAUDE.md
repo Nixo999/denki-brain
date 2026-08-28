@@ -41,18 +41,21 @@ prodotto di punta), gestionali custom. Dettaglio in [[prodotti-e-listino]].
    apertura di meeting. Vedi [[stile-comunicazione]].
 5. **Il collo di bottiglia è la generazione lead**, non il closing e non lo
    sviluppo. Quando proponi qualcosa, chiediti prima se aiuta lì. Vedi
-   [[generazione-lead]], e il materiale operativo in [[metodo-liste]] e
-   [[script-giulia-denkishift]].
-6. **DenkiShift non è "pronto".** Il materiale di vendita dice che lo è: è
+   [[generazione-lead]], e il materiale operativo in [[metodo-liste]],
+   [[script-giulia-denkishift]] e [[pattern-interrupt]].
+6. **Tutti e tre lavorano e studiano.** DenkiCode è il terzo impegno di
+   ciascuno: ~25h di negozio e l'università in corso. Prima di proporre
+   qualcosa che costa ore, leggi [[team-e-vincoli]].
+7. **DenkiShift non è "pronto".** Il materiale di vendita dice che lo è: è
    ottimismo commerciale. È dimostrabile, non installabile in produzione.
    Non promettere date senza leggere [[denkishift]].
-7. **OperO non è il gestionale di un cliente: è il prodotto di un cliente.**
+8. **OperO non è il gestionale di un cliente: è il prodotto di un cliente.**
    [[sebastian-torres]] è un privato che sta aprendo la sua attività, e la sua
    attività è quell'app. Lui la rivende alle aziende — la prima è l'impresa di
    suo padre. Chi tocca l'area Super Admin sta toccando il suo conto economico.
-8. **I prezzi a listino sono indicativi.** 200-300€ è l'aggancio costruito
+9. **I prezzi a listino sono indicativi.** 200-300€ è l'aggancio costruito
    sulla bozza che immaginiamo noi; il prezzo vero si adatta alla richiesta.
-9. **Due gestionali, due stack diversi.** OperO è Vite 8 + Tailwind 3, commenti
+10. **Due gestionali, due stack diversi.** OperO è Vite 8 + Tailwind 3, commenti
    in inglese. DenkiShift è Next 16 + Tailwind 4, commenti in italiano. Non
    confonderli e non "uniformare" niente di tua iniziativa: è una
    [[2026-08-28-stack-non-uniforme|decisione aperta]].

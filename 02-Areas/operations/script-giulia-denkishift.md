@@ -25,6 +25,9 @@ lessico da [[vincoli-fiscali]], la demo la fa **Patrick**.
 
 ### 1. Apertura — i primi otto secondi
 
+⚠️ Qui sotto c'è la variante di riferimento. **Ne esistono altre tre**, con
+meccanismi diversi e un piano per provarle a eliminazione: [[pattern-interrupt]].
+
 > **«Buongiorno, parlo con [nome dell'attività]?»**
 >
 > *(sì)*

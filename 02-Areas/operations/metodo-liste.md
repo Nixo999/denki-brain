@@ -11,10 +11,12 @@ prodotto: denkishift
 > Metodo proposto, non ancora provato sul campo. Va testato su 40 chiamate
 > prima di considerarlo buono. Vedi [[generazione-lead]].
 
-Serve a produrre **70-80 contatti profilati in mezz'ora**, ripetibile ogni
-settimana. È la dimensione che riempie l'ora al giorno di Giulia senza lasciarla
-a secco il venerdì — il conto sta in [[metriche]]. Risolve il problema del
-volume; l'angolo di attacco sta in [[script-giulia-denkishift]].
+Serve a produrre **130-150 contatti profilati a settimana**, ripetibile.
+
+⚠️ Quella cifra viene dal fatto che il target di 50 chiamate significa **50
+risposte vere**, non 50 numeri composti: per ottenerne 50 ne servono circa 130.
+Il conto sta in [[metriche]]. Risolve il problema del volume; l'angolo di
+attacco sta in [[script-giulia-denkishift]] e in [[pattern-interrupt]].
 
 ## Chi è il cliente di DenkiShift
 
@@ -69,8 +71,8 @@ in mezzo al lavoro e riattacca per forza.
 sua fascia. Mescolare i segmenti nella stessa ora costringe a chiamare qualcuno
 nel momento sbagliato.
 
-Ricade sulla dimensione della lista: **70-80 contatti a settimana**, non 50 —
-il conto delle ore sta in [[metriche]].
+Ricade sulla dimensione della lista: **130-150 contatti a settimana** — il
+conto delle ore sta in [[metriche]].
 
 ## Il segnale — cosa si legge senza chiamare
 

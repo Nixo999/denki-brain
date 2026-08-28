@@ -95,6 +95,7 @@ Due documenti pronti, tutti e due **da provare, non da dare per buoni**:
 | [[metodo-liste]] | Il **volume**: 40-50 contatti profilati in mezz'ora, ripetibile |
 | [[script-giulia-denkishift]] | L'**indifferenza**: apertura pattern interrupt, sei obiezioni, follow-up |
 | [[2026-08-28-brianza-turni]] | La **prima lista vera**: 51 contatti pronti da chiamare |
+| [[pattern-interrupt]] | Quattro aperture diverse e il piano per provarle a eliminazione |
 
 ⚠️ **Nessuno dei due promette date di attivazione.** L'obiettivo della chiamata
 è la demo, che si può fare oggi; l'installazione in produzione no →
@@ -107,6 +108,7 @@ Due documenti pronti, tutti e due **da provare, non da dare per buoni**:
       [[script-giulia-denkishift]]
 - [x] Prima lista prodotta → [[2026-08-28-brianza-turni]], 51 contatti
 - [ ] **Provarlo su 40 chiamate di un solo segmento** e scrivere l'esito
+- [x] Quattro pattern interrupt da testare → [[pattern-interrupt]]
 - [ ] Scrivere gli script per i flussi A, B e D
 - [ ] Provare il riscaldamento: biglietto di Patrick → chiamata entro 48 ore
 - [ ] Misurare i contatti nuovi in lista a settimana → [[metriche]]

@@ -21,18 +21,19 @@ script.
 
 | Numero | Cos'è, in concreto | Dove sta | Target |
 |---|---|---|---|
-| **Chiamate** | Quante volte Giulia ha alzato il telefono e chiamato qualcuno della lista, in tutta la settimana. Contano anche quelle in cui non ha risposto nessuno | Il Google Sheet delle liste: si contano le righe con un esito segnato | **50** |
+| **Chiamate** | Quante persone hanno **effettivamente risposto** e ci hanno parlato. ⚠️ **Non** i numeri composti: le chiamate a vuoto non contano | Il foglio: le righe con un esito **diverso da `Non risponde`** | **50** |
 | **Appuntamenti** | Quante volte una chiamata è finita con qualcosa di concreto: un incontro fissato con Patrick, o un sì a ricevere la bozza | Stesso foglio: le righe con esito "Fissato incontro" o equivalente | **4** |
 
-Il rapporto atteso è **8%** (4 su 50). Se scende, guarda la lista o lo script.
-Se sale, quella lista era buona: **segnati da dove veniva**.
+Il rapporto atteso è **8%** (4 appuntamenti su 50 conversazioni). Se scende,
+guarda lo script; se sale, quella lista era buona — **segnati da dove veniva**.
 
 ## Come si compilano
 
 Venerdì, in due minuti:
 
 1. Apri il Google Sheet delle liste
-2. Conta le righe con un esito segnato questa settimana → è il numero chiamate
+2. Conta le righe con un esito **diverso da `Non risponde`** → è il numero
+   chiamate. Chi non ha risposto non conta
 3. Conta quelle con "Fissato incontro" → è il numero appuntamenti
 4. Scrivili nella tabella qui sotto
 
@@ -57,28 +58,37 @@ quella dal 24 al 30 agosto 2026.
 **Un'ora al giorno**, circa cinque a settimana (2026-08-28). Può crescere se
 cresce il guadagno, e in quel caso crescono anche i target qui sopra.
 
-> [!note] Analisi di Claude — 2026-08-28
-> Il conto, fatto con le proporzioni normali di una chiamata a freddo: su 50
-> numeri, più o meno 28 non rispondono (mezzo minuto ciascuno), 11 finiscono in
-> un centralino o nella persona sbagliata (un minuto), 11 diventano una
-> conversazione vera (quattro-cinque minuti). **Totale: circa due ore, comprese
-> le note sul foglio.**
+> [!warning] Analisi di Claude — 2026-08-28, corretta in giornata
+> **Avevo sbagliato il conto.** Avevo letto "50 chiamate" come 50 numeri
+> composti, e ne avevo dedotto che a Giulia avanzasse tempo. Sono **50 risposte
+> vere**, ed è tutta un'altra cosa.
 >
-> Giulia ne ha cinque. **Il target di 50 chiamate occupa meno di metà del suo
-> tempo disponibile**, e questo cambia la diagnosi: il limite non è quanto può
-> chiamare, è quanto ha da chiamare.
+> Per ottenere 50 conversazioni servono circa **130 numeri composti** (tasso di
+> risposta realistico del 40% su utenze aziendali). Il tempo:
 >
-> Due conseguenze pratiche:
+> | Voce | Conto | Tempo |
+> |---|---|---|
+> | Numeri a vuoto | 80 × 25 s | ~35 min |
+> | Risposte brevi (persona sbagliata, no secco) | 20 × 1 min | ~20 min |
+> | Conversazioni vere | 30 × 4-5 min | ~2 h 15 |
+> | Note sul foglio | 130 × 20 s | ~45 min |
+> | **Totale** | | **~3 h 55** |
 >
-> 1. **La lista settimanale va dimensionata a 70-80 contatti, non a 50.**
->    Altrimenti finisce i numeri il giovedì e l'ora del venerdì è persa.
-> 2. **Alzare il target a 50 chiamate non costa nulla in ore**, ma non serve
->    finché la lista non c'è. È il motivo per cui [[metodo-liste]] viene prima
->    di qualunque revisione dei numeri.
+> Giulia ne ha **cinque**. Il target la porta a circa l'**80% della sua
+> capacità**: è un obiettivo pieno, non comodo. Le due conseguenze si ribaltano
+> rispetto a quanto avevo scritto prima:
 >
-> ⚠️ Con un'ora al giorno, **quando la si chiama conta quanto chi si chiama**:
-> un'ora sbagliata su un segmento sbagliato è una giornata buttata, e ne avete
-> solo cinque. Le fasce per segmento stanno in [[metodo-liste]].
+> 1. **La lista settimanale va dimensionata a 130-150 contatti**, non a 70-80 e
+>    tantomeno a 50. La prima lista da 51 righe
+>    ([[2026-08-28-brianza-turni]]) copre **due giorni**, non una settimana.
+> 2. **Non c'è margine per le chiamate sprecate.** Ogni minuto speso su
+>    un'azienda sotto le 8 persone toglie una conversazione utile: la qualifica
+>    rapida nello script smette di essere una cortesia e diventa il modo di far
+>    tornare i conti.
+>
+> ⚠️ E l'orario pesa più di prima: con quattro ore di lavoro su cinque
+> disponibili, un'ora nella fascia sbagliata è il **20% della settimana**. Le
+> fasce stanno in [[metodo-liste]].
 
 ## Cosa non stiamo misurando, e dovremmo
 

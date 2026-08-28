@@ -121,9 +121,36 @@ pulizie e vigilanza — H24, sostituzioni continue, e nessuno li chiama.
   25 RSA, 7 cooperative, 19 imprese di pulizie. Nessuna lista in mano a Giulia
   prima di questa
 
+## Settimo giro — correzione, team e pattern interrupt
+
+⚠️ **Correzione di un mio errore.** "50 chiamate" significa **50 risposte
+vere**, non 50 numeri composti. Avevo dedotto che a Giulia avanzasse tempo: è
+il contrario. Per 50 conversazioni servono ~130 numeri, che fanno **quasi
+quattro ore** delle cinque che ha. Il target la porta all'80% della capacità.
+Rifatto il conto in [[metriche]] e ridimensionata la lista a **130-150 contatti
+a settimana**: le 51 righe di [[2026-08-28-brianza-turni]] coprono due giorni,
+non una settimana.
+
+- ✅ **[[team-e-vincoli]]** — profili, orari, università e hardware. Tutti e tre
+  lavorano ~25h a MediaWorld o come cameriera e studiano a Bicocca: DenkiCode è
+  il terzo impegno. Aggiunta la regola 6 in `CLAUDE.md`
+- ✅ **[[pattern-interrupt]]** — quattro aperture con meccanismi diversi
+  (disarmo, franchezza, no anticipato, prossimità) e un piano di test a
+  eliminazione, due per volta
+
+Tre cose emerse leggendo i profili: **la Bicocca è un asset**, non
+un'informazione anagrafica — ci sono tutti e tre più giorni a settimana, e per
+i siti vetrina è territorio a costo zero. **I picchi di MediaWorld cadono a
+novembre e dicembre**, cioè nei due mesi in cui l'obiettivo P.IVA dovrebbe
+chiudersi. E **l'Osmo Action di Patrick è l'unico strumento in casa
+completamente inutilizzato**: una demo filmata di DenkiShift si manda su
+WhatsApp prima della chiamata e scalda il lead senza consumare ore.
+
 ## Aperto adesso
 
 - ⬜ **Chiamare la lista**, cominciando dalle RSA
+- ⬜ **Estendere la lista a 130-150 contatti** — le 51 attuali bastano 2 giorni
+- ⬜ `TODO` — Nicola lavora dal MacBook di Patrick? → [[team-e-vincoli]]
 - ⬜ **Provare lo script su 40 chiamate** di un solo segmento
 - ⬜ **Come si trattano le royalty 1-2%** senza P.IVA → [[vincoli-fiscali]]
 - ⬜ **Cosa c'è in galleria oggi**, e aggiungerci [[albybike]] con una
