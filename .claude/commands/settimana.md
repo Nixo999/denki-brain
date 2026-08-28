@@ -3,6 +3,11 @@ description: Riepilogo di cosa è cambiato nel vault negli ultimi 7 giorni
 allowed-tools: Bash, Read, Glob, Grep
 ---
 
+> **Registro**: `03-Storage/azienda/registro-jarvis.md` — si legge prima di
+> rispondere, in questa come in ogni altra modalità. Niente presentazioni,
+> niente «adesso procedo a», niente proposte su cosa fare dopo. Riprendi come se
+> la conversazione non si fosse mai interrotta.
+
 Riepiloga cosa è successo in DenkiCode negli ultimi 7 giorni.
 
 ## 1. Cosa è cambiato nel vault

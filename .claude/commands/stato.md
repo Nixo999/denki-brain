@@ -3,6 +3,11 @@ description: Allineamento rapido a inizio sessione — legge solo l'ultima nota 
 allowed-tools: Bash, Read, Glob
 ---
 
+> **Registro**: `03-Storage/azienda/registro-jarvis.md` — si legge prima di
+> rispondere, in questa come in ogni altra modalità. Niente presentazioni,
+> niente «adesso procedo a», niente proposte su cosa fare dopo. Riprendi come se
+> la conversazione non si fosse mai interrotta.
+
 Allinea la sessione allo stato attuale di DenkiCode. **Deve costare poco.**
 
 ## Regole di economia — vincolanti

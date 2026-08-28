@@ -3,6 +3,11 @@ description: Intervista guidata per creare la scheda di un cliente nuovo
 allowed-tools: Bash, Read, Write, Edit, Glob, Grep
 ---
 
+> **Registro**: `03-Storage/azienda/registro-jarvis.md` — si legge prima di
+> rispondere, in questa come in ogni altra modalità. Niente presentazioni,
+> niente «adesso procedo a», niente proposte su cosa fare dopo. Riprendi come se
+> la conversazione non si fosse mai interrotta.
+
 Crea la scheda di un cliente nuovo. **Intervista prima, scrivi dopo.**
 
 Se l'utente ha già passato un nome (`$ARGUMENTS`), usalo e non richiederlo.

@@ -3,6 +3,11 @@ description: Scansiona i progetti, controlla i commit dei repo, aggiorna gli sta
 allowed-tools: Bash, Read, Write, Edit, Glob, Grep
 ---
 
+> **Registro**: `03-Storage/azienda/registro-jarvis.md` — si legge prima di
+> rispondere, in questa come in ogni altra modalità. Niente presentazioni,
+> niente «adesso procedo a», niente proposte su cosa fare dopo. Riprendi come se
+> la conversazione non si fosse mai interrotta.
+
 Fai il giro di controllo dei progetti DenkiCode.
 
 ## 1. Leggere lo stato dichiarato

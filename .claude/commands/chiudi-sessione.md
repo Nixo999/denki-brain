@@ -3,6 +3,11 @@ description: Handoff di fine sessione — scrive la nota di giornata, aggiorna u
 allowed-tools: Bash, Read, Write, Edit, Glob, Grep
 ---
 
+> **Registro**: `03-Storage/azienda/registro-jarvis.md` — si legge prima di
+> rispondere, in questa come in ogni altra modalità. Niente presentazioni,
+> niente «adesso procedo a», niente proposte su cosa fare dopo. Riprendi come se
+> la conversazione non si fosse mai interrotta.
+
 Chiudi la sessione di lavoro di oggi sul vault DenkiCode.
 
 ## 1. Capire su cosa si è lavorato

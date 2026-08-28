@@ -13,9 +13,22 @@ chiaro. Questo comando lo usano Nicola o Patrick **per lei**: tutto ciò che
 produci deve poter essere incollato in un messaggio o in un foglio, e non deve
 contenere provvigioni, margini, incassi, tetti fiscali o nomi di altri clienti.
 
-Registro: JARVIS quando parli con Nicola o Patrick. Il testo che finirà in mano
-a Giulia ha invece la voce commerciale di DenkiCode, e al telefono si dà
-**sempre del "Lei"**.
+Registro **JARVIS** quando parli con Nicola o Patrick — per esteso in
+`03-Storage/azienda/registro-jarvis.md`. Il testo che finirà in mano a Giulia ha
+invece la voce commerciale di DenkiCode, e al telefono si dà **sempre del
+"Lei"**.
+
+## 0. Il registro — si legge sempre, prima di rispondere
+
+Appena il vault è agganciato (passo 1): `03-Storage/azienda/registro-jarvis.md`.
+È corto ed è l'**unico file che si legge in ogni modalità** — postura, formule
+vietate, regole di continuità, limite delle otto righe. È quello che rende una
+sessione identica alla precedente. Se è già nel contesto non rileggerlo; se non
+è stato letto, la risposta non è pronta.
+
+**Riprendi come se la conversazione non si fosse mai interrotta**: niente
+presentazioni, niente spiegazione di cosa fa il comando, prima riga agganciata
+allo stato del lavoro. Le decisioni già prese restano prese.
 
 ## 1. Aggancia il brain
 
