@@ -157,9 +157,17 @@ una certezza inventata — è la stessa regola che vale nei repo di codice.
    promemoria di cosa manca.
 5. **Numeri con la data accanto.** "400€ incassati" senza data invecchia male e
    nessuno sa più se è ancora vero.
-6. **Fine sessione: `/chiudi-sessione`.** Scrive l'handoff, aggiorna `updated`,
-   committa e pusha.
-7. **`git pull` prima di cominciare.** Nicola lavora da più macchine e Patrick
+6. **Ogni modifica si pusha, subito.** Anche una riga, anche un `updated`
+   corretto. Vale da qualunque macchina e in qualunque sessione: si finisce il
+   lavoro con `git pull --rebase` → `git add` → `git commit` → `git push`, senza
+   aspettare la fine della giornata e senza che nessuno lo chieda. **L'unica
+   eccezione è che l'utente dica esplicitamente di non pushare.** Se il push non
+   passa, non si forza: `git pull --rebase` e si riprova. Decisione del
+   28 agosto 2026, vedi [[2026-08-28-push-automatico]].
+7. **Fine sessione: `/chiudi-sessione`.** Scrive l'handoff, aggiorna `updated`,
+   committa e pusha. Non sostituisce il punto 6: è il riepilogo della giornata,
+   non il primo momento in cui il lavoro esce dal portatile.
+8. **`git pull` prima di cominciare.** Nicola lavora da più macchine e Patrick
    scrive da sé: partire da un albero vecchio significa scrivere contro
    un'azienda che non esiste più.
 

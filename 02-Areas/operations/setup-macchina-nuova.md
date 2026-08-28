@@ -331,17 +331,22 @@ serve a sapere cosa manca ancora senza rifare il giro dei comandi.
 | Claude Code | ✅ v2.1.248, legge il vault e i cinque slash command |
 | `git`, `node`, `gh`, Homebrew | ✅ Installati |
 | Identità dei commit | ✅ `patricksappa26` — impostata il 28/08, prima mancava del tutto |
+| **Push verso `origin`** | ✅ **Funziona** — verificato il 28/08 con un push reale dal Mac |
 | `gh auth` | ⚠️ Autenticato come **`Nixo999`**: il push parte ancora a nome di Nicola |
 | Obsidian | ❌ Non installato — il vault si legge solo dal terminale |
 | Claude Code desktop | ⚪ Non installato: c'è la versione da terminale, che basta |
 | Repo di codice, chiavi Supabase | ⚪ Assenti **per scelta**, vedi il punto 0 |
 
 > [!note] Analisi di Claude — 2026-08-28
-> Le due righe non verdi non bloccano il lavoro: da qui si scrive nel vault, si
-> committa e si pusha. Ma finché `gh` resta su `Nixo999`, metà della decisione
-> del 28 agosto non è applicata — l'autore del commit dice Patrick, il push
-> dice Nicola. È un `gh auth login` da fare a mano, dal browser: nessuno può
-> farlo al posto suo.
+> Le righe non verdi non bloccano il lavoro: da qui si scrive nel vault, si
+> committa e si pusha — il push è stato provato davvero, non dedotto. Ma finché
+> `gh` resta su `Nixo999`, metà della decisione del 28 agosto non è applicata:
+> l'autore del commit dice Patrick, il push dice Nicola, e su GitHub i commit
+> risultano *pushati da* Nicola. `patricksappa26` è già collaboratore del repo
+> con permesso di scrittura (verificato il 28/08), quindi il cambio non toglie
+> l'accesso a nulla: è un `gh auth login` da fare a mano, dal browser. Nessuno
+> può farlo al posto suo — nel terminale di Claude Code si scrive
+> `! gh auth login` e si segue la procedura del punto 2.
 
 ## 8. Il rituale, da qui in avanti
 
@@ -349,9 +354,16 @@ Vale su tutte le macchine, ed è la stessa regola che sta nei repo di codice:
 
 1. **`git pull` prima di cominciare**, e di nuovo prima di ogni push
 2. Su DenkiShift, dopo il pull: `verifica-schema.mjs`
-3. **Commit piccoli, push subito.** Il lavoro tenuto in locale mezza giornata è
-   il lavoro che poi non entra
+3. **Commit piccoli, push subito.** Sul vault non è più un consiglio ma la
+   regola: *ogni* modifica si pusha, anche una riga, salvo che non venga detto
+   il contrario — vedi [[2026-08-28-push-automatico]]. Il lavoro tenuto in
+   locale mezza giornata è il lavoro che poi non entra
 4. **Il push non passa? Non forzare.** `git pull --rebase` e si guarda
+
+Sul vault il punto 3 è anche automatico: `.claude/settings.json` monta un hook
+che a fine turno controlla se è rimasto qualcosa da pushare e lo segnala. Sta
+nel repo, quindi arriva su ogni macchina col `git clone`: non c'è niente da
+installare a mano.
 
 I fine riga sono già normalizzati dal `.gitattributes` del vault: Windows e Mac
 non si contenderanno le note.
