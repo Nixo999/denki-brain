@@ -5,62 +5,54 @@ source: claude
 tags: [report, settimanale, processo]
 ---
 
-# Template — report settimanale della domenica
+# Il report della domenica — cosa si consegna
 
-Si compila e si incolla in chat la domenica, in un blocco solo. Alimenta il
-[[ciclo-settimanale]] e i numeri di [[metriche]].
+Quattro file, non un testo lungo. Alimentano il [[ciclo-settimanale]] e i numeri
+di [[metriche]].
+
+| # | File | Chi lo riempie | Come |
+|---|---|---|---|
+| 1 | `AAAA-MM-GG-siti.csv` | Giulia | Colonna `Esito e Note Giulia` |
+| 2 | `AAAA-MM-GG-denkishift.csv` | Giulia | Colonna `Esito e Note Giulia` |
+| 3 | `AAAA-MM-GG-indagine.csv` | Giulia | Colonna `Esito e Note Giulia` |
+| 4 | `report-patrick-settimanale.docx` | Patrick | Blitz fisici + chiusure |
+
+Le liste di Giulia **non si riassumono**: si riconsegnano com'è, con l'ultima
+colonna piena. I conteggi — numeri composti, risposte, esiti per categoria — li
+faccio io leggendo le righe. Riassumerle a mano è lavoro doppio e perde i "no".
 
 **Tre regole di compilazione**, che valgono più della bellezza del report:
 
-1. **Gli esiti si scrivono con le parole della lista**, sempre le stesse, o il
+1. **Gli esiti si scrivono con le parole fisse**, sempre le stesse, o il
    conteggio non torna. Il testo libero viene dopo il trattino.
-2. **Le righe "Non risponde" non si incollano**: basta il numero totale. Si
-   incollano solo le righe dove qualcuno ha parlato.
+2. **Le righe non chiamate restano vuote.** Vuoto = non fatto, non "non
+   risponde". Sono due cose diverse e cambiano il tasso di risposta.
 3. **Ogni cifra ha una data accanto.** «Incassati 200 EUR» senza data invecchia
    in una settimana.
 
-Campo vuoto = non successo. Campo con `?` = non lo so, e allora te lo chiedo.
+## Il modulo di Patrick
 
----
+[report-patrick-settimanale.docx](report-patrick-settimanale.docx) — si apre in
+Word o Pages e si scrive dentro le tabelle. Due colonne vanno a **lettera
+singola**, per compilarlo in cinque minuti:
+
+| Campo | Valori |
+|---|---|
+| Blitz · `ESITO` | `I` ingaggiato · `D` dipendente · `M` solo materiale · `C` chiuso · `R` rifiuto |
+| Blitz · `MAT.` | `V` volantino · `B` biglietto · `N` niente |
+| Chiusure · `ESITO` | `C` chiuso · `D` in decisione · `P` perso |
+
+Si stampa anche: le righe sono alte abbastanza per scriverci a penna in
+macchina, fra un blitz e l'altro.
+
+## Se il Word non è a portata — la versione da incollare
+
+Vale solo per la parte di Patrick, e solo se sta fuori. Stessa sostanza.
 
 ```
-# REPORT SETTIMANA dal __/__ al __/__
+## BLITZ FISICI — settimana dal __/__ al __/__      fatti __ su 10
 
-## 1 — CHIAMATE GIULIA
-
-Numeri composti: ___    Risposte vere: ___    Ore usate: ___
-Appuntamenti fissati: ___    Form compilati (Indagine): ___
-
-### 1a. Siti Web (50)
-Righe con risposta — Nome | Esito | Note di Giulia
--
--
--
-
-### 1b. DenkiShift (50)
-Righe con risposta — Nome | Esito | Note di Giulia
--
--
--
-
-### 1c. Indagine di Mercato (30)
-Righe con risposta — Nome | Esito | Note di Giulia
--
--
--
-
-### 1d. Obiezioni sentite più di una volta
-- "____________________" → x__ volte, prodotto ____
-- "____________________" → x__ volte, prodotto ____
-
-### 1e. Cosa dice Giulia
-Dove si è bloccata, cosa non le è uscito bene, cosa vuole cambiare:
-____________________________________________
-
-
-## 2 — BLITZ FISICI PATRICK (10 target)
-
-Attività | Esito | Materiale lasciato | Note
+Attività e zona | Esito (I/D/M/C/R) | Materiale (V/B/N) | Note
  1.  |  |  |
  2.  |  |  |
  3.  |  |  |
@@ -72,34 +64,24 @@ Attività | Esito | Materiale lasciato | Note
  9.  |  |  |
 10.  |  |  |
 
-Esito, sempre una di queste: Titolare ingaggiato / Parlato con un dipendente /
-Solo materiale lasciato / Chiuso o assente / Rifiuto secco
-Materiale: Volantino / Biglietto / Nessuno
-
-Contatti diretti presi (nome + numero + cosa gli ho promesso):
--
+Contatti diretti presi (nome | telefono | cosa gli ho promesso):
 -
 
+## CHIUSURE E SECONDI INCONTRI
 
-## 3 — SECONDI INCONTRI E CHIUSURE PATRICK
-
-Cliente | Prodotto | Esito | Obiezione principale | Prossimo step
+Cliente | Prodotto | Esito (C/D/P) | Obiezione principale | Prossimo step
  1.  |  |  |  |
  2.  |  |  |  |
  3.  |  |  |  |
 
-Esito, sempre una di queste: Chiuso / In decisione / Perso
-Prodotto: Vetrina / E-commerce / DenkiShift / Custom
-
-Per ogni "Chiuso": importo ____ EUR, incassato il __/__, ricevuta sì/no
-Per ogni "Perso": la frase esatta con cui mi ha detto no
-____________________________________________
-
-Riprogrammati per la prossima settimana:
+Chiusi: importo ____ EUR, incassato il __/__, ricevuta sì/no
+Persi: la frase esatta con cui mi ha detto no
 -
-```
 
----
+## CODA
+Ore usate da Giulia: ___    Cosa non le è uscito bene: ___
+Una riga sulla settimana: ___
+```
 
 ## Cosa ne faccio
 

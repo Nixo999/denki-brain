@@ -26,8 +26,11 @@ Dettata da Patrick il 28 agosto 2026. Il dettaglio operativo sta in
    target fisici per Patrick.
 2. **Uno schema unico a 8 colonne** per tutte e tre le liste di Giulia, con
    l'ultima colonna riservata a lei. Un formato solo, non uno per prodotto.
-3. **Il ritorno dal campo è un obbligo, non un'eventualità**: 5 input compilati
-   ogni domenica, nel formato di [[template-report-settimanale]].
+3. **Il ritorno dal campo è un obbligo, non un'eventualità**: ogni domenica
+   rientrano **quattro file** — le tre liste di Giulia con l'ultima colonna
+   piena, e il modulo Word di Patrick con blitz e chiusure. Formato in
+   [[template-report-settimanale]]. Le liste **non si riassumono**: i conteggi
+   si fanno sulle righe.
 4. **Il materiale di vendita si aggiorna solo sui dati di quella settimana.**
    Le obiezioni ricorrenti riscrivono gli script; i segmenti muti escono dalle
    liste; le chiusure perse producono una contromisura, non un consiglio.

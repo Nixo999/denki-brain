@@ -102,15 +102,22 @@ Materiale: volantini per i siti, biglietti da visita per i gestionali →
 [[materiale-offline]]. Il biglietto lasciato è il riscaldamento della chiamata
 di Giulia entro 48 ore → [[metodo-liste]].
 
-## I 5 input della domenica
+## I 4 file della domenica
 
-Patrick carica, in un blocco solo, il [[template-report-settimanale|template]]:
+I cinque input del protocollo stanno in **quattro file**: i due report di
+Patrick vivono nello stesso modulo. Dettaglio in
+[[template-report-settimanale]].
 
-1. Lista Siti Web compilata
-2. Lista DenkiShift compilata
-3. Lista Indagine di Mercato compilata
-4. Report dei 10 blitz fisici
-5. Report dei secondi incontri e delle chiusure
+| # | File | Chi | Contenuto |
+|---|---|---|---|
+| 1 | `...-siti.csv` | Giulia | Lista Siti Web con `Esito e Note Giulia` |
+| 2 | `...-denkishift.csv` | Giulia | Lista DenkiShift con `Esito e Note Giulia` |
+| 3 | `...-indagine.csv` | Giulia | Lista Indagine con `Esito e Note Giulia` |
+| 4 | `report-patrick-settimanale.docx` | Patrick | Blitz fisici **e** chiusure |
+
+**Le liste di Giulia si riconsegnano intere, non riassunte.** I conteggi li
+faccio leggendo le righe: un riassunto a mano è lavoro doppio e perde i "no",
+che sono il dato più utile della settimana.
 
 ## Il compito di JARVIS alla domenica
 
