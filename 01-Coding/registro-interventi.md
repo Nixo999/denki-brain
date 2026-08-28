@@ -41,6 +41,7 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
 |---|---|---|---|---|---|---|
+| 15:2x | Nicola +claude | [[denkishift]] | — | ✅ **sviluppo: `19-lavoratori-a-chiamata.sql` eseguita** dal SQL Editor. `verifica-schema`: 19 su 19 | — |
 | 14:5x | Nicola +claude | tutti | `denki-brain` + `smooth-duty` + `opero-sito` | — | **Regola nuova**: ogni modifica va nel repo *e* qui. Registro creato e agganciato ai tre `CLAUDE.md` | `1763144` + questo |
 | 14:26 | Nicola +claude | — | `denki-brain` | — | Controllo incrociato dei due repo, guida e nota database allineate alla decisione «non più in locale» | `665e9f0` |
 | 14:16 | Nicola +claude | [[denkishift]] | `smooth-duty` | — | **Decisione**: non si avvia più niente in locale, si guarda su `denkishift.it`; migrazione in produzione *prima* del push | `ee6ae92` |
@@ -55,12 +56,12 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 
 ## Il debito aperto, in chiaro
 
-- ⬜ **`19-lavoratori-a-chiamata.sql` non è sullo sviluppo.** Verificato il
-  28/08 alle 14:2x: 18 migrazioni su 19 a posto. Mancano `availability_days`
-  con le sue policy, `company_settings.regime_chiamata` e due colonne
-- ⛔ **La password del database di sviluppo non funziona più.** Ha smesso fra un
-  comando e l'altro il 28/08, senza che `.env.db` cambiasse. Probabile
-  rigenerazione dal pannello, che la invalida su tutte le macchine insieme
+- ✅ **`19-lavoratori-a-chiamata.sql` eseguita sullo sviluppo** il 28/08 alle
+  15:2x, incollata nel SQL Editor da Nicola. `verifica-schema.mjs` risponde
+  **19 su 19**: sviluppo e produzione sono allineati fra loro e a `main`
+- ✅ **Password del database rimessa.** Era stata **davvero cambiata**: il
+  valore vecchio veniva letto e rifiutato, quello nuovo passa. Chi ha ancora
+  il vecchio in `.env.db` — qualunque altra macchina — deve rifare il giro
 - ✅ **La produzione ha la 19** — verificato nel browser il 28/08 alle 15:0x, da
   una sessione già autenticata: la vista **Disponibilità** si apre e spiega il
   regime, il filtro **«A chiamata»** c'è, il tabellone della settimana 24-30

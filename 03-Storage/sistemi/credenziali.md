@@ -39,6 +39,20 @@ cp .env.local.example .env.local
 cp .env.db.example .env.db
 ```
 
+⚠️ **Su Windows, non scrivere un `.env` con `Set-Content -Encoding utf8`.**
+PowerShell 5.1 ci mette un BOM in testa (`EF BB BF`) e Node legge la prima
+chiave come `﻿NOME`, cioè non la legge: l'errore che esce è
+`Manca SUPABASE_DB_PASSWORD` con la riga scritta correttamente sotto gli occhi.
+Costato mezz'ora il 28 agosto 2026. La forma giusta:
+
+```powershell
+[IO.File]::WriteAllText("$PWD\.env.db", "SUPABASE_DB_PASSWORD=$p",
+  (New-Object Text.UTF8Encoding $false))
+```
+
+Su un file già scritto col BOM, i tre byte si tolgono senza aprire il file —
+e senza vedere il valore: `tail -c +4 .env.db > t && mv t .env.db`.
+
 ⚠️ `SUPABASE_SERVICE_ROLE_KEY` **non prende mai il prefisso `NEXT_PUBLIC_`**:
 quel prefisso la manda dritta nel browser, e quella chiave scavalca ogni regola
 di sicurezza.
