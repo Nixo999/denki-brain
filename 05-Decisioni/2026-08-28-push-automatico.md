@@ -44,18 +44,31 @@ repo**, quindi vale su tutte le macchine senza doverla reinstallare:
 | Dove | Cosa fa |
 |---|---|
 | `CLAUDE.md`, punto 6 di *Come si aggiorna il vault* | La regola che Claude legge a ogni sessione, su qualunque macchina |
-| `.claude/hooks/ricorda-push.sh` + `.claude/settings.json` | Hook `Stop`: a fine turno controlla se ci sono modifiche non committate o commit non inviati, e in quel caso lo segnala |
+| `.claude/hooks/ricorda-push.sh` + `.claude/settings.json` | Hook `Stop`: a fine turno controlla se ci sono modifiche non committate o commit non inviati, e in quel caso lo segnala. Dipende solo da bash e git — **niente `jq`**, vedi sotto |
 | `.claude/settings.json`, sezione `permissions` | `git add`, `commit`, `push`, `pull` non chiedono più conferma a ogni giro; `push --force` e `reset --hard` restano **negati** |
 
 L'hook parla **una volta sola per sessione**: se l'eccezione è stata invocata —
 «questo non pusharlo» — il secondo controllo lascia passare e non insiste.
 
-> [!note] Analisi di Claude — 2026-08-28
-> L'unico punto in cui la regola può rompersi in silenzio è una macchina Windows
-> senza Git Bash: lo script dell'hook è bash, e lì non partirebbe. Non è un
-> problema di correttezza — il vault resta a posto e la regola in `CLAUDE.md`
-> vale comunque — ma su quella macchina verrebbe a mancare la rete di sicurezza.
-> Da verificare la prima volta che si apre una sessione dal PC Windows di Nicola.
+> [!note] Verificato sul PC Windows — 2026-08-28, stessa giornata
+> Il dubbio era fondato, ma la causa era un'altra: **Git Bash c'è** (5.2.37,
+> msys), quello che manca è **`jq`**. La prima versione dell'hook lo usava per
+> leggere l'id di sessione e per comporre la risposta: senza, moriva con
+> `jq: command not found` **senza stampare niente e uscendo con 0**. Cioè il
+> fallimento peggiore possibile — nessun errore visibile e nessuna rete di
+> sicurezza, proprio sulla macchina dove si lavora di più.
+>
+> **Risolto togliendo `jq`**: l'id di sessione si estrae con `sed`, la risposta
+> è JSON scritto a mano. Nessuna dipendenza oltre a bash e git.
+>
+> Verificate tutte e tre le condizioni su Windows: albero pulito → tace; albero
+> sporco → emette JSON valido con `decision: block`; secondo Stop della stessa
+> sessione → tace, così l'eccezione «non pushare» regge.
+>
+> ⚠️ La lezione generale, che vale oltre questo hook: **un hook che fallisce in
+> silenzio è peggio di un hook che non esiste**, perché ci si conta sopra. Se se
+> ne scrive un altro, va provato sulla macchina più povera di strumenti, non
+> sulla più ricca.
 
 ## Collegamenti
 
