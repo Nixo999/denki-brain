@@ -111,6 +111,7 @@ non ci abita.
   azienda/       stato, obiettivi, vincoli fiscali
   team/          chi fa cosa, orari, macchine
   sistemi/       dove stanno le credenziali — mai quali sono
+  brand/         logo e sorgenti di stampa: gli unici binari del vault
 04-Archive/      progetti chiusi e lead persi. Non si cancella niente: si archivia
 05-Decisioni/    una decisione per file, datata. Non si riscrive: se ne aggiunge una nuova
 06-Daily/        note di giornata e handoff di fine sessione
