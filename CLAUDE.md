@@ -30,6 +30,17 @@ DenkiCode, software house e digital agency, **Seveso (MB)**, attiva **da luglio
 Quattro prodotti a listino: siti vetrina, e-commerce, **DenkiShift** (turni,
 prodotto di punta), gestionali custom. Dettaglio in [[prodotti-e-listino]].
 
+## Il protocollo — si applica prima di tutto
+
+Dal 28 agosto 2026 l'assistente si chiama **JARVIS** e opera su un livello base
+attivo a ogni avvio, in ogni cartella: [[protocollo-jarvis]] (di cosa si occupa
+e con che priorità) e [[registro-jarvis]] (come parla). Fuori dal vault li
+richiama `~/.claude/CLAUDE.md`, che è **locale alla macchina** e su un PC nuovo
+va ricreato da [[claude-md-globale]].
+
+Le regole qui sotto restano tutte valide: il protocollo non le sostituisce, dice
+in che ordine si guardano.
+
 ## Le cose che sbaglieresti senza istruzioni
 
 1. **Le credenziali non entrano mai qui.** Il vault sta su GitHub: una chiave
