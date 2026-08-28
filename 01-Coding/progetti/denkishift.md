@@ -5,7 +5,7 @@ client: interno
 stack: [next-16, react-19, typescript, tailwind-4, supabase, capacitor-8, zod]
 started: TODO
 deadline: TODO
-updated: 2026-08-28
+updated: 2026-08-29
 source: repo
 prezzo: 2 €/dipendente/mese
 clienti-paganti: 0
@@ -94,6 +94,8 @@ una trattativa è un argomento a favore, non un dettaglio.
 - [ ] Rinominare repo e progetto npm in `denkishift`
 - [ ] Provare nel browser le 8 schermate mai viste
 - [ ] Interfaccia della generazione automatica
+- [ ] **Riprogettazione dell'interfaccia** → [[denkishift-interfaccia]]. Prima
+      di tutto: nome e logo sul login, e dati di prova che reggano una demo
 - [ ] Pubblicare su `denkishift.it`
 - [ ] Definire la provvigione di Giulia sul prodotto turni — non bloccante
 - [ ] Primo cliente pilota — anche gratis, per avere un caso reale
@@ -101,4 +103,6 @@ una trattativa è un argomento a favore, non un dettaglio.
 ## Collegamenti
 
 [[prodotti-e-listino]] · [[stack]] · [[convenzioni]] · [[obiettivi-6-mesi]] ·
-[[flusso-vendita]] · [[materiale-offline]]
+[[flusso-vendita]] · [[materiale-offline]] · [[denkishift-interfaccia]] ·
+[[obiezione-non-sapranno-usarlo]] ·
+[[2026-08-29-architettura-interfaccia-denkishift]]
