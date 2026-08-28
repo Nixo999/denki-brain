@@ -19,6 +19,11 @@ progetti, pushare su GitHub e applicare le migrazioni su Supabase.
 **Deciso il 28 agosto 2026: Patrick usa il proprio account.** Ha un account
 GitHub suo, già collegato ai repository come collaboratore.
 
+| | Valore |
+|---|---|
+| Utente GitHub | `patricksappa26` |
+| Email dei commit | `patricksappa26@gmail.com` |
+
 Questo semplifica tutto e toglie il problema più grosso: **le credenziali di
 Nicola non finiscono su una macchina che non è la sua.** Ognuno pusha col
 proprio nome, e nella storia di git si vede chi ha fatto cosa.
@@ -104,6 +109,29 @@ Verifica:
 ```bash
 gh auth status
 ```
+
+### 2-bis. L'identità dei commit — passaggio separato, e si dimentica
+
+`gh auth login` autentica il **push**; non dice a git **chi firma** il commit.
+Sono due cose distinte, e senza la seconda il primo `git commit` si ferma con
+*«Please tell me who you are»*.
+
+```bash
+git config --global user.name "patricksappa26"
+git config --global user.email "patricksappa26@gmail.com"
+```
+
+Verifica — deve stampare il nome giusto:
+```bash
+git var GIT_AUTHOR_IDENT
+```
+
+> [!warning] Se su una macchina resta l'account di un altro
+> `gh auth status` dice a nome di **chi parte il push**. Se su un Mac di
+> Patrick risponde `Nixo999`, l'autenticazione è ancora quella di Nicola: il
+> commit risulterà di Patrick ma il push di Nicola, e la separazione decisa
+> sopra salta a metà. Si sistema con `gh auth login` sull'account giusto
+> (`gh auth switch` se sono entrambi presenti).
 
 ---
 
@@ -210,8 +238,10 @@ echo 'org.gradle.java.home=/Library/Java/JavaVirtualMachines/temurin-21.jdk/Cont
 
 ## 7. Il second brain su Obsidian
 
-Scaricare Obsidian da `obsidian.md`, poi **Open folder as vault** →
-`~/denkicode/denki-brain`.
+Scaricare Obsidian da `obsidian.md`, poi **Open folder as vault** → la
+cartella del vault. Sul Mac di Patrick **non** sta in `~/denkicode/`: sta in
+`~/Desktop/denki-brain`. Funziona identico, ma i comandi qui sotto vanno letti
+con quel percorso.
 
 Plugin e impostazioni arrivano già col repository. Da installare a parte solo
 **Obsidian Git**, con *Pull updates on startup* acceso — vedi la sezione 7 del
@@ -241,7 +271,7 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 Poi, **dentro la cartella del brain**:
 
 ```bash
-cd ~/denkicode/denki-brain
+cd ~/Desktop/denki-brain   # su altre macchine: ~/denkicode/denki-brain
 claude
 ```
 
@@ -258,6 +288,28 @@ Il vault ha il suo `CLAUDE.md`: alla prima riga di conversazione Claude sa già
 chi siamo, cosa stiamo facendo e quanto ci devono. A Patrick basta scrivere:
 
 > «Sono Patrick. Leggi il CLAUDE.md e dimmi a che punto siamo.»
+
+## 7-ter. Dov'è arrivato il MacBook di Patrick
+
+Verificato da quella macchina il **28 agosto 2026**. Si aggiorna quando cambia:
+serve a sapere cosa manca ancora senza rifare il giro dei comandi.
+
+| Pezzo | Stato |
+|---|---|
+| Vault `denki-brain` | ✅ In `~/Desktop/denki-brain`, `main` allineato a `origin`, 47 note |
+| Claude Code | ✅ v2.1.248, legge il vault e i cinque slash command |
+| `git`, `node`, `gh`, Homebrew | ✅ Installati |
+| Identità dei commit | ✅ `patricksappa26` — impostata il 28/08, prima mancava del tutto |
+| `gh auth` | ⚠️ Autenticato come **`Nixo999`**: il push parte ancora a nome di Nicola |
+| Obsidian | ❌ Non installato — il vault si legge solo dal terminale |
+| Repo di codice, chiavi Supabase | ⚪ Assenti **per scelta**, vedi il punto 0 |
+
+> [!note] Analisi di Claude — 2026-08-28
+> Le due righe non verdi non bloccano il lavoro: da qui si scrive nel vault, si
+> committa e si pusha. Ma finché `gh` resta su `Nixo999`, metà della decisione
+> del 28 agosto non è applicata — l'autore del commit dice Patrick, il push
+> dice Nicola. È un `gh auth login` da fare a mano, dal browser: nessuno può
+> farlo al posto suo.
 
 ## 8. Il rituale, da qui in avanti
 
