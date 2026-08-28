@@ -5,7 +5,7 @@ client: sebastian-torres
 stack: [react-19, typescript, vite-8, tailwind-3, react-router-7, tanstack-query, supabase, capacitor-6]
 started: 2026-07-20
 deadline: TODO
-updated: 2026-08-28
+updated: 2026-08-29
 source: repo
 valore: 2400
 incassato: 400
@@ -114,6 +114,7 @@ rinunciate**, e la differenza la nota il cliente, non noi.
 | 2026-08-20 | Disponibilità **rientra**, sviluppata in giornata |
 | 2026-08-22 | **XML SDI richiesto di nuovo** → [[2026-08-22-xml-sdi-da-quotare]] |
 | 2026-08-25/27 | Tre liste di segnalazioni in tre giorni |
+| 2026-08-29 | **OperO Choice**: messaggio a schermo pieno scelto dal Super Admin. Chiesto a voce, non esiste in OperO 1 → **lavoro nuovo da quotare**, come l'XML SDI |
 
 ## Il ritmo attuale, e cosa dice
 
