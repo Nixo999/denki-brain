@@ -335,6 +335,44 @@ niente: legge `CLAUDE.md` da solo e sa già chi siete.
     che Patrick gli manda su WhatsApp per dirgli che è lavoro nuovo, senza
     farlo sembrare un no."*
 
+### ⚠️ Prima di tutto: essere davvero dentro il vault
+
+Non è automatico, ed è l'errore più facile da fare.
+
+| Da dove apri | Vede il vault? |
+|---|---|
+| **Claude Code** (terminale o app desktop) **aperto sulla cartella del vault** | ✅ Sì |
+| **Claude Code** aperto su un'altra cartella | ❌ No — vede quell'altra cartella |
+| **Claude.ai**, l'app o il sito di chat normale | ❌ **Mai.** È un altro prodotto: non tocca i tuoi file, non legge il `CLAUDE.md`, non può committare |
+
+Claude Code lavora **su una cartella alla volta**, quella da cui viene aperto.
+Da terminale è il `cd` a deciderlo:
+
+```bash
+cd ~/Desktop/denki-brain    # oppure ~/denkicode/denki-brain
+claude
+```
+
+Nell'app desktop si sceglie la cartella all'apertura, e di solito resta nelle
+sessioni recenti: la volta dopo basta ripescarla.
+
+**La verifica in due secondi**: scrivi `/` e guarda l'elenco dei comandi. Se
+compaiono `/chiudi-sessione`, `/settimana`, `/aggiorna-progetti`,
+`/nuovo-progetto` e `/nuovo-cliente`, sei dentro. Se non ci sono, sei nella
+cartella sbagliata: esci e riapri dalla cartella giusta.
+
+### Ogni sessione riparte da zero — ed è voluto
+
+Claude non ricorda le conversazioni precedenti. Quello che ricorda è **il
+vault**: apre il `CLAUDE.md`, legge le note, e sa chi siete.
+
+Da qui discendono due cose pratiche:
+
+- **Se una cosa non è scritta nel vault, alla sessione dopo non esiste.** Per
+  questo esiste `/chiudi-sessione`
+- **Se scrivi nel vault ma non fai push, l'altro non lo vede.** Il push è il
+  momento in cui la cosa diventa memoria condivisa, non prima
+
 **Il modo giusto di chiedere**: dagli il contesto che ha in testa un umano.
 Non *"scrivi uno script"* ma *"scrivi lo script per un ferramenta di Seveso, che
 ha 4 dipendenti e non risponde mai al telefono la mattina"*. La differenza è
