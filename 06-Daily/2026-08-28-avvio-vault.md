@@ -109,8 +109,21 @@ Il rilievo che conta: **il segmento ovvio è quello sbagliato.** "Negozi" viene
 in mente per primo ed è il più debole. Il dolore vero sta in RSA, imprese di
 pulizie e vigilanza — H24, sostituzioni continue, e nessuno li chiama.
 
+## Sesto giro — repository online e prima lista
+
+- ✅ **Push eseguito** su `github.com/Nixo999/denki-brain` (privato). Sette
+  commit. Aggiunto `.gitattributes` per normalizzare i fine riga fra Windows e
+  Mac, altrimenti ogni pull sarebbe un conflitto su note mai toccate
+- ✅ **Capacità di Giulia**: un'ora al giorno, ~5 a settimana, numero personale
+  con WhatsApp. Il conto in [[metriche]] dice che 50 chiamate ne occupano due:
+  il limite non è lei, è quanto ha da chiamare. Lista ridimensionata a 70-80
+- ✅ **Prima lista vera**: [[2026-08-28-brianza-turni]], **51 contatti** —
+  25 RSA, 7 cooperative, 19 imprese di pulizie. Nessuna lista in mano a Giulia
+  prima di questa
+
 ## Aperto adesso
 
+- ⬜ **Chiamare la lista**, cominciando dalle RSA
 - ⬜ **Provare lo script su 40 chiamate** di un solo segmento
 - ⬜ **Come si trattano le royalty 1-2%** senza P.IVA → [[vincoli-fiscali]]
 - ⬜ **Cosa c'è in galleria oggi**, e aggiungerci [[albybike]] con una
