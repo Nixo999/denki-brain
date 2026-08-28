@@ -12,6 +12,12 @@ stato: da-chiamare
 Prima lista operativa. File: `2026-08-28-brianza-turni.csv`, **51 contatti**,
 pronto da importare in Google Sheets.
 
+⚠️ **Convertita allo schema a 8 colonne il 28 agosto 2026** ([[ciclo-settimanale]]).
+Il contenuto non è cambiato: `Comune` è finito dentro `Nome Azienda`, `Segnale` e
+`Note` si sono fuse in `Note Strategiche`, e le colonne di tracking sono
+diventate l'unica colonna di Giulia. È la **lista DenkiShift** della settimana
+del 31 agosto → [[2026-08-28-liste-31-agosto]].
+
 Costruita secondo [[metodo-liste]]. Da chiamare con
 [[script-giulia-denkishift]] e negli orari indicati là.
 
