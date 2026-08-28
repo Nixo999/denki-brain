@@ -54,7 +54,7 @@ committato apposta con il commento che spiega perché.
 |---|---|
 | PC Windows di Nicola | ✅ Sì — è la macchina di sviluppo |
 | Mac, quando ci lavora Nicola | ✅ Sì |
-| Mac, per l'uso di Patrick | ❌ **No.** Patrick non scrive codice: sul suo Mac stanno il vault e Claude Code, non i progetti → [[setup-macchina-nuova]] |
+| Mac, per l'uso di Patrick | ⚠️ **Una alla volta.** Dal 28 agosto 2026 quel Mac applica le modifiche allo schema di [[denkishift]] **in sviluppo**: gli servono le chiavi di quel progetto, non le altre → [[2026-08-28-supabase-denkishift-sul-mac]] |
 
 > [!note] Analisi di Claude — 2026-08-28
 > «Da tutti i dispositivi si deve poter accedere al database» è un obiettivo

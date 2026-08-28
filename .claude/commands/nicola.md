@@ -54,8 +54,10 @@ di cinque file letti.
 - **Se emerge una scelta, va nel brain**: nota nuova in `05-Decisioni/` (le
   vecchie non si riscrivono) o `updated` nel progetto, poi commit e push.
   Marca come tuo quello che generi: `source: claude`.
-- **Patrick non ha i repo.** Se la richiesta arriva da lui, non proporgli
-  comandi da eseguire: sul suo Mac ci sono solo vault, Claude Code e Obsidian.
+- **Il Mac di Patrick non è più disarmato.** Dal 28 agosto 2026 ha i repo sul
+  Desktop e applica le modifiche allo schema di DenkiShift **in sviluppo**: se
+  il tuo lavoro tocca il database, quella macchina lo può già eseguire. La
+  produzione no, su nessuno dei due prodotti — vedi `modifiche-al-database`.
 
 ## 4. Rispondi così, e poi fermati
 

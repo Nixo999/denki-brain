@@ -8,9 +8,13 @@ come sta andando adesso. Il codice ha la sua documentazione, dentro i suoi repo.
 account GitHub proprio). Giulia **non** ha accesso: provvigioni e crediti
 stanno in chiaro.
 
-⚠️ **Patrick non scrive codice.** Sul suo Mac stanno il vault e Claude Code, non
-i repo dei progetti né le chiavi Supabase — vedi [[setup-macchina-nuova]]. Se ti
-chiede qualcosa di tecnico, ricordati che parla dalla macchina del commerciale.
+⚠️ **Patrick non scrive codice, ma il suo Mac non è più disarmato.** Dal
+28 agosto 2026 su quel Desktop ci sono i repo (`smoothduty`, `opero-sito`,
+`opero-core`, `capacitor`) e da lì **si applicano le modifiche al database di
+DenkiShift, sul progetto di sviluppo**. Se ti chiede una modifica allo schema,
+si può fare: il come sta in [[modifiche-al-database]], il perché in
+[[2026-08-28-supabase-denkishift-sul-mac]]. **La produzione resta fuori**, su
+tutti e due i prodotti.
 
 ## Chi siamo
 
