@@ -23,7 +23,7 @@ lessico da [[vincoli-fiscali]], la demo la fa **Patrick**.
 
 ## Lo script
 
-### 1. Apertura — i primi otto secondi
+### 1. Apertura — i primi otto secondi · *Voss*
 
 ⚠️ Qui sotto c'è la variante di riferimento. **Ne esistono altre tre**, con
 meccanismi diversi e un piano per provarle a eliminazione: [[pattern-interrupt]].
@@ -50,7 +50,7 @@ Perché è costruita così, in tre pezzi:
 > **«Mi può dire chi se ne occupa, e quando lo trovo? Richiamo io.»**
 > → segnare `Non è il decisore` + nome e orario.
 
-### 2. La domanda che apre il dolore
+### 2. La domanda che apre il dolore · *SPIN, Problema*
 
 > **«E quando salta qualcuno all'ultimo — una malattia, un imprevisto — come
 > fate a coprirlo? Chiamate uno per uno?»**
@@ -63,7 +63,20 @@ si è appena qualificato da solo.
 
 Due informazioni che servono a Patrick, prese senza sembrare un questionario.
 
-### 3. Il valore, in quattro righe
+### 2b. Il costo del buco · *SPIN, Implicazione*
+
+> **«E quando non trova nessuno, chi ci va? Le tocca coprire a lei?»**
+>
+> *(ascolta)*
+>
+> **«Quante volte al mese le succede?»**
+
+⚠️ **È la fase che mancava a questo script fino al 28 agosto 2026.** Senza,
+resta un problema ammesso ma senza prezzo, e il prezzo del prodotto sembra
+alto per confronto. Con, il responsabile ha appena detto ad alta voce quante
+sere si è rovinato quest'anno. Non si commenta la risposta: si va avanti.
+
+### 3. Il valore, in quattro righe · *Challenger, insegna*
 
 > **«Ecco, allora le dico in due parole perché la chiamo. Siamo una software
 > house qui in Brianza e abbiamo fatto una cosa che serve esattamente a quello:
@@ -74,7 +87,7 @@ Due informazioni che servono a Patrick, prese senza sembrare un questionario.
 
 Non si dice "gestionale innovativo", non si dice "soluzione". Si dice cosa fa.
 
-### 4. La domanda, una sola
+### 4. La domanda, una sola · *doppia scelta*
 
 > **«Glielo faccio vedere? Sono dieci minuti, glielo mostra il mio collega
 > Patrick. Le va meglio in videochiamata, o passiamo noi in negozio?»**
@@ -87,7 +100,7 @@ Quando dice sì:
 
 ---
 
-## Le obiezioni
+## Le obiezioni · *Blount e Belfort*
 
 Il looping: **prima si valida, poi si riporta al valore, poi si richiede.**
 "Ha ragione" è quasi sempre la prima parola.

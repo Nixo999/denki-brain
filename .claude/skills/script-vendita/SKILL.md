@@ -75,6 +75,13 @@ Segna gli script generati con `source: claude` se finiscono nel vault. Sono
 bozze da provare al telefono, non verità: **20 chiamate sono il test**, non il
 tuo giudizio.
 
+## Il Word per Giulia
+
+Giulia **non ha il vault**: legge i `.docx` in `02-Sales/script/`. Si rigenerano
+con `node build.js` da `.claude/skills/script-vendita/word/` — istruzioni nel
+`README.md` lì dentro. Chi corregge uno script corregge la nota **e** il
+`content-*.js`, poi rigenera: altrimenti al telefono resta la versione vecchia.
+
 ## Ricorda perché stai scrivendo
 
 Il problema dichiarato è che *"le attività non ci ascoltano"*. Uno script che

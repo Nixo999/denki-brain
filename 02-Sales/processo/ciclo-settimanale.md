@@ -36,6 +36,18 @@ lista, questo dice **quante ne servono, quando arrivano e cosa torna indietro**.
 Le prime tre escono come **CSV scaricabile**, una tabella per lista. La quarta
 esce come elenco, non come foglio: si legge in macchina, non si compila.
 
+### Quale script per quale lista
+
+| Lista | Script | Word per Giulia |
+|---|---|---|
+| Siti Web | [[script-giulia-siti-vetrina]] · [[script-giulia-ecommerce]] | `02-Sales/script/*.docx` |
+| DenkiShift | [[script-giulia-denkishift]] + [[pattern-interrupt]] | idem |
+| Indagine | [[script-giulia-indagine]] | idem |
+
+I `.docx` sono la copia che Giulia legge: **il vault non ce l'ha, lei**. Quando
+si corregge uno script si rigenera anche il Word, altrimenti al telefono resta
+la versione vecchia.
+
 ### Chi sta in quale lista
 
 - **Siti Web** — PMI locali con sito obsoleto, assente o mal posizionato

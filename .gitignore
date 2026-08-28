@@ -25,3 +25,6 @@ Personal/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# le dipendenze del generatore Word non si versionano
+node_modules/

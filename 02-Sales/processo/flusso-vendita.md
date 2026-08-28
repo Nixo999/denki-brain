@@ -37,6 +37,7 @@ Giulia chiama → "abbiamo già preparato una bozza grafica"
 ```
 
 **Supporto**: volantini ([[materiale-offline]]).
+**Script**: [[script-giulia-siti-vetrina]] — anche in Word, per Giulia.
 **Provvigione Giulia**: **25% sull'anticipo**. 0% sui canoni.
 
 ### B — E-commerce
@@ -46,6 +47,7 @@ Bozza approvata → sviluppo Nicola → chiusura Patrick.
 
 **Prezzo**: da definire caso per caso, **a partire da 500 €** + canone
 **30-100 €/mese** + **royalty dell'1-2% sulle vendite**.
+**Script**: [[script-giulia-ecommerce]] — anche in Word, per Giulia.
 **Provvigione Giulia**: **25% sull'anticipo**. 0% sui canoni, 0% sulle royalty.
 
 ⚠️ Le royalty non sono incassabili in modo pulito senza P.IVA: leggere
@@ -63,6 +65,7 @@ Giulia fa leva sull'ottimizzazione del personale
 ```
 
 **Supporto**: biglietti da visita dedicati ([[materiale-offline]]).
+**Script**: [[script-giulia-denkishift]] + [[pattern-interrupt]] — anche in Word.
 **Provvigione Giulia**: **TBD**, non bloccante — si definisce in corsa.
 
 ⚠️ Il prodotto **non è ancora installabile in produzione** → [[denkishift]].
@@ -80,6 +83,7 @@ Form compilato → Nicola sviluppa un prototipo mirato
               → Patrick contatta per la vendita vera
 ```
 
+**Script**: [[script-giulia-indagine]] — anche in Word, per Giulia.
 **Provvigione Giulia**: **25% del totale venduto**, sia una tantum sia su un
 abbonamento annuale (in quel caso, 25% ogni anno).
 

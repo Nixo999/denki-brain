@@ -1,0 +1,81 @@
+module.exports = {
+  file: 'script-giulia-ecommerce.docx',
+  title: 'E-commerce',
+  product: 'Prodotto B · si chiama chi vende già e incassa a mano',
+  objective: '**Obiettivo della chiamata: il sì alla bozza della vetrina online.** Non quotare il lavoro vero, non promettere tempi: quello è di Patrick.',
+  blocks: [
+    { t: 'h', text: 'Le regole, prima di comporre il numero' },
+    { t: 'table', widths: [3100, 6640], head: ['Regola', 'In pratica'],
+      rows: [
+        ['Sempre del **"Lei"**', 'Anche se dall’altra parte ti danno del tu'],
+        ['**Non chiudi tu**', 'Il traguardo è il sì alla bozza con tre loro prodotti'],
+        ['Parole vietate', '**Mai** "fattura", "abbonamento", "canone mensile". Si dice **ricevuta** e **quota annuale**'],
+        ['La percentuale sulle vendite', '**Non esiste al telefono.** Non si nomina mai — vedi l’ultima pagina'],
+        ['Chi c’è in lista', 'Chi **vende già**: in negozio, su Instagram, in DM. Non chi "potrebbe vendere online"'],
+      ] },
+
+    { t: 'h', text: '1. Apertura', tag: 'Voss — la domanda a cui si risponde "No"' },
+    { t: 'say', lines: ['Buongiorno, parlo con [nome dell’attività]?', '(aspetta il sì)', 'L’ho beccata in un momento impossibile?'] },
+    { t: 'note', text: 'Il "no" glielo lasci dire subito, e con quello si riprende il controllo. Se dice **sì**: *«Quando la richiamo, prima o dopo le [orario]?»* → **Richiamare**.' },
+
+    { t: 'h', text: '2. La ragione specifica', tag: 'Gitomer — i compiti fatti a casa' },
+    { t: 'say', lines: ['La chiamo perché ho guardato la vostra pagina prima di telefonare: avete [il prodotto vero, scritto in lista] con le foto fatte bene, ma per sapere quanto costa bisogna scrivervi in privato.'] },
+    { t: 'note', text: 'Si nomina **una cosa vera**: il prodotto, non "i vostri articoli". È l’unica frase della chiamata che un call center non potrebbe mai dire.' },
+
+    { t: 'h', text: '3. Il dolore', tag: 'SPIN — Problema, poi Implicazione' },
+    { t: 'say', lines: ['Quanti messaggi vi arrivano al giorno del tipo "quanto viene?" o "ce l’avete la taglia?"', '(ascolta: chi risponde "eh, tantissimi" si è appena qualificato)', 'E quando siete al banco e rispondete tre ore dopo, secondo lei quello aspetta o l’ha già comprato da un altro?'] },
+    { t: 'note', text: 'Questa è tutta la vendita: il costo non è il sito che non hanno, sono **gli ordini che si perdono mentre lavorano**. Poi silenzio.' },
+    { t: 'p', text: 'Se il tono resta freddo, una sola in più:' },
+    { t: 'say', lines: ['E la sera, quando siete chiusi, chi vi scrive alle undici lo recuperate?'] },
+
+    { t: 'h', text: '4. Il valore anticipato', tag: 'Challenger — insegna qualcosa, non presentare il prodotto' },
+    { t: 'say', lines: ['Ecco perché la chiamo. Siamo una software house della Brianza e facciamo una cosa sola per capirci: prendiamo tre dei vostri prodotti — quelli veri, con le vostre foto — e le facciamo vedere come sarebbero con prezzo, taglie e tasto per pagare. Gliela mandiamo su WhatsApp, non costa niente. Se le piace ne parliamo, se non le piace l’ha vista gratis.'] },
+    { t: 'note', text: 'Tre prodotti **veri**, non un modello generico: il cervello ci si riconosce dentro in due secondi.' },
+
+    { t: 'h', text: '5. La domanda, una sola' },
+    { t: 'say', lines: ['Facciamola. Mi dice due o tre prodotti che vendete di più, e su che numero gliela mando?'] },
+    { t: 'p', text: 'Se preferisce di persona:' },
+    { t: 'say', lines: ['Anche meglio: passa il mio collega Patrick con la bozza già pronta. [Giorno] mattina o [giorno] pomeriggio?'] },
+
+    { t: 'break' },
+    { t: 'h', text: 'Le obiezioni', tag: 'Blount — Accetta, Spiazza, Chiedi' },
+    { t: 'obj', q: 'Non mi interessa vendere online',
+      lines: ['Ci sta, e non le sto chiedendo di aprire un negozio online. Le sto chiedendo se vuole smettere di scrivere il prezzo trenta volte al giorno in chat. Le mando come verrebbe con tre suoi prodotti?'] },
+    { t: 'obj', q: 'L’ho già provato e non ha venduto niente',
+      lines: ['Me lo dicono spesso, e di solito hanno ragione. Le faccio una domanda: le foto e i prezzi chi ce li ha messi, voi o l’agenzia? Perché i siti che non vendono sono quasi sempre quelli rimasti fermi al giorno che li hanno accesi. Le faccio vedere la differenza su tre suoi prodotti?'],
+      note: 'Se dice una frase che nasconde qualcosa — *«ci ho già rimesso dei soldi»* — **ripeti le sue ultime parole** con tono interrogativo: *«Ci ha rimesso dei soldi?»* e poi taci. Racconta lui.' },
+    { t: 'obj', q: 'Quanto costa?',
+      lines: ['Si parte da cinquecento euro, e dipende da quanti prodotti mette dentro. Poi c’è la quota annuale per tenerlo online, e la definisce il mio collega sulla base del lavoro. Le dico subito la cifra perché non mi piace girarci intorno, ma prima guardi la bozza: se non le piace non ha speso niente. Su che numero gliela mando?'],
+      note: 'La cifra esatta della quota annuale **non la dai tu**: va da 360 a 1.200 € l’anno secondo il lavoro.' },
+    { t: 'obj', q: 'Vendo già su Amazon / Etsy / Vinted',
+      lines: ['Perfetto, allora sa già vendere online — è la risposta migliore che potevo avere. Una domanda sola: su quanto vende lì, quanto le resta in mano dopo le commissioni?', '(quasi nessuno lo sa con precisione, e chi lo sa si arrabbia da solo)', 'Sul vostro le resta tutto. Le mando la bozza?'] },
+    { t: 'obj', q: 'Non ho tempo di gestire le spedizioni',
+      lines: ['È il problema vero, non il sito. Per questo si parte con ritiro in negozio e pagamento online: il cliente paga, viene a prendere il pacco, zero spedizioni. Le faccio vedere come sarebbe?'] },
+    { t: 'obj', q: 'Mi mandi una mail',
+      lines: ['Volentieri. Solo che una bozza in mail non si guarda, su WhatsApp sì. Le arriva su questo numero?'] },
+
+    { t: 'h', text: 'Cosa passo a Patrick' },
+    { t: 'list', items: [
+      '**Due o tre prodotti** che vendono di più — servono per costruire la bozza',
+      '**Come incassano adesso**: solo negozio, DM, WhatsApp, marketplace',
+      '**Quanti messaggi** o richieste al giorno, con le sue parole',
+      'Il **numero WhatsApp** e chi decide',
+    ] },
+
+    { t: 'h', text: 'I messaggi dopo la chiamata' },
+    { t: 'p', text: '**Ha detto sì alla bozza:**' },
+    { t: 'say', lines: ['Buongiorno [Nome], sono Giulia di DenkiCode, ci siamo sentiti ora. Passo tutto a Patrick: prende [prodotto] e [prodotto] e le fa vedere come sarebbero con prezzo e pagamento online. Le arriva qui, nessun impegno.'] },
+    { t: 'p', text: '**Sparito dopo la bozza** — dopo dieci giorni:' },
+    { t: 'say', lines: ['Buongiorno [Nome], Giulia di DenkiCode. Avete rinunciato all’idea di far comprare i clienti direttamente online?'] },
+
+    { t: 'h', text: 'Quello che non si dice mai' },
+    { t: 'table', widths: [4200, 5540], head: ['Mai', 'Perché'],
+      rows: [
+        ['**La percentuale sulle vendite (1-2%)**', 'Non è ancora deciso come si incassa. Se chiede cosa ci guadagniamo: *«il lavoro e la quota annuale, il resto glielo spiega il mio collega»*'],
+        ['"fattura", "abbonamento", "canone mensile"', 'Si dice **ricevuta** e **quota annuale**'],
+        ['La quota annuale in cifra', 'Va da 360 a 1.200 € l’anno secondo il lavoro: la dice Patrick'],
+        ['Promettere vendite o percentuali di crescita', 'Su questo prodotto abbiamo **zero clienti**: non c’è niente da citare'],
+        ['Tempi di consegna', 'Li dà Patrick'],
+      ] },
+  ],
+};

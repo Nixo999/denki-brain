@@ -218,6 +218,7 @@ serve?"*, ma *"ecco cosa state sbagliando e quanto vi costa"*.
 
 ## Collegamenti
 
-[[flusso-vendita]] · [[script-giulia-denkishift]] · [[pattern-interrupt]] ·
+[[flusso-vendita]] · [[script-giulia-siti-vetrina]] · [[script-giulia-ecommerce]] ·
+[[script-giulia-denkishift]] · [[script-giulia-indagine]] · [[pattern-interrupt]] ·
 [[stile-comunicazione]] · [[prodotti-e-listino]] · [[metodo-liste]] ·
 [[metriche]] · [[protocollo-jarvis]] · [[2026-08-28-core-commerciale]]
