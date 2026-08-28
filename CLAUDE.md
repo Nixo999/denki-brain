@@ -4,8 +4,13 @@ Vault Obsidian versionato con git. Non è documentazione di codice: è la
 **memoria dell'azienda** — chi siamo, cosa abbiamo costruito e con quali scelte,
 come sta andando adesso. Il codice ha la sua documentazione, dentro i suoi repo.
 
-**Chi scrive qui**: Nicola (da più PC) e Patrick (parte economica e clienti).
-Giulia **non** ha accesso: provvigioni e crediti stanno in chiaro.
+**Chi scrive qui**: Nicola (da più PC) e Patrick (dal suo MacBook, con un
+account GitHub proprio). Giulia **non** ha accesso: provvigioni e crediti
+stanno in chiaro.
+
+⚠️ **Patrick non scrive codice.** Sul suo Mac stanno il vault e Claude Code, non
+i repo dei progetti né le chiavi Supabase — vedi [[setup-macchina-nuova]]. Se ti
+chiede qualcosa di tecnico, ricordati che parla dalla macchina del commerciale.
 
 ## Chi siamo
 

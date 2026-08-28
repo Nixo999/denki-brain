@@ -152,6 +152,11 @@ Scritta [[setup-macchina-nuova]]: procedura completa per rendere il MacBook di
 Patrick una macchina di lavoro a tutti gli effetti — brain, repo, push su
 GitHub e migrazioni.
 
+**Deciso**: Patrick usa un **account GitHub proprio**, già collegato ai
+repository. Sul suo Mac vanno il vault, Claude Code e Obsidian — **non** i repo
+di codice né le chiavi Supabase, che non gli servono e che sarebbero una copia
+in più da rigenerare se il portatile sparisce.
+
 Due cose emerse preparandola:
 
 - ⚠️ **«Push su Supabase» esiste solo su [[opero]].** Su [[denkishift]] le
@@ -164,7 +169,7 @@ Due cose emerse preparandola:
 
 ## Aperto adesso
 
-- ⬜ **Decidere chi si autentica sul Mac** — Nicola o Patrick →
+- ⬜ Patrick: installare Claude Code e Obsidian sul Mac →
   [[setup-macchina-nuova]]
 - ⬜ **Chiamare la lista**, cominciando dalle RSA
 - ⬜ **Estendere la lista a 130-150 contatti** — le 51 attuali bastano 2 giorni

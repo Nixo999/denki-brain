@@ -14,34 +14,37 @@ progetti, pushare su GitHub e applicare le migrazioni su Supabase.
 
 ---
 
-## 0. Una decisione da prendere prima di toccare il Mac
+## 0. Chi lavora su quella macchina
 
-**Chi si autentica su quella macchina?** Cambia tutto il resto.
+**Deciso il 28 agosto 2026: Patrick usa il proprio account.** Ha un account
+GitHub suo, già collegato ai repository come collaboratore.
 
-| Scenario | Cosa serve |
-|---|---|
-| **A — Nicola lavora dal Mac di Patrick** (l'ipotesi più probabile: i `docs/` di `smooth-duty` descrivono già il lavoro da macOS) | Si accede con l'account GitHub **Nixo999**. Nessun invito da fare |
-| **B — Patrick pusha da sé, col suo account** | Serve il suo account GitHub, aggiunto come **collaboratore** su ogni repo: *Settings → Collaborators → Add people* |
+Questo semplifica tutto e toglie il problema più grosso: **le credenziali di
+Nicola non finiscono su una macchina che non è la sua.** Ognuno pusha col
+proprio nome, e nella storia di git si vede chi ha fatto cosa.
 
-> [!warning] Analisi di Claude — 2026-08-28
-> Se vale lo scenario A, chiunque usi quel Mac ha in mano le credenziali di
-> Nicola e le chiavi di Supabase — compresa la `service_role`, che **scavalca
-> ogni regola RLS** e vede i dati di tutte le aziende su OperO, causali di
-> malattia comprese.
+### Cosa serve a Patrick, e cosa no
+
+| | Serve? | Perché |
+|---|---|---|
+| Il **second brain** | ✅ Sì | È la sua metà del vault: clienti, soldi, strategia |
+| **Claude Code** | ✅ Sì | Per interrogare il brain e farsi scrivere script e liste |
+| **Obsidian** | ✅ Sì | Per leggere il vault senza il terminale |
+| I repo **`smooth-duty`** e **`opero-sito`** | ⚪ Solo se serve | Patrick non scrive codice. Si clonano il giorno in cui gli servono davvero |
+| Le chiavi **Supabase** e i file `.env` | ❌ No | Non gli servono, e ogni copia in più di una chiave è un rischio in più |
+
+> [!note] Analisi di Claude — 2026-08-28
+> **Non installare a Patrick quello che non gli serve** non è pigrizia: la
+> `service_role` di OperO vede i dati di tutte le aziende del cliente, causali
+> di malattia comprese. Una copia in meno in giro è una copia in meno da
+> rigenerare il giorno in cui un portatile sparisce.
 >
-> Non è un problema di fiducia fra soci: è che quella macchina esce di casa
-> tutti i giorni, va in università e a MediaWorld. Se si perde, si perde tutto.
->
-> Due mitigazioni che costano dieci minuti:
-> 1. **Un utente macOS separato** (`denkicode`) per il lavoro, distinto da
->    quello quotidiano di Patrick. Le credenziali restano lì dentro
-> 2. **FileVault attivo** — *Impostazioni → Privacy e sicurezza → FileVault*.
->    Senza, chi ha il portatile in mano legge il disco
->
-> Se un giorno una chiave dovesse finire in giro, si rigenera dal pannello
-> Supabase: *Project Settings → API → Reset*.
+> Se un domani Patrick dovrà davvero far girare i progetti, si aggiunge allora —
+> i passaggi 4, 5 e 6 restano scritti qui apposta.
 
----
+⚠️ Da fare comunque, su qualunque macchina che porta in giro dati di clienti:
+**FileVault acceso** (*Impostazioni → Privacy e sicurezza → FileVault*). Senza,
+chi ha il portatile in mano legge il disco.
 
 ## 1. Gli strumenti di base
 
@@ -215,6 +218,46 @@ Plugin e impostazioni arrivano già col repository. Da installare a parte solo
 `README.md`.
 
 ---
+
+## 7-bis. Il percorso breve per Patrick
+
+Se serve solo il brain — che è il caso di Patrick — bastano questi passaggi:
+**1** (solo `xcode-select` e Homebrew), **2**, **3** (solo `denki-brain`), il
+blocco Claude Code qui sotto e **7**. Gli altri si saltano.
+
+### Installare Claude Code
+
+```bash
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
+Non richiede Node: si installa da sé. Se al comando successivo il terminale
+risponde `command not found`, il percorso non è ancora nel `PATH`:
+
+```bash
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
+```
+
+Poi, **dentro la cartella del brain**:
+
+```bash
+cd ~/denkicode/denki-brain
+claude
+```
+
+Al primo avvio chiede di accedere — si apre il browser — e se ci si fida della
+cartella: **sì**, l'abbiamo scritta noi.
+
+⚠️ **Claude Code richiede un abbonamento Claude a testa.** Non è condivisibile
+fra due persone, quindi è un costo ricorrente in più da mettere in conto
+insieme a quelli di [[vincoli-fiscali]].
+
+### La prima cosa da scrivere
+
+Il vault ha il suo `CLAUDE.md`: alla prima riga di conversazione Claude sa già
+chi siamo, cosa stiamo facendo e quanto ci devono. A Patrick basta scrivere:
+
+> «Sono Patrick. Leggi il CLAUDE.md e dimmi a che punto siamo.»
 
 ## 8. Il rituale, da qui in avanti
 
