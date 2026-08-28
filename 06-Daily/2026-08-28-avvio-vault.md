@@ -221,6 +221,41 @@ del repo avevo scritto «il Mac di Patrick», che è esattamente l'invenzione ch
 un commit di stamattina aveva tolto da `08-aperto.md` — il nome utente di una
 macchina non prova chi ci lavora. Tolta.
 
+## Decimo giro — cosa ha fatto Patrick, e cosa manca per renderlo operativo
+
+Controllati i due repository. **Patrick non ha toccato il codice di
+DenkiShift**: le sue tre firme (`patricksappa26`) stanno tutte nel vault —
+[[ciclo-settimanale]] col modulo Word, e la correzione di
+[[setup-macchina-nuova]] dove il vault raccontava un Mac diverso da quello vero.
+
+L'unica cosa che chiedeva al repo era scritta in fondo a quel commit: `pg`
+aggirato con `--no-save` «che però andrebbe sistemato là dove sta il difetto».
+**Fatto e pubblicato** su `smooth-duty` (`201f939`): sta in `devDependencies`,
+sul suo Mac basta `git pull` e `npm install`.
+
+Quello che **blocca davvero** l'operatività è un altro, ed è emerso
+interrogando il database di sviluppo:
+
+- ⬜ **La migrazione `19-lavoratori-a-chiamata.sql` non è mai stata eseguita.**
+  Il codice della funzione «a chiamata» è su `main` da stamattina, lo schema no:
+  mancano la tabella `availability_days`, le sue policy, il regime in
+  `company_settings` e due colonne. È esattamente il guasto del 25 agosto —
+  codice che chiede colonne inesistenti, tabellone vuoto
+- ⛔ **Non ho potuto eseguirla**: la password del database di sviluppo **ha
+  smesso di funzionare fra un comando e l'altro**. `verifica-schema.mjs` è
+  passato alle 14:4x e cinque minuti dopo lo stesso comando rispondeva
+  `password authentication failed`, senza che nessuno toccasse `.env.db`.
+  L'ipotesi più probabile è che sia stata **rigenerata dal pannello** mentre
+  lavoravo: rigenerarla la invalida su tutte le macchine insieme. Le password
+  non le digito io, quindi si ferma qui
+
+Aggiornate di conseguenza [[patrick-modifica-denkishift]] e
+[[modifiche-al-database]] con la decisione del 28 agosto presa sul repo: **non
+si guarda più niente in locale, si guarda su `denkishift.it`**, e la migrazione
+sul database di **produzione** va fatta *prima* del push. Da lì la domanda
+aperta che riguarda Patrick: i suoi tre valori arrivano allo sviluppo, il sito
+vive in produzione, e come ci si arriva non è ancora deciso.
+
 ## Non verificato
 
 - Il repo del sito [[sito-albybike]] non è stato trovato: potrebbe essere
@@ -230,6 +265,10 @@ macchina non prova chi ci lavora. Tolta.
 - `sebapp-bolanos`, l'app vecchia del cliente, non è stata aperta
 - **[[patrick-modifica-denkishift]] non è stata eseguita su un Mac**: comandi
   macOS e nomi delle voci del pannello Supabase sono ricostruiti, non provati
+- **Perché la password del database abbia smesso di funzionare non è provato**:
+  la rigenerazione dal pannello è l'ipotesi più probabile, non un fatto
+- **Lo stato dello schema di produzione di DenkiShift non è verificato**: quel
+  progetto non è raggiungibile da questa macchina
 
 ## Collegamenti
 

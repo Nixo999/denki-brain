@@ -39,6 +39,14 @@ mezz'ora persa, ed è già successo.
 **La produzione non si tocca di striscio mentre si prova qualcosa.** Su OperO
 dentro ci sono i dipendenti veri delle aziende che pagano [[sebastian-torres]].
 
+⚠️ **Su DenkiShift la regola è cambiata il 28 agosto 2026.** Da quando l'app sta
+su `denkishift.it` e non si avvia più niente in locale, **la migrazione sul
+database di produzione va eseguita prima del push**, non dopo: un deploy porta
+il codice ma non lo schema, e il codice che chiede colonne inesistenti apre un
+tabellone vuoto. La produzione è un progetto Supabase suo, che `.env.local` e
+`.env.db` **non raggiungono**: come ci si arriva è ancora da decidere con
+Nicola. Fonte: `CLAUDE.md` di `smooth-duty`, regola 3.
+
 ## Dal Mac di Patrick
 
 Si può, **solo su DenkiShift in sviluppo**. Perché funzioni servono tre

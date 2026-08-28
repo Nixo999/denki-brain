@@ -143,14 +143,19 @@ node --env-file=.env.local --env-file=.env.db scripts/esegui-sql.mjs supabase/NN
 
 Si possono rilanciare senza danni e **nessuno cancella turni**.
 
-### 6 — Apri il sito
+### 6 — Guarda il sito
 
-```bash
-npm run dev
-```
+**Su [denkishift.it](https://denkishift.it), non in locale.** Dal 28 agosto 2026
+l'app sta online ed è quello il posto in cui si guarda: stessa build, stesso
+database, PWA vera, telefono vero.
 
-Poi nel browser: **http://localhost:3000**. Il Terminale resta occupato finché
-il sito gira: per fermarlo, ⌃+C (control-C).
+L'avvio in locale (`npm run dev` → `http://localhost:3000`) non è stato tolto,
+ma serve solo nei casi rari — nessuna rete, oppure un guasto da smontare
+leggendo i log del server. Non è più il giro normale.
+
+⚠️ **La conseguenza pesa**: si verifica *dopo* aver pubblicato, e quello che
+finisce online lo vede la squadra di un cliente. Non è il posto dove si prova
+una cosa a caso.
 
 ## Se qualcosa non va — cosa vuol dire davvero
 
@@ -163,12 +168,28 @@ il sito gira: per fermarlo, ⌃+C (control-C).
 | `Invalid API key` | una delle chiavi in `.env.local` è sbagliata o troncata | ricopiala intera, senza spazi |
 | `Could not find the column … in the schema cache` | **non è un errore tuo**: il database ha la colonna, l'app ha in memoria una copia vecchia | aspetta un minuto e ricarica. Se resta, scrivi a Nicola |
 | il sito si apre ma è vuoto | il database non ha i dati, o manca una migrazione | rilancia `verifica-schema.mjs` |
+| `password authentication failed` **dopo che prima funzionava** | qualcuno ha rigenerato la password del database: la vecchia non vale più su nessuna macchina | rileggila dal pannello e avvisa Nicola, che deve rimetterla anche sulla sua |
+
+## ⚠️ Due database, e i tuoi valori arrivano a uno solo
+
+Da chiarire con Nicola **prima** di usare questa guida per cambiare qualcosa:
+
+- I tre valori che riempi puntano al progetto di **sviluppo**
+  (`rytuurzafjxzlrpgforj`). Lì si può sbagliare senza danni.
+- Il sito che si guarda, `denkishift.it`, gira su un progetto Supabase
+  **diverso**, di produzione, che quei file non raggiungono.
+
+Dalla decisione del 28 agosto la migrazione al database di produzione va fatta
+**prima** del push, altrimenti il codice pubblicato chiede colonne che là non
+esistono e il tabellone si apre vuoto. Quel passaggio **non è coperto da questa
+guida** e oggi non lo fa il tuo Mac: chiedi a Nicola come si fa, o falla fare a
+lui.
 
 ## Le tre righe che non si superano
 
 1. **Solo sviluppo.** Questi comandi valgono sul progetto DenkiShift di
-   sviluppo. La **produzione** — di DenkiShift e di [[opero]] — non si tocca:
-   là dentro ci sono i dipendenti veri delle aziende che pagano.
+   sviluppo. La **produzione** — di DenkiShift e di [[opero]] — non si tocca da
+   qui: là dentro ci sono i dipendenti veri delle aziende che pagano.
 2. **Le modifiche al database si scrivono in un file**, non si digitano nel SQL
    Editor del pannello. Una modifica fatta a mano e non scritta è una modifica
    che la prossima macchina non avrà, e il giorno dopo le due non tornano.
