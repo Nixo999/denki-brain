@@ -188,6 +188,39 @@ Due cose emerse preparandola:
 - [ ] Riempire i sette `TODO` qui sopra — bastano dieci minuti in due
 - [ ] Primo lavoro vero: attaccare [[generazione-lead]]
 
+## Nono giro — perché Patrick non riusciva a modificare DenkiShift
+
+Il blocco non era il permesso, era **il buio**: mancano i tre valori che dicono
+all'app a quale database parlare, e senza quelli l'app parte vuota e ogni
+comando che tocca lo schema si ferma alla prima riga.
+
+- ✅ **Trovato e corretto un blocco vero nel repo**: `pg` non era dichiarato in
+  `smooth-duty` e stava in `node_modules` solo perché installato a mano con
+  `--no-save` (`npm ls` lo dava `extraneous`). Bastava rifare `node_modules`
+  per perderlo, e i due script che toccano il database — `esegui-sql.mjs` e
+  `lib-db.mjs` — rispondevano `Cannot find package 'pg'`, che sembra un
+  problema di chiavi. Adesso è in `devDependencies`: `npm install` basta.
+  Pubblicato su `smooth-duty`, con la voce nel diario del repo
+- ✅ **[[patrick-modifica-denkishift]]** — la guida passo passo per chi non
+  scrive codice: Terminale, i due file dei valori, dove si leggono nel pannello
+  Supabase, come si verifica che siano giusti, come si apre il sito. In fondo
+  la tabella che traduce i sei errori tipici in cosa vuol dire davvero
+- ✅ Corretta la riga ormai falsa in [[modifiche-al-database]] (l'aggiramento
+  di `pg` non serve più) e messi i rimandi da [[denkishift]] e
+  [[setup-macchina-nuova]]
+
+Due cose emerse scrivendola. **I due file sul Mac esistono già** dal 28 agosto,
+vuoti: non vanno creati, vanno riempiti — e la catena verso il database era già
+stata provata fino in fondo, si ferma solo sulla password. Quindi manca davvero
+solo un passo. E **Obsidian non è installato su quel Mac**: la guida la legge
+dal terminale, quindi deve reggere come testo semplice, senza dipendere dai
+collegamenti cliccabili.
+
+⚠️ Correzione di un mio errore, la seconda della giornata: nella voce di diario
+del repo avevo scritto «il Mac di Patrick», che è esattamente l'invenzione che
+un commit di stamattina aveva tolto da `08-aperto.md` — il nome utente di una
+macchina non prova chi ci lavora. Tolta.
+
 ## Non verificato
 
 - Il repo del sito [[sito-albybike]] non è stato trovato: potrebbe essere
@@ -195,6 +228,8 @@ Due cose emerse preparandola:
 - I numeri di [[opero]] (~60%, stato aree) vengono dai `docs/` del repo,
   aggiornati al 21-27 agosto: non li ho verificati eseguendo l'app
 - `sebapp-bolanos`, l'app vecchia del cliente, non è stata aperta
+- **[[patrick-modifica-denkishift]] non è stata eseguita su un Mac**: comandi
+  macOS e nomi delle voci del pannello Supabase sono ricostruiti, non provati
 
 ## Collegamenti
 

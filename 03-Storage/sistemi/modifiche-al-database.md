@@ -49,11 +49,13 @@ condizioni, e non sono automatiche:
 2. La sessione di Claude deve **arrivare al repo**: se è aperta sul vault,
    `~/Desktop/smoothduty` non è raggiungibile e va aggiunto come cartella di
    lavoro
-3. `pg` non è dichiarato nel `package.json` di `smooth-duty`: su una macchina
-   appena installata i comandi si fermano con `Cannot find package 'pg'`. Sul
-   Mac è stato aggirato con `npm install pg --no-save --no-package-lock`, che
-   però sparisce se si rifà `node_modules`. La correzione vera è una riga nel
-   repo, e la fa Nicola
+3. ~~`pg` non dichiarato~~ — **risolto il 28 agosto 2026**: `pg` è in
+   `devDependencies` di `smooth-duty`, quindi `npm install` basta e
+   l'aggiramento con `--no-save` non serve più. Se un comando risponde ancora
+   `Cannot find package 'pg'`, vuol dire che su quella macchina `npm install`
+   non è mai stato lanciato
+
+**Per Patrick, i passi in ordine e senza gergo: [[patrick-modifica-denkishift]].**
 
 ## Quello che vale su tutte le macchine
 

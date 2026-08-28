@@ -371,7 +371,7 @@ serve a sapere cosa manca ancora senza rifare il giro dei comandi.
 | Claude Code desktop | ⚪ Non installato: c'è la versione da terminale, che basta |
 | Repo di codice | ✅ **Presenti**, sul Desktop e non in `~/denkicode/`: `smoothduty`, `opero-sito`, `opero-core`, `capacitor` |
 | Chiavi di **OperO** | ⚠️ `opero-sito/.env.local` è già su questa macchina |
-| Chiavi di **DenkiShift** | 🟡 File `.env.local` e `.env.db` predisposti il 28/08, **da riempire**: mancano anon key, service_role e password del database |
+| Chiavi di **DenkiShift** | 🟡 File `.env.local` e `.env.db` predisposti il 28/08, **da riempire**: mancano anon key, service_role e password del database → passi in ordine in [[patrick-modifica-denkishift]] |
 | Migrazioni DenkiShift da qui | 🟡 Catena provata fino al database — l'host `aws-1-eu-west-1.pooler.supabase.com` risponde, si ferma solo sulla password |
 
 > [!note] Analisi di Claude — 2026-08-28
@@ -408,4 +408,4 @@ non si contenderanno le note.
 ## Collegamenti
 
 [[team-e-vincoli]] · [[convenzioni]] · [[opero]] · [[denkishift]] ·
-[[sebastian-torres]] · [[stack]]
+[[sebastian-torres]] · [[stack]] · [[patrick-modifica-denkishift]]
