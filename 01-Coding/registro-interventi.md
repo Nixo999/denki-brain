@@ -37,6 +37,12 @@ Colonne: **Quando** (data e ora) · **Chi** (persona, e `+claude` se il lavoro �
 stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 (`—` se non toccato, `sviluppo`/`produzione` + stato) · **Cosa** · **Commit**.
 
+## 2026-08-30
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| 01:2x | Nicola +claude | [[castiglione-furniture]] | `castiglione-site` (nuovo, `Desktop/castiglione-site`, solo locale: nessun remote) | — (statico, nessun database) | **Sito vetrina per Castiglione Falegnameria** (Bronte, CT) costruito dai contenuti veri di `@castiglione_furniture`: profilo e 20 post scrapati con lo strumento **Apify** collegato a Claude Code, 31 foto scaricate in locale (gli URL CDN scadono), palette oliva+carta presa dai loro lavori. Un solo `index.html`. ⚠️ L'account si chiama `castiglione_furniture` (inglese), non «forniture»: la ricerca col nome italiano non lo trovava. ✅ Misurato a 1280 e 375 emulati: zero sfondamento, H1 su 2 righe, CTA nel viewport, contrasto nav 9:1 (era invisibile per specificità CSS, corretto). Reveal con fallback: il pannello browser a pane nascosto non consegna gli IntersectionObserver e la pagina restava bianca sotto la piega. Non verificato: resa su browser vero e telefono fisico; contatti solo IG/FB perché il profilo non pubblica email o telefono | `e0260f8` |
+
 ## 2026-08-29
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
