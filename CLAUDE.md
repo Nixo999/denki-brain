@@ -192,8 +192,12 @@ una certezza inventata — è la stessa regola che vale nei repo di codice.
 
 ## Come si aggiorna il vault
 
-1. **Prima di scrivere, cerca.** Nove volte su dieci la nota esiste già e va
-   aggiornata, non duplicata. Due note sullo stesso cliente producono due verità.
+1. **Prima di scrivere, cerca — e cerca in [[indice]].** Nove volte su dieci la
+   nota esiste già e va aggiornata, non duplicata: due note sullo stesso cliente
+   producono due verità. L'indice elenca tutte le note con una riga a testa e
+   **costa meno di una ricerca**. Una nota nuova ci si aggiunge subito: un
+   indice vecchio fa concludere che una nota non esiste, ed è così che nasce il
+   doppione.
 2. **`updated` si tocca a ogni modifica sostanziale.** È il campo su cui gira
    `/settimana` e il controllo dei progetti fermi.
 3. **Le decisioni non si riscrivono.** Se una scelta cambia, si crea una nota

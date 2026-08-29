@@ -35,7 +35,26 @@ Costo misurato con `claude plugin details`, non dedotto:
 | `modern-web-guidance` 0.0.184 | ~757 tok | ~1,8k | 2 skill — la seconda è `chrome-extensions`, che a noi non serve e si porta via ~360 tok |
 | **totale** | **~1.030 tok a sessione** | | |
 
-Si tolgono con `claude plugin uninstall <nome>@claude-plugins-official`, e si
+Aggiunto poi un **quarto, da un marketplace suo**:
+
+```bash
+claude plugin marketplace add DietrichGebert/ponytail
+claude plugin install ponytail@ponytail -y --scope user
+```
+
+`ponytail` 4.9.0 (MIT) — *«lazy senior dev mode»*: spinge sulla soluzione più
+corta che funziona, YAGNI, libreria standard prima delle dipendenze, nessuna
+astrazione non richiesta. **~983 tok sempre attivi**, sei skill
+(`ponytail-audit`, `-debt`, `-gain`, `-review`, `-help`) e tre hook che a ogni
+avvio iniettano il suo regolamento nella sessione.
+
+⚠️ **Vale in ogni cartella, quindi anche su [[opero]] e [[denkishift]]**, e lì
+il `CLAUDE.md` del repo viene prima: dove le due cose si toccano — il motore di
+fatturazione sta tutto in `invoiceEngine.ts` *apposta*, ed è un'astrazione
+voluta — ha ragione il repo. Le sue misure (~54% di codice in meno) sono su
+Haiku 4.5 con n=4: sono loro a dichiararlo, non le ho verificate.
+
+Si tolgono con `claude plugin uninstall <nome>@<marketplace>`, e si
 disattivano senza disinstallarli con `disable`. Hanno effetto **dalla sessione
 dopo**.
 
