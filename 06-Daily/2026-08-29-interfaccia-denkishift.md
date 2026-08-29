@@ -8,8 +8,8 @@ progetti: [denkishift]
 
 # 2026-08-29 — La riprogettazione dell'interfaccia di DenkiShift
 
-Richiesta di Nicola: rifare l'interfaccia perché **si venda da sola in demo**,
-su due utenti che non sono due gradini dello stesso ruolo. Consegnata
+Richiesta arrivata in sessione: rifare l'interfaccia perché **si venda da sola
+in demo**, su due utenti che non sono due gradini dello stesso ruolo. Consegnata
 l'architettura delle informazioni, il vocabolario, le impostazioni riscritte e
 il design system. Tutto in [[denkishift-interfaccia]].
 
@@ -21,11 +21,19 @@ ed è la parte che vale.
 
 ## Cosa è stato deciso — e cosa aspetta una firma
 
-[[2026-08-29-architettura-interfaccia-denkishift]] è una **proposta**, non una
-decisione presa: il menu diventa l'elenco delle domande di un titolare (`Oggi ·
-Turni · Chi c'è · Assenze · Ore`), Squadra e Impostazioni escono dalla barra,
-nessuna rotta cambia. Serve il sì di Nicola sulle etichette, perché l'etichetta
-è una stringa sola per indirizzo e `layout.tsx` è il primo file che si aprirebbe.
+[[2026-08-29-architettura-interfaccia-denkishift]] è decisa a metà.
+
+**Deciso e chiuso**: i nomi delle pagine restano quelli di oggi. Erano state
+proposte quattro rinomine — «Chi c'è», «Assenze», «Ore», e un nome che cambiava
+col regime per la Disponibilità — ed è stato detto di rimetterli come prima.
+Cade con esse la mezz'ora che avrebbe corretto la voce «Disponibilità» sotto il
+regime in cui il gesto fa l'opposto: resta un difetto noto, non un lavoro.
+
+**Ancora una proposta**: la voce nuova `Oggi`, e Squadra, Impostazioni e Aziende
+che escono dalla barra per andare nella tendina dell'iniziale. Il menu diventa
+`Oggi · Turni · Supervisione · Permessi · Prospetto`. Nessuna rotta cambia.
+⚠️ La misura che reggeva la barra a cinque voci era tarata sulle etichette
+corte: con i nomi di oggi va guardata a 375px prima di scriverla.
 
 ## Cosa è emerso guardando il codice, e non lo sapevamo
 

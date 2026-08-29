@@ -41,26 +41,36 @@ dipendente non deve imparare niente.
    risposta, nessuna richiesta di ferie: cioè tutte le cose che la schermata
    nuova serve a mostrare valgono zero e spariscono.
 4. **Si guarda su `denkishift.it`.** Tre decisioni di questo file poggiano su
-   misure dedotte dalle classi e non viste: le cinque etichette che stanno a
-   375px, i cinque elementi sopra la piega a 1280×800, la barra in basso che non
-   collide con la barra fissa della Disponibilità.
+   misure dedotte dalle classi e non viste: le cinque etichette nella barra a
+   375px — e sono i nomi lunghi di oggi, non quelli corti che erano stati
+   proposti — i cinque elementi sopra la piega a 1280×800, e la barra in basso
+   che non collide con la barra fissa della Disponibilità.
 
-## Il glossario — si firma prima di toccare una stringa
+## Il glossario
 
-L'etichetta di menu è **una stringa sola per indirizzo**, e il meccanismo per
-cambiarla secondo il ruolo esiste già. Questa tabella è la decisione: vedi
-[[2026-08-29-architettura-interfaccia-denkishift]].
+**I nomi delle pagine non si toccano.** Decisione del 29 agosto 2026, vedi
+[[2026-08-29-architettura-interfaccia-denkishift]]: Supervisione, Permessi,
+Prospetto e Disponibilità restano quelli, in tutte e due le viste. Le rinomine
+proposte — «Chi c'è», «Assenze», «Ore», «Quando posso» — sono state scartate e
+non si ripropongono.
 
-| Indirizzo | Capo | Dipendente | Perché |
-|---|---|---|---|
-| `/oggi` | **Oggi** | non esiste | la risposta, non la griglia |
-| `/turni` | **Turni** | **I miei turni** | è già così |
-| `/supervisione` | **Chi c'è** | **Chi c'è** | «Supervisione» suona come sorveglianza, e la pagina l'azienda può mostrarla anche ai dipendenti |
-| `/permessi` | **Assenze** | **Permessi** | il capo pensa «chi mi manca», il dipendente cerca «permessi» |
-| `/prospetto` | **Ore** (titolo di pagina: *Ore e assenze*) | non ce l'ha | «Prospetto» è la parola del commercialista; «Ore e assenze» nel menu collide con «Assenze» |
-| `/disponibilita` | non ce l'ha | **Quando posso** / **Quando non posso** | secondo il regime. Oggi il menu dice «Disponibilità» anche quando il gesto fa l'opposto |
+| Indirizzo | Capo | Dipendente |
+|---|---|---|
+| `/oggi` *(nuova)* | **Oggi** | non esiste |
+| `/turni` | **Turni** | **I miei turni** |
+| `/supervisione` | **Supervisione** | **Supervisione** |
+| `/permessi` | **Permessi** | **Permessi** |
+| `/prospetto` | **Prospetto** | non ce l'ha |
+| `/disponibilita` | non ce l'ha | **Disponibilità** |
 
-Le parole che non arrivano più a schermo: *preapprovato* → «vale subito» ·
+⚠️ Resta aperto, ed è l'unico punto in cui la scelta costa qualcosa: sotto il
+regime «segnala quando non puoi» la voce **Disponibilità** nomina l'opposto del
+gesto che quella pagina fa. Il titolo dentro la pagina è già corretto e cambia
+col regime — è solo l'etichetta di menu a restare fissa. Chi lo vede è il
+dipendente a chiamata, non il titolare in demo.
+
+Il resto del vocabolario vale, e riguarda le parole **dentro** le schermate, non
+i nomi delle pagine. Non arrivano più a schermo: *preapprovato* → «vale subito» ·
 *monte ore* → «ore a settimana» · *causale* → «motivo» · *bozza* → «la vedi solo
 tu» · *con riserva* → «in attesa» · *da assegnare* / *turno scoperto* → una
 parola sola, **scoperto** · *Posta* e *Messaggi* → **da decidere** (serve una
@@ -75,14 +85,13 @@ diventa «Approva», «Pubblica», «Sono rientrato», «Sì, elimina».
 
 ## Il capo — cinque voci e una risposta
 
-**Il principio**: si entra su una risposta, non su una griglia. Il menu è
-l'elenco delle domande che un titolare si fa davvero, e il tabellone resta
-sempre a un tocco.
+**Il principio**: si entra su una risposta, non su una griglia. Il tabellone
+resta sempre a un tocco.
 
-`Oggi · Turni · Chi c'è · Assenze · Ore` — e basta. **Squadra, Impostazioni e
-Aziende escono dalla barra** e vanno nella tendina dell'iniziale in alto a
-destra: si aprono una volta a settimana o una volta al mese e occupano tre dei
-sette posti che oggi mandano la barra in sofferenza. «Aziende» in particolare
+`Oggi · Turni · Supervisione · Permessi · Prospetto` — e basta. **Squadra,
+Impostazioni e Aziende escono dalla barra** e vanno nella tendina dell'iniziale
+in alto a destra: si aprono una volta a settimana o una volta al mese e
+occupano tre dei sette posti che oggi mandano la barra in sofferenza. «Aziende» in particolare
 oggi sta nella barra e un tocco accidentale cambia guscio, titolo e menu senza
 preavviso — e capita all'unico account con cui si fa la demo.
 
@@ -136,15 +145,17 @@ spazio migliore della schermata per servire il caso più raro. In basso una barr
 con **le etichette sempre scritte**: sotto i 640px oggi restano fino a sette
 icone mute, senza tooltip, in un'app il cui utente di massa sta su telefono.
 
-### Le tre bugie che si tolgono per prime — tre ore in tutto
+### Le due bugie che si tolgono per prime — due ore e mezza
 
 - Il totale ore in cima **conta anche i turni rifiutati**: sulla stessa
   schermata convivono «Hai rifiutato questo turno» e un totale che quel turno lo
   somma.
 - Quando la settimana non è pubblicata l'app disegna **sette schede «Riposo»** e
   «0h in settimana». Non è riposo: è che non si sa ancora.
-- La voce di menu dice «Disponibilità» anche sotto il regime in cui il gesto
-  serve a dire quando **non** puoi.
+
+La terza era la voce di menu che dice «Disponibilità» anche sotto il regime in
+cui il gesto serve a dire quando **non** puoi. Costava mezz'ora ed è stata
+lasciata dov'è con la decisione sui nomi: resta un difetto noto, non un lavoro.
 
 ## Le impostazioni — sette gruppi, per gesto
 
@@ -241,7 +252,7 @@ Non si fa tutto: si fa in quest'ordine e ci si ferma dove serve.
 | 2 | Dati di prova veri: 12-14 persone, nome plausibile, settimana in corso pubblicata, un rifiuto, una risposta, due richieste di ferie | 4 | senza, la schermata nuova mostra cinque zeri |
 | 3 | Guardare `denkishift.it` a 375px e 1280×800 | 1 | tre decisioni poggiano su misure mai viste |
 | 4 | File dei token, barre di copertura, pastiglia di turno, 48 sostituzioni tipografiche | 6 | sono le quattro cose che si vedono in demo |
-| 5 | Le tre bugie del dipendente | 3 | è la schermata dell'utente più numeroso |
+| 5 | Le due bugie del dipendente | 2,5 | è la schermata dell'utente più numeroso |
 | 6 | `errori.ts` + le tre letture che ingoiano l'errore | 6 | toglie dalla demo il momento in cui l'app mostra le viscere |
 | 7 | `/oggi` | 8-10 | è la schermata del «controllo» |
 | 8 | Impostazioni riscritte e raggruppate per gesto | 5 | è la schermata che vende «configurabile» |
@@ -267,8 +278,14 @@ Perché non torni in circolo fra un mese.
   dice «chi è libero e chi è già sopra le sue ore»: la prima versione della home
   mostra chi sta **sotto**. O rientra anche il conto degli straordinari (2-3h),
   o la demo apre sul tabellone e `/oggi` è la seconda schermata.
-- **«Ore e assenze» e «La giornata»** come voci di menu: ricreano la collisione
-  con «Assenze» e non stanno nella barra a 375px.
+- **Le rinomine delle voci di menu**, tutte. Erano il pezzo più economico della
+  proposta — sono stringhe — e sono state scartate lo stesso: il nome di una
+  pagina lo impara chi la usa ogni giorno, e cambiarlo è un costo per loro
+  prima che un guadagno per chi la vede in demo dieci minuti. ⚠️ Cade con esse
+  anche la misura che le reggeva: cinque etichette brevi stavano nella barra a
+  375px, «Supervisione» e «Prospetto» sono più lunghe. Va guardato a schermo
+  prima di scriverle, e se non ci stanno la soluzione è la barra in basso del
+  dipendente applicata anche al capo, non l'accorciamento dei nomi.
 
 ## I buchi dichiarati
 
