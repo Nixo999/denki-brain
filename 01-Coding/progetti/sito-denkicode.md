@@ -5,7 +5,7 @@ client: interno
 stack: [vite, react, netlify, cloudflare]
 started: TODO
 deadline: TODO
-updated: 2026-08-28
+updated: 2026-08-29
 source: denkicode
 valore: 0
 incassato: 0
@@ -20,7 +20,11 @@ mostra a un cliente cosa abbiamo già fatto.
 **Hosting**: Netlify, dietro Cloudflare
 **Stack rilevato**: SPA React buildata con Vite
 **Tagline**: *High-Voltage Sites, Low-Voltage Prices*
-**Repo**: `TODO` — non è fra i pubblici su `Nixo999`
+**Repo**: `github.com/Nixo999/pixel-perfect-rebuild`, ramo `main`
+**Sul PC di Nicola**: `C:\Users\User\Desktop\denkicode-site` (clonato il 29
+agosto 2026). ⚠️ In `Documents/GitHub/my-github-link-466158a8` c'è una **copia
+vecchia dell'era WeBolt**, senza `.git` e due generazioni indietro: non è il
+sito, e modificarla significa ripubblicare marzo.
 
 ## Perché è un progetto e non una risorsa
 
@@ -29,43 +33,71 @@ Non porta soldi da solo, ma è **lo strumento commerciale più usato che avete**
 un'azienda che non vi conosce. [[sito-dropout]] e in parte [[cococat]] sono
 stati fatti apposta per riempirlo.
 
-## Cosa ci sta dentro
+## Com'è fatto oggi, dopo il 29 agosto 2026
 
-`TODO` — quali lavori sono in galleria oggi? Serve saperlo per due motivi: per
-sapere cosa Patrick può citare, e per capire se vale la pena aggiungerci
-[[sito-albybike]], che è l'unico sito con un cliente vero dietro.
+Il sito è **diviso in due metà**, separate da una fascia (`SectionBand`) e
+raggiungibili dai due bottoni dell'hero. La barra in alto ha quattro voci:
+`CHI SIAMO · SITI WEB · GESTIONALI · CONTATTI`.
+
+| Metà | Cosa contiene |
+|---|---|
+| **01 — Siti web** | Offerta (vetrina, e-commerce), i servizi, la galleria dei siti |
+| **02 — Gestionali** | DenkiShift, i gestionali su misura, la galleria dei gestionali |
+
+**Galleria dei siti**: Groavel, [[albybike]], Bellastoria, [[sito-dropout]].
+**Galleria dei gestionali**: [[denkishift]] e [[opero]] — quest'ultimo
+dichiarato come **collaborazione**, perché è il prodotto di
+[[sebastian-torres]] e non nostro.
+
+⚠️ Le due card dei gestionali **non hanno uno screenshot**: mostrano una
+copertina tipografica col monogramma, perché mettere una foto di repertorio al
+posto di un prodotto vero sarebbe una bugia. Servono due immagini reali.
+
+## Cosa dice sui prezzi, e perché
+
+Il listino a schermo non coincide più con [[prodotti-e-listino]], ed è voluto:
+
+- **Sito vetrina**: da «600 sbarrato, 300, −50%» a **«circa 300»**. La cifra
+  esatta esce dal preventivo, e sbandierarla toglie margine in trattativa.
+- **Blog**: tolto. Non si vende più.
+- **E-commerce**: invariato, 1000 sbarrato → 500, −50%.
+- **Abbonamenti**: resta il prezzo del solo **Base, 15-40 €**. Silver e Gold
+  vanno «su preventivo». La tariffa oraria di 20 €/h resta scritta.
+- **DenkiShift**: nessuna cifra a schermo, ma **quota annuale calcolata sui
+  dipendenti**. È la forma che regge il vincolo della ricevuta
+  ([[vincoli-fiscali]]), e non promette una data che non abbiamo.
+- **Gestionali su misura**: «una tantum oppure abbonamento annuale», costo
+  definito sul lavoro. Nessun numero.
 
 ## Rilievi tecnici
 
-> [!note] Analisi di Claude — 2026-08-28
-> Guardando il sorgente pubblico:
->
-> - **C'è un commento lasciato dal template** nell'HTML servito ai visitatori:
->   `<!-- TODO: Set the document title to the name of your application -->`.
->   Non rompe niente e non lo vede quasi nessuno, ma è visibile a chiunque apra
->   il sorgente — e in una vendita in cui l'argomento è *"i siti li facciamo
->   bene"*, è l'unico dettaglio che contraddice il messaggio. Trenta secondi
->   per toglierlo.
-> - **Il sito è una SPA React.** Vale lo stesso discorso di
->   [[2026-08-28-stack-non-uniforme]]: per un sito che deve essere trovato su
->   Google, statico sarebbe più veloce e più indicizzabile. Qui però pesa meno,
->   perché nessuno vi cerca per parola chiave: il sito lo si apre dopo che
->   Patrick ha mandato il link.
-> - **Manca il pezzo che converte.** Un cliente arriva qui dopo una chiamata di
->   Giulia. Se in galleria trova solo lavori senza nome — un evento
->   universitario, un bar che non è mai diventato cliente — vede *lavori*, non
->   *clienti soddisfatti*. Una riga di testimonianza da [[albybike]] cambia il
->   registro più di dieci progetti in più.
+> [!note] Analisi di Claude — 2026-08-29
+> - ⚠️ **`index.css` ha un blocco `@media (max-width: 767px)` che disattiva
+>   tutte le animazioni e azzera ogni `transform` inline**, commento `DEBUG:`
+>   compreso. Il cassetto del menu su telefono sopravvive per via della
+>   `visibility`, non perché la sua `translateX` funzioni. È un mucchio di
+>   toppe in produzione, e va sciolto con calma su un telefono vero.
+> - **Le icone social nella barra e nel cassetto puntano a `href="#"`**: tre
+>   link morti, sei volte in pagina. O esistono i profili, o si tolgono.
+> - **Il sito è una SPA React.** Per un sito che deve essere trovato su Google
+>   statico sarebbe più veloce e più indicizzabile. Qui pesa meno, perché
+>   nessuno vi cerca per parola chiave: il link lo manda Patrick.
+> - **Manca ancora il pezzo che converte**: una riga di testimonianza da
+>   [[albybike]] cambia il registro più di dieci progetti in più.
 
 ## Aperto
 
-- [ ] Trovare il repo del sito (o crearlo)
-- [ ] Togliere il commento `TODO` dal sorgente
-- [ ] Elencare qui cosa c'è in galleria oggi
+- [x] Trovare il repo del sito → `Nixo999/pixel-perfect-rebuild`
+- [x] Togliere il commento `TODO` dal sorgente
+- [x] Elencare qui cosa c'è in galleria
+- [ ] Due screenshot veri per le card di DenkiShift e OperO
+- [ ] Sciogliere il blocco `DEBUG:` di `index.css` su un telefono vero
+- [ ] Decidere i tre link social, o toglierli
 - [ ] Aggiungere `albybike.com` alla galleria, con una testimonianza
 - [ ] Decidere chi aggiorna la galleria quando esce un lavoro nuovo
 
 ## Collegamenti
 
 [[sito-dropout]] · [[cococat]] · [[sito-albybike]] · [[albybike]] ·
+[[denkishift]] · [[opero]] · [[prodotti-e-listino]] ·
 [[flusso-vendita]] · [[generazione-lead]] · [[stack]]
