@@ -47,6 +47,7 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
 |---|---|---|---|---|---|---|
+| 16:0x | Nicola +claude | — | — | — | Installati `superdesign`, `playground`, `modern-web-guidance` (~1.030 tok/sessione). **Solo sul PC di Nicola**: i plugin non stanno in git | — |
 | 15:2x | Nicola +claude | [[denkishift]] | — | ✅ **sviluppo: `19-lavoratori-a-chiamata.sql` eseguita** dal SQL Editor. `verifica-schema`: 19 su 19 | — |
 | 14:5x | Nicola +claude | tutti | `denki-brain` + `smooth-duty` + `opero-sito` | — | **Regola nuova**: ogni modifica va nel repo *e* qui. Registro creato e agganciato ai tre `CLAUDE.md` | `1763144` + questo |
 | 14:26 | Nicola +claude | — | `denki-brain` | — | Controllo incrociato dei due repo, guida e nota database allineate alla decisione «non più in locale» | `665e9f0` |
