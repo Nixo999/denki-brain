@@ -22,5 +22,10 @@ mano cose che una skill fa già meglio.
 Le skill del vault stanno in `.claude/skills/`, i comandi in
 `.claude/commands/`: sono **versionati**, quindi valgono su ogni macchina.
 
-`TODO` — le skill di frontend installate a livello di account (design,
-interfacce) non sono ancora state provate su un progetto vero.
+| un sito, un'interfaccia, un audit di design | vedi [[design-frontend]] |
+
+Le quattro skill di design stanno **a livello di account**, quindi valgono in
+ogni cartella. Quale si usa per cosa — e perché `design-taste-frontend` non va
+usata sui gestionali — sta in [[design-frontend]].
+
+`TODO` — nessuna delle quattro è ancora stata provata su un progetto vero.
