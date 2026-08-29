@@ -23,7 +23,11 @@ dipendente non deve imparare niente.
 
 ## Le precondizioni — vengono prima di qualunque riga
 
-1. **La migrazione `19` non è mai stata eseguita** (`docs/08-aperto.md`). Finché
+1. ~~**La migrazione `19` non è mai stata eseguita**~~ — **eseguita il 29 agosto
+   2026** sullo sviluppo, da Nicola dal SQL Editor; in produzione c'era già.
+   `verifica-schema.mjs` risponde 19 su 19. Vedi [[registro-interventi]].
+   Quello che segue resta scritto perché spiega *cosa* succedeva senza, e vale
+   ancora per qualunque database che non l'abbia: finché
    non gira, il `select` su `company_settings` fallisce intero perché chiede
    `regime_chiamata`: le Impostazioni mostrano i valori di default come se
    fossero quelli dell'azienda e al primo «Salva» danno errore, e il menu mostra
@@ -247,7 +251,7 @@ Non si fa tutto: si fa in quest'ordine e ci si ferma dove serve.
 
 | # | Cosa | Ore | Perché lì |
 |---|---|---|---|
-| 0 | Migrazione `19` sul database | — | senza, le Impostazioni non si salvano |
+| 0 | ~~Migrazione `19` sul database~~ ✅ **fatta il 29/08** | — | senza, le Impostazioni non si salvano |
 | 1 | Nome e logo sul login | 0,5 | è la prima schermata della demo |
 | 2 | Dati di prova veri: 12-14 persone, nome plausibile, settimana in corso pubblicata, un rifiuto, una risposta, due richieste di ferie | 4 | senza, la schermata nuova mostra cinque zeri |
 | 3 | Guardare `denkishift.it` a 375px e 1280×800 | 1 | tre decisioni poggiano su misure mai viste |
