@@ -93,6 +93,56 @@ pannello browser integrato apre, clicca, misura e legge la console. Si
 installano solo se serve una suite di test automatici, che oggi non esiste su
 nessuno dei due prodotti.
 
+## Valutati e scartati
+
+### `obsidian-second-brain` (v0.14.0, MIT) — **no, non così com'è**
+
+Guardato il 28 agosto 2026 su richiesta di Nicola, che ne aveva scaricato lo
+zip. È un progetto serio — 46 comandi, tre hook, adattatori per otto agenti — e
+fa esattamente il contrario di quello che serve a noi.
+
+**1. La sua promessa centrale contraddice la nostra regola.** Il README dice:
+«ogni fonte aggiorna le pagine esistenti invece di aggiungerne di nuove, le
+contraddizioni si riconciliano da sole». La regola 3 di `CLAUDE.md` dice che
+**le decisioni non si riscrivono**: se una scelta cambia si scrive una nota
+nuova che cita la vecchia, perché la storia serve. Uno strumento che riscrive e
+riconcilia da solo cancella anche la separazione fra `source: denkicode` e
+`source: claude`, che è la cosa meno negoziabile che abbiamo.
+
+**2. Impone una struttura parallela alla nostra.** Vuole `_CLAUDE.md`,
+`index.md`, `Logs/`, `Bases/`, e cartelle `Projects/` `People/` `Tasks/`.
+Riconosce due stili di vault, «obsidian» e «wiki»: il nostro non è né l'uno né
+l'altro, quindi ci costruirebbe accanto un secondo vault invece di leggere
+questo.
+
+**3. L'hook di scrittura litiga con come scriviamo.** `validate-ai-first.sh`
+gira **dopo ogni Write/Edit — in ogni progetto, non solo nel vault** — e mette
+in guardia se il file non ha `ai-first: true`, il preambolo `## For future
+agent`, e se contiene lineette lunghe, virgolette curve o apostrofi tipografici.
+Le nostre note sono piene di lineette lunghe, e l'hook scatterebbe anche
+lavorando su [[opero]] e [[denkishift]].
+
+**4. Il presupposto è opposto al nostro.** Scritto testualmente nel comando di
+init: *«The vault is for future agent retrieval - not human reading»*. Il
+nostro vault lo leggono Nicola e Patrick, e Patrick lo legge **dal terminale**,
+perché su quel Mac Obsidian non c'è.
+
+**Quello che invece vale la pena rubargli**, senza installarlo:
+
+- **`index.md`**: un catalogo di tutte le note con una riga di descrizione, che
+  l'agente legge *prima* di cercare. Costa meno di una ricerca. `CLAUDE.md` ha
+  l'indice dei progetti, non delle note.
+- **Il log per giornata append-only**: è la stessa idea di
+  [[registro-interventi]], che però la nostra versione la batte — ha la colonna
+  del database, che a loro non serve e a noi sì.
+- La *freshness policy*: ogni fatto è senza tempo, datato, o un puntatore. La
+  regola 5 del vault («numeri con la data accanto») è la stessa cosa detta più
+  corta.
+
+Un falso allarme, per onestà: temevo che gli hook si rompessero perché chiamano
+`python3`, che su Windows spesso non esiste. Su questa macchina c'è
+(3.13.11). Non è quello il problema.
+
 ## Se se ne installasse uno solo
 
 `superdesign`. È l'unico che copre il buco vero — vedere prima di costruire — e
