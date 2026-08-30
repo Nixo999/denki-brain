@@ -31,7 +31,7 @@ testo non poggia su uno dei framework, non è pronto.
 I vincoli duri stanno sopra ai framework: nessuna P.IVA nei testi, "Lei" per
 Giulia, nessuna data promessa su [[denkishift]], nessun numero senza fonte.
 Un'apertura aggressiva che sfonda uno di questi vincoli è sbagliata, non
-coraggiosa — stessa regola del [[protocollo-jarvis]].
+coraggiosa — stessa regola del [[protocollo-trevis]].
 
 ## I punti aperti
 
@@ -51,4 +51,4 @@ stati salvati e si usano: se erano di scorta, va detto ora.
 ## Collegamenti
 
 [[core-commerciale]] · [[flusso-vendita]] · [[script-giulia-denkishift]] ·
-[[protocollo-jarvis]] · [[2026-08-28-protocollo-jarvis]]
+[[protocollo-trevis]] · [[2026-08-28-protocollo-jarvis]]

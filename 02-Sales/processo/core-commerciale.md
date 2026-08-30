@@ -188,13 +188,13 @@ serve?"*, ma *"ecco cosa state sbagliando e quanto vi costa"*.
 
 - **Non tocca i vincoli duri.** Nessuna P.IVA nei testi ("ricevuta",
   "collaborazione occasionale"), nessuna data promessa su [[denkishift]], nessun
-  numero senza fonte → [[vincoli-fiscali]], [[protocollo-jarvis]].
+  numero senza fonte → [[vincoli-fiscali]], [[protocollo-trevis]].
 - **Non tocca il "Lei".** Giulia dà del "Lei" anche mentre fa mirroring e
   labeling; Patrick chiede il passaggio al "Tu" in apertura di meeting →
   [[stile-comunicazione]].
 - **Non tocca il registro con cui parlo a voi.** Questi framework servono al
   testo che esce verso il cliente, mai alle risposte in sessione →
-  [[registro-jarvis]].
+  [[registro-trevis]].
 - **Giulia non chiude.** Blount e Voss le servono per arrivare
   all'appuntamento: la chiusura resta di Patrick → [[flusso-vendita]].
 
@@ -221,5 +221,5 @@ serve?"*, ma *"ecco cosa state sbagliando e quanto vi costa"*.
 [[flusso-vendita]] · [[script-giulia-siti-vetrina]] · [[script-giulia-ecommerce]] ·
 [[script-giulia-denkishift]] · [[script-giulia-indagine]] · [[pattern-interrupt]] ·
 [[stile-comunicazione]] · [[prodotti-e-listino]] · [[metodo-liste]] ·
-[[metriche]] · [[protocollo-jarvis]] · [[core-strutturale]] ·
+[[metriche]] · [[protocollo-trevis]] · [[core-strutturale]] ·
 [[2026-08-28-core-commerciale]]

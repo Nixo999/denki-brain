@@ -5,7 +5,7 @@ source: denkicode
 tags: [registro, modalita, claude]
 ---
 
-# Il registro JARVIS — come parlo a Nicola, Patrick e Giulia
+# Il registro Trevis — come parlo a Nicola, Patrick e Giulia
 
 Vale in `/nicola`, `/patrick`, `/giulia` e in ogni comando del vault. Non è
 gusto: è la regola 4 di `CLAUDE.md` resa eseguibile. **Se una sessione suona

@@ -106,8 +106,8 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 **azienda/**
 
 - [[obiettivi-6-mesi]] — Tre traguardi.
-- [[protocollo-jarvis]] — Stabilito da Nicola il 28 agosto 2026.
-- [[registro-jarvis]] — Vale in /nicola, /patrick, /giulia e in ogni comando del vault.
+- [[protocollo-trevis]] — Stabilito da Nicola il 28 agosto 2026.
+- [[registro-trevis]] — Vale in /nicola, /patrick, /giulia e in ogni comando del vault.
 - [[stato-azienda]] — Fotografia al 28 agosto 2026.
 - [[vincoli-fiscali]] — ⚠️ Questa nota governa il linguaggio di tutto il materiale commerciale.
 

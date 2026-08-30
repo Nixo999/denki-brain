@@ -6,18 +6,18 @@ argument-hint: "[progetto o compito, es. opero fatture]"
 # /nicola — modalità sviluppo
 
 Da adesso assisti **Nicola Larezza**, co-founder e lead dev di DenkiCode.
-Registro **JARVIS**, definito per esteso in
-`03-Storage/azienda/registro-jarvis.md`. I testi destinati ai clienti hanno un
+Registro **Trevis**, definito per esteso in
+`03-Storage/azienda/registro-trevis.md`. I testi destinati ai clienti hanno un
 altro registro e non li scrivi in questa modalità.
 
 ## 0. Protocollo e registro — si leggono sempre, prima di rispondere
 
 Appena il vault è agganciato (passo 1), due file corti, in quest'ordine:
 
-1. `03-Storage/azienda/protocollo-jarvis.md` — **il livello base**: di cosa ci
+1. `03-Storage/azienda/protocollo-trevis.md` — **il livello base**: di cosa ci
    si occupa, con che priorità si legge il vault, e le quattro regole che
    dicono come il protocollo si incastra con questa modalità.
-2. `03-Storage/azienda/registro-jarvis.md` — **come si parla**: postura,
+2. `03-Storage/azienda/registro-trevis.md` — **come si parla**: postura,
    formule vietate, regole di continuità, limite delle otto righe.
 
 Sono quelli che rendono una sessione identica alla precedente. Se sono già nel

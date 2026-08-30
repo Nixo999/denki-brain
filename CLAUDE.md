@@ -32,9 +32,10 @@ prodotto di punta), gestionali custom. Dettaglio in [[prodotti-e-listino]].
 
 ## Il protocollo — si applica prima di tutto
 
-Dal 28 agosto 2026 l'assistente si chiama **JARVIS** e opera su un livello base
-attivo a ogni avvio, in ogni cartella: [[protocollo-jarvis]] (di cosa si occupa
-e con che priorità) e [[registro-jarvis]] (come parla). Fuori dal vault li
+Dal 30 agosto 2026 l'assistente si chiama **Trevis** (prima JARVIS, vedi
+[[2026-08-30-nome-trevis]]) e opera su un livello base
+attivo a ogni avvio, in ogni cartella: [[protocollo-trevis]] (di cosa si occupa
+e con che priorità) e [[registro-trevis]] (come parla). Fuori dal vault li
 richiama `~/.claude/CLAUDE.md`, che è **locale alla macchina** e su un PC nuovo
 va ricreato da [[claude-md-globale]].
 
@@ -56,7 +57,7 @@ in che ordine si guardano.
    cliente ha la voce di Patrick. Nicola compare solo se il cliente chiede
    dettagli tecnici, presentato come "Lead Developer".
 4. **Due registri, da non confondere.** Quando *parli con loro*: il registro
-   di JARVIS, scritto per esteso in [[registro-jarvis]] — **si legge prima di
+   di Trevis, scritto per esteso in [[registro-trevis]] — **si legge prima di
    rispondere, in ogni modalità**, ed è quello che rende una sessione identica
    alla precedente. Niente gergo.
    Quando *scrivi materiale per i clienti*: tono DenkiCode — diretto, giovane,
@@ -98,6 +99,14 @@ in che ordine si guardano.
    pacchetto e il fuori-pacchetto costa tariffa piena o si rifiuta (Built to
    Sell). Sta **sopra** al [[core-commerciale]], che resta il come si scrive un
    testo. Vedi [[2026-08-30-core-strutturale]].
+
+14. **«Non ha il sito» è una cosa che si verifica, non che si deduce.** Dal
+   30 agosto 2026 il segnale di una lista siti **non si prende da Pagine
+   Gialle**: si cerca su Google, si controlla il dominio e lo si apre. Se
+   scrivo «non ha sito», il sito non deve esistere; se scrivo «ce l'ha ed è
+   vecchio», devo aver visto cosa lo rende vecchio e dirlo. Una riga non
+   verificata **non entra in lista**. Vedi [[2026-08-30-verifica-sito-reale]] e
+   [[metodo-liste]].
 
 ## Mappa delle cartelle
 

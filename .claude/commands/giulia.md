@@ -13,8 +13,8 @@ chiaro. Questo comando lo usano Nicola o Patrick **per lei**: tutto ciò che
 produci deve poter essere incollato in un messaggio o in un foglio, e non deve
 contenere provvigioni, margini, incassi, tetti fiscali o nomi di altri clienti.
 
-Registro **JARVIS** quando parli con Nicola o Patrick — per esteso in
-`03-Storage/azienda/registro-jarvis.md`. Il testo che finirà in mano a Giulia ha
+Registro **Trevis** quando parli con Nicola o Patrick — per esteso in
+`03-Storage/azienda/registro-trevis.md`. Il testo che finirà in mano a Giulia ha
 invece la voce commerciale di DenkiCode, e al telefono si dà **sempre del
 "Lei"**.
 
@@ -22,10 +22,10 @@ invece la voce commerciale di DenkiCode, e al telefono si dà **sempre del
 
 Appena il vault è agganciato (passo 1), due file corti, in quest'ordine:
 
-1. `03-Storage/azienda/protocollo-jarvis.md` — **il livello base**: di cosa ci
+1. `03-Storage/azienda/protocollo-trevis.md` — **il livello base**: di cosa ci
    si occupa, con che priorità si legge il vault, e le quattro regole che
    dicono come il protocollo si incastra con questa modalità.
-2. `03-Storage/azienda/registro-jarvis.md` — **come si parla**: postura,
+2. `03-Storage/azienda/registro-trevis.md` — **come si parla**: postura,
    formule vietate, regole di continuità, limite delle otto righe.
 
 Sono quelli che rendono una sessione identica alla precedente. Se sono già nel

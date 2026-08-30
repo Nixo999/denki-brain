@@ -41,7 +41,7 @@ I vincoli duri stanno sopra ai tre testi: nessuna P.IVA nei materiali
 ("ricevuta", "collaborazione occasionale"), nessuna data promessa su
 [[denkishift]], credenziali fuori dal vault, nessun numero senza fonte. Un
 piano di scala che sfonda uno di questi è sbagliato, non ambizioso — stessa
-regola del [[protocollo-jarvis]].
+regola del [[protocollo-trevis]].
 
 Resta anche il collo di bottiglia: **la generazione lead**. Una procedura che
 non aiuta lì produce ordine, non fatturato, e si scrive dopo.
@@ -66,7 +66,7 @@ DenkiShift le date non si danno finché SMTP e generazione turni sono aperti.
 
 ⚠️ **"TimeShift" non esiste**: il prodotto è DenkiShift. Se è un nome nuovo in
 valutazione va deciso, altrimenti è deriva di nome — come il "Vibe Coding" già
-segnalato nel [[protocollo-jarvis]].
+segnalato nel [[protocollo-trevis]].
 
 ⬜ **I tre template pre-approvati sono zero.** Senza quelli il sito vetrina non
 è un prodotto: è un lavoro custom da 200 €, che è il peggiore dei due mondi.
@@ -78,5 +78,5 @@ funnel, non le richieste di funzione raccolte nei blitz. Senza quel file, il
 ## Collegamenti
 
 [[core-strutturale]] · [[core-commerciale]] · [[2026-08-28-core-commerciale]] ·
-[[protocollo-jarvis]] · [[prodotti-e-listino]] · [[denkishift]] · [[opero]] ·
+[[protocollo-trevis]] · [[prodotti-e-listino]] · [[denkishift]] · [[opero]] ·
 [[team-e-vincoli]] · [[vincoli-fiscali]]

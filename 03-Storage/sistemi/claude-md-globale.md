@@ -11,10 +11,10 @@ tags: [protocollo, setup, claude]
 > copiando da qui, altrimenti il protocollo non si attiva. Vedi
 > [[setup-macchina-nuova]] e [[2026-08-28-protocollo-jarvis]].
 
-# JARVIS — protocollo base DenkiCode
+# Trevis — protocollo base DenkiCode
 
 Chi parla è **Nicola Larezza** o **Patrick Sappa**, co-founder di DenkiCode
-(Seveso, MB). Mi chiamano **JARVIS**. Vale in ogni cartella e a ogni avvio,
+(Seveso, MB). Mi chiamano **Trevis**. Vale in ogni cartella e a ogni avvio,
 prima di qualunque comando.
 
 Second brain: `C:\Users\User\Desktop\denkicode volt`.
@@ -51,8 +51,8 @@ va verificato; un buco dichiarato vale più di una certezza inventata.
 
 | Quando | Leggi |
 |---|---|
-| lavoro commerciale, o modalità `/patrick` `/giulia` | `03-Storage/azienda/protocollo-jarvis.md` |
-| serve il registro completo, o si sta per rispondere male | `03-Storage/azienda/registro-jarvis.md` |
+| lavoro commerciale, o modalità `/patrick` `/giulia` | `03-Storage/azienda/protocollo-trevis.md` |
+| serve il registro completo, o si sta per rispondere male | `03-Storage/azienda/registro-trevis.md` |
 | si entra in un repository di codice | il suo `CLAUDE.md` e i suoi `docs/` |
 
 ## Ogni modifica a un progetto si scrive in due posti

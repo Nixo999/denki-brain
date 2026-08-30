@@ -60,7 +60,7 @@ lavoro, quindi condannato a farlo per sempre. L'obiettivo non è lavorare
 > E soprattutto: **oggi non si può assumere.** Nessuna P.IVA, prestazione
 > occasionale, tetto 5.000 € ([[vincoli-fiscali]]). Il "dipendente di basso
 > livello" del libro, nel 2026 di DenkiCode, è uno di questi due:
-> **Giulia**, unica persona esterna già a provvigione, e **JARVIS**, che
+> **Giulia**, unica persona esterna già a provvigione, e **Trevis**, che
 > costa zero e legge le SOP meglio di un neoassunto. Scrivere le procedure
 > serve adesso, non "quando assumeremo": è ciò che rende quei due utilizzabili.
 
@@ -152,12 +152,12 @@ Si esce **prodottizzando**: il servizio personalizzato diventa un pacchetto.
 - **Non tocca i vincoli duri.** Nessuna P.IVA nei testi, nessuna data promessa
   su [[denkishift]], credenziali fuori dal vault, nessun numero senza fonte.
   Un piano di scala che sfonda uno di questi è sbagliato, non ambizioso →
-  [[protocollo-jarvis]].
+  [[protocollo-trevis]].
 - **Non tocca [[core-commerciale]]**, ci sta sopra: il core commerciale dice
   come si scrive la chiamata, questo dice se quella chiamata è un processo che
   qualcun altro può eseguire.
 - **Non tocca il registro.** Questi tre testi governano le proposte che faccio
-  a Patrick, non il modo in cui gliele dico → [[registro-jarvis]].
+  a Patrick, non il modo in cui gliele dico → [[registro-trevis]].
 - **Il collo di bottiglia resta la generazione lead.** Una SOP che non aiuta lì
   è ordine, non fatturato: si scrive dopo.
 
@@ -166,7 +166,7 @@ Si esce **prodottizzando**: il servizio personalizzato diventa un pacchetto.
 > [!warning] Da sciogliere prima di applicarli alla lettera — 2026-08-30
 > - **"TimeShift" non esiste.** Il prodotto è **DenkiShift**. Nel vault non c'è
 >   nessun TimeShift: stessa classe di errore del "Vibe Coding" già segnalato in
->   [[protocollo-jarvis]]. Se è un nome nuovo che stai valutando, va deciso;
+>   [[protocollo-trevis]]. Se è un nome nuovo che stai valutando, va deciso;
 >   finché non lo è, si scrive DenkiShift.
 > - **"Vendi il software prima che sia finito" contro "nessuna data promessa".**
 >   Lean chiede l'anticipo come prova di validazione; il vault vieta di
@@ -192,7 +192,7 @@ Si esce **prodottizzando**: il servizio personalizzato diventa un pacchetto.
 
 ## Collegamenti
 
-[[core-commerciale]] · [[protocollo-jarvis]] · [[registro-jarvis]] ·
+[[core-commerciale]] · [[protocollo-trevis]] · [[registro-trevis]] ·
 [[prodotti-e-listino]] · [[flusso-vendita]] · [[metodo-liste]] ·
 [[ciclo-settimanale]] · [[team-e-vincoli]] · [[vincoli-fiscali]] ·
 [[denkishift]] · [[opero]] · [[metriche]] · [[registro-interventi]] ·

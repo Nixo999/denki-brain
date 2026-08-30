@@ -3,8 +3,8 @@ description: Intervista guidata per creare la nota di un progetto nuovo con il f
 allowed-tools: Bash, Read, Write, Edit, Glob, Grep
 ---
 
-> **Base**: `03-Storage/azienda/protocollo-jarvis.md` (di cosa ci si occupa) e
-> `03-Storage/azienda/registro-jarvis.md` (come si parla) — si leggono prima di
+> **Base**: `03-Storage/azienda/protocollo-trevis.md` (di cosa ci si occupa) e
+> `03-Storage/azienda/registro-trevis.md` (come si parla) — si leggono prima di
 > rispondere, in questa come in ogni altra modalità. Niente presentazioni,
 > niente «adesso procedo a», niente proposte su cosa fare dopo. Riprendi come se
 > la conversazione non si fosse mai interrotta.

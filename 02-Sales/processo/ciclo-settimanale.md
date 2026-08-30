@@ -21,7 +21,7 @@ lista, questo dice **quante ne servono, quando arrivano e cosa torna indietro**.
 | Lun–Sab | Giulia | Chiama le sue 3 liste, compila `Esito e Note Giulia` |
 | Lun–Sab | Patrick | 10 blitz fisici + i secondi incontri sui lead qualificati |
 | Domenica | Patrick | Carica i **5 input** compilati |
-| Domenica | JARVIS | Analizza, affina gli script, genera i **4 output** nuovi |
+| Domenica | Trevis | Analizza, affina gli script, genera i **4 output** nuovi |
 | Lunedì | tutti | Si riparte con la macchina nuova |
 
 ## I 4 output della domenica
@@ -131,7 +131,7 @@ Patrick vivono nello stesso modulo. Dettaglio in
 faccio leggendo le righe: un riassunto a mano è lavoro doppio e perde i "no",
 che sono il dato più utile della settimana.
 
-## Il compito di JARVIS alla domenica
+## Il compito di Trevis alla domenica
 
 Nell'ordine:
 

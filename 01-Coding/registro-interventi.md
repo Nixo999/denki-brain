@@ -81,7 +81,7 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 | 13:36 | Patrick +claude | — | `denki-brain` | — | Modulo Word del report settimanale, `.gitattributes` per i binari | `dc13ec5` |
 | 13:18 | Nicola +claude | [[denkishift]] | `smooth-duty` | ⬜ **sviluppo: `19-lavoratori-a-chiamata.sql` non eseguita** | Disponibilità del responsabile nel tabellone | `d6a4335` |
 | 13:10 | Patrick +claude | — | `denki-brain` | — | Ciclo settimanale: 4 liste la domenica, 5 report indietro | `bdbb8a3` |
-| 12:13 | Nicola +claude | — | `denki-brain` | — | Protocollo JARVIS come livello base a ogni avvio | `f563e75` `f84f378` |
+| 12:13 | Nicola +claude | — | `denki-brain` | — | Protocollo Trevis come livello base a ogni avvio | `f563e75` `f84f378` |
 | 12:09 | Nicola +claude | [[denkishift]] | `smooth-duty` | ⬜ **sviluppo: `19-lavoratori-a-chiamata.sql` non eseguita** | Lavoratori a chiamata: chi tace non ha accettato | `1b160ea` |
 | ~12:00 | Patrick +claude | [[denkishift]] | `denki-brain` | 🟡 sviluppo: catena provata fino alla password, `.env` predisposti e vuoti | Corretta la fotografia del Mac in [[setup-macchina-nuova]]; su DenkiShift `db push` non esiste | `9358c87` |
 
