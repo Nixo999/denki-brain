@@ -314,6 +314,14 @@ Perché non torni in circolo fra un mese.
 
 ## Revisione del 30 agosto 2026 — la pagina che spiega troppo
 
+> [!note] Applicata lo stesso giorno, commit `998cadf` su `smooth-duty`
+> Tutti i punti qui sotto sono in produzione: impostazioni (1-3), barra del
+> tabellone (i tre difetti), badge e caret sul guscio (4-5). L'alzata
+> generale del corpo testo è stata applicata **solo dentro Impostazioni**
+> (12,5 → 13px sul descrittivo): il resto dell'app si fa una pagina alla
+> volta, con gli occhi sopra. Niente è stato verificato a schermo: sta
+> tutto dietro il login.
+
 > [!note] Analisi di Claude — 30 agosto 2026, su segnalazione di Nicola
 > «Le impostazioni sono diventate difficili da usare.» Misurato: è vero.
 
