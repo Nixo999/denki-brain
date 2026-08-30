@@ -123,6 +123,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[claude-md-globale]] — Chi parla è Nicola Larezza o Patrick Sappa, co-founder di DenkiCode (Seveso, MB).
 - [[credenziali]] — ⚠️ In questa nota non c'è nessuna chiave, e non ce ne devono finire mai.
 - [[modifiche-al-database]] — Il perché di questa possibilità sta in 2026-08-28-supabase-denkishift-sul-mac.
+- [[plugin-claude-code]] — Inventario di plugin e MCP agganciati a Claude Code: locale alla macchina, non arriva da git.
 - [[patrick-modifica-denkishift]] — Guida passo passo, scritta per chi non scrive codice.
 
 **team/**

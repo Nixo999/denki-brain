@@ -68,6 +68,25 @@ didone del monogramma CF. Tre cose da riusare altrove:
 - ⬜ Non verificato su browser vero né su telefono fisico: solo misure su
   viewport emulati e screenshot del primo frame.
 
+## A fine giornata: due «deep research» agganciati a Claude Code
+
+Sono **due cose diverse col nome uguale**, e vanno tenute separate:
+il **plugin** `deep-research@claude-community` monta squadre di subagent Claude
+e lascia file markdown in `docs/research/` — su OperO l'uso che vale è
+`--mode=repo --compare`, la gap-analysis `sebapp-bolanos` → `opero-core`;
+l'**MCP** `teelaitila/deep-research-mcp` è un motore esterno (Firecrawl + chiave
+LLM propria) che ritorna un report e manda un conto suo.
+
+- ⚠️ Il plugin richiede `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` in
+  `~/.claude/settings.json`: scritto, ma **vale dal riavvio di Claude Code**.
+- ⚠️ Il marketplace `anthropics/claude-plugins-community` si registra col nome
+  `claude-community`: installare con il nome del repo fallisce e sembra un
+  problema del plugin.
+- ⬜ L'MCP **non funziona**: `.env.local` è vuoto, le chiavi (provider LLM +
+  Firecrawl) le mette Nicola. Nessuna delle due pipeline è stata provata.
+
+Inventario completo in [[plugin-claude-code]].
+
 ## Collegamenti
 
-[[registro-interventi]] · [[prodotti-e-listino]] · [[2026-08-29-interfaccia-denkishift]]
+[[registro-interventi]] · [[prodotti-e-listino]] · [[2026-08-29-interfaccia-denkishift]] · [[plugin-claude-code]]
