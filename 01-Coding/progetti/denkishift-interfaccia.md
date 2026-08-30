@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-08-29
+updated: 2026-08-30
 source: claude
 progetto: denkishift
 tags: [interfaccia, ux, demo, denkishift]
@@ -311,6 +311,51 @@ Perché non torni in circolo fra un mese.
 - **Il nome del prodotto è irrisolto**: lo schermo dice «Turni», il materiale
   commerciale dice DenkiShift. Non costa ore di sviluppo, costa una risposta di
   Patrick — e blocca due pezzi su quattro.
+
+## Revisione del 30 agosto 2026 — la pagina che spiega troppo
+
+> [!note] Analisi di Claude — 30 agosto 2026, su segnalazione di Nicola
+> «Le impostazioni sono diventate difficili da usare.» Misurato: è vero.
+
+**Il numero**: la pagina Impostazioni riscritta contiene **~2.700 parole
+visibili per 10 controlli** — +69% rispetto a prima del redesign (~1.600).
+Ogni levetta porta quattro blocchi di testo (titolo, descrizione, «Quando»,
+«Se dice no»): il quarto blocco è utile alla prima levetta, alla decima è
+rumore. Tutto alla stessa taglia (12,5px `muted`), quindi non si scansiona:
+o si legge tutto, o niente. La divisione per gesti **resta giusta** — il
+difetto è la quantità, non la struttura.
+
+**Interventi, in ordine:**
+
+1. **Dieta del testo** (~2h) — visibile: titolo + una riga. «Quando» e «Se
+   dice no» scendono dentro un richiudibile «Come funziona» per levetta.
+   Obiettivo: ≤25 parole visibili per controllo. Le spiegazioni non si
+   buttano: si spostano sotto, dove le legge chi sta decidendo.
+2. **Salvataggio immediato per leva** (~1,5h) — ogni flip salva subito, con
+   toast, come ogni altra azione dell'app. Spariscono il bottone «Salva» in
+   fondo e lo stato «modifiche non salvate» che su telefono sta a tre
+   schermate dalla leva toccata.
+3. **Le tre pagine spegnibili in una scheda propria** (~1h) — «Pagine
+   dell'app»: accendere/spegnere Permessi, Supervisione e Prospetto è una
+   decisione di natura diversa da una regola di conferma, e oggi vive
+   nascosta nelle intestazioni dei gesti.
+
+**Barra in alto**, due difetti piccoli:
+
+4. **Il pallino non dice quante** (~30min) — 6px ambra, il numero c'è solo
+   per il lettore di schermo. Un titolare con tre cose da decidere vede un
+   puntino: serve il badge col numero.
+5. **L'avatar non dice di essere un menu** (~20min) — Squadra e Impostazioni
+   ora vivono nella tendina dell'iniziale, ma niente segnala che l'iniziale
+   si apre. Un caret accanto risolve; la scopribilità vera si prova con
+   Patrick, non da codice.
+
+**Design generale**: il pavimento dei 12px è diventato la taglia di default —
+quasi tutto il corpo è 12,5px `muted`. Alzare il descrittivo a 13-13,5px e
+riservare `muted` al secondario (~1h sui componenti condivisi).
+
+Totale pacchetto: ~6h. Il minimo che ripaga: punti 1, 2 e 4 (~4h).
+Non verificato a schermo: le pagine stanno dietro il login.
 
 ## Collegamenti
 
