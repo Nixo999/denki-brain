@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-08-29
+updated: 2026-08-30
 source: denkicode
 tags: [registro, interventi, repo, database]
 ---
@@ -58,6 +58,7 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
 |---|---|---|---|---|---|---|
+| 13:1x | Patrick +claude | [[denkishift]] | `smooth-duty` | — (solo colore, nessuna migrazione) | **La tavolozza passa dall'azzurro di sistema al viola del marchio**: `--accent` da `#005BB7` a `#802ACB` (chiaro) e da `#3D9EFF` a `#BC79F6` (scuro), alla tinta 272 — il punto di mezzo esatto fra i due colori del logo. Anche i grigi portano quella tinta: è il pezzo che fa leggere l'app come una cosa sola. Fondo scuro `#09090B` e oro `#EBC247` presi da denkicode.com; il magenta è `--brand-2` e resta fuori dalle pagine operative (troppo vicino al rosso degli errori). ⚠️ **Costruito sopra la revisione contrasti di Nicola delle 12:0x, non al posto suo**: il rebase ha dato conflitto su `globals.css` e i valori sono stati ricalcolati col suo metodo (fondo peggiore + pastiglia tenue). Tutti e otto i colori passano 4,5 su entrambe le misure, in tutti e due i temi. Le tinte dei reparti perdono la fascia 260-285 (26 → 24 valori): un reparto viola sembrava il reparto selezionato. ✅ `tsc` pulito, build completa. **Non verificato a schermo** (l'app è dietro login) | `f05b47e` |
 | 12:0x | Nicola +claude | [[denkishift]] | `smooth-duty` | — | Applicata la revisione UI: impostazioni a una riga per leva con salvataggio automatico, filtri del tabellone dietro un bottone, Svuota nella sessione, badge numerico e caret nel guscio. Pushato, non verificato a schermo (dietro login) | `998cadf` |
 | 10:3x | Nicola +claude | [[denkishift]] | `smooth-duty` | — (letto, non toccato: diagnosi RLS 3,7ms, piano ottimale) | Indagine lentezza: colpa di Ohio e del freddo, non del DB. Ping programmato + `staleTimes: 30`. **Pushato alle 10:5x insieme al lotto design** su decisione di Nicola: da qui torna la regola del repo, pezzo finito → push | `032091c` `05e34fb` |
 
