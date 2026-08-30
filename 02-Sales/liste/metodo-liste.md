@@ -1,6 +1,6 @@
 ---
 type: area
-updated: 2026-08-28
+updated: 2026-08-30
 source: claude
 prodotto: denkishift
 ---
@@ -76,7 +76,18 @@ conto delle ore sta in [[metriche]].
 
 ## Il segnale — cosa si legge senza chiamare
 
-Per i siti vetrina il segnale è "non ha il sito". Per DenkiShift è questo:
+Per DenkiShift il segnale è questo:
+
+> [!warning] Per i siti vetrina il segnale NON si legge su Pagine Gialle — 2026-08-30
+> «Non ha il sito» va **verificato su Google e aprendo il dominio**: Pagine
+> Gialle mostra il sito solo a chi ha comprato la scheda, e su 50 righe della
+> lista di Giulia **30 avevano la nota falsa**. Il procedimento completo, i sei
+> esiti e le due trappole stanno in [[2026-08-30-verifica-sito-reale]]; il
+> conto riga per riga in [[2026-08-30-verifica-siti-giulia]].
+> Due cose che ne conseguono, e che cambiano *chi* si mette in lista:
+> **la lista siti si costruisce sul wellness** (parrucchieri ed estetiste: 12
+> su 14 senza sito) e **non sui mobilifici** (6 su 6 col sito); per i negozi la
+> domanda giusta non è «ha un sito» ma **«vende online»**.
 
 | Segnale | Dove si vede | Cosa dice |
 |---|---|---|

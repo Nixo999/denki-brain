@@ -175,3 +175,5 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[template-decisione]] — Il titolo dice cosa si è deciso, non l'argomento.
 - [[template-progetto]] — Una o due righe: cosa fa, per chi.
 - [[template-report-settimanale]] — Quattro file, non un testo lungo.
+- [[2026-08-30-verifica-sito-reale]] — Decisione: «non ha il sito» si verifica su Google e sul dominio, non su Pagine Gialle.
+- [[2026-08-30-verifica-siti-giulia]] — Verifica riga per riga della lista siti di Giulia: 30 note su 50 erano false.
