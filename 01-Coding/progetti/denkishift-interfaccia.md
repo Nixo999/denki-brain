@@ -350,6 +350,32 @@ difetto è la quantità, non la struttura.
    si apre. Un caret accanto risolve; la scopribilità vera si prova con
    Patrick, non da codice.
 
+**La barra strumenti del tabellone** — segnalata da Nicola il 30 agosto
+(«mi sembra complicata parecchio»), ed è quella che intendeva fin
+dall'inizio. Misurato dal codice: **12 controlli in una riga, cinque
+mestieri diversi** — navigare (frecce+data), cambiare vista
+(Turni/Disponibilità), trovare (ricerca + 3 tendine di filtro), modificare
+(annulla, ripeti, Modifica, cestino), creare (Nuovi turni). Tre difetti:
+
+- **I tre filtri stanno sempre aperti** e al riposo dicono solo «Qualsiasi
+  contratto», «Tutte le ore a settimana»: ~450px di barra spesi per lo stato
+  «nessun filtro». → Un bottone **«Filtri»** con badge del numero attivo,
+  tendina con dentro i tre selettori. La ricerca resta campo su desktop,
+  icona su telefono. (~1,5h)
+- **Annulla e Ripeti stanno lì anche quando non c'è niente da annullare**:
+  due icone spente che occupano posto fuori dalla sessione di modifica. → Si
+  mostrano solo in sessione (bozza o «Modifica» attivo). (~30min)
+- **Il cestino — «Elimina tutti i turni della settimana» — è un'icona rossa
+  sempre visibile** fra Modifica e Nuovi turni. La conferma inline c'è, ma
+  un distruttivo di settimana non è un abitante fisso della barra. → Dentro
+  la sessione di modifica, con l'etichetta scritta («Svuota settimana»),
+  non come icona muta. (~30min)
+
+Bersaglio: **7 controlli al riposo** — frecce+data · vista · ricerca ·
+Filtri · Modifica · Nuovi turni — e il gruppo di modifica che compare al
+posto dei filtri quando la sessione è aperta. Da telefono le due righe
+diventano pulite invece di tre righe miste. Totale ~2,5-3h.
+
 **Design generale**: il pavimento dei 12px è diventato la taglia di default —
 quasi tutto il corpo è 12,5px `muted`. Alzare il descrittivo a 13-13,5px e
 riservare `muted` al secondario (~1h sui componenti condivisi).
