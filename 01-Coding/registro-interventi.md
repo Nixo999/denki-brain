@@ -56,7 +56,7 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
 |---|---|---|---|---|---|---|
-| 10:3x | Nicola +claude | [[denkishift]] | `smooth-duty` | — (letto, non toccato: diagnosi RLS 3,7ms, piano ottimale) | Indagine lentezza: colpa di Ohio e del freddo, non del DB. Ping programmato + `staleTimes: 30`. **Committato locale, NON pushato**: nel push c'è anche il lotto design | `032091c` `05e34fb` |
+| 10:3x | Nicola +claude | [[denkishift]] | `smooth-duty` | — (letto, non toccato: diagnosi RLS 3,7ms, piano ottimale) | Indagine lentezza: colpa di Ohio e del freddo, non del DB. Ping programmato + `staleTimes: 30`. **Pushato alle 10:5x insieme al lotto design** su decisione di Nicola: da qui torna la regola del repo, pezzo finito → push | `032091c` `05e34fb` |
 
 ## 2026-08-28
 
