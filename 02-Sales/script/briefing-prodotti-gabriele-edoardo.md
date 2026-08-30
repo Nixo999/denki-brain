@@ -28,6 +28,8 @@ a voce, si aggiunge in fondo; se no, si dice a voce prima di partire.
 
 ## Il messaggio
 
+Esiste anche in Word — `briefing-prodotti-gabriele-edoardo.docx`, stessa cartella: impaginato per essere stampato e tenuto accanto al telefono, con un riquadro per blocco. Se cambia il testo qui, il `.docx` va rigenerato: non si aggiorna da solo.
+
 Da copiare e girare così com'è. Gli asterischi diventano grassetto su WhatsApp.
 
 ```text
