@@ -40,6 +40,24 @@ scritto da loro nelle caption: il sito riusa quello, non inventa.
   e il CTA in nav era **verde su verde**. A occhio non si vedeva dal primo
   screenshot.
 
+## Secondo giro: da vetrina piatta a scroll-telling
+
+La v1 non è passata: «il sito più piatto della storia». Il rifacimento
+(`8cb10ea`) è scuro, a capitoli, con GSAP 3.13 da CDN, e le dosi vengono
+dalla base dati di `ui-ux-pro-max` (che sul PC di Nicola **è completa**, al
+contrario del Mac): pattern scroll-storytelling, massimo un pin per pagina,
+scrub 0.5-1.5, parallax solo sui layer immagine. Playfair Display 900 come
+didone del monogramma CF. Tre cose da riusare altrove:
+
+- **La motion è additiva o non è**: gsap.from + CDN esterno = se il CDN manca
+  o c'è reduced-motion, la pagina resta completa. Il sipario ha un timer di
+  sicurezza per i tab caricati in background (rAF fermo = sipario eterno).
+- **gsap.matchMedia legge il viewport del momento**: a pane nascosto il load
+  avviene su una finestra minuscola e i blocchi `min-width` non partono. Non è
+  un bug del sito: su browser vero il viewport è giusto dal primo istante.
+- Il CTA in nav che wrappa su due righe a 375px si toglie, non si comprime:
+  sotto i 640px resta solo quello dell'hero.
+
 ## Aperto
 
 - ⬜ Il sito è **locale e basta**: niente remote, niente hosting, dominio non
