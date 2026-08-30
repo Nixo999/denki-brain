@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-08-28
+updated: 2026-08-30
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **70 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **76 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -105,6 +105,8 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 **azienda/**
 
+- [[core-crescita-finanze]] — Dettato da Patrick il 30 agosto 2026, poche ore dopo core-strutturale.
+- [[core-strutturale]] — Dettato da Patrick il 30 agosto 2026.
 - [[obiettivi-6-mesi]] — Tre traguardi.
 - [[protocollo-trevis]] — Stabilito da Nicola il 28 agosto 2026.
 - [[registro-trevis]] — Vale in /nicola, /patrick, /giulia e in ogni comando del vault.
@@ -144,6 +146,9 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-08-28-stack-non-uniforme]] — Al 28 agosto 2026, DenkiCode ha cinque basi di codice e cinque stack:
 - [[2026-08-28-supabase-denkishift-sul-mac]] — Chiesto da Patrick il 28 agosto 2026, poche ore dopo la decisione di far pushare git da quella macchina...
 - [[2026-08-29-architettura-interfaccia-denkishift]] — Il ragionamento completo sta in denkishift-interfaccia.
+- [[2026-08-30-core-crescita-finanze]] — Decisione di Patrick: l'offerta si ingegnerizza, il prezzo non si sconta, l'utile si mette via per primo.
+- [[2026-08-30-core-strutturale]] — Decisione di Patrick: DenkiCode si tratta come una macchina a processi.
+- [[2026-08-30-nome-trevis]] — Deciso da Patrick il 30 agosto 2026: l'assistente si chiama Trevis, ovunque e sempre.
 
 ## 06-Daily
 
@@ -151,6 +156,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 - [[2026-08-28-avvio-vault]] — Prima nota del vault.
 - [[2026-08-29-interfaccia-denkishift]] — Richiesta arrivata in sessione: rifare l'interfaccia perché si venda da sola in demo, su due utenti che...
+- [[2026-08-30-sito-castiglione]] — Sito vetrina costruito dal profilo Instagram di Castiglione Furniture, riscritto da capo dopo lo scarto della v1.
 
 ## 04-Archive
 

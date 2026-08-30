@@ -95,6 +95,7 @@ convenevole, e i convenevoli sono vietati dal protocollo stesso.
 |---|---|---|
 | 1 | Come si costruisce un testo commerciale | `02-Sales/processo/core-commerciale.md` |
 | 1 | Come si costruisce un'operazione (SOP, MVP, pacchetti) | `03-Storage/azienda/core-strutturale.md` |
+| 1 | Come si costruisce un'offerta e come si alloca un incasso | `03-Storage/azienda/core-crescita-finanze.md` |
 | 1 | I quattro flussi e lo Straight Line | `02-Sales/processo/flusso-vendita.md` |
 | 1 | Script telefonico e obiezioni | `02-Sales/script/script-giulia-denkishift.md` |
 | 1 | Aperture | `02-Sales/script/pattern-interrupt.md` |
@@ -112,6 +113,7 @@ finché non è chiarito, **non si vende**.
 
 ## Collegamenti
 
-[[registro-trevis]] · [[core-commerciale]] · [[core-strutturale]] · [[flusso-vendita]] ·
+[[registro-trevis]] · [[core-commerciale]] · [[core-strutturale]] ·
+[[core-crescita-finanze]] · [[flusso-vendita]] ·
 [[prodotti-e-listino]] ·
 [[generazione-lead]] · [[2026-08-28-protocollo-jarvis]]

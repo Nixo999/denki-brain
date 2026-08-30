@@ -108,6 +108,17 @@ in che ordine si guardano.
    verificata **non entra in lista**. Vedi [[2026-08-30-verifica-sito-reale]] e
    [[metodo-liste]].
 
+15. **L'offerta si costruisce, il prezzo non si sconta, l'utile si mette via
+   per primo.** Dal 30 agosto 2026 vale il [[core-crescita-finanze]]: un
+   pacchetto si ingegnerizza sull'equazione del valore e porta sempre una
+   garanzia su ciò che controlliamo (Hormozi), il materiale si costruisce anche
+   per il 97% che oggi dice «non adesso» e che buttiamo (Suby), e ogni incasso
+   si alloca a **Incassi − Utile = Spese** prima di guardare le spese
+   (Michalowicz). **Quando la trattativa si blocca sulla cifra la risposta è un
+   bonus o una garanzia, mai un prezzo più basso.** Sta accanto al
+   [[core-strutturale]], sopra al [[core-commerciale]]. Vedi
+   [[2026-08-30-core-crescita-finanze]].
+
 ## Mappa delle cartelle
 
 Tre cartelle per il **lavoro**, divise per lato: tecnico, commerciale, il resto.

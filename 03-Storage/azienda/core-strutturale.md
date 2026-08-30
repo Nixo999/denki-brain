@@ -192,7 +192,7 @@ Si esce **prodottizzando**: il servizio personalizzato diventa un pacchetto.
 
 ## Collegamenti
 
-[[core-commerciale]] · [[protocollo-trevis]] · [[registro-trevis]] ·
+[[core-commerciale]] · [[core-crescita-finanze]] · [[protocollo-trevis]] · [[registro-trevis]] ·
 [[prodotti-e-listino]] · [[flusso-vendita]] · [[metodo-liste]] ·
 [[ciclo-settimanale]] · [[team-e-vincoli]] · [[vincoli-fiscali]] ·
 [[denkishift]] · [[opero]] · [[metriche]] · [[registro-interventi]] ·
