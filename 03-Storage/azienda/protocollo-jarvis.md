@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-08-28
+updated: 2026-08-30
 source: denkicode
 tags: [protocollo, registro, modalita, claude]
 ---
@@ -94,6 +94,7 @@ convenevole, e i convenevoli sono vietati dal protocollo stesso.
 | Priorità | Cosa | File |
 |---|---|---|
 | 1 | Come si costruisce un testo commerciale | `02-Sales/processo/core-commerciale.md` |
+| 1 | Come si costruisce un'operazione (SOP, MVP, pacchetti) | `03-Storage/azienda/core-strutturale.md` |
 | 1 | I quattro flussi e lo Straight Line | `02-Sales/processo/flusso-vendita.md` |
 | 1 | Script telefonico e obiezioni | `02-Sales/script/script-giulia-denkishift.md` |
 | 1 | Aperture | `02-Sales/script/pattern-interrupt.md` |
@@ -111,6 +112,6 @@ finché non è chiarito, **non si vende**.
 
 ## Collegamenti
 
-[[registro-jarvis]] · [[core-commerciale]] · [[flusso-vendita]] ·
+[[registro-jarvis]] · [[core-commerciale]] · [[core-strutturale]] · [[flusso-vendita]] ·
 [[prodotti-e-listino]] ·
 [[generazione-lead]] · [[2026-08-28-protocollo-jarvis]]

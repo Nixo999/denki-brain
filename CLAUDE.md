@@ -91,6 +91,13 @@ in che ordine si guardano.
    costruisce su uno dei framework di [[core-commerciale]], e si dichiara
    quale. Il consiglio di vendita generico è vietato dal 28 agosto 2026, vedi
    [[2026-08-28-core-commerciale]].
+13. **Ogni operazione si guarda come processo, non come favore.** Dal 30 agosto
+   2026 vale il [[core-strutturale]]: quello che si fa due volte diventa una
+   SOP delegabile (E-Myth), una funzione nuova entra solo se il mercato l'ha
+   chiesta e nella versione minima che risolve (Lean), un servizio si vende a
+   pacchetto e il fuori-pacchetto costa tariffa piena o si rifiuta (Built to
+   Sell). Sta **sopra** al [[core-commerciale]], che resta il come si scrive un
+   testo. Vedi [[2026-08-30-core-strutturale]].
 
 ## Mappa delle cartelle
 

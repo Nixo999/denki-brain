@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-08-28
+updated: 2026-08-30
 source: denkicode
 tags: [vendita, framework, script, obiezioni, chiusura]
 ---
@@ -221,4 +221,5 @@ serve?"*, ma *"ecco cosa state sbagliando e quanto vi costa"*.
 [[flusso-vendita]] · [[script-giulia-siti-vetrina]] · [[script-giulia-ecommerce]] ·
 [[script-giulia-denkishift]] · [[script-giulia-indagine]] · [[pattern-interrupt]] ·
 [[stile-comunicazione]] · [[prodotti-e-listino]] · [[metodo-liste]] ·
-[[metriche]] · [[protocollo-jarvis]] · [[2026-08-28-core-commerciale]]
+[[metriche]] · [[protocollo-jarvis]] · [[core-strutturale]] ·
+[[2026-08-28-core-commerciale]]
