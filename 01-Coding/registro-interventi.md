@@ -37,6 +37,12 @@ Colonne: **Quando** (data e ora) · **Chi** (persona, e `+claude` se il lavoro �
 stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 (`—` se non toccato, `sviluppo`/`produzione` + stato) · **Cosa** · **Commit**.
 
+## 2026-08-31
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| 00:1x | Nicola +claude | sito V-BAG | `vbag-site` | — | **Palette del logo + fondo animato allo scroll**: il lilla `#DC92FF` da accento a protagonista (CTA lilla, sezione handmade in lilla pieno identica nei due temi, testo ink fisso: il viola su lilla dava 2.7:1). Dietro la pagina tre forme dal logo (V in didone al 9%, arco, cerchio) mosse da `animation-timeline: scroll(root)`, zero JS: dove manca il supporto (Firefox) restano ferme, decorative. Sintassi presa da `modern-web-guidance` (parallax-scroll-effects). ✅ Misurato: ScrollTimeline attiva, a scrollY 1506 la V trasla 150px e ruota 2.3°, zero overflow a 375 | `94b2cb6` |
+
 ## 2026-08-30
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
