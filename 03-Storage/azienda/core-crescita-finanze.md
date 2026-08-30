@@ -332,7 +332,8 @@ rinnovo, non nella vendita** — e i rinnovi eseguiti finora sono zero.
 
 ## Collegamenti
 
-[[core-commerciale]] · [[core-strutturale]] · [[protocollo-trevis]] ·
+[[core-commerciale]] · [[core-strutturale]] · [[core-produttivita-leadership]] ·
+[[protocollo-trevis]] ·
 [[registro-trevis]] · [[prodotti-e-listino]] · [[vincoli-fiscali]] ·
 [[generazione-lead]] · [[metriche]] · [[metodo-liste]] · [[flusso-vendita]] ·
 [[team-e-vincoli]] · [[materiale-offline]] · [[presidi-volantini]] ·

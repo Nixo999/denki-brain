@@ -119,6 +119,17 @@ in che ordine si guardano.
    [[core-strutturale]], sopra al [[core-commerciale]]. Vedi
    [[2026-08-30-core-crescita-finanze]].
 
+16. **Il tempo si blocca, l'obiettivo diventa sistema, la colpa si cerca prima
+   qui dentro.** Dal 30 agosto 2026 vale il [[core-produttivita-leadership]]:
+   si pianifica a blocchi rigidi con **una priorità per blocco** e si comprime
+   il lavoro superficiale (Newport), un traguardo si consegna sempre tradotto
+   nel **gesto giornaliero minimo** che lo rende inevitabile e nelle quattro
+   leggi dell'abitudine (Clear), e quando un agente o una campagna non rendono
+   **l'analisi comincia da script, onboarding e chiarezza dell'ordine**, mai
+   dall'esterno (Willink). Da qui esce anche il comando dell'intento: chi
+   chiama decide da solo su qualifica e orari, mai su prezzo e date. Vedi
+   [[2026-08-30-core-produttivita-leadership]].
+
 ## Mappa delle cartelle
 
 Tre cartelle per il **lavoro**, divise per lato: tecnico, commerciale, il resto.

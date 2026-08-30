@@ -222,4 +222,5 @@ serve?"*, ma *"ecco cosa state sbagliando e quanto vi costa"*.
 [[script-giulia-denkishift]] · [[script-giulia-indagine]] · [[pattern-interrupt]] ·
 [[stile-comunicazione]] · [[prodotti-e-listino]] · [[metodo-liste]] ·
 [[metriche]] · [[protocollo-trevis]] · [[core-strutturale]] ·
-[[core-crescita-finanze]] · [[2026-08-28-core-commerciale]]
+[[core-crescita-finanze]] · [[core-produttivita-leadership]] ·
+[[2026-08-28-core-commerciale]]
