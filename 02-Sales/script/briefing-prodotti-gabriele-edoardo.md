@@ -59,11 +59,11 @@ Cosa gli diamo: *una bozza grafica del sito, gratis e senza impegno*. Non
 «facciamo siti»: gliela facciamo vedere già fatta. È quella l'esca, non il
 prezzo.
 
-Il vostro obiettivo: farvi dire di sì al *permesso di mandargliela* su
+Il vostro obiettivo: farvi dire di sì al *permesso di mandargli la demo* su
 WhatsApp o via mail, oppure fissare cinque minuti dal vivo. Basta quello.
 
-Se vi chiedono quanto costa: *200-300 € una volta*, più una *quota annuale
-di 120 €* che tiene su il sito online. E poi subito: «il numero preciso glielo
+Se vi chiedono quanto costa: *circa 200-300 € una volta*, più una *quota
+annuale di circa 120 €* che tiene su il sito online. E poi subito: «il numero preciso glielo
 fa Patrick quando vede cosa le serve». Non aggiustate voi la cifra.
 
 ---
