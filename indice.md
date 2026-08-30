@@ -178,3 +178,4 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[template-decisione]] — Il titolo dice cosa si è deciso, non l'argomento.
 - [[template-progetto]] — Una o due righe: cosa fa, per chi.
 - [[template-report-settimanale]] — Quattro file, non un testo lungo.
+- [[2026-08-30-liste-gabriele-edoardo]] — Liste di prova dei due nuovi cold caller: zone disgiunte, 87 righe, blocchi 1 e 4 verificati sul sito reale.
