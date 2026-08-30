@@ -52,6 +52,12 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 | 23:5x | Nicola +claude | [[sito-denkicode]] | `pixel-perfect-rebuild` | — (il sito non ha migrazioni; Supabase serve solo al form contatti) | **denkicode.com diviso in due metà**: siti web e gestionali, separate da una fascia e raggiungibili dai due bottoni dell'hero. Nella parte nuova: DenkiShift, i gestionali su misura, e una galleria sua con DenkiShift e OperO (dichiarato come **collaborazione**, è il prodotto di Sebastian). Blog tolto dal listino; vetrina da «600 sbarrato 300 −50%» a **«circa 300»**; degli abbonamenti resta il prezzo del solo **Base, 15-40 €**. DenkiShift a schermo non ha una cifra ma una **quota annuale sui dipendenti**, e nessuna data. ✅ Misurato a 1440 e 375: zero sfondamento orizzontale, bottoni pari, barra su una riga | `443f3ae` |
 | 01:1x | Nicola +claude | [[opero]] | `opero-sito` | ✅ **sviluppo: `20260829120000_opero_choice.sql` eseguita** (`db push`), e con lei `20260829100000_super_admin_torres_ritenta.sql` che era rimasta indietro. Edge function `send-push` ridistribuita | **OperO Choice**: il Super Admin sceglie una o piu` persone fra tutti gli account di tutte le aziende, scrive, e alla loro prossima apertura esce un messaggio a schermo pieno col pulsante bloccato 5 secondi. Funzione **nuova**, senza originale in OperO 1 → da quotare. ✅ **Verificato nel browser** con Nicola dentro: blocco di 5 s misurato, esce una volta sola, `seen_at` scritto, `send-push` risponde 200 al Super Admin. Resta scoperta la consegna su un telefono vero | `01495b9` `760dda3` |
 
+## 2026-08-30
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| 10:3x | Nicola +claude | [[denkishift]] | `smooth-duty` | — (letto, non toccato: diagnosi RLS 3,7ms, piano ottimale) | Indagine lentezza: colpa di Ohio e del freddo, non del DB. Ping programmato + `staleTimes: 30`. **Committato locale, NON pushato**: nel push c'è anche il lotto design | `032091c` `05e34fb` |
+
 ## 2026-08-28
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
