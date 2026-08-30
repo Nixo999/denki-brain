@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-08-28
+updated: 2026-08-30
 source: claude
 tags: [brand, stampa, materiale]
 ---
@@ -26,9 +26,34 @@ sono i file, quale si usa quando, e cosa manca.
 | `logo-principale.pdf` | Vettoriale per la stampa | Da mandare in tipografia |
 | `logo-alternativo.*` | Seconda versione, stessi tre formati | Quando la principale non regge sul fondo |
 | `immagine-denkicode.af` | Sorgente Affinity | Documento di lavoro, non un esportabile |
+| `logo-denkishift.svg` | **Il marchio di DenkiShift**, vettoriale | Dentro l'app e ovunque serva il logo del prodotto |
 
 Il marchio è del **13 maggio 2026** e non è più stato toccato: è la parte
 stabile dell'identità.
+
+### Il marchio di DenkiShift — 30 agosto 2026
+
+Cosa diverso dai due qui sopra: quelli sono il marchio **dell'azienda**, questo
+è il marchio **di un prodotto**. Anello spezzato con due saette, metà neutro e
+metà sfumato, calendario al centro. Fatto da Patrick in Affinity.
+
+⚠️ **Qui c'è solo l'SVG, e non è il sorgente.** È stato **estratto dai
+tracciati** di un PDF che Patrick ha passato il 30 agosto e che dal Desktop è
+poi sparito: sono i percorsi veri, non un ridisegno, ma il documento Affinity
+da cui nasce **non è nel vault**. Ce l'ha Patrick sul suo Mac. Se il marchio va
+modificato, si parte da lì — non da questo SVG.
+
+Due cose sull'SVG, per chi lo riusa:
+- la **metà neutra e il calendario usano `currentColor`**, così il logo si
+  adatta al fondo su cui sta. Aperto da solo mostra il neutro scuro (`color=`
+  sull'elemento radice); su fondo scuro basta sovrascrivere `color`;
+- il **gradiente legge `--marchio-1` / `--marchio-2`** con ripiego sui colori
+  del sito (`#923adf → #da2f9b`). I colori del PDF originale sono in **CMYK** e
+  su schermo darebbero `#626095 → #ab4287`: gli stessi due colori del marchio,
+  smorzati dalla conversione per la stampa. Su schermo valgono quelli del sito.
+
+Il PDF originale era in CMYK ed è materiale da stampa: se serve stampare, non
+si usa questo SVG ma si riesporta dal sorgente Affinity.
 
 ### `stampa/` — volantino e biglietto
 
