@@ -1,6 +1,6 @@
 ---
 type: area
-updated: 2026-08-28
+updated: 2026-08-31
 source: claude
 ---
 
@@ -18,6 +18,6 @@ Una nota per attrezzo, in `kebab-case`.
 | Obsidian | leggere e scrivere il vault | vedi `README.md` |
 | GitHub | i repo e il vault, account `Nixo999` | `TODO` |
 | Supabase | database di [[opero]] e [[denkishift]] | due progetti distinti, non confonderli |
-| Netlify | pubblicazione dei siti | `TODO` |
+| Netlify | pubblicazione dei siti **e delle bozze da mostrare** | → [[netlify]] |
 
 Le credenziali **non stanno qui**: vedi [[credenziali]].

@@ -63,17 +63,21 @@ contromisure stanno in [[metodo-instagram]]; **la lista viene consegnata da
 - Lessico di [[vincoli-fiscali]]: «quota annuale», mai «abbonamento» o
   «contratto».
 
-## Il buco che va chiuso perché questo canale renda
+## La prova, e dove sta
 
-> [!warning] Manca la prova, ed è la cosa che vale di più — 2026-08-31
-> Il DM dice «con le sue foto le preparo la prima schermata». Chi risponde
-> *«fammi vedere un esempio»* oggi non riceve niente: il sito di
-> [[castiglione-furniture]] — costruito il 30 agosto **esattamente così**,
-> dalle foto di un profilo Instagram — è in locale e **senza remote**.
-> Metterlo online è la singola cosa che alza di più la resa di questo canale:
-> trasforma una promessa in una dimostrazione, e agisce su tre dei quattro
-> termini dell'equazione del valore ([[core-crescita-finanze]]).
-> `TODO` Nicola: pubblicarlo, anche su un sottodominio di denkicode.com.
+Il DM dice «con le sue foto le preparo la prima schermata». Chi risponde
+*«fammi vedere un esempio»* va servito subito, e la strada c'è: **le bozze si
+pubblicano su Netlify** — regola di casa, detta da Patrick il 31 agosto 2026 →
+[[netlify]].
+
+L'esempio giusto per questo canale è il sito di [[castiglione-furniture]],
+costruito il 30 agosto **esattamente così**, dalle foto di un profilo Instagram.
+Oggi il repo è in locale e senza remote ([[2026-08-30-sito-castiglione]]):
+**va pubblicato prima del primo giro di DM**, non è un blocco di metodo, è
+mezz'ora di lavoro che vale come tutta la campagna.
+
+Il link **non entra nel primo messaggio** (segnale di spam): entra nel secondo,
+quando ha risposto → [[dm-instagram-vetrina]].
 
 ## Come si capisce se funziona
 
@@ -90,5 +94,5 @@ stesso testo.
 [[metodo-instagram]] · [[dm-instagram-vetrina]] ·
 [[2026-08-31-instagram-anello-1]] · [[2026-08-31-stop-porta-a-porta-a-freddo]] ·
 [[2026-08-30-verifica-sito-reale]] · [[generazione-lead]] ·
-[[core-crescita-finanze]] · [[core-commerciale]] · [[metriche]] ·
+[[core-crescita-finanze]] · [[core-commerciale]] · [[metriche]] · [[netlify]] ·
 [[prodotti-e-listino]] · [[vincoli-fiscali]]

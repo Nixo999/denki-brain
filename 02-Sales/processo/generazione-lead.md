@@ -122,8 +122,8 @@ I documenti pronti, **tutti da provare, non da dare per buoni**:
 - [x] Prima lista Instagram verificata → [[2026-08-31-instagram-anello-1]],
       50 account
 - [ ] **Mandare i primi 200 DM** e scrivere i due numeri in [[metriche]]
-- [ ] **Pubblicare il sito di [[castiglione-furniture]]**: è la prova che il
-      DM promette e che oggi non abbiamo
+- [ ] **Pubblicare su Netlify il sito di [[castiglione-furniture]]**: è
+      l'esempio da mandare a chi chiede «fammi vedere» → [[netlify]]
 - [ ] **Primo giro dei 10 presìdi**, settimana del 31 agosto →
       [[2026-08-28-presidi-volantini]]
 - [ ] Misurare i contatti nuovi in lista a settimana → [[metriche]]

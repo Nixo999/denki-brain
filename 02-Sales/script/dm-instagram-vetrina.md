@@ -136,15 +136,21 @@ arrivano di più, si risponde subito con un giorno («gliela mando giovedì»), 
 si lascia cadere. Una bozza promessa e non consegnata brucia il canale più
 lentamente di un blocco di Instagram, ma lo brucia meglio.
 
-> [!warning] `TODO` — la prova che oggi non c'è
-> Chi risponde *«fammi vedere un esempio»* va servito subito. Il sito di
-> [[castiglione-furniture]], costruito il 30 agosto proprio dalle foto di un
-> profilo Instagram, è **in locale e senza remote**. Finché non è online, a
-> quella domanda si risponde a mani vuote.
+**La bozza si consegna come link, non come screenshot.** Va pubblicata su
+Netlify: è la regola di casa per tutte le bozze → [[netlify]]. Una bozza che
+sta sul Desktop non è consegnata.
+
+> [!warning] Da fare prima del primo giro — 2026-08-31
+> A *«fammi vedere un esempio»* serve una risposta pronta, e l'esempio giusto
+> è [[castiglione-furniture]]: nato il 30 agosto proprio dalle foto di un
+> profilo Instagram. Il repo è ancora in locale e senza remote
+> ([[2026-08-30-sito-castiglione]]) — **pubblicarlo su Netlify è il primo
+> passo della campagna**, non un lavoro a parte.
 
 ## Collegamenti
 
 [[metodo-instagram]] · [[2026-08-31-instagram-anello-1]] ·
 [[2026-08-31-canale-dm-instagram]] · [[core-commerciale]] ·
 [[core-crescita-finanze]] · [[stile-comunicazione]] · [[vincoli-fiscali]] ·
-[[prodotti-e-listino]] · [[flusso-vendita]] · [[sito-denkicode]] · [[metriche]]
+[[prodotti-e-listino]] · [[flusso-vendita]] · [[sito-denkicode]] · [[metriche]] ·
+[[netlify]]

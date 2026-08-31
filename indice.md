@@ -50,6 +50,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 **strumenti/**
 
+- [[netlify]] — Dove vive una bozza prima di essere venduta: una bozza esiste quando è online.
 - [[plugin-da-valutare]] — Elenco ragionato, non un catalogo.
 - [[strumenti]] — Gli attrezzi con cui si costruisce, e come sono configurati da noi.
 
