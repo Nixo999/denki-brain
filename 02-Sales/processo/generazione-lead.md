@@ -1,6 +1,6 @@
 ---
 type: area
-updated: 2026-08-28
+updated: 2026-08-31
 source: denkicode
 priorita: massima
 ---
@@ -32,9 +32,13 @@ uno script forte su una lista sbagliata suona come tutti gli altri.
 | Fonte | Chi | Nota |
 |---|---|---|
 | Google Maps | Patrick | Attività locali per categoria e zona |
-| Pagine Gialle web | Patrick | |
-| **Instagram, profili suggeriti** | Patrick | Tecnica mirata su chi **non ha il sito** |
-| Porta-a-porta | Patrick | Territorio, flusso secondario |
+| Pagine Gialle web | Patrick | ⚠️ Non dice se hanno il sito → [[2026-08-30-verifica-sito-reale]] |
+| **DM Instagram** | Patrick | **Canale vero dal 31 agosto 2026**, sul lontano: [[metodo-instagram]] |
+| ~~Porta-a-porta~~ | — | **Chiuso il 31 agosto 2026** → [[2026-08-31-stop-porta-a-porta-a-freddo]] |
+
+⚠️ **Dal 31 agosto 2026 i canali si dividono per geografia**: il telefono
+lavora vicino, dove Patrick può presentarsi dopo la chiamata; Instagram lavora
+lontano. Un'attività riceve un canale solo.
 
 ## Il compito assegnato a Claude
 
@@ -113,6 +117,13 @@ I documenti pronti, **tutti da provare, non da dare per buoni**:
 - [x] Quattro pattern interrupt da testare → [[pattern-interrupt]]
 - [ ] Scrivere gli script per i flussi A, B e D
 - [ ] Provare il riscaldamento: biglietto di Patrick → chiamata entro 48 ore
+- [x] Aprire un canale sul lontano → [[2026-08-31-canale-dm-instagram]],
+      [[metodo-instagram]], [[dm-instagram-vetrina]]
+- [x] Prima lista Instagram verificata → [[2026-08-31-instagram-anello-1]],
+      50 account
+- [ ] **Mandare i primi 200 DM** e scrivere i due numeri in [[metriche]]
+- [ ] **Pubblicare il sito di [[castiglione-furniture]]**: è la prova che il
+      DM promette e che oggi non abbiamo
 - [ ] **Primo giro dei 10 presìdi**, settimana del 31 agosto →
       [[2026-08-28-presidi-volantini]]
 - [ ] Misurare i contatti nuovi in lista a settimana → [[metriche]]

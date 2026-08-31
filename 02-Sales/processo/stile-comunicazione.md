@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-08-28
+updated: 2026-08-31
 source: denkicode
 ---
 
@@ -31,7 +31,7 @@ saltarla e non anticiparla al telefono.
 
 | Fase | Canale |
 |---|---|
-| **Prospezione** | Chiamate a freddo (Giulia), DM Instagram, email, porta-a-porta (Patrick) |
+| **Prospezione** | Chiamate a freddo (Giulia, Gabriele, Edoardo) **sul vicino**, DM Instagram (Patrick) **sul lontano**, email. Il porta-a-porta a freddo è chiuso dal 31 agosto 2026 → [[2026-08-31-stop-porta-a-porta-a-freddo]] |
 | **Trattativa e chiusura** | Telefonata, video-call, incontro dal vivo |
 | **Operatività e assistenza** | **WhatsApp** — canale principale con le PMI locali |
 | **Comunicazioni formali** | Email |

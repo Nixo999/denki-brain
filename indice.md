@@ -72,6 +72,9 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-08-28-brianza-turni]] — Prima lista operativa.
 - [[2026-08-28-liste-31-agosto]] — Primo giro completo del ciclo-settimanale, generato con un giorno di anticipo.
 - [[2026-08-28-presidi-volantini]] — Prima applicazione di presidi-volantini.
+- [[2026-08-30-liste-gabriele-edoardo]] — Liste di prova dei due nuovi cold caller: zone disgiunte, 87 righe, blocchi 1 e 4 verificati sul sito reale.
+- [[2026-08-31-instagram-anello-1]] — 50 account Instagram verificati uno per uno: chi non ha il sito, o ce l'ha rotto.
+- [[metodo-instagram]] — Come si costruiscono i 50 account del giorno: anelli, otto esiti, e le regole che non fanno bloccare l'account.
 - [[metodo-liste]] — Serve a produrre 130-150 contatti profilati a settimana, ripetibile.
 
 **processo/**
@@ -92,6 +95,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 **script/**
 
 - [[briefing-prodotti-gabriele-edoardo]] — I quattro prodotti spiegati ai due cold caller in prova: un obiettivo per blocco, quattro divieti.
+- [[dm-instagram-vetrina]] — Un messaggio solo e sei ganci: il DM che Patrick manda dal suo profilo alle attività senza sito.
 - [[email-centralino-rsa]] — La mail per il decisore che il centralino non passa: due lettori, un inoltro e una demo.
 - [[obiezione-non-sapranno-usarlo]] — Framework: Belfort — looping sul primo dei 3 Dieci (la certezza nel prodotto), con l'isolamento di...
 - [[pattern-interrupt]] — Servono a coprire gli otto secondi in cui l'interlocutore decide se stiamo per fargli perdere tempo.
@@ -155,6 +159,8 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-08-30-core-strutturale]] — Decisione di Patrick: DenkiCode si tratta come una macchina a processi.
 - [[2026-08-30-nome-trevis]] — Deciso da Patrick il 30 agosto 2026: l'assistente si chiama Trevis, ovunque e sempre.
 - [[2026-08-30-verifica-sito-reale]] — Decisione: «non ha il sito» si verifica su Google e sul dominio, non su Pagine Gialle.
+- [[2026-08-31-stop-porta-a-porta-a-freddo]] — Decisione: il porta-a-porta a freddo si chiude, Patrick va solo dove è già stata fatta una chiamata.
+- [[2026-08-31-canale-dm-instagram]] — Decisione: il DM di Instagram diventa un canale vero e lavora sulle attività lontane.
 
 ## 06-Daily
 
@@ -181,4 +187,3 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[template-decisione]] — Il titolo dice cosa si è deciso, non l'argomento.
 - [[template-progetto]] — Una o due righe: cosa fa, per chi.
 - [[template-report-settimanale]] — Quattro file, non un testo lungo.
-- [[2026-08-30-liste-gabriele-edoardo]] — Liste di prova dei due nuovi cold caller: zone disgiunte, 87 righe, blocchi 1 e 4 verificati sul sito reale.
