@@ -5,7 +5,7 @@ source: claude
 prodotto: siti-vetrina
 canale: instagram
 anello: 1
-stato: da-inviare
+stato: inviata-versione-a
 ---
 
 # Lista Instagram — anello 1, 31 agosto 2026
@@ -153,6 +153,22 @@ di uno stylist dentro un altro salone) · `@shinehairsaloon` ·
 | `@vision__hairstyle` | Alzate Brianza | Sito vivo ma su LayerSlider 6.11.1, versione del 2019 |
 
 ---
+
+## Il giro è partito — 31 agosto 2026
+
+Patrick ha mandato la **versione A** di [[dm-instagram-vetrina]], quella senza
+gancio. Conseguenza da mettere a verbale, perché cambia cosa vale questa lista:
+
+- **La colonna `G` non è stata usata.** I ganci verificati — i tre domini senza
+  DNS, la pagina cPanel di `martiniman.it`, lo Shopify chiuso di The Vibe, il
+  `wa.me/39TUONUMERO` di Lotus Noir — restano validi e **non sono bruciati**:
+  nessuno di quei fatti è stato speso nel messaggio. Sono la munizione del
+  secondo contatto e del recupero a 4 giorni.
+- **Nel recupero il gancio si può usare.** È l'unico posto in cui, avendo già
+  scritto una volta a vuoto, dire una cosa precisa vale il doppio:
+  «le riscrivo una volta sola — fra l'altro il dominio X non si apre più».
+- `TODO` **Patrick**: quanti dei 50 sono partiti, e quando. Senza il
+  denominatore la riga in [[metriche]] non si scrive.
 
 ## Note sul giro
 

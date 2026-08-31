@@ -4,7 +4,7 @@ updated: 2026-08-31
 source: claude
 prodotto: siti-vetrina
 canale: instagram
-stato: da-provare
+stato: in-prova
 ---
 
 # Il DM di Instagram — un messaggio solo, sei ganci
@@ -25,7 +25,57 @@ domanda orientata al «No».
 
 ---
 
-## Il messaggio
+## Versione A — quella mandata davvero il 31 agosto 2026
+
+> [!note] Testo di Patrick — `source: denkicode`
+> È il messaggio uscito sul primo giro dell'anello 1. **Non si riscrive: si
+> misura.** La variante B qui sotto è quella contro cui va confrontato.
+
+> Buongiorno, sono Patrick Sappa, ho una piccola azienda di software a Seveso,
+> DenkiCode.
+>
+> Le scrivo perché ho guardato il profilo e il mio team le ha già preparato una
+> bozza di sito.
+>
+> Se mi dà l'ok gliela giro qua su Instagram, la guarda, e se non le piace me
+> lo dice e non ci sentiamo più.
+>
+> Sul costo non le faccio girare la testa: si parla di un paio di centinaia di
+> euro, non di migliaia, più una quota annuale per tenerlo online. Il numero
+> preciso glielo riesco a fare dopo aver visto il lavoro e dopo aver ascoltato
+> le sue richieste e solo se la cosa le interessa davvero.
+>
+> Gliela mando?
+
+### Cosa cambia rispetto alla B, e cosa costa
+
+Tre differenze, in ordine di peso.
+
+1. **Il gancio non c'è.** «Ho guardato il profilo» senza dire *cosa* ho visto è
+   la frase che scrive anche chi non ha guardato niente. È esattamente il
+   contrario di Gitomer ([[core-commerciale]]): il gancio non è «facciamo
+   siti», è la falla precisa. Costo diretto: la verifica di
+   [[2026-08-31-instagram-anello-1]] — tre domini senza DNS, una pagina cPanel,
+   uno Shopify chiuso, un link rimasto su `TUONUMERO` — **non entra nel
+   messaggio**, quindi non lavora.
+2. **«Già preparata» invece di «gliela preparo».** È l'esca storica di casa
+   ([[prodotti-e-listino]], flusso A), quindi è coerente col vault. Ma sposta
+   il messaggio da una promessa a un'affermazione, e **mette un orologio
+   addosso a Patrick**: chi risponde «mandamela» si aspetta un file, non due
+   giorni di attesa. Vedi *La promessa che va mantenuta*, sotto.
+3. **«Il mio team» in un messaggio che apre con «una piccola azienda».** Le due
+   cose si contraddicono di mezza riga. Il team è Nicola.
+
+**Il verso in cui potrebbe andare meglio della B, e va detto:** più vago e più
+generoso significa quasi sempre **più risposte**, non meno — «mandamela» costa
+zero a chi legge. Il rischio non è il tasso di risposta, è la **qualità**: chi
+risponde per curiosità non è chi compra, e ognuno di quei sì è una bozza da
+produrre. Il numero da guardare quindi **non è «quante risposte»**, è
+**«quanti sì alla bozza si trasformano in una trattativa»**.
+
+---
+
+## Versione B — con il gancio, da provare sul secondo giro
 
 Una sola cosa cambia da un invio all'altro: **la riga del gancio**, scelta fra
 le sei della tabella sotto in base a quello che è stato verificato in lista.
@@ -133,7 +183,15 @@ imbarazzo non risponde.
 
 Chi dice sì riceve la bozza. **Non più di 5 bozze aperte per volta**: se ne
 arrivano di più, si risponde subito con un giorno («gliela mando giovedì»), non
-si lascia cadere. Una bozza promessa e non consegnata brucia il canale più
+si lascia cadere.
+
+⚠️ **Con la versione A l'orologio parte più stretto.** «Il mio team le ha già
+preparato una bozza» significa che chi risponde «mandamela» si aspetta un file
+subito. Se la coda supera le 5, la frase che tiene in piedi la promessa senza
+smentirla è una sola, e va detta nella stessa giornata:
+
+> «Gliela sto rifinendo con le sue foto — gliela mando [giorno]. Intanto:
+> c'è qualcosa che vuole assolutamente dentro?» Una bozza promessa e non consegnata brucia il canale più
 lentamente di un blocco di Instagram, ma lo brucia meglio.
 
 **La bozza si consegna come link, non come screenshot.** Va pubblicata su
@@ -146,6 +204,28 @@ sta sul Desktop non è consegnata.
 > profilo Instagram. Il repo è ancora in locale e senza remote
 > ([[2026-08-30-sito-castiglione]]) — **pubblicarlo su Netlify è il primo
 > passo della campagna**, non un lavoro a parte.
+
+## Il test — come si chiude la questione senza discutere
+
+Le due versioni non si valutano a opinione: si mandano e si contano, come i
+quattro [[pattern-interrupt]].
+
+| Giro | Versione | Inviati | Risposte | Sì alla bozza | Trattative aperte |
+|---|---|---|---|---|---|
+| 1 — 31 ago 2026, anello 1 | **A** (senza gancio) | `TODO` | | | |
+| 2 — anello 1, resto | **B** (con gancio) | | | | |
+
+**Regola del test**: stesso segmento, stesso anello, stessa fascia oraria.
+Se cambia anche il target, il confronto non vale niente.
+
+Le tre domande al secondo giro, le stesse di [[script-giulia-denkishift]]:
+
+1. **Quanti rispondono?** Sotto il 5% il messaggio non tiene, qualunque sia la
+   versione.
+2. **Quanti dei sì alla bozza arrivano a parlare di prezzo?** È il numero che
+   dice se le risposte sono curiosità o clienti.
+3. **Quale gancio ha risposto meglio?** Sei varianti: se una regge e cinque no,
+   le liste future si costruiscono su quel segnale.
 
 ## Collegamenti
 
