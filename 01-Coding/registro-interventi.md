@@ -46,6 +46,12 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 | 00:4x | Nicola +claude | sito V-BAG | `vbag-site` | — | **Foto scontornate e pannelli calmati** (feedback: sfondo delle foto inguardabile, pannelli un pugno in un occhio). Borsa rosa scontornata con **rembg locale** (modello bria ~1GB in `~/.rembg`, ritaglio pulito coi buchi della maglia passanti), webp con alpha su pannelli-scena tenui: arco sfumato nell'hero, palco radiale nel lookbook, drop-shadow viola. Handmade da lilla pieno a `--lilla-soft`, slot menta senza bordo su mint al 55%, sezioni fino a 8.5rem. Foto col divano rimosse; og.jpg composta (l'alpha negli og diventa nero). ✅ Palco 4:5, zero overflow a 375, light e dark visti al primo frame | `b4eb759` |
 | 00:1x | Nicola +claude | sito V-BAG | `vbag-site` | — | **Palette del logo + fondo animato allo scroll**: il lilla `#DC92FF` da accento a protagonista (CTA lilla, sezione handmade in lilla pieno identica nei due temi, testo ink fisso: il viola su lilla dava 2.7:1). Dietro la pagina tre forme dal logo (V in didone al 9%, arco, cerchio) mosse da `animation-timeline: scroll(root)`, zero JS: dove manca il supporto (Firefox) restano ferme, decorative. Sintassi presa da `modern-web-guidance` (parallax-scroll-effects). ✅ Misurato: ScrollTimeline attiva, a scrollY 1506 la V trasla 150px e ruota 2.3°, zero overflow a 375 | `94b2cb6` |
 
+## 2026-08-31
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| sera | Nicola +claude | [[denkishift]] | `smooth-duty` | — | Caricamento col marchio che gira (tira-giù + versione nuova con `/versione` e timbro di build), icone della home rigenerate dal vettore vero — la 180 di iOS era schiacciata in un angolo — con maskable dedicate e `?v=2`. Pushato, deploy verificato | `ac2a8dd` |
+
 ## 2026-08-30
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
