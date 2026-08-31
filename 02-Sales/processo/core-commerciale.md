@@ -21,7 +21,7 @@ ordine. Questo file è il *come si scrive* quello che si dice.
 | Se il lavoro è | Framework | Perché quello |
 |---|---|---|
 | Domande d'indagine sui gestionali ([[denkishift]], custom) | **SPIN** (Rackham) | Scontrino alto: il bisogno va costruito, non spiegato |
-| Script a freddo di [[script-giulia-denkishift\|Giulia]], aperture | **Voss** | Abbassa la guardia nei primi 8 secondi |
+| Script a freddo di [[script-denkishift\|Giulia]], aperture | **Voss** | Abbassa la guardia nei primi 8 secondi |
 | Rifiuti istintivi al telefono | **Blount** | Sequenza fissa: Accetta → Spiazza → Chiedi |
 | Blitz fisici di Patrick, controllo dello status | **Klaff** | Non farsi trattare da "ragazzino dei computer" |
 | Chiusura finale, obiezioni in trattativa | **Belfort** | Looping e i 3 Dieci |
@@ -218,8 +218,8 @@ serve?"*, ma *"ecco cosa state sbagliando e quanto vi costa"*.
 
 ## Collegamenti
 
-[[flusso-vendita]] · [[script-giulia-siti-vetrina]] · [[script-giulia-ecommerce]] ·
-[[script-giulia-denkishift]] · [[script-giulia-indagine]] · [[pattern-interrupt]] ·
+[[flusso-vendita]] · [[script-siti-vetrina]] · [[script-ecommerce]] ·
+[[script-denkishift]] · [[script-indagine]] · [[pattern-interrupt]] ·
 [[stile-comunicazione]] · [[prodotti-e-listino]] · [[metodo-liste]] ·
 [[metriche]] · [[protocollo-trevis]] · [[core-strutturale]] ·
 [[core-crescita-finanze]] · [[core-produttivita-leadership]] ·

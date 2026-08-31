@@ -16,7 +16,7 @@ Serve a produrre **130-150 contatti profilati a settimana**, ripetibile.
 ⚠️ Quella cifra viene dal fatto che il target di 50 chiamate significa **50
 risposte vere**, non 50 numeri composti: per ottenerne 50 ne servono circa 130.
 Il conto sta in [[metriche]]. Risolve il problema del volume; l'angolo di
-attacco sta in [[script-giulia-denkishift]] e in [[pattern-interrupt]].
+attacco sta in [[script-denkishift]] e in [[pattern-interrupt]].
 
 ## Chi è il cliente di DenkiShift
 
@@ -176,6 +176,6 @@ in [[metriche]]:
 
 ## Collegamenti
 
-[[script-giulia-denkishift]] · [[generazione-lead]] · [[denkishift]] ·
+[[script-denkishift]] · [[generazione-lead]] · [[denkishift]] ·
 [[metriche]] · [[materiale-offline]] · [[flusso-vendita]] ·
 [[prodotti-e-listino]]

@@ -97,7 +97,7 @@ I documenti pronti, **tutti da provare, non da dare per buoni**:
 | Documento | Risolve |
 |---|---|
 | [[metodo-liste]] | Il **volume**: 40-50 contatti profilati in mezz'ora, ripetibile |
-| [[script-giulia-denkishift]] | L'**indifferenza**: apertura pattern interrupt, sei obiezioni, follow-up |
+| [[script-denkishift]] | L'**indifferenza**: apertura pattern interrupt, sei obiezioni, follow-up |
 | [[2026-08-28-brianza-turni]] | La **prima lista vera**: 51 contatti pronti da chiamare |
 | [[pattern-interrupt]] | Quattro aperture diverse e il piano per provarle a eliminazione |
 | [[ciclo-settimanale]] | La **cadenza**: 4 liste ogni domenica e il ritorno dal campo |
@@ -111,7 +111,7 @@ I documenti pronti, **tutti da provare, non da dare per buoni**:
 
 - [x] Costruire un processo ripetibile di generazione liste → [[metodo-liste]]
 - [x] Scrivere lo script pattern interrupt per DenkiShift →
-      [[script-giulia-denkishift]]
+      [[script-denkishift]]
 - [x] Prima lista prodotta → [[2026-08-28-brianza-turni]], 51 contatti
 - [ ] **Provarlo su 40 chiamate di un solo segmento** e scrivere l'esito
 - [x] Quattro pattern interrupt da testare → [[pattern-interrupt]]

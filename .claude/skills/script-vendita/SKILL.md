@@ -1,6 +1,6 @@
 ---
 name: script-vendita
-description: Scrive script telefonici per Giulia e angoli d'attacco per i quattro flussi di vendita DenkiCode. Da usare quando servono script di cold call, pattern interrupt, gestione obiezioni, messaggi WhatsApp di follow-up o testi per volantini e biglietti da visita.
+description: Scrive script telefonici per chi chiama — Giulia, Gabriele, Edoardo — e angoli d'attacco per i quattro flussi di vendita DenkiCode. Da usare quando servono script di cold call, pattern interrupt, gestione obiezioni, messaggi WhatsApp di follow-up o testi per volantini e biglietti da visita.
 ---
 
 # Script di vendita DenkiCode
@@ -22,13 +22,13 @@ le prime 40 chiamate.
 
 ## Le regole che non si violano mai
 
-- **Giulia dà sempre del "Lei"** (o del "Voi" aziendale). Mai del tu al telefono
-- **Giulia non chiude mai.** Il suo unico obiettivo è l'appuntamento o il sì
+- **Chi chiama dà sempre del "Lei"** (o del "Voi" aziendale). Mai del tu al telefono
+- **Chi chiama non chiude mai.** L'unico obiettivo è l'appuntamento o il sì
   alla bozza. Chi chiude è Patrick
 - **Mai la parola "fattura"**, mai "contratto di fornitura", mai
   "abbonamento". Si dice **ricevuta**, **collaborazione occasionale/
   promozionale**, **quota annuale**
-- **Nel flusso D Giulia non vende.** Fa una ricerca di mercato. L'unico
+- **Nel flusso D non si vende.** Fa una ricerca di mercato. L'unico
   obiettivo è il form compilato
 - **Tono DenkiCode**: diretto, giovane, problem-solving, nessuna fuffa. Niente
   "soluzioni innovative", niente "partner strategico", niente superlativi
@@ -45,7 +45,7 @@ le prime 40 chiamate.
 5. LOOPING                per ogni obiezione: valida → riporta al valore → richiedi
 ```
 
-Uno script per Giulia sta in **meno di 40 secondi** di parlato. Se non ci sta,
+Uno script sta in **meno di 40 secondi** di parlato. Se non ci sta,
 è troppo lungo.
 
 ## Come si scrivono le obiezioni
@@ -69,15 +69,16 @@ Consegna sempre:
 - **Lo script parlato**, come si dice davvero al telefono — non un riassunto
 - **Le obiezioni** con la risposta pronta
 - **Il messaggio WhatsApp di follow-up** da mandare subito dopo la chiamata
-- **Cosa passa a Patrick**: le tre informazioni che Giulia deve aver raccolto
+- **Cosa passa a Patrick**: le informazioni che chi chiama deve aver raccolto
 
 Segna gli script generati con `source: claude` se finiscono nel vault. Sono
 bozze da provare al telefono, non verità: **20 chiamate sono il test**, non il
 tuo giudizio.
 
-## Il Word per Giulia
+## Il Word per chi chiama
 
-Giulia **non ha il vault**: legge i `.docx` in `02-Sales/script/`. Si rigenerano
+Giulia, Gabriele ed Edoardo **non hanno il vault**: leggono i `.docx` in
+`02-Sales/script/`. Si rigenerano
 con `node build.js` da `.claude/skills/script-vendita/word/` — istruzioni nel
 `README.md` lì dentro. Chi corregge uno script corregge la nota **e** il
 `content-*.js`, poi rigenera: altrimenti al telefono resta la versione vecchia.

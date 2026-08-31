@@ -19,7 +19,7 @@ diventate l'unica colonna di Giulia. È la **lista DenkiShift** della settimana
 del 31 agosto → [[2026-08-28-liste-31-agosto]].
 
 Costruita secondo [[metodo-liste]]. Da chiamare con
-[[script-giulia-denkishift]] e negli orari indicati là.
+[[script-denkishift]] e negli orari indicati là.
 
 ## Cosa c'è dentro
 
@@ -83,7 +83,7 @@ Dichiarato invece che sottinteso, come si fa nei repo:
 ## Dopo il primo giro
 
 I risultati si scrivono **nel foglio**, non qui. Poi si aggiornano
-[[metriche]] e il registro delle prove in [[script-giulia-denkishift]].
+[[metriche]] e il registro delle prove in [[script-denkishift]].
 
 La domanda a cui questa lista deve rispondere non è "quanti appuntamenti" ma
 **quale dei tre blocchi risponde meglio**. Se le RSA convertono e le pulizie no,
@@ -91,5 +91,5 @@ la lista della settimana dopo è tutta RSA sui comuni accanto.
 
 ## Collegamenti
 
-[[metodo-liste]] · [[script-giulia-denkishift]] · [[generazione-lead]] ·
+[[metodo-liste]] · [[script-denkishift]] · [[generazione-lead]] ·
 [[denkishift]] · [[metriche]] · [[materiale-offline]]

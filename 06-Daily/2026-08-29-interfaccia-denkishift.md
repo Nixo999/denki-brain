@@ -82,7 +82,7 @@ corte: con i nomi di oggi va guardata a 375px prima di scriverla.
 gesto da fare in demo, le due domande che arrivano subito dopo e il percorso di
 otto minuti. ⚠️ Dentro c'è anche un allineamento da fare: il prezzo va detto
 come **quota annuale in una ricevuta**, mai «due euro al mese» — e
-[[script-giulia-denkishift]] oggi dice «due euro al mese».
+[[script-denkishift]] oggi dice «due euro al mese».
 
 ## Aperto
 

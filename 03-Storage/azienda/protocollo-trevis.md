@@ -119,7 +119,7 @@ convenevole, e i convenevoli sono vietati dal protocollo stesso.
 | 1 | Come si costruisce un'offerta e come si alloca un incasso | `03-Storage/azienda/core-crescita-finanze.md` |
 | 1 | Come si pianifica il tempo, si costruisce un'abitudine, si guida un agente | `03-Storage/azienda/core-produttivita-leadership.md` |
 | 1 | I quattro flussi e lo Straight Line | `02-Sales/processo/flusso-vendita.md` |
-| 1 | Script telefonico e obiezioni | `02-Sales/script/script-giulia-denkishift.md` |
+| 1 | Script telefonico e obiezioni | `02-Sales/script/script-denkishift.md` |
 | 1 | Aperture | `02-Sales/script/pattern-interrupt.md` |
 | 1 | Chi si chiama, e perché | `02-Sales/liste/metodo-liste.md` |
 | 1 | Numeri di conversione | `02-Sales/report/metriche.md` |

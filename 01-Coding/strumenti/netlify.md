@@ -36,7 +36,7 @@ consegnato: non si annuncia, non si promette, non si conta.
 
 Vale per tutti i canali:
 - **Telefono** — «le mandiamo la bozza» → il link parte su WhatsApp
-  ([[script-giulia-siti-vetrina]]).
+  ([[script-siti-vetrina]]).
 - **DM Instagram** — il link **non va nel primo messaggio** (è il segnale di
   spam più forte che ci sia): entra nel secondo, quando ha risposto
   → [[dm-instagram-vetrina]].

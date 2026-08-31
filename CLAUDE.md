@@ -70,7 +70,7 @@ in che ordine si guardano.
    sviluppo. Quando proponi qualcosa, chiediti prima se aiuta lì. Vedi
    [[generazione-lead]], la cadenza fissa in [[ciclo-settimanale]] (4 liste
    ogni domenica, 5 report indietro), e il materiale operativo in
-   [[metodo-liste]], [[script-giulia-denkishift]] e [[pattern-interrupt]].
+   [[metodo-liste]], [[script-denkishift]] e [[pattern-interrupt]].
 7. **Tutti e tre lavorano e studiano.** DenkiCode è il terzo impegno di
    ciascuno: ~25h di negozio e l'università in corso. Prima di proporre
    qualcosa che costa ore, leggi [[team-e-vincoli]].

@@ -50,5 +50,5 @@ stati salvati e si usano: se erano di scorta, va detto ora.
 
 ## Collegamenti
 
-[[core-commerciale]] · [[flusso-vendita]] · [[script-giulia-denkishift]] ·
+[[core-commerciale]] · [[flusso-vendita]] · [[script-denkishift]] ·
 [[protocollo-trevis]] · [[2026-08-28-protocollo-jarvis]]

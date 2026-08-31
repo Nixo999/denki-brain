@@ -60,7 +60,7 @@ Poi **solo il file che serve al compito**:
 
 | Se il compito è | Leggi |
 |---|---|
-| una battuta, un'obiezione, il flusso della chiamata | `02-Sales/script/script-giulia-denkishift.md` |
+| una battuta, un'obiezione, il flusso della chiamata | `02-Sales/script/script-denkishift.md` |
 | l'apertura, il primo colpo | `02-Sales/script/pattern-interrupt.md` |
 | costruire o allargare una lista | `02-Sales/liste/metodo-liste.md` + l'ultima lista in `operations/liste/` |
 | quante chiamate, quanto rende | `02-Sales/report/metriche.md` |

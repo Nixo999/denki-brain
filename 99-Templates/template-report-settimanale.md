@@ -92,4 +92,4 @@ settimana nuova. Il dettaglio sta in [[ciclo-settimanale]].
 ## Collegamenti
 
 [[ciclo-settimanale]] · [[metriche]] · [[metodo-liste]] ·
-[[script-giulia-denkishift]]
+[[script-denkishift]]

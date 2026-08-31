@@ -42,7 +42,7 @@ lavoro, quindi condannato a farlo per sempre. L'obiettivo non è lavorare
   produce lo stesso risultato leggendo quel foglio. Se deve chiamarti, non è
   una SOP: è un appunto.
 - **Quello che c'è già è E-Myth puro.** Le liste con [[metodo-liste]], gli
-  script di [[script-giulia-denkishift|Giulia]], il [[ciclo-settimanale]], il
+  script di [[script-denkishift|Giulia]], il [[ciclo-settimanale]], il
   [[registro-interventi]]: sono sistemi, non favori. Il metodo funziona, va
   esteso a dove ancora non arriva.
 - **Il buco è dal preventivo in poi.** Costruzione di un sito vetrina,

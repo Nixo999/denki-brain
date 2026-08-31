@@ -218,7 +218,7 @@ quattro [[pattern-interrupt]].
 **Regola del test**: stesso segmento, stesso anello, stessa fascia oraria.
 Se cambia anche il target, il confronto non vale niente.
 
-Le tre domande al secondo giro, le stesse di [[script-giulia-denkishift]]:
+Le tre domande al secondo giro, le stesse di [[script-denkishift]]:
 
 1. **Quanti rispondono?** Sotto il 5% il messaggio non tiene, qualunque sia la
    versione.

@@ -147,7 +147,7 @@ function build({ title, product, objective, blocks }) {
   const children = [
     new Paragraph({
       spacing: { after: 40 },
-      children: [new TextRun({ text: 'DENKICODE · SCRIPT PER LE CHIAMATE DI GIULIA', font: FONT, size: 16, bold: true, color: SOFT, characterSpacing: 30 })],
+      children: [new TextRun({ text: 'DENKICODE · SCRIPT PER LE CHIAMATE', font: FONT, size: 16, bold: true, color: SOFT, characterSpacing: 30 })],
     }),
     new Paragraph({
       spacing: { after: 60 },
@@ -185,7 +185,7 @@ function build({ title, product, objective, blocks }) {
 
   return new Document({
     creator: 'DenkiCode',
-    description: 'Script telefonico generato da JARVIS il 28/08/2026 - bozza da provare',
+    description: 'Script telefonico DenkiCode - versione del 31/08/2026, da correggere dopo le chiamate',
     title,
     styles: { default: { document: { run: { font: FONT, size: 20, color: MID } } } },
     sections: [{
@@ -196,7 +196,7 @@ function build({ title, product, objective, blocks }) {
             alignment: AlignmentType.CENTER,
             spacing: { before: 200 },
             children: [new TextRun({
-              children: ['DenkiCode · uso interno · bozza del 28/08/2026, da correggere dopo 20 conversazioni · pag. ', PageNumber.CURRENT],
+              children: ['DenkiCode · uso interno · versione del 31/08/2026 · quello fra virgolette si dice, il resto è per capire · pag. ', PageNumber.CURRENT],
               font: FONT, size: 15, color: SOFT,
             })],
           })],

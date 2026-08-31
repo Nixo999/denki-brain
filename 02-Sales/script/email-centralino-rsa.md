@@ -63,8 +63,8 @@ Patrick ([[stile-comunicazione]]).
 > sostituzioni continue, quel buco lo chiude quasi sempre una telefonata dopo
 > l'altra — e chi copre è spesso qualcuno che quel giorno aveva già finito.
 >
-> Costa 2 € al mese a persona, li paga la struttura: su 40 dipendenti sono
-> 80 € al mese. Glielo scrivo subito perché non mi piace girarci intorno.
+> Su quaranta dipendenti sono 960 € l'anno, una volta sola e una ricevuta
+> sola. Glielo scrivo subito perché non mi piace girarci intorno.
 >
 > Non le chiedo di decidere niente per mail. Glielo faccio vedere in dieci
 > minuti, in videochiamata o passo io da voi: se dopo dieci minuti le sembra
@@ -95,9 +95,11 @@ Patrick ([[stile-comunicazione]]).
 - **Il paragrafo del dolore non fa domande.** Al telefono si chiede «come fate a
   coprirlo?» e si sta zitti; per iscritto nessuno risponde, quindi la risposta
   gliela si mette davanti già scritta. È il *teach* del Challenger.
-- **Il prezzo sta nella mail.** Chi non lo mette costringe il decisore a
-  scrivere per saperlo, e non lo fa nessuno. E 80 € al mese non sono una
-  decisione di budget: sono un sì o un no immediato.
+- **Il prezzo sta nella mail, e sta come totale dell'anno.** Chi non lo mette
+  costringe il decisore a scrivere per saperlo, e non lo fa nessuno. E si dice
+  «960 € l'anno», mai «2 € al mese a persona»: un importo al mese per persona
+  suona come una cosa che cresce e scappa di mano — è la correzione che Patrick
+  ha fatto il 30 agosto sul [[briefing-prodotti-gabriele-edoardo]].
 - **La garanzia è solo su ciò che controlliamo** («se le sembra che non vi
   serva, non mi sente più»): nessuna promessa di risultato, nessuna data
   → [[core-crescita-finanze]].
@@ -142,7 +144,7 @@ struttura torna nel giro di richiamo telefonico.
 | Rispondono | Si risponde |
 |---|---|
 | «Ci mandi una presentazione / del materiale» | «Volentieri, ma le faccio perdere tempo: quello che ho da mostrarle è il programma che gira, non delle slide. Sono dieci minuti in videochiamata, glielo apro davanti. [giorno] o [giorno]?» |
-| «Quanto costa esattamente?» | «2 € al mese a persona, li paga la struttura. Il numero preciso dipende da quante persone siete: me lo dice e glielo faccio in due righe. Intanto glielo faccio vedere, sono dieci minuti.» |
+| «Quanto costa esattamente?» | «Dipende da quante persone siete: su quaranta sono novecentosessanta euro l'anno, una volta sola. Me lo dice e glielo faccio in due righe. Intanto glielo faccio vedere, sono dieci minuti.» |
 | «Abbiamo già un gestionale» | «Meglio così, allora sa già di cosa parlo. Una domanda sola: quando le salta una persona, il vostro le dice chi è libero e chi è già a monte ore? Se sì, ho chiamato la struttura sbagliata e lo dico volentieri.» |
 
 ---
@@ -175,17 +177,17 @@ struttura torna nel giro di richiamo telefonico.
 | «Come da accordi telefonici» | Con il decisore non c'è stato nessun accordo: è la frase che lo fa sentire preso in giro |
 
 > [!warning] Due cose da decidere, Patrick
-> - **Il prezzo scritto è secco (`2 €`), non «circa».** Il 30 agosto hai
->   spostato i prezzi del briefing su «circa», ma lì parlavano Gabriele ed
->   Edoardo; qui firmi tu, e il numero secco è la mossa dello script
->   ([[script-giulia-denkishift]], «prezzo subito, senza balletti»). Se lo
->   vuoi allineato, è una parola.
+> - **Il prezzo era scritto come «2 € al mese a persona»: corretto il
+>   31 agosto 2026.** Adesso è il totale dell'anno, come nel
+>   [[briefing-prodotti-gabriele-edoardo]] e in [[script-denkishift]]. Resta
+>   secco e non «circa»: qui firmi tu, e il numero preciso è la mossa dello
+>   script — «prezzo subito, senza balletti».
 > - **Serve un indirizzo mittente che regga.** Da un indirizzo personale la
 >   mail 1 perde metà della sua forza al primo sguardo del centralino.
 >   `TODO`: quale casella si usa → [[credenziali]].
 
 ## Collegamenti
 
-[[script-giulia-denkishift]] · [[core-commerciale]] · [[core-crescita-finanze]] ·
+[[script-denkishift]] · [[core-commerciale]] · [[core-crescita-finanze]] ·
 [[metodo-liste]] · [[stile-comunicazione]] · [[vincoli-fiscali]] ·
 [[denkishift]] · [[metriche]] · [[flusso-vendita]]

@@ -100,10 +100,10 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[email-centralino-rsa]] — La mail per il decisore che il centralino non passa: due lettori, un inoltro e una demo.
 - [[obiezione-non-sapranno-usarlo]] — Framework: Belfort — looping sul primo dei 3 Dieci (la certezza nel prodotto), con l'isolamento di...
 - [[pattern-interrupt]] — Servono a coprire gli otto secondi in cui l'interlocutore decide se stiamo per fargli perdere tempo.
-- [[script-giulia-denkishift]] — Obiettivo della chiamata: fissare la demo con Patrick.
-- [[script-giulia-ecommerce]] — Obiettivo della chiamata: il sì alla bozza della vetrina online.
-- [[script-giulia-indagine]] — Qui Giulia non vende niente, e non è una figura retorica: è il flusso.
-- [[script-giulia-siti-vetrina]] — Obiettivo della chiamata: il sì alla bozza.
+- [[script-denkishift]] — Fissare la demo con Patrick. Usato da tutti e tre, riscritto il 31 agosto 2026.
+- [[script-ecommerce]] — Farsi dare due o tre prodotti e il numero per la bozza della vetrina online.
+- [[script-indagine]] — Qui non si vende niente, e non è un modo di dire: l'obiettivo è il modulo compilato.
+- [[script-siti-vetrina]] — Farsi dare il numero WhatsApp per mandare la bozza del sito.
 
 ## 03-Storage
 

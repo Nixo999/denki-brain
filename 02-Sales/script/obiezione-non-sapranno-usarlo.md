@@ -87,7 +87,7 @@ anticipata, **collaborazione occasionale**. Mai «canone mensile», mai
 ⚠️ **Attenzione al prezzo detto ad alta voce.** In progettazione il numero gira
 come «2 € al mese a persona», che è comodo per ragionare e sbagliato da dire: su
 dieci persone si dice **240 € una volta l'anno, una ricevuta sola**. Anche
-[[script-giulia-denkishift]] dice «due euro al mese» e va allineato.
+[[script-denkishift]] dice «due euro al mese» e va allineato.
 
 ## Quello che non si dice
 
@@ -123,5 +123,5 @@ a metà, dopo una domanda, sembra una scusa. Non si torna più sull'argomento.
 ## Collegamenti
 
 [[core-commerciale]] · [[denkishift]] · [[denkishift-interfaccia]] ·
-[[script-giulia-denkishift]] · [[flusso-vendita]] · [[vincoli-fiscali]] ·
+[[script-denkishift]] · [[flusso-vendita]] · [[vincoli-fiscali]] ·
 [[stile-comunicazione]]

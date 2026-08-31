@@ -101,7 +101,7 @@ chiamate** prima di considerarli buoni:
   non catene), i nove segmenti in ordine di dolore, il **segnale osservabile**
   (orario H24 / 7 su 7 / annuncio di lavoro attivo), le colonne del foglio e la
   regola «una lista = un segmento + un comune»
-- [[script-giulia-denkishift]] — apertura pattern interrupt, la domanda che apre
+- [[script-denkishift]] — apertura pattern interrupt, la domanda che apre
   il dolore, sei obiezioni col looping, cosa Giulia deve portare a Patrick, i
   due messaggi WhatsApp, e la tabella di quello che non si dice mai
 

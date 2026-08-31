@@ -40,9 +40,9 @@ esce come elenco, non come foglio: si legge in macchina, non si compila.
 
 | Lista | Script | Word per Giulia |
 |---|---|---|
-| Siti Web | [[script-giulia-siti-vetrina]] · [[script-giulia-ecommerce]] | `02-Sales/script/*.docx` |
-| DenkiShift | [[script-giulia-denkishift]] + [[pattern-interrupt]] | idem |
-| Indagine | [[script-giulia-indagine]] | idem |
+| Siti Web | [[script-siti-vetrina]] · [[script-ecommerce]] | `02-Sales/script/*.docx` |
+| DenkiShift | [[script-denkishift]] + [[pattern-interrupt]] | idem |
+| Indagine | [[script-indagine]] | idem |
 
 I `.docx` sono la copia che Giulia legge: **il vault non ce l'ha, lei**. Quando
 si corregge uno script si rigenera anche il Word, altrimenti al telefono resta
@@ -138,7 +138,7 @@ Nell'ordine:
 1. **Contare.** Chiamate, risposte, esiti per categoria, appuntamenti fissati,
    chiusure. I numeri vanno in [[metriche]] prima di qualunque commento
 2. **Trovare le obiezioni ricorrenti** e riscriverne il looping in
-   [[script-giulia-denkishift]] e [[pattern-interrupt]]
+   [[script-denkishift]] e [[pattern-interrupt]]
 3. **Diagnosticare le chiusure mancate.** Per ogni secondo incontro perso: dove
    esattamente si è fermata la vendita e la contromisura esatta, non un consiglio
    generico
@@ -175,6 +175,6 @@ Nell'ordine:
 ## Collegamenti
 
 [[metodo-liste]] · [[template-report-settimanale]] · [[generazione-lead]] ·
-[[metriche]] · [[script-giulia-denkishift]] · [[pattern-interrupt]] ·
+[[metriche]] · [[script-denkishift]] · [[pattern-interrupt]] ·
 [[materiale-offline]] · [[prodotti-e-listino]] ·
 [[2026-08-28-ciclo-settimanale]]

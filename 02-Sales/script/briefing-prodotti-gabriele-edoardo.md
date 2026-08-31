@@ -183,6 +183,6 @@ cui si passa la palla.
 
 [[2026-08-30-liste-gabriele-edoardo]] · [[prodotti-e-listino]] ·
 [[flusso-vendita]] · [[stile-comunicazione]] · [[metodo-liste]] ·
-[[core-commerciale]] · [[script-giulia-siti-vetrina]] ·
-[[script-giulia-denkishift]] · [[script-giulia-ecommerce]] ·
-[[script-giulia-indagine]]
+[[core-commerciale]] · [[script-siti-vetrina]] ·
+[[script-denkishift]] · [[script-ecommerce]] ·
+[[script-indagine]]

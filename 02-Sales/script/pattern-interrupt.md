@@ -1,8 +1,9 @@
 ---
 type: area
-updated: 2026-08-28
+updated: 2026-08-31
 source: claude
 prodotto: denkishift
+usato-da: [giulia, gabriele, edoardo]
 stato: da-provare
 ---
 
@@ -12,9 +13,12 @@ stato: da-provare
 > Quattro aperture, quattro meccanismi psicologici diversi. Sono **ipotesi da
 > testare**, non verità: il verdetto lo danno le chiamate.
 
+**Le usano tutti e tre**: Giulia, Gabriele, Edoardo. Dove c'è `[nome]` ci va il
+proprio.
+
 Servono a coprire gli **otto secondi** in cui l'interlocutore decide se stiamo
 per fargli perdere tempo. Il resto della telefonata sta in
-[[script-giulia-denkishift]] — questi sostituiscono soltanto il paragrafo di
+[[script-denkishift]] — questi sostituiscono soltanto il paragrafo di
 apertura.
 
 **Tutti e quattro convergono sulla stessa domanda ponte**, che è il vero motore
@@ -46,8 +50,8 @@ col monologo perde metà delle chiamate qui.
 > da voi — lei o qualcun altro?»**
 
 **Perché funziona.** Chi risponde a un numero sconosciuto ha già la mano sul
-tasto rosso. «Non le vendo niente» è **letteralmente vero** — Giulia non chiude
-mai, chiude Patrick — e disinnesca il riflesso prima che parta. La domanda che
+tasto rosso. «Non le vendo niente» è **letteralmente vero** — chi chiama non
+chiude mai, chiude Patrick — e disinnesca il riflesso prima che parta. La domanda che
 segue è sul *loro* lavoro, non sul nostro prodotto: nessuno risponde a «le
 interessa un software», quasi tutti rispondono a «chi fa i turni».
 
@@ -63,7 +67,7 @@ misurano contro questa.
 
 *Meccanismo: nominare l'elefante invece di far finta che non ci sia.*
 
-> **«Buongiorno, sono Giulia. Le dico subito com'è: la chiamo dal nulla, non ci
+> **«Buongiorno, sono [nome]. Le dico subito com'è: la chiamo dal nulla, non ci
 > conosciamo e ho preso il suo numero da un elenco. Le spiego in quindici
 > secondi perché, e poi decide lei se mandarmi a quel paese. Va bene?»**
 >
@@ -115,7 +119,7 @@ per prima in un confronto.
 
 *Meccanismo: essere del posto è l'unica cosa che un call center non può copiare.*
 
-> **«Buongiorno, sono Giulia di DenkiCode — siamo di Seveso, qui a due passi.
+> **«Buongiorno, sono [nome] di DenkiCode — siamo di Seveso, qui a due passi.
 > Chiamiamo solo strutture della zona e questa settimana siamo partiti dalle
 > RSA. Le rubo trenta secondi: chi si occupa dei turni del personale da voi?»**
 
@@ -128,10 +132,11 @@ da visita di [[materiale-offline]].
 **Dove si rompe.** Perde forza fuori dalla Brianza: a Milano «siamo di Seveso»
 non dice granché. Si adatta il riferimento, o si usa un'altra variante.
 
-**È l'unica delle quattro che si aggancia al porta-a-porta.** Se Patrick ha
-lasciato un biglietto in quella struttura, la prima riga diventa:
-*«le ha lasciato il biglietto un mio collega l'altro giorno»* — e non è più una
-chiamata a freddo.
+**È l'unica delle quattro che si aggancia al biglietto.** Se Patrick ha lasciato
+un biglietto in quella struttura, la prima riga diventa: *«le ha lasciato il
+biglietto un mio collega l'altro giorno»* — e non è più una chiamata a freddo.
+È il riscaldamento di [[metodo-liste]], non il porta-a-porta, che dal
+31 agosto 2026 è chiuso → [[2026-08-31-stop-porta-a-porta-a-freddo]].
 
 ---
 
@@ -170,6 +175,6 @@ settimana si contano gli appuntamenti per sigla e si scrive qui sotto.
 
 ## Collegamenti
 
-[[core-commerciale]] · [[script-giulia-denkishift]] · [[metodo-liste]] ·
+[[core-commerciale]] · [[script-denkishift]] · [[metodo-liste]] ·
 [[2026-08-28-brianza-turni]] ·
 [[generazione-lead]] · [[metriche]] · [[flusso-vendita]] · [[materiale-offline]]

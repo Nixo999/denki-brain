@@ -131,5 +131,5 @@ report di Patrick nel modulo Word, e la domenica si rigenera →
 ## Collegamenti
 
 [[ciclo-settimanale]] · [[metodo-liste]] · [[2026-08-28-brianza-turni]] ·
-[[script-giulia-denkishift]] · [[pattern-interrupt]] · [[metriche]] ·
+[[script-denkishift]] · [[pattern-interrupt]] · [[metriche]] ·
 [[materiale-offline]] · [[generazione-lead]]

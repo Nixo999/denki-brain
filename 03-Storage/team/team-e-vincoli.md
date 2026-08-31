@@ -65,7 +65,7 @@ un'università in corso. Giulia dedica circa **un'ora al giorno** alle chiamate
 - **Giulia** — 8 GB di RAM bastano per Google Sheets e il telefono, che è tutto
   ciò che le serve. Non proporle strumenti pesanti, CRM installati o app
   desktop: il foglio in cloud è la scelta giusta, non un ripiego. L'iPhone 16
-  ha WhatsApp, quindi il follow-up di [[script-giulia-denkishift]] funziona
+  ha WhatsApp, quindi il follow-up di [[script-denkishift]] funziona
   com'è scritto.
 - **Nicola** — 16 GB con Next, Supabase e un browser aperto è la soglia sotto
   cui si comincia a sentire. Non è un problema oggi; diventa il primo
