@@ -92,6 +92,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 **script/**
 
 - [[briefing-prodotti-gabriele-edoardo]] — I quattro prodotti spiegati ai due cold caller in prova: un obiettivo per blocco, quattro divieti.
+- [[email-centralino-rsa]] — La mail per il decisore che il centralino non passa: due lettori, un inoltro e una demo.
 - [[obiezione-non-sapranno-usarlo]] — Framework: Belfort — looping sul primo dei 3 Dieci (la certezza nel prodotto), con l'isolamento di...
 - [[pattern-interrupt]] — Servono a coprire gli otto secondi in cui l'interlocutore decide se stiamo per fargli perdere tempo.
 - [[script-giulia-denkishift]] — Obiettivo della chiamata: fissare la demo con Patrick.
