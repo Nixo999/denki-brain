@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-08-31
+updated: 2026-09-01
 source: denkicode
 tags: [strumenti, hosting, bozze, siti-vetrina]
 ---
@@ -47,6 +47,18 @@ Vale per tutti i canali:
 | Bozza | Per chi | Stato |
 |---|---|---|
 | [[castiglione-furniture]] | Castiglione Falegnameria Sartoriale, Bronte (CT) | `TODO` da pubblicare — il repo è in locale e senza remote ([[2026-08-30-sito-castiglione]]) |
+| sito NG Barber | NG Barber Studio, Como + Erba + Mendrisio (CH) — riga 2 dell'[[2026-09-01-instagram-anello-1-b\|anello 1-b]] | ⬜ **pronto, non pubblicato**: repo `Nixo999/ngbarber-site` (privato), `netlify.toml` scritto. **Manca solo il login Netlify**, che è di Nicola |
+
+> [!note] Analisi di Claude — 2026-09-01
+> **Il punto 3 qui sotto ha già una risposta tecnica, e va usata sempre.**
+> Una bozza pubblica porta il marchio di un'azienda che non è nostra cliente:
+> se Google la indicizza, il titolare si ritrova **un secondo sito col suo
+> nome** nei risultati, e il danno lo facciamo noi prima ancora di vendergli
+> qualcosa. Da NG Barber in poi ogni bozza esce con tre sbarramenti —
+> `<meta name="robots" content="noindex, nofollow">`, `X-Robots-Tag` negli
+> header del `netlify.toml`, `robots.txt` che vieta tutto — che **si tolgono
+> il giorno in cui il sito diventa suo**. Non sostituisce la scadenza: un
+> lead perso con la bozza ancora online resta materiale che gira.
 
 ## Quello che manca ancora scritto
 
