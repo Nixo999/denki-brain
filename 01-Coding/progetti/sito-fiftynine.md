@@ -54,14 +54,18 @@ giorno legge l'ora di Roma e dice **«Aperto adesso · aperitivo»** o **«Chius
 adesso · riapre alle 5:30»**. È l'unica cosa che un sito di bar deve dire
 prima di tutto. Colori dall'insegna (blu, il 59 rosso, bianco); il giallo del
 loro piattino solo sull'indicatore. Syne per i titoli, Yellowtail per lo
-script «fiftynine», Public Sans per il testo. Nessuna libreria: reveal con
-IntersectionObserver e rete di sicurezza a tempo.
+script «fiftynine», Public Sans per il testo. Motion con **GSAP 3.13 +
+ScrollTrigger** da CDN, additiva (senza libreria o con reduced-motion la pagina
+è completa): intro dell'insegna, parallasse nelle foto, listini a scaletta, il
+4,4 che conta da zero. **Sotto la nav, lasciata l'insegna, la linea del giorno
+si riempie con lo scroll**: lo scroll è la giornata.
 
 ## Stato
 
-🟡 **Bozza fatta, locale.** Verificata nel pannello a 1440 e 375 emulati:
-zero overflow, 7 foto su 7 caricate, console pulita, indicatore «chiuso» giusto
-alle 23:40. **Non vista su browser vero né su telefono.** Lo stato «aperto»
+🟡 **Bozza fatta, sul repo privato.** Verificata nel pannello a 1440 e 375
+emulati, dal server e non dall'istantanea statica (che non mostra né JS né
+foto): zero overflow a 1440, 7 foto su 7, console pulita, motion a fine corsa
+senza elementi rimasti invisibili, indicatore «chiuso» giusto alle 23:40. **Non vista su browser vero né su telefono.** Lo stato «aperto»
 dell'indicatore non è stato provato: alle 23:40 il bar era chiuso.
 
 ## Soldi
