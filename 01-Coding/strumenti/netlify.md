@@ -47,7 +47,7 @@ Vale per tutti i canali:
 | Bozza | Per chi | Stato |
 |---|---|---|
 | [[castiglione-furniture]] | Castiglione Falegnameria Sartoriale, Bronte (CT) | `TODO` da pubblicare — il repo è in locale e senza remote ([[2026-08-30-sito-castiglione]]) |
-| sito NG Barber | NG Barber Studio, Como + Erba + Mendrisio (CH) — riga 2 dell'[[2026-09-01-instagram-anello-1-b\|anello 1-b]] | ⬜ **pronto, non pubblicato**: `netlify.toml` scritto. Due repo — `Nixo999/ngbarber-site` (privata, pushata) e `patricksappa26/ng-barber` (**pubblica**, vuota: il push richiede il login di Patrick, da questo Mac dà 403). **Mancano due accessi**, il login Netlify e quello GitHub di Patrick, e nessuno dei due lo faccio io |
+| sito NG Barber | NG Barber Studio, Como + Erba + Mendrisio (CH) — riga 2 dell'[[2026-09-01-instagram-anello-1-b\|anello 1-b]] | ⬜ **pronto, non pubblicato**: `netlify.toml` scritto. il codice è su **`patricksappa26/ng-barber`** (pubblica, `main`, allineata). Resta indietro `Nixo999/ngbarber-site` (privata, primo tentativo). **Manca solo il login Netlify**, che è di Nicola — in alternativa, essendo la repo pubblica, **GitHub Pages** la pubblica senza altri accessi |
 
 > [!note] Analisi di Claude — 2026-09-01
 > **Il punto 3 qui sotto ha già una risposta tecnica, e va usata sempre.**
