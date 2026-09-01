@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-08-31
+updated: 2026-09-01
 source: denkicode
 tags: [registro, interventi, repo, database]
 ---
@@ -36,6 +36,12 @@ pubblicato senza la sua migrazione apre un tabellone vuoto.
 Colonne: **Quando** (data e ora) · **Chi** (persona, e `+claude` se il lavoro è
 stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 (`—` se non toccato, `sviluppo`/`produzione` + stato) · **Cosa** · **Commit**.
+
+## 2026-09-01
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| notte | Nicola +claude | sito NG Barber (lead riga 2 dell'anello 1-b, gancio 5 — **demo non commissionata**, materiale per Patrick) | `ngbarber-site` (nuovo, `Desktop/ngbarber-site`, solo locale: nessun remote) | — (statico, nessun database) | **Sito vetrina da scraping Instagram, schema Castiglione senza Apify**: l'MCP non c'è su questo Mac, profilo + 12 post presi dall'endpoint web di IG via curl, 13 foto scaricate subito (gli URL CDN scadono). Dal materiale: **terza sede a Mendrisio (CH)** che la lista non aveva, telefono `+39 345 509 3200` e l'esistenza di masterclass letti dalla locandina di un post. Scroll-telling scuro su un `index.html`: il **globo wireframe del loro logo rifatto in SVG** come device narrativo (si disegna nel sipario, ruota dietro l'hero, nel capitolo sedi — l'unico pin — accende Como→Erba→Mendrisio allo scrub), Archivo variable esteso come il wordmark + Ephesis per lo script della loro locandina, ottone da lì. Marquee servizi e BOOK NOW → la loro app di prenotazione white-label (il sito dà l'identità, il booking resta loro). Tre trappole vere: GSAP sovrascrive `translate(-50%,-50%)` → centraggio con `inset:0;margin:auto` e sfalsamento card a `margin-top`; trigger calcolati a viewport 0×0 a pane nascosto → `ScrollTrigger.refresh()` su `visibilitychange` e timer che porta l'intro a fine se rAF è fermo; su mobile i tre trigger delle sedi si sovrapponevano (evidenziazione ballerina) → niente sequenza, tutto acceso. ✅ Misurato a 1440 e 375 emulati: centri esatti, zero overflow, pin attivo coi tre punti in sequenza, immagini tutte caricate, touch ≥44px, console pulita. ⚠️ `ui-ux-pro-max` sul Mac è solo SKILL.md: dosi GSAP riusate da Castiglione, dichiarato. ⚠️ Non visto su browser vero (il pane composita solo il primo frame); orari e listino non pubblici → non inventati | `37ca479` |
 
 ## 2026-08-31
 

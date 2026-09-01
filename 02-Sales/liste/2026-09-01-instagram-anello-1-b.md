@@ -144,6 +144,17 @@ non esiste più. Sono anche le uniche due righe in cui il messaggio dice una
 cosa che il destinatario non sa: nessuno controlla il proprio dominio finché
 qualcuno non glielo dice.
 
+> [!note] Aggiornamento di Claude — 2026-09-01
+> **Riga 2 (`@ngbarberstudio123`): demo pronta.** Sito vetrina costruito dal
+> loro feed, in `Desktop/ngbarber-site` sul Mac (locale, nessun remote) —
+> voce nel [[registro-interventi]]. Due dati in più usciti dallo scraping:
+> le sedi sono **tre**, c'è anche **Mendrisio (CH), via Francesco
+> Borromini 6** — argomento in più: attività transfrontaliera senza un sito —
+> e il telefono di Como sta su una loro locandina: `+39 345 509 3200`.
+> Per la trattativa: il loro unico link è l'app di prenotazione white-label
+> (galleria vuota, zero identità); la demo la linka invece di sostituirla,
+> quindi l'obiezione «ho già l'app» è disinnescata in partenza.
+
 ---
 
 ## Scartati, e perché — così domani non tornano
