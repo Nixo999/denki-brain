@@ -8,8 +8,9 @@ stato: da-provare
 
 # Email — presentazione DenkiShift
 
-Il testo che accompagna [[presentazione-denkishift|la presentazione PDF]] quando
-un contatto chiede materiale via mail invece della demo. Nato il 1 settembre
+Il testo che accompagna la presentazione
+(`presentazione-denkishift-ms-service.pptx`, 8 slide) quando un contatto chiede
+materiale via mail invece della demo. Nato il 1 settembre
 2026 per **[[ms-service]]**, impresa di pulizie di Seveso trovata da Giulia.
 
 > [!note] Analisi di Claude — 2026-09-01
@@ -38,10 +39,9 @@ sono Patrick Sappa di DenkiCode, la software house di Seveso. Le scrivo
 come d'accordo con la mia collega Giulia, che l'ha sentita [giorno].
 
 In allegato trova la presentazione di DenkiShift, il programma con cui
-gestiamo i turni del personale. Sono quattro pagine, e le ho scritte
-pensando a un'impresa di pulizie e non in generale: dentro trova cosa fa,
-quanto costa e — soprattutto — cosa non fa ancora, che di solito nessuno
-le scrive.
+gestiamo i turni del personale. Sono otto pagine con le schermate vere
+dell'app, scritte pensando a un'impresa di pulizie e non in generale:
+dentro trova cosa fa, cosa ci guadagna la sua squadra e quanto costa.
 
 Le anticipo le due cose che contano:
 
@@ -69,34 +69,28 @@ denkicode.com
 
 ## Come si riusa su un altro contatto
 
-L'allegato è generato da `presentazione-denkishift.html`: si cambia il blocco
-`.forwhom` (nome azienda, settore, comune) e si riesporta con
-
-```bash
-"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless \
-  --no-pdf-header-footer --print-to-pdf=presentazione-denkishift-CLIENTE.pdf \
-  presentazione-denkishift.html
-```
-
-La **sezione 01** è scritta su un'impresa di pulizie (cantieri diversi ogni
-giorno, orari decisi dal committente). Su un altro segmento — RSA, vigilanza,
-logistica — quella sezione si riscrive: è la parte che dimostra ascolto, ed è
-l'unica che non si può riciclare.
+Il file `.pptx` si apre in PowerPoint: per un altro cliente si cambia il nome
+nel riquadro «Preparata per» della copertina e si salva con un altro nome.
+Le **schermate hanno nomi di fantasia** (la squadra vera di Mediaworld
+Limbiate è stata anonimizzata, intestazione compresa): si riusano così come
+sono. La **slide 2** è scritta su un'impresa di pulizie; su un altro settore —
+RSA, vigilanza, logistica — va riscritta, perché è la parte che dimostra
+ascolto.
 
 ## I quattro vincoli rispettati, per controllo
 
 | Vincolo | Dove |
 |---|---|
-| **Nessuna data di attivazione** | Sezione 04 lo dichiara apertamente: la data la dà Patrick dopo aver visto l'organizzazione |
-| **Prezzo come totale annuo**, mai «2 € al mese a persona» | Sezione 05, tabella per fasce |
-| **Lessico**: quota annuale, ricevuta, collaborazione occasionale | Sezione 05 e piè di pagina |
-| **Cosa NON è compreso** non si salta | Sezione 03, comprese **le notifiche che oggi non ci sono** |
+| **Nessuna data di attivazione** | In nessuna slide compare una data: la dà Patrick dopo la demo |
+| **Prezzo come totale annuo**, mai «2 € al mese a persona» | Slide 8: «240 € l'anno per una squadra di dieci persone» |
+| **Lessico**: quota annuale, ricevuta | Slide 8 |
+| **Scelta di Patrick, 1/9** | La lista «cosa non fa» è stata tolta: al suo posto «le funzioni che mancano si aggiungono su richiesta» (slide 8). Le promesse restano al condizionale e senza date |
 
-I framework (regola 12 di `CLAUDE.md`): sezione 01 è **SPIN** — Problema e
-Implicazione messi per iscritto, col costo del non risolvere prima del prezzo;
-sezione 02 è **Challenger**, si insegna cosa fa e non si elencano vantaggi;
-la garanzia e la scarsità della sezione 04 e 06 sono **Hormozi**, e stanno lì
-al posto dello sconto ([[core-crescita-finanze]]).
+I framework (regola 12 di `CLAUDE.md`): la slide 2 è **SPIN** — Problema e
+Implicazione, col costo del non risolvere prima del prezzo; le slide 3-6 sono
+**Challenger**, si insegna cosa fa lo strumento sulle schermate vere; la
+garanzia «non pagate nulla per vederla pronta» e il prezzo ancorato della
+slide 8 sono **Hormozi**, al posto dello sconto ([[core-crescita-finanze]]).
 
 ## Collegamenti
 

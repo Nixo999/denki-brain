@@ -23,10 +23,11 @@ lista turni del 28 agosto 2026.
 ## Dove siamo
 
 **1 settembre 2026** — Giulia lo ha chiamato e **ha chiesto una presentazione
-via mail**. Preparate e pronte da mandare:
+via mail**. Pronti da mandare:
 
-- `02-Sales/script/presentazione-denkishift-ms-service.pdf` — quattro pagine,
-  intestate a loro
+- `02-Sales/script/presentazione-denkishift-ms-service.pptx` — presentazione,
+  8 slide con le schermate vere dell'app (squadra anonimizzata, nomi di
+  fantasia), intestata a loro. Ha sostituito il primo PDF, scartato da Patrick
 - [[email-presentazione-denkishift]] — il testo della mail
 
 ⚠️ **Non è ancora partito niente**: mancano tre dati e li ha Giulia o Patrick.
