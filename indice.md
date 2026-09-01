@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **79 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **80 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -37,6 +37,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[opero]] — ⚠️ OperO non è il gestionale di un nostro cliente: è il prodotto che il nostro cliente sta lanciando.
 - [[sito-albybike]] — Sito vetrina per Albybike, negozio di biciclette: vendita, assistenza, riparazione, abbigliamento e...
 - [[sito-denkicode]] — Sito di DenkiCode.
+- [[sito-fiftynine]] — Sito vetrina in una pagina per Bar Tabacchi Fiftynine, bar tabaccheria e pizzeria di Cesano Maderno: bozza non commissionata, materiale per Patrick.
 
 **skills/**
 
