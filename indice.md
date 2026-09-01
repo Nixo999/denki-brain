@@ -62,6 +62,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 **clienti/**
 
 - [[albybike]] — Negozio di biciclette: vendita, assistenza e riparazione, abbigliamento e integratori per ciclismo.
+- [[ms-service]] — Impresa di pulizie di Seveso: lead caldo, ha chiesto lui la presentazione via mail.
 - [[sebastian-torres]] — Privato, non un'azienda.
 
 **contratti/**
@@ -97,6 +98,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 - [[briefing-prodotti-gabriele-edoardo]] — I quattro prodotti spiegati ai due cold caller in prova: un obiettivo per blocco, quattro divieti.
 - [[dm-instagram-vetrina]] — Un messaggio solo e sei ganci: il DM che Patrick manda dal suo profilo alle attività senza sito.
+- [[email-presentazione-denkishift]] — La mail che accompagna il PDF di DenkiShift a chi il materiale l'ha chiesto davvero.
 - [[email-centralino-rsa]] — La mail per il decisore che il centralino non passa: due lettori, un inoltro e una demo.
 - [[obiezione-non-sapranno-usarlo]] — Framework: Belfort — looping sul primo dei 3 Dieci (la certezza nel prodotto), con l'isolamento di...
 - [[pattern-interrupt]] — Servono a coprire gli otto secondi in cui l'interlocutore decide se stiamo per fargli perdere tempo.
