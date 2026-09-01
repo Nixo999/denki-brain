@@ -75,6 +75,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-08-28-liste-31-agosto]] — Primo giro completo del ciclo-settimanale, generato con un giorno di anticipo.
 - [[2026-08-28-presidi-volantini]] — Prima applicazione di presidi-volantini.
 - [[2026-08-30-liste-gabriele-edoardo]] — Liste di prova dei due nuovi cold caller: zone disgiunte, 87 righe, blocchi 1 e 4 verificati sul sito reale.
+- [[2026-09-01-instagram-anello-1-b]] — Secondo giro dell'anello 1: 50 account nuovi, col segmento unghie e ciglia che ieri mancava.
 - [[2026-08-31-instagram-anello-1]] — 50 account Instagram verificati uno per uno: chi non ha il sito, o ce l'ha rotto.
 - [[metodo-instagram]] — Come si costruiscono i 50 account del giorno: anelli, otto esiti, e le regole che non fanno bloccare l'account.
 - [[metodo-liste]] — Serve a produrre 130-150 contatti profilati a settimana, ripetibile.
