@@ -275,7 +275,7 @@ una certezza inventata — è la stessa regola che vale nei repo di codice.
 | [[denkishift]] | prodotto interno | 🟡 quasi completo, non pubblicato | SMTP proprio, UI generazione turni, 0 clienti |
 | [[sito-albybike]] | [[albybike]] | 🟢 Online | Mai pagato, dominio in scadenza fra un anno |
 | [[sito-denkicode]] | interno | 🟢 Online | È la **galleria dei lavori**: strumento di vendita, non vetrina passiva |
-| [[sito-fiftynine]] | nessuno — lead a Cesano Maderno | 🟡 Bozza locale, non pubblicata | Materiale per Patrick: remote, Netlify e primo contatto |
+| [[sito-fiftynine]] | [[bar-tabacchi-fiftynine]] | 🟡 Bozza in trattativa, non pubblicata | Il proprietario ha mandato il menù: Netlify, prezzo mai detto, referente senza nome |
 
 Archiviati: [[cococat]] (bozza mai riscontrata — lead ancora vivo),
 [[sito-dropout]] (eventi di Patrick, sito da galleria), [[webolt-v1]] (vuoto).

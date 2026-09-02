@@ -1,7 +1,7 @@
 ---
 type: progetto
 status: attivo
-client: nessuno
+client: bar-tabacchi-fiftynine
 stack: [html, netlify]
 started: 2026-09-01
 deadline: TODO
@@ -11,14 +11,15 @@ valore: TODO
 incassato: 0
 ---
 
-# Sito Bar Tabacchi Fiftynine — bozza non commissionata
+# Sito Bar Tabacchi Fiftynine — bozza in trattativa
 
 Sito vetrina in una pagina per **Bar Tabacchi Fiftynine**, bar tabaccheria e
 pizzeria in via Nazionale dei Giovi 59, **Cesano Maderno (MB)**. Il locale
 **non ha un sito**: ha un profilo Instagram da 7 post
-(`@bartabacchi__fiftynine`, 57 follower) e la scheda Google. Cliente: nessuno,
-ancora — è materiale pronto per Patrick, come il sito di NG Barber e
-quello di Castiglione ([[2026-08-30-sito-castiglione]]).
+(`@bartabacchi__fiftynine`, 57 follower), la scheda Google e un menù stampato.
+Cliente: [[bar-tabacchi-fiftynine]] — nato come bozza al buio il 1° settembre
+2026 (schema Castiglione, [[2026-08-30-sito-castiglione]]), **il 2 settembre
+il proprietario ha mandato il menù in PDF**: da lì è una trattativa.
 
 **Repo**: `github.com/Nixo999/fiftynine-site` (privato, creato il 1° settembre 2026) — in locale `Desktop/fiftynine-site` sul Mac di Patrick
 **Online**: no — va su Netlify come ogni bozza ([[netlify]])
@@ -35,16 +36,29 @@ Tutto letto il 1° settembre 2026, niente inventato:
 | Telefono **0362 528451**, 4,4 su **31 recensioni**, 10–20 € a persona, tavoli all'aperto, cani ammessi | scheda Google (screenshot di Nicola) |
 | Listino cocktail (Spritz 6 €, Negroni 7 €…), birre, frittini, **formula special 12 €** = drink + frittini misti | locandina fotografata nel post del 6 agosto 2025 |
 | Gyoza, marocchino con Nutella, waffle, cappuccino e brioche, tranci di pizza con patatine | i 7 post, foto scaricate in `assets/img/` |
+| **Menù completo**: 44 pizze, calzoni, focacce, sfiziosità, panini, pizze baby e menù bimbi, bevande; asporto, **consegna a domicilio**, sala su prenotazione, pizzate di gruppo; tabaccheria, sigarette elettroniche, pagamenti, ricariche, Gratta e Vinci, SuperEnalotto | **PDF del proprietario** (6 pannelli, Illustrator, 15 gennaio 2026), mandato via WhatsApp il 2 settembre 2026 |
 | «Ottimo sia per colazione che per pranzo», «Servizio rapido e gentilezza», «Perfetto per una pausa caffè o un aperitivo con amici» | recensioni Google incollate da Nicola |
 
-⚠️ **I prezzi sono quelli della locandina dell'agosto 2025**: il sito lo dice
-in una riga («quella al banco vale più di questa pagina»), ma prima di mandare
-la bozza conviene una telefonata di controllo.
+⚠️ **Due listini con date diverse.** Il menù del proprietario (gennaio 2026)
+comanda su pizze, sfiziosità, panini e bevande; i cocktail e la formula
+aperitivo a 12 € restano dalla locandina dell'agosto 2025, perché il menù non
+li riporta. Dove i due divergono (birra alla spina: 5/6 € sulla locandina,
+3/5 € sul menù) vince il menù. Il sito scrive «prezzi del menù in vigore da
+gennaio 2026».
 ⚠️ **Il giorno di chiusura non è noto**: Google dice solo «apre mer alle 5:30».
 Il sito non promette «tutti i giorni».
 ⚠️ **Le foto sono a 640 px**: Instagram rifiuta la risoluzione piena senza
 login (403). Bastano per le card, non per un'immagine a tutto schermo — per
 questo l'hero è l'insegna, non una foto.
+
+## Il menù nel sito
+
+Capitolo `#menu` dopo la pizzeria, **nei colori del menù stampato** (legno
+scuro, pannelli chiari): 44 pizze su due colonne con la Fiftynine marcata
+come pizza della casa, poi calzoni e focacce, sfiziosità, panini con doppio
+prezzo focaccia/panino, bevande. Il PDF originale pesa 21 MB: nel sito c'è
+una **versione ricompressa da 1 MB** (`assets/menu-bar-tabacchi-fiftynine.pdf`,
+pagine rasterizzate a ~160 dpi), scaricabile dal capitolo e dal footer.
 
 ## Com'è fatto
 

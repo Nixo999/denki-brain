@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **80 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **81 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -62,6 +62,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 **clienti/**
 
+- [[bar-tabacchi-fiftynine]] — Bar tabaccheria e pizzeria di Cesano Maderno: lead con materiale in mano, il 2 settembre 2026 ha mandato il menù.
 - [[albybike]] — Negozio di biciclette: vendita, assistenza e riparazione, abbigliamento e integratori per ciclismo.
 - [[ms-service]] — Impresa di pulizie di Seveso: lead caldo, ha chiesto lui la presentazione via mail.
 - [[sebastian-torres]] — Privato, non un'azienda.
