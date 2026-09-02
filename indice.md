@@ -167,6 +167,8 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-08-30-verifica-sito-reale]] — Decisione: «non ha il sito» si verifica su Google e sul dominio, non su Pagine Gialle.
 - [[2026-08-31-stop-porta-a-porta-a-freddo]] — Decisione: il porta-a-porta a freddo si chiude, Patrick va solo dove è già stata fatta una chiamata.
 - [[2026-08-31-canale-dm-instagram]] — Decisione: il DM di Instagram diventa un canale vero e lavora sulle attività lontane.
+- [[2026-09-01-skill-design-processo-siti]] — Decisione: ogni sito vetrina parte dalla skill `processo-siti`, che mette in fila le skill di design.
+- [[2026-09-02-impostazioni-due-colonne]] — Decisione: le Impostazioni di DenkiShift su due colonne da 1024 px, e i testi riscritti per chi decide. Sostituisce il registro del 30 agosto.
 
 ## 06-Daily
 

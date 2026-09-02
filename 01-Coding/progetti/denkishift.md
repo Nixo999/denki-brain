@@ -5,7 +5,7 @@ client: interno
 stack: [next-16, react-19, typescript, tailwind-4, supabase, capacitor-8, zod]
 started: TODO
 deadline: TODO
-updated: 2026-08-29
+updated: 2026-09-02
 source: repo
 prezzo: 2 €/dipendente/mese
 clienti-paganti: 0

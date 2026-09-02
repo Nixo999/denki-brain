@@ -37,6 +37,12 @@ Colonne: **Quando** (data e ora) · **Chi** (persona, e `+claude` se il lavoro �
 stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 (`—` se non toccato, `sviluppo`/`produzione` + stato) · **Cosa** · **Commit**.
 
+## 2026-09-02
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| pomeriggio | Nicola +claude (dal Mac di Patrick) | [[denkishift]] | `smooth-duty` | — **nessuna migrazione**: sono testi e classi | **Le Impostazioni su due colonne da 1024 px, e i testi riscritti per chi decide.** Il guscio dà `max-w-[100rem]`, la pagina ne usava `max-w-2xl`: su un monitor 672 px di nastro verticale e novecento pixel vuoti a destra. Da `lg:` due colonne (`lg:max-w-6xl`, due wrapper e non figli diretti in `grid-cols-2`, `items-start`); **sotto i 1024 px non cambia una riga**. Le sei aggregazioni «per gesto» diventano quattro per ambito — Moduli attivi · Visibilità e richieste · Pubblicazione e modifiche · Nuovi turni e a chiamata. Il registro dei testi passa da «per chi gestisce un negozio» a tecnico e asciutto: **riapre la scelta del 30 agosto**, vedi [[2026-09-02-impostazioni-due-colonne]]. Nuovo stato «Modifica non salvata» che resta. ⚠️ **Non verificato nel browser**: `npm run prove` e `npm run build` passano, le utility Tailwind sono nel CSS costruito, ma la pagina non è stata guardata — si vede su `denkishift.it` appena Netlify finisce. ⚠️ **Su `main` la vede la squadra del cliente.** Trovato di striscio e corretto: il sottotitolo diceva «Tre si possono spegnere» sopra a quattro moduli, e `docs/03-pagine.md` contava undici impostazioni quando sono dodici | `14df68c` |
+
 ## 2026-09-01
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
