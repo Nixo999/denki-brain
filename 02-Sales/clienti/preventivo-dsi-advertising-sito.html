@@ -1,0 +1,165 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><title>Preventivo DSI Advertising - sito</title><style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1b1a21; font-size: 9.1pt; line-height: 1.47;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.page {
+  width: 210mm; height: 297mm; padding: 15mm 17mm 18mm; position: relative;
+  overflow: hidden; page-break-after: always; background: #fff;
+}
+.page:last-child { page-break-after: auto; }
+.page::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3.6mm;
+  background: linear-gradient(90deg, #923adf 0%, #da2f9b 100%);
+}
+
+/* ---------- testata ---------- */
+.head { display: flex; align-items: flex-start; justify-content: space-between; }
+.head img { width: 28mm; display: block; }
+.head .rif { text-align: right; }
+.kicker {
+  font-size: 6.6pt; letter-spacing: .18em; text-transform: uppercase;
+  color: #8c8a99; font-weight: 600;
+}
+.head .rif .n { font-size: 10.5pt; font-weight: 600; margin-top: 1.5mm; }
+.head .rif .d { font-size: 8.4pt; color: #6d6b7a; }
+
+/* ---------- blocco titolo ---------- */
+.title { margin-top: 9mm; }
+.title h1 {
+  font-size: 19pt; line-height: 1.14; font-weight: 600; margin: 0 0 4mm;
+  letter-spacing: -.012em;
+}
+.dest {
+  border-top: 1px solid #e7e5ee; border-bottom: 1px solid #e7e5ee;
+  padding: 3mm 0; display: flex; gap: 12mm; margin-top: 5mm;
+}
+.dest div { flex: 1; }
+.dest .kicker { margin-bottom: 1.2mm; }
+.dest b { font-weight: 600; display: block; font-size: 10pt; }
+.dest span { color: #6d6b7a; font-size: 8.6pt; }
+
+/* ---------- sezioni ---------- */
+.sec { margin-top: 6.4mm; }
+.sec > h2 {
+  font-size: 12pt; font-weight: 600; margin: 0 0 2.4mm; letter-spacing: -.008em;
+  display: flex; align-items: baseline; gap: 3.5mm;
+}
+.sec > h2 .num {
+  font-size: 9pt; font-weight: 700; letter-spacing: .02em;
+  background: linear-gradient(90deg, #923adf, #da2f9b);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.sec p { margin: 0 0 2.2mm; }
+.sec p:last-child { margin-bottom: 0; }
+ul { margin: 0 0 2.2mm; padding: 0; list-style: none; }
+li { position: relative; padding-left: 4.4mm; margin-bottom: 1.1mm; }
+li::before {
+  content: ""; position: absolute; left: 0; top: 1.55mm; width: 1.5mm; height: 1.5mm;
+  border-radius: 50%; background: linear-gradient(135deg, #923adf, #da2f9b);
+}
+li b, p b { font-weight: 600; }
+.muted { color: #6d6b7a; }
+
+/* ---------- pannelli ---------- */
+.panel {
+  background: #faf9fc; border: 1px solid #ece9f4; border-radius: 2mm;
+  padding: 4.2mm 5mm; margin: 3.4mm 0 0;
+}
+.panel h3 { font-size: 9.3pt; font-weight: 600; margin: 0 0 1.6mm; }
+.panel p:last-child, .panel ul:last-child { margin-bottom: 0; }
+.flag { border-left: 2.6mm solid; border-image: linear-gradient(180deg,#923adf,#da2f9b) 1;
+  background: #fff; border-top: 1px solid #ece9f4; border-right: 1px solid #ece9f4;
+  border-bottom: 1px solid #ece9f4; border-radius: 0 2mm 2mm 0; }
+
+/* ---------- prezzo ---------- */
+.price { border: 1px solid #e7e5ee; border-radius: 2mm; overflow: hidden; margin-top: 3.4mm; }
+.price .row {
+  display: flex; align-items: baseline; justify-content: space-between;
+  padding: 3.3mm 5mm; border-bottom: 1px solid #f1eff7; gap: 8mm;
+}
+.price .row:last-child { border-bottom: 0; }
+.price .row .what b { display: block; font-size: 10.5pt; font-weight: 600; }
+.price .row .what span { color: #6d6b7a; font-size: 8.4pt; }
+.price .amt {
+  font-size: 17pt; font-weight: 600; white-space: nowrap; letter-spacing: -.02em;
+  background: linear-gradient(90deg, #923adf, #da2f9b);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.price .amt small { font-size: 8.6pt; font-weight: 600; letter-spacing: 0; }
+.price .amt s { color: #b6b3c4; -webkit-text-fill-color: #b6b3c4; font-size: 11pt; margin-right: 2mm; font-weight: 400; }
+.terms { margin-top: 3.4mm; }
+.terms .r { display: flex; gap: 4mm; padding: 1.4mm 0; border-bottom: 1px dotted #e7e5ee; }
+.terms .r:last-child { border-bottom: 0; }
+.terms .r .k { width: 34mm; flex: none; color: #6d6b7a; font-size: 8.6pt; padding-top: .3mm; }
+.terms .r .v { flex: 1; }
+
+/* ---------- firma e piede ---------- */
+.sign { margin-top: 5mm; display: flex; justify-content: space-between; align-items: flex-end; gap: 10mm; }
+.sign .who b { font-size: 10.5pt; font-weight: 600; display: block; }
+.sign .who span { color: #6d6b7a; font-size: 8.6pt; }
+.sign .cta { text-align: right; font-size: 8.6pt; color: #6d6b7a; }
+.sign .cta b { display: block; color: #1b1a21; font-size: 10pt; font-weight: 600; }
+
+footer {
+  position: absolute; left: 17mm; right: 17mm; bottom: 9mm;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid #e7e5ee; padding-top: 2.6mm;
+  font-size: 7.4pt; color: #8c8a99; letter-spacing: .01em;
+}
+</style></head><body><div class="page"><header class="head"><img src="../../03-Storage/brand/logo/logo-lockup.svg" alt="DenkiCode"><div class="rif"><div class="kicker">Preventivo</div><div class="n">DSI-01</div><div class="d">3 settembre 2026</div></div></header><div class="title"><h1>Il sito nuovo di D.S.I. Advertising,<br>con il pannello per gestirlo da soli</h1>
+<div class="dest">
+  <div><div class="kicker">Per</div><b>D.S.I. Advertising di Piras Sebastiano</b><span>Merate (LC) &middot; dsi-advertising.com</span></div>
+  <div><div class="kicker">Oggetto</div><b>Rifacimento del sito e pannello prodotti</b><span>Sito vetrina con catalogo &middot; dominio attuale mantenuto</span></div>
+</div></div><section class="sec"><h2><span class="num">01</span>Cosa abbiamo capito del vostro lavoro</h2>
+<p>Progettate e producete articoli promozionali per il canale HO.RE.CA: rendiresto, portatovaglioli, portaustine, orologi, kit e articoli da asporto, personalizzati con il marchio del cliente. In vetrina ci sono nomi come Pellini, Fabbri&nbsp;1905, Bosalb&eacute; e Il Veliero. <b>La personalizzazione &egrave; quello che vi distingue</b>, ed &egrave; il motivo per cui un cliente sceglie voi invece del catalogo di un grossista.</p>
+<p>Il sito che avete oggi ha 18 pagine, 14 delle quali sono famiglie di prodotto. &Egrave; un catalogo, non una vetrina &mdash; e un catalogo invecchia in fretta se per aggiornarlo bisogna chiedere a qualcuno.</p>
+<div class="panel flag">
+  <h3>Due cose viste sul sito attuale, prima di scrivere questo preventivo</h3>
+  <ul>
+    <li>Digitando <b>www.dsi-advertising.com</b> si arriva sulla <b>versione inglese</b>, non su quella italiana. Chi vi cerca dall&rsquo;Italia &mdash; cio&egrave; quasi tutti &mdash; trova prima l&rsquo;inglese.</li>
+    <li>Il sito &egrave; costruito su <b>Wix</b>: oltre al dominio c&rsquo;&egrave; un abbonamento che pagate ogni anno. Sapere quanto &egrave; il primo numero da mettere accanto a questo preventivo.</li>
+  </ul>
+</div></section><section class="sec"><h2><span class="num">02</span>Cosa costruiamo</h2>
+<p>Un sito nuovo, sul dominio che avete gi&agrave;, con i vostri testi e le vostre foto.</p>
+<ul>
+  <li><b>Home</b>: cosa fate, per chi, e i marchi per cui avete gi&agrave; lavorato.</li>
+  <li><b>Le famiglie di prodotto</b>: rendiresto, portaustine, Pyramid e Pyramid metallo, Class e Class&nbsp;2000, Hi-Top, Lux, kit, orologi, articoli da asporto, articoli per gelaterie e pasticcerie.</li>
+  <li><b>Personalizzazioni</b>: la pagina che spiega come si arriva dal marchio del cliente al prodotto finito. Oggi &egrave; una pagina come le altre; qui diventa quella che vende.</li>
+  <li><b>Contatti</b>: modulo di richiesta, telefono, email e mappa.</li>
+  <li>Il sito si legge <b>dal telefono</b> come dal computer, e viene trovato su Google sul nome dell&rsquo;azienda e sulle categorie di prodotto.</li>
+</ul>
+<div class="panel">
+  <h3>Il pannello di gestione &mdash; &egrave; compreso nel prezzo</h3>
+  <p>Entrate con una password e fate da soli: <b>aggiungere un prodotto, cambiargli foto, descrizione o scheda, toglierlo, riordinare le famiglie.</b> Da computer e da telefono.</p>
+  <p class="muted">Nessuna richiesta da mandarci, nessuna attesa, nessun costo per ogni modifica. &Egrave; la ragione per cui la quota annuale resta bassa: il sito lo tenete aggiornato voi, quando serve a voi.</p>
+</div></section><footer><span>DenkiCode &middot; Seveso (MB) &middot; info@denkicode.com &middot; denkicode.com</span><span>1 / 2</span></footer></div><div class="page"><header class="head"><img src="../../03-Storage/brand/logo/logo-lockup.svg" alt="DenkiCode"><div class="rif"><div class="kicker">Preventivo</div><div class="n">DSI-01</div><div class="d">3 settembre 2026</div></div></header><section class="sec"><h2><span class="num">03</span>Cosa non &egrave; compreso</h2>
+<ul>
+  <li><b>Pagine nuove</b> oltre a quelle elencate al punto 02: <b>da 50&nbsp;&euro;</b>, secondo cosa devono contenere.</li>
+  <li><b>Funzioni nuove</b>: quotate prima di essere fatte.</li>
+  <li><b>La vendita online</b>: &egrave; un lavoro diverso e ha un preventivo suo.</li>
+  <li><b>La versione inglese</b>: il sito attuale ce l&rsquo;ha. Va decisa insieme prima di partire &mdash; se serve, la quotiamo a parte.</li>
+  <li><b>Fotografie nuove</b> dei prodotti: usiamo quelle che avete gi&agrave;.</li>
+  <li><b>Il primo caricamento del catalogo</b>: carichiamo noi una famiglia di prodotti come esempio e vi facciamo vedere come si fa, le altre le caricate dal pannello.</li>
+</ul><p class="muted">Ogni funzione non elencata al punto 02 &egrave; lavoro nuovo: viene quotata a parte e sposta la data di consegna. Il prezzo lo diciamo <b>prima</b> di farla, mai dopo.</p></section><section class="sec"><h2><span class="num">04</span>Cosa serve da voi, e in quanto tempo</h2>
+<ul>
+  <li>Il <b>logo</b> in alta risoluzione e le <b>foto dei prodotti</b> che volete online.</li>
+  <li>L&rsquo;<b>accesso al dominio</b>, per spostarlo senza che il sito resti mai spento.</li>
+  <li>I testi li riprendiamo dal sito attuale: non dovete riscrivere niente.</li>
+</ul>
+<p><b>Consegna: 10 giorni lavorativi</b> da quando arriva il materiale.</p></section><section class="sec"><h2><span class="num">05</span>Investimento</h2>
+<div class="price">
+  <div class="row"><div class="what"><b>Realizzazione del sito</b><span>Una tantum, comprende il pannello di gestione</span></div><div class="amt">300 &euro;</div></div>
+  <div class="row"><div class="what"><b>Quota annuale</b><span>Dominio, hosting, certificato di sicurezza, aggiornamenti e assistenza</span></div><div class="amt">180 &euro;<small> / anno</small></div></div>
+</div>
+<div class="terms">
+  <div class="r"><div class="k">Come si paga</div><div class="v">150&nbsp;&euro; alla conferma, 150&nbsp;&euro; alla pubblicazione. La quota annuale in due volte, <b>90&nbsp;&euro; ogni sei mesi</b>. Ricevuta per collaborazione occasionale.</div></div>
+  <div class="r"><div class="k">Cosa sostituisce</div><div class="v">Dentro i 180&nbsp;&euro; non c&rsquo;&egrave; nulla da aggiungere: l&rsquo;abbonamento che pagate oggi a Wix sparisce.</div></div>
+  <div class="r"><div class="k">La nostra garanzia</div><div class="v">Se segnalate un errore sul sito e non lo sistemiamo <b>entro il giorno lavorativo successivo</b>, il semestre seguente non lo pagate.</div></div>
+</div></section><section class="sec"><h2><span class="num">06</span>Come lavoriamo</h2>
+<p><b>Prima vi facciamo vedere il sito finito.</b> Se non vi convince, non avete speso un euro e ci siamo salutati.</p>
+<p>Il lavoro si guarda insieme mentre si fa, non alla fine. Avete un solo interlocutore, Patrick; sul dettaglio tecnico entra <b>Nicola Larezza, Lead Developer</b>.</p></section><div class="sign"><div class="who"><b>Patrick Sappa</b><span>Co-founder, DenkiCode &middot; +39 392 749 2448 &middot; info@denkicode.com</span></div><div class="cta"><b>Preventivo valido fino al 3 ottobre 2026</b>Per accettare basta un messaggio.</div></div><footer><span>DenkiCode &middot; Seveso (MB) &middot; info@denkicode.com &middot; denkicode.com</span><span>2 / 2</span></footer></div></body></html>

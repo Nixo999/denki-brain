@@ -74,6 +74,30 @@ davvero qualcuno**.
 
 ---
 
+## I due preventivi in PDF — 3 settembre 2026
+
+Impaginati con il marchio, due pagine ciascuno, pronti da mandare:
+
+| File | Cosa contiene |
+|---|---|
+| `preventivo-dsi-advertising-sito.pdf` | Preventivo A: 300 € + 180 €/anno |
+| `preventivo-dsi-advertising-ecommerce.pdf` | Preventivo B: 600 € + 480 €/anno + 1% |
+
+Accanto a ognuno c'è il **sorgente `.html`**: si modifica quello e si riesporta
+con Chrome (`--headless --no-pdf-header-footer --print-to-pdf`), come vuole la
+regola 2 di [[identita-visiva]]. Il marchio arriva da
+`03-Storage/brand/logo/logo-lockup.svg`.
+
+I due numeri che erano vuoti sono stati decisi da Patrick il 3 settembre 2026:
+**consegna 10 giorni lavorativi** (20 per l'e-commerce) e **pagina aggiuntiva
+da 50 €**, «secondo cosa e come».
+
+⚠️ I testi qui sotto sono la versione **da messaggio**, per WhatsApp o DM. Il
+PDF dice le stesse cose in forma di documento: se si cambia uno, si cambia
+anche l'altro.
+
+---
+
 ## Preventivo A — sito vetrina + gestionalino
 
 > [!note] Testo generato da Claude — 2026-09-03. `source: claude`: va riletto
@@ -225,8 +249,9 @@ collaborazione occasionale.
   progetto, allineare lo slug (qui è `sito-dsi-advertising`).
 - ⬜ Referente: `TODO` — il preventivo dà del «Lei» a Piras Sebastiano, ma non
   è detto che sia lui a decidere. Chiedere a [[shari-piras]] chi risponde.
-- ⬜ Tre caselle da riempire prima di mandare: **tempi**, **prezzo pagina
-  aggiuntiva**, **quanti prodotti carichiamo noi**.
+- [x] Le tre caselle sono chiuse (3 settembre 2026): consegna **10 giorni
+  lavorativi**, pagina aggiuntiva **da 50 €**, e il primo caricamento è **una
+  famiglia di prodotti** fatta da noi come esempio, il resto dal pannello.
 - ⬜ Chiedere quanto pagano oggi a Wix: è il numero che rende i 180 € un
   risparmio invece che una spesa nuova.
 - ⬜ Se chiedono la ritenuta d'acconto del 20% (sono un'azienda con P.IVA), sui

@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-08-30
+updated: 2026-09-03
 source: claude
 tags: [brand, stampa, materiale]
 ---
@@ -24,12 +24,22 @@ sono i file, quale si usa quando, e cosa manca.
 | `logo-principale.svg` | Vettoriale, versione principale | **Web, email, social.** È il formato giusto per Nicola |
 | `logo-principale.ai` | Sorgente Illustrator | Solo per modificare il marchio |
 | `logo-principale.pdf` | Vettoriale per la stampa | Da mandare in tipografia |
+| `logo-lockup.svg` | **Solo il marchio su fondo chiaro**, ritagliato dalla tavola di presentazione (stesso file, `viewBox` diverso) | Testata di documenti e preventivi PDF |
 | `logo-alternativo.*` | Seconda versione, stessi tre formati | Quando la principale non regge sul fondo |
 | `immagine-denkicode.af` | Sorgente Affinity | Documento di lavoro, non un esportabile |
 | `logo-denkishift.svg` | **Il marchio di DenkiShift**, vettoriale | Dentro l'app e ovunque serva il logo del prodotto |
 
 Il marchio è del **13 maggio 2026** e non è più stato toccato: è la parte
 stabile dell'identità.
+
+> [!warning] Analisi di Claude — 2026-09-03. `logo-principale.svg` non è un logo, è una tavola.
+> Aperto, mostra **quattro versioni impilate** su quattro fondi (bianco,
+> grigio chiaro, grigio scuro, nero) dentro un `viewBox` A4. Messo in un
+> `<img>` su una pagina o in una testata, esce così: la tavola intera, non il
+> marchio. La riga qui sopra che dice «web, email, social» va letta con questa
+> avvertenza. Per quegli usi c'è `logo-lockup.svg`, che è **lo stesso file**
+> con il `viewBox` ristretto alla sola versione su fondo chiaro: nessun
+> ridisegno, nessuna perdita, e le altre tre restano fuori dalla finestra.
 
 ### Il marchio di DenkiShift — 30 agosto 2026
 

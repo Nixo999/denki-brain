@@ -80,6 +80,21 @@ Il gancio, quello preciso ([[core-commerciale]], Gitomer):
 
 ---
 
+## Il preventivo in PDF — 3 settembre 2026
+
+`preventivo-atelier-selva.pdf`, due pagine impaginate col marchio, con accanto
+il sorgente `.html` da cui si riesporta. Consegna dichiarata: **5 giorni
+lavorativi dal via libera**, perché la bozza esiste già.
+
+Nel documento la realizzazione compare **barrata**: 300 € sbarrati, 0 € accanto.
+È la forma di Hormozi — un bonus vale solo se ha un prezzo scritto — e la
+sezione 06 è quella che trasforma il regalo in scambio.
+
+⚠️ Il testo qui sotto è la versione **da DM**, più corta e più diretta. Le due
+versioni dicono le stesse cifre: se si cambia una, si cambia l'altra.
+
+---
+
 ## Preventivo — sito + gestionalino, senza anticipo
 
 > [!note] Testo generato da Claude — 2026-09-03. `source: claude`: da rileggere
