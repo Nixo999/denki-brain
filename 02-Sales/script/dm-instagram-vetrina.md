@@ -12,6 +12,14 @@ stato: in-prova
 > [!note] Nota generata da Claude — 2026-08-31
 > Da provare su **200 invii**. Deciso in [[2026-08-31-canale-dm-instagram]].
 
+> [!tip] Lo strumento: [banco-dm.html](../strumenti/banco-dm.html)
+> Si apre con doppio click, si carica il CSV della lista e per ogni riga
+> prepara **questa** versione B col gancio della colonna, copia il testo e apre
+> la conversazione. Segna la data, riconosce i recuperi dopo 4 giorni
+> lavorativi e restituisce il CSV aggiornato. **Non manda niente**: l'invio
+> resta un gesto di Patrick, ed e` la riga che separa un aiuto da un account
+> bloccato — vedi [[2026-09-02-automazione-dm-instagram]].
+
 **Lo manda Patrick, dal suo account personale.** Non Giulia, non un account
 aziendale: i mille follower e la faccia sono metà del messaggio.
 

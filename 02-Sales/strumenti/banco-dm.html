@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Banco DM — Instagram</title>
+<style>
+  :root{
+    --sfondo:#0f1115; --carta:#171a21; --bordo:#252a34; --testo:#e8eaee;
+    --tenue:#98a0ae; --accento:#4f7cff; --ok:#3fb950; --allarme:#e3a008;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --sfondo:#f6f7f9; --carta:#fff; --bordo:#e2e5ea; --testo:#14171c;
+           --tenue:#5d6673; --accento:#2b58e8; --ok:#1a7f37; --allarme:#9a6700; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--sfondo);color:var(--testo);
+       font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+  header{position:sticky;top:0;z-index:5;background:var(--sfondo);
+         border-bottom:1px solid var(--bordo);padding:14px 20px;
+         display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+  h1{font-size:16px;margin:0;letter-spacing:.02em}
+  .conta{margin-left:auto;display:flex;gap:18px;align-items:center;font-size:13px;color:var(--tenue)}
+  .conta b{color:var(--testo);font-size:15px}
+  main{padding:20px;max-width:1100px;margin:0 auto}
+  .riga{background:var(--carta);border:1px solid var(--bordo);border-radius:12px;
+        padding:14px 16px;margin-bottom:10px;display:grid;
+        grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start}
+  .riga.fatta{opacity:.5}
+  .riga.recupero{border-color:var(--allarme)}
+  .chi{min-width:0}
+  .chi b{font-size:15px}
+  .meta{color:var(--tenue);font-size:13px;margin-top:2px}
+  .msg{margin-top:10px;white-space:pre-wrap;font-size:13.5px;color:var(--tenue);
+       border-left:2px solid var(--bordo);padding-left:12px;display:none}
+  .riga.aperta .msg{display:block}
+  .azioni{display:flex;flex-direction:column;gap:8px;align-items:stretch}
+  button{font:inherit;font-size:13px;padding:9px 14px;border-radius:8px;
+         border:1px solid var(--bordo);background:transparent;color:var(--testo);cursor:pointer}
+  button.primario{background:var(--accento);border-color:var(--accento);color:#fff;font-weight:600}
+  button:disabled{opacity:.4;cursor:not-allowed}
+  input[type=text]{font:inherit;font-size:13px;padding:8px 10px;border-radius:8px;
+                   border:1px solid var(--allarme);background:transparent;color:var(--testo);width:100%}
+  .buco{margin-top:10px;display:flex;gap:8px;align-items:center}
+  .buco label{color:var(--allarme);font-size:12.5px;white-space:nowrap}
+  .vuoto{color:var(--tenue);text-align:center;padding:60px 20px}
+  .stop{background:#3a1d1d;border:1px solid #7a3030;color:#ffb4b4;
+        padding:12px 16px;border-radius:10px;margin-bottom:16px}
+  .tag{display:inline-block;font-size:11.5px;padding:2px 8px;border-radius:999px;
+       border:1px solid var(--bordo);color:var(--tenue);margin-left:6px}
+  .tag.rec{border-color:var(--allarme);color:var(--allarme)}
+  .tag.ok{border-color:var(--ok);color:var(--ok)}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Banco DM</h1>
+  <input type="file" id="file" accept=".csv">
+  <button id="scarica" disabled>Scarica il CSV aggiornato</button>
+  <div class="conta">
+    <span>oggi <b id="oggi">0</b>/30</span>
+    <span>da mandare <b id="restano">0</b></span>
+    <span>recuperi <b id="rec">0</b></span>
+  </div>
+</header>
+
+<main>
+  <div id="stop" class="stop" hidden>
+    Trenta messaggi oggi. Il tetto non è del tool, è di Instagram: oltre i
+    25-35 al giorno scatta il blocco delle azioni e l'account è quello di Patrick.
+    Si riprende domani.
+  </div>
+  <div id="lista"></div>
+  <div id="vuoto" class="vuoto">
+    Carica il CSV della lista — le colonne sono quelle di <code>02-Sales/liste/</code>.<br>
+    Il messaggio è la <b>versione B</b> di <code>dm-instagram-vetrina</code>: il gancio lo prende dalla colonna <code>Gancio (1-6)</code>.
+  </div>
+</main>
+
+<script>
+/* Banco di invio dei DM. Non manda niente: prepara il testo, apre la
+   conversazione giusta e tiene il conto. L'invio resta un gesto di Patrick —
+   e` la riga che separa un aiuto da una violazione delle regole di Meta. */
+
+const TETTO = 30;                 // messaggi al giorno, vedi ricerca del 2 settembre 2026
+const ATTESA_RECUPERO = 4;        // giorni lavorativi prima del secondo messaggio
+
+const GANCI = {
+  "1": "su Google non trovo un vostro sito: c'è Instagram, ci sono le schede degli altri, ma un sito vostro no",
+  "2": "il dominio [X] che compare ancora nelle ricerche non si apre più",
+  "3": "[X] non apre il vostro sito: risponde con la pagina di default del server",
+  "4": "il link che avete in bio non porta più da nessuna parte",
+  "5": "quello che avete non è un sito vostro: è una pagina su [X], e si vede dall'indirizzo",
+  "6": "il vostro sito c'è, ma è fermo al [X]"
+};
+
+const messaggio = (nome, gancio) =>
+`Buongiorno, sono Patrick Sappa — ho una piccola software house a Seveso, DenkiCode.
+
+Le scrivo perché ho guardato il profilo di ${nome} e ${gancio}.
+
+Le foto che pubblica sono già metà del lavoro: con quelle le preparo la prima schermata di come sarebbe il vostro sito e gliela mando qui. Gratis e senza impegno — la guarda, e se non le piace me lo dice e non ci sentiamo più.
+
+Sul costo non le faccio girare la testa: si parla di poche centinaia di euro una volta, non di migliaia, più una quota annuale per tenerlo online. Il numero preciso glielo faccio solo se la cosa le interessa davvero.
+
+Gliela preparo?`;
+
+const recupero =
+`Le scrivo una volta sola e poi la lascio in pace: avete lasciato perdere l'idea di avere un sito vostro?
+
+Se è «adesso no» va benissimo, me lo scriva in due parole. Se invece la bozza la vuole vedere, gliela preparo oggi.`;
+
+/* ---- CSV: campi fra virgolette e virgole dentro, niente librerie ---- */
+function leggiCSV(testo){
+  const righe = [];
+  let campo = "", riga = [], dentro = false;
+  testo = testo.replace(/^﻿/, "").replace(/\r\n/g, "\n");
+  for (let i = 0; i < testo.length; i++){
+    const c = testo[i];
+    if (dentro){
+      if (c === '"' && testo[i+1] === '"'){ campo += '"'; i++; }
+      else if (c === '"') dentro = false;
+      else campo += c;
+    } else if (c === '"') dentro = true;
+    else if (c === ","){ riga.push(campo); campo = ""; }
+    else if (c === "\n"){ riga.push(campo); righe.push(riga); riga = []; campo = ""; }
+    else campo += c;
+  }
+  if (campo || riga.length){ riga.push(campo); righe.push(riga); }
+  return righe.filter(r => r.some(c => c.trim() !== ""));
+}
+
+const scriviCSV = (righe) => righe.map(r => r.map(c =>
+  /[",\n]/.test(c) ? '"' + c.replace(/"/g, '""') + '"' : c
+).join(",")).join("\n") + "\n";
+
+/* ---- giorni lavorativi: sabato e domenica non contano ---- */
+function lavorativiDa(iso){
+  const d = new Date(iso + "T00:00:00");
+  if (isNaN(d)) return 0;
+  let n = 0;
+  for (let g = new Date(d); g < new Date(new Date().toDateString()); g.setDate(g.getDate()+1)){
+    const gs = g.getDay();
+    if (gs !== 0 && gs !== 6) n++;
+  }
+  return n;
+}
+
+const oggiISO = () => new Date().toLocaleDateString("sv-SE");   // 2026-09-02
+
+let intestazione = [], dati = [], nomeFile = "lista.csv", col = {};
+
+document.getElementById("file").addEventListener("change", async (e) => {
+  const f = e.target.files[0];
+  if (!f) return;
+  nomeFile = f.name;
+  const righe = leggiCSV(await f.text());
+  intestazione = righe[0];
+  dati = righe.slice(1);
+  col = {};
+  intestazione.forEach((nome, i) => {
+    const n = nome.toLowerCase();
+    if (n.startsWith("account")) col.account = i;
+    else if (n.startsWith("nome")) col.nome = i;
+    else if (n.startsWith("comune")) col.comune = i;
+    else if (n.startsWith("segmento")) col.segmento = i;
+    else if (n.startsWith("follower")) col.follower = i;
+    else if (n.startsWith("gancio")) col.gancio = i;
+    else if (n.startsWith("esito verifica")) col.verifica = i;
+    else if (n.startsWith("dm inviato")) col.inviato = i;
+    else if (n.startsWith("esito dm")) col.esito = i;
+  });
+  if (col.account === undefined || col.gancio === undefined){
+    alert("Non riconosco le colonne: servono almeno «Account IG» e «Gancio (1-6)».");
+    return;
+  }
+  document.getElementById("vuoto").hidden = true;
+  document.getElementById("scarica").disabled = false;
+  disegna();
+});
+
+function disegna(){
+  const lista = document.getElementById("lista");
+  lista.innerHTML = "";
+  let oggi = 0, restano = 0, recuperi = 0;
+
+  dati.forEach((r, idx) => {
+    const inviato = (r[col.inviato] || "").trim();
+    const esito   = (r[col.esito]   || "").trim();
+    if (inviato === oggiISO()) oggi++;
+
+    const daRecuperare = inviato && !esito && lavorativiDa(inviato) >= ATTESA_RECUPERO;
+    if (daRecuperare) recuperi++;
+    if (!inviato) restano++;
+    if (inviato && !daRecuperare) { lista.appendChild(cartella(r, idx, inviato, esito, false)); return; }
+    lista.appendChild(cartella(r, idx, inviato, esito, daRecuperare));
+  });
+
+  document.getElementById("oggi").textContent = oggi;
+  document.getElementById("restano").textContent = restano;
+  document.getElementById("rec").textContent = recuperi;
+  document.getElementById("stop").hidden = oggi < TETTO;
+}
+
+function cartella(r, idx, inviato, esito, daRecuperare){
+  const utente = (r[col.account] || "").replace(/^@/, "").trim();
+  const nome = (r[col.nome] || utente).trim();
+  const gancio = GANCI[(r[col.gancio] || "").trim()] || "";
+  const serveBuco = gancio.includes("[X]");
+
+  const el = document.createElement("div");
+  el.className = "riga" + (inviato && !daRecuperare ? " fatta" : "") + (daRecuperare ? " recupero" : "");
+  el.innerHTML = `
+    <div class="chi">
+      <b>@${utente}</b>
+      ${daRecuperare ? '<span class="tag rec">recupero</span>' : ""}
+      ${inviato && !daRecuperare ? '<span class="tag ok">' + inviato + "</span>" : ""}
+      <span class="tag">gancio ${r[col.gancio] || "?"}</span>
+      <div class="meta">${nome} — ${r[col.comune] || ""} · ${r[col.follower] || "?"} follower</div>
+      <div class="meta">${r[col.verifica] || ""}</div>
+      <div class="msg"></div>
+    </div>
+    <div class="azioni"></div>`;
+
+  const testoMsg = el.querySelector(".msg");
+  const azioni = el.querySelector(".azioni");
+  let campoBuco = null;
+
+  if (serveBuco && !daRecuperare){
+    const buco = document.createElement("div");
+    buco.className = "buco";
+    buco.innerHTML = '<label>manca:</label><input type="text" placeholder="il dominio, la piattaforma o l\'anno — va nel messaggio">';
+    el.querySelector(".chi").insertBefore(buco, testoMsg);
+    campoBuco = buco.querySelector("input");
+    campoBuco.addEventListener("input", aggiorna);
+  }
+
+  const btn = document.createElement("button");
+  btn.className = "primario";
+  btn.textContent = daRecuperare ? "Copia il recupero e apri" : "Copia e apri il DM";
+  const segna = document.createElement("button");
+  segna.textContent = inviato && !daRecuperare ? "Annulla" : "Segna inviato";
+  azioni.append(btn, segna);
+
+  function testo(){
+    if (daRecuperare) return recupero;
+    const g = campoBuco ? gancio.replace("[X]", campoBuco.value.trim()) : gancio;
+    return messaggio(nome, g);
+  }
+  function aggiorna(){
+    el.classList.add("aperta");
+    testoMsg.textContent = testo();
+    btn.disabled = !!campoBuco && campoBuco.value.trim() === "";
+  }
+  aggiorna();
+
+  btn.addEventListener("click", async () => {
+    await copia(testo());
+    window.open("https://ig.me/m/" + utente, "_blank", "noopener");
+    if (!inviato){ r[col.inviato] = oggiISO(); disegna(); }
+  });
+  segna.addEventListener("click", () => {
+    r[col.inviato] = (inviato && !daRecuperare) ? "" : oggiISO();
+    disegna();
+  });
+  return el;
+}
+
+async function copia(t){
+  try { await navigator.clipboard.writeText(t); return; } catch (e) {}
+  /* file:// non e` sempre un contesto sicuro: senza questo il tasto non copia
+     e lo strumento non serve a niente. */
+  const ta = document.createElement("textarea");
+  ta.value = t; ta.style.position = "fixed"; ta.style.opacity = "0";
+  document.body.appendChild(ta); ta.select();
+  document.execCommand("copy"); ta.remove();
+}
+
+document.getElementById("scarica").addEventListener("click", () => {
+  const blob = new Blob([scriviCSV([intestazione, ...dati])], {type:"text/csv;charset=utf-8"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = nomeFile.replace(/\.csv$/i, "") + "-aggiornata.csv";
+  a.click();
+  URL.revokeObjectURL(a.href);
+});
+</script>
+</body>
+</html>

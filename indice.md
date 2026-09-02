@@ -102,6 +102,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 - [[briefing-prodotti-gabriele-edoardo]] — I quattro prodotti spiegati ai due cold caller in prova: un obiettivo per blocco, quattro divieti.
 - [[dm-instagram-vetrina]] — Un messaggio solo e sei ganci: il DM che Patrick manda dal suo profilo alle attività senza sito.
+- [banco-dm.html](02-Sales/strumenti/banco-dm.html) — Il banco di invio: carica la lista, prepara il messaggio col gancio giusto, apre la conversazione. **L'invio resta a mano.**
 - [[email-presentazione-denkishift]] — La mail che accompagna il PDF di DenkiShift a chi il materiale l'ha chiesto davvero.
 - [[email-centralino-rsa]] — La mail per il decisore che il centralino non passa: due lettori, un inoltro e una demo.
 - [[obiezione-non-sapranno-usarlo]] — Framework: Belfort — looping sul primo dei 3 Dieci (la certezza nel prodotto), con l'isolamento di...
