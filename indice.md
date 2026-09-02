@@ -62,6 +62,8 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 **clienti/**
 
+- [[dsi-advertising]] — Articoli promozionali HO.RE.CA a Merate: referral della figlia, il sito ce l'ha ed e' un Wix in inglese.
+- [[shari-piras]] — Tatuatrice a Merate, Atelier Selva: bozza gia' fatta, proposta a 200 euro l'anno senza anticipo.
 - [[bar-tabacchi-fiftynine]] — Bar tabaccheria e pizzeria di Cesano Maderno: lead con materiale in mano, il 2 settembre 2026 ha mandato il menù.
 - [[albybike]] — Negozio di biciclette: vendita, assistenza e riparazione, abbigliamento e integratori per ciclismo.
 - [[ms-service]] — Impresa di pulizie di Seveso: lead caldo, ha chiesto lui la presentazione via mail.

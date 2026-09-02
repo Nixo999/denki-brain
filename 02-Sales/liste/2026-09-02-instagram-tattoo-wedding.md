@@ -1,6 +1,6 @@
 ---
 type: area
-updated: 2026-09-01
+updated: 2026-09-03
 source: claude
 prodotto: siti-vetrina
 canale: instagram
@@ -237,6 +237,12 @@ Exclusive (Cassano Magnago) · Crop Circle Tattoo (Samarate) · Mewink
 
 ## Note sul giro
 
+- ✅ **Prima risposta del giro: riga 29, `@shari_tattooer`** (3 settembre
+  2026). Per sé dice che non le serve, ma ci ha girato l'attività dei
+  genitori — [[dsi-advertising]], articoli promozionali HO.RE.CA a Merate.
+  Due trattative aperte da un DM solo, e nessuna delle due è quella
+  prevista: la scheda è in [[shari-piras]]. Il segmento tatuaggio ha reso
+  al primo colpo, ed è **per referral**, non per conversione diretta.
 - **Il conto della verifica**: circa 185 candidati raccolti, **47 in lista**.
   Nove account spariti, dieci fuori regione, oltre quaranta con un sito vivo,
   due di segmento sbagliato, uno concorrente, cinque doppioni, undici in
