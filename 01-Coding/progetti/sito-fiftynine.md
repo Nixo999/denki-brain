@@ -76,6 +76,13 @@ si riempie con lo scroll**: lo scroll è la giornata.
 
 ## Stato
 
+🟡 **Bozza fatta, sul repo privato, guardata con gli occhi.** Il 2 settembre
+sera il capitolo menù è stato visto e non solo misurato: il pannello del
+browser consegna le animazioni e gli screenshot **solo quando la scheda è in
+primo piano**. Due difetti che le misure non davano — il pannello Bevande
+allungato a vuoto, marchio e pillola del telefono che non ci stavano in nav
+sotto i 560px — trovati e corretti guardando.
+
 🟡 **Bozza fatta, sul repo privato.** Verificata nel pannello a 1440 e 375
 emulati, dal server e non dall'istantanea statica (che non mostra né JS né
 foto): zero overflow a 1440, 7 foto su 7, console pulita, motion a fine corsa
