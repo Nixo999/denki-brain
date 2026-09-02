@@ -31,8 +31,11 @@
   .chi{min-width:0}
   .chi b{font-size:15px}
   .meta{color:var(--tenue);font-size:13px;margin-top:2px}
-  .msg{margin-top:10px;white-space:pre-wrap;font-size:13.5px;color:var(--tenue);
-       border-left:2px solid var(--bordo);padding-left:12px;display:none}
+  .msg{margin-top:10px;font:inherit;font-size:13.5px;line-height:1.55;color:var(--testo);
+       background:transparent;border:0;border-left:2px solid var(--bordo);
+       padding:0 0 0 12px;width:100%;resize:none;overflow:hidden;display:none}
+  .msg:focus{outline:none;border-left-color:var(--accento)}
+  .msg:disabled{color:var(--tenue)}
   .riga.aperta .msg{display:block}
   .azioni{display:flex;flex-direction:column;gap:8px;align-items:stretch}
   button{font:inherit;font-size:13px;padding:9px 14px;border-radius:8px;
@@ -43,7 +46,11 @@
                    border:1px solid var(--allarme);background:transparent;color:var(--testo);width:100%}
   .buco{margin-top:10px;display:flex;gap:8px;align-items:center}
   .buco label{color:var(--allarme);font-size:12.5px;white-space:nowrap}
-  .vuoto{color:var(--tenue);text-align:center;padding:60px 20px}
+  .vuoto{color:var(--tenue);text-align:center;padding:60px 20px;
+         border:2px dashed var(--bordo);border-radius:14px}
+  body.trascina .vuoto{border-color:var(--accento);color:var(--testo)}
+  body.trascina main{opacity:.6}
+  .quale{font-size:13px;color:var(--tenue)}
   .stop{background:#3a1d1d;border:1px solid #7a3030;color:#ffb4b4;
         padding:12px 16px;border-radius:10px;margin-bottom:16px}
   .tag{display:inline-block;font-size:11.5px;padding:2px 8px;border-radius:999px;
@@ -56,6 +63,7 @@
 
 <header>
   <h1>Banco DM</h1>
+  <span id="quale" class="quale"></span>
   <input type="file" id="file" accept=".csv">
   <button id="scarica" disabled>Scarica il CSV aggiornato</button>
   <div class="conta">
@@ -73,7 +81,8 @@
   </div>
   <div id="lista"></div>
   <div id="vuoto" class="vuoto">
-    Carica il CSV della lista — le colonne sono quelle di <code>02-Sales/liste/</code>.<br>
+    <b>Trascina qui il CSV della lista</b> — quelli di <code>02-Sales/liste/</code>.<br>
+    Da qui in poi se lo ricorda: riaprendo la pagina la lista è già dov'era, coi messaggi già segnati.<br><br>
     Il messaggio è la <b>versione B</b> di <code>dm-instagram-vetrina</code>: il gancio lo prende dalla colonna <code>Gancio (1-6)</code>.
   </div>
 </main>
@@ -149,13 +158,17 @@ function lavorativiDa(iso){
 
 const oggiISO = () => new Date().toLocaleDateString("sv-SE");   // 2026-09-02
 
-let intestazione = [], dati = [], nomeFile = "lista.csv", col = {};
+let intestazione = [], dati = [], nomeFile = "lista.csv", col = {}, fonte = "";
 
-document.getElementById("file").addEventListener("change", async (e) => {
-  const f = e.target.files[0];
-  if (!f) return;
-  nomeFile = f.name;
-  const righe = leggiCSV(await f.text());
+const MEMORIA = "banco-dm";
+
+/* Aperto con doppio click la pagina sta su file:// e non puo` leggersi da sola
+   i CSV che ha accanto: il browser lo vieta. Quindi la lista si trascina qui
+   una volta, e da li` in poi se la ricorda — anche a meta` giro, che con 30
+   messaggi al giorno succede sempre. */
+function carica(testo, nome){
+  nomeFile = nome || nomeFile;
+  const righe = leggiCSV(testo);
   intestazione = righe[0];
   dati = righe.slice(1);
   col = {};
@@ -170,17 +183,79 @@ document.getElementById("file").addEventListener("change", async (e) => {
     else if (n.startsWith("esito verifica")) col.verifica = i;
     else if (n.startsWith("dm inviato")) col.inviato = i;
     else if (n.startsWith("esito dm")) col.esito = i;
+    else if (n.startsWith("messaggio")) col.messaggio = i;
   });
+  /* La colonna «Messaggio» e` quella che Nicola riempie prima di pubblicare la
+     lista e che Patrick corregge qui dentro: se manca, si aggiunge, cosi` le
+     liste vecchie continuano a funzionare col testo generato dal modello. */
+  if (col.messaggio === undefined){
+    col.messaggio = intestazione.length;
+    intestazione.push("Messaggio");
+  }
+  dati.forEach(r => { while (r.length < intestazione.length) r.push(""); });
   if (col.account === undefined || col.gancio === undefined){
     alert("Non riconosco le colonne: servono almeno «Account IG» e «Gancio (1-6)».");
     return;
   }
   document.getElementById("vuoto").hidden = true;
   document.getElementById("scarica").disabled = false;
+  document.getElementById("quale").textContent = nomeFile;
   disegna();
+}
+
+document.getElementById("file").addEventListener("change", async (e) => {
+  const f = e.target.files[0];
+  if (f) carica(await f.text(), f.name);
 });
 
+/* trascinare il CSV sulla pagina: e` il gesto piu` corto che c'e` */
+document.addEventListener("dragover", (e) => { e.preventDefault(); document.body.classList.add("trascina"); });
+document.addEventListener("dragleave", (e) => { if (e.relatedTarget === null) document.body.classList.remove("trascina"); });
+document.addEventListener("drop", async (e) => {
+  e.preventDefault();
+  document.body.classList.remove("trascina");
+  const f = e.dataTransfer.files[0];
+  if (f) carica(await f.text(), f.name);
+});
+
+/* All'avvio: se la pagina e` servita (cioe` e` partita dall'icona sul Desktop)
+   prende da sola `lista-corrente.csv`, che e` la lista che Nicola pubblica nel
+   vault. Il lavoro gia` fatto vince sulla lista pubblicata finche` e` la
+   stessa: si riparte da dove si era rimasti, non da capo. Quando Nicola ne
+   pubblica una nuova, il file cambia e questa la sostituisce. */
+async function avvio(){
+  let salvata = null;
+  try { salvata = JSON.parse(localStorage.getItem(MEMORIA) || "null"); } catch (e) {}
+
+  if (location.protocol.startsWith("http")){
+    try {
+      const risposta = await fetch("lista-corrente.csv", {cache:"no-store"});
+      if (risposta.ok){
+        const testo = await risposta.text();
+        if (!salvata || salvata.fonte !== testo){
+          fonte = testo;
+          const quando = risposta.headers.get("Last-Modified");
+          carica(testo, "lista del " + (quando ? new Date(quando).toLocaleDateString("it-IT") : "giorno"));
+          ricorda();
+          return;
+        }
+        fonte = salvata.fonte;
+      }
+    } catch (e) {}
+  }
+  if (salvata){
+    fonte = salvata.fonte || "";
+    carica(scriviCSV([salvata.intestazione, ...salvata.dati]), salvata.nomeFile);
+  }
+}
+avvio();
+
+function ricorda(){
+  try { localStorage.setItem(MEMORIA, JSON.stringify({nomeFile, intestazione, dati, fonte})); } catch (e) {}
+}
+
 function disegna(){
+  ricorda();
   const lista = document.getElementById("lista");
   lista.innerHTML = "";
   let oggi = 0, restano = 0, recuperi = 0;
@@ -219,7 +294,7 @@ function cartella(r, idx, inviato, esito, daRecuperare){
       <span class="tag">gancio ${r[col.gancio] || "?"}</span>
       <div class="meta">${nome} — ${r[col.comune] || ""} · ${r[col.follower] || "?"} follower</div>
       <div class="meta">${r[col.verifica] || ""}</div>
-      <div class="msg"></div>
+      <textarea class="msg" spellcheck="false"></textarea>
     </div>
     <div class="azioni"></div>`;
 
@@ -243,20 +318,36 @@ function cartella(r, idx, inviato, esito, daRecuperare){
   segna.textContent = inviato && !daRecuperare ? "Annulla" : "Segna inviato";
   azioni.append(btn, segna);
 
-  function testo(){
-    if (daRecuperare) return recupero;
+  function generato(){
     const g = campoBuco ? gancio.replace("[X]", campoBuco.value.trim()) : gancio;
     return messaggio(nome, g);
   }
+  function testo(){
+    if (daRecuperare) return recupero;
+    return (r[col.messaggio] || "").trim() || generato();
+  }
   function aggiorna(){
     el.classList.add("aperta");
-    testoMsg.textContent = testo();
-    btn.disabled = !!campoBuco && campoBuco.value.trim() === "";
+    testoMsg.value = testo();
+    testoMsg.disabled = daRecuperare;
+    /* misura il testo per non far scorrere dentro un riquadro */
+    testoMsg.style.height = "auto";
+    testoMsg.style.height = testoMsg.scrollHeight + "px";
+    btn.disabled = !!campoBuco && campoBuco.value.trim() === "" && !(r[col.messaggio] || "").trim();
   }
   aggiorna();
 
+  /* Il testo si corregge qui: quello che si legge e` quello che parte, e
+     rientra nel CSV — cosi` una riga limata a mano non si perde al giro dopo. */
+  testoMsg.addEventListener("input", () => {
+    if (daRecuperare) return;
+    r[col.messaggio] = testoMsg.value;
+    btn.disabled = false;
+    ricorda();
+  });
+
   btn.addEventListener("click", async () => {
-    await copia(testo());
+    await copia(daRecuperare ? recupero : testoMsg.value);
     window.open("https://ig.me/m/" + utente, "_blank", "noopener");
     if (!inviato){ r[col.inviato] = oggiISO(); disegna(); }
   });

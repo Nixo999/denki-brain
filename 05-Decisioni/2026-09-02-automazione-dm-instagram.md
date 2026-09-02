@@ -66,6 +66,26 @@ Dove il gancio ha un buco — dominio, piattaforma, anno — **il tasto resta
 spento finché non è compilato**: è la protezione contro il «il dominio [X] non
 si apre» mandato davvero.
 
+### Come si lavora, in tre gesti
+
+1. **Nicola chiede la pubblicazione.** «Metti la lista di oggi sul banco DM»:
+   il CSV del giorno viene copiato in `02-Sales/strumenti/lista-corrente.csv`
+   **con la colonna `Messaggio` gia` scritta**, riga per riga, e pushato.
+2. **Patrick fa doppio click su «Banco DM»** (`.command` sul Mac, `.bat` su
+   Windows — si copiano sul Desktop, il vault se lo cercano da solo). Si apre
+   il browser con la lista gia` dentro: nessun file da caricare.
+3. **Patrick legge, corregge il testo dove vuole, e manda.** Il messaggio e` un
+   campo scrivibile: quello che si legge e` quello che parte, e rientra nel CSV
+   scaricato — una riga limata a mano non si perde al giro dopo.
+
+Il lavoro fatto vince sulla lista pubblicata finche` e` la stessa: chiudendo a
+meta` giro si riparte da dove si era rimasti. Quando Nicola ne pubblica una
+nuova, quella sostituisce la vecchia.
+
+⚠️ **Serve un server locale**, ed e` l'unico motivo per cui c'e` un file da
+cliccare invece di aprire l'HTML: una pagina su `file://` non puo` leggere i
+CSV che ha accanto — lo vieta il browser, e nessun trucco lo aggira.
+
 **Non ancora fatto**: la raccolta e la verifica automatica dei profili (Apify
 più il controllo del dominio in bio), che è il pezzo dove sta il tempo vero.
 
