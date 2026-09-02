@@ -37,6 +37,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[opero]] — ⚠️ OperO non è il gestionale di un nostro cliente: è il prodotto che il nostro cliente sta lanciando.
 - [[sito-albybike]] — Sito vetrina per Albybike, negozio di biciclette: vendita, assistenza, riparazione, abbigliamento e...
 - [[sito-denkicode]] — Sito di DenkiCode.
+- [[sito-dsi-advertising]] — Rifacimento del sito vetrina di D.S.I. Advertising (Merate, articoli promozionali HO.RE.CA. dal 1992): bozza al buio, sito attuale non ancora aperto.
 - [[sito-fiftynine]] — Sito vetrina in una pagina per Bar Tabacchi Fiftynine, bar tabaccheria e pizzeria di Cesano Maderno: bozza non commissionata, materiale per Patrick.
 
 **skills/**
@@ -62,6 +63,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 **clienti/**
 
+- [[dsi-advertising]] — Produttore di articoli promozionali HO.RE.CA. di Merate: lead sito vetrina, nessuna recensione pubblica, nessun contatto preso.
 - [[bar-tabacchi-fiftynine]] — Bar tabaccheria e pizzeria di Cesano Maderno: lead con materiale in mano, il 2 settembre 2026 ha mandato il menù.
 - [[albybike]] — Negozio di biciclette: vendita, assistenza e riparazione, abbigliamento e integratori per ciclismo.
 - [[ms-service]] — Impresa di pulizie di Seveso: lead caldo, ha chiesto lui la presentazione via mail.
