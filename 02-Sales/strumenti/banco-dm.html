@@ -31,6 +31,9 @@
   .chi{min-width:0}
   .chi b{font-size:15px}
   .meta{color:var(--tenue);font-size:13px;margin-top:2px}
+  .scheda{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:13px;
+          line-height:1.6;white-space:pre-line;background:rgba(127,140,170,.10);
+          border:1px solid var(--bordo)}
   .msg{margin-top:10px;font:inherit;font-size:13.5px;line-height:1.55;color:var(--testo);
        background:transparent;border:0;border-left:2px solid var(--bordo);
        padding:0 0 0 12px;width:100%;resize:none;overflow:hidden;display:none}
@@ -57,6 +60,8 @@
        border:1px solid var(--bordo);color:var(--tenue);margin-left:6px}
   .tag.rec{border-color:var(--allarme);color:var(--allarme)}
   .tag.ok{border-color:var(--ok);color:var(--ok)}
+  .tag.no{border-color:#c9483a;color:#e0705f}
+  .riga.scartata{opacity:.62;border-style:dashed}
 </style>
 </head>
 <body>
@@ -184,6 +189,7 @@ function carica(testo, nome){
     else if (n.startsWith("dm inviato")) col.inviato = i;
     else if (n.startsWith("esito dm")) col.esito = i;
     else if (n.startsWith("messaggio")) col.messaggio = i;
+    else if (n.startsWith("scheda")) col.scheda = i;
   });
   /* La colonna «Messaggio» e` quella che Nicola riempie prima di pubblicare la
      lista e che Patrick corregge qui dentro: se manca, si aggiunge, cosi` le
@@ -191,6 +197,10 @@ function carica(testo, nome){
   if (col.messaggio === undefined){
     col.messaggio = intestazione.length;
     intestazione.push("Messaggio");
+  }
+  if (col.scheda === undefined){
+    col.scheda = intestazione.length;
+    intestazione.push("Scheda");
   }
   dati.forEach(r => { while (r.length < intestazione.length) r.push(""); });
   if (col.account === undefined || col.gancio === undefined){
@@ -265,9 +275,10 @@ function disegna(){
     const esito   = (r[col.esito]   || "").trim();
     if (inviato === oggiISO()) oggi++;
 
+    const scartata = /^scartat/i.test(esito);
     const daRecuperare = inviato && !esito && lavorativiDa(inviato) >= ATTESA_RECUPERO;
     if (daRecuperare) recuperi++;
-    if (!inviato) restano++;
+    if (!inviato && !scartata) restano++;
     if (inviato && !daRecuperare) { lista.appendChild(cartella(r, idx, inviato, esito, false)); return; }
     lista.appendChild(cartella(r, idx, inviato, esito, daRecuperare));
   });
@@ -279,24 +290,31 @@ function disegna(){
 }
 
 function cartella(r, idx, inviato, esito, daRecuperare){
+  const scartata = /^scartat/i.test(esito);
   const utente = (r[col.account] || "").replace(/^@/, "").trim();
   const nome = (r[col.nome] || utente).trim();
   const gancio = GANCI[(r[col.gancio] || "").trim()] || "";
   const serveBuco = gancio.includes("[X]");
 
   const el = document.createElement("div");
-  el.className = "riga" + (inviato && !daRecuperare ? " fatta" : "") + (daRecuperare ? " recupero" : "");
+  el.className = "riga" + (inviato && !daRecuperare ? " fatta" : "") + (daRecuperare ? " recupero" : "") + (scartata ? " scartata" : "");
   el.innerHTML = `
     <div class="chi">
       <b>@${utente}</b>
+      ${scartata ? '<span class="tag no">non si manda</span>' : ""}
       ${daRecuperare ? '<span class="tag rec">recupero</span>' : ""}
       ${inviato && !daRecuperare ? '<span class="tag ok">' + inviato + "</span>" : ""}
       <span class="tag">gancio ${r[col.gancio] || "?"}</span>
       <div class="meta">${nome} — ${r[col.comune] || ""} · ${r[col.follower] || "?"} follower</div>
       <div class="meta">${r[col.verifica] || ""}</div>
+      ${(r[col.scheda] || "").trim() ? '<div class="scheda"></div>' : ""}
       <textarea class="msg" spellcheck="false"></textarea>
     </div>
     <div class="azioni"></div>`;
+
+  /* la scheda si scrive col testo, mai come HTML: arriva da una ricerca */
+  const scheda = el.querySelector(".scheda");
+  if (scheda) scheda.textContent = (r[col.scheda] || "").trim();
 
   const testoMsg = el.querySelector(".msg");
   const azioni = el.querySelector(".azioni");
@@ -309,6 +327,17 @@ function cartella(r, idx, inviato, esito, daRecuperare){
     el.querySelector(".chi").insertBefore(buco, testoMsg);
     campoBuco = buco.querySelector("input");
     campoBuco.addEventListener("input", aggiorna);
+  }
+
+  /* Una riga marcata SCARTATO non si manda: la ricerca ha trovato un motivo
+     per cui il messaggio farebbe danno — di solito un sito vivo e curato. Il
+     tasto non c'e' proprio: un avviso da leggere si salta, un tasto assente no. */
+  if (scartata){
+    const perche = document.createElement("div");
+    perche.className = "meta";
+    perche.textContent = esito;
+    azioni.appendChild(perche);
+    return el;
   }
 
   const btn = document.createElement("button");
