@@ -5,7 +5,7 @@ client: nessuno
 stack: [html, netlify]
 started: 2026-09-01
 deadline: TODO
-updated: 2026-09-01
+updated: 2026-09-02
 source: claude
 valore: TODO
 incassato: 0
@@ -65,8 +65,9 @@ si riempie con lo scroll**: lo scroll è la giornata.
 🟡 **Bozza fatta, sul repo privato.** Verificata nel pannello a 1440 e 375
 emulati, dal server e non dall'istantanea statica (che non mostra né JS né
 foto): zero overflow a 1440, 7 foto su 7, console pulita, motion a fine corsa
-senza elementi rimasti invisibili, indicatore «chiuso» giusto alle 23:40. **Non vista su browser vero né su telefono.** Lo stato «aperto»
-dell'indicatore non è stato provato: alle 23:40 il bar era chiuso.
+senza elementi rimasti invisibili, indicatore «chiuso» giusto alle 23:40 e
+**«Aperto adesso · pranzo»** il 2 settembre a mezzogiorno, col punto sulla
+linea al posto giusto: lo stato aperto non è più un buco. **Non vista su browser vero né su telefono.**
 
 ## Soldi
 
