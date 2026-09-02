@@ -37,6 +37,12 @@ Colonne: **Quando** (data e ora) · **Chi** (persona, e `+claude` se il lavoro �
 stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 (`—` se non toccato, `sviluppo`/`produzione` + stato) · **Cosa** · **Commit**.
 
+## 2026-09-03
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| mattina | Nicola +claude | [[sito-fiftynine]] | `fiftynine-site` → **anche `Nixo999/bartabaccheria59`** | — | **Il sito del bar va anche su un repo nuovo, e quello e` pubblico.** Nicola ha chiesto di pushare su `bartabaccheria59`: il repo esisteva vuoto ed era **pubblico**, mentre `fiftynine-site` e` privato di proposito ([[2026-09-01-instagram-anello-1-b]]: materiale col marchio di un'azienda che non ci ha chiesto niente). Fatto notare che cosi` diventano visibili a chiunque il marchio, le **foto prese dal loro Instagram** e il **PDF del menù mandato dal proprietario via WhatsApp** — e che il `noindex` protegge il sito servito, non la pagina su github.com. **Nicola ha confermato: pubblico va bene**, il contatto col proprietario e` gia` aperto. Pushati 15 file, `refs/heads/main` sul remoto verificato uguale al locale (`0959f42`). ⚠️ **Il `-u` del primo push aveva spostato l'upstream** sul repo nuovo: da li` in poi `git push` avrebbe aggiornato solo quello, lasciando indietro l'altro — due copie divergenti, che su questo progetto e` gia` successo. Rimesso l'upstream su `origin` e **aggiunti due `pushurl` a origin**, cosi` un `git push` scrive su entrambi (verificato: risponde due volte). ⚠️ **Quella configurazione e` locale a questo PC**: sul Mac di Patrick il clone ha un remote solo, e chi pusha da la` aggiorna una copia sola | `0959f42` |
+
 ## 2026-09-02
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
