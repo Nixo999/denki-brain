@@ -1,6 +1,6 @@
 ---
 type: progetto
-status: in-pausa
+status: attivo
 client: dsi-advertising
 stack: [html]
 started: 2026-09-02
@@ -18,10 +18,33 @@ produttore di articoli promozionali HO.RE.CA. dal 1992. Cliente:
 [[dsi-advertising]]. **Non commissionato**: nasce come bozza al buio, stesso
 schema di [[sito-fiftynine]] e [[2026-08-30-sito-castiglione]].
 
-**Repo**: nessuno ancora
+**Repo**: nessuno — la bozza sta in una cartella locale `dsi-site`, `git init`
+senza remote (**deciso da Nicola il 2 settembre: prima locale, il remote dopo**)
 **Online**: no
-**Stack**: da decidere. Di default HTML puro + Netlify come le altre bozze
-([[netlify]]), `noindex` finché il sito non è loro.
+**Stack**: HTML puro, un solo `index.html`, zero build e zero dipendenze.
+`netlify.toml` e `robots.txt` già scritti coi tre sbarramenti `noindex`
+([[netlify]]), da togliere il giorno in cui il sito è loro.
+
+## La bozza — 2 settembre 2026
+
+Una pagina: apertura, gamma, lavorazione, marchi, contatti.
+
+Il pezzo che la regge è il **banco prova** in apertura: si scrive il proprio
+marchio, si sceglie il colore di stampa fra cinque, e il portatovaglioli
+disegnato accanto si personalizza mentre si guarda. **Il colore scelto diventa
+l'unico colore della pagina.** È il modello di business — stesso oggetto, il
+vostro logo sopra — messo in mano al visitatore invece che raccontato: in
+trattativa si fa scrivere il suo nome al cliente, dal telefono di Patrick.
+
+**Niente foto**: gli oggetti sono disegni SVG a tratto. Non è un ripiego
+grafico, è la conseguenza di non avere immagini utilizzabili — le Instagram
+sono a 640px. Il sito sta in piedi senza chiedere niente al titolare, e le foto
+vere si aggiungono quando arrivano.
+
+✅ Misurato a 390, 500 e 1440: nessun elemento fuori viewport.
+⚠️ Font (Archivo, Public Sans, IBM Plex Mono) mai visti: Google Fonts è
+bloccato dal proxy della sessione, gli screenshot sono coi font di sistema.
+⚠️ Tutti i testi sono `source: claude`.
 
 ## Il sito che hanno già
 
@@ -62,6 +85,7 @@ galleria è la struttura del sito, non un contorno.
   Niente sezione testimonianze finché non ce ne sono di vere; al loro posto i
   marchi serviti, se il titolare dà il permesso di nominarli.
 - ⬜ Non è ancora una trattativa: nessun contatto preso, nessun prezzo detto.
+- ⬜ La bozza **non è pubblicata e non è su GitHub**: finché resta su una macchina sola non è un'esca ([[netlify]]).
 
 ## Collegamenti
 
