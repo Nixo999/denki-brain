@@ -11,13 +11,21 @@ valore: TODO
 incassato: 0
 ---
 
-# Sito D.S.I. Advertising — bozza al buio, seconda versione
+# Sito D.S.I. Advertising — la bozza per il preventivo
 
 Sito vetrina in una pagina per **D.S.I. Advertising di Piras Sebastiano**,
 Merate (LC): dal 1992 progetta e produce articoli promozionali per il canale
 HO.RE.CA (portatovaglioli, portabustine, rendiresto, orologi personalizzati con
-il marchio di torrefazioni e bar). Non è cliente: è materiale pronto per
-Patrick, come [[sito-castiglione]]. Cliente: [[dsi-advertising]].
+il marchio di torrefazioni e bar). **Non è una bozza al buio**: è un
+referral della figlia [[shari-piras]] arrivato dal DM del 2 settembre, e il
+3 settembre Patrick e Nicola hanno deciso il prezzo (300 € + 180 €/anno, sito
+vetrina **più gestionalino**). Scheda commerciale: [[dsi-advertising]].
+
+⚠️ **Il preventivo vende anche un gestionalino** (pannello per le 14 famiglie di
+prodotto) che questa bozza non ha: è una pagina statica. Va costruito come lo
+stesso componente di [[shari-piras]], o il prezzo non regge.
+⚠️ `www.dsi-advertising.com` oggi rimanda alla **versione inglese** (302 →
+`en.`): la bozza è solo in italiano, l'inglese è da chiedere in trattativa.
 
 **Repo**: `Desktop/dsi-site`, git locale su `main`, **senza remote** (dove
 pubblicarlo lo decide Nicola).
