@@ -1,18 +1,18 @@
 ---
 type: area
-updated: 2026-08-31
+updated: 2026-09-03
 source: claude
 prodotto: siti-vetrina
 stato: da-provare
 ---
 
-# Metodo Instagram — come si costruisce la lista dei 50 al giorno
+# Metodo Instagram — come si costruisce la lista del giorno
 
 > [!note] Nota generata da Claude — 2026-08-31
 > Metodo proposto. Il test è **200 DM**: sotto quella soglia i numeri non
 > dicono niente. Deciso in [[2026-08-31-canale-dm-instagram]].
 
-Serve a produrre, ogni giorno, **50 account Instagram verificati** a cui
+Serve a produrre, ogni giorno, **fino a 65 account Instagram verificati** a cui
 Patrick può scrivere il messaggio di [[dm-instagram-vetrina]] senza dire una
 cosa falsa. È il gemello di [[metodo-liste]], che resta valido per il telefono.
 
@@ -110,8 +110,8 @@ dire in faccia. «Il vostro sito fa schifo» non si dice mai.
 
 ## Quanto costa
 
-Circa **due minuti a riga**: uno per il profilo, uno per il sito. Su 50 righe
-sono un'ora e mezza — che è **il vero costo del canale**, più dell'invio.
+Circa **due minuti a riga**: uno per il profilo, uno per il sito. Su 65 righe
+sono più di due ore — che è **il vero costo del canale**, più dell'invio.
 La lista di domani si prepara oggi, non la mattina stessa.
 
 ## Le colonne del foglio
@@ -130,17 +130,25 @@ Esito verifica sito | Gancio (1-6) | DM inviato (data) | Esito DM
 
 ## L'invio — le regole che proteggono l'account
 
-⚠️ **Cinquanta DM al giorno a sconosciuti, da un account personale, sono sopra
-la soglia di blocco di Instagram.** Il blocco non ferma la campagna: ferma
-l'account con cui Patrick esiste online, e con esso i mille follower che sono
-tutta la credibilità del canale. Detto una volta; poi si fa come dice Patrick.
+> [!note] Aggiornato il 3 settembre 2026 — [[2026-09-03-tetto-dm-65]]
+> Il numero qui sotto non è più una stima: **75 DM in una sera dall'account di
+> Patrick non hanno fatto scattare nessun blocco.** Il tetto del banco è salito
+> a **65**, che è il massimo osservato meno un margine. Resta una misura su un
+> giorno solo: se un blocco arriva, si scende e si scrive la data lì.
+
+Il blocco non fermerebbe la campagna: fermerebbe **l'account con cui Patrick
+esiste online**, e con esso i mille follower che sono tutta la credibilità del
+canale. È il motivo per cui il numero si alza a misura fatta e non prima.
 
 Le contromisure, che costano poco e servono davvero:
 
-1. **Rampa.** Giorno 1: 15 DM. Poi +10 al giorno. A regime 50, non prima della
-   seconda settimana. Un account che passa da 2 a 50 messaggi in un giorno è
-   esattamente il profilo che il sistema cerca.
-2. **Diluiti.** Cinquanta messaggi spalmati su due ore, non in venti minuti.
+1. **Rampa, solo su un account nuovo.** Su quello di Patrick il regime è già
+   provato: 65 al giorno. Se un giorno si riparte da un profilo diverso, si
+   ricomincia da 15 e si sale di 10 — perché quello che ha retto è questo
+   account, non Instagram in generale.
+2. **Diluiti.** Sessantacinque messaggi spalmati su due o tre ore, non in venti
+   minuti: il tetto è un totale e non dice niente sulla velocità. Il banco
+   conta anche gli invii **dell'ultima ora** e accende il numero sopra 25.
 3. **Prima si guarda, poi si scrive.** Aprire il profilo, seguire, mettere due
    like a post recenti, e **solo dopo** scrivere. Costa dieci secondi e cambia
    la casella in cui il messaggio atterra.
@@ -150,8 +158,9 @@ Le contromisure, che costano poco e servono davvero:
 5. **Niente link nel primo messaggio.** Un link a uno sconosciuto è il segnale
    più forte di spam che si possa mandare. Il sito, il portfolio e la bozza
    arrivano nel **secondo** messaggio, quando ha risposto.
-6. **Il gancio cambia il testo.** Sei varianti su cinquanta messaggi bastano a
-   non essere cinquanta copie identiche.
+6. **Il gancio cambia il testo.** Sei varianti bastano a non essere sessanta
+   copie identiche — e nel primo giro vero nessuno dei 75 testi è stato
+   toccato a mano, quindi il gancio è l'unica cosa che cambiava.
 
 ## Chi lo fa, e quando
 
@@ -176,4 +185,5 @@ qui. La prima lista vera è [[2026-08-31-instagram-anello-1]].
 [[dm-instagram-vetrina]] · [[2026-08-31-instagram-anello-1]] ·
 [[2026-08-31-canale-dm-instagram]] · [[2026-08-30-verifica-sito-reale]] ·
 [[metodo-liste]] · [[generazione-lead]] · [[metriche]] · [[ciclo-settimanale]] ·
+[[2026-09-03-tetto-dm-65]] · [[2026-09-03-instagram-anello-1-2]] ·
 [[core-strutturale]] · [[core-produttivita-leadership]] · [[prodotti-e-listino]]

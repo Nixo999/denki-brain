@@ -54,6 +54,7 @@
   body.trascina .vuoto{border-color:var(--accento);color:var(--testo)}
   body.trascina main{opacity:.6}
   .quale{font-size:13px;color:var(--tenue)}
+  .conta b.corri{color:var(--allarme)}
   .stop{background:#3a1d1d;border:1px solid #7a3030;color:#ffb4b4;
         padding:12px 16px;border-radius:10px;margin-bottom:16px}
   .tag{display:inline-block;font-size:11.5px;padding:2px 8px;border-radius:999px;
@@ -72,7 +73,8 @@
   <input type="file" id="file" accept=".csv">
   <button id="scarica" disabled>Scarica il CSV aggiornato</button>
   <div class="conta">
-    <span>oggi <b id="oggi">0</b>/30</span>
+    <span>oggi <b id="oggi">0</b>/65</span>
+    <span>ultima ora <b id="ora">0</b></span>
     <span>da mandare <b id="restano">0</b></span>
     <span>recuperi <b id="rec">0</b></span>
   </div>
@@ -80,9 +82,9 @@
 
 <main>
   <div id="stop" class="stop" hidden>
-    Trenta messaggi oggi. Il tetto non è del tool, è di Instagram: oltre i
-    25-35 al giorno scatta il blocco delle azioni e l'account è quello di Patrick.
-    Si riprende domani.
+    Sessantacinque messaggi oggi: è il tetto misurato il 3 settembre 2026, non
+    un numero di listino. Il tool non spegne niente — oltre di qui si va a
+    sentimento, e l'account è quello di Patrick. Meglio riprendere domani.
   </div>
   <div id="lista"></div>
   <div id="vuoto" class="vuoto">
@@ -97,7 +99,14 @@
    conversazione giusta e tiene il conto. L'invio resta un gesto di Patrick —
    e` la riga che separa un aiuto da una violazione delle regole di Meta. */
 
-const TETTO = 30;                 // messaggi al giorno, vedi ricerca del 2 settembre 2026
+/* 65 al giorno: e` il numero che ha retto davvero il 3 settembre 2026, quando
+   ne sono partiti 75 senza blocco delle azioni. La ricerca del 2 settembre
+   diceva 25-35 su account maturi, e su questo account e` risultata prudente.
+   Resta una misura su un giorno solo: vedi 2026-09-03-tetto-dm-65. */
+const TETTO = 65;
+/* Il ritmo conta quanto il totale: il tetto non protegge da 65 messaggi in
+   venti minuti. Sopra questa soglia il contatore dell'ultima ora si accende. */
+const RITMO_ORA = 25;
 const ATTESA_RECUPERO = 4;        // giorni lavorativi prima del secondo messaggio
 
 /* Tutti al "Lei": il messaggio e` rivolto alla persona che tiene il negozio,
@@ -173,6 +182,16 @@ const oggiISO = () => new Date().toLocaleDateString("sv-SE");   // 2026-09-02
 
 let intestazione = [], dati = [], nomeFile = "lista.csv", col = {}, fonte = "";
 
+/* Gli orari degli invii stanno solo qui, non nel CSV: servono a leggere il
+   ritmo dell'ultima ora e non sono un dato della lista. */
+let orari = [];
+function segnaOra(){
+  const ora = Date.now();
+  orari = orari.filter(t => t > ora - 24 * 3600 * 1000);
+  orari.push(ora);
+}
+const ultimaOra = () => orari.filter(t => t > Date.now() - 3600 * 1000).length;
+
 const MEMORIA = "banco-dm";
 
 /* Aperto con doppio click la pagina sta su file:// e non puo` leggersi da sola
@@ -244,6 +263,8 @@ document.addEventListener("drop", async (e) => {
 async function avvio(){
   let salvata = null;
   try { salvata = JSON.parse(localStorage.getItem(MEMORIA) || "null"); } catch (e) {}
+  /* il ritmo e` dell'account, non della lista: sopravvive a una lista nuova */
+  if (salvata && Array.isArray(salvata.orari)) orari = salvata.orari;
 
   if (location.protocol.startsWith("http")){
     try {
@@ -269,7 +290,7 @@ async function avvio(){
 avvio();
 
 function ricorda(){
-  try { localStorage.setItem(MEMORIA, JSON.stringify({nomeFile, intestazione, dati, fonte})); } catch (e) {}
+  try { localStorage.setItem(MEMORIA, JSON.stringify({nomeFile, intestazione, dati, fonte, orari})); } catch (e) {}
 }
 
 function disegna(){
@@ -292,6 +313,9 @@ function disegna(){
   });
 
   document.getElementById("oggi").textContent = oggi;
+  const ora = document.getElementById("ora");
+  ora.textContent = ultimaOra();
+  ora.classList.toggle("corri", ultimaOra() > RITMO_ORA);
   document.getElementById("restano").textContent = restano;
   document.getElementById("rec").textContent = recuperi;
   document.getElementById("stop").hidden = oggi < TETTO;
@@ -388,10 +412,12 @@ function cartella(r, idx, inviato, esito, daRecuperare){
   btn.addEventListener("click", async () => {
     await copia(daRecuperare ? recupero : testoMsg.value);
     window.open("https://ig.me/m/" + utente, "_blank", "noopener");
-    if (!inviato){ r[col.inviato] = oggiISO(); disegna(); }
+    if (!inviato){ r[col.inviato] = oggiISO(); segnaOra(); disegna(); }
   });
   segna.addEventListener("click", () => {
-    r[col.inviato] = (inviato && !daRecuperare) ? "" : oggiISO();
+    const annulla = inviato && !daRecuperare;
+    r[col.inviato] = annulla ? "" : oggiISO();
+    if (!annulla) segnaOra();
     disegna();
   });
   return el;

@@ -12,6 +12,11 @@ tags: [instagram, dm, outreach, automazione]
 veloce il contatto dei possibili clienti dai messaggi diretti di Instagram.
 Ricerca fatta lo stesso giorno.
 
+> [!info] Il tetto di 30 è stato alzato a 65 il 3 settembre 2026
+> Non per ripensamento: per misura. Vedi [[2026-09-03-tetto-dm-65]]. Il resto
+> di questa nota — l'API che non serve, i bot che bruciano l'account, l'art. 130
+> — resta valido parola per parola.
+
 ## Il verdetto
 
 **Non esiste un modo lecito di mandare un DM a freddo in automatico.** Le tre

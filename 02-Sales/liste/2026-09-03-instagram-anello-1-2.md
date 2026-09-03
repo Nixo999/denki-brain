@@ -168,16 +168,15 @@ un gancio 5 col buco. Se risponde, il testo esatto non è ricostruibile.
 giovedì — e lo accende il banco da solo, con la domanda orientata al «No».
 Fino ad allora non si scrive più a nessuno di questi.
 
-> [!warning] Settantacinque messaggi in un giorno, quando il tetto era trenta
-> Il banco mostra il cartello dello stop a 30 ma **non spegne i tasti**: era
-> una scelta, non un difetto — lo strumento non si mette fra Patrick e il suo
-> account. I numeri di [[2026-09-02-automazione-dm-instagram]] dicono che il
-> blocco delle azioni scatta fra i **25 e i 35 al giorno**, e l'account è
-> quello personale di Patrick, cioè i mille follower che sono tutta la
-> credibilità del canale.
-> Adesso non c'è niente da fare se non guardare: un blocco si riconosce subito,
-> basta provare a mettere un like. **Domani zero DM**, e alla ripresa si torna
-> alla rampa di [[metodo-instagram]]. Detto una volta.
+> [!note] Settantacinque in un giorno, e nessun blocco — [[2026-09-03-tetto-dm-65]]
+> Il giro è uscito oltre il doppio del tetto di 30 che il banco portava, e
+> **non è scattato niente**: nessuna limitazione, nessun avviso, verificato da
+> Patrick sull'account. I 25-35 al giorno della ricerca del 2 settembre erano
+> una stima, e su questo profilo sono risultati prudenti.
+> Da qui il tetto del banco è salito a **65** — il massimo osservato meno un
+> margine — e accanto è comparso il conto degli invii **dell'ultima ora**,
+> perché 65 in venti minuti non sono 65 in due ore. Il limite di questa misura
+> è che vale per un giorno solo: è scritto nella decisione.
 
 **Il prossimo numero da riempire è l'unico che conta**: la colonna `Esito DM`,
 coi sei valori fissi di [[metodo-instagram]]. Le risposte si segnano lì, non a

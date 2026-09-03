@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **83 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **84 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -154,6 +154,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 *Una decisione per file, datata. Non si riscrivono*
 
+- [[2026-09-03-tetto-dm-65]] — 75 DM in una sera senza blocco: il tetto del banco sale da 30 a 65, con accanto il conto degli invii dell'ultima ora.
 - [[2026-09-03-bozza-gia-fatta]] — Il DM passa alla versione C: la bozza si annuncia già pronta, i sei ganci passano tutti al «Lei», e l'orologio delle 5 bozze diventa una regola.
 - [[2026-08-11-opero-scope-allargato]] — opero nasce come ricostruzione pulita di sebapp-bolanos, l'app che il cliente usa già in produzione.
 - [[2026-08-22-xml-sdi-da-quotare]] — opero, insieme all'area Direzione.
