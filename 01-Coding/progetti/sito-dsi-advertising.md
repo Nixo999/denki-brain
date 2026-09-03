@@ -152,7 +152,7 @@ funzionante e impilata da telefono, pulsanti su una riga, ancore corrette.
 ⬜ Non visto su browser vero né su telefono fisico: solo misure e screenshot
 del pannello, che a pane nascosto ferma il rAF (sipario e reveal si vedono in
 ritardo, non è un bug del sito).
-⬜ Remote, hosting, dominio: non decisi. Patrick non l'ha ancora proposto.
+⬜ Hosting e dominio: non decisi (il repo c'è, Netlify no). Patrick non l'ha ancora proposto.
 ⬜ Le tre email diverse: da confermare col titolare prima di pubblicare.
 
 ## Collegamenti
