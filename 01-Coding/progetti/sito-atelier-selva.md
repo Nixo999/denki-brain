@@ -82,9 +82,28 @@ decisione senza steer.
 - Le didascalie dicono soggetto, posizione e il nome ringraziato nel post:
   scritte guardando la foto, non il nome del file (la lezione di D.S.I.).
 
+## La seconda hero: i suoi disegni, non i nostri
+
+Nicola, alla prima versione: «bello ma molto piatto, la hero non mi piace per
+niente: rifalla, prendi spunto dal suo stile e aggiungi qualche disegno».
+Commit `9abe774`. La regola «NO AI» vale anche per noi: nessun disegno inventato.
+I motivi che ora popolano il sito (colibrì, fata, peonia, nastro di stelle, la
+firma «with love», il sole, l'ibisco, la mano con la bacchetta, la casetta, il
+barattolo di stelle, «Soft souls see more») sono **ritagliati dalle foto dei
+suoi fogli dei flash** e portati a inchiostro su trasparente con PIL:
+sottrazione dello sfondo (sfocatura larga della luminanza) e soglia a 2,4 sigma
+sul rumore della carta; il filtro mediano, provato prima, mangiava le linee
+sottili. Sono in `assets/disegni/`, 31 pezzi. L'unico tratto nostro è il ramo
+SVG con quattro foglie che si disegna all'apertura dell'hero.
+
+Hero: titolo su tre righe, la schiena con le farfalle e le peonie appoggiate
+una sull'altra con una rotazione leggera, i motivi che galleggiano, la firma
+sotto i pulsanti. Da telefono la foto piccola sta in flusso e la didascalia
+sotto; il nastro di stelle sparisce.
+
 ## Stato
 
-🟡 **Bozza fatta e misurata**, commit `4739b83`, repo privato. Verifiche nel
+🟡 **Bozza fatta e misurata**, commit `9abe774` (hero rifatta), repo privato. Verifiche nel
 pannello su 1440×900 e 375×812: hero nel viewport, Cormorant e Karla caricati,
 nessuna immagine rotta, nessuno scroll orizzontale, masonry 3/1 colonne,
 compositore del DM che produce il testo giusto, nav da telefono su una riga
