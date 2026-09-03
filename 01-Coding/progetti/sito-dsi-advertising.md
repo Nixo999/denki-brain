@@ -148,7 +148,7 @@ pannello su viewport emulati 1440×900 e 375×812: titolo su due righe da
 desktop, hero nel viewport, nessuno scroll orizzontale, sezione appuntata
 funzionante e impilata da telefono, pulsanti su una riga, ancore corrette.
 
-⬜ `DESIGN.md` in scrittura (documenter degradato; il primo tentativo è caduto sul limite di sessione).
+✅ `DESIGN.md` scritto dal documenter degradato (30 KB, otto sezioni, in italiano); ha trovato le didascalie del blocco rosso sotto AA e un peso Bodoni caricato a vuoto, corretti.
 ⬜ Non visto su browser vero né su telefono fisico: solo misure e screenshot
 del pannello, che a pane nascosto ferma il rAF (sipario e reveal si vedono in
 ritardo, non è un bug del sito).
