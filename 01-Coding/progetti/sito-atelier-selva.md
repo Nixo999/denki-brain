@@ -128,6 +128,18 @@ stesso componente del sito dei genitori, da costruire una volta sola.
 ⬜ Hosting e dominio: non decisi. Da mostrare a Shari **prima** o comunque non
 peggio del sito dei genitori: è lei che ha portato il referral.
 
+## Sera del 3 settembre: «Dal foglio alla pelle»
+
+Nicola ha bocciato la home a galleria («è solo uno showroom, non ha vita»).
+Fra tre strutture proposte ha scelto la trasformazione: video dello studio
+nell'hero, capitolo appuntato in cui il suo disegno diventa il tatuaggio vero
+(colibrì, fata, drago, conchiglia, spada: coppie prese dai suoi post), prova
+di un flash a misura su un braccio (trascinabile, 3–9 cm, scala dichiarata e
+detta «indicativa»), quattro storie con le sue parole. Commit `0933542`.
+⬜ `ciao.mp4` pesa 12,5 MB: parte solo da desktop, da comprimere (ffmpeg
+manca su questa macchina). Il video breve dello studio (post 23) non si è
+scaricato: CDN Instagram irraggiungibile, da riprovare.
+
 ## Collegamenti
 
 [[shari-piras]] · [[sito-dsi-advertising]] · [[processo-siti]] ·
