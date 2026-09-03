@@ -112,16 +112,16 @@ anche l'altro.
 Buongiorno, sono Patrick Sappa di DenkiCode — mi ha scritto Shari per
 il sito della vostra attività.
 
-Ho guardato dsi-advertising.com prima di scriverle, e due cose le
+Ho guardato dsi-advertising.com prima di scrivervi, e due cose ve le
 segnalo comunque, anche se poi non facciamo niente insieme:
 
 1. digitando www.dsi-advertising.com si arriva sulla versione inglese
-   del sito, non su quella italiana. Chi vi cerca dall'Italia — cioè
-   quasi tutti — trova prima l'inglese.
-2. il sito è su Wix, quindi c'è già un abbonamento che paga ogni anno.
-   Quanto le viene?
+   del sito, non su quella italiana. Chi vi cerca dall'Italia trova
+   prima l'inglese.
+2. il sito è su Wix, quindi c'è già un abbonamento che pagate ogni
+   anno. Quanto vi viene?
 
-Quello che le propongo è questo.
+Quello che vi propongo è questo.
 
 COSA FACCIAMO
 Rifacciamo il sito da zero, tenendo il dominio che avete già:
@@ -138,37 +138,39 @@ telefono. Nessuna richiesta da mandarci, nessuna attesa.
 COSA SERVE DA VOI
 Logo in alta risoluzione, le foto dei prodotti che volete online, e
 l'accesso al dominio per spostarlo. I testi li riprendiamo dal sito
-attuale, non deve riscrivere niente.
+attuale, non dovete riscrivere niente.
 
 TEMPI
-[X giorni lavorativi] da quando ho il materiale.
+10 giorni lavorativi da quando ho il materiale.
 
 QUANTO
 - 300 € una tantum per la realizzazione;
 - 180 € l'anno per tenerlo online: dominio, hosting, certificato,
   aggiornamenti e assistenza. Sono 90 € ogni sei mesi.
 
-Dentro i 180 € non c'è nulla da aggiungere: l'abbonamento che paga
+Dentro i 180 € non c'è nulla da aggiungere: l'abbonamento che pagate
 oggi a Wix sparisce.
 
 COSA NON È COMPRESO
-- pagine nuove oltre a quelle sopra: [80 €] l'una;
-- funzioni nuove: gliele quoto prima di farle, mai dopo;
+- pagine nuove oltre a quelle sopra: 50 € l'una;
+- funzioni nuove: ve le quoto prima di farle, mai dopo;
 - vendita online: è un altro lavoro e ha un altro preventivo;
-- versione inglese: [da decidere insieme];
-- il primo caricamento dei prodotti oltre i primi [30] lo fate voi dal
-  pannello — è due minuti a prodotto, gliela faccio vedere io.
+- versione inglese: il sito attuale ce l'ha, la decidiamo insieme
+  prima di partire — se serve, ve la quoto a parte;
+- il primo caricamento del catalogo lo facciamo noi per una famiglia
+  di prodotti, come esempio; le altre le caricate voi dal pannello —
+  è due minuti a prodotto, ve lo faccio vedere io.
 
 COME SI PARTE
-Prima le faccio vedere il sito finito. Se non le piace, non ha speso un
-euro e ci siamo salutati. Se le piace: 150 € alla conferma, 150 € alla
-pubblicazione, con ricevuta per collaborazione occasionale.
+Prima vi faccio vedere il sito finito. Se non vi piace, non avete
+speso un euro e ci siamo salutati. Se vi piace: 150 € alla conferma,
+150 € alla pubblicazione, con ricevuta per collaborazione occasionale.
 
-E una cosa che le lascio scritta: se trova un errore sul sito e non
-glielo sistemo entro il giorno lavorativo dopo, il semestre successivo
-non lo paga.
+E una cosa che vi lascio scritta: se trovate un errore sul sito e non
+ve lo sistemo entro il giorno lavorativo dopo, il semestre successivo
+non lo pagate.
 
-Le va se glielo faccio vedere?
+Vi va se ve lo faccio vedere?
 ```
 
 ---
@@ -184,7 +186,7 @@ Le va se glielo faccio vedere?
 > fiscale qui sotto.
 
 ```
-La versione con la vendita online è un lavoro diverso, quindi glielo
+La versione con la vendita online è un lavoro diverso, quindi ve lo
 scrivo a parte.
 
 COSA CAMBIA
@@ -193,11 +195,11 @@ pagamento con carta, spedizione, e un pannello ordini dove vedete cosa
 è stato comprato e a che punto è.
 
 Sul vostro prodotto c'è però una domanda che viene prima del prezzo: il
-cliente che compra 500 portatovaglioli col suo marchio, il logo dove ve
-lo manda? Se il sito deve raccogliere anche il file del marchio e la
-conferma della bozza di stampa, è la parte che fa la differenza fra un
-negozio online e un negozio che funziona per voi. Ne parliamo prima di
-partire.
+cliente che ordina portatovaglioli o orologi col proprio marchio, il
+logo dove ve lo manda? Se il sito deve raccogliere anche il file del
+marchio e la conferma della bozza di stampa, è la parte che fa la
+differenza fra un negozio online e un negozio che funziona per voi. Ne
+parliamo prima di partire.
 
 QUANTO
 - 600 € una tantum per la realizzazione;
@@ -212,8 +214,8 @@ ci chiederete di migliorare lo facciamo perché ci guadagniamo anche noi.
 
 COSA NON È COMPRESO
 - le foto dei prodotti: se servono nuove, si organizza a parte;
-- i costi di incasso della carta [~1,5% a transazione], che sono del
-  circuito di pagamento, non nostri;
+- i costi di incasso della carta (circa l'1,5% a transazione), che sono
+  del circuito di pagamento, non nostri;
 - il magazzino e la logistica: il sito dice cosa è stato ordinato, non
   spedisce;
 - funzioni fuori da quelle sopra: quotate prima, come sempre.

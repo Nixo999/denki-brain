@@ -125,20 +125,19 @@ Nessun anticipo, si paga quando è pubblicato e le piace.
 COSA C'È DENTRO
 - il portfolio diviso per come lavora: fineline, botanica, miniature, e
   i lavori guariti, che sono quelli che convincono davvero;
-- i flash disponibili, con quali sono ancora liberi;
 - una pagina «come si prenota»: acconto, tempi, cosa serve;
 - il modulo richiesta appuntamento, che le arriva già completo —
   soggetto, zona del corpo, misura, budget, foto di riferimento. Non
   più venti messaggi per capire cosa vuole una persona;
 - l'aftercare, così smette di riscriverlo a ognuno;
-- dove siete e quando siete aperti, scritto in un posto solo. Adesso i
-  due profili dicono due cose diverse sul sabato.
+- dove si trova l'atelier e quando è aperto, scritto in un posto solo.
+  Adesso i due profili dicono due cose diverse sul sabato.
 
 E un pannello suo: entra con una password e aggiunge, toglie o cambia
 lavori e foto da sola, dal telefono. Senza passare da me.
 
 COSA LE CHIEDO IN CAMBIO
-Che il sito lo possa mettere nella mia galleria lavori, due righe di
+Che possa mettere il sito nella mia galleria lavori, due righe di
 recensione, e il permesso di dire che è suo quando lo faccio vedere ad
 altri tatuatori. Se una di queste tre non le va, si toglie.
 
