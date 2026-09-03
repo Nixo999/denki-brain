@@ -151,10 +151,11 @@ Sarebbe un problema se gliela facessi vedere finita?
 
 ## Aperto
 
-- ⬜ **La bozza esiste ma non è nel vault**: non c'è nota progetto né cartella
-  su Desktop. Prima di mandare il messaggio, verificare che sia davvero
-  mostrabile e con le foto scaricate in locale (gli URL di Instagram scadono →
-  [[2026-08-30-sito-castiglione]]).
+- ✅ **La bozza adesso esiste davvero** (3 settembre 2026, pomeriggio):
+  `Desktop/atelier-selva-site`, repo privato `Nixo999/atelier-selva-site`,
+  foto scaricate in locale, nota progetto in [[sito-atelier-selva]]. Prima di
+  mandare il messaggio va guardata su un telefono vero, e l'aftercare va
+  confermato con lei.
 - ⬜ Il gestionalino è **lo stesso componente** del sito dei genitori: lì gli
   item sono prodotti, qui sono lavori. Costruirlo due volte è la cosa da non
   fare → [[dsi-advertising]].

@@ -1,0 +1,105 @@
+---
+type: progetto
+status: attivo
+client: shari-piras
+stack: [html, gsap, netlify]
+started: 2026-09-03
+deadline: TODO
+updated: 2026-09-03
+source: claude
+valore: 200
+incassato: 0
+---
+
+# Sito Atelier Selva — la bozza che deve far dire a Shari che le serve
+
+Sito per **Shari Piras**, tatuatrice fineline a Merate (LC), e per il suo
+studio privato **Atelier Selva** (Via Statale 147). Lei ha detto che un sito
+per sé non le serve, e ci ha girato l'attività dei genitori
+([[sito-dsi-advertising]]). Il brief di Nicola, 3 settembre 2026: «col solito
+processo, però molto in stile suo e particolare, artistico: deve far dire alla
+ragazza che ne ha bisogno». Cliente: [[shari-piras]] (preventivo di Patrick
+già scritto: realizzazione regalata in cambio di galleria, recensione e
+citazione, 200 €/anno).
+
+**Repo**: `Desktop/atelier-selva-site` → **`github.com/Nixo999/atelier-selva-site`
+(privato)**, ramo `main`, creato con `gh` ([[2026-09-03-gh-crea-repository]]).
+**Online**: no. `netlify.toml` e `robots.txt` con lo schema di Fiftynine:
+**noindex** finché non è suo.
+**Stack**: HTML puro, `index.html` (home) e `lavori.html` (galleria completa),
+`assets/style.css` e `assets/main.js` condivisi, GSAP 3.13 da CDN, 42 foto in
+`assets/foto/` (6,3 MB). L'archivio grezzo dei post sta in `assets/ig/`, fuori
+da git.
+
+## Da dove vengono i dati
+
+Tutto letto il 3 settembre 2026, niente inventato:
+
+| Dato | Fonte |
+|---|---|
+| Fineline, botanica, miniature; no cover-up, no AI; chiusa il sabato; atelier a Merate | bio di `@shari_tattooer` (4.506 follower, 493 post) |
+| «Sabato e domenica chiuso», Via Statale 147, «Owner @shari_tattooer» | bio di `@atelierselva_` (⚠️ profilo limitato ai maggiori di 16 anni: Apify non legge i post) |
+| Flash: disegni pronti, 5-6 cm, rosa 60 € / blu 70 € / verde 80 € | post fissato del 23 giugno 2026, 303 like |
+| Regola dell'estate («entro un mese dal mare/piscina», altrove «3 settimane»), chiusura di due settimane ad agosto, prenotazioni solo in DM | didascalie dei post |
+| Soggetti e nomi ringraziati (Celeste, Michela, Sara, Asia, Giada, Barbara, Federica, Emma, Silvia, Veronica, Giulia) | didascalie dei 36 post scaricati (aprile-settembre 2026) |
+| «Feels like home», «carta bianca», il segno ⸭ nel nome | i suoi post e il suo nome profilo |
+| Link Google Maps `maps.app.goo.gl/vht53Xpq7NvgycdS6` | link in bio |
+
+⚠️ **Recensioni**: stanno nella storia in evidenza `/Recensioni` e su Google
+Maps, non leggibili da qui. Nessuna testimonianza nel sito.
+⚠️ **Aftercare**: nel sito ci sono la sua regola (un mese senza mare e piscina)
+e due righe generiche (pulito e asciutto; scrivimi se qualcosa non convince).
+**Da far confermare a lei prima di pubblicare.**
+⚠️ **Orari**: i due profili dicono cose diverse sul sabato; nel sito c'è la
+versione prudente (sabato e domenica chiuso, su appuntamento).
+⚠️ Nessuna email né telefono pubblicati: il sito manda solo al DM.
+
+## Com'è fatto
+
+Metodo [[processo-siti]] completo, con la lezione della notte prima
+([[2026-09-03-sito-dsi]]): **prima del dado, lo stile del cliente**. Le sette
+direzioni candidate erano tutte prese dal suo mondo (erbario, foglio dei flash,
+stencil, la pelle, l'atelier di casa, la selva, il quaderno degli schizzi); il
+dado di impeccable (seed `511bfdbc`) ha assegnato la sesta, **«La selva»**, il
+bosco da cui lo studio prende il nome, e Nicola l'ha confermata sulla pagina di
+decisione senza steer.
+
+- **Fondo color pelle** (`#efe2d5`): i tatuaggi vivono sulla pelle, le foto non
+  hanno cornici né ombre. Inchiostro `#171311`, **un solo verde selva**
+  `#2e4a33` come segnale attivo, carta `#fbf8f3` per il foglio dei flash.
+- **Cormorant leggero** (300) per i titoli: la linea sottile come l'ago. Karla
+  per il testo. Il segno **⸭** che lei usa nel nome come marchio tipografico.
+- **La linea che si disegna**: un percorso SVG fisso a sinistra si traccia con
+  lo scroll (è il progresso di lettura, disegnato come l'ago). Sotto 900 px
+  sparisce.
+- Home: hero con il ramo lungo la schiena (per Celeste) → «Niente cover-up,
+  niente intelligenza artificiale» → lavori in tre gruppi (botanica, fineline,
+  miniature; 10 foto, il resto in `lavori.html`) → i flash con i bollini →
+  **«Scrivimi, ma scrivimi tutto»**: un compositore del DM (soggetto, zona,
+  misura, budget, riferimenti) che scrive il messaggio da copiare e incollare
+  su Instagram, senza backend → l'atelier («Sembra casa») → dopo il tatuaggio →
+  «Sono Shari» → chiusura in inchiostro con il pulsante Instagram.
+- Le didascalie dicono soggetto, posizione e il nome ringraziato nel post:
+  scritte guardando la foto, non il nome del file (la lezione di D.S.I.).
+
+## Stato
+
+🟡 **Bozza fatta e misurata**, commit `4739b83`, repo privato. Verifiche nel
+pannello su 1440×900 e 375×812: hero nel viewport, Cormorant e Karla caricati,
+nessuna immagine rotta, nessuno scroll orizzontale, masonry 3/1 colonne,
+compositore del DM che produce il testo giusto, nav da telefono su una riga
+(«Scrivimi» corto), nessun errore in console.
+
+⬜ Finish review di impeccable e `DESIGN.md` in corso (subagenti generici con i
+riferimenti degradati; niente screenshot su file).
+⬜ Non visto su browser vero né su telefono fisico: solo misure e screenshot
+del primo viewport (a pane nascosto rAF e scroll non girano).
+⬜ Il **gestionalino** promesso nel preventivo non è in questa bozza: è lo
+stesso componente del sito dei genitori, da costruire una volta sola.
+⬜ Hosting e dominio: non decisi. Da mostrare a Shari **prima** o comunque non
+peggio del sito dei genitori: è lei che ha portato il referral.
+
+## Collegamenti
+
+[[shari-piras]] · [[sito-dsi-advertising]] · [[processo-siti]] ·
+[[registro-interventi]] · [[2026-09-03-sito-dsi]]
