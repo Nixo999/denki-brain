@@ -89,7 +89,7 @@ regola 2 di [[identita-visiva]]. Il marchio arriva da
 `03-Storage/brand/logo/logo-lockup.svg`.
 
 I due numeri che erano vuoti sono stati decisi da Patrick il 3 settembre 2026:
-**consegna 10 giorni lavorativi** (20 per l'e-commerce) e **pagina aggiuntiva
+**consegna 5 giorni lavorativi** (15 per l'e-commerce) e **pagina aggiuntiva
 da 50 €**, «secondo cosa e come».
 
 ⚠️ I testi qui sotto sono la versione **da messaggio**, per WhatsApp o DM. Il
@@ -141,7 +141,7 @@ l'accesso al dominio per spostarlo. I testi li riprendiamo dal sito
 attuale, non dovete riscrivere niente.
 
 TEMPI
-10 giorni lavorativi da quando ho il materiale.
+5 giorni lavorativi da quando ho il materiale.
 
 QUANTO
 - 300 € una tantum per la realizzazione;
@@ -163,12 +163,8 @@ COSA NON È COMPRESO
 
 COME SI PARTE
 Prima vi faccio vedere il sito finito. Se non vi piace, non avete
-speso un euro e ci siamo salutati. Se vi piace: 150 € alla conferma,
-150 € alla pubblicazione, con ricevuta per collaborazione occasionale.
-
-E una cosa che vi lascio scritta: se trovate un errore sul sito e non
-ve lo sistemo entro il giorno lavorativo dopo, il semestre successivo
-non lo pagate.
+speso un euro e ci siamo salutati. Se vi piace: 300 € alla
+pubblicazione, non prima, con ricevuta per collaborazione occasionale.
 
 Vi va se ve lo faccio vedere?
 ```
@@ -221,8 +217,8 @@ COSA NON È COMPRESO
 - funzioni fuori da quelle sopra: quotate prima, come sempre.
 
 COME SI PARTE
-Metà alla conferma, metà alla pubblicazione, con ricevuta per
-collaborazione occasionale.
+600 € alla pubblicazione, non prima, con ricevuta per collaborazione
+occasionale.
 ```
 
 > [!warning] Analisi di Claude — 2026-09-03. **L'1% è il punto aperto del vault, non un dettaglio.**
@@ -251,9 +247,10 @@ collaborazione occasionale.
   progetto, allineare lo slug (qui è `sito-dsi-advertising`).
 - ⬜ Referente: `TODO` — il preventivo dà del «Lei» a Piras Sebastiano, ma non
   è detto che sia lui a decidere. Chiedere a [[shari-piras]] chi risponde.
-- [x] Le tre caselle sono chiuse (3 settembre 2026): consegna **10 giorni
-  lavorativi**, pagina aggiuntiva **da 50 €**, e il primo caricamento è **una
-  famiglia di prodotti** fatta da noi come esempio, il resto dal pannello.
+- [x] Le tre caselle sono chiuse (3 settembre 2026): consegna **5 giorni
+  lavorativi** (15 per l'e-commerce), pagina aggiuntiva **da 50 €**, e il
+  primo caricamento è **una famiglia di prodotti** fatta da noi come esempio,
+  il resto dal pannello.
 - ⬜ Chiedere quanto pagano oggi a Wix: è il numero che rende i 180 € un
   risparmio invece che una spesa nuova.
 - ⬜ Se chiedono la ritenuta d'acconto del 20% (sono un'azienda con P.IVA), sui

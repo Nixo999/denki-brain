@@ -146,9 +146,6 @@ COSA NON È COMPRESO
 - le foto dei lavori le mette lei dal pannello: sono già sul profilo;
 - il negozio online (gadget, buoni regalo) è un altro lavoro.
 
-Se trova un errore e non glielo sistemo entro il giorno lavorativo
-dopo, l'anno dopo non lo paga.
-
 Sarebbe un problema se gliela facessi vedere finita?
 ```
 
