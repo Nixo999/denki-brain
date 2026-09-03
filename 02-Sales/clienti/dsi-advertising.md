@@ -96,6 +96,14 @@ da 50 €**, «secondo cosa e come».
 PDF dice le stesse cose in forma di documento: se si cambia uno, si cambia
 anche l'altro.
 
+### Versione .docx — 3 settembre 2026, da qui in poi il sorgente è questo
+
+Patrick modifica i preventivi **a mano, in Word** (`preventivo-dsi-advertising-sito.docx`,
+`preventivo-dsi-advertising-ecommerce.docx`). Da questo momento sono loro la
+versione corrente: `.html` e `.pdf` restano quelli del 3 settembre e **non si
+aggiornano più in automatico**. Prima di rigenerare un PDF o di citare un
+prezzo/testo da qui, controllare il `.docx` — se diverge, ha ragione lui.
+
 ---
 
 ## Preventivo A — sito vetrina + gestionalino

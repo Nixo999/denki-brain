@@ -93,6 +93,14 @@ sezione 06 è quella che trasforma il regalo in scambio.
 ⚠️ Il testo qui sotto è la versione **da DM**, più corta e più diretta. Le due
 versioni dicono le stesse cifre: se si cambia una, si cambia l'altra.
 
+### Versione .docx — 3 settembre 2026, da qui in poi il sorgente è questo
+
+Patrick modifica il preventivo **a mano, in Word** (`preventivo-atelier-selva.docx`).
+Da questo momento è lui la versione corrente: `.html` e `.pdf` restano quelli
+del 3 settembre e **non si aggiornano più in automatico**. Prima di
+rigenerare un PDF o di citare un prezzo/testo da qui, controllare il `.docx`
+— se diverge, ha ragione lui.
+
 ---
 
 ## Preventivo — sito + gestionalino, senza anticipo
