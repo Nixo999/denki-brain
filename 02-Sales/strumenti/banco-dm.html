@@ -88,7 +88,7 @@
   <div id="vuoto" class="vuoto">
     <b>Trascina qui il CSV della lista</b> — quelli di <code>02-Sales/liste/</code>.<br>
     Da qui in poi se lo ricorda: riaprendo la pagina la lista è già dov'era, coi messaggi già segnati.<br><br>
-    Il messaggio è la <b>versione B</b> di <code>dm-instagram-vetrina</code>: il gancio lo prende dalla colonna <code>Gancio (1-6)</code>.
+    Il messaggio è la <b>versione C</b> di <code>dm-instagram-vetrina</code>: il gancio lo prende dalla colonna <code>Gancio (1-6)</code>.
   </div>
 </main>
 
@@ -100,30 +100,38 @@
 const TETTO = 30;                 // messaggi al giorno, vedi ricerca del 2 settembre 2026
 const ATTESA_RECUPERO = 4;        // giorni lavorativi prima del secondo messaggio
 
+/* Tutti al "Lei": il messaggio e` rivolto alla persona che tiene il negozio,
+   e mescolare Lei e voi nello stesso testo e` un errore gia` corretto altrove. */
 const GANCI = {
-  "1": "su Google non trovo un vostro sito: c'è Instagram, ci sono le schede degli altri, ma un sito vostro no",
-  "2": "il dominio [X] che compare ancora nelle ricerche non si apre più",
-  "3": "[X] non apre il vostro sito: risponde con la pagina di default del server",
-  "4": "il link che avete in bio non porta più da nessuna parte",
-  "5": "quello che avete non è un sito vostro: è una pagina su [X], e si vede dall'indirizzo",
-  "6": "il vostro sito c'è, ma è fermo al [X]"
+  "1": "su Google non trovo un suo sito: c'è Instagram, ci sono le schede degli altri, ma un sito suo no",
+  "2": "il dominio [X], che compare ancora nelle ricerche, non si apre più",
+  "3": "[X] non apre il suo sito: risponde con la pagina di default del server",
+  "4": "il link al sito che risulta ancora online non porta più da nessuna parte",
+  "5": "quello che ha non è un sito suo: è una pagina su [X]",
+  "6": "il suo sito c'è, ma è fermo al [X]"
 };
 
+/* Versione C di dm-instagram-vetrina: la bozza si annuncia gia` fatta.
+   Alza tre termini su quattro dell'equazione del valore (probabilita`, attesa,
+   sforzo) e accorcia la richiesta da "gliela preparo?" a "gliela mando?".
+   In cambio fa partire l'orologio: chi risponde si aspetta un file. */
 const messaggio = (nome, gancio) =>
 `Buongiorno, sono Patrick Sappa — ho una piccola software house a Seveso, DenkiCode.
 
 Le scrivo perché ho guardato il profilo di ${nome} e ${gancio}.
 
-Le foto che pubblica sono già metà del lavoro: con quelle le preparo la prima schermata di come sarebbe il vostro sito e gliela mando qui. Gratis e senza impegno — la guarda, e se non le piace me lo dice e non ci sentiamo più.
+Le sue foto erano già metà del lavoro: l'altra metà l'ho fatta io. La bozza del suo sito è già pronta, con le sue immagini e il suo nome — non deve scrivere testi, non deve mandarmi materiale, non deve decidere niente.
 
-Sul costo non le faccio girare la testa: si parla di poche centinaia di euro una volta, non di migliaia, più una quota annuale per tenerlo online. Il numero preciso glielo faccio solo se la cosa le interessa davvero.
+Gliela mando qui, la guarda con calma, e se non le piace me lo dice e non ci sentiamo più. Non le costa un euro e non la impegna a niente.
 
-Gliela preparo?`;
+Sul costo non le faccio girare la testa: se poi decidesse di metterlo online, si parla di poche centinaia di euro una volta — non di migliaia — più una quota annuale per tenerlo attivo. Il numero preciso glielo faccio solo se la cosa le interessa davvero.
+
+Gliela mando?`;
 
 const recupero =
-`Le scrivo una volta sola e poi la lascio in pace: avete lasciato perdere l'idea di avere un sito vostro?
+`Le scrivo una volta sola e poi la lascio in pace: ha lasciato perdere l'idea di avere un sito suo?
 
-Se è «adesso no» va benissimo, me lo scriva in due parole. Se invece la bozza la vuole vedere, gliela preparo oggi.`;
+Se è «adesso no» va benissimo, me lo scriva in due parole. Se invece la bozza la vuole ancora vedere, gliela mando oggi.`;
 
 /* ---- CSV: campi fra virgolette e virgole dentro, niente librerie ---- */
 function leggiCSV(testo){
@@ -320,15 +328,6 @@ function cartella(r, idx, inviato, esito, daRecuperare){
   const azioni = el.querySelector(".azioni");
   let campoBuco = null;
 
-  if (serveBuco && !daRecuperare){
-    const buco = document.createElement("div");
-    buco.className = "buco";
-    buco.innerHTML = '<label>manca:</label><input type="text" placeholder="il dominio, la piattaforma o l\'anno — va nel messaggio">';
-    el.querySelector(".chi").insertBefore(buco, testoMsg);
-    campoBuco = buco.querySelector("input");
-    campoBuco.addEventListener("input", aggiorna);
-  }
-
   /* Una riga marcata SCARTATO non si manda: la ricerca ha trovato un motivo
      per cui il messaggio farebbe danno — di solito un sito vivo e curato. Il
      tasto non c'e' proprio: un avviso da leggere si salta, un tasto assente no. */
@@ -338,6 +337,17 @@ function cartella(r, idx, inviato, esito, daRecuperare){
     perche.textContent = esito;
     azioni.appendChild(perche);
     return el;
+  }
+
+  /* Il campo si mostra solo se il testo non e` gia` scritto: quando la lista
+     arriva col messaggio pronto, il buco e` gia` tappato e chiederlo confonde. */
+  if (serveBuco && !daRecuperare && !(r[col.messaggio] || "").trim()){
+    const buco = document.createElement("div");
+    buco.className = "buco";
+    buco.innerHTML = '<label>manca:</label><input type="text" placeholder="il dominio, la piattaforma o l\'anno — va nel messaggio">';
+    el.querySelector(".chi").insertBefore(buco, testoMsg);
+    campoBuco = buco.querySelector("input");
+    campoBuco.addEventListener("input", aggiorna);
   }
 
   const btn = document.createElement("button");

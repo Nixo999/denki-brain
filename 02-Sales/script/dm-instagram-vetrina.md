@@ -1,6 +1,6 @@
 ---
 type: area
-updated: 2026-08-31
+updated: 2026-09-03
 source: claude
 prodotto: siti-vetrina
 canale: instagram
@@ -13,9 +13,8 @@ stato: in-prova
 > Da provare su **200 invii**. Deciso in [[2026-08-31-canale-dm-instagram]].
 
 > [!tip] Lo strumento: [banco-dm.html](../strumenti/banco-dm.html)
-> Si apre con doppio click, si carica il CSV della lista e per ogni riga
-> prepara **questa** versione B col gancio della colonna, copia il testo e apre
-> la conversazione. Segna la data, riconosce i recuperi dopo 4 giorni
+> Si apre con doppio click, e per ogni riga prepara la **versione C** col gancio
+> della colonna, copia il testo e apre la conversazione. Segna la data, riconosce i recuperi dopo 4 giorni
 > lavorativi e restituisce il CSV aggiornato. **Non manda niente**: l'invio
 > resta un gesto di Patrick, ed e` la riga che separa un aiuto da un account
 > bloccato — vedi [[2026-09-02-automazione-dm-instagram]].
@@ -37,7 +36,8 @@ domanda orientata al «No».
 
 > [!note] Testo di Patrick — `source: denkicode`
 > È il messaggio uscito sul primo giro dell'anello 1. **Non si riscrive: si
-> misura.** La variante B qui sotto è quella contro cui va confrontato.
+> misura.** Il metro con cui confrontarla è la **versione C**, in fondo:
+> la B, che stava in mezzo, non è mai uscita.
 
 > Buongiorno, sono Patrick Sappa, ho una piccola azienda di software a Seveso,
 > DenkiCode.
@@ -83,7 +83,12 @@ produrre. Il numero da guardare quindi **non è «quante risposte»**, è
 
 ---
 
-## Versione B — con il gancio, da provare sul secondo giro
+## Versione B — con il gancio, mai uscita
+
+> [!info] Superata dalla versione C il 3 settembre 2026 — [[2026-09-03-bozza-gia-fatta]]
+> Non è mai stata mandata: la lista del 2 settembre è rimasta ferma. Resta qui
+> perché è il passaggio in cui è nato il gancio, e perché il corpo della C è il
+> suo, con una promessa in più.
 
 Una sola cosa cambia da un invio all'altro: **la riga del gancio**, scelta fra
 le sei della tabella sotto in base a quello che è stato verificato in lista.
@@ -143,15 +148,85 @@ Si copiano così come sono. Quello giusto è già scritto nella colonna
 
 ---
 
+## Versione C — la bozza è già fatta · **è questa che parte**
+
+> [!note] Decisa da Nicola il 3 settembre 2026 — [[2026-09-03-bozza-gia-fatta]]
+> Prende il gancio verificato della B e ci rimette sopra l'esca storica di casa
+> ([[prodotti-e-listino]], flusso A): **la bozza non si propone, si annuncia
+> già pronta.** È l'unica leva su cui siamo forti, e agisce su tre termini su
+> quattro dell'equazione del valore ([[core-crescita-finanze]]).
+
+> Buongiorno, sono Patrick Sappa — ho una piccola software house a Seveso,
+> DenkiCode.
+>
+> Le scrivo perché ho guardato il profilo di **[NOME ATTIVITÀ]** e
+> **[GANCIO]**.
+>
+> Le sue foto erano già metà del lavoro: l'altra metà l'ho fatta io. La bozza
+> del suo sito è già pronta, con le sue immagini e il suo nome — non deve
+> scrivere testi, non deve mandarmi materiale, non deve decidere niente.
+>
+> Gliela mando qui, la guarda con calma, e se non le piace me lo dice e non ci
+> sentiamo più. Non le costa un euro e non la impegna a niente.
+>
+> Sul costo non le faccio girare la testa: se poi decidesse di metterlo online,
+> si parla di poche centinaia di euro una volta — non di migliaia — più una
+> quota annuale per tenerlo attivo. Il numero preciso glielo faccio solo se la
+> cosa le interessa davvero.
+>
+> Gliela mando?
+
+### I sei ganci, al «Lei»
+
+Si copiano così come sono. Quello giusto è già scritto nella colonna `Gancio`
+della lista, e nelle liste pubblicate sul banco è **già dentro il messaggio**.
+
+| # | Quando | Riga da incollare |
+|---|---|---|
+| **1** | Nessun sito | «su Google non trovo un suo sito: c'è Instagram, ci sono le schede degli altri, ma un sito suo no» |
+| **2** | Dominio morto | «il dominio **[X]**, che compare ancora nelle ricerche, non si apre più» |
+| **3** | Parcheggiato / senza https | «**[X]** non apre il suo sito: risponde con la pagina di default del server» |
+| **4** | Link rotto | «il link al sito che risulta ancora online non porta più da nessuna parte» |
+| **5** | Su piattaforma | «quello che ha non è un sito suo: è una pagina su **[X]**» |
+| **6** | Vivo ma vecchio | «il suo sito c'è, ma è fermo al **[ANNO]**» |
+
+I ganci **4** e **5** sono cambiati anche nella sostanza, non solo nel
+pronome: il 4 non nomina più la bio, che dalle nostre macchine non si legge, e
+il 5 non promette più che «si vede dall'indirizzo», che è falso quando la
+piattaforma sta sotto un dominio proprio. Il perché è in
+[[2026-09-03-bozza-gia-fatta]].
+
+### Cosa cambia rispetto alla B, riga per riga
+
+1. **«L'altra metà l'ho fatta io.»** Spiega in cinque parole perché uno
+   sconosciuto ha già lavorato per lei senza chiedere niente: è la frase che
+   toglie l'aria da truffa alla promessa.
+2. **I tre «non deve»** sono lo *sforzo* dell'equazione del valore portato a
+   zero, detto in modo che si senta: non testi, non materiale, non decisioni.
+3. **La garanzia è scritta.** «Non le costa un euro e non la impegna a niente»
+   non aggiunge niente a quello che facevamo: aggiunge che adesso lo diciamo, e
+   una garanzia non detta non vale (Hormozi).
+4. **«Gliela mando?»** al posto di «Gliela preparo?». La richiesta più piccola
+   che esista (Blount): non chiede lavoro a nessuno, chiede il permesso di
+   consegnare.
+5. **Il prezzo è al condizionale** — «se poi decidesse di metterlo online» —
+   così la cifra resta lontana dalla bozza, che è gratis.
+
+⚠️ **Il prezzo di questa versione è l'orologio**: chi risponde si aspetta un
+file. Vale in pieno *La promessa che va mantenuta*, qui sotto, e il tetto delle
+5 bozze aperte non è più un consiglio.
+
+---
+
 ## Il recupero, uno solo
 
 Dopo **4 giorni lavorativi**, nella stessa conversazione, se non ha risposto:
 
-> Le scrivo una volta sola e poi la lascio in pace: avete lasciato perdere
-> l'idea di avere un sito vostro?
+> Le scrivo una volta sola e poi la lascio in pace: ha lasciato perdere l'idea
+> di avere un sito suo?
 >
 > Se è «adesso no» va benissimo, me lo scriva in due parole. Se invece la
-> bozza la vuole vedere, gliela preparo oggi.
+> bozza la vuole ancora vedere, gliela mando oggi.
 
 **Perché.** «Avete lasciato perdere?» si risponde *no* per coerenza con se
 stessi, e quel *no* riapre la conversazione (Voss). «Ha visto il mio
@@ -193,14 +268,16 @@ Chi dice sì riceve la bozza. **Non più di 5 bozze aperte per volta**: se ne
 arrivano di più, si risponde subito con un giorno («gliela mando giovedì»), non
 si lascia cadere.
 
-⚠️ **Con la versione A l'orologio parte più stretto.** «Il mio team le ha già
-preparato una bozza» significa che chi risponde «mandamela» si aspetta un file
-subito. Se la coda supera le 5, la frase che tiene in piedi la promessa senza
-smentirla è una sola, e va detta nella stessa giornata:
+⚠️ **Con la versione A e con la C l'orologio parte più stretto**, perché
+entrambe dicono che la bozza c'è già: chi risponde «mandamela» si aspetta un
+file, non due giorni di attesa. Se la coda supera le 5, la frase che tiene in
+piedi la promessa senza smentirla è una sola, e va detta nella stessa giornata:
 
 > «Gliela sto rifinendo con le sue foto — gliela mando [giorno]. Intanto:
-> c'è qualcosa che vuole assolutamente dentro?» Una bozza promessa e non consegnata brucia il canale più
-lentamente di un blocco di Instagram, ma lo brucia meglio.
+> c'è qualcosa che vuole assolutamente dentro?»
+
+Una bozza promessa e non consegnata brucia il canale più lentamente di un
+blocco di Instagram, ma lo brucia meglio.
 
 **La bozza si consegna come link, non come screenshot.** Va pubblicata su
 Netlify: è la regola di casa per tutte le bozze → [[netlify]]. Una bozza che
@@ -220,8 +297,14 @@ quattro [[pattern-interrupt]].
 
 | Giro | Versione | Inviati | Risposte | Sì alla bozza | Trattative aperte |
 |---|---|---|---|---|---|
-| 1 — 31 ago 2026, anello 1 | **A** (senza gancio) | `TODO` | | | |
-| 2 — anello 1, resto | **B** (con gancio) | | | | |
+| 1 — 31 ago 2026, anello 1 | **A** (senza gancio, bozza già fatta) | `TODO` | | | |
+| 2 — mai partito | **B** (con gancio, bozza da fare) | — | — | — | — |
+| 3 — 3 set 2026, bellezza anello 1-2 | **C** (gancio + bozza già fatta) | | | | |
+
+⚠️ **Il confronto A contro B non si potrà più fare**: la B non è mai uscita e
+la C la sostituisce. Quello che si misura da qui in avanti è **A contro C**,
+cioè il solo gancio — stessa promessa, stessa chiusura, e in mezzo un fatto
+verificato invece di «ho guardato il profilo».
 
 **Regola del test**: stesso segmento, stesso anello, stessa fascia oraria.
 Se cambia anche il target, il confronto non vale niente.
@@ -237,7 +320,8 @@ Le tre domande al secondo giro, le stesse di [[script-denkishift]]:
 
 ## Collegamenti
 
-[[metodo-instagram]] · [[2026-08-31-instagram-anello-1]] ·
+[[metodo-instagram]] · [[2026-09-03-bozza-gia-fatta]] ·
+[[2026-09-03-instagram-anello-1-2]] · [[2026-08-31-instagram-anello-1]] ·
 [[2026-08-31-canale-dm-instagram]] · [[core-commerciale]] ·
 [[core-crescita-finanze]] · [[stile-comunicazione]] · [[vincoli-fiscali]] ·
 [[prodotti-e-listino]] · [[flusso-vendita]] · [[sito-denkicode]] · [[metriche]] ·

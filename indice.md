@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-08-30
+updated: 2026-09-03
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **81 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **83 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -79,6 +79,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-08-28-liste-31-agosto]] — Primo giro completo del ciclo-settimanale, generato con un giorno di anticipo.
 - [[2026-08-28-presidi-volantini]] — Prima applicazione di presidi-volantini.
 - [[2026-08-30-liste-gabriele-edoardo]] — Liste di prova dei due nuovi cold caller: zone disgiunte, 87 righe, blocchi 1 e 4 verificati sul sito reale.
+- [[2026-09-03-instagram-anello-1-2]] — 33 righe di bellezza verificate col sito aperto davvero: quattro domini morti, e il motivo per cui si è aperto l'anello 2.
 - [[2026-09-02-instagram-tattoo-wedding]] — Settore nuovo: 47 tatuatori, fioristi e wedding verificati. Perche' non sono 70.
 - [[2026-09-01-instagram-anello-1-b]] — Secondo giro dell'anello 1: 50 account nuovi, col segmento unghie e ciglia che ieri mancava.
 - [[2026-08-31-instagram-anello-1]] — 50 account Instagram verificati uno per uno: chi non ha il sito, o ce l'ha rotto.
@@ -153,6 +154,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 *Una decisione per file, datata. Non si riscrivono*
 
+- [[2026-09-03-bozza-gia-fatta]] — Il DM passa alla versione C: la bozza si annuncia già pronta, i sei ganci passano tutti al «Lei», e l'orologio delle 5 bozze diventa una regola.
 - [[2026-08-11-opero-scope-allargato]] — opero nasce come ricostruzione pulita di sebapp-bolanos, l'app che il cliente usa già in produzione.
 - [[2026-08-22-xml-sdi-da-quotare]] — opero, insieme all'area Direzione.
 - [[2026-08-28-ciclo-settimanale]] — Fino a oggi le liste si producevano quando Patrick trovava il tempo, e quello che tornava indietro dalle...
