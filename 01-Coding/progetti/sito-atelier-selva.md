@@ -109,8 +109,15 @@ nessuna immagine rotta, nessuno scroll orizzontale, masonry 3/1 colonne,
 compositore del DM che produce il testo giusto, nav da telefono su una riga
 («Scrivimi» corto), nessun errore in console.
 
-⬜ Finish review di impeccable e `DESIGN.md` in corso (subagenti generici con i
-riferimenti degradati; niente screenshot su file).
+✅ **Finish review di impeccable fatta e applicata** (commit `486869d`): il subagente
+generico col riferimento degradato ha letto le foto una per una e trovato nove
+didascalie sbagliate (il «pelosetti» era un ritratto di famiglia, la «fatina»
+due amorini), il listino flash senza il bollino rosso da 90 €, l'aftercare
+generico e due promesse a nome suo. Tutto corretto, più il floor: linea nel
+margine anche a 1366 px, contrasti AA, misure vere delle foto, h2 in
+`lavori.html`, stati del pulsante «Copia», nav con fondo senza JS.
+⬜ `DESIGN.md`: il primo documenter è caduto (529) dopo aver scritto la versione
+vecchia; ne gira un secondo sul codice finale.
 ⬜ Non visto su browser vero né su telefono fisico: solo misure e screenshot
 del primo viewport (a pane nascosto rAF e scroll non girano).
 ⬜ Il **gestionalino** promesso nel preventivo non è in questa bozza: è lo
