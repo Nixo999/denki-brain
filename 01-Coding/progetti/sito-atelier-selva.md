@@ -116,8 +116,11 @@ due amorini), il listino flash senza il bollino rosso da 90 €, l'aftercare
 generico e due promesse a nome suo. Tutto corretto, più il floor: linea nel
 margine anche a 1366 px, contrasti AA, misure vere delle foto, h2 in
 `lavori.html`, stati del pulsante «Copia», nav con fondo senza JS.
-⬜ `DESIGN.md`: il primo documenter è caduto (529) dopo aver scritto la versione
-vecchia; ne gira un secondo sul codice finale.
+✅ `DESIGN.md` (commit `3cd422a`): il primo documenter l'ha scritto sulla versione
+prima dell'hero rifatta ed è caduto per sovraccarico (529) alla fine; il
+secondo è caduto due volte allo stesso modo. Le parti cambiate (hero, disegni,
+linea nel margine, nav, bollini, niente righe sopra i titoli) le ho riscritte
+a mano nel documento del primo, che per il resto era giusto.
 ⬜ Non visto su browser vero né su telefono fisico: solo misure e screenshot
 del primo viewport (a pane nascosto rAF e scroll non girano).
 ⬜ Il **gestionalino** promesso nel preventivo non è in questa bozza: è lo
