@@ -27,8 +27,9 @@ stesso componente di [[shari-piras]], o il prezzo non regge.
 ⚠️ `www.dsi-advertising.com` oggi rimanda alla **versione inglese** (302 →
 `en.`): la bozza è solo in italiano, l'inglese è da chiedere in trattativa.
 
-**Repo**: `Desktop/dsi-site`, git locale su `main`, **senza remote** (dove
-pubblicarlo lo decide Nicola).
+**Repo**: `Desktop/dsi-site` -> **`github.com/Nixo999/dsi-site`, privato**,
+ramo `main`, creato il 3 settembre 2026 con `gh`
+([[2026-09-03-gh-crea-repository]]).
 **Online**: no. `netlify.toml` e `robots.txt` con lo schema di Fiftynine:
 **noindex** finché il sito non è loro.
 **Stack**: HTML puro, un solo `index.html`, zero build, GSAP 3.13 +
