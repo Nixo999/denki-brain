@@ -120,14 +120,35 @@ foto «take away» erano coppette da gelato), un contatto che prometteva un
 montaggio mai dichiarato, «tre minuti» e proprietà delle stampe inventate, un
 kit inesistente e il sipario eterno senza JS. Tutto corretto nella terza.
 
+## La quarta: due pagine, il logo dal vero, il carosello
+
+Nicola, 3 settembre: «aggiungi alla hero più vita sfruttando il logo, una
+barra di scorrimento fatta bene per le immagini orizzontali, dividi il sito in
+un paio di pagine con bottoni nella principale: così è troppo lungo».
+Commit `4b2f188`:
+
+- **Hero «il logo dal vero»**: il logo D.S.I. sono tre portatovaglioli
+  disegnati; nell'hero ci sono tre portatovaglioli veri (illy, Perlanera,
+  Pyramid rosso) con le lettere D. S. I. in Bodoni rosso sopra, che arrivano
+  sul tavolo uno alla volta e poi galleggiano piano. Al passaggio del mouse
+  compare il cubo disegnato (`logo-d/s/i.png`, ritagliati dal logo con PIL).
+- **Carosello «Paparazzati al bar»** fatto bene: scroll-snap con
+  `scroll-padding-left` (senza, lo snap mangiava il padding iniziale), barra
+  rossa che segue lo scorrimento, frecce che si spengono ai bordi,
+  trascinamento col mouse, tastiera nativa.
+- **Due pagine**: `index.html` racconta (hero, bar veri, manifesto, quattro
+  posti, quattro card-bottone verso i modelli, Made in D.S.I., contatti);
+  `modelli.html` elenca (nove modelli, stampe, kit, gelaterie e take away,
+  contatti). CSS e JS condivisi in `assets/`, con `?v=` contro la cache.
+
 ## Stato
 
-🟡 **Terza versione fatta e misurata**, commit `b98d4a5`. Verifiche nel
+🟡 **Quarta versione fatta e misurata**, commit `4b2f188`. Verifiche nel
 pannello su viewport emulati 1440×900 e 375×812: titolo su due righe da
 desktop, hero nel viewport, nessuno scroll orizzontale, sezione appuntata
 funzionante e impilata da telefono, pulsanti su una riga, ancore corrette.
 
-⬜ `DESIGN.md` in scrittura (documenter degradato).
+⬜ `DESIGN.md` in scrittura (documenter degradato; il primo tentativo è caduto sul limite di sessione).
 ⬜ Non visto su browser vero né su telefono fisico: solo misure e screenshot
 del pannello, che a pane nascosto ferma il rAF (sipario e reveal si vedono in
 ritardo, non è un bug del sito).
