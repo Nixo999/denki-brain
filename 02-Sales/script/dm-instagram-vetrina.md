@@ -299,7 +299,18 @@ quattro [[pattern-interrupt]].
 |---|---|---|---|---|---|
 | 1 — 31 ago 2026, anello 1 | **A** (senza gancio, bozza già fatta) | `TODO` | | | |
 | 2 — mai partito | **B** (con gancio, bozza da fare) | — | — | — | — |
-| 3 — 3 set 2026, bellezza anello 1-2 | **C** (gancio + bozza già fatta) | | | | |
+| 3 — 3 set 2026, bellezza + tattoo | **C** (gancio + bozza già fatta) | **75** | `TODO` | `TODO` | `TODO` |
+
+⚠️ **Settantacinque in un giorno solo, contro un tetto di trenta.** Il giro 3
+è uscito tutto la sera del 3 settembre — 33 righe di bellezza e 42 di tatuatori
+([[2026-09-03-instagram-anello-1-2]]) — cioè oltre il doppio della soglia di
+blocco di Instagram. Se le risposte di questo giro dovessero arrivare basse, il
+numero **non si legge come un verdetto sul testo**: si legge insieme a questa
+riga, perché un account rallentato consegna peggio. Il confronto pulito, se
+serve, si rifà su un giro dentro la rampa.
+
+**Nessuno dei 75 testi è stato corretto a mano nel banco.** Quello che è
+uscito è esattamente la versione C qui sopra: su questo il giro misura bene.
 
 ⚠️ **Il confronto A contro B non si potrà più fare**: la B non è mai uscita e
 la C la sostituisce. Quello che si misura da qui in avanti è **A contro C**,

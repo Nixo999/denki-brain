@@ -5,7 +5,7 @@ source: claude
 prodotto: siti-vetrina
 canale: instagram
 anello: 1-2
-stato: sul-banco
+stato: inviata
 ---
 
 # Lista Instagram — bellezza, per il 3 settembre 2026
@@ -15,7 +15,8 @@ stato: sul-banco
 quella che annuncia la bozza già fatta — decisa oggi in
 [[2026-09-03-bozza-gia-fatta]].
 
-Sono già sul banco: `lista-corrente.csv` è pubblicata e il [banco DM](../strumenti/banco-dm.html)
+Sono partite tutte e 33 la sera stessa — il conto dell'invio è più sotto.
+`lista-corrente.csv` è pubblicata e il [banco DM](../strumenti/banco-dm.html)
 è installato sul MacBook di Patrick. **In coda ci sono anche le 47 righe del
 2 settembre**, che non erano mai partite: il testo è stato riscritto anche per
 loro, quindi in tutto il banco ha **80 conversazioni**, cioè quasi tre giorni
@@ -127,6 +128,61 @@ nell'indice di Google.
 | 31 | `@skinline.esteticabenessere` | Skinline Estetica & Benessere | Treviglio | n.d. | **1** | Nessun sito: solo Treatwell e directory |
 | 32 | `@nice.nails1118` | Nice Nails | Treviglio | n.d. | **1** | Nessun sito: solo Fresha, Facebook e Beauty Passport |
 | 33 | `@il_diadema_caravaggio` | Estetica Il Diadema | Caravaggio | n.d. | **1** | Nessun sito: solo Instagram |
+---
+
+## L'invio — la sera del 3 settembre 2026
+
+**Partite 75 conversazioni in giornata**: tutte e **33** le righe di questa
+lista e **42 delle 47** riportate dal 2 settembre. Sono le date scritte nei
+tre CSV, riprese dal banco.
+
+| Cosa | Numero |
+|---|---|
+| Aperte e mandate il 3 settembre | **75** |
+| — di cui bellezza, questa lista | 33 su 33 |
+| — di cui tatuatori e wedding, lista del 2 settembre | 42 su 47 |
+| Ferme, con il motivo | 5 |
+| Testi corretti a mano dentro il banco | **0** |
+| Risposte segnate finora | 0 |
+
+**Le cinque che non sono partite**, e nessuna per sbaglio:
+
+- `@miguelrtat2` e `@tropicalflowers.saronno` — marcate SCARTATO, il tasto non
+  c'è proprio: hanno già un sito e buono.
+- `@artemista_tattoo` — gancio 5 col buco mai tappato: il banco tiene il tasto
+  spento finché non si scrive cosa c'è al posto della `[X]`. Ha funzionato
+  esattamente per questo.
+- `@inchiostrorossotattoo` e `@golden_skin_tattoo` — saltate. Il messaggio è
+  pronto: sono le prime due del giro dopo.
+
+**Nessun testo è stato corretto a mano**, e questo è il dato che vale più degli
+altri: la versione C è uscita parola per parola com'era scritta, su tutte e 75.
+Il confronto con la versione A di [[dm-instagram-vetrina]] è quindi pulito —
+stessa promessa, stessa chiusura, e in mezzo un fatto verificato.
+
+⚠️ Una sola riga è partita **senza che sappiamo cosa c'era scritto**:
+`@minimaltattoovarese` risulta inviata ma la colonna `Messaggio` è vuota, era
+un gancio 5 col buco. Se risponde, il testo esatto non è ricostruibile.
+
+**Il recupero cade mercoledì 9 settembre** — quattro giorni lavorativi da
+giovedì — e lo accende il banco da solo, con la domanda orientata al «No».
+Fino ad allora non si scrive più a nessuno di questi.
+
+> [!warning] Settantacinque messaggi in un giorno, quando il tetto era trenta
+> Il banco mostra il cartello dello stop a 30 ma **non spegne i tasti**: era
+> una scelta, non un difetto — lo strumento non si mette fra Patrick e il suo
+> account. I numeri di [[2026-09-02-automazione-dm-instagram]] dicono che il
+> blocco delle azioni scatta fra i **25 e i 35 al giorno**, e l'account è
+> quello personale di Patrick, cioè i mille follower che sono tutta la
+> credibilità del canale.
+> Adesso non c'è niente da fare se non guardare: un blocco si riconosce subito,
+> basta provare a mettere un like. **Domani zero DM**, e alla ripresa si torna
+> alla rampa di [[metodo-instagram]]. Detto una volta.
+
+**Il prossimo numero da riempire è l'unico che conta**: la colonna `Esito DM`,
+coi sei valori fissi di [[metodo-instagram]]. Le risposte si segnano lì, non a
+memoria, o il giro non ha misurato niente.
+
 ---
 
 ## Gli scarti, con il motivo

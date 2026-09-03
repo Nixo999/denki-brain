@@ -5,7 +5,7 @@ source: claude
 prodotto: siti-vetrina
 canale: instagram
 anello: 1-2
-stato: da-inviare
+stato: inviata
 ---
 
 # Lista Instagram — settore nuovo: tatuaggio e matrimonio, per il 2 settembre 2026
@@ -261,9 +261,25 @@ Exclusive (Cassano Magnago) · Crop Circle Tattoo (Samarate) · Mewink
   che dice 50 al giorno a regime e con la rampa. Queste 47 sono già una
   giornata piena.
 
+## Sono partite il 3 settembre, non il 2
+
+La lista è rimasta ferma un giorno: il 2 settembre è finito sul banco DM e sul
+sito D.S.I. Il 3 è stata ripubblicata su `lista-corrente.csv` **col testo
+riscritto nella versione C** di [[dm-instagram-vetrina]] — la bozza annunciata
+già pronta — e da lì sono uscite.
+
+**42 righe su 47.** Le cinque ferme: le due marcate SCARTATO
+(`@miguelrtat2`, `@tropicalflowers.saronno`), `@artemista_tattoo` col gancio
+ancora da tappare, e `@inchiostrorossotattoo` e `@golden_skin_tattoo`
+semplicemente saltate.
+
+Il conto completo del giro, insieme alle 33 righe di bellezza uscite lo stesso
+giorno, sta in [[2026-09-03-instagram-anello-1-2]].
+
 ## Collegamenti
 
 [[metodo-instagram]] · [[dm-instagram-vetrina]] ·
 [[2026-09-01-instagram-anello-1-b]] · [[2026-08-31-instagram-anello-1]] ·
 [[2026-08-31-canale-dm-instagram]] · [[2026-08-30-verifica-sito-reale]] ·
+[[2026-09-03-instagram-anello-1-2]] · [[2026-09-03-bozza-gia-fatta]] ·
 [[metriche]] · [[generazione-lead]] · [[prodotti-e-listino]]
