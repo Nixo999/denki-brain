@@ -93,16 +93,14 @@ I due numeri che erano vuoti sono stati decisi da Patrick il 3 settembre 2026:
 da 50 €**, «secondo cosa e come».
 
 ⚠️ I testi qui sotto sono la versione **da messaggio**, per WhatsApp o DM. Il
-PDF dice le stesse cose in forma di documento: se si cambia uno, si cambia
-anche l'altro.
-
-### Versione .docx — 3 settembre 2026, da qui in poi il sorgente è questo
-
-Patrick modifica i preventivi **a mano, in Word** (`preventivo-dsi-advertising-sito.docx`,
-`preventivo-dsi-advertising-ecommerce.docx`). Da questo momento sono loro la
-versione corrente: `.html` e `.pdf` restano quelli del 3 settembre e **non si
-aggiornano più in automatico**. Prima di rigenerare un PDF o di citare un
-prezzo/testo da qui, controllare il `.docx` — se diverge, ha ragione lui.
+PDF dice le stesse cose in forma di documento, ma **più corto**: dalla
+revisione del 3 settembre (sera) i PDF hanno solo tre sezioni — cosa è
+compreso (con il pannello di gestione), cosa non è compreso, investimento.
+Niente più analisi del sito, elenco pagine, tempistiche o "come lavoriamo":
+Patrick li voleva "puliti", senza il dettaglio che sta nel messaggio.
+Il tentativo in `.docx` per modificarli a mano non ha funzionato
+("fatti malissimo") ed è stato cancellato: si resta su `.html` → Chrome
+headless → `.pdf`, come da regola 2 di [[identita-visiva]].
 
 ---
 

@@ -91,15 +91,14 @@ Nel documento la realizzazione compare **barrata**: 300 € sbarrati, 0 € acca
 sezione 06 è quella che trasforma il regalo in scambio.
 
 ⚠️ Il testo qui sotto è la versione **da DM**, più corta e più diretta. Le due
-versioni dicono le stesse cifre: se si cambia una, si cambia l'altra.
-
-### Versione .docx — 3 settembre 2026, da qui in poi il sorgente è questo
-
-Patrick modifica il preventivo **a mano, in Word** (`preventivo-atelier-selva.docx`).
-Da questo momento è lui la versione corrente: `.html` e `.pdf` restano quelli
-del 3 settembre e **non si aggiornano più in automatico**. Prima di
-rigenerare un PDF o di citare un prezzo/testo da qui, controllare il `.docx`
-— se diverge, ha ragione lui.
+versioni dicono le stesse cifre, ma dalla revisione del 3 settembre (sera) il
+PDF è **ancora più corto**: solo tre sezioni — cosa è compreso (col pannello
+di gestione), cosa non è compreso, investimento. Via l'analisi dei profili,
+l'elenco di cosa c'è nel sito, cosa serve da lei e "cosa le chiedo in cambio":
+Patrick li voleva "puliti".
+Il tentativo in `.docx` per modificarlo a mano non ha funzionato ("fatti
+malissimo") ed è stato cancellato: si resta su `.html` → Chrome headless →
+`.pdf`, come da regola 2 di [[identita-visiva]].
 
 ---
 
