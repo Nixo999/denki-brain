@@ -143,7 +143,7 @@ Commit `4b2f188`:
 
 ## Stato
 
-🟡 **Quarta versione fatta e misurata**, commit `4b2f188`. Verifiche nel
+🟡 **Quarta versione fatta e misurata**, commit `4b2f188` e `57f2f28`. Verifiche nel
 pannello su viewport emulati 1440×900 e 375×812: titolo su due righe da
 desktop, hero nel viewport, nessuno scroll orizzontale, sezione appuntata
 funzionante e impilata da telefono, pulsanti su una riga, ancore corrette.
