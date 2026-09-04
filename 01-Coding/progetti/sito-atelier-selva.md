@@ -142,6 +142,8 @@ scaricato: CDN Instagram irraggiungibile, da riprovare.
 
 ⬜→✅ Telefono: passaggio mobile fatto (`ec34253`), verificato con il giro completo a 375 px nel pannello; resta da vedere su un telefono fisico.
 
+✅ Telefono, secondo giro (`81fcc6c`): non più una galleria. Scena «dal foglio alla pelle» che si trascina col dito, video al tocco, storie con le parole davanti, una foto sola per flash e atelier. Verificato a 375 px nel pannello (scena, chip, play); da vedere su telefono fisico.
+
 ## Collegamenti
 
 [[shari-piras]] · [[sito-dsi-advertising]] · [[processo-siti]] ·
