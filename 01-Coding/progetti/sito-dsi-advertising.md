@@ -156,6 +156,8 @@ ritardo, non è un bug del sito).
 ⬜ Hosting e dominio: non decisi (il repo c'è, Netlify no). Patrick non l'ha ancora proposto.
 ⬜ Le tre email diverse: da confermare col titolare prima di pubblicare.
 
+✅ Telefono: passaggio mobile fatto (`0dadedf`), verificato con il giro completo a 375 px nel pannello; resta da vedere su un telefono fisico.
+
 ## Collegamenti
 
 [[sito-castiglione]] · [[sito-fiftynine]] · [[processo-siti]] ·

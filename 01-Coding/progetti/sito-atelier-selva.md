@@ -140,6 +140,8 @@ detta «indicativa»), quattro storie con le sue parole. Commit `0933542`.
 manca su questa macchina). Il video breve dello studio (post 23) non si è
 scaricato: CDN Instagram irraggiungibile, da riprovare.
 
+⬜→✅ Telefono: passaggio mobile fatto (`ec34253`), verificato con il giro completo a 375 px nel pannello; resta da vedere su un telefono fisico.
+
 ## Collegamenti
 
 [[shari-piras]] · [[sito-dsi-advertising]] · [[processo-siti]] ·
