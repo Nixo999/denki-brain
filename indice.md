@@ -79,6 +79,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-08-28-liste-31-agosto]] — Primo giro completo del ciclo-settimanale, generato con un giorno di anticipo.
 - [[2026-08-28-presidi-volantini]] — Prima applicazione di presidi-volantini.
 - [[2026-08-30-liste-gabriele-edoardo]] — Liste di prova dei due nuovi cold caller: zone disgiunte, 87 righe, blocchi 1 e 4 verificati sul sito reale.
+- [[2026-09-05-instagram-bg-va]] — 65 righe dell'anello 2, Bergamo ovest e Varese: sette domini morti, un sito che risponde «Database Error», uno vuoto. E i tredici duplicati fermati prima di pubblicare.
 - [[2026-09-03-instagram-anello-1-2]] — 33 righe di bellezza verificate col sito aperto davvero, tutte partite la sera stessa dentro un giro da 75. Quattro domini morti, e il tetto sfondato.
 - [[2026-09-02-instagram-tattoo-wedding]] — Settore nuovo: 47 tatuatori, fioristi e wedding verificati. Perche' non sono 70, e come 42 sono partite il 3.
 - [[2026-09-01-instagram-anello-1-b]] — Secondo giro dell'anello 1: 50 account nuovi, col segmento unghie e ciglia che ieri mancava.
@@ -185,6 +186,8 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-08-28-avvio-vault]] — Prima nota del vault.
 - [[2026-08-29-interfaccia-denkishift]] — Richiesta arrivata in sessione: rifare l'interfaccia perché si venda da sola in demo, su due utenti che...
 - [[2026-08-30-sito-castiglione]] — Sito vetrina costruito dal profilo Instagram di Castiglione Furniture, riscritto da capo dopo lo scarto della v1.
+- [[2026-09-03-sito-dsi]] — Sito per D.S.I. Advertising in quattro strutture, e il primo giro vero di DM: 75 partiti in una sera, banco installato sul Mac di Patrick.
+- [[2026-09-05-lista-instagram-65]] — I 65 DM dell'anello 2 messi sul banco, e il dedup che va fatto sul file finito: tredici duplicati fermati prima di pubblicare.
 
 ## 04-Archive
 

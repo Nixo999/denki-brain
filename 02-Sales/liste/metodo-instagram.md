@@ -1,6 +1,6 @@
 ---
 type: area
-updated: 2026-09-03
+updated: 2026-09-05
 source: claude
 prodotto: siti-vetrina
 stato: da-provare
@@ -57,7 +57,7 @@ Non è un'opinione: il conto viene da [[2026-08-30-verifica-siti-giulia]].
 
 ## Il procedimento, riga per riga
 
-Per ogni candidato, **tre passaggi e nessuno è saltabile**:
+Per ogni candidato, **quattro passaggi e nessuno è saltabile**:
 
 ### 1. Si trova il profilo
 Ricerca mirata per comune e segmento (`site:instagram.com parrucchiere Cantù`).
@@ -86,6 +86,48 @@ scartano le directory, e **ogni dominio che compare si apre**.
 > bugia a chi il sito se l'è pagato.
 > **Il link in bio è un indizio. La verifica è Google, sempre.**
 > È la stessa trappola di Pagine Gialle del 30 agosto, con un altro vestito.
+
+### 4. Si controlla che non sia già stata contattata — **sul file finito**
+
+> [!warning] Aggiunto il 5 settembre 2026 — [[2026-09-05-instagram-bg-va]]
+> Il controllo incrociato **non si fa sui candidati, si fa sul CSV finito.**
+> I profili che nascono durante la verifica — quelli trovati cercando il sito
+> di qualcun altro — non passano dal filtro fatto all'inizio, e sono esattamente
+> quelli che sfuggono: il 5 settembre erano **tredici su sessantacinque**, e
+> quattro avevano già ricevuto il messaggio due giorni prima.
+>
+> Gli handle vecchi vanno cercati **in tutte le liste, CSV e note `.md`**: tre
+> liste su quattro hanno gli account solo dentro le tabelle in Markdown, quindi
+> chi guarda solo i CSV non li vede.
+
+```bash
+# dal vault, PRIMA di pubblicare su lista-corrente.csv:
+# stampa gli handle di oggi gia' presenti in una lista precedente
+python3 - <<'EOF'
+import csv, glob, os, re
+OGGI = "02-Sales/liste/2026-09-05-instagram-bg-va.csv"   # <- la lista nuova
+stem = os.path.basename(OGGI)[:-4]                        # la sua nota .md si salta
+vecchi = set()
+for f in glob.glob("02-Sales/liste/*.csv") + ["02-Sales/strumenti/lista-corrente.csv"]:
+    if stem in f: continue
+    righe = list(csv.reader(open(f, encoding="utf-8")))
+    if not righe: continue
+    col = [i for i, h in enumerate(righe[0]) if "ccount" in h or "nstagram" in h]
+    for r in righe[1:]:
+        for i in col:
+            if i < len(r) and r[i].strip(): vecchi.add(r[i].strip().lower().lstrip("@"))
+for f in glob.glob("02-Sales/liste/*.md"):
+    if stem in f: continue
+    vecchi.update(m.lower() for m in re.findall(r"@([A-Za-z0-9._]{3,40})", open(f, encoding="utf-8").read()))
+dup = [r[0] for r in list(csv.reader(open(OGGI, encoding="utf-8")))[1:]
+       if r[0].strip().lower().lstrip("@") in vecchi]
+print(len(vecchi), "handle gia' toccati -", len(dup), "duplicati:", dup)
+EOF
+```
+
+Se stampa qualcosa, quelle righe **si tolgono e si sostituiscono**: non si
+manda un secondo messaggio a chi l'ha gia' ricevuto.
+
 
 ## Gli otto esiti, e cosa entra in lista
 
@@ -186,4 +228,5 @@ qui. La prima lista vera è [[2026-08-31-instagram-anello-1]].
 [[2026-08-31-canale-dm-instagram]] · [[2026-08-30-verifica-sito-reale]] ·
 [[metodo-liste]] · [[generazione-lead]] · [[metriche]] · [[ciclo-settimanale]] ·
 [[2026-09-03-tetto-dm-65]] · [[2026-09-03-instagram-anello-1-2]] ·
+[[2026-09-05-instagram-bg-va]] ·
 [[core-strutturale]] · [[core-produttivita-leadership]] · [[prodotti-e-listino]]
