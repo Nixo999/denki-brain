@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-08-30
+updated: 2026-09-06
 source: claude
 tags: [setup, claude, plugin, mcp]
 ---
@@ -9,6 +9,16 @@ tags: [setup, claude, plugin, mcp]
 > Come [[claude-md-globale]], è roba **locale alla macchina**: sta in
 > `~/.claude/`, fuori da git. Su un PC nuovo — il Mac di Patrick compreso —
 > non arriva da sola, va rifatta da qui.
+
+> ✅ **Rifatta sul MacBook di Nicola il 6 settembre 2026.** Tutti e cinque i
+> plugin e i tre marketplace sono installati, `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`
+> è scritto in `~/.claude/settings.json`. Gli MCP no: hanno chiavi personali e
+> si agganciano dalle impostazioni di Claude. Vedi [[2026-09-06-mac-nicola-in-lavoro]].
+>
+> Due cose imparate rifacendola: i comandi `claude plugin` **non esistono
+> nell'app desktop**, serve la CLI (`curl -fsSL https://claude.ai/install.sh | bash`);
+> e `ponytail` sta **anche** in `claude-community`, quindi il marketplace
+> `DietrichGebert/ponytail` non è indispensabile per averlo.
 
 # Plugin e MCP di Claude Code
 

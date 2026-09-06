@@ -1,6 +1,6 @@
 ---
 type: area
-updated: 2026-08-28
+updated: 2026-09-06
 source: claude
 tags: [skills, design, frontend]
 ---
@@ -14,6 +14,19 @@ cococat, e anche una sessione aperta qui dentro. Non c'è niente da attivare.
 Il problema non è averle, è che **dicono tutte e quattro «fai design
 distintivo»** e a leggerne le descrizioni sembrano intercambiabili. Non lo sono:
 si distinguono per cosa contengono davvero.
+
+## Da dove si reinstallano
+
+Scritto il 6 settembre 2026 rimettendole su un Mac nuovo: era il buco che
+costava di più. Dettaglio in [[2026-09-06-mac-nicola-in-lavoro]].
+
+| Skill | Repository |
+|---|---|
+| `design-taste-frontend` e le altre nove di `taste-skill` | `github.com/Leonxlnx/taste-skill` (MIT) |
+| `impeccable` | `github.com/pbakaus/impeccable` — si copia il bundle `.claude/` del repo, skill **e** quattro agenti |
+| `emilkowalski-motion` | `github.com/nexu-io/open-design`, cartella `skills/` |
+| `frontend-design`, `ui-ux-pro-max` | skill di account, arrivano da sole |
+| `processo-siti` | **nessuno**: scritta da Nicola, vive solo sul PC Windows |
 
 ## La tabella che serve
 

@@ -1,6 +1,6 @@
 ---
 type: area
-updated: 2026-08-28
+updated: 2026-09-06
 source: claude
 ---
 
@@ -353,6 +353,38 @@ Il vault ha il suo `CLAUDE.md`: alla prima riga di conversazione Claude sa già
 chi siamo, cosa stiamo facendo e quanto ci devono. A Patrick basta:
 
 > «Sono Patrick. Leggi il CLAUDE.md e dimmi a che punto siamo.»
+
+## 7-quater. Il MacBook di Nicola — tutto in `~/lavoro`
+
+Messo in piedi da zero il **6 settembre 2026**, partendo da un Mac senza
+nemmeno i Command Line Tools. Decisione e provenienza delle skill in
+[[2026-09-06-mac-nicola-in-lavoro]].
+
+**Non segue i percorsi di questa nota**: niente `~/denkicode/`, niente Desktop.
+Vault e repo di codice stanno **tutti in `~/lavoro`**, e ogni cartella si chiama
+**come il repo** — `opero-sito` e non `opero-core`, `smooth-duty` e non `turni`.
+
+| Pezzo | Stato |
+|---|---|
+| Vault `denki-brain` | ✅ `~/lavoro/denki-brain`, `main` allineato a `origin`, 128 note |
+| Repo di codice | ✅ **dodici**, non tre: i due gestionali più i nove dei siti. Script rilanciabile in `~/lavoro/clona-repo.sh` |
+| `git`, `node@22`, `npm`, `gh`, `supabase`, Homebrew | ✅ installati |
+| `gh auth` | ✅ **`Nixo999`** — su questa macchina l'account è quello giusto, a differenza del Mac di Patrick |
+| Identità dei commit | ✅ `Nixo999` + indirizzo noreply di GitHub (`107242830+Nixo999@users.noreply.github.com`) |
+| Push verso `origin` | ✅ **verificato**, non dedotto |
+| Obsidian | ✅ installato |
+| Claude Code | ✅ app desktop **e** CLI (`~/.local/bin/claude`) — la CLI serve per `claude plugin`, che nell'app non c'è |
+| Protocollo, comandi, skill | ✅ `~/.claude/CLAUDE.md` ricreato da [[claude-md-globale]], i 9 comandi e 15 skill copiati a livello di account |
+| Plugin e marketplace | ✅ tutti e cinque, i tre marketplace di [[plugin-claude-code]], `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` |
+| `processo-siti` | 🟡 **ricostruita**, non l'originale — da confrontare col PC Windows |
+| `.env` dei due gestionali | 🟡 predisposti e **vuoti**: chiavi da mettere a mano |
+| MCP (Apify, Figma, Tella) | ❌ non agganciati — account e chiavi personali |
+| `temurin@21` | ❌ manca, serve solo per l'APK Android |
+
+**`DENKI_VAULT` in `~/.zshenv`.** È la variabile che le tre modalità leggono per
+prime. Senza, lo script di aggancio di `/nicola` cerca `denkicode volt` e su un
+Mac non trova niente. Su qualunque macchina nuova si imposta quella invece di
+allargare la lista di percorsi.
 
 ## 7-ter. Dov'è arrivato il MacBook di Patrick
 
