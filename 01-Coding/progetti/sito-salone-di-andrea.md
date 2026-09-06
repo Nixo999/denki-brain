@@ -25,7 +25,7 @@ messaggio ([[dm-instagram-vetrina]]).
 6 settembre 2026 con `gh`) — in locale `~/lavoro/salonediandrea-site` sul
 MacBook nuovo di Nicola.
 **Online**: no — va su Netlify come ogni bozza ([[netlify]]).
-**Stack**: HTML puro, un solo `index.html`, zero build, GSAP 3.13 +
+**Stack**: HTML puro, un solo `index.html`, `DESIGN.md` scritto dal documenter di impeccable, zero build, GSAP 3.13 +
 ScrollTrigger da CDN (motion additiva), 16 foto in `assets/ig/`.
 `netlify.toml` e `robots.txt` con lo schema di NG Barber: **noindex** finché
 il sito non è suo.
