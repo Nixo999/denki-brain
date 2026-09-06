@@ -1,6 +1,6 @@
 ---
 type: area
-updated: 2026-08-31
+updated: 2026-09-06
 source: claude
 prodotto: sito-vetrina
 usato-da: [giulia, gabriele, edoardo]
@@ -117,7 +117,7 @@ Se ha detto sì, servono quattro cose o Patrick arriva cieco:
 
 **Il messaggio, entro cinque minuti**, mentre si ricorda ancora di te:
 
-> Buongiorno [Nome], sono [nome] di DenkiCode — ci siamo sentiti ora.
+> Buongiorno [Nome], sono [nome] di DenkiCode. Ci siamo sentiti ora.
 > Passo il suo numero al mio collega Patrick: le prepara la prima pagina del
 > sito come la vedrebbe un suo cliente dal telefono e gliela manda qui.
 > Nessun impegno, la guarda con calma.

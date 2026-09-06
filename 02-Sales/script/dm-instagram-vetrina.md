@@ -1,6 +1,6 @@
 ---
 type: area
-updated: 2026-09-03
+updated: 2026-09-06
 source: claude
 prodotto: siti-vetrina
 canale: instagram
@@ -18,6 +18,11 @@ stato: in-prova
 > lavorativi e restituisce il CSV aggiornato. **Non manda niente**: l'invio
 > resta un gesto di Patrick, ed e` la riga che separa un aiuto da un account
 > bloccato — vedi [[2026-09-02-automazione-dm-instagram]].
+
+> [!note] Passata da `voce-denkicode` — 6 settembre 2026
+> Gli em dash nella versione C e nel recupero sono stati tolti: erano lo
+> stesso tell che ha fatto sgamare un DM di Patrick come scritto da un LLM.
+> Vedi [[2026-09-06-skill-voce-denkicode]].
 
 **Lo manda Patrick, dal suo account personale.** Non Giulia, non un account
 aziendale: i mille follower e la faccia sono metà del messaggio.
@@ -156,21 +161,21 @@ Si copiano così come sono. Quello giusto è già scritto nella colonna
 > già pronta.** È l'unica leva su cui siamo forti, e agisce su tre termini su
 > quattro dell'equazione del valore ([[core-crescita-finanze]]).
 
-> Buongiorno, sono Patrick Sappa — ho una piccola software house a Seveso,
+> Buongiorno, sono Patrick Sappa. Ho una piccola software house a Seveso,
 > DenkiCode.
 >
 > Le scrivo perché ho guardato il profilo di **[NOME ATTIVITÀ]** e
 > **[GANCIO]**.
 >
 > Le sue foto erano già metà del lavoro: l'altra metà l'ho fatta io. La bozza
-> del suo sito è già pronta, con le sue immagini e il suo nome — non deve
+> del suo sito è già pronta, con le sue immagini e il suo nome. Non deve
 > scrivere testi, non deve mandarmi materiale, non deve decidere niente.
 >
 > Gliela mando qui, la guarda con calma, e se non le piace me lo dice e non ci
 > sentiamo più. Non le costa un euro e non la impegna a niente.
 >
 > Sul costo non le faccio girare la testa: se poi decidesse di metterlo online,
-> si parla di poche centinaia di euro una volta — non di migliaia — più una
+> si parla di poche centinaia di euro una volta, non di migliaia, più una
 > quota annuale per tenerlo attivo. Il numero preciso glielo faccio solo se la
 > cosa le interessa davvero.
 >
@@ -273,7 +278,7 @@ entrambe dicono che la bozza c'è già: chi risponde «mandamela» si aspetta un
 file, non due giorni di attesa. Se la coda supera le 5, la frase che tiene in
 piedi la promessa senza smentirla è una sola, e va detta nella stessa giornata:
 
-> «Gliela sto rifinendo con le sue foto — gliela mando [giorno]. Intanto:
+> «Gliela sto rifinendo con le sue foto, gliela mando [giorno]. Intanto:
 > c'è qualcosa che vuole assolutamente dentro?»
 
 Una bozza promessa e non consegnata brucia il canale più lentamente di un

@@ -1,6 +1,6 @@
 ---
 type: area
-updated: 2026-08-31
+updated: 2026-09-06
 source: claude
 prodotto: denkishift
 usato-da: [giulia, gabriele, edoardo]
@@ -128,7 +128,7 @@ Quattro cose, o Patrick arriva alla demo cieco:
 
 **Il messaggio, entro cinque minuti:**
 
-> Buongiorno [Nome], sono [nome] di DenkiCode — ci siamo sentiti ora al
+> Buongiorno [Nome], sono [nome] di DenkiCode. Ci siamo sentiti ora al
 > telefono.
 > Confermo [giorno] alle [ora]: il mio collega Patrick le fa vedere in dieci
 > minuti come gestiamo i turni del personale.
