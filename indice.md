@@ -179,6 +179,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-01-skill-design-processo-siti]] — Decisione: ogni sito vetrina parte dalla skill `processo-siti`, che mette in fila le skill di design.
 - [[2026-09-02-impostazioni-due-colonne]] — Decisione: le Impostazioni di DenkiShift su due colonne da 1024 px, e i testi riscritti per chi decide. Sostituisce il registro del 30 agosto.
 - [[2026-09-06-mac-nicola-in-lavoro]] — Decisione: sul Mac di Nicola vault e repo stanno tutti in `~/lavoro` con i nomi dei repo, e le skill di design hanno finalmente scritto da dove si reinstallano.
+- [[2026-09-06-skill-voce-denkicode]] — Un lead ha sgamato un DM scritto da Claude per gli em dash e il tono da chatbot: nasce la skill che mette una blacklist di pattern-AI su ogni testo cliente, siti compresi.
 
 ## 06-Daily
 
