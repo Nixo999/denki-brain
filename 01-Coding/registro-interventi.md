@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-09-03
+updated: 2026-09-06
 source: denkicode
 tags: [registro, interventi, repo, database]
 ---
@@ -36,6 +36,12 @@ pubblicato senza la sua migrazione apre un tabellone vuoto.
 Colonne: **Quando** (data e ora) · **Chi** (persona, e `+claude` se il lavoro è
 stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 (`—` se non toccato, `sviluppo`/`produzione` + stato) · **Cosa** · **Commit**.
+
+## 2026-09-06
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| pomeriggio | Nicola +claude | [[opero]] | `opero-sito` | — nessuna migrazione | **I bottoni PDF, Excel e XML della bozza QT erano muti dal Mac del committente.** Non erano finti: dal 25 agosto su WebKit `<a download>` con un blob non consegna e non dice niente, e il ripiego (foglio di condivisione) si accendeva solo con `maxTouchPoints > 1` — iPhone e iPad. Misurato oggi su Safari 26 di macOS: `maxTouchPoints` **0**, `canShare({files})` **true**. Il Mac cadeva sull'unica strada muta. Adesso la domanda è sul motore (`suWebKit(ua)` in `src/lib/motoreWebKit.ts`, file senza import) con il controllo eseguibile accanto, `node strumenti/verifica-motore-webkit.ts`, dieci user agent veri. Dove la condivisione manca, dopo `<a download>` resta l'avviso con «Apri». ⚠️ **Non pushato**, e il click vero in Safari non è stato provato: qui l'automazione non ha il permesso di cliccare. | `e15fbfd` |
 
 ## 2026-09-03
 
