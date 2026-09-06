@@ -51,6 +51,15 @@ ls -1 "$V/06-Daily" | sort | tail -1
 
 Vault non trovato → **chiedi il percorso**, non cercarlo a tappeto.
 
+⚠️ **Il `cd` sopra sposta solo quel comando, non la sessione.** Se l'app ha un
+modo per spostare davvero la cartella di lavoro della sessione su `$V` (sul
+Mac di Nicola è lo strumento di cambio cartella dell'app Claude), usalo prima
+di leggere altro: senza quello le skill del vault — `voce-denkicode`,
+`proposta-commerciale`, `script-vendita`, tutte in `.claude/skills/` — non
+vengono riconosciute automaticamente, e con loro anche i file toccati oggi
+(`banco-dm.html`, `stile-comunicazione.md`) restano aggiornati su disco ma
+fuori dal contesto della sessione.
+
 ## 2. Leggi il minimo, poi allarga solo se serve
 
 Sempre: `CLAUDE.md` del vault (salta se è già nel contesto) + l'ultima nota di
@@ -86,7 +95,11 @@ Manca un dato dopo questo? **Chiedilo.** Una domanda costa meno di cinque file.
 - **Le ore sono poche.** Tutti e tre studiano e lavorano ~25h altrove: prima di
   proporre qualcosa che costa tempo, leggi `03-Storage/team/team-e-vincoli.md`.
 - **Prima di improvvisare, usa le skill del vault**: `proposta-commerciale` per
-  preventivi e PDF, `script-vendita` per script e angoli d'attacco.
+  preventivi e PDF, `script-vendita` per script e angoli d'attacco,
+  **`voce-denkicode` su ogni testo che uscirà da un DM, WhatsApp o email**,
+  sempre, prima di mostrarlo — regola fissa dal 6 settembre 2026, vedi
+  `stile-comunicazione.md`. Il tool `banco-dm.html` la applica già da solo sui
+  testi generati in serie: questa skill serve per quello che scrivi a mano.
 - **Quello che generi è materiale derivato**: `source: claude`, da verificare
   prima di mandarlo a un cliente. Se una cosa non la sai, scrivi `TODO` e
   chiedi. Ogni modifica al vault si committa e si pusha subito.
