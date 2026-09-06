@@ -43,6 +43,12 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 |---|---|---|---|---|---|---|
 | pomeriggio | Nicola +claude | [[opero]] | `opero-sito` | — nessuna migrazione | **I bottoni PDF, Excel e XML della bozza QT erano muti dal Mac del committente.** Non erano finti: dal 25 agosto su WebKit `<a download>` con un blob non consegna e non dice niente, e il ripiego (foglio di condivisione) si accendeva solo con `maxTouchPoints > 1` — iPhone e iPad. Misurato oggi su Safari 26 di macOS: `maxTouchPoints` **0**, `canShare({files})` **true**. Il Mac cadeva sull'unica strada muta. Adesso la domanda è sul motore (`suWebKit(ua)` in `src/lib/motoreWebKit.ts`, file senza import) con il controllo eseguibile accanto, `node strumenti/verifica-motore-webkit.ts`, dieci user agent veri. Dove la condivisione manca, dopo `<a download>` resta l'avviso con «Apri». Pushato su `origin/main` su richiesta di Nicola. ⚠️ Il click vero in Safari **non è stato provato**: qui l'automazione non ha il permesso di cliccare. | `e15fbfd` |
 
+## 2026-09-06
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| 2026-09-06 sera | Nicola +claude | [[sito-salone-di-andrea]] | `Nixo999/salonediandrea-site` (nuovo, privato) `main` | — | Bozza sito vetrina Il Salone di Andrea (Dalmine): scroll-telling scuro, dati verificati da Instagram e directory, noindex. Repo creato con `gh`, pushato | `138e523` |
+
 ## 2026-09-03
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
