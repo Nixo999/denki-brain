@@ -169,7 +169,7 @@ Si copiano così come sono. Quello giusto è già scritto nella colonna
 >
 > Le sue foto erano già metà del lavoro: l'altra metà l'ho fatta io. La bozza
 > del suo sito è già pronta, con le sue immagini e il suo nome. Non deve
-> scrivere testi, non deve mandarmi materiale, non deve decidere niente.
+> scrivere niente e non deve mandarmi niente.
 >
 > Gliela mando qui, la guarda con calma, e se non le piace me lo dice e non ci
 > sentiamo più. Non le costa un euro e non la impegna a niente.
