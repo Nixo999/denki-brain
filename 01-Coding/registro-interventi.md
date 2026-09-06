@@ -47,7 +47,7 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
 |---|---|---|---|---|---|---|
-| 2026-09-06 sera | Nicola +claude | [[sito-salone-di-andrea]] | `Nixo999/salonediandrea-site` (nuovo, privato) `main` | — | Bozza sito vetrina Il Salone di Andrea (Dalmine): scroll-telling scuro, dati verificati da Instagram e directory, noindex. Repo creato con `gh`, pushato | `138e523` |
+| 2026-09-06 sera | Nicola +claude | [[sito-salone-di-andrea]] | `Nixo999/salonediandrea-site` (nuovo, privato) `main` | — | Bozza sito vetrina Il Salone di Andrea (Dalmine): scroll-telling scuro, dati verificati da Instagram e directory, noindex. Repo creato con `gh`, pushato; poi finish review (otto rilievi) e fix di scorrimento | `138e523` → `299d5bb` |
 
 ## 2026-09-03
 

@@ -80,17 +80,31 @@ fuoco e i tre anni (2018, maggio 2023, maggio 2024) che si accendono con lo
 scrub → copertine dei reel e la voce di Dario Beloli → finale «Chiama /
 Prenota» che scorre con lo scroll, orari e mappa.
 
+Regole imparate qui, che valgono per i prossimi siti: **mai posizionare con un
+`transform` CSS un elemento che GSAP anima** (lo sovrascrive al primo frame e
+l'elemento salta); **niente `filter:blur` su cose che scorrono** e la luce che
+segue lo scroll si muove in `transform`, non ridipingendo un gradiente.
+
 Buchi dichiarati: lo script di ricerca di `ui-ux-pro-max` non è su questo Mac
 (c'è solo il SKILL.md): il passo 4 è andato a tabella di priorità. Nessun tool
 di generazione immagini: build code-led.
 
 ## Stato
 
-🟡 **Bozza fatta, sul repo privato, misurata.** Hero a due righe a 1440 e a
-375, zero overflow, GSAP e font caricati, sipario che si chiude. Catture in
-`.impeccable/review/` (desktop intera, mobile a sette schermate). Finish
-review di impeccable: vedi diario del 6 settembre. **Non vista su browser
-vero né su telefono.**
+🟡 **Bozza fatta, sul repo privato, passata dalla finish review.** Hero a
+due righe a 1440 e a 375, zero overflow, GSAP e font caricati, sipario che si
+chiude. Catture in `.impeccable/review/` (desktop intera, mobile a otto
+schermate). **Finish review di impeccable**: prima passata «fix» con otto
+rilievi materiali (wordmark da incidere nello specchio, due citazioni non
+alla lettera, pillola Chiama sparita sotto i 640 px, griglia che sembrava il
+profilo, date come eyebrow, «lui al taglio» che nessun post dice, due fasce
+vuote, riga donna/uomo che si fondeva su telefono), tutti applicati; verdetto
+sei risolti, uno parziale e una regressione, chiusi al secondo verdetto; resta
+un residuo di 30 px sulla fascia prima di «Chiama», chiuso senza terzo giro.
+**Nicola l'ha vista nel pannello** e ha segnalato lo specchio che spariva allo
+scroll e la pagina a scatti: era un `transform` CSS che GSAP sovrascriveva e
+tre effetti ridipinti a ogni frame (`filter:blur`, gradiente animato via
+variabile, grana): corretti in `299d5bb`. **Non vista su telefono.**
 
 ## Soldi
 

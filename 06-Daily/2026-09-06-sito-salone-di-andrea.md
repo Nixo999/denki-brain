@@ -17,7 +17,7 @@ dominio morto.
 
 ## Cosa c'è a fine giornata
 
-**Repo `Nixo999/salonediandrea-site` (privato), un commit, pushato.** Un
+**Repo `Nixo999/salonediandrea-site` (privato), quattro commit, pushato.** Un
 `index.html`, 16 foto, PRODUCT.md, `netlify.toml` e `robots.txt` con i tre
 sbarramenti. Non è online: manca il login Netlify di Nicola, come per le
 altre bozze ([[netlify]]). Scheda: [[sito-salone-di-andrea]].
@@ -46,6 +46,13 @@ altre bozze ([[netlify]]). Scheda: [[sito-salone-di-andrea]].
   ritaglio PNG in Python puro (`.impeccable/review/crop.py`), e l'interruttore
   `?still=1` nella pagina che spegne sipario ed entrate per la verifica.
 
+- **Nicola guarda, e vede quello che le misure non danno.** «Il cerchio nella
+  hero si glitcha e sparisce appena scorro, il resto va a scatti»: le misure
+  dicevano tutto a posto. Causa: lo specchio era centrato con un `transform`
+  CSS che GSAP sovrascrive al primo frame, più `filter:blur` sugli aloni e il
+  gradiente della luce ridipinto a ogni frame. Regola in
+  [[sito-salone-di-andrea]].
+
 ## Buchi dichiarati
 
 - Lo script di ricerca di `ui-ux-pro-max` non è su questo Mac (c'è solo il
@@ -54,7 +61,10 @@ altre bozze ([[netlify]]). Scheda: [[sito-salone-di-andrea]].
   è passata dal tool strutturato, come prevede il riferimento.
 - Il vecchio sito è irrecuperabile: Wayback risponde 500 sulla home, nessuno
   snapshot delle sottopagine.
-- Finish review di impeccable: `TODO` esito, vedi la scheda del progetto.
+- Finish review di impeccable fatta: otto rilievi, tutti chiusi in due
+  verdetti, dettaglio nella scheda del progetto. Lo stesso reviewer non si
+  può riprendere fra una passata e l'altra (manca `SendMessage` su questo
+  harness): ogni verdetto è stato una sessione nuova col pacchetto completo.
 
 ## Collegamenti
 
