@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-08-31
+updated: 2026-09-06
 source: denkicode
 ---
 
@@ -15,6 +15,15 @@ in trattativa, e per ogni testo che Claude genera.
 
 Significa: si dice cosa fa una cosa e quanto costa, non "soluzioni innovative
 per il tuo business". Se non sappiamo una cosa, si dice.
+
+> [!warning] Regola operativa dal 6 settembre 2026
+> **Ogni testo che Claude scrive per un cliente passa dalla skill
+> `voce-denkicode` prima di essere mostrato**, sempre — WhatsApp, DM
+> Instagram, email, copy dei siti. Nata dopo che un lead ha sgamato un DM di
+> Patrick come scritto da un LLM (em dash, poi trovati elenchi di tre e
+> connettivi da tema). Non è facoltativa e non si chiede ogni volta: è
+> l'ultimo passo prima di consegnare, come il lessico fiscale qui sotto.
+> Dettaglio in [[2026-09-06-skill-voce-denkicode]].
 
 ## Il "Lei" e il "Tu" — non è cortesia, è posizione
 
