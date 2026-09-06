@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-09-06
+updated: 2026-09-07
 source: denkicode
 tags: [registro, interventi, repo, database]
 ---
@@ -36,6 +36,12 @@ pubblicato senza la sua migrazione apre un tabellone vuoto.
 Colonne: **Quando** (data e ora) · **Chi** (persona, e `+claude` se il lavoro è
 stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 (`—` se non toccato, `sviluppo`/`produzione` + stato) · **Cosa** · **Commit**.
+
+## 2026-09-07
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| 2026-09-07 notte | Nicola +claude | [[sito-nails-mania]] | `Nixo999/nailsmania-site` (nuovo, privato) `main` | — | Bozza sito vetrina Nails Mania (Seriate): vetrina di smalti in SVG nei colori dei loro gel, dati dal profilo, dal vecchio sito archiviato e dalle schede, noindex. Repo creato con `gh`, pushato | `TODO` |
 
 ## 2026-09-06
 
