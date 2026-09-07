@@ -66,14 +66,18 @@ direzione è diventata **la vetrina dei lavori**: le loro foto vere, ritagliate
 sull'unghia per togliere le scritte, in cornici di vetro con cartellino
 (tecnica e data).
 
-Mondo: porcellana fredda, vetro con riflesso, un solo colore pieno (il fucsia
-del post del 3 aprile 2026, scurito per reggere come testo). Bricolage
-Grotesque, unica famiglia. Hero: «Le unghie che escono da qui» e tre lavori
-veri in cornici sfalsate (arcobaleno, cat-eye blu, french tiffany). Poi «Fatte
-qui, quest'anno»: mosaico di otto lavori dai post del 2026 → «Un centro di
-ricostruzione, non un nail bar» con quattro fatti → le cinque forme → «Mani»
-in nove moduli rigati fitti con la riga del refil → «Piedi, e l'alluce» col
-prima/dopo vero in due ritagli → tre servizi su richiesta → dove e quando.
+**Terza bocciatura, a bozza fatta e passata dalla review**: «troppo piatto
+così, mi fa schifo; non mettere le foto dei piedi che sono proprio brutte».
+La vetrina dei lavori resta, ma nel registro di `ngbarber-site`: **notte
+prugna** (#120a10) col fucsia dei loro gel come luce, sipario con NAILS MANIA
+lettera per lettera, titolo gigante mascherato, tre lavori in cornici di vetro
+scure sfalsate, il motto del negozio parola per parola («Le unghie
+rispecchiano la nostra personalità», dal sito del 2016), un marquee dei
+servizi, gli otto lavori su un binario orizzontale con frecce, **le cinque
+forme come unico capitolo appuntato** (la sagoma grande cambia forma mentre le
+righe si accendono con lo scrub), moduli rigati, piedi solo in parole, finale
+con la scritta grande CHIAMA / PRENOTA che scorre con lo scroll. Bricolage
+Grotesque resta l'unica famiglia.
 I ritagli stanno in `assets/lavori/`, fatti con `crop.py` (un ritaglio PNG in
 Python puro: `sips` con `--cropOffset` non ritaglia, restituisce nero).
 
@@ -109,7 +113,7 @@ regressione, chiusi in `6bbf0e0` senza terzo giro. Misurata a 1440 e 375.
 
 - [ ] Pubblicazione su Netlify ([[netlify]])
 - [ ] Il DM del 5 settembre è sul banco: la bozza entra nel secondo messaggio
-- [ ] Da confermare con Lory: orari, sede (Brusaporto 1), se ciglia, trucco e corsi sono ancora attivi, foto senza scritte
+- [ ] Da confermare con Lory: orari, sede (Brusaporto 1), se ciglia, trucco e corsi sono ancora attivi, foto senza scritte e, se vuole, foto dei piedi migliori di quelle del profilo
 - [ ] Il dominio `nailsmania.net` è libero: da riprendere se compra
 
 ## Collegamenti

@@ -39,6 +39,13 @@ online.
   **quando il brief dice "vetrina", il contenuto sono i lavori del cliente**,
   anche se le foto sono brutte; il design serve a farle sembrare belle, non a
   sostituirle.
+- **«Piatto» vuol dire chiaro.** La seconda versione, porcellana e vetro, era
+  passata dalla review ed era pulita: Nicola l'ha bocciata in una riga
+  («troppo piatto, mi fa schifo»). Il livello atteso è sempre NG Barber:
+  scuro, sipario, titolo gigante, un capitolo appuntato. Per i siti vetrina
+  DenkiCode **il registro notte è il default**, non un'opzione: la versione
+  chiara si fa solo se la chiede lui. E le foto brutte del cliente non si
+  mettono neanche se sono l'unica prova: si scrive che il servizio esiste.
 - **`<use>` di un `<symbol>` non prende gli stili del documento**: sette
   boccette nere al primo giro. Grafica che prende colore da CSS va inline.
 
