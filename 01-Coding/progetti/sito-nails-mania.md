@@ -88,18 +88,19 @@ CSS.**
 
 ## Stato
 
-🟡 **Bozza sul repo privato, passata dalla finish review.** Tre passate di
-impeccable: due «recapture» (il mobile si fermava a metà: lo scroll dei
-wrapper era `smooth`, ora istantaneo; e il prima/dopo con `object-fit`
-mostrava tutte e due le metà, ora sono due ritagli veri), poi «fix» con otto
-rilievi (i tre «da vicino» erano le stesse foto della hero, ora ritagli di
-dettaglio; l'oro del refil come secondo colore, tolto; forme ridisegnate con
-mandorla arrotondata, pipe stretta e riflesso; mosaico mobile leggibile;
-aggettivi non tracciabili tagliati o citati in commento dalla pagina del 2016;
-tag dei moduli tolti; mensole sotto vetrina e mosaico; fondo bianco che era un
-artefatto del wrapper). Verdetto: sei risolti, uno parziale e una
-regressione, chiusi in `6bbf0e0` senza terzo giro. Misurata a 1440 e 375.
-**Non vista su browser vero né su telefono.**
+🟡 **Terza versione (notte) sul repo privato, passata dalla finish review.**
+Review della versione notte: «fix» con otto rilievi (il refil «ogni 3-4
+settimane» veniva dalla pagina ciglia del 2016 e non dalle unghie, tolto;
+cat-eye senza forma nel cartellino; «cinque lavori e tre dettagli» al posto
+di «otto lavori»; Seriate e 2005 separati nella riga di lead; hero ancorata
+in basso a sinistra; sagome pure senza dito disegnato e senza numeri; Mani
+come registro rigato con una foto in vetro accanto invece della griglia di
+card; bordo fucsia sulle cornici attive; orari con classi esplicite; seed nel
+contratto). Verdetto: otto risolti, una regressione (dettaglio sgranato
+ingrandito) chiusa con la foto piena dello smeraldo. Le versioni precedenti
+(porcellana) avevano già passato due giri di review: tre ricatture in tutto,
+tutte per colpa delle catture e non del sito. Misurata a 1440 e 375. **Non
+vista su browser vero né su telefono.**
 
 ## Soldi
 
