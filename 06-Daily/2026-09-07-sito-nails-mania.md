@@ -151,3 +151,64 @@ file `2026-09-07-riorganizzazione-vault.md` verrebbe prima di
 
 [[trappole]] · [[indice]] · [[registro-interventi]] · [[sito-castiglione]] ·
 [[sito-ngbarber]] · [[processo-siti]]
+
+---
+
+# 2026-09-07 (tarda sera) — Il banco DM raddoppia, e si passa il confine
+
+Terza sessione, in `/nicola`, su richiesta di Patrick. Non è lavoro su un sito:
+è lo strumento di outreach più il pescato.
+
+## Fatto
+
+- **Il [banco DM](../02-Sales/strumenti/banco-dm.html) ha due postazioni**:
+  Patrick Sappa e DenkiCode. Selettore in testata, una memoria per account, una
+  lista per account, **un tetto per account** — 65 e 15. Decisione:
+  [[2026-09-07-due-account-dm]].
+- **Due liste ticinesi**, 8 righe per Patrick (Sotto Ceneri) e 9 per DenkiCode
+  (Sopra Ceneri), col messaggio già scritto in colonna →
+  [[2026-09-07-instagram-ticino]].
+- Allineati [[dm-instagram-vetrina]] (gancio 1 impersonale, variante aziendale)
+  e il percorso del vault in `Banco DM.command`, che su questo Mac non lo
+  trovava.
+
+## Come è stato fatto
+
+- **Il tetto è dell'account, non di Instagram.** È la sola parte del banco che
+  poteva fare danno copiata così com'era: 65 è una misura fatta su un profilo
+  maturo, e applicarla a un profilo nato ieri è il modo di perderlo.
+- **Il testo aziendale è stato sbagliato al primo giro**, e l'errore si vedeva
+  solo leggendo il messaggio generato: «abbiamo guardato il profilo» seguito da
+  un gancio in prima persona singolare. Le due varianti condividono il
+  dizionario dei ganci, quindi i ganci devono essere impersonali. Si legge
+  sempre l'output, non il diff.
+- **Le liste ticinesi sono corte perché il Ticino è servito.** 28 profili
+  esaminati, 17 col dominio proprio: passa il 39%, contro il 12 su 14 della
+  Brianza. Chi il sito non ce l'ha, ha Fresha o Treatwell; chi ce l'ha, gliel'ha
+  fatto un'agenzia locale.
+- **Trappola geografica**: `@lugano.barbershop` sembra perfetto e sta a Buenos
+  Aires (indirizzo Av. Larrazabal, prefisso argentino). Su una ricerca per nome
+  di città il comune si verifica sempre, come il sito.
+
+## Aperto
+
+- ⬜ La lista di Patrick **non è pubblicata**: `lista-corrente.csv` ha ancora
+  1750 righe lombarde con 68 da mandare e i recuperi che si accendono. La
+  ticinese si trascina quando quella è finita.
+- ⬜ Il tetto di DenkiCode va alzato a mano, dieci al giorno, ogni giorno che
+  regge. Nessuno lo fa da solo.
+- ⬜ Mendrisiotto e Chiassese hanno dato due righe: per quella zona serve un
+  altro modo di pescare.
+
+## Non verificato
+
+- Nessuno dei 17 profili è stato aperto su Instagram: handle, follower e
+  attività vengono dalle SERP. Vale il passo 2 di [[metodo-instagram]] prima di
+  scrivere.
+- Il messaggio ticinese non è passato dalla skill [[voce-denkicode]]: è scritto
+  applicandone le regole a mano.
+
+## Collegamenti
+
+[[2026-09-07-due-account-dm]] · [[2026-09-07-instagram-ticino]] ·
+[[dm-instagram-vetrina]] · [[metodo-instagram]] · [[registro-interventi]]

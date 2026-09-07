@@ -1,6 +1,6 @@
 ---
 type: area
-updated: 2026-09-06
+updated: 2026-09-07
 source: claude
 prodotto: siti-vetrina
 canale: instagram
@@ -188,12 +188,16 @@ della lista, e nelle liste pubblicate sul banco è **già dentro il messaggio**.
 
 | # | Quando | Riga da incollare |
 |---|---|---|
-| **1** | Nessun sito | «su Google non trovo un suo sito: c'è Instagram, ci sono le schede degli altri, ma un sito suo no» |
+| **1** | Nessun sito | «su Google non compare un suo sito: c'è Instagram, ci sono le schede degli altri, ma un sito suo no» |
 | **2** | Dominio morto | «il dominio **[X]**, che compare ancora nelle ricerche, non si apre più» |
 | **3** | Parcheggiato / senza https | «**[X]** non apre il suo sito: risponde con la pagina di default del server» |
 | **4** | Link rotto | «il link al sito che risulta ancora online non porta più da nessuna parte» |
 | **5** | Su piattaforma | «quello che ha non è un sito suo: è una pagina su **[X]**» |
 | **6** | Vivo ma vecchio | «il suo sito c'è, ma è fermo al **[ANNO]**» |
+
+Il gancio **1** è impersonale dal 7 settembre 2026 («non compare» invece di
+«non trovo»): lo stesso testo deve reggere anche quando a scrivere è l'account
+DenkiCode, che parla al plurale.
 
 I ganci **4** e **5** sono cambiati anche nella sostanza, non solo nel
 pronome: il 4 non nomina più la bio, che dalle nostre macchine non si legge, e
@@ -334,9 +338,27 @@ Le tre domande al secondo giro, le stesse di [[script-denkishift]]:
 3. **Quale gancio ha risposto meglio?** Sei varianti: se una regge e cinque no,
    le liste future si costruiscono su quel segnale.
 
+## La variante dall'account DenkiCode
+
+Dal 7 settembre 2026 il banco scrive da due profili
+([[2026-09-07-due-account-dm]]). Il testo dell'account aziendale è lo stesso,
+con due sole differenze:
+
+- **Attacco e persona.** «Buongiorno, le scrive Patrick della DenkiCode, una
+  piccola software house a Seveso», poi «Abbiamo guardato il profilo di…» e il
+  resto al plurale. La firma resta di una persona: un DM aziendale senza
+  nessuno dietro si legge come un annuncio e non riceve risposta.
+- **Niente altro cambia.** Stessi sei ganci, stessa promessa, stessa richiesta
+  finale. Se il testo si differenzia ancora, i due account smettono di essere
+  confrontabili e il test dei 200 invii perde senso.
+
+Fuori dall'Italia sparisce anche l'ancora di prezzo: «poche centinaia di euro»
+in Ticino squalifica chi lo scrive. Vedi [[2026-09-07-instagram-ticino]].
+
 ## Collegamenti
 
-[[metodo-instagram]] · [[2026-09-03-bozza-gia-fatta]] ·
+[[metodo-instagram]] · [[2026-09-07-due-account-dm]] ·
+[[2026-09-07-instagram-ticino]] · [[2026-09-03-bozza-gia-fatta]] ·
 [[2026-09-03-instagram-anello-1-2]] · [[2026-08-31-instagram-anello-1]] ·
 [[2026-08-31-canale-dm-instagram]] · [[core-commerciale]] ·
 [[core-crescita-finanze]] · [[stile-comunicazione]] · [[vincoli-fiscali]] ·

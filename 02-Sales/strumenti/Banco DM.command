@@ -7,7 +7,7 @@
 
 PORTA=8770
 
-for p in "$HOME/Desktop/denkicode volt" "$HOME/Documents/denkicode volt" "$HOME/denkicode volt" "$HOME/Desktop/denki-brain"; do
+for p in "$HOME/lavoro/denki-brain" "$HOME/Desktop/denkicode volt" "$HOME/Documents/denkicode volt" "$HOME/denkicode volt" "$HOME/Desktop/denki-brain"; do
   if [ -d "$p/02-Sales/strumenti" ]; then V="$p"; break; fi
 done
 

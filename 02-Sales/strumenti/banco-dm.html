@@ -54,6 +54,9 @@
   body.trascina .vuoto{border-color:var(--accento);color:var(--testo)}
   body.trascina main{opacity:.6}
   .quale{font-size:13px;color:var(--tenue)}
+  select{font:inherit;font-size:13px;padding:8px 10px;border-radius:8px;
+         border:1px solid var(--bordo);background:var(--carta);color:var(--testo)}
+  body.denkicode{--accento:#8a5cf6}
   .conta b.corri{color:var(--allarme)}
   .stop{background:#3a1d1d;border:1px solid #7a3030;color:#ffb4b4;
         padding:12px 16px;border-radius:10px;margin-bottom:16px}
@@ -69,11 +72,15 @@
 
 <header>
   <h1>Banco DM</h1>
+  <select id="account">
+    <option value="patrick">Patrick Sappa</option>
+    <option value="denkicode">DenkiCode</option>
+  </select>
   <span id="quale" class="quale"></span>
   <input type="file" id="file" accept=".csv">
   <button id="scarica" disabled>Scarica il CSV aggiornato</button>
   <div class="conta">
-    <span>oggi <b id="oggi">0</b>/65</span>
+    <span>oggi <b id="oggi">0</b>/<span id="tetto">65</span></span>
     <span>ultima ora <b id="ora">0</b></span>
     <span>da mandare <b id="restano">0</b></span>
     <span>recuperi <b id="rec">0</b></span>
@@ -81,11 +88,7 @@
 </header>
 
 <main>
-  <div id="stop" class="stop" hidden>
-    Sessantacinque messaggi oggi: è il tetto misurato il 3 settembre 2026, non
-    un numero di listino. Il tool non spegne niente — oltre di qui si va a
-    sentimento, e l'account è quello di Patrick. Meglio riprendere domani.
-  </div>
+  <div id="stop" class="stop" hidden></div>
   <div id="lista"></div>
   <div id="vuoto" class="vuoto">
     <b>Trascina qui il CSV della lista</b> — quelli di <code>02-Sales/liste/</code>.<br>
@@ -99,11 +102,33 @@
    conversazione giusta e tiene il conto. L'invio resta un gesto di Patrick —
    e` la riga che separa un aiuto da una violazione delle regole di Meta. */
 
-/* 65 al giorno: e` il numero che ha retto davvero il 3 settembre 2026, quando
-   ne sono partiti 75 senza blocco delle azioni. La ricerca del 2 settembre
-   diceva 25-35 su account maturi, e su questo account e` risultata prudente.
-   Resta una misura su un giorno solo: vedi 2026-09-03-tetto-dm-65. */
-const TETTO = 65;
+/* I due account che scrivono. Il tetto non e` una proprieta` di Instagram ma
+   di ogni singolo account. 65 e` quello che ha retto sul profilo di Patrick il
+   3 settembre 2026, quando ne sono partiti 75 senza blocco delle azioni (vedi
+   2026-09-03-tetto-dm-65): una misura su un giorno solo, e su quel profilo li`. Su DenkiCode vale la rampa del metodo —
+   si parte da 15 e si sale di 10 al giorno, alzando `tetto` qui a mano finche`
+   non regge un regime suo. */
+const ACCOUNT = {
+  patrick: {
+    etichetta: "Patrick Sappa",
+    tetto: 65,
+    file: "lista-corrente.csv",
+    stop: "Sessantacinque messaggi oggi dall'account di Patrick: e` il tetto " +
+          "misurato il 3 settembre 2026, non un numero di listino. Il tool non " +
+          "spegne niente, ma oltre di qui si va a sentimento e in gioco c'e` il " +
+          "profilo con cui Patrick esiste online. Meglio riprendere domani."
+  },
+  denkicode: {
+    etichetta: "DenkiCode",
+    tetto: 15,
+    file: "lista-denkicode.csv",
+    stop: "Quindici messaggi oggi dall'account DenkiCode: e` il primo scalino " +
+          "della rampa, non una misura. Su un profilo nuovo un blocco costa piu` " +
+          "che su uno maturo. Domani si sale di dieci, alzando `tetto` nel file."
+  }
+};
+let attivo = localStorage.getItem("banco-dm-account") || "patrick";
+const att = () => ACCOUNT[attivo];
 /* Il ritmo conta quanto il totale: il tetto non protegge da 65 messaggi in
    venti minuti. Sopra questa soglia il contatore dell'ultima ora si accende. */
 const RITMO_ORA = 25;
@@ -112,7 +137,7 @@ const ATTESA_RECUPERO = 4;        // giorni lavorativi prima del secondo messagg
 /* Tutti al "Lei": il messaggio e` rivolto alla persona che tiene il negozio,
    e mescolare Lei e voi nello stesso testo e` un errore gia` corretto altrove. */
 const GANCI = {
-  "1": "su Google non trovo un suo sito: c'è Instagram, ci sono le schede degli altri, ma un sito suo no",
+  "1": "su Google non compare un suo sito: c'è Instagram, ci sono le schede degli altri, ma un sito suo no",
   "2": "il dominio [X], che compare ancora nelle ricerche, non si apre più",
   "3": "[X] non apre il suo sito: risponde con la pagina di default del server",
   "4": "il link al sito che risulta ancora online non porta più da nessuna parte",
@@ -131,7 +156,8 @@ const GANCI = {
    .claude/skills/voce-denkicode/SKILL.md e 02-Sales/script/dm-instagram-vetrina.md,
    altrimenti i due si disallineano e nessuno se ne accorge finche` non arriva
    un altro lead che sgama il testo. */
-const messaggio = (nome, gancio) =>
+const MESSAGGI = {};
+MESSAGGI.patrick = (nome, gancio) =>
 `Buongiorno, sono Patrick Sappa. Ho una piccola software house a Seveso, DenkiCode.
 
 Le scrivo perché ho guardato il profilo di ${nome} e ${gancio}.
@@ -143,6 +169,24 @@ Gliela mando qui, la guarda con calma, e se non le piace me lo dice e non ci sen
 Sul costo non le faccio girare la testa: se poi decidesse di metterlo online, si parla di poche centinaia di euro una volta, non di migliaia, più una quota annuale per tenerlo attivo. Il numero preciso glielo faccio solo se la cosa le interessa davvero.
 
 Gliela mando?`;
+
+/* Dall'account aziendale a scrivere e` la casa, non la persona: il "noi" e` la
+   sola differenza vera, ma la firma resta di una persona — un DM che non ha
+   nessuno dietro si legge come un annuncio e non riceve risposta. */
+MESSAGGI.denkicode = (nome, gancio) =>
+`Buongiorno, le scrive Patrick della DenkiCode, una piccola software house a Seveso.
+
+Abbiamo guardato il profilo di ${nome} e ${gancio}.
+
+Le sue foto erano già metà del lavoro, l'altra metà l'abbiamo fatta noi. La bozza del suo sito è già pronta, con le sue immagini e il suo nome. Non deve scrivere niente e non deve mandarci niente.
+
+Gliela mandiamo qui, la guarda con calma, e se non le piace ce lo dice e non ci sentiamo più. Non le costa un euro e non la impegna a niente.
+
+Sul costo non le facciamo girare la testa: se poi decidesse di metterlo online, si parla di poche centinaia di euro una volta, non di migliaia, più una quota annuale per tenerlo attivo. Il numero preciso glielo diciamo solo se la cosa le interessa davvero.
+
+Gliela mandiamo?`;
+
+const messaggio = (nome, gancio) => MESSAGGI[attivo](nome, gancio);
 
 const recupero =
 `Le scrivo una volta sola e poi la lascio in pace: ha lasciato perdere l'idea di avere un sito suo?
@@ -199,7 +243,14 @@ function segnaOra(){
 }
 const ultimaOra = () => orari.filter(t => t > Date.now() - 3600 * 1000).length;
 
-const MEMORIA = "banco-dm";
+/* Una memoria per account: il lavoro a meta` giro di uno non deve finire
+   nell'altro. La chiave vecchia, di quando l'account era uno solo, e` di
+   Patrick e si trasloca al primo avvio. */
+const MEMORIA = () => "banco-dm:" + attivo;
+if (localStorage.getItem("banco-dm") && !localStorage.getItem("banco-dm:patrick")){
+  localStorage.setItem("banco-dm:patrick", localStorage.getItem("banco-dm"));
+  localStorage.removeItem("banco-dm");
+}
 
 /* Aperto con doppio click la pagina sta su file:// e non puo` leggersi da sola
    i CSV che ha accanto: il browser lo vieta. Quindi la lista si trascina qui
@@ -268,14 +319,21 @@ document.addEventListener("drop", async (e) => {
    stessa: si riparte da dove si era rimasti, non da capo. Quando Nicola ne
    pubblica una nuova, il file cambia e questa la sostituisce. */
 async function avvio(){
+  document.body.classList.toggle("denkicode", attivo === "denkicode");
+  document.getElementById("account").value = attivo;
+  intestazione = []; dati = []; col = {}; orari = []; fonte = "";
+  document.getElementById("lista").innerHTML = "";
+  document.getElementById("vuoto").hidden = false;
+  document.getElementById("scarica").disabled = true;
+  document.getElementById("quale").textContent = "";
   let salvata = null;
-  try { salvata = JSON.parse(localStorage.getItem(MEMORIA) || "null"); } catch (e) {}
+  try { salvata = JSON.parse(localStorage.getItem(MEMORIA()) || "null"); } catch (e) {}
   /* il ritmo e` dell'account, non della lista: sopravvive a una lista nuova */
   if (salvata && Array.isArray(salvata.orari)) orari = salvata.orari;
 
   if (location.protocol.startsWith("http")){
     try {
-      const risposta = await fetch("lista-corrente.csv", {cache:"no-store"});
+      const risposta = await fetch(att().file, {cache:"no-store"});
       if (risposta.ok){
         const testo = await risposta.text();
         if (!salvata || salvata.fonte !== testo){
@@ -296,8 +354,14 @@ async function avvio(){
 }
 avvio();
 
+document.getElementById("account").addEventListener("change", (e) => {
+  attivo = e.target.value;
+  localStorage.setItem("banco-dm-account", attivo);
+  avvio();
+});
+
 function ricorda(){
-  try { localStorage.setItem(MEMORIA, JSON.stringify({nomeFile, intestazione, dati, fonte, orari})); } catch (e) {}
+  try { localStorage.setItem(MEMORIA(), JSON.stringify({nomeFile, intestazione, dati, fonte, orari})); } catch (e) {}
 }
 
 function disegna(){
@@ -320,12 +384,15 @@ function disegna(){
   });
 
   document.getElementById("oggi").textContent = oggi;
+  document.getElementById("tetto").textContent = att().tetto;
   const ora = document.getElementById("ora");
   ora.textContent = ultimaOra();
   ora.classList.toggle("corri", ultimaOra() > RITMO_ORA);
   document.getElementById("restano").textContent = restano;
   document.getElementById("rec").textContent = recuperi;
-  document.getElementById("stop").hidden = oggi < TETTO;
+  const stop = document.getElementById("stop");
+  stop.textContent = att().stop;
+  stop.hidden = oggi < att().tetto;
 }
 
 function cartella(r, idx, inviato, esito, daRecuperare){
