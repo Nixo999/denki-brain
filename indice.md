@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **128 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **130 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -97,6 +97,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-02-instagram-tattoo-wedding]] — 47 account nuovi, verificati uno per uno il 1 settembre 2026.
 - [[2026-09-03-instagram-anello-1-2]] — 33 righe nuove, verificate una per una il 3 settembre 2026.
 - [[2026-09-05-instagram-bg-va]] — 65 righe nuove, verificate una per una il 5 settembre 2026.
+- [[2026-09-07-instagram-ticino]] — Due liste, una per account, perché dal 7 settembre il [banco DM](../strumenti/banco-dm.html) ha due postazioni: il profilo personale di Patr...
 - [[metodo-instagram]] — Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — Serve a produrre 130-150 contatti profilati a settimana, ripetibile.
 
@@ -195,6 +196,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-06-mac-nicola-in-lavoro]] — Decisione di Nicola, 6 settembre 2026: messa in piedi da zero una seconda macchina sua, un MacBook Pro, e tutto sta in ~/lavoro — vault e re...
 - [[2026-09-06-sito-salone-andrea-direzione]] — Decisione. Sul sito di sito-salone-di-andrea il concept-seed di impeccable (seed e5bd3d89) aveva assegnato «Il rullo»: un fotogramma a scher...
 - [[2026-09-06-skill-voce-denkicode]] — Il fatto. Un lead, angolorelax_nembro, ha risposto a un DM Instagram scritto da Claude per conto di Patrick dicendo, testuale: *"è un banale...
+- [[2026-09-07-due-account-dm]] — Chiesto da Patrick il 7 settembre 2026. I DM non partono più solo dal suo profilo personale: il banco ha un selettore con Patrick Sappa e De...
 - [[2026-09-07-indice-generato]] — Decisione. indice.md smette di essere una nota scritta a mano.
 - [[2026-09-07-trappole-memoria-tecnica]] — Decisione di Nicola, 7 settembre 2026: le note di giornata funzionano, quindi le uso anche per parlare con me stesso da una sessione all'alt...
 

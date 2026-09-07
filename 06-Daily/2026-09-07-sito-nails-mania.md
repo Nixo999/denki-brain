@@ -212,3 +212,74 @@ Terza sessione, in `/nicola`, su richiesta di Patrick. Non è lavoro su un sito:
 
 [[2026-09-07-due-account-dm]] · [[2026-09-07-instagram-ticino]] ·
 [[dm-instagram-vetrina]] · [[metodo-instagram]] · [[registro-interventi]]
+
+---
+
+# 2026-09-07 (mattina) — V-BAG: Giulia pubblica da sola, e il primo giro col modello operatore
+
+Terza sessione della giornata. Sta in coda qui per lo stesso motivo delle
+altre: a inizio sessione si legge l'ultima daily in ordine alfabetico.
+
+## Fatto
+
+- **Modalità direttore/operatore**, chiesta da Nicola: `~/.claude/agents/operatore.md`
+  con `model: opus`. Il direttore legge, decide e rivede; l'operatore implementa,
+  misura e dichiara i buchi. Non pubblica e non digita credenziali.
+- **`vbag-site` è su GitHub**, `Nixo999/vbag-site` privato, ramo `master`. La
+  repo l'ha creata Nicola dal PC Windows: fino a stamattina il sito esisteva solo
+  su quel Desktop, senza remote. Clonato in `~/lavoro`.
+- **`admin.html`**: Giulia entra con mail e password, carica una foto, scrive
+  nome, descrizione e due campi facoltativi, e la borsa compare in fondo ai
+  modelli e nel menu del form ordine. Può anche toglierla.
+- **`supabase.sql`** con tabella, bucket e RLS. **Non eseguito**: il progetto
+  Supabase non esiste ancora.
+- Corretto un difetto vecchio del sito: `button.link-line` batteva `[hidden]` e
+  il pulsante «Esci» era visibile prima del login.
+
+## Come è stato fatto
+
+- **Il repo comanda, e ha deciso l'architettura.** Il `CLAUDE.md` di `vbag-site`
+  dice «niente build, niente dipendenze» e self-hosta i font per il GDPR: da lì
+  la scelta di chiamare Supabase con `fetch` nudo invece di `@supabase/supabase-js`
+  da CDN. Non è purismo, è la regola scritta nel repo che vince sul comodo.
+- **Le due borse esistenti non si migrano.** Hanno foto scontornate con rembg su
+  pannelli tarati a mano; quelle di Giulia arrivano dal telefono con lo sfondo.
+  Sono due trattamenti diversi (`.look-stage` galleggia, `.look-foto` inquadra) e
+  mescolarli avrebbe rotto la direzione. Deciso prima di passare il brief, non
+  dopo aver visto il risultato.
+- **La sicurezza non poteva dipendere da un interruttore nel pannello.** La
+  chiave anon sta in chiaro nella pagina: se le registrazioni restano aperte,
+  chiunque si iscrive e diventa `authenticated`. Le policy adesso controllano la
+  mail di chi entra, con un segnaposto che **fallisce chiuso**. Rivisto in
+  direzione, non era nel brief.
+- **Il primo giro col modello operatore ha funzionato**, con due cose da tenere:
+  l'operatore ha riportato una trappola nuova che non conoscevo (a pane nascosto
+  è stale anche `getComputedStyle`, non solo il pixel), e ha silenziosamente
+  cambiato `python` in `python3` nel `launch.json` perché qui `python` non
+  esiste. La prima è finita in [[trappole]], la seconda va detta a Nicola: su
+  Windows quel comando è `python`.
+
+## Aperto
+
+- ⬜ **Tocca a Nicola**: creare il progetto Supabase, eseguire `supabase.sql`,
+  incollare URL e chiave anon in `supabase.js`, creare l'utente di Giulia con
+  «Auto Confirm User», spegnere le registrazioni e **scrivere la sua mail dentro
+  `puo_pubblicare()`**. Finché non è fatto il sito è identico a ieri.
+- ⬜ Hosting mai deciso: il sito non è online da nessuna parte.
+- ⬜ Il numero WhatsApp è ancora vuoto in `script.js`.
+
+## Non verificato
+
+- **Tutto il percorso con Supabase vero**: login, upload nel bucket, insert,
+  delete e RLS effettivamente applicate. Servono progetto e credenziali, che non
+  digito io. `supabase.sql` non è mai passato da Postgres: la sintassi non è
+  validata.
+- Safari su iPhone: encoding webp del canvas e orientamento EXIF delle foto fatte
+  col telefono. È il browser da cui Giulia userà la pagina, quindi è il buco che
+  pesa di più.
+- La scadenza del token dopo un'ora: gestita a 401 con «sessione scaduta», mai
+  vista succedere.
+
+## Collegamenti
+
+[[trappole]] · [[registro-interventi]] · [[credenziali]]

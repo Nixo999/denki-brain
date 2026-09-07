@@ -40,6 +40,15 @@ resta nella daily e nel registro, e da qui ci si linka.
 - **`scrollTo(0, y)` con `html{scroll-behavior:smooth}` si ferma a metà** nelle
   catture. → `behavior:'instant'` nei wrapper di cattura. ([[sito-nails-mania]])
 - **`sips --cropOffset` restituisce un PNG nero.** ([[sito-salone-di-andrea]])
+- **A pane nascosto è stale anche `getComputedStyle`, non solo il pixel.** Un
+  campo in stato `.invalid` leggeva ancora il colore di bordo vecchio, `opacity`
+  restava a 0 e `img.complete` era `false`; dopo uno `screenshot`, che forza un
+  frame, i valori erano quelli giusti. La misura non è automaticamente più
+  affidabile dello screenshot: se il pane non ha disegnato, mente anche lei.
+  (sito V-BAG di Giulia, 7 settembre)
+- **Il pane ha un viewport fantasma**, e `scrollWidth - clientWidth` misurato lì
+  dà overflow che a 1440 e 375 emulati è zero. Si misura solo su viewport
+  emulati espliciti, mai su quello che capita.
 - **`file://` non è il sito**: aperto come istantanea statica (URL `data:`) non
   gira JS e non carica le immagini relative. Si riapre dal server prima di
   concludere che qualcosa è rotto. ([[sito-fiftynine]])
@@ -76,6 +85,12 @@ resta nella daily e nel registro, e da qui ci si linka.
   `.btn` e il CTA in nav era verde su verde. Si trova misurando il contrasto,
   non guardando lo screenshot.
 - **Un CTA che wrappa su due righe a 375px si toglie, non si comprime.**
+- **Una regola di componente che imposta `display` batte `[hidden]`.** Il
+  browser dà `display:none` agli elementi con l'attributo, ma `button.link-line
+  { display: inline-flex }` ha più specificità: il nodo resta a schermo con
+  `hidden` messo, e il JS che lo nasconde sembra rotto. Sul sito di Giulia il
+  pulsante «Esci» si vedeva prima del login. → `[hidden] { display: none
+  !important }` nel reset, una volta per tutte. (sito V-BAG di Giulia, 7 settembre)
 
 ## Git, account e pubblicazione
 
@@ -91,6 +106,21 @@ resta nella daily e nel registro, e da qui ci si linka.
   danno fatto prima della vendita. Sta in [[netlify]].
 - **Le credenziali non le digito io.** `netlify login` apre il browser e chiede
   l'accesso di Nicola: si prepara tutto e ci si ferma lì. [[credenziali]]
+
+## Supabase e chiavi nel browser
+
+- **La chiave anon è pubblica per definizione**: sta in chiaro nel JS che scarica
+  chiunque. Non è un problema di per sé, lo diventa se le RLS si fidano del solo
+  `authenticated`: basta che le registrazioni restino aperte e uno sconosciuto si
+  iscrive, diventa `authenticated` e scrive. → le policy controllano **chi**
+  (`auth.jwt() ->> 'email'`), non solo *se* è collegato. La `service_role` non
+  entra mai in un file servito al browser.
+- **Meglio fallire chiusi.** Il segnaposto della mail in `supabase.sql` fa sì che
+  finché non è stato configurato non pubblichi nessuno, nemmeno chi di dovere. Un
+  interruttore nel pannello che ci si dimentica fallisce aperto, ed è peggio.
+- **401 e 403 non sono la stessa cosa**: il primo è la sessione scaduta, il
+  secondo è il database che dice di no. Mandano l'utente a fare due cose diverse
+  e vanno scritti come due messaggi diversi.
 
 ## Scraping
 
