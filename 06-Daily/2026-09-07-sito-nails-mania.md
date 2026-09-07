@@ -60,6 +60,34 @@ online.
   `scrollTo(0,y)` con `html{scroll-behavior:smooth}` si ferma a metà; nei
   wrapper serve `behavior:'instant'`.
 
+## Pomeriggio — il banco DM, e 34 righe svizzere in più
+
+Patrick ha chiesto due cose: **aggiorna il banco DM e aprimelo**, e poi
+**«devo mandare 65 DM oggi, tutti della Svizzera italiana»**.
+
+- **Il banco era aperto su una lista vecchia.** Il `git pull` d'avvio si era
+  fermato su `.obsidian/graph.json` sporco, quindi la pagina servita era quella
+  di prima delle liste ticinesi. Sistemato il file (conflitto sullo zoom del
+  grafo, risolto tenendo il valore di questa macchina), il banco vede le liste
+  di oggi.
+- **Il conto vero degli invii vive nel browser, non nei file.** Patrick dice
+  che sul suo banco risultavano tutte partite; `lista-corrente.csv` ne dava 68
+  ancora da mandare. Le due cose non si contraddicono: le spunte stanno nel
+  `localStorage` e nel CSV non ci arrivano mai. **Prima di ricaricare il banco
+  va premuto «Scarica»**, o quelle date si perdono e i recuperi non si
+  accendono.
+- **34 righe nuove**, tutte Sotto Ceneri, appese a `lista-corrente.csv`: 153 →
+  187 righe, 110 da mandare. Con le 8 del mattino, oggi sull'account di Patrick
+  ci sono **42 righe svizzere, non 65** — 95 profili guardati, 36% passato.
+  Dettaglio, scartati e trappole in [[2026-09-07-instagram-ticino]].
+- **Il resolver DNS della macchina mente.** Dava per morti domini vivi
+  (`treatwell.ch`, `sirmarcus.ch`): ogni verdetto «dominio morto» ora si
+  incrocia su Cloudflare e Google DoH. Senza quel controllo cinque righe
+  avrebbero detto una bugia.
+- **Una riga del mattino corretta**: la pagina Wix di `@angolodiros_mendrisio`
+  oggi risponde 404, quindi il gancio passa da «è una pagina su Wix» a «quella
+  pagina non esiste più».
+
 ## Collegamenti
 
 [[sito-nails-mania]] · [[nails-mania]] · [[sito-salone-di-andrea]] ·
@@ -147,6 +175,34 @@ file `2026-09-07-riorganizzazione-vault.md` verrebbe prima di
 - Le descrizioni dell'indice sono estratte a macchina: sono state lette a
   campione, non tutte e 128.
 
+## Pomeriggio — il banco DM, e 34 righe svizzere in più
+
+Patrick ha chiesto due cose: **aggiorna il banco DM e aprimelo**, e poi
+**«devo mandare 65 DM oggi, tutti della Svizzera italiana»**.
+
+- **Il banco era aperto su una lista vecchia.** Il `git pull` d'avvio si era
+  fermato su `.obsidian/graph.json` sporco, quindi la pagina servita era quella
+  di prima delle liste ticinesi. Sistemato il file (conflitto sullo zoom del
+  grafo, risolto tenendo il valore di questa macchina), il banco vede le liste
+  di oggi.
+- **Il conto vero degli invii vive nel browser, non nei file.** Patrick dice
+  che sul suo banco risultavano tutte partite; `lista-corrente.csv` ne dava 68
+  ancora da mandare. Le due cose non si contraddicono: le spunte stanno nel
+  `localStorage` e nel CSV non ci arrivano mai. **Prima di ricaricare il banco
+  va premuto «Scarica»**, o quelle date si perdono e i recuperi non si
+  accendono.
+- **34 righe nuove**, tutte Sotto Ceneri, appese a `lista-corrente.csv`: 153 →
+  187 righe, 110 da mandare. Con le 8 del mattino, oggi sull'account di Patrick
+  ci sono **42 righe svizzere, non 65** — 95 profili guardati, 36% passato.
+  Dettaglio, scartati e trappole in [[2026-09-07-instagram-ticino]].
+- **Il resolver DNS della macchina mente.** Dava per morti domini vivi
+  (`treatwell.ch`, `sirmarcus.ch`): ogni verdetto «dominio morto» ora si
+  incrocia su Cloudflare e Google DoH. Senza quel controllo cinque righe
+  avrebbero detto una bugia.
+- **Una riga del mattino corretta**: la pagina Wix di `@angolodiros_mendrisio`
+  oggi risponde 404, quindi il gancio passa da «è una pagina su Wix» a «quella
+  pagina non esiste più».
+
 ## Collegamenti
 
 [[trappole]] · [[indice]] · [[registro-interventi]] · [[sito-castiglione]] ·
@@ -207,6 +263,34 @@ Terza sessione, in `/nicola`, su richiesta di Patrick. Non è lavoro su un sito:
   scrivere.
 - Il messaggio ticinese non è passato dalla skill [[voce-denkicode]]: è scritto
   applicandone le regole a mano.
+
+## Pomeriggio — il banco DM, e 34 righe svizzere in più
+
+Patrick ha chiesto due cose: **aggiorna il banco DM e aprimelo**, e poi
+**«devo mandare 65 DM oggi, tutti della Svizzera italiana»**.
+
+- **Il banco era aperto su una lista vecchia.** Il `git pull` d'avvio si era
+  fermato su `.obsidian/graph.json` sporco, quindi la pagina servita era quella
+  di prima delle liste ticinesi. Sistemato il file (conflitto sullo zoom del
+  grafo, risolto tenendo il valore di questa macchina), il banco vede le liste
+  di oggi.
+- **Il conto vero degli invii vive nel browser, non nei file.** Patrick dice
+  che sul suo banco risultavano tutte partite; `lista-corrente.csv` ne dava 68
+  ancora da mandare. Le due cose non si contraddicono: le spunte stanno nel
+  `localStorage` e nel CSV non ci arrivano mai. **Prima di ricaricare il banco
+  va premuto «Scarica»**, o quelle date si perdono e i recuperi non si
+  accendono.
+- **34 righe nuove**, tutte Sotto Ceneri, appese a `lista-corrente.csv`: 153 →
+  187 righe, 110 da mandare. Con le 8 del mattino, oggi sull'account di Patrick
+  ci sono **42 righe svizzere, non 65** — 95 profili guardati, 36% passato.
+  Dettaglio, scartati e trappole in [[2026-09-07-instagram-ticino]].
+- **Il resolver DNS della macchina mente.** Dava per morti domini vivi
+  (`treatwell.ch`, `sirmarcus.ch`): ogni verdetto «dominio morto» ora si
+  incrocia su Cloudflare e Google DoH. Senza quel controllo cinque righe
+  avrebbero detto una bugia.
+- **Una riga del mattino corretta**: la pagina Wix di `@angolodiros_mendrisio`
+  oggi risponde 404, quindi il gancio passa da «è una pagina su Wix» a «quella
+  pagina non esiste più».
 
 ## Collegamenti
 
@@ -280,9 +364,38 @@ altre: a inizio sessione si legge l'ultima daily in ordine alfabetico.
 - La scadenza del token dopo un'ora: gestita a 401 con «sessione scaduta», mai
   vista succedere.
 
+## Pomeriggio — il banco DM, e 34 righe svizzere in più
+
+Patrick ha chiesto due cose: **aggiorna il banco DM e aprimelo**, e poi
+**«devo mandare 65 DM oggi, tutti della Svizzera italiana»**.
+
+- **Il banco era aperto su una lista vecchia.** Il `git pull` d'avvio si era
+  fermato su `.obsidian/graph.json` sporco, quindi la pagina servita era quella
+  di prima delle liste ticinesi. Sistemato il file (conflitto sullo zoom del
+  grafo, risolto tenendo il valore di questa macchina), il banco vede le liste
+  di oggi.
+- **Il conto vero degli invii vive nel browser, non nei file.** Patrick dice
+  che sul suo banco risultavano tutte partite; `lista-corrente.csv` ne dava 68
+  ancora da mandare. Le due cose non si contraddicono: le spunte stanno nel
+  `localStorage` e nel CSV non ci arrivano mai. **Prima di ricaricare il banco
+  va premuto «Scarica»**, o quelle date si perdono e i recuperi non si
+  accendono.
+- **34 righe nuove**, tutte Sotto Ceneri, appese a `lista-corrente.csv`: 153 →
+  187 righe, 110 da mandare. Con le 8 del mattino, oggi sull'account di Patrick
+  ci sono **42 righe svizzere, non 65** — 95 profili guardati, 36% passato.
+  Dettaglio, scartati e trappole in [[2026-09-07-instagram-ticino]].
+- **Il resolver DNS della macchina mente.** Dava per morti domini vivi
+  (`treatwell.ch`, `sirmarcus.ch`): ogni verdetto «dominio morto» ora si
+  incrocia su Cloudflare e Google DoH. Senza quel controllo cinque righe
+  avrebbero detto una bugia.
+- **Una riga del mattino corretta**: la pagina Wix di `@angolodiros_mendrisio`
+  oggi risponde 404, quindi il gancio passa da «è una pagina su Wix» a «quella
+  pagina non esiste più».
+
 ## Collegamenti
 
-[[trappole]] · [[registro-interventi]] · [[credenziali]]
+[[trappole]] · [[registro-interventi]] · [[2026-09-07-instagram-ticino]] ·
+[[2026-09-07-due-account-dm]] · [[metodo-instagram]] · [[dm-instagram-vetrina]] · [[credenziali]]
 
 ---
 
@@ -327,6 +440,34 @@ aggiornato.
 - ⬜ Il tetto di DenkiCode resta da alzare a mano, dieci al giorno.
 - ⬜ Nessuno dei 17 profili ticinesi è stato aperto su Instagram prima di
   finire sul banco: la verifica del profilo tocca a chi manda.
+
+## Pomeriggio — il banco DM, e 34 righe svizzere in più
+
+Patrick ha chiesto due cose: **aggiorna il banco DM e aprimelo**, e poi
+**«devo mandare 65 DM oggi, tutti della Svizzera italiana»**.
+
+- **Il banco era aperto su una lista vecchia.** Il `git pull` d'avvio si era
+  fermato su `.obsidian/graph.json` sporco, quindi la pagina servita era quella
+  di prima delle liste ticinesi. Sistemato il file (conflitto sullo zoom del
+  grafo, risolto tenendo il valore di questa macchina), il banco vede le liste
+  di oggi.
+- **Il conto vero degli invii vive nel browser, non nei file.** Patrick dice
+  che sul suo banco risultavano tutte partite; `lista-corrente.csv` ne dava 68
+  ancora da mandare. Le due cose non si contraddicono: le spunte stanno nel
+  `localStorage` e nel CSV non ci arrivano mai. **Prima di ricaricare il banco
+  va premuto «Scarica»**, o quelle date si perdono e i recuperi non si
+  accendono.
+- **34 righe nuove**, tutte Sotto Ceneri, appese a `lista-corrente.csv`: 153 →
+  187 righe, 110 da mandare. Con le 8 del mattino, oggi sull'account di Patrick
+  ci sono **42 righe svizzere, non 65** — 95 profili guardati, 36% passato.
+  Dettaglio, scartati e trappole in [[2026-09-07-instagram-ticino]].
+- **Il resolver DNS della macchina mente.** Dava per morti domini vivi
+  (`treatwell.ch`, `sirmarcus.ch`): ogni verdetto «dominio morto» ora si
+  incrocia su Cloudflare e Google DoH. Senza quel controllo cinque righe
+  avrebbero detto una bugia.
+- **Una riga del mattino corretta**: la pagina Wix di `@angolodiros_mendrisio`
+  oggi risponde 404, quindi il gancio passa da «è una pagina su Wix» a «quella
+  pagina non esiste più».
 
 ## Collegamenti
 
@@ -390,6 +531,35 @@ non serve un database vero, sfrutta file interni». Rifatto.
 - Tutto quello che sta sopra, più: nessun test runnable lasciato nel repo.
   L'unica logica isolabile è `slug()`, provata a mano.
 
+## Pomeriggio — il banco DM, e 34 righe svizzere in più
+
+Patrick ha chiesto due cose: **aggiorna il banco DM e aprimelo**, e poi
+**«devo mandare 65 DM oggi, tutti della Svizzera italiana»**.
+
+- **Il banco era aperto su una lista vecchia.** Il `git pull` d'avvio si era
+  fermato su `.obsidian/graph.json` sporco, quindi la pagina servita era quella
+  di prima delle liste ticinesi. Sistemato il file (conflitto sullo zoom del
+  grafo, risolto tenendo il valore di questa macchina), il banco vede le liste
+  di oggi.
+- **Il conto vero degli invii vive nel browser, non nei file.** Patrick dice
+  che sul suo banco risultavano tutte partite; `lista-corrente.csv` ne dava 68
+  ancora da mandare. Le due cose non si contraddicono: le spunte stanno nel
+  `localStorage` e nel CSV non ci arrivano mai. **Prima di ricaricare il banco
+  va premuto «Scarica»**, o quelle date si perdono e i recuperi non si
+  accendono.
+- **34 righe nuove**, tutte Sotto Ceneri, appese a `lista-corrente.csv`: 153 →
+  187 righe, 110 da mandare. Con le 8 del mattino, oggi sull'account di Patrick
+  ci sono **42 righe svizzere, non 65** — 95 profili guardati, 36% passato.
+  Dettaglio, scartati e trappole in [[2026-09-07-instagram-ticino]].
+- **Il resolver DNS della macchina mente.** Dava per morti domini vivi
+  (`treatwell.ch`, `sirmarcus.ch`): ogni verdetto «dominio morto» ora si
+  incrocia su Cloudflare e Google DoH. Senza quel controllo cinque righe
+  avrebbero detto una bugia.
+- **Una riga del mattino corretta**: la pagina Wix di `@angolodiros_mendrisio`
+  oggi risponde 404, quindi il gancio passa da «è una pagina su Wix» a «quella
+  pagina non esiste più».
+
 ## Collegamenti
 
-[[trappole]] · [[registro-interventi]]
+[[trappole]] · [[registro-interventi]] · [[2026-09-07-instagram-ticino]] ·
+[[2026-09-07-due-account-dm]] · [[metodo-instagram]] · [[dm-instagram-vetrina]]

@@ -16,7 +16,8 @@ di Patrick e quello di DenkiCode ([[2026-09-07-due-account-dm]]).
 
 | Lista | Account | Zona | Righe | File |
 |---|---|---|---|---|
-| Patrick | profilo personale | Sotto Ceneri: Lugano, Chiasso, Mendrisio | 8 | `2026-09-07-instagram-ticino-patrick.csv` |
+| Patrick, primo giro | profilo personale | Sotto Ceneri: Lugano, Chiasso, Mendrisio | 8 | `2026-09-07-instagram-ticino-patrick.csv` |
+| Patrick, secondo giro | profilo personale | Sotto Ceneri allargato: Lugano e quartieri, Massagno, Paradiso, Vezia, Caslano, Tesserete, Mendrisiotto | 34 | `2026-09-07-instagram-ticino-patrick-2.csv` |
 | DenkiCode | account aziendale | Sopra Ceneri: Bellinzona, Locarno, Ascona | 9 | `2026-09-07-instagram-ticino-denkicode.csv` → pubblicata come `lista-denkicode.csv` |
 
 **La divisione è geografica e non si incrocia**: un'attività riceve un
@@ -34,6 +35,80 @@ Fresha o Treatwell, e chi ha il sito ce l'ha fatto da un'agenzia locale
 
 Le diciassette scartate non sono in nessun file: hanno un sito vero, il
 messaggio direbbe una bugia alla prima riga.
+
+## Il secondo giro, del pomeriggio — 34 righe
+
+Chieste da Patrick: **«devo mandare 65 DM oggi e devono essere tutti della
+Svizzera italiana»**. Ne sono uscite **34**, appese a `lista-corrente.csv`, che
+passa da 153 a 187 righe e da 76 a 110 da mandare.
+
+**Con le 8 del mattino, sul suo account oggi ci sono 42 righe svizzere, non
+65.** Il numero non è una scelta: è quello che ha superato la verifica.
+Novantacinque profili e attività guardati, trentaquattro passati — **il 36%**,
+in linea col 39% del mattino. Il resto ha un sito vero, e a chi ha un sito vero
+il messaggio direbbe una bugia nella prima riga.
+
+Le zone: **18 righe Lugano città** (più Cassarate, Paradiso, Massagno, Vezia),
+poi Caslano, Tesserete, e **11 nel Mendrisiotto-Chiassese** (Chiasso 6,
+Balerna 2, Mendrisio, Novazzano). Sopra Ceneri mai toccato: è di DenkiCode
+([[2026-09-07-due-account-dm]]).
+
+I ganci: 21 senza sito, 7 su piattaforma (Fresha, Treatwell, Etsy,
+hairlovers.style, la scheda dentro il sito del centro commerciale), 3 domini
+morti, 2 fermi su una pagina di servizio, 1 segnaposto.
+
+### Le tre cose imparate qui
+
+- **Il resolver DNS di questa macchina mente, e per poco non ha prodotto cinque
+  bugie.** `dig` e `curl` dalla sandbox danno «dominio inesistente» anche per
+  domini vivissimi (`treatwell.ch`, `sirmarcus.ch`). Da qui in avanti ogni
+  verdetto «dominio morto» si prende da **due resolver DoH** (Cloudflare e
+  Google) e la pagina si scarica forzando l'IP risolto. Lo script sta in
+  `scratchpad/ticino/check.py` del giorno, la regola vale sempre.
+- **L'handle che sembra un dominio non è il dominio.** `@monsterhousetattoo.ch`
+  (Lugano, 14k follower) sembrava perfetto: `monsterhousetattoo.ch` non esiste.
+  Solo che il suo sito è `monsterhouse.ch`, vivo e curato. Riga scartata. Il
+  nome del profilo non è una verifica.
+- **Due profili, un negozio solo: succede spesso.** `@lugano.barbershop` (1194)
+  e `@lvgano_barbershop` (465) sono lo stesso barbiere in Corso Pestalozzi 14;
+  `@personal_hair_stylist_lugano` (1316) e `@phslugano` sono lo stesso salone di
+  via Canova. In lista ne è entrato uno solo, e nella colonna `Scheda` c'è
+  scritto qual è il gemello.
+
+### Corretta una riga del mattino
+
+`@angolodiros_mendrisio` diceva «è una pagina su Wix». Oggi
+`esteticaros5.wixsite.com` risponde **404**: la pagina non c'è più. Riga
+riscritta da gancio 5 a gancio 2, in tutte e due i file. Il fatto è più forte di
+prima, ma andava detto giusto.
+
+### Chi è stato scartato, e perché
+
+Trentacinque nomi con **un sito vero e vivo**, fra cui Nail Factory, Jenny
+Nails, Elegance Beauty, Estetica Dream, Portofino's, Estetica Lugano Sagl, Oro
+di Kinabalu, Salone by Franco, Dugoni, PrimaClasse, Alchimie, Borgo d'Oro, Be
+Blonde, Estetica Fashion, Caracalla, Élite, Estetica Orchidea, Silvia Gasperi,
+Sir Marcus, Matt's, Old Skull, Barberia L'Artisan, MisterX, Monster House,
+Kevin Pomponi, Crazy for Art, Pensieri Permanenti, Inferno Ink, Centro Laser
+Ticino, Muha Barbershop, ByLilla, Me-style, Sirienne Margot, Êtrebel.
+
+Più le **trappole di geografia**, che su queste ricerche sono continue: Ponte
+Chiasso e Lavena Ponte Tresa sono Italia, `@esteticaparadiso` è Collegno,
+`@puertobellaok` è Buenos Aires, `@barberiasteri` è Roma, `@ivan.hairlab` è
+Recanati. Un comune che suona ticinese non è un comune ticinese.
+
+### Buchi dichiarati, secondo giro
+
+- **I follower ci sono su 8 righe su 34.** Instagram non si apre da qui: dove
+  non li ho letti c'è `n.d.`.
+- **Nessun profilo aperto**, come al mattino: handle, indirizzi e telefoni
+  vengono dalle SERP. `source: claude`, si guarda il profilo prima di scrivere.
+- **Il Mendrisiotto minore resta vuoto**: Coldrerio, Rancate, Genestrerio,
+  Ligornetto, Stabio, Vacallo, Morbio, Castel San Pietro non hanno restituito
+  niente di verificabile. E i comuni piccoli del Luganese (Melide, Bissone,
+  Agno, Bioggio, Manno, Monteceneri) danno solo directory: se il Ticino va
+  continuato, quella fascia va pescata da `local.ch` e `ticinodigitale`, non
+  dalle ricerche su Instagram.
 
 ## Il messaggio è diverso, e non solo nella firma
 
