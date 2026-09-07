@@ -47,6 +47,8 @@ for p in "$V" "$HOME/lavoro/denki-brain" "$HOME/Desktop/denkicode volt" "/c/User
 done
 cd "$V" && git pull --rebase -q 2>&1 | tail -2
 ls -1 "$V/06-Daily" | sort | tail -1
+python3 "$V/02-Sales/strumenti/stato-banco.py"
+ls -1t "$V/02-Sales/liste"/*.csv | head -3
 ```
 
 Vault non trovato → **chiedi il percorso**, non cercarlo a tappeto.
@@ -59,6 +61,36 @@ di leggere altro: senza quello le skill del vault — `voce-denkicode`,
 vengono riconosciute automaticamente, e con loro anche i file toccati oggi
 (`banco-dm.html`, `stile-comunicazione.md`) restano aggiornati su disco ma
 fuori dal contesto della sessione.
+
+## 1b. Il banco DM è la prima cosa che gli passi
+
+L'ultimo comando del passo 1 stampa **quante conversazioni aspettano su ogni
+account**. Quella riga apre la risposta, prima di qualunque altra cosa: il
+collo di bottiglia è la generazione lead, e il banco è l'unico posto dove il
+lavoro di oggi è già pronto e non parte da solo.
+
+Quindi, sempre, in tre righe scarse:
+
+1. **Cosa c'è sul banco, per account** — da mandare, tetto, recuperi maturi.
+   Un account nuovo ha il tetto basso apposta: si dice il numero, non si
+   propone di alzarlo.
+2. **Quale lista è nuova**, se ne è comparsa una che lui non ha ancora visto:
+   nome, zona, quante righe, da quale account si manda. La nota della lista sta
+   in `02-Sales/liste/` e si legge solo se lui chiede il dettaglio.
+3. **Come si apre**: doppio click su `Banco DM.command`, e il selettore in
+   testata sceglie l'account. Le liste sono già pubblicate — nessun file da
+   trascinare.
+
+**Le liste si pubblicano, non si consegnano a voce.** Se una lista nuova sta
+in `02-Sales/liste/` ma non è ancora sul banco (`lista-corrente.csv` per
+Patrick, `lista-denkicode.csv` per DenkiCode), la pubblichi tu prima di
+rispondere: **si appende, non si sostituisce.** Un CSV sostituito porta via le
+date degli invii e con esse i recuperi, che sono la metà del valore del canale.
+
+⚠️ Lo script legge i CSV, non il browser. **Gli invii di oggi vivono nel
+localStorage sul Mac di Patrick**: se dice di averne mandati venti e lo script
+dice zero, ha ragione lui — il conto rientra nel CSV solo quando scarica la
+lista aggiornata dal banco.
 
 ## 2. Leggi il minimo, poi allarga solo se serve
 
@@ -109,7 +141,8 @@ Manca un dato dopo questo? **Chiedilo.** Una domanda costa meno di cinque file.
 Massimo otto righe:
 
 ```
-Patrick — <data>. <una riga: dove sta il commerciale adesso>
+Patrick — <data>. Banco DM: <da mandare e tetto per account, recuperi se ce ne sono>
+<una riga solo se c'è una lista nuova: quale, dove, da che account>
 
 Sul tavolo:
 - <3 voci aperte, una riga ciascuna: lead, incassi, trattative>

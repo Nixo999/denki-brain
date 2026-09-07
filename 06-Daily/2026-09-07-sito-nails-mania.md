@@ -192,9 +192,9 @@ Terza sessione, in `/nicola`, su richiesta di Patrick. Non è lavoro su un sito:
 
 ## Aperto
 
-- ⬜ La lista di Patrick **non è pubblicata**: `lista-corrente.csv` ha ancora
-  1750 righe lombarde con 68 da mandare e i recuperi che si accendono. La
-  ticinese si trascina quando quella è finita.
+- ✅ **Chiuso in coda di sessione**: le 8 righe ticinesi di Patrick sono state
+  appese a `lista-corrente.csv` (76 da mandare), e `/patrick` adesso apre dal
+  banco. Vedi la sezione di chiusura, sotto.
 - ⬜ Il tetto di DenkiCode va alzato a mano, dieci al giorno, ogni giorno che
   regge. Nessuno lo fa da solo.
 - ⬜ Mendrisiotto e Chiassese hanno dato due righe: per quella zona serve un
@@ -283,3 +283,52 @@ altre: a inizio sessione si legge l'ultima daily in ordine alfabetico.
 ## Collegamenti
 
 [[trappole]] · [[registro-interventi]] · [[credenziali]]
+
+---
+
+# 2026-09-07 (chiusura) — `/patrick` apre dal banco, non dal riepilogo
+
+Coda della sessione precedente. Chiesto da Nicola: quando Patrick lancia il suo
+comando, la prima cosa che deve avere in mano sono le liste e un banco già
+aggiornato.
+
+## Fatto
+
+- **`02-Sales/strumenti/stato-banco.py`**: legge i due CSV pubblicati e stampa,
+  per account, quante conversazioni restano, quante sono partite oggi e quali
+  recuperi sono maturi. **I tetti li legge dall'HTML del banco** con una regex,
+  così i due numeri non possono divergere.
+- **`/patrick` ha un passo nuovo, prima della lettura del vault**: lancia lo
+  script e apre la risposta con quella riga. Se una lista sta in
+  `02-Sales/liste/` e non è ancora sul banco, la pubblica **appendendola**.
+- **Le 8 righe ticinesi di Patrick sono sul banco**: `lista-corrente.csv` passa
+  a 153 righe, 76 da mandare. DenkiCode resta a 9 con tetto 15.
+- Le copie in `~/.claude/commands/` erano ferme al 6 settembre (quattro file):
+  allineate a quelle versionate nel vault.
+
+## Come è stato fatto
+
+- **Il conteggio dei giorni lavorativi è stato copiato dal banco, non
+  riscritto.** Al primo giro contava da domani invece che dal giorno
+  dell'invio: uno sfasamento di un giorno che avrebbe acceso i recuperi con
+  ventiquattr'ore di anticipo, e nessuno se ne sarebbe accorto guardando il
+  numero. Provato sulle date vere: il 3 settembre matura mercoledì 9, che è
+  quello che diceva la nota della lista del 5.
+- **Appendere, non sostituire.** È la regola che il canale ha già pagato una
+  volta: un CSV sostituito porta via le date degli invii, e con esse i
+  recuperi. Scritta nel comando, non solo qui.
+- **Lo script non sa quanti DM sono partiti davvero.** Quel conto vive nel
+  localStorage del browser di Patrick e rientra nel CSV solo quando scarica la
+  lista aggiornata. Scritto nel comando come avvertimento: se lui dice venti e
+  lo script dice zero, ha ragione lui.
+
+## Aperto
+
+- ⬜ Il tetto di DenkiCode resta da alzare a mano, dieci al giorno.
+- ⬜ Nessuno dei 17 profili ticinesi è stato aperto su Instagram prima di
+  finire sul banco: la verifica del profilo tocca a chi manda.
+
+## Collegamenti
+
+[[2026-09-07-instagram-ticino]] · [[2026-09-07-due-account-dm]] ·
+[[metodo-instagram]] · [[registro-interventi]]

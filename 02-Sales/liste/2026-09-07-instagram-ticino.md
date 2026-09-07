@@ -17,7 +17,7 @@ di Patrick e quello di DenkiCode ([[2026-09-07-due-account-dm]]).
 | Lista | Account | Zona | Righe | File |
 |---|---|---|---|---|
 | Patrick | profilo personale | Sotto Ceneri: Lugano, Chiasso, Mendrisio | 8 | `2026-09-07-instagram-ticino-patrick.csv` |
-| DenkiCode | account aziendale | Sopra Ceneri: Bellinzona, Locarno, Ascona | 9 | `2026-09-07-instagram-ticino-denkicode.csv` (pubblicata come `lista-denkicode.csv`) |
+| DenkiCode | account aziendale | Sopra Ceneri: Bellinzona, Locarno, Ascona | 9 | `2026-09-07-instagram-ticino-denkicode.csv` → pubblicata come `lista-denkicode.csv` |
 
 **La divisione è geografica e non si incrocia**: un'attività riceve un
 messaggio solo, da un account solo. Il controllo incrociato è passato su tutte
@@ -58,9 +58,10 @@ sbagliato. Due differenze rispetto al testo lombardo di [[dm-instagram-vetrina]]
   due handle. Va guardato quale è vivo prima di scrivere.
 - I follower stanno solo dove la ricerca li ha detti: dove c'è `n.d.` il
   profilo non è stato aperto, e sotto i 200 follower la riga andrebbe tolta.
-- La lista di Patrick **non sostituisce** `lista-corrente.csv`: là dentro ci
-  sono 1750 righe lombarde con gli invii già segnati e i recuperi che si
-  accendono da soli. Si trascina sul banco quando la lombarda è finita.
+- **Pubblicate tutte e due**, il 7 settembre: le 8 righe di Patrick sono state
+  **appese** a `lista-corrente.csv`, che passa da 145 a 153 righe e da 68 a 76
+  da mandare. Appese e non sostituite: le date degli invii lombardi restano, e
+  con esse i 75 recuperi che maturano mercoledì 9 settembre.
 
 ## Buchi dichiarati
 
