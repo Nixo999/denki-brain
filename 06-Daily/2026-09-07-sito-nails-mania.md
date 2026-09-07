@@ -48,7 +48,10 @@ online.
   concorde con «da confermare al telefono».
 - Ciglia, trucco semipermanente e corsi: dal sito del 2016, non confermati
   nel 2026.
-- Finish review di impeccable: `TODO` esito, vedi la scheda del progetto.
+- Finish review di impeccable: due ricatture e un giro di otto fix, dettaglio
+  nella scheda del progetto. Le catture headless hanno un'altra trappola:
+  `scrollTo(0,y)` con `html{scroll-behavior:smooth}` si ferma a metà; nei
+  wrapper serve `behavior:'instant'`.
 
 ## Collegamenti
 

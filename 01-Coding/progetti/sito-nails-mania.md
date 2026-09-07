@@ -84,9 +84,18 @@ CSS.**
 
 ## Stato
 
-🟡 **Bozza sul repo privato, misurata a 1440 e 375**: hero a due righe, la
-mensola sta nel primo schermo, zero overflow, scelta del colore funzionante.
-Finish review: vedi diario. **Non vista su browser vero né su telefono.**
+🟡 **Bozza sul repo privato, passata dalla finish review.** Tre passate di
+impeccable: due «recapture» (il mobile si fermava a metà: lo scroll dei
+wrapper era `smooth`, ora istantaneo; e il prima/dopo con `object-fit`
+mostrava tutte e due le metà, ora sono due ritagli veri), poi «fix» con otto
+rilievi (i tre «da vicino» erano le stesse foto della hero, ora ritagli di
+dettaglio; l'oro del refil come secondo colore, tolto; forme ridisegnate con
+mandorla arrotondata, pipe stretta e riflesso; mosaico mobile leggibile;
+aggettivi non tracciabili tagliati o citati in commento dalla pagina del 2016;
+tag dei moduli tolti; mensole sotto vetrina e mosaico; fondo bianco che era un
+artefatto del wrapper). Verdetto: sei risolti, uno parziale e una
+regressione, chiusi in `6bbf0e0` senza terzo giro. Misurata a 1440 e 375.
+**Non vista su browser vero né su telefono.**
 
 ## Soldi
 
