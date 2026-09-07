@@ -97,7 +97,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-02-instagram-tattoo-wedding]] — 47 account nuovi, verificati uno per uno il 1 settembre 2026.
 - [[2026-09-03-instagram-anello-1-2]] — 33 righe nuove, verificate una per una il 3 settembre 2026.
 - [[2026-09-05-instagram-bg-va]] — 65 righe nuove, verificate una per una il 5 settembre 2026.
-- [[2026-09-07-instagram-ticino]] — Le liste ticinesi del 7 settembre: 8 + 34 righe per l'account di Patrick (Sotto Ceneri) e 9 per quello di DenkiCode (Sopra Ceneri), con gli scartati e le trappole di geografia.
+- [[2026-09-07-instagram-ticino]] — Le liste ticinesi del 7 settembre: 8 + 34 righe di estetica e 60 di ristorazione per l'account di Patrick (Sotto Ceneri), 9 per DenkiCode (Sopra Ceneri), con gli scartati e le trappole di geografia.
 - [[metodo-instagram]] — Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — Serve a produrre 130-150 contatti profilati a settimana, ripetibile.
 

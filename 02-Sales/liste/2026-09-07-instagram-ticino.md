@@ -18,6 +18,7 @@ di Patrick e quello di DenkiCode ([[2026-09-07-due-account-dm]]).
 |---|---|---|---|---|
 | Patrick, primo giro | profilo personale | Sotto Ceneri: Lugano, Chiasso, Mendrisio | 8 | `2026-09-07-instagram-ticino-patrick.csv` |
 | Patrick, secondo giro | profilo personale | Sotto Ceneri allargato: Lugano e quartieri, Massagno, Paradiso, Vezia, Caslano, Tesserete, Mendrisiotto | 34 | `2026-09-07-instagram-ticino-patrick-2.csv` |
+| Patrick, terzo giro | profilo personale | Sotto Ceneri, **campo nuovo: ristorazione e locali** | 60 | `2026-09-07-instagram-ticino-ristorazione.csv` |
 | DenkiCode | account aziendale | Sopra Ceneri: Bellinzona, Locarno, Ascona | 9 | `2026-09-07-instagram-ticino-denkicode.csv` → pubblicata come `lista-denkicode.csv` |
 
 **La divisione è geografica e non si incrocia**: un'attività riceve un
@@ -109,6 +110,76 @@ Recanati. Un comune che suona ticinese non è un comune ticinese.
   Agno, Bioggio, Manno, Monteceneri) danno solo directory: se il Ticino va
   continuato, quella fascia va pescata da `local.ch` e `ticinodigitale`, non
   dalle ricerche su Instagram.
+
+## Il terzo giro — un campo nuovo: ristorazione e locali
+
+Chiesto da Patrick: **«trova altri sessantacinque di un altro campo molto
+convertibile, sempre nella Svizzera italiana»**. Il campo scelto è la
+**ristorazione**: ristoranti, pizzerie, grotti, bar, gelaterie, pasticcerie,
+take-away e food truck. **Sessanta righe**, appese a `lista-corrente.csv`, che
+passa da 187 a 247 e da 110 a 170 da mandare. Sull'account di Patrick le righe
+svizzere di oggi diventano **102**.
+
+⚠️ **Sessanta, non sessantacinque.** Le altre cinque non esistono: sono state
+esaminate circa centosessanta attività e queste sono quelle che hanno superato
+la verifica. Il resto ha un sito vero.
+
+### Perché questo campo, e cosa vale davvero
+
+- **La densità.** Il solo distretto di Lugano ha più di trecentocinquanta
+  esercizi pubblici: è l'unico segmento del Sotto Ceneri dove si possono fare
+  sessanta righe senza uscire dai comuni già battuti.
+- **Le foto ce le hanno già**, ed è il perno del messaggio: la bozza si guarda
+  in cinque secondi perché dentro ci sono i loro piatti.
+- **Il gancio è controllabile dal cliente in un istante**: cerca il proprio
+  nome su Google e vede quello che vede il cliente.
+- **Il tell del canale**: 52 righe su 60 sono «nessun sito». Nella ristorazione
+  ticinese il sito ce l'hanno i ristoranti gastronomici e le catene; bar,
+  gelaterie, take-away e pizzerie di quartiere vivono su Instagram e sui
+  portali di consegna.
+
+### I ganci, uno per uno
+
+| Gancio | Righe | Esempio |
+|---|---|---|
+| 1 · nessun sito | 52 | Pub Number One, settemila follower e nessun dominio |
+| 5 · su piattaforma | 4 | Pizza Style sta su Menustic, JO PIZZA su Grubbio, Acqua & Farina su Smood e Uber Eats, Biblio Cafè su Blogspot |
+| 2 · dominio morto | 2 | `lapasticceriadiflavio.com` e `gelateriaparadiso.ch` non hanno più DNS |
+| 6 · sito mai finito | 1 | Grotto dei Pescatori: sito Wix col titolo ancora «My Site 1» |
+| 3 · sito rotto | 1 | Icon Sushi: in https risponde 503 con un certificato che non è suo |
+
+**Il caso Gelateria Paradiso vale da solo il giro**: l'account si chiama
+`@gelateriaparadiso.ch`, e quel dominio non esiste. Il nome del profilo promette
+un sito che non c'è.
+
+### Cosa è stato scartato
+
+Una quarantina di nomi con **un sito vero e vivo** — Basara, Ciani, Vitti,
+Roots, Trinity, Class Café, Caffè Milano, Speedy Pizza, Alchimia, 9CENTO,
+Locanda dei Mulini, Be Blonde, La Cicchetteria, Grotto Figini, Golosone,
+Vedeggio Bistrot, Danesi, La Colombina, Mustis, Al Faro, Locanda Gandriese,
+Kin-D Thai, Pinsa&Pokè, Maui Poke, Grotto del Mulino, Osteria BarAtto,
+Ristorante Stazione Balerna, Ristorante Fresco, Ristorante del Sole, Negio Food.
+Più i **gruppi**, che il sito ce l'hanno a livello di casa madre: Spaghetti
+Gastro Group (Martini Lounge, Birrificio di Bioggio), Lanchetta (Eight Sushi).
+
+E le trappole di geografia, che in questo campo sono peggio che nell'estetica:
+`@pizzeria_chiasso_brus` è **Brus, in Serbia**; `@ristoranteilchiasso1973` è
+**Capoliveri, all'Elba**; `@esteticaparadiso` era Collegno; Grotto America è a
+Ponte Brolla, cioè Sopra Ceneri, cioè di DenkiCode; Grotto Bagat e Consoli
+Massimo sono a Lavena Ponte Tresa, cioè Italia. **Un nome ticinese non è un
+indirizzo ticinese.**
+
+### Da sapere prima di mandare
+
+- ⚠️ **Due coppie di profili gemelli**: `@gelateriavenetalugano` e
+  `@gelateria_veneta_lugano_` sono la stessa gelateria di via al Chioso;
+  `@grottodelmulinomorbio` e `@grottodelmulino_saceba_` sono lo stesso grotto
+  (fuori lista, il sito ce l'ha). Se ne scrive a uno solo.
+- **`@lugano_fruangen` è fuori** per la regola dei 200 follower: ne ha 166.
+- I follower stanno solo dove la ricerca li ha detti: 4 righe su 60.
+- Nessun profilo aperto su Instagram: `source: claude`, si guarda il profilo
+  prima di scrivere.
 
 ## Il messaggio è diverso, e non solo nella firma
 

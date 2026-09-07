@@ -88,6 +88,22 @@ Patrick ha chiesto due cose: **aggiorna il banco DM e aprimelo**, e poi
   oggi risponde 404, quindi il gancio passa da «è una pagina su Wix» a «quella
   pagina non esiste più».
 
+### Terzo giro: la ristorazione, sessanta righe
+
+Patrick ha chiesto un campo nuovo e molto convertibile, sempre svizzero. Ho
+scelto **ristorazione e locali** e ne sono uscite **60 righe** (247 nel banco,
+170 da mandare, 102 svizzere). Non 65: centosessanta attività guardate, il
+resto ha un sito vero.
+
+- **Il campo regge**: 52 righe su 60 sono «nessun sito». Nella ristorazione
+  ticinese il dominio ce l'hanno i gastronomici e le catene, non i bar, le
+  gelaterie e i take-away.
+- **Il pezzo forte**: `@gelateriaparadiso.ch` porta il dominio nel nome del
+  profilo, e quel dominio non esiste più.
+- **Le trappole di geografia sono peggio che nell'estetica**: una pizzeria
+  «Chiasso» era in Serbia, un ristorante «Il Chiasso» era all'Elba. Ogni riga
+  ha l'indirizzo verificato.
+
 ## Collegamenti
 
 [[sito-nails-mania]] · [[nails-mania]] · [[sito-salone-di-andrea]] ·
@@ -203,6 +219,22 @@ Patrick ha chiesto due cose: **aggiorna il banco DM e aprimelo**, e poi
   oggi risponde 404, quindi il gancio passa da «è una pagina su Wix» a «quella
   pagina non esiste più».
 
+### Terzo giro: la ristorazione, sessanta righe
+
+Patrick ha chiesto un campo nuovo e molto convertibile, sempre svizzero. Ho
+scelto **ristorazione e locali** e ne sono uscite **60 righe** (247 nel banco,
+170 da mandare, 102 svizzere). Non 65: centosessanta attività guardate, il
+resto ha un sito vero.
+
+- **Il campo regge**: 52 righe su 60 sono «nessun sito». Nella ristorazione
+  ticinese il dominio ce l'hanno i gastronomici e le catene, non i bar, le
+  gelaterie e i take-away.
+- **Il pezzo forte**: `@gelateriaparadiso.ch` porta il dominio nel nome del
+  profilo, e quel dominio non esiste più.
+- **Le trappole di geografia sono peggio che nell'estetica**: una pizzeria
+  «Chiasso» era in Serbia, un ristorante «Il Chiasso» era all'Elba. Ogni riga
+  ha l'indirizzo verificato.
+
 ## Collegamenti
 
 [[trappole]] · [[indice]] · [[registro-interventi]] · [[sito-castiglione]] ·
@@ -291,6 +323,22 @@ Patrick ha chiesto due cose: **aggiorna il banco DM e aprimelo**, e poi
 - **Una riga del mattino corretta**: la pagina Wix di `@angolodiros_mendrisio`
   oggi risponde 404, quindi il gancio passa da «è una pagina su Wix» a «quella
   pagina non esiste più».
+
+### Terzo giro: la ristorazione, sessanta righe
+
+Patrick ha chiesto un campo nuovo e molto convertibile, sempre svizzero. Ho
+scelto **ristorazione e locali** e ne sono uscite **60 righe** (247 nel banco,
+170 da mandare, 102 svizzere). Non 65: centosessanta attività guardate, il
+resto ha un sito vero.
+
+- **Il campo regge**: 52 righe su 60 sono «nessun sito». Nella ristorazione
+  ticinese il dominio ce l'hanno i gastronomici e le catene, non i bar, le
+  gelaterie e i take-away.
+- **Il pezzo forte**: `@gelateriaparadiso.ch` porta il dominio nel nome del
+  profilo, e quel dominio non esiste più.
+- **Le trappole di geografia sono peggio che nell'estetica**: una pizzeria
+  «Chiasso» era in Serbia, un ristorante «Il Chiasso» era all'Elba. Ogni riga
+  ha l'indirizzo verificato.
 
 ## Collegamenti
 
@@ -392,6 +440,22 @@ Patrick ha chiesto due cose: **aggiorna il banco DM e aprimelo**, e poi
   oggi risponde 404, quindi il gancio passa da «è una pagina su Wix» a «quella
   pagina non esiste più».
 
+### Terzo giro: la ristorazione, sessanta righe
+
+Patrick ha chiesto un campo nuovo e molto convertibile, sempre svizzero. Ho
+scelto **ristorazione e locali** e ne sono uscite **60 righe** (247 nel banco,
+170 da mandare, 102 svizzere). Non 65: centosessanta attività guardate, il
+resto ha un sito vero.
+
+- **Il campo regge**: 52 righe su 60 sono «nessun sito». Nella ristorazione
+  ticinese il dominio ce l'hanno i gastronomici e le catene, non i bar, le
+  gelaterie e i take-away.
+- **Il pezzo forte**: `@gelateriaparadiso.ch` porta il dominio nel nome del
+  profilo, e quel dominio non esiste più.
+- **Le trappole di geografia sono peggio che nell'estetica**: una pizzeria
+  «Chiasso» era in Serbia, un ristorante «Il Chiasso» era all'Elba. Ogni riga
+  ha l'indirizzo verificato.
+
 ## Collegamenti
 
 [[trappole]] · [[registro-interventi]] · [[2026-09-07-instagram-ticino]] ·
@@ -468,6 +532,22 @@ Patrick ha chiesto due cose: **aggiorna il banco DM e aprimelo**, e poi
 - **Una riga del mattino corretta**: la pagina Wix di `@angolodiros_mendrisio`
   oggi risponde 404, quindi il gancio passa da «è una pagina su Wix» a «quella
   pagina non esiste più».
+
+### Terzo giro: la ristorazione, sessanta righe
+
+Patrick ha chiesto un campo nuovo e molto convertibile, sempre svizzero. Ho
+scelto **ristorazione e locali** e ne sono uscite **60 righe** (247 nel banco,
+170 da mandare, 102 svizzere). Non 65: centosessanta attività guardate, il
+resto ha un sito vero.
+
+- **Il campo regge**: 52 righe su 60 sono «nessun sito». Nella ristorazione
+  ticinese il dominio ce l'hanno i gastronomici e le catene, non i bar, le
+  gelaterie e i take-away.
+- **Il pezzo forte**: `@gelateriaparadiso.ch` porta il dominio nel nome del
+  profilo, e quel dominio non esiste più.
+- **Le trappole di geografia sono peggio che nell'estetica**: una pizzeria
+  «Chiasso» era in Serbia, un ristorante «Il Chiasso» era all'Elba. Ogni riga
+  ha l'indirizzo verificato.
 
 ## Collegamenti
 
@@ -558,6 +638,22 @@ Patrick ha chiesto due cose: **aggiorna il banco DM e aprimelo**, e poi
 - **Una riga del mattino corretta**: la pagina Wix di `@angolodiros_mendrisio`
   oggi risponde 404, quindi il gancio passa da «è una pagina su Wix» a «quella
   pagina non esiste più».
+
+### Terzo giro: la ristorazione, sessanta righe
+
+Patrick ha chiesto un campo nuovo e molto convertibile, sempre svizzero. Ho
+scelto **ristorazione e locali** e ne sono uscite **60 righe** (247 nel banco,
+170 da mandare, 102 svizzere). Non 65: centosessanta attività guardate, il
+resto ha un sito vero.
+
+- **Il campo regge**: 52 righe su 60 sono «nessun sito». Nella ristorazione
+  ticinese il dominio ce l'hanno i gastronomici e le catene, non i bar, le
+  gelaterie e i take-away.
+- **Il pezzo forte**: `@gelateriaparadiso.ch` porta il dominio nel nome del
+  profilo, e quel dominio non esiste più.
+- **Le trappole di geografia sono peggio che nell'estetica**: una pizzeria
+  «Chiasso» era in Serbia, un ristorante «Il Chiasso» era all'Elba. Ogni riga
+  ha l'indirizzo verificato.
 
 ## Collegamenti
 
