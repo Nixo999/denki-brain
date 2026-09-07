@@ -59,18 +59,23 @@ Metodo [[processo-siti]]: PRODUCT.md → `concept-seed` seed **`7989d0d3`** →
 scelta di Nicola sul tool strutturato (la pagina di decisione nel pannello si
 era chiusa senza risposta la volta prima). **Il dado ha assegnato «La vetrina
 di smalti»** (candidato 7) e Nicola l'ha tenuto, sopra la mia scelta (la
-cartella colori) e lo sfidante ebru.
+cartella colori) e lo sfidante ebru. **Poi l'ha bocciato a bozza fatta**: «non
+deve essere un test per vedere le unghie, deve essere un sito vetrina di roba
+già fatta da loro e altre cose carine, hai sbagliato proprio idea». La
+direzione è diventata **la vetrina dei lavori**: le loro foto vere, ritagliate
+sull'unghia per togliere le scritte, in cornici di vetro con cartellino
+(tecnica e data).
 
-Mondo: porcellana fredda, cromo dei tappi, vetro in gradiente, e **i loro gel
-come unico colore pieno**. Bricolage Grotesque, unica famiglia. Hero: una
-mensola con sette boccette disegnate in SVG, una per colore dell'arcobaleno
-del post del 2 luglio 2026, etichetta «Nails Mania» e nome del colore.
-**Interazione firma: tocchi una boccetta e il sito indossa quel colore**
-(bottoni, titolo, forme, etichette). Poi: «Un centro di ricostruzione, non un
-nail bar» con quattro fatti → campionario delle cinque forme nel colore
-scelto → «Mani» in nove moduli rigati fitti (raise dalla densità giapponese,
-sfidante declinato) con la riga del refil → «Piedi, e l'alluce» col
-prima/dopo vero → tre servizi su richiesta → dove e quando con la mappa.
+Mondo: porcellana fredda, vetro con riflesso, un solo colore pieno (il fucsia
+del post del 3 aprile 2026, scurito per reggere come testo). Bricolage
+Grotesque, unica famiglia. Hero: «Le unghie che escono da qui» e tre lavori
+veri in cornici sfalsate (arcobaleno, cat-eye blu, french tiffany). Poi «Fatte
+qui, quest'anno»: mosaico di otto lavori dai post del 2026 → «Un centro di
+ricostruzione, non un nail bar» con quattro fatti → le cinque forme → «Mani»
+in nove moduli rigati fitti con la riga del refil → «Piedi, e l'alluce» col
+prima/dopo vero in due ritagli → tre servizi su richiesta → dove e quando.
+I ritagli stanno in `assets/lavori/`, fatti con `crop.py` (un ritaglio PNG in
+Python puro: `sips` con `--cropOffset` non ritaglia, restituisce nero).
 
 Errore trovato in costruzione: le boccette erano `<use>` di un `<symbol>` e
 gli stili del documento non entrano nell'ombra di `use`: nere. Ora l'SVG è

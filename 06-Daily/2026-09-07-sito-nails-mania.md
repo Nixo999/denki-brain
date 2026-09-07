@@ -31,6 +31,14 @@ online.
   dicevano Via Dante 66 (sito del 2014, directory vecchie), due dicevano Via
   Brusaporto 1: il biglietto da visita nella foto del 6 giugno 2026 ha
   deciso. Regola 14 del CLAUDE.md, applicata a un indirizzo.
+- **Un'idea può essere bella e sbagliata.** Le boccette con la scelta del
+  colore erano il dado, Nicola le aveva scelte, ed erano una cosa da guardare:
+  «non deve essere un test per vedere le unghie, deve essere un sito vetrina
+  di roba già fatta da loro». Rifatto in un'ora come vetrina dei lavori: le
+  loro foto, ritagliate per togliere le scritte, in cornici di vetro. Regola:
+  **quando il brief dice "vetrina", il contenuto sono i lavori del cliente**,
+  anche se le foto sono brutte; il design serve a farle sembrare belle, non a
+  sostituirle.
 - **`<use>` di un `<symbol>` non prende gli stili del documento**: sette
   boccette nere al primo giro. Grafica che prende colore da CSS va inline.
 
