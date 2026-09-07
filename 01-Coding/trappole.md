@@ -107,6 +107,24 @@ resta nella daily e nel registro, e da qui ci si linka.
 - **Le credenziali non le digito io.** `netlify login` apre il browser e chiede
   l'accesso di Nicola: si prepara tutto e ci si ferma lì. [[credenziali]]
 
+## Far modificare il sito al cliente
+
+- **Con uno store a file, pubblicare vuol dire fare un commit.** Un sito statico
+  non scrive su sé stesso: `dati/*.json` più le foto è la soluzione più leggera e
+  regge finché le voci sono poche, ma l'ultimo passo lo fa chi ha il repo. Dal
+  telefono il cliente non ci arriva proprio, e va detto prima di prometterlo.
+  Se deve pubblicare da solo davvero, serve qualcosa di ospitato.
+- **`showDirectoryPicker` va chiamato per primo dentro il gestore del click, prima
+  di qualunque `await`.** Dopo un `await` l'attivazione utente è scaduta e il
+  picker fallisce senza spiegare perché. Vale per tutta la File System Access API.
+  Esiste solo su Chrome ed Edge da computer: su iOS non c'è.
+- **Un file di dati servito da un server statico arriva dalla cache.** Con
+  `Last-Modified` e nessun `Cache-Control` il browser tiene la copia vecchia, e
+  la cosa appena pubblicata non si vede. → `fetch(url, { cache: 'no-cache' })`,
+  che non salta la cache ma la fa rivalidare: se non è cambiato torna un 304.
+- **Due download di fila: il secondo il browser lo lascia cadere.** Vanno
+  distanziati di qualche centinaio di millisecondi.
+
 ## Supabase e chiavi nel browser
 
 - **La chiave anon è pubblica per definizione**: sta in chiaro nel JS che scarica

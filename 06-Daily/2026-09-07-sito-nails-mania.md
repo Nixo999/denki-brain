@@ -332,3 +332,64 @@ aggiornato.
 
 [[2026-09-07-instagram-ticino]] · [[2026-09-07-due-account-dm]] ·
 [[metodo-instagram]] · [[registro-interventi]]
+
+---
+
+# 2026-09-07 (mezzogiorno) — V-BAG senza database: lo store diventa un file
+
+Nicola ha bocciato Supabase a poche ore dall'averlo montato: «sono poche borse,
+non serve un database vero, sfrutta file interni». Rifatto.
+
+## Fatto
+
+- **Supabase via**, non svuotato: `supabase.js` e `supabase.sql` cancellati.
+  Con loro se ne vanno login, token, RLS e la mappatura di 401 e 403. Il
+  progetto Supabase non era ancora stato creato, quindi non resta niente da
+  disfare: nessuna migrazione in sospeso.
+- **Lo store è `dati/borse.json` più le foto in `assets/borse/`**, letti dalla
+  home al caricamento.
+- **`admin.html` cambia natura**: non è più un'area riservata, è uno strumento
+  locale. Non protegge niente perché non scrive da nessuna parte se non sul
+  disco di chi la apre. Con la File System Access API scrive foto e JSON dentro
+  la cartella del sito; senza, consegna gli stessi due file da scaricare.
+- 197 righe di codice contro 251.
+
+## Come è stato fatto
+
+- **Il vincolo vero non è tecnico, è di flusso.** Con i file, pubblicare vuol
+  dire fare un commit: dal computer Giulia arriva ai file pronti, dal telefono
+  no. Su iOS la File System Access API non esiste e un download non entra in
+  git. L'ho scritto nel `CLAUDE.md` e fatto dire alla pagina con parole sue,
+  invece di lasciarlo scoprire a lei. Era la condizione per non avere un
+  database: si accetta, ma dichiarata.
+- **Il difetto vero l'ha trovato la revisione, non l'operatore.** Il `fetch` di
+  `dati/borse.json` prendeva la copia in cache — `http.server` manda
+  `Last-Modified` e nessun `Cache-Control` — quindi una borsa appena messa
+  online non si vedeva. Non era un problema del test: sarebbe successo anche in
+  produzione. Corretto con `cache: 'no-cache'`, che rivalida invece di saltare
+  la cache. L'ho visto perché le due voci finte non comparivano e ho misurato
+  invece di ricaricare e sperare.
+- **La modalità operatore regge, ma la revisione non è una formalità.** In due
+  giri l'operatore ha consegnato codice giusto e misurato, e in tutti e due ho
+  trovato in revisione una cosa che cambiava il comportamento vero: la prima
+  volta le regole di scrittura che si fidavano del solo `authenticated`, la
+  seconda la cache. Il direttore che si limita a leggere il rapporto non serve
+  a niente.
+
+## Aperto
+
+- ⬜ **Il ramo `showDirectoryPicker` non è mai stato eseguito**: serve un gesto e
+  un permesso veri, nel pannello parte sempre il fallback. Va provato a mano su
+  Chrome da computer prima di dire a Giulia che funziona.
+- ⬜ Safari su iPhone mai provato: encoding webp del canvas, orientamento EXIF e
+  i due download di fila.
+- ⬜ Hosting mai deciso, numero WhatsApp ancora vuoto.
+
+## Non verificato
+
+- Tutto quello che sta sopra, più: nessun test runnable lasciato nel repo.
+  L'unica logica isolabile è `slug()`, provata a mano.
+
+## Collegamenti
+
+[[trappole]] · [[registro-interventi]]
