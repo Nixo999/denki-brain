@@ -33,6 +33,9 @@ Lo slug descrive il lavoro, non la data: `2026-08-28-opero-liste-cliente.md`.
 Compila tutte le sezioni:
 
 - **Fatto** — solo cose finite, non tentativi
+- **Come è stato fatto** — la strada tecnica presa. Non è il riassunto del
+  codice: è quello che serve a chi riprende senza aver visto niente. Qui va il
+  caso concreto
 - **Deciso** — se una decisione è importante, aprile anche una nota in
   `05-Decisioni/` e qui lascia solo il link
 - **Aperto** — a che punto esatto è rimasta la cosa a metà. Chi riprende deve
@@ -41,16 +44,43 @@ Compila tutte le sezioni:
 - **Non verificato** — cosa è stato scritto ma non provato, e perché.
   Non saltare questa sezione: è la regola di casa
 
-## 3. Aggiornare le note toccate
+## 3. La memoria tecnica
+
+Ogni riga della sezione **Come è stato fatto** che vale anche su un progetto che
+ancora non esiste va copiata in `01-Coding/trappole.md`, nella sua sezione,
+ridotta a *trappola → contromisura → dove è stata pagata*. Se una trappola c'era
+già, si aggiunge il progetto dove è ricomparsa: una ricomparsa è la prova che il
+file serve.
+
+Non ci va il resoconto della giornata — quello resta nella daily. Se non è
+uscito niente di riutilizzabile, non si scrive niente: un file lungo non lo
+rileggo.
+
+## 4. Aggiornare le note toccate
 
 Per ogni progetto o cliente su cui si è lavorato:
 
 - porta `updated:` alla data di oggi
 - aggiorna la sezione **Aperto** — spunta ciò che è chiuso, aggiungi il nuovo
 - se sono cambiati soldi, stato o scadenza, aggiorna i campi del frontmatter
-- aggiorna l'indice progetti in `CLAUDE.md` se è cambiato uno stato
+- aggiorna la tabella dei progetti in `CLAUDE.md` se è nato un progetto o è
+  cambiato uno stato. La colonna «Nodo aperto» la scrive una persona: il
+  generatore la segnala mancante, non la inventa
 
-## 4. Commit e push
+## 5. Rigenera l'indice — non si aggiorna a mano
+
+```bash
+python3 01-Coding/strumenti/genera-indice.py
+```
+
+Riscrive `indice.md` dai file veri e stampa i buchi: link rotti, progetti attivi
+fuori dalla tabella di `CLAUDE.md`, righe del registro con un progetto scritto
+come testo invece che come wikilink, frontmatter senza `type`. **I buchi si
+guardano**: è così che un progetto vero resta senza scheda per una settimana.
+
+Quello che non risolvi, dillo in due righe invece di lasciarlo passare.
+
+## 6. Commit e push
 
 ```bash
 git add -A
@@ -67,7 +97,7 @@ perché**, non l'elenco dei file.
 Poi `git push`. Se il push fallisce, **non forzare**: `git pull --rebase`,
 guarda il risultato e riprova.
 
-## 5. Chiudi
+## 7. Chiudi
 
 Due righe all'utente: cosa hai scritto e cosa resta per domani. Niente riepilogo
 lungo — la nota di giornata è già il riepilogo.

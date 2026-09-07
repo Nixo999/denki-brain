@@ -1,5 +1,7 @@
 ---
-date: 2026-09-06
+type: decisione
+data: 2026-09-06
+progetto: sito-salone-di-andrea
 who: nicola
 source: claude
 ---

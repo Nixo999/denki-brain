@@ -139,9 +139,11 @@ non ci abita.
 ```
 00-Inbox/        catture al volo, non ancora sistemate. Si svuota, non si accumula
 01-Coding/       il lato tecnico
+  registro-interventi.md   una riga per intervento: chi, quando, repo, DATABASE
+  trappole.md              la memoria tecnica: quello che si è già pagato una volta
   progetti/      un file per progetto ATTIVO. Chiuso → si sposta in 04-Archive/
   stack/         tecnologie e convenzioni di codice
-  strumenti/     gli attrezzi e come sono configurati
+  strumenti/     gli attrezzi e come sono configurati, più genera-indice.py
   skills/        quale skill si usa per quale lavoro
 02-Sales/        il lato commerciale
   clienti/       un file per cliente o per lead qualificato
@@ -191,7 +193,7 @@ updated: YYYY-MM-DD
 ```yaml
 # Cliente
 type: cliente
-status: attivo | dormiente | chiuso
+status: lead | attivo | dormiente | chiuso
 progetti: [slug, slug]
 updated: YYYY-MM-DD
 ```
@@ -233,9 +235,12 @@ una certezza inventata — è la stessa regola che vale nei repo di codice.
 1. **Prima di scrivere, cerca — e cerca in [[indice]].** Nove volte su dieci la
    nota esiste già e va aggiornata, non duplicata: due note sullo stesso cliente
    producono due verità. L'indice elenca tutte le note con una riga a testa e
-   **costa meno di una ricerca**. Una nota nuova ci si aggiunge subito: un
-   indice vecchio fa concludere che una nota non esiste, ed è così che nasce il
-   doppione.
+   **costa meno di una ricerca**.
+   ⚠️ **L'indice non si scrive a mano**: `python3
+   01-Coding/strumenti/genera-indice.py` lo riscrive dai file veri e stampa i
+   buchi. Lo lancia `/chiudi-sessione`. Per un anno era una regola senza niente
+   che la eseguisse, e infatti restava indietro — vedi
+   [[2026-09-07-indice-generato]].
 2. **`updated` si tocca a ogni modifica sostanziale.** È il campo su cui gira
    `/settimana` e il controllo dei progetti fermi.
 3. **Le decisioni non si riscrivono.** Se una scelta cambia, si crea una nota
@@ -260,10 +265,16 @@ una certezza inventata — è la stessa regola che vale nei repo di codice.
    non eseguita resta invisibile finché non apre un tabellone vuoto. La riga si
    scrive a lavoro finito, prima di chiudere la sessione. Decisione del
    28 agosto 2026, vedi [[2026-08-28-registro-interventi]].
-8. **Fine sessione: `/chiudi-sessione`.** Scrive l'handoff, aggiorna `updated`,
+8. **Quello che hai imparato facendo va in [[trappole]].** Il registro dice cosa
+   è stato fatto, la daily com'è andata quel giorno, `trappole.md` cosa non va
+   riscoperto una seconda volta. A inizio sessione io leggo **solo l'ultima
+   daily**: una lezione scritta in una daily di dieci giorni fa, per me non
+   esiste. La riga si scrive con `/chiudi-sessione`, e solo se vale su un
+   progetto che ancora non esiste. Vedi [[2026-09-07-trappole-memoria-tecnica]].
+9. **Fine sessione: `/chiudi-sessione`.** Scrive l'handoff, aggiorna `updated`,
    committa e pusha. Non sostituisce il punto 6: è il riepilogo della giornata,
    non il primo momento in cui il lavoro esce dal portatile.
-9. **`git pull` prima di cominciare.** Nicola lavora da più macchine e Patrick
+10. **`git pull` prima di cominciare.** Nicola lavora da più macchine e Patrick
    scrive da sé: partire da un albero vecchio significa scrivere contro
    un'azienda che non esiste più.
 
@@ -274,8 +285,18 @@ una certezza inventata — è la stessa regola che vale nei repo di codice.
 | [[opero]] | [[sebastian-torres]] | 🟡 ~60%, in correzione | 2.000€ da incassare, storico mai migrato, XML SDI da quotare |
 | [[denkishift]] | prodotto interno | 🟡 quasi completo, non pubblicato | SMTP proprio, UI generazione turni, 0 clienti |
 | [[sito-albybike]] | [[albybike]] | 🟢 Online | Mai pagato, dominio in scadenza fra un anno |
-| [[sito-denkicode]] | interno | 🟢 Online | È la **galleria dei lavori**: strumento di vendita, non vetrina passiva |
+| [[sito-denkicode]] | interno | 🟢 Online | È la **galleria dei lavori**: strumento di vendita, non vetrina passiva. Il dominio pubblica ancora il sito vecchio |
 | [[sito-fiftynine]] | [[bar-tabacchi-fiftynine]] | 🟡 Bozza in trattativa, non pubblicata | Il proprietario ha mandato il menù: Netlify, prezzo mai detto, referente senza nome |
+| [[sito-atelier-selva]] | [[shari-piras]] | 🟡 Bozza fatta, proposta a 200€ | Hosting e dominio non decisi, `ciao.mp4` da 12,5 MB, il gestionalino promesso non è nella bozza |
+| [[sito-dsi-advertising]] | [[dsi-advertising]] | 🟡 Bozza fatta, mai proposta | Netlify no, tre email da confermare col titolare prima di pubblicare |
+| [[sito-salone-di-andrea]] | [[il-salone-di-andrea]] | 🟡 Bozza fatta, DM sul banco | Netlify (serve il login di Nicola), orario del giovedì e foto da confermare |
+| [[sito-nails-mania]] | [[nails-mania]] | 🟡 Bozza fatta, DM sul banco | Netlify, orari e servizi da confermare con Lory, dominio `nailsmania.net` libero |
+| [[sito-castiglione]] | [[castiglione-furniture]] | 🟠 Ferma dal 30 agosto | Mai proposta. `TODO`: verificare se è davvero online, e con che sbarramenti |
+| [[sito-ngbarber]] | [[ng-barber]] | 🟠 Ferma dal 1 settembre | Mai proposta. Due repo divergenti, il sorgente sta su una repo **pubblica** |
+
+⚠️ **Questa tabella la tiene una persona, il resto no.** Un progetto attivo che
+non compare qui lo segnala `01-Coding/strumenti/genera-indice.py`, ma la colonna
+«Nodo aperto» non si genera: quella la sa solo chi ci ha lavorato.
 
 Archiviati: [[cococat]] (bozza mai riscontrata — lead ancora vivo),
 [[sito-dropout]] (eventi di Patrick, sito da galleria), [[webolt-v1]] (vuoto).

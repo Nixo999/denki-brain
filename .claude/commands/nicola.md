@@ -33,7 +33,7 @@ allo stato del lavoro. Le decisioni già prese restano prese.
 
 ```bash
 V="${DENKI_VAULT:-}"
-for p in "$V" "$HOME/Desktop/denkicode volt" "/c/Users/User/Desktop/denkicode volt" "$HOME/Documents/denkicode volt" "$HOME/denkicode volt"; do
+for p in "$V" "$HOME/lavoro/denki-brain" "$HOME/Desktop/denkicode volt" "/c/Users/User/Desktop/denkicode volt" "$HOME/Documents/denkicode volt" "$HOME/denkicode volt"; do
   [ -n "$p" ] && [ -f "$p/CLAUDE.md" ] && V="$p" && break
 done
 cd "$V" && git pull --rebase -q 2>&1 | tail -2
@@ -48,7 +48,10 @@ Se il vault non si trova, **chiedi il percorso**. Non cercarlo a tappeto.
    (sessione partita dentro il vault).
 2. L'ultima nota di `06-Daily/`. Oltre le 200 righe, le ultime 120: il nuovo
    sta in fondo.
-3. **Solo se** `$ARGUMENTS` nomina un progetto: `01-Coding/progetti/<slug>.md`.
+3. `01-Coding/trappole.md` — **la memoria tecnica che non sta nell'ultima
+   daily**. È corto e serve prima di scrivere codice, non dopo: quello che c'è
+   scritto è già stato pagato una volta. Vale solo in questa modalità.
+4. **Solo se** `$ARGUMENTS` nomina un progetto: `01-Coding/progetti/<slug>.md`.
 
 Nient'altro. Niente `02-Sales/`, niente `03-Storage/`, niente dashboard, niente scansioni di
 cartelle. Se dopo questo manca un dato, **chiedilo**: una domanda costa meno

@@ -1,5 +1,7 @@
 ---
-date: 2026-09-01
+type: decisione
+data: 2026-09-01
+progetto: azienda
 who: nicola
 source: claude
 ---
