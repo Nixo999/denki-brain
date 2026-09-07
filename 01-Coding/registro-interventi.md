@@ -41,7 +41,7 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
 |---|---|---|---|---|---|---|
-| 2026-09-07 notte | Nicola +claude | [[sito-nails-mania]] | `Nixo999/nailsmania-site` (nuovo, privato) `main` | — | Bozza sito vetrina Nails Mania (Seriate): vetrina di smalti in SVG nei colori dei loro gel, dati dal profilo, dal vecchio sito archiviato e dalle schede, noindex. Repo creato con `gh`, pushato | `TODO` |
+| 2026-09-07 notte | Nicola +claude | [[sito-nails-mania]] | `Nixo999/nailsmania-site` (nuovo, privato) `main` | — | Bozza sito vetrina Nails Mania (Seriate): vetrina di smalti in SVG nei colori dei loro gel, dati dal profilo, dal vecchio sito archiviato e dalle schede, noindex. Repo creato con `gh`, pushato; poi rifatta come vetrina dei lavori, finish review e DESIGN.md | `69632bc` → `06075e9` |
 
 ## 2026-09-06
 

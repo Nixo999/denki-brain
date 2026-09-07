@@ -26,7 +26,7 @@ loro».
 settembre 2026 con `gh`) — in locale `~/lavoro/nailsmania-site` sul MacBook
 di Nicola.
 **Online**: no — Netlify, come ogni bozza ([[netlify]]).
-**Stack**: HTML puro, un solo `index.html`, GSAP 3.13 + ScrollTrigger da CDN
+**Stack**: HTML puro, un solo `index.html`, `DESIGN.md` dal documenter di impeccable, GSAP 3.13 + ScrollTrigger da CDN
 (motion additiva), 12 foto in `assets/ig/`, `netlify.toml` e `robots.txt`
 con i tre sbarramenti: **noindex** finché il sito non è suo.
 
