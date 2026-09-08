@@ -69,17 +69,19 @@ ancora finito dentro un sito vero.
 
 ## Dove va applicata — il ripasso
 
-Da fare sul Mac di Nicola: qui i repo dei siti **non ci sono** (sul Desktop di
-Patrick c'è solo `smoothduty`).
+Fatto la sera stessa dal Mac di Nicola, dove i repo stanno in `~/lavoro`: sul
+Desktop di Patrick c'è solo `smoothduty`. Il resoconto con le misure è nel
+[[registro-interventi]].
 
 - [ ] [[sito-albybike]] — online su `albybike.com`, è il primo che conta
-- [ ] [[sito-denkicode]] — il nostro, firma compresa
-- [ ] [[sito-fiftynine]] — bozza, `fiftynine-site` **e** `bartabaccheria59`
-- [ ] [[sito-atelier-selva]] · [[sito-dsi-advertising]] ·
+- [x] [[sito-denkicode]] — il nostro, firma compresa (`64397fc`, sera dell'8/9)
+- [x] [[sito-fiftynine]] — in `bartabaccheria59` (`c5cae57`, **non ancora pushato**: il push scrive su tutti e due i remoti)
+- [x] [[sito-atelier-selva]] · [[sito-dsi-advertising]] ·
       [[sito-salone-di-andrea]] · [[sito-nails-mania]] — bozze in trattativa
-- [ ] [[sito-castiglione]] · [[sito-ngbarber]] — ferme, si firma quando ripartono
+- [ ] [[sito-castiglione]] — ferma, repo sul PC di Nicola · [x] [[sito-ngbarber]] (`648187b`)
 - [ ] [[denkishift]] — prodotto nostro, footer dell'app
-- [ ] **V-BAG** — sito di Giulia, online su Netlify
+- [x] **V-BAG** — sito di Giulia, online su Netlify (`f1f8567`, due simboli in `<picture>`)
+- [x] [[cococat]] (`a60c226`) · [[sito-dropout]] (`b20baf4`) — non erano in lista, ma sono siti nostri
 
 Su una bozza la firma entra **subito**, non alla pubblicazione: è quello che il
 lead vede quando gli mandiamo il link, ed è lì che spiega chi l'ha fatto.
