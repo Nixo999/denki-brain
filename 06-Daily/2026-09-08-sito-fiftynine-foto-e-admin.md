@@ -81,6 +81,22 @@ letta con l'indice giusto, ma il render di quei due giorni non è stato forzato.
 ⬜ **Non pushato**: il commit `8324cd8` è locale. `bartabaccheria59` è pubblico
 e il push scrive anche su `fiftynine-site` — aspetta l'ok di Nicola.
 
+## Lista del giorno — 68 locali dell'anello 1
+
+Patrick ha chiesto un settore ad alta conversione. Il fitness ticinese è caduto
+subito: dodici su quindici avevano già il sito. Scartati anche detailing,
+giardinieri, pet, wedding e B&B. **Il Sotto Ceneri è esaurito**: le due riserve
+grosse le abbiamo prese ieri.
+
+Quindi zona nuova, canale uguale: **anello 1, ristorazione** — 68 righe fra
+Como (25), Varese (24) e Lecco (19). Il banco passa a 315 righe, 238 da
+mandare. La resa lombarda conferma il motivo del cambio: **64 righe su 68 non
+hanno nessun sito**, contro 52 su 60 in Ticino. Dettaglio in
+[[2026-09-08-anello1-ristorazione]].
+
+Da qui in poi il collo di bottiglia non è più la lista: a 65 DM al giorno, sul
+banco ci sono quattro giorni di lavoro già pronti.
+
 ## Collegamenti
 
 [[sito-fiftynine]] · [[trappole]] · [[registro-interventi]] · [[sito-vbag]] ·
