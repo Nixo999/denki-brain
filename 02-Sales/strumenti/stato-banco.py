@@ -50,3 +50,10 @@ def stato(nome, file, chiave):
 print(f"Banco DM, {OGGI.isoformat()}")
 for (nome, file), chiave in zip(ACCOUNT, ("patrick", "denkicode")):
     print(" ", stato(nome, file, chiave))
+
+# quello che il banco ha scritto nel brain (liste/contattati.csv, dall'8 settembre)
+for nome, file in (("contattati", "contattati.csv"), ("scartati perche' il sito ce l'avevano", "gia-col-sito.csv")):
+    p = QUI.parent / "liste" / file
+    righe = list(csv.DictReader(p.open(encoding="utf-8"))) if p.exists() else []
+    oggi = sum(1 for r in righe if r.get("Data") == OGGI.isoformat())
+    print(f"  {nome}: {len(righe)} in tutto, {oggi} oggi ({file})")

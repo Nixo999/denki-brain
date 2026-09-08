@@ -97,7 +97,36 @@ hanno nessun sito**, contro 52 su 60 in Ticino. Dettaglio in
 Da qui in poi il collo di bottiglia non è più la lista: a 65 DM al giorno, sul
 banco ci sono quattro giorni di lavoro già pronti.
 
+## Sera — venti su settantadue avevano il sito
+
+Nicola: «su 72 almeno 20 avevano già il sito, perché non controlli?». Ha
+ragione, e il motivo è nel CSV: **62 righe su 68 con la stessa frase di
+verifica**. Non era una ricerca riga per riga, era un modello. Le contromisure
+sono tre e stanno tutte nel repo, non in una promessa:
+
+- **Il banco tiene i contattati in un elenco a parte** — sezione «Contattati»
+  in fondo, ultimi in cima, col conto in testata — e ogni «Segna inviato» va
+  al server nuovo (`banco-server.py`, al posto di `http.server`), che scrive
+  `02-Sales/liste/contattati.csv` e **committa e pusha da solo** due minuti
+  dopo l'ultimo gesto. Seme: i 75 del 3 settembre. Scheda: [[contattati]].
+- **Tasto «Ha già il sito»** su ogni riga da mandare: la riga esce dal banco e
+  finisce in `gia-col-sito.csv`, che è il numero con cui si misura chi fa le
+  liste. Cioè me.
+- **`controlla-lista.py`** prima di pubblicare: frase ripetuta più di tre
+  volte o handle già scritto, e la lista non passa. Sulla lista di oggi
+  segnala subito le 62 righe.
+
+✅ Provato sul server locale: segna → riga nel CSV e nell'elenco, annulla →
+riga tolta, «ha già il sito» → riga in `gia-col-sito.csv`, file sconosciuto →
+400, doppione → una riga sola. Cambiando account l'elenco resta quello giusto.
+✅ Commit automatico visto partire alla chiusura del server (SIGTERM). Il
+`git pull --rebase` però si è rifiutato per le modifiche non committate nel
+vault, e senza pull niente push: aggiunto `--autostash`. ⬜ Il push dal server
+non è ancora stato visto arrivare su GitHub. ⬜ **Sul Mac di Patrick serve un `git pull`**
+prima del prossimo banco, o `Banco DM.command` lancia un file che non ha.
+⬜ I 20 di oggi non si sanno quali sono: Patrick li marca dal banco.
+
 ## Collegamenti
 
-[[sito-fiftynine]] · [[trappole]] · [[registro-interventi]] · [[sito-vbag]] ·
+[[sito-fiftynine]] · [[contattati]] · [[trappole]] · [[registro-interventi]] · [[sito-vbag]] ·
 [[netlify]] · [[processo-siti]]

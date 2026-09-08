@@ -191,6 +191,19 @@ resta nella daily e nel registro, e da qui ci si linka.
 - **Il dump grezzo dello scraping non si committa.** Su [[sito-ngbarber]] è
   finito nel commit iniziale di una repo pubblica e adesso resta nella storia.
 
+## Liste e banco DM
+
+- **Una frase di verifica ripetuta su sessanta righe è un modello, non un
+  controllo.** Lista dell'8 settembre: 62 righe su 68 con la stessa frase,
+  almeno 20 su 72 col sito. → ogni riga dice cosa è stato cercato e cosa è
+  uscito; `02-Sales/strumenti/controlla-lista.py` ferma la lista prima della
+  pubblicazione. [[contattati]]
+- **`python3 -m http.server` non scrive niente.** Se il browser deve lasciare
+  traccia nel vault serve un handler `POST` (stdlib, `banco-server.py`): il
+  file si aggiorna sul disco di chi clicca, e nel brain arriva solo col push —
+  che il server fa da solo, con un timer, e alla chiusura via segnale. Con
+  `SIGKILL` il timer non parte e il commit si perde.
+
 ## Collegamenti
 
 [[registro-interventi]] · [[processo-siti]] · [[convenzioni]] · [[netlify]] ·

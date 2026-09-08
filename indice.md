@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-09-07
+updated: 2026-09-08
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **130 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **133 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -97,8 +97,9 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-02-instagram-tattoo-wedding]] — 47 account nuovi, verificati uno per uno il 1 settembre 2026.
 - [[2026-09-03-instagram-anello-1-2]] — 33 righe nuove, verificate una per una il 3 settembre 2026.
 - [[2026-09-05-instagram-bg-va]] — 65 righe nuove, verificate una per una il 5 settembre 2026.
-- [[2026-09-07-instagram-ticino]] — Le liste ticinesi del 7 settembre: 8 + 34 righe di estetica e 60 di ristorazione per l'account di Patrick (Sotto Ceneri), 9 per DenkiCode (Sopra Ceneri), con gli scartati e le trappole di geografia.
-- [[2026-09-08-anello1-ristorazione]] — 68 locali di Como, Varese e Lecco: il primo giro di ristorazione in anello 1, e perché il Ticino si è esaurito.
+- [[2026-09-07-instagram-ticino]] — Due liste, una per account, perché dal 7 settembre il [banco DM](../strumenti/banco-dm.html) ha due postazioni: il profilo personale di Patr...
+- [[2026-09-08-anello1-ristorazione]] — 68 righe, tutte per l'account personale di Patrick, appese a lista-corrente.csv che passa da 247 a 315 righe e da 170 a 238 da mandare.
+- [[contattati]] — Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — Serve a produrre 130-150 contatti profilati a settimana, ripetibile.
 
@@ -212,6 +213,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-05-lista-instagram-65]] — Un blocco solo, chiesto da Patrick: «crea i 65 dm di oggi in banco dm».
 - [[2026-09-06-sito-salone-di-andrea]] — Un blocco solo, chiesto da Nicola in /nicola: «nuovo progetto: sito per l'account Instagram ilsalonediandrea, come al solito, seguendo il pr...
 - [[2026-09-07-sito-nails-mania]] — Sessione a cavallo della mezzanotte, in /nicola.
+- [[2026-09-08-sito-fiftynine-foto-e-admin]] — Nicola ha portato una chiavetta («NO NAME») con il materiale del proprietario del sito-fiftynine e ha chiesto due cose: usare quelle foto al...
 
 ## 04-Archive
 

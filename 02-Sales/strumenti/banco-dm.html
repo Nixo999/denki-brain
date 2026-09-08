@@ -66,6 +66,10 @@
   .tag.ok{border-color:var(--ok);color:var(--ok)}
   .tag.no{border-color:#c9483a;color:#e0705f}
   .riga.scartata{opacity:.62;border-style:dashed}
+  .contattati{margin-top:28px;border-top:1px solid var(--bordo);padding-top:14px}
+  .contattati summary{cursor:pointer;color:var(--tenue);font-size:14px;margin-bottom:12px}
+  .contattati a{color:var(--accento)}
+  button.secondario{background:transparent;color:var(--tenue);border:1px solid var(--bordo);font-size:12.5px}
 </style>
 </head>
 <body>
@@ -84,12 +88,18 @@
     <span>ultima ora <b id="ora">0</b></span>
     <span>da mandare <b id="restano">0</b></span>
     <span>recuperi <b id="rec">0</b></span>
+    <span>contattati <b id="cont">0</b></span>
   </div>
 </header>
 
 <main>
   <div id="stop" class="stop" hidden></div>
   <div id="lista"></div>
+  <details id="contattati" class="contattati">
+    <summary>Contattati — <b id="cont2">0</b> conversazioni aperte ·
+      <a href="../liste/contattati.csv" download>l'elenco nel brain</a></summary>
+    <div id="lista-contattati"></div>
+  </details>
   <div id="vuoto" class="vuoto">
     <b>Trascina qui il CSV della lista</b> — quelli di <code>02-Sales/liste/</code>.<br>
     Da qui in poi se lo ricorda: riaprendo la pagina la lista è già dov'era, coi messaggi già segnati.<br><br>
@@ -360,6 +370,22 @@ document.getElementById("account").addEventListener("change", (e) => {
   avvio();
 });
 
+/* Ogni invio segnato va anche nel brain: il server (banco-server.py) lo
+   scrive in liste/contattati.csv e committa. Da file:// non c'e` nessun
+   server e il gesto resta solo nel browser, come prima. */
+function annota(r, file, azione){
+  if (!location.protocol.startsWith("http")) return;
+  const riga = {
+    Data: r[col.inviato] || oggiISO(), Da: att().etichetta,
+    "Account IG": (r[col.account] || "").trim(), Nome: (r[col.nome] || "").trim(),
+    Comune: r[col.comune] || "", Segmento: r[col.segmento] || "",
+    Tipo: file === "contattati" ? (azione === "recupero" ? "recupero" : "primo") : "scartato dal banco",
+    Lista: nomeFile
+  };
+  fetch("/segna", {method:"POST", keepalive:true, headers:{"Content-Type":"application/json"},
+        body: JSON.stringify({file, azione: azione === "togli" ? "togli" : "aggiungi", riga})}).catch(() => {});
+}
+
 function ricorda(){
   try { localStorage.setItem(MEMORIA(), JSON.stringify({nomeFile, intestazione, dati, fonte, orari})); } catch (e) {}
 }
@@ -367,8 +393,10 @@ function ricorda(){
 function disegna(){
   ricorda();
   const lista = document.getElementById("lista");
-  lista.innerHTML = "";
+  const fatti = document.getElementById("lista-contattati");
+  lista.innerHTML = ""; fatti.innerHTML = "";
   let oggi = 0, restano = 0, recuperi = 0;
+  const contattati = [];
 
   dati.forEach((r, idx) => {
     const inviato = (r[col.inviato] || "").trim();
@@ -379,9 +407,15 @@ function disegna(){
     const daRecuperare = inviato && !esito && lavorativiDa(inviato) >= ATTESA_RECUPERO;
     if (daRecuperare) recuperi++;
     if (!inviato && !scartata) restano++;
-    if (inviato && !daRecuperare) { lista.appendChild(cartella(r, idx, inviato, esito, false)); return; }
+    if (inviato && !daRecuperare) { contattati.push([inviato, cartella(r, idx, inviato, esito, false)]); return; }
     lista.appendChild(cartella(r, idx, inviato, esito, daRecuperare));
   });
+  /* i mandati stanno in un elenco a parte, gli ultimi in cima: e` quello che
+     Patrick guarda per sapere a chi ha gia` scritto */
+  contattati.sort((a, b) => b[0].localeCompare(a[0]));
+  contattati.forEach(([, el]) => fatti.appendChild(el));
+  document.getElementById("cont").textContent = contattati.length;
+  document.getElementById("cont2").textContent = contattati.length;
 
   document.getElementById("oggi").textContent = oggi;
   document.getElementById("tetto").textContent = att().tetto;
@@ -454,6 +488,20 @@ function cartella(r, idx, inviato, esito, daRecuperare){
   const segna = document.createElement("button");
   segna.textContent = inviato && !daRecuperare ? "Annulla" : "Segna inviato";
   azioni.append(btn, segna);
+  /* Il controllo dell'ultimo metro lo fa chi apre il profilo: se il sito c'e`,
+     la riga esce dal banco e finisce in liste/gia-col-sito.csv, che e` il conto
+     degli errori di chi ha fatto la lista. */
+  if (!inviato){
+    const gia = document.createElement("button");
+    gia.className = "secondario";
+    gia.textContent = "Ha già il sito";
+    gia.addEventListener("click", () => {
+      r[col.esito] = "SCARTATO: ha già il sito (visto dal banco il " + oggiISO() + ")";
+      annota(r, "gia-col-sito");
+      disegna();
+    });
+    azioni.append(gia);
+  }
 
   function generato(){
     const g = campoBuco ? gancio.replace("[X]", campoBuco.value.trim()) : gancio;
@@ -486,12 +534,14 @@ function cartella(r, idx, inviato, esito, daRecuperare){
   btn.addEventListener("click", async () => {
     await copia(daRecuperare ? recupero : testoMsg.value);
     window.open("https://ig.me/m/" + utente, "_blank", "noopener");
-    if (!inviato){ r[col.inviato] = oggiISO(); segnaOra(); disegna(); }
+    if (daRecuperare){ annota(r, "contattati", "recupero"); return; }
+    if (!inviato){ r[col.inviato] = oggiISO(); segnaOra(); annota(r, "contattati"); disegna(); }
   });
   segna.addEventListener("click", () => {
     const annulla = inviato && !daRecuperare;
+    if (annulla) annota(r, "contattati", "togli");
     r[col.inviato] = annulla ? "" : oggiISO();
-    if (!annulla) segnaOra();
+    if (!annulla){ segnaOra(); annota(r, "contattati"); }
     disegna();
   });
   return el;

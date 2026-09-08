@@ -84,3 +84,12 @@ Il canale non è più fermo sulle liste: è fermo sull'invio.
 [[metodo-instagram]] · [[dm-instagram-vetrina]] · [[voce-denkicode]] ·
 [[2026-09-07-instagram-ticino]] · [[2026-09-05-instagram-bg-va]] ·
 [[2026-09-03-tetto-dm-65]] · [[metriche]] · [[generazione-lead]]
+
+## Correzione della sera — la verifica non reggeva
+
+Patrick, aprendo i profili: **almeno 20 su 72 avevano già il sito.** Il «64 su
+68 senza sito» scritto sopra era dedotto, non verificato: 62 righe portano la
+stessa frase di verifica. Da stasera il banco ha il tasto «Ha già il sito» e
+quei profili finiscono in `gia-col-sito.csv` ([[contattati]]); la prossima
+lista passa da `controlla-lista.py` prima di essere pubblicata
+([[metodo-instagram]], passo 3).

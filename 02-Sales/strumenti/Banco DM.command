@@ -2,8 +2,8 @@
 # Banco DM — doppio click e si apre con la lista del giorno gia' dentro.
 # Il file si puo' copiare sul Desktop: il vault se lo cerca da solo.
 #
-# Serve un server locale per un motivo solo: una pagina aperta da file:// non
-# puo' leggere i CSV che ha accanto, e' il browser che lo vieta.
+# Il server e' banco-server.py: serve i CSV (da file:// il browser lo vieta) e
+# scrive in liste/contattati.csv ogni DM segnato, poi committa e pusha il vault.
 
 PORTA=8770
 
@@ -22,7 +22,7 @@ cd "$V/02-Sales" || exit 1
 
 # se e' gia' aperto da un'altra volta, non ne apro un secondo
 if ! curl -s -o /dev/null "http://localhost:$PORTA/strumenti/banco-dm.html"; then
-  python3 -m http.server $PORTA >/dev/null 2>&1 &
+  python3 strumenti/banco-server.py $PORTA &
   SERVER=$!
   sleep 1
 fi

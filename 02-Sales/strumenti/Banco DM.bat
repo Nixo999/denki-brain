@@ -15,7 +15,7 @@ if not exist "%V%\02-Sales\strumenti" (
 
 cd /d "%V%\02-Sales"
 rem prima il server, poi il browser: al contrario la pagina arriva su una porta muta
-start /b python -m http.server %PORTA%
+start /b python strumenti\banco-server.py %PORTA%
 timeout /t 2 /nobreak >nul
 start "" http://localhost:%PORTA%/strumenti/banco-dm.html
 echo Banco DM aperto nel browser.
