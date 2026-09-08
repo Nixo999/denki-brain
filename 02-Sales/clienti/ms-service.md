@@ -61,15 +61,20 @@ veri, e un eventuale incontro dal vivo costa zero spostamenti.
 
 ## Esito — 8 settembre 2026
 
-⛔ **Non risponde più.** Detto da Patrick l'8 settembre. Era il lead più caldo
-che il telefono abbia prodotto: aveva chiesto **lui** la presentazione via mail
-il 1 settembre, e la presentazione non è mai partita perché mancavano tre dati
-(email, referente, numero di persone).
+⛔ **Non risponde a Patrick.** Detto da lui l'8 settembre, correggendo una mia
+lettura sbagliata: **non è un lead lasciato cadere da noi**, è uno che ha
+smesso di rispondere.
 
-**Sette giorni fra la richiesta e il silenzio.** Non si sa se ha cambiato idea o
-se ha smesso di aspettare: quello che si sa è che chi aveva alzato la mano ha
-avuto come risposta il vuoto. La contromisura non è uno script migliore, è che
-un lead che chiede materiale lo riceva lo stesso giorno, anche incompleto.
+Resta il fatto che pesa: aveva chiesto **lui** la presentazione via mail il
+1 settembre, e sette giorni dopo la conversazione è ferma.
+
+⬜ `TODO` **da chiarire con Patrick, non da dedurre**: la presentazione è mai
+partita? Nella scheda mancavano tre dati (email, referente, numero di persone).
+Le due diagnosi sono opposte e portano a due contromisure diverse:
+
+- **se non è partita**, un lead caldo si è raffreddato aspettando;
+- **se è partita**, il materiale non ha retto, e allora il problema è la
+  presentazione, non il canale.
 
 Vedi [[2026-09-08-test-dm-chiuso]].
 

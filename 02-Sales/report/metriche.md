@@ -61,8 +61,8 @@ righe vuote qui sopra: sono `source: denkicode`, non stime.
 | Canale | Contatti usciti | Risposte | Trattative | Incassato |
 |---|---|---|---|---|
 | **DM Instagram** | oltre **200** | 2 | 2, entrambe da un solo referral | **0 €** |
-| **Telefono, Giulia** | ~51 (lista turni del 28 ago) | `TODO` | 1 ([[ms-service]], oggi muto) | **0 €** |
-| **Gabriele ed Edoardo** | **0** — le liste sono pronte dal 30 agosto | — | — | **0 €** |
+| **Telefono, Giulia** | ~51 (lista turni del 28 ago) | `TODO` | 1 ([[ms-service]], non risponde più) | **0 €** |
+| **Gabriele ed Edoardo** | **0** in nove giorni, con script e liste in mano → [[gabriele-edoardo]] | — | — | **0 €** |
 | **Referral** | 1 ([[shari-piras]]) | 1 | 1 ([[dsi-advertising]]) | **0 €** |
 | **Presìdi** | 1 su 10 ([[bar-tabacchi-fiftynine]]) | 1 | baratto, non vendita | **0 €** |
 | **Rete personale** | non è un canale | — | [[albybike]], [[sebastian-torres]] | **400 €** |
