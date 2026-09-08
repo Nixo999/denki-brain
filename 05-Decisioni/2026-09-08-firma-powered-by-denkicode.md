@@ -81,7 +81,7 @@ Desktop di Patrick c'è solo `smoothduty`. Il resoconto con le misure è nel
 - [x] [[sito-atelier-selva]] · [[sito-dsi-advertising]] ·
       [[sito-salone-di-andrea]] · [[sito-nails-mania]] — bozze in trattativa
 - [ ] [[sito-castiglione]] — ferma, repo sul PC di Nicola · [x] [[sito-ngbarber]] (`648187b`)
-- [ ] [[denkishift]] — prodotto nostro, footer dell'app
+- [x] [[denkishift]] — nell'app, minima e solo da computer, come l'ha voluta Nicola (`c95a968`); ⬜ da guardare in produzione dopo il login
 - [x] **V-BAG** — sito di Giulia, online su Netlify (`f1f8567`, due simboli in `<picture>`)
 - [x] [[cococat]] (`a60c226`) · [[sito-dropout]] (`b20baf4`) — non erano in lista, ma sono siti nostri
 
