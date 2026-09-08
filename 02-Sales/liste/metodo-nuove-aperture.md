@@ -3,7 +3,7 @@ type: area
 updated: 2026-09-08
 source: claude
 prodotto: [siti-vetrina, denkishift]
-stato: da-provare
+stato: in-prova
 ---
 
 # Metodo nuove aperture — dove si vede chi sta aprendo
@@ -52,6 +52,29 @@ località e si guarda **la data del primo post**: un profilo con dodici post,
 tutti di questo mese, è un'attività che sta nascendo.
 
 ### 3. Gli annunci di lavoro, gratis — e valgono doppio
+
+> [!note] Verificato l'8 settembre 2026, dopo la domanda di Patrick
+> **Indeed: no.** Cloudflare blocca sia `curl` sia il pannello browser (403 /
+> «ulteriore verifica»), il feed RSS non esiste più (404), l'API pubblica è
+> chiusa dal 2023. Si legge solo a pagamento (Apify, SerpAPI) o con un
+> browser vero e la mano di una persona.
+> **Facebook, gruppi e post: no.** Cercare fra i post chiede il login; con
+> Claude in Chrome sull'account di Patrick si può, ma una ricerca alla volta,
+> a mano, contro i termini d'uso. Non è una fonte per una lista.
+> **Facebook, Libreria inserzioni Meta: sì, senza login.** Cerca «nuova
+> apertura» e dà ogni inserzione a pagamento attiva in Italia con nome della
+> pagina, testo e data di inizio (~1.800 il giorno del test). Non filtra per
+> comune: si aggiunge il comune alla parola chiave. Chi paga un'inserzione
+> per dire che apre ha budget e non ha ancora il sito: fonte da provare in
+> sessione, dal pannello, `facebook.com/ads/library` con `country=IT`.
+> **Subito lavoro: sì, e c'è lo script.** `02-Sales/strumenti/nuove-aperture.py
+> [regione] [giorni]` legge il JSON delle pagine di ricerca (stdlib, niente
+> login) su cinque parole chiave, tiene solo chi scrive che sta aprendo e
+> toglie il rumore fisso (immobiliari a provvigione, fotovoltaico, promoter,
+> interinali). Primo giro su Lombardia a 30 giorni: 152 annunci letti, 95
+> con «apertura» nel testo, **23 aperture vere, 3 con telefono in chiaro**.
+> Il resto del telefono si trova dal nome dell'attività, come per le altre
+> liste. Lista in [[2026-09-08-nuove-aperture-subito.csv]].
 
 **Chi apre assume.** Un annuncio «cercasi personale per nuova apertura» sul
 gruppo Facebook del paese, su Subito o su Indeed è il segnale più forte che
