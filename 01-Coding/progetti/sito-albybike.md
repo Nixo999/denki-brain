@@ -20,8 +20,10 @@ di Patrick**.
 **Online**: `https://albybike.com`
 **Hosting**: Netlify
 **Stack rilevato**: SPA React buildata con Vite (`/assets/index-*.js`,
-`<div id="root">`). Repo non pubblico su `Nixo999` → `TODO`: capire dove sta il
-codice, o se esiste solo su Netlify.
+`<div id="root">`). **Repo: `Nixo999/vibrant-web-foundation`** (privato, progetto
+Lovable), trovato l'8 settembre 2026 leggendo il `<title>` di `index.html`; clone
+in `~/lavoro/vibrant-web-foundation` sul Mac di Nicola. ⬜ Da verificare che
+Netlify pubblichi da lì e non da Lovable.
 
 ## Stato
 
@@ -49,12 +51,12 @@ addosso. Dettaglio e alternative in [[2026-08-28-domini-a-scadenza]].
 
 ## Aperto
 
-- [ ] Trovare o creare il repo git del sito
+- [x] Trovare o creare il repo git del sito → `vibrant-web-foundation`
 - [ ] Segnare in calendario la scadenza del dominio (~agosto 2027)
 - [ ] Chiedere una testimonianza da usare in vendita
 
-⬜ **Manca la firma nel piè di pagina** — «Powered by DenkiCode», simbolo e
-link a `denkicode.com`. Regola dell'8 settembre 2026, markup in
+✅ **Firma nel piè di pagina** — «Powered by DenkiCode», simbolo e link a
+`denkicode.com`, dalla sera dell'8 settembre 2026 (`334ea4f`). Regola e markup in
 [[convenzioni]] → [[2026-09-08-firma-powered-by-denkicode]].
 
 ## Collegamenti

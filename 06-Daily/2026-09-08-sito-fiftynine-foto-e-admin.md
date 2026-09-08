@@ -143,8 +143,13 @@ classe è `.powered`), e sui footer flex il link occupava 1.296 px cliccabili
 (ora sta in un `<p>`). Dettaglio nel [[registro-interventi]], trappole in
 [[trappole]].
 
-⬜ Fuori: [[sito-albybike]] (repo introvabile), [[sito-castiglione]] (PC di
-Nicola), [[denkishift]] (app, non sito), [[opero]] (escluso).
+Poi Nicola: «ma Bellastoria, albybike?». Cercati fra i 25 repo di `Nixo999`
+per `<title>`: **albybike è `vibrant-web-foundation`** (chiude il `TODO` della
+nota), Bellastoria è `bellastoria_sito`. Firmati e pushati anche quei due.
+
+⬜ Fuori: **Groavel** (nessun repo su `Nixo999`), [[sito-castiglione]] (PC di
+Nicola), [[denkishift]] (app, non sito), [[opero]] (escluso). ⬜ Da vedere se
+albybike.com e bellastoria.netlify.app si aggiornano dal push.
 
 ## Notte — il passo 3 non lo fa più il modello
 
