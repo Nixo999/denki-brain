@@ -41,6 +41,7 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
 |---|---|---|---|---|---|---|
+| 15:4x | Nicola +claude | sito V-BAG | `vbag-site` | — | **Versione «borse che fluttuano, senza pannelli»**: Nicola la ricordava fatta, cercata ovunque (reflog, stash, rami, blob orfani, copie su disco, trascrizioni, vault al 7/9) e **non esiste da nessuna parte: mai salvata**. Rifatta e pushata: arco hero e palchi lookbook rimossi, borse scontornate libere sul fondo con ombra a terra separata che si stringe in controfase (`levita`+`ombra` 6s, seconda sfasata -2.4s); `land` spostato sul contenitore perche' due animation sullo stesso transform non si sommano. ✅ Misurato: bg none, ombre animate, zero overflow, light/dark al primo frame | `931d6b0` |
 | 15:0x | Nicola +claude | sito V-BAG | `vbag-site` | — | **Allineamento locale↔GitHub**: era il locale a essere indietro, non il remoto vecchio — `origin/master` aveva gia' design ultimo + pubblicazione borse di Giulia (`admin.html`, store a file `dati/borse.json`, commit di Nicola del 7/9). Fast-forward, poi verifica del loader sul design attuale con una borsa di prova: card in coda, nome nel select, zero errori. Unico fix: `launch.json` da `python3` (alias fantasma dello Store su questo PC) a `python`, pushato (`1f74c4a`) | `5732599` `1f74c4a` |
 
 ## 2026-09-07
