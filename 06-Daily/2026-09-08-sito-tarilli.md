@@ -71,9 +71,21 @@ nel viewport a 1440×900 (fondo a 758 px) e a 375 (550 px). Console pulita,
 Bodoni Moda e Karla caricati, 17 immagini su 17 rispondono 200. Catture
 headless con Brave a 1440×900, 390×844 e a tutta pagina.
 
-⬜ Netlify: serve il login di Nicola. ⬜ Orari mai confermati dal titolare.
-⬜ Safari su iPhone mai provato. ⬜ Il finish review e `DESIGN.md` sono in
-corso al momento di questa nota: l'esito sta in [[sito-osteria-tarilli]].
+✅ **Online: <https://tarilli.netlify.app>.** Nicola ha detto «mettilo su
+netlify», ha autorizzato il login nel browser, il CLI ha creato il sito e
+fatto il deploy; sbarramenti verificati sul sito vivo (`x-robots-tag`, meta,
+`robots.txt`).
+
+✅ Finish review: otto punti, applicati e ripushati (`83dd71a`), dettaglio
+in [[sito-osteria-tarilli]]. Il punto vero l'ha visto Nicola dal telefono
+prima del reviewer: un piatto copriva «Cosa c'è oggi». Causa: piatti ancorati
+al fondo dell'hero mentre il testo cresce dall'alto, e su un viewport basso si
+incontrano. Sotto i 640 i piatti stanno in una striscia in flusso dopo il
+bottone. Nel farlo, la flex column aveva ancora `align-items:center` dalla
+griglia e la striscia era larga zero: i piatti partivano tutti dal centro.
+
+⬜ Orari mai confermati dal titolare. ⬜ Safari su iPhone mai provato.
+⬜ Il sito Netlify non è collegato al repo: un push non ripubblica.
 
 ## Collegamenti
 

@@ -302,7 +302,7 @@ una certezza inventata — è la stessa regola che vale nei repo di codice.
 | [[sito-dsi-advertising]] | [[dsi-advertising]] | 🟡 Bozza fatta, mai proposta | Netlify no, tre email da confermare col titolare prima di pubblicare |
 | [[sito-salone-di-andrea]] | [[il-salone-di-andrea]] | 🟡 Bozza fatta, DM sul banco | Netlify (serve il login di Nicola), orario del giovedì e foto da confermare |
 | [[sito-nails-mania]] | [[nails-mania]] | 🟡 Bozza fatta, DM sul banco | Netlify, orari e servizi da confermare con Lory, dominio `nailsmania.net` libero |
-| [[sito-osteria-tarilli]] | Osteria Tarilli, Comano (TI) | 🟡 Bozza fatta, mai proposta | Netlify (login di Nicola), orari da confermare col titolare, DM di Patrick già scritto nella lista |
+| [[sito-osteria-tarilli]] | Osteria Tarilli, Comano (TI) | 🟡 Bozza online, mai proposta | `tarilli.netlify.app` con noindex; orari da confermare col titolare; DM di Patrick già scritto nella lista |
 | [[sito-castiglione]] | [[castiglione-furniture]] | 🟠 Ferma dal 30 agosto | Mai proposta. `TODO`: verificare se è davvero online, e con che sbarramenti |
 | [[sito-ngbarber]] | [[ng-barber]] | 🟠 Ferma dal 1 settembre | Mai proposta. Due repo divergenti, il sorgente sta su una repo **pubblica** |
 

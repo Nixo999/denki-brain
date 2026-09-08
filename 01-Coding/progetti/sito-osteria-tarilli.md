@@ -1,6 +1,6 @@
 ---
 type: progetto
-status: bozza
+status: bozza-online
 cliente: "[[osteria-tarilli]]"
 created: 2026-09-08
 updated: 2026-09-08
@@ -47,7 +47,11 @@ loro, non il nostro default (regola del processo, passo 0).
 
 ## La bozza
 
-Repo `~/lavoro/tarilli-site` → `Nixo999/tarilli-site` (privata). Statico
+Repo `~/lavoro/tarilli-site` → `Nixo999/tarilli-site` (privata).
+**Online su <https://tarilli.netlify.app>** dalle 23:1x dell'8 settembre: sito Netlify
+`tarilli` sul team `denkicode`, deploy diretto dal CLI (`netlify deploy --prod`),
+non collegato al repo: un push non ripubblica, si rilancia il deploy a mano.
+Login Netlify autorizzato da Nicola nel browser, nessuna credenziale passata da me. Statico
 puro: `index.html`, `assets/stile.css`, `assets/moto.js`, GSAP da CDN.
 Processo [[processo-siti]] completo; impeccable seed **`b6c92fb4`**,
 direzione assegnata 7/7 «il passe della cucina»: la pagina è il tragitto del
@@ -65,9 +69,22 @@ cornice. Una locandina si mostra intera. Niente pizza, niente stock.
 Tre sbarramenti agli indici attivi (meta robots, `X-Robots-Tag`,
 `robots.txt`).
 
+## Finish review (impeccable, 8 settembre sera)
+
+`disposition: fix`, otto punti. Applicati: piatti dell'hero su una griglia senza
+coperture (il pancake era coperto all'80%), su mobile i piatti in una striscia
+in flusso sotto il bottone (un piatto copriva «Cosa c'è oggi» sul telefono di
+Nicola), comanda intitolata con la sua data invece di «oggi», via il «dalle
+10:30» del brunch (era solo per il 1° agosto), avviso visibile «orari
+indicativi, da confermare», micro-etichette in corsivo didone, via il bordo a
+zig-zag, rivelazioni solo sulle figure. Due «claim inventati» erano invece
+caption del cliente (parmigiana 8/9, bernese 11/7): fonti scritte in
+`PRODUCT.md`. Non fatto: il «sans stretto» del contratto, Karla resta e
+`DESIGN.md` lo registra. `DESIGN.md` scritto dal documenter.
+
 ## Da fare
 
-- [ ] Netlify: serve il login di Nicola ([[netlify]]). Il sito esiste quando è online.
+- [ ] Collegare il sito Netlify al repo, o ricordarsi il deploy a mano.
 - [ ] Confermare gli orari col titolare prima di pubblicarlo come suo.
 - [ ] DM a Patrick: il messaggio è già nella riga della lista.
 - [ ] Foto vere in alta risoluzione dal titolare, se risponde.

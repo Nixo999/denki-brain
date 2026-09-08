@@ -58,6 +58,10 @@ resta nella daily e nel registro, e da qui ci si linka.
   finestra va alta quanto il documento, **e tutto ciò che è in `vh` si
   allunga con lei**: un hero `100dvh` diventa alto 6.800 px. → le misure in
   `vh` passano da `--vh:1vh` e un wrapper `?cattura` le fissa a 9 px.
+  Senza `--user-data-dir` usa il profilo vero, cache compresa: la cattura può
+  mostrare il CSS di prima. Con un profilo nuovo però `--headless=new` si
+  impianta (finestra di benvenuto): profilo nuovo solo con `--no-first-run
+  --disable-features=…`, o si verifica dal pannello con le misure.
   ([[sito-osteria-tarilli]])
 - **`launch.json` va nella cartella della sessione, non nel repo**, e
   `python3 -m http.server` non parte da una cartella Google Drive
@@ -124,6 +128,15 @@ resta nella daily e nel registro, e da qui ci si linka.
   ([[sito-nails-mania]])
 - **Un `.wrap` con `margin: auto` dentro una flex column si shrink-wrappa.** →
   `width: 100%`. ([[sito-castiglione]])
+- **Una griglia con `align-items:center` che diventa flex column su mobile
+  centra anche in orizzontale**: un contenitore di soli figli assoluti si
+  restringe a larghezza zero e i figli partono tutti dal centro. →
+  `align-items:stretch` nella media query, o `width:100%` sul contenitore.
+  ([[sito-osteria-tarilli]])
+- **Un elemento ancorato al fondo dell'hero incontra il testo che cresce
+  dall'alto** su un viewport basso (telefono con la barra del browser). Su
+  mobile le decorazioni vanno in flusso dopo il CTA, non in assoluto.
+  ([[sito-osteria-tarilli]])
 - **La specificità produce bug invisibili a occhio**: `.nav-links a` batteva
   `.btn` e il CTA in nav era verde su verde. Si trova misurando il contrasto,
   non guardando lo screenshot.
