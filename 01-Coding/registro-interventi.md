@@ -37,6 +37,12 @@ Colonne: **Quando** (data e ora) · **Chi** (persona, e `+claude` se il lavoro �
 stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 (`—` se non toccato, `sviluppo`/`produzione` + stato) · **Cosa** · **Commit**.
 
+## 2026-09-08
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| 15:0x | Nicola +claude | sito V-BAG | `vbag-site` | — | **Allineamento locale↔GitHub**: era il locale a essere indietro, non il remoto vecchio — `origin/master` aveva gia' design ultimo + pubblicazione borse di Giulia (`admin.html`, store a file `dati/borse.json`, commit di Nicola del 7/9). Fast-forward, poi verifica del loader sul design attuale con una borsa di prova: card in coda, nome nel select, zero errori. Unico fix: `launch.json` da `python3` (alias fantasma dello Store su questo PC) a `python`, pushato (`1f74c4a`) | `5732599` `1f74c4a` |
+
 ## 2026-09-07
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
