@@ -5,7 +5,7 @@ client: castiglione-furniture
 stack: [html, gsap, netlify]
 started: 2026-08-30
 deadline: TODO
-updated: 2026-09-07
+updated: 2026-09-08
 source: claude
 valore: TODO
 incassato: 0
@@ -61,6 +61,10 @@ Lo «schema Castiglione» è diventato il modo standard di fare una bozza vetrin
 da Instagram: scraping, foto scaricate subito, scroll-telling scuro, verifica a
 misure. Riusato su [[sito-ngbarber]] e [[sito-fiftynine]]. Le trappole tecniche
 trovate qui stanno in [[trappole]].
+
+⬜ **Manca la firma nel piè di pagina** — «Powered by DenkiCode», simbolo e
+link a `denkicode.com`. Regola dell'8 settembre 2026, markup in
+[[convenzioni]] → [[2026-09-08-firma-powered-by-denkicode]].
 
 ## Collegamenti
 

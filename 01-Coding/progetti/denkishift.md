@@ -5,7 +5,7 @@ client: interno
 stack: [next-16, react-19, typescript, tailwind-4, supabase, capacitor-8, zod]
 started: TODO
 deadline: TODO
-updated: 2026-09-02
+updated: 2026-09-08
 source: repo
 prezzo: 2 €/dipendente/mese
 clienti-paganti: 0
@@ -99,6 +99,10 @@ una trattativa è un argomento a favore, non un dettaglio.
 - [ ] Pubblicare su `denkishift.it`
 - [ ] Definire la provvigione di Giulia sul prodotto turni — non bloccante
 - [ ] Primo cliente pilota — anche gratis, per avere un caso reale
+
+⬜ **Manca la firma nel piè di pagina** — «Powered by DenkiCode», simbolo e
+link a `denkicode.com`. Regola dell'8 settembre 2026, markup in
+[[convenzioni]] → [[2026-09-08-firma-powered-by-denkicode]].
 
 ## Collegamenti
 

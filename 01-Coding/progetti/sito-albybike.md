@@ -5,7 +5,7 @@ client: albybike
 stack: [vite, react, netlify]
 started: TODO
 deadline: TODO
-updated: 2026-08-28
+updated: 2026-09-08
 source: repo
 valore: 0
 incassato: 0
@@ -52,6 +52,10 @@ addosso. Dettaglio e alternative in [[2026-08-28-domini-a-scadenza]].
 - [ ] Trovare o creare il repo git del sito
 - [ ] Segnare in calendario la scadenza del dominio (~agosto 2027)
 - [ ] Chiedere una testimonianza da usare in vendita
+
+⬜ **Manca la firma nel piè di pagina** — «Powered by DenkiCode», simbolo e
+link a `denkicode.com`. Regola dell'8 settembre 2026, markup in
+[[convenzioni]] → [[2026-09-08-firma-powered-by-denkicode]].
 
 ## Collegamenti
 

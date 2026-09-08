@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-09-03
+updated: 2026-09-08
 source: claude
 tags: [brand, stampa, materiale]
 ---
@@ -28,6 +28,8 @@ sono i file, quale si usa quando, e cosa manca.
 | `logo-alternativo.*` | Seconda versione, stessi tre formati | Quando la principale non regge sul fondo |
 | `immagine-denkicode.af` | Sorgente Affinity | Documento di lavoro, non un esportabile |
 | `logo-denkishift.svg` | **Il marchio di DenkiShift**, vettoriale | Dentro l'app e ovunque serva il logo del prodotto |
+| `logo-simbolo.svg` | **Solo il simbolo** (anello con 気), fondi chiari, 4,5 KB | La firma «Powered by DenkiCode» nel piè di pagina dei siti |
+| `logo-simbolo-scuro.svg` | Stesso simbolo per fondi scuri | Stessa firma, su footer nero o grigio |
 
 Il marchio è del **13 maggio 2026** e non è più stato toccato: è la parte
 stabile dell'identità.
@@ -80,6 +82,16 @@ I nomi sono stati portati in `kebab-case` come vuole il vault. Sul Desktop di
 Patrick si chiamano ancora `VOLANTINO FRONTE V2.af`, `Presentazione logo.ai` e
 compagnia: stesso contenuto, nome diverso.
 
+> [!note] Analisi di Claude — 2026-09-08. I due `logo-simbolo` sono ritagli, non disegni nuovi.
+> Nati per la [[2026-09-08-firma-powered-by-denkicode|firma nel piè di pagina]],
+> perché `logo-lockup.svg` da 151 KB su ogni pagina di ogni sito non si può
+> servire. Sono **gli stessi tracciati** di quel file: dei quattro gruppi (uno
+> per fondo) ne resta uno, e del gruppo restano il solo anello con 気 — via
+> marchio testuale e payoff, che nella firma sarebbero un doppione della scritta
+> accanto. `viewBox` quadrato `89×89`. Resi e guardati a 22 px e 110 px su
+> bianco, nero e grigio `#706F6F`: leggibili tutti e tre. **Il sorgente resta
+> `logo-lockup.svg`**: se il marchio cambia, si ritaglia di nuovo da lì.
+
 ## Le tre cose che mancano
 
 > [!warning] Analisi di Claude — 2026-08-28
@@ -125,6 +137,9 @@ risolvono, sui prossimi sì. Il dettaglio del perché sta in [[materiale-offline
 3. **Le versioni si numerano** (`v2`, `v3`) e la vecchia non si cancella: la
    carta stampata resta in giro per mesi e serve sapere a quale versione
    corrisponde.
+4. **Nel piè di pagina di un progetto va `logo-simbolo`, mai il lockup.** 4,5 KB
+   contro 151, e accanto ci sta la scritta «Powered by DenkiCode» →
+   [[2026-09-08-firma-powered-by-denkicode]].
 
 ## Collegamenti
 

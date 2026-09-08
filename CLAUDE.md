@@ -130,6 +130,17 @@ in che ordine si guardano.
    chiama decide da solo su qualifica e orari, mai su prezzo e date. Vedi
    [[2026-08-30-core-produttivita-leadership]].
 
+17. **Ogni progetto esce firmato.** Dall'8 settembre 2026 nel piè di pagina di
+   ogni sito e di ogni gestionale ci sono la scritta **Powered by DenkiCode**,
+   il simbolo e il link a `denkicode.com` — sui lavori già consegnati come sui
+   prossimi, e su una bozza **prima** di mandarla al lead. Il simbolo è
+   `03-Storage/brand/logo/logo-simbolo.svg` (4,5 KB) o la variante `-scuro`:
+   **`logo-lockup.svg` nel footer non ci va**, pesa 151 KB. Il markup esatto sta
+   in [[convenzioni]], il perché e il ripasso dei siti già online in
+   [[2026-09-08-firma-powered-by-denkicode]]. Su [[opero]] non si applica di
+   iniziativa: è il prodotto che il cliente rivende, e la firma lì è una
+   decisione commerciale.
+
 ## Mappa delle cartelle
 
 Tre cartelle per il **lavoro**, divise per lato: tecnico, commerciale, il resto.

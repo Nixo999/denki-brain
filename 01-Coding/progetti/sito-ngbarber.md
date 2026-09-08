@@ -5,7 +5,7 @@ client: ng-barber
 stack: [html, gsap, netlify]
 started: 2026-09-01
 deadline: TODO
-updated: 2026-09-07
+updated: 2026-09-08
 source: claude
 valore: TODO
 incassato: 0
@@ -62,6 +62,10 @@ nessun dato sensibile dentro. Tolto dal tracking e messo in `.gitignore`, ma
 - ⬜ Quando si pubblica valgono i tre sbarramenti anti-indicizzazione di
   [[netlify]], che si tolgono solo quando il sito diventa loro.
 - ⬜ Mai proposto al lead. Prezzo mai detto. `TODO`.
+
+⬜ **Manca la firma nel piè di pagina** — «Powered by DenkiCode», simbolo e
+link a `denkicode.com`. Regola dell'8 settembre 2026, markup in
+[[convenzioni]] → [[2026-09-08-firma-powered-by-denkicode]].
 
 ## Collegamenti
 

@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-08-28
+updated: 2026-09-08
 source: repo
 ---
 
@@ -108,6 +108,34 @@ Presenti in tutti e due i repo, quindi valgono per DenkiCode:
 - `.env.local` e simili fuori da git, sempre
 - Una chiave di servizio **non deve mai avere il prefisso `NEXT_PUBLIC_`**:
   quel prefisso la manda nel browser, e quella chiave scavalca ogni regola
+
+## La firma nel piè di pagina — su ogni progetto
+
+Regola dell'8 settembre 2026, il perché sta in
+[[2026-09-08-firma-powered-by-denkicode]]. Ultima riga del footer, sotto il
+copyright del cliente:
+
+```html
+<a class="firma" href="https://denkicode.com" target="_blank" rel="noopener">
+  <img src="/logo-denkicode.svg" alt="" width="18" height="18">
+  <span>Powered by <strong>DenkiCode</strong></span>
+</a>
+```
+
+- **Il file del simbolo** si copia nel progetto da
+  `03-Storage/brand/logo/logo-simbolo.svg` (fondi chiari) o
+  `logo-simbolo-scuro.svg` (fondi scuri), 4,5 KB l'uno. ⚠️ **`logo-lockup.svg`
+  no**: 151 KB e 346 tracciati, perché contiene tutte e quattro le versioni e il
+  `viewBox` ristretto le nasconde soltanto.
+- **`alt=""`**: il nome è già nel testo accanto, altrimenti uno screen reader
+  legge «DenkiCode» due volte.
+- **`width`/`height` sull'`<img>`**, e nel CSS `height` fissa con `width:auto` —
+  il simbolo è quadrato e l'attributo `height` vince su `aspect-ratio`
+  ([[trappole]]).
+- **Colore secondario del tema, contrasto ≥ 4.5:1.** Non si nasconde e non si
+  sbiadisce: una firma illeggibile non porta lead.
+- **Su una bozza entra subito**, prima di mandare il link al lead.
+- Su [[opero]] non si mette di iniziativa: è il prodotto che il cliente rivende.
 
 ## Mettere in piedi una macchina nuova
 

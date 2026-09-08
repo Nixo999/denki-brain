@@ -5,7 +5,7 @@ client: nails-mania
 stack: [html, gsap, netlify]
 started: 2026-09-07
 deadline: TODO
-updated: 2026-09-07
+updated: 2026-09-08
 source: claude
 valore: TODO
 incassato: 0
@@ -116,6 +116,10 @@ vista su browser vero né su telefono.**
 - [ ] Il DM del 5 settembre è sul banco: la bozza entra nel secondo messaggio
 - [ ] Da confermare con Lory: orari, sede (Brusaporto 1), se ciglia, trucco e corsi sono ancora attivi, foto senza scritte e, se vuole, foto dei piedi migliori di quelle del profilo
 - [ ] Il dominio `nailsmania.net` è libero: da riprendere se compra
+
+⬜ **Manca la firma nel piè di pagina** — «Powered by DenkiCode», simbolo e
+link a `denkicode.com`. Regola dell'8 settembre 2026, markup in
+[[convenzioni]] → [[2026-09-08-firma-powered-by-denkicode]].
 
 ## Collegamenti
 

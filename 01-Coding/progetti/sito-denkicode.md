@@ -5,7 +5,7 @@ client: interno
 stack: [vite, react, netlify, cloudflare]
 started: TODO
 deadline: TODO
-updated: 2026-08-29
+updated: 2026-09-08
 source: denkicode
 valore: 0
 incassato: 0
@@ -95,6 +95,10 @@ Il listino a schermo non coincide più con [[prodotti-e-listino]], ed è voluto:
 - [ ] Decidere i tre link social, o toglierli
 - [ ] Aggiungere `albybike.com` alla galleria, con una testimonianza
 - [ ] Decidere chi aggiorna la galleria quando esce un lavoro nuovo
+
+⬜ **Manca la firma nel piè di pagina** — «Powered by DenkiCode», simbolo e
+link a `denkicode.com`. Regola dell'8 settembre 2026, markup in
+[[convenzioni]] → [[2026-09-08-firma-powered-by-denkicode]].
 
 ## Collegamenti
 

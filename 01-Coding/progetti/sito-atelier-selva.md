@@ -5,7 +5,7 @@ client: shari-piras
 stack: [html, gsap, netlify]
 started: 2026-09-03
 deadline: TODO
-updated: 2026-09-03
+updated: 2026-09-08
 source: claude
 valore: 200
 incassato: 0
@@ -143,6 +143,10 @@ scaricato: CDN Instagram irraggiungibile, da riprovare.
 ⬜→✅ Telefono: passaggio mobile fatto (`ec34253`), verificato con il giro completo a 375 px nel pannello; resta da vedere su un telefono fisico.
 
 ✅ Telefono, secondo giro (`81fcc6c`): non più una galleria. Scena «dal foglio alla pelle» che si trascina col dito, video al tocco, storie con le parole davanti, una foto sola per flash e atelier. Verificato a 375 px nel pannello (scena, chip, play); da vedere su telefono fisico.
+
+⬜ **Manca la firma nel piè di pagina** — «Powered by DenkiCode», simbolo e
+link a `denkicode.com`. Regola dell'8 settembre 2026, markup in
+[[convenzioni]] → [[2026-09-08-firma-powered-by-denkicode]].
 
 ## Collegamenti
 

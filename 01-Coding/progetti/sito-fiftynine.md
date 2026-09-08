@@ -148,6 +148,10 @@ linea al posto giusto: lo stato aperto non è più un buco. **Non vista su brows
 - [ ] **Chiedere le foto che mancano**: colazione, frittini, gyoza — sulla chiavetta non c'erano
 - [ ] Provare a mano il ramo `showDirectoryPicker` su Chrome da computer, e la pagina di modifica su iPhone: nel pannello parte sempre il ramo dei download
 
+⬜ **Manca la firma nel piè di pagina** — «Powered by DenkiCode», simbolo e
+link a `denkicode.com`. Regola dell'8 settembre 2026, markup in
+[[convenzioni]] → [[2026-09-08-firma-powered-by-denkicode]].
+
 ## Collegamenti
 
 [[netlify]] · [[prodotti-e-listino]] · [[script-siti-vetrina]] ·

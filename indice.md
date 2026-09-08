@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **133 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **134 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -201,6 +201,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-07-due-account-dm]] — Chiesto da Patrick il 7 settembre 2026. I DM non partono più solo dal suo profilo personale: il banco ha un selettore con Patrick Sappa e De...
 - [[2026-09-07-indice-generato]] — Decisione. indice.md smette di essere una nota scritta a mano.
 - [[2026-09-07-trappole-memoria-tecnica]] — Decisione di Nicola, 7 settembre 2026: le note di giornata funzionano, quindi le uso anche per parlare con me stesso da una sessione all'alt...
+- [[2026-09-08-firma-powered-by-denkicode]] — Decisione. Nicola, 8 settembre 2026. Ogni cosa che esce da qui — siti vetrina, e-commerce, gestionali — porta nel piè di pagina la scritta P...
 
 ## 06-Daily
 

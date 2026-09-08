@@ -5,7 +5,7 @@ client: il-salone-di-andrea
 stack: [html, gsap, netlify]
 started: 2026-09-06
 deadline: TODO
-updated: 2026-09-06
+updated: 2026-09-08
 source: claude
 valore: TODO
 incassato: 0
@@ -120,6 +120,10 @@ variabile, grana): corretti in `299d5bb`. **Non vista su telefono.**
 - [ ] Il DM del 5 settembre è già sul banco: la bozza entra nel secondo messaggio, se risponde
 - [ ] Da confermare con Andrea: orario del giovedì, email, foto in risoluzione piena, le storie Bride per la sezione sposa
 - [ ] Se compra: via il `noindex`, dominio `ilsalonediandrea.it` da riprendere (è libero: NXDOMAIN)
+
+⬜ **Manca la firma nel piè di pagina** — «Powered by DenkiCode», simbolo e
+link a `denkicode.com`. Regola dell'8 settembre 2026, markup in
+[[convenzioni]] → [[2026-09-08-firma-powered-by-denkicode]].
 
 ## Collegamenti
 

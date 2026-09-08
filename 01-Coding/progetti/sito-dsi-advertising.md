@@ -5,7 +5,7 @@ client: dsi-advertising
 stack: [html, gsap, netlify]
 started: 2026-09-02
 deadline: TODO
-updated: 2026-09-03
+updated: 2026-09-08
 source: claude
 valore: TODO
 incassato: 0
@@ -157,6 +157,10 @@ ritardo, non è un bug del sito).
 ⬜ Le tre email diverse: da confermare col titolare prima di pubblicare.
 
 ✅ Telefono: passaggio mobile fatto (`0dadedf`), verificato con il giro completo a 375 px nel pannello; resta da vedere su un telefono fisico.
+
+⬜ **Manca la firma nel piè di pagina** — «Powered by DenkiCode», simbolo e
+link a `denkicode.com`. Regola dell'8 settembre 2026, markup in
+[[convenzioni]] → [[2026-09-08-firma-powered-by-denkicode]].
 
 ## Collegamenti
 
