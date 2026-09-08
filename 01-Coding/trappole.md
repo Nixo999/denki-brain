@@ -168,6 +168,18 @@ resta nella daily e nel registro, e da qui ci si linka.
   ancora: la decide il `git config` locale del repo.
 - **`gh repo create --push` passa e il push successivo no**: il primo usa il
   proprio helper. → si svuota l'helper e si rimette quello di `gh`.
+- **`Cache-Control` lungo su `assets/*` tiene il CSS vecchio sul telefono del
+  cliente per una settimana.** Su Tarilli la regola di Fiftynine, che era su
+  `assets/img/*`, e' stata allargata a `assets/*`: la correzione era online e
+  l'iPhone di Nicola vedeva ancora il difetto. → CSS e JS con
+  `max-age=0, must-revalidate` (Netlify rivalida con ETag) e un `?v=` nel
+  link; la cache lunga resta solo alle foto. ([[sito-osteria-tarilli]])
+- **`netlify deploy --prod` senza `--no-build` prova a installare plugin in
+  `.netlify/plugins/` e puo' fallire li'** anche su un sito statico senza
+  build: `--no-build`, e `.netlify/` nel `.gitignore`.
+  ([[sito-osteria-tarilli]])
+- **Il sito Netlify creato dal CLI non e' collegato al repo**: un push non
+  ripubblica, il deploy si rilancia a mano con `--site <id>`.
 - **Una bozza non commissionata non si fa indicizzare.** Tre sbarramenti (`meta
   robots`, `X-Robots-Tag`, `robots.txt`) che si tolgono quando il sito diventa
   loro: indicizzarla mette un secondo sito col nome del lead su Google, cioè un

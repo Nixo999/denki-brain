@@ -84,7 +84,13 @@ incontrano. Sotto i 640 i piatti stanno in una striscia in flusso dopo il
 bottone. Nel farlo, la flex column aveva ancora `align-items:center` dalla
 griglia e la striscia era larga zero: i piatti partivano tutti dal centro.
 
-⬜ Orari mai confermati dal titolare. ⬜ Safari su iPhone mai provato.
+Poi Nicola, dall'iPhone Air: «stesso problema». La correzione era online: il
+telefono teneva il CSS vecchio per il `Cache-Control` di sette giorni che
+avevo messo su tutto `assets/`. Ora CSS e JS si rivalidano a ogni carico e
+hanno un `?v=` nel link; la cache lunga resta alle foto. Secondo deploy con
+`--no-build`, perché senza il CLI si rompeva installando plugin.
+
+⬜ Orari mai confermati dal titolare. ⬜ Safari su iPhone: lo prova Nicola.
 ⬜ Il sito Netlify non è collegato al repo: un push non ripubblica.
 
 ## Collegamenti
