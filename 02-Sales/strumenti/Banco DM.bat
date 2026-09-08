@@ -13,6 +13,8 @@ if not exist "%V%\02-Sales\strumenti" (
   exit /b 1
 )
 
+cd /d "%V%"
+git pull --rebase --autostash -q
 cd /d "%V%\02-Sales"
 rem prima il server, poi il browser: al contrario la pagina arriva su una porta muta
 start /b python strumenti\banco-server.py %PORTA%

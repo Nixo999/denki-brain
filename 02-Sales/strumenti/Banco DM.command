@@ -18,6 +18,11 @@ if [ -z "$V" ]; then
   exit 1
 fi
 
+cd "$V" || exit 1
+# Prima di aprire, si prende l'ultima versione del vault: la lista del giorno,
+# il banco e il server arrivano da qui. Se non c'e' rete si va avanti con
+# quello che c'e'. --autostash: le modifiche locali non bloccano il pull.
+git pull --rebase --autostash -q 2>&1 | tail -1
 cd "$V/02-Sales" || exit 1
 
 # se e' gia' aperto da un'altra volta, non ne apro un secondo

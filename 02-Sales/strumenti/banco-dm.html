@@ -94,6 +94,10 @@
 
 <main>
   <div id="stop" class="stop" hidden></div>
+  <div id="vecchio" class="stop" hidden>Il server sotto questa pagina è vecchio: i messaggi che segni
+    restano solo in questo browser e non arrivano in <code>contattati.csv</code>. Chiudi la finestra del
+    terminale e riapri il banco con <b>«Banco DM (Desktop).command»</b>, che aggiorna il vault e lancia
+    il server nuovo.</div>
   <div id="lista"></div>
   <details id="contattati" class="contattati">
     <summary>Contattati — <b id="cont2">0</b> conversazioni aperte ·
@@ -383,7 +387,9 @@ function annota(r, file, azione){
     Lista: nomeFile
   };
   fetch("/segna", {method:"POST", keepalive:true, headers:{"Content-Type":"application/json"},
-        body: JSON.stringify({file, azione: azione === "togli" ? "togli" : "aggiungi", riga})}).catch(() => {});
+        body: JSON.stringify({file, azione: azione === "togli" ? "togli" : "aggiungi", riga})})
+    .then(r => { if (!r.ok) throw new Error(r.status); document.getElementById("vecchio").hidden = true; })
+    .catch(() => { document.getElementById("vecchio").hidden = false; });
 }
 
 function ricorda(){

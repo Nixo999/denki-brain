@@ -24,7 +24,7 @@ Allinea la sessione allo stato attuale di DenkiCode. **Deve costare poco.**
 ## Cosa fare
 
 ```bash
-git pull --rebase -q 2>&1 | tail -2
+git pull --rebase --autostash -q 2>&1 | tail -2
 ls -1 06-Daily/ | sort | tail -1
 ```
 

@@ -33,10 +33,10 @@ allo stato del lavoro. Le decisioni già prese restano prese.
 
 ```bash
 V="${DENKI_VAULT:-}"
-for p in "$V" "$HOME/lavoro/denki-brain" "$HOME/Desktop/denkicode volt" "/c/Users/User/Desktop/denkicode volt" "$HOME/Documents/denkicode volt" "$HOME/denkicode volt"; do
+for p in "$V" "$PWD" "$HOME/lavoro/denki-brain" "$HOME/Desktop/denki-brain" "$HOME/Desktop/denkicode volt" "/c/Users/User/Desktop/denkicode volt" "$HOME/Documents/denkicode volt" "$HOME/denkicode volt"; do
   [ -n "$p" ] && [ -f "$p/CLAUDE.md" ] && V="$p" && break
 done
-cd "$V" && git pull --rebase -q 2>&1 | tail -2
+cd "$V" && git pull --rebase --autostash -q 2>&1 | tail -2
 ls -1 "$V/06-Daily" | sort | tail -1
 ```
 

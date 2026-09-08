@@ -16,9 +16,22 @@ stava solo nel localStorage del Mac di Patrick.
 | `gia-col-sito.csv` | I profili che Patrick ha scartato dal banco perché **il sito ce l'avevano**: è il conto degli errori di chi ha fatto la lista | il tasto «Ha già il sito» |
 
 Il server committa e pusha da solo due minuti dopo l'ultimo gesto, e alla
-chiusura della finestra. Quindi il file è vero solo se il Mac di Patrick ha
-fatto `git pull` una volta dopo l'8 settembre 2026 e il push gli funziona
-(verificato il 28 agosto in [[setup-macchina-nuova]]).
+chiusura della finestra. Il push dal Mac di Patrick funziona (verificato il 28
+agosto in [[setup-macchina-nuova]]).
+
+**Come arriva sul Mac di Patrick, e come resta aggiornato.** Tre cose fanno
+`git pull` da sole: `/patrick` (e `/stato`, `/nicola`, `/giulia`) al passo 1,
+`Banco DM.command` prima di aprire il banco, e `Banco DM (Desktop).command`,
+che è la copia da tenere sul Desktop: non contiene niente, trova il vault, lo
+aggiorna e lancia il lanciatore vero. **Una volta sola, a mano**, sul suo Mac:
+
+```bash
+cd ~/Desktop/denki-brain && git pull --rebase --autostash && cp "02-Sales/strumenti/Banco DM (Desktop).command" ~/Desktop/ && chmod +x ~/Desktop/"Banco DM (Desktop).command"
+```
+
+Il vecchio `Banco DM.command` sul Desktop si butta. Se lo apre per sbaglio, il
+banco lo dice: con il server vecchio compare un avviso rosso al primo
+messaggio segnato, perché il `POST` torna 501.
 
 **Le 75 righe del 3 settembre** sono il seme: prese da `lista-corrente.csv`,
 dove le date erano già segnate. Prima di quel giorno non c'è traccia.
