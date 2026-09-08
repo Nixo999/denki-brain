@@ -63,8 +63,8 @@ nessun dato sensibile dentro. Tolto dal tracking e messo in `.gitignore`, ma
   [[netlify]], che si tolgono solo quando il sito diventa loro.
 - ⬜ Mai proposto al lead. Prezzo mai detto. `TODO`.
 
-⬜ **Manca la firma nel piè di pagina** — «Powered by DenkiCode», simbolo e
-link a `denkicode.com`. Regola dell'8 settembre 2026, markup in
+✅ **Firma nel piè di pagina** — «Powered by DenkiCode», simbolo e link a
+`denkicode.com`, dalla sera dell'8 settembre 2026 (`648187b`). Regola e markup in
 [[convenzioni]] → [[2026-09-08-firma-powered-by-denkicode]].
 
 ## Collegamenti

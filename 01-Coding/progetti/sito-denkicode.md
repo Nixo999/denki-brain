@@ -96,8 +96,8 @@ Il listino a schermo non coincide più con [[prodotti-e-listino]], ed è voluto:
 - [ ] Aggiungere `albybike.com` alla galleria, con una testimonianza
 - [ ] Decidere chi aggiorna la galleria quando esce un lavoro nuovo
 
-⬜ **Manca la firma nel piè di pagina** — «Powered by DenkiCode», simbolo e
-link a `denkicode.com`. Regola dell'8 settembre 2026, markup in
+✅ **Firma nel piè di pagina** — «Powered by DenkiCode», simbolo e link a
+`denkicode.com`, dalla sera dell'8 settembre 2026 (`64397fc`). Regola e markup in
 [[convenzioni]] → [[2026-09-08-firma-powered-by-denkicode]].
 
 ## Collegamenti

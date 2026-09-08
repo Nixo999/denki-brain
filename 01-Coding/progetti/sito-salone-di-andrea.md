@@ -121,8 +121,8 @@ variabile, grana): corretti in `299d5bb`. **Non vista su telefono.**
 - [ ] Da confermare con Andrea: orario del giovedì, email, foto in risoluzione piena, le storie Bride per la sezione sposa
 - [ ] Se compra: via il `noindex`, dominio `ilsalonediandrea.it` da riprendere (è libero: NXDOMAIN)
 
-⬜ **Manca la firma nel piè di pagina** — «Powered by DenkiCode», simbolo e
-link a `denkicode.com`. Regola dell'8 settembre 2026, markup in
+✅ **Firma nel piè di pagina** — «Powered by DenkiCode», simbolo e link a
+`denkicode.com`, dalla sera dell'8 settembre 2026 (`9ae7a06`). Regola e markup in
 [[convenzioni]] → [[2026-09-08-firma-powered-by-denkicode]].
 
 ## Collegamenti

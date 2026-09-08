@@ -117,8 +117,8 @@ vista su browser vero né su telefono.**
 - [ ] Da confermare con Lory: orari, sede (Brusaporto 1), se ciglia, trucco e corsi sono ancora attivi, foto senza scritte e, se vuole, foto dei piedi migliori di quelle del profilo
 - [ ] Il dominio `nailsmania.net` è libero: da riprendere se compra
 
-⬜ **Manca la firma nel piè di pagina** — «Powered by DenkiCode», simbolo e
-link a `denkicode.com`. Regola dell'8 settembre 2026, markup in
+✅ **Firma nel piè di pagina** — «Powered by DenkiCode», simbolo e link a
+`denkicode.com`, dalla sera dell'8 settembre 2026 (`e0ee029`). Regola e markup in
 [[convenzioni]] → [[2026-09-08-firma-powered-by-denkicode]].
 
 ## Collegamenti

@@ -128,6 +128,13 @@ resta nella daily e nel registro, e da qui ci si linka.
   `.btn` e il CTA in nav era verde su verde. Si trova misurando il contrasto,
   non guardando lo screenshot.
 - **Un CTA che wrappa su due righe a 375px si toglie, non si comprime.**
+- **Un `<a>` con `flex-basis:100%` è cliccabile su tutta la riga**: 1.296 px a
+  1440 per una scritta da 178. Il link va dentro un blocco (`<p>`) che prende
+  la riga, e resta `inline-flex` a misura del suo contenuto. Trovata misurando
+  `getBoundingClientRect().width` della firma DenkiCode, non guardando.
+- **Una classe corta è già presa da qualcun altro**: `.firma` su Atelier Selva
+  era la scritta a mano della titolare, e il CSS nuovo l'avrebbe rimpicciolita.
+  `grep -n 'class="[^"]*nome'` prima di aggiungere una regola globale.
 - **Una voce in piu' in nav non si misura a 1440 e 375**: li' e' sempre a
   posto. Rompe nella banda stretta in mezzo — su [[sito-fiftynine]] la quinta
   voce sforava di 36px fra 761 e 899, dove il resto ci stava per un pelo. → si

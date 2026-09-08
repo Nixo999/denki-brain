@@ -64,8 +64,8 @@ nessun ridisegno, tre gruppi su quattro rimossi davvero.
 
 **Verificato l'8 settembre** nel pannello browser: i due simboli caricano
 (`naturalWidth` 150, quadrati), resi a 22 px e a 110 px su fondo bianco, nero e
-grigio `#706F6F`, tutti e tre leggibili. **Non verificato**: nessuno dei due è
-ancora finito dentro un sito vero.
+grigio `#706F6F`, tutti e tre leggibili. **La sera stessa** sono dentro dieci
+siti, misurati a 1440 e 375: contrasto fra 5,56 e 14,97, resi 18×18 ovunque.
 
 ## Dove va applicata — il ripasso
 

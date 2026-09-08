@@ -136,6 +136,13 @@ copyright del cliente:
   sbiadisce: una firma illeggibile non porta lead.
 - **Su una bozza entra subito**, prima di mandare il link al lead.
 - Su [[opero]] non si mette di iniziativa: è il prodotto che il cliente rivende.
+- **In un footer flex il link sta dentro un `<p class="firma">`** con
+  `flex-basis:100%`, non da solo: un `<a>` con `flex-basis:100%` è cliccabile su
+  tutta la riga, 1.296 px a 1440. Con `.wrap` o grid (`grid-column:1/-1;
+  justify-self:start`) il problema non c'è.
+- **`.firma` può essere già presa** (su Atelier Selva è la scritta a mano di
+  Shari): si controlla con `grep` prima di aggiungere il CSS, e se serve la
+  classe cambia nome — là è `.powered`.
 
 ## Mettere in piedi una macchina nuova
 

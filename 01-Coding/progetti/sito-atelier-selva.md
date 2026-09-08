@@ -144,8 +144,8 @@ scaricato: CDN Instagram irraggiungibile, da riprovare.
 
 ✅ Telefono, secondo giro (`81fcc6c`): non più una galleria. Scena «dal foglio alla pelle» che si trascina col dito, video al tocco, storie con le parole davanti, una foto sola per flash e atelier. Verificato a 375 px nel pannello (scena, chip, play); da vedere su telefono fisico.
 
-⬜ **Manca la firma nel piè di pagina** — «Powered by DenkiCode», simbolo e
-link a `denkicode.com`. Regola dell'8 settembre 2026, markup in
+✅ **Firma nel piè di pagina** — «Powered by DenkiCode», simbolo e link a
+`denkicode.com`, dalla sera dell'8 settembre 2026 (`93a2ae1`). Regola e markup in
 [[convenzioni]] → [[2026-09-08-firma-powered-by-denkicode]].
 
 ## Collegamenti

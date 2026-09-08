@@ -158,8 +158,8 @@ ritardo, non è un bug del sito).
 
 ✅ Telefono: passaggio mobile fatto (`0dadedf`), verificato con il giro completo a 375 px nel pannello; resta da vedere su un telefono fisico.
 
-⬜ **Manca la firma nel piè di pagina** — «Powered by DenkiCode», simbolo e
-link a `denkicode.com`. Regola dell'8 settembre 2026, markup in
+✅ **Firma nel piè di pagina** — «Powered by DenkiCode», simbolo e link a
+`denkicode.com`, dalla sera dell'8 settembre 2026 (`6269fca`). Regola e markup in
 [[convenzioni]] → [[2026-09-08-firma-powered-by-denkicode]].
 
 ## Collegamenti

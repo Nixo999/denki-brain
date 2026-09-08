@@ -126,6 +126,26 @@ non è ancora stato visto arrivare su GitHub. ⬜ **Sul Mac di Patrick serve un 
 prima del prossimo banco, o `Banco DM.command` lancia un file che non ha.
 ⬜ I 20 di oggi non si sanno quali sono: Patrick li marca dal banco.
 
+## Notte — la firma è dentro dieci siti
+
+Patrick aveva provato dal suo Mac e non poteva: i repo dei siti là non ci sono.
+Nicola l'ha chiesto come «powered by opero», ma la decisione del pomeriggio
+dice **DenkiCode**, e OperO è escluso apposta — applicata quella. Dieci repo
+firmati e nove pushati (Netlify pubblica da solo); `bartabaccheria59` resta a
+due commit locali perché il push scrive anche su `fiftynine-site` e aspettava
+già l'ok di Nicola.
+
+Misurato, non guardato — 13 pagine, 1440 e 375: contrasto fra 5,56 e 14,97,
+simbolo 150×150 reso 18×18 ovunque, riga propria sotto i recapiti, zero
+overflow salvo i 76 px preesistenti di Drop Out. Due cose trovate solo perché
+misurate: su Atelier Selva `.firma` era già la scritta a mano di Shari (lì la
+classe è `.powered`), e sui footer flex il link occupava 1.296 px cliccabili
+(ora sta in un `<p>`). Dettaglio nel [[registro-interventi]], trappole in
+[[trappole]].
+
+⬜ Fuori: [[sito-albybike]] (repo introvabile), [[sito-castiglione]] (PC di
+Nicola), [[denkishift]] (app, non sito), [[opero]] (escluso).
+
 ## Collegamenti
 
 [[sito-fiftynine]] · [[contattati]] · [[trappole]] · [[registro-interventi]] · [[sito-vbag]] ·
