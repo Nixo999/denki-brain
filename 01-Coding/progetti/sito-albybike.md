@@ -5,7 +5,7 @@ client: albybike
 stack: [vite, react, netlify]
 started: TODO
 deadline: TODO
-updated: 2026-09-08
+updated: 2026-09-09
 source: repo
 valore: 0
 incassato: 0
@@ -58,6 +58,24 @@ addosso. Dettaglio e alternative in [[2026-08-28-domini-a-scadenza]].
 ✅ **Firma nel piè di pagina** — «Powered by DenkiCode», simbolo e link a
 `denkicode.com`, dalla sera dell'8 settembre 2026 (`334ea4f`). Regola e markup in
 [[convenzioni]] → [[2026-09-08-firma-powered-by-denkicode]].
+
+## Motion e finitura — 9 settembre 2026
+
+Su richiesta di Nicola («più bello, con animazioni»), passato per [[processo-siti]]
+in **redesign-preserve**: l'identità è del cliente (oro su nero, Oswald/Barlow), IA
+e rotte non si toccano. Skill di stile: `high-end-visual-design`, una sola. Finish
+review di impeccable in modalità degradata: 12 punti, 11 applicati.
+
+- `src/lib/motion.ts` è il vocabolario: una curva `[0.16,1,0.3,1]`, durate
+  control/state/reveal/hero/slow. Le stesse in Tailwind (`duration-control`,
+  `ease-fluid`) e nel CSS (`--ease-out`). Una durata fuori scala è un errore.
+- `Reveal.tsx` è l'unica rivelazione allo scroll. Fallback a tempo **solo se la
+  scheda non dipinge** (`visibilityState === "hidden"`), sequenza a zero sotto i 768.
+- Momento autoriale: l'hero. Nome da mascherina (`px-8 -mx-8 pt-3` per non
+  tagliare l'ombra, `pb-2` per la coda della y), onda che si disegna, parallasse
+  sullo strato foto su un nodo separato dall'apertura.
+- Commit **`77ead7f`, locale**: il push pubblica su albybike.com (Netlify dal repo).
+  ⬜ Push dopo il sì di Nicola. ⬜ Safari su iPhone lo guarda lui.
 
 ## Collegamenti
 

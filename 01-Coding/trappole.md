@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-09-08
+updated: 2026-09-09
 source: claude
 tags: [trappole, memoria, frontend, gsap, git]
 ---
@@ -117,8 +117,31 @@ resta nella daily e nel registro, e da qui ci si linka.
   I numeri che impegnano non si animano. ([[sito-osteria-tarilli]])
 - **Su mobile i trigger in sequenza si sovrappongono** e l'evidenziazione balla.
   → niente sequenza sotto i 640px, tutto acceso. ([[sito-ngbarber]])
+- **Un motion value e un `animate` sullo stesso nodo si contendono la
+  proprietà.** `style={{ scale: daScroll }}` più `animate={{ scale: 1 }}`:
+  per tutta l'apertura la parallasse riscrive quello che l'animazione sta
+  portando a 1. → due nodi annidati: fuori lo scroll, dentro l'apertura.
+  ([[sito-albybike]])
+- **Il fallback a tempo della rivelazione uccide la rivelazione.** Un timer
+  che mostra tutto dopo 1,2 s su ogni elemento fa sì che sotto la piega sia
+  già tutto acceso prima dello scroll. → il timer scatta solo con
+  `document.visibilityState === "hidden"`: in una scheda che dipinge
+  l'observer arriva. ([[sito-albybike]])
+- **`transition-all` in coda a una classe che ha già la sua `transition` la
+  spegne**: la utility vince e la curva condivisa sparisce. Trovata su due
+  card che sembravano avere `hover-lift` e non lo avevano. → `grep
+  transition-all` prima di dichiarare un linguaggio di motion unico.
+  ([[sito-albybike]])
 
 ## CSS e layout
+
+- **`ease-[var(--x)]` in Tailwind 3 è ambiguo** («matches multiple utilities»)
+  e la classe non viene generata. → `transitionTimingFunction` nominata nel
+  config (`ease-fluid`). Idem per le durate: `transitionDuration` con i nomi
+  della scala. ([[sito-albybike]])
+- **React 18 non conosce `fetchPriority`**: warning in console e attributo
+  camelCase nel DOM. → `{...{ fetchpriority: "high" }}` minuscolo.
+  ([[sito-albybike]])
 
 - **L'attributo `height` di `<img>` vince su `aspect-ratio` CSS.** Card alte
   1405px. → nel reset, `img { height: auto }`. Pagata su [[sito-castiglione]],

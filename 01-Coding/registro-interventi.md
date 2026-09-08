@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-09-08
+updated: 2026-09-09
 source: denkicode
 tags: [registro, interventi, repo, database]
 ---
@@ -36,6 +36,12 @@ pubblicato senza la sua migrazione apre un tabellone vuoto.
 Colonne: **Quando** (data e ora) · **Chi** (persona, e `+claude` se il lavoro è
 stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 (`—` se non toccato, `sviluppo`/`produzione` + stato) · **Cosa** · **Commit**.
+
+## 2026-09-09
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| 00:0x-00:5x | Nicola +claude | [[sito-albybike]] | `vibrant-web-foundation` (= albybike.com) — **commit locale `77ead7f`, non pushato: il push pubblica sul sito vivo** | — | Nicola: «rendi ancora più bello, con animazioni, usa tutte le skill». [[processo-siti]] in modalità redesign-preserve: identità del cliente intoccabile, `design-taste` letta, `high-end-visual-design` come unica skill di stile, `emilkowalski-motion`, finish review di impeccable in degradata (12 punti, 11 applicati, 1 opinione). Un solo linguaggio di motion (`src/lib/motion.ts` + `duration-control/state/reveal` e `ease-fluid` in Tailwind), un solo `Reveal` con fallback a tempo solo a scheda nascosta, un solo momento autoriale nell'hero (mascherina sul nome, onda che si disegna, parallasse sullo strato foto), barra d'avanzamento, nav compatta, hamburger che ruota, dissolvenza fra pagine con ritorno in cima, `MotionConfig reducedMotion="user"`. Corretti: footer con telefono e mail sulla stessa riga (div chiuso male), scroll cue, em dash, `transition-all` che spegneva `hover-lift` in ServicesCards e Pardus. Misurato a 1440×900 e 375×812: overflow 0, CTA a 579/487, nav una riga, contrasti 11,5:1 e 6,8:1, menu mobile apre/chiude. `tsc`, eslint sui file toccati (i 2 `any` in CookieBanner sono di prima), build ok. ⬜ **Non pushato**: aspetta il sì di Nicola, albybike.com è online e Netlify pubblica dal repo | `77ead7f` (locale) |
 
 ## 2026-09-08
 
