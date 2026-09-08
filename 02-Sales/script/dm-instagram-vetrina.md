@@ -1,10 +1,10 @@
 ---
 type: area
-updated: 2026-09-07
+updated: 2026-09-08
 source: claude
 prodotto: siti-vetrina
 canale: instagram
-stato: in-prova
+stato: test-chiuso
 ---
 
 # Il DM di Instagram — un messaggio solo, sei ganci
@@ -308,7 +308,16 @@ quattro [[pattern-interrupt]].
 |---|---|---|---|---|---|
 | 1 — 31 ago 2026, anello 1 | **A** (senza gancio, bozza già fatta) | `TODO` | | | |
 | 2 — mai partito | **B** (con gancio, bozza da fare) | — | — | — | — |
-| 3 — 3 set 2026, bellezza + tattoo | **C** (gancio + bozza già fatta) | **75** | `TODO` | `TODO` | `TODO` |
+| 3 — dal 3 set 2026, più giri | **C** (gancio + bozza già fatta) | **oltre 200** | **2** | **1** | **2**, dallo stesso referral |
+
+> [!warning] Il test è chiuso, e la versione C non tiene — 8 settembre 2026
+> Patrick ha mandato **oltre 200 DM**, non 75: il conto stava nel localStorage
+> e non nei CSV. Le risposte sono **due** — [[shari-piras]], che ha detto no per
+> sé e ci ha girato i genitori, e `angolorelax_nembro`, che ci ha riconosciuti
+> come testo generato. **Circa l'1%**, contro il 5% fissato qui sotto come
+> soglia minima. Nessuna chiusura, zero euro.
+> Il campione basta e la conclusione non si rimanda ancora:
+> [[2026-09-08-test-dm-chiuso]].
 
 **Settantacinque in una sera sola, e l'account non è stato toccato.** Il giro 3
 è uscito tutto il 3 settembre — 33 righe di bellezza e 42 di tatuatori

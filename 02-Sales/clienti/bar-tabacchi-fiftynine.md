@@ -2,7 +2,7 @@
 type: cliente
 status: attivo
 progetti: [sito-fiftynine]
-updated: 2026-09-02
+updated: 2026-09-08
 source: claude
 settore: bar tabaccheria e pizzeria
 ---
@@ -68,6 +68,24 @@ Dal menù stampato, che vale più del profilo:
 - [ ] Passare la trattativa a Patrick: prezzo, dominio, chi aggiorna il menù
 - [ ] Chiedere foto in risoluzione piena e il giorno di chiusura settimanale
 - [ ] Formula aperitivo a 12 € e listino cocktail: sono dell'agosto 2025, da confermare
+
+## Il prezzo — deciso l'8 settembre 2026
+
+**Non paga.** Deciso da Patrick: il sito è il **baratto** per il servizio di
+presidio, cioè i volantini lasciati sui tavoli **a mezzogiorno, quando pranzano
+le aziende**.
+
+È il primo presidio vero di [[presidi-volantini]], ed è di gran lunga il più
+mirato dei dieci previsti: gli altri nove mettono i volantini in mano a chi
+passa, questo li mette sul tavolo di persone che pranzano **in gruppo, con i
+colleghi, in orario di lavoro** — cioè il profilo di chi ha dei turni da
+gestire ([[denkishift]]), non solo di chi non ha un sito.
+
+⚠️ **Il baratto va misurato o è un lavoro gratis.** Serve sapere quante aziende
+passano a pranzo e quanti volantini spariscono a settimana: senza quel numero
+non si sa se questo presidio vale un sito, e non si sa se replicarlo altrove.
+
+Vedi [[2026-09-08-test-dm-chiuso]].
 
 ## Collegamenti
 

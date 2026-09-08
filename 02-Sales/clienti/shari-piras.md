@@ -2,7 +2,7 @@
 type: cliente
 status: attivo
 progetti: [sito-atelier-selva]
-updated: 2026-09-03
+updated: 2026-09-08
 source: claude
 settore: studio di tatuaggio
 ---
@@ -170,6 +170,17 @@ Sarebbe un problema se gliela facessi vedere finita?
   dei genitori. È lei che ci ha portato il referral: un lavoro fiacco su di lei
   si porta dietro anche l'altra trattativa.
 - ⬜ Se dice sì: 200 € entrano nel tetto di Patrick → [[vincoli-fiscali]].
+
+## Dove siamo — 8 settembre 2026
+
+✅ **Il preventivo l'ha ricevuto.** Detto da Patrick l'8 settembre: sia lei sia
+i genitori ([[dsi-advertising]]) hanno in mano la proposta, e **faranno sapere
+probabilmente a fine ottobre**.
+
+⚠️ **Fine ottobre sono sette settimane di attesa**, e in mezzo non c'è niente
+di programmato. Un «le faccio sapere» a scadenza lunga non è un no, ma non è
+nemmeno una trattativa viva: senza un motivo per risentirsi prima, a fine
+ottobre la conversazione riparte da zero.
 
 ## Collegamenti
 

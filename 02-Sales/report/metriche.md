@@ -1,6 +1,6 @@
 ---
 type: area
-updated: 2026-08-28
+updated: 2026-09-08
 source: denkicode
 ---
 
@@ -52,6 +52,32 @@ quella dal 24 al 30 agosto 2026.
 | Settimana | Chiamate | Appuntamenti | Chiusure | Incassato |
 |---|---|---|---|---|
 | 2026-W35 | | | | |
+
+## Il conto vero dei canali — 8 settembre 2026
+
+**Primi numeri detti da Patrick**, a voce, l'8 settembre. Sostituiscono le
+righe vuote qui sopra: sono `source: denkicode`, non stime.
+
+| Canale | Contatti usciti | Risposte | Trattative | Incassato |
+|---|---|---|---|---|
+| **DM Instagram** | oltre **200** | 2 | 2, entrambe da un solo referral | **0 €** |
+| **Telefono, Giulia** | ~51 (lista turni del 28 ago) | `TODO` | 1 ([[ms-service]], oggi muto) | **0 €** |
+| **Gabriele ed Edoardo** | **0** — le liste sono pronte dal 30 agosto | — | — | **0 €** |
+| **Referral** | 1 ([[shari-piras]]) | 1 | 1 ([[dsi-advertising]]) | **0 €** |
+| **Presìdi** | 1 su 10 ([[bar-tabacchi-fiftynine]]) | 1 | baratto, non vendita | **0 €** |
+| **Rete personale** | non è un canale | — | [[albybike]], [[sebastian-torres]] | **400 €** |
+
+**Sei settimane, oltre 250 contatti a freddo, zero euro.** I 400 € incassati e
+i 2.000 € di credito vengono tutti da fuori i canali commerciali.
+
+⚠️ **Il tasso del DM è ~1%**, contro il 5% sotto cui [[dm-instagram-vetrina]]
+dichiara che il messaggio non tiene. Il test è chiuso →
+[[2026-09-08-test-dm-chiuso]].
+
+⚠️ **Il denominatore del DM resta approssimato.** Il banco ne ha tracciati 75:
+gli altri stanno solo nel localStorage del Mac di Patrick, e finché non scarica
+il CSV dal banco nessuna percentuale è più precisa di così.
+
 
 ## La capacità di Giulia, e cosa ne consegue
 

@@ -2,7 +2,7 @@
 type: cliente
 status: attivo
 progetti: []
-updated: 2026-09-01
+updated: 2026-09-08
 source: claude
 ---
 
@@ -58,6 +58,20 @@ veri, e un eventuale incontro dal vivo costa zero spostamenti.
 > primo cliente della zona. Se firmano, quello che si vende davvero è la
 > configurazione fatta da noi e una demo su dati loro — non un'attivazione.
 > È anche la voce «primo cliente pilota» aperta in [[denkishift]].
+
+## Esito — 8 settembre 2026
+
+⛔ **Non risponde più.** Detto da Patrick l'8 settembre. Era il lead più caldo
+che il telefono abbia prodotto: aveva chiesto **lui** la presentazione via mail
+il 1 settembre, e la presentazione non è mai partita perché mancavano tre dati
+(email, referente, numero di persone).
+
+**Sette giorni fra la richiesta e il silenzio.** Non si sa se ha cambiato idea o
+se ha smesso di aspettare: quello che si sa è che chi aveva alzato la mano ha
+avuto come risposta il vuoto. La contromisura non è uno script migliore, è che
+un lead che chiede materiale lo riceva lo stesso giorno, anche incompleto.
+
+Vedi [[2026-09-08-test-dm-chiuso]].
 
 ## Collegamenti
 

@@ -4,7 +4,7 @@ status: lead
 settore: parrucchiere
 comune: Dalmine (BG)
 canale: instagram
-updated: 2026-09-06
+updated: 2026-09-08
 source: claude
 ---
 
@@ -23,3 +23,11 @@ correzione del colore, sposa, barber.
 
 Nessun prezzo pattuito. Nessuna P.IVA in gioco: ricevuta, collaborazione
 occasionale ([[vincoli-fiscali]]).
+
+## Esito — 8 settembre 2026
+
+⛔ **Nessuna risposta al DM** del 5 settembre. Detto da Patrick l'8 settembre.
+
+La bozza [[sito-salone-di-andrea]] era già stata costruita prima del contatto:
+è una delle quattro fatte per profili che non hanno mai scritto
+([[2026-09-08-test-dm-chiuso]]). Resta in cassetto, non si butta.

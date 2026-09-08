@@ -2,7 +2,7 @@
 type: cliente
 status: lead
 progetti: [sito-ngbarber]
-updated: 2026-09-07
+updated: 2026-09-08
 source: claude
 ---
 
@@ -30,6 +30,12 @@ bozza.
 - ⬜ Il sorgente della bozza sta su una repo **pubblica** di Patrick: è una scelta
   sua, non un errore, ma è materiale col loro marchio prima della vendita.
 - ⬜ Prezzo mai discusso. `TODO`.
+
+## Esito — 8 settembre 2026
+
+⛔ **Nessuna risposta.** Detto da Patrick l'8 settembre, che lo chiama
+«Energy Barber». La bozza [[sito-ngbarber]] era pronta dal 1 settembre e il
+contatto non ha prodotto niente → [[2026-09-08-test-dm-chiuso]].
 
 ## Collegamenti
 

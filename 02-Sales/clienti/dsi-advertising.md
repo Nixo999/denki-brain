@@ -2,7 +2,7 @@
 type: cliente
 status: attivo
 progetti: [sito-dsi-advertising]
-updated: 2026-09-03
+updated: 2026-09-08
 source: claude
 settore: articoli promozionali per il canale HO.RE.CA
 ---
@@ -261,6 +261,18 @@ occasionale.
   risparmio invece che una spesa nuova.
 - ⬜ Se chiedono la ritenuta d'acconto del 20% (sono un'azienda con P.IVA), sui
   300 € ne incassa 240 → [[vincoli-fiscali]].
+
+## Dove siamo — 8 settembre 2026
+
+✅ **Preventivo consegnato**, insieme a quello della figlia [[shari-piras]].
+Risposta attesa **a fine ottobre**, detto da Patrick l'8 settembre.
+
+> [!note] Analisi di Claude — 2026-09-08
+> D.S.I. vende articoli promozionali a bar, ristoranti, gelaterie e gestori
+> HO.RE.CA: **la sua lista clienti è esattamente il nostro bersaglio**. Se
+> diventa cliente, la seconda cosa da chiedergli non è un altro sito, è la
+> presentazione ai suoi. È l'unico contatto in casa che ha una rete di titolari
+> già costruita e nessun motivo per farci concorrenza.
 
 ## Collegamenti
 
