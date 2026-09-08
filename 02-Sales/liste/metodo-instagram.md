@@ -74,9 +74,54 @@ Handle esatto, **follower**, bio, **link in bio**. Serve a stabilire tre cose:
   abbandonato: il DM non lo legge nessuno.
 - **cosa c'è nel link in bio**, che è metà del gancio.
 
-### 3. Si verifica il sito su Google e aprendo il dominio
-Identico a [[2026-08-30-verifica-sito-reale]]: si cerca `"nome" comune`, si
-scartano le directory, e **ogni dominio che compare si apre**.
+### 3. Il sito lo verifica lo script, non chi scrive la lista
+
+> [!important] Dall'8 settembre 2026 il passo 3 **non è più un gesto del
+> modello**: è `02-Sales/strumenti/verifica-sito.py`, e una lista che non ci
+> è passata non si pubblica. Il motivo sta nel riquadro sotto.
+
+```bash
+python3 02-Sales/strumenti/verifica-sito.py 02-Sales/liste/<la-lista-nuova>.csv
+```
+
+Lo script fa due cose, e la prima non dipende da nessuno:
+
+1. **Indovina i domini dal nome** — `gelaterialariana.it`,
+   `barpizzerianello.it`, `agriturismoilronco.it` — li risolve, li apre e
+   legge titolo e testo. Sito **certo** (→ `Esito DM = SCARTATO` da solo) se
+   il titolo porta il nome **e** la pagina nomina il comune. Sito
+   **probabile** (`⚠ PROBABILE SITO`) se c'è solo il nome: lo apre chi fa la
+   lista, e finché resta scritto così `controlla-lista.py` non passa. Sull'8
+   settembre: 7 certi e 24 probabili su 68, dei 24 aperti a mano 8 erano
+   veri. Tredici in tutto, tolti dal banco.
+2. **Chiede ai motori** (DuckDuckGo html e Brave, senza chiave; Bing ignora le
+   virgolette). Utile quando risponde — `gelaterialariana.it` era il primo
+   risultato — ma **si bloccano dopo poche decine di righe** (403 e 429), e
+   allora la riga lo dice. Sono un extra, non la base: `--senza-motori` li
+   salta e ci mette un minuto invece di quindici.
+
+Alla colonna «Esito verifica sito» lo script **appende** la sua prova, marcata
+`[verifica-sito]`, dopo quella scritta da chi fa la lista, che deve già
+esserci nella forma `cercato «"nome" comune» → <domini visti>`: una ricerca per
+riga, con quello che è uscito, non una frase. `controlla-lista.py` pretende
+tutt'e due.
+
+Quello che resta a chi fa la lista, **dopo** lo script:
+
+- le righe `SITO` si rileggono una volta: se il titolo è di un omonimo di
+  un'altra città, si toglie lo SCARTATO e si scrive perché;
+- `non risponde`, `parcheggiato`, `piattaforma` **non sono «nessun sito»**:
+  sono i ganci 2, 3 e 5, e vanno letti uno per uno;
+- `nessun dominio fuori dalle directory` diventa gancio 1 **solo** se la bio
+  del profilo non linka un sito. La bio da qui non si legge: è il controllo
+  che fa Patrick prima di scrivere, col tasto «Ha già il sito» del banco;
+- le righe `PROBABILE SITO` si aprono tutte: di solito sono omonimi di
+  un'altra città (Bologna, Frascati, New Rochelle), a volte no.
+
+Costa: un minuto di script, più i probabili da aprire, più la ricerca per
+riga di chi fa la lista. Su 65 righe è un'ora. È l'ora che il 7 e l'8
+settembre non è stata spesa, e che ha mandato Patrick a scrivere a 20 profili
+col sito su 72.
 
 > [!warning] La trappola nuova, ed è la più cara
 > **«Non ha il link in bio» non significa «non ha il sito».** Su

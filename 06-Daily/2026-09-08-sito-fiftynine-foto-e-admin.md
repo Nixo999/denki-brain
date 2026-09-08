@@ -146,7 +146,33 @@ classe è `.powered`), e sui footer flex il link occupava 1.296 px cliccabili
 ⬜ Fuori: [[sito-albybike]] (repo introvabile), [[sito-castiglione]] (PC di
 Nicola), [[denkishift]] (app, non sito), [[opero]] (escluso).
 
+## Notte — il passo 3 non lo fa più il modello
+
+Nicola, dopo: «aggiorna il metodo con cui cerchi, non deve succedere che
+Patrick scrive a gente che ha già il sito». Il metodo diceva già «verificato,
+mai dedotto» e non è bastato: una regola scritta cede sotto 68 righe. Quindi
+il passo 3 di [[metodo-instagram]] diventa uno script, `verifica-sito.py`:
+
+- **indovina i domini dal nome** e li apre. Certo se titolo e comune tornano,
+  probabile se torna solo il nome. Non dipende da nessun motore: sempre acceso;
+- **i motori senza chiave non reggono**: DuckDuckGo 403 dopo ~50 richieste,
+  Brave 429 dopo ~10, Bing ignora le virgolette. Restano un extra;
+- `controlla-lista.py` pretende la prova a mano (`cercato «…» → …`) **e** quella
+  dello script, e non passa finché resta un `PROBABILE SITO`.
+
+**Sulla lista di oggi**: 7 siti certi trovati dallo script, 24 probabili aperti
+a mano, 8 veri. **13 su 68 tolti dal banco**, Esito DM propagato su
+`lista-corrente.csv`: 225 da mandare invece di 238. I 20 di Patrick non sono
+tutti qui: quelli col sito solo nel link in bio da qui non si vedono, e restano
+al tasto «Ha già il sito».
+
+⚠️ Trovato guardando `avvio()`: **ogni pubblicazione resetta la memoria del
+banco** — se il testo di `lista-corrente.csv` cambia, la pagina ricarica il
+file e perde gli invii del giorno non ancora scaricati. Da stasera gli invii
+stanno anche in `contattati.csv`, quindi il danno è il conto a video, non la
+storia. Da sistemare: ricaricare unendo per handle, non sostituendo.
+
 ## Collegamenti
 
-[[sito-fiftynine]] · [[contattati]] · [[trappole]] · [[registro-interventi]] · [[sito-vbag]] ·
+[[sito-fiftynine]] · [[contattati]] · [[metodo-instagram]] · [[trappole]] · [[registro-interventi]] · [[sito-vbag]] ·
 [[netlify]] · [[processo-siti]]

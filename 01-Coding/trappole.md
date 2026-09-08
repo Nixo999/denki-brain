@@ -245,6 +245,15 @@ resta nella daily e nel registro, e da qui ci si linka.
   almeno 20 su 72 col sito. → ogni riga dice cosa è stato cercato e cosa è
   uscito; `02-Sales/strumenti/controlla-lista.py` ferma la lista prima della
   pubblicazione. [[contattati]]
+- **I motori di ricerca senza chiave non reggono una lista.** DuckDuckGo html
+  risponde 403 dopo ~50 richieste, Brave 429 dopo ~10, Bing ignora le
+  virgolette e risponde con un'altra città. → la base è quello che non dipende
+  da nessuno: indovinare i domini dal nome e aprirli (`verifica-sito.py`); i
+  motori sono un extra con 12 s di pausa.
+- **Una regola scritta cede sotto il volume.** «Verificato, mai dedotto» stava
+  nel metodo dal 30 agosto ed è stata violata su 62 righe. → il passo si
+  trasforma in uno script che scrive la prova nella riga, e un secondo script
+  rifiuta la lista senza prova. La regola resta, ma non è più lei a reggere.
 - **`python3 -m http.server` non scrive niente.** Se il browser deve lasciare
   traccia nel vault serve un handler `POST` (stdlib, `banco-server.py`): il
   file si aggiorna sul disco di chi clicca, e nel brain arriva solo col push —

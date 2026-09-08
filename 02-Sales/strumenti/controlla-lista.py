@@ -7,7 +7,8 @@ genera (di solito Claude), sul CSV finito.
 Ferma due errori gia` pagati:
 - la verifica del sito copiata uguale su decine di righe (l'8 settembre 2026:
   62 righe su 68 con la stessa frase, e almeno 20 il sito ce l'avevano);
-- un handle che sta gia` in contattati.csv o su un banco (metodo, passo 4).
+- un handle che sta gia` in contattati.csv o su un banco (metodo, passo 4);
+- una riga verificata a occhio invece che da verifica-sito.py (passo 3).
 Esce con 1 se trova qualcosa: la lista non si pubblica finche` non esce con 0.
 """
 import csv, collections, re, sys
@@ -43,6 +44,20 @@ def controlla(p):
     col = next((c for c in righe[0] if c.lower().startswith("esito verifica")), None) if righe else None
     if not col:
         return [f"{p.name}: manca la colonna «Esito verifica sito»"]
+    # dall'8/9 la colonna la scrive verifica-sito.py: una riga senza la sua prova
+    # e` una riga verificata a occhio, e quelle non si pubblicano piu`
+    senza = [r.get("Account IG", "?") for r in righe if not r[col].strip().startswith("cercato «")]
+    if senza:
+        errori.append(f"{len(senza)} righe senza la prova di verifica-sito.py (es. {senza[0]}): «cercato «…» → …» manca")
+    senza_script = [r.get("Account IG", "?") for r in righe if "[verifica-sito]" not in r[col]]
+    if senza_script:
+        errori.append(f"{len(senza_script)} righe mai passate da verifica-sito.py (es. {senza_script[0]})")
+    prob = [r.get("Account IG", "?") for r in righe if "PROBABILE SITO" in r[col]]
+    if prob:
+        errori.append(f"{len(prob)} righe con un PROBABILE SITO da aprire e decidere: {', '.join(prob[:6])}")
+    rifare = [r.get("Account IG", "?") for r in righe if "DA RIFARE" in r[col]]
+    if rifare:
+        errori.append(f"{len(rifare)} righe con la ricerca fallita, da rilanciare: {', '.join(rifare[:5])}")
     conta = collections.Counter(re.sub(r"\s+", " ", r[col].strip().lower()) for r in righe)
     for frase, n in conta.items():
         if not frase:

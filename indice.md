@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **134 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **136 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -44,6 +44,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-fiftynine]] — Sito vetrina in una pagina per Bar Tabacchi Fiftynine, bar tabaccheria e pizzeria in via Nazionale dei Giovi 59, Cesano Maderno (MB).
 - [[sito-nails-mania]] — Sito vetrina in una pagina per Nails Mania, centro di ricostruzione unghie mani e piedi di Lory Frosio a Seriate (BG).
 - [[sito-ngbarber]] — Bozza vetrina per ng-barber, riga 2 dell'anello 1-b delle liste Instagram, gancio 5.
+- [[sito-osteria-tarilli]] — Osteria Tarilli, Via Ronco Nuovo 2, 6949 Comano (TI), a 300 m dalla RSI.
 - [[sito-salone-di-andrea]] — Sito vetrina in una pagina per Il Salone di Andrea, parrucchiere donna e uomo di Andrea Bielli a Dalmine (BG), Viale Natale Betelli 58.
 
 **skills/**
@@ -215,6 +216,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-06-sito-salone-di-andrea]] — Un blocco solo, chiesto da Nicola in /nicola: «nuovo progetto: sito per l'account Instagram ilsalonediandrea, come al solito, seguendo il pr...
 - [[2026-09-07-sito-nails-mania]] — Sessione a cavallo della mezzanotte, in /nicola.
 - [[2026-09-08-sito-fiftynine-foto-e-admin]] — Nicola ha portato una chiavetta («NO NAME») con il materiale del proprietario del sito-fiftynine e ha chiesto due cose: usare quelle foto al...
+- [[2026-09-08-sito-tarilli]] — Nicola ha chiesto un sito per «pizzeria Tarilli, cercali su Instagram», con «un sacco di animazioni» e «pizze che si muovono e fluttuano».
 
 ## 04-Archive
 

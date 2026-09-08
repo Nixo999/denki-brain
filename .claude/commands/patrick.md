@@ -84,7 +84,19 @@ Quindi, sempre, in tre righe scarse:
 **Le liste si pubblicano, non si consegnano a voce.** Se una lista nuova sta
 in `02-Sales/liste/` ma non è ancora sul banco (`lista-corrente.csv` per
 Patrick, `lista-denkicode.csv` per DenkiCode), la pubblichi tu prima di
-rispondere: **si appende, non si sostituisce.** Un CSV sostituito porta via le
+rispondere: **si appende, non si sostituisce.** Ma **prima passano due
+script, nell'ordine, e il secondo deve uscire con 0**:
+
+```bash
+python3 "$V/02-Sales/strumenti/verifica-sito.py"   "$V/02-Sales/liste/<lista>.csv"
+python3 "$V/02-Sales/strumenti/controlla-lista.py" "$V/02-Sales/liste/<lista>.csv"
+```
+
+Il primo verifica il sito riga per riga su due motori e scrive la prova nella
+colonna; il secondo rifiuta la lista se una riga è verificata a occhio, se una
+frase si ripete o se un handle è già in `contattati.csv`. L'8 settembre 2026
+Patrick ha scritto a gente col sito perché questo passo non c'era: non si
+pubblica una lista che non ci è passata, nemmeno se la chiede lui di corsa. Un CSV sostituito porta via le
 date degli invii e con esse i recuperi, che sono la metà del valore del canale.
 
 ⚠️ Lo script legge i CSV, non il browser. **Gli invii di oggi vivono nel
