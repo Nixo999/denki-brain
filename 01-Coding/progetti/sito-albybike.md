@@ -74,8 +74,8 @@ review di impeccable in modalità degradata: 12 punti, 11 applicati.
 - Momento autoriale: l'hero. Nome da mascherina (`px-8 -mx-8 pt-3` per non
   tagliare l'ombra, `pb-2` per la coda della y), onda che si disegna, parallasse
   sullo strato foto su un nodo separato dall'apertura.
-- Commit **`77ead7f`, locale**: il push pubblica su albybike.com (Netlify dal repo).
-  ⬜ Push dopo il sì di Nicola. ⬜ Safari su iPhone lo guarda lui.
+- Commit **`77ead7f`, pushato** il 9 settembre su «si pusha»: Netlify pubblica su
+  albybike.com. ⬜ Safari su iPhone lo guarda Nicola.
 
 ## Collegamenti
 

@@ -56,7 +56,7 @@ contrasti oro 11,5:1 e muted 6,8:1, menu mobile apre e chiude, parallasse a
 scroll 700 = scala 1,09 / y 112, card sotto la piega a opacità 1 dopo lo
 scroll su scheda visibile. `tsc`, eslint sui file toccati, build ok.
 
-⬜ Push. ⬜ Safari su iPhone. ⬜ I due `any` in `CookieBanner` sono di prima.
+✅ Push su «si pusha». ⬜ Safari su iPhone. ⬜ I due `any` in `CookieBanner` sono di prima.
 
 ## Collegamenti
 
