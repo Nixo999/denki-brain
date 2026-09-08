@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-09-07
+updated: 2026-09-08
 source: claude
 tags: [trappole, memoria, frontend, gsap, git]
 ---
@@ -53,6 +53,27 @@ resta nella daily e nel registro, e da qui ci si linka.
   gira JS e non carica le immagini relative. Si riapre dal server prima di
   concludere che qualcosa è rotto. ([[sito-fiftynine]])
 
+## Immagini e `sips`
+
+- **`sips` legge le dimensioni trasposte quando il browser ruota la foto.** Su
+  una locandina `sips -g pixelWidth` dava 733×1100 e il browser la mostrava
+  1100×733, cioe' coricata: l'orientamento c'era, ma `sips -g orientation`
+  rispondeva `<nil>`. → **l'orientamento si verifica nel browser**, con
+  `naturalWidth`/`naturalHeight`, non con `sips`; si raddrizza con `sips -r 90`
+  e si ricontrolla. Sbagliarlo mette una locandina di traverso in pagina, e gli
+  attributi `width`/`height` dell'`<img>` restano bugiardi. ([[sito-fiftynine]])
+- **`sips` non scrive webp.** `-s format webp` fallisce in silenzio e non
+  produce il file. Senza `rembg`/ImageMagick a portata, per un sito statico si
+  resta a jpeg, che e' anche quello che il canvas codifica ovunque — su Safari
+  `canvas.toBlob('image/webp')` non e' affidabile.
+- **Una locandina non e' una foto**: si legge, quindi non entra in un
+  contenitore che ritaglia con `object-fit:cover` e non prende parallasse.
+  Serve una classe sua che la mostri intera — e il prezzo va **scritto anche in
+  testo**, o chi usa uno screen reader non lo legge.
+- **Un mosaico con la prima cella a tutta larghezza lascia un buco quando le
+  celle scendono a due.** → `.mosaico:has(> :nth-child(3)) .foto:first-child`,
+  cosi' la regola vale solo quando c'e' abbastanza da riempire la riga.
+
 ## GSAP e motion
 
 - **GSAP e framer sovrascrivono il `transform` CSS al primo frame.** Un elemento
@@ -85,6 +106,11 @@ resta nella daily e nel registro, e da qui ci si linka.
   `.btn` e il CTA in nav era verde su verde. Si trova misurando il contrasto,
   non guardando lo screenshot.
 - **Un CTA che wrappa su due righe a 375px si toglie, non si comprime.**
+- **Una voce in piu' in nav non si misura a 1440 e 375**: li' e' sempre a
+  posto. Rompe nella banda stretta in mezzo — su [[sito-fiftynine]] la quinta
+  voce sforava di 36px fra 761 e 899, dove il resto ci stava per un pelo. → si
+  misura `nav.scrollWidth - nav.clientWidth` sui bordi di ogni media query, e
+  la voce nuova prende il suo punto di rottura.
 - **Una regola di componente che imposta `display` batte `[hidden]`.** Il
   browser dà `display:none` agli elementi con l'attributo, ma `button.link-line
   { display: inline-flex }` ha più specificità: il nodo resta a schermo con
@@ -124,6 +150,21 @@ resta nella daily e nel registro, e da qui ci si linka.
   che non salta la cache ma la fa rivalidare: se non è cambiato torna un 304.
 - **Due download di fila: il secondo il browser lo lascia cadere.** Vanno
   distanziati di qualche centinaio di millisecondi.
+- **Lo store puo' essere l'HTML stesso, non un JSON di fianco.** Ogni pezzo
+  modificabile fra due commenti (`<!-- @menu pizze -->` … `<!-- /@menu -->`),
+  si legge con `DOMParser` e si riscrive **solo quello che sta fra i due**: il
+  resto del file non lo tocca nessuno. Costa piu' codice nella pagina di
+  modifica, ma la pagina pubblica **resta statica** — con lo store a JSON un
+  menu' senza JS e' un menu' vuoto, e su un listino di bar e' il contenuto
+  principale. ([[sito-fiftynine]])
+- **Scappare l'apice dritto nel testo rende ogni salvataggio illeggibile.**
+  `'` → `&#39;` riscrive quarantaquattro righe di pizze per un prezzo cambiato,
+  e il diff non dice piu' niente. → due funzioni: nel testo si chiudono solo
+  `& < >`, nell'attributo anche `"` e `'`. Il giro completo deve lasciare il
+  file **identico al byte**, ed e' la prima cosa da provare.
+- **Se una regione marcata non si trova, si alza un errore.** Non si scrive
+  alla cieca: vuol dire che il file e' cambiato sotto, e sovrascriverlo perde
+  il lavoro di qualcun altro.
 
 ## Supabase e chiavi nel browser
 

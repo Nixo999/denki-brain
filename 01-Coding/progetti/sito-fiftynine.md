@@ -5,7 +5,7 @@ client: bar-tabacchi-fiftynine
 stack: [html, netlify]
 started: 2026-09-01
 deadline: TODO
-updated: 2026-09-02
+updated: 2026-09-08
 source: claude
 valore: TODO
 incassato: 0
@@ -21,7 +21,7 @@ Cliente: [[bar-tabacchi-fiftynine]] — nato come bozza al buio il 1° settembre
 2026 (schema Castiglione, [[2026-08-30-sito-castiglione]]), **il 2 settembre
 il proprietario ha mandato il menù in PDF**: da lì è una trattativa.
 
-**Repo**: `github.com/Nixo999/fiftynine-site` (privato, creato il 1° settembre 2026) — in locale `Desktop/fiftynine-site` sul Mac di Patrick
+**Repo**: `github.com/Nixo999/fiftynine-site` (privato) **e `github.com/Nixo999/bartabaccheria59` (pubblico)** — sul Mac di Nicola si lavora in `~/lavoro/bartabaccheria59`, che ha il `pushurl` doppio e scrive su tutti e due; `~/lavoro/fiftynine-site` e` una copia che si allinea con `git pull`
 **Online**: no — va su Netlify come ogni bozza ([[netlify]])
 **Stack**: HTML puro, un solo `index.html`, zero build. `netlify.toml` e
 `robots.txt` con lo schema di NG Barber: **noindex** finché il sito non è loro.
@@ -45,11 +45,15 @@ aperitivo a 12 € restano dalla locandina dell'agosto 2025, perché il menù no
 li riporta. Dove i due divergono (birra alla spina: 5/6 € sulla locandina,
 3/5 € sul menù) vince il menù. Il sito scrive «prezzi del menù in vigore da
 gennaio 2026».
-⚠️ **Il giorno di chiusura non è noto**: Google dice solo «apre mer alle 5:30».
-Il sito non promette «tutti i giorni».
-⚠️ **Le foto sono a 640 px**: Instagram rifiuta la risoluzione piena senza
-login (403). Bastano per le card, non per un'immagine a tutto schermo — per
-questo l'hero è l'insegna, non una foto.
+✅ **Il giorno di chiusura non esiste, e adesso si sa.** Chiuso l'8 settembre
+2026 dalla locandina del locale (`bar.jpeg` sulla chiavetta del proprietario):
+**lunedì 5:50–19:30, martedì–sabato 5:30–21:30, domenica 7:00–21:30**, nessun
+giorno di chiusura. Fino a quel giorno il sito diceva «5:30–21:30» tutti i
+giorni, cioè diceva **aperto un lunedì alle otto di sera**.
+⚠️ **Le foto di Instagram sono a 640 px**: la risoluzione piena senza login dà
+403. Per questo l'hero è l'insegna e non una foto. Dall'8 settembre 2026
+restano solo dove non c'era un ricambio: **colazione, frittini e gyoza**. Il
+resto viene dalla chiavetta del proprietario (vedi sotto).
 
 ## Il menù nel sito
 
@@ -59,6 +63,42 @@ come pizza della casa, poi calzoni e focacce, sfiziosità, panini con doppio
 prezzo focaccia/panino, bevande. Il PDF originale pesa 21 MB: nel sito c'è
 una **versione ricompressa da 1 MB** (`assets/menu-bar-tabacchi-fiftynine.pdf`,
 pagine rasterizzate a ~160 dpi), scaricabile dal capitolo e dal footer.
+
+## Il materiale del proprietario — chiavetta, 8 settembre 2026
+
+Dodici immagini, **non foto dei piatti ma le locandine esposte nel locale**,
+tutte da 1024 px in su. Sono la fonte migliore che il progetto abbia:
+
+| Cosa | Dove è finita |
+|---|---|
+| locandina insegna **con gli orari** | `#dove`, accanto alla lista scritta |
+| i **due pannelli della lista cocktail**, interi e leggibili | aperitivo, al posto della foto Instagram a 640 px |
+| menù pranzo 12 € · primo 9 € · speciale 12/13 € · pizza 8/9 € · insalata da 8 € · insalata con pollo 10 € · maxi toast 4,50 € · crea il tuo piatto | il capitolo nuovo **`#offerte`** |
+| un trittico di paste, chiaramente stock | **scartata**: su un sito di un locale vero le foto stock tolgono credibilità |
+
+⚠️ **Le locandine non sono foto**: si leggono. Stanno intere (`.locandina`, che
+non ritaglia e non ha parallasse) e ogni prezzo è **scritto anche in testo**
+sotto l'immagine — una locandina fotografata non la legge chi usa uno screen
+reader, e su un telefono stretto nemmeno gli altri.
+
+## La pagina di modifica — dall'8 settembre 2026
+
+`admin.html` + `admin.js`, `noindex`, non linkata da nessuna pagina pubblica.
+Il proprietario cambia **le foto**, **le locandine delle offerte** e **tutto il
+menù scritto, prezzi compresi**.
+
+**Niente database e niente login**: lo store sono i file del sito. Ogni pezzo
+modificabile sta fra due commenti (`<!-- @menu pizze -->` … `<!-- /@menu -->`)
+e si riscrive solo quello. È la differenza con [[sito-vbag]], dove lo store è
+un JSON: qui il menù è il contenuto principale, e con un JSON senza JS sarebbe
+una pagina vuota. `prova-admin.html` verifica il giro completo — 23 asserzioni,
+i file devono restare **identici al byte**. Il dettaglio sta nel `CLAUDE.md`
+del repo, scritto lo stesso giorno.
+
+⚠️ **Vale il limite di sempre**: pubblicare vuol dire fare un commit. Dal
+computer con Chrome la pagina scrive da sé nella cartella; da Safari o da
+telefono consegna i file da scaricare. In tutti e due i casi va online quando
+li manda su chi ha il repo. → [[trappole]]
 
 ## Com'è fatto
 
@@ -104,7 +144,9 @@ linea al posto giusto: lo stato aperto non è più un buco. **Non vista su brows
 - [ ] Primo contatto: è a Cesano Maderno, zona di Giulia — DM Instagram
       ([[dm-instagram-vetrina]]) o passaggio di Patrick dopo una chiamata
 - [ ] Telefonata di controllo su prezzi e giorno di chiusura prima di mandare il link
-- [ ] Se rispondono: foto in risoluzione piena da loro, e via il `noindex`
+- [ ] Se rispondono: via il `noindex` (i tre sbarramenti; **`admin.html` resta fuori dagli indici**, ha una regola sua in `netlify.toml`)
+- [ ] **Chiedere le foto che mancano**: colazione, frittini, gyoza — sulla chiavetta non c'erano
+- [ ] Provare a mano il ramo `showDirectoryPicker` su Chrome da computer, e la pagina di modifica su iPhone: nel pannello parte sempre il ramo dei download
 
 ## Collegamenti
 
