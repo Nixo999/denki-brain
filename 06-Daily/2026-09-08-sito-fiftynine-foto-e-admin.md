@@ -147,9 +147,9 @@ Poi Nicola: «ma Bellastoria, albybike?». Cercati fra i 25 repo di `Nixo999`
 per `<title>`: **albybike è `vibrant-web-foundation`** (chiude il `TODO` della
 nota), Bellastoria è `bellastoria_sito`. Firmati e pushati anche quei due.
 
-⬜ Fuori: **Groavel** (nessun repo su `Nixo999`), [[sito-castiglione]] (PC di
-Nicola), [[denkishift]] (app, non sito), [[opero]] (escluso). ⬜ Da vedere se
-albybike.com e bellastoria.netlify.app si aggiornano dal push.
+Online tutti e due tre minuti dopo il push. ⬜ Fuori: **Groavel** (è
+Squarespace, si firma dal pannello), [[sito-castiglione]] (PC di Nicola),
+[[denkishift]] (app, non sito), [[opero]] (escluso).
 
 ## Notte — il passo 3 non lo fa più il modello
 

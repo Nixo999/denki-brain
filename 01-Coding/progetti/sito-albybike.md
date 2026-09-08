@@ -22,8 +22,8 @@ di Patrick**.
 **Stack rilevato**: SPA React buildata con Vite (`/assets/index-*.js`,
 `<div id="root">`). **Repo: `Nixo999/vibrant-web-foundation`** (privato, progetto
 Lovable), trovato l'8 settembre 2026 leggendo il `<title>` di `index.html`; clone
-in `~/lavoro/vibrant-web-foundation` sul Mac di Nicola. ⬜ Da verificare che
-Netlify pubblichi da lì e non da Lovable.
+in `~/lavoro/vibrant-web-foundation` sul Mac di Nicola. ✅ Netlify pubblica da lì: il
+push della firma era online tre minuti dopo.
 
 ## Stato
 

@@ -73,9 +73,9 @@ Fatto la sera stessa dal Mac di Nicola, dove i repo stanno in `~/lavoro`: sul
 Desktop di Patrick c'è solo `smoothduty`. Il resoconto con le misure è nel
 [[registro-interventi]].
 
-- [x] [[sito-albybike]] — online su `albybike.com` (`334ea4f` su `vibrant-web-foundation`; ⬜ da vedere che il deploy segua il push)
-- [x] **Bellastoria** — `bellastoria_sito`, `bellastoria.netlify.app` (`4f5f1e8`)
-- [ ] **Groavel** — `groavel.com`, in galleria: repo non trovato su `Nixo999`, chiedere a Patrick
+- [x] [[sito-albybike]] — online su `albybike.com` (`334ea4f` su `vibrant-web-foundation`; ✅ online tre minuti dopo il push: Netlify pubblica da quel repo)
+- [x] **Bellastoria** — `bellastoria_sito`, `bellastoria.netlify.app` (`4f5f1e8`, ✅ online)
+- [ ] **Groavel** — `groavel.com` è **Squarespace**, niente repo: la firma si mette dal pannello Squarespace, da chi ha l'accesso (non io: [[credenziali]])
 - [x] [[sito-denkicode]] — il nostro, firma compresa (`64397fc`, sera dell'8/9)
 - [x] [[sito-fiftynine]] — in `bartabaccheria59` (`c5cae57`, **non ancora pushato**: il push scrive su tutti e due i remoti)
 - [x] [[sito-atelier-selva]] · [[sito-dsi-advertising]] ·
