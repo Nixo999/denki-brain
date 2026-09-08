@@ -1,6 +1,6 @@
 ---
 type: area
-updated: 2026-08-31
+updated: 2026-09-08
 source: denkicode
 priorita: massima
 ---
@@ -35,6 +35,7 @@ uno script forte su una lista sbagliata suona come tutti gli altri.
 | Pagine Gialle web | Patrick | ⚠️ Non dice se hanno il sito → [[2026-08-30-verifica-sito-reale]] |
 | **DM Instagram** | Patrick | **Canale vero dal 31 agosto 2026**, sul lontano: [[metodo-instagram]] |
 | ~~Porta-a-porta~~ | — | **Chiuso il 31 agosto 2026** → [[2026-08-31-stop-porta-a-porta-a-freddo]] |
+| **Nuove aperture** | Patrick | **Da provare, 8 settembre 2026**: Maps, annunci di lavoro, elenchi camerali → [[metodo-nuove-aperture]] |
 
 ⚠️ **Dal 31 agosto 2026 i canali si dividono per geografia**: il telefono
 lavora vicino, dove Patrick può presentarsi dopo la chiamata; Instagram lavora
