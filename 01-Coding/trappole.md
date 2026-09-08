@@ -49,6 +49,20 @@ resta nella daily e nel registro, e da qui ci si linka.
 - **Il pane ha un viewport fantasma**, e `scrollWidth - clientWidth` misurato lì
   dà overflow che a 1440 e 375 emulati è zero. Si misura solo su viewport
   emulati espliciti, mai su quello che capita.
+- **`timeout` non esiste su macOS.** `perl -e 'alarm N; exec @ARGV' cmd`
+  fa lo stesso lavoro. ([[sito-osteria-tarilli]])
+- **Brave è un Chromium headless già installato**: `"/Applications/Brave
+  Browser.app/Contents/MacOS/Brave Browser" --headless=new --screenshot=…
+  --window-size=1440,900 --virtual-time-budget=6000 URL` scrive un PNG vero
+  su disco, cosa che il pannello non sa fare. Per la pagina intera la
+  finestra va alta quanto il documento, **e tutto ciò che è in `vh` si
+  allunga con lei**: un hero `100dvh` diventa alto 6.800 px. → le misure in
+  `vh` passano da `--vh:1vh` e un wrapper `?cattura` le fissa a 9 px.
+  ([[sito-osteria-tarilli]])
+- **`launch.json` va nella cartella della sessione, non nel repo**, e
+  `python3 -m http.server` non parte da una cartella Google Drive
+  (`os.getcwd()` è vietato): `sh -c "cd <repo> && exec python3 -m
+  http.server"`. ([[sito-osteria-tarilli]])
 - **`file://` non è il sito**: aperto come istantanea statica (URL `data:`) non
   gira JS e non carica le immagini relative. Si riapre dal server prima di
   concludere che qualcosa è rotto. ([[sito-fiftynine]])
@@ -89,6 +103,14 @@ resta nella daily e nel registro, e da qui ci si linka.
   framer serve `MotionConfig reducedMotion="user"`.
 - **Dosi che hanno funzionato**: massimo un pin per pagina, scrub 0.5-1.5,
   parallax solo sui layer immagine. Vengono dalla base dati di `ui-ux-pro-max`.
+- **Un tween in attesa è layout.** `gsap.from` con `x:90` e uno
+  ScrollTrigger che non è ancora partito tiene gli elementi 90 px a destra:
+  se stanno al bordo, la pagina scrolla di lato. → `overflow-x:clip` sulla
+  sezione, o la rivelazione in CSS con il fallback a tempo.
+  ([[sito-osteria-tarilli]])
+- **Un conteggio animato su un prezzo mostra un prezzo falso** per tutta la
+  durata del tween, e una cattura lo fotografa: «CHF 34» per un brunch a 39.
+  I numeri che impegnano non si animano. ([[sito-osteria-tarilli]])
 - **Su mobile i trigger in sequenza si sovrappongono** e l'evidenziazione balla.
   → niente sequenza sotto i 640px, tutto acceso. ([[sito-ngbarber]])
 
@@ -185,6 +207,11 @@ resta nella daily e nel registro, e da qui ci si linka.
 
 - **Gli URL delle foto Instagram scadono** (firme CDN a giorni). → si scaricano
   in locale subito, nella stessa sessione.
+- **La bio troncata e le caption si leggono senza login.** La bio intera sta
+  nel `meta name="description"` della pagina profilo; la caption di ogni
+  post nell'`og:title` di `instagram.com/<utente>/p/<id>/`, con `curl`.
+  Il pannello mostra le prime dodici anteprime a 640 px e poi chiede il
+  login. ([[sito-osteria-tarilli]])
 - **L'handle esatto va chiesto, non indovinato.** `castiglione_furniture` è
   inglese: quattro username italiani tentati, zero risultati, risolto da uno
   screenshot di Nicola.
@@ -203,6 +230,21 @@ resta nella daily e nel registro, e da qui ci si linka.
   file si aggiorna sul disco di chi clicca, e nel brain arriva solo col push —
   che il server fa da solo, con un timer, e alla chiusura via segnale. Con
   `SIGKILL` il timer non parte e il commit si perde.
+
+## Skill e strumenti di processo
+
+- **Lo script di `ui-ux-pro-max` non sta dove la skill dice.** Il percorso
+  `.claude/skills/ui-ux-pro-max/scripts/search.py` sotto la cartella del
+  plugin non esiste, e `find` non trova nessun `search.py`. Il passo 4 del
+  processo si salta e si dichiara, finché non si trova la copia giusta.
+- **Il `build-phase` di impeccable è solo comp-led**: senza generatore di
+  immagini si ferma a «comps». Il percorso code-led è previsto dal
+  playbook e non passa da lì; il brief di superficie si scrive con
+  `impeccable surface-brief write <target> <file>` e finisce in
+  `.impeccable/surfaces/`.
+- **La pagina di decisione senza nessuno davanti resta aperta per sempre.**
+  Si aspetta un tempo dichiarato (due giri da 60 s), poi si costruisce
+  l'assegnata e lo si scrive.
 
 ## Collegamenti
 
