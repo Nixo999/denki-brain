@@ -116,8 +116,12 @@
     <button id="pag-fatti">Già contattati <b id="n-fatti">0</b></button>
   </nav>
   <section id="pagina-nuove">
-    <p class="nota">Solo chi non ha ancora ricevuto niente, con l'ultima lista pubblicata in cima. I recuperi e i già scritti stanno nell'altra pagina.</p>
+    <p class="nota" id="nota-nuove">Solo chi non ha ancora ricevuto niente. I recuperi e i già scritti stanno nell'altra pagina.</p>
     <div id="lista"></div>
+    <details class="contattati" id="vecchie">
+      <summary>Liste dei giorni scorsi — <b id="n-vecchie">0</b> senza data di invio nel file. Attenzione: gli invii dal 4 al 7 settembre non sono mai stati salvati nel vault, qui dentro c'è gente a cui hai già scritto.</summary>
+      <div id="lista-vecchie"></div>
+    </details>
   </section>
   <section id="pagina-fatti" hidden>
     <div class="sezione">Recuperi maturi — <b id="n-rec">0</b> · quattro giorni lavorativi senza risposta, un solo messaggio e poi basta</div>
@@ -362,7 +366,7 @@ async function avvio(){
   document.body.classList.toggle("denkicode", attivo === "denkicode");
   document.getElementById("account").value = attivo;
   intestazione = []; dati = []; col = {}; orari = []; fonte = "";
-  ["lista", "lista-recuperi", "lista-contattati", "lista-scartate"].forEach(id => document.getElementById(id).innerHTML = "");
+  ["lista", "lista-vecchie", "lista-recuperi", "lista-contattati", "lista-scartate"].forEach(id => document.getElementById(id).innerHTML = "");
   document.getElementById("vuoto").hidden = false;
   document.getElementById("scarica").disabled = true;
   document.getElementById("quale").textContent = "";
@@ -380,6 +384,7 @@ async function avvio(){
           fonte = testo;
           const quando = risposta.headers.get("Last-Modified");
           carica(testo, "lista del " + (quando ? new Date(quando).toLocaleDateString("it-IT") : "giorno"));
+          if (salvata) unisci(salvata);
           ricorda();
           return;
         }
@@ -392,6 +397,43 @@ async function avvio(){
     carica(scriviCSV([salvata.intestazione, ...salvata.dati]), salvata.nomeFile);
   }
 }
+/* Quando il file pubblicato cambia, il lavoro gia` fatto nel browser non si
+   butta: per ogni handle si tengono la data di invio, l'esito e il testo
+   corretto a mano che stavano nella memoria. Fino al 9 settembre 2026 la
+   lista nuova SOSTITUIVA la memoria, e gli invii dal 4 al 7 settembre sono
+   spariti dal banco a ogni pubblicazione. */
+function unisci(salvata){
+  const vh = salvata.intestazione || [];
+  const vc = {};
+  vh.forEach((n, i) => {
+    const l = String(n).toLowerCase();
+    if (l.startsWith("account")) vc.account = i;
+    else if (l.startsWith("dm inviato")) vc.inviato = i;
+    else if (l.startsWith("esito dm")) vc.esito = i;
+    else if (l.startsWith("messaggio")) vc.messaggio = i;
+  });
+  if (vc.account === undefined) return;
+  const vecchie = new Map();
+  (salvata.dati || []).forEach(r => {
+    const h = (r[vc.account] || "").trim().toLowerCase();
+    if (h) vecchie.set(h, r);
+  });
+  let tenuti = 0;
+  dati.forEach(r => {
+    const v = vecchie.get((r[col.account] || "").trim().toLowerCase());
+    if (!v) return;
+    const inv = vc.inviato !== undefined ? (v[vc.inviato] || "").trim() : "";
+    const es  = vc.esito   !== undefined ? (v[vc.esito]   || "").trim() : "";
+    const msg = vc.messaggio !== undefined ? (v[vc.messaggio] || "") : "";
+    /* si tiene solo una data vera: un valore strano nella memoria non deve
+       diventare un invio */
+    if (/^\d{4}-\d{2}-\d{2}$/.test(inv) && !(r[col.inviato] || "").trim()){ r[col.inviato] = inv; tenuti++; }
+    if (es  && !(r[col.esito]   || "").trim())  r[col.esito] = es;
+    if (msg.trim() && inv) r[col.messaggio] = msg;    // il testo che e` partito davvero
+  });
+  if (tenuti){ console.info("banco: tenute " + tenuti + " date di invio dalla memoria del browser"); disegna(); }
+}
+
 avvio();
 
 document.getElementById("account").addEventListener("change", (e) => {
@@ -428,7 +470,8 @@ function disegna(){
   const recs  = document.getElementById("lista-recuperi");
   const fatti = document.getElementById("lista-contattati");
   const scart = document.getElementById("lista-scartate");
-  [lista, recs, fatti, scart].forEach(el => el.innerHTML = "");
+  const vecchie = document.getElementById("lista-vecchie");
+  [lista, vecchie, recs, fatti, scart].forEach(el => el.innerHTML = "");
   let oggi = 0;
   const nuove = [], recuperi = [], contattati = [], scartate = [];
 
@@ -452,7 +495,17 @@ function disegna(){
      cima, dentro ogni lista l'ordine di chi l'ha fatta, e in fondo le righe
      vecchie senza colonna. Niente recuperi in mezzo: chiesto il 9 settembre 2026. */
   nuove.sort((a, b) => b[0].localeCompare(a[0]) || a[1] - b[1]);
-  nuove.forEach(([, , el]) => lista.appendChild(el));
+  /* In pagina solo l'ultima lista pubblicata (la colonna «Lista» piu` alta):
+     e` quella del giorno. Il resto sta sotto, chiuso, finche` gli invii vecchi
+     non sono ricostruiti: la` dentro c'e` gente a cui Patrick ha gia` scritto. */
+  const ultima = nuove.length ? nuove[0][0] : "";
+  let inPagina = 0;
+  nuove.forEach(([l, , el]) => { if (ultima && l === ultima){ lista.appendChild(el); inPagina++; } else vecchie.appendChild(el); });
+  document.getElementById("n-vecchie").textContent = nuove.length - inPagina;
+  document.getElementById("vecchie").hidden = nuove.length === inPagina;
+  document.getElementById("nota-nuove").textContent = ultima
+    ? "La lista di oggi: " + ultima.replace(/\.csv$/i, "") + ", " + inPagina + " profili. Solo chi non ha ancora ricevuto niente; i recuperi e i già scritti stanno nell'altra pagina."
+    : "Solo chi non ha ancora ricevuto niente. I recuperi e i già scritti stanno nell'altra pagina.";
   /* Pagina «Gia` contattati»: prima i recuperi maturi, i piu` vecchi in cima
      perche` aspettano da piu` tempo; poi i gia` scritti, gli ultimi in cima. */
   recuperi.sort((a, b) => a[0].localeCompare(b[0]));
@@ -461,7 +514,7 @@ function disegna(){
   contattati.forEach(([, el]) => fatti.appendChild(el));
   scartate.forEach(el => scart.appendChild(el));
 
-  document.getElementById("n-nuove").textContent = nuove.length;
+  document.getElementById("n-nuove").textContent = inPagina;
   document.getElementById("n-fatti").textContent = recuperi.length + contattati.length;
   document.getElementById("n-rec").textContent = recuperi.length;
   document.getElementById("cont").textContent = contattati.length;
