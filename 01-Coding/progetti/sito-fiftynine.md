@@ -5,7 +5,7 @@ client: bar-tabacchi-fiftynine
 stack: [html, netlify]
 started: 2026-09-01
 deadline: TODO
-updated: 2026-09-08
+updated: 2026-09-09
 source: claude
 valore: TODO
 incassato: 0
@@ -22,7 +22,7 @@ Cliente: [[bar-tabacchi-fiftynine]] — nato come bozza al buio il 1° settembre
 il proprietario ha mandato il menù in PDF**: da lì è una trattativa.
 
 **Repo**: `github.com/Nixo999/fiftynine-site` (privato) **e `github.com/Nixo999/bartabaccheria59` (pubblico)** — sul Mac di Nicola si lavora in `~/lavoro/bartabaccheria59`, che ha il `pushurl` doppio e scrive su tutti e due; `~/lavoro/fiftynine-site` e` una copia che si allinea con `git pull`
-**Online**: no — va su Netlify come ogni bozza ([[netlify]])
+**Online**: **no, e al 9 settembre 2026 non lo e' ancora.** Nessun Netlify, GitHub Pages spento, nessuna homepage sul repo. Il codice sta su GitHub (`c5cae57` su tutti e due i remoti) ma **un repo non e' un sito**: finche' non si pubblica non c'e' niente da guardare a un indirizzo. Serve il login di Nicola ([[netlify]])
 **Stack**: HTML puro, un solo `index.html`, zero build. `netlify.toml` e
 `robots.txt` con lo schema di NG Barber: **noindex** finché il sito non è loro.
 
