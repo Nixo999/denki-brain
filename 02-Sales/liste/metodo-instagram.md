@@ -265,6 +265,15 @@ Le contromisure, che costano poco e servono davvero:
    copie identiche — e nel primo giro vero nessuno dei 75 testi è stato
    toccato a mano, quindi il gancio è l'unica cosa che cambiava.
 
+> [!note] Il banco ha due pagine dal 9 settembre 2026 — chiesto da Patrick
+> **«Da contattare»**: solo chi non ha ancora ricevuto niente, con l'ultima
+> lista pubblicata in cima (ordina per la colonna `Lista` di
+> `lista-corrente.csv`, che porta il nome del file pubblicato). **«Già
+> contattati»**: i recuperi maturi, poi i già scritti, poi le scartate. Si
+> apre sempre sulla prima: è la pagina del giorno. Chi pubblica una lista
+> nuova valorizza la colonna `Lista` sulle righe che appende, o finiscono in
+> fondo.
+
 ## Chi lo fa, e quando
 
 **Patrick, di pomeriggio**, in un blocco unico — è una priorità sola per blocco

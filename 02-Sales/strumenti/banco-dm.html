@@ -70,6 +70,19 @@
   .contattati summary{cursor:pointer;color:var(--tenue);font-size:14px;margin-bottom:12px}
   .contattati a{color:var(--accento)}
   button.secondario{background:transparent;color:var(--tenue);border:1px solid var(--bordo);font-size:12.5px}
+  /* Due pagine, chieste da Patrick il 9 settembre 2026: quella che guarda oggi
+     ha solo chi non ha ancora ricevuto niente; recuperi e gia` scritti stanno
+     nell'altra, cosi` non si mescolano mai. */
+  .pagine{display:flex;gap:8px;margin:0 0 16px;border-bottom:1px solid var(--bordo)}
+  .pagine button{font-size:14px;padding:10px 16px;border-radius:10px 10px 0 0;border-bottom:0;
+                 color:var(--tenue);margin-bottom:-1px}
+  .pagine button.attiva{background:var(--carta);color:var(--testo);font-weight:600;
+                        border-color:var(--bordo);border-bottom:1px solid var(--carta)}
+  .pagine button b{margin-left:6px;color:var(--accento)}
+  .nota{color:var(--tenue);font-size:13px;margin:0 0 12px}
+  .sezione{margin:22px 0 10px;font-size:12.5px;color:var(--tenue);text-transform:uppercase;letter-spacing:.06em}
+  .sezione b{color:var(--testo)}
+  .sezione a{color:var(--accento);text-transform:none;letter-spacing:0}
 </style>
 </head>
 <body>
@@ -98,12 +111,24 @@
     restano solo in questo browser e non arrivano in <code>contattati.csv</code>. Chiudi la finestra del
     terminale e riapri il banco con <b>«Banco DM (Desktop).command»</b>, che aggiorna il vault e lancia
     il server nuovo.</div>
-  <div id="lista"></div>
-  <details id="contattati" class="contattati">
-    <summary>Contattati — <b id="cont2">0</b> conversazioni aperte ·
-      <a href="../liste/contattati.csv" download>l'elenco nel brain</a></summary>
+  <nav class="pagine">
+    <button id="pag-nuove" class="attiva">Da contattare <b id="n-nuove">0</b></button>
+    <button id="pag-fatti">Già contattati <b id="n-fatti">0</b></button>
+  </nav>
+  <section id="pagina-nuove">
+    <p class="nota">Solo chi non ha ancora ricevuto niente, con l'ultima lista pubblicata in cima. I recuperi e i già scritti stanno nell'altra pagina.</p>
+    <div id="lista"></div>
+  </section>
+  <section id="pagina-fatti" hidden>
+    <div class="sezione">Recuperi maturi — <b id="n-rec">0</b> · quattro giorni lavorativi senza risposta, un solo messaggio e poi basta</div>
+    <div id="lista-recuperi"></div>
+    <div class="sezione">Già scritti — <b id="cont2">0</b> · <a href="../liste/contattati.csv" download>l'elenco nel brain</a></div>
     <div id="lista-contattati"></div>
-  </details>
+    <details class="contattati">
+      <summary>Scartate dalla verifica o dal banco — <b id="n-scartate">0</b></summary>
+      <div id="lista-scartate"></div>
+    </details>
+  </section>
   <div id="vuoto" class="vuoto">
     <b>Trascina qui il CSV della lista</b> — quelli di <code>02-Sales/liste/</code>.<br>
     Da qui in poi se lo ricorda: riaprendo la pagina la lista è già dov'era, coi messaggi già segnati.<br><br>
@@ -289,6 +314,7 @@ function carica(testo, nome){
     else if (n.startsWith("esito dm")) col.esito = i;
     else if (n.startsWith("messaggio")) col.messaggio = i;
     else if (n.startsWith("scheda")) col.scheda = i;
+    else if (n.startsWith("lista")) col.lista = i;
   });
   /* La colonna «Messaggio» e` quella che Nicola riempie prima di pubblicare la
      lista e che Patrick corregge qui dentro: se manca, si aggiunge, cosi` le
@@ -336,7 +362,7 @@ async function avvio(){
   document.body.classList.toggle("denkicode", attivo === "denkicode");
   document.getElementById("account").value = attivo;
   intestazione = []; dati = []; col = {}; orari = []; fonte = "";
-  document.getElementById("lista").innerHTML = "";
+  ["lista", "lista-recuperi", "lista-contattati", "lista-scartate"].forEach(id => document.getElementById(id).innerHTML = "");
   document.getElementById("vuoto").hidden = false;
   document.getElementById("scarica").disabled = true;
   document.getElementById("quale").textContent = "";
@@ -384,7 +410,7 @@ function annota(r, file, azione){
     "Account IG": (r[col.account] || "").trim(), Nome: (r[col.nome] || "").trim(),
     Comune: r[col.comune] || "", Segmento: r[col.segmento] || "",
     Tipo: file === "contattati" ? (azione === "recupero" ? "recupero" : "primo") : "scartato dal banco",
-    Lista: nomeFile
+    Lista: (col.lista !== undefined && (r[col.lista] || "").trim()) || nomeFile
   };
   fetch("/segna", {method:"POST", keepalive:true, headers:{"Content-Type":"application/json"},
         body: JSON.stringify({file, azione: azione === "togli" ? "togli" : "aggiungi", riga})})
@@ -399,10 +425,12 @@ function ricorda(){
 function disegna(){
   ricorda();
   const lista = document.getElementById("lista");
+  const recs  = document.getElementById("lista-recuperi");
   const fatti = document.getElementById("lista-contattati");
-  lista.innerHTML = ""; fatti.innerHTML = "";
-  let oggi = 0, restano = 0, recuperi = 0;
-  const contattati = [];
+  const scart = document.getElementById("lista-scartate");
+  [lista, recs, fatti, scart].forEach(el => el.innerHTML = "");
+  let oggi = 0;
+  const nuove = [], recuperi = [], contattati = [], scartate = [];
 
   dati.forEach((r, idx) => {
     const inviato = (r[col.inviato] || "").trim();
@@ -411,29 +439,60 @@ function disegna(){
 
     const scartata = /^scartat/i.test(esito);
     const daRecuperare = inviato && !esito && lavorativiDa(inviato) >= ATTESA_RECUPERO;
-    if (daRecuperare) recuperi++;
-    if (!inviato && !scartata) restano++;
-    if (inviato && !daRecuperare) { contattati.push([inviato, cartella(r, idx, inviato, esito, false)]); return; }
-    lista.appendChild(cartella(r, idx, inviato, esito, daRecuperare));
+    const el = cartella(r, idx, inviato, esito, daRecuperare);
+    if (scartata && !inviato) scartate.push(el);
+    else if (daRecuperare) recuperi.push([inviato, el]);
+    else if (inviato) contattati.push([inviato, el]);
+    else nuove.push([(col.lista !== undefined ? (r[col.lista] || "") : ""), idx, el]);
   });
-  /* i mandati stanno in un elenco a parte, gli ultimi in cima: e` quello che
-     Patrick guarda per sapere a chi ha gia` scritto */
+
+  /* Pagina «Da contattare»: e` quella che Patrick guarda oggi. Solo chi non ha
+     ancora ricevuto niente, ordinati per la colonna «Lista» del CSV (il nome
+     del file pubblicato, che comincia con la data): la lista piu` recente in
+     cima, dentro ogni lista l'ordine di chi l'ha fatta, e in fondo le righe
+     vecchie senza colonna. Niente recuperi in mezzo: chiesto il 9 settembre 2026. */
+  nuove.sort((a, b) => b[0].localeCompare(a[0]) || a[1] - b[1]);
+  nuove.forEach(([, , el]) => lista.appendChild(el));
+  /* Pagina «Gia` contattati»: prima i recuperi maturi, i piu` vecchi in cima
+     perche` aspettano da piu` tempo; poi i gia` scritti, gli ultimi in cima. */
+  recuperi.sort((a, b) => a[0].localeCompare(b[0]));
+  recuperi.forEach(([, el]) => recs.appendChild(el));
   contattati.sort((a, b) => b[0].localeCompare(a[0]));
   contattati.forEach(([, el]) => fatti.appendChild(el));
+  scartate.forEach(el => scart.appendChild(el));
+
+  document.getElementById("n-nuove").textContent = nuove.length;
+  document.getElementById("n-fatti").textContent = recuperi.length + contattati.length;
+  document.getElementById("n-rec").textContent = recuperi.length;
   document.getElementById("cont").textContent = contattati.length;
   document.getElementById("cont2").textContent = contattati.length;
+  document.getElementById("n-scartate").textContent = scartate.length;
 
   document.getElementById("oggi").textContent = oggi;
   document.getElementById("tetto").textContent = att().tetto;
   const ora = document.getElementById("ora");
   ora.textContent = ultimaOra();
   ora.classList.toggle("corri", ultimaOra() > RITMO_ORA);
-  document.getElementById("restano").textContent = restano;
-  document.getElementById("rec").textContent = recuperi;
+  document.getElementById("restano").textContent = nuove.length;
+  document.getElementById("rec").textContent = recuperi.length;
   const stop = document.getElementById("stop");
   stop.textContent = att().stop;
   stop.hidden = oggi < att().tetto;
 }
+
+/* Il cambio pagina. Si apre sempre su «Da contattare»: e` la pagina del
+   giorno, e ricordarsi l'altra vorrebbe dire aprire domani sui recuperi. */
+function mostraPagina(p){
+  const nuove = p !== "fatti";
+  document.getElementById("pagina-nuove").hidden = !nuove;
+  document.getElementById("pagina-fatti").hidden = nuove;
+  document.getElementById("pag-nuove").classList.toggle("attiva", nuove);
+  document.getElementById("pag-fatti").classList.toggle("attiva", !nuove);
+  window.scrollTo(0, 0);
+}
+document.getElementById("pag-nuove").addEventListener("click", () => mostraPagina("nuove"));
+document.getElementById("pag-fatti").addEventListener("click", () => mostraPagina("fatti"));
+mostraPagina("nuove");
 
 function cartella(r, idx, inviato, esito, daRecuperare){
   const scartata = /^scartat/i.test(esito);
@@ -451,7 +510,7 @@ function cartella(r, idx, inviato, esito, daRecuperare){
       ${daRecuperare ? '<span class="tag rec">recupero</span>' : ""}
       ${inviato && !daRecuperare ? '<span class="tag ok">' + inviato + "</span>" : ""}
       <span class="tag">gancio ${r[col.gancio] || "?"}</span>
-      <div class="meta">${nome} — ${r[col.comune] || ""} · ${r[col.follower] || "?"} follower</div>
+      <div class="meta">${nome} — ${r[col.comune] || ""} · ${r[col.follower] || "?"} follower${(r[col.segmento] || "").trim() ? " · " + r[col.segmento].trim() : ""}</div>
       <div class="meta">${r[col.verifica] || ""}</div>
       ${(r[col.scheda] || "").trim() ? '<div class="scheda"></div>' : ""}
       <textarea class="msg" spellcheck="false"></textarea>
