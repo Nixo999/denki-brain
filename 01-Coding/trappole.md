@@ -67,6 +67,18 @@ resta nella daily e nel registro, e da qui ci si linka.
   `python3 -m http.server` non parte da una cartella Google Drive
   (`os.getcwd()` è vietato): `sh -c "cd <repo> && exec python3 -m
   http.server"`. ([[sito-osteria-tarilli]])
+- **Nel pannello non arrivano `scroll` e `resize`, e lo scroll fluido non
+  parte.** `scrollLeft` cambia ma nessun listener viene chiamato, e
+  `scrollBy({behavior:"smooth"})` lascia la posizione a zero mentre `"auto"`
+  funziona. → l'aritmetica si prova forzando `scroll-behavior:auto`,
+  l'animazione morbida resta da guardare su browser vero; e per lo stato di un
+  carosello conviene **`ResizeObserver`**, che scatta anche dove `resize` non
+  arriva. ([[sito-fiftynine]])
+- **La console del pannello tiene i messaggi delle pagine precedenti.** Warning
+  di una versione gia' corretta continuano a comparire dopo il ricaricamento e
+  sembrano vivi. → si verifica caricando una pagina che *non puo'* produrli (su
+  [[sito-fiftynine]] `?fermo=1`, che non fa girare GSAP): se ci sono ancora,
+  sono vecchi.
 - **`file://` non è il sito**: aperto come istantanea statica (URL `data:`) non
   gira JS e non carica le immagini relative. Si riapre dal server prima di
   concludere che qualcosa è rotto. ([[sito-fiftynine]])
