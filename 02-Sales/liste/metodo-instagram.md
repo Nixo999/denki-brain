@@ -53,6 +53,7 @@ Non è un'opinione: il conto viene da [[2026-08-30-verifica-siti-giulia]].
 | 3 | **Nail, ciglia, sopracciglia, PMU** | Vivono di foto: il profilo è già metà bozza |
 | 4 | **Tatuatori, wedding, fotografi** | Da provare dall'anello 2 |
 | 5 | **Toelettature, asili e pensioni per cani** | Provato il 9 settembre 2026 sull'anello 1: **22 righe da circa 70 profili aperti**. Bacino stretto (metà delle toelettature non ha Instagram) e 17 siti veri scartati, ma tre domini morti e un link in bio rotto → [[2026-09-09-anello1-pet]] |
+| 6 | **Ristorazione, comuni non ancora battuti degli anelli 1 e 2** | Rifatta il 9 settembre 2026 col profilo aperto: **64 righe da 112 profili letti** (una in più scartata dallo script: sito vero che le SERP non mostravano), 58 senza sito, 17 handle morti che le SERP davano vivi, una sessantina di siti veri scartati → [[2026-09-09-ristorazione-va-co-lc-bg]] |
 | ❌ | **Mobilifici e arredamento** | 6 su 6 col sito. Non si tocca |
 | ❌ | **Negozi** | La domanda giusta non è «ha un sito» ma «vende online»: è flusso B, non A |
 
@@ -272,7 +273,17 @@ Le contromisure, che costano poco e servono davvero:
 > contattati»**: i recuperi maturi, poi i già scritti, poi le scartate. Si
 > apre sempre sulla prima: è la pagina del giorno. Chi pubblica una lista
 > nuova valorizza la colonna `Lista` sulle righe che appende, o finiscono in
-> fondo.
+> fondo. In pagina stanno **tutte le liste del giorno più recente** (i primi
+> dieci caratteri della colonna, la data): il 9 settembre ne sono uscite due,
+> cani e ristorazione, e si vedono insieme. Le liste dei giorni prima stanno
+> sotto, chiuse in «Liste dei giorni scorsi».
+>
+> ⚠ Sotto la pagina deve girare `banco-server.py`, cioè `Banco DM.command`.
+> Il 9 settembre 2026 sulla porta 8770 c'era ancora un `http.server` lanciato
+> il 7: i 22 invii dei cani (19:02-19:07) sono rimasti solo nel browser, con
+> il riquadro rosso «il server è vecchio» acceso, e sono stati ricopiati a mano
+> in `contattati.csv`. Se il riquadro rosso compare, si chiude la finestra
+> nera e si rilancia il `.command` prima di continuare.
 
 ## Chi lo fa, e quando
 

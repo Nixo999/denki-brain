@@ -495,16 +495,20 @@ function disegna(){
      cima, dentro ogni lista l'ordine di chi l'ha fatta, e in fondo le righe
      vecchie senza colonna. Niente recuperi in mezzo: chiesto il 9 settembre 2026. */
   nuove.sort((a, b) => b[0].localeCompare(a[0]) || a[1] - b[1]);
-  /* In pagina solo l'ultima lista pubblicata (la colonna «Lista» piu` alta):
-     e` quella del giorno. Il resto sta sotto, chiuso, finche` gli invii vecchi
-     non sono ricostruiti: la` dentro c'e` gente a cui Patrick ha gia` scritto. */
+  /* In pagina le liste del giorno piu` recente (la colonna «Lista» comincia
+     con la data: si confrontano i primi dieci caratteri). Il 9 settembre 2026
+     ne sono uscite due nello stesso giorno, e una sola in pagina nascondeva
+     l'altra. Il resto sta sotto, chiuso, finche` gli invii vecchi non sono
+     ricostruiti: la` dentro c'e` gente a cui Patrick ha gia` scritto. */
   const ultima = nuove.length ? nuove[0][0] : "";
+  const giorno = ultima.slice(0, 10);
+  const listeGiorno = [...new Set(nuove.map(([l]) => l).filter(l => l.slice(0, 10) === giorno))];
   let inPagina = 0;
-  nuove.forEach(([l, , el]) => { if (ultima && l === ultima){ lista.appendChild(el); inPagina++; } else vecchie.appendChild(el); });
+  nuove.forEach(([l, , el]) => { if (ultima && l.slice(0, 10) === giorno){ lista.appendChild(el); inPagina++; } else vecchie.appendChild(el); });
   document.getElementById("n-vecchie").textContent = nuove.length - inPagina;
   document.getElementById("vecchie").hidden = nuove.length === inPagina;
   document.getElementById("nota-nuove").textContent = ultima
-    ? "La lista di oggi: " + ultima.replace(/\.csv$/i, "") + ", " + inPagina + " profili. Solo chi non ha ancora ricevuto niente; i recuperi e i già scritti stanno nell'altra pagina."
+    ? (listeGiorno.length > 1 ? "Le liste di oggi: " : "La lista di oggi: ") + listeGiorno.map(l => l.replace(/\.csv$/i, "")).join(" e ") + ", " + inPagina + " profili. Solo chi non ha ancora ricevuto niente; i recuperi e i già scritti stanno nell'altra pagina."
     : "Solo chi non ha ancora ricevuto niente. I recuperi e i già scritti stanno nell'altra pagina.";
   /* Pagina «Gia` contattati»: prima i recuperi maturi, i piu` vecchi in cima
      perche` aspettano da piu` tempo; poi i gia` scritti, gli ultimi in cima. */
