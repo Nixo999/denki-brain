@@ -32,7 +32,17 @@ DIRECTORY = re.compile(r"(instagram|facebook|tripadvisor|thefork|yelp|paginegial
                        r"virgilio|cylex|misterimprese|infobel|ristoranti\.it|local\.ch|search\.ch|"
                        r"trustpilot|booking|airbnb|apple\.com|mapquest|waze|sluurpy|ristorantiitaliani|"
                        r"gastroranking|restaurantguru|quandoo|wikipedia|amazon|linktr\.ee|"
-                       r"treatwell|fresha|bookizon|simplybook|sumup|planity|thefork)", re.I)
+                       r"treatwell|fresha|bookizon|simplybook|sumup|planity|thefork|"
+                       # directory e registri del settore animali, aggiunti il 9 settembre 2026 per la lista
+                       # toelettature: senza, «toelettature.net/scheda/beauty-dog» passava per il sito dell'attivita`
+                       r"toelettature\.net|toelettatori|toelettapp|toelettatura\.info|toelettaturapro|reteimprese|"
+                       r"paginebianche|nomadog|idropet|cylex|trova-aperto|italiarecensioni|oraridiapertura|"
+                       r"tutti-gli-orari|zampaconnect|prontopro|pawshake|rover\.com|mondozampa|mondo-zampa|"
+                       r"misterimprese|informazione-aziende|registroaziende|ufficiocamerale|icribis|empresite|"
+                       r"atoka|localshop24|firmania|unicommercialista|petlocal|cuccioland|yably|wheree|infobel|"
+                       r"visura\.pro|dnb\.com|globelife|dog-sitter-como|cani\.com|veterinari\.it|"
+                       r"animalidacompagnia|justdog|seguileorme|ankiomaccoppio|welocal|findglocal|mypushop|"
+                       r"parrocchiamadonnadipompei|paginemail|coobiz|pagineaziende|telefono\.click)", re.I)
 PIATTAFORMA = re.compile(r"(wixsite\.com|jimdofree\.com|business\.site|myshopify\.com|res-menu|eatbu|"
                          r"\.menu$|menu\.|godaddysites|webnode|altervista|blogspot|wordpress\.com|"
                          r"weebly|site123|carrd\.co|strikingly)", re.I)

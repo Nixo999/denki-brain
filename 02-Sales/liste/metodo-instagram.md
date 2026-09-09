@@ -1,6 +1,6 @@
 ---
 type: area
-updated: 2026-09-08
+updated: 2026-09-09
 source: claude
 prodotto: siti-vetrina
 stato: da-provare
@@ -52,6 +52,7 @@ Non è un'opinione: il conto viene da [[2026-08-30-verifica-siti-giulia]].
 | 2 | **Barber shop** | Stessa cosa, ancora più nativi Instagram: spesso hanno l'app di prenotazione e non il sito |
 | 3 | **Nail, ciglia, sopracciglia, PMU** | Vivono di foto: il profilo è già metà bozza |
 | 4 | **Tatuatori, wedding, fotografi** | Da provare dall'anello 2 |
+| 5 | **Toelettature, asili e pensioni per cani** | Provato il 9 settembre 2026 sull'anello 1: **22 righe da circa 70 profili aperti**. Bacino stretto (metà delle toelettature non ha Instagram) e 17 siti veri scartati, ma tre domini morti e un link in bio rotto → [[2026-09-09-anello1-pet]] |
 | ❌ | **Mobilifici e arredamento** | 6 su 6 col sito. Non si tocca |
 | ❌ | **Negozi** | La domanda giusta non è «ha un sito» ma «vende online»: è flusso B, non A |
 
@@ -73,6 +74,16 @@ Handle esatto, **follower**, bio, **link in bio**. Serve a stabilire tre cose:
 - **che sia vivo.** Sotto i ~200 follower o senza bio, l'account di solito è
   abbandonato: il DM non lo legge nessuno.
 - **cosa c'è nel link in bio**, che è metà del gancio.
+
+> [!tip] Dal 9 settembre 2026 il profilo si legge davvero, dal Mac di Patrick
+> Dal browser dell'app Claude Instagram si apre con la sua sessione: il
+> `meta description` della pagina dà **follower, bio intera** e il link in
+> bio si legge dagli anchor `l.instagram.com`. Un handle morto risponde
+> «Pagina non trovata». Quindi: **niente più `Follower n.d.`**, e il passo 2
+> non si salta più per mancanza di mezzi. Si legge soltanto: nessun follow,
+> like o messaggio da lì. Provato su circa 70 profili in
+> [[2026-09-09-anello1-pet]]: sei handle che i motori mostrano ancora erano
+> morti.
 
 ### 3. Il sito lo verifica lo script, non chi scrive la lista
 
@@ -113,8 +124,9 @@ Quello che resta a chi fa la lista, **dopo** lo script:
 - `non risponde`, `parcheggiato`, `piattaforma` **non sono «nessun sito»**:
   sono i ganci 2, 3 e 5, e vanno letti uno per uno;
 - `nessun dominio fuori dalle directory` diventa gancio 1 **solo** se la bio
-  del profilo non linka un sito. La bio da qui non si legge: è il controllo
-  che fa Patrick prima di scrivere, col tasto «Ha già il sito» del banco;
+  del profilo non linka un sito. Dal 9 settembre la bio si legge dal browser
+  dell'app (riquadro sopra); il tasto «Ha già il sito» del banco resta il
+  controllo di Patrick prima di scrivere;
 - le righe `PROBABILE SITO` si aprono tutte: di solito sono omonimi di
   un'altra città (Bologna, Frascati, New Rochelle), a volte no.
 
@@ -131,6 +143,16 @@ col sito su 72.
 > bugia a chi il sito se l'è pagato.
 > **Il link in bio è un indizio. La verifica è Google, sempre.**
 > È la stessa trappola di Pagine Gialle del 30 agosto, con un altro vestito.
+
+> [!warning] Aggiunto il 9 settembre 2026 — l'omonimo col sito
+> Cercando la Beauty Dog di Cantù esce `beautydogtoelettatura.it`, sito vero
+> e curato: di una Beauty Dog a **Ceresara (MN)**. Stessa cosa per
+> `thedogsclub.it` (Cassano Magnago, non Como) e `labautique.it` (Lissone,
+> non Calolziocorte). **Un dominio col nome giusto non è il sito finché la
+> pagina non dice il comune giusto.** E le directory di settore
+> (`toelettature.net`, `toelettapp`, `reteimprese`, `idropet`) mettono il nome
+> dell'attività nel titolo: per `verifica-sito.py` erano «sito vivo». Sono
+> nella sua lista `DIRECTORY` dal 9 settembre. Vedi [[2026-09-09-anello1-pet]].
 
 > [!warning] Aggiunto l'8 settembre 2026 — la trappola è stata pagata da Claude
 > **La verifica scritta uguale su sessanta righe non è una verifica.** Nella
