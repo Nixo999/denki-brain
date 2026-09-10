@@ -9,6 +9,17 @@ stato: da-provare
 # Metodo Instagram — come si costruisce la lista del giorno
 
 > [!note] Nota generata da Claude — 2026-08-31
+
+> [!important] Dal 10 settembre 2026 — [[2026-09-10-liste-50-30-messaggi-personalizzati]]
+> **Ogni richiesta di lista è due liste: 50 siti e 30 DenkiShift**, in due
+> file e in due sezioni del banco. Il messaggio non è più un modello con il
+> gancio in un buco: **si scrive a mano per ogni riga** (versione D di
+> [[dm-instagram-vetrina]], e [[dm-instagram-denkishift]] per i turni), sul
+> profilo letto e sul fatto verificato, e passa da `voce-check.py` prima di
+> uscire. Il passo 3 ha un pezzo in più: per i domini vivi `esamina-sito.py`
+> dice se il sito è vecchio o fatto male, e solo con quel fatto si usa il
+> gancio 6. Chi ha un sito curato e una squadra a turni non si butta: va
+> nella lista DenkiShift.
 > Metodo proposto. Il test è **200 DM**: sotto quella soglia i numeri non
 > dicono niente. Deciso in [[2026-08-31-canale-dm-instagram]].
 
@@ -55,6 +66,9 @@ Non è un'opinione: il conto viene da [[2026-08-30-verifica-siti-giulia]].
 | 5 | **Toelettature, asili e pensioni per cani** | Provato il 9 settembre 2026 sull'anello 1: **22 righe da circa 70 profili aperti**. Bacino stretto (metà delle toelettature non ha Instagram) e 17 siti veri scartati, ma tre domini morti e un link in bio rotto → [[2026-09-09-anello1-pet]] |
 | 6 | **Ristorazione, comuni non ancora battuti degli anelli 1 e 2** | Rifatta il 9 settembre 2026 col profilo aperto: **64 righe da 112 profili letti** (una in più scartata dallo script: sito vero che le SERP non mostravano), 58 senza sito, 17 handle morti che le SERP davano vivi, una sessantina di siti veri scartati → [[2026-09-09-ristorazione-va-co-lc-bg]] |
 | 7 | **Animali: toelettature, centri ippici, pensioni, cinofili** | Provato il 10 settembre 2026 su anelli 1-2 e Ticino: **17 righe da 84 profili aperti**. Bacino povero perché **33 profili su 84 il sito ce l'hanno già**: è il settore col tasso di sito più alto trovato finora → [[2026-09-10-animali-va-co-lc-bg-ti]] |
+| 8 | **Bellezza, seconda passata sui comuni non battuti** | 10 settembre 2026: **50 righe da 230 profili**, resa 22%. Nei comuni grossi i saloni con la vetrina il sito ce l'hanno: restano onicotecniche ed estetiste singole → [[2026-09-10-siti-e-denkishift-va-co-lc-bg]] |
+| 9 | **Artigiani della casa (sonda)** | 1 riga su 6 profili il 10 settembre 2026. Da riprovare con più righe prima di giudicare |
+| T | **DenkiShift: alberghi, ristoranti con squadra, palestre, pasticcerie** | Criterio diverso: 8-50 persone a turni, indipendenti, il sito non conta. 30 righe da 52 profili il 10 settembre 2026, e 14 vengono dagli scartati «col sito» delle liste ristorazione → [[dm-instagram-denkishift]] |
 | ❌ | **Mobilifici e arredamento** | 6 su 6 col sito. Non si tocca |
 | ❌ | **Negozi** | La domanda giusta non è «ha un sito» ma «vende online»: è flusso B, non A |
 

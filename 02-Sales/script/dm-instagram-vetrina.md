@@ -1,10 +1,10 @@
 ---
 type: area
-updated: 2026-09-08
+updated: 2026-09-10
 source: claude
 prodotto: siti-vetrina
 canale: instagram
-stato: test-chiuso
+stato: versione-d
 ---
 
 # Il DM di Instagram — un messaggio solo, sei ganci
@@ -363,6 +363,56 @@ con due sole differenze:
 
 Fuori dall'Italia sparisce anche l'ancora di prezzo: «poche centinaia di euro»
 in Ticino squalifica chi lo scrive. Vedi [[2026-09-07-instagram-ticino]].
+
+---
+
+## Versione D — scritta a mano per ogni riga · **è questa che parte dal 10 settembre 2026**
+
+> [!note] Decisa da Patrick il 10 settembre 2026 — [[2026-09-10-liste-50-30-messaggi-personalizzati]]
+> La C era un modello con un buco, e chi la riceveva lo sentiva. La D non è
+> un testo: è un ordine di cose da dire, e le parole le sceglie chi ha
+> letto il profilo. Cinquanta messaggi, cinquanta testi diversi.
+
+Stessi framework della C: apertura e gancio **Gitomer** (la falla precisa),
+corpo **Hormozi** (risultato alto, sforzo zero, rischio zero, detto), chiusura
+**Blount** (la richiesta più piccola). Cambiano tre cose:
+
+1. **La promessa.** Non più «la bozza è già pronta», che
+   [[2026-09-08-test-dm-chiuso]] chiedeva di riscrivere: «le preparo una
+   prima schermata con le sue foto e gliela mando qui». Si mantiene con una
+   schermata sola, dopo il sì, non con un sito costruito prima.
+2. **Una riga su di loro.** Fra chi sono e il gancio c'è sempre una cosa
+   vista davvero in quel profilo: le sei colleghe di GLAM, la Stanza Quantica
+   di Samsara, la manicure curativa di Debora, i 325 post con la bio vuota.
+   È la riga che dimostra che non è un invio a tappeto.
+3. **Tu o Lei a seconda del profilo.** Un'onicotecnica che si presenta col
+   nome e lavora da sola riceve il tu; un centro, un salone con lo staff, un
+   albergo ricevono il Lei. Il tono lo dà il profilo, non una regola.
+
+L'ordine: chi sono (mezza riga) · cosa ho visto di loro · il fatto verificato
+(gancio 1, 2, 5 o 6 con il nome del dominio o della piattaforma) · cosa
+faccio io, gratis e senza impegno · il prezzo come ordine di grandezza · la
+domanda sola («Gliela preparo?»). Fra 70 e 110 parole, frasi corte e
+irregolari, e prima di uscire `voce-check.py` e la rilettura ad alta voce.
+
+Un esempio della lista del 10 settembre (Solestetica, Luino, gancio 2):
+
+> Buongiorno Stella, sono Patrick Sappa, DenkiCode, piccola software house a
+> Seveso.
+>
+> Ho guardato Solestetica. Il dominio solesteticaluino.it compare ancora
+> nelle ricerche, ma non si apre più: chi ci clicca non trova niente.
+>
+> Le preparo una prima schermata del sito nuovo con le sue foto e gliela
+> mando qui. Gratis, e se non le piace non se ne fa niente.
+>
+> Se poi lo vuole online, poche centinaia di euro una volta più una quota
+> annuale, e il dominio torna vostro.
+>
+> Gliela preparo?
+
+Il banco usa la colonna `Messaggio` così com'è: il testo generato dai sei
+ganci resta come rete di sicurezza per le righe vecchie senza messaggio.
 
 ## Collegamenti
 
