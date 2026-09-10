@@ -94,6 +94,29 @@ telefono). Giro 3: tutti applicati, e l'operatore ha trovato che la `transition`
 dell'hover spegneva quella della rivelazione: lo sfalsamento non era mai esistito.
 Verdetto **`ship`**. Online alle 00:4x del 10, sopra la versione bocciata.
 
+## Giro 4, la mattina del 10: «ancora senza vita»
+
+Nicola alle 9:2x sul sito online: «è ancora completamente senza vita, riprova ad
+aggiungere dettagli un po' particolari e animazioni». Brief all'operatore su Opus, un
+dettaglio e un'entrata per sezione nello stesso linguaggio: titolo che esce da una
+maschera con l'evidenziatore che si disegna sotto «a Olgiate Olona», stato «Aperto ora,
+fino alle 18:00» / «Chiuso ora. Riapre martedì alle 9:00» calcolato dalla tabella degli
+orari (unico pallino della pagina, perché è uno stato vero; provato sui bordi 17:59,
+18:00, sabato → martedì, «riapre oggi»), zoomata lenta e parallasse delle foto
+dell'hero, indicatore rosso della nav che scivola, filetto che si traccia sotto ogni h2,
+voci dei trattamenti da sinistra con hover tinto, virgoletta rossa da 88 px, didascalie
+di scena sulle foto al passaggio (sempre visibili sul telefono), file della galleria che
+derivano in senso opposto con lo scroll. Tutto a riposo nello stato finale, spento con
+reduced-motion e in cattura, completo senza JS. Detector: `transition: width`
+sull'indicatore, portato in `transform`. Finish review: `fix` con otto punti, nessuno
+sulla motion (giudicata «una sola lingua»): foto grande dell'hero che tagliava i cani
+(griglia 2fr/1fr, ora quasi quadrata), zoomata che restava a 1,05, «Caterina e la
+squadra nella foto» non documentato, «da razza» non scritto da nessuna parte, blocco
+MOTION del contratto vecchio, quattro stringhe («col bandana», «cappellini di Natale»,
+«In acqua bassa»), numeri tabellari negli orari. Applicati, online (`ffda8a3`).
+DESIGN.md riscritto dal documenter: regola del rosso contato, unico pallino, entrata per
+sezione, riposo finale.
+
 ## Collegamenti
 
 [[sito-da-caterina]] · [[processo-siti]] · [[trappole]] · [[netlify]] · [[registro-interventi]]

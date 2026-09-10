@@ -68,6 +68,16 @@ respirano al passaggio; fermo con `reduced-motion`, completo senza JS.
 file e misura nel pannello, Fable rilegge e decide. Tre giri: struttura, «vita», fix
 della finish review.
 
+## Giro «vita» (10 settembre, mattina)
+
+Nicola: «ancora completamente senza vita». Ogni sezione ha ora un dettaglio e un'entrata
+sua, stesso linguaggio: maschera ed evidenziatore sul titolo, **stato aperto/chiuso
+calcolato dagli orari** (l'unico pallino), parallasse e zoomata dell'hero, indicatore
+della nav, filetti sotto gli h2, voci da sinistra, virgoletta rossa, didascalie di scena
+al passaggio, file della galleria in deriva opposta. Regole in `DESIGN.md`: rosso
+contato, unico pallino, entrata per sezione, riposo finale. Finish review `fix` (8) →
+applicati (`ffda8a3`).
+
 ## Versione 1, bocciata
 
 L'«album delle figurine» (rosso pieno, ritagli Vision ruotati fra le sezioni, seed
