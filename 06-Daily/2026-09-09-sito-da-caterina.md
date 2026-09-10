@@ -115,7 +115,7 @@ squadra nella foto» non documentato, «da razza» non scritto da nessuna parte,
 MOTION del contratto vecchio, quattro stringhe («col bandana», «cappellini di Natale»,
 «In acqua bassa»), numeri tabellari negli orari. Applicati, online (`ffda8a3`).
 DESIGN.md riscritto dal documenter: regola del rosso contato, unico pallino, entrata per
-sezione, riposo finale.
+sezione, riposo finale. Verdetto sui fix: sei risolti, due parziali (`tabular-nums` mancava sul numero del bottone, l'alt dello shih tzu diceva ancora «in acqua bassa»), chiusi e ripubblicati. Nessuna regressione.
 
 ## Collegamenti
 
