@@ -42,7 +42,12 @@ DIRECTORY = re.compile(r"(instagram|facebook|tripadvisor|thefork|yelp|paginegial
                        r"atoka|localshop24|firmania|unicommercialista|petlocal|cuccioland|yably|wheree|infobel|"
                        r"visura\.pro|dnb\.com|globelife|dog-sitter-como|cani\.com|veterinari\.it|"
                        r"animalidacompagnia|justdog|seguileorme|ankiomaccoppio|welocal|findglocal|mypushop|"
-                       r"parrocchiamadonnadipompei|paginemail|coobiz|pagineaziende|telefono\.click)", re.I)
+                       r"parrocchiamadonnadipompei|paginemail|coobiz|pagineaziende|telefono\.click|"
+                       # directory della bellezza, aggiunte il 10 settembre 2026: beautypassport.it e guidaestetica.it passavano per siti
+                       r"beautypassport|beautynailhairsalons|italy724|guidaestetica|aromavero|portale\.bergamo|treviglioincentro|"
+                       r"nicelocal|beautytrip|scuolaesteticabea|esteticavicino|parrucchieri-italia|toelettatori-italia|fresha|treatwell|"
+                       r"prontopro|starofservice|cronoshare|instapro|worldplaces|cybo\.com|near-place|top-rated|beautycheck|unobooking|"
+                       r"prenotado|barbierefacile|mabella|confestetica|aziendit|worldorgs|elencoimpreseitaliane|icribis|nextdoor)", re.I)
 PIATTAFORMA = re.compile(r"(wixsite\.com|jimdofree\.com|business\.site|myshopify\.com|res-menu|eatbu|"
                          r"\.menu$|menu\.|godaddysites|webnode|altervista|blogspot|wordpress\.com|"
                          r"weebly|site123|carrd\.co|strikingly)", re.I)
