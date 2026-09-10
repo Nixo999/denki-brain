@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **151 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **155 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -62,6 +62,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 **stack/**
 
 - [[convenzioni]] — Le REGOLE tecniche di casa - naming, commit, firma Powered by DenkiCode. Qui sta il modo giusto, non gli errori.
+- [[essenza-e-motion]] — Come si cava l'essenza di un cliente da Instagram e come diventa metafora e motion. Il metro sono NG Barber e Fiftynine.
 - [[stack]] — Le tecnologie dei due gestionali. OperO Vite 8 + Tailwind 3, DenkiShift Next 16 + Tailwind 4. Restano diversi.
 
 **strumenti/**
@@ -69,6 +70,10 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[netlify]] — Detto da Patrick il 31 agosto 2026 - *«il sito di Castiglione, come tutti i siti bozza, viene messo su Netlify per farlo vedere»*.
 - [[plugin-da-valutare]] — ⚠️ Elenco ragionato, non un catalogo. Il marketplace ufficiale (claude-plugins-official, già registrato su questa macchina) ne ha 289 - qui stan...
 - [[strumenti]] — ⚠️ Gli attrezzi con cui si costruisce, e come sono configurati da noi.
+
+**strumenti/starter-sito/**
+
+- [[LEGGIMI]] — Come si usa lo starter dei siti - cosa porta dentro (le trappole gia' pagate) e cosa non porta mai (il gusto).
 
 ## 02-Sales
 
@@ -166,6 +171,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 **sistemi/**
 
+- [[agente-operatore]] — Copia canonica di ~/.claude/agents/operatore.md - il subagente Opus che scrive il codice deciso dal direttore.
 - [[claude-md-globale]] — Copia canonica di ~/.claude/CLAUDE.md - il protocollo Trevis che va ricreato a mano su ogni macchina nuova.
 - [[come-si-scrive-una-nota]] — Le quattro regole di scrittura del vault - riga, verificato, le tre classi di memoria, i tetti di lunghezza.
 - [[credenziali]] — ⚠️ Dove stanno le chiavi e come si passano. Nessun valore e' scritto qui, e non lo sara' mai.
@@ -218,6 +224,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-07-trappole-memoria-tecnica]] — ⚠️ Decisione di Nicola, 7 settembre 2026 - le note di giornata funzionano, quindi le uso anche per parlare con me stesso da una sessione all'alt...
 - [[2026-09-08-firma-powered-by-denkicode]] — ⚠️ Decisione. Nicola, 8 settembre 2026. Ogni cosa che esce da qui — siti vetrina, e-commerce, gestionali — porta nel piè di pagina la scritta P...
 - [[2026-09-08-test-dm-chiuso]] — I numeri veri li ha dati Patrick l'8 settembre 2026, a voce.
+- [[2026-09-10-direttore-operatore]] — Da adesso i siti si fanno con starter, essenza del cliente e metafora sola, e il direttore non scrive codice - lo scrive l'operatore su Opus.
 - [[2026-09-10-liste-50-30-messaggi-personalizzati]] — Ogni lista DM e' 50 siti piu' 30 DenkiShift, e ogni riga porta il suo messaggio scritto a mano.
 - [[2026-09-10-memoria-verificata]] — Il brain smette di leggersi addosso - riga obbligatoria, verificato, tre classi di memoria, core non piu' obbligatori.
 

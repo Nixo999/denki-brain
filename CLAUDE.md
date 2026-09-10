@@ -72,7 +72,8 @@ framework si sta usando.
 01-Coding/       il lato tecnico
   registro-interventi.md   una riga per intervento: chi, quando, repo, DATABASE
   trappole.md              errori pagati e strade scartate. Non è un rulebook
-  progetti/ stack/ strumenti/ skills/
+  progetti/ stack/ skills/
+  strumenti/  gli attrezzi. Qui sta l'unico codice del vault: starter-sito/
 02-Sales/        clienti/ script/ liste/ contratti/ report/ processo/
 03-Storage/      azienda/ team/ sistemi/ brand/
 04-Archive/      progetti chiusi e lead persi. Non si cancella: si archivia

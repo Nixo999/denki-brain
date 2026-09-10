@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- TODO: titolo vero. Nome + città + cosa fa, scritto per chi cerca su Google. -->
+<title>TODO</title>
+<meta name="description" content="TODO">
+
+<!-- Sbarramento 1 di 3. Si toglie il giorno in cui il sito diventa suo.
+     Gli altri due: X-Robots-Tag in netlify.toml e robots.txt.
+     Una bozza indicizzata mette un secondo sito col nome del lead su Google. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#000000">
+
+<!-- TODO: i font del cliente. Preconnect solo se servono davvero. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="assets/base.css">
+<!-- ?v= cambia a ogni pubblicazione: il telefono del cliente tiene il CSS vecchio -->
+<link rel="stylesheet" href="assets/stile.css?v=1">
+</head>
+<body>
+
+<!-- ==========================================================================
+     Da qui in giù NON c'è niente di riusabile: la struttura la detta il
+     cliente, non lo starter. Se due siti escono con le stesse sezioni
+     nello stesso ordine, il processo è stato saltato.
+     ========================================================================== -->
+
+<main>
+  <!-- TODO: il sito. -->
+</main>
+
+<footer>
+  <!-- TODO: il footer del cliente. La firma qui sotto invece è obbligatoria. -->
+  <a class="firma-denkicode" href="https://denkicode.com" rel="noopener" target="_blank">
+    <img src="assets/logo-simbolo.svg" alt="" aria-hidden="true">
+    <span>Powered by <strong>DenkiCode</strong></span>
+  </a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+  var doc = document.documentElement;
+  var cattura = new URLSearchParams(location.search).has('cattura');
+  var fermo = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  doc.classList.add('js');
+  if (cattura) doc.classList.add('cattura');
+
+  // Rivelazioni allo scroll. Il fallback a tempo scatta SOLO a scheda nascosta:
+  // in una scheda che dipinge l'observer arriva, e un timer lo ucciderebbe.
+  var rivela = document.querySelectorAll('.rivela');
+  if (cattura || fermo || !('IntersectionObserver' in window)) {
+    rivela.forEach(function(el){ el.classList.add('dentro'); });
+  } else {
+    var oss = new IntersectionObserver(function(voci){
+      voci.forEach(function(v){
+        if (v.isIntersecting) { v.target.classList.add('dentro'); oss.unobserve(v.target); }
+      });
+    }, { rootMargin: '0px 0px -12% 0px' });
+    rivela.forEach(function(el){ oss.observe(el); });
+    setTimeout(function(){
+      if (document.visibilityState === 'hidden')
+        rivela.forEach(function(el){ el.classList.add('dentro'); });
+    }, 1200);
+  }
+
+  // A pane nascosto il viewport è 0×0 e i trigger si calcolano su una finestra
+  // inesistente: si ricalcolano quando la scheda torna visibile.
+  if (window.gsap && window.ScrollTrigger) {
+    gsap.registerPlugin(ScrollTrigger);
+    document.addEventListener('visibilitychange', function(){
+      if (document.visibilityState === 'visible') ScrollTrigger.refresh();
+    });
+  }
+
+  // --- APERTURA -------------------------------------------------------------
+  // Obbligatoria su ogni sito, e diversa su ogni sito: è il primo secondo, ed è
+  // quello che fa sembrare il sito vero invece che generato.
+  // Vive in CSS (`.js:not(.cattura) …{animation:…both}`) così lo stato a riposo
+  // resta quello finale. Se serve una timeline GSAP, va qui — con il timer di
+  // sicurezza: rAF è fermo nei tab in background e un sipario resterebbe eterno.
+  var sipario = document.querySelector('.sipario');
+  if (sipario) {
+    var chiudi = function(){ sipario.remove(); };
+    if (cattura || fermo || !window.gsap) chiudi();
+    else { gsap.timeline({ onComplete: chiudi }).to(sipario, { autoAlpha: 0, duration: .6 });
+           setTimeout(chiudi, 4000); }
+  }
+})();
+</script>
+</body>
+</html>

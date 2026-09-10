@@ -117,11 +117,16 @@ Regola dell'8 settembre 2026, il perché sta in
 copyright del cliente:
 
 ```html
-<a class="firma" href="https://denkicode.com" target="_blank" rel="noopener">
-  <img src="/logo-denkicode.svg" alt="" width="18" height="18">
+<a class="firma-denkicode" href="https://denkicode.com" target="_blank" rel="noopener">
+  <img src="assets/logo-denkicode.svg" alt="" width="18" height="18">
   <span>Powered by <strong>DenkiCode</strong></span>
 </a>
 ```
+
+⚠️ **La classe è `firma-denkicode`, non `firma`.** Su Atelier Selva `.firma`
+era già la scritta a mano della titolare, e una regola globale su quel nome
+gliel'avrebbe rimpicciolita ([[trappole]]). Lo stile di base è già in
+`base.css` dello starter: qui si eredita, non si riscrive.
 
 - **Il file del simbolo** si copia nel progetto da
   `03-Storage/brand/logo/logo-simbolo.svg` (fondi chiari) o

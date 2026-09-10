@@ -1,0 +1,30 @@
+# Statico puro: niente build, la root e' gia' il sito.
+[build]
+  publish = "."
+  command = ""
+
+# Sbarramento 2 di 3. Si toglie quando il sito diventa suo.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# CSS e JS si rivalidano a ogni caricamento (Netlify usa l'ETag): senza questo
+# il telefono del cliente tiene il foglio di stile vecchio per una settimana e
+# la correzione online non si vede. Pagata su sito-osteria-tarilli.
+[[headers]]
+  for = "/assets/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+[[headers]]
+  for = "/assets/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Le foto non cambiano: cache lunga solo a loro.
+[[headers]]
+  for = "/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

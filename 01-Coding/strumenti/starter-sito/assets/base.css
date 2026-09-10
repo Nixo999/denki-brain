@@ -1,0 +1,64 @@
+/* base.css — solo quello che è già stato pagato una volta.
+   NIENTE colori, NIENTE font, NIENTE spaziature di gusto: quelle nascono
+   dall'essenza del cliente e vivono in stile.css. Se ti viene voglia di
+   aggiungere qui una regola estetica, stai costruendo un template.
+   Ogni riga qui sotto viene da 01-Coding/trappole.md. */
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0}
+
+/* L'attributo height di <img> vince su aspect-ratio CSS: card alte 1405px.
+   Pagata su sito-castiglione, ripagata identica su V-BAG. */
+img,svg,video{max-width:100%}
+img{height:auto;display:block}
+
+/* Una regola di componente che imposta display batte [hidden]: il nodo resta a
+   schermo con hidden messo e il JS sembra rotto. Sul sito di Giulia il pulsante
+   «Esci» si vedeva prima del login. */
+[hidden]{display:none!important}
+
+button,input,select,textarea{font:inherit;color:inherit}
+a{color:inherit}
+
+/* --- Catture headless -------------------------------------------------------
+   Brave headless allunga la finestra quanto il documento, e tutto ciò che è in
+   vh si allunga con lei: un hero 100dvh diventa alto 6.800 px. Ogni misura in
+   vh passa da --vh, e in cattura vale 9px.
+   In ?cattura si spengono anche le animazioni d'ingresso e le rivelazioni: la
+   cattura fotografa l'animazione a metà e sembra un difetto del sito. */
+:root{--vh:1vh}
+.cattura{--vh:9px}
+.cattura *,.cattura *::before,.cattura *::after{
+  animation:none!important;
+  transition:none!important;
+}
+
+/* --- Motion: ogni stato a riposo è quello finale ----------------------------
+   Le animazioni d'ingresso si applicano solo con .js e fuori da .cattura.
+   Senza JS, in cattura o con reduced-motion la pagina è già completa: la motion
+   è additiva o non è. */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+    scroll-behavior:auto!important;
+  }
+}
+
+/* --- Rivelazioni allo scroll ------------------------------------------------
+   Il fallback a tempo scatta SOLO a scheda nascosta: un timer che mostra tutto
+   dopo 1,2s in una scheda che dipinge uccide la rivelazione, e sotto la piega
+   è già tutto acceso prima dello scroll. Pagata su sito-albybike.
+   Le transizioni di un elemento si dichiarano TUTTE nel selettore che vince:
+   una transition più specifica altrove spegne questa. Pagata su sito-da-caterina. */
+.js:not(.cattura) .rivela{opacity:0;translate:0 18px}
+.js:not(.cattura) .rivela.dentro{opacity:1;translate:0 0;transition:opacity .6s,translate .6s}
+
+/* --- Firma DenkiCode --------------------------------------------------------
+   Va su ogni sito e su ogni bozza PRIMA di mandarla al lead. Il markup esatto
+   sta in 01-Coding/stack/convenzioni.md. Colore e dimensione li eredita dal
+   footer del sito: qui c'è solo l'allineamento. */
+.firma-denkicode{display:inline-flex;align-items:center;gap:.5em;text-decoration:none}
+.firma-denkicode svg,.firma-denkicode img{width:1.15em;height:1.15em;flex:none}
