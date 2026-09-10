@@ -77,7 +77,18 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   1 s senza callback e si mostra tutto.
 - **`scrollTo(0, y)` con `html{scroll-behavior:smooth}` si ferma a metà** nelle
   catture. → `behavior:'instant'` nei wrapper di cattura. ([[sito-nails-mania]])
-- **`sips --cropOffset` restituisce un PNG nero.** ([[sito-salone-di-andrea]])
+- **`sips --cropOffset` non ritaglia: viene ignorato in silenzio.** Exit 0 e
+  file identico all'originale, su JPEG come su PNG — due ritagli a offset
+  diversi hanno lo stesso `md5`. Era registrato come «restituisce un PNG nero»
+  ([[sito-salone-di-andrea]]): non annerisce, non fa niente, ed e' peggio,
+  perche' un pezzo sbagliato sembra un pezzo giusto. → venti righe di Swift con
+  `CGImage.cropping(to:)`, argomenti `in out x y w h`. Serve ogni volta che una
+  cattura di pagina intera va spezzata per guardarla. ([[sito-mikuma-dogs]])
+- **In `?cattura` anche un `clamp(4.5rem, 11vh, 8rem)` va passato da `--vh`.**
+  La finestra headless e' alta quanto il documento, quindi `11vh` sfonda il
+  tetto del clamp e i vuoti fra le sezioni si presentano al doppio di quello
+  che sono: si corregge un difetto che sul browser vero non esiste. `--vh`
+  copriva `min-height`, non i padding dentro `clamp`. ([[sito-mikuma-dogs]])
 - **A pane nascosto è stale anche `getComputedStyle`, non solo il pixel.** Un
   campo in stato `.invalid` leggeva ancora il colore di bordo vecchio, `opacity`
   restava a 0 e `img.complete` era `false`; dopo uno `screenshot`, che forza un
@@ -107,7 +118,7 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   un bug del CSS che il pannello a 375 non conferma. → il sito va in un
   `<iframe style="width:375px">` dentro una pagina wrapper, finestra da 800,
   e si ritaglia il PNG (Swift `CGImage.cropping`, perche' `sips --cropOffset`
-  restituisce nero). ([[sito-da-caterina]])
+  non ritaglia affatto). ([[sito-da-caterina]])
 - **La cattura headless fotografa l'animazione d'ingresso a meta'**: figurine
   mezze trasparenti e sovrapposte, che a occhio sembrano un difetto. → in
   `?cattura` si spegne l'animazione (`.cattura .x{animation:none}`), come si
