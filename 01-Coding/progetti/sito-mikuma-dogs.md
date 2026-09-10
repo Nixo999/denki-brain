@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza esca per Martina Carneli (mikuma.dogs), istruttrice cinofila a Como - essenza, metafora della linea dell'acqua e brief del giro 1.
+riga: Bozza attesa da Martina Carneli (mikuma.dogs), istruttrice cinofila a Como - essenza, metafora della linea dell'acqua e brief del giro 1.
 status: attivo
 client: mikuma-dogs
 stack: html-css-js
@@ -12,13 +12,16 @@ verificato: 2026-09-11
 tags: [sito, bozza, cinofilia, como, water-games]
 ---
 
-# Sito Mikuma Dogs — bozza non commissionata
+# Sito Mikuma Dogs — bozza attesa
 
 Chiesto da Nicola l'11 settembre 2026, all'una di notte, con lo screenshot del
 profilo: «nuovo sito, con la tecnica nuova, basato su questo profilo Instagram».
-Nessuna scheda cliente, nessun contatto avviato che io sappia: la bozza è l'esca.
-`TODO` — chiedere a Nicola se Patrick le ha già scritto (lo screenshot arriva da
-una chat Instagram).
+**Le è già stato scritto e la bozza la aspetta** (Nicola, 11 settembre): non è
+un'esca fredda, è materiale che verrà mostrato. `TODO` — scheda cliente in
+`02-Sales/clienti/`: chi ha scritto, quando e cosa si è detto non li so.
+
+**Nessun indirizzo sul sito.** Deciso da Nicola l'11 settembre: si scrive che
+lavora a Como e basta. Niente sezione «dove», niente mappa.
 
 ## Chi è, verificato dal profilo l'11 settembre 2026
 
