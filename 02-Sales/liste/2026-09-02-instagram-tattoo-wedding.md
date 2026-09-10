@@ -1,4 +1,5 @@
 ---
+riga: 47 account nuovi, verificati uno per uno il 1 settembre 2026.
 type: area
 updated: 2026-09-03
 source: claude

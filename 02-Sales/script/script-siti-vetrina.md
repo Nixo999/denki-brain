@@ -1,4 +1,5 @@
 ---
+riga: Lo usano tutti e tre - Giulia, Gabriele, Edoardo.
 type: area
 updated: 2026-09-06
 source: claude

@@ -1,4 +1,5 @@
 ---
+riga: Patrick il 30 agosto 2026 - *«ho preso in mano la lista di Giulia e già il primo era sbagliato, La Rustica ha un sito»*.
 type: area
 updated: 2026-08-30
 source: claude

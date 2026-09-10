@@ -1,4 +1,5 @@
 ---
+riga: Due liste, una per account, perché dal 7 settembre il [banco DM](../strumenti/banco-dm.html) ha due postazioni - il profilo personale di Patr...
 type: area
 updated: 2026-09-07
 source: claude

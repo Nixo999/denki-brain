@@ -1,4 +1,5 @@
 ---
+riga: Qui vanno gli accordi chiusi - cosa è stato promesso, a che prezzo, con quali tempi.
 type: area
 updated: 2026-08-28
 source: claude

@@ -1,4 +1,5 @@
 ---
+riga: Chiesto da Nicola, 2 settembre 2026 - si può automatizzare del tutto l'invio di email alle aziende per denkishift e gli altri gestionali?
 type: decisione
 data: 2026-09-02
 progetto: azienda

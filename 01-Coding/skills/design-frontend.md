@@ -1,4 +1,5 @@
 ---
+riga: Quattro skill di design sono installate a livello di account (~/.claude/skills/), quindi valgono in ogni cartella - OperO, DenkiShift, cococa...
 type: area
 updated: 2026-09-06
 source: claude

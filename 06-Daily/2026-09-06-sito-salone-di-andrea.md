@@ -1,4 +1,5 @@
 ---
+riga: Un blocco solo, chiesto da Nicola in /nicola - «nuovo progetto - sito per l'account Instagram ilsalonediandrea, come al solito, seguendo il pr...
 type: daily
 data: 2026-09-06
 updated: 2026-09-06

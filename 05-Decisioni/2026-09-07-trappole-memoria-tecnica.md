@@ -1,4 +1,5 @@
 ---
+riga: Decisione di Nicola, 7 settembre 2026 - le note di giornata funzionano, quindi le uso anche per parlare con me stesso da una sessione all'alt...
 type: decisione
 data: 2026-09-07
 progetto: azienda

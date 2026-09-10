@@ -1,4 +1,5 @@
 ---
+riga: Reclutati intorno al 30 agosto 2026, insieme alle loro due liste (2026-08-30-liste-gabriele-edoardo).
 type: area
 updated: 2026-09-08
 source: denkicode

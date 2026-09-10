@@ -1,4 +1,5 @@
 ---
+riga: Consultazione, non obbligo. I framework con cui si costruisce un testo commerciale.
 type: risorsa
 updated: 2026-08-30
 source: denkicode

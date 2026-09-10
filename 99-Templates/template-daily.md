@@ -1,44 +1,47 @@
 ---
 type: daily
+riga: 
 data: 
 updated: 
 source: denkicode
+verificato: 
 progetti: []
 ---
 
-# YYYY-MM-DD
+# YYYY-MM-DD — <slug del lavoro>
 
-## Fatto
+**Max 40 righe, questo file compreso.** Il contenuto sono le risposte di chi ha
+lavorato, raccolte da `/chiudi-sessione` con cinque domande. Se le risposte non
+sono arrivate, la nota non si scrive: una daily non controllata diventa la
+premessa sbagliata di domani.
 
-Cosa è stato effettivamente completato oggi. Non i tentativi: le cose finite.
+`source: denkicode` e `verificato:` con la data si mettono **solo** dopo le
+risposte. Senza, resta `source: claude` e senza `verificato:` — cioè un'ipotesi.
+
+## Finito
+
+Solo cose finite, non tentativi. Una riga a cosa.
+
+## A metà
+
+A che punto esatto, così chi riprende non rilegge il codice.
 
 ## Deciso
 
-Decisioni prese oggi. Se sono importanti, aprono anche una nota in
-`05-Decisioni/` e qui resta solo il link.
-
-## Come è stato fatto
-
-La strada tecnica presa, non il risultato. Serve a chi riprende — a me, in una
-sessione che di oggi non ricorderà niente. Quello che vale anche su un progetto
-che ancora non esiste **si copia in `01-Coding/trappole.md`**: qui resta il caso,
-là resta la regola.
-
-## Aperto
-
-Cosa è rimasto a metà, e a che punto esattamente. Chi riprende deve poter
-ripartire da qui senza rileggere il codice.
-
-## Prossimi passi
-
-- [ ] Il primo, quello da fare per primo
-- [ ] Gli altri
+Una riga. Se è una decisione vera apre una nota in `05-Decisioni/` e qui resta
+il link.
 
 ## Non verificato
 
-Cosa è stato scritto ma non provato, e perché. Un buco dichiarato vale più di
-una sicurezza inventata.
+Cosa è stato scritto ma non provato, e perché.
 
 ## Collegamenti
 
 [[progetto]]
+
+<!--
+Non entrano mai: il riassunto di cosa si è letto, i comandi eseguiti, il
+racconto dei tentativi, il diff, i numeri senza data, i ringraziamenti.
+Quello che vale su un progetto che ancora non esiste va in trappole.md,
+marcato [TRAPPOLA] o [SCARTATO], max 4 righe. Vedi come-si-scrive-una-nota.
+-->

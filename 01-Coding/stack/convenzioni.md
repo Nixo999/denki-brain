@@ -1,4 +1,5 @@
 ---
+riga: Le REGOLE tecniche di casa - naming, commit, firma Powered by DenkiCode. Qui sta il modo giusto, non gli errori.
 type: risorsa
 updated: 2026-09-08
 source: repo

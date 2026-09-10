@@ -1,4 +1,5 @@
 ---
+riga: Un blocco solo, chiesto da Patrick - «crea i 65 dm di oggi in banco dm».
 type: daily
 data: 2026-09-05
 updated: 2026-09-05

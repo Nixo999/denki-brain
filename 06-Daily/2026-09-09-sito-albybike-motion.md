@@ -1,4 +1,5 @@
 ---
+riga: Nicola, dal suo Mac - «riprendi questa conversazione su questo pc», e il compito di ieri sera dal Mac di Patrick - «rendi ancora più bello, co...
 type: daily
 data: 2026-09-09
 source: claude

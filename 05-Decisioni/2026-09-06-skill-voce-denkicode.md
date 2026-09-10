@@ -1,4 +1,5 @@
 ---
+riga: Il fatto. Un lead, angolorelax_nembro, ha risposto a un DM Instagram scritto da Claude per conto di Patrick dicendo, testuale - *'è un banale...
 type: decisione
 data: 2026-09-06
 progetto: azienda

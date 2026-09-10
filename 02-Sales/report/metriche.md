@@ -1,4 +1,5 @@
 ---
+riga: I numeri del funnel con la data accanto. Un numero senza data non e' una metrica.
 type: area
 updated: 2026-09-08
 source: denkicode

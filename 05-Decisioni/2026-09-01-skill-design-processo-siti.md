@@ -1,4 +1,5 @@
 ---
+riga: Decisione. Da oggi ogni sito vetrina/landing/portfolio parte dalla skill processo-siti (~/.claude/skills/, sul PC di Nicola), che mette in f...
 type: decisione
 data: 2026-09-01
 progetto: azienda

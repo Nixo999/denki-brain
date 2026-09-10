@@ -1,4 +1,5 @@
 ---
+riga: Le aperture - come si rompe lo schema nei primi sette secondi di una chiamata a freddo.
 type: area
 updated: 2026-08-31
 source: claude

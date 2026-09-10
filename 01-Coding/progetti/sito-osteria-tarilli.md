@@ -1,4 +1,5 @@
 ---
+riga: Osteria Tarilli, Via Ronco Nuovo 2, 6949 Comano (TI), a 300 m dalla RSI.
 type: progetto
 status: bozza-online
 cliente: "[[osteria-tarilli]]"

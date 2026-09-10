@@ -1,4 +1,5 @@
 ---
+riga: Shari Piras, tatuatrice, Merate (LC). Due account - @shari_tattooer (4.504 follower, 493 post) è la persona, @atelierselva_ (593 follower, 41...
 type: cliente
 status: attivo
 progetti: [sito-atelier-selva]

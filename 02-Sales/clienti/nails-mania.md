@@ -1,4 +1,5 @@
 ---
+riga: Centro di ricostruzione unghie mani e piedi di Lory Frosio, onicotecnica dal 2005.
 type: cliente
 status: lead
 settore: ricostruzione unghie

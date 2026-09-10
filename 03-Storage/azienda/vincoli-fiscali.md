@@ -1,4 +1,5 @@
 ---
+riga: Prestazione occasionale, nessuna P.IVA. Nei testi 'ricevuta', mai 'fattura elettronica'.
 type: area
 updated: 2026-08-28
 source: denkicode

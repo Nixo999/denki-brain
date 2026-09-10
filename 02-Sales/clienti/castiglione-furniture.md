@@ -1,4 +1,5 @@
 ---
+riga: Falegnameria su misura, @castiglione_furniture su Instagram.
 type: cliente
 status: lead
 progetti: [sito-castiglione]

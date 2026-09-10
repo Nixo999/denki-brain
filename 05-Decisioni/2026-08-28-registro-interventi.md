@@ -1,4 +1,5 @@
 ---
+riga: Decisione di Nicola. Dal 28 agosto 2026 ogni modifica a un progetto va in due posti - nel repository del progetto, e in registro-interventi —...
 type: decisione
 data: 2026-08-28
 progetto: azienda

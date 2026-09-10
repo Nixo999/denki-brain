@@ -1,4 +1,5 @@
 ---
+riga: Scritto per il MacBook Air di Patrick, ma vale per qualunque macchina nuova.
 type: area
 updated: 2026-09-06
 source: claude

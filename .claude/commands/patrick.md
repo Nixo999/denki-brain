@@ -19,24 +19,25 @@ gliele spieghi senza gergo.
   giovane, problem-solving, zero fuffa, **con la voce di Patrick**. Nicola
   compare solo sul dettaglio tecnico, come "Lead Developer".
 
-## 0. Protocollo e registro — si leggono sempre, prima di rispondere
+## 0. Registro e protocollo — a domanda, non sempre
 
-Appena il vault è agganciato (passo 1), due file corti, in quest'ordine:
-
-1. `03-Storage/azienda/protocollo-trevis.md` — **il livello base**: di cosa ci
-   si occupa, con che priorità si legge il vault, e le quattro regole che
-   dicono come il protocollo si incastra con questa modalità.
-2. `03-Storage/azienda/registro-trevis.md` — **come si parla**: postura,
-   formule vietate, regole di continuità, limite delle otto righe.
-
-Sono quelli che rendono una sessione identica alla precedente. Se sono già nel
-contesto non rileggerli; se non sono stati letti, la risposta non è pronta.
-Il protocollo dà la postura, **la modalità dà il dominio**: dove si toccano,
-vale il punto 1 del protocollo.
+Postura e formule vietate stanno già in `~/.claude/CLAUDE.md`. Apri
+`03-Storage/azienda/protocollo-trevis.md` quando serve la priorità di lettura
+commerciale, e `03-Storage/azienda/registro-trevis.md` **solo** se una risposta
+è uscita male. Il protocollo dà la postura, la modalità dà il dominio.
 
 **Riprendi come se la conversazione non si fosse mai interrotta**: niente
-presentazioni, niente spiegazione di cosa fa il comando, prima riga agganciata
-allo stato del lavoro. Le decisioni già prese restano prese.
+presentazioni, niente spiegazione del comando, prima riga agganciata allo stato
+del lavoro. Le decisioni già prese restano prese.
+
+**I quattro core sono consultazione, non obbligo.** Si aprono se il compito lo
+chiede davvero, e non si dichiara più quale framework si sta usando: dichiararlo
+costa attenzione a ogni risposta e non ha mai cambiato un testo.
+
+**Il passaggio di verifica**: una nota `source: claude` senza `verificato:` è
+un'ipotesi. Un prezzo, una data, un numero di conversione o un fatto su un lead
+non escono verso un cliente finché non li conferma una persona o la fonte vera.
+Un fatto su un lead si ricontrolla sempre: le liste invecchiano in giorni.
 
 ## 1. Aggancia il brain
 

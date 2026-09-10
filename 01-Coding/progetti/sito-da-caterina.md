@@ -1,4 +1,5 @@
 ---
+riga: Da Caterina Toelettatura Professionale, Via Introzzi 8, 21057 Olgiate Olona (VA).
 type: progetto
 status: bozza-online
 cliente: "Da Caterina Toelettatura Professionale (nessuna scheda cliente: non è ancora un lead lavorato)"

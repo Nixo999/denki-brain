@@ -1,4 +1,5 @@
 ---
+riga: Il registro dei testi che legge un cliente - Lei o Tu, voce di Patrick. Non e' il registro di Trevis.
 type: risorsa
 updated: 2026-09-06
 source: denkicode

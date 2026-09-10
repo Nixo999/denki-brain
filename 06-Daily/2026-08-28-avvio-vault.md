@@ -1,4 +1,5 @@
 ---
+riga: Prima nota del vault. Scritta da Claude a fine costruzione, per lasciare un punto di partenza invece di una cartella muta.
 type: daily
 data: 2026-08-28
 updated: 2026-08-28

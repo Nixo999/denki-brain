@@ -1,4 +1,5 @@
 ---
+riga: Quale strumento di Claude si usa per quale lavoro.
 type: area
 updated: 2026-08-28
 source: claude

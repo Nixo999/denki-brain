@@ -1,4 +1,5 @@
 ---
+riga: Repo - github.com/Nixo999/WeBolt-v1 — creato il 23 marzo 2026.
 type: progetto
 status: completato
 esito: abbandonato

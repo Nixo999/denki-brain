@@ -1,4 +1,5 @@
 ---
+riga: Il ragionamento completo sta in denkishift-interfaccia.
 type: decisione
 data: 2026-08-29
 progetto: denkishift

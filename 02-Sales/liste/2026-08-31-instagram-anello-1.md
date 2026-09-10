@@ -1,4 +1,5 @@
 ---
+riga: 50 account, tutti verificati uno per uno il 31 agosto 2026.
 type: area
 updated: 2026-08-31
 source: claude

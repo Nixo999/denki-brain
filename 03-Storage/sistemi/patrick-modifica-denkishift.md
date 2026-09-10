@@ -1,4 +1,5 @@
 ---
+riga: Guida passo passo, scritta per chi non scrive codice.
 type: area
 updated: 2026-08-28
 source: claude

@@ -1,4 +1,5 @@
 ---
+riga: Lo usano tutti e tre. Dove c'è [nome] ci va il proprio.
 type: area
 updated: 2026-08-31
 source: claude

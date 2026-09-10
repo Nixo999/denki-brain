@@ -1,4 +1,5 @@
 ---
+riga: Nicola ha portato una chiavetta («NO NAME») con il materiale del proprietario del sito-fiftynine e ha chiesto due cose - usare quelle foto al...
 type: daily
 data: 2026-09-08
 source: claude

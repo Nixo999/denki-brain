@@ -1,4 +1,5 @@
 ---
+riga: Lead caldo - ha chiesto lui il materiale.
 type: cliente
 status: attivo
 progetti: []

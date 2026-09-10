@@ -1,4 +1,5 @@
 ---
+riga: Sito vetrina in una pagina per cococat caffè, bar in via Piero Caldirola 5, Milano (Bicocca) - caffetteria, bubble tea, street food cinese, a...
 type: progetto
 status: in-pausa
 esito: nessuna-risposta

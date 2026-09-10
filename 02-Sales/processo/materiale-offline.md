@@ -1,4 +1,5 @@
 ---
+riga: Quello che abbiamo di fisico, e a cosa è agganciato.
 type: area
 updated: 2026-08-28
 source: denkicode

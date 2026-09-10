@@ -1,4 +1,5 @@
 ---
+riga: Modello per una scheda cliente - rapporto, conto economico, consegnato, come si comporta.
 type: cliente
 status: attivo
 progetti: []

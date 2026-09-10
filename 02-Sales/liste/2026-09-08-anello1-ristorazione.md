@@ -1,4 +1,5 @@
 ---
+riga: 68 righe, tutte per l'account personale di Patrick, appese a lista-corrente.csv che passa da 247 a 315 righe e da 170 a 238 da mandare.
 type: area
 updated: 2026-09-08
 source: claude

@@ -1,4 +1,5 @@
 ---
+riga: Nota di catalogo, non la skill. È il wikilink più citato del vault (quindici richiami e nessun file, fino al 7 settembre 2026) perché ogni s...
 type: risorsa
 updated: 2026-09-07
 source: claude

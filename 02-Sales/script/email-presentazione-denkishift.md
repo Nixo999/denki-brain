@@ -1,4 +1,5 @@
 ---
+riga: Il testo che accompagna la presentazione (presentazione-denkishift-ms-service.pptx, 8 slide) quando un contatto chiede materiale via mail in...
 type: area
 updated: 2026-09-01
 source: claude

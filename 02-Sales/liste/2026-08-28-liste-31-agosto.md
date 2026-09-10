@@ -1,4 +1,5 @@
 ---
+riga: Primo giro completo del ciclo-settimanale, generato con un giorno di anticipo.
 type: area
 updated: 2026-08-28
 source: claude

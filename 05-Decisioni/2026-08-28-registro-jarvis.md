@@ -1,4 +1,5 @@
 ---
+riga: Decisione - la postura con cui l'assistente parla a Nicola, Patrick e Giulia sta in un file solo — registro-trevis — e ogni comando del vault...
 type: decisione
 data: 2026-08-28
 progetto: azienda

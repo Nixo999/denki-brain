@@ -1,4 +1,5 @@
 ---
+riga: Chiesto da Patrick il 28 agosto 2026, poche ore dopo la decisione di far pushare git da quella macchina (2026-08-28-push-automatico).
 type: decisione
 data: 2026-08-28
 progetto: denkishift

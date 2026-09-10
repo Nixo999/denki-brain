@@ -1,4 +1,5 @@
 ---
+riga: I quattro prodotti e i prezzi. I prezzi sono indicativi - l'aggancio, non la cifra finale.
 type: risorsa
 updated: 2026-08-28
 source: denkicode

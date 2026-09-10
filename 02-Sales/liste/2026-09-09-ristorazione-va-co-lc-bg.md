@@ -1,4 +1,5 @@
 ---
+riga: 64 righe sul banco (65 nel file - Da Bassano è rimasta dentro come SCARTATO), tutte per l'account personale di Patrick, appese a lista-corren...
 type: area
 updated: 2026-09-09
 source: claude

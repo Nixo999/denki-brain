@@ -1,4 +1,5 @@
 ---
+riga: Due nuovi cold caller in prova, volume ridotto.
 type: area
 updated: 2026-08-30
 source: claude

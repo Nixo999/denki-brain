@@ -1,4 +1,5 @@
 ---
+riga: Come Patrick applica una modifica allo schema di DenkiShift in sviluppo. La produzione resta fuori.
 type: area
 updated: 2026-08-28
 source: claude

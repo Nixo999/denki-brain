@@ -1,4 +1,5 @@
 ---
+riga: Sessione a cavallo della mezzanotte, in /nicola.
 type: daily
 data: 2026-09-07
 updated: 2026-09-07

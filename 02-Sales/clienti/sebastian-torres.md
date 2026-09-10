@@ -1,4 +1,5 @@
 ---
+riga: Privato, non un'azienda. Sta aprendo la sua attività, e l'attività è opero - l'app che stiamo costruendo noi è la sua idea imprenditoriale.
 type: cliente
 status: attivo
 progetti: [opero]

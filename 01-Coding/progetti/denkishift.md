@@ -1,4 +1,5 @@
 ---
+riga: Prodotto di punta, turni per squadre a orario variabile. Dimostrabile, NON installabile in produzione.
 type: progetto
 status: attivo
 client: interno

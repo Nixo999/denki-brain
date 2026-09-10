@@ -54,8 +54,11 @@ def frontmatter(t):
 
 
 def descrizione(p):
-    """La prima frase del primo paragrafo di prosa dopo il titolo."""
-    _, corpo = frontmatter(testo(p))
+    """La `riga:` del frontmatter. Indovinare dalla prosa e' il ripiego."""
+    campi, corpo = frontmatter(testo(p))
+    if campi.get("riga"):
+        # scritta da una persona: si mostra intera, non si taglia alla prima frase
+        return pulisci(campi["riga"])
     righe = corpo.splitlines()
     for i, r in enumerate(righe):
         if r.startswith("# "):
@@ -76,6 +79,11 @@ def descrizione(p):
     return "TODO — nessuna prosa dopo il titolo."
 
 
+def pulisci(r):
+    r = re.sub(r"\[\[([^\]|]+)\|([^\]]+)\]\]", r"\2", r)
+    return re.sub(r"\[\[([^\]]+)\]\]", r"\1", r).replace("**", "").replace("`", "").strip()
+
+
 def frase(r):
     r = re.sub(r"\[\[([^\]|]+)\|([^\]]+)\]\]", r"\2", r)
     r = re.sub(r"\[\[([^\]]+)\]\]", r"\1", r).replace("**", "").replace("`", "")
@@ -91,7 +99,9 @@ def frase(r):
 def blocco(cartella):
     fuori, dentro = [], {}
     for p in note(cartella):
-        voce = f"- [[{p.stem}]] — {descrizione(p)}"
+        campi, _ = frontmatter(testo(p))
+        segno = "⚠️ " if campi.get("source") == "claude" and not campi.get("verificato") else ""
+        voce = f"- [[{p.stem}]] — {segno}{descrizione(p)}"
         rel = p.parent.relative_to(VAULT / cartella)
         (fuori if rel == Path(".") else dentro.setdefault(str(rel), [])).append(voce)
     out = list(fuori)
@@ -155,11 +165,32 @@ def controlli():
     for nome, n in sorted(senza_link.items(), key=lambda x: -x[1]):
         problemi.append(f"registro: progetto senza wikilink × {n} → {nome}")
 
+    import datetime
+    limite = (datetime.date.today() - datetime.timedelta(days=30)).isoformat()
+    senza_riga, ipotesi, scadute = [], [], []
     for cartella, _ in SEZIONI:
         for p in note(cartella):
             campi, _ = frontmatter(testo(p))
+            rel = p.relative_to(VAULT)
             if "type" not in campi:
-                problemi.append(f"frontmatter senza type: {p.relative_to(VAULT)}")
+                problemi.append(f"frontmatter senza type: {rel}")
+            if not campi.get("riga") and "99-Templates" not in p.parts:
+                senza_riga.append(str(rel))
+            if campi.get("source") == "claude":
+                v = campi.get("verificato", "")
+                if not v:
+                    ipotesi.append(str(rel))
+                elif v < limite and campi.get("type") in ("progetto", "cliente", "daily"):
+                    scadute.append(f"{rel} ({v})")
+    if senza_riga:
+        problemi.append(f"`riga:` mancante × {len(senza_riga)} (es. {senza_riga[0]})")
+    if ipotesi:
+        problemi.append(
+            f"source: claude senza `verificato:` × {len(ipotesi)} — sono ipotesi, "
+            f"non fatti (es. {ipotesi[0]})"
+        )
+    for s in scadute:
+        problemi.append(f"`verificato:` piu' vecchio di 30 giorni su una nota che cambia: {s}")
     return problemi
 
 

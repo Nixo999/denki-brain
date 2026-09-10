@@ -1,4 +1,5 @@
 ---
+riga: Negozio di biciclette - vendita, assistenza e riparazione, abbigliamento e integratori per ciclismo.
 type: cliente
 status: attivo
 progetti: [sito-albybike]

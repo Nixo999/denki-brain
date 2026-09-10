@@ -1,4 +1,5 @@
 ---
+riga: Tre persone. Sotto, chi fa cosa davvero — non i titoli.
 type: area
 updated: 2026-08-28
 source: denkicode

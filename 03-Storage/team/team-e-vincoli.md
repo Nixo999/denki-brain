@@ -1,4 +1,5 @@
 ---
+riga: Quante ore ci sono davvero - tutti e tre lavorano e studiano, DenkiCode e' il terzo impegno.
 type: area
 updated: 2026-08-28
 source: denkicode

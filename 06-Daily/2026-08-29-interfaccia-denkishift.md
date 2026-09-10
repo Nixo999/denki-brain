@@ -1,4 +1,5 @@
 ---
+riga: Richiesta arrivata in sessione - rifare l'interfaccia perché si venda da sola in demo, su due utenti che non sono due gradini dello stesso ru...
 type: daily
 data: 2026-08-29
 updated: 2026-08-29

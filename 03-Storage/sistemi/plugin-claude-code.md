@@ -1,4 +1,5 @@
 ---
+riga: Due meccanismi diversi, che si confondono facilmente -
 type: risorsa
 updated: 2026-09-06
 source: claude

@@ -1,4 +1,5 @@
 ---
+riga: Sito vetrina in una pagina per Bar Tabacchi Fiftynine, bar tabaccheria e pizzeria in via Nazionale dei Giovi 59, Cesano Maderno (MB).
 type: progetto
 status: attivo
 client: bar-tabacchi-fiftynine

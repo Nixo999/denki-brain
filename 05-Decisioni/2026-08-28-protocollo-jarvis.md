@@ -1,4 +1,5 @@
 ---
+riga: Decisione di Nicola. Da oggi l'assistente si chiama Trevis e opera su un protocollo base — protocollo-trevis — attivo a ogni avvio, in ogni...
 type: decisione
 data: 2026-08-28
 progetto: azienda

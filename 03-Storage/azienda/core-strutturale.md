@@ -1,4 +1,5 @@
 ---
+riga: Consultazione, non obbligo. SOP delegabili, versione minima, servizi a pacchetto.
 type: risorsa
 updated: 2026-08-30
 source: denkicode

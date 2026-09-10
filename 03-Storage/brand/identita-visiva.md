@@ -1,4 +1,5 @@
 ---
+riga: I file vettoriali e i sorgenti di stampa di DenkiCode, portati nel vault il 28 agosto 2026 da ~/Desktop/denki-pubblicità sul Mac di Patrick,...
 type: risorsa
 updated: 2026-09-08
 source: claude

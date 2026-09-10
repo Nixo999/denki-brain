@@ -1,4 +1,5 @@
 ---
+riga: Sito vetrina in una pagina per Nails Mania, centro di ricostruzione unghie mani e piedi di Lory Frosio a Seriate (BG).
 type: progetto
 status: attivo
 client: nails-mania

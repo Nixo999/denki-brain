@@ -1,4 +1,5 @@
 ---
+riga: Tre differenze rispetto a una lista normale di metodo-instagram, e la terza è quella che conta -
 type: area
 updated: 2026-09-08
 source: claude

@@ -1,4 +1,5 @@
 ---
+riga: Decisione di Nicola, 3 settembre 2026 - «voglio impostare che da adesso tu possa creare le mie repository».
 type: decisione
 data: 2026-09-03
 progetto: azienda

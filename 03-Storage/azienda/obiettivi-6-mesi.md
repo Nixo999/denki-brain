@@ -1,4 +1,5 @@
 ---
+riga: Tre traguardi. Sono di Nicola, testuali, non miei.
 type: area
 updated: 2026-08-28
 source: denkicode

@@ -1,4 +1,5 @@
 ---
+riga: D.S.I. Advertising di Piras Sebastiano, Merate (LC).
 type: cliente
 status: attivo
 progetti: [sito-dsi-advertising]

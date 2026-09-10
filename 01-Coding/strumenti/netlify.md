@@ -1,4 +1,5 @@
 ---
+riga: Detto da Patrick il 31 agosto 2026 - *«il sito di Castiglione, come tutti i siti bozza, viene messo su Netlify per farlo vedere»*.
 type: risorsa
 updated: 2026-09-09
 source: denkicode

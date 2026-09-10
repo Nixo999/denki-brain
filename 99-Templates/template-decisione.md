@@ -1,4 +1,5 @@
 ---
+riga: Modello per una decisione datata - contesto, scelta, cosa si e' scartato, conseguenze.
 type: decisione
 data: 
 progetto: 

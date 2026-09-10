@@ -1,4 +1,5 @@
 ---
+riga: Sito di DenkiCode. È qui che sta la galleria dei lavori - il posto dove si mostra a un cliente cosa abbiamo già fatto.
 type: progetto
 status: attivo
 client: interno

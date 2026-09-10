@@ -1,4 +1,5 @@
 ---
+riga: Decisione. Sul sito di sito-salone-di-andrea il concept-seed di impeccable (seed e5bd3d89) aveva assegnato «Il rullo» - un fotogramma a scher...
 type: decisione
 data: 2026-09-06
 progetto: sito-salone-di-andrea

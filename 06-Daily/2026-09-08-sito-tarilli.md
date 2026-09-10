@@ -1,4 +1,5 @@
 ---
+riga: Nicola ha chiesto un sito per «pizzeria Tarilli, cercali su Instagram», con «un sacco di animazioni» e «pizze che si muovono e fluttuano».
 type: daily
 data: 2026-09-08
 source: claude

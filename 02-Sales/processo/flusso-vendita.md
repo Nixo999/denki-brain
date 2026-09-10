@@ -1,4 +1,5 @@
 ---
+riga: I quattro flussi di vendita e lo Straight Line - come un lead arriva alla chiusura.
 type: area
 updated: 2026-08-28
 source: denkicode

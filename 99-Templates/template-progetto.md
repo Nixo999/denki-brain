@@ -1,4 +1,5 @@
 ---
+riga: Modello per una nota progetto - stato, soldi, decisioni prese, cosa resta aperto.
 type: progetto
 status: attivo
 client: 

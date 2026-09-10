@@ -1,4 +1,5 @@
 ---
+riga: opero nasce come ricostruzione pulita di sebapp-bolanos, l'app che il cliente usa già in produzione.
 type: decisione
 data: 2026-08-11
 progetto: opero

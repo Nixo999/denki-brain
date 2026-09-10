@@ -1,4 +1,5 @@
 ---
+riga: Chiesta da Nicola il 2 settembre 2026 con un brief esplicito - «i testi sono infantilizzati, poco professionali e strutturati male, e da desk...
 type: decisione
 data: 2026-09-02
 progetto: denkishift

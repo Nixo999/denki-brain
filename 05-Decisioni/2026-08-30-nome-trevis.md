@@ -1,4 +1,5 @@
 ---
+riga: Deciso da Patrick il 30 agosto 2026, con queste parole - *«da adesso in poi ovunque e sempre ti chiamerai trevis»*.
 type: decisione
 data: 2026-08-30
 progetto: azienda

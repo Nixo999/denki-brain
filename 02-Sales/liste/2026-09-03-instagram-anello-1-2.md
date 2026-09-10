@@ -1,4 +1,5 @@
 ---
+riga: 33 righe nuove, verificate una per una il 3 settembre 2026.
 type: area
 updated: 2026-09-03
 source: claude

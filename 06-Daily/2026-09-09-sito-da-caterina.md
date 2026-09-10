@@ -1,4 +1,5 @@
 ---
+riga: Nicola, dal Mac, in /nicola - «nuovo sito vetrina per questo account Instagram - dacaterinatoelettatura.
 type: daily
 data: 2026-09-09
 source: claude

@@ -1,4 +1,5 @@
 ---
+riga: Non è un cliente e non è un lavoro DenkiCode.
 type: progetto
 status: in-pausa
 esito: portfolio

@@ -1,4 +1,5 @@
 ---
+riga: opero, insieme all'area Direzione. Decisione sua.
 type: decisione
 data: 2026-08-22
 progetto: opero

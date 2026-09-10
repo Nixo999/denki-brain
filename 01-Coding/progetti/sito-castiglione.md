@@ -1,4 +1,5 @@
 ---
+riga: Sito vetrina non commissionato per castiglione-furniture, costruito il 30 agosto 2026 dai contenuti veri del loro profilo Instagram.
 type: progetto
 status: in-pausa
 client: castiglione-furniture

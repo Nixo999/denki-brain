@@ -1,4 +1,5 @@
 ---
+riga: Decisione di Patrick, terza della stessa giornata dopo 2026-08-30-core-strutturale e 2026-08-30-core-crescita-finanze.
 type: decisione
 data: 2026-08-30
 progetto: azienda

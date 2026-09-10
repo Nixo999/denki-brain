@@ -1,4 +1,5 @@
 ---
+riga: Cosa si consegna la domenica: tre CSV di Giulia piu' il modulo blitz di Patrick.
 type: template
 updated: 2026-08-28
 source: claude

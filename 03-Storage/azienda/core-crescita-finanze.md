@@ -1,4 +1,5 @@
 ---
+riga: Consultazione, non obbligo. Equazione del valore, garanzia invece dello sconto, Incassi meno Utile uguale Spese.
 type: risorsa
 updated: 2026-08-30
 source: denkicode

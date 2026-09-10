@@ -1,4 +1,5 @@
 ---
+riga: Bar tabaccheria e pizzeria in via Nazionale dei Giovi 59, Cesano Maderno (MB), telefono 0362 528451.
 type: cliente
 status: attivo
 progetti: [sito-fiftynine]

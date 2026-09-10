@@ -1,4 +1,5 @@
 ---
+riga: Gli attrezzi con cui si costruisce, e come sono configurati da noi.
 type: area
 updated: 2026-08-31
 source: claude

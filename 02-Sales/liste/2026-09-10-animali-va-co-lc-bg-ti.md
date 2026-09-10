@@ -1,4 +1,5 @@
 ---
+riga: 17 righe, tutte per l'account personale di Patrick, appese a lista-corrente.csv con la colonna Lista valorizzata.
 type: area
 updated: 2026-09-10
 source: claude

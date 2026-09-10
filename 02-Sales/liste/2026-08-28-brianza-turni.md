@@ -1,4 +1,5 @@
 ---
+riga: Prima lista operativa. File - 2026-08-28-brianza-turni.csv, 51 contatti, pronto da importare in Google Sheets.
 type: area
 updated: 2026-08-28
 source: claude

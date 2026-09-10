@@ -1,4 +1,5 @@
 ---
+riga: Chiesto da Nicola per Patrick, il 2 settembre 2026 - rendere automatico e più veloce il contatto dei possibili clienti dai messaggi diretti d...
 type: decisione
 data: 2026-09-02
 progetto: azienda

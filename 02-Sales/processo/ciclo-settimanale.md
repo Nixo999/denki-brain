@@ -1,4 +1,5 @@
 ---
+riga: Dettato da Patrick il 28 agosto 2026. È il processo fisso.
 type: risorsa
 updated: 2026-08-28
 source: denkicode

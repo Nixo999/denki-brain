@@ -1,4 +1,5 @@
 ---
+riga: Consultazione, non obbligo. Blocchi di tempo, gesto giornaliero minimo, l'errore di guida prima dell'esterno.
 type: risorsa
 updated: 2026-08-30
 source: denkicode

@@ -1,4 +1,5 @@
 ---
+riga: Deciso da Patrick il 31 agosto 2026, insieme alla chiusura del porta-a-porta (2026-08-31-stop-porta-a-porta-a-freddo).
 type: decisione
 data: 2026-08-31
 progetto: azienda

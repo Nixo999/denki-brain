@@ -1,4 +1,5 @@
 ---
+riga: Sito vetrina per Albybike, negozio di biciclette - vendita, assistenza, riparazione, abbigliamento e integratori.
 type: progetto
 status: completato
 client: albybike

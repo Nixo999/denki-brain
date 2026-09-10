@@ -1,4 +1,5 @@
 ---
+riga: Il collo di bottiglia dell'azienda - da dove arrivano i lead e quanti ne servono.
 type: area
 updated: 2026-09-08
 source: denkicode

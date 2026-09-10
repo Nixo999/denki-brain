@@ -1,4 +1,5 @@
 ---
+riga: Due CSV, scritti dal banco e non a mano.
 type: area
 updated: 2026-09-08
 source: claude

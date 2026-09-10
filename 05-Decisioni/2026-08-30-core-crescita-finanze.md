@@ -1,4 +1,5 @@
 ---
+riga: Decisione di Patrick, lo stesso giorno del 2026-08-30-core-strutturale.
 type: decisione
 data: 2026-08-30
 progetto: azienda

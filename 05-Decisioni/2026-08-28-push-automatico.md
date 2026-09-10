@@ -1,4 +1,5 @@
 ---
+riga: Deciso da Patrick il 28 agosto 2026. Parole sue - ogni volta che si cambia qualcosa nel vault, anche minima, si pusha su git — da qualunque d...
 type: decisione
 data: 2026-08-28
 progetto: azienda

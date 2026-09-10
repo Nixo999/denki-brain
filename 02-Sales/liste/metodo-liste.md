@@ -1,4 +1,5 @@
 ---
+riga: Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
 type: area
 updated: 2026-08-30
 source: claude

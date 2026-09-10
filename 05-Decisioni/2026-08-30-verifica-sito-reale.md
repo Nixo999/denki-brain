@@ -1,4 +1,5 @@
 ---
+riga: Deciso da Patrick il 30 agosto 2026, dopo aver preso in mano la lista di Giulia e trovato l'errore alla prima riga - *«se dici che il sito no...
 type: decisione
 data: 2026-08-30
 progetto: azienda

@@ -1,4 +1,5 @@
 ---
+riga: Lo manda Patrick, dal suo account personale.
 type: area
 updated: 2026-09-10
 source: claude

@@ -1,4 +1,5 @@
 ---
+riga: Decisione di Patrick. Da oggi ogni operazione, ogni funzione nuova e ogni servizio si guardano attraverso i tre testi raccolti in core-strut...
 type: decisione
 data: 2026-08-30
 progetto: azienda

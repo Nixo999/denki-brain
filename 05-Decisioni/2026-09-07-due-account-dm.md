@@ -1,4 +1,5 @@
 ---
+riga: Chiesto da Patrick il 7 settembre 2026. I DM non partono più solo dal suo profilo personale - il banco ha un selettore con Patrick Sappa e De...
 type: decisione
 data: 2026-09-07
 progetto: azienda

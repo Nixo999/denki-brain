@@ -1,4 +1,5 @@
 ---
+riga: Decisione. indice.md smette di essere una nota scritta a mano.
 type: decisione
 data: 2026-09-07
 progetto: azienda

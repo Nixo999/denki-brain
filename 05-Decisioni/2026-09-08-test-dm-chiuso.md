@@ -1,4 +1,5 @@
 ---
+riga: I numeri veri li ha dati Patrick l'8 settembre 2026, a voce.
 type: decisione
 data: 2026-09-08
 progetto: azienda

@@ -1,4 +1,5 @@
 ---
+riga: Chiesta da Nicola il 3 settembre 2026, insieme all'installazione del banco DM sul MacBook di Patrick.
 type: decisione
 data: 2026-09-03
 progetto: azienda

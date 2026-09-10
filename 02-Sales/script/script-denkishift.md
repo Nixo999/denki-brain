@@ -1,4 +1,5 @@
 ---
+riga: Lo script telefonico di Giulia su DenkiShift, con le obiezioni e i looping.
 type: area
 updated: 2026-09-06
 source: claude

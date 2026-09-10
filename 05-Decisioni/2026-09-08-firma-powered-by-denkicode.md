@@ -1,4 +1,5 @@
 ---
+riga: Decisione. Nicola, 8 settembre 2026. Ogni cosa che esce da qui — siti vetrina, e-commerce, gestionali — porta nel piè di pagina la scritta P...
 type: decisione
 data: 2026-09-08
 progetto: azienda

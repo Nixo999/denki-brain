@@ -1,4 +1,5 @@
 ---
+riga: I domini si comprano a ~1 € con l'offerta promozionale del primo anno.
 type: decisione
 data: 2026-08-28
 progetto: azienda

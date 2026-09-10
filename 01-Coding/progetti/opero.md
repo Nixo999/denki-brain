@@ -1,4 +1,5 @@
 ---
+riga: Il prodotto che Sebastian rivende, non un gestionale nostro. Chi tocca il Super Admin tocca il suo conto economico.
 type: progetto
 status: attivo
 client: sebastian-torres

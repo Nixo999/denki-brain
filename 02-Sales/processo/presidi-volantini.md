@@ -1,4 +1,5 @@
 ---
+riga: Terzo canale di acquisizione, deciso il 28 agosto 2026, dopo le cold call di Giulia e i blitz di Patrick.
 type: area
 updated: 2026-08-28
 source: claude

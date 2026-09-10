@@ -1,4 +1,5 @@
 ---
+riga: Come Trevis parla a Nicola, Patrick e Giulia - postura, formule vietate, continuita', otto righe.
 type: risorsa
 updated: 2026-08-28
 source: denkicode

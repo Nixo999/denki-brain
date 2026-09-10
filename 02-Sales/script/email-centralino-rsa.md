@@ -1,4 +1,5 @@
 ---
+riga: Il caso. Su molte RSA la chiamata di Giulia non arriva al decisore - risponde un centralino che non passa nessuno e lascia un indirizzo mail.
 type: area
 updated: 2026-08-31
 source: claude

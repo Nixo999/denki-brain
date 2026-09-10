@@ -1,4 +1,5 @@
 ---
+riga: Serve a dare ai due nuovi cold caller la certezza sul prodotto - il primo dei tre Dieci di Belfort (flusso-vendita).
 type: risorsa
 updated: 2026-08-30
 source: claude

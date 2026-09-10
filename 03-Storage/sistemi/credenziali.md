@@ -1,4 +1,5 @@
 ---
+riga: Dove stanno le chiavi e come si passano. Nessun valore e' scritto qui, e non lo sara' mai.
 type: area
 updated: 2026-08-28
 source: claude

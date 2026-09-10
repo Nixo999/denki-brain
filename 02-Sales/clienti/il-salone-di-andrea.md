@@ -1,4 +1,5 @@
 ---
+riga: Parrucchiere donna e uomo di Andrea Bielli, Viale Natale Betelli 58, Dalmine.
 type: cliente
 status: lead
 settore: parrucchiere

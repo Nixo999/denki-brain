@@ -1,4 +1,5 @@
 ---
+riga: Framework - Belfort — looping sul primo dei 3 Dieci (la certezza nel prodotto), con l'isolamento di Blount in chiusura.
 type: risorsa
 updated: 2026-08-29
 source: claude

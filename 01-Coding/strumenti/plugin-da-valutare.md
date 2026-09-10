@@ -1,4 +1,5 @@
 ---
+riga: Elenco ragionato, non un catalogo. Il marketplace ufficiale (claude-plugins-official, già registrato su questa macchina) ne ha 289 - qui stan...
 type: area
 updated: 2026-08-28
 source: claude

@@ -1,4 +1,5 @@
 ---
+riga: Bozza vetrina per ng-barber, riga 2 dell'anello 1-b delle liste Instagram, gancio 5.
 type: progetto
 status: in-pausa
 client: ng-barber

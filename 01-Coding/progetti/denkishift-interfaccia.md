@@ -1,4 +1,5 @@
 ---
+riga: Obiettivo dichiarato - un'interfaccia che si venda da sola durante la demo di Patrick, calibrata su due utenti che non sono due gradini dello...
 type: risorsa
 updated: 2026-08-30
 source: claude

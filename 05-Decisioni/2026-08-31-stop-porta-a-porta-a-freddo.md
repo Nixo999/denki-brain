@@ -1,4 +1,5 @@
 ---
+riga: Deciso da Patrick il 31 agosto 2026 - *«io o Patrick che vado dal vivo senza prima una chiamata - mi occupa troppo tempo e mi risulta inutile»...
 type: decisione
 data: 2026-08-31
 progetto: azienda

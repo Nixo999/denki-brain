@@ -1,4 +1,5 @@
 ---
+riga: Sito vetrina in una pagina per D.S.I. Advertising di Piras Sebastiano, Merate (LC) - dal 1992 progetta e produce articoli promozionali per il...
 type: progetto
 status: attivo
 client: dsi-advertising

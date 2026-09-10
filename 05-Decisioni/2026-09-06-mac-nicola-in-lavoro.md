@@ -1,4 +1,5 @@
 ---
+riga: Decisione di Nicola, 6 settembre 2026 - messa in piedi da zero una seconda macchina sua, un MacBook Pro, e tutto sta in ~/lavoro — vault e re...
 type: decisione
 data: 2026-09-06
 progetto: azienda

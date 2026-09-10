@@ -1,103 +1,114 @@
 ---
-description: Handoff di fine sessione — scrive la nota di giornata, aggiorna updated, commit e push
-allowed-tools: Bash, Read, Write, Edit, Glob, Grep
+description: Handoff di fine sessione — daily scritta a domande, max 40 righe, poi commit e push
+allowed-tools: Bash, Read, Write, Edit, Glob, Grep, AskUserQuestion
 ---
 
-> **Base**: `03-Storage/azienda/protocollo-trevis.md` (di cosa ci si occupa) e
-> `03-Storage/azienda/registro-trevis.md` (come si parla) — si leggono prima di
-> rispondere, in questa come in ogni altra modalità. Niente presentazioni,
-> niente «adesso procedo a», niente proposte su cosa fare dopo. Riprendi come se
-> la conversazione non si fosse mai interrotta.
+# /chiudi-sessione
 
-Chiudi la sessione di lavoro di oggi sul vault DenkiCode.
+Registro Trevis, già in `~/.claude/CLAUDE.md`. Niente preamboli.
 
-## 1. Capire su cosa si è lavorato
+## 1. Prepara la bozza, non la nota
 
-Non chiederlo se puoi dedurlo. Guarda, in quest'ordine:
+Guarda `git status`, `git diff`, i commit di oggi nel vault e nei repo toccati,
+e la conversazione. Da lì ricavi **la tua versione dei fatti**. È `source:
+claude`: è una proposta, non un verbale.
 
-- la conversazione di questa sessione
-- `git status` e `git diff` nel vault
-- se durante la sessione si è lavorato su un repo di codice
-  (`opero-sito`, `smooth-duty`), guarda anche i suoi commit di oggi
+## 2. Chiedi — è il passaggio che rende la daily una fonte
 
-Se dopo questo il progetto è ancora ambiguo, **chiedi**: una sola domanda,
-con le opzioni che hai trovato.
+Mandi **un messaggio solo** con le cinque domande, ognuna già compilata con la
+tua risposta. Nicola conferma o corregge. Non scrivi niente prima di aver
+ricevuto le risposte.
 
-## 2. Scrivere la nota di giornata
+```
+Daily del <data> — <progetto>. Correggi quello che è sbagliato, «ok» sul resto.
 
-Crea `06-Daily/YYYY-MM-DD-<slug>.md` usando `99-Templates/template-daily.md`.
-Se la nota di oggi esiste già, **aggiungici in coda invece di sovrascriverla**.
+1. Finito oggi: <la tua riga>
+2. Rimasto a metà, a che punto: <la tua riga>
+3. Deciso: <la tua riga, oppure «niente»>
+4. Non verificato: <cosa hai scritto senza provarlo>
+5. Trappola nuova o strada da scartare: <la tua riga, oppure «niente»>
+```
 
-Lo slug descrive il lavoro, non la data: `2026-08-28-opero-liste-cliente.md`.
+Regole delle domande:
 
-Compila tutte le sezioni:
+- **Cinque, mai di più.** Se ne servisse una sesta, la cosa non è una daily: è
+  una decisione, e va in `05-Decisioni/`.
+- **Una riga a domanda.** Se la tua proposta è lunga tre righe l'hai scritta
+  male.
+- **Non chiedere quello che puoi leggere** da `git diff`. Chiedi quello che solo
+  Nicola sa: se una cosa è davvero finita, se una decisione è davvero presa.
+- Se Nicola non risponde e chiude la sessione, la daily **non si scrive**.
+  Meglio nessuna nota che una nota non controllata: è quella che diventa la
+  premessa di domani.
 
-- **Fatto** — solo cose finite, non tentativi
-- **Come è stato fatto** — la strada tecnica presa. Non è il riassunto del
-  codice: è quello che serve a chi riprende senza aver visto niente. Qui va il
-  caso concreto
-- **Deciso** — se una decisione è importante, aprile anche una nota in
-  `05-Decisioni/` e qui lascia solo il link
-- **Aperto** — a che punto esatto è rimasta la cosa a metà. Chi riprende deve
-  ripartire da qui senza rileggere il codice
-- **Prossimi passi** — il primo per primo
-- **Non verificato** — cosa è stato scritto ma non provato, e perché.
-  Non saltare questa sezione: è la regola di casa
+## 3. Scrivi la nota — 40 righe, tetto duro
 
-## 3. La memoria tecnica
+`06-Daily/YYYY-MM-DD-<slug>.md` da `99-Templates/template-daily.md`. Se la nota
+di oggi esiste, si aggiunge in coda.
 
-Ogni riga della sezione **Come è stato fatto** che vale anche su un progetto che
-ancora non esiste va copiata in `01-Coding/trappole.md`, nella sua sezione,
-ridotta a *trappola → contromisura → dove è stata pagata*. Se una trappola c'era
-già, si aggiunge il progetto dove è ricomparsa: una ricomparsa è la prova che il
-file serve.
+Il contenuto sono **le risposte di Nicola**, non il tuo riassunto. Frontmatter:
+`source: denkicode` e `verificato:` con la data di oggi — le ha confermate una
+persona.
 
-Non ci va il resoconto della giornata — quello resta nella daily. Se non è
-uscito niente di riutilizzabile, non si scrive niente: un file lungo non lo
-rileggo.
+```bash
+wc -l 06-Daily/<file>.md   # oltre 40, si taglia contenuto
+```
 
-## 4. Aggiornare le note toccate
+Non entrano mai: il riassunto di cosa hai letto, i comandi eseguiti, il racconto
+dei tentativi, il diff, i ringraziamenti. La daily del 7 settembre era 5.341
+parole e nessuno l'ha riletta.
 
-Per ogni progetto o cliente su cui si è lavorato:
+## 4. La memoria degli errori — con la classe scritta
 
-- porta `updated:` alla data di oggi
-- aggiorna la sezione **Aperto** — spunta ciò che è chiuso, aggiungi il nuovo
-- se sono cambiati soldi, stato o scadenza, aggiorna i campi del frontmatter
-- aggiorna la tabella dei progetti in `CLAUDE.md` se è nato un progetto o è
-  cambiato uno stato. La colonna «Nodo aperto» la scrive una persona: il
-  generatore la segnala mancante, non la inventa
+Se la risposta 5 dice qualcosa, va in `01-Coding/trappole.md`, nella sua
+sezione, **max 4 righe**, aperta dalla classe:
 
-## 5. Rigenera l'indice — non si aggiorna a mano
+- `[TRAPPOLA]` — è successo, ecco la contromisura, ecco dove è stata pagata.
+- `[SCARTATO]` — provato, non funziona, non si ripropone.
+
+**Non si promuove niente a regola qui.** Se il modo giusto va reso dottrina, lo
+scrive Nicola in `01-Coding/stack/convenzioni.md` o in una decisione, di
+proposito. Tu lo proponi in una riga e ti fermi.
+
+Se non è uscito niente di riutilizzabile non si scrive niente.
+
+## 5. Aggiorna le note toccate
+
+Per ogni progetto o cliente su cui si è lavorato: `updated:` a oggi, sezione
+**Aperto** allineata, campi del frontmatter se sono cambiati soldi o stato, e la
+riga nella tabella di `CLAUDE.md` se è nato un progetto o è cambiato uno stato.
+
+**Si corregge il file sbagliato, non si scrive la correzione altrove.**
+
+Se hai verificato contro la realtà un fatto che stava in una nota `source:
+claude` — il repo, il sito online, lo schema — scrivi `verificato:` con la data
+di oggi in quella nota. È l'unico modo in cui il campo si popola.
+
+## 6. Registro interventi
+
+Se si è toccato un progetto: una riga in `01-Coding/registro-interventi.md` con
+chi, quando, progetto, repository e **quale database**. Quella colonna è il
+motivo per cui il registro esiste.
+
+## 7. Indice
 
 ```bash
 python3 01-Coding/strumenti/genera-indice.py
 ```
 
-Riscrive `indice.md` dai file veri e stampa i buchi: link rotti, progetti attivi
-fuori dalla tabella di `CLAUDE.md`, righe del registro con un progetto scritto
-come testo invece che come wikilink, frontmatter senza `type`. **I buchi si
-guardano**: è così che un progetto vero resta senza scheda per una settimana.
+Riscrive `indice.md` e stampa i buchi: `riga:` mancanti, `verificato:` scaduti,
+link rotti, progetti attivi fuori dalla tabella. **I buchi si guardano.** Quello
+che non risolvi lo dici in due righe.
 
-Quello che non risolvi, dillo in due righe invece di lasciarlo passare.
-
-## 6. Commit e push
+## 8. Commit e push
 
 ```bash
-git add -A
-git status --short
+git add -A && git status --short
 ```
 
-Mostra cosa stai per committare. Poi committa con un messaggio che rispetta la
-convenzione DenkiCode ([[convenzioni]]): **in italiano, dice cosa è cambiato e
-perché**, non l'elenco dei file.
+Messaggio in italiano, dice cosa è cambiato e perché, non l'elenco dei file. Poi
+`git push`. Se fallisce non forzare: `git pull --rebase` e riprova.
 
-✅ `Il cliente di OperO ha rimesso l'XML in scope: da qui si quota`
-❌ `update opero.md`
+## 9. Chiudi
 
-Poi `git push`. Se il push fallisce, **non forzare**: `git pull --rebase`,
-guarda il risultato e riprova.
-
-## 7. Chiudi
-
-Due righe all'utente: cosa hai scritto e cosa resta per domani. Niente riepilogo
-lungo — la nota di giornata è già il riepilogo.
+Due righe: cosa hai scritto, cosa resta per domani.

@@ -1,4 +1,5 @@
 ---
+riga: Fotografia al 28 agosto 2026. Da rileggere e aggiornare ogni mese - i numeri qui dentro invecchiano in fretta.
 type: area
 updated: 2026-08-28
 source: denkicode

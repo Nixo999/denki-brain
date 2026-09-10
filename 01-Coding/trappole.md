@@ -1,26 +1,64 @@
 ---
 type: risorsa
-updated: 2026-09-09
-source: claude
+riga: Errori tecnici già pagati e strade scartate, per dominio. Descrittivo, non è un rulebook - le regole stanno in convenzioni.
+updated: 2026-09-10
+verificato: 2026-09-10
+source: denkicode
 tags: [trappole, memoria, frontend, gsap, git]
 ---
 
 # Trappole — quello che non voglio riscoprire due volte
 
-**Questo file lo scrivo per me stesso.** Il [[registro-interventi]] dice *cosa*
-è stato fatto e in che ordine, le daily dicono *com'è andata quel giorno*. Qui
-sta solo il residuo riutilizzabile: la trappola e la contromisura, senza il
-racconto intorno.
+**Questo file non è un manuale.** È il registro degli errori già pagati e delle
+strade che non funzionano. Serve prima di ripetere un gesto, non prima di
+progettare.
 
-Serve perché a inizio sessione leggo **solo l'ultima daily**. Tutto quello che
-è stato imparato più di un giorno fa, se sta solo lì dentro, per me non esiste
-più. Ed è già successo: il reset `img{height:auto}` è stato pagato su
-[[sito-castiglione]] e ripagato su V-BAG, e il `transform` sovrascritto da GSAP
-è stato ritrovato quattro volte su quattro progetti diversi.
+## Le tre classi — la regola che tiene in piedi il file
 
-**Come si aggiorna**: a fine sessione, con `/chiudi-sessione`. Ci finisce solo
-quello che vale su un progetto che ancora non esiste. Il dettaglio del caso
-resta nella daily e nel registro, e da qui ci si linka.
+Dal 10 settembre 2026 ogni voce nuova si apre con la sua classe
+([[come-si-scrive-una-nota]]):
+
+| Classe | Cos'è | Cosa ci si fa |
+|---|---|---|
+| `[TRAPPOLA]` | È successo, è costato tempo, ecco la contromisura | Si evita di ripeterlo |
+| `[SCARTATO]` | Provato, non funziona | Non si ripropone |
+| **REGOLA** | Il modo giusto, da qui in avanti | **Non sta qui**: sta in [[convenzioni]], nel `CLAUDE.md` del repo, o in una decisione |
+
+Le tre cose che ne discendono:
+
+1. **Una trappola non diventa una regola da sola.** Se il modo giusto va reso
+   dottrina lo scrive una persona in [[convenzioni]], di proposito. Leggere
+   questo file non promuove niente.
+2. **Una trappola è descrittiva, mai prescrittiva fuori dal suo caso.** «Brave
+   headless sotto 500 px mente sul layout» non è «non si misura a 375».
+3. **Uno scarto che ricompare in una risposta è un errore della risposta.**
+   Riaprirlo si può, ma si dichiara che lo si sta riaprendo e perché.
+
+**Tutte le voci scritte prima del 10 settembre 2026 sono `[TRAPPOLA]`**, ed è
+per questo che non portano il marcatore: il file nasce come raccolta di errori.
+Nessuna di loro è mai stata una regola di casa.
+
+## Come si legge — a sezioni, mai intero
+
+Sono oltre 3.000 parole. Si guarda l'indice delle sezioni e si apre solo quella
+del lavoro di oggi:
+
+```bash
+grep -n '^## ' 01-Coding/trappole.md
+```
+
+## Come si aggiorna
+
+A fine sessione, con `/chiudi-sessione`, e solo se è uscito qualcosa che vale su
+un progetto che ancora non esiste. **Max 4 righe a voce**: trappola,
+contromisura, dove è stata pagata. Il racconto resta nella daily e nel registro,
+e da qui ci si linka.
+
+## Scartato — non si ripropone
+
+Vuota al 10 settembre 2026. Ci finisce una strada provata davvero e bocciata,
+non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa si
+è scartato».
 
 ## Catture e verifica in headless
 

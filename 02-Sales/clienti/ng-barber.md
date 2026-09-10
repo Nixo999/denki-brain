@@ -1,4 +1,5 @@
 ---
+riga: Barbershop, @ngbarberstudio123. Riga 2 dell'anello 1-b, gancio 5 - l'unico link in bio è ngbarber.my-booking-app.com, cioè un'app di prenotaz...
 type: cliente
 status: lead
 progetti: [sito-ngbarber]

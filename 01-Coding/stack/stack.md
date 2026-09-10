@@ -1,4 +1,5 @@
 ---
+riga: Le tecnologie dei due gestionali. OperO Vite 8 + Tailwind 3, DenkiShift Next 16 + Tailwind 4. Restano diversi.
 type: risorsa
 updated: 2026-08-28
 source: repo

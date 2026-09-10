@@ -1,4 +1,5 @@
 ---
+riga: Decisione di Patrick. Da oggi ogni script, ogni obiezione smontata e ogni analisi dei report settimanali si costruisce applicando i testi ra...
 type: decisione
 data: 2026-08-28
 progetto: azienda

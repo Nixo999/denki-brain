@@ -1,4 +1,5 @@
 ---
+riga: Al 28 agosto 2026, DenkiCode ha cinque basi di codice e cinque stack -
 type: decisione
 data: 2026-08-28
 progetto: azienda

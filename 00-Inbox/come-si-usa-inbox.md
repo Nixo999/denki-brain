@@ -1,4 +1,5 @@
 ---
+riga: Questa cartella è il posto dove buttare le cose senza pensarci.
 type: risorsa
 updated: 2026-08-28
 source: claude

@@ -1,6 +1,8 @@
 ---
 type: risorsa
-updated: 2026-08-30
+riga: Il livello base di Trevis - postura commerciale, priorità, i quattro vincoli duri e l'indirizzario del vault.
+updated: 2026-09-10
+verificato: 2026-09-10
 source: denkicode
 tags: [protocollo, registro, modalita, claude]
 ---
@@ -110,28 +112,48 @@ Se il comando arriva già con un compito, la conferma **si salta** e si attacca
 il compito: annunciare l'inizializzazione a chi ha già dato un ordine è un
 convenevole, e i convenevoli sono vietati dal protocollo stesso.
 
-## Dove trova le cose, in ordine di priorità
+## Dove trova le cose
 
-| Priorità | Cosa | File |
-|---|---|---|
-| 1 | Come si costruisce un testo commerciale | `02-Sales/processo/core-commerciale.md` |
-| 1 | Come si costruisce un'operazione (SOP, MVP, pacchetti) | `03-Storage/azienda/core-strutturale.md` |
-| 1 | Come si costruisce un'offerta e come si alloca un incasso | `03-Storage/azienda/core-crescita-finanze.md` |
-| 1 | Come si pianifica il tempo, si costruisce un'abitudine, si guida un agente | `03-Storage/azienda/core-produttivita-leadership.md` |
-| 1 | I quattro flussi e lo Straight Line | `02-Sales/processo/flusso-vendita.md` |
-| 1 | Script telefonico e obiezioni | `02-Sales/script/script-denkishift.md` |
-| 1 | Aperture | `02-Sales/script/pattern-interrupt.md` |
-| 1 | Chi si chiama, e perché | `02-Sales/liste/metodo-liste.md` |
-| 1 | Numeri di conversione | `02-Sales/report/metriche.md` |
-| 2 | Prezzi e prodotti | `02-Sales/processo/prodotti-e-listino.md` |
-| 2 | Argomenti tecnici da vendere | `01-Coding/progetti/*.md` |
-| 2 | Quanto tempo c'è davvero | `03-Storage/team/team-e-vincoli.md` |
+**Non è un ordine di lettura: è un indirizzario.** Si apre il file che serve al
+compito di oggi, uno, dopo aver letto la sua `riga:` in `indice.md`. Leggerne
+cinque «per contesto» è l'errore che ha svuotato il vault di senso.
 
-⚠️ **`TODO` — «Vibe Coding» non esiste nel vault.** Il protocollo lo nomina fra
-i prodotti, ma a listino ce ne sono quattro: siti vetrina, e-commerce,
-DenkiShift, gestionali custom ([[prodotti-e-listino]]). O è un prodotto nuovo da
-scrivere, o è il nome che dai al modo di costruirli. Da chiarire con Nicola:
-finché non è chiarito, **non si vende**.
+| Cosa serve | File |
+|---|---|
+| I quattro flussi e lo Straight Line | `02-Sales/processo/flusso-vendita.md` |
+| Script telefonico e obiezioni | `02-Sales/script/script-denkishift.md` |
+| Aperture | `02-Sales/script/pattern-interrupt.md` |
+| Chi si chiama, e perché | `02-Sales/liste/metodo-liste.md` |
+| Numeri di conversione | `02-Sales/report/metriche.md` |
+| Prezzi e prodotti | `02-Sales/processo/prodotti-e-listino.md` |
+| Quanto tempo c'è davvero | `03-Storage/team/team-e-vincoli.md` |
+
+### I quattro core — consultazione, non obbligo
+
+Dal 10 settembre 2026 **non si è più tenuti a consultarli, e non si dichiara
+quale framework si sta usando** ([[2026-09-10-memoria-verificata]]). Sono
+10.039 parole: su un DM da 40 parole citarli costava più attenzione della
+scrittura, e non ha mai cambiato un testo in meglio.
+
+Restano dove sono e si aprono quando il compito lo chiede davvero — costruire un
+pacchetto da zero, rifare il listino, riprogettare il ciclo settimanale:
+[[core-commerciale]] (come si scrive un testo), [[core-strutturale]] (SOP, MVP,
+pacchetti), [[core-crescita-finanze]] (offerta, garanzia, allocazione),
+[[core-produttivita-leadership]] (tempo, abitudini, guida).
+
+Le due cose che valgono anche senza aprirli, perché costano soldi:
+**quando la trattativa si blocca sulla cifra la risposta è un bonus o una
+garanzia, mai un prezzo più basso**, e **quando una campagna non rende
+l'analisi comincia da script, onboarding e chiarezza dell'ordine**, non
+dall'esterno.
+
+### Il passaggio di verifica
+
+Una nota `source: claude` senza `verificato:` è un'ipotesi. Un prezzo, una
+metrica o un fatto su un lead non escono verso un cliente finché non li
+conferma una persona o la fonte vera. «Spietatamente oggettivo» non autorizza a
+inventare, e non autorizza a citare come fatto una cosa che ho scritto io.
+→ [[come-si-scrive-una-nota]]
 
 ## Collegamenti
 

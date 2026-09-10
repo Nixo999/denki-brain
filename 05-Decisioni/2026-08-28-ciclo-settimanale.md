@@ -1,4 +1,5 @@
 ---
+riga: Fino a oggi le liste si producevano quando Patrick trovava il tempo, e quello che tornava indietro dalle chiamate non tornava indietro affat...
 type: decisione
 data: 2026-08-28
 progetto: azienda

@@ -1,4 +1,5 @@
 ---
+riga: Prima applicazione di presidi-volantini.
 type: area
 updated: 2026-08-28
 source: claude
