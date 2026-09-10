@@ -1,4 +1,5 @@
 ---
+riga: Ogni lista DM e' 50 siti piu' 30 DenkiShift, e ogni riga porta il suo messaggio scritto a mano.
 type: decisione
 data: 2026-09-10
 progetto: azienda

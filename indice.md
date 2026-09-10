@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **148 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **151 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -109,6 +109,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-09-anello1-pet]] — ⚠️ Settore nuovo, mai toccato in Lombardia - toelettature, asili e pensioni per cani, un centro cinofilo.
 - [[2026-09-09-ristorazione-va-co-lc-bg]] — ⚠️ 64 righe sul banco (65 nel file - Da Bassano è rimasta dentro come SCARTATO), tutte per l'account personale di Patrick, appese a lista-corren...
 - [[2026-09-10-animali-va-co-lc-bg-ti]] — ⚠️ 17 righe, tutte per l'account personale di Patrick, appese a lista-corrente.csv con la colonna Lista valorizzata.
+- [[2026-09-10-siti-e-denkishift-va-co-lc-bg]] — ⚠️ Liste DM del 10 settembre - 50 profili senza sito piu' 30 per DenkiShift, VA CO LC BG, un messaggio per riga.
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
@@ -132,6 +133,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 **script/**
 
 - [[briefing-prodotti-gabriele-edoardo]] — ⚠️ Serve a dare ai due nuovi cold caller la certezza sul prodotto - il primo dei tre Dieci di Belfort (flusso-vendita).
+- [[dm-instagram-denkishift]] — ⚠️ Il DM Instagram per DenkiShift - come si scrive, e perche' si scrive uno per profilo invece di un modello.
 - [[dm-instagram-vetrina]] — ⚠️ Lo manda Patrick, dal suo account personale.
 - [[email-centralino-rsa]] — ⚠️ Il caso. Su molte RSA la chiamata di Giulia non arriva al decisore - risponde un centralino che non passa nessuno e lascia un indirizzo mail.
 - [[email-presentazione-denkishift]] — ⚠️ Il testo che accompagna la presentazione (presentazione-denkishift-ms-service.pptx, 8 slide) quando un contatto chiede materiale via mail in...
@@ -216,6 +218,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-07-trappole-memoria-tecnica]] — ⚠️ Decisione di Nicola, 7 settembre 2026 - le note di giornata funzionano, quindi le uso anche per parlare con me stesso da una sessione all'alt...
 - [[2026-09-08-firma-powered-by-denkicode]] — ⚠️ Decisione. Nicola, 8 settembre 2026. Ogni cosa che esce da qui — siti vetrina, e-commerce, gestionali — porta nel piè di pagina la scritta P...
 - [[2026-09-08-test-dm-chiuso]] — I numeri veri li ha dati Patrick l'8 settembre 2026, a voce.
+- [[2026-09-10-liste-50-30-messaggi-personalizzati]] — Ogni lista DM e' 50 siti piu' 30 DenkiShift, e ogni riga porta il suo messaggio scritto a mano.
 - [[2026-09-10-memoria-verificata]] — Il brain smette di leggersi addosso - riga obbligatoria, verificato, tre classi di memoria, core non piu' obbligatori.
 
 ## 06-Daily

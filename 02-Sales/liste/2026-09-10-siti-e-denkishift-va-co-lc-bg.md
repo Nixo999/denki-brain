@@ -1,4 +1,5 @@
 ---
+riga: Liste DM del 10 settembre - 50 profili senza sito piu' 30 per DenkiShift, VA CO LC BG, un messaggio per riga.
 type: area
 updated: 2026-09-10
 source: claude

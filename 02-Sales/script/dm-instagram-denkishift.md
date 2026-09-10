@@ -1,4 +1,5 @@
 ---
+riga: Il DM Instagram per DenkiShift - come si scrive, e perche' si scrive uno per profilo invece di un modello.
 type: area
 updated: 2026-09-10
 source: claude
