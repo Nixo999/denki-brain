@@ -49,9 +49,12 @@ def controlla(p):
     senza = [r.get("Account IG", "?") for r in righe if not r[col].strip().startswith("cercato «")]
     if senza:
         errori.append(f"{len(senza)} righe senza la prova di verifica-sito.py (es. {senza[0]}): «cercato «…» → …» manca")
-    senza_script = [r.get("Account IG", "?") for r in righe if "[verifica-sito]" not in r[col]]
+    # dal 10 settembre 2026 le liste DenkiShift (nome file con «denkishift») non
+    # verificano il sito ma il personale: la prova e` marcata [verifica-turni]
+    tag = "[verifica-turni]" if "denkishift" in p.name.lower() else "[verifica-sito]"
+    senza_script = [r.get("Account IG", "?") for r in righe if tag not in r[col]]
     if senza_script:
-        errori.append(f"{len(senza_script)} righe mai passate da verifica-sito.py (es. {senza_script[0]})")
+        errori.append(f"{len(senza_script)} righe senza la prova {tag} (es. {senza_script[0]})")
     prob = [r.get("Account IG", "?") for r in righe if "PROBABILE SITO" in r[col]]
     if prob:
         errori.append(f"{len(prob)} righe con un PROBABILE SITO da aprire e decidere: {', '.join(prob[:6])}")

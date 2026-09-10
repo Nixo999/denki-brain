@@ -503,8 +503,23 @@ function disegna(){
   const ultima = nuove.length ? nuove[0][0] : "";
   const giorno = ultima.slice(0, 10);
   const listeGiorno = [...new Set(nuove.map(([l]) => l).filter(l => l.slice(0, 10) === giorno))];
-  let inPagina = 0;
-  nuove.forEach(([l, , el]) => { if (ultima && l.slice(0, 10) === giorno){ lista.appendChild(el); inPagina++; } else vecchie.appendChild(el); });
+  let inPagina = 0, corrente = null;
+  /* Dal 10 settembre 2026 ogni giorno escono due liste, una per prodotto
+     (50 siti e 30 DenkiShift, chiesto da Patrick): in pagina stanno una sotto
+     l'altra, ognuna col suo titolo, cosi` si vede a colpo d'occhio a chi si
+     sta scrivendo e con quale messaggio. */
+  nuove.forEach(([l, , el]) => {
+    if (!(ultima && l.slice(0, 10) === giorno)){ vecchie.appendChild(el); return; }
+    if (l !== corrente){
+      corrente = l;
+      const h = document.createElement("h3");
+      h.className = "sezione";
+      const n = nuove.filter(([x]) => x === l).length;
+      h.textContent = (/denkishift|turni/i.test(l) ? "DenkiShift, i turni" : "Siti vetrina") + " — " + n + " da scrivere · " + l.replace(/\.csv$/i, "");
+      lista.appendChild(h);
+    }
+    lista.appendChild(el); inPagina++;
+  });
   document.getElementById("n-vecchie").textContent = nuove.length - inPagina;
   document.getElementById("vecchie").hidden = nuove.length === inPagina;
   document.getElementById("nota-nuove").textContent = ultima
@@ -566,7 +581,7 @@ function cartella(r, idx, inviato, esito, daRecuperare){
       ${scartata ? '<span class="tag no">non si manda</span>' : ""}
       ${daRecuperare ? '<span class="tag rec">recupero</span>' : ""}
       ${inviato && !daRecuperare ? '<span class="tag ok">' + inviato + "</span>" : ""}
-      <span class="tag">gancio ${r[col.gancio] || "?"}</span>
+      <span class="tag">${(r[col.gancio] || "").trim() === "T" ? "turni" : "gancio " + (r[col.gancio] || "?")}</span>
       <div class="meta">${nome} — ${r[col.comune] || ""} · ${r[col.follower] || "?"} follower${(r[col.segmento] || "").trim() ? " · " + r[col.segmento].trim() : ""}</div>
       <div class="meta">${r[col.verifica] || ""}</div>
       ${(r[col.scheda] || "").trim() ? '<div class="scheda"></div>' : ""}

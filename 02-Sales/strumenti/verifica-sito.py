@@ -23,7 +23,7 @@ Se trova un sito vivo col nome e il comune mette «Esito DM = SCARTATO».
 Nato l'8 settembre 2026, dopo una lista con 62 verifiche uguali su 68 e
 almeno 20 profili col sito. gelaterialariana.it era il PRIMO risultato.
 """
-import csv, html, re, socket, ssl, sys, time, urllib.error, urllib.parse, urllib.request
+import csv, html, json, re, socket, subprocess, sys, time, urllib.error, urllib.parse
 from pathlib import Path
 
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 DenkiCode-verifica"
@@ -71,9 +71,47 @@ def indovina(nome):
     return [b + suff for b in basi for suff in (".it", ".com", ".ch", ".eu", ".net")]
 
 
+def _doh(host):
+    """(ip | None, 'ok'|'nxdomain'|'errore'): il resolver del Mac di Patrick a volte
+    non risponde (10 settembre 2026: tutto «morto», nessun sito trovato). Cloudflare
+    DoH risponde sempre, e con NXDOMAIN si distingue il dominio che non esiste."""
+    try:
+        out = subprocess.run(["curl", "-s", "--max-time", "8",
+                              f"https://cloudflare-dns.com/dns-query?name={host}&type=A",
+                              "-H", "accept: application/dns-json"], capture_output=True, text=True, timeout=12).stdout
+        j = json.loads(out)
+        if j.get("Status") == 3:
+            return None, "nxdomain"
+        a = [x["data"] for x in j.get("Answer", []) if x.get("type") == 1]
+        return (a[0], "ok") if a else (None, "senza A")
+    except Exception as e:
+        return None, f"errore {e}"
+
+
+def _curl(url, ip=None, timeout=15):
+    """corpo della pagina via curl; con ip usa --resolve, cosi` non dipende dal DNS locale"""
+    host = urllib.parse.urlparse(url).netloc
+    res = []
+    if ip:
+        for h in {host, "www." + host.removeprefix("www."), host.removeprefix("www.")}:
+            res += ["--resolve", f"{h}:443:{ip}", "--resolve", f"{h}:80:{ip}"]
+    r = subprocess.run(["curl", "-sL", "-k", "--max-time", str(timeout), "-A", UA, "-H", "Accept-Language: it-IT,it;q=0.9",
+                        "-o", "-", "-w", "\n@@CODE@@%{http_code}", *res, url],
+                       capture_output=True, text=True, errors="replace", timeout=timeout + 10).stdout
+    m = re.search(r"@@CODE@@(\d+)$", r)
+    code = int(m.group(1)) if m else 0
+    corpo = r[:m.start()] if m else r
+    if code == 0:
+        raise urllib.error.URLError("nessuna risposta")
+    if code >= 400:
+        raise urllib.error.HTTPError(url, code, "http " + str(code), {}, None)
+    return corpo
+
+
 def scarica(url):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "it-IT,it;q=0.9"})
-    return urllib.request.urlopen(req, timeout=15).read().decode("utf-8", "replace")
+    host = urllib.parse.urlparse(url).netloc
+    ip, _ = _doh(host)
+    return _curl(url, ip)
 
 
 def dominio(u):
@@ -123,16 +161,17 @@ def cerca(q):
 
 def apri(dominio):
     """(stato, titolo, corpo). stato: vivo | parcheggiato | morto | non risponde"""
-    try:
-        socket.gethostbyname(dominio)
-    except socket.gaierror:
+    ip, stato_dns = _doh(dominio)
+    if stato_dns == "nxdomain":
         return "morto", "", ""
+    if not ip:
+        try:
+            ip = socket.gethostbyname(dominio)
+        except socket.gaierror:
+            return "morto", "", ""
     for schema in ("https://", "http://"):
         try:
-            req = urllib.request.Request(schema + dominio, headers={"User-Agent": UA})
-            ctx = ssl.create_default_context(); ctx.check_hostname = False; ctx.verify_mode = ssl.CERT_NONE
-            r = urllib.request.urlopen(req, timeout=12, context=ctx)
-            corpo = r.read(60000).decode("utf-8", "replace")
+            corpo = _curl(schema + dominio, ip, 12)[:60000]
             t = re.search(r"<title[^>]*>(.*?)</title>", corpo, re.I | re.S)
             titolo = re.sub(r"\s+", " ", html.unescape(t.group(1))).strip()[:80] if t else ""
             if PARCHEGGIO.search(titolo) or PARCHEGGIO.search(corpo[:3000]) or len(corpo.strip()) < 300:
