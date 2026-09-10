@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-09-09
+updated: 2026-09-10
 source: denkicode
 tags: [registro, interventi, repo, database]
 ---
@@ -36,6 +36,12 @@ pubblicato senza la sua migrazione apre un tabellone vuoto.
 Colonne: **Quando** (data e ora) · **Chi** (persona, e `+claude` se il lavoro è
 stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 (`—` se non toccato, `sviluppo`/`produzione` + stato) · **Cosa** · **Commit**.
+
+## 2026-09-10
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| notte, 9→10/09 | Nicola +claude | [[sito-da-caterina]] | `caterina-site` → `Nixo999/caterina-site` (privata, `main`, `350bc4a`) | — (statico, nessun database) | **Sito vetrina nuovo per `@dacaterinatoelettatura`, due versioni in una notte.** Versione 1: processo [[processo-siti]] completo, impeccable seed `7d230b00` direzione «album delle figurine» (rosso pieno, cani ritagliati con Vision di macOS e attaccati storti), pagina di decisione chiusa senza risposta, costruita l'assegnata, online alle 22:4x. **Bocciata da Nicola alle 23:4x**: «da telefono è orribile, i ritagli fanno pena, sembra tutto buttato a caso; rifallo con un altro stile, meno rosso, più professionale», poi «dagli un po' di vita in più». Versione 2 in **modalità direttore/operatore** chiesta da Nicola (Fable scrive il brief, `operatore` su Opus scrive e misura): fondo chiaro, rosso solo accento, Manrope, foto intere in cornice, entrata hero, rivelazione sfalsata della galleria, foto che respirano, fondi alternati, footer scuro. Finish review con subagente: v1 `recapture` → `fix` (8) → `fix` (3); v2 `fix` (8) → **`ship`**. Online su <https://dacaterina.netlify.app> (sito `dacaterina`, team `denkicode`, deploy dal CLI, non collegato al repo), tre sbarramenti. Trappole nuove: Brave headless sotto 500px, observer non consegnati in headless, cattura a metà animazione, altezza da misurare prima, slug Netlify, `transition` più specifica che spegne la rivelazione. ⬜ Safari su iPhone. ⬜ Orari dai portali, da confermare. ⬜ DM di Patrick | `86a972a` `0cb1d91` `350bc4a` |
 
 ## 2026-09-09
 

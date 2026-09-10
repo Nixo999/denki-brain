@@ -63,6 +63,31 @@ resta nella daily e nel registro, e da qui ci si linka.
   impianta (finestra di benvenuto): profilo nuovo solo con `--no-first-run
   --disable-features=…`, o si verifica dal pannello con le misure.
   ([[sito-osteria-tarilli]])
+- **Brave headless non scende sotto ~500 px di finestra.** Con
+  `--window-size=375,812` il PNG e' largo 375 ma il layout dentro e' piu'
+  largo: la nav perde il bottone di destra e il testo esce dal bordo, e sembra
+  un bug del CSS che il pannello a 375 non conferma. → il sito va in un
+  `<iframe style="width:375px">` dentro una pagina wrapper, finestra da 800,
+  e si ritaglia il PNG (Swift `CGImage.cropping`, perche' `sips --cropOffset`
+  restituisce nero). ([[sito-da-caterina]])
+- **La cattura headless fotografa l'animazione d'ingresso a meta'**: figurine
+  mezze trasparenti e sovrapposte, che a occhio sembrano un difetto. → in
+  `?cattura` si spegne l'animazione (`.cattura .x{animation:none}`), come si
+  fissa `--vh`. ([[sito-da-caterina]])
+- **Brave headless con `--virtual-time-budget` non consegna gli IntersectionObserver**,
+  come il pannello a pane nascosto: una pagina con rivelazioni allo scroll esce col
+  sotto-piega vuoto e sembra un bug del sito. → in `?cattura` le rivelazioni sono
+  spente; la prova vera delle rivelazioni si fa con Brave `--remote-debugging-port`
+  pilotato in CDP da node 22 (`WebSocket` nativo, zero dipendenze), scorrendo a passi
+  e leggendo `opacity`. Trovata dall'operatore su Opus. ([[sito-da-caterina]])
+- **L'altezza della pagina intera si misura prima di catturare**
+  (`document.scrollHeight` sul viewport emulato) e si aggiunge margine: una
+  finestra a 4900 su una pagina da 5135 taglia mappa e footer, e il finish
+  reviewer la rifiuta (`disposition: recapture`). ([[sito-da-caterina]])
+- **`netlify sites:create --account-slug denkicode` risponde 404**: lo slug
+  del team non e' il nome che `netlify status` mostra. Si legge con
+  `netlify api listAccountsForUser` (qui: `nicola-la-rezza`). Il CLI non e'
+  installato: `npx -y netlify@latest`. ([[sito-da-caterina]])
 - **`launch.json` va nella cartella della sessione, non nel repo**, e
   `python3 -m http.server` non parte da una cartella Google Drive
   (`os.getcwd()` è vietato): `sh -c "cd <repo> && exec python3 -m
@@ -139,6 +164,15 @@ resta nella daily e nel registro, e da qui ci si linka.
   già tutto acceso prima dello scroll. → il timer scatta solo con
   `document.visibilityState === "hidden"`: in una scheda che dipinge
   l'observer arriva. ([[sito-albybike]])
+- **Una `transition` più specifica spegne quella della rivelazione.** `.rivela`
+  (0,1,0) dichiarava `opacity, translate`; `.galleria .riquadro` (0,2,0) dichiarava
+  `transform, box-shadow` per l'hover e vinceva: `transition-delay` 0 su tutti gli
+  otto riquadri, lo sfalsamento a 70 ms non è mai esistito e nessuno l'ha visto
+  finché le rivelazioni erano venti. Cugina del `transition-all` di Albybike. → le
+  transizioni di un elemento si dichiarano tutte insieme nel selettore che vince
+  (`.galleria .riquadro.rivela{transition: opacity, translate, transform,
+  box-shadow}`), e si misura `transition-property` e `transition-delay` calcolati,
+  non si guarda. Trovata dall'operatore su Opus. ([[sito-da-caterina]])
 - **`transition-all` in coda a una classe che ha già la sua `transition` la
   spegne**: la utility vince e la curva condivisa sparisce. Trovata su due
   card che sembravano avere `hover-lift` e non lo avevano. → `grep
@@ -320,7 +354,15 @@ resta nella daily e nel registro, e da qui ci si linka.
   `.impeccable/surfaces/`.
 - **La pagina di decisione senza nessuno davanti resta aperta per sempre.**
   Si aspetta un tempo dichiarato (due giri da 60 s), poi si costruisce
-  l'assegnata e lo si scrive.
+  l'assegnata e lo si scrive. Se il `--wait` risponde `PAGE CLOSED` (la
+  scheda del pannello e' stata riusata), vale lo stesso: assegnata, senza
+  aprire un secondo server. ([[sito-da-caterina]])
+- **I ritagli senza sfondo si fanno con Vision di macOS, senza installare
+  niente**: `VNGenerateForegroundInstanceMaskRequest` in uno script Swift di
+  venti righe (`ritaglia.swift`, compilato con `swiftc`), PNG con alfa
+  rifilato al soggetto. `rembg` e PIL non ci sono e non servono. Il bordo
+  bianco fustellato poi e' CSS: sei `drop-shadow` a offset 0 blur piu' uno
+  sfalsato per l'ombra. ([[sito-da-caterina]])
 
 ## Collegamenti
 

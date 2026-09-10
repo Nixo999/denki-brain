@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-09-01
+updated: 2026-09-09
 source: denkicode
 tags: [strumenti, hosting, bozze, siti-vetrina]
 ---
@@ -47,6 +47,7 @@ Vale per tutti i canali:
 | Bozza | Per chi | Stato |
 |---|---|---|
 | [[castiglione-furniture]] | Castiglione Falegnameria Sartoriale, Bronte (CT) | `TODO` da pubblicare — il repo è in locale e senza remote ([[2026-08-30-sito-castiglione]]) |
+| [[sito-da-caterina]] | Da Caterina Toelettatura Professionale, Olgiate Olona (VA) — Instagram `@dacaterinatoelettatura` | ✅ **online su <https://dacaterina.netlify.app>** dal 9 settembre 2026, sito `dacaterina` sul team `denkicode` (slug API `nicola-la-rezza`), deploy dal CLI non collegato al repo `Nixo999/caterina-site`; tre sbarramenti attivi |
 | sito NG Barber | NG Barber Studio, Como + Erba + Mendrisio (CH) — riga 2 dell'[[2026-09-01-instagram-anello-1-b\|anello 1-b]] | ⬜ **pronto, non pubblicato**: `netlify.toml` scritto. il codice è su **`patricksappa26/ng-barber`** (pubblica, `main`, allineata). Resta indietro `Nixo999/ngbarber-site` (privata, primo tentativo). **Manca solo il login Netlify**, che è di Nicola — in alternativa, essendo la repo pubblica, **GitHub Pages** la pubblica senza altri accessi |
 
 > [!note] Analisi di Claude — 2026-09-01
