@@ -25,8 +25,13 @@ Allinea la sessione allo stato attuale di DenkiCode. **Deve costare poco.**
 
 ```bash
 git pull --rebase --autostash -q 2>&1 | tail -2
+python3 01-Coding/strumenti/installa-macchina.py
 ls -1 06-Daily/ | sort | tail -1
 ```
+
+`installa-macchina.py` va **dopo** il pull: `~/.claude/` è locale e il pull non
+lo tocca. Se stampa dei file, la sessione in corso usa ancora i comandi vecchi —
+si dice in una riga e vale dalla prossima.
 
 Poi leggi **solo** quel file. Le daily sono tarate a 40 righe: si legge intera.
 Se quella di oggi non c'è, l'ultima sessione si è chiusa senza risposte di

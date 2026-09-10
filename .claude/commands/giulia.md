@@ -46,9 +46,17 @@ for p in "$V" "$PWD" "$HOME/lavoro/denki-brain" "$HOME/Desktop/denki-brain" "$HO
   [ -n "$p" ] && [ -f "$p/CLAUDE.md" ] && V="$p" && break
 done
 cd "$V" && git pull --rebase --autostash -q 2>&1 | tail -2
+python3 "$V/01-Coding/strumenti/installa-macchina.py"
 ls -1 "$V/06-Daily" | sort | tail -1
 ls -1 "$V/02-Sales/liste/" | sort | tail -1
 ```
+
+⚠️ **La riga di `installa-macchina.py` non è opzionale e va dopo il pull.**
+`~/.claude/` (protocollo, agente `operatore`, comandi, skill nostre) è locale
+alla macchina: il pull porta le copie canoniche nel vault, non le installa.
+Senza quella riga, su una macchina che non è quella dove il vault è stato
+scritto si lavora con i comandi della settimana scorsa. Quello che riscrive vale
+**dalla sessione dopo**: questa era già caricata.
 
 Vault non trovato → **chiedi il percorso**, non cercarlo a tappeto.
 
