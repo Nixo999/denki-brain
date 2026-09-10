@@ -54,6 +54,7 @@ Non è un'opinione: il conto viene da [[2026-08-30-verifica-siti-giulia]].
 | 4 | **Tatuatori, wedding, fotografi** | Da provare dall'anello 2 |
 | 5 | **Toelettature, asili e pensioni per cani** | Provato il 9 settembre 2026 sull'anello 1: **22 righe da circa 70 profili aperti**. Bacino stretto (metà delle toelettature non ha Instagram) e 17 siti veri scartati, ma tre domini morti e un link in bio rotto → [[2026-09-09-anello1-pet]] |
 | 6 | **Ristorazione, comuni non ancora battuti degli anelli 1 e 2** | Rifatta il 9 settembre 2026 col profilo aperto: **64 righe da 112 profili letti** (una in più scartata dallo script: sito vero che le SERP non mostravano), 58 senza sito, 17 handle morti che le SERP davano vivi, una sessantina di siti veri scartati → [[2026-09-09-ristorazione-va-co-lc-bg]] |
+| 7 | **Animali: toelettature, centri ippici, pensioni, cinofili** | Provato il 10 settembre 2026 su anelli 1-2 e Ticino: **17 righe da 84 profili aperti**. Bacino povero perché **33 profili su 84 il sito ce l'hanno già**: è il settore col tasso di sito più alto trovato finora → [[2026-09-10-animali-va-co-lc-bg-ti]] |
 | ❌ | **Mobilifici e arredamento** | 6 su 6 col sito. Non si tocca |
 | ❌ | **Negozi** | La domanda giusta non è «ha un sito» ma «vende online»: è flusso B, non A |
 
@@ -85,6 +86,39 @@ Handle esatto, **follower**, bio, **link in bio**. Serve a stabilire tre cose:
 > like o messaggio da lì. Provato su circa 70 profili in
 > [[2026-09-09-anello1-pet]]: sei handle che i motori mostrano ancora erano
 > morti.
+
+> [!warning] Corretto il 10 settembre 2026 — il `meta` non basta, il sito sfugge
+> Leggere solo il `meta description` **fa perdere il link in bio**: Instagram
+> non lo mette sempre in un anchor `l.instagram.com`, spesso è testo. Il 9
+> settembre quattro profili della ristorazione sarebbero passati per «nessun
+> sito» avendolo scritto in bio. Da oggi si aspetta che la pagina si disegni e
+> si legge il **testo intero del profilo**, che porta follower, bio,
+> **indirizzo** e **dominio**:
+>
+> ```js
+> await new Promise(r=>{const t0=Date.now();(function p(){const b=document.body?document.body.innerText:'';
+>   if(/follower/i.test(b)||/non è disponibile/i.test(b)||Date.now()-t0>9000)return r();setTimeout(p,300)})()});
+> ({u:location.pathname, t:(document.body.innerText||'').replace(/\s+/g,' ').slice(0,400)})
+> ```
+>
+> Se in fondo compare «e altri 2», altri link sono nascosti: quelli si scoprono
+> solo con la ricerca del passo 3.
+
+> [!tip] Aggiunto il 10 settembre 2026 — trovare i profili con la ricerca di Instagram
+> I motori indicizzano male Instagram. Da dentro la sessione di Patrick invece:
+>
+> ```js
+> const r = await fetch('https://www.instagram.com/web/search/topsearch/?context=blended&query=' +
+>   encodeURIComponent(nome), {headers:{'x-requested-with':'XMLHttpRequest'}, credentials:'include'});
+> (await r.json()).users.map(u => u.user.username + ' :: ' + u.user.full_name);
+> ```
+>
+> Cerca **per nome, non per zona**: «toelettatura lecco» funziona perché il
+> nome del profilo contiene la città, «toelettatura treviglio» no. Serve
+> soprattutto a trasformare in handle i nomi presi dagli elenchi di categoria
+> (Pagine Gialle, maneggionline, toelettatori.it). L'API `web_profile_info`
+> risponde 429: non usarla. Le pagine degli hashtag si disegnano nel browser e
+> dal sorgente non esce nessun profilo.
 
 ### 3. Il sito lo verifica lo script, non chi scrive la lista
 
