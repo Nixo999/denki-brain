@@ -90,11 +90,16 @@ Se si è toccato un progetto: una riga in `01-Coding/registro-interventi.md` con
 chi, quando, progetto, repository e **quale database**. Quella colonna è il
 motivo per cui il registro esiste.
 
-## 7. Indice
+## 7. Indice, e `~/.claude/` allineato
 
 ```bash
 python3 01-Coding/strumenti/genera-indice.py
+python3 01-Coding/strumenti/installa-macchina.py --check
 ```
+
+Il secondo dice se protocollo, comandi, agente e skill sulla macchina sono
+indietro rispetto al vault: `~/.claude/` è locale e il `git pull` non lo tocca.
+Se sono indietro, si rilancia senza `--check`.
 
 Riscrive `indice.md` e stampa i buchi: `riga:` mancanti, `verificato:` scaduti,
 link rotti, progetti attivi fuori dalla tabella. **I buchi si guardano.** Quello

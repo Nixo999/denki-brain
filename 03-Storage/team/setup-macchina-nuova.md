@@ -1,8 +1,9 @@
 ---
 riga: Scritto per il MacBook Air di Patrick, ma vale per qualunque macchina nuova.
 type: area
-updated: 2026-09-06
-source: claude
+updated: 2026-09-10
+source: denkicode
+verificato: 2026-09-10
 ---
 
 # Mettere in piedi una macchina nuova
@@ -355,6 +356,27 @@ chi siamo, cosa stiamo facendo e quanto ci devono. A Patrick basta:
 
 > «Sono Patrick. Leggi il CLAUDE.md e dimmi a che punto siamo.»
 
+## 7-quinquies. `~/.claude/` — un comando, non una copia a mano
+
+```bash
+python3 ~/lavoro/denki-brain/01-Coding/strumenti/installa-macchina.py
+```
+
+Scrive sulla macchina i file che git non porta, prendendoli dalle copie
+canoniche del vault: il protocollo in `~/.claude/CLAUDE.md`, l'agente
+`operatore`, i nove comandi e le skill nostre. Con `--check` dice cosa è
+indietro senza toccare niente.
+
+**Non tocca niente di terze parti**: plugin, skill di design e `settings.json`
+restano come sono.
+
+Serve su una macchina nuova, ma anche su una vecchia: `~/.claude/` è locale e
+non si aggiorna col `git pull`. Il 10 settembre 2026 lo script ha trovato
+**cinque comandi indietro** sul Mac di Nicola, riscritti nel vault la mattina e
+mai ricopiati. Finché era un passaggio a mano restava indietro, come la firma
+nel footer. Si rilancia dopo ogni `git pull` che tocca `.claude/` o
+`03-Storage/sistemi/`.
+
 ## 7-quater. Il MacBook di Nicola — tutto in `~/lavoro`
 
 Messo in piedi da zero il **6 settembre 2026**, partendo da un Mac senza
@@ -375,9 +397,9 @@ Vault e repo di codice stanno **tutti in `~/lavoro`**, e ogni cartella si chiama
 | Push verso `origin` | ✅ **verificato**, non dedotto |
 | Obsidian | ✅ installato |
 | Claude Code | ✅ app desktop **e** CLI (`~/.local/bin/claude`) — la CLI serve per `claude plugin`, che nell'app non c'è |
-| Protocollo, comandi, skill | ✅ `~/.claude/CLAUDE.md` ricreato da [[claude-md-globale]], i 9 comandi e 15 skill copiati a livello di account |
+| Protocollo, comandi, skill | ✅ installati da `installa-macchina.py` (vedi 7-quinquies), non più a mano |
 | Plugin e marketplace | ✅ tutti e cinque, i tre marketplace di [[plugin-claude-code]], `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` |
-| `processo-siti` | 🟡 **ricostruita**, non l'originale — da confrontare col PC Windows |
+| `processo-siti` | ✅ riscritta il 10 settembre e **versionata** in `.claude/skills/`: direttore/operatore, starter, essenza. La ricostruzione vecchia non serve più |
 | `.env` dei due gestionali | 🟡 predisposti e **vuoti**: chiavi da mettere a mano |
 | MCP (Apify, Figma, Tella) | ❌ non agganciati — account e chiavi personali |
 | `temurin@21` | ❌ manca, serve solo per l'APK Android |

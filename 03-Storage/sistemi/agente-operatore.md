@@ -18,7 +18,7 @@ sta nel contesto dell'operatore, non del direttore, che spende quaranta righe di
 brief e ne legge dieci di rapporto. Vedi [[processo-siti]] e
 [[2026-09-10-direttore-operatore]].
 
----
+<!-- INIZIO FILE LOCALE — installa-macchina.py copia tutto quello che sta sotto -->
 
 ---
 name: operatore

@@ -17,6 +17,8 @@ tags: [protocollo, setup, claude]
 > macchina si riscrive con i percorsi veri di quella macchina. Non si aggiunge
 > una nota sotto che dice «là però è diverso»: si corregge la tabella.
 
+<!-- INIZIO FILE LOCALE — installa-macchina.py copia tutto quello che sta sotto -->
+
 # Trevis — protocollo base DenkiCode
 
 Chi parla è **Nicola Larezza** o **Patrick Sappa**, co-founder di DenkiCode
