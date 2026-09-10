@@ -145,6 +145,16 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 - **`file://` non è il sito**: aperto come istantanea statica (URL `data:`) non
   gira JS e non carica le immagini relative. Si riapre dal server prima di
   concludere che qualcosa è rotto. ([[sito-fiftynine]])
+- **A pane nascosto `getBoundingClientRect` restituisce il box già scalato
+  dall'intro** (0,96 di un'entrata `scale`) e sembra un disallineamento di
+  griglia. La geometria di un hero con entrata si misura a intro finita, o in
+  Brave via CDP. Trovata dall'operatore su Opus. ([[sito-pizzeria-lobidu]])
+- **Brave via CDP serve le immagini dalla cache di `python3 -m http.server`**:
+  una foto ricampionata compare vecchia nella cattura. →
+  `Network.setCacheDisabled` prima di `Page.navigate`. ([[sito-pizzeria-lobidu]])
+- **`elementFromPoint` dichiara vuoto ogni slot fuori dal viewport**: un
+  mosaico a una colonna si verifica scorrendo slot per slot, non da fermo.
+  ([[sito-pizzeria-lobidu]])
 
 ## Immagini e `sips`
 
@@ -166,6 +176,16 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 - **Un mosaico con la prima cella a tutta larghezza lascia un buco quando le
   celle scendono a due.** → `.mosaico:has(> :nth-child(3)) .foto:first-child`,
   cosi' la regola vale solo quando c'e' abbastanza da riempire la riga.
+- **I ritagli con Vision da anteprime Instagram a 640 px non reggono**, e
+  sopra una meccanica di orbita e parallasse il bordo sfrangiato si vede
+  ancora di più. Pagata su [[sito-da-caterina]] v1, **ripagata identica** su
+  [[sito-pizzeria-lobidu]] giro 1 («fatte malissimo»). → foto intere col loro
+  sfondo, in cornice, `object-fit: cover`, ferme. Un ritaglio si fa solo da
+  una sorgente ≥ 1200 px con soggetto netto.
+- **Un gradiente d'ambiente dipinto su una scatola con `max-width` si taglia
+  di netto al suo bordo** (salto di 10 sul blu a x=1412 su 1440). → il fondo
+  sull'elemento a tutta finestra, il contenuto tenuto a misura con
+  `padding-inline: max(var(--pad), (100% - 1240px) / 2)`. ([[sito-pizzeria-lobidu]])
 
 ## GSAP e motion
 

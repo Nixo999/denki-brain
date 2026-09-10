@@ -1,7 +1,7 @@
 ---
 riga: Pizzeria Lobidù, pizzeria siciliana, Via IV Novembre 13, 21049 Tradate (VA).
 type: progetto
-status: in-costruzione
+status: bozza-locale
 cliente: "[[pizzeria-lobidu]]"
 created: 2026-09-10
 updated: 2026-09-10
@@ -51,10 +51,33 @@ Sicilia a casa tua (tavolo, asporto, consegna, cannolo, birre) · recensioni ·
 dove e orari · footer con firma. Pagina di decisione di impeccable **saltata**:
 la direzione è imposta dal brief (riferimento esplicito di Nicola).
 
+## Com'è andata, in tre giri
+
+**Giro 1 bocciato** da Nicola: «le foto che fluttuano nella hero sono fatte
+malissimo, ritagliate giuste, usa il loro sfondo, non le voglio più che si
+muovano». Ritagli con Vision da anteprime a 640 px sopra la meccanica di
+Tarilli: la falla di Caterina v1 ripagata (in [[trappole]]). Operatore
+fermato prima del rapporto.
+
+**Giro 2**: niente ritagli, `assets/tondi/` cancellata, GSAP tolto. Hero a
+griglia: testo a sinistra, tre foto intere in cornice a destra (una grande,
+due piccole), entrata una volta sola e poi `transform: none`. Sotto i 760 le
+foto in flusso sotto i CTA. Commit `9f686ca`.
+
+**Giro 3**, finish review `fix` con otto punti, tutti applicati: pizza intera
+(salsiccia e cipolla) al posto del macro nell'hero, galleria densa con celle
+alte su due righe, via la cella «zucca e porcini» (ingredienti inventati),
+filetti gialli e rosso contato, alone unico sull'hero, «Lobidù» testo anche a
+375, hero 5/7. Commit `9c30e33`. Misure: overflow 0 su sei larghezze, fondo
+foto hero 786 a 1440×900, galleria 0 slot vuoti, contrasti da 5,5 a 15,1,
+console vuota. `DESIGN.md` dal documenter.
+
 ## Stato
 
-⬜ Giro 1 in corso (operatore su Opus). ⬜ Finish review. ⬜ Repo e Netlify.
-⬜ Orari da confermare col titolare. ⬜ DM di risposta: Patrick.
+✅ Sito costruito e misurato, commit locale `9c30e33`. ⬜ Repo remota e
+Netlify: in attesa del via di Nicola. ⬜ Safari su iPhone. ⬜ Orari da
+confermare col titolare. ⬜ Due sorgenti a 360 px (forno, melanzane): da
+chiedere le foto originali. ⬜ DM di risposta: Patrick.
 
 ## Collegamenti
 
