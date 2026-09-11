@@ -6,7 +6,7 @@ client: sebastian-torres
 stack: [react-19, typescript, vite-8, tailwind-3, react-router-7, tanstack-query, supabase, capacitor-6]
 started: 2026-07-20
 deadline: TODO
-updated: 2026-08-29
+updated: 2026-09-11
 source: repo
 valore: 2400
 incassato: 400
@@ -35,6 +35,9 @@ workspace paga a OperO** (`lib/pianoWorkspace.ts`, listino datato in
 Seba**. Chi le tocca sta toccando il suo conto economico.
 
 **Repo**: `github.com/Nixo999/opero-sito` (npm: `opero-core`)
+**OperO 1**: `github.com/SebastianOperO/sebapp-bolanos`, clonato in
+`~/lavoro/sebapp-bolanos`. **Sola lettura**: è la specifica, e il suo `types.ts`
+è l'unico posto dove lo schema di produzione è scritto
 **Memoria tecnica**: `CLAUDE.md` + `docs/handoff.md` nel repo — 4.400 righe di
 storico. Leggerli prima di toccare qualsiasi cosa.
 
@@ -83,13 +86,25 @@ database:
 | **Visualizer** | Lavori, conti, disponibilità — sola lettura |
 | **Admin** | Utenti, tipo lavoratore, Plus, aziende, cruscotto workspace |
 
-**Non iniziati**: lavoratori provvisori, **migrazione dello storico**, app
-native compilate.
+**Non iniziati**: lavoratori provvisori, app native compilate. La **migrazione
+dello storico** ha il piano e la mappatura, non ha l'accesso ai dati.
 
 > [!warning] La migrazione dello storico è il rischio numero uno
-> Il piano la dava chiusa a fine settimana 1. Non è mai stata toccata, ed è
-> l'unico pezzo che al go-live non si può rimandare: senza storico il cliente
-> perde i dati di anni. Lo schema nuovo copre 31 tabelle sulle 45 di produzione.
+> Il piano la dava chiusa a fine settimana 1. È l'unico pezzo che al go-live non
+> si può rimandare. **Piano e mappatura esistono dall'11 settembre 2026**, in
+> `docs/migrazione-storico.md` del repo: 44 tabelle di OperO 1 contro 38 di
+> OperO 2, 25 in comune, nove copiabili così come sono.
+>
+> Due correzioni a quello che si diceva qui: **non ci sono «dati di anni»** (le
+> migrazioni di OperO 1 partono dal 16 aprile 2026, quindi al massimo cinque
+> mesi), e **Seba vuole solo da settembre in poi** (11/09/2026), prima di quella
+> data non gli interessa.
+>
+> ⛔ **Il blocco non è più tecnico, è l'accesso.** Il progetto Supabase di
+> produzione è ancora agganciato a **Lovable** e nessuno di noi ha mai avuto la
+> password: senza una via d'accesso ai dati non esiste nessun import. Le due
+> strade, e il prezzo della seconda (tutto l'ufficio resetta la password), stanno
+> nel §2 di quel documento.
 
 ## Il piano consegnato vs la realtà
 
@@ -147,7 +162,7 @@ misurando con `getComputedStyle` / `getBoundingClientRect`. Vedi [[convenzioni]]
 - [ ] Incassare i **2.000 €** residui — ricevuta su Patrick
 - [ ] **Quotare l'XML SDI** come lavoro nuovo, non regalarlo
 - [ ] **Correggere il PDF consegnato** al cliente sulle funzioni rinunciate
-- [ ] Migrazione dello storico: almeno stimarla
+- [ ] **Migrazione dello storico: chiedere a Seba l'accesso al database.** È l'unica cosa che blocca, piano e mappatura sono scritti
 - [ ] Lavoratori provvisori (4 tabelle + edge function)
 - [ ] Applicare la migrazione `20260826110000` (trigger finestra)
 - [ ] Decidere una data di go-live e dirla al cliente

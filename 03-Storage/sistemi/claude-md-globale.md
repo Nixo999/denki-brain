@@ -100,7 +100,7 @@ La cartella si chiama **come il repo**.
 | second brain | `~/lavoro/denki-brain` | `main` | `Nixo999/denki-brain` |
 | OperO | `~/lavoro/opero-sito` | `main` | `Nixo999/opero-sito` (privato) |
 | DenkiShift | `~/lavoro/smooth-duty` | `main` | `Nixo999/smooth-duty` |
-| OperO 1 (specifica, sola lettura) | `~/lavoro/sebapp-bolanos` | `origin/main` | da confermare |
+| OperO 1 (specifica, sola lettura) | `~/lavoro/sebapp-bolanos` | `origin/main` | `SebastianOperO/sebapp-bolanos` |
 | cococat | `~/lavoro/cococat-site` | — | da confermare |
 
 Il prodotto di `smooth-duty` si chiama **DenkiShift**, il pacchetto npm `turni`.

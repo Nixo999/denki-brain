@@ -43,6 +43,10 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
 
 ## Cosa è bloccato, e perché
 
+- **La migrazione dello storico di OperO è ferma sull'accesso** (11/09/2026).
+  Piano e mappatura campo-per-campo esistono nel repo; il database di OperO 1 è
+  ancora agganciato a Lovable e nessuno di noi ha la password. Va chiesto a Seba
+  → [[opero]]
 - **DenkiShift non è installabile in produzione.** Dimostrabile, non vendibile
   con una data → [[denkishift]]
 - **La produzione resta fuori** su tutti e due i prodotti. Patrick applica lo
