@@ -43,10 +43,14 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
 
 ## Cosa è bloccato, e perché
 
-- **La migrazione dello storico di OperO è ferma sull'accesso** (11/09/2026).
-  Piano e mappatura campo-per-campo esistono nel repo; il database di OperO 1 è
-  ancora agganciato a Lovable e nessuno di noi ha la password. Va chiesto a Seba
-  → [[opero]]
+- **La migrazione dello storico di OperO è ferma sull'accesso, e solo su quello**
+  (11/09/2026). Piano, mappatura campo-per-campo, SQL del censimento verificato
+  contro lo schema vero e script di estrazione sono nel repo e pronti a partire.
+  Manca una via d'accesso al database di OperO 1: **l'MCP di Lovable non è la
+  risposta**, darebbe i progetti di Nicola e `sebapp-bolanos` sta sotto l'account
+  di Seba. Tre forme della stessa domanda a lui: invito in sola lettura al
+  progetto Supabase, un login di segreteria, o il segreto della funzione di
+  backup che OperO 1 ha già dentro → [[opero]]
 - **DenkiShift non è installabile in produzione.** Dimostrabile, non vendibile
   con una data → [[denkishift]]
 - **La produzione resta fuori** su tutti e due i prodotti. Patrick applica lo
