@@ -173,6 +173,9 @@ servizio o non c'è, il bottone diventa «Scrivimi su Instagram». Metro: NN/g
 sito diventa suo: le descrizioni dei cinque servizi e la sequenza del lavoro
 in acqua (primo contatto, giubbotto, nuoto, riporto) sono scritte da noi
 sulla base della bio e delle foto, non dette da lei.
+✅ Copy inserito e ripubblicato alle 10:5x: nessuna frase vecchia rimasta,
+bottone «Scrivimi su Instagram» (in barra solo «Instagram» sotto i 480, dove
+si sovrapponeva al marchio), `og:description` allineata alla meta description.
 
 ⬜ Safari su iPhone. ⬜ Il DM con il link è di Patrick. ⬜ Scheda cliente.
 ⬜ Safari su iPhone. ⬜ Scheda cliente in `02-Sales/clienti/`.

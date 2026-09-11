@@ -265,6 +265,12 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## CSS e layout
 
+- **Un bottone più lungo in barra non dà overflow di pagina: si sovrappone
+  al marchio.** «Scrivimi su Instagram» in nav copriva «Mikuma.Dogs» di 50 px
+  a 320 e `scrollWidth` restava uguale a `clientWidth`, perché il marchio ha
+  `overflow: visible`. → il controllo della barra è la distanza fra il bordo
+  destro del nome e il bordo sinistro del bottone, non l'overflow; sotto i
+  480 l'etichetta si accorcia. ([[sito-mikuma-dogs]])
 - **Il font di ripiego cambia la larghezza del titolo, e l'apertura parte dal
   posto sbagliato.** Archivo ripiega su Helvetica Neue, dove «MIKUMA DOGS»
   misura il 19% in piu': l'h1 nasceva su due righe, cinghia e fibbia si
