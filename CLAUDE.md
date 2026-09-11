@@ -148,6 +148,7 @@ progetto mancante, non inventa a che punto è.
 | [[sito-nails-mania]] | [[nails-mania]] | 🟡 DM sul banco | Orari e servizi da confermare con Lory, `nailsmania.net` libero |
 | [[sito-osteria-tarilli]] | Osteria Tarilli, Comano (TI) | 🟡 Bozza online con noindex | Orari da confermare col titolare |
 | [[sito-pizzeria-lobidu]] | Pizzeria Lobidù | 🟡 Bozza non commissionata | Brief giro 1 |
+| [[sito-mikuma-dogs]] | Martina Carneli, Como | 🟡 Bozza pronta, non pubblicata | Netlify e repo in attesa del via, scheda cliente assente |
 | [[sito-da-caterina]] | Da Caterina, Olgiate Olona | 🟡 Bozza, lead ancora freddo | Nessuna scheda cliente |
 | [[sito-castiglione]] | [[castiglione-furniture]] | 🟠 Ferma dal 30 agosto | `TODO`: verificare se è online |
 | [[sito-ngbarber]] | [[ng-barber]] | 🟠 Ferma dal 1 settembre | Due repo divergenti, sorgente su repo **pubblica** |

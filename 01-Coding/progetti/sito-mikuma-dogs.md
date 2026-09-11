@@ -83,6 +83,36 @@ Undici anteprime a 640 px in `assets/img/`, scaricate l'11 settembre: gli URL
 Instagram scadono. **A 640 px non reggono a tutta larghezza**: si usano in
 cornice, mai fondo pagina. Le copertine dei reel sono 360×640, verticali.
 
+## Come è venuto — due giri, 11 settembre
+
+Impeccable seed **`ee8ad76c`**, indice assegnato **5**, una sola famiglia di
+caratteri (Archivo su due larghezze dell'asse `wdth`). Sei sezioni: apertura,
+chi ti allena, cosa faccio, la linea dell'acqua, e poi la terra, si parte da un
+DM. Il **cartello del reel è diventato il titolo di sezione**, e le foto sono
+state ritagliate per togliere la fascia impressa: senza quel taglio il sito
+sembra uno screenshot di Instagram.
+
+Motion: l'apertura è la linea che scende e scopre il titolo; la luce dell'acqua
+viene dall'ora di chi guarda; la superficie si increspa in loop; il momento
+autoriale è uno solo, il ritratto tagliato dalla linea di galleggiamento che
+sale con lo scroll finché il cane è dentro.
+
+**Giro 2**, chiesto dal direttore sulle catture vere: «e poi la terra» era due
+foto e un buco nero alto quanto lo schermo, ricomposta su tre pannelli allineati
+al bordo basso; la foto in vetta mostrava due persone in costume con le loro
+cose sparse ed è uscita, resta il solo paesaggio; la colonna destra di «chi ti
+allena» stava a 172px invece di 380, la traccia era `auto`.
+
+Misurato: overflow 0 su diciotto larghezze da 320 a 1440, bordi delle media
+query compresi; contrasti AA, con l'arancione del cartello abbassato a `#D25C0D`
+solo lì; console pulita; pagina completa senza JS e in `?cattura`.
+
+**Il copy in prima persona è nostro, non suo.** Sono fatti verificati, ma le
+frasi le abbiamo scritte noi: se il sito diventa suo, glielo si fa rileggere.
+
+⬜ Netlify e repo remota: in attesa del via. ⬜ Safari su iPhone.
+⬜ Scheda cliente in `02-Sales/clienti/`.
+
 ## Collegamenti
 
 [[processo-siti]] · [[essenza-e-motion]] · [[trappole]] · [[registro-interventi]]
