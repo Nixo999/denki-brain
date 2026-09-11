@@ -1,7 +1,7 @@
 ---
 riga: Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
 type: area
-updated: 2026-08-30
+updated: 2026-09-11
 source: claude
 prodotto: denkishift
 ---
@@ -207,6 +207,15 @@ in [[metriche]]:
 - Fra **5% e 10%** → in linea col target di 4 su 50, si continua
 - Sopra il **10%** → segmento buono: rifallo sui comuni accanto prima di
   cambiare
+
+
+## Regole date a voce
+
+Scritte da `regola.py` nel momento in cui sono state dette.
+
+### 11/09/2026 — Patrick: «gli script e i ganci devono essere inerenti alla tipologia di servizio per cui li contattiamo e anche le aziende devono essere ad alta conversione in base al servizio che stiamo offrendo»
+
+una lista per prodotto: siti, DenkiShift e ricerca di mercato hanno target, gancio e testo diversi, e mescolarli fa scrivere la cosa sbagliata alla persona sbagliata
 
 ## Collegamenti
 
