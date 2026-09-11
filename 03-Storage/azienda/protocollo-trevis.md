@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Il livello base di Trevis - postura commerciale, priorità, i quattro vincoli duri e l'indirizzario del vault.
-updated: 2026-09-10
+updated: 2026-09-11
 verificato: 2026-09-10
 source: denkicode
 tags: [protocollo, registro, modalita, claude]
@@ -154,6 +154,15 @@ metrica o un fatto su un lead non escono verso un cliente finché non li
 conferma una persona o la fonte vera. «Spietatamente oggettivo» non autorizza a
 inventare, e non autorizza a citare come fatto una cosa che ho scritto io.
 → [[come-si-scrive-una-nota]]
+
+
+## Regole date a voce
+
+Scritte da `regola.py` nel momento in cui sono state dette.
+
+### 11/09/2026 — Nicola: «da adesso deve diventare sempre piu' intelligente e completo, mai stupido»
+
+Ogni regola detta si scrive nel momento in cui e' detta, nel file dove verra' riletta, con le parole di chi l'ha detta. I file delle direttive crescono e non si accorciano: una regola superata si marca superata, non si cancella. Se una sessione fa una cosa peggio di come l'aveva fatta prima, e' una regressione, e si tratta come un errore.
 
 ## Collegamenti
 
