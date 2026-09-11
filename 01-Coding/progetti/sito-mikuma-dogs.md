@@ -158,6 +158,15 @@ via di Nicola («mettilo online con netlify»). Sito `mikumadogs`, team
 `denkicode`, deploy dal CLI. Tre sbarramenti verificati con `curl`: `meta
 robots`, `X-Robots-Tag`, `robots.txt`. CSS con `must-revalidate`.
 ✅ Repo `Nixo999/mikuma-site`, privata, `main`.
+**Giro 5** (Nicola, 10:0x: «la frase su tre righe non può essere il titolo»):
+l'h1 è **MIKUMA DOGS**, su una riga da 761 in su e impilato come nel logo sul
+telefono; «Un cane che entra in acqua è un cane che si fida» scende a
+sottotitolo, un sesto del corpo del nome. L'aggancio sul nastro resta. Trovato
+per strada: il font di ripiego allargava il titolo del 19% e spostava
+l'apertura di 193 px, corretto con `size-adjust`. Ripubblicato.
+`TODO` copy: «Insegno l'obbedienza.» sotto il nastro è rimasto tronco dopo il
+taglio della coda sull'acqua.
+
 ⬜ Safari su iPhone. ⬜ Il DM con il link è di Patrick. ⬜ Scheda cliente.
 ⬜ Safari su iPhone. ⬜ Scheda cliente in `02-Sales/clienti/`.
 

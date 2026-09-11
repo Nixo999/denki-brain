@@ -265,6 +265,14 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## CSS e layout
 
+- **Il font di ripiego cambia la larghezza del titolo, e l'apertura parte dal
+  posto sbagliato.** Archivo ripiega su Helvetica Neue, dove «MIKUMA DOGS»
+  misura il 19% in piu': l'h1 nasceva su due righe, cinghia e fibbia si
+  animavano 193 px sotto il posto loro e poi saltavano su all'arrivo del font.
+  → `@font-face` di ripiego con `local()` e `size-adjust`, solo sul display,
+  e la verifica si fa anche con `fonts.gstatic.com` bloccato: le posizioni
+  devono coincidere. `size-adjust` manca prima di Safari 17. ([[sito-mikuma-dogs]])
+
 - **`ease-[var(--x)]` in Tailwind 3 è ambiguo** («matches multiple utilities»)
   e la classe non viene generata. → `transitionTimingFunction` nominata nel
   config (`ease-fluid`). Idem per le durate: `transitionDuration` con i nomi
