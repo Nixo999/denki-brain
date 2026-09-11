@@ -102,6 +102,39 @@ Per DenkiShift il segnale è questo:
 che 100 presi a caso: è esattamente la differenza fra chiamare e "parlare col
 vuoto".
 
+## «Non ha il sito» — cosa vuol dire davvero
+
+Corretto l'11 settembre 2026, dopo «alcuni della lista hanno già il sito».
+Misurato sulla lista del 10 settembre, 50 righe:
+
+| | righe |
+|---|---|
+| dominio indovinato **vivo**, senza prova che sia di un altro | 12 |
+| già su Fresha, Treatwell o simili | 15 |
+| motori che hanno risposto 429 o 403 | 5 |
+
+Da qui tre regole, e le fa rispettare `02-Sales/strumenti/controlla-lista.py`.
+
+**1. Il criterio è quello del titolare, non il nostro.** Noi cercavamo «nessun
+dominio suo». Lui, se ha una pagina Fresha con il suo nome, le sue foto e i
+suoi orari, pensa di avere un sito. Se il messaggio gli dice «non avete un
+sito» ti corregge, e la trattativa muore sulla prima riga. Quando c'è una
+piattaforma, **il messaggio la nomina**: «vi trovo su Fresha, ma un sito vostro
+no» apre invece di chiudere.
+
+**2. Un nome uguale non è lo stesso negozio.** `verifica-sito.py` indovina i
+domini dal nome, e quando uno risponde non sa di chi è. «Bella Hair Studio» a
+Saronno contro `bellahairstudio.ch`, che sta a Kefikon in Svizzera. Se un
+dominio indovinato risponde, **si apre e si scrive perché non è loro** —
+indirizzo diverso, telefono diverso, altra città. Senza quella riga, la lista
+dice «non ha sito» senza saperlo.
+
+**3. Ricerca fallita non è ricerca negativa.** DuckDuckGo risponde 403 dopo una
+cinquantina di richieste e Brave 429 dopo una decina. Quando succede, quella
+riga **non è verificata**: si rilancia più tardi o esce dalla lista. Scrivere
+«nessun dominio trovato» dopo un 429 è dedurre, ed è la cosa che il metodo
+vieta dal 30 agosto.
+
 ## Il procedimento — mezz'ora
 
 1. **Una query per volta** su Google Maps: `<segmento> <comune>`.

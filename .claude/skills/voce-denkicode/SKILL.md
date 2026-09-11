@@ -53,6 +53,56 @@ un ritmo decorativo: resta. La differenza è se le tre voci **fanno un
 lavoro** — un contrasto, un numero — o se **contano cose** solo per
 completezza, come i tre «non deve».
 
+## Prima della blacklist: cosa deve fare il testo
+
+Tutto quello che c'è sotto dice cosa **non** scrivere. Non basta: un testo che
+supera ogni divieto e non ha un lavoro da fare esce sconnesso, e si vede.
+Aggiunto l'11 settembre 2026, dopo «o spiega troppo o troppo poco» e «mette
+frasi senza senso».
+
+**Prima di scrivere una riga, dichiara due cose a te stesso:**
+
+1. **Chi legge, e cosa deve poter fare dopo aver letto.** Un DM: capire chi sei
+   e rispondere sì o no. Il copy di una sezione: sapere se quel servizio è per
+   lui. Se non sai rispondere, non è ancora ora di scrivere.
+2. **Il fatto specifico che stai portando.** Uno per paragrafo. Se un paragrafo
+   non porta un fatto nuovo, si cancella: è quello il «spiega troppo».
+
+**«Troppo poco» ha una misura**: se chi legge deve indovinare qualcosa per
+capire la frase, manca un pezzo. Un DM che dice «vi preparo una schermata»
+senza dire che è gratis e senza impegno costringe a chiederlo, e nessuno chiede.
+
+**Le frasi devono seguirsi.** Togliere «quindi» e «inoltre» è giusto, ma il
+legame fra due frasi deve restare vero anche senza la parola che lo annunciava.
+Rileggi ogni coppia di frasi consecutive e chiediti: la seconda risponde alla
+prima, o è atterrata lì? Se è atterrata lì, il testo sconnesso nasce qui, non
+dalla blacklist.
+
+**Un registro solo per messaggio.** Se apri col «Lei», resti al «Lei» fino alla
+fine; se l'attività ha due titolari e apri col «Voi», resti al «Voi». Mischiarli
+dentro lo stesso messaggio è il difetto più visibile e il più facile da evitare.
+
+## Il muro: quello che è nostro non esce mai
+
+Nel testo che legge un cliente **non compare niente del nostro processo**. Mai.
+
+Vietati in pagina e nei messaggi: da dove abbiamo preso le foto, che gli orari
+vengono da Google, che una cosa è da confermare, `TODO`, note di fonte, nomi di
+skill, il fatto che il sito è una bozza non commissionata, i numeri delle
+verifiche. Sul sito di Lobidù c'era scritto in pagina da dove venivano le
+immagini e che gli orari non erano del locale: Nicola, «non devi mai scrivere
+robe del genere sul sito».
+
+Al loro posto va **l'informazione utile, scritta come la scriverebbe il
+titolare**. Non «orari da Google, non confermati» ma «Martedì chiuso. Per
+ordini, 0331 386967».
+
+⚠️ **Non cambia la regola che non si inventa niente.** Il dato non confermato
+resta non confermato: la fonte e il `TODO` si scrivono nel `PRODUCT.md` del
+progetto e nella nota del vault, dove li legge chi lavora. Spariscono dalla
+pagina, non dalla nostra testa. Vedi
+[[2026-09-11-niente-note-di-fonte-in-pagina]].
+
 ## Un fatto prima dell'aggettivo
 
 Non "un sito professionale e moderno", ma "un sito che carica in 2 secondi e
@@ -61,11 +111,16 @@ o non c'è.
 
 ## Come scrive davvero chi vende da telefono
 
-Un DM o un WhatsApp vero è scritto in fretta: frasi corte, qualche minuscola
-dopo un punto, punteggiatura imperfetta. Non è sciatteria voluta: è l'opposto
-della forma pulita che un LLM produce di default. Non vale per le email
-formali o il PDF dei gestionali, dove il registro resta pulito — lì il tell
-non è lo stile informale, resta comunque la blacklist sopra.
+Frasi corte, dirette, senza preamboli. Un DM vero è scritto di fretta **nel
+ritmo**, non nella grammatica.
+
+⚠️ **Corretto l'11 settembre 2026.** Qui c'era scritto «punteggiatura
+imperfetta», e quella riga ha fatto danni: Nicola, testuale, «sembra un bambino
+intelligente che non sa mettere la punteggiatura». La punteggiatura è **sempre
+corretta**. Un venditore che scrive di fretta manda frasi brevi, non frasi
+sgrammaticate: la fretta si vede nella lunghezza, mai negli errori. Un errore
+di punteggiatura non ti fa sembrare umano, ti fa sembrare sciatto, e chi legge
+decide se affidarti il suo sito in base a come scrivi.
 
 ## Dove si applica
 
@@ -89,6 +144,14 @@ Non si consegna un testo cliente senza questa scansione, riga per riga:
 - [ ] Nessuna frase tenuta insieme da due o più "e": si può spezzare in due?
 - [ ] Zero asterischi o markdown nel testo pronto per l'invio
 - [ ] Il primo elemento di ogni paragrafo è un fatto, non un aggettivo
+- [ ] Punteggiatura **corretta**, sempre: virgole al posto giusto, maiuscole
+      dopo il punto
+- [ ] Ogni coppia di frasi consecutive si tiene: la seconda risponde alla prima
+- [ ] Un registro solo: o Lei o Voi, dall'inizio alla fine
+- [ ] Ogni paragrafo porta un fatto nuovo. Se non lo porta, si cancella
+- [ ] Chi legge sa cosa fare dopo, senza doverlo chiedere
+- [ ] **Zero tracce del nostro processo**: niente fonti, niente TODO, niente
+      «da confermare», niente nomi di strumenti
 - [ ] Riletto ad alta voce: suona come parlerebbe Patrick, o come
       risponderebbe un assistente?
 
