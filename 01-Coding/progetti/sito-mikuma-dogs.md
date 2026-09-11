@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza per Martina Carneli (mikuma.dogs), istruttrice cinofila a Como - sei giri bocciati, si riparte dal passo 2 col mondo 'il bianco e il nero'.
+riga: Online su mikumadogs.netlify.app per Martina Carneli (mikuma.dogs), Como - giro 7 'il bianco e il nero', logo vero, Nicola: 'mi piace molto'.
 status: attivo
 client: mikuma-dogs
 stack: html-css-js
@@ -224,6 +224,34 @@ nero ad alto contrasto con un trattamento unico.
 **Il copy dei giri 5-6 si tiene.** L'ha riscritto il direttore frase per frase
 dopo «scrivi come un bambino»: si riusa tale e quale dove la struttura nuova lo
 consente, non si rigenera.
+
+**Costruito e online, 11 settembre sera.** Seed impeccable **`68e9cbb6`**, indice
+assegnato 4, sfidante competitivo «Blue Note». Operatore di costruzione su Opus,
+poi il giro di correzione l'ho chiuso io (Fable) perche' Nicola aveva fretta.
+Nicola sul primo giro: «per il resto mi piace molto», e quattro correzioni sue,
+tutte applicate:
+
+- **il logo non si ridisegna**: in hero, in barra e in chiusura c'e' la sua
+  immagine di profilo (`logo-tondo.jpg`, 480px) ritagliata al cerchio col
+  `clip-path`. **480 px e' il tetto**: nell'hero non si mostra oltre. Il file
+  buono lo chiede Patrick a Martina quando le scrive;
+- entra **ruotando e sfumando da 0 a 100**, niente incastro delle due meta';
+- la linea di taglio e' **tutta arancione** (5 px), via la costura bianca/nera;
+- in fondo la linea **passa dietro** al marchio, non sopra.
+
+Piu' i buchi visti sulle catture: la linea che a 375 passava sopra il testo (era
+la normalizzazione su `scrollHeight`, corretta sulla scatola della pagina), le
+coppie dei contrari che sul telefono si leggevano a meta' (sotto i 900 vanno a
+capo sullo slash), il vuoto in «chi sono» e quello prima della griglia.
+
+Misurato: overflow 0 a 375 e 1440, console headless vuota su tutte e due,
+sbarramenti verificati con `curl`, CSS `?v=32` online. **`controlla-sito.py`
+da' 7/8**: il logo in bitmap ha tolto tre `<svg>` e il conteggio scende sotto
+i sei che chiede con foto piccole. E' la scelta di Nicola, non una regressione.
+
+⬜ Safari su iPhone vero: non provato. ⬜ Il rapporto dell'operatore (giro di
+fix interrotto) sta in `git stash` del repo, con un hero a colonna sola
+scartato perche' a Nicola piace quello a due colonne.
 
 ## Collegamenti
 

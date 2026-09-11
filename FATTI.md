@@ -32,8 +32,10 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
 
 ## Cosa è aperto adesso (11/09/2026)
 
-- **Mikuma Dogs** online su `mikumadogs.netlify.app`, bocciato da Nicola dopo
-  sei giri. Da rifare dal passo 2 o da lasciare: decisione sua.
+- **Mikuma Dogs** rifatto dal passo 2 col metodo nuovo e online su
+  `mikumadogs.netlify.app` (11/09 sera, giro 7 «il bianco e il nero»). Nicola:
+  «per il resto mi piace molto». Logo vero a 480 px, il file buono lo chiede
+  Patrick. Safari su iPhone non provato → [[sito-mikuma-dogs]]
 - **Lobidù** e **Da Caterina** online come bozze: zero grafica inventata,
   nessun racconto allo scroll. Sotto il livello.
 - Bozze mai proposte: DSI, Atelier Selva, Salone di Andrea, Nails Mania,
