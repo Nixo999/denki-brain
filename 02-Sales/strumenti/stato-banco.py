@@ -13,9 +13,8 @@ QUI = pathlib.Path(__file__).resolve().parent
 ATTESA = 4          # giorni lavorativi prima del recupero, come nel banco
 OGGI = datetime.date.today()
 
-# i tetti stanno nel banco: leggerli di la` evita che i due numeri divergano
-sorgente = (QUI / "banco-dm.html").read_text(encoding="utf-8")
-TETTI = dict(re.findall(r'(\w+):\s*\{[^}]*?tetto:\s*(\d+)', sorgente))
+# il tetto giornaliero non esiste piu': tolto l'11/09/2026 su richiesta di
+# Patrick, «togli il limite giornaliero». Qui restava solo per stamparlo.
 
 ACCOUNT = [("Patrick Sappa", "lista-corrente.csv"), ("DenkiCode", "lista-denkicode.csv")]
 
@@ -30,7 +29,7 @@ def lavorativi_da(iso):
                if (d + datetime.timedelta(days=n)).weekday() < 5)
 
 
-def stato(nome, file, chiave):
+def stato(nome, file):
     p = QUI / file
     if not p.exists():
         return f"{nome}: nessuna lista pubblicata ({file} non c'e')"
@@ -47,14 +46,13 @@ def stato(nome, file, chiave):
                    and not (r.get("Esito DM") or "").strip()
                    and not (rec and (r.get(rec) or "").strip())
                    and lavorativi_da(r[inv].strip()) >= ATTESA)
-    tetto = TETTI.get(chiave, "?")
-    return (f"{nome}: {da_mandare} da mandare, {oggi} partiti oggi (tetto {tetto}), "
+    return (f"{nome}: {da_mandare} da mandare, {oggi} partiti oggi, "
             f"{recuperi} recuperi maturi — {len(righe)} righe in {file}")
 
 
 print(f"Banco DM, {OGGI.isoformat()}")
-for (nome, file), chiave in zip(ACCOUNT, ("patrick", "denkicode")):
-    print(" ", stato(nome, file, chiave))
+for nome, file in ACCOUNT:
+    print(" ", stato(nome, file))
 
 # quello che il banco ha scritto nel brain (liste/contattati.csv, dall'8 settembre)
 for nome, file in (("contattati", "contattati.csv"), ("scartati perche' il sito ce l'avevano", "gia-col-sito.csv")):

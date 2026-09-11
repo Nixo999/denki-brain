@@ -40,9 +40,6 @@
           max-width:1180px;margin:0 auto;padding:0 22px 11px}
   .misure b{color:var(--testo);font-size:14px;font-variant-numeric:tabular-nums}
   .misure b.corri{color:var(--allarme)}
-  .asta{flex:1;height:5px;border-radius:99px;background:var(--bordo);overflow:hidden;min-width:80px;max-width:320px}
-  .asta i{display:block;height:100%;background:var(--accento);border-radius:99px;transition:width .35s ease}
-  .asta.piena i{background:var(--no)}
 
   /* ---------- controlli ---------- */
   button{font:inherit;font-size:13px;padding:8px 13px;border-radius:10px;
@@ -163,8 +160,7 @@
     <button id="scarica" disabled title="Il CSV con le date di invio di oggi, da rimettere nel vault">Scarica il CSV</button>
   </div>
   <div class="misure">
-    <span>oggi <b id="oggi">0</b>/<span id="tetto">65</span></span>
-    <div class="asta" id="asta"><i style="width:0"></i></div>
+    <span>oggi <b id="oggi">0</b></span>
     <span>ultima ora <b id="ora">0</b></span>
     <span>da mandare <b id="restano">0</b></span>
     <span>recuperi <b id="rec">0</b></span>
@@ -180,7 +176,6 @@
 </header>
 
 <main>
-  <div id="stop" class="stop" hidden></div>
   <div id="vecchio" class="stop" hidden>Il server sotto questa pagina è vecchio: i messaggi che segni
     restano solo in questo browser e non arrivano in <code>contattati.csv</code>. Chiudi la finestra del
     terminale e riapri il banco con <b>«Banco DM.command»</b>.</div>
@@ -205,39 +200,21 @@
    conversazione giusta e tiene il conto. L'invio resta un gesto di Patrick —
    e` la riga che separa un aiuto da una violazione delle regole di Meta. */
 
-/* I due account che scrivono. Il tetto non e` una proprieta` di Instagram ma
-   di ogni singolo account. 65 e` quello che ha retto sul profilo di Patrick il
-   3 settembre 2026, quando ne sono partiti 75 senza blocco delle azioni (vedi
-   2026-09-03-tetto-dm-65): una misura su un giorno solo, e su quel profilo li`.
-   Su DenkiCode vale la rampa del metodo — si parte da 15 e si sale di 10 al
-   giorno, alzando `tetto` qui a mano finche` non regge un regime suo.
-   ATTENZIONE: stato-banco.py legge questi due numeri da questo file con una
-   regex («tetto: <n>» dentro la voce dell'account). Chi cambia la forma di
-   queste due righe fa divergere i due conti senza che nessuno se ne accorga. */
+/* I due account che scrivono. Il tetto giornaliero non c'e` piu`: tolto
+   l'11 settembre 2026 su richiesta di Patrick — «togli il limite giornaliero»
+   (metodo-liste.md). Il contatore di quanti ne sono partiti oggi e quello
+   dell'ultima ora restano, perche` sono misure e non freni: quanti mandarne
+   lo decide lui. */
 const ACCOUNT = {
-  patrick: {
-    etichetta: "Patrick Sappa",
-    tetto: 65,
-    file: "lista-corrente.csv",
-    stop: "Sessantacinque messaggi oggi dall'account di Patrick: e` il tetto " +
-          "misurato il 3 settembre 2026, non un numero di listino. Il tool non " +
-          "spegne niente, ma oltre di qui si va a sentimento e in gioco c'e` il " +
-          "profilo con cui Patrick esiste online. Meglio riprendere domani."
-  },
-  denkicode: {
-    etichetta: "DenkiCode",
-    tetto: 15,
-    file: "lista-denkicode.csv",
-    stop: "Quindici messaggi oggi dall'account DenkiCode: e` il primo scalino " +
-          "della rampa, non una misura. Su un profilo nuovo un blocco costa piu` " +
-          "che su uno maturo. Domani si sale di dieci, alzando `tetto` nel file."
-  }
+  patrick:   {etichetta: "Patrick Sappa", file: "lista-corrente.csv"},
+  denkicode: {etichetta: "DenkiCode",     file: "lista-denkicode.csv"}
 };
 let attivo = localStorage.getItem("banco-dm-account") || "patrick";
 const att = () => ACCOUNT[attivo];
 
-/* Il ritmo conta quanto il totale: il tetto non protegge da 65 messaggi in
-   venti minuti. Sopra questa soglia il contatore dell'ultima ora si accende. */
+/* Il ritmo resta l'unica cosa che il banco segnala: sessanta messaggi in venti
+   minuti non sono la stessa cosa di sessanta in un pomeriggio. Sopra questa
+   soglia il contatore dell'ultima ora si accende, e non ferma niente. */
 const RITMO_ORA = 25;
 const ATTESA_RECUPERO = 4;        // giorni lavorativi prima del secondo messaggio
 
@@ -838,19 +815,12 @@ function disegna(){
 
   const daMandare = secchi.siti.length + secchi.denkishift.length + secchi.ricerca.length;
   document.getElementById("oggi").textContent = oggi;
-  document.getElementById("tetto").textContent = att().tetto;
   const ora = document.getElementById("ora");
   ora.textContent = ultimaOra();
   ora.classList.toggle("corri", ultimaOra() > RITMO_ORA);
   document.getElementById("restano").textContent = daMandare;
   document.getElementById("rec").textContent = secchi.recuperi.length;
   document.getElementById("cont").textContent = secchi.fatti.length;
-  const asta = document.getElementById("asta");
-  asta.firstElementChild.style.width = Math.min(100, Math.round(oggi / att().tetto * 100)) + "%";
-  asta.classList.toggle("piena", oggi >= att().tetto);
-  const stop = document.getElementById("stop");
-  stop.textContent = att().stop;
-  stop.hidden = oggi < att().tetto;
   ["siti","denkishift","ricerca","recuperi","fatti"].forEach(p =>
     document.getElementById("p-" + p).classList.toggle("attiva", p === pagina));
   misuraTutte(lista);
