@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza attesa da Martina Carneli (mikuma.dogs), istruttrice cinofila a Como - essenza, metafora della linea dell'acqua e brief del giro 1.
+riga: Bozza attesa da Martina Carneli (mikuma.dogs), istruttrice cinofila a Como - due giri bocciati da Nicola, giro 3 da capo con la stessa metafora.
 status: attivo
 client: mikuma-dogs
 stack: html-css-js
@@ -110,8 +110,21 @@ solo lì; console pulita; pagina completa senza JS e in `?cattura`.
 **Il copy in prima persona è nostro, non suo.** Sono fatti verificati, ma le
 frasi le abbiamo scritte noi: se il sito diventa suo, glielo si fa rileggere.
 
-⬜ Netlify e repo remota: in attesa del via. ⬜ Safari su iPhone.
-⬜ Scheda cliente in `02-Sales/clienti/`.
+## Bocciato, e il giro 3
+
+Nicola, alle 2:2x dell'11, sul sito in locale: «fa veramente schifo, sembra
+fatto da un bambino di due anni, rifallo. Vanno bene i colori e l'idea
+dell'acqua, ma fatto davvero male». La falla è mia: ho giudicato sulle misure
+(overflow, contrasti, console) e sulle catture spezzate, e ho fatto passare
+un'acqua fatta di righe ripetute, foto in cornici da widget, un hero a due
+colonne da template e tutto piccolo su un nero vuoto. Le misure dicono se una
+cosa è rotta, non se è bella. Contromisura: il brief del giro 3 elenca le
+sette cose sbagliate una per una, dà come metro `ngbarber-site` e
+`fiftynine-site` che stanno sul Mac, e obbliga l'operatore a guardare le sue
+catture sezione per sezione prima di riferire.
+
+⬜ Giro 3 in corso. ⬜ Netlify e repo remota: in attesa del via.
+⬜ Safari su iPhone. ⬜ Scheda cliente in `02-Sales/clienti/`.
 
 ## Collegamenti
 
