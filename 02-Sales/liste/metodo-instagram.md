@@ -1,7 +1,7 @@
 ---
 riga: Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 type: area
-updated: 2026-09-09
+updated: 2026-09-11
 source: claude
 prodotto: siti-vetrina
 stato: da-provare
@@ -280,6 +280,21 @@ Esito verifica sito | Gancio (1-6) | DM inviato (data) | Esito DM
 **Valori di `Esito DM`**, sempre gli stessi o il conto non torna:
 `Nessuna risposta` · `Risposta` · `Sì bozza` · `No` · `Non adesso` ·
 `Account sbagliato`
+
+> [!note] Dall'11 settembre 2026, con `/banco` — quattro colonne in più
+> Le liste nascono già divise per prodotto, e il banco ci costruisce le pagine:
+>
+> | Colonna | Cosa ci va |
+> |---|---|
+> | `Prodotto` | `siti`, `denkishift` o `ricerca`. È su questa che il banco divide le pagine. Se manca, la indovina dal nome della lista e poi dal gancio |
+> | `Messaggio` | il testo di quella riga, scritto su quel profilo |
+> | `Scheda` | quello che si è letto del profilo, che Patrick rilegge prima di aprire la chat |
+> | `Recupero (data)` | la scrive il banco quando parte il secondo messaggio: la riga esce dai recuperi e non si riscrive due volte |
+>
+> Il **gancio** dice la stessa cosa in corto: `1-6` sono i sei esiti del sito,
+> `T` è DenkiShift (la prova in colonna è `[verifica-turni]`), `R` è la ricerca
+> di mercato (`[verifica-azienda]`). Chi ci va dentro, per ognuna delle tre,
+> sta nel comando `/banco`.
 
 ## L'invio — le regole che proteggono l'account
 

@@ -39,8 +39,13 @@ def stato(nome, file, chiave):
     da_mandare = sum(1 for r in righe if not (r.get(inv) or "").strip()
                      and not re.match(r"scartat", (r.get("Esito DM") or "").strip(), re.I))
     oggi = sum(1 for r in righe if (r.get(inv) or "").strip() == OGGI.isoformat())
+    # dall'11/09/2026 il banco scrive la data del secondo messaggio in
+    # «Recupero (data)»: una riga recuperata non e` piu` un recupero maturo, o
+    # i due conti dicono numeri diversi sullo stesso file
+    rec = next((c for c in righe[0] if c.lower().startswith("recupero")), None) if righe else None
     recuperi = sum(1 for r in righe if (r.get(inv) or "").strip()
                    and not (r.get("Esito DM") or "").strip()
+                   and not (rec and (r.get(rec) or "").strip())
                    and lavorativi_da(r[inv].strip()) >= ATTESA)
     tetto = TETTI.get(chiave, "?")
     return (f"{nome}: {da_mandare} da mandare, {oggi} partiti oggi (tetto {tetto}), "

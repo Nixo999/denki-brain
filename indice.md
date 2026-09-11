@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **160 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **162 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -47,7 +47,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-denkicode]] — Sito di DenkiCode. È qui che sta la galleria dei lavori - il posto dove si mostra a un cliente cosa abbiamo già fatto.
 - [[sito-dsi-advertising]] — ⚠️ Sito vetrina in una pagina per D.S.I. Advertising di Piras Sebastiano, Merate (LC) - dal 1992 progetta e produce articoli promozionali per il...
 - [[sito-fiftynine]] — ⚠️ Sito vetrina in una pagina per Bar Tabacchi Fiftynine, bar tabaccheria e pizzeria in via Nazionale dei Giovi 59, Cesano Maderno (MB).
-- [[sito-mikuma-dogs]] — Bozza online su mikumadogs.netlify.app per Martina Carneli (mikuma.dogs), istruttrice cinofila a Como - quattro giri, l'acqua scartata, l'attrezzatura.
+- [[sito-mikuma-dogs]] — Bozza per Martina Carneli (mikuma.dogs), istruttrice cinofila a Como - sei giri bocciati, si riparte dal passo 2 col mondo 'il bianco e il nero'.
 - [[sito-nails-mania]] — ⚠️ Sito vetrina in una pagina per Nails Mania, centro di ricostruzione unghie mani e piedi di Lory Frosio a Seriate (BG).
 - [[sito-ngbarber]] — ⚠️ Bozza vetrina per ng-barber, riga 2 dell'anello 1-b delle liste Instagram, gancio 5.
 - [[sito-osteria-tarilli]] — ⚠️ Osteria Tarilli, Via Ronco Nuovo 2, 6949 Comano (TI), a 300 m dalla RSI.
@@ -141,6 +141,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 - [[briefing-prodotti-gabriele-edoardo]] — ⚠️ Serve a dare ai due nuovi cold caller la certezza sul prodotto - il primo dei tre Dieci di Belfort (flusso-vendita).
 - [[dm-instagram-denkishift]] — ⚠️ Il DM Instagram per DenkiShift - come si scrive, e perche' si scrive uno per profilo invece di un modello.
+- [[dm-instagram-ricerca]] — Il DM Instagram della ricerca di mercato - qui non si vende niente, si chiede il modulo, e chi risponde si qualifica da solo.
 - [[dm-instagram-vetrina]] — ⚠️ Lo manda Patrick, dal suo account personale.
 - [[email-centralino-rsa]] — ⚠️ Il caso. Su molte RSA la chiamata di Giulia non arriva al decisore - risponde un centralino che non passa nessuno e lascia un indirizzo mail.
 - [[email-presentazione-denkishift]] — ⚠️ Il testo che accompagna la presentazione (presentazione-denkishift-ms-service.pptx, 8 slide) quando un contatto chiede materiale via mail in...
@@ -230,6 +231,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-10-liste-50-30-messaggi-personalizzati]] — Ogni lista DM e' 50 siti piu' 30 DenkiShift, e ogni riga porta il suo messaggio scritto a mano.
 - [[2026-09-10-memoria-verificata]] — Il brain smette di leggersi addosso - riga obbligatoria, verificato, tre classi di memoria, core non piu' obbligatori.
 - [[2026-09-11-brain-autonomo]] — Il brain si chiude, promuove, pusha e controlla i siti da solo, perche' Patrick non sa fare niente di tutto questo.
+- [[2026-09-11-comando-banco]] — /banco apre il banco DM e costruisce le tre liste del giorno; cinque pagine, annulla l'ultimo, e per i siti la bozza si annuncia gia' fatta.
 - [[2026-09-11-direzione-da-chi-ha-letto]] — La direzione di un sito la propone un operatore che ha letto le skill, non il direttore. Scroll-telling e grafica inventata obbligatori.
 - [[2026-09-11-niente-note-di-fonte-in-pagina]] — ⚠️ Sul sito non si scrivono note di fonte: le fonti restano nei documenti interni, la pagina dice il fatto.
 

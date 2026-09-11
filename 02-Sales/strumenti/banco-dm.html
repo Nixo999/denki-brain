@@ -6,139 +6,199 @@
 <title>Banco DM — Instagram</title>
 <style>
   :root{
-    --sfondo:#0f1115; --carta:#171a21; --bordo:#252a34; --testo:#e8eaee;
-    --tenue:#98a0ae; --accento:#4f7cff; --ok:#3fb950; --allarme:#e3a008;
+    --sfondo:#0d0f13; --carta:#151922; --alto:#1b2029; --bordo:#232936; --bordo2:#303849;
+    --testo:#e9ecf1; --tenue:#98a2b3; --fioco:#6b7485;
+    --siti:#5b8cff; --denkishift:#a07cf8; --ricerca:#2bb8a3; --recuperi:#e3a008; --fatti:#8892a4;
+    --accento:var(--siti); --ok:#3fb950; --allarme:#e3a008; --no:#e0705f;
+    --raggio:14px; --ombra:0 10px 30px -18px rgba(0,0,0,.9);
   }
   @media (prefers-color-scheme: light){
-    :root{ --sfondo:#f6f7f9; --carta:#fff; --bordo:#e2e5ea; --testo:#14171c;
-           --tenue:#5d6673; --accento:#2b58e8; --ok:#1a7f37; --allarme:#9a6700; }
+    :root{ --sfondo:#f4f6f9; --carta:#fff; --alto:#f0f2f6; --bordo:#e1e5ec; --bordo2:#cdd4e0;
+           --testo:#12151b; --tenue:#59616f; --fioco:#818a99;
+           --siti:#2b58e8; --denkishift:#7442e0; --ricerca:#0d8a7a; --recuperi:#9a6700;
+           --ok:#1a7f37; --allarme:#9a6700; --no:#c9483a; --ombra:0 8px 24px -18px rgba(15,20,30,.5); }
   }
   *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
   body{margin:0;background:var(--sfondo);color:var(--testo);
-       font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
-  header{position:sticky;top:0;z-index:5;background:var(--sfondo);
-         border-bottom:1px solid var(--bordo);padding:14px 20px;
-         display:flex;gap:16px;align-items:center;flex-wrap:wrap}
-  h1{font-size:16px;margin:0;letter-spacing:.02em}
-  .conta{margin-left:auto;display:flex;gap:18px;align-items:center;font-size:13px;color:var(--tenue)}
-  .conta b{color:var(--testo);font-size:15px}
-  main{padding:20px;max-width:1100px;margin:0 auto}
-  .riga{background:var(--carta);border:1px solid var(--bordo);border-radius:12px;
-        padding:14px 16px;margin-bottom:10px;display:grid;
-        grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start}
-  .riga.fatta{opacity:.5}
-  .riga.recupero{border-color:var(--allarme)}
+       font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;
+       -webkit-font-smoothing:antialiased}
+  body[data-pagina=denkishift]{--accento:var(--denkishift)}
+  body[data-pagina=ricerca]{--accento:var(--ricerca)}
+  body[data-pagina=recuperi]{--accento:var(--recuperi)}
+  body[data-pagina=fatti]{--accento:var(--fatti)}
+
+  /* ---------- testata ---------- */
+  header{position:sticky;top:0;z-index:8;background:color-mix(in srgb,var(--sfondo) 88%,transparent);
+         backdrop-filter:saturate(1.6) blur(12px);border-bottom:1px solid var(--bordo)}
+  .testata{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:12px 22px 10px;
+           max-width:1180px;margin:0 auto}
+  .marchio{font-size:15px;font-weight:650;letter-spacing:.01em;display:flex;align-items:baseline;gap:9px}
+  .marchio small{font-weight:400;font-size:12px;color:var(--fioco)}
+  .cresci{flex:1}
+  .misure{display:flex;gap:16px;align-items:center;font-size:12.5px;color:var(--tenue);
+          max-width:1180px;margin:0 auto;padding:0 22px 11px}
+  .misure b{color:var(--testo);font-size:14px;font-variant-numeric:tabular-nums}
+  .misure b.corri{color:var(--allarme)}
+  .asta{flex:1;height:5px;border-radius:99px;background:var(--bordo);overflow:hidden;min-width:80px;max-width:320px}
+  .asta i{display:block;height:100%;background:var(--accento);border-radius:99px;transition:width .35s ease}
+  .asta.piena i{background:var(--no)}
+
+  /* ---------- controlli ---------- */
+  button{font:inherit;font-size:13px;padding:8px 13px;border-radius:10px;
+         border:1px solid var(--bordo2);background:var(--carta);color:var(--testo);cursor:pointer;
+         transition:border-color .15s,background .15s,transform .06s}
+  button:hover:not(:disabled){border-color:var(--accento)}
+  button:active:not(:disabled){transform:translateY(1px)}
+  button:disabled{opacity:.38;cursor:not-allowed}
+  button.primario{background:var(--accento);border-color:var(--accento);color:#fff;font-weight:620;
+                  padding:10px 16px;box-shadow:var(--ombra)}
+  button.primario:hover:not(:disabled){filter:brightness(1.08)}
+  button.fatto{background:var(--ok);border-color:var(--ok)}
+  button.piccolo{font-size:12.5px;padding:7px 11px;color:var(--tenue);background:transparent}
+  select,input[type=search],input[type=text]{font:inherit;font-size:13px;padding:8px 11px;border-radius:10px;
+         border:1px solid var(--bordo2);background:var(--carta);color:var(--testo)}
+  input[type=search]{width:190px}
+  input[type=search]::-webkit-search-cancel-button{filter:grayscale(1) opacity(.5)}
+  .scorciatoia{font-size:11px;color:var(--fioco);border:1px solid var(--bordo);border-radius:5px;
+               padding:0 4px;margin-left:6px;font-family:ui-monospace,monospace}
+
+  /* ---------- pagine ---------- */
+  nav.pagine{display:flex;gap:4px;max-width:1180px;margin:0 auto;padding:0 18px;overflow-x:auto}
+  nav.pagine button{border:0;background:transparent;color:var(--tenue);border-radius:0;
+                    padding:11px 13px 12px;border-bottom:2px solid transparent;font-size:13.5px;white-space:nowrap}
+  nav.pagine button:hover{color:var(--testo)}
+  nav.pagine button b{margin-left:7px;font-variant-numeric:tabular-nums;color:var(--fioco);font-weight:600}
+  nav.pagine button.attiva{color:var(--testo);font-weight:640;border-bottom-color:var(--tinta)}
+  nav.pagine button.attiva b{color:var(--tinta)}
+  #p-siti{--tinta:var(--siti)} #p-denkishift{--tinta:var(--denkishift)} #p-ricerca{--tinta:var(--ricerca)}
+  #p-recuperi{--tinta:var(--recuperi)} #p-fatti{--tinta:var(--fatti)}
+
+  main{padding:22px;max-width:1180px;margin:0 auto}
+  .nota{color:var(--tenue);font-size:13px;margin:0 0 16px;max-width:78ch}
+  .nota b{color:var(--testo)}
+  .nota a{color:var(--accento)}
+  .sezione{margin:26px 0 12px;font-size:12px;color:var(--tenue);text-transform:uppercase;
+           letter-spacing:.08em;display:flex;align-items:center;gap:10px}
+  .sezione:first-child{margin-top:0}
+  .sezione b{color:var(--testo)}
+  .sezione::after{content:"";flex:1;height:1px;background:var(--bordo)}
+
+  /* ---------- cartella ---------- */
+  .riga{background:var(--carta);border:1px solid var(--bordo);border-radius:var(--raggio);
+        padding:15px 17px;margin-bottom:11px;display:grid;
+        grid-template-columns:minmax(0,1fr) 190px;gap:16px;align-items:start;
+        transition:border-color .15s,box-shadow .15s}
+  .riga:hover{border-color:var(--bordo2)}
+  .riga.fatta{opacity:.55}
+  .riga.recupero{border-left:3px solid var(--recuperi)}
+  .riga.scartata{opacity:.6;border-style:dashed}
+  .riga.riaperta{border-color:var(--accento);box-shadow:0 0 0 1px var(--accento) inset}
+  @keyframes lampo{0%{background:color-mix(in srgb,var(--accento) 22%,var(--carta))}100%{background:var(--carta)}}
+  .riga.lampo{animation:lampo 1.6s ease-out}
   .chi{min-width:0}
-  .chi b{font-size:15px}
-  .meta{color:var(--tenue);font-size:13px;margin-top:2px}
-  .scheda{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:13px;
-          line-height:1.6;white-space:pre-line;background:rgba(127,140,170,.10);
-          border:1px solid var(--bordo)}
-  .msg{margin-top:10px;font:inherit;font-size:13.5px;line-height:1.55;color:var(--testo);
-       background:transparent;border:0;border-left:2px solid var(--bordo);
-       padding:0 0 0 12px;width:100%;resize:none;overflow:hidden;display:none}
+  .capo{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .capo b{font-size:15.5px;letter-spacing:.01em}
+  .capo a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+  .capo a:hover{border-bottom-color:var(--accento)}
+  .meta{color:var(--tenue);font-size:13px;margin-top:3px}
+  .prova{color:var(--fioco);font-size:12.5px;margin-top:5px;cursor:pointer;
+         display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .prova.tutta{-webkit-line-clamp:unset}
+  .scheda{margin-top:10px;padding:9px 12px;border-radius:10px;font-size:12.8px;line-height:1.6;
+          white-space:pre-line;background:var(--alto);border:1px solid var(--bordo);color:var(--tenue)}
+  .msg{margin-top:12px;font:inherit;font-size:13.5px;line-height:1.6;color:var(--testo);
+       background:transparent;border:0;border-left:2px solid var(--bordo);padding:2px 0 2px 14px;
+       width:100%;resize:none;overflow:hidden;display:block}
   .msg:focus{outline:none;border-left-color:var(--accento)}
   .msg:disabled{color:var(--tenue)}
-  .riga.aperta .msg{display:block}
-  .azioni{display:flex;flex-direction:column;gap:8px;align-items:stretch}
-  button{font:inherit;font-size:13px;padding:9px 14px;border-radius:8px;
-         border:1px solid var(--bordo);background:transparent;color:var(--testo);cursor:pointer}
-  button.primario{background:var(--accento);border-color:var(--accento);color:#fff;font-weight:600}
-  button:disabled{opacity:.4;cursor:not-allowed}
-  input[type=text]{font:inherit;font-size:13px;padding:8px 10px;border-radius:8px;
-                   border:1px solid var(--allarme);background:transparent;color:var(--testo);width:100%}
-  .buco{margin-top:10px;display:flex;gap:8px;align-items:center}
+  .azioni{display:flex;flex-direction:column;gap:8px;align-items:stretch;position:sticky;top:120px}
+  .buco{margin-top:11px;display:flex;gap:8px;align-items:center}
   .buco label{color:var(--allarme);font-size:12.5px;white-space:nowrap}
-  .vuoto{color:var(--tenue);text-align:center;padding:60px 20px;
-         border:2px dashed var(--bordo);border-radius:14px}
-  body.trascina .vuoto{border-color:var(--accento);color:var(--testo)}
-  body.trascina main{opacity:.6}
-  .quale{font-size:13px;color:var(--tenue)}
-  select{font:inherit;font-size:13px;padding:8px 10px;border-radius:8px;
-         border:1px solid var(--bordo);background:var(--carta);color:var(--testo)}
-  body.denkicode{--accento:#8a5cf6}
-  .conta b.corri{color:var(--allarme)}
-  .stop{background:#3a1d1d;border:1px solid #7a3030;color:#ffb4b4;
-        padding:12px 16px;border-radius:10px;margin-bottom:16px}
-  .tag{display:inline-block;font-size:11.5px;padding:2px 8px;border-radius:999px;
-       border:1px solid var(--bordo);color:var(--tenue);margin-left:6px}
-  .tag.rec{border-color:var(--allarme);color:var(--allarme)}
+  .buco input{border-color:var(--allarme);width:100%}
+  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:99px;
+       border:1px solid var(--bordo2);color:var(--tenue);letter-spacing:.02em}
+  .tag.prod{border-color:var(--tinta,var(--accento));color:var(--tinta,var(--accento))}
+  .tag.rec{border-color:var(--recuperi);color:var(--recuperi)}
   .tag.ok{border-color:var(--ok);color:var(--ok)}
-  .tag.no{border-color:#c9483a;color:#e0705f}
-  .riga.scartata{opacity:.62;border-style:dashed}
-  .contattati{margin-top:28px;border-top:1px solid var(--bordo);padding-top:14px}
-  .contattati summary{cursor:pointer;color:var(--tenue);font-size:14px;margin-bottom:12px}
-  .contattati a{color:var(--accento)}
-  button.secondario{background:transparent;color:var(--tenue);border:1px solid var(--bordo);font-size:12.5px}
-  /* Due pagine, chieste da Patrick il 9 settembre 2026: quella che guarda oggi
-     ha solo chi non ha ancora ricevuto niente; recuperi e gia` scritti stanno
-     nell'altra, cosi` non si mescolano mai. */
-  .pagine{display:flex;gap:8px;margin:0 0 16px;border-bottom:1px solid var(--bordo)}
-  .pagine button{font-size:14px;padding:10px 16px;border-radius:10px 10px 0 0;border-bottom:0;
-                 color:var(--tenue);margin-bottom:-1px}
-  .pagine button.attiva{background:var(--carta);color:var(--testo);font-weight:600;
-                        border-color:var(--bordo);border-bottom:1px solid var(--carta)}
-  .pagine button b{margin-left:6px;color:var(--accento)}
-  .nota{color:var(--tenue);font-size:13px;margin:0 0 12px}
-  .sezione{margin:22px 0 10px;font-size:12.5px;color:var(--tenue);text-transform:uppercase;letter-spacing:.06em}
-  .sezione b{color:var(--testo)}
-  .sezione a{color:var(--accento);text-transform:none;letter-spacing:0}
+  .tag.no{border-color:var(--no);color:var(--no)}
+  .tag.riaperta{border-color:var(--accento);color:var(--accento)}
+
+  /* ---------- avvisi, vuoti, brindisi ---------- */
+  .stop{background:color-mix(in srgb,var(--no) 16%,var(--sfondo));border:1px solid var(--no);
+        color:var(--testo);padding:13px 16px;border-radius:12px;margin-bottom:18px;font-size:13.5px}
+  .vuoto{color:var(--tenue);text-align:center;padding:54px 22px;border:1px dashed var(--bordo2);
+         border-radius:16px;font-size:14px}
+  .vuoto b{color:var(--testo)}
+  .vuoto code{background:var(--alto);padding:2px 6px;border-radius:6px;font-size:12.5px}
+  body.trascina .vuoto{border-color:var(--accento);color:var(--testo)}
+  details.piega{margin-top:26px;border-top:1px solid var(--bordo);padding-top:14px}
+  details.piega summary{cursor:pointer;color:var(--tenue);font-size:13.5px;margin-bottom:14px}
+  details.piega summary b{color:var(--testo)}
+  #brindisi{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(14px);
+            background:var(--carta);border:1px solid var(--bordo2);box-shadow:var(--ombra);
+            padding:11px 16px;border-radius:12px;font-size:13.5px;opacity:0;pointer-events:none;
+            transition:opacity .2s,transform .2s;z-index:20;max-width:82vw}
+  #brindisi.vedi{opacity:1;transform:translateX(-50%) translateY(0)}
+  @media (max-width:720px){
+    .riga{grid-template-columns:minmax(0,1fr)}
+    .azioni{position:static;flex-direction:row;flex-wrap:wrap}
+    .azioni button{flex:1}
+    input[type=search]{width:100%}
+  }
 </style>
 </head>
-<body>
+<body data-pagina="siti">
 
 <header>
-  <h1>Banco DM</h1>
-  <select id="account">
-    <option value="patrick">Patrick Sappa</option>
-    <option value="denkicode">DenkiCode</option>
-  </select>
-  <span id="quale" class="quale"></span>
-  <input type="file" id="file" accept=".csv">
-  <button id="scarica" disabled>Scarica il CSV aggiornato</button>
-  <div class="conta">
+  <div class="testata">
+    <div class="marchio">Banco DM <small id="quale"></small></div>
+    <select id="account" title="Da quale account si scrive">
+      <option value="patrick">Patrick Sappa</option>
+      <option value="denkicode">DenkiCode</option>
+    </select>
+    <span class="cresci"></span>
+    <input type="search" id="cerca" placeholder="cerca un profilo   /" title="Cerca fra handle, nome, comune e segmento della pagina aperta. Scorciatoia: /">
+    <button id="annulla" disabled title="Rimette in cima l'ultimo profilo segnato. Anche ⌘Z">↩ Annulla l'ultimo</button>
+    <button id="scarica" disabled title="Il CSV con le date di invio di oggi, da rimettere nel vault">Scarica il CSV</button>
+  </div>
+  <div class="misure">
     <span>oggi <b id="oggi">0</b>/<span id="tetto">65</span></span>
+    <div class="asta" id="asta"><i style="width:0"></i></div>
     <span>ultima ora <b id="ora">0</b></span>
     <span>da mandare <b id="restano">0</b></span>
     <span>recuperi <b id="rec">0</b></span>
-    <span>contattati <b id="cont">0</b></span>
+    <span>già scritti <b id="cont">0</b></span>
   </div>
+  <nav class="pagine">
+    <button id="p-siti" class="attiva">Siti <b>0</b></button>
+    <button id="p-denkishift">DenkiShift <b>0</b></button>
+    <button id="p-ricerca">Ricerca <b>0</b></button>
+    <button id="p-recuperi">Da ricontattare <b>0</b></button>
+    <button id="p-fatti">Già contattati <b>0</b></button>
+  </nav>
 </header>
 
 <main>
   <div id="stop" class="stop" hidden></div>
   <div id="vecchio" class="stop" hidden>Il server sotto questa pagina è vecchio: i messaggi che segni
     restano solo in questo browser e non arrivano in <code>contattati.csv</code>. Chiudi la finestra del
-    terminale e riapri il banco con <b>«Banco DM (Desktop).command»</b>, che aggiorna il vault e lancia
-    il server nuovo.</div>
-  <nav class="pagine">
-    <button id="pag-nuove" class="attiva">Da contattare <b id="n-nuove">0</b></button>
-    <button id="pag-fatti">Già contattati <b id="n-fatti">0</b></button>
-  </nav>
-  <section id="pagina-nuove">
-    <p class="nota" id="nota-nuove">Solo chi non ha ancora ricevuto niente. I recuperi e i già scritti stanno nell'altra pagina.</p>
-    <div id="lista"></div>
-    <details class="contattati" id="vecchie">
-      <summary>Liste dei giorni scorsi — <b id="n-vecchie">0</b> senza data di invio nel file. Attenzione: gli invii dal 4 al 7 settembre non sono mai stati salvati nel vault, qui dentro c'è gente a cui hai già scritto.</summary>
-      <div id="lista-vecchie"></div>
-    </details>
-  </section>
-  <section id="pagina-fatti" hidden>
-    <div class="sezione">Recuperi maturi — <b id="n-rec">0</b> · quattro giorni lavorativi senza risposta, un solo messaggio e poi basta</div>
-    <div id="lista-recuperi"></div>
-    <div class="sezione">Già scritti — <b id="cont2">0</b> · <a href="../liste/contattati.csv" download>l'elenco nel brain</a></div>
-    <div id="lista-contattati"></div>
-    <details class="contattati">
-      <summary>Scartate dalla verifica o dal banco — <b id="n-scartate">0</b></summary>
-      <div id="lista-scartate"></div>
-    </details>
-  </section>
+    terminale e riapri il banco con <b>«Banco DM.command»</b>.</div>
+  <p class="nota" id="nota"></p>
+  <div id="lista"></div>
+  <div id="niente" class="vuoto" hidden></div>
+  <details class="piega" id="piega" hidden>
+    <summary>Liste dei giorni scorsi</summary>
+    <div id="lista-vecchie"></div>
+  </details>
   <div id="vuoto" class="vuoto">
     <b>Trascina qui il CSV della lista</b> — quelli di <code>02-Sales/liste/</code>.<br>
     Da qui in poi se lo ricorda: riaprendo la pagina la lista è già dov'era, coi messaggi già segnati.<br><br>
-    Il messaggio è la <b>versione C</b> di <code>dm-instagram-vetrina</code>: il gancio lo prende dalla colonna <code>Gancio (1-6)</code>.
+    Aperto dall'icona <code>Banco DM.command</code> la lista se la prende da solo.
   </div>
+  <input type="file" id="file" accept=".csv" hidden>
 </main>
+<div id="brindisi"></div>
 
 <script>
 /* Banco di invio dei DM. Non manda niente: prepara il testo, apre la
@@ -148,9 +208,12 @@
 /* I due account che scrivono. Il tetto non e` una proprieta` di Instagram ma
    di ogni singolo account. 65 e` quello che ha retto sul profilo di Patrick il
    3 settembre 2026, quando ne sono partiti 75 senza blocco delle azioni (vedi
-   2026-09-03-tetto-dm-65): una misura su un giorno solo, e su quel profilo li`. Su DenkiCode vale la rampa del metodo —
-   si parte da 15 e si sale di 10 al giorno, alzando `tetto` qui a mano finche`
-   non regge un regime suo. */
+   2026-09-03-tetto-dm-65): una misura su un giorno solo, e su quel profilo li`.
+   Su DenkiCode vale la rampa del metodo — si parte da 15 e si sale di 10 al
+   giorno, alzando `tetto` qui a mano finche` non regge un regime suo.
+   ATTENZIONE: stato-banco.py legge questi due numeri da questo file con una
+   regex («tetto: <n>» dentro la voce dell'account). Chi cambia la forma di
+   queste due righe fa divergere i due conti senza che nessuno se ne accorga. */
 const ACCOUNT = {
   patrick: {
     etichetta: "Patrick Sappa",
@@ -172,10 +235,48 @@ const ACCOUNT = {
 };
 let attivo = localStorage.getItem("banco-dm-account") || "patrick";
 const att = () => ACCOUNT[attivo];
+
 /* Il ritmo conta quanto il totale: il tetto non protegge da 65 messaggi in
    venti minuti. Sopra questa soglia il contatore dell'ultima ora si accende. */
 const RITMO_ORA = 25;
 const ATTESA_RECUPERO = 4;        // giorni lavorativi prima del secondo messaggio
+
+/* Le tre liste che escono da /banco, e sono tre mestieri diversi: target
+   diverso, gancio diverso, testo diverso. Mescolarli vuol dire scrivere la
+   cosa sbagliata alla persona giusta — regola di Patrick dell'11/09/2026,
+   scritta in metodo-liste.md. */
+const PRODOTTI = {
+  siti: {
+    etichetta: "Siti vetrina",
+    nota: "Chi non ha un sito suo, o ne ha uno morto. Il gancio è che <b>la bozza è già fatta</b>: " +
+          "si annuncia pronta, non da preparare. Chi risponde si aspetta un file, quindi la bozza deve esistere davvero."
+  },
+  denkishift: {
+    etichetta: "DenkiShift, i turni",
+    nota: "Squadre da 8 a 50 persone su turni, indipendenti. Qui il sito non conta: <b>chi ce l'ha curato è un candidato migliore</b>. " +
+          "Si chiede un fatto sul loro lavoro e dieci minuti in videochiamata. Nessuna data di attivazione, nessun prezzo al mese."
+  },
+  ricerca: {
+    etichetta: "Ricerca di mercato",
+    nota: "Aziende strutturate: officine, impiantisti, logistica, ingrossi, produzione. <b>Qui non si vende niente</b>, e non è un modo di dire: " +
+          "zero prodotti, zero prezzi, zero programmi nominati. L'obiettivo è il modulo compilato, e chi risponde si qualifica da solo."
+  },
+  recuperi: {
+    etichetta: "Da ricontattare",
+    nota: "Quattro giorni lavorativi senza risposta. <b>Un solo messaggio e poi basta</b>: dopo il recupero la riga passa fra i già contattati."
+  },
+  fatti: {
+    etichetta: "Già contattati",
+    nota: "Quello che è partito, il più recente in cima. Se hai chiuso una chat per sbaglio, il tasto <b>Annulla l'ultimo</b> in testata la riapre."
+  }
+};
+
+/* Il modulo della ricerca. E` lo stesso di script-indagine.md: «Analisi di
+   Mercato: Digitalizzazione e Sviluppo delle PMI del Territorio», sei domande,
+   anonimo, il contatto solo in fondo e facoltativo. Il link che gira ai lead e`
+   questo (/viewform), MAI quello che finisce in /edit: quello e` il pannello di
+   chi il modulo lo scrive. */
+const MODULO = "https://docs.google.com/forms/d/e/1FAIpQLSe2cCfeAx8IVLRq-ocJe4MUpq43u_1D95IpBPjqOYX-90a9JA/viewform";
 
 /* Tutti al "Lei": il messaggio e` rivolto alla persona che tiene il negozio,
    e mescolare Lei e voi nello stesso testo e` un errore gia` corretto altrove. */
@@ -187,20 +288,25 @@ const GANCI = {
   "5": "quello che ha non è un sito suo: è una pagina su [X]",
   "6": "il suo sito c'è, ma è fermo al [X]"
 };
+const ETICHETTA_GANCIO = {T:"turni", R:"ricerca"};
 
-/* Versione C di dm-instagram-vetrina: la bozza si annuncia gia` fatta.
+/* ---- I testi di ripiego, uno per prodotto ---------------------------------
+   Le liste che escono da /banco portano un messaggio scritto riga per riga
+   nella colonna «Messaggio»: quello vince sempre su questi. Questi servono
+   quando la riga arriva senza testo, e devono restare allineati agli script in
+   02-Sales/script/ — dm-instagram-vetrina.md, dm-instagram-denkishift.md,
+   dm-instagram-ricerca.md. Chi cambia un testo qui aggiorna anche il suo file,
+   o i due si disallineano e nessuno se ne accorge. */
+
+/* SITI. Versione C di dm-instagram-vetrina: la bozza si annuncia gia` fatta.
    Alza tre termini su quattro dell'equazione del valore (probabilita`, attesa,
    sforzo) e accorcia la richiesta da "gliela preparo?" a "gliela mando?".
    In cambio fa partire l'orologio: chi risponde si aspetta un file.
-
-   QUESTO E` IL TESTO CHE PARTE DAVVERO, non la copia in dm-instagram-vetrina.md.
-   Passato dalla skill voce-denkicode il 6 settembre 2026 (via l'em dash e
-   l'elenco di tre "non deve"). Chi lo cambia da qui in avanti aggiorna anche
-   .claude/skills/voce-denkicode/SKILL.md e 02-Sales/script/dm-instagram-vetrina.md,
-   altrimenti i due si disallineano e nessuno se ne accorge finche` non arriva
-   un altro lead che sgama il testo. */
-const MESSAGGI = {};
-MESSAGGI.patrick = (nome, gancio) =>
+   Confermato da Patrick l'11/09/2026: «per i siti il gancio deve essere che la
+   bozza è già stata fatta» (stile-comunicazione.md).
+   Passato dalla skill voce-denkicode il 6 settembre 2026. */
+const MESSAGGI = {siti:{}, denkishift:{}, ricerca:{}};
+MESSAGGI.siti.patrick = (nome, gancio) =>
 `Buongiorno, sono Patrick Sappa. Ho una piccola software house a Seveso, DenkiCode.
 
 Le scrivo perché ho guardato il profilo di ${nome} e ${gancio}.
@@ -216,7 +322,7 @@ Gliela mando?`;
 /* Dall'account aziendale a scrivere e` la casa, non la persona: il "noi" e` la
    sola differenza vera, ma la firma resta di una persona — un DM che non ha
    nessuno dietro si legge come un annuncio e non riceve risposta. */
-MESSAGGI.denkicode = (nome, gancio) =>
+MESSAGGI.siti.denkicode = (nome, gancio) =>
 `Buongiorno, le scrive Patrick della DenkiCode, una piccola software house a Seveso.
 
 Abbiamo guardato il profilo di ${nome} e ${gancio}.
@@ -229,12 +335,72 @@ Sul costo non le facciamo girare la testa: se poi decidesse di metterlo online, 
 
 Gliela mandiamo?`;
 
-const messaggio = (nome, gancio) => MESSAGGI[attivo](nome, gancio);
+/* DENKISHIFT. Il buco e` quello che si e` visto sul profilo: il post che cerca
+   personale, le trenta camere, la seconda sede. Senza quella riga il messaggio
+   e` un invio a tappeto e si vede. Niente date, niente prezzo al mese, niente
+   link: tutte e tre stanno in dm-instagram-denkishift.md fra i mai. */
+MESSAGGI.denkishift.patrick = (nome, visto) =>
+`Buongiorno, sono Patrick Sappa. Ho una piccola software house a Seveso, DenkiCode.
 
-const recupero =
+Ho guardato il profilo di ${nome}: ${visto}. Una squadra così i turni chi glieli fa, ancora su un foglio o sul gruppo WhatsApp?
+
+Abbiamo fatto un programma che serve a quello. La settimana si costruisce una volta, ognuno vede la sua sul telefono, e quando salta qualcuno dice subito chi è libero e chi ha già fatto troppe ore.
+
+Glielo faccio vedere in dieci minuti in videochiamata, quando le torna comodo. Se non le serve me lo dice e non mi sente più.`;
+MESSAGGI.denkishift.denkicode = (nome, visto) =>
+`Buongiorno, le scrive Patrick della DenkiCode, una piccola software house a Seveso.
+
+Abbiamo guardato il profilo di ${nome}: ${visto}. Una squadra così i turni chi glieli fa, ancora su un foglio o sul gruppo WhatsApp?
+
+Abbiamo fatto un programma che serve a quello. La settimana si costruisce una volta, ognuno vede la sua sul telefono, e quando salta qualcuno dice subito chi è libero e chi ha già fatto troppe ore.
+
+Glielo facciamo vedere in dieci minuti in videochiamata, quando le torna comodo. Se non le serve ce lo dice e non ci sente più.`;
+
+/* RICERCA. Qui non si vende niente, ed e` letteralmente vero: e` il motivo per
+   cui questa lista converte in modo diverso dalle altre. Chi lo dice e poi
+   vende brucia la frase per tutte le liste future (script-indagine.md).
+   Il buco e` il settore, che va chiamato con la parola loro. */
+MESSAGGI.ricerca.patrick = (nome, settore) =>
+`Buongiorno, sono Patrick Sappa, DenkiCode, una piccola software house a Seveso.
+
+Non le vendo niente e non le chiedo un appuntamento. Stiamo facendo una ricerca sulle aziende ${settore} qui in zona: che programmi usate davvero per ordini, magazzino e turni, e cosa vi tocca ancora rifare a mano due volte.
+
+Sono sei domande, due minuti, ed è anonimo:
+${MODULO}
+
+Quando abbiamo finito il giro le mando quello che è venuto fuori dalle altre aziende della zona. Almeno sa come sono messi gli altri.`;
+MESSAGGI.ricerca.denkicode = (nome, settore) =>
+`Buongiorno, le scrive Patrick della DenkiCode, una piccola software house a Seveso.
+
+Non le vendiamo niente e non le chiediamo un appuntamento. Stiamo facendo una ricerca sulle aziende ${settore} qui in zona: che programmi usate davvero per ordini, magazzino e turni, e cosa vi tocca ancora rifare a mano due volte.
+
+Sono sei domande, due minuti, ed è anonimo:
+${MODULO}
+
+Quando abbiamo finito il giro le mandiamo quello che è venuto fuori dalle altre aziende della zona. Almeno sa come sono messi gli altri.`;
+
+const messaggio = (prodotto, nome, buco) =>
+  (MESSAGGI[prodotto][attivo] || MESSAGGI[prodotto].patrick)(nome, buco);
+
+/* Il recupero: uno solo, e poi si lascia perdere. Uno per prodotto, perche`
+   «ha lasciato perdere l'idea di avere un sito» a un albergo non vuol dire
+   niente. */
+const RECUPERI = {
+  siti:
 `Le scrivo una volta sola e poi la lascio in pace: ha lasciato perdere l'idea di avere un sito suo?
 
-Se è «adesso no» va benissimo, me lo scriva in due parole. Se invece la bozza la vuole ancora vedere, gliela mando oggi.`;
+Se è «adesso no» va benissimo, me lo scriva in due parole. Se invece la bozza la vuole ancora vedere, gliela mando oggi.`,
+  denkishift:
+`Le scrivo una volta sola e poi la lascio stare: avete lasciato perdere l'idea di sistemare i turni?
+
+Se è «adesso no» me lo dica in due parole. Se invece i dieci minuti li vuole ancora, mi dica lei quando.`,
+  ricerca:
+`Le scrivo una volta sola e poi la lascio in pace: ha lasciato perdere la ricerca?
+
+Sono sei domande e due minuti, e il riepilogo di come sono messe le altre aziende della zona glielo mando lo stesso.
+
+` + MODULO
+};
 
 /* ---- CSV: campi fra virgolette e virgole dentro, niente librerie ---- */
 function leggiCSV(testo){
@@ -273,8 +439,10 @@ function lavorativiDa(iso){
 }
 
 const oggiISO = () => new Date().toLocaleDateString("sv-SE");   // 2026-09-02
+const pulito = (s) => (s || "").trim().replace(/^@/, "").toLowerCase();
 
 let intestazione = [], dati = [], nomeFile = "lista.csv", col = {}, fonte = "";
+let pagina = "siti", filtro = "";
 
 /* Gli orari degli invii stanno solo qui, non nel CSV: servono a leggere il
    ritmo dell'ultima ora e non sono un dato della lista. */
@@ -285,6 +453,15 @@ function segnaOra(){
   orari.push(ora);
 }
 const ultimaOra = () => orari.filter(t => t > Date.now() - 3600 * 1000).length;
+
+/* La pila dell'annulla. Ogni gesto che toglie un profilo dalla pagina — segnato
+   inviato, recupero mandato, scartato perche` ha gia` il sito — lascia qui la
+   sua traccia, e il tasto in testata lo disfa. Nasce da un guasto vero: Patrick
+   chiude la chat di Instagram prima di premere invio e l'handle e` sparito dal
+   banco, senza un modo per ritrovarlo. Vive nel localStorage come il resto:
+   sopravvive alla ricarica della pagina. */
+let storico = [];        // [{h, file, tipo, quando}]
+let riaperte = [];       // handle rimessi in cima, finche` non ripartono
 
 /* Una memoria per account: il lavoro a meta` giro di uno non deve finire
    nell'altro. La chiave vecchia, di quando l'account era uno solo, e` di
@@ -297,7 +474,7 @@ if (localStorage.getItem("banco-dm") && !localStorage.getItem("banco-dm:patrick"
 
 /* Aperto con doppio click la pagina sta su file:// e non puo` leggersi da sola
    i CSV che ha accanto: il browser lo vieta. Quindi la lista si trascina qui
-   una volta, e da li` in poi se la ricorda — anche a meta` giro, che con 30
+   una volta, e da li` in poi se la ricorda — anche a meta` giro, che con 50
    messaggi al giorno succede sempre. */
 function carica(testo, nome){
   nomeFile = nome || nomeFile;
@@ -315,22 +492,22 @@ function carica(testo, nome){
     else if (n.startsWith("gancio")) col.gancio = i;
     else if (n.startsWith("esito verifica")) col.verifica = i;
     else if (n.startsWith("dm inviato")) col.inviato = i;
+    else if (n.startsWith("recupero")) col.recupero = i;
     else if (n.startsWith("esito dm")) col.esito = i;
     else if (n.startsWith("messaggio")) col.messaggio = i;
     else if (n.startsWith("scheda")) col.scheda = i;
+    else if (n.startsWith("prodotto")) col.prodotto = i;
     else if (n.startsWith("lista")) col.lista = i;
   });
-  /* La colonna «Messaggio» e` quella che Nicola riempie prima di pubblicare la
-     lista e che Patrick corregge qui dentro: se manca, si aggiunge, cosi` le
-     liste vecchie continuano a funzionare col testo generato dal modello. */
-  if (col.messaggio === undefined){
-    col.messaggio = intestazione.length;
-    intestazione.push("Messaggio");
-  }
-  if (col.scheda === undefined){
-    col.scheda = intestazione.length;
-    intestazione.push("Scheda");
-  }
+  /* Le colonne che il banco si aggiunge da solo se la lista non ce l'ha, cosi`
+     le liste vecchie continuano a funzionare: «Messaggio» (il testo corretto a
+     mano), «Scheda» (quello che si e` letto del profilo), «Prodotto» (per quale
+     dei tre si scrive) e «Recupero (data)», che dall'11/09/2026 fa uscire una
+     riga dalla pagina dei recuperi quando il secondo messaggio e` partito. */
+  [["messaggio","Messaggio"], ["scheda","Scheda"], ["prodotto","Prodotto"], ["recupero","Recupero (data)"]]
+    .forEach(([k, titolo]) => {
+      if (col[k] === undefined){ col[k] = intestazione.length; intestazione.push(titolo); }
+    });
   dati.forEach(r => { while (r.length < intestazione.length) r.push(""); });
   if (col.account === undefined || col.gancio === undefined){
     alert("Non riconosco le colonne: servono almeno «Account IG» e «Gancio (1-6)».");
@@ -340,6 +517,26 @@ function carica(testo, nome){
   document.getElementById("scarica").disabled = false;
   document.getElementById("quale").textContent = nomeFile;
   disegna();
+}
+
+/* Per quale dei tre si scrive a questa riga. Prima la colonna «Prodotto», che
+   e` quella che /banco scrive; poi il nome della lista; poi il gancio, che per
+   i turni e` T e per la ricerca R. Chi non dice niente e` un sito: e` la lista
+   piu` vecchia e quella senza colonne. */
+function prodottoDi(r){
+  const p = (col.prodotto !== undefined ? (r[col.prodotto] || "") : "").trim().toLowerCase();
+  if (p){
+    if (p.startsWith("sit")) return "siti";
+    if (p.startsWith("denki") || p.startsWith("turni") || p.startsWith("shift")) return "denkishift";
+    if (p.startsWith("ric") || p.startsWith("indag") || p.startsWith("merc")) return "ricerca";
+  }
+  const l = (col.lista !== undefined ? (r[col.lista] || "") : "").toLowerCase();
+  if (/denkishift|turni/.test(l)) return "denkishift";
+  if (/ricerca|indagine|mercato/.test(l)) return "ricerca";
+  const g = (r[col.gancio] || "").trim().toUpperCase();
+  if (g === "T") return "denkishift";
+  if (g === "R") return "ricerca";
+  return "siti";
 }
 
 document.getElementById("file").addEventListener("change", async (e) => {
@@ -358,15 +555,15 @@ document.addEventListener("drop", async (e) => {
 });
 
 /* All'avvio: se la pagina e` servita (cioe` e` partita dall'icona sul Desktop)
-   prende da sola `lista-corrente.csv`, che e` la lista che Nicola pubblica nel
+   prende da sola `lista-corrente.csv`, che e` la lista che /banco pubblica nel
    vault. Il lavoro gia` fatto vince sulla lista pubblicata finche` e` la
-   stessa: si riparte da dove si era rimasti, non da capo. Quando Nicola ne
-   pubblica una nuova, il file cambia e questa la sostituisce. */
+   stessa: si riparte da dove si era rimasti, non da capo. Quando ne esce una
+   nuova, il file cambia e questa la sostituisce. */
 async function avvio(){
-  document.body.classList.toggle("denkicode", attivo === "denkicode");
   document.getElementById("account").value = attivo;
-  intestazione = []; dati = []; col = {}; orari = []; fonte = "";
-  ["lista", "lista-vecchie", "lista-recuperi", "lista-contattati", "lista-scartate"].forEach(id => document.getElementById(id).innerHTML = "");
+  intestazione = []; dati = []; col = {}; orari = []; fonte = ""; storico = []; riaperte = [];
+  document.getElementById("lista").innerHTML = "";
+  document.getElementById("lista-vecchie").innerHTML = "";
   document.getElementById("vuoto").hidden = false;
   document.getElementById("scarica").disabled = true;
   document.getElementById("quale").textContent = "";
@@ -374,6 +571,8 @@ async function avvio(){
   try { salvata = JSON.parse(localStorage.getItem(MEMORIA()) || "null"); } catch (e) {}
   /* il ritmo e` dell'account, non della lista: sopravvive a una lista nuova */
   if (salvata && Array.isArray(salvata.orari)) orari = salvata.orari;
+  if (salvata && Array.isArray(salvata.storico)) storico = salvata.storico;
+  if (salvata && Array.isArray(salvata.riaperte)) riaperte = salvata.riaperte;
 
   if (location.protocol.startsWith("http")){
     try {
@@ -386,6 +585,7 @@ async function avvio(){
           carica(testo, "lista del " + (quando ? new Date(quando).toLocaleDateString("it-IT") : "giorno"));
           if (salvata) unisci(salvata);
           ricorda();
+          aggiornaAnnulla();
           return;
         }
         fonte = salvata.fonte;
@@ -396,10 +596,12 @@ async function avvio(){
     fonte = salvata.fonte || "";
     carica(scriviCSV([salvata.intestazione, ...salvata.dati]), salvata.nomeFile);
   }
+  aggiornaAnnulla();
 }
+
 /* Quando il file pubblicato cambia, il lavoro gia` fatto nel browser non si
-   butta: per ogni handle si tengono la data di invio, l'esito e il testo
-   corretto a mano che stavano nella memoria. Fino al 9 settembre 2026 la
+   butta: per ogni handle si tengono la data di invio, il recupero, l'esito e il
+   testo corretto a mano che stavano nella memoria. Fino al 9 settembre 2026 la
    lista nuova SOSTITUIVA la memoria, e gli invii dal 4 al 7 settembre sono
    spariti dal banco a ogni pubblicazione. */
 function unisci(salvata){
@@ -409,25 +611,28 @@ function unisci(salvata){
     const l = String(n).toLowerCase();
     if (l.startsWith("account")) vc.account = i;
     else if (l.startsWith("dm inviato")) vc.inviato = i;
+    else if (l.startsWith("recupero")) vc.recupero = i;
     else if (l.startsWith("esito dm")) vc.esito = i;
     else if (l.startsWith("messaggio")) vc.messaggio = i;
   });
   if (vc.account === undefined) return;
   const vecchie = new Map();
   (salvata.dati || []).forEach(r => {
-    const h = (r[vc.account] || "").trim().toLowerCase();
+    const h = pulito(r[vc.account]);
     if (h) vecchie.set(h, r);
   });
   let tenuti = 0;
   dati.forEach(r => {
-    const v = vecchie.get((r[col.account] || "").trim().toLowerCase());
+    const v = vecchie.get(pulito(r[col.account]));
     if (!v) return;
     const inv = vc.inviato !== undefined ? (v[vc.inviato] || "").trim() : "";
+    const ric = vc.recupero !== undefined ? (v[vc.recupero] || "").trim() : "";
     const es  = vc.esito   !== undefined ? (v[vc.esito]   || "").trim() : "";
     const msg = vc.messaggio !== undefined ? (v[vc.messaggio] || "") : "";
     /* si tiene solo una data vera: un valore strano nella memoria non deve
        diventare un invio */
     if (/^\d{4}-\d{2}-\d{2}$/.test(inv) && !(r[col.inviato] || "").trim()){ r[col.inviato] = inv; tenuti++; }
+    if (/^\d{4}-\d{2}-\d{2}$/.test(ric) && !(r[col.recupero] || "").trim()) r[col.recupero] = ric;
     if (es  && !(r[col.esito]   || "").trim())  r[col.esito] = es;
     if (msg.trim() && inv) r[col.messaggio] = msg;    // il testo che e` partito davvero
   });
@@ -445,13 +650,13 @@ document.getElementById("account").addEventListener("change", (e) => {
 /* Ogni invio segnato va anche nel brain: il server (banco-server.py) lo
    scrive in liste/contattati.csv e committa. Da file:// non c'e` nessun
    server e il gesto resta solo nel browser, come prima. */
-function annota(r, file, azione){
+function annota(r, file, azione, tipo){
   if (!location.protocol.startsWith("http")) return;
   const riga = {
     Data: r[col.inviato] || oggiISO(), Da: att().etichetta,
     "Account IG": (r[col.account] || "").trim(), Nome: (r[col.nome] || "").trim(),
     Comune: r[col.comune] || "", Segmento: r[col.segmento] || "",
-    Tipo: file === "contattati" ? (azione === "recupero" ? "recupero" : "primo") : "scartato dal banco",
+    Tipo: file === "contattati" ? (tipo || "primo") : "scartato dal banco",
     Lista: (col.lista !== undefined && (r[col.lista] || "").trim()) || nomeFile
   };
   fetch("/segna", {method:"POST", keepalive:true, headers:{"Content-Type":"application/json"},
@@ -461,135 +666,331 @@ function annota(r, file, azione){
 }
 
 function ricorda(){
-  try { localStorage.setItem(MEMORIA(), JSON.stringify({nomeFile, intestazione, dati, fonte, orari})); } catch (e) {}
+  try {
+    localStorage.setItem(MEMORIA(), JSON.stringify(
+      {nomeFile, intestazione, dati, fonte, orari, storico: storico.slice(-40), riaperte}));
+  } catch (e) {}
 }
 
+let timeoutBrindisi = null;
+function brindisi(testo){
+  const b = document.getElementById("brindisi");
+  b.textContent = testo;
+  b.classList.add("vedi");
+  clearTimeout(timeoutBrindisi);
+  timeoutBrindisi = setTimeout(() => b.classList.remove("vedi"), 3200);
+}
+
+/* ---- l'annulla ------------------------------------------------------------
+   Tre gesti tolgono una riga dalla pagina, e tutti e tre passano di qui: cosi`
+   il tasto in testata ne disfa sempre uno solo, l'ultimo, e dice quale. */
+function ricorda_gesto(r, file, tipo){
+  storico.push({h: pulito(r[col.account]), file, tipo, quando: Date.now()});
+  aggiornaAnnulla();
+}
+
+function aggiornaAnnulla(){
+  const b = document.getElementById("annulla");
+  const ultimo = storico[storico.length - 1];
+  b.disabled = !ultimo;
+  b.textContent = ultimo ? "↩ Annulla @" + ultimo.h : "↩ Annulla l'ultimo";
+  b.title = ultimo
+    ? "Rimette @" + ultimo.h + " in cima alla sua pagina e toglie la riga da " +
+      (ultimo.file === "contattati" ? "contattati.csv" : "gia-col-sito.csv") + ". Anche ⌘Z"
+    : "Qui torna l'ultimo profilo che hai segnato, se l'hai chiuso per sbaglio";
+}
+
+function annullaUltimo(){
+  const ultimo = storico.pop();
+  aggiornaAnnulla();
+  if (!ultimo) return;
+  const r = dati.find(x => pulito(x[col.account]) === ultimo.h);
+  if (!r){ brindisi("@" + ultimo.h + " non è più in questa lista."); ricorda(); return; }
+  if (ultimo.file === "gia-col-sito"){
+    r[col.esito] = "";
+    annota(r, "gia-col-sito", "togli");
+  } else if (ultimo.tipo === "recupero"){
+    r[col.recupero] = "";
+    annota(r, "contattati", "aggiungi", "primo");   // resta contattato: torna solo fra i recuperi
+  } else {
+    annota(r, "contattati", "togli");
+    r[col.inviato] = "";
+    orari.pop();
+  }
+  if (!riaperte.includes(ultimo.h)) riaperte.push(ultimo.h);
+  pagina = ultimo.tipo === "recupero" ? "recuperi" : prodottoDi(r);
+  disegna();
+  const card = document.querySelector('[data-h="' + ultimo.h + '"]');
+  if (card){
+    card.scrollIntoView({block:"center"});
+    card.classList.add("lampo");
+    setTimeout(() => card.classList.remove("lampo"), 1700);
+  }
+  brindisi("@" + ultimo.h + " è tornato in cima. La chat non è stata riaperta: il tasto è lì.");
+}
+document.getElementById("annulla").addEventListener("click", annullaUltimo);
+
+/* ---- il disegno -----------------------------------------------------------
+   Si disegna solo la pagina aperta: con cinquecento righe in memoria, disegnare
+   tutto a ogni gesto faceva aspettare mezzo secondo a ogni messaggio. I conti
+   delle altre pagine si fanno lo stesso, che sono una passata sull'array. */
 function disegna(){
   ricorda();
+  document.body.dataset.pagina = pagina;
   const lista = document.getElementById("lista");
-  const recs  = document.getElementById("lista-recuperi");
-  const fatti = document.getElementById("lista-contattati");
-  const scart = document.getElementById("lista-scartate");
   const vecchie = document.getElementById("lista-vecchie");
-  [lista, vecchie, recs, fatti, scart].forEach(el => el.innerHTML = "");
+  lista.innerHTML = ""; vecchie.innerHTML = "";
   let oggi = 0;
-  const nuove = [], recuperi = [], contattati = [], scartate = [];
+  const secchi = {siti:[], denkishift:[], ricerca:[], recuperi:[], fatti:[], scartate:[]};
 
   dati.forEach((r, idx) => {
     const inviato = (r[col.inviato] || "").trim();
-    const esito   = (r[col.esito]   || "").trim();
-    if (inviato === oggiISO()) oggi++;
-
+    const ricontattato = (r[col.recupero] || "").trim();
+    const esito = (r[col.esito] || "").trim();
+    if (inviato === oggiISO() || ricontattato === oggiISO()) oggi++;
     const scartata = /^scartat/i.test(esito);
-    const daRecuperare = inviato && !esito && lavorativiDa(inviato) >= ATTESA_RECUPERO;
-    const el = cartella(r, idx, inviato, esito, daRecuperare);
-    if (scartata && !inviato) scartate.push(el);
-    else if (daRecuperare) recuperi.push([inviato, el]);
-    else if (inviato) contattati.push([inviato, el]);
-    else nuove.push([(col.lista !== undefined ? (r[col.lista] || "") : ""), idx, el]);
+    const daRecuperare = inviato && !ricontattato && !esito && lavorativiDa(inviato) >= ATTESA_RECUPERO;
+    const voce = {r, idx, inviato, esito, daRecuperare, prodotto: prodottoDi(r),
+                  lista: col.lista !== undefined ? (r[col.lista] || "") : ""};
+    if (scartata && !inviato) secchi.scartate.push(voce);
+    else if (daRecuperare) secchi.recuperi.push(voce);
+    else if (inviato) secchi.fatti.push(voce);
+    else secchi[voce.prodotto].push(voce);
   });
 
-  /* Pagina «Da contattare»: e` quella che Patrick guarda oggi. Solo chi non ha
-     ancora ricevuto niente, ordinati per la colonna «Lista» del CSV (il nome
-     del file pubblicato, che comincia con la data): la lista piu` recente in
-     cima, dentro ogni lista l'ordine di chi l'ha fatta, e in fondo le righe
-     vecchie senza colonna. Niente recuperi in mezzo: chiesto il 9 settembre 2026. */
-  nuove.sort((a, b) => b[0].localeCompare(a[0]) || a[1] - b[1]);
-  /* In pagina le liste del giorno piu` recente (la colonna «Lista» comincia
-     con la data: si confrontano i primi dieci caratteri). Il 9 settembre 2026
-     ne sono uscite due nello stesso giorno, e una sola in pagina nascondeva
-     l'altra. Il resto sta sotto, chiuso, finche` gli invii vecchi non sono
-     ricostruiti: la` dentro c'e` gente a cui Patrick ha gia` scritto. */
-  const ultima = nuove.length ? nuove[0][0] : "";
-  const giorno = ultima.slice(0, 10);
-  const listeGiorno = [...new Set(nuove.map(([l]) => l).filter(l => l.slice(0, 10) === giorno))];
-  let inPagina = 0, corrente = null;
-  /* Dal 10 settembre 2026 ogni giorno escono due liste, una per prodotto
-     (50 siti e 30 DenkiShift, chiesto da Patrick): in pagina stanno una sotto
-     l'altra, ognuna col suo titolo, cosi` si vede a colpo d'occhio a chi si
-     sta scrivendo e con quale messaggio. */
-  nuove.forEach(([l, , el]) => {
-    if (!(ultima && l.slice(0, 10) === giorno)){ vecchie.appendChild(el); return; }
-    if (l !== corrente){
-      corrente = l;
-      const h = document.createElement("h3");
-      h.className = "sezione";
-      const n = nuove.filter(([x]) => x === l).length;
-      h.textContent = (/denkishift|turni/i.test(l) ? "DenkiShift, i turni" : "Siti vetrina") + " — " + n + " da scrivere · " + l.replace(/\.csv$/i, "");
-      lista.appendChild(h);
+  /* i numeri sulle linguette: si aggiornano tutti, anche quelli delle pagine
+     che non si stanno guardando */
+  ["siti","denkishift","ricerca"].forEach(p =>
+    document.querySelector("#p-" + p + " b").textContent = secchi[p].length);
+  document.querySelector("#p-recuperi b").textContent = secchi.recuperi.length;
+  document.querySelector("#p-fatti b").textContent = secchi.fatti.length;
+
+  const nota = document.getElementById("nota");
+  const piega = document.getElementById("piega");
+  const niente = document.getElementById("niente");
+  const apertaPrima = piega.open;
+  piega.hidden = true; niente.hidden = true;
+
+  if (pagina === "recuperi" || pagina === "fatti"){
+    const voci = secchi[pagina].filter(passa);
+    /* i recuperi: i piu` vecchi in cima, che aspettano da piu` tempo.
+       i gia` scritti: gli ultimi in cima. */
+    voci.sort((a, b) => pagina === "recuperi"
+      ? a.inviato.localeCompare(b.inviato)
+      : b.inviato.localeCompare(a.inviato));
+    nota.innerHTML = PRODOTTI[pagina].nota +
+      (pagina === "fatti"
+        ? ' <a href="../liste/contattati.csv" download>L\'elenco nel brain</a>.'
+        : "");
+    voci.forEach(v => lista.appendChild(cartella(v)));
+    if (!voci.length) vuotoDi(pagina, secchi[pagina].length);
+    if (pagina === "fatti" && secchi.scartate.length){
+      piega.hidden = false;
+      piega.querySelector("summary").innerHTML =
+        "Scartate dalla verifica o dal banco — <b>" + secchi.scartate.length + "</b>";
+      piega.open = apertaPrima;
+      riempiPiega(() => secchi.scartate.filter(passa));
     }
-    lista.appendChild(el); inPagina++;
-  });
-  document.getElementById("n-vecchie").textContent = nuove.length - inPagina;
-  document.getElementById("vecchie").hidden = nuove.length === inPagina;
-  document.getElementById("nota-nuove").textContent = ultima
-    ? (listeGiorno.length > 1 ? "Le liste di oggi: " : "La lista di oggi: ") + listeGiorno.map(l => l.replace(/\.csv$/i, "")).join(" e ") + ", " + inPagina + " profili. Solo chi non ha ancora ricevuto niente; i recuperi e i già scritti stanno nell'altra pagina."
-    : "Solo chi non ha ancora ricevuto niente. I recuperi e i già scritti stanno nell'altra pagina.";
-  /* Pagina «Gia` contattati»: prima i recuperi maturi, i piu` vecchi in cima
-     perche` aspettano da piu` tempo; poi i gia` scritti, gli ultimi in cima. */
-  recuperi.sort((a, b) => a[0].localeCompare(b[0]));
-  recuperi.forEach(([, el]) => recs.appendChild(el));
-  contattati.sort((a, b) => b[0].localeCompare(a[0]));
-  contattati.forEach(([, el]) => fatti.appendChild(el));
-  scartate.forEach(el => scart.appendChild(el));
+  } else {
+    /* La pagina di un prodotto: in pagina le liste del giorno piu` recente di
+       QUEL prodotto (la colonna «Lista» comincia con la data), il resto sotto,
+       chiuso. Dal 10 settembre ogni giorno escono piu` liste: stanno una sotto
+       l'altra, ognuna col suo titolo. */
+    const voci = secchi[pagina];
+    const conLista = voci.map(v => v.lista).filter(l => /^\d{4}-\d{2}-\d{2}/.test(l)).sort();
+    const giorno = conLista.length ? conLista[conLista.length - 1].slice(0, 10) : "";
+    const dentro = [], fuori = [];
+    voci.forEach(v => (giorno && v.lista.slice(0, 10) === giorno ? dentro : fuori).push(v));
+    /* chi e` stato riaperto con l'annulla va in cima a tutto: e` la riga che si
+       sta cercando in quel momento */
+    const ordina = (a, b) =>
+      (riaperte.includes(pulito(b.r[col.account])) ? 1 : 0) - (riaperte.includes(pulito(a.r[col.account])) ? 1 : 0)
+      || b.lista.localeCompare(a.lista) || a.idx - b.idx;
+    dentro.sort(ordina);
+    const mostrate = dentro.filter(passa);
+    const liste = [...new Set(mostrate.map(v => v.lista))];
+    nota.innerHTML = PRODOTTI[pagina].nota +
+      (liste.length ? "<br>" + (liste.length > 1 ? "Liste di oggi: " : "Lista di oggi: ") +
+        liste.map(l => "<b>" + l.replace(/\.csv$/i, "") + "</b>").join(" e ") + "." : "");
+    let corrente = null;
+    mostrate.forEach(v => {
+      if (v.lista !== corrente && liste.length > 1){
+        corrente = v.lista;
+        const h = document.createElement("div");
+        h.className = "sezione";
+        h.innerHTML = "<b>" + mostrate.filter(x => x.lista === v.lista).length + "</b> da scrivere · " +
+                      v.lista.replace(/\.csv$/i, "");
+        lista.appendChild(h);
+      }
+      lista.appendChild(cartella(v));
+    });
+    if (!mostrate.length) vuotoDi(pagina, dentro.length);
+    if (fuori.length){
+      piega.hidden = false;
+      piega.querySelector("summary").innerHTML =
+        "Liste dei giorni scorsi — <b>" + fuori.length + "</b> senza data di invio nel file. " +
+        "Attenzione: gli invii dal 4 al 7 settembre non sono mai stati salvati nel vault, qui dentro " +
+        "c'è gente a cui hai già scritto.";
+      piega.open = apertaPrima;
+      riempiPiega(() => { fuori.sort(ordina); return fuori.filter(passa); });
+    }
+  }
 
-  document.getElementById("n-nuove").textContent = inPagina;
-  document.getElementById("n-fatti").textContent = recuperi.length + contattati.length;
-  document.getElementById("n-rec").textContent = recuperi.length;
-  document.getElementById("cont").textContent = contattati.length;
-  document.getElementById("cont2").textContent = contattati.length;
-  document.getElementById("n-scartate").textContent = scartate.length;
-
+  const daMandare = secchi.siti.length + secchi.denkishift.length + secchi.ricerca.length;
   document.getElementById("oggi").textContent = oggi;
   document.getElementById("tetto").textContent = att().tetto;
   const ora = document.getElementById("ora");
   ora.textContent = ultimaOra();
   ora.classList.toggle("corri", ultimaOra() > RITMO_ORA);
-  document.getElementById("restano").textContent = nuove.length;
-  document.getElementById("rec").textContent = recuperi.length;
+  document.getElementById("restano").textContent = daMandare;
+  document.getElementById("rec").textContent = secchi.recuperi.length;
+  document.getElementById("cont").textContent = secchi.fatti.length;
+  const asta = document.getElementById("asta");
+  asta.firstElementChild.style.width = Math.min(100, Math.round(oggi / att().tetto * 100)) + "%";
+  asta.classList.toggle("piena", oggi >= att().tetto);
   const stop = document.getElementById("stop");
   stop.textContent = att().stop;
   stop.hidden = oggi < att().tetto;
+  ["siti","denkishift","ricerca","recuperi","fatti"].forEach(p =>
+    document.getElementById("p-" + p).classList.toggle("attiva", p === pagina));
+  misuraTutte(lista);
 }
 
-/* Il cambio pagina. Si apre sempre su «Da contattare»: e` la pagina del
-   giorno, e ricordarsi l'altra vorrebbe dire aprire domani sui recuperi. */
+/* il filtro della testata: handle, nome, comune. Serve a ritrovare un profilo
+   di cui ci si ricorda il nome — per esempio quello che si e` appena chiuso. */
+function passa(v){
+  if (!filtro) return true;
+  const campi = [v.r[col.account], v.r[col.nome], v.r[col.comune], v.r[col.segmento]];
+  return campi.some(c => (c || "").toLowerCase().includes(filtro));
+}
+
+function vuotoDi(p, quanti){
+  const niente = document.getElementById("niente");
+  niente.hidden = false;
+  niente.innerHTML = filtro
+    ? "Nessun profilo con <b>" + filtro + "</b> in questa pagina."
+    : quanti
+      ? "<b>Finito qui.</b> " + quanti + " righe su questa pagina sono già partite."
+      : "<b>Niente da mandare su " + PRODOTTI[p].etichetta + ".</b><br>" +
+        "La lista di oggi la scrive <code>/banco</code>, che la pubblica e riapre questa pagina piena.";
+}
+
+/* il contenuto chiuso si disegna la prima volta che si apre: sono centinaia di
+   righe, e disegnarle a ogni gesto per tenerle nascoste non ha senso */
+function riempiPiega(quali){
+  const piega = document.getElementById("piega");
+  const dove = document.getElementById("lista-vecchie");
+  const riempi = () => {
+    if (!piega.open || dove.childElementCount) return;
+    quali().forEach(v => dove.appendChild(cartella(v)));
+    misuraTutte(dove);
+  };
+  piega.ontoggle = riempi;
+  riempi();
+}
+
+/* ---- il cambio pagina, anche da tastiera ---- */
 function mostraPagina(p){
-  const nuove = p !== "fatti";
-  document.getElementById("pagina-nuove").hidden = !nuove;
-  document.getElementById("pagina-fatti").hidden = nuove;
-  document.getElementById("pag-nuove").classList.toggle("attiva", nuove);
-  document.getElementById("pag-fatti").classList.toggle("attiva", !nuove);
+  pagina = p;
+  document.getElementById("piega").open = false;
+  document.getElementById("lista-vecchie").innerHTML = "";
+  disegna();
   window.scrollTo(0, 0);
 }
-document.getElementById("pag-nuove").addEventListener("click", () => mostraPagina("nuove"));
-document.getElementById("pag-fatti").addEventListener("click", () => mostraPagina("fatti"));
-mostraPagina("nuove");
+["siti","denkishift","ricerca","recuperi","fatti"].forEach(p =>
+  document.getElementById("p-" + p).addEventListener("click", () => mostraPagina(p)));
 
-function cartella(r, idx, inviato, esito, daRecuperare){
+const cerca = document.getElementById("cerca");
+cerca.addEventListener("input", () => {
+  filtro = cerca.value.trim().toLowerCase().replace(/^@/, "");
+  document.getElementById("lista-vecchie").innerHTML = "";
+  disegna();
+});
+
+document.addEventListener("keydown", (e) => {
+  const scrive = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName);
+  if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "z" && !scrive){
+    e.preventDefault(); annullaUltimo(); return;
+  }
+  if (scrive){
+    if (e.key === "Escape" && document.activeElement === cerca){ cerca.value = ""; cerca.blur(); filtro = ""; disegna(); }
+    return;
+  }
+  if (e.key === "/"){ e.preventDefault(); cerca.focus(); return; }
+  const n = parseInt(e.key, 10);
+  const pagine = ["siti","denkishift","ricerca","recuperi","fatti"];
+  if (n >= 1 && n <= 5) mostraPagina(pagine[n-1]);
+});
+
+/* Il riquadro del messaggio cresce col testo invece di scorrere. La misura si
+   prende al giro dopo, con requestAnimationFrame: una cartella appena creata non
+   sta ancora nella pagina, e `scrollHeight` di un elemento staccato e` zero.
+   Misurata subito, la casella veniva alta 0 e il testo non si leggeva. */
+function misura(ta){
+  const fai = () => {
+    /* larghezza zero = la pagina non e` ancora disegnata davvero (succede in una
+       scheda aperta in secondo piano). Misurare li` da` numeri senza senso: il
+       testo va a capo a ogni lettera e la casella esce alta diecimila pixel. Si
+       lascia stare e si rimisura quando la scheda torna davanti. */
+    if (!ta.isConnected || !ta.offsetWidth) return;
+    ta.style.height = "auto";
+    ta.style.height = (ta.scrollHeight || 120) + "px";
+  };
+  /* se la cartella e` gia` in pagina si misura subito. Il giro dopo serve a chi
+     non c'e` ancora, e non basta da solo: in una scheda in secondo piano
+     `requestAnimationFrame` non parte proprio. */
+  if (ta.isConnected) fai(); else requestAnimationFrame(fai);
+}
+/* misura tutto quello che e` appena finito in pagina */
+const misuraTutte = (dove) => dove.querySelectorAll(".msg").forEach(misura);
+/* quando la scheda torna davanti, o la finestra cambia larghezza, le caselle si
+   rimisurano: il testo va a capo in un altro punto e l'altezza di prima non vale */
+let attesaMisura = null;
+["visibilitychange", "resize"].forEach(evento => addEventListener(evento, () => {
+  clearTimeout(attesaMisura);
+  attesaMisura = setTimeout(() => { if (!document.hidden) misuraTutte(document); }, 120);
+}));
+
+/* ---- la cartella di un profilo ---- */
+function cartella(v){
+  const {r, inviato, esito, daRecuperare, prodotto} = v;
   const scartata = /^scartat/i.test(esito);
   const utente = (r[col.account] || "").replace(/^@/, "").trim();
   const nome = (r[col.nome] || utente).trim();
-  const gancio = GANCI[(r[col.gancio] || "").trim()] || "";
-  const serveBuco = gancio.includes("[X]");
+  const codice = (r[col.gancio] || "").trim().toUpperCase();
+  const gancio = prodotto === "siti" ? (GANCI[codice] || "") : "";
+  const serveBuco = prodotto === "siti" ? gancio.includes("[X]") : true;
+  const ricontattato = (r[col.recupero] || "").trim();
+  const riaperta = riaperte.includes(pulito(r[col.account]));
 
   const el = document.createElement("div");
-  el.className = "riga" + (inviato && !daRecuperare ? " fatta" : "") + (daRecuperare ? " recupero" : "") + (scartata ? " scartata" : "");
+  el.dataset.h = pulito(r[col.account]);
+  el.style.setProperty("--tinta", "var(--" + prodotto + ")");
+  el.className = "riga" + (inviato && !daRecuperare ? " fatta" : "") + (daRecuperare ? " recupero" : "") +
+                 (scartata ? " scartata" : "") + (riaperta && !inviato ? " riaperta" : "");
   el.innerHTML = `
     <div class="chi">
-      <b>@${utente}</b>
-      ${scartata ? '<span class="tag no">non si manda</span>' : ""}
-      ${daRecuperare ? '<span class="tag rec">recupero</span>' : ""}
-      ${inviato && !daRecuperare ? '<span class="tag ok">' + inviato + "</span>" : ""}
-      <span class="tag">${(r[col.gancio] || "").trim() === "T" ? "turni" : "gancio " + (r[col.gancio] || "?")}</span>
+      <div class="capo">
+        <b><a href="https://instagram.com/${utente}" target="_blank" rel="noopener">@${utente}</a></b>
+        <span class="tag prod">${PRODOTTI[prodotto].etichetta}</span>
+        ${riaperta && !inviato ? '<span class="tag riaperta">riaperta</span>' : ""}
+        ${scartata ? '<span class="tag no">non si manda</span>' : ""}
+        ${daRecuperare ? '<span class="tag rec">recupero, ' + lavorativiDa(inviato) + ' giorni</span>' : ""}
+        ${inviato && !daRecuperare ? '<span class="tag ok">' + inviato + (ricontattato ? " + recupero" : "") + "</span>" : ""}
+        ${prodotto === "siti" ? '<span class="tag">gancio ' + (codice || "?") + "</span>" : ""}
+      </div>
       <div class="meta">${nome} — ${r[col.comune] || ""} · ${r[col.follower] || "?"} follower${(r[col.segmento] || "").trim() ? " · " + r[col.segmento].trim() : ""}</div>
-      <div class="meta">${r[col.verifica] || ""}</div>
+      <div class="prova" title="clicca per leggerla tutta"></div>
       ${(r[col.scheda] || "").trim() ? '<div class="scheda"></div>' : ""}
       <textarea class="msg" spellcheck="false"></textarea>
     </div>
     <div class="azioni"></div>`;
 
-  /* la scheda si scrive col testo, mai come HTML: arriva da una ricerca */
+  /* la prova della verifica e la scheda si scrivono col testo, mai come HTML:
+     arrivano da una ricerca */
+  const prova = el.querySelector(".prova");
+  prova.textContent = (r[col.verifica] || "").trim();
+  prova.addEventListener("click", () => prova.classList.toggle("tutta"));
   const scheda = el.querySelector(".scheda");
   if (scheda) scheda.textContent = (r[col.scheda] || "").trim();
 
@@ -601,6 +1002,7 @@ function cartella(r, idx, inviato, esito, daRecuperare){
      per cui il messaggio farebbe danno — di solito un sito vivo e curato. Il
      tasto non c'e' proprio: un avviso da leggere si salta, un tasto assente no. */
   if (scartata){
+    testoMsg.remove();
     const perche = document.createElement("div");
     perche.className = "meta";
     perche.textContent = esito;
@@ -610,10 +1012,16 @@ function cartella(r, idx, inviato, esito, daRecuperare){
 
   /* Il campo si mostra solo se il testo non e` gia` scritto: quando la lista
      arriva col messaggio pronto, il buco e` gia` tappato e chiederlo confonde. */
+  const BUCHI = {
+    siti: "il dominio, la piattaforma o l'anno — va nel messaggio",
+    denkishift: "cosa hai visto sul profilo: le 30 camere, il post che cerca personale…",
+    ricerca: "come si chiama il loro settore: «di autoriparazione», «di impianti elettrici»…"
+  };
   if (serveBuco && !daRecuperare && !(r[col.messaggio] || "").trim()){
     const buco = document.createElement("div");
     buco.className = "buco";
-    buco.innerHTML = '<label>manca:</label><input type="text" placeholder="il dominio, la piattaforma o l\'anno — va nel messaggio">';
+    buco.innerHTML = '<label>manca:</label><input type="text">';
+    buco.querySelector("input").placeholder = BUCHI[prodotto];
     el.querySelector(".chi").insertBefore(buco, testoMsg);
     campoBuco = buco.querySelector("input");
     campoBuco.addEventListener("input", aggiorna);
@@ -623,38 +1031,59 @@ function cartella(r, idx, inviato, esito, daRecuperare){
   btn.className = "primario";
   btn.textContent = daRecuperare ? "Copia il recupero e apri" : "Copia e apri il DM";
   const segna = document.createElement("button");
-  segna.textContent = inviato && !daRecuperare ? "Annulla" : "Segna inviato";
+  segna.textContent = daRecuperare ? "Segna il recupero" : (inviato ? "Annulla" : "Segna inviato");
   azioni.append(btn, segna);
+
+  /* Sulla ricerca il link e` dentro il messaggio, ed e` anche la cosa che a un
+     account costa di piu`: chi preferisce mandarlo dopo la risposta copia il
+     testo senza, e il link resta a un tasto di distanza. */
+  if (prodotto === "ricerca" && !daRecuperare){
+    const senza = document.createElement("button");
+    senza.className = "piccolo";
+    senza.textContent = "Copia senza il link";
+    senza.title = "Il link nel primo messaggio è la cosa che fa limitare un account. Con questo mandi il testo, e il modulo quando rispondono.";
+    senza.addEventListener("click", async () => {
+      await copia(testoMsg.value.replace(MODULO, "").replace(/\n{3,}/g, "\n\n").trim());
+      brindisi("Copiato senza il link. Il modulo si manda quando rispondono.");
+    });
+    const solo = document.createElement("button");
+    solo.className = "piccolo";
+    solo.textContent = "Copia solo il link";
+    solo.addEventListener("click", async () => { await copia(MODULO); brindisi("Link del modulo copiato."); });
+    azioni.append(senza, solo);
+  }
+
   /* Il controllo dell'ultimo metro lo fa chi apre il profilo: se il sito c'e`,
      la riga esce dal banco e finisce in liste/gia-col-sito.csv, che e` il conto
-     degli errori di chi ha fatto la lista. */
-  if (!inviato){
+     degli errori di chi ha fatto la lista. Vale per i siti: su DenkiShift un
+     sito vivo e` un motivo in piu` per scrivere. */
+  if (!inviato && prodotto === "siti"){
     const gia = document.createElement("button");
-    gia.className = "secondario";
+    gia.className = "piccolo";
     gia.textContent = "Ha già il sito";
     gia.addEventListener("click", () => {
       r[col.esito] = "SCARTATO: ha già il sito (visto dal banco il " + oggiISO() + ")";
       annota(r, "gia-col-sito");
+      ricorda_gesto(r, "gia-col-sito", "scartato");
       disegna();
+      brindisi("@" + utente + " scartato. Se è un errore, «Annulla @" + utente + "» in testata.");
     });
     azioni.append(gia);
   }
 
   function generato(){
-    const g = campoBuco ? gancio.replace("[X]", campoBuco.value.trim()) : gancio;
-    return messaggio(nome, g);
+    const buco = campoBuco ? campoBuco.value.trim() : "";
+    if (prodotto === "siti") return messaggio("siti", nome, campoBuco ? gancio.replace("[X]", buco) : gancio);
+    return messaggio(prodotto, nome, buco);
   }
   function testo(){
-    if (daRecuperare) return recupero;
+    if (daRecuperare) return RECUPERI[prodotto] || RECUPERI.siti;
     return (r[col.messaggio] || "").trim() || generato();
   }
   function aggiorna(){
-    el.classList.add("aperta");
     testoMsg.value = testo();
     testoMsg.disabled = daRecuperare;
-    /* misura il testo per non far scorrere dentro un riquadro */
-    testoMsg.style.height = "auto";
-    testoMsg.style.height = testoMsg.scrollHeight + "px";
+    misura(testoMsg);
     btn.disabled = !!campoBuco && campoBuco.value.trim() === "" && !(r[col.messaggio] || "").trim();
   }
   aggiorna();
@@ -665,20 +1094,60 @@ function cartella(r, idx, inviato, esito, daRecuperare){
     if (daRecuperare) return;
     r[col.messaggio] = testoMsg.value;
     btn.disabled = false;
+    misura(testoMsg);
     ricorda();
   });
 
+  function togliRiaperta(){
+    const i = riaperte.indexOf(pulito(r[col.account]));
+    if (i >= 0) riaperte.splice(i, 1);
+  }
+
   btn.addEventListener("click", async () => {
-    await copia(daRecuperare ? recupero : testoMsg.value);
+    await copia(daRecuperare ? testoMsg.value : testoMsg.value);
+    btn.classList.add("fatto");
+    btn.textContent = "Copiato, chat aperta";
     window.open("https://ig.me/m/" + utente, "_blank", "noopener");
-    if (daRecuperare){ annota(r, "contattati", "recupero"); return; }
-    if (!inviato){ r[col.inviato] = oggiISO(); segnaOra(); annota(r, "contattati"); disegna(); }
+    if (daRecuperare){
+      r[col.recupero] = oggiISO();
+      segnaOra();
+      annota(r, "contattati", "aggiungi", "recupero");
+      ricorda_gesto(r, "contattati", "recupero");
+      setTimeout(() => { disegna(); brindisi("Recupero segnato per @" + utente + ". Ora sta fra i già contattati."); }, 400);
+      return;
+    }
+    if (!inviato){
+      r[col.inviato] = oggiISO();
+      segnaOra();
+      annota(r, "contattati", "aggiungi", "primo");
+      ricorda_gesto(r, "contattati", "primo");
+      togliRiaperta();
+      /* mezzo secondo prima di ridisegnare: la cartella sparisce dalla pagina e
+         senza quella pausa non si vede nemmeno che tasto si e` premuto */
+      setTimeout(() => { disegna(); brindisi("@" + utente + " segnato. Chiuso per sbaglio? ⌘Z lo rimette in cima."); }, 400);
+    }
   });
+
   segna.addEventListener("click", () => {
-    const annulla = inviato && !daRecuperare;
-    if (annulla) annota(r, "contattati", "togli");
-    r[col.inviato] = annulla ? "" : oggiISO();
-    if (!annulla){ segnaOra(); annota(r, "contattati"); }
+    if (daRecuperare){
+      /* il recupero ha una data sua: scriverlo nella colonna dell'invio
+         cancellerebbe il giorno del primo messaggio, che e` quello che dice
+         quanto e` vecchio il silenzio */
+      r[col.recupero] = oggiISO();
+      segnaOra();
+      annota(r, "contattati", "aggiungi", "recupero");
+      ricorda_gesto(r, "contattati", "recupero");
+    } else if (inviato){
+      annota(r, "contattati", "togli");
+      r[col.inviato] = "";
+      r[col.recupero] = "";
+    } else {
+      r[col.inviato] = oggiISO();
+      segnaOra();
+      annota(r, "contattati", "aggiungi", "primo");
+      ricorda_gesto(r, "contattati", "primo");
+      togliRiaperta();
+    }
     disegna();
   });
   return el;

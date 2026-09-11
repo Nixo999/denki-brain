@@ -16,6 +16,10 @@ Ferma gli errori gia` pagati:
   niente, hai solo non trovato (5 righe su 50);
 - un'attivita` gia` su Fresha o Treatwell con un messaggio che le dice che non
   ha un sito: per il titolare quella pagina E` il suo sito (15 righe su 50).
+Le tre liste di /banco verificano cose diverse, e la prova in colonna lo dice:
+[verifica-sito] per i siti, [verifica-turni] per DenkiShift, [verifica-azienda]
+per la ricerca di mercato. I due controlli sui domini valgono solo per i siti:
+su DenkiShift un sito vivo e` un motivo in piu` per scrivere, non un errore.
 Esce con 1 se trova qualcosa: la lista non si pubblica finche` non esce con 0.
 """
 import csv, collections, re, sys
@@ -56,9 +60,17 @@ def controlla(p):
     senza = [r.get("Account IG", "?") for r in righe if not r[col].strip().startswith("cercato «")]
     if senza:
         errori.append(f"{len(senza)} righe senza la prova di verifica-sito.py (es. {senza[0]}): «cercato «…» → …» manca")
-    # dal 10 settembre 2026 le liste DenkiShift (nome file con «denkishift») non
-    # verificano il sito ma il personale: la prova e` marcata [verifica-turni]
-    tag = "[verifica-turni]" if "denkishift" in p.name.lower() else "[verifica-sito]"
+    # Ogni lista verifica la cosa che la sua offerta richiede, e la prova in
+    # colonna lo dice: il sito per i siti, la squadra per DenkiShift (dal
+    # 10/09/2026), che l'azienda sia strutturata per la ricerca di mercato
+    # (dall'11/09/2026, con /banco). Il tipo si legge dal nome del file.
+    nome = p.name.lower()
+    if "denkishift" in nome or "turni" in nome:
+        tag, tipo = "[verifica-turni]", "denkishift"
+    elif "ricerca" in nome or "indagine" in nome or "mercato" in nome:
+        tag, tipo = "[verifica-azienda]", "ricerca"
+    else:
+        tag, tipo = "[verifica-sito]", "siti"
     senza_script = [r.get("Account IG", "?") for r in righe if tag not in r[col]]
     if senza_script:
         errori.append(f"{len(senza_script)} righe senza la prova {tag} (es. {senza_script[0]})")
@@ -70,7 +82,7 @@ def controlla(p):
     # 10/09: 12 righe su 50 con un dominio indovinato VIVO, 5 con la ricerca
     # fallita, 15 con l'attivita' gia' su una piattaforma di prenotazione.
     vivo = [r.get("Account IG", "?") for r in righe
-            if re.search(r"\(vivo, indovinato", r[col], re.I)
+            if tipo == "siti" and re.search(r"\(vivo, indovinato", r[col], re.I)
             and not re.search(r"(altra attivit|non e' (sua|loro)|stesso nome ma|diverso indirizzo)", r[col], re.I)]
     if vivo:
         errori.append(
@@ -88,7 +100,7 @@ def controlla(p):
 
     PIATTAFORME = r"fresha|treatwell|booksy|planity|unobooking|zenoti|wavein|uala"
     piattaforma = [r.get("Account IG", "?") for r in righe
-                   if re.search(PIATTAFORME, r[col], re.I)
+                   if tipo == "siti" and re.search(PIATTAFORME, r[col], re.I)
                    and not re.search(PIATTAFORME, r.get("Messaggio", ""), re.I)]
     if piattaforma:
         errori.append(
