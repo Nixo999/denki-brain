@@ -235,7 +235,7 @@ cambiano pagina.
 Massimo sei righe:
 
 ```
-Patrick — <data>. Banco DM aperto: <da mandare e tetto per account, recuperi>
+Patrick — <data>. Banco DM aperto: <da mandare per account, recuperi>
 Liste di oggi: siti <n> · DenkiShift <n> · ricerca <n>. <una riga su cosa c'è dentro>
 <una riga solo se qualcosa non è passato: quale riga, perché è rimasta fuori>
 ```

@@ -298,11 +298,16 @@ Esito verifica sito | Gancio (1-6) | DM inviato (data) | Esito DM
 
 ## L'invio — le regole che proteggono l'account
 
-> [!note] Aggiornato il 3 settembre 2026 — [[2026-09-03-tetto-dm-65]]
-> Il numero qui sotto non è più una stima: **75 DM in una sera dall'account di
-> Patrick non hanno fatto scattare nessun blocco.** Il tetto del banco è salito
-> a **65**, che è il massimo osservato meno un margine. Resta una misura su un
-> giorno solo: se un blocco arriva, si scende e si scrive la data lì.
+> [!warning] Superato l'11 settembre 2026 — il tetto non c'è più
+> Patrick: **«togli il limite giornaliero»** ([[metodo-liste]]). Il banco non
+> ferma più niente e non mostra più nessun numero massimo: quanti mandarne lo
+> decide lui. Quello che resta è il contatore di quanti ne sono partiti oggi e
+> quello dell'ultima ora, che sono misure.
+>
+> Il fatto misurato resta vero e vale la pena saperlo: **75 DM in una sera
+> dall'account di Patrick non hanno fatto scattare nessun blocco**
+> ([[2026-09-03-tetto-dm-65]]). Sopra quel numero non c'è nessuna misura, e in
+> gioco c'è il profilo con cui Patrick esiste online.
 
 Il blocco non fermerebbe la campagna: fermerebbe **l'account con cui Patrick
 esiste online**, e con esso i mille follower che sono tutta la credibilità del
