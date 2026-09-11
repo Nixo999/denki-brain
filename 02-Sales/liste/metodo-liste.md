@@ -209,7 +209,12 @@ in [[metriche]]:
   cambiare
 
 
-## Regole date a voce
+## Regole
+
+### 11/09/2026 — Patrick: «togli il limite giornaliero»
+
+il tetto di 65 DM al giorno non e' piu' un vincolo del banco: decide lui quanti mandarne
+ date a voce
 
 Scritte da `regola.py` nel momento in cui sono state dette.
 
