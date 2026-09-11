@@ -32,3 +32,4 @@ node_modules/
 # Configurazione dei server di sviluppo per il pannello browser: i percorsi
 # sono quelli della macchina che la scrive, quindi resta locale.
 .claude/launch.json
+.cache/

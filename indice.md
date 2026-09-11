@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **158 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **160 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -63,6 +63,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 **stack/**
 
 - [[convenzioni]] — Le REGOLE tecniche di casa - naming, commit, firma Powered by DenkiCode. Qui sta il modo giusto, non gli errori.
+- [[direttive-siti]] — Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
 - [[essenza-e-motion]] — Essenza da Instagram, metafora, spina dello scroll, grafica inventata e foto minime 1080px. Il metro misurato sono NG Barber e Fiftynine.
 - [[stack]] — Le tecnologie dei due gestionali. OperO Vite 8 + Tailwind 3, DenkiShift Next 16 + Tailwind 4. Restano diversi.
 
@@ -174,7 +175,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 - [[agente-operatore]] — Copia canonica di ~/.claude/agents/operatore.md - il subagente Opus che scrive il codice deciso dal direttore.
 - [[claude-md-globale]] — Copia canonica di ~/.claude/CLAUDE.md - il protocollo Trevis che va ricreato a mano su ogni macchina nuova.
-- [[come-si-scrive-una-nota]] — Le quattro regole di scrittura del vault - riga, verificato, le tre classi di memoria, i tetti di lunghezza.
+- [[come-si-scrive-una-nota]] — Le regole di scrittura del vault - riga, verificato, marcatura per affermazione, tre classi di memoria, tetti di lunghezza.
 - [[credenziali]] — ⚠️ Dove stanno le chiavi e come si passano. Nessun valore e' scritto qui, e non lo sara' mai.
 - [[modifiche-al-database]] — ⚠️ Come Patrick applica una modifica allo schema di DenkiShift in sviluppo. La produzione resta fuori.
 - [[patrick-modifica-denkishift]] — ⚠️ Guida passo passo, scritta per chi non scrive codice.
@@ -228,8 +229,9 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-10-direttore-operatore]] — Da adesso i siti si fanno con starter, essenza del cliente e metafora sola, e il direttore non scrive codice - lo scrive l'operatore su Opus.
 - [[2026-09-10-liste-50-30-messaggi-personalizzati]] — Ogni lista DM e' 50 siti piu' 30 DenkiShift, e ogni riga porta il suo messaggio scritto a mano.
 - [[2026-09-10-memoria-verificata]] — Il brain smette di leggersi addosso - riga obbligatoria, verificato, tre classi di memoria, core non piu' obbligatori.
+- [[2026-09-11-brain-autonomo]] — Il brain si chiude, promuove, pusha e controlla i siti da solo, perche' Patrick non sa fare niente di tutto questo.
 - [[2026-09-11-direzione-da-chi-ha-letto]] — La direzione di un sito la propone un operatore che ha letto le skill, non il direttore. Scroll-telling e grafica inventata obbligatori.
-- [[2026-09-11-niente-note-di-fonte-in-pagina]] — ⚠️ Decisione. Nicola, 11 settembre 2026, sul sito della Pizzeria Lobidù: «ci sta scritta roba a caso tipo di dove prendi le immagini, non devi...
+- [[2026-09-11-niente-note-di-fonte-in-pagina]] — ⚠️ Sul sito non si scrivono note di fonte: le fonti restano nei documenti interni, la pagina dice il fatto.
 
 ## 06-Daily
 

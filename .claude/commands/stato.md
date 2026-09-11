@@ -15,10 +15,12 @@ Allinea la sessione allo stato attuale di DenkiCode. **Deve costare poco.**
 
 1. **`CLAUDE.md` è già nel tuo contesto**: non rileggerlo, non riassumerlo, non
    ripetere all'utente cose che ci sono già scritte.
-2. **Leggi un solo file**: la nota più recente in `06-Daily/`. Nient'altro.
-3. **Non aprire** `01-Coding/`, `02-Sales/`, `03-Storage/`. La tabella dei
-   progetti attivi ce l'hai in `CLAUDE.md`; se cerchi altro, la `riga:` di ogni
-   nota sta in `indice.md` e dice se vale la pena aprirla.
+2. **Leggi due file**: `FATTI.md` e la nota più recente in `06-Daily/`.
+   Nient'altro. `FATTI.md` è lo stato di adesso e si riscrive a ogni chiusura;
+   la daily è com'è andata ieri.
+3. **Non aprire** `01-Coding/`, `02-Sales/`, `03-Storage/`. Se cerchi altro:
+   `python3 01-Coding/strumenti/cerca.py <parole>` ordina le note per
+   rilevanza, e la `riga:` in `indice.md` dice se vale la pena aprirle.
 4. Se manca qualcosa, **chiedi invece di cercare**.
 
 ## Cosa fare
@@ -33,7 +35,7 @@ ls -1 06-Daily/ | sort | tail -1
 lo tocca. Se stampa dei file, la sessione in corso usa ancora i comandi vecchi —
 si dice in una riga e vale dalla prossima.
 
-Poi leggi **solo** quel file. Le daily sono tarate a 40 righe: si legge intera.
+Poi leggi `FATTI.md` e **solo** quella daily. Le daily sono tarate a 40 righe: si legge intera.
 Se quella di oggi non c'è, l'ultima sessione si è chiusa senza risposte di
 Nicola e la daily non è stata scritta: dillo in una riga invece di ricostruirla.
 

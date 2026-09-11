@@ -1,8 +1,8 @@
 ---
 type: risorsa
-riga: Le quattro regole di scrittura del vault - riga, verificato, le tre classi di memoria, i tetti di lunghezza.
-updated: 2026-09-10
-verificato: 2026-09-10
+riga: Le regole di scrittura del vault - riga, verificato, marcatura per affermazione, tre classi di memoria, tetti di lunghezza.
+updated: 2026-09-11
+verificato: 2026-09-11
 source: denkicode
 tags: [convenzioni, memoria, frontmatter, verifica]
 ---
@@ -50,6 +50,29 @@ clienti, metriche) vale come assente: si ricontrolla.
 
 Le note `source: denkicode` non hanno bisogno del campo: le ha scritte una
 persona, sono gia' la fonte.
+
+## 2-bis. La marcatura per affermazione — non per nota
+
+`verificato:` marca la nota intera, ed è troppo grosso: una scheda cliente
+contiene sia «si chiama Martina» sia «deve 2.000 €». La prima non scade mai, la
+seconda scade in giorni, e col solo campo in cima hanno lo stesso bollino.
+
+Dall'11 settembre 2026 **ogni fatto che può invecchiare porta il suo segno**,
+dentro la riga:
+
+| Segno | Vuol dire | Esempio |
+|---|---|---|
+| niente | non scade | «Patrick è l'unica voce commerciale» |
+| **(data)** | vero a quel giorno, si ricontrolla | «2.000 € da incassare (11/09/2026)» |
+| **→** | non vive qui, vive là | «Le credenziali → [[credenziali]]» |
+
+È lo standard che usano i sistemi di memoria per agenti: ogni fatto è senza
+scadenza, datato, o un puntatore. Serve a una cosa sola, e non è la bellezza:
+**una nota non si riempie in silenzio di cose che erano vere.**
+
+La regola pratica: se stai scrivendo un numero, una cifra, uno stato o una
+data, o gli metti la data accanto o metti la freccia verso dove quel numero
+vive davvero.
 
 ## 3. Le tre classi — un errore non diventa mai una regola
 

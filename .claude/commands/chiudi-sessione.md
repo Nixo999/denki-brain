@@ -1,5 +1,5 @@
 ---
-description: Handoff di fine sessione — daily scritta a domande, max 40 righe, poi commit e push
+description: Chiusura di sessione — scrive la daily, promuove nelle note di dominio, aggiorna i fatti. Funziona anche se nessuno risponde.
 allowed-tools: Bash, Read, Write, Edit, Glob, Grep, AskUserQuestion
 ---
 
@@ -7,113 +7,102 @@ allowed-tools: Bash, Read, Write, Edit, Glob, Grep, AskUserQuestion
 
 Registro Trevis, già in `~/.claude/CLAUDE.md`. Niente preamboli.
 
-## 1. Prepara la bozza, non la nota
+**Deve funzionare anche con Patrick, che non sa cos'è un commit.** Ogni passo
+qui sotto si fa da solo. Le domande servono a far salire la qualità, non a
+sbloccare il processo: se non arriva risposta, si va avanti e si dichiara.
 
-Guarda `git status`, `git diff`, i commit di oggi nel vault e nei repo toccati,
-e la conversazione. Da lì ricavi **la tua versione dei fatti**. È `source:
-claude`: è una proposta, non un verbale.
+## 1. Scrivi la daily subito, non alla fine
 
-## 2. Chiedi — è il passaggio che rende la daily una fonte
+`06-Daily/YYYY-MM-DD-<slug>.md` da `99-Templates/template-daily.md`, **massimo
+40 righe**, ricavata da `git status`, `git diff`, i commit di oggi e la
+conversazione.
 
-Mandi **un messaggio solo** con le cinque domande, ognuna già compilata con la
-tua risposta. Nicola conferma o corregge. Non scrivi niente prima di aver
-ricevuto le risposte.
+Nasce `source: claude` **senza `verificato:`** — cioè dichiarata come ipotesi.
+Si scrive prima delle domande, non dopo: così esiste comunque.
+
+Non entrano mai: il riassunto di cosa hai letto, i comandi eseguiti, il
+racconto dei tentativi, il diff, i numeri senza data.
+
+## 2. Poi chiedi, una volta sola
+
+Un messaggio solo, cinque domande già compilate con la tua versione.
 
 ```
 Daily del <data> — <progetto>. Correggi quello che è sbagliato, «ok» sul resto.
 
-1. Finito oggi: <la tua riga>
-2. Rimasto a metà, a che punto: <la tua riga>
-3. Deciso: <la tua riga, oppure «niente»>
-4. Non verificato: <cosa hai scritto senza provarlo>
-5. Trappola nuova o strada da scartare: <la tua riga, oppure «niente»>
+1. Finito oggi: <riga>
+2. Rimasto a metà, a che punto: <riga>
+3. Deciso: <riga o «niente»>
+4. Non verificato: <riga>
+5. Trappola nuova o strada da scartare: <riga o «niente»>
 ```
 
-Regole delle domande:
+Se rispondono: correggi la nota, `source: denkicode`, `verificato:` con la data.
+**Se non rispondono: non insistere.** La daily resta com'è, marcata ipotesi, e
+lo dici in una riga.
 
-- **Cinque, mai di più.** Se ne servisse una sesta, la cosa non è una daily: è
-  una decisione, e va in `05-Decisioni/`.
-- **Una riga a domanda.** Se la tua proposta è lunga tre righe l'hai scritta
-  male.
-- **Non chiedere quello che puoi leggere** da `git diff`. Chiedi quello che solo
-  Nicola sa: se una cosa è davvero finita, se una decisione è davvero presa.
-- Se Nicola non risponde e chiude la sessione, la daily **non si scrive**.
-  Meglio nessuna nota che una nota non controllata: è quella che diventa la
-  premessa di domani.
+Se durante la sessione una bozza è stata **bocciata**, chiedi anche la frase
+esatta: serve al passo 4.
 
-## 3. Scrivi la nota — 40 righe, tetto duro
+## 3. Promuovi — è il passo che mancava
 
-`06-Daily/YYYY-MM-DD-<slug>.md` da `99-Templates/template-daily.md`. Se la nota
-di oggi esiste, si aggiunge in coda.
+Una daily è un registro di giornata. Se la conoscenza resta lì, fra una
+settimana non esiste: nessuna sessione apre una nota datata. **Quello che vale
+oltre oggi si sposta dove verrà riletto**, e nella daily resta il link.
 
-Il contenuto sono **le risposte di Nicola**, non il tuo riassunto. Frontmatter:
-`source: denkicode` e `verificato:` con la data di oggi — le ha confermate una
-persona.
+| Cosa è uscito | Dove va |
+|---|---|
+| Stato, soldi, cosa è aperto o bloccato | **`FATTI.md`**, riscrivendo la riga |
+| Un fatto su un progetto o un cliente | la sua nota in `01-Coding/progetti/` o `02-Sales/clienti/` |
+| Una trappola tecnica o una strada morta | `01-Coding/trappole.md`, `[TRAPPOLA]` o `[SCARTATO]`, max 4 righe |
+| Una bocciatura su un sito | `01-Coding/stack/direttive-siti.md` |
+| Il modo giusto di fare una cosa, da ora in poi | `01-Coding/stack/convenzioni.md` |
+| Una scelta che cambia rotta | nota nuova in `05-Decisioni/` |
+
+`FATTI.md` **si riscrive**, non si accumula: un fatto che cambia sostituisce la
+riga vecchia. Ogni numero porta la data accanto, o la freccia verso dove vive.
+
+**Non si promuove niente a regola per conto tuo.** In `trappole.md` va l'errore;
+se il modo giusto va reso dottrina lo proponi in una riga e ti fermi.
+
+## 4. Se si è toccato un sito
 
 ```bash
-wc -l 06-Daily/<file>.md   # oltre 40, si taglia contenuto
+python3 01-Coding/strumenti/controlla-sito.py ~/lavoro/<cartella>
 ```
 
-Non entrano mai: il riassunto di cosa hai letto, i comandi eseguiti, il racconto
-dei tentativi, il diff, i ringraziamenti. La daily del 7 settembre era 5.341
-parole e nessuno l'ha riletta.
+Se esce 1, il sito è sotto il livello di NG Barber e Fiftynine: **lo dici e non
+si pubblica**. Se è stato bocciato, la frase esatta va in `direttive-siti.md`
+con la data e la regola che ne esce. Quel file cresce e non si accorcia: è il
+motivo per cui i siti migliorano invece di oscillare.
 
-## 4. La memoria degli errori — con la classe scritta
+## 5. Aggiorna e controlla
 
-Se la risposta 5 dice qualcosa, va in `01-Coding/trappole.md`, nella sua
-sezione, **max 4 righe**, aperta dalla classe:
-
-- `[TRAPPOLA]` — è successo, ecco la contromisura, ecco dove è stata pagata.
-- `[SCARTATO]` — provato, non funziona, non si ripropone.
-
-**Non si promuove niente a regola qui.** Se il modo giusto va reso dottrina, lo
-scrive Nicola in `01-Coding/stack/convenzioni.md` o in una decisione, di
-proposito. Tu lo proponi in una riga e ti fermi.
-
-Se non è uscito niente di riutilizzabile non si scrive niente.
-
-## 5. Aggiorna le note toccate
-
-Per ogni progetto o cliente su cui si è lavorato: `updated:` a oggi, sezione
-**Aperto** allineata, campi del frontmatter se sono cambiati soldi o stato, e la
-riga nella tabella di `CLAUDE.md` se è nato un progetto o è cambiato uno stato.
-
-**Si corregge il file sbagliato, non si scrive la correzione altrove.**
+Per ogni progetto o cliente toccato: `updated:` a oggi, sezione **Aperto**
+allineata, frontmatter se sono cambiati soldi o stato. **Si corregge il file
+sbagliato, non si scrive la correzione altrove.**
 
 Se hai verificato contro la realtà un fatto che stava in una nota `source:
-claude` — il repo, il sito online, lo schema — scrivi `verificato:` con la data
-di oggi in quella nota. È l'unico modo in cui il campo si popola.
-
-## 6. Registro interventi
-
-Se si è toccato un progetto: una riga in `01-Coding/registro-interventi.md` con
-chi, quando, progetto, repository e **quale database**. Quella colonna è il
-motivo per cui il registro esiste.
-
-## 7. Indice, e `~/.claude/` allineato
+claude`, scrivi `verificato:` con la data in quella nota.
 
 ```bash
 python3 01-Coding/strumenti/genera-indice.py
 python3 01-Coding/strumenti/installa-macchina.py --check
 ```
 
-Il secondo dice se protocollo, comandi, agente e skill sulla macchina sono
-indietro rispetto al vault: `~/.claude/` è locale e il `git pull` non lo tocca.
-Se sono indietro, si rilancia senza `--check`.
+Il primo riscrive l'indice e stampa i buchi. Il secondo dice se `~/.claude/` è
+indietro rispetto al vault; se lo è, rilancialo senza `--check`.
 
-Riscrive `indice.md` e stampa i buchi: `riga:` mancanti, `verificato:` scaduti,
-link rotti, progetti attivi fuori dalla tabella. **I buchi si guardano.** Quello
-che non risolvi lo dici in due righe.
+## 6. Il push lo fa l'hook
 
-## 8. Commit e push
+Non serve che lo faccia tu: l'hook di fine sessione fa `pull --rebase`, commit e
+push da solo. **Committa lo stesso durante la sessione**, con un messaggio che
+dice il perché: quello dell'hook dice solo cosa è cambiato, ed è la rete, non la
+strada.
 
-```bash
-git add -A && git status --short
-```
+Se l'hook si ferma e te lo dice, risolvi quello che segnala. **Non forzare mai.**
 
-Messaggio in italiano, dice cosa è cambiato e perché, non l'elenco dei file. Poi
-`git push`. Se fallisce non forzare: `git pull --rebase` e riprova.
+## 7. Chiudi
 
-## 9. Chiudi
-
-Due righe: cosa hai scritto, cosa resta per domani.
+Due righe: cosa hai scritto, cosa resta. Se la daily è rimasta un'ipotesi
+perché nessuno ha risposto, dillo in una di quelle due.

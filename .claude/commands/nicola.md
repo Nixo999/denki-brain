@@ -39,12 +39,15 @@ Vault non trovato → **chiedi il percorso**, non cercarlo a tappeto.
 ## 2. Leggi il minimo, e verifica prima di fidarti
 
 1. `CLAUDE.md` del vault — **salta se è già nel contesto**.
+1-bis. **`FATTI.md`** — lo stato di adesso: chi, soldi, cosa è aperto, cosa è
+   bloccato. È corto e si riscrive a ogni chiusura, quindi è la cosa più
+   aggiornata che c'è. Sempre.
 2. L'ultima nota di `06-Daily/`. Sono tarate a 40 righe: si legge intera.
 3. **Solo se** `$ARGUMENTS` nomina un progetto: la sua riga in `indice.md`, e la
    nota solo se quella riga dice che serve.
 
 Nient'altro. Niente `02-Sales/`, niente `03-Storage/`, niente scansioni di
-cartelle. Se manca un dato, **chiedilo**: una domanda costa meno di cinque file.
+cartelle. Se manca un dato: `python3 01-Coding/strumenti/cerca.py <parole>` ordina le note per rilevanza, e se non basta **chiedi**. Una domanda costa meno di cinque file.
 
 **Il passaggio di verifica, prima di scrivere codice o di dare un fatto per
 buono**: una nota `source: claude` senza `verificato:` è un'ipotesi. Il fatto si

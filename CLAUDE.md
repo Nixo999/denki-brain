@@ -11,6 +11,13 @@ accesso al vault**: qui provvigioni e crediti stanno in chiaro).
 
 ## Come si legge questo vault — prima di tutto il resto
 
+**Si leggono `FATTI.md` e `indice.md`, non le note.** Il primo dice lo stato di
+adesso, il secondo dice cosa contiene ogni nota.
+
+**Cerca per rilevanza, non a tentoni**: `python3 01-Coding/strumenti/cerca.py
+<parole>` pesa più parole insieme e ordina le note. `grep` trova solo la parola
+che hai scritto.
+
 **Si legge `indice.md`, non le note.** Ogni nota dichiara nel frontmatter una
 `riga:` che dice cosa contiene; l'indice le raccoglie tutte. Da lì si decide
 quale file aprire. Aprire una nota per scoprire cosa c'è dentro è l'errore che
@@ -130,30 +137,14 @@ Progetto aggiunge `status` (`attivo|in-pausa|completato`), `client`, `stack`,
 6. **`git pull` prima di cominciare.** Nicola lavora da più macchine e Patrick
    scrive da sé.
 
-## Progetti attivi
+## Lo stato non sta qui
 
-La colonna «Nodo aperto» **la scrive una persona**: il generatore segnala un
-progetto mancante, non inventa a che punto è.
+`CLAUDE.md` è il **manuale**: come si lavora, e cambia di rado. Lo stato di
+adesso — chi, soldi, cosa è aperto, cosa è bloccato — sta in **[[FATTI]]**, che
+si legge a ogni sessione e **si riscrive** a ogni chiusura invece di accumulare.
 
-| Progetto | Cliente | Stato | Nodo aperto |
-|---|---|---|---|
-| [[opero]] | [[sebastian-torres]] | 🟡 ~60%, in correzione | 2.000€ da incassare, storico mai migrato, XML SDI da quotare |
-| [[denkishift]] | interno | 🟡 quasi completo, non pubblicato | SMTP proprio, UI generazione turni, 0 clienti |
-| [[sito-albybike]] | [[albybike]] | 🟢 Online | Mai pagato, dominio in scadenza fra un anno |
-| [[sito-denkicode]] | interno | 🟢 Online | È la galleria dei lavori. Il dominio pubblica ancora il sito vecchio |
-| [[sito-fiftynine]] | [[bar-tabacchi-fiftynine]] | 🟡 Bozza in trattativa | Menù ricevuto, prezzo mai detto, referente senza nome |
-| [[sito-atelier-selva]] | [[shari-piras]] | 🟡 Proposta a 200€ | Hosting non deciso, `ciao.mp4` da 12,5 MB, gestionalino promesso e assente |
-| [[sito-dsi-advertising]] | [[dsi-advertising]] | 🟡 Bozza mai proposta | Tre email da confermare col titolare prima di pubblicare |
-| [[sito-salone-di-andrea]] | [[il-salone-di-andrea]] | 🟡 DM sul banco | Orario del giovedì e foto da confermare |
-| [[sito-nails-mania]] | [[nails-mania]] | 🟡 DM sul banco | Orari e servizi da confermare con Lory, `nailsmania.net` libero |
-| [[sito-osteria-tarilli]] | Osteria Tarilli, Comano (TI) | 🟡 Bozza online con noindex | Orari da confermare col titolare |
-| [[sito-pizzeria-lobidu]] | Pizzeria Lobidù | 🟡 Bozza non commissionata | Brief giro 1 |
-| [[sito-mikuma-dogs]] | Martina Carneli, Como | 🟢 Bozza online | Il DM con il link è di Patrick, scheda cliente assente |
-| [[sito-da-caterina]] | Da Caterina, Olgiate Olona | 🟡 Bozza, lead ancora freddo | Nessuna scheda cliente |
-| [[sito-castiglione]] | [[castiglione-furniture]] | 🟠 Ferma dal 30 agosto | `TODO`: verificare se è online |
-| [[sito-ngbarber]] | [[ng-barber]] | 🟠 Ferma dal 1 settembre | Due repo divergenti, sorgente su repo **pubblica** |
-
-Archiviati: [[cococat]], [[sito-dropout]], [[webolt-v1]].
+Una tabella di progetti dentro il manuale invecchia in silenzio, ed è successo:
+per giorni ha elencato progetti che non erano più a quel punto.
 
 ## Comandi
 

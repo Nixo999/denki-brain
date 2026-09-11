@@ -80,6 +80,7 @@ seed di impeccable, o non è ripetibile.
 
 L'operatore che costruisce carica, in quest'ordine:
 
+0. `01-Coding/stack/direttive-siti.md` — quello che è già stato bocciato.
 1. `impeccable context` → `reference/new-work.md` per il mondo scelto.
 2. `reference/craft-floor.md` **immediatamente prima di toccare la UI**. È il
    pavimento di qualità e la lista dei divieti assoluti.
@@ -122,6 +123,21 @@ AA, console pulita, pagina completa senza JS.
 Poi **si guarda**, e si guarda la pagina vera, non solo `?cattura`: in cattura
 la motion è spenta per costruzione, quindi da lì non si giudica mai né
 l'apertura né la spina. Catture a pagina intera a 1440 e a 375, e si guardano.
+
+## 5-bis. Il livello, misurato — e le direttive già date
+
+```bash
+python3 01-Coding/strumenti/controlla-sito.py ~/lavoro/<cartella>
+```
+
+Misura grafica inventata, racconto allo scroll, apertura, foto, firma e
+sbarramenti. **NG Barber e Fiftynine passano 8 su 8**: è tarato su quelli. Se
+esce 1 il sito non si pubblica.
+
+E si legge `01-Coding/stack/direttive-siti.md`, che raccoglie ogni bocciatura di
+Nicola con la regola che ne è uscita. **Quel file cresce e non si accorcia**: è
+il meccanismo per cui i siti migliorano invece di oscillare. Un sito nuovo non
+può ripetere niente di quello che c'è scritto lì.
 
 ## 6. Finish review e consegna
 

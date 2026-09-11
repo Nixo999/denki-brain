@@ -1,4 +1,5 @@
 ---
+riga: Sul sito non si scrivono note di fonte: le fonti restano nei documenti interni, la pagina dice il fatto.
 type: decisione
 data: 2026-09-11
 progetto: siti-vetrina

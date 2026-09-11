@@ -115,8 +115,16 @@ lista aggiornata dal banco.
 
 ## 2. Leggi il minimo, poi allarga solo se serve
 
-Sempre: `CLAUDE.md` del vault (salta se è già nel contesto) + l'ultima nota di
-`06-Daily/` (oltre 200 righe, le ultime 120).
+Sempre: `CLAUDE.md` del vault (salta se è già nel contesto), **`FATTI.md`** e
+l'ultima nota di `06-Daily/`.
+
+`FATTI.md` è lo stato di adesso — chi, soldi, cosa è aperto, cosa è bloccato —
+ed è corto perché si riscrive a ogni chiusura invece di accumulare. È la cosa
+più aggiornata che c'è nel vault: si legge sempre, prima di rispondere a
+Patrick qualunque cosa chieda.
+
+Se cerchi altro: `python3 01-Coding/strumenti/cerca.py <parole>` ordina le note
+per rilevanza. `grep` trova solo la parola esatta.
 
 Poi **solo il file che serve al compito**, mai la lista intera:
 
