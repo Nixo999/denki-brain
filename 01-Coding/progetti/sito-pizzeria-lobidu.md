@@ -81,9 +81,11 @@ Commit `3c82cf0`.
 
 ## Stato
 
-✅ Sito costruito e misurato, commit locale `9c30e33`. ⬜ Repo remota e deploy: i comandi `gh repo create` e `netlify deploy`
-sono bloccati dal classificatore dei permessi, li lancia Nicola a mano. Sito
-Netlify `lobidu` già creato (id `c20a6579-9842-4a24-a5e6-e872535bd3e7`), vuoto. ⬜ Safari su iPhone. ⬜ Orari da
+✅ **Online su <https://lobidu.netlify.app>** (sito `lobidu`, team `denkicode`,
+id `c20a6579-9842-4a24-a5e6-e872535bd3e7`, deploy dal CLI, **non collegato al
+repo**: un push non ripubblica). ✅ Repo `Nixo999/lobidu-site`. ✅ Tre
+sbarramenti verificati sul vivo (`x-robots-tag`, meta, `robots.txt`) e CSS a
+`max-age=0, must-revalidate`. ⬜ Safari su iPhone. ⬜ Orari da
 confermare col titolare. ⬜ Due sorgenti a 360 px (forno, melanzane): da
 chiedere le foto originali. ⬜ DM di risposta: Patrick.
 
