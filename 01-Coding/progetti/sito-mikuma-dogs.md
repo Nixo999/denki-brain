@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza online su mikumadogs.netlify.app per Martina Carneli (mikuma.dogs), istruttrice cinofila a Como - quattro giri, l'acqua scartata, l'attrezzatura.
+riga: Bozza per Martina Carneli (mikuma.dogs), istruttrice cinofila a Como - sei giri bocciati, si riparte dal passo 2 col mondo 'il bianco e il nero'.
 status: attivo
 client: mikuma-dogs
 stack: html-css-js
@@ -179,6 +179,51 @@ si sovrapponeva al marchio), `og:description` allineata alla meta description.
 
 ⬜ Safari su iPhone. ⬜ Il DM con il link è di Patrick. ⬜ Scheda cliente.
 ⬜ Safari su iPhone. ⬜ Scheda cliente in `02-Sales/clienti/`.
+
+## Giro 7 — si riparte dal passo 2, col metodo nuovo
+
+Nicola, 11 settembre: «usando il nuovo metodo per fare i siti creato oggi,
+rimodifica il sito». Il mondo «attrezzatura» dei giri 4-6 e' **bocciato e
+bruciato**: nastri, cuciture, etichette cucite e fibbie non si ripropongono.
+
+**Passo 1, strada dichiarata: il sito non dipende dalle foto.**
+`controlla-sito.py` dava 7/8 e l'unico sbarramento erano le foto: 9 su 10 sotto
+1080 px, le copertine dei reel a 360x640. Strada 2 del processo (grafica
+inventata, tipografia, colore). Strada 1 resta aperta: chiedere a Martina gli
+originali e' anche un motivo per scriverle - e' di Patrick.
+
+**Passo 2: tre mondi da un operatore di direzione su Opus** che ha caricato
+`impeccable context`, `reference/new-work.md`, `design-taste-frontend` e
+`high-end-visual-design`, e ha letto NG Barber e Fiftynine sul Mac. Proposti: A
+«la distanza» (asta graduata in metri), B «il bianco e il nero», C «lo schema di
+condotta» (il foglio di gara sul crema).
+
+**Scelto B — il bianco e il nero.** Il suo logo e' gia' il concetto: due teste
+di cane incastrate, una nera e una bianca, le due meta' del mestiere - in
+obedience il cane resta fermo, in acqua si butta. Il sito e' quel marchio
+aperto. Spina: le due teste si incastrano e la linea di incastro diventa il
+bordo della pagina; sopra la linea la meta' nera (obedience, lavoro a distanza),
+a meta' pagina la linea taglia il centro e la pagina si ribalta **una volta
+sola** su fondo bianco (water games, dogsitting, trasferte); in fondo le due
+meta' si richiudono nel marchio piccolo sopra il DM.
+
+Grafica inventata: l'incastro in apertura; la linea di taglio, un `path` alto
+quanto il documento disegnato sullo scroll, che comanda da che lato sta il
+contenuto; il ribaltamento su due variabili CSS, una sola inversione in tutta la
+pagina; sei coppie di contrari in condensato da 96 a 260 px (FERMO/VAI,
+PIEDE/VENTI METRI, ASCIUTTO/BAGNATO, RING/RIVA) che si scambiano di lato.
+
+Perche' non si sposta su un'altra istruttrice: il taglio non e' un vezzo, e' il
+suo marchio che si apre e si richiude.
+
+Palette: `#000000` e `#FFFFFF` a blocchi pieni, `#EB6F1F` solo su linea, numeri
+e bottone. Tipografia: Archivo variabile su tre larghezze dell'asse `wdth` come
+fa il suo logo. Foto: griglia dichiarata 4x2, gutter 2 px, tutte in bianco e
+nero ad alto contrasto con un trattamento unico.
+
+**Il copy dei giri 5-6 si tiene.** L'ha riscritto il direttore frase per frase
+dopo «scrivi come un bambino»: si riusa tale e quale dove la struttura nuova lo
+consente, non si rigenera.
 
 ## Collegamenti
 
