@@ -435,6 +435,17 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Skill e strumenti di processo
 
+- **`voce-denkicode` sulle didascalie e sul copy di un sito produce frasi da
+  bambino.** Taglia connettivi e verbi e lascia frasi nominali che descrivono
+  la foto («Ghiaia da una parte, erba dall'altra», «Sostenuto finché non si
+  fida del fondo che non c'è»). Nicola su Mikuma Dogs: «sembra che non sai
+  l'italiano, scrivi solo cose utili». → il copy di un sito vetrina lo scrive
+  il direttore nel brief, frase per frase, e l'operatore lo inserisce senza
+  riscriverlo. Ogni frase ha un verbo e dice una cosa utile a chi legge; una
+  didascalia descrive il servizio, non la foto, o non c'è. Le frasi prese dai
+  post del cliente entrano solo se sono utili. Il metro è NN/g: conciso,
+  scandibile, oggettivo, mai promozionale. ([[sito-mikuma-dogs]])
+
 - **Lo script di `ui-ux-pro-max` non sta dove la skill dice.** Il percorso
   `.claude/skills/ui-ux-pro-max/scripts/search.py` sotto la cartella del
   plugin non esiste, e `find` non trova nessun `search.py`. Il passo 4 del

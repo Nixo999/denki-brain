@@ -164,8 +164,15 @@ telefono; «Un cane che entra in acqua è un cane che si fida» scende a
 sottotitolo, un sesto del corpo del nome. L'aggancio sul nastro resta. Trovato
 per strada: il font di ripiego allargava il titolo del 19% e spostava
 l'apertura di 193 px, corretto con `size-adjust`. Ripubblicato.
-`TODO` copy: «Insegno l'obbedienza.» sotto il nastro è rimasto tronco dopo il
-taglio della coda sull'acqua.
+**Giro 6, il copy** (Nicola, 10:3x: «scrivi come un bambino, sembra che non
+sai l'italiano; solo cose utili, niente frasi copiate dai suoi post»). Tutto il
+testo riscritto dal direttore, frase per frase, e passato all'operatore da
+inserire tale e quale: ogni frase con un verbo, ogni didascalia dice il
+servizio o non c'è, il bottone diventa «Scrivimi su Instagram». Metro: NN/g
+(conciso, scandibile, oggettivo). **Da far confermare a Martina** quando il
+sito diventa suo: le descrizioni dei cinque servizi e la sequenza del lavoro
+in acqua (primo contatto, giubbotto, nuoto, riporto) sono scritte da noi
+sulla base della bio e delle foto, non dette da lei.
 
 ⬜ Safari su iPhone. ⬜ Il DM con il link è di Patrick. ⬜ Scheda cliente.
 ⬜ Safari su iPhone. ⬜ Scheda cliente in `02-Sales/clienti/`.
