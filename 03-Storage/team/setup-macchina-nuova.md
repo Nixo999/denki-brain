@@ -358,14 +358,30 @@ chi siamo, cosa stiamo facendo e quanto ci devono. A Patrick basta:
 
 ## 7-quinquies. `~/.claude/` — un comando, non una copia a mano
 
+**Il comando di allineamento, da incollare nel terminale.** Trova il vault da
+solo qualunque sia il percorso, quindi vale identico sul Mac di Patrick:
+
+```bash
+for p in "${DENKI_VAULT:-}" ~/lavoro/denki-brain ~/Desktop/denki-brain ~/Desktop/"denkicode volt" ~/Documents/"denkicode volt"; do [ -n "$p" ] && [ -f "$p/CLAUDE.md" ] && cd "$p" && break; done; git pull --rebase --autostash && python3 01-Coding/strumenti/installa-macchina.py
+```
+
+Se il vault è già in `~/lavoro/denki-brain` basta la riga corta:
+
 ```bash
 python3 ~/lavoro/denki-brain/01-Coding/strumenti/installa-macchina.py
 ```
 
 Scrive sulla macchina i file che git non porta, prendendoli dalle copie
 canoniche del vault: il protocollo in `~/.claude/CLAUDE.md`, l'agente
-`operatore`, i nove comandi e le skill nostre. Con `--check` dice cosa è
-indietro senza toccare niente.
+`operatore`, i nove comandi, le skill nostre e **i tre hook**, che registra in
+`~/.claude/settings.json`. Con `--check` dice cosa è indietro senza toccare
+niente.
+
+⚠️ **Gli hook stanno a livello di account, non di progetto** (11/09/2026).
+Legati alla cartella del vault non sarebbero mai scattati per Patrick, che apre
+Claude dove capita e poi lancia `/patrick`: niente push automatico di fine
+sessione. Adesso trovano il vault da soli con `trova-vault.sh` e toccano solo
+lui, mai il repo in cui stai lavorando. Provato lanciandoli da `/tmp`.
 
 **Non tocca niente di terze parti**: plugin, skill di design e `settings.json`
 restano come sono.
