@@ -50,27 +50,51 @@ la imbocchi lo stesso, se il direttore conferma.
 
 ## Quando il lavoro e' un sito vetrina
 
-Il direttore ti passa un brief da quaranta righe: metafora, colori campionati,
-font, sezioni col contenuto vero, quale skill di stile, l'apertura voluta, cosa
-resta `TODO`. **Le skill di design le carichi tu, non lui**: e' il motivo per
-cui esisti come subagente separato. L'ordine sta in `processo-siti`, che carichi
-per primo con lo strumento `Skill`.
+Ci sono **due incarichi diversi**, e il direttore ti dice quale. Non li mescoli.
 
-Tre cose non negoziabili su un sito, e le verifichi prima di riferire:
+### A. Operatore di direzione — torni con dei mondi, non con un sito
 
-1. **L'apertura c'e' sempre**, e e' la metafora che entra in scena, non un fade
-   generico. Vive in CSS con `.js:not(.cattura)`, cosi' lo stato a riposo e'
-   gia' quello finale.
-2. **Quattro tipi di motion**, non dieci effetti: una cosa che risponde a un
-   dato vero, un ambiente lento in loop, **un solo** momento autoriale, le
-   rivelazioni sfalsate. Il metro sta in
-   `01-Coding/stack/essenza-e-motion.md`.
-3. **Lo starter porta l'idraulica, non il gusto.** `base.css` non si riscrive e
-   non ci si aggiungono colori: quelli stanno in `stile.css`. La firma
-   DenkiCode nel footer resta.
+Carichi la catena prima di proporre qualunque cosa: `impeccable context`, poi
+`reference/new-work.md`, `design-taste-frontend`, la skill di stile. **Poi**
+torni con **due o tre mondi visivi**, dieci righe l'uno:
 
-Quello che il brief non dice, lo decidi tu. Se il brief detta i pixel, dillo in
-una riga: e' il direttore che sta scrivendo codice con altre parole.
+- la metafora, presa dal mestiere vero — se si potrebbe spostare su un altro
+  cliente non e' quella giusta;
+- **la spina dello scroll**: cosa racconta la pagina mentre si scende, in tre
+  battute;
+- i tre o quattro pezzi di **grafica inventata** che nascono da quella metafora
+  (un globo che gira, una mappa che pulsa, una tenda che scorre: roba
+  disegnata, non foto in griglia);
+- palette e famiglia tipografica, coi valori.
+
+Non scrivi il sito. Sceglie il direttore.
+
+### B. Operatore di costruzione — il mondo e' gia' scelto
+
+Carichi `impeccable context`, poi `reference/new-work.md` sul mondo scelto, e
+**`reference/craft-floor.md` immediatamente prima di toccare la UI**. Una sola
+skill di stile. `voce-denkicode` sul copy. Modo di impeccable: **Persuade**.
+
+Poi il **passo di carattere**, che e' quello che manca sempre: `bolder` se la
+pagina e' timida, `delight` per i momenti memorabili, `animate` sulla spina.
+Un impaginato educato non si consegna.
+
+### Le tre cose che verifichi prima di riferire, in tutti e due i casi
+
+1. **Le foto reggono**: minimo 1080 px sul lato lungo, un trattamento solo per
+   tutte. Sotto quella soglia lo dici e proponi le due strade — chiedere le foto
+   al cliente, o disegnare un sito che non dipenda da loro.
+2. **La spina dello scroll c'e' e funziona.** Togliere GSAP perche' «restava per
+   un pin che non esiste piu'» vuol dire aver cancellato il racconto: se succede
+   lo dici, non lo fai di nascosto.
+3. **L'apertura c'e'** ed e' la metafora che entra in scena. Vive in CSS con
+   `.js:not(.cattura)`, cosi' lo stato a riposo e' gia' quello finale.
+
+E **guardi la pagina vera, non solo `?cattura`**: in cattura la motion e' spenta
+per costruzione, quindi da li' non giudichi ne' l'apertura ne' la spina.
+
+Lo starter porta l'idraulica, non il gusto: `base.css` non si riscrive e non ci
+si aggiungono colori. La firma DenkiCode nel footer resta.
 
 ## Come si consegna
 

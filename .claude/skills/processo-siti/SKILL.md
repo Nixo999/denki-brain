@@ -1,111 +1,138 @@
 ---
 name: processo-siti
-description: Come si costruisce un sito vetrina DenkiCode. Da usare prima di scrivere una riga di HTML per un sito cliente o una bozza. Divide il lavoro fra direttore (decide, non scrive codice) e operatore su Opus (scrive e misura), parte dallo starter e dall'essenza del cliente da Instagram, impone un'apertura animata e una metafora sola. Non vale per OperO e DenkiShift, dove comanda il CLAUDE.md del repo.
+description: Come si costruisce un sito vetrina DenkiCode. Da usare prima di scrivere una riga di HTML per un sito cliente o una bozza. La direzione la propone un operatore su Opus che ha letto le skill di design, il direttore sceglie e non scrive codice. Impeccable guida la costruzione, lo scroll-telling e la grafica inventata sono obbligatori. Non vale per OperO e DenkiShift, dove comanda il CLAUDE.md del repo.
 ---
 
 # Il processo, in ordine
 
-Saltare un passo ha già bruciato tre prime versioni: Castiglione v1 («il sito
-più piatto della storia»), DSI v1 («sta venendo malissimo»), Da Caterina v1
-(«da telefono è orribile»). Tutte e tre costruite tirando dritto sul codice.
+Il metro sono **NG Barber** e **Fiftynine**. Non si copiano: si eguaglia il
+livello. Cos'hanno che i siti di settembre non hanno, misurato:
 
-## 0. Direttore e operatore — chi fa cosa
+| | NG Barber | Fiftynine | Mikuma | Lobidù | Da Caterina |
+|---|---|---|---|---|---|
+| `<svg>` inline | 8 | 10 | 4 | 0 | 0 |
+| scroll-telling (GSAP/ScrollTrigger) | sì | sì | no | no | no |
 
-**Il direttore non scrive codice.** Decide, scrive il brief, giudica il
-risultato, pubblica. Regola dal 10 settembre 2026.
+**Grafica inventata e racconto allo scroll.** Le pagine che piacciono hanno un
+globo che gira, una mappa con le città che pulsano, una tenda che scorre, una
+goccia che si stacca — roba disegnata, non foto messe in griglia — e una storia
+che si srotola mentre scendi. Quelle che non piacciono sono impaginati con
+rivelazioni in entrata.
 
-| | Direttore (la sessione, di solito Fable) | Operatore (subagente, Opus) |
-|---|---|---|
-| Legge | Instagram del cliente, questa skill, la nota di progetto | Il brief, le skill di design, `trappole.md` |
-| Decide | La metafora, la direzione, cosa esce | Come si scrive, quali valori, quale tecnica |
-| Produce | Un brief da 40 righe | Il sito, e le misure |
-| Non fa | Non apre le skill di design, non scrive HTML | Non pubblica, non parla al cliente, non decide la direzione |
+## 0. Il direttore raccoglie, non decide
 
-Si lancia con l'agente `operatore`, che gira su Opus con `effort: high`. Il
-motivo è di costo: la catena di design è ~17.500 parole, e quelle stanno nel
-contesto dell'operatore, non in quello del direttore. Il direttore spende
-quaranta righe di brief e ne legge dieci di rapporto.
+Regola dal 11 settembre 2026, e **ribalta quella di ieri**. Prima il direttore
+sceglieva la metafora prima che qualcuno avesse letto una skill di design: la
+decisione creativa stava nel modello che di design non aveva letto niente, e
+l'operatore diventava un esecutore. Non si fa più.
 
-**Se il direttore si trova a scrivere CSS, il processo è già saltato.**
+Il direttore raccoglie e verifica: profilo Instagram, logo, vecchio sito, le
+parole loro, gli orari, il ritmo del mestiere, gli oggetti fisici del posto, e
+**cosa non c'è** (prezzi, recensioni, indirizzo: si dichiara, non si inventa).
+Scrive tutto nella nota di progetto. **Le foto si scaricano subito** e si
+controllano (passo 1). Poi scrive `PRODUCT.md` con `impeccable init`: è la
+verità di prodotto, non la direzione.
 
-## 1. Lo starter, prima di tutto
+Il direttore **non** sceglie metafora, palette, font o sezioni.
+
+## 1. Le foto — si controllano prima, non dopo
 
 ```bash
-python3 01-Coding/strumenti/nuovo-sito.py <nome-cliente>
+sips -g pixelWidth -g pixelHeight assets/img/*.jpg | paste - - -
 ```
 
-Porta reset, `--vh`, `.cattura`, rivelazioni, tre sbarramenti, cache giusta e
-la firma DenkiCode nel footer. **Non porta gusto**: colori, font, griglia e
-sezioni nascono ogni volta. Vedi `starter-sito/LEGGIMI.md`.
+**Minimo 1080 px sul lato lungo.** Da Instagram si prendono i post del feed, non
+le copertine dei Reel: quelle sono 360 px e su Retina rendono a metà. Su Mikuma
+tutte le foto erano 360 px, e si vede.
 
-## 2. L'essenza del cliente — la fa il direttore, e la scrive
+Se dopo il controllo il materiale non regge — sotto 1080, rapporti scombinati,
+fotogrammi di video, dominanti diverse — ci sono due strade, e si **dichiara
+quale**:
 
-Prima di qualunque skill: il logo, il vecchio sito, i post. Cosa fotografano,
-con che parole, il ritmo del mestiere, gli oggetti fisici del posto, e **cosa
-non c'è** (recensioni, prezzi: si dichiara, non si inventa).
+1. **Si chiedono le foto buone al cliente.** È anche un motivo per scrivergli.
+2. **Si disegna un sito che non dipende dalle foto**: grafica inventata,
+   tipografia, colore. NG Barber ha otto foto e regge sul globo e sulla mappa.
 
-Le foto si scaricano subito: gli URL Instagram scadono in giorni.
+Quello che non si fa mai è impaginare foto brutte e sperare. Un trattamento
+solo per tutte (taglio, grana, duotone, cornice) o nessuno.
 
-Da lì esce **una metafora sola**, scritta nella nota di progetto. Se si
-potrebbe spostare su un altro cliente, non è quella giusta. Il metodo per
-esteso, con i tre casi che hanno funzionato, sta in
-`01-Coding/stack/essenza-e-motion.md`.
+## 2. La direzione la propone chi ha letto le skill
 
-## 3. Il brief — l'unica cosa che attraversa il confine
+Il direttore lancia **un operatore di direzione** (agente `operatore`, Opus).
+Quell'operatore carica la catena — `impeccable context`, poi
+`reference/new-work.md`, `design-taste-frontend`, la skill di stile — e **torna
+con due o tre mondi visivi**, non con un sito.
 
-Massimo quaranta righe. Contiene: la metafora in una riga, i colori campionati,
-i font, le sezioni con il contenuto vero, quale skill di stile usare (**una**,
-mai due), l'apertura animata voluta, i quattro tipi di motion del passo 4 di
-`essenza-e-motion.md`, e cosa è `TODO` perché non verificato.
+Ogni mondo, in dieci righe:
 
-Quello che il brief non dice, l'operatore lo decide. Un brief che detta i pixel
-è il direttore che scrive codice con altre parole.
+- **La metafora**, presa dal mestiere vero. Se si potrebbe spostare su un altro
+  cliente non è quella giusta.
+- **La spina dello scroll**: cosa racconta la pagina mentre scendi, in tre
+  battute. È la cosa che rende NG Barber NG Barber.
+- **I tre o quattro pezzi di grafica inventata** che nascono da quella metafora.
+- Palette e famiglia tipografica, con i valori.
 
-## 4. Cosa fa l'operatore
+**Il direttore sceglie uno** e può chiedere di incrociarne due. Da lì, e solo da
+lì, parte la costruzione. Il mondo scelto si scrive nella nota di progetto col
+seed di impeccable, o non è ripetibile.
 
-Nell'ordine, nel suo contesto:
+## 3. La costruzione — impeccable al centro
 
-1. `design-taste-frontend` — la direzione anti-slop. Si legge per decidere cosa
-   **non** fare.
-2. **Una** skill di stile: `high-end-visual-design`, `minimalist-ui` o
-   `industrial-brutalist-ui`. Due si contraddicono e il risultato è una media
-   senza carattere.
-3. `brandkit` **solo se** il cliente non ha identità. Se ha logo e font, si salta.
-4. `ui-ux-pro-max` per pescare un valore preciso: palette di settore, accoppiate
-   di font, preset GSAP.
-5. `impeccable` **durante**, non alla fine. `PRODUCT.md` prima del dado, il seed
-   scritto nella nota di progetto, il detector meccanico che gira mentre si
-   costruisce.
-6. `voce-denkicode` sul copy prima della finish review: il detector guarda
-   marquee e spaziature, non le parole.
-7. `emilkowalski-motion` per ultima, sopra l'apertura e i quattro tipi.
+L'operatore che costruisce carica, in quest'ordine:
 
-**Precedenza quando due skill si contraddicono**: brief > skill di stile >
-`design-taste`.
+1. `impeccable context` → `reference/new-work.md` per il mondo scelto.
+2. `reference/craft-floor.md` **immediatamente prima di toccare la UI**. È il
+   pavimento di qualità e la lista dei divieti assoluti.
+3. La skill di stile, **una sola**: `high-end-visual-design`, `minimalist-ui` o
+   `industrial-brutalist-ui`. Due si contraddicono.
+4. `ui-ux-pro-max` per pescare un valore preciso, non una direzione.
+5. `voce-denkicode` sul copy, prima della review.
 
-## 5. Verifica misurata, non a occhio
+Modo di impeccable: **Persuade**. È una vetrina, il visitatore deve decidere e
+agire.
 
-1440×900 e 375×812, più i bordi di ogni media query: una voce in più in nav
-rompe nella banda stretta in mezzo, non ai due estremi. Overflow zero,
-contrasti AA, console pulita. **Uno screenshot conferma, non dimostra**: il
-pannello dipinge solo il primo frame.
+Poi il **passo di carattere**, che è quello che mancava: `bolder` se la pagina
+è timida, `delight` per i momenti memorabili, `animate` sulla spina dello
+scroll, `overdrive` quando il mondo lo chiede. Su un impaginato educato si
+passa da `bolder`, non si consegna.
 
-## 6. Finish review di impeccable — non è opzionale
+**Nessun giro parte senza catena.** Su Mikuma tre operatori su sette non hanno
+caricato niente, e il giro finito online è uno di quelli. Un giro che tocca la
+UI carica almeno `impeccable context` e `craft-floor`.
 
-È il passo che ha pagato di più: diciotto didascalie false, un bollino prezzo
-mancante, promesse scritte a nome di un cliente che non le aveva mai fatte.
-**Le didascalie si scrivono guardando la foto, non il nome del file.**
+## 4. Lo scroll-telling non è un extra
 
-## 7. Pubblicazione e chiusura
+Una vetrina ha una spina che si srotola: pin, parallasse sui layer immagine,
+elementi che entrano in sequenza, un momento che sorprende. GSAP con
+ScrollTrigger, oppure `animation-timeline: view()` dove basta.
 
-Netlify, e i **tre sbarramenti restano** finché il sito non è suo. Li toglie il
-direttore, tutti e tre insieme, il giorno della consegna.
+⚠️ **Togliere GSAP non è pulizia.** Su Mikuma è stato rimosso al giro 4 con la
+motivazione «restavano per un pin che non esiste più»: il pin *era* il racconto.
+Se una direzione cancella la spina, quella direzione è finita e si torna al
+passo 2.
 
-Poi la riga in `01-Coding/registro-interventi.md` — chi, quando, progetto,
-repository, database — e push.
+Le trappole di motion in [[trappole]] dicono **come** farlo senza rompere le
+catture. Non dicono di non farlo.
+
+## 5. Verifica misurata, e poi guardata
+
+1440×900 e 375×812, più i bordi di ogni media query. Overflow zero, contrasti
+AA, console pulita, pagina completa senza JS.
+
+Poi **si guarda**, e si guarda la pagina vera, non solo `?cattura`: in cattura
+la motion è spenta per costruzione, quindi da lì non si giudica mai né
+l'apertura né la spina. Catture a pagina intera a 1440 e a 375, e si guardano.
+
+## 6. Finish review e consegna
+
+`impeccable polish` prima di chiudere, poi la finish review: è il passo che ha
+trovato diciotto didascalie false e un prezzo mancante. **Le didascalie si
+scrivono guardando la foto, non il nome del file.**
+
+Netlify, i **tre sbarramenti restano** finché il sito non è suo, e li toglie il
+direttore tutti e tre insieme. Poi la riga in `01-Coding/registro-interventi.md`
+— chi, quando, progetto, repository, database — e push.
 
 ## Dove questo processo NON vale
 
-OperO e DenkiShift. Sono gestionali, e nei loro repo comanda il `CLAUDE.md` del
-repo. Là si usa `impeccable` per l'audit e `ui-ux-pro-max` per un valore
-preciso, e basta.
+OperO e DenkiShift: nei loro repo comanda il `CLAUDE.md` del repo.

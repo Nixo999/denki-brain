@@ -1,8 +1,8 @@
 ---
 type: risorsa
-riga: Come si cava l'essenza di un cliente da Instagram e come diventa metafora e motion. Il metro sono NG Barber e Fiftynine.
-updated: 2026-09-10
-verificato: 2026-09-10
+riga: Essenza da Instagram, metafora, spina dello scroll, grafica inventata e foto minime 1080px. Il metro misurato sono NG Barber e Fiftynine.
+updated: 2026-09-11
+verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, motion, instagram, essenza]
 ---
@@ -17,6 +17,21 @@ Non è una lista di effetti. È una regola sola: **ogni sito ha una metafora
 sola, presa dal mestiere vero del cliente, e la motion serve quella.** Un sito
 con dieci animazioni scelte da un catalogo sembra generato. Un sito con quattro
 animazioni che parlano tutte della stessa cosa sembra vero.
+
+## Il metro, misurato
+
+Aggiornato l'11 settembre 2026 confrontando i sei siti fatti finora.
+
+| | NG Barber | Fiftynine | Mikuma | Lobidù | Da Caterina |
+|---|---|---|---|---|---|
+| `<svg>` inline | 8 | 10 | 4 | 0 | 0 |
+| scroll-telling | sì | sì | no | no | no |
+| foto, lato lungo | 1350 px | 1100 px | **380 px** | — | 640 px |
+
+Le due che piacciono a Nicola hanno **grafica inventata** e **una storia che si
+srotola allo scroll**. Le altre sono impaginati con rivelazioni in entrata, su
+foto piccole. Non è una questione di gusto: è la differenza fra una pagina
+disegnata e una pagina compilata.
 
 ## 1. Cosa si porta via da Instagram, prima di disegnare
 
@@ -48,6 +63,46 @@ Una riga nella nota di progetto, e tutto il resto discende da lì.
   alla volta e derivano con lo scroll.
 
 Nessuna delle tre si potrebbe spostare su un altro cliente. È quello il test.
+
+## 2-bis. La spina dello scroll e la grafica inventata
+
+Due cose obbligatorie su ogni vetrina, e sono quelle che mancavano a settembre.
+
+**La spina.** Cosa racconta la pagina mentre si scende, in tre battute. NG
+Barber è scroll-telling sul globo del logo: il commit si chiama così. Fiftynine
+è la giornata che avanza su un binario. Si costruisce con GSAP e ScrollTrigger,
+o con `animation-timeline: view()` dove basta.
+
+⚠️ **Togliere GSAP non è pulizia.** Su Mikuma è stato rimosso al giro 4 perché
+«restava per un pin che non esiste più»: il pin *era* il racconto, ed è uscito
+un impaginato. Se una direzione cancella la spina, quella direzione è finita.
+
+**La grafica inventata.** Tre o quattro pezzi disegnati che nascono dalla
+metafora, non foto messe in griglia: il globo che gira in 140 secondi, la mappa
+con le città che pulsano, la tenda a righe che scorre, la goccia che si stacca.
+Sono `<svg>` inline e CSS. Una pagina con zero SVG inventati è una pagina che
+dipende interamente dalle foto — e le foto spesso non reggono.
+
+## 2-ter. Le foto — si controllano prima di progettare
+
+```bash
+sips -g pixelWidth -g pixelHeight assets/img/*.jpg | paste - - -
+```
+
+**Minimo 1080 px sul lato lungo.** Da Instagram si prendono i post del feed, non
+le copertine dei Reel: quelle sono 360 px, e mostrate a ~386 px CSS rendono a
+metà risoluzione su uno schermo Retina. Su Mikuma erano tutte così.
+
+Se il materiale non regge — sotto 1080, rapporti scombinati, fotogrammi di
+video, dominanti diverse — due strade, e si **dichiara quale**:
+
+1. **Chiedere le foto buone al cliente.** È anche un motivo per scrivergli.
+2. **Disegnare un sito che non dipenda dalle foto.** NG Barber ne ha otto e
+   regge sul globo, sulla mappa e sulla grana.
+
+Non si impaginano foto brutte sperando che passino. Un trattamento solo per
+tutte — taglio, grana, duotone, cornice — oppure nessuno: quattro foto a
+quattro rapporti e quattro dominanti leggono come disordine, non come ritmo.
 
 ## 3. L'apertura — sempre, e sempre diversa
 
