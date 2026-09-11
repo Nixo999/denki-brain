@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Errori tecnici già pagati e strade scartate, per dominio. Descrittivo, non è un rulebook - le regole stanno in convenzioni.
-updated: 2026-09-10
+updated: 2026-09-11
 verificato: 2026-09-10
 source: denkicode
 tags: [trappole, memoria, frontend, gsap, git]
@@ -84,6 +84,13 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   perche' un pezzo sbagliato sembra un pezzo giusto. → venti righe di Swift con
   `CGImage.cropping(to:)`, argomenti `in out x y w h`. Serve ogni volta che una
   cattura di pagina intera va spezzata per guardarla. ([[sito-mikuma-dogs]])
+- **Una cattura oltre il viewport non fa scattare il lazy-load.** Con
+  `captureBeyondViewport` le foto sotto la piega escono nere e sembra un bug
+  del sito. → `loading="eager"` forzato prima della cattura e attesa di
+  `decode()` su ogni immagine. ([[sito-mikuma-dogs]])
+- **Brave headless rilanciato a ogni cattura con il profilo cancellato riparte
+  dal first-run e si impianta.** → una sola istanza viva via CDP e
+  `Page.captureScreenshot` a ripetizione su quella. ([[sito-mikuma-dogs]])
 - **In `?cattura` anche un `clamp(4.5rem, 11vh, 8rem)` va passato da `--vh`.**
   La finestra headless e' alta quanto il documento, quindi `11vh` sfonda il
   tetto del clamp e i vuoti fra le sezioni si presentano al doppio di quello
@@ -199,6 +206,14 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   `padding-inline: max(var(--pad), (100% - 1240px) / 2)`. ([[sito-pizzeria-lobidu]])
 
 ## GSAP e motion
+
+- **La natura simulata in CSS non regge accanto a una foto vera nella stessa
+  pagina.** Tre giri su Mikuma Dogs: l'acqua a righe ripetute nel giro 1, le
+  caustiche «come nebbia» nel giro 3, e Nicola: «sembra finta, eliminala, non
+  stare a provare a generare acqua finta che non viene bene». → la metafora si
+  prende da un artefatto del mestiere (nastri, cuciture, fibbie, tende,
+  ottone): quello in CSS sembra vero perché è grafico. L'acqua, il cielo, il
+  fuoco stanno solo dentro le foto. ([[sito-mikuma-dogs]])
 
 - **GSAP e framer sovrascrivono il `transform` CSS al primo frame.** Un elemento
   centrato con `translate(-50%,-50%)` salta appena parte l'animazione. →

@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza attesa da Martina Carneli (mikuma.dogs), istruttrice cinofila a Como - acqua scartata dopo tre giri, giro 4 sull'attrezzatura.
+riga: Bozza attesa da Martina Carneli (mikuma.dogs), istruttrice cinofila a Como - giro 4 sull'attrezzatura pronto in locale, aspetta il giudizio di Nicola.
 status: attivo
 client: mikuma-dogs
 stack: html-css-js
@@ -133,7 +133,28 @@ sette cose sbagliate una per una, dà come metro `ngbarber-site` e
 catture sezione per sezione prima di riferire.
 
 Giro 3 fermato due volte: prima per l'emersione, poi per l'acqua stessa.
-⬜ Giro 4 in corso. ⬜ Netlify e repo remota: in attesa del via.
+
+## Giro 4, la mattina dell'11 — l'attrezzatura
+
+Seed impeccable **`7ded081f`**, indice 5 (la carta del Lario), sfidante
+competitivo «busta da cartamodello» che ha dato la regola del rosso: un rosso
+solo, `#F60B35` campionato dal giubbotto, sulla cucitura dell'etichetta Water
+Games CIS. Sette nastri da 6-14 px, due cuciti con due filze ai bordi (una
+filza sola al centro leggeva come `border: dashed`), **una fibbia** in linea
+piatta dopo tre versioni scartate (connettore USB, scalino, busta da lettere).
+Apertura: le due metà della cinghia si tendono in 500 ms, la fibbia scatta con
+un fotogramma di sovraccorsa, il titolo si aggancia. GSAP tolto, zero JS
+esterno. **Il dato vero non c'è, ed è dichiarato**: senza l'acqua l'ora del
+visitatore non ha motivo, e un dato onesto non c'era.
+
+Misurato: overflow 0 su 31 larghezze da 320 a 1600, 17 coppie AA, console
+pulita, h1 su una riga da 761 in su, 35 rivelazioni entrate, stato finale
+senza JS, in `?cattura` e con `reduced-motion`. Guardato dal direttore sulle
+catture a 1440 e a 375: foto nude a ritmo, etichette cucite, nessun buco.
+Non visto girare: l'apertura è letta via `getAnimations()`, mai a occhio.
+
+Commit locale `giro 4` su `mikuma-site`. ⬜ Giudizio di Nicola.
+⬜ Netlify e repo remota: in attesa del via.
 ⬜ Safari su iPhone. ⬜ Scheda cliente in `02-Sales/clienti/`.
 
 ## Collegamenti
