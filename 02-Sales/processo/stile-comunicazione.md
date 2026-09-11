@@ -1,7 +1,7 @@
 ---
 riga: Il registro dei testi che legge un cliente - Lei o Tu, voce di Patrick. Non e' il registro di Trevis.
 type: risorsa
-updated: 2026-09-06
+updated: 2026-09-11
 source: denkicode
 ---
 
@@ -98,6 +98,15 @@ Vincolo fiscale attivo, dettaglio in [[vincoli-fiscali]]:
 >
 > *"Questa nella versione attuale non c'è, quindi è lavoro nuovo: te la quoto e
 > ti dico quanto sposta la consegna."*
+
+
+## Regole date a voce
+
+Scritte da `regola.py` nel momento in cui sono state dette.
+
+### 11/09/2026 — Patrick: «per i siti il gancio deve essere che la bozza è già stata fatta»
+
+il DM dei siti torna alla promessa piena: non «le preparo una schermata», ma la bozza esiste gia' e gliela mando
 
 ## Collegamenti
 
