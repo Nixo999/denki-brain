@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza attesa da Martina Carneli (mikuma.dogs), istruttrice cinofila a Como - due giri bocciati da Nicola, giro 3 da capo con la stessa metafora.
+riga: Bozza attesa da Martina Carneli (mikuma.dogs), istruttrice cinofila a Como - acqua scartata dopo tre giri, giro 4 sull'attrezzatura.
 status: attivo
 client: mikuma-dogs
 stack: html-css-js
@@ -70,12 +70,21 @@ dove lavora non è mai nominato: c'è scritto solo **Como**.
 
 L'unico canale di contatto verificato è il DM di Instagram.
 
-## La metafora — la linea dell'acqua
+## La metafora — l'attrezzatura (dal giro 4)
 
-**Un cane che entra in acqua è un cane che si fida.** È il mestiere suo e di
-nessun altro in zona: istruttrice **Water Games CIS**, mezzo feed dentro il lago.
-Il sito è attraversato da una linea di galleggiamento: sopra la terra e
-l'obbedienza, sotto l'acqua e il salvataggio. Non si sposta su un altro cliente.
+**Prima di lavorare si allaccia qualcosa.** Il giubbotto di salvataggio rosso
+con le cinghie e le fibbie, la pettorina, il collare giallo: stanno in metà
+delle sue foto. Il sito è costruito come un'attrezzatura: nastri piatti che
+reggono le sezioni, cuciture tratteggiate, le certificazioni come etichette
+cucite, una fibbia sola. L'apertura è la cinghia che si tende e la fibbia che
+scatta. **Niente natura simulata**: l'acqua esiste solo dentro le foto.
+
+**Scartata: la linea dell'acqua** (giri 1-3). «Un cane che entra in acqua è un
+cane che si fida» resta vero come frase, ma resa in CSS l'acqua è uscita a
+righe nel giro 1 e a nebbia nel giro 3. Nicola, 2:4x dell'11: «l'acqua sembra
+finta, eliminala; inventati qualcos'altro, ma non stare a provare a generare
+acqua finta, che non viene bene». Trappola da scrivere: la natura simulata in
+CSS non regge il confronto con una foto vera nella stessa pagina.
 
 ## Le foto scaricate
 
@@ -123,7 +132,8 @@ sette cose sbagliate una per una, dà come metro `ngbarber-site` e
 `fiftynine-site` che stanno sul Mac, e obbliga l'operatore a guardare le sue
 catture sezione per sezione prima di riferire.
 
-⬜ Giro 3 in corso. ⬜ Netlify e repo remota: in attesa del via.
+Giro 3 fermato due volte: prima per l'emersione, poi per l'acqua stessa.
+⬜ Giro 4 in corso. ⬜ Netlify e repo remota: in attesa del via.
 ⬜ Safari su iPhone. ⬜ Scheda cliente in `02-Sales/clienti/`.
 
 ## Collegamenti
