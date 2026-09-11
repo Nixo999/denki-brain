@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza attesa da Martina Carneli (mikuma.dogs), istruttrice cinofila a Como - giro 4 sull'attrezzatura pronto in locale, aspetta il giudizio di Nicola.
+riga: Bozza online su mikumadogs.netlify.app per Martina Carneli (mikuma.dogs), istruttrice cinofila a Como - quattro giri, l'acqua scartata, l'attrezzatura.
 status: attivo
 client: mikuma-dogs
 stack: html-css-js
@@ -153,8 +153,12 @@ senza JS, in `?cattura` e con `reduced-motion`. Guardato dal direttore sulle
 catture a 1440 e a 375: foto nude a ritmo, etichette cucite, nessun buco.
 Non visto girare: l'apertura è letta via `getAnimations()`, mai a occhio.
 
-Commit locale `giro 4` su `mikuma-site`. ⬜ Giudizio di Nicola.
-⬜ Netlify e repo remota: in attesa del via.
+✅ **Online su <https://mikumadogs.netlify.app>** dalle 9:4x dell'11 settembre,
+via di Nicola («mettilo online con netlify»). Sito `mikumadogs`, team
+`denkicode`, deploy dal CLI. Tre sbarramenti verificati con `curl`: `meta
+robots`, `X-Robots-Tag`, `robots.txt`. CSS con `must-revalidate`.
+✅ Repo `Nixo999/mikuma-site`, privata, `main`.
+⬜ Safari su iPhone. ⬜ Il DM con il link è di Patrick. ⬜ Scheda cliente.
 ⬜ Safari su iPhone. ⬜ Scheda cliente in `02-Sales/clienti/`.
 
 ## Collegamenti

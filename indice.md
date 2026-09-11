@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **156 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **157 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -47,7 +47,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-denkicode]] — Sito di DenkiCode. È qui che sta la galleria dei lavori - il posto dove si mostra a un cliente cosa abbiamo già fatto.
 - [[sito-dsi-advertising]] — ⚠️ Sito vetrina in una pagina per D.S.I. Advertising di Piras Sebastiano, Merate (LC) - dal 1992 progetta e produce articoli promozionali per il...
 - [[sito-fiftynine]] — ⚠️ Sito vetrina in una pagina per Bar Tabacchi Fiftynine, bar tabaccheria e pizzeria in via Nazionale dei Giovi 59, Cesano Maderno (MB).
-- [[sito-mikuma-dogs]] — Bozza attesa da Martina Carneli (mikuma.dogs), istruttrice cinofila a Como - essenza, metafora della linea dell'acqua e brief del giro 1.
+- [[sito-mikuma-dogs]] — Bozza online su mikumadogs.netlify.app per Martina Carneli (mikuma.dogs), istruttrice cinofila a Como - quattro giri, l'acqua scartata, l'attrezzatura.
 - [[sito-nails-mania]] — ⚠️ Sito vetrina in una pagina per Nails Mania, centro di ricostruzione unghie mani e piedi di Lory Frosio a Seriate (BG).
 - [[sito-ngbarber]] — ⚠️ Bozza vetrina per ng-barber, riga 2 dell'anello 1-b delle liste Instagram, gancio 5.
 - [[sito-osteria-tarilli]] — ⚠️ Osteria Tarilli, Via Ronco Nuovo 2, 6949 Comano (TI), a 300 m dalla RSI.
@@ -228,6 +228,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-10-direttore-operatore]] — Da adesso i siti si fanno con starter, essenza del cliente e metafora sola, e il direttore non scrive codice - lo scrive l'operatore su Opus.
 - [[2026-09-10-liste-50-30-messaggi-personalizzati]] — Ogni lista DM e' 50 siti piu' 30 DenkiShift, e ogni riga porta il suo messaggio scritto a mano.
 - [[2026-09-10-memoria-verificata]] — Il brain smette di leggersi addosso - riga obbligatoria, verificato, tre classi di memoria, core non piu' obbligatori.
+- [[2026-09-11-niente-note-di-fonte-in-pagina]] — ⚠️ Decisione. Nicola, 11 settembre 2026, sul sito della Pizzeria Lobidù: «ci sta scritta roba a caso tipo di dove prendi le immagini, non devi...
 
 ## 06-Daily
 
