@@ -249,6 +249,13 @@ sbarramenti verificati con `curl`, CSS `?v=32` online. **`controlla-sito.py`
 da' 7/8**: il logo in bitmap ha tolto tre `<svg>` e il conteggio scende sotto
 i sei che chiede con foto piccole. E' la scelta di Nicola, non una regressione.
 
+**Lo sfarfallio del ribaltamento** (Nicola, sera): la classe scattava e
+tornava sullo stesso pixel, e la transizione correva anche sul colore del
+testo. Ora c'e' mezzo schermo di isteresi (scatta quando il centro dei
+contrari passa il centro dello schermo, torna nero solo quando i contrari sono
+quasi usciti dal basso) e fonde solo il fondo, 0,3 s. Verificato in headless
+con virtual time, non a occhio. Online, `?v=33`.
+
 ⬜ Safari su iPhone vero: non provato. ⬜ Il rapporto dell'operatore (giro di
 fix interrotto) sta in `git stash` del repo, con un hero a colonna sola
 scartato perche' a Nicola piace quello a due colonne.
