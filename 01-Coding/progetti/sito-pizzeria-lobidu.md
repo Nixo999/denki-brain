@@ -4,7 +4,7 @@ type: progetto
 status: bozza-locale
 cliente: "[[pizzeria-lobidu]]"
 created: 2026-09-10
-updated: 2026-09-10
+updated: 2026-09-11
 source: claude
 repo: da creare (`lobidu-site`, privata)
 tags: [sito-vetrina, bozza, ristorazione, varese]
@@ -72,10 +72,18 @@ filetti gialli e rosso contato, alone unico sull'hero, «Lobidù» testo anche a
 foto hero 786 a 1440×900, galleria 0 slot vuoti, contrasti da 5,5 a 15,1,
 console vuota. `DESIGN.md` dal documenter.
 
+**Giro 4**: Nicola ha bocciato il copy di servizio. Via dalla pagina ogni nota
+di provenienza (orari «da Google», «queste sono le loro foto», «su Google il
+ritiro è dichiarato», la firma della citazione, la nota sul riepilogo delle
+recensioni); al loro posto righe utili e positive. Fonti e `TODO` restano in
+`PRODUCT.md`. Regola in [[2026-09-11-niente-note-di-fonte-in-pagina]].
+Commit `3c82cf0`.
+
 ## Stato
 
-✅ Sito costruito e misurato, commit locale `9c30e33`. ⬜ Repo remota e
-Netlify: in attesa del via di Nicola. ⬜ Safari su iPhone. ⬜ Orari da
+✅ Sito costruito e misurato, commit locale `9c30e33`. ⬜ Repo remota e deploy: i comandi `gh repo create` e `netlify deploy`
+sono bloccati dal classificatore dei permessi, li lancia Nicola a mano. Sito
+Netlify `lobidu` già creato (id `c20a6579-9842-4a24-a5e6-e872535bd3e7`), vuoto. ⬜ Safari su iPhone. ⬜ Orari da
 confermare col titolare. ⬜ Due sorgenti a 360 px (forno, melanzane): da
 chiedere le foto originali. ⬜ DM di risposta: Patrick.
 
