@@ -30,6 +30,11 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+### 11/09/2026 — Nicola: «prova di funzionamento, da cancellare»
+
+riga di prova
+
+
 ### 11/09/2026 — «sembra che non usi più le skill nel modo di prima»
 
 Tre operatori su sette non avevano caricato niente. **Nessun giro tocca la UI
@@ -86,9 +91,19 @@ loro. Se il cliente ha logo, colori e voce, quelli comandano.
 
 ## Come si aggiunge una direttiva
 
-Quando una bozza viene bocciata, `/chiudi-sessione` chiede la frase esatta e la
-scrive qui con la data, la regola che ne esce e il sito su cui è successo. Non
-si riscrivono le vecchie: una direttiva superata si marca, non si cancella.
+**Nel momento in cui viene detta**, non a fine sessione:
+
+```bash
+python3 01-Coding/strumenti/regola.py siti "la frase esatta" --chi nicola --perche "..."
+```
+
+Vale per una bocciatura **e per una preferenza detta a freddo**. Fino all'11
+settembre 2026 il meccanismo era agganciato solo alla bocciatura e a
+`/chiudi-sessione`: un «da adesso sui siti voglio sempre X» detto a metà
+sessione non scattava, e si perdeva con la conversazione.
+
+Non si riscrivono le vecchie: una direttiva superata si marca superata, non si
+cancella. Questo file cresce e non si accorcia.
 
 ## Collegamenti
 
