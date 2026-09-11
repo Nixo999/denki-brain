@@ -4,13 +4,18 @@
     python3 01-Coding/strumenti/installa-macchina.py           # scrive
     python3 01-Coding/strumenti/installa-macchina.py --check   # dice e basta, esce 1 se serve
 
-`~/.claude/` e' locale alla macchina e fuori da git: protocollo, agenti, comandi
-e skill nostre vivono li'. Le copie canoniche stanno nel vault e ci arrivano col
+`~/.claude/` e' locale alla macchina e fuori da git: protocollo, agenti, comandi,
+skill nostre e **hook** vivono li'. Le copie canoniche stanno nel vault e ci arrivano col
 push, ma qualcuno deve portarle dentro. Finche' era un passaggio a mano restava
 indietro, come la firma nel footer. Adesso e' un comando.
 
-Non tocca niente di terze parti: plugin, skill di design e settings restano
-come sono.
+Non tocca niente di terze parti: plugin, skill di design e le altre voci di
+settings.json restano come sono. Degli hook registra solo i nostri due, e li
+riconosce dal nome dello script.
+
+Gli hook stanno a livello di account e non di progetto dall'11/09/2026: legati
+alla cartella del vault non sarebbero mai scattati per Patrick, che apre Claude
+dove capita e poi lancia /patrick. Trovano il vault da soli e toccano solo lui.
 """
 import filecmp, shutil, sys
 from pathlib import Path
@@ -25,7 +30,16 @@ CANONICHE = {
     "03-Storage/sistemi/agente-operatore.md": "agents/operatore.md",
 }
 # cartelle del vault ricopiate pari pari
-CARTELLE = ["commands", "skills"]
+CARTELLE = ["commands", "skills", "hooks"]
+
+# Gli hook stanno a livello di ACCOUNT, non di progetto: Patrick apre Claude
+# dove capita, e un hook legato alla cartella del vault non scatterebbe mai.
+# Trovano il vault da soli (trova-vault.sh) e toccano solo lui.
+HOOK = {
+    "SessionStart": ("allinea-claude.sh", 15, "Controllo che ~/.claude/ sia allineato al vault"),
+    "Stop": ("pusha-da-solo.sh", 60, "Chiudo e pusho il vault"),
+}
+FIRMA = "denki-brain"      # marcatore: cosi' non si tocca quello che c'era gia'
 
 
 def corpo(p):
@@ -47,6 +61,33 @@ def scrivi(dest, testo, check, fatti):
         dest.write_text(testo, encoding="utf-8")
 
 
+def registra_hook(check, fatti):
+    """Aggiunge i nostri hook a ~/.claude/settings.json senza toccare gli altri."""
+    import json
+    s = CLAUDE / "settings.json"
+    dati = json.loads(s.read_text(encoding="utf-8")) if s.exists() else {}
+    hooks = dati.setdefault("hooks", {})
+    cambiato = False
+    for evento, (script, timeout, messaggio) in HOOK.items():
+        comando = f'"$HOME/.claude/hooks/{script}"'
+        voce = {"type": "command", "command": comando,
+                "timeout": timeout, "statusMessage": messaggio}
+        gruppi = hooks.setdefault(evento, [])
+        # i nostri si riconoscono dal nome dello script: gli altri restano dove sono
+        nostri = [g for g in gruppi
+                  if any(FIRMA in h.get("command", "") or script in h.get("command", "")
+                         for h in g.get("hooks", []))]
+        if nostri and nostri[0]["hooks"] == [voce]:
+            continue
+        for g in nostri:
+            gruppi.remove(g)
+        gruppi.append({"hooks": [voce]})
+        cambiato = True
+        fatti.append(("registra hook", CLAUDE / f"settings.json ({evento})"))
+    if cambiato and not check:
+        s.write_text(json.dumps(dati, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
 def main(check):
     fatti = []
     for sorgente, destinazione in CANONICHE.items():
@@ -56,9 +97,16 @@ def main(check):
         radice = VAULT / ".claude" / cartella
         if not radice.is_dir():
             continue
-        for p in radice.rglob("*.md"):
-            scrivi(CLAUDE / cartella / p.relative_to(radice),
-                   p.read_text(encoding="utf-8"), check, fatti)
+        # gli hook sono script, non note: servono anche il bit di esecuzione
+        modelli = ("*.sh",) if cartella == "hooks" else ("*.md",)
+        for modello in modelli:
+            for q in radice.rglob(modello):
+                dest = CLAUDE / cartella / q.relative_to(radice)
+                scrivi(dest, q.read_text(encoding="utf-8"), check, fatti)
+                if modello == "*.sh" and dest.exists() and not check:
+                    dest.chmod(0o755)
+
+    registra_hook(check, fatti)
 
     for azione, dest in fatti:
         print(f"{azione}: ~/{dest.relative_to(Path.home())}")
