@@ -65,6 +65,28 @@ trappole pagate e strade scartate. Il modo giusto sta in `convenzioni.md`, nel
 
 Per esteso: `03-Storage/sistemi/come-si-scrive-una-nota.md`.
 
+## Una regola detta si scrive subito
+
+Quando Nicola o Patrick dicono una cosa che **vale da adesso in poi** e non solo
+per il compito di oggi — «da adesso», «d'ora in poi», «voglio sempre», «mai
+più», «preferisco che», «ricordati che», o una bocciatura con il motivo — si
+scrive **nel momento in cui è detta**, non a fine sessione:
+
+```bash
+python3 01-Coding/strumenti/regola.py <siti|voce|codice|liste|registro|prezzi|vault|azienda> "la frase esatta" --chi <nome> --perche "..."
+```
+
+Va nel file dove verrà riletta, con **le parole di chi l'ha detta**, e si
+committa da solo. Poi una riga sola di conferma, che dice dove è finita.
+
+Tre errori da non fare: aspettare `/chiudi-sessione` (una regola detta a metà
+sessione e non scritta è persa), riassumerla con parole tue, o metterla in un
+file dove nessuno la cerca. `regola.py --dove` elenca le destinazioni.
+
+**I file delle direttive crescono e non si accorciano.** Una regola superata si
+marca superata, non si cancella. Se una sessione fa una cosa peggio di come
+l'aveva fatta prima, è una regressione e si tratta come un errore.
+
 ## Da leggere quando la sessione lo richiede
 
 | Quando | Leggi |

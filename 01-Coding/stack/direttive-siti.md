@@ -30,10 +30,6 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
-### 11/09/2026 — Nicola: «prova di funzionamento, da cancellare»
-
-riga di prova
-
 
 ### 11/09/2026 — «sembra che non usi più le skill nel modo di prima»
 

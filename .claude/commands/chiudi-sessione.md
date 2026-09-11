@@ -44,6 +44,11 @@ lo dici in una riga.
 Se durante la sessione una bozza è stata **bocciata**, chiedi anche la frase
 esatta: serve al passo 4.
 
+**Rete di sicurezza, non la strada.** Una regola detta durante la sessione si
+scrive con `regola.py` nel momento in cui è detta. Qui si controlla solo se ne è
+sfuggita una: rileggi la conversazione, e se c'è un «da adesso» o un «voglio
+sempre» che non è finito da nessuna parte, scrivilo ora e dillo.
+
 ## 3. Promuovi — è il passo che mancava
 
 Una daily è un registro di giornata. Se la conoscenza resta lì, fra una
