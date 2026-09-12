@@ -9,7 +9,7 @@ Data,Da,Account IG,Nome,Comune,Segmento,Tipo,Lista
 2026-09-03,Patrick Sappa,@beauty.and.charme,Beauty & Charme,Castiglione Olona (VA),Estetica,primo,lista-corrente.csv
 2026-09-03,Patrick Sappa,@beauty_unique_va,Beauty Unique,Varese (VA),Ciglia/sopracciglia,primo,lista-corrente.csv
 2026-09-03,Patrick Sappa,@beautyfarm_appianogentile,Beauty Farm,Appiano Gentile (CO),Estetica,primo,lista-corrente.csv
-2026-09-03,Patrick Sappa,@beautyzone_olgiatecomasco,BeautyZone,Olgiate Comasco (CO),Estetica/parrucchieri,primo,lista-corrente.csv
+2026-09-03,Patrick Sappa,@beautyzone_olgiatecomasco,BeautyZone,Olgiate Comasco (CO),Estetica/parrucchieri,recupero,lista del 12/09/2026
 2026-09-03,Patrick Sappa,@belindatattoo_,Belinda - fineline botanical,Lecco (LC),Tattoo,primo,lista-corrente.csv
 2026-09-03,Patrick Sappa,@betty_style_lurate_caccivio,Betty Style,Lurate Caccivio (CO),Parrucchieri,primo,lista-corrente.csv
 2026-09-03,Patrick Sappa,@biumotattooclub,Biumo Tattoo Club,Varese (VA),Tattoo/piercing,primo,lista-corrente.csv
@@ -160,3 +160,60 @@ Data,Da,Account IG,Nome,Comune,Segmento,Tipo,Lista
 2026-09-09,Patrick Sappa,@toelettatura_snoopy_gavirate,Toelettatura Snoopy,Gavirate (VA),Toelettatura,primo,2026-09-09-instagram-anello1-pet.csv
 2026-09-09,Patrick Sappa,@toelettaturagiulietta,Toelettatura Giulietta,Varese (VA),Toelettatura,primo,2026-09-09-instagram-anello1-pet.csv
 2026-09-09,Patrick Sappa,@unparadisoperiltuoamico,Un paradiso per il tuo amico (Emma),Bizzarone (CO),Pet sitting/pensione,primo,2026-09-09-instagram-anello1-pet.csv
+2026-09-12,Patrick Sappa,@abcgaragebg,ABC Garage,Treviolo (BG),Carrozzeria,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@alka_impiantiallarme,Alka Impianti,Bergamo (BG),Impianti elettrici,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@amare_edilizia_como,Amare Edilizia,Como (CO),Edilizia e materiali,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@artech_edilizia_completa,Artech Edilizia,Como (CO),Edilizia e materiali,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@autofficina_previtali_bergamo,Autofficina Previtali,Bergamo (BG),Autofficina,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@autofficinamantovansnc,Autofficina Mantovan,Mantova (MN),Autofficina,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@bellini_wood,Bellini Wood,Mantova (MN),Falegnameria,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@bg.impianti,BG Impianti,Milano (MI),Impianti elettrici,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@bicego_edilizia,F.lli Bicego,Legnano (MI),Edilizia e materiali,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@bigmat_simed,BigMat Simed,Pavia (PV),Edilizia e materiali,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@bontempiimpianti,Bontempi Impianti,Brescia (BS),Impianti elettrici,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@bottegan8,Bottega N8,Bergamo (BG),Ristorante,primo,2026-09-12-instagram-denkishift-lombardia.csv
+2026-09-12,Patrick Sappa,@cameletticlaudioedilizia,Cameletti Claudio,Brescia (BS),Edilizia e materiali,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@carpenteria_bonatese,Carpenteria Bonatese,Bergamo (BG),Carpenteria,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@carrozzeria_borgovico,Carrozzeria Borgovico,Como (CO),Carrozzeria,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@carrozzeria_lo.di,Carrozzeria LO.DI,Lodi (LO),Carrozzeria,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@carrozzeria_villetta_milano_,Carrozzeria Villetta,Milano (MI),Carrozzeria,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@carrozzeriabianchi.lodi,Carrozzeria Bianchi,Lodi (LO),Carrozzeria,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@carrozzeriamilano,Carrozzeria Milano,Milano (MI),Carrozzeria,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@carrozzeriasportmilano,Carrozzeria Sport,Milano (MI),Carrozzeria,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@edilporte_brescia,Edilporte,Quinzano d'Oglio (BS),Serramenti e infissi,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@energy_system_suisio,Energy System,Suisio (BG),Impianti elettrici,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@entesistemaediliziabrescia,ESEB,Brescia (BS),Edilizia e materiali,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@esteticaeternity_legnano,Estetica Eternity,Legnano (MI),Estetica,primo,2026-09-12-instagram-siti-milano.csv
+2026-09-12,Patrick Sappa,@falegnameria.sbanotto,Falegnameria Sbanotto,Milano (MI),Falegnameria,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@falegnameriamaffeisvertova,Falegnameria Maffeis,Vertova (BG),Falegnameria,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@galli.franco.edilizia,Galli Franco,Lecco (LC),Edilizia e materiali,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@hotelmodernopavia,Hotel Moderno,Pavia (PV),Albergo,primo,2026-09-12-instagram-denkishift-lombardia.csv
+2026-09-12,Patrick Sappa,@labdesign_falegnameria__milano,Colombo & Garavaglia LabDesign,Milano (MI),Falegnameria,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@lodifai_windows_e_doors,Lodifai Serramenti,Lodi (LO),Serramenti e infissi,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@mantoanellicar,Carrozzeria Mantoanelli,Inzago (MI),Carrozzeria,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@mara_carrozzeria_brescia,La Carrozziera di Brescia,Brescia (BS),Carrozzeria,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@marikanails._,Marika Nails,Milano (MI),Nail,primo,2026-09-12-instagram-siti-milano.csv
+2026-09-12,Patrick Sappa,@matii.nails_,Matilde Corrado Unghie,Rho (MI),Nail,primo,2026-09-12-instagram-siti-milano.csv
+2026-09-12,Patrick Sappa,@milanorestauriecosostenibile,Milano Restauri,Milano (MI),Edilizia e materiali,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@milanoserramenti,Milano Serramenti,Milano (MI),Serramenti e infissi,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@mvserramenti,MV Serramenti,Gorlago (BG),Serramenti e infissi,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@nailsandbeautygiada,Nails and Beauty Giada,Legnano (MI),Nail,primo,2026-09-12-instagram-siti-milano.csv
+2026-09-12,Patrick Sappa,@pasticceriabresciadue,Pasticceria Bresciadue,Brescia (BS),Pasticceria con laboratorio,primo,2026-09-12-instagram-denkishift-lombardia.csv
+2026-09-12,Patrick Sappa,@pasticceriaoscarbergamo,Pasticceria Oscar,Stezzano (BG),Pasticceria e gelateria,primo,2026-09-12-instagram-denkishift-lombardia.csv
+2026-09-12,Patrick Sappa,@prestigenailsandbeautybar,Prestige Nails and Beauty Bar,Sesto San Giovanni (MI),Nail,primo,2026-09-12-instagram-siti-milano.csv
+2026-09-12,Patrick Sappa,@rimag_official,RIMAG Serramenti,Bergamo (BG),Serramenti e infissi,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@ristorante_forchettone,Ristorante Forchettone,Brescia (BS),Ristorante,primo,2026-09-12-instagram-denkishift-lombardia.csv
+2026-09-12,Patrick Sappa,@ristorante_lestagioni,Ristorante Le Stagioni,Orio al Serio (BG),Ristorante,primo,2026-09-12-instagram-denkishift-lombardia.csv
+2026-09-12,Patrick Sappa,@rosa.bottonenails,Rosa Bottone Onicotecnica,Milano (MI),Nail,primo,2026-09-12-instagram-siti-milano.csv
+2026-09-12,Patrick Sappa,@rosser.serramenti.cremona,Rosser Serramenti,Cremona (CR),Serramenti e infissi,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@rotabiasetti,RotaBiasetti,Bergamo (BG),Panificio e pasticceria,primo,2026-09-12-instagram-denkishift-lombardia.csv
+2026-09-12,Patrick Sappa,@rs_serramenti_group,RS Serramenti,Rovato (BS),Serramenti e infissi,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@serena.nailslab,Serena Di Bari Nail Artist,Milano (MI),Nail,primo,2026-09-12-instagram-siti-milano.csv
+2026-09-12,Patrick Sappa,@sgmanagementmilano,SG Management,Milano (MI),Logistica e magazzini,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@societatrasportibergamo,Società Trasporti Bergamo,Lallio (BG),Trasporti,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@softnails.studio,Soft Nails Studio,Milano (MI),Nail,primo,2026-09-12-instagram-siti-milano.csv
+2026-09-12,Patrick Sappa,@tecnal_serramenti_pavia,Tecnal Serramenti,Pavia (PV),Serramenti e infissi,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@trasporti_bresciani,Trasporti Bresciani,Brescia (BS),Trasporti,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@trasportisemplicipavia,Trasporti Semplici,Pavia (PV),Trasporti,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@tronchinails,Martina Tronconi Unghie,Milano (MI),Nail,primo,2026-09-12-instagram-siti-milano.csv
+2026-09-12,Patrick Sappa,@vigevanotrasportisrl,Vigevano Trasporti,Vigevano (PV),Trasporti,primo,2026-09-12-instagram-ricerca-lombardia.csv
