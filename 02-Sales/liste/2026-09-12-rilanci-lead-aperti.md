@@ -1,5 +1,5 @@
 ---
-riga: I sette lead aperti al 12 settembre, con il rilancio scritto e riscritto la sera dopo la regola di Patrick sulle frasi.
+riga: I sette lead aperti al 12 settembre, coi rilanci riscritti dopo aver letto le conversazioni intere e non l'ultimo messaggio.
 type: area
 updated: 2026-09-12
 source: denkicode
@@ -12,23 +12,43 @@ tags: [dm-instagram, lead, rilanci]
 Testi pronti. **Non sono stati mandati**: si copiano e si mandano a mano, come
 tutto il resto. Passati da `voce-check.py`.
 
-> [!important] Riscritti la sera del 12 settembre
-> Patrick: *«migliora un minimo ancora le frasi, non sempre sono di senso
-> compiuto e dai un'impostazione ancora più umana anche se sei già a buon
-> punto»*. Regola scritta in [[stile-comunicazione]].
+> [!important] Riletti la sera del 12 settembre, conversazione per conversazione
+> Patrick: *«devi leggere tutta la chat»*. La prima versione di questa nota era
+> costruita sull'**ultimo messaggio** di ogni conversazione, e l'ultimo
+> messaggio mente: sono i saluti, non la trattativa.
 >
-> Le tre cose corrette, che sono il motivo per cui lo ha detto:
+> Le tre cose che cambiano leggendo dall'inizio:
 >
-> | Dove | Cosa non stava in piedi |
+> | Chi | Cosa non si vedeva |
 > |---|---|
-> | Da Caterina | *«se le va bene anche solo per metà, quella metà la sistemo io»*: se una metà va bene si lavora sull'**altra**. La frase si contraddiceva |
-> | Shari | *«la richiamo io»*: il numero non ce l'abbiamo, la conversazione è su Instagram. Una promessa che non si può mantenere |
-> | Nails Mania | *«se preferisce che le cambi qualcosa prima di mandarla»*: non ha ancora visto niente, non può chiedere modifiche a una cosa che non ha |
+> | **Mikuma Dogs** | c'è **una chiamata da fare lunedì 14** e manca solo l'ora. Era il quinto messaggio su sette |
+> | **Shari** | ha **due preventivi e due bozze**, ha chiesto della versione desktop, e ha già avvisato che i suoi non decidono subito |
+> | **Nails Mania** | crede che le stiamo restituendo **un sito suo di anni fa**, non una bozza nuova |
 >
-> Tolte anche le formule che si sentono da fuori: «le chiedo una cosa sola»,
-> «il passo dopo è», «chiudo la pratica». E i sette messaggi non hanno più
-> tutti la stessa forma a tre paragrafi: due sono di due righe, e si leggono
-> come scritti da una persona che ha fretta.
+> Corrette prima anche tre frasi che non stavano in piedi: quella di Da
+> Caterina si contraddiceva («se le va bene anche solo per metà, quella metà la
+> sistemo io»), quella di Shari prometteva una telefonata senza avere il
+> numero, quella di Nails Mania chiedeva modifiche a una bozza mai vista.
+> Regola in [[stile-comunicazione]].
+
+## @mikuma.dogs — Martina Carneli, istruttrice cinofila, Como
+
+**C'è una chiamata da fare lunedì 14, e manca solo l'ora.** È il lead più
+avanti di tutta la posta, e guardando l'ultimo messaggio non si vedeva.
+
+Patrick ha proposto una chiamata «oggi o lunedì», lei ha risposto **«Lunedì
+meglio»** e ha aggiunto «scusa ancora non ho guardato». Patrick ha richiesto
+*«nel pomeriggio, dopo le 16, a che ora avresti tempo?»* e da lì è fermo: la
+domanda sull'ora è rimasta senza risposta. **Dà del tu**, l'ha chiesto lei.
+
+⚠️ Rifare la stessa domanda la lascia dov'è. Si propone un'ora e le si lascia
+solo il no da dire.
+
+```
+Ciao Martina, per lunedì ti propongo le 17, sono dieci minuti al telefono.
+
+Se a quell'ora non ci sei dimmi tu quando dopo le 16 e mi organizzo.
+```
 
 ## @nailsmaniabergamo — Nails Mania, Bergamo
 
@@ -36,15 +56,42 @@ tutto il resto. Passati da `voce-check.py`.
 frr85milo@gmail.com. Ha ricevuto prima un vocale, poi un link su Instagram.
 L'email non è mai partita, ed è l'unica cosa che ha chiesto.
 
-⚠️ **Prima l'email, poi questo messaggio.** Il testo dice che l'email è
-arrivata: mandarlo senza averla mandata è una bugia verificabile in un click.
+⚠️ **C'è un malinteso, e va sciolto prima di mandare l'email.** Ha scritto:
+*«che bella notizia pensavo che non ci fosse più, sì mi mandi x favore x email
+[…] me lo giri e poi vedo che condizione è perché non me lo ricordo più, è
+passato un po' di tempo»*. Non parla della nostra bozza: crede che le stiamo
+restituendo **un sito suo di anni fa**. Se apre l'email senza saperlo trova una
+cosa che non c'entra con quello che aspetta.
+
+⚠️ **Poi l'email, e solo dopo il messaggio**: il testo dice che è partita.
 
 ```
-Buongiorno, ha ragione a ripetermelo: lei mi aveva chiesto una email e io le ho mandato un vocale.
+Buongiorno, le chiarisco una cosa prima di mandarle l'email, perché forse non ci siamo capiti: non è un sito che aveva già, è nuovo e l'abbiamo fatto noi partendo dalle foto del suo profilo.
 
-Adesso le è arrivata a frr85milo@gmail.com, col link della bozza e sotto due righe su com'è fatta.
+Glielo giro a frr85milo@gmail.com come mi aveva chiesto, con il link da aprire e sotto due righe su com'è fatto.
 
-Se la apre e non è come se l'aspettava me lo scriva, la rifaccio.
+Se non è quello che si aspettava me lo scriva, nessun problema.
+```
+
+## @shari_tattooer — Shari Piras, Atelier Selva, Merate
+
+**Fermo da 8 giorni**, ed è il più vecchio. Ma la conversazione è molto più
+avanti di quanto dicesse l'ultimo messaggio: ha **due preventivi e due bozze**
+(Atelier Selva e DSI Advertising), ha chiesto se il prezzo comprende la
+versione desktop e Patrick le ha risposto che sì. **Dà del tu**, e Patrick le
+ha già risposto col tu.
+
+⚠️ **Ha già detto che ci vorrà tempo**: *«è un periodo un po' pieno per i miei
+attualmente quindi molto probabilmente non sarà una scelta immediata»*. Un
+messaggio che le chiede un sì o un no adesso ignora quello che ha scritto. Si
+fissa quando risentirsi, e basta.
+
+```
+Ciao Shari, mi avevi detto che per i tuoi è un periodo pieno e non voglio starti addosso.
+
+Ti scrivo solo per capire quando ha senso risentirci: fine mese o preferisci più avanti?
+
+La bozza resta dov'è, non scade.
 ```
 
 ## @ilsalonediandrea — Il Salone di Andrea
@@ -60,20 +107,10 @@ L'ha aperta? Se l'ha vista e non le dice niente me lo scriva, chiudo qui senza p
 Se invece ci vede qualcosa, i testi e le foto li mettiamo come vuole lei.
 ```
 
-## @shari_tattooer — Shari Piras, Atelier Selva, Merate
-
-**Fermo da 8 giorni**, ed è il più vecchio di tutti. Ha la bozza e l'ha girata
-ai suoi.
-
-```
-Buongiorno Shari, l'ultima volta mi aveva detto che la girava ai suoi.
-
-Le hanno detto qualcosa? Anche un no va bene, mi basta sapere che è un no.
-```
-
 ## @osteria.tarilli — Osteria Tarilli
 
-**Fermo da 3 giorni.** «diamo un'occhiata in questi giorni con calma».
+**Fermo da 3 giorni.** «diamo un'occhiata in questi giorni con calma». Loro
+danno del tu, Patrick il Lei.
 
 ```
 Buongiorno, vi avevo lasciato la bozza qualche giorno fa.
@@ -95,7 +132,7 @@ Anche se le piace solo in parte è utile saperlo: mi dice cos'è che non va e la
 ## @pizzeria_lobidu — Pizzeria Lobidù, Tradate
 
 **Fermo da 1 giorno.** Sta scegliendo fra noi e un content creator che gli fa i
-video nel locale.
+video nel locale. Ha già chiesto il prezzo e ha ricevuto un vocale lungo.
 
 ```
 Buongiorno, ci ho ripensato dopo il vocale e volevo dirle una cosa sul content creator.
@@ -105,24 +142,23 @@ Lui porta gente che vi segue già. Il sito vi fa trovare da chi cerca una pizzer
 Se avete deciso per lui me lo dica tranquillamente, non insisto.
 ```
 
-## @mikuma.dogs — Martina Carneli, istruttrice cinofila, Como
-
-**Fermo da 1 giorno.** «stasera apro il link e guardo con calma». **Dà del tu**,
-l'ha chiesto lei.
-
-```
-Ciao Martina, sei riuscita a guardarlo?
-
-Se c'è qualcosa da cambiare dimmelo, è ancora una bozza e la sistemo in mezza giornata.
-```
-
-## Una cosa che vale per tutti e sette
+## Quello che vale per tutti e sette
 
 **L'ultima parola è di Patrick in tutti e sette i casi.** Nessuno di loro sta
 ignorando: sono fermi perché dopo la bozza nessuno è più tornato a chiedere.
-Sei di questi sette hanno la bozza in mano.
+Sei di questi sette hanno la bozza in mano, e due hanno anche il preventivo.
+
+## Chi invece ha detto no, e non va rilanciato
+
+Il 12 settembre il banco li proponeva come recuperi, perché guardava solo
+l'ultimo messaggio. Letti dall'inizio sono dei no, e i saluti dopo non contano.
+
+| Chi | Come apre | Come chiude |
+|---|---|---|
+| @tattooextreme | «Guarda non mi interessa grazie» | «Ok grazie» |
+| @biumotattooclub | «Ciao Pat ti ringrazio ma non siamo interessati» | tre emoji |
 
 ## Collegamenti
 
 [[2026-09-12-posta-dm-primo-resoconto]] · [[flusso-vendita]] ·
-[[voce-denkicode]] · [[stile-comunicazione]]
+[[voce-denkicode]] · [[stile-comunicazione]] · [[metodo-liste]]

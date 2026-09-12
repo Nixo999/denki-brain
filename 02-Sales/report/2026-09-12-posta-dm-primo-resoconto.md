@@ -134,3 +134,34 @@ tornato a chiedere. Sei di quei sette hanno la bozza in mano.
 stamattina le dava del Lei. Corretto in
 [[2026-09-12-rilanci-lead-aperti]]. Quando un profilo chiede il tu e gli si
 continua a dare del Lei, il messaggio dopo si legge come un modulo.
+
+## Riletta una terza volta, conversazione per conversazione
+
+Patrick: *«devi leggere tutta la chat»*. Le prime due letture guardavano
+l'**ultimo messaggio** di ogni conversazione, e l'ultimo messaggio sono i
+saluti, non la trattativa. Rilette dall'inizio, tre cose cambiano.
+
+**Due profili che il banco proponeva come recuperi sono dei no.**
+
+| Chi | Primo messaggio | Ultimo |
+|---|---|---|
+| @tattooextreme | «Guarda non mi interessa grazie» | «Ok grazie» |
+| @biumotattooclub | «Ciao Pat ti ringrazio ma non siamo interessati» | tre emoji |
+
+**Il lead più avanti di tutta la posta non era in nessuna lista di priorità.**
+@mikuma.dogs ha risposto **«Lunedì meglio»** a una proposta di chiamata, e
+Patrick ha chiesto *«nel pomeriggio, dopo le 16, a che ora avresti tempo?»*
+senza ricevere risposta. **C'è una chiamata da fare lunedì 14 e manca solo
+l'ora.** Era il quinto messaggio su sette: leggendo l'ultimo si vedeva «scusa
+ancora non ho guardato», che dice il contrario.
+
+**Due trattative erano più avanti di come le avevo lette.** @shari_tattooer ha
+due preventivi e due bozze, ha chiesto se il prezzo comprende la versione
+desktop, e ha avvisato che i suoi non decidono subito: chiederle un sì o un no
+adesso ignora quello che ha scritto. @nailsmaniabergamo crede che le stiamo
+restituendo un sito suo di anni fa, non una bozza nuova, e va chiarito prima di
+mandarle l'email.
+
+I recuperi dopo questa lettura sono **due**: Mikuma Dogs, che ha l'appuntamento,
+e Shari, da ricontattare per fissare quando. I testi stanno in
+[[2026-09-12-rilanci-lead-aperti]].

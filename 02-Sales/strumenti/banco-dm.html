@@ -418,22 +418,34 @@ function lavorativiDa(iso){
   return n;
 }
 
-/* Che cos'e` quello che hanno risposto. Serve per i recuperi: un «no grazie»
-   non si rilancia, un'autorisposta non e` una risposta, e tutto il resto e`
-   una persona che ha scritto a mano.
-   Patrick, 12 settembre 2026: «i recuperi non devono essere a caso, ma pochi e
+/* Che cosa dice la conversazione. Si legge INTERA, non l'ultimo messaggio:
+   Patrick, 12 settembre 2026, «devi leggere tutta la chat». Guardando solo
+   l'ultimo, quel giorno il banco ha proposto come recuperi due tatuatori che
+   avevano aperto con «non mi interessa» e chiuso con «ok grazie» e tre emoji.
+   Un rifiuto detto una volta vale per tutta la conversazione, anche se dopo
+   sono arrivati i saluti.
+   Patrick, stesso giorno: «i recuperi non devono essere a caso, ma pochi e
    mirati, per situazioni calde o almeno chi ha letto e sensati in base alla
-   chat». Prima di questa data la pagina dei recuperi era solo un calendario:
-   quattro giorni lavorativi e la riga entrava, e infatti conteneva 74 profili
-   fra cui cinque che avevano gia` detto no. */
+   chat». Prima la pagina era solo un calendario: quattro giorni lavorativi e
+   la riga entrava, e conteneva 74 profili. */
 const RIFIUTO = /non siamo interessat|non sono interessat|non mi interessa|non ci interessa|no grazie|non ne ho bisogno|non ne abbiamo bisogno|non abbiamo intenzione|non ci serve|gia` un sito|gia' un sito|già un sito|ce l'abbiamo|l'ho chiuso|in bocca al lupo|per ora no|verra` chiuso|verrà chiuso|non esiste piu|non esiste più|attivita' e' chiusa|attività è chiusa|abbiamo chiuso|ho chiuso l'attivit/i;
 const AUTORISPOSTA = /grazie per aver|grazie di aver|ti ringraziamo per|risponder(emo|ai|à|a')|ti ricontatter|la ricontatter|messaggio automatico|per prenotazion|per informazion|per qualsiasi info|non gestiamo le richieste|il prima possibile|al piu' presto|al più presto|abbiamo ricevuto il tuo messaggio|scrivici su whatsapp|chiamaci|puoi contattarci|siamo lieti di averti|benvenut/i;
+/* Hanno fissato un momento: e` la cosa piu` calda che c'e` in una chat, e va
+   in cima a tutto. «lunedi` meglio» di Mikuma Dogs era il quinto messaggio di
+   una conversazione e non si vedeva guardando l'ultimo. */
+const APPUNTAMENTO = /\b(lunedi|lunedì|martedi|martedì|mercoledi|mercoledì|giovedi|giovedì|venerdi|venerdì|sabato|domenica)\b|risentiamoci|ci risentiamo|mi richiami|la chiamo|ti chiamo|chiamami|dopo le \d|verso le \d|la prossima settimana|settimana prossima/i;
 
-function tipoRisposta(t){
+/* Come si legge una conversazione intera. Il rifiuto vince su tutto: se c'e`
+   anche una volta, la riga e` chiusa. */
+function tipoChat(t){
   const s = (t || "").trim();
   if (!s) return "";
   if (RIFIUTO.test(s)) return "no";
-  if (AUTORISPOSTA.test(s)) return "auto";
+  if (APPUNTAMENTO.test(s)) return "appuntamento";
+  /* tutta autorisposta e niente altro: gli spezzoni fra «|» sono tutti
+     riconoscibili come risposta di un robot */
+  const pezzi = s.split("|").map(x => x.trim()).filter(Boolean);
+  if (pezzi.length && pezzi.every(x => AUTORISPOSTA.test(x))) return "auto";
   return "vera";
 }
 
@@ -447,20 +459,29 @@ const ESITO_CHIUSO = /^scartat|^no\b|ha gia' il sito|ha già il sito|nessun inte
 const ESITO_CALDO  = /in valutazione|caldo|chiede|ha chiesto/i;
 
 /* Perche` questa riga e` fra i recuperi, in parole. Se torna stringa vuota
-   non ci va. */
+   non ci va. L'ordine dei casi e` l'ordine di quanto valgono. */
 function motivoRecupero(r){
   const letto = (r[col.letto] || "").trim();
   const esito = col.esito !== undefined ? (r[col.esito] || "").trim() : "";
-  const risposta = col.risposta !== undefined ? (r[col.risposta] || "").trim() : "";
+  const chat  = col.chat  !== undefined ? (r[col.chat]  || "").trim() : "";
   if (esito && ESITO_CHIUSO.test(esito)) return "";
-  const tipo = tipoRisposta(risposta);
-  if (tipo === "no") return "";                              // ha detto no: si lascia stare
+  const tipo = tipoChat(chat);
+  if (tipo === "no") return "";            // l'ha detto, e vale per tutta la chat
+  const pezzi = chat.split("|").map(x => x.trim()).filter(Boolean);
+  const ultimo = pezzi.length ? pezzi[pezzi.length - 1] : "";
+  if (tipo === "appuntamento"){
+    /* si mostra il pezzo che contiene l'appuntamento, non l'ultimo: «lunedi`
+       meglio» e` la cosa da sapere, «scusa non ho guardato» no */
+    const quale = pezzi.filter(x => APPUNTAMENTO.test(x)).pop() || ultimo;
+    return "ha fissato un momento: " + quale.slice(0, 80) +
+           (quale !== ultimo ? " (poi: " + ultimo.slice(0, 50) + ")" : "");
+  }
   if (ESITO_CALDO.test(esito))
-    return "trattativa aperta" + (risposta ? ", ha detto: " + risposta.slice(0, 80) : "");
-  if (tipo === "vera") return "ha risposto: " + risposta.slice(0, 90);
+    return "trattativa aperta" + (ultimo ? ", ha detto: " + ultimo.slice(0, 80) : "");
+  if (tipo === "vera") return "ha risposto: " + ultimo.slice(0, 90);
   if (letto && tipo === "auto") return "risposta automatica, ma il messaggio l'ha letto il " + letto;
   if (letto) return "ha letto il " + letto + " e non ha risposto";
-  return "";                                                 // non ha letto: non e` un recupero
+  return "";                               // non ha letto: non e` un recupero
 }
 
 const oggiISO = () => new Date().toLocaleDateString("sv-SE");   // 2026-09-02
@@ -524,18 +545,23 @@ function carica(testo, nome){
     else if (n.startsWith("prodotto")) col.prodotto = i;
     else if (n.startsWith("lista")) col.lista = i;
     else if (n.startsWith("letto")) col.letto = i;
-    else if (n.startsWith("risposta")) col.risposta = i;
+    else if (n.startsWith("chat")) col.chat = i;
   });
   /* Le colonne che il banco si aggiunge da solo se la lista non ce l'ha, cosi`
      le liste vecchie continuano a funzionare: «Messaggio» (il testo corretto a
      mano), «Scheda» (quello che si e` letto del profilo), «Prodotto» (per quale
      dei tre si scrive) e «Recupero (data)», che dall'11/09/2026 fa uscire una
      riga dalla pagina dei recuperi quando il secondo messaggio e` partito.
-     Dal 12/09/2026 anche «Letto (data)» e «Risposta»: le scrive /banco
-     leggendo la posta di Instagram, e sono le due cose che decidono se una
-     riga merita un secondo messaggio. Vuote, la riga non e` un recupero. */
+     Dal 12/09/2026 anche «Letto (data)» e «Chat»: le scrive /banco leggendo
+     la posta di Instagram, e sono le due cose che decidono se una riga merita
+     un secondo messaggio. Vuote, la riga non e` un recupero.
+     «Chat» contiene TUTTI i messaggi che hanno mandato loro, in ordine e
+     separati da « | », non l'ultimo: il 12/09/2026 guardare solo l'ultimo ha
+     proposto come recuperi due tatuatori che avevano aperto la conversazione
+     con «non mi interessa» e l'avevano chiusa con «ok grazie». Patrick: «devi
+     leggere tutta la chat». */
   [["messaggio","Messaggio"], ["scheda","Scheda"], ["prodotto","Prodotto"], ["recupero","Recupero (data)"],
-   ["letto","Letto (data)"], ["risposta","Risposta"]]
+   ["letto","Letto (data)"], ["chat","Chat"]]
     .forEach(([k, titolo]) => {
       if (col[k] === undefined){ col[k] = intestazione.length; intestazione.push(titolo); }
     });
@@ -781,10 +807,13 @@ function disegna(){
     if (inviato === oggiISO() || ricontattato === oggiISO()) oggi++;
     const scartata = /^scartat/i.test(esito);
     /* un esito non basta piu` a far sparire una riga: conta cosa dice.
-       Una trattativa aperta resta fra i recuperi finche` non si chiude. */
+       Una trattativa aperta resta fra i recuperi finche` non si chiude.
+       Chi ha fissato un momento non aspetta i quattro giorni: l'appuntamento
+       ha una data sua, e aspettare lo fa scadere. */
     const motivo = motivoRecupero(r);
+    const subito = /^ha fissato/.test(motivo);
     const daRecuperare = inviato && !ricontattato && !!motivo &&
-                         lavorativiDa(inviato) >= ATTESA_RECUPERO;
+                         (subito || lavorativiDa(inviato) >= ATTESA_RECUPERO);
     const voce = {r, idx, inviato, esito, daRecuperare, motivo, prodotto: prodottoDi(r),
                   lista: col.lista !== undefined ? (r[col.lista] || "") : ""};
     if (scartata && !inviato) secchi.scartate.push(voce);
@@ -808,12 +837,14 @@ function disegna(){
 
   if (pagina === "recuperi" || pagina === "fatti"){
     const voci = secchi[pagina].filter(passa);
-    /* i recuperi, in ordine di quanto valgono: prima le trattative aperte, poi
-       chi ha scritto qualcosa a mano, poi chi ha soltanto aperto la chat. A
-       pari merito i piu` vecchi in cima, che aspettano da piu` tempo.
+    /* i recuperi, in ordine di quanto valgono: prima chi ha fissato un momento
+       («lunedi` meglio»), poi le trattative aperte, poi chi ha scritto
+       qualcosa a mano, poi chi ha soltanto aperto la chat. A pari merito i
+       piu` vecchi in cima, che aspettano da piu` tempo.
        i gia` scritti: gli ultimi in cima. */
-    const quanto = (v) => /^trattativa/.test(v.motivo || "") ? 0
-                        : /^ha risposto/.test(v.motivo || "") ? 1 : 2;
+    const quanto = (v) => /^ha fissato/.test(v.motivo || "") ? 0
+                        : /^trattativa/.test(v.motivo || "") ? 1
+                        : /^ha risposto/.test(v.motivo || "") ? 2 : 3;
     voci.sort((a, b) => pagina === "recuperi"
       ? (quanto(a) - quanto(b)) || a.inviato.localeCompare(b.inviato)
       : b.inviato.localeCompare(a.inviato));

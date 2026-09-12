@@ -445,7 +445,19 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   cinque che avevano gia' risposto «non siamo interessati» o «ho gia' un sito».
   → il criterio guarda quello che e' successo nella chat: ha letto il
   messaggio, oppure ha risposto a mano. Chi non ha mai aperto la chat non e' un
-  recupero, e un no non torna mai. Da 74 a 3. [[metodo-liste]]
+  recupero, e un no non torna mai. [[metodo-liste]]
+- **L'ultimo messaggio di una conversazione mente: sono i saluti.** Corretti i
+  74 recuperi guardando «la risposta», il banco ne proponeva ancora due, e
+  tutti e due erano dei no: @tattooextreme aveva aperto con «guarda non mi
+  interessa grazie» e chiuso con «ok grazie», @biumotattooclub con «ti
+  ringrazio ma non siamo interessati» e tre emoji. Patrick: «devi leggere tutta
+  la chat». → la colonna si chiama `Chat` e contiene **tutti** i messaggi loro
+  separati da « | »; un rifiuto trovato in qualunque punto chiude la riga per
+  sempre. E nella direzione opposta si guadagna quello che l'ultimo messaggio
+  nascondeva: il «lunedi` meglio» di Mikuma Dogs era il quinto messaggio su
+  sette, ed era **una chiamata da fissare**, la cosa piu' calda di tutta la
+  posta. Chi ha fissato un momento salta l'attesa dei quattro giorni e sta in
+  cima: un appuntamento ha una data sua, e aspettare lo fa scadere.
 - **Un esito scritto in colonna faceva sparire il lead piu' caldo.** La stessa
   pagina escludeva ogni riga con un `Esito DM` qualsiasi, e «Risposta — in
   valutazione» e' un esito: le quattro trattative aperte finivano fra i «gia'
