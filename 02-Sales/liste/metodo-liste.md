@@ -211,6 +211,10 @@ in [[metriche]]:
 
 ## Regole
 
+### 12/09/2026 — Patrick: «devi leggere tutta la chat»
+
+letto solo l'ultimo messaggio, il banco proponeva come recuperi due tatuatori che avevano aperto con 'non mi interessa': l'ultimo messaggio sono i saluti, non la trattativa. E nella direzione opposta nascondeva una chiamata da fissare
+
 ### 12/09/2026 — Patrick: «i recuperi non devono essere a caso, ma pochi e mirati, per situazioni calde o almeno chi ha letto e sensati in base alla chat»
 
 74 recuperi maturi tutti insieme sul banco: un rilancio mandato a chi non ha mai aperto il messaggio brucia il profilo e non riporta niente
