@@ -1,5 +1,5 @@
 ---
-description: Apre il banco DM e, se oggi non ci sono, costruisce e pubblica le tre liste del giorno — 50 siti, 50 DenkiShift, 30 ricerca di mercato
+description: Apre il banco DM e, se oggi non ci sono, costruisce e pubblica le tre liste del giorno — 50 siti, 50 DenkiShift, 50 ricerca di mercato
 argument-hint: "[apri | siti | denkishift | ricerca | un numero, es. «siti 30»]"
 ---
 
@@ -19,7 +19,8 @@ Registro Trevis, già in `~/.claude/CLAUDE.md`: niente presentazioni, niente
 | non ci sono, o l'argomento dice quale rifare | si costruiscono, si verificano, si pubblicano, poi si apre |
 
 `/banco apri` salta sempre la costruzione. `/banco siti`, `/banco denkishift`,
-`/banco ricerca` ne rifanno una sola. Un numero cambia le righe: `/banco siti 30`.
+`/banco ricerca` ne rifanno una sola. Un numero cambia le righe: `/banco siti 30`,
+ma **il valore normale è 50 per ognuna**.
 
 ---
 
@@ -49,11 +50,37 @@ ganci devono essere inerenti alla tipologia di servizio per cui li contattiamo
 e anche le aziende devono essere ad alta conversione in base al servizio che
 stiamo offrendo»*. Quindi: **tre liste, tre target, tre testi. Non si mescolano.**
 
+> [!important] Il 12 settembre 2026 Patrick ha fissato quantità e perimetro
+> *«io voglio 50 contatti per tipologia, non mi interessano scuse […] basta che
+> siano in lombardia per denkishift e gestionali. per quanto riguarda i siti
+> possono essere in tutta italia. ogni giorno facciamo settori diversi e per
+> quanto riguarda i siti ogni volta che finiamo una zona ne iniziamo un'altra»*
+>
+> **50 righe per lista, sempre.** Il bacino non è una scusa: se un settore in
+> una zona si esaurisce si cambia settore, e se sono finiti i settori si cambia
+> zona. Si consegna 50, 50 e 50.
+>
+> | Lista | Dove si pesca |
+> |---|---|
+> | Siti | **tutta Italia** |
+> | DenkiShift | **tutta la Lombardia** |
+> | Ricerca di mercato | **tutta la Lombardia** |
+>
+> **Un settore al giorno.** La zona dei siti si esaurisce in circa quindici
+> settori, cioè quindici giorni, poi si passa alla successiva:
+> **Monza e Brianza → Milano → Como → Varese → Brescia → …** e così via
+> scendendo fino alla Sicilia. Quale zona è aperta e quali settori sono già
+> stati fatti si legge nelle note delle liste in `02-Sales/liste/`.
+>
+> ⚠️ **Il settore che rende zero si abbandona lo stesso giorno.** Il 12
+> settembre i tatuatori della Brianza hanno dato 1 riga su 7: sei avevano il
+> sito. Quando succede si cambia e si scrive perché, invece di consegnare meno.
+
 Il come si costruisce una riga — trovare il profilo, leggerlo, verificare, non
 riscrivere a chi è già in lista — sta in [[metodo-instagram]] e non si ripete
 qui. Qui c'è **chi ci va dentro** e **cosa gli si dice**.
 
-### 2a · Siti vetrina — 50 righe, colonna `Prodotto: siti`
+### 2a · Siti vetrina — 50 righe, tutta Italia, colonna `Prodotto: siti`
 
 **Chi converte** (misurato, [[metodo-instagram]]): onicotecniche e nail center,
 estetiste singole, parrucchieri piccoli, barber, toelettature, tatuatori e PMU,
@@ -62,8 +89,8 @@ l'hanno già: **restano le singole**, ed è lì che si pesca.
 **Fuori**: mobilifici e arredamento (6 su 6 col sito), negozi (la domanda
 giusta è «vende online», è un altro flusso), catene, chi ha un sito vivo e
 curato, i profili sotto i ~200 follower.
-**Comuni**: quelli che le liste degli ultimi dieci giorni non hanno toccato —
-si guarda l'elenco nelle note delle liste in `02-Sales/liste/`.
+**Dove**: la zona aperta in quel momento della rotazione, e dentro quella il
+settore del giorno. La zona si chiude dopo una quindicina di settori.
 
 **Il gancio è uno solo, e dall'11 settembre 2026 non si ammorbidisce**
 ([[stile-comunicazione]], regola di Patrick): *«per i siti il gancio deve
@@ -78,7 +105,7 @@ Gancio `1-6` nella colonna, come oggi: 1 nessun sito, 2 dominio morto,
 3 parcheggiato, 4 link rotto, 5 piattaforma (Fresha, Wix, Linktree: **il
 messaggio la nomina**, o il titolare ti corregge), 6 vivo ma vecchio.
 
-### 2b · DenkiShift — 50 righe, colonna `Prodotto: denkishift`
+### 2b · DenkiShift — 50 righe, tutta la Lombardia, colonna `Prodotto: denkishift`
 
 **Chi converte** (resa del 10 settembre: ristoranti con sito 71%, alberghi
 43%): squadre da **8 a 50 persone su turni, indipendenti**. Alberghi con
@@ -98,7 +125,7 @@ turni**, cosa fa il programma in una frase, e chiede **dieci minuti in
 videochiamata**. Mai una data di attivazione, mai il prezzo al mese, mai un
 link → [[dm-instagram-denkishift]], [[denkishift]].
 
-### 2c · Ricerca di mercato — 30 righe, colonna `Prodotto: ricerca`
+### 2c · Ricerca di mercato — 50 righe, tutta la Lombardia, colonna `Prodotto: ricerca`
 
 **Chi converte**: aziende **strutturate**, che hanno già dei processi da
 raccontare. Officine e carrozzerie, impiantisti elettrici e termoidraulici,

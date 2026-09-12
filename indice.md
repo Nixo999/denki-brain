@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-09-11
+updated: 2026-09-12
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **164 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **165 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -119,6 +119,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-10-siti-e-denkishift-va-co-lc-bg]] — ⚠️ Liste DM del 10 settembre - 50 profili senza sito piu' 30 per DenkiShift, VA CO LC BG, un messaggio per riga.
 - [[2026-09-11-ricerca-mb-va-co]] — Prima lista della ricerca di mercato - 9 righe da 26 profili aperti, e la scoperta che Instagram non trova gli artigiani per comune.
 - [[2026-09-11-tre-liste-brianza]] — Le tre liste dell'11 settembre - 43 siti e 43 DenkiShift sulla Brianza mai battuta, piu' 9 di ricerca di mercato.
+- [[2026-09-12-cinquanta-per-tipologia]] — Le liste portate a 50 per tipologia - ricerca su tutta la Lombardia, siti su Milano, e i tatuatori che il sito ce l'hanno.
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
