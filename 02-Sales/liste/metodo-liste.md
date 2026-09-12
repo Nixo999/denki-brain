@@ -211,6 +211,11 @@ in [[metriche]]:
 
 ## Regole
 
+### 12/09/2026 — Patrick: «ora fallo da solo, d'ora in poi ogni volta che lancio il comando /banco fallo in automatico. impara cosa c'è di sbagliato e orientati su quello, dammi una mano a capire cosa sbaglio io e aiutami a chiudere i lead»
+
+da adesso /banco legge la posta di Instagram, segna gli esiti, toglie dai recuperi chi ha gia' risposto e riferisce cosa non funziona. Si legge e si segna: l'invio resta un gesto suo
+
+
 ### 12/09/2026 — Patrick: «io voglio 50 contatti per tipologia, non mi interessano scuse, non mi interessa che siano in brianza, basta che siano in lombardia per denkishift e gestionali. per quanto riguarda i siti possono essere in tutta italia. ogni giorno facciamo settori diversi e per quanto riguarda i siti ogni volta che finiamo una zona ne iniziamo un altra, esempio: monza brianza finiamo 15 settori dopo 15 giorni, passiamo a milano, poi dopo 15 settori, passiamo a como, poi varese poi brescia e cosi via fino alla sicilia»
 
 il bacino non e' piu' una scusa per consegnare meno di 50: DenkiShift e ricerca su tutta la Lombardia, i siti su tutta Italia, un settore al giorno e la zona si cambia quando i settori finiscono
