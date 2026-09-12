@@ -6,7 +6,7 @@ client: interno
 stack: [vite, react, netlify, cloudflare]
 started: TODO
 deadline: TODO
-updated: 2026-09-08
+updated: 2026-09-12
 source: denkicode
 valore: 0
 incassato: 0
@@ -45,7 +45,20 @@ raggiungibili dai due bottoni dell'hero. La barra in alto ha quattro voci:
 | **01 — Siti web** | Offerta (vetrina, e-commerce), i servizi, la galleria dei siti |
 | **02 — Gestionali** | DenkiShift, i gestionali su misura, la galleria dei gestionali |
 
-**Galleria dei siti**: Groavel, [[albybike]], Bellastoria, [[sito-dropout]].
+**Galleria dei siti** (dal 12 settembre 2026): [[albybike]] (`albybike.com`),
+**Bar Tabacchi Fiftynine** (`bartabacchi59.it`), **V-BAG** (`vbag.it`),
+Bellastoria (`bellastoria.netlify.app`), [[sito-dropout]] (`dropoutevents.com`).
+**Groavel e' uscito**, per richiesta di Nicola.
+
+⚠️ **La regola della galleria: ci va solo un sito che sta su un dominio suo.**
+Una bozza su `*.netlify.app` non e' un lavoro pubblicato e non si mostra a un
+cliente. Al 12 settembre 2026 restano fuori per questo Mikuma, Da Caterina,
+Lobidu, Tarilli, DSI, Nails Mania, Salone di Andrea, Atelier Selva, Castiglione
+e cococat. **Bellastoria e' l'eccezione rimasta**: sta su `netlify.app` ed era
+gia' in galleria, e Nicola ha chiesto di togliere Groavel, non lei.
+Il censimento si rifa' in dieci secondi, e non si fa a memoria:
+`npx netlify-cli sites:list` sull'account `denkicode`.
+
 **Galleria dei gestionali**: [[denkishift]] e [[opero]] — quest'ultimo
 dichiarato come **collaborazione**, perché è il prodotto di
 [[sebastian-torres]] e non nostro.
@@ -94,8 +107,9 @@ Il listino a schermo non coincide più con [[prodotti-e-listino]], ed è voluto:
 - [ ] Due screenshot veri per le card di DenkiShift e OperO
 - [ ] Sciogliere il blocco `DEBUG:` di `index.css` su un telefono vero
 - [ ] Decidere i tre link social, o toglierli
-- [ ] Aggiungere `albybike.com` alla galleria, con una testimonianza
+- [ ] Una testimonianza di [[albybike]] sotto la sua card
 - [ ] Decidere chi aggiorna la galleria quando esce un lavoro nuovo
+- [ ] Bellastoria su un dominio suo, o fuori dalla galleria
 
 ✅ **Firma nel piè di pagina** — «Powered by DenkiCode», simbolo e link a
 `denkicode.com`, dalla sera dell'8 settembre 2026 (`64397fc`). Regola e markup in
