@@ -120,7 +120,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-11-ricerca-mb-va-co]] — Prima lista della ricerca di mercato - 9 righe da 26 profili aperti, e la scoperta che Instagram non trova gli artigiani per comune.
 - [[2026-09-11-tre-liste-brianza]] — Le tre liste dell'11 settembre - 43 siti e 43 DenkiShift sulla Brianza mai battuta, piu' 9 di ricerca di mercato.
 - [[2026-09-12-cinquanta-per-tipologia]] — Le liste portate a 50 per tipologia - ricerca su tutta la Lombardia, siti su Milano, e i tatuatori che il sito ce l'hanno.
-- [[2026-09-12-rilanci-lead-aperti]] — I sette lead aperti al 12 settembre, con il messaggio di rilancio gia' scritto e passato dal controllo della voce.
+- [[2026-09-12-rilanci-lead-aperti]] — I sette lead aperti al 12 settembre, con il rilancio scritto e riscritto la sera dopo la regola di Patrick sulle frasi.
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.

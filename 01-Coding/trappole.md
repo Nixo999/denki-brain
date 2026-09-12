@@ -439,6 +439,27 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   che il server fa da solo, con un timer, e alla chiusura via segnale. Con
   `SIGKILL` il timer non parte e il commit si perde.
 
+- **Un recupero calcolato sul calendario e non sulla chat riscrive a chi ha
+  detto no.** Il banco marcava «da ricontattare» ogni riga con quattro giorni
+  lavorativi e nessun esito: il 12 settembre erano 74 profili, e dentro c'erano
+  cinque che avevano gia' risposto «non siamo interessati» o «ho gia' un sito».
+  → il criterio guarda quello che e' successo nella chat: ha letto il
+  messaggio, oppure ha risposto a mano. Chi non ha mai aperto la chat non e' un
+  recupero, e un no non torna mai. Da 74 a 3. [[metodo-liste]]
+- **Un esito scritto in colonna faceva sparire il lead piu' caldo.** La stessa
+  pagina escludeva ogni riga con un `Esito DM` qualsiasi, e «Risposta — in
+  valutazione» e' un esito: le quattro trattative aperte finivano fra i «gia'
+  contattati» con centosessanta righe morte, dove nessuno le guardava piu'.
+  Shari Tattooer e' stata ferma otto giorni per questo. → gli esiti si dividono
+  in due: quelli che chiudono (scartata, un no, ce l'aveva il sito) e quelli
+  che tengono aperto. I secondi stanno in cima ai recuperi, non in fondo ai
+  fatti.
+- **`regola.py` cercava «## Regole» come sottostringa.** In un file il cui
+  titolo era `## Regole date a voce` ha inserito la regola dentro il titolo,
+  lasciando « date a voce» orfano sotto il testo. → il titolo si cerca come
+  riga intera con una regex, e la regola si infila davanti alla prima `###`,
+  cioe' dopo l'eventuale riga che spiega la sezione.
+
 ## Skill e strumenti di processo
 
 - **`voce-denkicode` sulle didascalie e sul copy di un sito produce frasi da

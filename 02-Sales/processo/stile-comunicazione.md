@@ -100,14 +100,13 @@ Vincolo fiscale attivo, dettaglio in [[vincoli-fiscali]]:
 > ti dico quanto sposta la consegna."*
 
 
-## Regole
+## Regole date a voce
+
+Scritte da `regola.py` nel momento in cui sono state dette.
 
 ### 12/09/2026 — Patrick: «migliora un minimo ancora le frasi, non sempre sono di senso compiuto e dai un impostazione ancora piu umana anche se sei già a buon punto»
 
 alcune frasi dei rilanci del 12 settembre stanno in piedi grammaticalmente ma non dicono una cosa sensata: voce-check.py toglie i tell da macchina, non controlla che la frase abbia senso
- date a voce
-
-Scritte da `regola.py` nel momento in cui sono state dette.
 
 ### 11/09/2026 — Patrick: «per i siti il gancio deve essere che la bozza è già stata fatta»
 

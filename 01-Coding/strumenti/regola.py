@@ -50,20 +50,36 @@ def scrivi(chiave, testo, chi, perche):
         "Regola detta e non ancora spiegata: vale comunque. Il perche' si aggiunge "
         "quando si sa, non si aspetta per scriverla.\n")
 
+    import re
     t = p.read_text(encoding="utf-8")
-    # va in cima all'elenco delle regole, se il file ne ha uno: la piu' recente per prima
-    ancora = next((a for a in ("## Le direttive, dalla più recente", "## Le direttive",
-                               "## Regole", "## Collegamenti") if a in t), None)
-    if ancora == "## Collegamenti" or ancora is None:
+
+    # Va in cima all'elenco delle regole, se il file ne ha uno: la piu' recente
+    # per prima. Il titolo si cerca come RIGA INTERA, non come sottostringa: il
+    # 12/09/2026 la ricerca di «## Regole» dentro «## Regole date a voce» ha
+    # spezzato il titolo in due e lasciato « date a voce» orfano sotto la
+    # regola nuova, in 02-Sales/processo/stile-comunicazione.md.
+    titolo = None
+    for a in ("## Le direttive, dalla più recente", "## Le direttive", "## Regole"):
+        m = re.search(r"^" + re.escape(a) + r".*$", t, re.M)
+        if m:
+            titolo = m
+            break
+
+    if titolo is None:
         # nessun elenco: si accoda una sezione propria prima dei collegamenti
         testa = "\n## Regole date a voce\n\nScritte da `regola.py` nel momento in cui sono state dette.\n"
         i = t.index("## Collegamenti") if "## Collegamenti" in t else len(t)
         t = t[:i] + testa + blocco + "\n" + t[i:]
     else:
-        i = t.index(ancora) + len(ancora)
-        t = t[:i] + "\n" + blocco + t[i:]
+        # dopo il titolo puo` esserci una riga che spiega la sezione: la regola
+        # va sotto quella, davanti alla prima regola che c'e` gia`
+        prima = re.compile(r"^### ", re.M).search(t, titolo.end())
+        i = prima.start() if prima else len(t.rstrip()) + 1
+        fine = re.compile(r"^## ", re.M).search(t, titolo.end())
+        if fine and (not prima or fine.start() < prima.start()):
+            i = fine.start()          # la sezione e` vuota: si scrive alla sua fine
+        t = t[:i] + blocco.lstrip("\n") + "\n" + t[i:]
 
-    import re
     t = re.sub(r"^updated: .*$", "updated: " + date.today().isoformat(), t, count=1, flags=__import__("re").M)
     p.write_text(t, encoding="utf-8")
     return p

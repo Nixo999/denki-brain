@@ -103,3 +103,34 @@ Il dettaglio riga per riga sta in `02-Sales/liste/risposte-dm.csv`.
 [[metodo-instagram]] · [[metriche]] · [[dm-instagram-vetrina]] ·
 [[dm-instagram-denkishift]] · [[voce-denkicode]] · [[flusso-vendita]] ·
 [[2026-09-12-cinquanta-per-tipologia]]
+
+## Riletta la sera del 12, alle 16.45
+
+Due risposte arrivate dopo il primo giro, e nessuna delle due cambia i sette lead.
+
+| Chi | Quando | Cosa |
+|---|---|---|
+| @valentinamandala_nails | 12 settembre, 12.28 | no: *«il negozio entro l'anno verrà chiuso e dove andrò hanno già un sito»* |
+| @carpenteria_bonatese | 12 settembre, 14.43 | autorisposta. **È la prima risposta del segmento ricerca di mercato** |
+
+Il no di Valentina Mandala non è un difetto di lista: il sito non ce l'ha, sta
+chiudendo. Quello è un bacino che non si può verificare da fuori.
+
+### Una cosa che il primo giro aveva letto male
+
+Il primo resoconto dava a **@nailsmaniabergamo** l'ultima parola. Riletto il
+thread per intero, l'ultimo messaggio è di Patrick: un **link su Instagram**,
+mandato dopo il vocale, quando loro avevano chiesto per due volte la stessa
+cosa scrivendo l'indirizzo. **L'email non è mai partita.** Non è un lead che
+non risponde, è una richiesta rimasta senza risposta da cinque giorni.
+
+Sui sette lead aperti **l'ultima parola è di Patrick in tutti e sette i casi**.
+Nessuno di loro è fermo perché ci sta ignorando: sono fermi perché nessuno è
+tornato a chiedere. Sei di quei sette hanno la bozza in mano.
+
+### Il registro sbagliato su un lead
+
+**@mikuma.dogs** ha scritto *«dammi pure del tu»* e il rilancio scritto
+stamattina le dava del Lei. Corretto in
+[[2026-09-12-rilanci-lead-aperti]]. Quando un profilo chiede il tu e gli si
+continua a dare del Lei, il messaggio dopo si legge come un modulo.

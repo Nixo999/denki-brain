@@ -99,6 +99,9 @@
   .capo a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
   .capo a:hover{border-bottom-color:var(--accento)}
   .meta{color:var(--tenue);font-size:13px;margin-top:3px}
+  /* perche` una riga sta fra i recuperi: e` la riga che si legge per prima, e
+     va letta come una frase, non come un dato */
+  .motivo{margin-top:6px;font-size:12.8px;line-height:1.5;color:var(--recuperi);font-weight:600}
   .prova{color:var(--fioco);font-size:12.5px;margin-top:5px;cursor:pointer;
          display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
   .prova.tutta{-webkit-line-clamp:unset}
@@ -240,7 +243,7 @@ const PRODOTTI = {
   },
   recuperi: {
     etichetta: "Da ricontattare",
-    nota: "Quattro giorni lavorativi senza risposta. <b>Un solo messaggio e poi basta</b>: dopo il recupero la riga passa fra i già contattati."
+    nota: "Solo chi ha <b>letto</b> il messaggio o ha <b>risposto qualcosa a mano</b>, dopo quattro giorni lavorativi. Chi ha detto no e chi non ha mai aperto la chat non è qui. <b>Un solo messaggio e poi basta</b>: dopo il recupero la riga passa fra i già contattati."
   },
   fatti: {
     etichetta: "Già contattati",
@@ -415,6 +418,51 @@ function lavorativiDa(iso){
   return n;
 }
 
+/* Che cos'e` quello che hanno risposto. Serve per i recuperi: un «no grazie»
+   non si rilancia, un'autorisposta non e` una risposta, e tutto il resto e`
+   una persona che ha scritto a mano.
+   Patrick, 12 settembre 2026: «i recuperi non devono essere a caso, ma pochi e
+   mirati, per situazioni calde o almeno chi ha letto e sensati in base alla
+   chat». Prima di questa data la pagina dei recuperi era solo un calendario:
+   quattro giorni lavorativi e la riga entrava, e infatti conteneva 74 profili
+   fra cui cinque che avevano gia` detto no. */
+const RIFIUTO = /non siamo interessat|non sono interessat|non mi interessa|non ci interessa|no grazie|non ne ho bisogno|non ne abbiamo bisogno|non abbiamo intenzione|non ci serve|gia` un sito|gia' un sito|già un sito|ce l'abbiamo|l'ho chiuso|in bocca al lupo|per ora no|verra` chiuso|verrà chiuso|non esiste piu|non esiste più|attivita' e' chiusa|attività è chiusa|abbiamo chiuso|ho chiuso l'attivit/i;
+const AUTORISPOSTA = /grazie per aver|grazie di aver|ti ringraziamo per|risponder(emo|ai|à|a')|ti ricontatter|la ricontatter|messaggio automatico|per prenotazion|per informazion|per qualsiasi info|non gestiamo le richieste|il prima possibile|al piu' presto|al più presto|abbiamo ricevuto il tuo messaggio|scrivici su whatsapp|chiamaci|puoi contattarci|siamo lieti di averti|benvenut/i;
+
+function tipoRisposta(t){
+  const s = (t || "").trim();
+  if (!s) return "";
+  if (RIFIUTO.test(s)) return "no";
+  if (AUTORISPOSTA.test(s)) return "auto";
+  return "vera";
+}
+
+/* Un esito che chiude la pratica: scartata in verifica, un no, il sito ce
+   l'aveva. Questi non tornano mai fra i recuperi.
+   Un esito che dice «risposta in valutazione» NON chiude niente: e` il lead
+   piu` caldo che c'e`, e prima del 12/09/2026 la sola presenza di un esito lo
+   buttava fra i «gia` contattati», dove nessuno lo guardava piu`. Quattro
+   trattative aperte sono state ferme per giorni per questo. */
+const ESITO_CHIUSO = /^scartat|^no\b|ha gia' il sito|ha già il sito|nessun interesse|chiude il negozio|non interessa/i;
+const ESITO_CALDO  = /in valutazione|caldo|chiede|ha chiesto/i;
+
+/* Perche` questa riga e` fra i recuperi, in parole. Se torna stringa vuota
+   non ci va. */
+function motivoRecupero(r){
+  const letto = (r[col.letto] || "").trim();
+  const esito = col.esito !== undefined ? (r[col.esito] || "").trim() : "";
+  const risposta = col.risposta !== undefined ? (r[col.risposta] || "").trim() : "";
+  if (esito && ESITO_CHIUSO.test(esito)) return "";
+  const tipo = tipoRisposta(risposta);
+  if (tipo === "no") return "";                              // ha detto no: si lascia stare
+  if (ESITO_CALDO.test(esito))
+    return "trattativa aperta" + (risposta ? ", ha detto: " + risposta.slice(0, 80) : "");
+  if (tipo === "vera") return "ha risposto: " + risposta.slice(0, 90);
+  if (letto && tipo === "auto") return "risposta automatica, ma il messaggio l'ha letto il " + letto;
+  if (letto) return "ha letto il " + letto + " e non ha risposto";
+  return "";                                                 // non ha letto: non e` un recupero
+}
+
 const oggiISO = () => new Date().toLocaleDateString("sv-SE");   // 2026-09-02
 const pulito = (s) => (s || "").trim().replace(/^@/, "").toLowerCase();
 
@@ -475,13 +523,19 @@ function carica(testo, nome){
     else if (n.startsWith("scheda")) col.scheda = i;
     else if (n.startsWith("prodotto")) col.prodotto = i;
     else if (n.startsWith("lista")) col.lista = i;
+    else if (n.startsWith("letto")) col.letto = i;
+    else if (n.startsWith("risposta")) col.risposta = i;
   });
   /* Le colonne che il banco si aggiunge da solo se la lista non ce l'ha, cosi`
      le liste vecchie continuano a funzionare: «Messaggio» (il testo corretto a
      mano), «Scheda» (quello che si e` letto del profilo), «Prodotto» (per quale
      dei tre si scrive) e «Recupero (data)», che dall'11/09/2026 fa uscire una
-     riga dalla pagina dei recuperi quando il secondo messaggio e` partito. */
-  [["messaggio","Messaggio"], ["scheda","Scheda"], ["prodotto","Prodotto"], ["recupero","Recupero (data)"]]
+     riga dalla pagina dei recuperi quando il secondo messaggio e` partito.
+     Dal 12/09/2026 anche «Letto (data)» e «Risposta»: le scrive /banco
+     leggendo la posta di Instagram, e sono le due cose che decidono se una
+     riga merita un secondo messaggio. Vuote, la riga non e` un recupero. */
+  [["messaggio","Messaggio"], ["scheda","Scheda"], ["prodotto","Prodotto"], ["recupero","Recupero (data)"],
+   ["letto","Letto (data)"], ["risposta","Risposta"]]
     .forEach(([k, titolo]) => {
       if (col[k] === undefined){ col[k] = intestazione.length; intestazione.push(titolo); }
     });
@@ -726,8 +780,12 @@ function disegna(){
     const esito = (r[col.esito] || "").trim();
     if (inviato === oggiISO() || ricontattato === oggiISO()) oggi++;
     const scartata = /^scartat/i.test(esito);
-    const daRecuperare = inviato && !ricontattato && !esito && lavorativiDa(inviato) >= ATTESA_RECUPERO;
-    const voce = {r, idx, inviato, esito, daRecuperare, prodotto: prodottoDi(r),
+    /* un esito non basta piu` a far sparire una riga: conta cosa dice.
+       Una trattativa aperta resta fra i recuperi finche` non si chiude. */
+    const motivo = motivoRecupero(r);
+    const daRecuperare = inviato && !ricontattato && !!motivo &&
+                         lavorativiDa(inviato) >= ATTESA_RECUPERO;
+    const voce = {r, idx, inviato, esito, daRecuperare, motivo, prodotto: prodottoDi(r),
                   lista: col.lista !== undefined ? (r[col.lista] || "") : ""};
     if (scartata && !inviato) secchi.scartate.push(voce);
     else if (daRecuperare) secchi.recuperi.push(voce);
@@ -750,10 +808,14 @@ function disegna(){
 
   if (pagina === "recuperi" || pagina === "fatti"){
     const voci = secchi[pagina].filter(passa);
-    /* i recuperi: i piu` vecchi in cima, che aspettano da piu` tempo.
+    /* i recuperi, in ordine di quanto valgono: prima le trattative aperte, poi
+       chi ha scritto qualcosa a mano, poi chi ha soltanto aperto la chat. A
+       pari merito i piu` vecchi in cima, che aspettano da piu` tempo.
        i gia` scritti: gli ultimi in cima. */
+    const quanto = (v) => /^trattativa/.test(v.motivo || "") ? 0
+                        : /^ha risposto/.test(v.motivo || "") ? 1 : 2;
     voci.sort((a, b) => pagina === "recuperi"
-      ? a.inviato.localeCompare(b.inviato)
+      ? (quanto(a) - quanto(b)) || a.inviato.localeCompare(b.inviato)
       : b.inviato.localeCompare(a.inviato));
     nota.innerHTML = PRODOTTI[pagina].nota +
       (pagina === "fatti"
@@ -841,8 +903,12 @@ function vuotoDi(p, quanti){
     ? "Nessun profilo con <b>" + filtro + "</b> in questa pagina."
     : quanti
       ? "<b>Finito qui.</b> " + quanti + " righe su questa pagina sono già partite."
-      : "<b>Niente da mandare su " + PRODOTTI[p].etichetta + ".</b><br>" +
-        "La lista di oggi la scrive <code>/banco</code>, che la pubblica e riapre questa pagina piena.";
+      : p === "recuperi"
+        ? "<b>Nessuno da ricontattare, ed è la risposta giusta.</b><br>" +
+          "Qui entra solo chi ha letto il messaggio o ha risposto a mano. " +
+          "Chi non ha mai aperto la chat non vale un secondo messaggio."
+        : "<b>Niente da mandare su " + PRODOTTI[p].etichetta + ".</b><br>" +
+          "La lista di oggi la scrive <code>/banco</code>, che la pubblica e riapre questa pagina piena.";
 }
 
 /* il contenuto chiuso si disegna la prima volta che si apre: sono centinaia di
@@ -923,7 +989,7 @@ let attesaMisura = null;
 
 /* ---- la cartella di un profilo ---- */
 function cartella(v){
-  const {r, inviato, esito, daRecuperare, prodotto} = v;
+  const {r, inviato, esito, daRecuperare, prodotto, motivo} = v;
   const scartata = /^scartat/i.test(esito);
   const utente = (r[col.account] || "").replace(/^@/, "").trim();
   const nome = (r[col.nome] || utente).trim();
@@ -950,6 +1016,7 @@ function cartella(v){
         ${prodotto === "siti" ? '<span class="tag">gancio ' + (codice || "?") + "</span>" : ""}
       </div>
       <div class="meta">${nome} — ${r[col.comune] || ""} · ${r[col.follower] || "?"} follower${(r[col.segmento] || "").trim() ? " · " + r[col.segmento].trim() : ""}</div>
+      ${daRecuperare ? '<div class="motivo"></div>' : ""}
       <div class="prova" title="clicca per leggerla tutta"></div>
       ${(r[col.scheda] || "").trim() ? '<div class="scheda"></div>' : ""}
       <textarea class="msg" spellcheck="false"></textarea>
@@ -958,6 +1025,11 @@ function cartella(v){
 
   /* la prova della verifica e la scheda si scrivono col testo, mai come HTML:
      arrivano da una ricerca */
+  /* il motivo per cui la riga sta fra i recuperi: si legge prima della prova
+     della verifica, perche` e` la cosa che decide se vale la pena scrivere */
+  const elMotivo = el.querySelector(".motivo");
+  if (elMotivo) elMotivo.textContent = motivo || "";
+
   const prova = el.querySelector(".prova");
   prova.textContent = (r[col.verifica] || "").trim();
   prova.addEventListener("click", () => prova.classList.toggle("tutta"));
