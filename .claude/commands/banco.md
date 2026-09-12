@@ -196,6 +196,54 @@ passo non c'era.
 
 ---
 
+## 3-bis · La posta, e si legge sempre
+
+Regola di Patrick del 12 settembre 2026: *«ora fallo da solo, d'ora in poi ogni
+volta che lancio il comando /banco fallo in automatico»*. **Prima di aprire il
+banco si legge la posta di Instagram**, si segnano gli esiti e si dice cosa non
+funziona. **Si legge e si segna: nessun messaggio parte da qui.**
+
+Dal browser con la sessione di Patrick, su `instagram.com/direct/inbox/`:
+
+```js
+// tutta la posta, a pagine di venti
+const H={'x-ig-app-id':'936619743392459','x-requested-with':'XMLHttpRequest'};
+let cursor=null, tutte=[];
+for(let g=0; g<25; g++){
+  let u='https://www.instagram.com/api/v1/direct_v2/inbox/?visual_message_return_type=unseen&thread_message_limit=20&persistentBadging=true&limit=20';
+  if(cursor) u+='&cursor='+encodeURIComponent(cursor);
+  const r=await fetch(u,{headers:H,credentials:'include'}); const j=await r.json();
+  (j.inbox.threads||[]).forEach(t=>tutte.push(t));
+  cursor=j.inbox.oldest_cursor; if(!cursor||!j.inbox.has_older) break;
+}
+```
+
+Il `viewer_id` è Patrick: un `item` con `user_id` diverso è una loro risposta.
+Poi si separano **le autorisposte** («grazie per averci contattato», «per
+prenotazioni», «ti risponderemo»), che non sono risposte, dalle risposte vere.
+
+Quello che va scritto, ogni volta:
+
+1. **`Esito DM`** sulle righe che stanno ancora sul banco, con la data.
+2. **`02-Sales/liste/risposte-dm.csv`**: handle, data, chi ha l'ultima parola,
+   giorni fermo, tipo, cosa ha detto.
+3. **I lead aperti**, con da quanti giorni aspettano e il rilancio già scritto,
+   passato da `voce-check.py`. Chi ha l'ultima parola loro è fermo da noi.
+4. **Cosa non ha funzionato**, con i numeri: quanti hanno risposto «ho già il
+   sito» (è un difetto di lista, non un no), quante autorisposte per segmento,
+   e ogni critica al testo va riportata parola per parola.
+
+Il primo resoconto, con il metodo e i numeri di partenza, sta in
+[[2026-09-12-posta-dm-primo-resoconto]]: **5,8% di risposte vere, 28% dei
+rifiuti perché il sito ce l'avevano, e sette trattative ferme.**
+
+⚠️ **I lead caldi vengono prima delle liste nuove.** Una lista nuova costa ore
+e rende fra giorni; un «l'ha guardata?» a chi ha già la bozza in mano costa due
+minuti. Se c'è un lead fermo da più di due giorni, si dice all'inizio della
+risposta, prima di qualunque altra cosa.
+
+---
+
 ## 4 · Pubblicare: si appende, non si sostituisce
 
 Le liste vivono in `02-Sales/liste/<data>-instagram-<prodotto>-<zone>.csv` e
@@ -262,7 +310,8 @@ cambiano pagina.
 Massimo sei righe:
 
 ```
-Patrick — <data>. Banco DM aperto: <da mandare per account, recuperi>
+Patrick — <data>. <se ci sono lead fermi: quanti e da quanto, per primi>
+Banco DM aperto: <da mandare per account, recuperi>
 Liste di oggi: siti <n> · DenkiShift <n> · ricerca <n>. <una riga su cosa c'è dentro>
 <una riga solo se qualcosa non è passato: quale riga, perché è rimasta fuori>
 ```
