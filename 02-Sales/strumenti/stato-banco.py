@@ -29,6 +29,50 @@ def lavorativi_da(iso):
                if (d + datetime.timedelta(days=n)).weekday() < 5)
 
 
+# Lo stesso criterio del banco, dal 12/09/2026. Patrick: «i recuperi non devono
+# essere a caso, ma pochi e mirati, per situazioni calde o almeno chi ha letto
+# e sensati in base alla chat», e «devi leggere tutta la chat». Prima qui e nel
+# banco bastavano quattro giorni lavorativi: erano 74 righe, cinque delle quali
+# avevano gia` detto no.
+RIFIUTO = re.compile(r"non siamo interessat|non sono interessat|non mi interessa|non ci interessa|no grazie|"
+                     r"non ne ho bisogno|non ne abbiamo bisogno|non abbiamo intenzione|non ci serve|"
+                     r"gia' un sito|già un sito|ce l'abbiamo|l'ho chiuso|in bocca al lupo|per ora no|"
+                     r"verra' chiuso|verrà chiuso|non esiste piu|non esiste più|abbiamo chiuso", re.I)
+AUTORISPOSTA = re.compile(r"grazie per aver|grazie di aver|ti ringraziamo per|risponderemo|ti risponder|"
+                          r"ti ricontatter|messaggio automatico|per prenotazion|per informazion|"
+                          r"il prima possibile|al piu' presto|al più presto|abbiamo ricevuto il tuo messaggio|"
+                          r"scrivici su whatsapp|chiamaci|puoi contattarci|benvenut", re.I)
+APPUNTAMENTO = re.compile(r"\b(lunedi|lunedì|martedi|martedì|mercoledi|mercoledì|giovedi|giovedì|venerdi|venerdì|"
+                          r"sabato|domenica)\b|risentiamoci|mi richiami|la chiamo|ti chiamo|chiamami|dopo le \d|"
+                          r"la prossima settimana|settimana prossima", re.I)
+ESITO_CHIUSO = re.compile(r"^scartat|^no\b|ha gia' il sito|ha già il sito|nessun interesse|chiude il negozio|"
+                          r"non interessa", re.I)
+ESITO_CALDO = re.compile(r"in valutazione|caldo|chiede|ha chiesto", re.I)
+
+
+def e_un_recupero(r, inv, rec):
+    inviato = (r.get(inv) or "").strip()
+    if not inviato or (rec and (r.get(rec) or "").strip()):
+        return False
+    esito = (r.get("Esito DM") or "").strip()
+    if esito and ESITO_CHIUSO.search(esito):
+        return False
+    chat = (r.get("Chat") or "").strip()
+    letto = (r.get("Letto (data)") or "").strip()
+    if chat and RIFIUTO.search(chat):
+        return False
+    if chat and APPUNTAMENTO.search(chat):
+        return True                      # un appuntamento non aspetta i quattro giorni
+    if lavorativi_da(inviato) < ATTESA:
+        return False
+    if ESITO_CALDO.search(esito):
+        return True
+    if chat:
+        pezzi = [x.strip() for x in chat.split("|") if x.strip()]
+        return not all(AUTORISPOSTA.search(x) for x in pezzi)
+    return bool(letto)
+
+
 def stato(nome, file):
     p = QUI / file
     if not p.exists():
@@ -42,10 +86,7 @@ def stato(nome, file):
     # «Recupero (data)»: una riga recuperata non e` piu` un recupero maturo, o
     # i due conti dicono numeri diversi sullo stesso file
     rec = next((c for c in righe[0] if c.lower().startswith("recupero")), None) if righe else None
-    recuperi = sum(1 for r in righe if (r.get(inv) or "").strip()
-                   and not (r.get("Esito DM") or "").strip()
-                   and not (rec and (r.get(rec) or "").strip())
-                   and lavorativi_da(r[inv].strip()) >= ATTESA)
+    recuperi = sum(1 for r in righe if e_un_recupero(r, inv, rec))
     return (f"{nome}: {da_mandare} da mandare, {oggi} partiti oggi, "
             f"{recuperi} recuperi maturi — {len(righe)} righe in {file}")
 
