@@ -211,6 +211,11 @@ in [[metriche]]:
 
 ## Regole
 
+### 12/09/2026 — Patrick: «i recuperi non devono essere a caso, ma pochi e mirati, per situazioni calde o almeno chi ha letto e sensati in base alla chat»
+
+74 recuperi maturi tutti insieme sul banco: un rilancio mandato a chi non ha mai aperto il messaggio brucia il profilo e non riporta niente
+
+
 ### 12/09/2026 — Patrick: «ora fallo da solo, d'ora in poi ogni volta che lancio il comando /banco fallo in automatico. impara cosa c'è di sbagliato e orientati su quello, dammi una mano a capire cosa sbaglio io e aiutami a chiudere i lead»
 
 da adesso /banco legge la posta di Instagram, segna gli esiti, toglie dai recuperi chi ha gia' risposto e riferisce cosa non funziona. Si legge e si segna: l'invio resta un gesto suo
