@@ -224,3 +224,31 @@ operatore di direzione su Opus che abbia caricato `impeccable context`,
 
 [[processo-siti]] · [[essenza-e-motion]] · [[trappole]] · [[direttive-siti]] ·
 [[registro-interventi]]
+
+## Passo 2 — tre mondi da un operatore di direzione, 13 settembre 2026
+
+Operatore su Opus con la catena caricata (`impeccable context`, `new-work.md`,
+`design-taste-frontend`, skill di stile **`industrial-brutalist-ui`** in
+modalità Swiss print: il registro suo è clinico, e la griglia svizzera con
+quote e mono è l'antidoto al rosa-e-oro da template). Ha guardato dodici foto
+a 1440, NG Barber e Fiftynine come metro, Nails Mania come mondo da non
+ripetere. `concept-seed` degradato (nessuna rete), seed **`f39d5612`**,
+indice assegnato 4 = mondo B.
+
+- **A «La sezione quotata»** — lei guarda l'unghia di taglio: una curva sola,
+  quotata (apex, asse, parallelismi, bombatura). Pin centrale: la curva ruota
+  da discendente a corretta, la foto di profilo accanto fa lo stesso. Poi
+  cinque profili che convergono, l'ultimo vuoto: il posto dell'allieva.
+- **B «La camera di luce»** (assegnato dal dado) — la cupola della lampada,
+  la pagina è il tempo sotto la luce. Dichiarato dall'operatore come il più
+  spostabile su un'altra onicotecnica.
+- **C «Il manuale di correzione»** — tavole didattiche numerate, richiami che
+  citano le sue caption.
+
+**Scelto A dal direttore**, sopra l'assegnato: il momento centrale è il
+ripristino dell'asse, cioè il gesto che vende lei; su una che fa decoro non c'è
+niente da ruotare. Palette: carta `#F4F2EE`, inchiostro `#14120F`, quota
+`#8B867E`, costruzione in oro `#A4804E`, il rosa `#FCE2E3` solo come campo
+pieno della fascia corsi. Archivo 900 maiuscolo per i titoli, Martian Mono
+per le quote. Foto in strisce orizzontali con un trattamento unico, sotto la
+quota che le descrive. Corsi subito dopo il pin, iscrizione via DM.
