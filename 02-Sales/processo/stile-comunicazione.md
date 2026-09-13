@@ -104,6 +104,10 @@ Vincolo fiscale attivo, dettaglio in [[vincoli-fiscali]]:
 
 Scritte da `regola.py` nel momento in cui sono state dette.
 
+### 13/09/2026 — Patrick: «per i siti il messaggio da troppe info inutili»
+
+il testo dei siti era di cinque paragrafi e spiegava anche il costo prima che qualcuno avesse chiesto: la bozza pronta e' il gancio, il resto si dice quando rispondono
+
 ### 13/09/2026 — Patrick: «per denkishift dire che i primi due mesi sono gratuiti»
 
 il DM dei turni non aveva nessuna leva sul prezzo e chiedeva dieci minuti a freddo: due mesi gratis abbassano il rischio percepito senza promettere una data di attivazione
