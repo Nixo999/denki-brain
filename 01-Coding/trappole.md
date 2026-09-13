@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Errori tecnici già pagati e strade scartate, per dominio. Descrittivo, non è un rulebook - le regole stanno in convenzioni.
-updated: 2026-09-11
+updated: 2026-09-13
 verificato: 2026-09-10
 source: denkicode
 tags: [trappole, memoria, frontend, gsap, git]
@@ -416,6 +416,27 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   screenshot di Nicola.
 - **Il dump grezzo dello scraping non si committa.** Su [[sito-ngbarber]] è
   finito nel commit iniziale di una repo pubblica e adesso resta nella storia.
+- `[TRAPPOLA]` **Il modale di login blocca il caricamento della foto grande.**
+  Nel pannello browser il DOM del post si legge prima che l'immagine esista:
+  `naturalWidth` non trova niente e si conclude che il post non ha foto — 3 post
+  su 9 riusciti. → `navigate` → `wait 5` → `Escape` → `wait 2` → lettura.
+  (13/09/2026, [[sito-laurafranzoni]])
+- `[TRAPPOLA]` **L'alta risoluzione sta nella pagina del singolo post, non nella
+  griglia.** Da sloggati `instagram.com/<utente>/p/<id>/` serve l'immagine alla
+  taglia nativa (fino a 3024×4032), mentre la griglia si ferma a 640 px. Nei
+  caroselli le slide oltre la prima si caricano solo cliccando «Avanti».
+  (13/09/2026, [[sito-laurafranzoni]])
+- `[SCARTATO]` **Alzare `s640x640` nell'URL di `og:image`.** Non funziona più: la
+  firma `oh=` copre anche il parametro di taglia e la CDN risponde 403. Vale
+  anche per la foto profilo, che resta a 150×150 e dall'URL non si ingrandisce.
+  (13/09/2026, [[sito-laurafranzoni]])
+- `[TRAPPOLA]` **Il bottone «altro» della bio non ha nome accessibile.** La bio
+  arriva troncata e il click a coordinate lo manca. → si prende il `ref` da
+  `read_page` con filtro `interactive` e si clicca quel riferimento.
+  (13/09/2026, [[sito-laurafranzoni]])
+- `[SCARTATO]` **`api/v1/users/web_profile_info`** da sloggati risponde 401
+  `require_login`: il profilo non si legge da lì. (13/09/2026,
+  [[sito-laurafranzoni]])
 
 ## Liste e banco DM
 
