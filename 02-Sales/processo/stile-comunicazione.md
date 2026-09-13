@@ -1,7 +1,7 @@
 ---
 riga: Il registro dei testi che legge un cliente - Lei o Tu, voce di Patrick. Non e' il registro di Trevis.
 type: risorsa
-updated: 2026-09-12
+updated: 2026-09-13
 source: denkicode
 ---
 
@@ -103,6 +103,10 @@ Vincolo fiscale attivo, dettaglio in [[vincoli-fiscali]]:
 ## Regole date a voce
 
 Scritte da `regola.py` nel momento in cui sono state dette.
+
+### 13/09/2026 — Patrick: «per denkishift dire che i primi due mesi sono gratuiti»
+
+il DM dei turni non aveva nessuna leva sul prezzo e chiedeva dieci minuti a freddo: due mesi gratis abbassano il rischio percepito senza promettere una data di attivazione
 
 ### 12/09/2026 — Patrick: «migliora un minimo ancora le frasi, non sempre sono di senso compiuto e dai un impostazione ancora piu umana anche se sei già a buon punto»
 
