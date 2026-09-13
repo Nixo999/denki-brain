@@ -104,6 +104,10 @@ Vincolo fiscale attivo, dettaglio in [[vincoli-fiscali]]:
 
 Scritte da `regola.py` nel momento in cui sono state dette.
 
+### 13/09/2026 — Patrick: «il nostro gancio di vendita principale per i siti e' che ABBIAMO GIA' CREATO UNA BOZZA/ANTEPRIMA INTERATTIVA DEL SITO per il prospect, basata sui contenuti del loro profilo social. Struttura: 1 apertura con complimento vero su un dettaglio specifico del loro lavoro, 2 il problema identificato in una riga, 3 il gancio della bozza come iniziativa spontanea senza vincolo economico, 4 call to action a frizione zero. Niente toni istituzionali o freddi. Linguaggio fluido, moderno, empatico e professionale. Specifica che guardare la bozza NON costa nulla e NON c'e' obbligo d'acquisto. Massimo 5-6 righe, leggibili da smartphone»
+
+l'apertura «sono Patrick Sappa della software house» e' il tono che fa chiudere la chat: il messaggio deve dimostrare in prima riga che una persona vera ha guardato quel profilo
+
 ### 13/09/2026 — Patrick: «per tutti e tre linka il nostro sito www.denkicode.com»
 
 senza un posto dove controllare chi siamo il messaggio resta la parola di uno sconosciuto su Instagram
