@@ -1,7 +1,7 @@
 ---
 riga: Il collo di bottiglia dell'azienda - da dove arrivano i lead e quanti ne servono.
 type: area
-updated: 2026-09-08
+updated: 2026-09-13
 source: denkicode
 priorita: massima
 ---
@@ -37,6 +37,7 @@ uno script forte su una lista sbagliata suona come tutti gli altri.
 | **DM Instagram** | Patrick | **Canale vero dal 31 agosto 2026**, sul lontano: [[metodo-instagram]] |
 | ~~Porta-a-porta~~ | — | **Chiuso il 31 agosto 2026** → [[2026-08-31-stop-porta-a-porta-a-freddo]] |
 | **Nuove aperture** | Patrick | **Da provare, 8 settembre 2026**: Maps, annunci di lavoro, elenchi camerali → [[metodo-nuove-aperture]] |
+| **Rivenditori e segnalatori** | — | **Da aprire, 13 settembre 2026**: agenzie che rivendono, studi paghe, appuntamenti a performance → [[canali-indiretti]] |
 
 ⚠️ **Dal 31 agosto 2026 i canali si dividono per geografia**: il telefono
 lavora vicino, dove Patrick può presentarsi dopo la chiamata; Instagram lavora
@@ -135,6 +136,6 @@ I documenti pronti, **tutti da provare, non da dare per buoni**:
 
 ## Collegamenti
 
-[[ciclo-settimanale]] · [[flusso-vendita]] · [[metriche]] · [[stato-azienda]] ·
+[[canali-indiretti]] · [[ciclo-settimanale]] · [[flusso-vendita]] · [[metriche]] · [[stato-azienda]] ·
 [[ruoli-e-responsabilita]] · [[prodotti-e-listino]] · [[materiale-offline]] ·
 [[presidi-volantini]]

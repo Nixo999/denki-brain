@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **168 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **169 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -129,6 +129,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 **processo/**
 
+- [[canali-indiretti]] — Chi puo' vendere al posto vostro - caller reclutati, agenzie a performance, rivenditori. Prezzi veri al 13 settembre 2026.
 - [[ciclo-settimanale]] — Dettato da Patrick il 28 agosto 2026. È il processo fisso.
 - [[core-commerciale]] — Consultazione, non obbligo. I framework con cui si costruisce un testo commerciale.
 - [[flusso-vendita]] — I quattro flussi di vendita e lo Straight Line - come un lead arriva alla chiusura.
