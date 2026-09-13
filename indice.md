@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-09-13
+updated: 2026-09-14
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **171 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **177 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -47,10 +47,13 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-denkicode]] — Sito di DenkiCode. È qui che sta la galleria dei lavori - il posto dove si mostra a un cliente cosa abbiamo già fatto.
 - [[sito-dsi-advertising]] — ⚠️ Sito vetrina in una pagina per D.S.I. Advertising di Piras Sebastiano, Merate (LC) - dal 1992 progetta e produce articoli promozionali per il...
 - [[sito-fiftynine]] — ⚠️ Sito vetrina in una pagina per Bar Tabacchi Fiftynine, bar tabaccheria e pizzeria in via Nazionale dei Giovi 59, Cesano Maderno (MB).
+- [[sito-laurafranzoni]] — Laura Franzoni @laurafranzoni_lashmaker, extension ciglia a Brescia: repo in piedi, 12 foto usabili, strada 1 dichiarata. Direzione non proposta.
 - [[sito-mikuma-dogs]] — Online su mikumadogs.netlify.app per Martina Carneli (mikuma.dogs), Como - giro 7 'il bianco e il nero', logo vero, Nicola: 'mi piace molto'.
 - [[sito-nails-mania]] — ⚠️ Sito vetrina in una pagina per Nails Mania, centro di ricostruzione unghie mani e piedi di Lory Frosio a Seriate (BG).
+- [[sito-nails-robyy]] — Roberta @nails.robyy, nail artist e educator a Brescia: repo in piedi, 35 foto a 1440, strada 1 dichiarata. Direzione non ancora proposta.
 - [[sito-ngbarber]] — ⚠️ Bozza vetrina per ng-barber, riga 2 dell'anello 1-b delle liste Instagram, gancio 5.
 - [[sito-osteria-tarilli]] — ⚠️ Osteria Tarilli, Via Ronco Nuovo 2, 6949 Comano (TI), a 300 m dalla RSI.
+- [[sito-pinkploy]] — Bozza sito per @nails_art_by_pinkploy, onicotecnica a Brescia centro. Ha risposto al DM di Patrick il 13/9 e la aspetta. Raccolta fatta, direzione no.
 - [[sito-pizzeria-lobidu]] — ⚠️ Pizzeria Lobidù, pizzeria siciliana, Via IV Novembre 13, 21049 Tradate (VA).
 - [[sito-salone-di-andrea]] — ⚠️ Sito vetrina in una pagina per Il Salone di Andrea, parrucchiere donna e uomo di Andrea Bielli a Dalmine (BG), Viale Natale Betelli 58.
 
@@ -92,6 +95,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[ms-service]] — ⚠️ Lead caldo - ha chiesto lui il materiale.
 - [[nails-mania]] — ⚠️ Centro di ricostruzione unghie mani e piedi di Lory Frosio, onicotecnica dal 2005.
 - [[ng-barber]] — ⚠️ Barbershop, @ngbarberstudio123. Riga 2 dell'anello 1-b, gancio 5 - l'unico link in bio è ngbarber.my-booking-app.com, cioè un'app di prenotaz...
+- [[pinkploy]] — Onicotecnica a Brescia centro, @nails_art_by_pinkploy, 832 follower. Ha risposto al DM di Patrick il 13/9 - «si prova mandami» - e aspetta la bozza.
 - [[sebastian-torres]] — Privato, non un'azienda. Sta aprendo la sua attività, e l'attività è opero - l'app che stiamo costruendo noi è la sua idea imprenditoriale.
 - [[shari-piras]] — ⚠️ Shari Piras, tatuatrice, Merate (LC). Due account - @shari_tattooer (4.504 follower, 493 post) è la persona, @atelierselva_ (593 follower, 41...
 
@@ -123,6 +127,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-12-rilanci-lead-aperti]] — I sette lead aperti al 12 settembre, coi rilanci riscritti dopo aver letto le conversazioni intere e non l'ultimo messaggio.
 - [[2026-09-13-liste-giulia-groane-vimercatese]] — Le 87 righe di Gabriele ed Edoardo riordinate per Giulia nello schema del ciclo: 27 siti, 30 DenkiShift, 30 indagine. Siti riverificati a macchina il 13/09.
 - [[2026-09-13-tre-liste-settori-nuovi]] — Le tre liste del 13 settembre - 50 DenkiShift, 50 siti su Brescia, 41 ricerca - e i testi riscritti la sera coi due mesi gratis, i siti accorciati e il sito in tutti e tre.
+- [[2026-09-14-rilanci-lead-aperti]] — I lead aperti al 14 settembre letti dalla posta intera - quattro bozze promesse e mai consegnate, una chiamata da fare oggi, e la seconda critica sull'AI in otto giorni.
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
@@ -136,6 +141,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[flusso-vendita]] — I quattro flussi di vendita e lo Straight Line - come un lead arriva alla chiusura.
 - [[generazione-lead]] — Il collo di bottiglia dell'azienda - da dove arrivano i lead e quanti ne servono.
 - [[materiale-offline]] — Quello che abbiamo di fisico, e a cosa è agganciato.
+- [[materiale-social]] — I post pubblicati sul profilo Instagram di DenkiCode - cosa e' uscito, con che didascalia, e dove stanno i file.
 - [[presidi-volantini]] — ⚠️ Terzo canale di acquisizione, deciso il 28 agosto 2026, dopo le cold call di Giulia e i blitz di Patrick.
 - [[prodotti-e-listino]] — I quattro prodotti e i prezzi. I prezzi sono indicativi - l'aggancio, non la cifra finale.
 - [[stile-comunicazione]] — Il registro dei testi che legge un cliente - Lei o Tu, voce di Patrick. Non e' il registro di Trevis.
