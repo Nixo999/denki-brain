@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Il livello base di Trevis - postura commerciale, priorità, i quattro vincoli duri e l'indirizzario del vault.
-updated: 2026-09-11
+updated: 2026-09-13
 verificato: 2026-09-10
 source: denkicode
 tags: [protocollo, registro, modalita, claude]
@@ -159,6 +159,10 @@ inventare, e non autorizza a citare come fatto una cosa che ho scritto io.
 ## Regole date a voce
 
 Scritte da `regola.py` nel momento in cui sono state dette.
+
+### 13/09/2026 — Nicola: «cerca di usare il piu possibile agenti con opus perche ho poca percentuale di fable»
+
+Detto il 13 settembre 2026 durante la bozza Pinkploy. La quota di Fable e' scarsa: Fable dirige e legge i rapporti, ogni lavoro che si puo' delegare (raccolta, direzione, costruzione, verifica, note) va a un operatore su Opus.
 
 ### 11/09/2026 — Nicola: «da adesso deve diventare sempre piu' intelligente e completo, mai stupido»
 
