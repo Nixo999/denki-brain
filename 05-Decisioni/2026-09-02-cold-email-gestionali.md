@@ -1,9 +1,10 @@
 ---
-riga: Chiesto da Nicola, 2 settembre 2026 - si può automatizzare del tutto l'invio di email alle aziende per denkishift e gli altri gestionali?
+riga: Chiesto da Nicola il 2 settembre e da Patrick il 13 - l'invio si automatizza tutto, ma su 566 righe di banco solo 2 sono scrivibili per legge.
 type: decisione
 data: 2026-09-02
 progetto: azienda
-source: claude
+source: denkicode
+verificato: 2026-09-13
 tags: [email, outreach, denkishift, gdpr, deliverability]
 ---
 
@@ -92,6 +93,37 @@ lo decidono i filtri.
 
 **Non deciso**: se aprire il canale, con che dominio, e chi tiene la lista delle
 disiscrizioni — che va tenuta, ed è un obbligo, non un'opzione.
+
+## Misurato il 13 settembre 2026, quando Patrick ha richiesto la stessa cosa
+
+Patrick: *«si potrebbe creare una cosa simile a banco dm, ma per le mail?»*.
+La risposta di questa nota non cambia, ma adesso c'è il numero che mancava.
+
+Contate le email già raccolte sul banco DM, 566 righe:
+
+| | |
+|---|---|
+| Righe con una email trovata nel profilo | **46** su 566, l'8% |
+| Di queste, con casella generica (`info@`, `amministrazione@`) | **18** |
+| Di queste, con ragione sociale da persona giuridica | **5** |
+| **Scrivibili secondo questa nota** (generica **e** persona giuridica) | **2** |
+
+Le due sono Fondazione Honegger RSA e la Cooperativa Sociale Coesa.
+
+**Il canale email non ha materia prima nelle liste che costruiamo oggi.**
+Instagram ci dà onicotecniche, estetiste, parrucchieri e piccoli locali: sono
+ditte individuali, cioè **persone fisiche**, che per l'art. 130 vogliono il
+consenso. La riga scrivibile è l'eccezione, non la regola.
+
+Dove invece funzionerebbe è il segmento aperto il 13 settembre per DenkiShift e
+per la ricerca: **RSA, fondazioni, cooperative sociali, poliambulatori, Srl
+edili**. Lì la casella generica è la norma e la ragione sociale è verificabile.
+→ [[2026-09-13-tre-liste-settori-nuovi]]
+
+**Resta non deciso** se aprire il canale. Ma la cosa da costruire non è un banco
+come quello dei DM: l'invio si automatizza già. Sono la **raccolta da fonti dove
+la ragione sociale è certa** (visura e Registro imprese, non Instagram) e la
+**lista delle disiscrizioni**, che è un obbligo.
 
 ## Collegamenti
 
