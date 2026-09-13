@@ -1,12 +1,38 @@
 ---
-riga: Reclutati intorno al 30 agosto 2026, insieme alle loro due liste (2026-08-30-liste-gabriele-edoardo).
+riga: Fuori dal 13 settembre 2026: hanno detto che non se la sentono, zero clienti contattati in 14 giorni. Le loro liste passano a Giulia.
 type: area
-updated: 2026-09-08
+updated: 2026-09-13
 source: denkicode
 tags: [team, cold-call, generazione-lead]
 ---
 
-# Gabriele ed Edoardo — due caller fermi, e non per mancanza di materiale
+# Gabriele ed Edoardo — il canale che non e' mai partito
+
+## Sono fuori — 13 settembre 2026
+
+> [!quote] Patrick, 13 settembre 2026
+> «Gabriele e Edoardo hanno detto che non se la sentono, senza nemmeno aver
+> contattato un cliente.»
+
+**Quattordici giorni, zero numeri chiamati.** Le due liste tornano indietro con
+la colonna `Esito e Note Agente` vuota su tutte e 87 le righe: il conto lo dice
+la macchina, non un'impressione.
+
+**Adesso e' una risposta loro, non piu' un'ipotesi di Patrick.** Il punto 6
+della checklist qui sotto — «qualcuno ha chiesto loro cosa li ferma» — e'
+l'unica riga che si e' chiusa, e ha confermato la diagnosi dell'8 settembre.
+Nessuna delle contromisure 2-4 e' stata provata: la prima chiamata insieme non
+si e' mai fatta, l'orario fisso non e' mai esistito, la provvigione pura e'
+rimasta l'unico compenso.
+
+**Le 87 righe passano a Giulia** → [[2026-09-13-liste-giulia-groane-vimercatese]].
+Il canale telefono torna a una persona sola → [[2026-09-13-caller-fuori]].
+
+⚠️ **Non si contano piu' nei piani.** Due persone che non chiamano non sono un
+canale: contarle faceva sembrare coperto un pezzo di generazione lead che era
+vuoto, ed e' il costo vero di questi quattordici giorni.
+
+## Come si era arrivati qui
 
 Reclutati intorno al **30 agosto 2026**, insieme alle loro due liste
 ([[2026-08-30-liste-gabriele-edoardo]]). Fino all'8 settembre non risultavano da
@@ -67,8 +93,17 @@ accanto.
    chiamano non sono un canale: sono un'intenzione. Continuare a contarle nei
    piani è il costo vero, perché fa sembrare coperto un canale che è vuoto.
 
+> [!warning] Come sono finite, il 13 settembre 2026
+> La 1 si e' fatta e ha dato la risposta. La 2, la 3 e la 4 no: si e' passati
+> direttamente a prendere atto. **Quello che non sapremo mai e' se una cold
+> call fatta insieme li avrebbe sbloccati** — e' il dato che costa piu' caro,
+> perche' senza di esso «non se la sentono» resta la conclusione piu' comoda
+> invece che una misura. Se domani si recluta un altro caller, l'ordine e'
+> chiamata affiancata prima della lista, non la lista prima della chiamata.
+
 ## Collegamenti
 
 [[2026-08-30-liste-gabriele-edoardo]] · [[core-produttivita-leadership]] ·
 [[generazione-lead]] · [[metriche]] · [[team-e-vincoli]] ·
-[[2026-09-08-test-dm-chiuso]]
+[[2026-09-08-test-dm-chiuso]] · [[2026-09-13-caller-fuori]] ·
+[[2026-09-13-liste-giulia-groane-vimercatese]]

@@ -116,8 +116,15 @@ loro profilo social»*.
    non costa nulla e non c'è obbligo di comprare**, e qui va `denkicode.com`.
 
 ⚠️ **Niente aperture istituzionali.** «Sono Patrick Sappa della software house
-X» è il tono che fa chiudere la chat. Linguaggio fluido, moderno, empatico.
-**Massimo cinque o sei righe**, che si leggano dal telefono.
+X, a Seveso» è il tono che fa chiudere la chat. **«Ciao, sono Patrick di
+DenkiCode» va benissimo**: il problema era il paragrafo di presentazione, non
+il nome. Linguaggio fluido, moderno, empatico. **Massimo cinque o sei righe**,
+che si leggano dal telefono.
+
+⚠️ **Tre errori di lingua da non rifare**, Patrick il 13 settembre: si dice
+**«ho notato però una cosa»** e non «una cosa l'ho notata»; quello che manca è
+**un sito**, non «un posto tuo»; e **«ho preso le tue foto» sembra da stalker**
+— si scrive che le foto le hai guardate e ti è venuta voglia di provarci.
 
 ⚠️ **Il complimento non si genera da una colonna.** È l'unico pezzo che va
 scritto aprendo il profilo, ed è il motivo per cui il testo di ripiego del

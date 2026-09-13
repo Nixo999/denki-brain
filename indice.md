@@ -191,7 +191,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 **team/**
 
-- [[gabriele-edoardo]] — Reclutati intorno al 30 agosto 2026, insieme alle loro due liste (2026-08-30-liste-gabriele-edoardo).
+- [[gabriele-edoardo]] — Fuori dal 13 settembre 2026: hanno detto che non se la sentono, zero clienti contattati in 14 giorni. Le loro liste passano a Giulia.
 - [[ruoli-e-responsabilita]] — Tre persone. Sotto, chi fa cosa davvero — non i titoli.
 - [[setup-macchina-nuova]] — Scritto per il MacBook Air di Patrick, ma vale per qualunque macchina nuova.
 - [[team-e-vincoli]] — Quante ore ci sono davvero - tutti e tre lavorano e studiano, DenkiCode e' il terzo impegno.

@@ -284,7 +284,9 @@ const ETICHETTA_GANCIO = {T:"turni", R:"ricerca"};
    chiusura a frizione zero che dice chiaro che guardarla non costa e non
    impegna. Massimo cinque o sei righe, che si leggano dal telefono.
    ⚠️ **Niente aperture istituzionali**: «sono Patrick Sappa della software
-   house X» e` il tono che fa chiudere la chat. La prima riga deve dimostrare
+   house X, a Seveso» e` il tono che fa chiudere la chat. Dire **«sono Patrick
+   di DenkiCode»** va benissimo, e Patrick lo ha confermato il 13/09: il
+   problema era il paragrafo di presentazione, non il nome. La prima riga deve dimostrare
    che una persona vera ha guardato quel profilo, e per questo qui **il testo
    di ripiego serve a poco**: il complimento non si genera da una colonna, lo
    scrive chi ha aperto il profilo. Se una riga arriva senza «Messaggio»,
@@ -292,22 +294,22 @@ const ETICHETTA_GANCIO = {T:"turni", R:"ricerca"};
    Il gancio resta quello dell'11/09: la bozza esiste gia`. */
 const MESSAGGI = {siti:{}, denkishift:{}, ricerca:{}};
 MESSAGGI.siti.patrick = (nome, gancio) =>
-`Ciao! Ho guardato il profilo di ${nome} e si vede che ci lavori con cura.
+`Ciao, sono Patrick di DenkiCode. Ho guardato il profilo di ${nome} e si vede che ci lavori con cura.
 
-Una cosa l'ho notata: ${gancio}.
+Ho notato però una cosa: ${gancio}.
 
 Così mi sono messo lì e l'ho fatta: una bozza del tuo sito, con le tue foto. Non me l'ha chiesta nessuno, l'ho fatta e basta.
 
-Guardarla non ti costa niente e non ti impegna a comprare nulla. Te la mando qui, o preferisci due minuti a voce? Noi siamo denkicode.com`;
+Guardarla non ti costa niente e non ti impegna a comprare nulla. Te la mando qui, o preferisci due minuti a voce? Se vuoi vedere cosa facciamo: denkicode.com.`;
 
 MESSAGGI.siti.denkicode = (nome, gancio) =>
-`Ciao! Abbiamo guardato il profilo di ${nome} e si vede che ci lavorate con cura.
+`Ciao, siamo la DenkiCode. Abbiamo guardato il profilo di ${nome} e si vede che ci lavorate con cura.
 
-Una cosa l'abbiamo notata: ${gancio}.
+Abbiamo notato però una cosa: ${gancio}.
 
 Così ci siamo messi lì e l'abbiamo fatta: una bozza del vostro sito, con le vostre foto. Non ce l'ha chiesta nessuno, l'abbiamo fatta e basta.
 
-Guardarla non vi costa niente e non vi impegna a comprare nulla. Ve la mandiamo qui, o preferite due minuti a voce? Noi siamo denkicode.com`;
+Guardarla non vi costa niente e non vi impegna a comprare nulla. Ve la mandiamo qui, o preferite due minuti a voce? Se volete vedere cosa facciamo: denkicode.com.`;
 
 /* DENKISHIFT. Il buco e` quello che si e` visto sul profilo: il post che cerca
    personale, le trenta camere, la seconda sede. Senza quella riga il messaggio

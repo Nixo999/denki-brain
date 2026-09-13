@@ -142,6 +142,29 @@ voi ai saloni con una squadra.
 di ripiego del banco per i siti vale meno che per le altre due liste, e sta
 scritto nel codice.
 
+### I quattro errori corretti dopo la prima lettura di Patrick
+
+Letto il primo messaggio, Patrick ha bocciato quattro cose, e tre erano errori
+di lingua nostri:
+
+| Cosa era scritto | Cosa c'è ora |
+|---|---|
+| «Una cosa l'ho notata» | **«Ho notato però una cosa»**, che è l'ordine italiano |
+| «perché un posto tuo non c'è» | **«perché un sito tuo non c'è»**: quello che manca è un sito |
+| «Ho preso le tue foto e ci ho costruito sopra» | **«Guardando le tue foto mi è venuta voglia di provarci»**: il primo sembrava da stalker |
+| nessun nome in apertura | **«Ciao, sono Patrick di DenkiCode»** — *«puoi dire che sono di denkicode senza problemi»* |
+
+Il nome non era il problema: lo era il paragrafo di presentazione. Sta scritto
+nel comando, perché la prossima volta non si tolga il nome per eccesso di zelo.
+
+Corretti nello stesso giro anche **ventisei blocchi «problema»** che non
+stavano in piedi dopo il cambio di apertura: doppi due punti, frasi che
+aprivano con «e» o con «ma», un «proprio per questo» che non aveva più un
+prima, riferimenti persi come «chi la cerca per nome» senza dire cosa. E i
+registri misti fra tu e voi, ricalcolati sulle due righe scritte guardando il
+profilo: Alessia Cadei lavora da sola e prende il tu, Aesthetic Design è uno
+studio e prende il voi.
+
 **Il sito in tutti e tre.** Nella ricerca però sta **nella riga di chi scrive,
 non come invito**: se in un messaggio che dice «non le vendo niente» metti il
 sito di una software house come cosa da guardare, la ricerca diventa la scusa
