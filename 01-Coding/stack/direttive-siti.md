@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-09-11
+updated: 2026-09-14
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 14/09/2026 — Nicola: «tutto bello ma la hero section non mi piace. fai come al solito un titolo con il suo nome e una frase sotto in piccolo, non un frase cosi lunga come titolo. non sta bene. come introduzione al sito»
+
+Detto il 14 settembre 2026 sulla bozza Pinkploy, dove l'h1 era la frase della bio su due righe. Stessa bocciatura di Mikuma («la frase su tre righe non può essere il titolo»): da qui è regola. L'h1 di ogni sito è il nome del cliente; la frase sua sta sotto, piccola.
 
 ### 11/09/2026 — «sembra che non usi più le skill nel modo di prima»
 
