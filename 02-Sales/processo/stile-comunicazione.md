@@ -104,6 +104,10 @@ Vincolo fiscale attivo, dettaglio in [[vincoli-fiscali]]:
 
 Scritte da `regola.py` nel momento in cui sono state dette.
 
+### 13/09/2026 — Patrick: «per la bozza: «abbiamo preso ispirazione dal tuo profilo e abbiamo realizzato una bozza sito». Per la chiusura: «preferisci se te la mando qua su ig oppure prima vuoi che ne parliamo 2 minuti al telefono?, in ogni caso zero costi e zero impegno, se ti piace poi ne si parla, Se vuoi vedere cosa facciamo: denkicode.com»»
+
+la scelta fra messaggio e telefono va offerta prima, non dopo, e il «zero costi» arriva dopo la domanda come rassicurazione: messo prima suona come una giustificazione
+
 ### 13/09/2026 — Patrick: «si dice «ho notato pero' una cosa» in italiano; la frase «perche' un posto tuo non c'e'» non ha senso, al massimo un sito tuo; non mi piace la frase «ho preso le tue foto», sembra da stalker; puoi dire che sono di denkicode senza problemi»
 
 tre errori di lingua e uno di tono nei messaggi dei siti: l'ordine delle parole italiano, «posto» usato dove ci va «sito», e un verbo che fa sembrare che gli abbiamo rubato le foto invece di averle guardate
