@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 14/09/2026 — Nicola: «bello ma la hero section sostituisci il titolo deve essere il suo nome e sotto una frase, e poi la foto subito sotto occupa troppo spazio così è un po' brutto sembra un mega zoom sulla faccia della ragazza»
+
+Sito bozza laurafranzoni_lashmaker, mondo «Dall'alto»: la fascia 21:9 sotto l'hero resa a tutta larghezza (1440 px CSS) legge come uno zoom sul viso, non come un punto di vista. L'h1 e' il nome della cliente con una frase sotto, come gia' detto su Pinkploy
+
 ### 14/09/2026 — Nicola: «tutto bello ma la hero section non mi piace. fai come al solito un titolo con il suo nome e una frase sotto in piccolo, non un frase cosi lunga come titolo. non sta bene. come introduzione al sito»
 
 Detto il 14 settembre 2026 sulla bozza Pinkploy, dove l'h1 era la frase della bio su due righe. Stessa bocciatura di Mikuma («la frase su tre righe non può essere il titolo»): da qui è regola. L'h1 di ogni sito è il nome del cliente; la frase sua sta sotto, piccola.
