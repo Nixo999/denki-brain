@@ -1,5 +1,5 @@
 ---
-riga: Le tre liste del 13 settembre - 50 DenkiShift su RSA e poliambulatori, 50 siti su Brescia, 41 ricerca. Due settori nuovi che rendono, uno abbandonato.
+riga: Le tre liste del 13 settembre - 50 DenkiShift, 50 siti su Brescia, 41 ricerca - e i testi riscritti la sera coi due mesi gratis, i siti accorciati e il sito in tutti e tre.
 type: area
 updated: 2026-09-13
 source: denkicode
@@ -103,6 +103,34 @@ I messaggi sono stati riscritti più volte per il senso, non solo per i tell:
 il controllo della voce toglie le tracce da macchina ma non si accorge se una
 frase non dice niente. Regola di Patrick del 12 settembre, in
 [[stile-comunicazione]].
+
+## Riscritti i testi la sera del 13, tre richieste di Patrick
+
+*«per denkishift dire che i primi due mesi sono gratuiti. per i siti il
+messaggio da troppe info inutili. per tutti e tre linka il nostro sito
+www.denkicode.com»*. Scritte in [[stile-comunicazione]], applicate a tutte e
+141 le righe e allineate sul banco.
+
+**DenkiShift, due paragrafi nuovi.** «I primi due mesi non si pagano» e la
+chiusura col sito. A 2 € al mese per dipendente sono circa 60 € regalati a
+un'azienda da quindici persone.
+⚠️ **I due mesi non sono una data.** Il software non è installabile in
+produzione, quindi «i primi due mesi non si pagano» si può dire, «partiamo
+lunedì» no, nemmeno a chi risponde. Scritto anche in [[prodotti-e-listino]].
+
+**Siti, da cinque paragrafi a tre.** Chi sei col sito, cosa hai visto sul
+profilo, la bozza è pronta e gliela mando. Sono spariti il costo, il «non la
+impegna a niente» e il «non deve mandarmi niente»: si dicono quando rispondono.
+
+**Il sito in tutti e tre.** Nella ricerca però sta **nella riga di chi scrive,
+non come invito**: se in un messaggio che dice «non le vendo niente» metti il
+sito di una software house come cosa da guardare, la ricerca diventa la scusa
+per vendere che [[script-indagine]] vieta. Come firma dice solo da dove arriva
+la ricerca, ed è il contrario di nasconderlo.
+
+**`voce-check.py` non segnala più i nostri due link**, il sito e il modulo, e
+continua a segnalare quelli di terzi: un controllo che dà un allarme su ogni
+riga non lo legge più nessuno.
 
 ## Collegamenti
 

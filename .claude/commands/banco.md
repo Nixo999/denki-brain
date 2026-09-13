@@ -101,6 +101,12 @@ schermata».
 questi cinquanta si compra il lavoro di farle. È il prezzo del gancio più
 forte che abbiamo, e lo paga chi risponde per primo.
 
+**Tre paragrafi e basta**, dal 13 settembre 2026. Patrick: *«per i siti il
+messaggio da troppe info inutili»*. Chi sei col sito (`www.denkicode.com`),
+cosa hai visto sul profilo, la bozza è pronta e gliela mando. Il costo, il «non
+la impegna a niente» e il «non deve mandarmi niente» **si dicono quando
+rispondono**, non prima.
+
 Gancio `1-6` nella colonna, come oggi: 1 nessun sito, 2 dominio morto,
 3 parcheggiato, 4 link rotto, 5 piattaforma (Fresha, Wix, Linktree: **il
 messaggio la nomina**, o il titolare ti corregge), 6 vivo ma vecchio.
@@ -121,9 +127,17 @@ persone, orario fisso.
 
 Gancio `T`. Il messaggio dice **una cosa vera vista sul profilo** (le trenta
 camere, il post che cerca un cameriere, la seconda sede), **una domanda sui
-turni**, cosa fa il programma in una frase, e chiede **dieci minuti in
-videochiamata**. Mai una data di attivazione, mai il prezzo al mese, mai un
-link → [[dm-instagram-denkishift]], [[denkishift]].
+turni**, cosa fa il programma in una frase, **che i primi due mesi sono
+gratuiti**, e chiede **dieci minuti in videochiamata**. Chiude con
+`www.denkicode.com`.
+⚠️ **Mai una data di attivazione**: DenkiShift non è installabile in produzione,
+e i due mesi gratis non dicono quando si comincia. Mai il prezzo al mese: se
+serve, il numero è il totale dell'anno → [[dm-instagram-denkishift]],
+[[denkishift]].
+
+> Patrick, 13 settembre 2026: *«per denkishift dire che i primi due mesi sono
+> gratuiti»* e *«per tutti e tre linka il nostro sito www.denkicode.com»*. Il
+> «mai un link» di prima vale ancora per i link di terzi, non per il nostro.
 
 ### 2c · Ricerca di mercato — 50 righe, tutta la Lombardia, colonna `Prodotto: ricerca`
 
@@ -147,7 +161,9 @@ https://docs.google.com/forms/d/e/1FAIpQLSe2cCfeAx8IVLRq-ocJe4MUpq43u_1D95IpBPjq
 `/edit` è il pannello di chi il modulo lo scrive, e non si manda a nessuno.
 
 **Qui non si vende niente, e non è un modo di dire**: zero prodotti, zero
-prezzi, zero programmi nominati. Se nomini un prodotto la ricerca diventa una
+prezzi, zero programmi nominati. Dal 13 settembre 2026 `www.denkicode.com` sta
+anche qui, ma **nella riga di chi scrive, non come invito**: dice da dove
+arriva la ricerca, e non è un prodotto da guardare. Se nomini un prodotto la ricerca diventa una
 scusa per vendere e la lista muore, per tutti e tre → [[script-indagine]].
 Il contraccambio si promette e **si mantiene**: il riepilogo di cosa è venuto
 fuori dalle aziende della zona.

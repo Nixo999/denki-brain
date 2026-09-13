@@ -121,7 +121,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-11-tre-liste-brianza]] — Le tre liste dell'11 settembre - 43 siti e 43 DenkiShift sulla Brianza mai battuta, piu' 9 di ricerca di mercato.
 - [[2026-09-12-cinquanta-per-tipologia]] — Le liste portate a 50 per tipologia - ricerca su tutta la Lombardia, siti su Milano, e i tatuatori che il sito ce l'hanno.
 - [[2026-09-12-rilanci-lead-aperti]] — I sette lead aperti al 12 settembre, coi rilanci riscritti dopo aver letto le conversazioni intere e non l'ultimo messaggio.
-- [[2026-09-13-tre-liste-settori-nuovi]] — Le tre liste del 13 settembre - 50 DenkiShift su RSA e poliambulatori, 50 siti su Brescia, 41 ricerca. Due settori nuovi che rendono, uno abbandonato.
+- [[2026-09-13-tre-liste-settori-nuovi]] — Le tre liste del 13 settembre - 50 DenkiShift, 50 siti su Brescia, 41 ricerca - e i testi riscritti la sera coi due mesi gratis, i siti accorciati e il sito in tutti e tre.
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.

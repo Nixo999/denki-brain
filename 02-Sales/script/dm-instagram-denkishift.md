@@ -44,8 +44,15 @@ guardato il profilo, e sono diverse ogni volta.
 4. **Cosa fa il programma**, in una frase: la settimana si costruisce una
    volta, ognuno vede la sua sul telefono, quando salta uno dice chi è
    libero e chi ha già fatto troppe ore.
-5. **La richiesta**: dieci minuti, in videochiamata, glielo mostro io. Se non
-   serve, non mi sente più.
+5. **I due mesi gratis.** Dal 13 settembre 2026, Patrick: «per denkishift dire
+   che i primi due mesi sono gratuiti». Va detto senza dire **quando** si
+   comincia: il software non e' installabile in produzione, e una data non si
+   promette. «I primi due mesi non si pagano» si puo' dire, «partiamo lunedi'»
+   no.
+6. **La richiesta**: dieci minuti, in videochiamata, glielo mostro io. Se non
+   serve, non mi sente più. Si chiude con `www.denkicode.com`, che dal 13
+   settembre sta in tutti e tre i testi: il «mai un link» vale per i link di
+   terzi, non per il nostro.
 
 Il prezzo entra solo se serve a togliere una paura: «su dieci persone sono
 poche centinaia di euro l'anno, non di migliaia».

@@ -287,61 +287,57 @@ const ETICHETTA_GANCIO = {T:"turni", R:"ricerca"};
    Passato dalla skill voce-denkicode il 6 settembre 2026. */
 const MESSAGGI = {siti:{}, denkishift:{}, ricerca:{}};
 MESSAGGI.siti.patrick = (nome, gancio) =>
-`Buongiorno, sono Patrick Sappa. Ho una piccola software house a Seveso, DenkiCode.
+`Buongiorno, sono Patrick Sappa, DenkiCode, software house a Seveso: www.denkicode.com
 
-Le scrivo perché ho guardato il profilo di ${nome} e ${gancio}.
+Ho guardato il profilo di ${nome} e ${gancio}.
 
-Le sue foto erano già metà del lavoro: l'altra metà l'ho fatta io. La bozza del suo sito è già pronta, con le sue immagini e il suo nome. Non deve scrivere niente e non deve mandarmi niente.
-
-Gliela mando qui, la guarda con calma, e se non le piace me lo dice e non ci sentiamo più. Non le costa un euro e non la impegna a niente.
-
-Sul costo non le faccio girare la testa: se poi decidesse di metterlo online, si parla di poche centinaia di euro una volta, non di migliaia, più una quota annuale per tenerlo attivo. Il numero preciso glielo faccio solo se la cosa le interessa davvero.
-
-Gliela mando?`;
+La bozza del suo sito è già pronta, con le sue foto e il suo nome. Gliela mando?`;
 
 /* Dall'account aziendale a scrivere e` la casa, non la persona: il "noi" e` la
    sola differenza vera, ma la firma resta di una persona — un DM che non ha
    nessuno dietro si legge come un annuncio e non riceve risposta. */
 MESSAGGI.siti.denkicode = (nome, gancio) =>
-`Buongiorno, le scrive Patrick della DenkiCode, una piccola software house a Seveso.
+`Buongiorno, le scrive Patrick della DenkiCode, software house a Seveso: www.denkicode.com
 
 Abbiamo guardato il profilo di ${nome} e ${gancio}.
 
-Le sue foto erano già metà del lavoro, l'altra metà l'abbiamo fatta noi. La bozza del suo sito è già pronta, con le sue immagini e il suo nome. Non deve scrivere niente e non deve mandarci niente.
-
-Gliela mandiamo qui, la guarda con calma, e se non le piace ce lo dice e non ci sentiamo più. Non le costa un euro e non la impegna a niente.
-
-Sul costo non le facciamo girare la testa: se poi decidesse di metterlo online, si parla di poche centinaia di euro una volta, non di migliaia, più una quota annuale per tenerlo attivo. Il numero preciso glielo diciamo solo se la cosa le interessa davvero.
-
-Gliela mandiamo?`;
+La bozza del suo sito è già pronta, con le sue foto e il suo nome. Gliela mandiamo?`;
 
 /* DENKISHIFT. Il buco e` quello che si e` visto sul profilo: il post che cerca
    personale, le trenta camere, la seconda sede. Senza quella riga il messaggio
-   e` un invio a tappeto e si vede. Niente date, niente prezzo al mese, niente
-   link: tutte e tre stanno in dm-instagram-denkishift.md fra i mai. */
+   e` un invio a tappeto e si vede.
+   Dal 13/09/2026, per due richieste di Patrick: «per denkishift dire che i
+   primi due mesi sono gratuiti» e «per tutti e tre linka il nostro sito». Il
+   «mai un link» di dm-instagram-denkishift.md vale solo per i link di terzi.
+   Resta il divieto sulle date di attivazione: DenkiShift non e` installabile
+   in produzione, e i due mesi non dicono quando si comincia. */
 MESSAGGI.denkishift.patrick = (nome, visto) =>
 `Buongiorno, sono Patrick Sappa. Ho una piccola software house a Seveso, DenkiCode.
 
 Ho guardato il profilo di ${nome}: ${visto}. Una squadra così i turni chi glieli fa, ancora su un foglio o sul gruppo WhatsApp?
 
-Abbiamo fatto un programma che serve a quello. La settimana si costruisce una volta, ognuno vede la sua sul telefono, e quando salta qualcuno dice subito chi è libero e chi ha già fatto troppe ore.
+Abbiamo fatto un programma che serve a quello. La settimana si costruisce una volta, ognuno vede la sua sul telefono, e quando salta qualcuno dice subito chi è libero.
 
-Glielo faccio vedere in dieci minuti in videochiamata, quando le torna comodo. Se non le serve me lo dice e non mi sente più.`;
+I primi due mesi non si pagano. Li usate per provarlo sul serio, e se non vi serve lo lasciate lì.
+
+Siamo su www.denkicode.com. Dieci minuti in videochiamata e glielo faccio vedere.`;
 MESSAGGI.denkishift.denkicode = (nome, visto) =>
 `Buongiorno, le scrive Patrick della DenkiCode, una piccola software house a Seveso.
 
 Abbiamo guardato il profilo di ${nome}: ${visto}. Una squadra così i turni chi glieli fa, ancora su un foglio o sul gruppo WhatsApp?
 
-Abbiamo fatto un programma che serve a quello. La settimana si costruisce una volta, ognuno vede la sua sul telefono, e quando salta qualcuno dice subito chi è libero e chi ha già fatto troppe ore.
+Abbiamo fatto un programma che serve a quello. La settimana si costruisce una volta, ognuno vede la sua sul telefono, e quando salta qualcuno dice subito chi è libero.
 
-Glielo facciamo vedere in dieci minuti in videochiamata, quando le torna comodo. Se non le serve ce lo dice e non ci sente più.`;
+I primi due mesi non si pagano. Li usate per provarlo sul serio, e se non vi serve lo lasciate lì.
+
+Siamo su www.denkicode.com. Dieci minuti in videochiamata e glielo facciamo vedere.`;
 
 /* RICERCA. Qui non si vende niente, ed e` letteralmente vero: e` il motivo per
    cui questa lista converte in modo diverso dalle altre. Chi lo dice e poi
    vende brucia la frase per tutte le liste future (script-indagine.md).
    Il buco e` il settore, che va chiamato con la parola loro. */
 MESSAGGI.ricerca.patrick = (nome, settore) =>
-`Buongiorno, sono Patrick Sappa, DenkiCode, una piccola software house a Seveso.
+`Buongiorno, sono Patrick Sappa, DenkiCode, una piccola software house a Seveso, www.denkicode.com.
 
 Non le vendo niente e non le chiedo un appuntamento. Stiamo facendo una ricerca sulle aziende ${settore} qui in zona: che programmi usate davvero per ordini, magazzino e turni, e cosa vi tocca ancora rifare a mano due volte.
 
@@ -350,7 +346,7 @@ ${MODULO}
 
 Quando abbiamo finito il giro le mando quello che è venuto fuori dalle altre aziende della zona. Almeno sa come sono messi gli altri.`;
 MESSAGGI.ricerca.denkicode = (nome, settore) =>
-`Buongiorno, le scrive Patrick della DenkiCode, una piccola software house a Seveso.
+`Buongiorno, le scrive Patrick della DenkiCode, una piccola software house a Seveso, www.denkicode.com.
 
 Non le vendiamo niente e non le chiediamo un appuntamento. Stiamo facendo una ricerca sulle aziende ${settore} qui in zona: che programmi usate davvero per ordini, magazzino e turni, e cosa vi tocca ancora rifare a mano due volte.
 

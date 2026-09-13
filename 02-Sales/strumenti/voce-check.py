@@ -83,8 +83,15 @@ def controlla(testo, sito=False):
     tre = re.search(r"non deve [^,.]+, non deve [^,.]+ e non deve", testo, re.I)
     if tre:
         p.append("elenco di tre «non deve»")
-    if re.search(r"http|www\.", testo):
-        p.append("link nel messaggio")
+    # Un link estraneo dentro un DM e` un tell: sposta la conversazione altrove
+    # prima che ci sia una conversazione. Due link pero` sono voluti e non si
+    # segnalano piu` dal 13/09/2026: il nostro sito, che Patrick ha chiesto di
+    # mettere in tutti e tre i testi («per tutti e tre linka il nostro sito
+    # www.denkicode.com»), e il modulo della ricerca di mercato, che e` la cosa
+    # stessa che si chiede di aprire.
+    estranei = re.sub(r"(www\.)?denkicode\.com|https://docs\.google\.com/forms/\S+", "", testo)
+    if re.search(r"http|www\.", estranei):
+        p.append("link estraneo nel messaggio")
     return p
 
 

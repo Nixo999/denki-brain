@@ -51,6 +51,7 @@ cliente.
 | | |
 |---|---|
 | Prezzo | **~2 €/mese per dipendente**, paga il datore di lavoro |
+| Prova gratuita | **I primi due mesi non si pagano** — Patrick, 13/09/2026, ed è quello che dice il DM |
 | Leva di vendita | Ottimizzazione del personale: ferie, malattie, coperture |
 | Obiettivo del contatto | Fissare una demo dal vivo o in call, gestita da Patrick |
 | Supporto | Biglietti da visita dedicati (200 disponibili) |
@@ -58,6 +59,8 @@ cliente.
 | Clienti attivi | **0** |
 
 ⚠️ Il software **non è ancora installabile in produzione** → [[denkishift]].
+⚠️ **I due mesi gratis non sono una data di attivazione.** «I primi due mesi non
+si pagano» si dice; «partiamo il tal giorno» no, e nemmeno a chi risponde.
 
 ## D — Gestionali custom · *flusso inverso*
 
