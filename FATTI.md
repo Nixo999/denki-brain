@@ -1,13 +1,13 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura.
-updated: 2026-09-11
-verificato: 2026-09-11
+updated: 2026-09-13
+verificato: 2026-09-13
 source: denkicode
 tags: [stato, fatti]
 ---
 
-# I fatti — stato al 11 settembre 2026
+# I fatti — stato al 13 settembre 2026
 
 **Questo file si riscrive, non si accumula.** È lo stato di adesso: quando un
 fatto cambia si sostituisce la riga, non se ne aggiunge una sotto. La storia
@@ -45,16 +45,14 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
 
 ## Cosa è bloccato, e perché
 
-- **La migrazione dello storico di OperO aspetta che qualcuno apra il pannello
-  del progetto** (11/09/2026). Piano, mappatura campo-per-campo, SQL del
-  censimento verificato contro lo schema vero e script di estrazione sono nel
-  repo e pronti. ⚠️ **Non serve nessuna password del database**, e cercarla per
-  due giorni è stato un errore mio: su Supabase si genera dal pannello con un
-  bottone, serve solo a `pg_dump`, e chi costruisce da dentro Lovable non la
-  incontra mai. Dall'editor SQL del pannello il censimento si chiude in due
-  minuti; con la `service_role` key l'estrazione prende tutte e 38 le tabelle.
-  **Da verificare, ed è l'unica cosa che manca**: se il progetto Lovable di
-  `sebapp-bolanos` si apre dall'account di Nicola. Se sì, non c'è più blocco
+- **La migrazione dello storico di OperO non si fa piu'** (13/09/2026). Seba:
+  «non e' richiesta alcuna procedura automatizzata di migrazione per i dati
+  storici», settembre lo inserisce a mano lui, e di giugno-agosto vuole solo un
+  **report da consultare**. OperO 2 parte vuoto: trasformazione e caricamento
+  del piano non servono, **e il blocco al go-live non c'e' piu'**. Il report lo
+  scrive `strumenti/report-mesi.mjs` dai JSON dell'estrazione. ⚠️ **Manca solo
+  la chiave**: `OPERO1_SERVICE` da Settings → API del pannello di OperO 1,
+  oppure un login di segreteria. **La digita una persona**, non Claude
   → [[opero]]
 - **DenkiShift non è installabile in produzione.** Dimostrabile, non vendibile
   con una data → [[denkishift]]
