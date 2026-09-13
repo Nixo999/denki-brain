@@ -1,7 +1,7 @@
 ---
 riga: I numeri del funnel con la data accanto. Un numero senza data non e' una metrica.
 type: area
-updated: 2026-09-08
+updated: 2026-09-13
 source: denkicode
 ---
 
@@ -54,7 +54,7 @@ quella dal 24 al 30 agosto 2026.
 |---|---|---|---|---|
 | 2026-W35 | | | | |
 
-## Il conto vero dei canali — 8 settembre 2026
+## Il conto vero dei canali — 8 settembre, aggiornato al 13 settembre 2026
 
 **Primi numeri detti da Patrick**, a voce, l'8 settembre. Sostituiscono le
 righe vuote qui sopra: sono `source: denkicode`, non stime.
@@ -62,8 +62,8 @@ righe vuote qui sopra: sono `source: denkicode`, non stime.
 | Canale | Contatti usciti | Risposte | Trattative | Incassato |
 |---|---|---|---|---|
 | **DM Instagram** | oltre **200** | 2 | 2, entrambe da un solo referral | **0 €** |
-| **Telefono, Giulia** | ~51 (lista turni del 28 ago) | `TODO` | 1 ([[ms-service]], non risponde più) | **0 €** |
-| **Gabriele ed Edoardo** | **0** in nove giorni, con script e liste in mano → [[gabriele-edoardo]] | — | — | **0 €** |
+| **Telefono, Giulia** | **131 righe chiuse in due settimane** (13/09) | `TODO` | 1 ([[ms-service]], non risponde più) | **0 €** |
+| **Gabriele ed Edoardo** | **0** in quattordici giorni. Canale chiuso il 13/09 → [[2026-09-13-caller-fuori]] | — | — | **0 €** |
 | **Referral** | 1 ([[shari-piras]]) | 1 | 1 ([[dsi-advertising]]) | **0 €** |
 | **Presìdi** | 1 su 10 ([[bar-tabacchi-fiftynine]]) | 1 | baratto, non vendita | **0 €** |
 | **Rete personale** | non è un canale | — | [[albybike]], [[sebastian-torres]] | **400 €** |
@@ -74,6 +74,12 @@ i 2.000 € di credito vengono tutti da fuori i canali commerciali.
 ⚠️ **Il tasso del DM è ~1%**, contro il 5% sotto cui [[dm-instagram-vetrina]]
 dichiara che il messaggio non tiene. Il test è chiuso →
 [[2026-09-08-test-dm-chiuso]].
+
+⚠️ **Giulia ha finito la sua lista, i suoi numeri no.** Patrick lo ha detto il
+13 settembre: lista chiusa in due settimane, **reso conto ancora da girare**.
+Finche' non arriva, chiamate, risposte e appuntamenti restano `TODO`: e' l'unico
+canale che ha girato davvero e non sappiamo con che resa. Da leggere appena
+arriva il file, e da scrivere nella riga `2026-W37` qui sopra.
 
 ⚠️ **Il denominatore del DM resta approssimato.** Il banco ne ha tracciati 75:
 gli altri stanno solo nel localStorage del Mac di Patrick, e finché non scarica

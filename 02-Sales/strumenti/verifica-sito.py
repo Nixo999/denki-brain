@@ -47,7 +47,13 @@ DIRECTORY = re.compile(r"(instagram|facebook|tripadvisor|thefork|yelp|paginegial
                        r"beautypassport|beautynailhairsalons|italy724|guidaestetica|aromavero|portale\.bergamo|treviglioincentro|"
                        r"nicelocal|beautytrip|scuolaesteticabea|esteticavicino|parrucchieri-italia|toelettatori-italia|fresha|treatwell|"
                        r"prontopro|starofservice|cronoshare|instapro|worldplaces|cybo\.com|near-place|top-rated|beautycheck|unobooking|"
-                       r"prenotado|barbierefacile|mabella|confestetica|aziendit|worldorgs|elencoimpreseitaliane|icribis|nextdoor)", re.I)
+                       r"prenotado|barbierefacile|mabella|confestetica|aziendit|worldorgs|elencoimpreseitaliane|icribis|nextdoor|"
+                       # aggiunte il 13 settembre 2026, riverificando le 27 righe di Gabriele ed Edoardo: quattro
+                       # SCARTATO su cinque erano portali. webesteticabenessere.com «trova i migliori centri estetici»
+                       # e 123estetica.com stavano per buttare via due righe buone, e duckduckgo.com contava come sito
+                       r"webesteticabenessere|top10posti|123estetica|reportazienda|bluaziende|visurissima|showmelocal|"
+                       r"aziende\.it|companyreports|kompass|tuttocitta|bakeca|tuttoconcorezzo|matrimonio\.com|"
+                       r"duckduckgo|lorealprofessionnel|hair-salon)", re.I)
 PIATTAFORMA = re.compile(r"(wixsite\.com|jimdofree\.com|business\.site|myshopify\.com|res-menu|eatbu|"
                          r"\.menu$|menu\.|godaddysites|webnode|altervista|blogspot|wordpress\.com|"
                          r"weebly|site123|carrd\.co|strikingly)", re.I)

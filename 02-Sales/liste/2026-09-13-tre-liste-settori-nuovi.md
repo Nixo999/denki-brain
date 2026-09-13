@@ -128,10 +128,13 @@ UNA BOZZA/ANTEPRIMA INTERATTIVA DEL SITO per il prospect»*.
    di Aurora Nails, i quindici minuti risparmiati ogni mattina di Laura
    Franzoni. Cinquanta complimenti diversi, letti dal profilo uno per uno.
 2. **Il problema**, una riga.
-3. **La bozza** come iniziativa spontanea: l'ho fatta io, nessuno me l'ha
-   chiesta.
-4. **Chiusura a frizione zero**: guardarla non costa e non impegna, te la mando
-   o due minuti a voce, decidi tu.
+3. **La bozza**, con le parole di Patrick: *«abbiamo preso ispirazione dal tuo
+   profilo e abbiamo realizzato una bozza del tuo sito»*.
+4. **Chiusura a frizione zero**, anche questa sua: *«preferisci che te la mandi
+   qui su Instagram, o prima ne parliamo due minuti al telefono? In ogni caso
+   zero costi e zero impegno: se ti piace, poi ne parliamo»*.
+   ⚠️ **La scelta viene prima, la rassicurazione dopo.** Nella mia versione lo
+   «zero costi» apriva il paragrafo e suonava come una giustificazione.
 
 ⚠️ **Via l'apertura istituzionale**, che era stata messa mezz'ora prima:
 «sono Patrick Sappa della software house a Seveso» è esattamente il tono che

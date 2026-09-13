@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **169 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **170 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -104,7 +104,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-08-28-brianza-turni]] — ⚠️ Prima lista operativa. File - 2026-08-28-brianza-turni.csv, 51 contatti, pronto da importare in Google Sheets.
 - [[2026-08-28-liste-31-agosto]] — ⚠️ Primo giro completo del ciclo-settimanale, generato con un giorno di anticipo.
 - [[2026-08-28-presidi-volantini]] — ⚠️ Prima applicazione di presidi-volantini.
-- [[2026-08-30-liste-gabriele-edoardo]] — ⚠️ Due nuovi cold caller in prova, volume ridotto.
+- [[2026-08-30-liste-gabriele-edoardo]] — ⚠️ Le 87 righe consegnate il 30 agosto 2026 a Gabriele ed Edoardo. Tornate vuote il 13 settembre: riassegnate a Giulia.
 - [[2026-08-30-verifica-siti-giulia]] — ⚠️ Patrick il 30 agosto 2026 - *«ho preso in mano la lista di Giulia e già il primo era sbagliato, La Rustica ha un sito»*.
 - [[2026-08-31-instagram-anello-1]] — ⚠️ 50 account, tutti verificati uno per uno il 31 agosto 2026.
 - [[2026-09-01-instagram-anello-1-b]] — ⚠️ 50 account nuovi, tutti verificati uno per uno il 1 settembre 2026.
@@ -241,6 +241,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-11-comando-banco]] — /banco apre il banco DM e costruisce le tre liste del giorno; cinque pagine, annulla l'ultimo, e per i siti la bozza si annuncia gia' fatta.
 - [[2026-09-11-direzione-da-chi-ha-letto]] — La direzione di un sito la propone un operatore che ha letto le skill, non il direttore. Scroll-telling e grafica inventata obbligatori.
 - [[2026-09-11-niente-note-di-fonte-in-pagina]] — ⚠️ Sul sito non si scrivono note di fonte: le fonti restano nei documenti interni, la pagina dice il fatto.
+- [[2026-09-13-caller-fuori]] — Gabriele ed Edoardo si ritirano senza aver chiamato nessuno: il telefono resta su Giulia sola e le 87 righe passano a lei.
 
 ## 06-Daily
 

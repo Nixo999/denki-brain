@@ -109,11 +109,15 @@ loro profilo social»*.
 1. **Complimento vero**, su un dettaglio specifico del loro lavoro. È la riga
    che dimostra che una persona ha guardato quel profilo.
 2. **Il problema**, in una riga sola.
-3. **La bozza**, presentata come iniziativa spontanea e senza vincolo
-   economico: l'ho fatta io, nessuno me l'ha chiesta.
-4. **Chiusura a frizione zero**: chiedo il permesso di mandare il link oppure
-   due minuti a voce, e la scelta è loro. Qui va detto chiaro che **guardarla
-   non costa nulla e non c'è obbligo di comprare**, e qui va `denkicode.com`.
+3. **La bozza.** Le parole le ha date Patrick il 13 settembre: *«abbiamo preso
+   ispirazione dal tuo profilo e abbiamo realizzato una bozza del tuo sito»*.
+4. **Chiusura a frizione zero**, e anche questa è sua: *«preferisci che te la
+   mandi qui su Instagram, o prima ne parliamo due minuti al telefono? In ogni
+   caso zero costi e zero impegno: se ti piace, poi ne parliamo. Se vuoi vedere
+   cosa facciamo: denkicode.com»*.
+   ⚠️ **La scelta viene prima, la rassicurazione dopo.** «Zero costi» messo in
+   apertura di paragrafo suona come una giustificazione; messo dopo la domanda
+   è una rassicurazione.
 
 ⚠️ **Niente aperture istituzionali.** «Sono Patrick Sappa della software house
 X, a Seveso» è il tono che fa chiudere la chat. **«Ciao, sono Patrick di

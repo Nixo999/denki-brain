@@ -22,6 +22,11 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   terminale**: quando lavora lui, il brain fa tutto da solo.
 - Nicola Larezza, 22, lead dev. Scrive tutto il codice.
 - Giulia Venneri, 21, cold call a provvigione. **Non ha accesso al vault.**
+  **Unica persona al telefono** da oggi: ha chiuso le sue 131 righe in due
+  settimane (13/09/2026), il reso conto lo deve ancora girare Patrick.
+- Gabriele ed Edoardo **fuori** (13/09/2026): «non se la sentono», zero numeri
+  chiamati in quattordici giorni. Non si contano nei piani
+  → [[2026-09-13-caller-fuori]]
 - Tutti e tre lavorano e studiano: DenkiCode è il terzo impegno → [[team-e-vincoli]]
 
 ## Soldi
@@ -30,8 +35,14 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
 - Albybike: sito online e **mai pagato** (11/09/2026) → [[albybike]]
 - Nessuna P.IVA, prestazione occasionale. Nei testi «ricevuta» → [[vincoli-fiscali]]
 
-## Cosa è aperto adesso (11/09/2026)
+## Cosa è aperto adesso (13/09/2026)
 
+- **Le 87 righe di Gabriele ed Edoardo passano a Giulia** — 27 siti/e-commerce,
+  30 DenkiShift, 30 indagine, zone Groane e Vimercatese, siti riverificati a
+  macchina il 13/09 → [[2026-09-13-liste-giulia-groane-vimercatese]]
+- **Il reso conto di Giulia non è ancora arrivato**: senza quello le sue
+  chiamate, risposte e appuntamenti restano `TODO` in [[metriche]], e oggi è
+  l'unico canale che ha girato davvero
 - **Mikuma Dogs** rifatto dal passo 2 col metodo nuovo e online su
   `mikumadogs.netlify.app` (11/09 sera, giro 7 «il bianco e il nero»). Nicola:
   «per il resto mi piace molto». Logo vero a 480 px, il file buono lo chiede

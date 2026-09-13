@@ -1,14 +1,25 @@
 ---
-riga: Due nuovi cold caller in prova, volume ridotto.
+riga: Le 87 righe consegnate il 30 agosto 2026 a Gabriele ed Edoardo. Tornate vuote il 13 settembre: riassegnate a Giulia.
 type: area
-updated: 2026-08-30
+updated: 2026-09-13
 source: claude
 prodotto: multi
 contatti: 87
-stato: da-chiamare
+stato: riassegnata-giulia
 ---
 
 # Liste di prova — Gabriele ed Edoardo, settimana del 31 agosto 2026
+
+> [!warning] Tornate vuote, e riassegnate — 13 settembre 2026
+> **Nessuna delle 87 righe e' stata chiamata**: `Esito e Note Agente` vuota su
+> tutte, contate a macchina. Gabriele ed Edoardo sono fuori
+> ([[2026-09-13-caller-fuori]]) e le righe passano a Giulia, riordinate nello
+> schema del ciclo → **[[2026-09-13-liste-giulia-groane-vimercatese]]**.
+>
+> Questa nota resta il documento di **come sono state costruite**: le zone, i
+> quattro blocchi, i casi utili e i buchi dichiarati qui sotto valgono ancora
+> tutti. Quello che non vale piu' e' «✅ verificato» sul blocco 1: la verifica
+> era del 30 agosto e alla riassegnazione e' stata rifatta a macchina.
 
 Due nuovi cold caller **in prova**, volume ridotto. Stesso ciclo di Giulia
 ([[ciclo-settimanale]]): consegna il lunedì, esiti compilati durante la
@@ -107,5 +118,6 @@ Radaelli, a poche centinaia di metri, il carrello ce l'ha.
 ## Collegamenti
 
 [[ciclo-settimanale]] · [[metodo-liste]] · [[2026-08-30-verifica-sito-reale]] ·
-[[2026-08-30-verifica-siti-giulia]] · [[core-commerciale]] · [[metriche]] ·
+[[2026-08-30-verifica-siti-giulia]] · [[2026-09-13-caller-fuori]] ·
+[[2026-09-13-liste-giulia-groane-vimercatese]] · [[core-commerciale]] · [[metriche]] ·
 [[prodotti-e-listino]] · [[stile-comunicazione]]
