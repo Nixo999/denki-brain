@@ -1,25 +1,25 @@
 ---
 type: progetto
-riga: Laura Franzoni @laurafranzoni_lashmaker, extension ciglia a Brescia: repo in piedi, 12 foto usabili, strada 1 dichiarata. Direzione non proposta.
+riga: Laura Franzoni @laurafranzoni_lashmaker, extension ciglia a Brescia: bozza costruita sul mondo «dall'alto», 8/8 al controllo. Manca il DM e il file del logo.
 status: attivo
 client: laurafranzoni
 stack: html-css-js
 started: 2026-09-13
 deadline:
-updated: 2026-09-13
+updated: 2026-09-14
 source: claude
-verificato: 2026-09-13
+verificato: 2026-09-14
 tags: [sito, bozza, ciglia, brescia, instagram]
 ---
 
-# Sito Laura Franzoni — raccolta, passi 0 e 1
+# Sito Laura Franzoni — raccolta e costruzione
 
 Bozza-esca: **il DM non è ancora partito** e non c'è scheda cliente. Repo
 `~/lavoro/laurafranzoni-site`, dallo starter (`nuovo-sito.py`). Nessun repo su
 GitHub, nessun push: lo decide il direttore.
 
-**Questa nota ferma i passi 0 e 1 del processo. Il passo 2 — i mondi visivi — non
-è stato fatto**: nessuna metafora, nessuna palette scelta, nessuna sezione.
+Passi 0, 1 e 2 fatti. La pagina è costruita: `index.html` + `assets/stile.css`,
+tre commit, **nessun remote e nessun deploy**.
 
 ## Chi è, verificato sul profilo il 13 settembre 2026 (senza login)
 
@@ -212,6 +212,107 @@ Restano tre paletti che valgono lo stesso:
    taglia l'occhio, che è il soggetto.
 3. Strada 1 **non chiude il `TODO` del logo**: quello resta a 150×150.
 
+## Passo 2 — mondo scelto: «Dall'alto», con l'innesto «Quindici minuti»
+
+Scelto dal direttore il 14 settembre 2026. Seed `d07a0ceb`, modo **Persuade**,
+**indice assegnato 3** nella lista dei mondi. Il contratto di direzione sta nel
+repo, in `.impeccable/surfaces/index-html.md`, e non compare in pagina.
+
+**La metafora è lo sgabello di Laura.** Il sito è girato dal suo posto, dietro
+una testa sdraiata: chi guarda non sta davanti a un occhio, sta **sopra** un
+occhio. È il punto di vista che esiste solo perché il mestiere si fa sopra una
+faccia, ed è già dentro le sue dodici foto: per questo dieci su tredici non sono
+dritte.
+
+**La spina dello scroll, in tre battute.** *Ti sdrai*: si parte da una fascia di
+ciglia a tutta pagina e scendendo l'inquadratura si allarga e si raddrizza,
+finché si capisce che era una testa sdraiata vista dall'alto. *Si spegne la
+luce*: la pagina si ferma, il fondo cala a `#130D0E`, il ventaglio si infittisce
+pelo per pelo e il contatore sale ai quindici minuti della bio. *Apri gli occhi*:
+tre ritratti a occhi aperti entrano capovolti, e solo l'ultimo si raddrizza,
+sul messaggio.
+
+### Le sezioni, in ordine
+
+| # | Sezione | Cosa fa | Foto |
+|---|---|---|---|
+| 0 | barra | nome, mestiere, bottone DM (sotto i 560 px resta la sola icona, bersaglio 44×44) | — |
+| 1 | **Laura Franzoni** | h1 col nome che entra ruotato di 90° e si raddrizza in 900 ms, la sua frase «Trasformo il tuo sguardo» sotto, piccola; poi la fascia con «Ti sdrai.» sul bordo alto | `p07a` (90°) |
+| 2 | **Dallo sgabello** | perché le foto sono storte, e che nessuna è stata raddrizzata | `p01a` (20°), `p07c` (170°) |
+| 3 | **Si spegne la luce** | l'unico fermo della pagina: buio, ventaglio, contatore | nessuna, è tutta disegnata |
+| 4 | **Quello che Laura mette sulle tue ciglia** | Extension ciglia con le tre tecniche, Laminazione | `p10a` (110°), `p08a` (40°), `p07b` (0°), `p04a` (90°) |
+| 5 | **Sul lettino non devi fare niente** | campo rosa pieno, quattro passi senza nessuna durata | nessuna |
+| 6 | **Apri gli occhi** | tre visi interi capovolti, l'ultimo si raddrizza sul DM | `p12a`, `p09a` (180°), `p10b` (0° dopo la rotazione) |
+| 7 | piede | logo a 96 px, Instagram, firma DenkiCode | logo |
+
+⚠️ **L'h1 è il nome della cliente** perché il 14/9 è entrata la direttiva di
+Nicola sulla bozza Pinkploy. Il mondo era stato scelto con «Ti sdrai.» come
+titolo: quella frase è stata spostata sul bordo alto della prima fascia, dove
+apre il racconto senza fare da titolo.
+
+### La grafica inventata — quattro segni, tutti SVG disegnati
+
+- **Il contaciglia**: arco graduato in una pastiglia scura a sinistra, 19 tacche,
+  scatta fino a 90 mentre si scende (novanta è quante ne servono per un occhio).
+  Sotto i 1320 px diventa una pastiglia in basso a sinistra con la sola lettura:
+  nel canale stretto l'arco finirebbe sul testo.
+- **Il ventaglio**: 90 peli piantati uno per uno su una linea palpebrale
+  quadratica, generati a mano e accesi con
+  `opacity: calc(var(--peli) * 96 - var(--i))`. Nessun JS per pelo.
+- **L'anello di luce**: cerchio aperto dietro il ventaglio, è la lampada che si
+  vede riflessa nelle sue macro.
+- **La bussola del capovolto**: pastiglia in basso a destra, ago e gradi della
+  foto che stai guardando. Vince quella più vicina al centro dello schermo.
+  È il pezzo che rende il capovolto una scelta.
+
+### Il trattamento delle foto
+
+**Un taglio solo per tutte**: fascia **21:9** centrata sulla linea delle ciglia
+(sotto i 560 px diventa 16:9), bordo vivo, **nessuna cornice**. Duotone leggero
+verso l'incarnato (`grayscale .42 / sepia .22 / saturate 1.16 / contrast 1.07`),
+grana al 3 % su strato fisso. Ogni ritaglio ha il suo `object-position`,
+guardato uno per uno a 375: la fascia non taglia mai l'occhio. **I tre visi
+interi restano interi**, senza ritaglio, ognuno col suo rapporto, allineati in
+basso.
+
+Ricampionate a **1440 px** di lato lungo, i tre ritratti a 900 (in pagina stanno
+a 419). `p01a` resta alla sua misura nativa 834×945 e non supera i 380 px CSS.
+Le `_orig` restano nel repo ma Netlify risponde **404** su `/assets/img/_orig/*`.
+
+**Nove foto in pagina su dodici usabili.** Fuori: `p02a`, `p02b`, `p05a` —
+non hanno trovato un posto che non fosse una griglia.
+
+### Palette e tipi
+
+Nero `#130D0E`, incarnato `#C99A86`, rosa poggiatesta `#DFBCD1` come **campo
+pieno su una sezione intera**, lettering `#F2EDEA`. Due derivati per il testo
+secondario, entrambi mescolati dai quattro: `#6E544A` sul chiaro (5,97:1),
+`#C99A86` sul nero (7,74:1). **Bodoni Moda** 600/900 display, **Schibsted
+Grotesk** 400/600 testo, con ripiego dichiarato (`local()` + `size-adjust`).
+
+### Il copy, e cosa resta da confermare
+
+Niente prezzi, orari, indirizzo, telefono, durate: non esistono e non si
+inventano. Unico canale il DM. **Da confermare con Laura** le descrizioni dei
+servizi (Extension, Volume, Volume 2D, Dolly, Laminazione) e i quattro passi
+della sezione rosa: sono scritti da noi da quello che si vede nelle foto, non
+da lei. I nomi invece sono suoi, letti nella bio e negli hashtag.
+
+### Cosa è stato misurato, il 14 settembre 2026
+
+Overflow orizzontale **0 su 25 larghezze** da 320 a 1920, bordi delle media
+query compresi; barra e bottone su una riga a ogni larghezza. Console **vuota**,
+nessuna richiesta fallita. Pagina **1,73 MB** su 18 risorse. Senza JS la pagina
+è completa: ogni valore a riposo è già quello finale (`--buio` 1, `--peli` 1,
+`--dritto` 1, contatore 15, contaciglia 90). Contrasti AA calcolati su tutto il
+testo: nessun fallimento. «Ti sdrai.» sulla foto sta a 10,78:1 nel pixel
+peggiore. La bussola legge i gradi giusti su tutte e nove le foto, verificata
+in Brave via CDP.
+
+`controlla-sito.py`: **8/8**. `impeccable detect`: 8 avvisi, tutti dichiarati
+(grana al 3 %, fasce a tutta pagina che toccano i bordi per scelta, interlinea
+1,10 su un display da 51 px, fondo chiaro della palette del cliente).
+
 ## Contesto commerciale
 
 Riga 233 di [[2026-09-13-instagram-siti-brescia]] — `@laurafranzoni_lashmaker`,
@@ -249,11 +350,10 @@ nostra idea di sezione, è la promessa del DM.
 
 ## Cosa manca al processo
 
-⬜ **Passo 2 — i mondi visivi.** Non proposti. Servono due o tre mondi da un
-operatore di direzione su Opus che abbia caricato `impeccable context`,
-`reference/new-work.md`, `design-taste-frontend` e una skill di stile.
-⬜ Passo 3 — costruzione. ⬜ Scheda cliente in `02-Sales/clienti/laurafranzoni.md`.
-⬜ DM da mandare. ⬜ Riga in [[registro-interventi]].
+✅ Passo 2 — mondo scelto e scritto qui sopra. ✅ Passo 3 — costruzione.
+⬜ Scheda cliente in `02-Sales/clienti/laurafranzoni.md`. ⬜ DM da mandare.
+⬜ Riga in [[registro-interventi]]. ⬜ Repo su GitHub, deploy: li decide il
+direttore, il repo locale non ha remote.
 
 ## Collegamenti
 
