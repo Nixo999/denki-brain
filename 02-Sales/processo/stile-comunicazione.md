@@ -104,6 +104,10 @@ Vincolo fiscale attivo, dettaglio in [[vincoli-fiscali]]:
 
 Scritte da `regola.py` nel momento in cui sono state dette.
 
+### 13/09/2026 — Patrick: «per tutti e tre linka il nostro sito www.denkicode.com»
+
+senza un posto dove controllare chi siamo il messaggio resta la parola di uno sconosciuto su Instagram
+
 ### 13/09/2026 — Patrick: «per i siti il messaggio da troppe info inutili»
 
 il testo dei siti era di cinque paragrafi e spiegava anche il costo prima che qualcuno avesse chiesto: la bozza pronta e' il gancio, il resto si dice quando rispondono
