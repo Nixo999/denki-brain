@@ -162,6 +162,10 @@ Scritte da `regola.py` nel momento in cui sono state dette.
 
 ### 13/09/2026 — Nicola: «cerca di usare il piu possibile agenti con opus perche ho poca percentuale di fable»
 
+il lavoro tecnico lo fanno operatori su Opus, Fable solo dirige e sceglie: il budget Fable e' il vincolo
+
+### 13/09/2026 — Nicola: «cerca di usare il piu possibile agenti con opus perche ho poca percentuale di fable»
+
 Detto il 13 settembre 2026 durante la bozza Pinkploy. La quota di Fable e' scarsa: Fable dirige e legge i rapporti, ogni lavoro che si puo' delegare (raccolta, direzione, costruzione, verifica, note) va a un operatore su Opus.
 
 ### 11/09/2026 — Nicola: «da adesso deve diventare sempre piu' intelligente e completo, mai stupido»
