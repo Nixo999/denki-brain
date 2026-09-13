@@ -118,9 +118,29 @@ un'azienda da quindici persone.
 produzione, quindi «i primi due mesi non si pagano» si può dire, «partiamo
 lunedì» no, nemmeno a chi risponde. Scritto anche in [[prodotti-e-listino]].
 
-**Siti, da cinque paragrafi a tre.** Chi sei col sito, cosa hai visto sul
-profilo, la bozza è pronta e gliela mando. Sono spariti il costo, il «non la
-impegna a niente» e il «non deve mandarmi niente»: si dicono quando rispondono.
+**Siti, riscritti due volte.** Prima accorciati da cinque paragrafi a tre.
+Poi rifatti da capo su una struttura che Patrick ha dettato punto per punto:
+*«il nostro gancio di vendita principale per i siti è che ABBIAMO GIÀ CREATO
+UNA BOZZA/ANTEPRIMA INTERATTIVA DEL SITO per il prospect»*.
+
+1. **Complimento vero** su un dettaglio del loro lavoro. La manicure giapponese
+   di Dabo Nails, i 672 post di lavori di Darfo, le regole prima di prenotare
+   di Aurora Nails, i quindici minuti risparmiati ogni mattina di Laura
+   Franzoni. Cinquanta complimenti diversi, letti dal profilo uno per uno.
+2. **Il problema**, una riga.
+3. **La bozza** come iniziativa spontanea: l'ho fatta io, nessuno me l'ha
+   chiesta.
+4. **Chiusura a frizione zero**: guardarla non costa e non impegna, te la mando
+   o due minuti a voce, decidi tu.
+
+⚠️ **Via l'apertura istituzionale**, che era stata messa mezz'ora prima:
+«sono Patrick Sappa della software house a Seveso» è esattamente il tono che
+Patrick ha vietato. Il messaggio adesso apre sul loro lavoro e dà del tu, o del
+voi ai saloni con una squadra.
+
+⚠️ **Il complimento è l'unico pezzo che non si genera da una colonna.** Il testo
+di ripiego del banco per i siti vale meno che per le altre due liste, e sta
+scritto nel codice.
 
 **Il sito in tutti e tre.** Nella ricerca però sta **nella riga di chi scrive,
 non come invito**: se in un messaggio che dice «non le vendo niente» metti il

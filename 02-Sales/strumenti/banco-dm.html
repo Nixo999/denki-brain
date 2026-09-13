@@ -278,30 +278,36 @@ const ETICHETTA_GANCIO = {T:"turni", R:"ricerca"};
    dm-instagram-ricerca.md. Chi cambia un testo qui aggiorna anche il suo file,
    o i due si disallineano e nessuno se ne accorge. */
 
-/* SITI. Versione C di dm-instagram-vetrina: la bozza si annuncia gia` fatta.
-   Alza tre termini su quattro dell'equazione del valore (probabilita`, attesa,
-   sforzo) e accorcia la richiesta da "gliela preparo?" a "gliela mando?".
-   In cambio fa partire l'orologio: chi risponde si aspetta un file.
-   Confermato da Patrick l'11/09/2026: «per i siti il gancio deve essere che la
-   bozza è già stata fatta» (stile-comunicazione.md).
-   Passato dalla skill voce-denkicode il 6 settembre 2026. */
+/* SITI. Versione D, 13 settembre 2026. La struttura la detta Patrick e sono
+   quattro passi: complimento vero su un dettaglio del loro lavoro, il problema
+   in una riga, la bozza come iniziativa spontanea senza vincolo, e una
+   chiusura a frizione zero che dice chiaro che guardarla non costa e non
+   impegna. Massimo cinque o sei righe, che si leggano dal telefono.
+   ⚠️ **Niente aperture istituzionali**: «sono Patrick Sappa della software
+   house X» e` il tono che fa chiudere la chat. La prima riga deve dimostrare
+   che una persona vera ha guardato quel profilo, e per questo qui **il testo
+   di ripiego serve a poco**: il complimento non si genera da una colonna, lo
+   scrive chi ha aperto il profilo. Se una riga arriva senza «Messaggio»,
+   questo testo la fa partire ma vale meno di quello scritto a mano.
+   Il gancio resta quello dell'11/09: la bozza esiste gia`. */
 const MESSAGGI = {siti:{}, denkishift:{}, ricerca:{}};
 MESSAGGI.siti.patrick = (nome, gancio) =>
-`Buongiorno, sono Patrick Sappa, DenkiCode, software house a Seveso: www.denkicode.com
+`Ciao! Ho guardato il profilo di ${nome} e si vede che ci lavori con cura.
 
-Ho guardato il profilo di ${nome} e ${gancio}.
+Una cosa l'ho notata: ${gancio}.
 
-La bozza del suo sito è già pronta, con le sue foto e il suo nome. Gliela mando?`;
+Così mi sono messo lì e l'ho fatta: una bozza del tuo sito, con le tue foto. Non me l'ha chiesta nessuno, l'ho fatta e basta.
 
-/* Dall'account aziendale a scrivere e` la casa, non la persona: il "noi" e` la
-   sola differenza vera, ma la firma resta di una persona — un DM che non ha
-   nessuno dietro si legge come un annuncio e non riceve risposta. */
+Guardarla non ti costa niente e non ti impegna a comprare nulla. Te la mando qui, o preferisci due minuti a voce? Noi siamo denkicode.com`;
+
 MESSAGGI.siti.denkicode = (nome, gancio) =>
-`Buongiorno, le scrive Patrick della DenkiCode, software house a Seveso: www.denkicode.com
+`Ciao! Abbiamo guardato il profilo di ${nome} e si vede che ci lavorate con cura.
 
-Abbiamo guardato il profilo di ${nome} e ${gancio}.
+Una cosa l'abbiamo notata: ${gancio}.
 
-La bozza del suo sito è già pronta, con le sue foto e il suo nome. Gliela mandiamo?`;
+Così ci siamo messi lì e l'abbiamo fatta: una bozza del vostro sito, con le vostre foto. Non ce l'ha chiesta nessuno, l'abbiamo fatta e basta.
+
+Guardarla non vi costa niente e non vi impegna a comprare nulla. Ve la mandiamo qui, o preferite due minuti a voce? Noi siamo denkicode.com`;
 
 /* DENKISHIFT. Il buco e` quello che si e` visto sul profilo: il post che cerca
    personale, le trenta camere, la seconda sede. Senza quella riga il messaggio

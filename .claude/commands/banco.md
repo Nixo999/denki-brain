@@ -101,11 +101,27 @@ schermata».
 questi cinquanta si compra il lavoro di farle. È il prezzo del gancio più
 forte che abbiamo, e lo paga chi risponde per primo.
 
-**Tre paragrafi e basta**, dal 13 settembre 2026. Patrick: *«per i siti il
-messaggio da troppe info inutili»*. Chi sei col sito (`www.denkicode.com`),
-cosa hai visto sul profilo, la bozza è pronta e gliela mando. Il costo, il «non
-la impegna a niente» e il «non deve mandarmi niente» **si dicono quando
-rispondono**, non prima.
+**La struttura, dal 13 settembre 2026 e sono quattro passi.** Patrick: *«il
+nostro gancio di vendita principale per i siti è che ABBIAMO GIÀ CREATO UNA
+BOZZA/ANTEPRIMA INTERATTIVA DEL SITO per il prospect, basata sui contenuti del
+loro profilo social»*.
+
+1. **Complimento vero**, su un dettaglio specifico del loro lavoro. È la riga
+   che dimostra che una persona ha guardato quel profilo.
+2. **Il problema**, in una riga sola.
+3. **La bozza**, presentata come iniziativa spontanea e senza vincolo
+   economico: l'ho fatta io, nessuno me l'ha chiesta.
+4. **Chiusura a frizione zero**: chiedo il permesso di mandare il link oppure
+   due minuti a voce, e la scelta è loro. Qui va detto chiaro che **guardarla
+   non costa nulla e non c'è obbligo di comprare**, e qui va `denkicode.com`.
+
+⚠️ **Niente aperture istituzionali.** «Sono Patrick Sappa della software house
+X» è il tono che fa chiudere la chat. Linguaggio fluido, moderno, empatico.
+**Massimo cinque o sei righe**, che si leggano dal telefono.
+
+⚠️ **Il complimento non si genera da una colonna.** È l'unico pezzo che va
+scritto aprendo il profilo, ed è il motivo per cui il testo di ripiego del
+banco qui vale meno che per le altre due liste.
 
 Gancio `1-6` nella colonna, come oggi: 1 nessun sito, 2 dominio morto,
 3 parcheggiato, 4 link rotto, 5 piattaforma (Fresha, Wix, Linktree: **il
