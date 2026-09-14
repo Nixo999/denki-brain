@@ -55,7 +55,8 @@ questa nota.
 
 - [x] sette difetti corretti nella spec, più errori non recuperabili subito al fallback e nessun tetto giornaliero finché lancia solo la CLI (`0ee90d6`)
 - [x] listino controllato sulle pagine ufficiali (`00591f7`): tre ID del pacchetto sbagliati (`mistral-large-3`, `gemini-3.1-pro`, `deepseek-v4-flash`), Mistral quattro volte più basso, `gpt-6-astra` a 50 in uscita. Senza `temperature` anche `gpt-6-astra` e i Gemini 3
-- [ ] Mac di Nicola: manca Docker, pnpm solo via corepack (14/09/2026)
+- [x] Docker Desktop 4.91 sul Mac di Nicola: motore 29.8 e Compose 5.5 rispondono (14/09/2026)
+- [ ] pnpm: sul Mac c'è solo corepack (14/09/2026)
 - [ ] chiavi OpenAI e Google: le crea e le scrive Nicola → [[credenziali]]
 - [ ] remote GitHub `Nixo999/denki-agents`, privato: non esiste (14/09/2026)
 - [ ] poi il prompt del pacchetto, in una sessione aperta dentro `~/lavoro/denki-agents`

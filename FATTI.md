@@ -68,9 +68,9 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   09:12). Il DM non è mai partito ed è di Patrick → [[sito-laurafranzoni]]
 - **denki-agents** (14/09): piattaforma multi-agente interna, la fase 1 è solo
   il gateway verso i modelli. Repo **solo locale** in `~/lavoro/denki-agents`,
-  spec corretta e listino verificato, **nessuna riga di codice**. Prima del
-  prompt mancano Docker sul Mac, le chiavi OpenAI e Google e il remote GitHub:
-  tutte e tre di Nicola → [[denki-agents]]
+  spec corretta e listino verificato, **nessuna riga di codice**. Docker sul
+  Mac c'è. Prima del prompt mancano le chiavi OpenAI e Google e il remote
+  GitHub, tutte e due di Nicola → [[denki-agents]]
 
 ## Cosa è bloccato, e perché
 
