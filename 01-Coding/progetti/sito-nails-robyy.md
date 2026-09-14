@@ -1,26 +1,25 @@
 ---
 type: progetto
-riga: Roberta @nails.robyy, nail artist e educator a Brescia: repo in piedi, 35 foto a 1440, strada 1 dichiarata. Direzione non ancora proposta.
+riga: Roberta @nails.robyy, nail artist e educator a Brescia: bozza online su nailsrobyy.netlify.app dal 14/9, mondo A «la sezione quotata», 8/8.
 status: attivo
 client: nails-robyy
 stack: html-css-js
 started: 2026-09-13
 deadline:
-updated: 2026-09-13
+updated: 2026-09-14
 source: claude
-verificato: 2026-09-13
+verificato: 2026-09-14
 tags: [sito, bozza, unghie, brescia, corsi]
 ---
 
-# Sito nails.robyy — raccolta, passi 0 e 1
+# Sito nails.robyy — online, mondo «la sezione quotata»
 
 Bozza **attesa**: Patrick le ha scritto in DM il 13 settembre 2026 e lei ha
 risposto «Ciao ok vediamo». Repo `~/lavoro/nailsrobyy-site`, dallo starter
-(`nuovo-sito.py`), commit `9ec160c`. Nessun repo su GitHub, nessun push: lo
-decide il direttore.
+(`nuovo-sito.py`), commit `9ec160c`, poi `Nixo999/nailsrobyy-site` (privata).
 
-**Questa nota ferma i passi 0 e 1 del processo. Il passo 2 — i mondi visivi —
-non è stato fatto**: nessuna metafora, nessuna palette scelta, nessuna sezione.
+**Il [[processo-siti]] è stato percorso intero**, passi 0-6, nella notte fra il
+13 e il 14 settembre: direttore su Fable, sette operatori su Opus in sequenza.
 
 ## Chi è, verificato sul profilo il 13 settembre 2026 (senza login)
 
@@ -212,19 +211,6 @@ un sistema di prenotazione non esiste e non si finge.
 - [ ] Recensioni o messaggi di clienti che possiamo citare.
 - [ ] Se le storie in evidenza contengono materiale usabile (sono dietro login).
 
-## Cosa manca al processo
-
-⬜ **Passo 2 — i mondi visivi.** Non proposti. Servono due o tre mondi da un
-operatore di direzione su Opus che abbia caricato `impeccable context`,
-`reference/new-work.md`, `design-taste-frontend` e una skill di stile.
-⬜ Passo 3 — costruzione. ⬜ Scheda cliente in `02-Sales/clienti/nails-robyy.md`.
-⬜ Riga in `01-Coding/registro-interventi.md`.
-
-## Collegamenti
-
-[[processo-siti]] · [[essenza-e-motion]] · [[trappole]] · [[direttive-siti]] ·
-[[registro-interventi]]
-
 ## Passo 2 — tre mondi da un operatore di direzione, 13 settembre 2026
 
 Operatore su Opus con la catena caricata (`impeccable context`, `new-work.md`,
@@ -252,3 +238,85 @@ niente da ruotare. Palette: carta `#F4F2EE`, inchiostro `#14120F`, quota
 pieno della fascia corsi. Archivo 900 maiuscolo per i titoli, Martian Mono
 per le quote. Foto in strisce orizzontali con un trattamento unico, sotto la
 quota che le descrive. Corsi subito dopo il pin, iscrizione via DM.
+
+
+## Passo 3 — costruzione, 13 settembre notte
+
+Operatore su Opus, mondo A, **copy del direttore verbatim**. `index.html`,
+`assets/stile.css`, `assets/motion.js` (GSAP 3.13 + ScrollTrigger). Commit
+`e106664`, `2c2df11`.
+
+| | |
+|---|---|
+| grafica inventata | **11 `<svg>` inline**: la curva dell'unghia quotata, apex, asse, parallelismi, bombatura |
+| foto | **14 su 35**, un trattamento unico |
+| h1 | «Struttura, non decoro.» |
+| quote | APEX · ASSE · PARALLELISMI · BOMBATURA |
+| pin | «Unghia discendente? Non si asseconda, si corregge strutturalmente.» — parole sue |
+| fascia corsi | campo rosa `#FCE2E3` pieno, iscrizione via DM |
+
+Misurato: overflow **0 su 13 larghezze** da 320 a 1440, h1 su una riga da
+**761**, **18 coppie AA** (minimo **5,14**), console vuota, **7 ScrollTrigger**
+e **un pin**, `controlla-sito.py` **8/8**, `impeccable detect` **0 errori**.
+
+## Passo 4 — catture su disco, e tre bug visti lì
+
+Brave headless in CDP da node 22, **fette di viewport 1440×900 cucite in
+Python**. Corretti sulle catture (`269140d`): l'etichetta ASSE attraversata
+dalla linea, il gruppo BOMBATURA addosso al profilo, `scroll-padding-top`
+mancante sotto la barra sticky.
+
+## Passo 5 — finish review su Opus: `fix`, otto punti
+
+`impeccable-finish-reviewer` forzato a `model: opus`. Terza battuta ridotta a
+una riga sola · pin assente sotto 761 · «Posto 01/02/03» = capienza **mai
+verificata** · chiusura da template centrata · riga mono sopra l'h1 = **kicker
+vietato** · a 375 una linea sulla «O.» di «DECORO.» · Lavori con tre scatti
+senza profilo e didascalie ripetute · «CORSI» tagliato in barra. Più il tetto:
+foto mai annotate, niente cartiglio, retino usato una volta sola.
+
+## Passo 6 — fix, tutti applicati (`26982f4`, `f9c03d9`)
+
+- **cinque profili distinti** col retino, il quinto tratteggiato «IL TUO»:
+  «Il quinto profilo è vuoto: è il posto di chi impara.»
+- la correzione dell'asse gira **anche sotto 761**, come scrub senza pin
+- **un solo profilo vuoto** nei corsi: la capienza inventata è uscita
+- chiusura sull'asse a sinistra, quotata
+- kicker via, l'informazione passa nel **cartiglio del footer**
+  (NOME / LUOGO / CANALE / FOGLIO 1/1)
+- la sovrapposizione a 375 era **la virgola di «STRUTTURA,»** con
+  `line-height:.88`, non la «O.»
+- **otto foto riscelte**, **tre annotate** con richiami SVG, callout sulla
+  bombatura
+
+Misurato dopo i fix: overflow **0 su 15 larghezze**, ScrollTrigger **7 a 1440**
+e **3 a 375**, `reduced-motion` **18/18 rivelazioni e 0 trigger**,
+`controlla-sito.py` **8/8**, `detect` **0 errori e 22 warning dichiarati**.
+
+`DESIGN.md` dal documenter su Opus (`17cc5ab`). Verdetto **pass**: otto su otto
+risolti, **due regressioni di finitura** — quote senza valore nella chiusura,
+fascia corsi vuota per due terzi a 1440 — in chiusura adesso (14/09/2026).
+
+## Dove sta
+
+✅ Repo **`Nixo999/nailsrobyy-site`**, privata, `main`, creata con `gh`.
+✅ Sito **`nailsrobyy`** sul team `denkicode` (slug `nicola-la-rezza`),
+<https://nailsrobyy.netlify.app>: **online, sbarramenti da verificare con
+`curl`** — il deploy è partito dopo le due regressioni (14/09/2026).
+
+Nessuna sovrapposizione con [[sito-pinkploy]], l'altra onicotecnica di Brescia
+messa online oggi: mondo, caratteri e palette sono altri (Anybody/Hanken,
+rosa-viola-rosso).
+
+## Cosa resta aperto
+
+⬜ Safari su iPhone, mai provato. ⬜ La motion viva è stata vista **solo a 4,5 s
+dal load**. ⬜ Le coordinate dei richiami sulle foto sono lette **a occhio**.
+⬜ Il DM col link è di Patrick. ⬜ Scheda cliente
+`02-Sales/clienti/nails-robyy.md`. ⬜ I dieci `TODO` da chiedere a Roberta,
+qui sopra.
+
+## Collegamenti
+
+[[processo-siti]] · [[essenza-e-motion]] · [[trappole]] · [[direttive-siti]] ·
+[[netlify]] · [[registro-interventi]] · [[sito-pinkploy]]
