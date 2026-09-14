@@ -326,3 +326,17 @@ qui sopra.
 
 [[processo-siti]] · [[essenza-e-motion]] · [[trappole]] · [[direttive-siti]] ·
 [[netlify]] · [[registro-interventi]] · [[sito-pinkploy]]
+
+## Giro 8 — 14 settembre, la bocciatura sul copy
+
+Nicola, sul sito online, sulla riga sopra la convergenza: «questa frase che
+spiega cosa hai messo non ha senso, eliminala e anche tutte quelle simili».
+Regola scritta subito in [[direttive-siti]]. Tolte, non riscritte: «Il quinto
+profilo è vuoto: è il posto di chi impara.», l'etichetta «Il tuo» sul profilo
+tratteggiato (convergenza e corsi), le quattro definizioni sotto
+Apex/Asse/Parallelismi/Bombatura, le due quote della chiusura che misuravano il
+proprio blocco in px, la didascalia «Profilo in lavorazione». Restano le
+etichette di quota e i richiami sulle foto: nominano, non spiegano. DESIGN.md
+aggiornato con «La Regola del Disegno che Non si Spiega». Overflow 0, 7/3
+ScrollTrigger come prima, `controlla-sito.py` 8/8. Commit `bc31ef4`, online,
+sbarramenti presenti.
