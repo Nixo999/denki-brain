@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 14/09/2026 — Nicola: «aggiusta le scritte, non lasciare note scritte da te, solo frasi utili, e sensate. rimuovi cose che dicono come, la migliore del mondo o la più sottile»
+
+Sito bozza laurafranzoni_lashmaker, giro 3: il copy aveva frasi nostre che spiegavano la pagina (perché le foto sono storte, note di regia) e superlativi non verificabili. Sul sito restano solo frasi che dicono cosa fa, per chi, e come contattarla
+
 ### 14/09/2026 — Nicola: «bello ma la hero section sostituisci il titolo deve essere il suo nome e sotto una frase, e poi la foto subito sotto occupa troppo spazio così è un po' brutto sembra un mega zoom sulla faccia della ragazza»
 
 Sito bozza laurafranzoni_lashmaker, mondo «Dall'alto»: la fascia 21:9 sotto l'hero resa a tutta larghezza (1440 px CSS) legge come uno zoom sul viso, non come un punto di vista. L'h1 e' il nome della cliente con una frase sotto, come gia' detto su Pinkploy
