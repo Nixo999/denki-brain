@@ -188,6 +188,26 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   del viewport vero e si fa `ScrollTrigger.getAll().forEach(t => t.kill())`
   prima dello scatto. ([[sito-laurafranzoni]], 14 settembre)
 
+- `[TRAPPOLA]` **`captureBeyondViewport` non rasterizza le foto fuori dal
+  viewport.** Il PNG esce completo (`complete:true`) ma le fasce basse sono
+  bianche con la sola didascalia sopra: sembra un'immagine rotta in pagina. →
+  si cattura a **fette di viewport 1440×900** e si cuciono in Python.
+  ([[sito-nails-robyy]], 13-14 settembre)
+- `[TRAPPOLA]` **Allargare la finestra all'altezza del documento gonfia i
+  `clamp()` legati a `vh`.** Un `clamp(...,9vh,...)` misurato su una finestra
+  alta 9.000 px dà spaziature che nessuno vedrà mai, e la cattura mostra una
+  pagina diversa da quella vera. → fette al viewport vero, mai finestra alta
+  quanto la pagina. ([[sito-nails-robyy]], 13-14 settembre)
+- `[TRAPPOLA]` **Un `pkill` su Brave ammazza anche l'istanza CDP di un'altra
+  sessione.** A metà catture l'impianto è sparito senza errore di CDP: le
+  catture mancavano e basta. → si rilancia e **si riparte dalle catture che
+  mancano**, non da capo, e si dichiara che l'istanza era condivisa.
+  ([[sito-nails-robyy]], 13-14 settembre)
+- `[TRAPPOLA]` **`scrollTo` con `scroll-behavior:smooth` falsa la verifica di
+  ScrollTrigger.** La lettura arriva mentre la pagina sta ancora scorrendo e i
+  trigger risultano non entrati. → `window.scrollTo({top:y, behavior:'instant'})`
+  in ogni script di verifica. ([[sito-nails-robyy]], 13-14 settembre)
+
 ## Immagini e `sips`
 
 - **`sips` legge le dimensioni trasposte quando il browser ruota la foto.** Su
@@ -354,6 +374,30 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   non si guarda la classe nell'HTML. Cugina della `transition` più specifica di
   [[sito-da-caterina]]. ([[sito-laurafranzoni]], 14 settembre)
 
+- `[TRAPPOLA]` **`clamp(4rem,10vw,11rem)` non garantisce una riga sola.** Su un
+  h1 lungo 14,45 em il termine centrale si scollega dalla larghezza del
+  contenitore e il titolo va a capo dove non deve. → il tetto si lega al
+  contenitore: `min(11rem, 6.85cqw)`, misurato sul numero di em del titolo.
+  ([[sito-nails-robyy]], 13-14 settembre)
+- `[TRAPPOLA]` **Il font di ripiego può stringere, non solo allargare.** Su
+  Helvetica Neue il titolo usciva più stretto del definitivo e serviva
+  `size-adjust:109.4%`, mentre su [[sito-mikuma-dogs]] serviva 84%. → il
+  valore si misura ogni volta, non si copia da un altro sito.
+  ([[sito-nails-robyy]], 13-14 settembre)
+- `[TRAPPOLA]` **Il testo dentro un `<svg>` scala col `viewBox`.** Le etichette
+  di una quota diventano illeggibili o enormi a seconda della larghezza, e la
+  dimensione in CSS non le tiene. → nel disegno restano i tratti, **le etichette
+  si scrivono in HTML** sopra l'SVG, posizionate in percentuale.
+  ([[sito-nails-robyy]], 13-14 settembre)
+- `[TRAPPOLA]` **`img,svg,video{max-width:100%}` di `base.css` annulla una
+  larghezza sopra il 100%.** Un SVG che deve sbordare resta incastrato nel
+  contenitore e la regola nuova sembra ignorata. → `max-width:none` sul singolo
+  disegno; `base.css` non si tocca. ([[sito-nails-robyy]], 13-14 settembre)
+- `[TRAPPOLA]` **La barra su una riga sfondava di 5 px a 901.** Stesso caso
+  della quinta voce di [[sito-fiftynine]] fra 761 e 899: a 1440 e 375 era a
+  posto. → si misura sui bordi di ogni media query, e «CORSI» tagliato in barra
+  si vede solo lì. ([[sito-nails-robyy]], 13-14 settembre)
+
 ## Git, account e pubblicazione
 
 - **`gh` tiene un solo account nel keyring.** Con due account, il push sulla repo
@@ -465,6 +509,17 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   `require_login`: il profilo non si legge da lì. (13/09/2026,
   [[sito-laurafranzoni]])
 
+- `[TRAPPOLA]` **Finché il modale di login è aperto, la foto grande non esiste
+  nel DOM**: `document.images` contiene solo le anteprime della griglia a 640.
+  Cugina della trappola di [[sito-laurafranzoni]], con la chiusura a
+  coordinate: la X sta a **`dialog.right − 16`, `dialog.top + 14`**, e dopo il
+  click arrivano le 1440. ([[sito-nails-robyy]], 13-14 settembre)
+- `[TRAPPOLA]` **`window.__fn` non sopravvive alla `navigate` del pannello.**
+  Una funzione definita per raccogliere gli URL sparisce al post dopo e lo
+  script risponde `undefined`, come se il selettore fosse sbagliato. → si
+  ridefinisce dopo ogni navigazione, o si legge tutto in una sola valutazione.
+  ([[sito-nails-robyy]], 13-14 settembre)
+
 ## Liste e banco DM
 
 - **Una frase di verifica ripetuta su sessanta righe è un modello, non un
@@ -553,6 +608,18 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   rifilato al soggetto. `rembg` e PIL non ci sono e non servono. Il bordo
   bianco fustellato poi e' CSS: sei `drop-shadow` a offset 0 blur piu' uno
   sfalsato per l'ombra. ([[sito-da-caterina]])
+
+- `[TRAPPOLA]` **`netlify` non è nel PATH di questa shell.** `command not found`
+  non vuol dire che manchi: → `npx --no-install netlify` (27.5.2) lo trova e
+  pubblica. ([[sito-nails-robyy]], 13-14 settembre)
+- `[TRAPPOLA]` **`impeccable-finish-reviewer` e `impeccable-documenter` hanno
+  `model: inherit`**, cioè girano sul modello del direttore (Fable) e bruciano
+  la percentuale che serve a dirigere. → si passa `model: opus` esplicito a ogni
+  invocazione. ([[sito-nails-robyy]], 13-14 settembre)
+- `[TRAPPOLA]` **Il classificatore dell'auto mode blocca i comandi combinati in
+  una riga.** Lo stesso lavoro spezzato in due comandi passa senza chiedere
+  niente. → non si accorpano con `&&` i comandi di una catena lunga.
+  ([[sito-nails-robyy]], 13-14 settembre)
 
 ## Collegamenti
 
