@@ -28,10 +28,10 @@ un indirizzo suo, non una bozza.
 
 ## Serie del 14 settembre 2026 - i quattro lavori in galleria
 
-Quattro post quadrati, uno per lavoro, stessa impaginazione: simbolo e nome
-DenkiCode in testa, nome del progetto, lo screenshot vero del sito dentro una
-finestra di browser con il dominio nella barra, tre voci di cosa fa il sito,
-`denkicode.com` in fondo.
+Quattro post verticali, uno per lavoro, stessa impaginazione: simbolo e nome
+DenkiCode in testa, nome del progetto con una riga che dice cosa fa il sito, lo
+screenshot vero dentro una finestra di browser con il dominio nella barra, tre
+voci sotto, `denkicode.com` in fondo.
 
 | Post | Sito | Dominio |
 |---|---|---|
@@ -41,8 +41,12 @@ finestra di browser con il dominio nella barra, tre voci di cosa fa il sito,
 | `vbag.png` | V-BAG | `vbag.it` |
 
 **I file**: `~/Desktop/denki-pubblicita-instagram-2026-09-14/` sul Mac di
-Patrick, 1080x1080 piu' `didascalie.txt` con i quattro testi da copiare. Non
-stanno nel vault: sono quattro PNG da 300-600 KB e il vault e' testo.
+Patrick, piu' `didascalie.txt` con i quattro testi da copiare. Non stanno nel
+vault: sono PNG da 300-900 KB e il vault e' testo.
+
+**Il formato buono e' 1080x1350**, verticale 4:5: e' l'inquadratura che nel
+feed occupa piu' schermo, e a parita' di scroll si vede il doppio. Le stesse
+quattro a 1080x1080 stanno in `quadrati/`, per quando una serve quadrata.
 
 Gli screenshot sono presi dai siti online il 14 settembre 2026, non da una
 copia locale: banner dei cookie e badge di Netlify tagliati fuori
