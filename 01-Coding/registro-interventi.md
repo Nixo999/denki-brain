@@ -1,7 +1,7 @@
 ---
 riga: Una riga per intervento - chi, quando, progetto, repository e QUALE DATABASE. La colonna database e' il motivo del file.
 type: risorsa
-updated: 2026-09-13
+updated: 2026-09-14
 source: denkicode
 tags: [registro, interventi, repo, database]
 ---
@@ -37,6 +37,12 @@ pubblicato senza la sua migrazione apre un tabellone vuoto.
 Colonne: **Quando** (data e ora) · **Chi** (persona, e `+claude` se il lavoro è
 stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 (`—` se non toccato, `sviluppo`/`produzione` + stato) · **Cosa** · **Commit**.
+
+## 2026-09-14
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| 13-14/09 | Nicola con Trevis (Fable direttore, operatori Opus) | [[sito-pinkploy]] | `Nixo999/pinkploy-site` (privata, `main`, `c822c42`) | — (nessuno: sito statico, nessuna migrazione) | **Bozza costruita col processo nuovo e pubblicata su Netlify.** Passo 1 (strada 2, sito non dipendente dalle foto), passo 2 (tre mondi, scelto B «lo spessore»), costruzione con dieci `<svg>` inline e spina a scroll, finish review con otto correzioni applicate, bocciatura di Nicola sull'hero applicata il 14/09. Online su <https://pinkploy.netlify.app> dal 14/09, team `denkicode`, deploy dal CLI con `--no-build`, tre sbarramenti anti-indicizzazione verificati con `curl`. Dettagli e misure in [[sito-pinkploy]] | `c822c42` |
 
 ## 2026-09-13
 

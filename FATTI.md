@@ -1,13 +1,13 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura.
-updated: 2026-09-13
-verificato: 2026-09-13
+updated: 2026-09-14
+verificato: 2026-09-14
 source: denkicode
 tags: [stato, fatti]
 ---
 
-# I fatti — stato al 13 settembre 2026
+# I fatti — stato al 14 settembre 2026
 
 **Questo file si riscrive, non si accumula.** È lo stato di adesso: quando un
 fatto cambia si sostituisce la riga, non se ne aggiunge una sotto. La storia
@@ -53,6 +53,10 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   Tarilli, Fiftynine.
 - **Castiglione** e **NG Barber** fermi. Il sorgente di NG Barber sta su una
   repo **pubblica**.
+- **Pinkploy** (onicotecnica, Brescia) online su `pinkploy.netlify.app` (14/09),
+  mondo «lo spessore», 8/8. Nicola ha bocciato solo l'hero, la correzione è
+  online. Il DM col link è di Patrick, lei ha già risposto «si prova mandami»
+  → [[sito-pinkploy]]
 
 ## Cosa è bloccato, e perché
 

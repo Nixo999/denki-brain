@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Online su pinkploy.netlify.app per @nails_art_by_pinkploy, onicotecnica a Brescia centro - mondo B «lo spessore», la sezione dell'unghia in quota.
+riga: Online su pinkploy.netlify.app per @nails_art_by_pinkploy, onicotecnica a Brescia centro - mondo B «lo spessore», l'unghia in quota.
 status: attivo
 client: pinkploy
 stack: html-css-js
@@ -15,10 +15,9 @@ tags: [sito, bozza, nail, brescia, instagram]
 # Sito Pinkploy — online, mondo «lo spessore»
 
 Onicotecnica a Brescia. Riga 121 della lista [[2026-09-13-instagram-siti-brescia]].
-Patrick le ha scritto sul protocollo di sterilizzazione MOZ che ha in bio; **ha
-risposto oggi 13 settembre 2026 — «Ciao hmm si prova mandami» — e la bozza la
-aspetta**. Cliente: [[pinkploy]]. È il **passo 0** di [[processo-siti]]: fatti
-verificati e basta, metafora e palette non sono decise.
+Patrick le ha scritto sul protocollo di sterilizzazione MOZ in bio; **ha risposto
+il 13/09 — «Ciao hmm si prova mandami»**. Cliente: [[pinkploy]]. Bozza costruita
+e online (mondo B, sotto), link ancora da mandarle.
 
 ## Chi è, verificato dal profilo il 13 settembre 2026
 
@@ -34,25 +33,23 @@ Unghie Brescia / Nails Brescia 💝💘
 ```
 
 **Non c'è altro**: nessun link in bio, nessun pulsante contatto, nessuna categoria
-professionale — verificato leggendo il DOM da sloggato, dove gli unici link sono
-i tre delle evidenze e i piedini di Meta. Storie in evidenza **Nails-Art**,
-**Recensione**, **Prima/Dopo**: **non si leggono**, tutte e tre chiedono il login,
-e nessun login è stato fatto. La copertina di Recensione è nera e vuota. Il feed
-da sloggato mostra **12 anteprime** e poi il muro «Mostra altri post»: le altre
-332 non sono verificabili senza account.
+professionale — verificato da sloggato, unici link le tre evidenze e i piedini di
+Meta. Storie in evidenza **Nails-Art**, **Recensione**, **Prima/Dopo**: **non si
+leggono**, chiedono il login (non fatto); copertina di Recensione nera e vuota.
+Il feed da sloggato mostra **12 anteprime**, poi il muro «Mostra altri post»: le
+altre 332 non sono verificabili senza account.
 
 ## Cosa fotografa
 
 Sempre la stessa inquadratura: **una mano in primo piano, dita rilassate, unghie
-a fuoco, fondo a tinta piatta o tessuto morbido dietro**. Nessuna foto del posto,
-nessuna di lei al lavoro, nessuna attrezzatura in campo tranne il post sulla
-sterilizzazione, nessun volto a parte un fotogramma di reel. Ricorrono **tulle,
-pizzo e merletto bianco** (5 foto su 12), anelli d'argento con pietre, fiocchetti
-in metallo, fondi lilla, rosa, azzurro e crema; forme a mandorla lunga e quadrata
-corta; french colorata, cromatura specchio, ombré latte, micro disegni a mano
-libera, decori 3D in rilievo. **Un solo cartello con testo impresso in tutto il
-feed**, quello della sterilizzazione: non è un sistema grafico ricorrente come su
-[[sito-mikuma-dogs]], è un'eccezione sola.
+a fuoco, fondo a tinta piatta o tessuto morbido**. Nessuna foto del posto, di lei
+al lavoro, o di attrezzatura (tranne il post sterilizzazione), nessun volto salvo
+un fotogramma di reel. Ricorrono **tulle, pizzo, merletto bianco** (5/12), anelli
+d'argento con pietre, fiocchetti, fondi lilla/rosa/azzurro/crema; mandorla lunga
+e quadrata corta; french colorata, cromatura specchio, ombré latte, disegni a
+mano libera, decori 3D. **Un solo cartello con testo impresso**, quello della
+sterilizzazione: eccezione sola, non un sistema grafico ricorrente come su
+[[sito-mikuma-dogs]].
 
 | File | Cosa mostra | Regge? |
 |---|---|---|
@@ -74,70 +71,48 @@ feed**, quello della sterilizzazione: non è un sistema grafico ricorrente come 
 Le caption sono **quasi tutte solo hashtag** — `#unghiebrescia #nailsbrescia
 #mandorlarussabrescia #unghiegel #unghiesemipermanente #onicotecnicabrescia
 #semibrescia #gelmanibrescia #manicurebrescia`, più tag in cirillico («маникюр
-брешия») — e da lì non esce copy. Le uniche frasi sue sono **la bio** (sopra,
-verbatim) e **una sola caption vera**, sul reel del 3 agosto 2026: un top coat
-con filtro UV che evita l'ingiallimento del bianco e schiarisce i colori scuri.
-Ci scrive «prottezione» e «diferenza». **L'italiano non è la sua prima lingua**:
-le sue frasi dicono di cosa parla, non si incollano nel sito — **il copy lo
-scrive il direttore**, come al giro 6 di [[sito-mikuma-dogs]].
+брешия») — da lì non esce copy. Le uniche frasi sue: **la bio** (sopra, verbatim)
+e **una sola caption vera** (reel 3/8/2026): un top coat con filtro UV che evita
+l'ingiallimento del bianco e schiarisce i colori scuri, scritto «prottezione» e
+«diferenza». **L'italiano non è la sua prima lingua** — il copy lo scrive il
+direttore, come al giro 6 di [[sito-mikuma-dogs]].
 
 ## Cosa NON c'è, e non si inventa
 
-Prezzi, orari, via e civico (c'è solo «Brescia. Centro»), telefono, WhatsApp,
-mail, nome e cognome, se è un salone o lavora in casa: **niente di tutto questo
-esiste**, `TODO` su ognuno. Le recensioni ci sono come evidenza ma **non sono
-leggibili** senza login, quindi non si citano. **Non ha un logo vettoriale**:
-l'immagine di profilo è una foto di unghie, non un marchio. L'unico canale di
-contatto verificato è il **DM di Instagram**. **Sui motori non esiste**,
-riverificato oggi: `"Nails Art by Pinkploy" Brescia` e `pinkploy unghie brescia
-onicotecnica` non restituiscono né lei né un posto fisico col suo nome — escono
-altri saloni bresciani (Nail Art Studio, Griffe Nails, Fashion Nail) e i portali
-di categoria. Regge la verifica del 12/9.
+Prezzi, orari, via e civico (solo «Brescia. Centro»), telefono, WhatsApp, mail,
+nome e cognome, salone o lavoro in casa: **niente di tutto questo esiste**,
+`TODO` su ognuno. Recensioni presenti come evidenza ma **non leggibili** senza
+login, non si citano. **Non ha un logo vettoriale**: il profilo è una foto di
+unghie, non un marchio. Unico canale verificato: il **DM di Instagram**. **Sui
+motori non esiste**, riverificato oggi: `"Nails Art by Pinkploy" Brescia` e
+`pinkploy unghie brescia onicotecnica` non trovano né lei né un posto fisico —
+escono altri saloni (Nail Art Studio, Griffe Nails, Fashion Nail) e portali di
+categoria. Regge la verifica del 12/9.
 
 ## Il gancio del DM — il protocollo MOZ
 
 Quello che dice lei, e basta: **«lo strumento è sterilizzato secondo il protocollo
-MOZ»**, una riga di bio con l'emoji del microbo, più il post `02-…` col cartello
-**STERILIZZAZIONE DEGLI STRUMENTI**. È l'unica cosa del feed che non sia un
-risultato estetico. **Cosa sia il protocollo MOZ, non lo so.** `TODO` — cercato
-oggi, non trovato: escono protocolli di sterilizzazione generici e un produttore
-di autoclavi (Mocom), che **non è** la stessa sigla. Sul sito non si scrive cosa
-comporta, non si elencano passaggi, non si nomina l'autoclave: finché non lo
-conferma lei, si può dire solo **che lo segue**, con le sue parole.
+MOZ»**, riga di bio con l'emoji del microbo, più il post `02-…` col cartello
+**STERILIZZAZIONE DEGLI STRUMENTI** — l'unica cosa del feed non estetica. **Cosa
+sia il protocollo MOZ, non lo so.** `TODO`, cercato e non trovato: escono
+protocolli generici e un produttore di autoclavi (Mocom), non la stessa sigla.
+Sul sito non si scrive cosa comporta né si nomina l'autoclave: finché non lo
+conferma lei, si dice solo **che lo segue**, con le sue parole.
 
 ## Le foto scaricate
 
-Dodici anteprime in `~/lavoro/pinkploy-site/assets/img/`, più `profilo.jpg`.
-**Tutte alte 640 px, larghe 360-529**; la versione a 1080 risponde **403**, non è
-disponibile; `profilo.jpg` è **150×150**, buono solo per un tondo piccolo.
-Vincolo del materiale, non una scelta: **a 640 px nessuna regge a tutta larghezza
-né a fondo pagina** — si usano in cornice o in griglia dichiarata. Delle quattro
-copertine di reel, `05` e `12` sono fotogrammi e non si usano.
+Dodici anteprime in `~/lavoro/pinkploy-site/assets/img/`, più `profilo.jpg`,
+**tutte alte 640 px, larghe 360-529**; il 1080 risponde **403**; `profilo.jpg`
+è **150×150**, buono solo per un tondo piccolo. Vincolo del materiale, non
+scelta: **a 640 px nessuna regge a tutta larghezza** — si usano in cornice.
 
-Colori campionati da `profilo.jpg` a piena risoluzione (BMP via `sips`, conteggio
-per bucket con la sola stdlib Python, 22.500 pixel): `#4C3031` 17,6 % bordeaux del
-fondo sfocato · `#6B4E4E` 7,3 % malva-bruno · `#8D520D` e `#AC6E0F` 8,7 % insieme,
-ambra e oro dei fiori dietro · `#587BC9` 2,1 % blu delle unghie · `#5EACE1` 0,3 %
-azzurro del riflesso. **Sono i colori di una fotografia, non di un marchio**: non
-sono una palette finché non lo decide qualcuno al passo 2.
-
-**Strada del passo 1: la dichiara il direttore.** I due binari di
-[[processo-siti]] sono chiedere a lei gli originali — è anche un motivo per
-riscriverle — oppure disegnare un sito che non dipenda dalle foto. Con 640 px di
-lato lungo il materiale attuale non consente il primo.
-
-## Aperto
-
-- [x] Passo 1: strada 2 — il sito non dipende dalle foto (13/09)
-- [x] Passo 2: tre mondi, scelto B «lo spessore» (13/09)
-- [ ] MOZ, prezzi, orari, indirizzo, contatto diretto: da chiedere a lei
-
-## Passo 1, strada dichiarata
-
-**Strada 2, il sito non dipende dalle foto**: 640 px di lato lungo, il 1080 dà
-**403**, `05` e `12` sono fotogrammi ed escono. Reggono grafica inventata,
-tipografia e colore; le foto stanno in cornice dichiarata. **Strada 1 resta
-aperta** — gli originali li chiede Patrick quando le manda il link.
+Colori campionati da `profilo.jpg` (BMP via `sips`, stdlib Python, 22.500 pixel):
+bordeaux `#4C3031` 17,6 %, malva-bruno `#6B4E4E` 7,3 %, ambra/oro `#8D520D` +
+`#AC6E0F` 8,7 %, blu `#587BC9` 2,1 %, azzurro `#5EACE1` 0,3 %. **Colori di una
+fotografia, non di un marchio** — non adottati, il passo 2 sceglie altro. I due
+binari di [[processo-siti]] erano chiedere gli originali o disegnare senza
+dipendere dalle foto: a 640 px il primo non reggeva, **scelta la strada 2**
+(13/09).
 
 ## Passo 2: i tre mondi, e la scelta
 
@@ -217,8 +192,8 @@ detect`: 5 rifiuti dichiarati (quadrettatura e graduazione **sono** il mondo).
 ✅ Repo **`Nixo999/pinkploy-site`**, privata, `main`, `c822c42` + gitignore.
 
 ⬜ Safari su iPhone vero: non provato. ⬜ **Il DM con il link è di Patrick**
-(secondo messaggio, lei ha già risposto). ⬜ Foto originali da chiederle.
-⬜ `DESIGN.md` non scritto. ⬜ Prezzi, orari, indirizzo: `TODO` su ognuno.
+(secondo messaggio, lei ha già risposto). ⬜ Foto originali, MOZ, prezzi, orari,
+indirizzo, contatto diretto: `TODO`, da chiederle. ⬜ `DESIGN.md` non scritto.
 
 ## Collegamenti
 

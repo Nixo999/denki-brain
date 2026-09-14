@@ -1,15 +1,15 @@
 ---
 type: cliente
-riga: Onicotecnica a Brescia centro, @nails_art_by_pinkploy, 832 follower. Ha risposto al DM di Patrick il 13/9 - «si prova mandami» - e aspetta la bozza.
+riga: Onicotecnica a Brescia centro, @nails_art_by_pinkploy, 832 follower. Bozza online dal 14/9, il secondo DM col link tocca a Patrick.
 status: lead
 progetti: [sito-pinkploy]
-updated: 2026-09-13
+updated: 2026-09-14
 source: claude
-verificato: 2026-09-13
+verificato: 2026-09-14
 settore: nail / onicotecnica
 ---
 
-# Pinkploy — la bozza è attesa
+# Pinkploy — bozza online, il link non ancora mandato
 
 Onicotecnica a **Brescia centro**, `@nails_art_by_pinkploy`, nome mostrato
 «Unghie Brescia / Nails Brescia 💝💘». 832 follower, 301 seguiti, 344 post.
@@ -33,14 +33,22 @@ gancio 1, dove la verifica del 12/9 diceva «0 risultati · nessun dominio».
 > ogni caso zero costi e zero impegno: se ti piace, poi ne parliamo. Siamo su
 > denkicode.com.
 
-**La sua risposta, 13 settembre 2026: «Ciao hmm si prova mandami».** La bozza la
-aspetta — non è un'esca fredda, è materiale che verrà mostrato, e il sito non
-esiste ancora. Raccolta e vincoli del materiale in [[sito-pinkploy]].
+**La sua risposta, 13 settembre 2026: «Ciao hmm si prova mandami».** La bozza è
+stata costruita e da oggi **14 settembre 2026 è online**, su
+<https://pinkploy.netlify.app> — mondo B «lo spessore». Costruzione e misure in
+[[sito-pinkploy]].
+
+## Il secondo DM, con il link
+
+**Deve ancora mandarglielo Patrick**, non chi ha costruito il sito. Il primo
+messaggio (sopra) è già stato risposto; il secondo porta il link alla bozza.
+**Quando lo manda chiede anche le foto originali**: le anteprime scaricate sono
+a **640 px**, non bastano per un sito che dipenda dalle foto.
 
 ## Aperto
 
-- [ ] Costruire la bozza: passo 1 e 2 di [[processo-siti]] ancora da dichiarare
-- [ ] Mandargliela: è di Patrick, non di chi la costruisce
+- [ ] Mandarle il secondo DM col link: tocca a Patrick
+- [ ] Con quel messaggio, chiederle le foto originali (oltre i 640 px)
 - [ ] Chiederle MOZ, prezzi, orari, indirizzo, contatto diretto
 
 ## Collegamenti

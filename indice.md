@@ -47,13 +47,13 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-denkicode]] — Sito di DenkiCode. È qui che sta la galleria dei lavori - il posto dove si mostra a un cliente cosa abbiamo già fatto.
 - [[sito-dsi-advertising]] — ⚠️ Sito vetrina in una pagina per D.S.I. Advertising di Piras Sebastiano, Merate (LC) - dal 1992 progetta e produce articoli promozionali per il...
 - [[sito-fiftynine]] — ⚠️ Sito vetrina in una pagina per Bar Tabacchi Fiftynine, bar tabaccheria e pizzeria in via Nazionale dei Giovi 59, Cesano Maderno (MB).
-- [[sito-laurafranzoni]] — Laura Franzoni @laurafranzoni_lashmaker, extension ciglia a Brescia: repo in piedi, 12 foto usabili, strada 1 dichiarata. Direzione non proposta.
+- [[sito-laurafranzoni]] — Laura Franzoni @laurafranzoni_lashmaker, extension ciglia a Brescia: bozza costruita sul mondo «dall'alto», 8/8 al controllo. Manca il DM e il file del logo.
 - [[sito-mikuma-dogs]] — Online su mikumadogs.netlify.app per Martina Carneli (mikuma.dogs), Como - giro 7 'il bianco e il nero', logo vero, Nicola: 'mi piace molto'.
 - [[sito-nails-mania]] — ⚠️ Sito vetrina in una pagina per Nails Mania, centro di ricostruzione unghie mani e piedi di Lory Frosio a Seriate (BG).
 - [[sito-nails-robyy]] — Roberta @nails.robyy, nail artist e educator a Brescia: repo in piedi, 35 foto a 1440, strada 1 dichiarata. Direzione non ancora proposta.
 - [[sito-ngbarber]] — ⚠️ Bozza vetrina per ng-barber, riga 2 dell'anello 1-b delle liste Instagram, gancio 5.
 - [[sito-osteria-tarilli]] — ⚠️ Osteria Tarilli, Via Ronco Nuovo 2, 6949 Comano (TI), a 300 m dalla RSI.
-- [[sito-pinkploy]] — Bozza sito per @nails_art_by_pinkploy, onicotecnica a Brescia centro. Ha risposto al DM di Patrick il 13/9 e la aspetta. Raccolta fatta, direzione no.
+- [[sito-pinkploy]] — Online su pinkploy.netlify.app per @nails_art_by_pinkploy, onicotecnica a Brescia centro - mondo B «lo spessore», l'unghia in quota.
 - [[sito-pizzeria-lobidu]] — ⚠️ Pizzeria Lobidù, pizzeria siciliana, Via IV Novembre 13, 21049 Tradate (VA).
 - [[sito-salone-di-andrea]] — ⚠️ Sito vetrina in una pagina per Il Salone di Andrea, parrucchiere donna e uomo di Andrea Bielli a Dalmine (BG), Viale Natale Betelli 58.
 
@@ -95,7 +95,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[ms-service]] — ⚠️ Lead caldo - ha chiesto lui il materiale.
 - [[nails-mania]] — ⚠️ Centro di ricostruzione unghie mani e piedi di Lory Frosio, onicotecnica dal 2005.
 - [[ng-barber]] — ⚠️ Barbershop, @ngbarberstudio123. Riga 2 dell'anello 1-b, gancio 5 - l'unico link in bio è ngbarber.my-booking-app.com, cioè un'app di prenotaz...
-- [[pinkploy]] — Onicotecnica a Brescia centro, @nails_art_by_pinkploy, 832 follower. Ha risposto al DM di Patrick il 13/9 - «si prova mandami» - e aspetta la bozza.
+- [[pinkploy]] — Onicotecnica a Brescia centro, @nails_art_by_pinkploy, 832 follower. Bozza online dal 14/9, il secondo DM col link tocca a Patrick.
 - [[sebastian-torres]] — Privato, non un'azienda. Sta aprendo la sua attività, e l'attività è opero - l'app che stiamo costruendo noi è la sua idea imprenditoriale.
 - [[shari-piras]] — ⚠️ Shari Piras, tatuatrice, Merate (LC). Due account - @shari_tattooer (4.504 follower, 493 post) è la persona, @atelierselva_ (593 follower, 41...
 
