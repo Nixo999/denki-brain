@@ -26,9 +26,9 @@ La galleria di [[sito-denkicode]] e la serie di post mostrano gli stessi
 lavori: **la regola del dominio vale anche qui**. Si posta un sito che sta su
 un indirizzo suo, non una bozza.
 
-## Serie del 14 settembre 2026 - i quattro lavori in galleria
+## Serie del 14 settembre 2026 - i cinque lavori in galleria
 
-Quattro post verticali, uno per lavoro, stessa impaginazione: simbolo e nome
+Cinque post verticali, uno per lavoro, stessa impaginazione: simbolo e nome
 DenkiCode in testa, nome del progetto, lo screenshot vero dentro una finestra
 di browser con il dominio nella barra, tre voci sotto, `denkicode.com` in
 fondo.
@@ -39,6 +39,7 @@ fondo.
 | `fiftynine.jpg` | [[sito-fiftynine]] | `bartabacchi59.it` |
 | `bellastoria.jpg` | Bellastoria | `bellastoria.netlify.app` |
 | `vbag.jpg` | V-BAG | `vbag.it` |
+| `dropout.jpg` | [[sito-dropout]] | `dropoutevents.com` |
 
 **I file**: `~/Desktop/denki-pubblicita-instagram-2026-09-14/` sul Mac di
 Patrick, piu' `didascalie.txt` con i quattro testi da copiare. Non stanno nel
@@ -46,7 +47,7 @@ vault: sono PNG da 300-900 KB e il vault e' testo.
 
 **Il formato buono e' JPEG 1080x1350**, verticale 4:5: e' l'inquadratura che
 nel feed occupa piu' schermo, e a parita' di scroll si vede il doppio. Le
-stesse quattro a 1080x1080 stanno in `quadrati/`, per quando una serve
+stesse cinque a 1080x1080 stanno in `quadrati/`, per quando una serve
 quadrata.
 
 Si posta il JPEG, non il PNG: Instagram ricomprime tutto in JPEG comunque, e
@@ -59,7 +60,7 @@ Gli screenshot sono presi dai siti online il 14 settembre 2026, non da una
 copia locale: banner dei cookie e badge di Netlify tagliati fuori
 dall'inquadratura, niente ritocchi sopra la pagina.
 
-## Le tre cose da sapere prima di pubblicare
+## Le cose da sapere prima di pubblicare
 
 1. **V-BAG ha il pulsante d'ordine morto.** In `script.js` la costante del
    numero WhatsApp e' vuota: chi compila il modulo si becca un avviso che lo
@@ -73,6 +74,17 @@ dall'inquadratura, niente ritocchi sopra la pagina.
 3. **V-BAG e' il progetto personale di Giulia**, fuori dal listino DenkiCode.
    Sta in galleria per scelta di Nicola del 12 settembre: postarlo e' coerente
    con quella, e non lo trasforma in un lavoro fatturato.
+
+4. **Il sito di DROP OUT e' fermo a maggio.** In pagina c'e' ancora «Prossimo
+   evento: DROP OUT | Vol. 1» con il conto alla rovescia per **martedi' 19
+   maggio**, e l'ultimo push del repo e' dell'11 maggio 2026. Postarlo adesso
+   vuol dire mandare gente su una pagina che annuncia un evento di quattro mesi
+   fa. La didascalia per questo parla di com'e' fatto il sito e non di quando
+   si va. Prima si aggiorna la sezione dell'evento, poi si posta.
+5. **DROP OUT non e' un cliente**: e' il gruppo di Patrick, e il sito e' nato
+   per riempire la galleria ([[sito-dropout]]). In galleria ci sta, e postarlo
+   e' coerente. Dice pero' «sappiamo fare siti», non «abbiamo clienti», e sono
+   due messaggi diversi: vale meno degli altri quattro, va messo in coda.
 
 I testi sono passati da [[voce-denkicode]]. Restano `source: claude` finche'
 Patrick non li rilegge prima dell'invio.
