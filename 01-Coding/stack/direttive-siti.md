@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 14/09/2026 — Nicola: «patrick dice che è vuoto. metti qualche animazione piccola in più, rimpicciolisci le foto un pochino, e aggiungi dei disegni di qualche tipo»
+
+Sito bozza laurafranzoni_lashmaker visto online da Patrick al giro 2: la pagina tolte le note di regia sembra vuota. Una vetrina si riempie di disegni e micro-animazioni nella stessa lingua, non di foto piu grandi
+
 ### 14/09/2026 — Nicola: «da telefono si vede così, allontana instagram dal suo nome, e mettilo che si noti meno»
 
 barra di nails.robyy a 375: il bottone Instagram in riquadro pesante stava attaccato a ROBERTA. Sul telefono la voce di contatto in barra va al bordo destro, staccata dal marchio, e pesa meno del nome
