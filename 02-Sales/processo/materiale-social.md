@@ -35,18 +35,25 @@ voci sotto, `denkicode.com` in fondo.
 
 | Post | Sito | Dominio |
 |---|---|---|
-| `albybike.png` | [[sito-albybike]] | `albybike.com` |
-| `fiftynine.png` | [[sito-fiftynine]] | `bartabacchi59.it` |
-| `bellastoria.png` | Bellastoria | `bellastoria.netlify.app` |
-| `vbag.png` | V-BAG | `vbag.it` |
+| `albybike.jpg` | [[sito-albybike]] | `albybike.com` |
+| `fiftynine.jpg` | [[sito-fiftynine]] | `bartabacchi59.it` |
+| `bellastoria.jpg` | Bellastoria | `bellastoria.netlify.app` |
+| `vbag.jpg` | V-BAG | `vbag.it` |
 
 **I file**: `~/Desktop/denki-pubblicita-instagram-2026-09-14/` sul Mac di
 Patrick, piu' `didascalie.txt` con i quattro testi da copiare. Non stanno nel
 vault: sono PNG da 300-900 KB e il vault e' testo.
 
-**Il formato buono e' 1080x1350**, verticale 4:5: e' l'inquadratura che nel
-feed occupa piu' schermo, e a parita' di scroll si vede il doppio. Le stesse
-quattro a 1080x1080 stanno in `quadrati/`, per quando una serve quadrata.
+**Il formato buono e' JPEG 1080x1350**, verticale 4:5: e' l'inquadratura che
+nel feed occupa piu' schermo, e a parita' di scroll si vede il doppio. Le
+stesse quattro a 1080x1080 stanno in `quadrati/`, per quando una serve
+quadrata.
+
+Si posta il JPEG, non il PNG: Instagram ricomprime tutto in JPEG comunque, e
+partire da un PNG da un mega significa fargli fare la conversione a modo suo.
+I PNG restano in `png/` come sorgente da cui riesportare, qualita' 92 e
+sottocampionamento disattivato, che e' quello che tiene ferme le scritte
+piccole in fondo.
 
 Gli screenshot sono presi dai siti online il 14 settembre 2026, non da una
 copia locale: banner dei cookie e badge di Netlify tagliati fuori
