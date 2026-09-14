@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **178 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **179 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -47,7 +47,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-denkicode]] — Sito di DenkiCode. È qui che sta la galleria dei lavori - il posto dove si mostra a un cliente cosa abbiamo già fatto.
 - [[sito-dsi-advertising]] — ⚠️ Sito vetrina in una pagina per D.S.I. Advertising di Piras Sebastiano, Merate (LC) - dal 1992 progetta e produce articoli promozionali per il...
 - [[sito-fiftynine]] — ⚠️ Sito vetrina in una pagina per Bar Tabacchi Fiftynine, bar tabaccheria e pizzeria in via Nazionale dei Giovi 59, Cesano Maderno (MB).
-- [[sito-laurafranzoni]] — Laura Franzoni @laurafranzoni_lashmaker, extension ciglia a Brescia: bozza costruita sul mondo «dall'alto», 8/8 al controllo. Manca il DM e il file del logo.
+- [[sito-laurafranzoni]] — Laura Franzoni @laurafranzoni_lashmaker, ciglia a Brescia: bozza online su laurafranzoni.netlify.app dal 14/9, mondo «Dall'alto». Online c'è il giro 2, il giro 3 è fermo in locale.
 - [[sito-mikuma-dogs]] — Online su mikumadogs.netlify.app per Martina Carneli (mikuma.dogs), Como - giro 7 'il bianco e il nero', logo vero, Nicola: 'mi piace molto'.
 - [[sito-nails-mania]] — ⚠️ Sito vetrina in una pagina per Nails Mania, centro di ricostruzione unghie mani e piedi di Lory Frosio a Seriate (BG).
 - [[sito-nails-robyy]] — Roberta @nails.robyy, nail artist e educator a Brescia: repo in piedi, 35 foto a 1440, strada 1 dichiarata. Direzione non ancora proposta.
@@ -92,6 +92,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[castiglione-furniture]] — ⚠️ Falegnameria su misura, @castiglione_furniture su Instagram.
 - [[dsi-advertising]] — ⚠️ D.S.I. Advertising di Piras Sebastiano, Merate (LC).
 - [[il-salone-di-andrea]] — ⚠️ Parrucchiere donna e uomo di Andrea Bielli, Viale Natale Betelli 58, Dalmine.
+- [[laurafranzoni]] — Extension ciglia a Brescia, @laurafranzoni_lashmaker, 452 follower. Bozza online dal 14/9, il DM non è mai partito.
 - [[ms-service]] — ⚠️ Lead caldo - ha chiesto lui il materiale.
 - [[nails-mania]] — ⚠️ Centro di ricostruzione unghie mani e piedi di Lory Frosio, onicotecnica dal 2005.
 - [[ng-barber]] — ⚠️ Barbershop, @ngbarberstudio123. Riga 2 dell'anello 1-b, gancio 5 - l'unico link in bio è ngbarber.my-booking-app.com, cioè un'app di prenotaz...

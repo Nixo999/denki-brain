@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Laura Franzoni @laurafranzoni_lashmaker, extension ciglia a Brescia: bozza costruita sul mondo «dall'alto», 8/8 al controllo. Manca il DM e il file del logo.
+riga: Laura Franzoni @laurafranzoni_lashmaker, ciglia a Brescia: bozza online su laurafranzoni.netlify.app dal 14/9, mondo «Dall'alto». Online c'è il giro 2, il giro 3 è fermo in locale.
 status: attivo
 client: laurafranzoni
 stack: html-css-js
@@ -14,12 +14,26 @@ tags: [sito, bozza, ciglia, brescia, instagram]
 
 # Sito Laura Franzoni — raccolta e costruzione
 
-Bozza-esca: **il DM non è ancora partito** e non c'è scheda cliente. Repo
-`~/lavoro/laurafranzoni-site`, dallo starter (`nuovo-sito.py`). Nessun repo su
-GitHub, nessun push: lo decide il direttore.
+Bozza-esca: **il DM non è ancora partito**. Scheda cliente in
+[[laurafranzoni]]. Repo `~/lavoro/laurafranzoni-site`, dallo starter
+(`nuovo-sito.py`), su GitHub come **`Nixo999/laurafranzoni-site`** (privata,
+`main`), creato da Nicola col CLI.
 
-Passi 0, 1 e 2 fatti. La pagina è costruita: `index.html` + `assets/stile.css`,
-tre commit, **nessun remote e nessun deploy**.
+✅ **Online su <https://laurafranzoni.netlify.app>** dal 14 settembre 2026, sito
+`laurafranzoni` sul team `denkicode` (slug `nicola-la-rezza`), deploy dal CLI
+**non collegato al repo**. Tre sbarramenti verificati con `curl` il 14/09:
+`X-Robots-Tag: noindex, nofollow` negli header, `<meta name="robots"
+content="noindex, nofollow">` in pagina, `robots.txt` con `Disallow: /`.
+
+**I sette commit**: `1fc377c` raccolta · `16df2c3` foto · `168c659` giro 1 ·
+`0481e55` contratto · `58d9aad` giro 2 (hero e fascia) · `721cd31` gitignore ·
+`93081ec` giro 3 (copy). Statico, **nessun database**.
+
+⚠️ **Il giro 3 non è online e non è nemmeno su GitHub.** Alle **09:12 del 14
+settembre 2026** `git status -sb` dice `ahead 1` — `93081ec` è solo in locale — e
+la pagina servita da Netlify contiene ancora il copy del giro 2 (la frase «Ti
+sdrai» compare due volte online, zero nel giro 3). Per allineare servono un
+`git push` e un deploy nuovi, **e li decide il direttore**.
 
 ## Chi è, verificato sul profilo il 13 settembre 2026 (senza login)
 
@@ -334,7 +348,7 @@ dell'appuntamento. Sono scritti da noi guardando le foto, non da lei. I **nomi**
 dei trattamenti invece sono suoi, letti in bio e negli hashtag, e le didascalie
 dicono il trattamento solo dove l'hashtag di quel post lo conferma.
 
-### Cosa è stato misurato, il 14 settembre 2026
+### Cosa è stato misurato — prima del giro 3, 14 settembre 2026
 
 Overflow orizzontale **0 su 25 larghezze** da 320 a 1920, bordi delle media
 query compresi; barra e bottone su una riga a ogni larghezza. Console **vuota**,
@@ -348,6 +362,15 @@ in Brave via CDP.
 `controlla-sito.py`: **8/8**. `impeccable detect`: 8 avvisi, tutti dichiarati
 (grana al 3 %, fasce a tutta pagina che toccano i bordi per scelta, interlinea
 1,10 su un display da 51 px, fondo chiaro della palette del cliente).
+
+### Cosa è stato misurato — giro 3, 14 settembre 2026
+
+Overflow orizzontale **0 su 27 larghezze** da 320 a 1920. **42 coppie di
+contrasto AA**, nessun fallimento. Console **vuota**. Pagina **1,53 MB**.
+`controlla-sito.py`: **8/8**. `impeccable detect`: **7 avvisi**, tutti
+dichiarati.
+
+⚠️ Queste misure sono sulla **pagina locale**: online c'è il giro 2.
 
 ## Contesto commerciale
 
@@ -387,11 +410,12 @@ nostra idea di sezione, è la promessa del DM.
 ## Cosa manca al processo
 
 ✅ Passo 2 — mondo scelto e scritto qui sopra. ✅ Passo 3 — costruzione.
-⬜ Scheda cliente in `02-Sales/clienti/laurafranzoni.md`. ⬜ DM da mandare.
-⬜ Riga in [[registro-interventi]]. ⬜ Repo su GitHub, deploy: li decide il
-direttore, il repo locale non ha remote.
+✅ Scheda cliente [[laurafranzoni]]. ✅ Riga in [[registro-interventi]].
+✅ Repo su GitHub e deploy su Netlify. ⬜ **Push di `93081ec` e deploy del giro
+3**: online c'è il giro 2. ⬜ DM col link, che è di Patrick. ⬜ Safari su
+iPhone, mai provato.
 
 ## Collegamenti
 
-[[processo-siti]] · [[sito-nails-robyy]] · [[sito-pinkploy]] · [[trappole]] ·
-[[direttive-siti]] · [[registro-interventi]]
+[[processo-siti]] · [[laurafranzoni]] · [[netlify]] · [[sito-nails-robyy]] ·
+[[sito-pinkploy]] · [[trappole]] · [[direttive-siti]] · [[registro-interventi]]

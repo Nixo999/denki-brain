@@ -1,7 +1,7 @@
 ---
 riga: Detto da Patrick il 31 agosto 2026 - *«il sito di Castiglione, come tutti i siti bozza, viene messo su Netlify per farlo vedere»*.
 type: risorsa
-updated: 2026-09-11
+updated: 2026-09-14
 source: denkicode
 tags: [strumenti, hosting, bozze, siti-vetrina]
 ---
@@ -51,6 +51,7 @@ Vale per tutti i canali:
 | [[sito-da-caterina]] | Da Caterina Toelettatura Professionale, Olgiate Olona (VA) — Instagram `@dacaterinatoelettatura` | ✅ **online su <https://dacaterina.netlify.app>** dal 9 settembre 2026, sito `dacaterina` sul team `denkicode` (slug API `nicola-la-rezza`), deploy dal CLI non collegato al repo `Nixo999/caterina-site`; tre sbarramenti attivi |
 | [[sito-mikuma-dogs]] | Martina Carneli, istruttrice cinofila, Como — Instagram `@mikuma.dogs`, ha già chiesto la bozza | ✅ **online su <https://mikumadogs.netlify.app>** dall'11 settembre 2026, sito `mikumadogs` sul team `denkicode` (slug `nicola-la-rezza`), deploy dal CLI, repo `Nixo999/mikuma-site` privata; tre sbarramenti verificati con `curl` |
 | [[sito-pinkploy]] | Nails Art by Pinkploy, onicotecnica, Brescia centro — Instagram `@nails_art_by_pinkploy`, ha già chiesto la bozza | ✅ online su <https://pinkploy.netlify.app> dal 14 settembre 2026, sito `pinkploy` sul team `denkicode` (slug `nicola-la-rezza`), deploy dal CLI, repo `Nixo999/pinkploy-site` privata; tre sbarramenti verificati con `curl` |
+| [[sito-laurafranzoni]] | Laura Franzoni, lash maker, Brescia — Instagram `@laurafranzoni_lashmaker`, il DM non è ancora partito | ✅ online su <https://laurafranzoni.netlify.app> dal 14 settembre 2026, sito `laurafranzoni` sul team `denkicode` (slug `nicola-la-rezza`), deploy dal CLI non collegato al repo `Nixo999/laurafranzoni-site` privata; tre sbarramenti verificati con `curl`. ⚠️ **online c'è il giro 2**: il giro 3 (`93081ec`) alle 09:12 del 14/09 è fermo in locale e non ripubblicato |
 | sito NG Barber | NG Barber Studio, Como + Erba + Mendrisio (CH) — riga 2 dell'[[2026-09-01-instagram-anello-1-b\|anello 1-b]] | ⬜ **pronto, non pubblicato**: `netlify.toml` scritto. il codice è su **`patricksappa26/ng-barber`** (pubblica, `main`, allineata). Resta indietro `Nixo999/ngbarber-site` (privata, primo tentativo). **Manca solo il login Netlify**, che è di Nicola — in alternativa, essendo la repo pubblica, **GitHub Pages** la pubblica senza altri accessi |
 
 > [!note] Analisi di Claude — 2026-09-01

@@ -57,6 +57,10 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   mondo «lo spessore», 8/8. Nicola ha bocciato solo l'hero, la correzione è
   online. Il DM col link è di Patrick, lei ha già risposto «si prova mandami»
   → [[sito-pinkploy]]
+- **Laura Franzoni** (ciglia, Brescia) online su `laurafranzoni.netlify.app`
+  (14/09), mondo «Dall'alto», 8/8 e overflow 0 su 27 larghezze. ⚠️ **Online c'è
+  il giro 2**: il giro 3 del copy è fermo in locale (`93081ec` non pushato alle
+  09:12). Il DM non è mai partito ed è di Patrick → [[sito-laurafranzoni]]
 
 ## Cosa è bloccato, e perché
 

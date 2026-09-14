@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Errori tecnici già pagati e strade scartate, per dominio. Descrittivo, non è un rulebook - le regole stanno in convenzioni.
-updated: 2026-09-13
+updated: 2026-09-14
 verificato: 2026-09-10
 source: denkicode
 tags: [trappole, memoria, frontend, gsap, git]
@@ -174,6 +174,20 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   mosaico a una colonna si verifica scorrendo slot per slot, non da fermo.
   ([[sito-pizzeria-lobidu]])
 
+- **Brave headless con lo stesso `--user-data-dir` e la stessa porta lascia
+  un'istanza viva, e la corsa dopo ci si attacca in silenzio.** Nessun errore:
+  CDP risponde, le misure arrivano, e sono quelle della **pagina di prima** —
+  9.264 px di documento letti come 5.008. È il caso peggiore, perché il numero
+  sbagliato sembra un numero giusto. → `pkill` sul processo **e profilo
+  cancellato a ogni corsa**, prima di lanciare. ([[sito-laurafranzoni]],
+  14 settembre)
+- **Per catturare la pagina vera a piena altezza vanno prima congelati `--vh`
+  e uccisi gli ScrollTrigger.** La finestra headless diventa alta quanto il
+  documento, lo scrub ricalcola su quella e la cattura fotografa una pagina a
+  metà animazione che non esiste su nessun browser. → si fissa `--vh` al valore
+  del viewport vero e si fa `ScrollTrigger.getAll().forEach(t => t.kill())`
+  prima dello scatto. ([[sito-laurafranzoni]], 14 settembre)
+
 ## Immagini e `sips`
 
 - **`sips` legge le dimensioni trasposte quando il browser ruota la foto.** Su
@@ -326,6 +340,19 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   `hidden` messo, e il JS che lo nasconde sembra rotto. Sul sito di Giulia il
   pulsante «Esci» si vedeva prima del login. → `[hidden] { display: none
   !important }` nel reset, una volta per tutte. (sito V-BAG di Giulia, 7 settembre)
+
+- **`17ch` su un display serif fa 1.713 px.** Su Bodoni Moda lo `0` di
+  riferimento è larghissimo, quindi una misura pensata per «diciassette
+  caratteri» esce larga quanto lo schermo e il titolo non va mai a capo dove
+  deve. → **i tetti di un display si scrivono in `em`, mai in `ch`**: `ch`
+  dipende dal font e cambia sotto ai piedi al primo cambio di famiglia o al
+  ripiego. ([[sito-laurafranzoni]], 14 settembre)
+- **Una regola più specifica vince anche su `max-width`, non solo sui colori.**
+  `.atto--occhi .colonna > p` batteva `.richiamo` e il richiamo prendeva la
+  misura del paragrafo normale: la classe c'era, l'HTML era giusto, e la riga
+  era lunga il doppio. → si misura `getBoundingClientRect().width` calcolata,
+  non si guarda la classe nell'HTML. Cugina della `transition` più specifica di
+  [[sito-da-caterina]]. ([[sito-laurafranzoni]], 14 settembre)
 
 ## Git, account e pubblicazione
 
