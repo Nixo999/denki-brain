@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 14/09/2026 — Nicola: «questa frase che spiega cosa hai messo non ha senso, eliminala e anche tutte quelle simili»
+
+sul sito nails.robyy la riga «Il quinto profilo è vuoto: è il posto di chi impara.» sopra il disegno della convergenza: il copy che spiega la grafica o la metafora al lettore non serve a chi legge, va tolto, non riscritto
+
 ### 14/09/2026 — Nicola: «aggiusta le scritta, non lasciare note scritte da te, solo frasi utili, e sensate. rimuovi cose che dicono come, la migliore del modno o la piu sottile»
 
 Detto il 14 settembre 2026 sulla bozza Pinkploy online: il copy portava la frase della bio «le unghie più sottili e più belle che tu abbia mai avuto» e frasi nostre di contorno. Sul sito restano solo frasi utili a chi legge; niente superlativi e niente autopromozione, nemmeno se li ha scritti il cliente in bio.
