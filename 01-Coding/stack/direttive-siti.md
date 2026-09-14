@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 14/09/2026 — Nicola: «da telefono si vede così, allontana instagram dal suo nome, e mettilo che si noti meno»
+
+barra di nails.robyy a 375: il bottone Instagram in riquadro pesante stava attaccato a ROBERTA. Sul telefono la voce di contatto in barra va al bordo destro, staccata dal marchio, e pesa meno del nome
+
 ### 14/09/2026 — Nicola: «questa frase che spiega cosa hai messo non ha senso, eliminala e anche tutte quelle simili»
 
 sul sito nails.robyy la riga «Il quinto profilo è vuoto: è il posto di chi impara.» sopra il disegno della convergenza: il copy che spiega la grafica o la metafora al lettore non serve a chi legge, va tolto, non riscritto
