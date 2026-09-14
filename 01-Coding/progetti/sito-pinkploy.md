@@ -195,6 +195,33 @@ detect`: 5 rifiuti dichiarati (quadrettatura e graduazione **sono** il mondo).
 (secondo messaggio, lei ha già risposto). ⬜ Foto originali, MOZ, prezzi, orari,
 indirizzo, contatto diretto: `TODO`, da chiederle. ⬜ `DESIGN.md` non scritto.
 
+## Giro 3, il copy (14/09)
+
+Bocciatura di Nicola: «non lasciare note scritte da te, solo frasi utili e
+sensate. rimuovi cose che dicono "la migliore del mondo" o "la più sottile"».
+Sette sostituzioni, testo del direttore inserito tale e quale:
+
+- Apertura: tolta **«Faccio le unghie più sottili e più belle che tu abbia mai
+  avuto.»** (elemento intero); la riga sotto diventa **«Onicotecnica in centro
+  a Brescia. Unghie in gel e semipermanente: french, cromo, disegni a mano. Si
+  prenota con un messaggio su Instagram.»**
+- h2 «Sottile, strato per strato» → **«Strato per strato»**
+- Strato unghia naturale → **«Si prepara prima di ogni strato.»**
+- Strato base → **«Fa aderire il colore all'unghia.»**
+- Strato colore → **«Gel o semipermanente.»**
+- Strato top → **«Sigilla il colore. Quello con filtro UV tiene il bianco
+  bianco per tutto il mese; sul nero se ne usa un altro, perché non lo
+  schiarisca.»**
+- Strumenti sterilizzati: tolta la riga **«Vale per ogni strumento che tocca
+  l'unghia.»**, resta solo il claim MOZ
+- «Si prenota con un messaggio»: **«Scrivimi su Instagram per fissare un
+  appuntamento.»**
+- `meta description` e `og:description`: tolto «sottili»
+
+Verificato in headless (Brave via CDP, `Network.setCacheDisabled`): overflow 0
+a 1440×900 e 375×812, console vuota, h1 una riga a 1440 e due a 375, nessun
+buco dove stava la frase tolta. `stile.css` non toccato.
+
 ## Collegamenti
 
 [[pinkploy]] · [[processo-siti]] · [[sito-mikuma-dogs]] · [[registro-interventi]]
