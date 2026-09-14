@@ -1,18 +1,18 @@
 ---
 type: progetto
-riga: Bozza sito per @nails_art_by_pinkploy, onicotecnica a Brescia centro. Ha risposto al DM di Patrick il 13/9 e la aspetta. Raccolta fatta, direzione no.
+riga: Online su pinkploy.netlify.app per @nails_art_by_pinkploy, onicotecnica a Brescia centro - mondo B «lo spessore», la sezione dell'unghia in quota.
 status: attivo
 client: pinkploy
 stack: html-css-js
 started: 2026-09-13
 deadline:
-updated: 2026-09-13
+updated: 2026-09-14
 source: claude
-verificato: 2026-09-13
+verificato: 2026-09-14
 tags: [sito, bozza, nail, brescia, instagram]
 ---
 
-# Sito Pinkploy — raccolta, la direzione non è scelta
+# Sito Pinkploy — online, mondo «lo spessore»
 
 Onicotecnica a Brescia. Riga 121 della lista [[2026-09-13-instagram-siti-brescia]].
 Patrick le ha scritto sul protocollo di sterilizzazione MOZ che ha in bio; **ha
@@ -128,9 +128,97 @@ lato lungo il materiale attuale non consente il primo.
 
 ## Aperto
 
-- [ ] Passo 1: strada delle foto, dal direttore
-- [ ] Passo 2: operatore di direzione, due o tre mondi visivi
+- [x] Passo 1: strada 2 — il sito non dipende dalle foto (13/09)
+- [x] Passo 2: tre mondi, scelto B «lo spessore» (13/09)
 - [ ] MOZ, prezzi, orari, indirizzo, contatto diretto: da chiedere a lei
+
+## Passo 1, strada dichiarata
+
+**Strada 2, il sito non dipende dalle foto**: 640 px di lato lungo, il 1080 dà
+**403**, `05` e `12` sono fotogrammi ed escono. Reggono grafica inventata,
+tipografia e colore; le foto stanno in cornice dichiarata. **Strada 1 resta
+aperta** — gli originali li chiede Patrick quando le manda il link.
+
+## Passo 2: i tre mondi, e la scelta
+
+Operatore di direzione su Opus, seed impeccable **`efd13b00`**, indice **7**,
+roll degradato senza sfidanti. **A «Il cartello»** (il muro dei cartelli scuri
+con le maiuscole, dalle sue due foto col testo impresso — *assegnato dal
+dado*) · **B «Lo spessore»** (la pagina come disegno tecnico in sezione
+dell'unghia: «più sottili» è una quota) · **C «Il banco»** (il tavolo dall'alto
+con gli strumenti in fila).
+
+**Scelto B dal direttore**, con due correzioni: gli strati della sezione
+portano **i suoi colori** (rosa `#F09AA6`, cromo lilla `#DE96F6`, lacca
+`#960606`) e **nessuna misura numerica sul sito** — il calibro legge parole,
+non micron. Perché non si sposta su un'altra onicotecnica: è **la sua promessa
+di bio messa in quota**.
+
+## Costruzione, 13-14 settembre
+
+Catena caricata: [[direttive-siti]], [[trappole]] a sezioni, `impeccable
+context` + `new-work` + `craft-floor`, `high-end-visual-design`, NG Barber e
+Fiftynine come metro. Surface brief in `.impeccable/surfaces/index-html.md`,
+**fuori dal repo** via `.gitignore`.
+
+**Dieci `<svg>` inline**: binario a tacche alto quanto il foglio, calibro con
+nonio e lente rossa, sezione a quattro strati con linee di richiamo, pianta che
+si morfa mandorla→ovale→quadrata, spingipelle/forbicine/punta da fresa
+ricalcati dalla sua foto, cartiglio, cornice della tavola con indici A-H e
+1-12, freccia. **Spina**: binario disegnato in scrub su tutta la pagina; strati
+che si depositano uno per volta in pin; pianta che si alza da 76° a 0
+morfandosi; **«Dal mio banco» è un binario orizzontale in pin da 900 in su**
+(nastro di 3407 px, scrub, otto foto appese con tacca e gambo), in colonna
+sotto i 900; strumenti in stroke-dash; **una campitura sola**, rosa, sulla
+sezione del DM, col cartiglio che ritorna. **Anybody** variabile (asse `wdth`)
++ **Hanken Grotesk**, ripiego con `size-adjust`. Foglio `#F7F6F7`, inchiostro
+`#171316`, lacca, rosa, cromo lilla, acciaio `#6E7078` solo sugli strumenti —
+4,48:1, **non regge AA sul testo**, che usa `#5C5E66`.
+
+**Il copy è del direttore**, prima persona, verificato sulla bio e sull'unica
+caption vera (3/8/2026, il top con filtro UV). Sezioni: apertura · Sottile,
+strato per strato · Le forme che faccio · Dal mio banco (otto foto, didascalia
+con la tecnica) · Strumenti sterilizzati (la sua foto col testo impresso e la
+riga verbatim «Lo strumento è sterilizzato secondo il protocollo MOZ.») · Si
+prenota con un messaggio. Bottone **«Scrivimi su Instagram»** →
+`ig.me/m/nails_art_by_pinkploy`. **Il copy è nostro: da farle rileggere se il
+sito diventa suo.** Cosa preveda il MOZ resta `TODO`, sul sito si dice solo che
+lo segue.
+
+**Finish review** (`impeccable-finish-reviewer`), esito **`fix`**, otto voci:
+pallini nelle didascalie a 375, colonna dei nomi senza tetto, asta del calibro
+a metà invece che al piede, sezione DM mezza vuota, strumenti senza nome e due
+su tre irriconoscibili, strato Top in lacca piena, ultime due foto a 240 px sul
+telefono, didascalia «mandorla» su unghie ovali; più due pezzi del repertorio
+inusati (cornice con indici di margine, cartiglio che ritorna). Più le note del
+direttore sulle catture: tavola timida al 60 % della larghezza, galleria a
+griglia invece che a binario, rosa assente. **Tutte applicate nel giro 2.**
+
+**Bocciato l'hero** (Nicola, 14/09): «tutto bello ma la hero section non mi
+piace. fai come al solito un titolo con il suo nome e una frase sotto in
+piccolo, non una frase così lunga come titolo». Scritta con `regola.py siti` in
+[[direttive-siti]]. Applicata: h1 **«Nails Art by Pinkploy»** nel display del
+calibro (una riga da 479 in su, due a 375), la sua frase sotto in piccolo.
+
+## Misurato
+
+Overflow **0** su 14 larghezze da 320 a 1600 · console vuota · contrasti 17,1 /
+6,0 / 18,4, **8,66** sul rosa e **9,03** bianco su lacca · i due pin non si
+sovrappongono (979→3179 e 4912→7079 a 1440) · pagina completa senza JS, in
+`?cattura` e con `reduced-motion` · **`controlla-sito.py` 8/8** · `impeccable
+detect`: 5 rifiuti dichiarati (quadrettatura e graduazione **sono** il mondo).
+
+## Online
+
+✅ **<https://pinkploy.netlify.app>** dal **14 settembre 2026**: sito
+`pinkploy`, team `denkicode` (slug `nicola-la-rezza`), deploy dal CLI con
+`--no-build`, **non collegato al repo**. Tre sbarramenti verificati con `curl`:
+`X-Robots-Tag: noindex, nofollow`, `robots.txt` Disallow, `meta robots`.
+✅ Repo **`Nixo999/pinkploy-site`**, privata, `main`, `c822c42` + gitignore.
+
+⬜ Safari su iPhone vero: non provato. ⬜ **Il DM con il link è di Patrick**
+(secondo messaggio, lei ha già risposto). ⬜ Foto originali da chiederle.
+⬜ `DESIGN.md` non scritto. ⬜ Prezzi, orari, indirizzo: `TODO` su ognuno.
 
 ## Collegamenti
 
