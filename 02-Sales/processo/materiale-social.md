@@ -77,4 +77,12 @@ dall'inquadratura, niente ritocchi sopra la pagina.
 I testi sono passati da [[voce-denkicode]]. Restano `source: claude` finche'
 Patrick non li rilegge prima dell'invio.
 
+⚠️ **La riga sotto il nome dell'attivita' e' una frase intera, con il verbo.**
+La prima stesura ne aveva quattro senza: «con lo shop online dentro», «e il
+numero che si chiama con un tocco», «una galleria che si guarda in fila», «e
+il colore si sceglie all'ordine». Patrick: «non hanno senso». Sono frammenti
+nominali incollati con la virgola: leggibili a chi sa gia' cosa volevano dire,
+e basta. In un'immagine quella riga e' l'unica prosa che c'e', e se non sta in
+piedi da sola non sta in piedi.
+
 [[stile-comunicazione]] · [[generazione-lead]] · [[sito-denkicode]]
