@@ -29,9 +29,9 @@ un indirizzo suo, non una bozza.
 ## Serie del 14 settembre 2026 - i quattro lavori in galleria
 
 Quattro post verticali, uno per lavoro, stessa impaginazione: simbolo e nome
-DenkiCode in testa, nome del progetto con una riga che dice cosa fa il sito, lo
-screenshot vero dentro una finestra di browser con il dominio nella barra, tre
-voci sotto, `denkicode.com` in fondo.
+DenkiCode in testa, nome del progetto, lo screenshot vero dentro una finestra
+di browser con il dominio nella barra, tre voci sotto, `denkicode.com` in
+fondo.
 
 | Post | Sito | Dominio |
 |---|---|---|
@@ -77,12 +77,12 @@ dall'inquadratura, niente ritocchi sopra la pagina.
 I testi sono passati da [[voce-denkicode]]. Restano `source: claude` finche'
 Patrick non li rilegge prima dell'invio.
 
-⚠️ **La riga sotto il nome dell'attivita' e' una frase intera, con il verbo.**
-La prima stesura ne aveva quattro senza: «con lo shop online dentro», «e il
-numero che si chiama con un tocco», «una galleria che si guarda in fila», «e
-il colore si sceglie all'ordine». Patrick: «non hanno senso». Sono frammenti
-nominali incollati con la virgola: leggibili a chi sa gia' cosa volevano dire,
-e basta. In un'immagine quella riga e' l'unica prosa che c'e', e se non sta in
-piedi da sola non sta in piedi.
+⚠️ **Sull'immagine non va nessuna riga di descrizione.** Ci ho provato due
+volte: prima con quattro frammenti senza verbo, poi riscritti come frasi
+intere. Bocciate tutte e due le volte. Patrick, 14 settembre: «non aggiungono
+niente di valore, piuttosto togliele tanto metto la descrizione». Sull'immagine
+stanno il nome e la prova, cioe' lo screenshot; il testo e' il mestiere della
+didascalia, che lui scrive o adatta al momento di postare. Una frase in piu'
+sull'immagine e' solo una frase in piu' da correggere.
 
 [[stile-comunicazione]] · [[generazione-lead]] · [[sito-denkicode]]
