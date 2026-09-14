@@ -12,17 +12,22 @@ tags: [dm-instagram, lead, rilanci]
 Testi pronti, passati da `voce-check.py`. **Non sono stati mandati**: si
 copiano e si mandano a mano.
 
-> [!warning] Quattro persone aspettano una bozza che non esiste
+> [!warning] Quattro persone aspettano una bozza, e nessuna delle quattro è mandabile
 > Il gancio «la bozza del suo sito è già pronta» ha fatto il suo lavoro: in
-> due giorni tre persone hanno risposto *mandamela*. Nessuna delle tre l'ha
-> ricevuta, e la quarta la chiede da **sette giorni**.
+> due giorni tre persone hanno risposto *mandamela*. Controllate le note di
+> progetto una per una: **una è pronta e si manda adesso**, le altre tre no, e
+> il motivo cambia chi deve fare cosa.
 >
-> | Chi | Da quando | Dove va mandata |
-> |---|---|---|
-> | @nailsmaniabergamo | **7 giorni**, chiesta due volte | **per email**, frr85milo@gmail.com |
-> | @nails_art_by_pinkploy | 1 giorno | Instagram |
-> | @laurafranzoni_lashmaker | 1 giorno, **promessa per stamattina** | Instagram |
-> | @nails.robyy | 1 giorno | Instagram |
+> | Chi | Da quando | Stato vero | Cosa manca |
+> |---|---|---|---|
+> | @nailsmaniabergamo | **7 giorni**, chiesta due volte, **per email** | [[sito-nails-mania]]: costruita dal 6 settembre, repo `nailsmania-site` sul Mac di Nicola, **«Online: no»** | **solo il deploy**. Il sito c'è |
+> | @laurafranzoni_lashmaker | 1 giorno, **promessa per stamattina** | [[sito-laurafranzoni]]: repo in piedi, 12 foto pronte, strada 1 dichiarata | la direzione, poi il sito |
+> | @nails_art_by_pinkploy | 1 giorno | [[sito-pinkploy]]: **online su pinkploy.netlify.app dal 14/09**, l'ha pubblicata Nicola stamattina | **niente: si manda subito** |
+> | @nails.robyy | 1 giorno | [[sito-nails-robyy]]: repo in piedi, 35 foto a 1440 | la direzione, poi il sito |
+>
+> ⚠️ **Nails Mania è la più grave e la più veloce da chiudere**: la bozza è
+> finita da otto giorni e non è mai stata messa online, mentre lei la chiede da
+> sette. Non serve costruire niente, serve pubblicare.
 >
 > È il prezzo del gancio, scritto nel comando: *«chi manda questi cinquanta si
 > compra il lavoro di farle»*. Adesso il conto è arrivato, e sono quattro.
@@ -47,10 +52,15 @@ Sono dieci minuti, il sito lo guardiamo insieme mentre ce l'hai davanti.
 
 ### @nailsmaniabergamo — sette giorni, e va per email
 
-Il caso peggiore della posta. Ha chiesto **due volte** che la bozza le arrivi
-per email, e crede ancora che le stiamo restituendo **un sito suo di anni fa**
-(*«pensavo che non ci fosse più»*). Nessuna delle due cose è stata sistemata.
+Il caso peggiore della posta, e il più assurdo: **la bozza è pronta dall'8
+settembre** ([[sito-nails-mania]], repo `nailsmania-site`) e non è mai stata
+messa online, quindi non c'è un indirizzo da mandarle. Lei intanto ha chiesto
+**due volte** che le arrivi per email, e crede ancora che le stiamo
+restituendo **un sito suo di anni fa** (*«pensavo che non ci fosse più»*).
 Dà del Lei.
+
+⚠️ **Prima del testo qui sotto serve il deploy su Netlify**, con i tre
+sbarramenti noindex che la nota del progetto già descrive.
 
 Email a **frr85milo@gmail.com**, oggetto *La bozza del sito di Nails Mania*:
 
@@ -90,9 +100,12 @@ Guardala con calma anche dal pc, poi dimmi se la direzione ti piace.
 preso quattro punti interrogativi, quello corto e col tu ha preso un sì in due
 minuti. Sulla stessa persona, a un'ora di distanza.
 
-### @nails_art_by_pinkploy — «si prova mandami»
+### @nails_art_by_pinkploy — «si prova mandami», e questa si manda adesso
 
-Tu.
+La bozza è **online su https://pinkploy.netlify.app** da stamattina: l'ha
+costruita e pubblicata Nicola col processo nuovo, con i tre sbarramenti
+anti-indicizzazione verificati. È l'unica delle quattro che non aspetta
+nessuno. Tu.
 
 ```
 Ciao, eccola.
