@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **179 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **180 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -50,7 +50,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-laurafranzoni]] — Laura Franzoni @laurafranzoni_lashmaker, ciglia a Brescia: bozza online su laurafranzoni.netlify.app dal 14/9, mondo «Dall'alto». Online c'è il giro 2, il giro 3 è fermo in locale.
 - [[sito-mikuma-dogs]] — Online su mikumadogs.netlify.app per Martina Carneli (mikuma.dogs), Como - giro 7 'il bianco e il nero', logo vero, Nicola: 'mi piace molto'.
 - [[sito-nails-mania]] — ⚠️ Sito vetrina in una pagina per Nails Mania, centro di ricostruzione unghie mani e piedi di Lory Frosio a Seriate (BG).
-- [[sito-nails-robyy]] — Roberta @nails.robyy, nail artist e educator a Brescia: repo in piedi, 35 foto a 1440, strada 1 dichiarata. Direzione non ancora proposta.
+- [[sito-nails-robyy]] — Roberta @nails.robyy, nail artist e educator a Brescia: bozza online su nailsrobyy.netlify.app dal 14/9, mondo A «la sezione quotata», 8/8.
 - [[sito-ngbarber]] — ⚠️ Bozza vetrina per ng-barber, riga 2 dell'anello 1-b delle liste Instagram, gancio 5.
 - [[sito-osteria-tarilli]] — ⚠️ Osteria Tarilli, Via Ronco Nuovo 2, 6949 Comano (TI), a 300 m dalla RSI.
 - [[sito-pinkploy]] — Online su pinkploy.netlify.app per @nails_art_by_pinkploy, onicotecnica a Brescia centro - mondo B «lo spessore», l'unghia in quota.
@@ -267,6 +267,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-08-sito-tarilli]] — ⚠️ Nicola ha chiesto un sito per «pizzeria Tarilli, cercali su Instagram», con «un sacco di animazioni» e «pizze che si muovono e fluttuano».
 - [[2026-09-09-sito-albybike-motion]] — ⚠️ Nicola, dal suo Mac - «riprendi questa conversazione su questo pc», e il compito di ieri sera dal Mac di Patrick - «rendi ancora più bello, co...
 - [[2026-09-09-sito-da-caterina]] — ⚠️ Nicola, dal Mac, in /nicola - «nuovo sito vetrina per questo account Instagram - dacaterinatoelettatura.
+- [[2026-09-13-sito-nails-robyy]] — ⚠️ Bozza nails.robyy costruita col processo intero e messa online - mondo «la sezione quotata», 8/8, due regressioni chiuse all'ultimo.
 
 ## 04-Archive
 
