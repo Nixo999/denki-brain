@@ -1,7 +1,7 @@
 ---
 riga: Il registro dei testi che legge un cliente - Lei o Tu, voce di Patrick. Non e' il registro di Trevis.
 type: risorsa
-updated: 2026-09-13
+updated: 2026-09-14
 source: denkicode
 ---
 
@@ -103,6 +103,10 @@ Vincolo fiscale attivo, dettaglio in [[vincoli-fiscali]]:
 ## Regole date a voce
 
 Scritte da `regola.py` nel momento in cui sono state dette.
+
+### 14/09/2026 — Patrick: «le frasi sotto il nome dell'attività non hanno senso modificale rendile sensate, in italiano e sintatticamente corrette»
+
+in un'immagine o in un titolo la riga di testo e' l'unica prosa che c'e': i frammenti nominali incollati con la virgola, senza verbo, si leggono come sciatteria
 
 ### 13/09/2026 — Patrick: «per la bozza: «abbiamo preso ispirazione dal tuo profilo e abbiamo realizzato una bozza sito». Per la chiusura: «preferisci se te la mando qua su ig oppure prima vuoi che ne parliamo 2 minuti al telefono?, in ogni caso zero costi e zero impegno, se ti piace poi ne si parla, Se vuoi vedere cosa facciamo: denkicode.com»»
 
