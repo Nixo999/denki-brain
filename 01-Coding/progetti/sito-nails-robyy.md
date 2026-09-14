@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Roberta @nails.robyy, nail artist e educator a Brescia: bozza online su nailsrobyy.netlify.app dal 14/9, mondo A «la sezione quotata», 8/8.
+riga: Roberta @nails.robyy, nail artist e educator a Brescia: bozza online su nailsrobyy.netlify.app dal 14/9, mondo A «la sezione quotata», 8/8, sbarramenti verificati.
 status: attivo
 client: nails-robyy
 stack: html-css-js
@@ -295,14 +295,20 @@ e **3 a 375**, `reduced-motion` **18/18 rivelazioni e 0 trigger**,
 
 `DESIGN.md` dal documenter su Opus (`17cc5ab`). Verdetto **pass**: otto su otto
 risolti, **due regressioni di finitura** — quote senza valore nella chiusura,
-fascia corsi vuota per due terzi a 1440 — in chiusura adesso (14/09/2026).
+fascia corsi vuota per due terzi a 1440 — **chiuse con `673d6c6`**: il valore
+della quota si legge a runtime, la fascia corsi va su due colonne (era
+`grid-row: 1 / -1` su righe implicite, → [[trappole]]).
 
 ## Dove sta
 
 ✅ Repo **`Nixo999/nailsrobyy-site`**, privata, `main`, creata con `gh`.
 ✅ Sito **`nailsrobyy`** sul team `denkicode` (slug `nicola-la-rezza`),
-<https://nailsrobyy.netlify.app>: **online, sbarramenti da verificare con
-`curl`** — il deploy è partito dopo le due regressioni (14/09/2026).
+<https://nailsrobyy.netlify.app>, HTTP 200: **tre sbarramenti verificati con
+`curl` il 14/09** — `x-robots-tag: noindex, nofollow`, `robots.txt` con
+`Disallow: /`, `<meta name="robots" content="noindex, nofollow">` in pagina.
+Online c'è il **giro di finitura `673d6c6`**: quote con il valore vero letto a
+runtime, fascia corsi a due colonne. Dopo quel commit solo `.gitignore`
+(`.impeccable/`, `.netlify`).
 
 Nessuna sovrapposizione con [[sito-pinkploy]], l'altra onicotecnica di Brescia
 messa online oggi: mondo, caratteri e palette sono altri (Anybody/Hanken,
