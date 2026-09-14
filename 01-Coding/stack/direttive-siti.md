@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 14/09/2026 — Nicola: «aggiusta le scritta, non lasciare note scritte da te, solo frasi utili, e sensate. rimuovi cose che dicono come, la migliore del modno o la piu sottile»
+
+Detto il 14 settembre 2026 sulla bozza Pinkploy online: il copy portava la frase della bio «le unghie più sottili e più belle che tu abbia mai avuto» e frasi nostre di contorno. Sul sito restano solo frasi utili a chi legge; niente superlativi e niente autopromozione, nemmeno se li ha scritti il cliente in bio.
+
 ### 14/09/2026 — Nicola: «aggiusta le scritte, non lasciare note scritte da te, solo frasi utili, e sensate. rimuovi cose che dicono come, la migliore del mondo o la più sottile»
 
 Sito bozza laurafranzoni_lashmaker, giro 3: il copy aveva frasi nostre che spiegavano la pagina (perché le foto sono storte, note di regia) e superlativi non verificabili. Sul sito restano solo frasi che dicono cosa fa, per chi, e come contattarla
