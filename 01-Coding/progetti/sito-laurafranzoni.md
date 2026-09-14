@@ -237,18 +237,26 @@ sul messaggio.
 | # | Sezione | Cosa fa | Foto |
 |---|---|---|---|
 | 0 | barra | nome, mestiere, bottone DM (sotto i 560 px resta la sola icona, bersaglio 44×44) | — |
-| 1 | **Laura Franzoni** | h1 col nome che entra ruotato di 90° e si raddrizza in 900 ms, la sua frase «Trasformo il tuo sguardo» sotto, piccola; poi la fascia con «Ti sdrai.» sul bordo alto | `p07a` (90°) |
-| 2 | **Dallo sgabello** | perché le foto sono storte, e che nessuna è stata raddrizzata | `p01a` (20°), `p07c` (170°) |
+| 1 | **Laura Franzoni** | h1 col nome che entra ruotato di 90° e si raddrizza in 900 ms, una frase sola sotto, il bottone del DM e una foto dentro la colonna, 720×405 | `p07a` (90°) |
+| 2 | **Ti sdrai.** | perché le foto sono storte, e che nessuna è stata raddrizzata | `p01a` (20°), `p07c` (170°) |
 | 3 | **Si spegne la luce** | l'unico fermo della pagina: buio, ventaglio, contatore | nessuna, è tutta disegnata |
 | 4 | **Quello che Laura mette sulle tue ciglia** | Extension ciglia con le tre tecniche, Laminazione | `p10a` (110°), `p08a` (40°), `p07b` (0°), `p04a` (90°) |
 | 5 | **Sul lettino non devi fare niente** | campo rosa pieno, quattro passi senza nessuna durata | nessuna |
 | 6 | **Apri gli occhi** | tre visi interi capovolti, l'ultimo si raddrizza sul DM | `p12a`, `p09a` (180°), `p10b` (0° dopo la rotazione) |
 | 7 | piede | logo a 96 px, Instagram, firma DenkiCode | logo |
 
-⚠️ **L'h1 è il nome della cliente** perché il 14/9 è entrata la direttiva di
-Nicola sulla bozza Pinkploy. Il mondo era stato scelto con «Ti sdrai.» come
-titolo: quella frase è stata spostata sul bordo alto della prima fascia, dove
-apre il racconto senza fare da titolo.
+⚠️ **Giro 2, 14 settembre 2026.** Nicola: «bello ma la hero section sostituisci
+il titolo deve essere il suo nome e sotto una frase, e poi la foto subito sotto
+occupa troppo spazio così è un po' brutto sembra un mega zoom sulla faccia della
+ragazza». L'h1 era già il nome, ma «Ti sdrai.» stava sotto a 86 px e faceva da
+secondo titolo: è scesa a fare **l'h2 della sezione seguente**, dove la spina
+dello scroll resta intera (Ti sdrai · Si spegne la luce · Apri gli occhi).
+Lo zoom era vero: l'apertura partiva da `scale(2.15)` su una fascia 21:9 larga
+1440 px. La fascia dell'attacco è rientrata nella colonna — **720×405 a 1440
+(45 vh esatti, prima 1440×617), 335×188 a 375 (23 vh, prima 375×211 a tutta
+larghezza)** — e la foto parte da `scale(1.14)`. È **l'unica fascia a 16:9**
+invece che 21:9: dentro la colonna, a 21:9, restava una fessura. Le altre fasce
+a tutta pagina restano, arrivano dopo la piega e non hanno scrub di scala.
 
 ### La grafica inventata — quattro segni, tutti SVG disegnati
 
