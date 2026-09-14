@@ -238,11 +238,11 @@ sul messaggio.
 |---|---|---|---|
 | 0 | barra | nome, mestiere, bottone DM (sotto i 560 px resta la sola icona, bersaglio 44×44) | — |
 | 1 | **Laura Franzoni** | h1 col nome che entra ruotato di 90° e si raddrizza in 900 ms, una frase sola sotto, il bottone del DM e una foto dentro la colonna, 720×405 | `p07a` (90°) |
-| 2 | **Ti sdrai.** | perché le foto sono storte, e che nessuna è stata raddrizzata | `p01a` (20°), `p07c` (170°) |
-| 3 | **Si spegne la luce** | l'unico fermo della pagina: buio, ventaglio, contatore | nessuna, è tutta disegnata |
-| 4 | **Quello che Laura mette sulle tue ciglia** | Extension ciglia con le tre tecniche, Laminazione | `p10a` (110°), `p08a` (40°), `p07b` (0°), `p04a` (90°) |
-| 5 | **Sul lettino non devi fare niente** | campo rosa pieno, quattro passi senza nessuna durata | nessuna |
-| 6 | **Apri gli occhi** | tre visi interi capovolti, l'ultimo si raddrizza sul DM | `p12a`, `p09a` (180°), `p10b` (0° dopo la rotazione) |
+| 2 | **Ciglia applicate una alla volta.** | cosa fa Laura e come si sta durante il lavoro | `p01a` (20°), `p07c` (170°) |
+| 3 | **Quindici minuti al giorno senza mascara.** | l'unico fermo della pagina: buio, ventaglio, contatore | nessuna, è tutta disegnata |
+| 4 | **I trattamenti.** | Extension ciglia con le tre tecniche, Laminazione | `p10a` (110°), `p08a` (40°), `p07b` (0°), `p04a` (90°) |
+| 5 | **Che cosa succede all'appuntamento.** | campo rosa pieno, quattro passi senza nessuna durata | nessuna |
+| 6 | **Lavori finiti.** | tre visi interi capovolti, l'ultimo si raddrizza sul DM | `p12a`, `p09a` (180°), `p10b` (0° dopo la rotazione) |
 | 7 | piede | logo a 96 px, Instagram, firma DenkiCode | logo |
 
 ⚠️ **Giro 2, 14 settembre 2026.** Nicola: «bello ma la hero section sostituisci
@@ -271,7 +271,7 @@ a tutta pagina restano, arrivano dopo la piega e non hanno scrub di scala.
   vede riflessa nelle sue macro.
 - **La bussola del capovolto**: pastiglia in basso a destra, ago e gradi della
   foto che stai guardando. Vince quella più vicina al centro dello schermo.
-  È il pezzo che rende il capovolto una scelta.
+  Dal giro 3 non scrive più i gradi, li mostra solo con l'ago.
 
 ### Il trattamento delle foto
 
@@ -298,13 +298,41 @@ secondario, entrambi mescolati dai quattro: `#6E544A` sul chiaro (5,97:1),
 `#C99A86` sul nero (7,74:1). **Bodoni Moda** 600/900 display, **Schibsted
 Grotesk** 400/600 testo, con ripiego dichiarato (`local()` + `size-adjust`).
 
-### Il copy, e cosa resta da confermare
+### Il copy — riscritto al giro 3, 14 settembre 2026
+
+Nicola: «aggiusta le scritte, non lasciare note scritte da te, solo frasi utili,
+e sensate. rimuovi cose che dicono come, la migliore del mondo o la più sottile».
+
+Il testo spiegava la pagina invece del mestiere. **Fuori tutte le frasi di
+regia**: perché le foto sono storte, dove sta seduta Laura quando scatta, la
+lampada bassa, il cerchio dentro l'iride, la riga che spiegava l'indicatore dei
+gradi. I tre titoli a effetto sono diventati titoli che dicono cosa c'è sotto:
+«Ti sdrai.» → «Ciglia applicate una alla volta.», «Si spegne la luce.» →
+«Quindici minuti al giorno senza mascara.», «Apri gli occhi.» → «Lavori finiti.»
+
+**Fuori i giudizi non verificabili**: «per uno sguardo più scuro», «sembra più
+folto», «così l'occhio si apre» sono diventati descrizioni di cosa viene
+applicato. Fuori anche **«ne servono novanta per occhio»**, che era un numero
+nostro mai verificato, e **«Trasformo il tuo sguardo»**, che è la sua frase in
+bio ma è autopromozione: vale la direttiva di Pinkploy, «nemmeno se li ha
+scritti il cliente in bio».
+
+La **bussola** tiene il quadrante e l'ago che gira, ma ha perso la lettura in
+gradi: era una nota. Il **contaciglia** tiene il conto e l'etichetta «ciglia»,
+che è un'unità e non una nota. Restano i **quindici minuti** col conto in
+chiaro, perché quella frase è sua ed è l'unico numero che dichiara.
 
 Niente prezzi, orari, indirizzo, telefono, durate: non esistono e non si
-inventano. Unico canale il DM. **Da confermare con Laura** le descrizioni dei
-servizi (Extension, Volume, Volume 2D, Dolly, Laminazione) e i quattro passi
-della sezione rosa: sono scritti da noi da quello che si vede nelle foto, non
-da lei. I nomi invece sono suoi, letti nella bio e negli hashtag.
+inventano. Unico canale il DM.
+
+⚠️ **Da confermare con Laura**, ancora e sempre: le descrizioni dei cinque
+trattamenti («Una ciglia nuova applicata a mano su ognuna delle tue, una alla
+volta», «Più ciglia applicate su ogni ciglio naturale», «Due ciglia applicate su
+ogni ciglio naturale», «Ciglia lunghe al centro dell'occhio, più corte ai lati»,
+«Le tue ciglia piegate verso l'alto e fissate») e i quattro passi
+dell'appuntamento. Sono scritti da noi guardando le foto, non da lei. I **nomi**
+dei trattamenti invece sono suoi, letti in bio e negli hashtag, e le didascalie
+dicono il trattamento solo dove l'hashtag di quel post lo conferma.
 
 ### Cosa è stato misurato, il 14 settembre 2026
 
