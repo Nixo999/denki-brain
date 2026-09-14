@@ -340,3 +340,13 @@ etichette di quota e i richiami sulle foto: nominano, non spiegano. DESIGN.md
 aggiornato con «La Regola del Disegno che Non si Spiega». Overflow 0, 7/3
 ScrollTrigger come prima, `controlla-sito.py` 8/8. Commit `bc31ef4`, online,
 sbarramenti presenti.
+
+## Giro 9 — 14 settembre, la barra sul telefono
+
+Nicola, dallo screenshot a 375: «da telefono si vede così, allontana instagram
+dal suo nome, e mettilo che si noti meno». Regola in [[direttive-siti]]. Sotto
+i 761 la barra è `space-between`, il contatto è un link mono con sottolineatura
+1 px in oro, senza riquadro, area di tocco 45 px; da 761 in su invariato.
+Aria fra ROBERTA e il link: 125 px a 375, 70 a 320. Il padding alza la barra a
+109 px e `scroll-padding-top` è salito a 7rem, o l'ancora dei corsi finiva sotto
+la barra. Commit `9493aa9`, online con `?v=3`, sbarramenti presenti.

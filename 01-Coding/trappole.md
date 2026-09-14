@@ -404,6 +404,8 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   `grid-row: 1 / span N`, o le righe si dichiarano.
   ([[sito-nails-robyy]], 14 settembre)
 
+- **Un padding che alza la barra sticky sposta le ancore sotto la barra.** Su nails.robyy l'area di tocco del link in barra (padding 15px) ha portato la barra da 97 a 109px e `#corsi` finiva coperto: `scroll-padding-top` va rialzato insieme, e misurato con `getBoundingClientRect` dopo il salto. ([[sito-nails-robyy]], 14/09/2026)
+
 ## Git, account e pubblicazione
 
 - **`gh` tiene un solo account nel keyring.** Con due account, il push sulla repo
