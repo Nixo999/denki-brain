@@ -66,6 +66,10 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   (14/09), mondo «Dall'alto», 8/8 e overflow 0 su 27 larghezze. ⚠️ **Online c'è
   il giro 2**: il giro 3 del copy è fermo in locale (`93081ec` non pushato alle
   09:12). Il DM non è mai partito ed è di Patrick → [[sito-laurafranzoni]]
+- **denki-agents** registrato (14/09): piattaforma multi-agente interna, la
+  fase 1 è solo il gateway verso i modelli. Pacchetto portato da Nicola, **repo
+  non creato**, sette difetti da correggere nella spec prima di incollare il
+  prompt. Sul Mac manca Docker → [[denki-agents]]
 
 ## Cosa è bloccato, e perché
 
