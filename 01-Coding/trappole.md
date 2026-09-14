@@ -397,6 +397,12 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   della quinta voce di [[sito-fiftynine]] fra 761 e 899: a 1440 e 375 era a
   posto. → si misura sui bordi di ogni media query, e «CORSI» tagliato in barra
   si vede solo lì. ([[sito-nails-robyy]], 13-14 settembre)
+- `[TRAPPOLA]` **`grid-row: 1 / -1` su una griglia senza `grid-template-rows`
+  non arriva all'ultima riga.** `-1` si risolve sulla **griglia esplicita**, che
+  lì è una riga sola: l'elemento resta in riga 1, la fa alta quanto lui e stira
+  il contenuto accanto dentro quel vuoto. → con righe implicite serve
+  `grid-row: 1 / span N`, o le righe si dichiarano.
+  ([[sito-nails-robyy]], 14 settembre)
 
 ## Git, account e pubblicazione
 
