@@ -372,6 +372,48 @@ dichiarati.
 
 ⚠️ Queste misure sono sulla **pagina locale**: online c'è il giro 2.
 
+### Giro 4 — «è vuoto»: dieci disegni nuovi, foto più piccole, motion in più
+
+Patrick via Nicola, 14 settembre 2026: «patrick dice che è vuoto. metti qualche
+animazione piccola in più, rimpicciolisci le foto un pochino, e aggiungi dei
+disegni di qualche tipo». E sulla seconda sezione: «questa frase così all'inizio
+fa strano. togli e metti qualcosa di più semplice» → h2 «Come funziona» e una
+frase sola.
+
+**Dieci disegni nuovi**, tutti SVG a linea, nessun testo dentro, stessa palette:
+
+| disegno | dove | cosa dice |
+|---|---|---|
+| schema **extension classica** | sotto «Extension ciglia» | una applicata su ogni naturale |
+| schema **volume** | riga Volume | tre applicate su ogni naturale |
+| schema **volume 2D** | riga Volume 2D | due applicate su ogni naturale |
+| schema **dolly** | riga Dolly | le lunghe al centro, corte ai lati |
+| schema **laminazione** | sotto «Laminazione» | solo le sue, piegate in su |
+| **riga d'occhio** | attraversa la sezione dell'appuntamento | i quattro passi sono le sue tacche, allineate al pixel sopra i numeri |
+| **pettinino**, **pinzetta**, **lampada ad anello** | accanto ai passi 2, 3 e 4 | gli attrezzi che si vedono nel suo feed |
+| **ciglio in sezione** | colonna sinistra dell'attacco | la curva che cresce da naturale a extension |
+
+**`<svg>` in pagina: da 9 a 19.**
+
+**Motion aggiunta**, nella stessa lingua: i profili si tracciano in
+`stroke-dashoffset` quando entrano (1,1 s, sfalsati), l'anello di luce respira
+su nove secondi, il ventaglio si infoltisce al passaggio del mouse sui
+trattamenti, le foto hanno **tre punti percentuali** di parallasse (l'attacco
+no, ha già il suo scrub). Tutto a riposo nello stato finale, spento in
+`?cattura` e con `prefers-reduced-motion`.
+
+**Foto, un quinto in meno** per fare spazio ai disegni: attacco **720×405 →
+600×338**, fasce a tutta pagina **1440×617 → 1440×450**, trattamenti **683×292 →
+545×234**, ritratti **419×558 → 302×403**.
+
+Misurato dopo: overflow **0 su 27 larghezze**, contrasti su 42 combinazioni
+senza fallimenti, console vuota, rivelazioni **18/18**, pagina 1,73 MB,
+`controlla-sito.py` **8/8**. Commit locale `45bdb58`, non pushato.
+
+⚠️ A 375 px la lista dei passi diventa una colonna sola: le tacche 2, 3 e 4
+della riga d'occhio non stanno più sopra il loro passo, e la riga legge come una
+linea palpebrale decorativa. Da sistemare se il giro dopo tocca quella sezione.
+
 ## Contesto commerciale
 
 Riga 233 di [[2026-09-13-instagram-siti-brescia]] — `@laurafranzoni_lashmaker`,
