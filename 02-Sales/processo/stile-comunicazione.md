@@ -104,6 +104,10 @@ Vincolo fiscale attivo, dettaglio in [[vincoli-fiscali]]:
 
 Scritte da `regola.py` nel momento in cui sono state dette.
 
+### 14/09/2026 — Patrick: «non hanno proprio senso le frasi, non aggiungono niente di valore, sono solo senza senso, piuttosto togliele tanto metto la descrizione»
+
+sull'immagine di un post ci va il nome e la prova, non una riga di prosa: il testo e' il mestiere della didascalia, e una frase in piu' sull'immagine e' solo una frase da correggere
+
 ### 14/09/2026 — Patrick: «le frasi sotto il nome dell'attività non hanno senso modificale rendile sensate, in italiano e sintatticamente corrette»
 
 in un'immagine o in un titolo la riga di testo e' l'unica prosa che c'e': i frammenti nominali incollati con la virgola, senza verbo, si leggono come sciatteria
