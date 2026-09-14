@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **182 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **183 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -129,6 +129,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-12-rilanci-lead-aperti]] — I sette lead aperti al 12 settembre, coi rilanci riscritti dopo aver letto le conversazioni intere e non l'ultimo messaggio.
 - [[2026-09-13-liste-giulia-groane-vimercatese]] — Le 87 righe di Gabriele ed Edoardo riordinate per Giulia nello schema del ciclo: 27 siti, 30 DenkiShift, 30 indagine. Siti riverificati a macchina il 13/09.
 - [[2026-09-13-tre-liste-settori-nuovi]] — Le tre liste del 13 settembre - 50 DenkiShift, 50 siti su Brescia, 41 ricerca - e i testi riscritti la sera coi due mesi gratis, i siti accorciati e il sito in tutti e tre.
+- [[2026-09-14-denkishift-e-ricerca]] — Le due liste che stamattina mancavano - 50 DenkiShift e 50 ricerca di mercato, tutte in Lombardia - costruite dopo la bocciatura di Patrick sul 50-50-50.
 - [[2026-09-14-lista-siti-bs-bg]] — La lista siti del 14 settembre - 43 righe su parrucchieri e barber fra Brescia e Bergamo da 99 profili aperti - e le due liste che non sono state fatte, col motivo.
 - [[2026-09-14-rilanci-lead-aperti]] — I lead aperti al 14 settembre letti dalla posta intera - quattro bozze promesse e mai consegnate, una chiamata da fare oggi, e la seconda critica sull'AI in otto giorni.
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
