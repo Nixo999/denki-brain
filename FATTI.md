@@ -57,12 +57,23 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   mondo «lo spessore», 8/8. Nicola ha bocciato solo l'hero, la correzione è
   online. Il DM col link è di Patrick, lei ha già risposto «si prova mandami»
   → [[sito-pinkploy]]
+- **nails.robyy** (Roberta, nail artist e educator, Brescia) online su
+  `nailsrobyy.netlify.app` (14/09), mondo A «la sezione quotata», 8/8. Bozza
+  **attesa**: ha risposto «Ciao ok vediamo» al DM di Patrick. ⚠️ Sbarramenti da
+  verificare con `curl` e due regressioni di finitura chiuse all'ultimo. Il DM
+  col link è di Patrick → [[sito-nails-robyy]]
 - **Laura Franzoni** (ciglia, Brescia) online su `laurafranzoni.netlify.app`
   (14/09), mondo «Dall'alto», 8/8 e overflow 0 su 27 larghezze. ⚠️ **Online c'è
   il giro 2**: il giro 3 del copy è fermo in locale (`93081ec` non pushato alle
   09:12). Il DM non è mai partito ed è di Patrick → [[sito-laurafranzoni]]
 
 ## Cosa è bloccato, e perché
+
+- **Il campo «Chat» del banco DM non registra le risposte.** La riga
+  `@nails.robyy` del 13/09 dice ancora che il DM è partito, non che lei ha
+  risposto «Ciao ok vediamo»: la risposta è arrivata da uno screenshot di
+  Nicola. Finché il banco non la scrive, un lead che ha risposto è
+  indistinguibile da uno freddo (14/09/2026)
 
 - **La migrazione dello storico di OperO non si fa piu'** (13/09/2026). Seba:
   «non e' richiesta alcuna procedura automatizzata di migrazione per i dati
@@ -82,7 +93,9 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
 
 ## Il livello dei siti
 
-**NG Barber e Fiftynine passano, gli altri no.** Prima di pubblicare:
+**NG Barber e Fiftynine passano, gli altri no.** Dal metodo nuovo passano anche
+le bozze costruite col [[processo-siti]] intero: **nailsrobyy 8/8**, pinkploy
+8/8, laurafranzoni 8/8 (14/09/2026). Prima di pubblicare:
 
 ```bash
 python3 01-Coding/strumenti/controlla-sito.py ~/lavoro/<cartella>
