@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Errori tecnici già pagati e strade scartate, per dominio. Descrittivo, non è un rulebook - le regole stanno in convenzioni.
-updated: 2026-09-14
+updated: 2026-09-15
 verificato: 2026-09-10
 source: denkicode
 tags: [trappole, memoria, frontend, gsap, git]
@@ -527,6 +527,20 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   script risponde `undefined`, come se il selettore fosse sbagliato. → si
   ridefinisce dopo ogni navigazione, o si legge tutto in una sola valutazione.
   ([[sito-nails-robyy]], 13-14 settembre)
+
+- `[TRAPPOLA]` **Le pagine dei post da `curl` tornano il guscio di login senza
+  `og:`.** Il 15/09/2026 dodici post su dodici rispondono 623 KB senza
+  `og:title` né `og:image`: la didascalia si legge solo dal pannello, con
+  `get_page_text` a modale aperto (il testo di `<main>` arriva lo stesso), e
+  l'`h1` non esiste. Il `meta description` del profilo idem. La voce sopra su
+  `curl` vale fino a quella data. ([[sito-newfantasy]])
+- `[TRAPPOLA]` **Su Facebook la stessa foto Instagram si ingrandisce dall'URL,
+  fino a `cstp=mx…`.** La pagina `/photos` da sloggati mostra le anteprime a
+  414 px con `ctp=s552x414&cstp=mx1152x1152`: si alza `ctp` fino al valore di
+  `cstp` e arriva a quella taglia. Togliere il prefisso di ritaglio
+  (`c0.95.1152.1152a`) risponde 403. Serve per i post più vecchi dei dodici
+  visibili su Instagram, e per la copertina, che è a 946×2048.
+  ([[sito-newfantasy]])
 
 ## Liste e banco DM
 
