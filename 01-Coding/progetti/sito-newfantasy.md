@@ -191,10 +191,53 @@ gestionale, la si vede). Per venderlo serve uno store ospitato — Netlify
 Functions + Blobs, o Supabase con le RLS di [[trappole]] — ed è una giornata
 di lavoro, non un rifacimento: lo store è isolato in un modulo solo.
 
-## Direzione visiva
+## Direzione visiva — mondo B «L'agenda a tre colonne», scelto il 15/09
 
-`TODO` — la propone l'operatore di direzione (passo 2 del [[processo-siti]]),
-sceglie il direttore. Si scrive qui col seed di impeccable.
+Tre mondi proposti dall'operatore di direzione (Opus, roll di impeccable
+degradato: `concept-seed` senza rete, seed `63c5d4cf`, indice 7): A «il
+blocchetto a matrice» (ricevuta a strappo, nero su carta: inverte la polarità
+loro e si sposta su qualunque negozio), **B «l'agenda a tre colonne»**, C «la
+cartella colori» (ciocche disegnate, canvas bianco: confina con i materiali
+finti). Il direttore ha scelto **B con un innesto dal C**: le cinque foto
+entrano come campioni di colore, col colore campionato dal file.
+
+**Metafora.** La pagina dell'agenda del salone: una colonna per mano, MATTIA /
+DESY / TERRY, le ore a sinistra. Tre colonne sono tre persone, e sono finite:
+è il motivo per cui «prenotate con maggiore anticipo» ha senso.
+
+**Spina dello scroll.** (1) L'esplosione di attrezzi del logo entra dai bordi,
+si ferma, forbici e pettini si allineano e diventano le righe orarie
+dell'agenda di oggi, che si riempie da sola. H1 «New Fantasy», sotto una frase
+piccola e utile. (2) Dentro una colonna: i servizi come blocchi alti quanto
+durano (45' è metà di 90'), e i campioni di colore — le foto — con la formula
+loro (tonalizzante, nanoplastia, rigenerante). (3) La riga libera, la tua: il
+nastro del mese (l'unico pin), il giorno, la griglia a tre colonne con le righe
+libere; si prenota entrando in una riga, non compilando un modulo.
+
+**Grafica inventata.** Griglia oraria in `<svg>` (ore in mono, tre colonne,
+filetti); il blocco appuntamento alto quanto la durata; gli attrezzi che
+entrano e si allineano; il nastro del mese con le chiusure come colonne piene
+di nero. Rosso solo su «in attesa» e sul last minute di oggi.
+
+**Gestionale.** La stessa griglia, toccabile: le richieste in attesa sono
+blocchi tratteggiati sopra la colonna, un tocco le riempie o le manda fuori.
+Orari e chiusure con `input` nativi (niente trascinamenti). Nessun racconto.
+
+**Palette.** Fondo `#070707`, bianco `#F4F4F2`, grigio `#8A8A85`, filetto
+`#242422`, rosso `#E01B15`. Colori campionati dalle foto per i campioni:
+prugna `#252134`, castano-malva `#4E484F`, lilla ghiaccio `#C0BBDB`, caramello
+`#8F674D`, rame `#6E4D3B`. **Tipografia**: Bricolage Grotesque (display),
+Geist Mono (ore e durate). Skill di stile: `high-end-visual-design`, layout
+Editorial Split, nero senza mesh né glow.
+
+**Seed.** «Agenda di salone a tre colonne, una per mano: nero pieno, filetti
+bianchi, ore in mono. Il blocco appuntamento è alto quanto la durata.
+L'esplosione di attrezzi del logo entra e si allinea diventando le righe
+orarie. Un solo pin, il nastro del mese. Rosso solo per l'attesa.»
+
+**Rischio dichiarato**: la vetrina che legge come un software. La contromisura
+è l'innesto C: i campioni di colore e le loro parole fra la griglia e la
+prenotazione.
 
 ## Collegamenti
 
