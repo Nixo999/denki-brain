@@ -70,10 +70,10 @@ spruzzino, phon, due pettini, forbici, rasoio, pinze — con schizzi di polvere.
 didascalia («rosso fuoco»). Le grafiche dei post sono nero pieno con testo
 bianco in riquadri.
 
-Il logo esiste in due fonti grandi: il post «Avviso» (2048×2048, logo su nero,
-ritaglio in `assets/img/logo-newfantasy.jpg`, 760×620) e la copertina di
-Facebook (946×2048, ritaglio in scratchpad). La foto profilo è a 150 px e
-dall'URL non si ingrandisce.
+Il logo esiste in due fonti grandi: la copertina di Facebook (946×2048, il
+logo intero: ritaglio in `assets/img/logo-newfantasy.jpg`, 900×1000) e il post
+«Avviso» (2048×2048, logo su nero, un po' tagliato in alto). La foto profilo è
+a 150 px e dall'URL non si ingrandisce.
 
 ## Cosa fotografano
 
