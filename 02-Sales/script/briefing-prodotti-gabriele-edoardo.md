@@ -1,12 +1,17 @@
 ---
 riga: Serve a dare ai due nuovi cold caller la certezza sul prodotto - il primo dei tre Dieci di Belfort (flusso-vendita).
 type: risorsa
-updated: 2026-08-30
+updated: 2026-09-15
 source: claude
 tags: [script, onboarding, gabriele, edoardo, prodotti]
 ---
 
 # Briefing prodotti — messaggio da girare a Gabriele e a Edoardo
+
+> [!warning] 15 settembre 2026
+> Gabriele ed Edoardo sono fuori in via definitiva. Il quadro dei prodotti e i
+> quattro divieti valgono per [[morgan]], che non chiama ma presenta: si
+> tolgono i pezzi sulla chiamata, il resto resta.
 
 Serve a dare ai due nuovi cold caller la **certezza sul prodotto**: il primo dei
 tre Dieci di Belfort ([[flusso-vendita]]). Un agente che non sa cosa vende

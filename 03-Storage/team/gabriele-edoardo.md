@@ -1,12 +1,22 @@
 ---
-riga: Fuori dal 13 settembre 2026: hanno detto che non se la sentono, zero clienti contattati in 14 giorni. Le loro liste passano a Giulia.
+riga: Fuori in via definitiva dal 15/9/2026. Il 13 avevano detto che non se la sentono: zero chiamate in 14 giorni. Liste passate a Giulia.
 type: area
-updated: 2026-09-13
+updated: 2026-09-15
 source: denkicode
 tags: [team, cold-call, generazione-lead]
 ---
 
 # Gabriele ed Edoardo — il canale che non e' mai partito
+
+## Uscita definitiva — 15 settembre 2026
+
+> [!quote] Patrick, 15 settembre 2026
+> «uscita definitiva di edo e gabriele»
+
+Chiuso. Non si riprovano e non si contano. Il posto non lo prende un altro
+caller: entra [[morgan]], che **non chiama** e porta conoscenze →
+[[2026-09-15-morgan-entra-parrucchiere-presidio]]. La chiamata affiancata mai
+fatta resta un dato mancante, non una cosa da recuperare con loro.
 
 ## Sono fuori — 13 settembre 2026
 

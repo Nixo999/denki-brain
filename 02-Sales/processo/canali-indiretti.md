@@ -1,7 +1,7 @@
 ---
-riga: Chi puo' vendere al posto vostro - caller reclutati, agenzie a performance, rivenditori. Prezzi veri al 13 settembre 2026.
+riga: Chi vende al posto vostro - caller, agenzie a performance, rivenditori. Prezzi al 13/9/2026. Primo segnalatore in casa: Morgan, 15/9.
 type: area
-updated: 2026-09-13
+updated: 2026-09-15
 source: claude
 verificato: 2026-09-13
 tags: [generazione-lead, cold-call, partner, provvigioni]
@@ -20,7 +20,7 @@ quanto vale.
 ## Il dato che viene prima della domanda
 
 **Gabriele ed Edoardo: 0 chiamate in 9 giorni**, con script, liste e briefing
-in mano → [[gabriele-edoardo]]. Erano gente vicina, reclutata gratis, con il
+in mano → [[gabriele-edoardo]]. Fuori in via definitiva dal 15/09/2026. Erano gente vicina, reclutata gratis, con il
 materiale completo. Non hanno chiamato.
 
 Chiunque si recluti da un annuncio parte **piu' freddo di loro**. Il canale di
@@ -98,6 +98,13 @@ procacciatore gia' dentro casa dei clienti.**
   Brianza): una convenzione per i soci e' un canale, non una vendita.
   `TODO` — verificare i requisiti, quasi certamente serve P.IVA.
 
+**Il primo segnalatore c'è, dal 15 settembre 2026: [[morgan]]**, fratello di
+Patrick. Non chiama, conosce gente; il primo contatto è un parrucchiere che
+espone volantini e biglietti e parla coi clienti in cambio del sito, senza
+percentuali → [[2026-09-15-morgan-entra-parrucchiere-presidio]]. È la forma
+che regge senza P.IVA: una persona, pagata in prodotto o in niente, non una
+rete.
+
 ## Due vincoli che mordono su tutto quanto sopra
 
 1. **Senza P.IVA non si struttura una rete.** Niente contratto di agenzia,
@@ -115,4 +122,4 @@ procacciatore gia' dentro casa dei clienti.**
 
 [[generazione-lead]] · [[gabriele-edoardo]] · [[vincoli-fiscali]] ·
 [[prodotti-e-listino]] · [[flusso-vendita]] · [[team-e-vincoli]] ·
-[[metriche]] · [[denkishift]]
+[[metriche]] · [[denkishift]] · [[morgan]] · [[parrucchiere-morgan]]

@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-09-14
+updated: 2026-09-15
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **183 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **187 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -46,6 +46,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-castiglione]] — ⚠️ Sito vetrina non commissionato per castiglione-furniture, costruito il 30 agosto 2026 dai contenuti veri del loro profilo Instagram.
 - [[sito-da-caterina]] — ⚠️ Da Caterina Toelettatura Professionale, Via Introzzi 8, 21057 Olgiate Olona (VA).
 - [[sito-denkicode]] — Sito di DenkiCode. È qui che sta la galleria dei lavori - il posto dove si mostra a un cliente cosa abbiamo già fatto.
+- [[sito-dianails]] — Diana @dianails_brescia, onicotecnica e PMU a Brescia: bozza creata in C:\Users\User\Desktop\dianails-site, mondo A «la regola del 90°», 8/8 sbarramenti verificati.
 - [[sito-dsi-advertising]] — ⚠️ Sito vetrina in una pagina per D.S.I. Advertising di Piras Sebastiano, Merate (LC) - dal 1992 progetta e produce articoli promozionali per il...
 - [[sito-fiftynine]] — ⚠️ Sito vetrina in una pagina per Bar Tabacchi Fiftynine, bar tabaccheria e pizzeria in via Nazionale dei Giovi 59, Cesano Maderno (MB).
 - [[sito-laurafranzoni]] — Laura Franzoni @laurafranzoni_lashmaker, ciglia a Brescia: bozza online su laurafranzoni.netlify.app dal 14/9, mondo «Dall'alto». Online c'è il giro 2, il giro 3 è fermo in locale.
@@ -97,6 +98,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[ms-service]] — ⚠️ Lead caldo - ha chiesto lui il materiale.
 - [[nails-mania]] — ⚠️ Centro di ricostruzione unghie mani e piedi di Lory Frosio, onicotecnica dal 2005.
 - [[ng-barber]] — ⚠️ Barbershop, @ngbarberstudio123. Riga 2 dell'anello 1-b, gancio 5 - l'unico link in bio è ngbarber.my-booking-app.com, cioè un'app di prenotaz...
+- [[parrucchiere-morgan]] — Portato da Morgan il 15/9: espone volantini e biglietti e parla coi clienti in cambio del sito gratis, zero percentuali. Nome TODO.
 - [[pinkploy]] — Onicotecnica a Brescia centro, @nails_art_by_pinkploy, 832 follower. Bozza online dal 14/9, il secondo DM col link tocca a Patrick.
 - [[sebastian-torres]] — Privato, non un'azienda. Sta aprendo la sua attività, e l'attività è opero - l'app che stiamo costruendo noi è la sua idea imprenditoriale.
 - [[shari-piras]] — ⚠️ Shari Piras, tatuatrice, Merate (LC). Due account - @shari_tattooer (4.504 follower, 493 post) è la persona, @atelierselva_ (593 follower, 41...
@@ -139,14 +141,14 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 **processo/**
 
-- [[canali-indiretti]] — Chi puo' vendere al posto vostro - caller reclutati, agenzie a performance, rivenditori. Prezzi veri al 13 settembre 2026.
+- [[canali-indiretti]] — Chi vende al posto vostro - caller, agenzie a performance, rivenditori. Prezzi al 13/9/2026. Primo segnalatore in casa: Morgan, 15/9.
 - [[ciclo-settimanale]] — Dettato da Patrick il 28 agosto 2026. È il processo fisso.
 - [[core-commerciale]] — Consultazione, non obbligo. I framework con cui si costruisce un testo commerciale.
 - [[flusso-vendita]] — I quattro flussi di vendita e lo Straight Line - come un lead arriva alla chiusura.
 - [[generazione-lead]] — Il collo di bottiglia dell'azienda - da dove arrivano i lead e quanti ne servono.
 - [[materiale-offline]] — Quello che abbiamo di fisico, e a cosa è agganciato.
 - [[materiale-social]] — I post pubblicati sul profilo Instagram di DenkiCode - cosa e' uscito, con che didascalia, e dove stanno i file.
-- [[presidi-volantini]] — ⚠️ Terzo canale di acquisizione, deciso il 28 agosto 2026, dopo le cold call di Giulia e i blitz di Patrick.
+- [[presidi-volantini]] — ⚠️ Terzo canale, deciso il 28/8/2026. Primo presidio vero il 15/9/2026: un parrucchiere via Morgan, pagato col sito gratis, non a risultato.
 - [[prodotti-e-listino]] — I quattro prodotti e i prezzi. I prezzi sono indicativi - l'aggancio, non la cifra finale.
 - [[stile-comunicazione]] — Il registro dei testi che legge un cliente - Lei o Tu, voce di Patrick. Non e' il registro di Trevis.
 
@@ -202,10 +204,11 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 **team/**
 
-- [[gabriele-edoardo]] — Fuori dal 13 settembre 2026: hanno detto che non se la sentono, zero clienti contattati in 14 giorni. Le loro liste passano a Giulia.
-- [[ruoli-e-responsabilita]] — Tre persone. Sotto, chi fa cosa davvero — non i titoli.
+- [[gabriele-edoardo]] — Fuori in via definitiva dal 15/9/2026. Il 13 avevano detto che non se la sentono: zero chiamate in 14 giorni. Liste passate a Giulia.
+- [[morgan]] — Fratello di Patrick, dentro dal 15/9/2026. Non chiama, porta conoscenze: primo frutto un parrucchiere-presidio. Compenso e ore TODO.
+- [[ruoli-e-responsabilita]] — Quattro persone dal 15/9/2026. Sotto, chi fa cosa davvero — non i titoli.
 - [[setup-macchina-nuova]] — Scritto per il MacBook Air di Patrick, ma vale per qualunque macchina nuova.
-- [[team-e-vincoli]] — Quante ore ci sono davvero - tutti e tre lavorano e studiano, DenkiCode e' il terzo impegno.
+- [[team-e-vincoli]] — Quante ore ci sono davvero - Patrick, Nicola e Giulia lavorano e studiano, DenkiCode e' il terzo impegno. Morgan (15/9): TODO.
 
 ## 05-Decisioni
 
@@ -254,6 +257,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-11-niente-note-di-fonte-in-pagina]] — ⚠️ Sul sito non si scrivono note di fonte: le fonti restano nei documenti interni, la pagina dice il fatto.
 - [[2026-09-13-caller-fuori]] — Gabriele ed Edoardo si ritirano senza aver chiamato nessuno: il telefono resta su Giulia sola e le 87 righe passano a lei.
 - [[2026-09-14-denki-agents-parte-dal-gateway]] — denki-agents parte dal gateway verso i modelli - modello, prezzo e tetto di ogni task nel database, mai nel codice.
+- [[2026-09-15-morgan-entra-parrucchiere-presidio]] — Edo e Gabriele fuori per sempre. Entra Morgan (fratello di Patrick): non chiama, segnala. Primo frutto un parrucchiere pagato col sito.
 
 ## 06-Daily
 

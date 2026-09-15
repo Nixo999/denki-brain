@@ -1,7 +1,7 @@
 ---
 riga: I numeri del funnel con la data accanto. Un numero senza data non e' una metrica.
 type: area
-updated: 2026-09-13
+updated: 2026-09-15
 source: denkicode
 ---
 
@@ -63,9 +63,9 @@ righe vuote qui sopra: sono `source: denkicode`, non stime.
 |---|---|---|---|---|
 | **DM Instagram** | oltre **200** | 2 | 2, entrambe da un solo referral | **0 €** |
 | **Telefono, Giulia** | **131 righe chiuse in due settimane** (13/09) | `TODO` | 1 ([[ms-service]], non risponde più) | **0 €** |
-| **Gabriele ed Edoardo** | **0** in quattordici giorni. Canale chiuso il 13/09 → [[2026-09-13-caller-fuori]] | — | — | **0 €** |
+| **Gabriele ed Edoardo** | **0** in quattordici giorni. Canale chiuso il 13/09, fuori in via definitiva il 15/09 → [[2026-09-13-caller-fuori]] | — | — | **0 €** |
 | **Referral** | 1 ([[shari-piras]]) | 1 | 1 ([[dsi-advertising]]) | **0 €** |
-| **Presìdi** | 1 su 10 ([[bar-tabacchi-fiftynine]]) | 1 | baratto, non vendita | **0 €** |
+| **Presìdi** | 1 su 10 ([[bar-tabacchi-fiftynine]]), **+1 fuori giro il 15/09**: il parrucchiere di [[morgan]] → [[parrucchiere-morgan]] | 1 | baratto, non vendita | **0 €** |
 | **Rete personale** | non è un canale | — | [[albybike]], [[sebastian-torres]] | **400 €** |
 
 **Sei settimane, oltre 250 contatti a freddo, zero euro.** I 400 € incassati e

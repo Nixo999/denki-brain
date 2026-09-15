@@ -1,6 +1,6 @@
 # Il Word che leggono al telefono
 
-Giulia, Gabriele ed Edoardo non hanno il vault: leggono i `.docx` in
+Giulia non ha il vault (Gabriele ed Edoardo sono fuori dal 15/09/2026): leggono i `.docx` in
 `02-Sales/script/`. Questi file li generano.
 
 ```bash

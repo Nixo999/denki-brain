@@ -1,16 +1,17 @@
 ---
-riga: Tre persone. Sotto, chi fa cosa davvero — non i titoli.
+riga: Quattro persone dal 15/9/2026. Sotto, chi fa cosa davvero — non i titoli.
 type: area
-updated: 2026-08-28
+updated: 2026-09-15
 source: denkicode
 ---
 
 # Ruoli e responsabilità
 
-Tre persone. Sotto, chi fa cosa **davvero** — non i titoli.
+Quattro persone dal 15 settembre 2026. Sotto, chi fa cosa **davvero** — non
+i titoli.
 
-⚠️ Tutti e tre **lavorano e studiano**: DenkiCode è il terzo impegno di
-ciascuno. Orari, università e hardware stanno in [[team-e-vincoli]], e vanno
+⚠️ Patrick, Nicola e Giulia **lavorano e studiano**: DenkiCode è il terzo
+impegno di ciascuno. Morgan: `TODO`. Orari, università e hardware stanno in [[team-e-vincoli]], e vanno
 letti prima di proporre qualsiasi cosa che costi ore.
 
 ## Patrick Sappa — 21 anni, co-founder
@@ -82,6 +83,19 @@ anche nella vita privata e condividono le finanze. La provvigione è quindi una
 **metrica di tracciamento interno**, non un'uscita di cassa reale. Nei conti di
 marginalità va contata come tracciamento, non come costo.
 
+## Morgan — fratello di Patrick, segnalatore. Dal 15 settembre 2026
+
+**Apre porte, non chiama.**
+
+- Conosce gente e ci mette in contatto: il primo è un parrucchiere che espone
+  volantini e biglietti e parla coi clienti in cambio del sito →
+  [[parrucchiere-morgan]]
+- **Non chiama e non tratta**: il contatto passa a Patrick
+- Compenso, ore, accesso al vault: `TODO` → [[morgan]]
+
+Gabriele ed Edoardo sono usciti in via definitiva lo stesso giorno →
+[[gabriele-edoardo]].
+
 ## Il passaggio di consegne — dove si rompe
 
 ```
@@ -93,6 +107,9 @@ Patrick genera lista  →  Giulia chiama  →  Giulia fissa
                                                   ↓
                                     Patrick assiste il cliente
 ```
+
+Dal 15 settembre 2026 c'è un secondo ingresso, senza lista e senza chiamata:
+**Morgan segnala → Patrick chiude.**
 
 > [!note] Analisi di Claude — 2026-08-28
 > Il punto fragile non è un passaggio, è **il primo**: se Patrick non produce
@@ -110,4 +127,4 @@ Patrick genera lista  →  Giulia chiama  →  Giulia fissa
 ## Collegamenti
 
 [[flusso-vendita]] · [[generazione-lead]] · [[stile-comunicazione]] ·
-[[materiale-offline]] · [[metriche]]
+[[materiale-offline]] · [[metriche]] · [[morgan]] · [[gabriele-edoardo]]

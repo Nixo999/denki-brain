@@ -1,13 +1,13 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura.
-updated: 2026-09-14
-verificato: 2026-09-14
+updated: 2026-09-15
+verificato: 2026-09-15
 source: denkicode
 tags: [stato, fatti]
 ---
 
-# I fatti — stato al 14 settembre 2026
+# I fatti — stato al 15 settembre 2026
 
 **Questo file si riscrive, non si accumula.** È lo stato di adesso: quando un
 fatto cambia si sostituisce la riga, non se ne aggiunge una sotto. La storia
@@ -24,10 +24,13 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
 - Giulia Venneri, 21, cold call a provvigione. **Non ha accesso al vault.**
   **Unica persona al telefono** da oggi: ha chiuso le sue 131 righe in due
   settimane (13/09/2026), il reso conto lo deve ancora girare Patrick.
-- Gabriele ed Edoardo **fuori** (13/09/2026): «non se la sentono», zero numeri
-  chiamati in quattordici giorni. Non si contano nei piani
-  → [[2026-09-13-caller-fuori]]
-- Tutti e tre lavorano e studiano: DenkiCode è il terzo impegno → [[team-e-vincoli]]
+- Gabriele ed Edoardo **fuori in via definitiva** (15/09/2026): zero numeri
+  chiamati in quattordici giorni, non si riprovano → [[gabriele-edoardo]]
+- **Morgan, fratello di Patrick, dentro dal 15/09/2026.** Non chiama: porta
+  conoscenze. Primo frutto un parrucchiere-presidio. Compenso e ore `TODO`
+  → [[morgan]]
+- Patrick, Nicola e Giulia lavorano e studiano: DenkiCode è il terzo impegno
+  → [[team-e-vincoli]]
 
 ## Soldi
 
@@ -35,8 +38,12 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
 - Albybike: sito online e **mai pagato** (11/09/2026) → [[albybike]]
 - Nessuna P.IVA, prestazione occasionale. Nei testi «ricevuta» → [[vincoli-fiscali]]
 
-## Cosa è aperto adesso (13/09/2026)
+## Cosa è aperto adesso (15/09/2026)
 
+- **Un parrucchiere-presidio, via Morgan** (15/09): espone volantini e
+  biglietti e parla coi clienti in cambio del sito gratis, nessuna
+  percentuale. **Nome, comune e foto `TODO`**: senza, il sito non parte
+  → [[parrucchiere-morgan]], [[2026-09-15-morgan-entra-parrucchiere-presidio]]
 - **Le 87 righe di Gabriele ed Edoardo passano a Giulia** — 27 siti/e-commerce,
   30 DenkiShift, 30 indagine, zone Groane e Vimercatese, siti riverificati a
   macchina il 13/09 → [[2026-09-13-liste-giulia-groane-vimercatese]]

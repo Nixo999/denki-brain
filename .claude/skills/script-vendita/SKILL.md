@@ -1,6 +1,6 @@
 ---
 name: script-vendita
-description: Scrive script telefonici per chi chiama — Giulia, Gabriele, Edoardo — e angoli d'attacco per i quattro flussi di vendita DenkiCode. Da usare quando servono script di cold call, pattern interrupt, gestione obiezioni, messaggi WhatsApp di follow-up o testi per volantini e biglietti da visita.
+description: Scrive script telefonici per chi chiama (oggi solo Giulia) e angoli d'attacco per i quattro flussi di vendita DenkiCode. Da usare quando servono script di cold call, pattern interrupt, gestione obiezioni, messaggi WhatsApp di follow-up o testi per volantini e biglietti da visita.
 ---
 
 # Script di vendita DenkiCode
@@ -77,8 +77,8 @@ tuo giudizio.
 
 ## Il Word per chi chiama
 
-Giulia, Gabriele ed Edoardo **non hanno il vault**: leggono i `.docx` in
-`02-Sales/script/`. Si rigenerano
+Giulia **non ha il vault** (Gabriele ed Edoardo sono fuori dal 15 settembre
+2026, Morgan non chiama): legge i `.docx` in `02-Sales/script/`. Si rigenerano
 con `node build.js` da `.claude/skills/script-vendita/word/` — istruzioni nel
 `README.md` lì dentro. Chi corregge uno script corregge la nota **e** il
 `content-*.js`, poi rigenera: altrimenti al telefono resta la versione vecchia.

@@ -1,7 +1,7 @@
 ---
 riga: Quello che abbiamo di fisico, e a cosa è agganciato.
 type: area
-updated: 2026-08-28
+updated: 2026-09-15
 source: denkicode
 ---
 
@@ -13,6 +13,7 @@ Quello che abbiamo di fisico, e a cosa è agganciato.
 |---|---|---|---|
 | **Volantini** | 1.000 | Siti web (flussi A e B) | Patrick, porta-a-porta |
 | **Biglietti da visita** | 200 | Gestionali (flussi C e D) | Patrick, agli incontri |
+| **Volantini + biglietti** | `TODO` pezzi | Siti e gestionali insieme | **Il parrucchiere di Morgan**, dal 15/09/2026: esposti in salone, e lui ne parla → [[parrucchiere-morgan]] |
 
 Sono già stampati: è capitale immobilizzato che non produce finché non gira.
 
@@ -100,9 +101,11 @@ Due vie, e non vanno confuse: il **blitz** (Patrick consegna al cliente) e i
       manca il numero di telefono sul volantino, le icone del biglietto sono
       invertite (cornetta sul sito, mappamondo sul numero)
 - [ ] `TODO` — dove punta il QR? Va inquadrato e scritto in [[identita-visiva]]
+- [ ] Portare al parrucchiere di Morgan volantini con le due righe a mano e
+      biglietti, e scrivere qui quanti (15/09/2026) → [[parrucchiere-morgan]]
 
 ## Collegamenti
 
 [[flusso-vendita]] · [[generazione-lead]] · [[prodotti-e-listino]] ·
 [[ruoli-e-responsabilita]] · [[identita-visiva]] · [[metriche]] ·
-[[presidi-volantini]]
+[[presidi-volantini]] · [[parrucchiere-morgan]]

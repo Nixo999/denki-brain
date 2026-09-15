@@ -1,7 +1,7 @@
 ---
-riga: Quante ore ci sono davvero - tutti e tre lavorano e studiano, DenkiCode e' il terzo impegno.
+riga: Quante ore ci sono davvero - Patrick, Nicola e Giulia lavorano e studiano, DenkiCode e' il terzo impegno. Morgan (15/9): TODO.
 type: area
-updated: 2026-08-28
+updated: 2026-09-15
 source: denkicode
 ---
 
@@ -24,6 +24,10 @@ si possa fare qui dentro.
 **DenkiCode è il terzo impegno di tutti e tre**, dopo un lavoro dipendente e
 un'università in corso. Giulia dedica circa **un'ora al giorno** alle chiamate
 ([[metriche]]).
+
+**Morgan**, fratello di Patrick, dentro dal 15 settembre 2026 come segnalatore
+che non chiama, non ha ancora una riga: lavoro, studio e ore sono `TODO` →
+[[morgan]].
 
 ## Le tre cose che questo cambia
 

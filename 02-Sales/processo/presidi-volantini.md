@@ -1,9 +1,9 @@
 ---
-riga: Terzo canale di acquisizione, deciso il 28 agosto 2026, dopo le cold call di Giulia e i blitz di Patrick.
+riga: Terzo canale, deciso il 28/8/2026. Primo presidio vero il 15/9/2026: un parrucchiere via Morgan, pagato col sito gratis, non a risultato.
 type: area
-updated: 2026-08-28
+updated: 2026-09-15
 source: claude
-stato: da-provare
+stato: in-corso
 ---
 
 # I presìdi — la terza via
@@ -12,8 +12,10 @@ stato: da-provare
 di Giulia e i blitz di Patrick. È la via che fa girare i 1.000 volantini di
 [[materiale-offline]] **senza consumare ore di nessuno**.
 
-⚠️ **Non è ancora stato provato.** Il primo giro è previsto nella settimana del
-31 agosto 2026 → [[2026-08-28-presidi-volantini]].
+⚠️ Del giro dei dieci del 28 agosto ([[2026-08-28-presidi-volantini]]) ne
+risulta uno solo, [[bar-tabacchi-fiftynine]], a baratto ([[metriche]], 13/09).
+**Il primo presidio vero arriva il 15 settembre 2026 per conoscenza**, non dal
+giro: un parrucchiere portato da [[morgan]] → sezione in fondo.
 
 ## La regola che lo distingue dal blitz
 
@@ -61,6 +63,14 @@ un problema di ricevute ([[vincoli-fiscali]]) — si offre il risultato:
 Rischio zero per lui, e si paga solo a risultato ottenuto. Ai presìdi che il
 sito ce l'hanno già il baratto non c'è: si chiede l'appoggio e basta, e spesso
 basta.
+
+> [!warning] Eccezione decisa da Patrick il 15 settembre 2026
+> Il parrucchiere portato da [[morgan]] prende **il sito gratis subito**, non
+> a risultato: in cambio espone volantini e biglietti **e parla coi clienti**.
+> Nessuna percentuale, non la vuole. La regola sopra resta per i presìdi che
+> lasciano solo la pila; chi parla per noi si paga prima. Vale anche per
+> l'ordine «prima cliente, poi presidio»: lui è arrivato presidio →
+> [[2026-09-15-morgan-entra-parrucchiere-presidio]].
 
 ## Cosa si dice, in trenta secondi
 
@@ -128,8 +138,20 @@ l'avrebbe pagato.
 > sbagliato, il volantino parla ad attività — e la **pila anonima** senza la
 > riga a mano, che in tre giorni finisce sotto lo scontrinario.
 
+## Il primo presidio vero — 15 settembre 2026
+
+Un parrucchiere, per conoscenza di [[morgan]]: **volantini e biglietti in
+salone, e parla coi suoi clienti**, in cambio del sito. Non sta nella tabella
+delle categorie: la sua clientela è privata, e il valore non è la pila ma la
+voce. Nome, comune e quanti pezzi: `TODO` → [[parrucchiere-morgan]].
+
+Cosa resta uguale: le due righe a mano col numero di Patrick, la sigla del
+presidio sul blocco, e la misura — **contatti in ingresso al mese**. Due mesi
+a zero e si dice, anche qui.
+
 ## Collegamenti
 
 [[materiale-offline]] · [[identita-visiva]] · [[generazione-lead]] ·
 [[2026-08-28-presidi-volantini]] · [[metriche]] · [[ciclo-settimanale]] ·
-[[flusso-vendita]]
+[[flusso-vendita]] · [[morgan]] · [[parrucchiere-morgan]] ·
+[[2026-09-15-morgan-entra-parrucchiere-presidio]]
