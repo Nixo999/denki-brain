@@ -208,6 +208,22 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   trigger risultano non entrati. → `window.scrollTo({top:y, behavior:'instant'})`
   in ogni script di verifica. ([[sito-nails-robyy]], 13-14 settembre)
 
+- `[TRAPPOLA]` **Nel pannello, a viewport emulato 1440×900 e scalato, uno
+  screenshot dentro un pin fotografa uno schermo vuoto**, barra compresa, e
+  sembra che il pin abbia mollato l'elemento. La geometria
+  (`getBoundingClientRect` con `scrollTo({behavior:'instant'})`) diceva
+  `fixed`, `top 0` per tutta la corsa, e `scrollY` risultava spostato di una
+  costante rispetto a quanto chiesto: viewport fantasma. → la prova del pin si
+  fa con Brave via CDP a posizioni precise della corsa:
+  `01-Coding/strumenti/cattura-fette.mjs` (fette di viewport più cinque punti
+  dentro ogni pin, zero dipendenze). ([[sito-hairstylebrescia]], 16 settembre)
+- `[TRAPPOLA]` **`Page.captureScreenshot` via CDP può consegnare il frame
+  precedente** dopo uno `scrollTo` con scrub: due catture consecutive a fine
+  corsa sono uscite scambiate (169° dove doveva esserci 96°, e viceversa). →
+  si legge il valore dal DOM nello stesso giro e lo si scrive nel nome del
+  file, o si scatta due volte e si tiene la seconda.
+  ([[sito-hairstylebrescia]], 16 settembre)
+
 ## Immagini e `sips`
 
 - **`sips` legge le dimensioni trasposte quando il browser ruota la foto.** Su
@@ -296,6 +312,11 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   card che sembravano avere `hover-lift` e non lo avevano. → `grep
   transition-all` prima di dichiarare un linguaggio di motion unico.
   ([[sito-albybike]])
+
+- `[TRAPPOLA]` **Pinnare solo la scena delle foto lascia fuori dal pin il
+  pannello con testo e quadrante**, che scorre via mentre le foto restano
+  ferme. → si pinna il contenitore intero (`.giro-dentro`), non il figlio.
+  (operatore su Sonnet, [[sito-hairstylebrescia]], 16 settembre)
 
 ## CSS e layout
 
@@ -405,6 +426,11 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   ([[sito-nails-robyy]], 14 settembre)
 
 - **Un padding che alza la barra sticky sposta le ancore sotto la barra.** Su nails.robyy l'area di tocco del link in barra (padding 15px) ha portato la barra da 97 a 109px e `#corsi` finiva coperto: `scroll-padding-top` va rialzato insieme, e misurato con `getBoundingClientRect` dopo il salto. ([[sito-nails-robyy]], 14/09/2026)
+
+- `[TRAPPOLA]` **`figcaption` dentro un `<figure>` con `aspect-ratio` e
+  `overflow:hidden` resta tagliata e invisibile.** → `aspect-ratio` e
+  `overflow` vanno sull'`<img>`, non sul `figure` che contiene anche la
+  didascalia. (operatore su Sonnet, [[sito-hairstylebrescia]], 16 settembre)
 
 ## Git, account e pubblicazione
 
@@ -657,6 +683,18 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   un colpo. → il file grande si scrive a pezzi, e se il giro muore due volte
   il direttore costruisce da sé con la catena caricata invece di rilanciare
   una terza volta. ([[sito-newfantasy]], 16 settembre)
+
+- `[TRAPPOLA]` **`npx --no-install netlify` non trova più il CLI**: vuole
+  `netlify@27.7.0` e si ferma. La copia buona sta nella cache di npx,
+  `~/.npm/_npx/b3ca12a867cd0704/node_modules/.bin/netlify` (27.5.2), loggata
+  come Nicola, team `denkicode`. → si chiama quel binario col percorso intero.
+  ([[sito-hairstylebrescia]], 16 settembre)
+- `[TRAPPOLA]` **Il classificatore dell'auto mode marca «Production Deploy»
+  anche `curl` e la navigazione del pannello verso il sito Netlify appena
+  pubblicato**, non solo il deploy. `sites:create` e `deploy --prod` passano
+  se lanciati **uno per comando**; la verifica dei tre sbarramenti sul sito
+  vivo resta bloccata. → si dichiara il buco e il `curl` lo lancia Nicola.
+  ([[sito-hairstylebrescia]], 16 settembre)
 
 ## Collegamenti
 

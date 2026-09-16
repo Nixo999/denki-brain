@@ -73,6 +73,11 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   (14/09), mondo «Dall'alto», 8/8 e overflow 0 su 27 larghezze. ⚠️ **Online c'è
   il giro 2**: il giro 3 del copy è fermo in locale (`93081ec` non pushato alle
   09:12). Il DM non è mai partito ed è di Patrick → [[sito-laurafranzoni]]
+- **Hair Style Parrucchieri** (salone, Brescia, gancio sposa) online su
+  `hairstylebrescia.netlify.app` (16/09), mondo A «La prova», 8/8, pin
+  verificato con catture headless. ⚠️ Sbarramenti verificati nei file, non
+  con `curl` (classificatore): lo fa Nicola. **Il DM non è ancora partito**
+  ed è di Patrick → [[sito-hairstylebrescia]]
 - **New Fantasy Parrucchieri** (Lurate Caccivio, `@newfantasy_parrucchieri`) online
   su `newfantasy-parrucchieri.netlify.app` (16/09), mondo B «l'agenda a tre
   colonne», 8/8, sbarramenti con `curl`. **Prenotazioni e gestionale interni
@@ -113,7 +118,7 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
 
 **NG Barber e Fiftynine passano, gli altri no.** Dal metodo nuovo passano anche
 le bozze costruite col [[processo-siti]] intero: **nailsrobyy 8/8**, pinkploy
-8/8, laurafranzoni 8/8 (14/09/2026). Prima di pubblicare:
+8/8, laurafranzoni 8/8 (14/09/2026), hairstylebrescia 8/8 (16/09/2026). Prima di pubblicare:
 
 ```bash
 python3 01-Coding/strumenti/controlla-sito.py ~/lavoro/<cartella>

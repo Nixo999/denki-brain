@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Hair Style Parrucchieri @hairstyle_brescia, salone a Brescia (via del Risorgimento 73), gancio sposa - bozza col processo intero, mondo A «La prova» scelto, in costruzione.
+riga: Hair Style Parrucchieri @hairstyle_brescia, salone a Brescia, gancio sposa - bozza online su hairstylebrescia.netlify.app dal 16/9, mondo A «La prova», 8/8, DM non partito.
 status: attivo
 client: hairstyle-brescia
 stack: html-css-js
@@ -309,6 +309,69 @@ inventate: al massimo un segno disegnato del posto.
 **Fuori**: «prova», «impeccabile» come vanto, «i migliori», «da anni», numeri
 di spose, orari, prezzi, recensioni, nomi, un form, «Urago Mella» nel testo
 (è un hashtag loro, non un indirizzo dichiarato).
+
+## Passo 4-5 — costruzione e verifica, 16 settembre 2026
+
+Operatore su **Sonnet** (scelta di risorse: il limite di sessione era scattato
+la sera prima sull'operatore di direzione su Opus), brief magro in modalità
+ponytail: idraulica riusata da `nailsrobyy-site` (pin con scrub, fallback sotto
+761, barra mobile, apertura in CSS), catena al minimo obbligatorio (`impeccable
+context`, `craft-floor`, `high-end-visual-design`), `impeccable detect` a fine
+giro. Commit `853401d`.
+
+| | |
+|---|---|
+| grafica inventata | **13 `<svg>` inline**: quadrante dei gradi con ago e lettura numerica, ciocca-torchon a `stroke-dasharray`, sei forcine (divisori e menu, inclinazioni tutte diverse), fila di nove strass, rosa delle tre viste nel footer, mirino «73» di Dove siamo |
+| foto | **12 su 16** a 1080-1440 px, colonna 3:4, `object-fit: cover`, zero raggio e zero cornice. Fuori p19a-c: il brief diceva dodici |
+| h1 | «Hair Style Parrucchieri», sotto la frase piccola |
+| pin | uno, su `.giro-dentro` da 761 px: p01 → p02 → p03 col quadrante 0-180, poi p22 → p24 con gli strass che si accendono, all'ultimo grado «030 381815» in `tel:`; sotto 761 scrub senza pin |
+| apertura | tutta in CSS (`.velo`): taupe, quadrante che si accende, ago 0-180 in 900 ms, p02 che sale, il nome |
+| ambiente | l'ago dell'hero che respira in loop |
+
+Misurato dall'operatore: overflow **0** a 320/375/414/760/761/768/1024/1440,
+console pulita, 1 ScrollTrigger (pin a 1440, senza pin a 375), `?cattura`
+pagina completa, `controlla-sito.py` **8/8**, `detect` 5 finding rivisti e
+tenuti (contrasto reale 9,8:1 sul castano).
+
+Guardato dal direttore con **catture headless, Brave via CDP**
+(`01-Coding/strumenti/cattura-fette.mjs`: fette di viewport a 1440×900 e
+375×812 più cinque posizioni dentro il pin): il pin gira come deve (26° → 106°
+sulla madre dello sposo, 11° → 169° sulla sposa, poi il numero), la pagina
+intera a 1440 e a 375 è quella disegnata. Lo schermo vuoto visto prima nel
+pannello era un artefatto del pannello → [[trappole]].
+
+Una frase del copy non entrata: «Raccolto morbido con nodo a rosa.» (p19
+fuori). Tutto il resto verbatim.
+
+## Passo 6 — dove sta
+
+✅ Repo **`Nixo999/hairstylebrescia-site`**, privata, `main` = `853401d`,
+creata con `gh`.
+✅ Sito **`hairstylebrescia`** sul team `denkicode` (slug `nicola-la-rezza`),
+id `e26acbe4-d9f3-4505-ad4f-b36ca68c175f`, <https://hairstylebrescia.netlify.app>,
+deploy dal CLI (`--prod --no-build`, binario 27.5.2 nella cache di npx) il
+16/09 alle 07:30, **non collegato al repo**: un push non ripubblica.
+⚠️ **Sbarramenti verificati nei file** (`controlla-sito.py` 8/8: meta,
+`netlify.toml`, `robots.txt`), **non sul sito vivo**: il classificatore
+dell'auto mode ha bloccato `curl` e la navigazione del pannello verso l'URL
+come «Production Deploy». Il controllo lo fa Nicola:
+
+```bash
+curl -sI https://hairstylebrescia.netlify.app/ | grep -i x-robots; curl -s https://hairstylebrescia.netlify.app/robots.txt
+```
+
+Nel pannello la home si è aperta (console vuota) e in basso a destra compare
+un badge «Powered by Netlify» che non è nostro: da capire se è del piano e se
+si toglie.
+
+## Cosa resta aperto
+
+⬜ La verifica `curl` dei tre sbarramenti sul sito vivo (sopra). ⬜ Il badge
+Netlify. ⬜ Safari su iPhone. ⬜ Apertura e motion viva viste solo a 3,8 s dal
+load nelle catture. ⬜ Finish review di impeccable non fatta (scelta di
+risorse). ⬜ **Il DM è di Patrick e non è ancora partito**: il link va nel
+secondo messaggio. ⬜ Scheda cliente `02-Sales/clienti/hairstyle-brescia.md`.
+⬜ I dieci `TODO` da chiedere a loro.
 
 ## Collegamenti
 

@@ -38,6 +38,18 @@ Colonne: **Quando** (data e ora) · **Chi** (persona, e `+claude` se il lavoro �
 stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 (`—` se non toccato, `sviluppo`/`produzione` + stato) · **Cosa** · **Commit**.
 
+## 2026-09-16
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| 07:40 | Nicola +claude | [[sito-hairstylebrescia]] | `hairstylebrescia-site` | — | Bozza Hair Style Parrucchieri (Brescia, gancio sposa) costruita col processo intero da un operatore su Sonnet: mondo A «La prova», 13 svg, un pin, 8/8; repo privata `Nixo999/hairstylebrescia-site`, online su hairstylebrescia.netlify.app coi tre sbarramenti nei file (`curl` sul vivo bloccato dal classificatore, lo fa Nicola) | `853401d` |
+
+## 2026-09-15
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| 22:30 | Nicola +claude | [[sito-hairstylebrescia]] | `denki-brain` | — | Passi 0-2: essenza dal profilo, 18 foto native, PRODUCT.md, tre mondi dall'operatore di direzione su Opus (seed `c44a1a4d`), scelto A + forcine di B, copy del direttore verbatim | `14f9ddb` `46ff849` |
+
 ## 2026-09-14
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |

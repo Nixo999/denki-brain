@@ -21,4 +21,6 @@ Una nota per attrezzo, in `kebab-case`.
 | Supabase | database di [[opero]] e [[denkishift]] | due progetti distinti, non confonderli |
 | Netlify | pubblicazione dei siti **e delle bozze da mostrare** | → [[netlify]] |
 
+- `cattura-fette.mjs` — catture di pagina con Brave headless via CDP: fette di viewport a 1440 e a 375 più cinque posizioni dentro ogni pin di ScrollTrigger. Il pannello non fotografa in modo attendibile dopo lo scroll; questo sì. `node 01-Coding/strumenti/cattura-fette.mjs <url> <w> <h> <mobile 0|1> <cartella> <prefisso>`
+
 Le credenziali **non stanno qui**: vedi [[credenziali]].
