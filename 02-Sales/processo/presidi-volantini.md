@@ -1,7 +1,7 @@
 ---
 riga: Terzo canale, deciso il 28/8/2026. Primo presidio vero il 15/9/2026: un parrucchiere via Morgan, pagato col sito gratis, non a risultato.
 type: area
-updated: 2026-09-15
+updated: 2026-09-16
 source: claude
 stato: in-corso
 ---
@@ -85,18 +85,21 @@ Sul volantino stampato **non c'è il numero di telefono** ([[identita-visiva]]),
 e qui non c'è la chiamata di Giulia a 48 ore a raccogliere: chi lo prende in
 mano non ha modo di rispondere.
 
-I blocchi si preparano **prima**, a casa, trenta alla volta, con due righe a
-mano sul retro — il lato «STANCHI DI ESSERE INVISIBILI ONLINE?», che è quello
-che si lascia in vista:
+Dal **16 settembre 2026** quelle due righe non si scrivono più a mano: c'è un
+**tagliandino stampato** da attaccare sul volantino, dodici per foglio A4,
+bianco e nero (`03-Storage/brand/stampa/tagliandino-bozza-gratuita.pdf` →
+[[identita-visiva]]). Dice:
 
 ```
-Bozza gratuita del sito, senza impegno.
-Patrick 392 749 2448
+Bozza gratuita del tuo sito — la vedi prima, poi decidi. Nessun impegno.
+392 749 2448 · Patrick · chiama o scrivi su WhatsApp
 ```
 
-Sul blocco si scrive anche **da chi è stato lasciato**, una sigla in un angolo:
-è tutto il tracciamento che serve. Quando qualcuno chiama si sa da quale
-presidio è uscito, senza QR e senza ristampe.
+Si attacca sul lato «STANCHI DI ESSERE INVISIBILI ONLINE?», che è quello che
+si lascia in vista. La sigla del presidio resta scritta a mano, nel campo
+`rif. ______` in fondo al tagliandino: è tutto il tracciamento che serve.
+Quando qualcuno chiama si sa da quale presidio è uscito, senza QR e senza
+ristampe.
 
 ## Come si misura, e quando si chiude un presidio
 
@@ -145,8 +148,8 @@ salone, e parla coi suoi clienti**, in cambio del sito. Non sta nella tabella
 delle categorie: la sua clientela è privata, e il valore non è la pila ma la
 voce. Nome, comune e quanti pezzi: `TODO` → [[parrucchiere-morgan]].
 
-Cosa resta uguale: le due righe a mano col numero di Patrick, la sigla del
-presidio sul blocco, e la misura — **contatti in ingresso al mese**. Due mesi
+Cosa resta uguale: il numero di Patrick in vista sul tagliandino, la sigla del
+presidio scritta a mano, e la misura — **contatti in ingresso al mese**. Due mesi
 a zero e si dice, anche qui.
 
 ## Collegamenti

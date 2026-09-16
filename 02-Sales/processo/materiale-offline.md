@@ -1,7 +1,7 @@
 ---
 riga: Quello che abbiamo di fisico, e a cosa è agganciato.
 type: area
-updated: 2026-09-15
+updated: 2026-09-16
 source: denkicode
 ---
 
@@ -35,6 +35,15 @@ clienti della zona scelgano i vostri concorrenti»*. Tre promesse — vetrina
 online, **menù e cataloghi digitali**, «zero stress» sul lato tecnico — e la
 chiusura: preventivo rapido o **consulenza gratuita**. Contatti:
 `info@denkicode.com` e `www.denkicode.com`.
+
+**Tagliandino «bozza gratuita» — 16 settembre 2026.** Non è un materiale a sé:
+si attacca sul retro del volantino, dove prima si scrivevano due righe a mano.
+Fondo bianco, solo nero e grigi (stampa in ufficio), 90×42 mm, dodici per
+foglio A4. Sopra: *«Siti per attività della zona»*, *«Bozza gratuita del tuo
+sito — la vedi prima, poi decidi. Nessun impegno.»*, il numero **392 749 2448**
+grande con *«Patrick · chiama o scrivi su WhatsApp»*, e in fondo `DENKICODE ·
+denkicode.com` più il campo `rif. ______` per la sigla del presidio. È il pezzo
+che mancava al volantino: il modo di rispondere → [[presidi-volantini]].
 
 **Biglietto da visita.** Fronte: Patrick Sappa, Co-founder, sito, email,
 **+39 392 749 2448**, e un QR etichettato *«ricerca di mercato — ottimizza i

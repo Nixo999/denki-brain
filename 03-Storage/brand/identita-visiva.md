@@ -1,7 +1,7 @@
 ---
 riga: I file vettoriali e i sorgenti di stampa di DenkiCode, portati nel vault il 28 agosto 2026 da ~/Desktop/denki-pubblicità sul Mac di Patrick,...
 type: risorsa
-updated: 2026-09-08
+updated: 2026-09-16
 source: claude
 tags: [brand, stampa, materiale]
 ---
@@ -78,6 +78,8 @@ si usa questo SVG ma si riesporta dal sorgente Affinity.
 | `volantino-fronte-v2.af` | **Sorgente** Affinity del fronte | 29 giugno 2026 |
 | `bigliettino-demo.af` | **Sorgente** Affinity del biglietto | 29 giugno 2026 |
 | `volantino-retro-finito.af~tmp~` | File temporaneo di Affinity | 29 giugno 2026 |
+| `tagliandino-bozza-gratuita.html` | **Sorgente** del tagliandino da attaccare al volantino: 12 per foglio A4, solo nero e grigi, fondo bianco. Si modifica questo e si riesporta | 16 settembre 2026 |
+| `tagliandino-bozza-gratuita.pdf` | Il foglio da stampare, A4, 1 pagina | 16 settembre 2026 |
 
 I nomi sono stati portati in `kebab-case` come vuole il vault. Sul Desktop di
 Patrick si chiamano ancora `VOLANTINO FRONTE V2.af`, `Presentazione logo.ai` e
