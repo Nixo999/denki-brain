@@ -40,6 +40,11 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
 
 ## Cosa è aperto adesso (15/09/2026)
 
+- **V-BAG, gestionale con login** pushato il 16/09 (`28f51ad`): Giulia
+  pubblica dal telefono via Netlify Function + commit su GitHub. **Spento
+  finché Nicola non mette `ADMIN_PASSWORD` e `GITHUB_TOKEN` su Netlify.**
+  Palette (11 colori) e manici (9) disegnati in SVG, WhatsApp `3924944950`
+  → [[2026-09-16-vbag-gestionale-login]]
 - **Un parrucchiere-presidio, via Morgan** (15/09): espone volantini e
   biglietti e parla coi clienti in cambio del sito gratis, nessuna
   percentuale. **Nome, comune e foto `TODO`**: senza, il sito non parte
