@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 16/09/2026 — Nicola: «togli il carosello di frasi»
+
+Bozza Barbershop SNIA giro 1: il nastro di parole in corsa sotto l'hero (marquee). Non si mette su nessun sito: e' un elemento da template che non dice niente e mangia una fascia intera
+
 ### 16/09/2026 — Nicola: «è bellissimo ma devi rifare tutta la parte di script, le scritte fanno schifo sembra fatto da un bambino di 10 anni devono essere professionali»
 
 bozza Custom Beauty Nails online, giro 1: il copy era tutto in frasi corte e spezzate ('Rosso pieno, mandorla, niente altro sopra'), lessico da conversazione e nessuna competenza di mestiere in vista. E' la seconda volta dopo Mikuma dell'11 settembre: 'discorsivo' non vuol dire frasi da due parole, vuol dire periodi interi con dentro il mestiere
