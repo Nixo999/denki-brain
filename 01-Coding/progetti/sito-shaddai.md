@@ -60,3 +60,35 @@ sito regge su grafica inventata, non sulle foto.
 
 prezzi · indirizzo o raggio del domicilio · orari · nome proprio · recensioni
 testuali (stanno in una storia in evidenza)
+
+## Il mondo scelto — «La messa a fuoco»
+
+Il banco di prova dell'oculista: lei non vende ciglia, tara uno sguardo. Guarda,
+misura, prova, corregge. Gli strumenti non sono una metafora prestata, sono i
+suoi numeri veri — diametro 0.07, curvatura CC, lunghezze da 8 a 11 mm. Seed di
+impeccable `d11e5a6f`, scope `direction`, modo `persuade`. I due mondi e i sette
+candidati scartati stanno in `MONDO.md` dentro il repo.
+
+Tenuti fuori di proposito: la vetrina beauty crema + serif alto contrasto + oro
+rosa, e il suo opposto prevedibile, nero + neon.
+
+**26 `<svg>` inline**, un pin solo, calibro 8-11 mm che corre col cursore,
+rotaia a quattro stazioni, diaframma che apre le domande, braccio rotante sulla
+mappa della zona. Il copy e' preso dal registro dei siti lash veri
+(`lenalashes.it`, `daianalashartist.it`; `giulialashartist.it` letto come
+contro-esempio e scartato), poi passato da [[voce-denkicode]].
+
+`controlla-sito.py` **8 su 8**. Overflow orizzontale zero a sette larghezze,
+nessun contrasto sotto AA a 1440 e 375, console pulita, pagina completa senza JS
+(8112 px, zero elementi invisibili).
+
+## Aperto
+
+- **Mai vista su un browser vero ne' su un telefono fisico**: le misure sono
+  tutte da Chrome headless via CDP.
+- `detect.mjs` di impeccable gira **DEGRADED** (mancano htmlparser2, css-select,
+  css-tree): il suo `[]` e' un sotto-conteggio, non un via libera.
+- Su 375 le foto degli effetti stanno dentro card: da guardare contro la
+  direttiva «niente foto in cornicette» di [[direttive-siti]].
+- Non pubblicata. Nessun remote, i tre sbarramenti sono al loro posto.
+

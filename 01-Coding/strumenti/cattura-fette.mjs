@@ -6,17 +6,23 @@
 //       node cattura-fette.mjs http://localhost:8791/ 375 812 1 /tmp/catture m
 // Poi si guardano i PNG (sips -Z 720 per ridurli). Nato su sito-hairstylebrescia, 16/09/2026.
 import { spawn } from 'node:child_process'
-import { writeFileSync, mkdirSync, rmSync } from 'node:fs'
+import { existsSync, writeFileSync, mkdirSync, rmSync } from 'node:fs'
 const [url, W, H, MOB, cartella, prefisso] = process.argv.slice(2)
 const PORTA = 9334, profilo = cartella + '/profilo-brave'
 rmSync(profilo, { recursive: true, force: true }); mkdirSync(cartella, { recursive: true })
-const brave = spawn('/Applications/Brave Browser.app/Contents/MacOS/Brave Browser', [
+// Brave se c'e', se no Chrome: su alcune macchine di casa Brave non e' installato.
+const CANDIDATI = [process.env.BROWSER_CATTURE,
+  '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
+  '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'].filter(Boolean)
+const eseguibile = CANDIDATI.find(p => existsSync(p))
+if (!eseguibile) throw new Error('nessun browser headless trovato: ' + CANDIDATI.join(' · '))
+const brave = spawn(eseguibile, [
   '--headless=new', '--disable-gpu', '--hide-scrollbars', `--remote-debugging-port=${PORTA}`,
   `--user-data-dir=${profilo}`, '--no-first-run', '--no-default-browser-check', 'about:blank'], { stdio: 'ignore' })
 const attesa = ms => new Promise(r => setTimeout(r, ms))
 let pagine
 for (let i = 0; i < 60; i++) { try { pagine = await (await fetch(`http://127.0.0.1:${PORTA}/json`)).json(); if (pagine.length) break } catch {} await attesa(250) }
-if (!pagine) { brave.kill(); throw new Error('Brave non risponde') }
+if (!pagine) { brave.kill(); throw new Error('il browser headless non risponde') }
 const ws = new WebSocket(pagine.find(p => p.type === 'page').webSocketDebuggerUrl)
 await new Promise(r => ws.onopen = r)
 let n = 0; const coda = new Map(); const eventi = []
