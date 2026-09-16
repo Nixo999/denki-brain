@@ -1,7 +1,7 @@
 ---
 riga: Il registro dei testi che legge un cliente - Lei o Tu, voce di Patrick. Non e' il registro di Trevis.
 type: risorsa
-updated: 2026-09-14
+updated: 2026-09-16
 source: denkicode
 ---
 
@@ -103,6 +103,10 @@ Vincolo fiscale attivo, dettaglio in [[vincoli-fiscali]]:
 ## Regole date a voce
 
 Scritte da `regola.py` nel momento in cui sono state dette.
+
+### 16/09/2026 — Patrick: «mi piace molto, ma le scritte non sono umane e discorsive, mantieni il significato ma aggiusta le frasi e i titoli»
+
+le otto storie del 16 settembre erano scritte per sentenze: titolo assertivo e corpo telegrafico, corretti ma da manuale. Un testo che sta su un'immagine si legge come parlato, con il soggetto esplicito e le frasi che si tengono, non come una riga di documentazione
 
 ### 14/09/2026 — Patrick: «non hanno proprio senso le frasi, non aggiungono niente di valore, sono solo senza senso, piuttosto togliele tanto metto la descrizione»
 
