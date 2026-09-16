@@ -95,8 +95,10 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   **Prima la parte che fa i siti**: Nicola la vuole online con un login serio,
   una pagina progetti con siti e gestionali, una chat per progetto e la
   creazione dei siti autonoma con Fable e Astra. Ordine approvato: gateway,
-  cantiere autonomo da riga di comando, piattaforma. La spec della fase 2 va
-  riscritta → [[denki-agents]], [[2026-09-16-denki-agents-prima-i-siti]]
+  cantiere autonomo da riga di comando, piattaforma. **Il cantiere gira come
+  meccanismo** (17/09): un giro di prova su Haiku, 0,22 USD. Il primo sito vero
+  aspetta due decisioni di Nicola, il budget con il limite della chiave da
+  alzare e il lead → [[denki-agents]], [[2026-09-16-denki-agents-prima-i-siti]]
 
 ## Cosa è bloccato, e perché
 

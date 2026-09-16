@@ -3,7 +3,7 @@ riga: Piattaforma interna multi-agente - ogni task sul suo modello via LiteLLM, 
 type: progetto
 status: attivo
 client: interno
-stack: [node-22, typescript, postgres-16, litellm, docker-compose, zod, pg, openai-sdk]
+stack: [node-22, typescript, postgres-16, litellm, docker-compose, zod, pg, openai-sdk, claude-agent-sdk]
 started: 2026-09-14
 deadline: TODO
 updated: 2026-09-17
@@ -27,7 +27,9 @@ locale creato, spec corretta e listino controllato sulle pagine ufficiali;
 **fase 1 chiusa il 16/09/2026**: le cinque condizioni della definizione di fatto
 provate con chiamate vere sul Mac, commit solo locali → [[registro-interventi]].
 Adesso il cantiere autonomo, poi la piattaforma online →
-[[2026-09-16-denki-agents-prima-i-siti]].
+[[2026-09-16-denki-agents-prima-i-siti]]. **Il cantiere gira come meccanismo**
+(17/09/2026): `pnpm run cantiere` su Haiku ha fatto un giro di prova completo per
+0,22 USD. Il primo sito vero aspetta budget e lead → `docs/spec-cantiere.md`.
 
 La fase 1 è solo il gateway verso i modelli: tre tabelle Postgres (`modelli`,
 `task_routing`, `esecuzioni`), LiteLLM come proxy unico, `esegui(task, input)`
@@ -81,6 +83,10 @@ questa nota.
 - [x] prompt del pacchetto eseguito e fase 1 chiusa (16/09/2026): numeri, scelte e problemi in `docs/handoff.md`
 - [ ] Gemini 3.8 Flash ragiona coi token d'uscita: `seo_meta` esce troncato a 1.500 token. Manca un modo di regolare il ragionamento per task (16/09/2026)
 - [ ] push dei commit: Nicola non ha ancora deciso se serve avere tutto su git (16/09/2026)
+- [ ] cantiere, foto da Instagram in automatico: Apify costerebbe 0-19 USD al mese, ma i Termini di Instagram vietano la raccolta automatica e nelle foto ci sono persone. Decide Nicola (17/09/2026)
+- [ ] cantiere, primo sito vero: budget da decidere e limite di 20 USD al mese della chiave Anthropic da alzare; un giro di prova a prezzi Fable costerebbe 1,73 USD (17/09/2026)
+- [ ] cantiere, lead del primo sito: meglio una bozza gia' sotto il livello, Lobidu' o Da Caterina (17/09/2026)
+- [ ] server: il CX22 del pacchetto non si vende dal 01/01/2026, e il 17/09 Hetzner segna non disponibili CX e CAX. Con un browser dentro servono 8 GB (17/09/2026)
 - [x] fase 2: embedding su `text-embedding-3-small` a 768 dimensioni (`1c92389`, 16/09/2026). Non per il prezzo: è l'unico a 0,02 $ con l'endpoint embeddings documentato in LiteLLM. OpenAI non dichiara l'italiano: se il recupero è debole si cambia modello e si rifà l'indice, quattro centesimi
 - [ ] fase 2: chi è `momo`? Una lista chiamate ha bisogno di un destinatario (16/09/2026)
 - [ ] fase 2: i due CSV dei contattati si importano una volta sola, poi il banco scrive nel database → [[contattati]]
