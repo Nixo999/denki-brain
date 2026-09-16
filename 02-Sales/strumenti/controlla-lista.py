@@ -91,7 +91,8 @@ def controlla(p):
             "e finche' non lo scrivi la riga dice «non ha sito» senza saperlo")
 
     persa = [r.get("Account IG", "?") for r in righe
-             if re.search(r"ricerca fallita|http error (429|403)|urlopen error"   # 16/09/2026: «403» da solo prendeva «403 post» e i telefoni, r[col], re.I)]
+             # 16/09/2026: «403» da solo prendeva «403 post» e i numeri di telefono
+             if re.search(r"ricerca fallita|http error (429|403)|urlopen error", r[col], re.I)]
     if persa:
         errori.append(
             f"{len(persa)} righe dove i motori hanno rifiutato la richiesta (429/403/timeout) "
