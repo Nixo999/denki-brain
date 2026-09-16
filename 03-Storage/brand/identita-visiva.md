@@ -32,6 +32,8 @@ sono i file, quale si usa quando, e cosa manca.
 | `logo-simbolo.svg` | **Solo il simbolo** (anello con 気), fondi chiari, 4,5 KB | La firma «Powered by DenkiCode» nel piè di pagina dei siti |
 | `logo-simbolo-scuro.svg` | Stesso simbolo per fondi scuri | Stessa firma, su footer nero o grigio |
 | `logo-simbolo-bn.svg` | **Il simbolo in soli grigi**, per la stampa in ufficio: stessi tracciati, la metà col gradiente diventa `#7D7D7D` | Materiale stampato in bianco e nero, tipo il tagliandino |
+| `logo-lockup-mono.svg` | **Il marchio intero — anello, 気, DENKICODE e il payoff — in un colore solo**, fatto il 16/09/2026. I gradienti restano, ma le fermate sono `currentColor`: il logo prende il colore del testo che lo contiene. La tavola di presentazione è stata potata di tutto ciò che stava fuori dal `viewBox`, **da 148 KB a 25 KB** | Quando il marchio deve stare nella palette del sito che lo ospita, e non con i suoi viola. Nato per [[sito-barbershop-snia]], dove Nicola l'ha chiesto in rosso |
+| `logo-simbolo-mono.svg` | Stessa cosa, **solo il simbolo**, 4,3 KB | Firma nel piè di pagina quando il footer non è né bianco né nero |
 
 Il marchio è del **13 maggio 2026** e non è più stato toccato: è la parte
 stabile dell'identità.

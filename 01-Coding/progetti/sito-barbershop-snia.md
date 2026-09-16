@@ -123,6 +123,38 @@ il trapianto in Albania». Non è verificato da nessuna parte. Adesso dice solo
 quello che è dimostrabile — il pacchetto lo propone lui (suo post) e a Tirana
 c'è stato (suo post).
 
+## Giro 2 — le correzioni di Nicola, 16/09
+
+> «togli il carosello di frasi, migliora le espressioni, sintassi errata, tono
+> sbagliato, impostazione delle frasi errata ecc ecc, il logo di denki in basso,
+> deve essere il nostro ufficiale in rosso al posto di quel simbolo che hai
+> messo... metti qualcossa su di noi e sui trapianti anche in alto, cosi uno non
+> deve scorrere tutto il sito»
+
+Tutte e quattro finite in [[direttive-siti]] nel momento in cui sono state dette.
+
+- **Via il nastro di frasi in corsa.** Al suo posto, subito sotto l'hero, le due
+  cose che fa in due carte — taglio e barba, trapianto da 1.800 € — e sotto una
+  riga con il logo DenkiCode rosso e la frase di Andrea. Chi arriva per il
+  trapianto adesso lo trova senza scorrere la pagina intera.
+- **Copy riscritto riga per riga.** Le frasi lunghe c'erano già, ma l'italiano
+  no: «il classico lo taglio di forbice e pettine» senza preposizione, «il
+  discorso cambia e lo faccio in bottega» con il pronome che non si capisce a
+  cosa si riferisce, «il taglio viene fuori mentre si parla d'altro».
+- **Il logo DenkiCode è quello ufficiale, in rosso**, nel capitolo e nella
+  firma. I gradienti viola-magenta sono stati mappati su `currentColor` tenendo
+  i `<linearGradient>` al loro posto (cancellarli fa sparire metà marchio,
+  perché il 気 e la parola CODE sono riempiti dal gradiente), e la tavola di
+  presentazione è stata potata di tutto quello che stava fuori dal `viewBox`:
+  **da 148 KB a 25 KB**. I due file mono sono in [[identita-visiva]].
+- Il titolo del capitolo non è più «DenkiCode», che il logo dice già: è
+  **«Chi mi ha fatto il sito»**.
+- Aggiunto `--filo-chiaro:#e8442f` per il testo rosso su nero: il rosso del filo
+  su `#121212` dà 3,58 e sotto i 18 px non passa AA.
+
+Rimisurato: 8/8, **overflow 0 su tredici larghezze** da 320 a 1440, **0 testi
+sotto AA** (con il fondo composito, non quello dichiarato), console pulita.
+
 ## Non verificato, e aperto
 
 - ⬜ **Non pubblicato**: il comando Netlify è stato bloccato dal classificatore
