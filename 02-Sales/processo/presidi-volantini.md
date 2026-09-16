@@ -86,7 +86,7 @@ e qui non c'è la chiamata di Giulia a 48 ore a raccogliere: chi lo prende in
 mano non ha modo di rispondere.
 
 Dal **16 settembre 2026** quelle due righe non si scrivono più a mano: c'è un
-**tagliandino stampato** da attaccare sul volantino, dodici per foglio A4,
+**tagliandino stampato** da attaccare sul volantino, dieci per foglio A4,
 bianco e nero (`03-Storage/brand/stampa/tagliandino-bozza-gratuita.pdf` →
 [[identita-visiva]]). Dice:
 

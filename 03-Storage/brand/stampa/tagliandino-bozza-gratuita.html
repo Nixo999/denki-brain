@@ -7,58 +7,43 @@
   @page { size: A4; margin: 10mm; }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; background: #fff; color: #000; }
-  body {
-    font-family: Helvetica, Arial, "Helvetica Neue", sans-serif;
-    -webkit-print-color-adjust: exact; print-color-adjust: exact;
-  }
+  body { font-family: Helvetica, Arial, "Helvetica Neue", sans-serif;
+         -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 
+  /* 10 per foglio A4: 2 colonne da 90mm, 5 righe da 53mm */
   .foglio {
-    width: 190mm;
-    margin: 0 auto;
+    width: 188mm; margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 90mm);
-    grid-auto-rows: 42mm;
-    gap: 3mm 7mm;
+    grid-auto-rows: 53mm;
+    gap: 2mm 8mm;
     justify-content: center;
   }
 
   .tag {
-    border: 0.3mm dashed #9a9a9a;
-    padding: 4.5mm 6mm 4mm;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    border: 0.3mm dashed #a0a0a0;
+    padding: 5mm 6mm;
+    display: flex; flex-direction: column;
+    overflow: hidden;
   }
 
-  .testa { display: flex; align-items: center; justify-content: space-between; gap: 3mm; }
+  .testa { display: flex; align-items: center; justify-content: space-between; gap: 4mm; }
+  .occhiello { font-size: 6.2pt; letter-spacing: 0.2em; text-transform: uppercase;
+               color: #757575; line-height: 1.1; }
+  .marchio { width: 7.5mm; height: 7.5mm; flex: none; }
 
-  .occhiello {
-    font-size: 6.4pt;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: #6b6b6b;
-    margin: 0;
-  }
+  .titolo { font-size: 13pt; font-weight: 700; line-height: 1.1; letter-spacing: -0.015em;
+            margin: 2.4mm 0 0; white-space: nowrap; }
+  .sotto { font-size: 8pt; line-height: 1.25; color: #4f4f4f; margin: 1.6mm 0 0; white-space: nowrap; }
 
-  .marchio { width: 8.5mm; height: 8.5mm; flex: none; }
+  .riga { border: 0; border-top: 0.25mm solid #cfcfcf; margin: 2.8mm 0 2.6mm; }
 
-  .titolo {
-    font-size: 13.5pt;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-    line-height: 1.15;
-    margin: 1.6mm 0 0;
-  }
-  .titolo span { font-weight: 400; color: #4a4a4a; display: block; font-size: 8.6pt; letter-spacing: 0; margin-top: 1mm; }
+  .numero { font-size: 16pt; font-weight: 700; line-height: 1; letter-spacing: 0.005em; }
+  .come { font-size: 7.4pt; color: #545454; line-height: 1.2; margin-top: 1.5mm; }
 
-  .riga { border: 0; border-top: 0.25mm solid #d2d2d2; margin: 1.6mm 0 2.6mm; }
-
-  .contatto { display: flex; align-items: baseline; gap: 2.5mm; }
-  .numero { font-size: 15pt; font-weight: 700; letter-spacing: 0.01em; white-space: nowrap; }
-  .come { font-size: 7.2pt; color: #5a5a5a; line-height: 1.25; }
-
-  .piede { font-size: 6.6pt; color: #7a7a7a; letter-spacing: 0.06em; margin-top: 2.2mm; }
-  .piede b { color: #000; font-weight: 700; letter-spacing: 0.08em; }
+  .piede { display: flex; justify-content: space-between; align-items: baseline;
+           font-size: 6.6pt; color: #6d6d6d; margin-top: auto; padding-top: 2.5mm; }
+  .piede b { color: #1a1a1a; font-weight: 700; letter-spacing: 0.04em; }
 
   @media screen {
     body { background: #e9e9e9; padding: 10mm 0; }
@@ -67,7 +52,7 @@
 </style>
 </head>
 <body>
-<!-- il marchio, una volta sola: e' logo/logo-simbolo-bn.svg, stessi tracciati del simbolo, in grigi -->
+<!-- il marchio una volta sola: logo/logo-simbolo-bn.svg, stessi tracciati del simbolo, in grigi -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="marchio-denkicode" viewBox="253 20 89 89">
 <g>
@@ -103,183 +88,123 @@
 <div class="foglio">
   <div class="tag">
     <div class="testa">
-      <p class="occhiello">Siti per attività della zona</p>
+      <span class="occhiello">Siti per attività della zona</span>
       <svg class="marchio" aria-hidden="true"><use href="#marchio-denkicode"/></svg>
     </div>
-    <p class="titolo">Bozza gratuita del tuo sito<span>Prima vedi il lavoro, poi decidi. Nessun impegno.</span></p>
-    <div>
-      <hr class="riga">
-      <div class="contatto">
-        <div class="numero">392 749 2448</div>
-        <div class="come">Patrick<br>chiama o scrivi su WhatsApp</div>
-      </div>
-      <div class="piede"><b>DENKICODE</b> · denkicode.com</div>
-    </div>
+    <h1 class="titolo">Bozza gratuita del tuo sito</h1>
+    <p class="sotto">Prima vedi il lavoro, poi decidi. Nessun impegno.</p>
+    <hr class="riga">
+    <div class="numero">392 749 2448</div>
+    <div class="come">Patrick · chiama o scrivi su WhatsApp</div>
+    <div class="piede"><b>DenkiCode</b><span>denkicode.com</span></div>
   </div>
   <div class="tag">
     <div class="testa">
-      <p class="occhiello">Siti per attività della zona</p>
+      <span class="occhiello">Siti per attività della zona</span>
       <svg class="marchio" aria-hidden="true"><use href="#marchio-denkicode"/></svg>
     </div>
-    <p class="titolo">Bozza gratuita del tuo sito<span>Prima vedi il lavoro, poi decidi. Nessun impegno.</span></p>
-    <div>
-      <hr class="riga">
-      <div class="contatto">
-        <div class="numero">392 749 2448</div>
-        <div class="come">Patrick<br>chiama o scrivi su WhatsApp</div>
-      </div>
-      <div class="piede"><b>DENKICODE</b> · denkicode.com</div>
-    </div>
+    <h1 class="titolo">Bozza gratuita del tuo sito</h1>
+    <p class="sotto">Prima vedi il lavoro, poi decidi. Nessun impegno.</p>
+    <hr class="riga">
+    <div class="numero">392 749 2448</div>
+    <div class="come">Patrick · chiama o scrivi su WhatsApp</div>
+    <div class="piede"><b>DenkiCode</b><span>denkicode.com</span></div>
   </div>
   <div class="tag">
     <div class="testa">
-      <p class="occhiello">Siti per attività della zona</p>
+      <span class="occhiello">Siti per attività della zona</span>
       <svg class="marchio" aria-hidden="true"><use href="#marchio-denkicode"/></svg>
     </div>
-    <p class="titolo">Bozza gratuita del tuo sito<span>Prima vedi il lavoro, poi decidi. Nessun impegno.</span></p>
-    <div>
-      <hr class="riga">
-      <div class="contatto">
-        <div class="numero">392 749 2448</div>
-        <div class="come">Patrick<br>chiama o scrivi su WhatsApp</div>
-      </div>
-      <div class="piede"><b>DENKICODE</b> · denkicode.com</div>
-    </div>
+    <h1 class="titolo">Bozza gratuita del tuo sito</h1>
+    <p class="sotto">Prima vedi il lavoro, poi decidi. Nessun impegno.</p>
+    <hr class="riga">
+    <div class="numero">392 749 2448</div>
+    <div class="come">Patrick · chiama o scrivi su WhatsApp</div>
+    <div class="piede"><b>DenkiCode</b><span>denkicode.com</span></div>
   </div>
   <div class="tag">
     <div class="testa">
-      <p class="occhiello">Siti per attività della zona</p>
+      <span class="occhiello">Siti per attività della zona</span>
       <svg class="marchio" aria-hidden="true"><use href="#marchio-denkicode"/></svg>
     </div>
-    <p class="titolo">Bozza gratuita del tuo sito<span>Prima vedi il lavoro, poi decidi. Nessun impegno.</span></p>
-    <div>
-      <hr class="riga">
-      <div class="contatto">
-        <div class="numero">392 749 2448</div>
-        <div class="come">Patrick<br>chiama o scrivi su WhatsApp</div>
-      </div>
-      <div class="piede"><b>DENKICODE</b> · denkicode.com</div>
-    </div>
+    <h1 class="titolo">Bozza gratuita del tuo sito</h1>
+    <p class="sotto">Prima vedi il lavoro, poi decidi. Nessun impegno.</p>
+    <hr class="riga">
+    <div class="numero">392 749 2448</div>
+    <div class="come">Patrick · chiama o scrivi su WhatsApp</div>
+    <div class="piede"><b>DenkiCode</b><span>denkicode.com</span></div>
   </div>
   <div class="tag">
     <div class="testa">
-      <p class="occhiello">Siti per attività della zona</p>
+      <span class="occhiello">Siti per attività della zona</span>
       <svg class="marchio" aria-hidden="true"><use href="#marchio-denkicode"/></svg>
     </div>
-    <p class="titolo">Bozza gratuita del tuo sito<span>Prima vedi il lavoro, poi decidi. Nessun impegno.</span></p>
-    <div>
-      <hr class="riga">
-      <div class="contatto">
-        <div class="numero">392 749 2448</div>
-        <div class="come">Patrick<br>chiama o scrivi su WhatsApp</div>
-      </div>
-      <div class="piede"><b>DENKICODE</b> · denkicode.com</div>
-    </div>
+    <h1 class="titolo">Bozza gratuita del tuo sito</h1>
+    <p class="sotto">Prima vedi il lavoro, poi decidi. Nessun impegno.</p>
+    <hr class="riga">
+    <div class="numero">392 749 2448</div>
+    <div class="come">Patrick · chiama o scrivi su WhatsApp</div>
+    <div class="piede"><b>DenkiCode</b><span>denkicode.com</span></div>
   </div>
   <div class="tag">
     <div class="testa">
-      <p class="occhiello">Siti per attività della zona</p>
+      <span class="occhiello">Siti per attività della zona</span>
       <svg class="marchio" aria-hidden="true"><use href="#marchio-denkicode"/></svg>
     </div>
-    <p class="titolo">Bozza gratuita del tuo sito<span>Prima vedi il lavoro, poi decidi. Nessun impegno.</span></p>
-    <div>
-      <hr class="riga">
-      <div class="contatto">
-        <div class="numero">392 749 2448</div>
-        <div class="come">Patrick<br>chiama o scrivi su WhatsApp</div>
-      </div>
-      <div class="piede"><b>DENKICODE</b> · denkicode.com</div>
-    </div>
+    <h1 class="titolo">Bozza gratuita del tuo sito</h1>
+    <p class="sotto">Prima vedi il lavoro, poi decidi. Nessun impegno.</p>
+    <hr class="riga">
+    <div class="numero">392 749 2448</div>
+    <div class="come">Patrick · chiama o scrivi su WhatsApp</div>
+    <div class="piede"><b>DenkiCode</b><span>denkicode.com</span></div>
   </div>
   <div class="tag">
     <div class="testa">
-      <p class="occhiello">Siti per attività della zona</p>
+      <span class="occhiello">Siti per attività della zona</span>
       <svg class="marchio" aria-hidden="true"><use href="#marchio-denkicode"/></svg>
     </div>
-    <p class="titolo">Bozza gratuita del tuo sito<span>Prima vedi il lavoro, poi decidi. Nessun impegno.</span></p>
-    <div>
-      <hr class="riga">
-      <div class="contatto">
-        <div class="numero">392 749 2448</div>
-        <div class="come">Patrick<br>chiama o scrivi su WhatsApp</div>
-      </div>
-      <div class="piede"><b>DENKICODE</b> · denkicode.com</div>
-    </div>
+    <h1 class="titolo">Bozza gratuita del tuo sito</h1>
+    <p class="sotto">Prima vedi il lavoro, poi decidi. Nessun impegno.</p>
+    <hr class="riga">
+    <div class="numero">392 749 2448</div>
+    <div class="come">Patrick · chiama o scrivi su WhatsApp</div>
+    <div class="piede"><b>DenkiCode</b><span>denkicode.com</span></div>
   </div>
   <div class="tag">
     <div class="testa">
-      <p class="occhiello">Siti per attività della zona</p>
+      <span class="occhiello">Siti per attività della zona</span>
       <svg class="marchio" aria-hidden="true"><use href="#marchio-denkicode"/></svg>
     </div>
-    <p class="titolo">Bozza gratuita del tuo sito<span>Prima vedi il lavoro, poi decidi. Nessun impegno.</span></p>
-    <div>
-      <hr class="riga">
-      <div class="contatto">
-        <div class="numero">392 749 2448</div>
-        <div class="come">Patrick<br>chiama o scrivi su WhatsApp</div>
-      </div>
-      <div class="piede"><b>DENKICODE</b> · denkicode.com</div>
-    </div>
+    <h1 class="titolo">Bozza gratuita del tuo sito</h1>
+    <p class="sotto">Prima vedi il lavoro, poi decidi. Nessun impegno.</p>
+    <hr class="riga">
+    <div class="numero">392 749 2448</div>
+    <div class="come">Patrick · chiama o scrivi su WhatsApp</div>
+    <div class="piede"><b>DenkiCode</b><span>denkicode.com</span></div>
   </div>
   <div class="tag">
     <div class="testa">
-      <p class="occhiello">Siti per attività della zona</p>
+      <span class="occhiello">Siti per attività della zona</span>
       <svg class="marchio" aria-hidden="true"><use href="#marchio-denkicode"/></svg>
     </div>
-    <p class="titolo">Bozza gratuita del tuo sito<span>Prima vedi il lavoro, poi decidi. Nessun impegno.</span></p>
-    <div>
-      <hr class="riga">
-      <div class="contatto">
-        <div class="numero">392 749 2448</div>
-        <div class="come">Patrick<br>chiama o scrivi su WhatsApp</div>
-      </div>
-      <div class="piede"><b>DENKICODE</b> · denkicode.com</div>
-    </div>
+    <h1 class="titolo">Bozza gratuita del tuo sito</h1>
+    <p class="sotto">Prima vedi il lavoro, poi decidi. Nessun impegno.</p>
+    <hr class="riga">
+    <div class="numero">392 749 2448</div>
+    <div class="come">Patrick · chiama o scrivi su WhatsApp</div>
+    <div class="piede"><b>DenkiCode</b><span>denkicode.com</span></div>
   </div>
   <div class="tag">
     <div class="testa">
-      <p class="occhiello">Siti per attività della zona</p>
+      <span class="occhiello">Siti per attività della zona</span>
       <svg class="marchio" aria-hidden="true"><use href="#marchio-denkicode"/></svg>
     </div>
-    <p class="titolo">Bozza gratuita del tuo sito<span>Prima vedi il lavoro, poi decidi. Nessun impegno.</span></p>
-    <div>
-      <hr class="riga">
-      <div class="contatto">
-        <div class="numero">392 749 2448</div>
-        <div class="come">Patrick<br>chiama o scrivi su WhatsApp</div>
-      </div>
-      <div class="piede"><b>DENKICODE</b> · denkicode.com</div>
-    </div>
-  </div>
-  <div class="tag">
-    <div class="testa">
-      <p class="occhiello">Siti per attività della zona</p>
-      <svg class="marchio" aria-hidden="true"><use href="#marchio-denkicode"/></svg>
-    </div>
-    <p class="titolo">Bozza gratuita del tuo sito<span>Prima vedi il lavoro, poi decidi. Nessun impegno.</span></p>
-    <div>
-      <hr class="riga">
-      <div class="contatto">
-        <div class="numero">392 749 2448</div>
-        <div class="come">Patrick<br>chiama o scrivi su WhatsApp</div>
-      </div>
-      <div class="piede"><b>DENKICODE</b> · denkicode.com</div>
-    </div>
-  </div>
-  <div class="tag">
-    <div class="testa">
-      <p class="occhiello">Siti per attività della zona</p>
-      <svg class="marchio" aria-hidden="true"><use href="#marchio-denkicode"/></svg>
-    </div>
-    <p class="titolo">Bozza gratuita del tuo sito<span>Prima vedi il lavoro, poi decidi. Nessun impegno.</span></p>
-    <div>
-      <hr class="riga">
-      <div class="contatto">
-        <div class="numero">392 749 2448</div>
-        <div class="come">Patrick<br>chiama o scrivi su WhatsApp</div>
-      </div>
-      <div class="piede"><b>DENKICODE</b> · denkicode.com</div>
-    </div>
+    <h1 class="titolo">Bozza gratuita del tuo sito</h1>
+    <p class="sotto">Prima vedi il lavoro, poi decidi. Nessun impegno.</p>
+    <hr class="riga">
+    <div class="numero">392 749 2448</div>
+    <div class="come">Patrick · chiama o scrivi su WhatsApp</div>
+    <div class="piede"><b>DenkiCode</b><span>denkicode.com</span></div>
   </div>
 </div>
 </body>
