@@ -155,6 +155,43 @@ Tutte e quattro finite in [[direttive-siti]] nel momento in cui sono state dette
 Rimisurato: 8/8, **overflow 0 su tredici larghezze** da 320 a 1440, **0 testi
 sotto AA** (con il fondo composito, non quello dichiarato), console pulita.
 
+## Giro 3 — 16/09: il logo vero, le animazioni rotte, il registro delle frasi
+
+> «questo deve essere il nostro logo. l'impostazione delle frasi è
+> completamente sbagliata, guarda dei bei siti di gente che ha saloni eccetera,
+> copia quella impostazione verbale e delle frasi. inoltre si sono buggate le
+> animazioni»
+
+**Le animazioni erano rotte per un motivo solo, ed è una trappola nuova.** Lo
+ScrollTrigger del capitolo DenkiCode finiva a `bottom 30%`: su **l'ultima
+sezione della pagina** quel punto sta oltre lo scroll massimo, quindi la
+timeline non si completava mai, e il logo — messo a `opacity: 0` da `gsap.set` —
+non tornava visibile. Nello screenshot di Nicola si vedevano solo gli archi.
+Adesso finisce a `bottom bottom`, e soprattutto **il logo è uscito dalla
+timeline**: lo rivela l'observer, che un fallback ce l'ha → [[trappole]].
+
+**Il logo.** In quel punto c'era ancora un `<path>` che imitava a mano l'anello
+e il 気. Tolto: il marchio lì è il file ufficiale, e adesso **è lui il titolo
+della sezione** (l'`h2` resta per lo screen reader).
+
+**Il copy.** Un operatore ha aperto e letto undici siti di barbieri fatti bene —
+Pankhurst, Ruffians, Murdock, Blind Barber, Antica Barbieria Colla,
+Barberino's, Bullfrog, La Barbieria di Milano, Rolando, Dimensione Uomo, Aldo
+Coppola — e ne ha ricavato otto regole di costruzione della frase. **Il difetto
+non era il lessico, era la sintassi parlata**: tre dislocazioni a sinistra («il
+taglio classico lo faccio»), due paragrafi aperti da una subordinata, frasi da
+33-36 parole tenute insieme da «e», gli orari scritti in lettere, e un giudizio
+su di sé travestito da frase tecnica. Nessuno di quegli undici siti fa una sola
+di queste cose.
+
+Dopo: nessuna frase sopra le 25 parole, paragrafi fra 37 e 61, titoli nominali
+senza articolo (Taglio e barba · Forbice e rasoio · Dicono di me · Tre giorni ·
+Trapianto di capelli), carte in alto passate ad `h3`.
+
+Rimisurato: 8/8, **0 testi sotto AA**, **overflow 0 su tredici larghezze**,
+console pulita, e la scorsa completa della pagina chiude tutto — archi a 0,
+logo a 1, tre battute a 1, nodi a 0, **0 rivelazioni spente su 29**.
+
 ## Non verificato, e aperto
 
 - ⬜ **Non pubblicato**: il comando Netlify è stato bloccato dal classificatore
