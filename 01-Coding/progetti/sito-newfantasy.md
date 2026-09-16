@@ -1,18 +1,24 @@
 ---
 type: progetto
-riga: New Fantasy Parrucchieri @newfantasy_parrucchieri, Lurate Caccivio (CO): bozza vetrina con prenotazioni e gestionale interni al sito (localStorage), in costruzione dal 15/9.
+riga: New Fantasy Parrucchieri @newfantasy_parrucchieri, Lurate Caccivio (CO): bozza online su newfantasy-parrucchieri.netlify.app dal 16/9, mondo B «l'agenda a tre colonne», prenotazioni e gestionale su localStorage.
 status: attivo
 client: newfantasy
 stack: html-css-js
 started: 2026-09-15
 deadline:
-updated: 2026-09-15
+updated: 2026-09-16
 source: claude
-verificato: 2026-09-15
+verificato: 2026-09-16
 tags: [sito, bozza, parrucchieri, como, prenotazioni, gestionale]
 ---
 
-# Sito New Fantasy Parrucchieri — bozza con prenotazioni
+# Sito New Fantasy Parrucchieri — online, mondo «l'agenda a tre colonne»
+
+**Online dal 16 settembre 2026** su <https://newfantasy-parrucchieri.netlify.app>
+(sito `newfantasy-parrucchieri` sul team `nicola-la-rezza`, deploy dal CLI in cache
+`~/.npm/_npx/da5c1b6ea715e8b4/node_modules/.bin/netlify` 27.6.0, non collegato al
+repo `Nixo999/newfantasy-site`, privata). Tre sbarramenti verificati con `curl`.
+**Il PIN dell'area salone è `1234`**: lo dice Patrick a Mattia insieme al link.
 
 Bozza **non richiesta**: Patrick ha scritto il 3 settembre 2026 (lista
 [[2026-09-03-instagram-anello-1-2]], riga 5, gancio 1), il 12 settembre ha
@@ -238,6 +244,37 @@ orarie. Un solo pin, il nastro del mese. Rosso solo per l'attesa.»
 **Rischio dichiarato**: la vetrina che legge come un software. La contromisura
 è l'innesto C: i campioni di colore e le loro parole fra la griglia e la
 prenotazione.
+
+## Costruzione e verifica, 16 settembre 2026
+
+Il giro di costruzione su Opus è morto due volte (limite di sessione alle
+22:50 del 15/09, poi stallo di 600 s scrivendo l'HTML): il sito l'ha scritto
+il direttore su Fable, con la catena caricata (direttive, tre sezioni di
+trappole, `impeccable context`, `new-work`, `craft-floor`,
+`high-end-visual-design`, `voce-denkicode`). Percorso code-led: nessuna
+generazione di immagini disponibile.
+
+File: `index.html`, `gestionale.html`, `assets/stile.css`,
+`assets/prenotazioni.js` (lo store e le regole, scritto dall'operatore prima
+dello stallo e tenuto), `assets/sito.js`, `assets/gestionale.js`, `DESIGN.md`.
+
+**Misurato**: `controlla-sito.py` 8/8; 12 `<svg>` inline; overflow 0 a 1440 e
+375; console pulita; `NF.autotest()` verde; flusso intero nel pannello
+(Colore → 16/9 → 15:00 con Desy → nome e telefono → record `attesa`, agenda in
+apertura da 5 a 6 blocchi); gestionale: PIN sbagliato segnalato, accetta →
+`accettata`, agenda con i nomi, appuntamento a mano, orari e chiusura salvati.
+Detector di impeccable: solo avvisi (rosso alzato a `#F5301F`, 5,1:1 sul nero;
+gli avvisi di padding sono le griglie a filetti, volute).
+
+**Non verificato**: lo scrub del nastro (il pannello non consegna gli eventi
+di scroll: si guarda su browser vero); Safari su iPhone; il finish reviewer e
+il documenter di impeccable **non lanciati** per la richiesta di Nicola di
+usare meno risorse — `DESIGN.md` l'ha scritto il direttore dal mondo
+costruito; nessuna cattura Brave a pagina intera, le sezioni sono state
+guardate nel pannello a 1440 e 375.
+
+**Da chiedere a Mattia**: gli orari veri, le foto (ne servono almeno una
+decina), il logo vettoriale, i cognomi di Desy e Terry, i servizi uomo.
 
 ## Collegamenti
 

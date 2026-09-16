@@ -1,9 +1,9 @@
 ---
 type: cliente
-riga: New Fantasy Parrucchieri, Lurate Caccivio (CO), @newfantasy_parrucchieri, 2.606 follower. DM del 3/9 con autorisposta «scrivici su WhatsApp»: il secondo contatto è WhatsApp, di Patrick.
+riga: New Fantasy Parrucchieri, Lurate Caccivio (CO), @newfantasy_parrucchieri, 2.606 follower. Bozza online dal 16/9 su newfantasy-parrucchieri.netlify.app; il link va su WhatsApp, da Patrick.
 status: lead
 progetti: [sito-newfantasy]
-updated: 2026-09-15
+updated: 2026-09-16
 source: claude
 verificato: 2026-09-15
 settore: parrucchieri
@@ -33,6 +33,9 @@ prenotazioni solo su WhatsApp, no direct».
   031 492577, e lo scrive Patrick.
 - **15 settembre 2026**: Nicola fa partire la bozza col [[processo-siti]],
   con prenotazioni e gestionale interni al sito → [[sito-newfantasy]].
+- **16 settembre 2026**: bozza **online** su
+  <https://newfantasy-parrucchieri.netlify.app>. Il messaggio WhatsApp col link
+  è di Patrick, e porta anche il PIN dell'area salone (`1234`).
 
 ## Il gancio
 

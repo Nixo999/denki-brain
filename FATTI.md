@@ -73,6 +73,12 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   (14/09), mondo «Dall'alto», 8/8 e overflow 0 su 27 larghezze. ⚠️ **Online c'è
   il giro 2**: il giro 3 del copy è fermo in locale (`93081ec` non pushato alle
   09:12). Il DM non è mai partito ed è di Patrick → [[sito-laurafranzoni]]
+- **New Fantasy Parrucchieri** (Lurate Caccivio, `@newfantasy_parrucchieri`) online
+  su `newfantasy-parrucchieri.netlify.app` (16/09), mondo B «l'agenda a tre
+  colonne», 8/8, sbarramenti con `curl`. **Prenotazioni e gestionale interni
+  al sito** su `localStorage`: la demo vale su un dispositivo solo, per venderlo
+  serve uno store ospitato (una giornata). PIN area salone `1234`. Il DM è finito
+  in un autorisponditore: il link va su WhatsApp, da Patrick → [[sito-newfantasy]]
 - **denki-agents** (14/09): piattaforma multi-agente interna, la fase 1 è solo
   il gateway verso i modelli. Repo **solo locale** in `~/lavoro/denki-agents`,
   spec corretta e listino verificato, **nessuna riga di codice**. Docker sul

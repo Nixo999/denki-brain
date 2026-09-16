@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-09-15
+updated: 2026-09-16
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **189 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **191 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -49,11 +49,12 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-dianails]] — Diana @dianails_brescia, onicotecnica e PMU a Brescia: bozza creata in C:\Users\User\Desktop\dianails-site, mondo A «la regola del 90°», 8/8 sbarramenti verificati.
 - [[sito-dsi-advertising]] — ⚠️ Sito vetrina in una pagina per D.S.I. Advertising di Piras Sebastiano, Merate (LC) - dal 1992 progetta e produce articoli promozionali per il...
 - [[sito-fiftynine]] — ⚠️ Sito vetrina in una pagina per Bar Tabacchi Fiftynine, bar tabaccheria e pizzeria in via Nazionale dei Giovi 59, Cesano Maderno (MB).
+- [[sito-hairstylebrescia]] — Hair Style Parrucchieri @hairstyle_brescia, salone a Brescia (via del Risorgimento 73), gancio sposa - bozza col processo intero, mondo A «La prova» scelto, in costruzione.
 - [[sito-laurafranzoni]] — Laura Franzoni @laurafranzoni_lashmaker, ciglia a Brescia: bozza online su laurafranzoni.netlify.app dal 14/9, mondo «Dall'alto». Online c'è il giro 2, il giro 3 è fermo in locale.
 - [[sito-mikuma-dogs]] — Online su mikumadogs.netlify.app per Martina Carneli (mikuma.dogs), Como - giro 7 'il bianco e il nero', logo vero, Nicola: 'mi piace molto'.
 - [[sito-nails-mania]] — ⚠️ Sito vetrina in una pagina per Nails Mania, centro di ricostruzione unghie mani e piedi di Lory Frosio a Seriate (BG).
 - [[sito-nails-robyy]] — Roberta @nails.robyy, nail artist e educator a Brescia: bozza online su nailsrobyy.netlify.app dal 14/9, mondo A «la sezione quotata», 8/8, sbarramenti verificati.
-- [[sito-newfantasy]] — New Fantasy Parrucchieri @newfantasy_parrucchieri, Lurate Caccivio (CO): bozza vetrina con prenotazioni e gestionale interni al sito (localStorage), in costruzione dal 15/9.
+- [[sito-newfantasy]] — New Fantasy Parrucchieri @newfantasy_parrucchieri, Lurate Caccivio (CO): bozza online su newfantasy-parrucchieri.netlify.app dal 16/9, mondo B «l'agenda a tre colonne», prenotazioni e gestionale su localStorage.
 - [[sito-ngbarber]] — ⚠️ Bozza vetrina per ng-barber, riga 2 dell'anello 1-b delle liste Instagram, gancio 5.
 - [[sito-osteria-tarilli]] — ⚠️ Osteria Tarilli, Via Ronco Nuovo 2, 6949 Comano (TI), a 300 m dalla RSI.
 - [[sito-pinkploy]] — Online su pinkploy.netlify.app per @nails_art_by_pinkploy, onicotecnica a Brescia centro - mondo B «lo spessore», l'unghia in quota.
@@ -98,7 +99,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[laurafranzoni]] — Extension ciglia a Brescia, @laurafranzoni_lashmaker, 452 follower. Bozza online dal 14/9, il DM non è mai partito.
 - [[ms-service]] — ⚠️ Lead caldo - ha chiesto lui il materiale.
 - [[nails-mania]] — ⚠️ Centro di ricostruzione unghie mani e piedi di Lory Frosio, onicotecnica dal 2005.
-- [[newfantasy]] — New Fantasy Parrucchieri, Lurate Caccivio (CO), @newfantasy_parrucchieri, 2.606 follower. DM del 3/9 con autorisposta «scrivici su WhatsApp»: il secondo contatto è WhatsApp, di Patrick.
+- [[newfantasy]] — New Fantasy Parrucchieri, Lurate Caccivio (CO), @newfantasy_parrucchieri, 2.606 follower. Bozza online dal 16/9 su newfantasy-parrucchieri.netlify.app; il link va su WhatsApp, da Patrick.
 - [[ng-barber]] — ⚠️ Barbershop, @ngbarberstudio123. Riga 2 dell'anello 1-b, gancio 5 - l'unico link in bio è ngbarber.my-booking-app.com, cioè un'app di prenotaz...
 - [[parrucchiere-morgan]] — Portato da Morgan il 15/9: espone volantini e biglietti e parla coi clienti in cambio del sito gratis, zero percentuali. Nome TODO.
 - [[pinkploy]] — Onicotecnica a Brescia centro, @nails_art_by_pinkploy, 832 follower. Bozza online dal 14/9, il secondo DM col link tocca a Patrick.
@@ -136,6 +137,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-14-denkishift-e-ricerca]] — Le due liste che stamattina mancavano - 50 DenkiShift e 50 ricerca di mercato, tutte in Lombardia - costruite dopo la bocciatura di Patrick sul 50-50-50.
 - [[2026-09-14-lista-siti-bs-bg]] — La lista siti del 14 settembre - 43 righe su parrucchieri e barber fra Brescia e Bergamo da 99 profili aperti - e le due liste che non sono state fatte, col motivo.
 - [[2026-09-14-rilanci-lead-aperti]] — I lead aperti al 14 settembre letti dalla posta intera - quattro bozze promesse e mai consegnate, una chiamata da fare oggi, e la seconda critica sull'AI in otto giorni.
+- [[2026-09-15-rilanci-lead-aperti]] — I lead aperti al 15 settembre sera letti dalla posta intera - una bozza chiesta alle 21:14 che non esiste, un'email da mandare a Koinè, quattro bozze consegnate e zero chiamate fatte.
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
