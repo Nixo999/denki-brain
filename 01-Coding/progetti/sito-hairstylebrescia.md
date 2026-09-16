@@ -1,12 +1,12 @@
 ---
 type: progetto
-riga: Hair Style Parrucchieri @hairstyle_brescia, salone a Brescia (via del Risorgimento 73), gancio sposa - bozza col processo intero, 18 foto native, mondo da scegliere.
+riga: Hair Style Parrucchieri @hairstyle_brescia, salone a Brescia (via del Risorgimento 73), gancio sposa - bozza col processo intero, mondo A «La prova» scelto, in costruzione.
 status: attivo
 client: hairstyle-brescia
 stack: html-css-js
 started: 2026-09-15
 deadline:
-updated: 2026-09-15
+updated: 2026-09-16
 source: claude
 verificato: 2026-09-15
 tags: [sito, bozza, parrucchiere, brescia, sposa, cerimonia, colore]
@@ -209,9 +209,106 @@ senza inventare un form.
 - [ ] Da quanto tempo esistono, in quanti sono.
 - [ ] Prova sposa: come funziona, quanto prima si prenota, si fa a domicilio?
 
-## Passo 2 — la direzione
+## Passo 2 — tre mondi da un operatore di direzione, 15-16 settembre 2026
 
-`TODO` — operatore di direzione su Opus, due o tre mondi, poi la scelta.
+Operatore su Opus con la catena caricata: `impeccable context`, `new-work.md`,
+`design-taste-frontend`, i tre SKILL.md di stile letti e **`high-end-visual-design`**
+scelta (con due deroghe dichiarate perché le direttive battono la skill: niente
+Double-Bezel, cioè la cornicetta bocciata su Mikuma, e niente eyebrow sopra i
+titoli), `direttive-siti`, `essenza-e-motion`, 12 anteprime guardate, NG Barber
+e Fiftynine come metro. `concept-seed` **`c44a1a4d`**, mode persuade, indice
+assegnato **6 = mondo C**. Il report intero sta in
+`~/lavoro/hairstylebrescia-site/.impeccable-mondi.md` (fuori dal sito, in
+`.gitignore` no: resta nel repo come memoria della scelta).
+
+- **A «La prova»** — il salone fotografa ogni raccolto tre volte: tre quarti
+  da dietro, da dietro, di profilo (p01-03, p16-18, p19a-c, p22-24). Pin
+  centrale: la stessa acconciatura gira attraverso le tre viste sotto un
+  quadrante 0-90-180 legato allo scroll, con la ciocca-torchon disegnata che
+  si riavvolge in registro; il giro si ripete sulla sposa e all'ultimo grado
+  il quadrante diventa il numero di telefono. Fondo `#EDEAE4`, inchiostro
+  `#14100D`, taupe `#988169`, castano `#503020`, caramello `#6D4527`, rosso
+  `#A10A07` solo sul grado attivo e sul telefono. Bodoni Moda 600/700 +
+  Schibsted Grotesk 400/500/600.
+- **B «Tiene tutto il giorno»** — la forcina: nero pieno `#100E0C`, il
+  raccolto che si costruisce da zero con tre forcine, gli strass che si
+  accendono in fila sulla sposa. Italiana + Epilogue. Rischio dichiarato: il
+  nero legge maschile e finisce addosso a NG Barber.
+- **C «La stagione»** (assegnato dal dado) — la banda dei dodici mesi con le
+  date vere dei post. Young Serif + Figtree. Rischio dichiarato: si sposta su
+  un fiorista e stampa i sei mesi in cui non pubblicano.
+
+**Scelto A dal direttore, sopra l'assegnato, incrociato con la grafica di B.**
+Il giro a tre viste è il modo in cui *questo* salone mostra il lavoro, e il
+raccolto che gira è quello che una sposa guarda «mesi prima»: C si sposta su
+un altro mestiere e B con il nero copia il metro. Da B entrano **la forcina
+come segno di linea** (divisore fra le sezioni e voce del menu, mai due volte
+con la stessa inclinazione) e **la fila di strass** che si accende in registro
+con la treccia di p22. Esce la «scheda della prova» con le righe vuote di
+orari e prezzo: una riga bianca in pagina è una nota nostra, e le note in
+pagina sono bocciate (direttiva del 14/09).
+
+⚠️ **La parola «prova» non entra nel copy.** Non è verificato che facciano la
+prova sposa (è nei `TODO`): la metafora vive nel disegno, il testo dice solo
+cose verificate.
+
+## Passo 3 — brief di costruzione: il copy, verbatim
+
+Il copy lo scrive il direttore e l'operatore lo inserisce senza riscriverlo
+([[trappole]], skill e strumenti). Frasi complete, con il verbo, utili a chi
+legge; le didascalie dicono il servizio, non la foto.
+
+**`<title>`**: «Hair Style Parrucchieri Brescia — acconciature da sposa e
+cerimonia, colore e piega». **description**: «Hair Style Parrucchieri, Brescia,
+via del Risorgimento 73. Acconciature da sposa e da cerimonia, colore,
+sfumature, pieghe e trattamenti. Telefono 030 381815.»
+
+**Barra**: a sinistra «Hair Style Parrucchieri»; a destra, leggero, «030 381815»
+con `tel:+39030381815`. Sotto i 761 px la voce di contatto sta al bordo
+destro, staccata dal marchio e meno pesante del nome (direttiva del 14/09).
+
+**Hero**: h1 «Hair Style Parrucchieri». Sotto, piccolo: «Acconciature da sposa
+e da cerimonia, colore e piega. Brescia, via del Risorgimento 73.» Due azioni:
+«Chiama il salone» (`tel:+39030381815`) e «Scrivi su Instagram»
+(`https://www.instagram.com/hairstyle_brescia/`).
+
+**Sposa e cerimonie** (il pin del giro):
+- titolo: «Sposa e cerimonie»
+- «Per la sposa, per la madre dello sposo, per chi è invitata: il raccolto si
+  costruisce sul viso e sull'abito e deve reggere tutta la giornata.»
+- «Raccolti a banana e torchon, trecce a spina con perle e strass, nodi
+  morbidi, ricci raccolti.»
+- chiusura del giro, dove il quadrante diventa il numero: «Per una cerimonia
+  l'appuntamento si prende per tempo. Chiamate il 030 381815.»
+- didascalie: p01/p02/p03 «Raccolto a banana con torchon e forcine di strass,
+  per la madre dello sposo.» · p22/p24 «Chignon da sposa con trecce a spina,
+  perle e strass.» · p16/p17/p18 «Raccolto alto con torchon e volute.» ·
+  p19a/b/c «Raccolto morbido con nodo a rosa.» · p21 «Ricci raccolti di lato.»
+
+**Colore e piega**:
+- titolo: «Colore, sfumature e piega»
+- «Sfumature personalizzate per illuminare il viso, gloss per i riflessi,
+  piega morbida che dà movimento. Ogni servizio è studiato su misura.»
+- «In salone si fanno anche tagli e trattamenti per la cute, con prodotti
+  Kérastase e L'Oréal Professionnel.»
+- didascalie: p07/p09 «Sfumature caramello su base castana, gloss e piega
+  morbida.» · p11 «Piega con onde morbide su biondo.»
+
+**Nuove clienti** (una riga, piccola): «Prima volta in salone? Sul profilo
+Instagram c'è la promozione per le nuove clienti: si mostra in cassa al primo
+appuntamento.» Link al post `https://www.instagram.com/hairstyle_brescia/p/DcGXsHdApSF/`.
+
+**Dove siamo**: titolo «Dove siamo». «Hair Style Parrucchieri» · «Via del
+Risorgimento 73, Brescia» · «Telefono 030 381815» (`tel:`) · «Instagram
+@hairstyle_brescia» (link). «Per prenotare si chiama il salone o si scrive un
+messaggio su Instagram.» Niente orari (non li abbiamo), niente mappa con vie
+inventate: al massimo un segno disegnato del posto.
+
+**Footer**: nome, indirizzo, telefono, Instagram, firma DenkiCode dello starter.
+
+**Fuori**: «prova», «impeccabile» come vanto, «i migliori», «da anni», numeri
+di spose, orari, prezzi, recensioni, nomi, un form, «Urago Mella» nel testo
+(è un hashtag loro, non un indirizzo dichiarato).
 
 ## Collegamenti
 
