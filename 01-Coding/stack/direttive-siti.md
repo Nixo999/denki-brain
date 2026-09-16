@@ -33,6 +33,10 @@ quelle due, non è pronta.
 
 ### 17/09/2026 — Nicola: «professionale, impersonale»
 
+Bozza Barbershop SNIA giro 4, detto subito dopo 'analizza le frasi, sparli e fai un pasticcio ogni volta'. Il copy dei siti non si scrive in prima persona come il titolare: si scrive in impersonale, come Antica Barbieria Colla - 'il trattamento dura 25 minuti e viene eseguito con rasoio monouso sterile'. Supera la direttiva del 16/09 su New Fantasy ('fai sembrare che scriva lui le note'), che resta valida solo sul non dichiarare da dove viene un contenuto
+
+### 17/09/2026 — Nicola: «professionale, impersonale»
+
 Registro scelto per il copy dei siti dopo la bocciatura di Shaddai giro 1: via l'impalcatura io/tu, le azioni si dicono col soggetto vero (il mapping, le lunghezze, la laminazione). Supera in parte la direttiva del 16/09 sulla prima persona, che resta valida solo sul non dire mai da dove viene un'informazione
 
 ### 17/09/2026 — Nicola: «solito problema, gli script, le frasi fanno cagare»
