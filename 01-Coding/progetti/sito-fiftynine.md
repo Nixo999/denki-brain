@@ -6,7 +6,7 @@ client: bar-tabacchi-fiftynine
 stack: [html, netlify]
 started: 2026-09-01
 deadline: TODO
-updated: 2026-09-12
+updated: 2026-09-16
 source: claude
 valore: TODO
 incassato: 0
@@ -85,14 +85,23 @@ reader, e su un telefono stretto nemmeno gli altri.
 ## La pagina di modifica — dall'8 settembre 2026
 
 `admin.html` + `admin.js`, `noindex`, non linkata da nessuna pagina pubblica.
-Il proprietario cambia **le foto**, **le locandine delle offerte** e **tutto il
-menù scritto, prezzi compresi**.
+Il proprietario cambia **le foto**, **le locandine delle offerte**, **tutto il
+menù scritto**, prezzi compresi, e dal 16 settembre 2026 **gli orari** giorno
+per giorno (anche i giorni chiusi) e **le scritte**: 14 paragrafi marcati
+`@scritta` più le due descrizioni per Google, con `**grassetto**` al posto
+dell'HTML. Gli orari stanno scritti in un posto solo, la lista in `#dove`: la
+linea del giorno li legge da lì, nota e footer si rigenerano dallo stesso
+modello. Prima erano in quattro posti a mano. Il numero accanto a «Pizze» segue
+le liste. `prova-admin.html` passa da 23 a **42 asserzioni**, tutte verdi il
+16/09 nel pannello; il ramo «oggi chiuso» visto togliendo i `<time>` a mano
+(«Chiuso adesso · riapre domenica alle 7:00»). Commit `59e2a7f`, **locale, non
+pushato**: il push pubblica su `bartabacchi59.it`.
 
 **Niente database e niente login**: lo store sono i file del sito. Ogni pezzo
 modificabile sta fra due commenti (`<!-- @menu pizze -->` … `<!-- /@menu -->`)
 e si riscrive solo quello. È la differenza con [[sito-vbag]], dove lo store è
 un JSON: qui il menù è il contenuto principale, e con un JSON senza JS sarebbe
-una pagina vuota. `prova-admin.html` verifica il giro completo — 23 asserzioni,
+una pagina vuota. `prova-admin.html` verifica il giro completo — 42 asserzioni,
 i file devono restare **identici al byte**. Il dettaglio sta nel `CLAUDE.md`
 del repo, scritto lo stesso giorno.
 
@@ -148,6 +157,7 @@ linea al posto giusto: lo stato aperto non è più un buco. **Non vista su brows
 - [ ] Se rispondono: via il `noindex` (i tre sbarramenti; **`admin.html` resta fuori dagli indici**, ha una regola sua in `netlify.toml`)
 - [ ] **Chiedere le foto che mancano**: colazione, frittini, gyoza — sulla chiavetta non c'erano
 - [ ] Provare a mano il ramo `showDirectoryPicker` su Chrome da computer, e la pagina di modifica su iPhone: nel pannello parte sempre il ramo dei download
+- [ ] **Push di `59e2a7f`** (orari e scritte nella pagina di modifica): scrive su tutti e due i repo e va online sul dominio del bar. Decide Nicola
 
 ✅ **Firma nel piè di pagina** — «Powered by DenkiCode», simbolo e link a
 `denkicode.com`, dalla sera dell'8 settembre 2026 (`c5cae57, commit locale in bartabaccheria59, non pushato`). Regola e markup in
