@@ -226,6 +226,18 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Immagini e `sips`
 
+- `[TRAPPOLA]` **`sips` scrive in place, e `git restore` non ripristina un file
+  untracked.** Su Custom Beauty Nails il primo ritaglio sopra il watermark era
+  giusto; per allargare il margine su due foto e' partito un
+  `git restore assets/img` che **e' fallito in silenzio** — le foto erano
+  ancora `?? assets/img/` nel git status — e il secondo ritaglio ha lavorato
+  sui file gia' tagliati: fuori le unghie, restano le nocche. Dodici foto da
+  riscaricare. → **gli originali si committano prima di toccarli** (qui
+  `assets/originali/`, tracciata), i ritagli si scrivono **su nomi nuovi, mai
+  in place**, e l'esito di un `restore` si legge: un `||` sopra un ripristino
+  fallito e' un ripristino che non c'e' stato. (16/09/2026,
+  [[sito-custombeautynails]])
+
 - **`sips` legge le dimensioni trasposte quando il browser ruota la foto.** Su
   una locandina `sips -g pixelWidth` dava 733×1100 e il browser la mostrava
   1100×733, cioe' coricata: l'orientamento c'era, ma `sips -g orientation`
