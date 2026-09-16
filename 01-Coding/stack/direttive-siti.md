@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 16/09/2026 — Nicola: «aggiusta i testi, non dire mai da dove lo prendi, e fai sembra che scriva lui le note»
+
+New Fantasy giro 2: in pagina c'era «Dal profilo Instagram del salone» sotto la citazione e «il colore è preso dai suoi capelli». Il sito parla in prima persona come il titolare, e la provenienza di frasi, foto e numeri non si scrive mai
+
 ### 16/09/2026 — Nicola: «non hai capito niente, non dovevi fare solo un sito asato sul fatto che sia un gestionale, rifai la parte del sito, aggiungendo un po di vita e fai capire la personaita del cliente»
 
 bozza New Fantasy, 16/09: la vetrina leggeva come un software di prenotazioni. La prenotazione e' una funzione dentro il sito, la pagina deve raccontare il salone: la voce loro, i tre nomi, le promo, le foto, movimento
