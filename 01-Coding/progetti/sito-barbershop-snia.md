@@ -67,6 +67,35 @@ presenza dichiarata in pagina, e deve leggersi come un pregio del sito.
 Listino prezzi (le recensioni dicono solo «onesti»), il nome del suo assistente,
 la data di apertura, il nome della clinica in Albania, la partita del civico.
 
+## Il mondo scelto — «Il filo»
+
+Tre mondi proposti dall'operatore di direzione il 16/09, scelto il primo con
+due innesti dagli altri due.
+
+Il Villaggio SNIA è nato negli anni Venti attorno allo stabilimento SNIA
+Viscosa, che filava viscosa, e le vie portano nomi di regioni: la sua è Via
+Friuli. **Andrea lavora sul filo**: lo taglia, lo rade, e dove non c'è più lo fa
+rimettere uno alla volta — la DHI è un innesto bulbo per bulbo. È la stessa
+materia presa dai due lati, ed è il motivo per cui le sue due attività stanno
+sulla stessa pagina senza sembrare due mestieri.
+
+Spina dello scroll: un filo rosso continuo scende lungo la pagina e si disegna
+allo scrub; a metà, in pin, le forbici a X del suo logo si chiudono e lo
+tagliano; sotto si sfila in filamenti singoli che si piantano su un arco di
+cranio, riparte unico verso Tirana e alla fine si annoda nel simbolo DenkiCode.
+
+Innestati dagli altri due mondi: **l'apertura col suo logo capovolto** che ruota
+di 180° finché BARBERSHOP diventa leggibile (il marchio vero è così), e
+**l'arco delle ore vivo** che legge l'ora di Roma e dice se è aperto.
+
+Palette piastrella `#f1f1ee`, nero `#121212`, filo rosso `#d1271b`, grigio
+`#8d8f8a`. Display **Anybody** variabile sull'asse `wdth`, testo **Onest**.
+
+Scartati: «A testa in giù» (il panno che copre il viewport rischia di leggere
+come una transizione da template, e il teal era campionato a occhio da una
+locandina che non è sua) e «Tre giorni» (le facciate delle case del villaggio
+rischiavano il cartoon, e il cartoon è già stato bocciato su Mikuma).
+
 ## Collegamenti
 
 [[parrucchiere-morgan]] · [[morgan]] · [[processo-siti]] · [[direttive-siti]] ·

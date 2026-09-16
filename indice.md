@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **196 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **197 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -43,6 +43,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[opero]] — Il prodotto che Sebastian rivende, non un gestionale nostro. Chi tocca il Super Admin tocca il suo conto economico.
 - [[sito-albybike]] — Sito vetrina per Albybike, negozio di biciclette - vendita, assistenza, riparazione, abbigliamento e integratori.
 - [[sito-atelier-selva]] — ⚠️ Sito per Shari Piras, tatuatrice fineline a Merate (LC), e per il suo studio privato Atelier Selva (Via Statale 147).
+- [[sito-barbershop-snia]] — ⚠️ Sito vetrina di Andrea, barbiere al Villaggio SNIA di Cesano Maderno, che fa anche da tramite per i trapianti in Albania. Primo presidio volantini, gratis.
 - [[sito-castiglione]] — ⚠️ Sito vetrina non commissionato per castiglione-furniture, costruito il 30 agosto 2026 dai contenuti veri del loro profilo Instagram.
 - [[sito-custombeautynails]] — Custom Beauty Nails, onicotecnica a Treviglio (BG): bozza online su custombeautynails.netlify.app dal 16/9, mondo «Un centimetro di spazio», 21 SVG, 8/8.
 - [[sito-da-caterina]] — ⚠️ Da Caterina Toelettatura Professionale, Via Introzzi 8, 21057 Olgiate Olona (VA).
