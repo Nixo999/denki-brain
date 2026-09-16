@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-09-14
+updated: 2026-09-16
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 16/09/2026 — Nicola: «non hai capito niente, non dovevi fare solo un sito asato sul fatto che sia un gestionale, rifai la parte del sito, aggiungendo un po di vita e fai capire la personaita del cliente»
+
+bozza New Fantasy, 16/09: la vetrina leggeva come un software di prenotazioni. La prenotazione e' una funzione dentro il sito, la pagina deve raccontare il salone: la voce loro, i tre nomi, le promo, le foto, movimento
 
 ### 14/09/2026 — Nicola: «patrick dice che è vuoto. metti qualche animazione piccola in più, rimpicciolisci le foto un pochino, e aggiungi dei disegni di qualche tipo»
 
