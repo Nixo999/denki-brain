@@ -70,14 +70,19 @@ secondi: se l'immagine non dice niente da sola, non dice niente.
 
 | # | Titolo | Argomento |
 |---|---|---|
-| 01 | Il link in bio non ti fa trovare su Google | farsi trovare |
-| 02 | Dove sei, e come si prenota | i primi secondi sul sito |
-| 03 | Il tuo sito lo guardano in piedi | il telefono |
-| 04 | La scheda Google non si paga | costo zero |
-| 05 | Un modello ti da' le sezioni di un altro | modelli pronti |
-| 06 | Le prenotazioni arrivano quando sei chiuso | agenda nel sito |
-| 07 | Un sito sembra vecchio per le foto | fotografie |
-| 08 | Il sito lo vedi prima di pagarlo | come lavoriamo |
+| 01 | Su Google non ti trova nessuno se stai solo qui | farsi trovare |
+| 02 | Chi apre il tuo sito cerca due cose | i primi secondi sul sito |
+| 03 | Il tuo sito lo guardano in piedi, con una mano | il telefono |
+| 04 | La scheda su Google te la regalano | costo zero |
+| 05 | Con un modello pronto hai le sezioni di un altro | modelli pronti |
+| 06 | Le prenotazioni ti arrivano quando sei chiuso | agenda nel sito |
+| 07 | Se un sito sembra vecchio, guarda le foto | fotografie |
+| 08 | Il sito lo vedi prima, i soldi vengono dopo | come lavoriamo |
+
+⚠️ **Il primo giro dei testi e' stato bocciato il 16 settembre**: «le scritte
+non sono umane e discorsive». Erano sentenze corrette e telegrafiche, da
+manuale. Riscritti in forma parlata con lo stesso significato, e la regola sta
+in [[stile-comunicazione]].
 
 **La 08 e' l'unica che chiede qualcosa**, e porta il gancio della bozza gia'
 fatta ([[stile-comunicazione]], regola dell'11 settembre). Va per ultima, con

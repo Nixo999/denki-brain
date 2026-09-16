@@ -174,47 +174,52 @@ def bozza():
 
 STORIE = [
     dict(tag="Farsi trovare", grafica=ricerca,
-         titolo="Il link in bio non ti fa trovare su Google",
-         corpo="Su Instagram ti trova chi sa gia' come ti chiami. Su Google ti "
-               "trova chi cerca il tuo mestiere e il tuo comune, e ancora non "
-               "ti conosce. Il secondo pubblico e' quello che ti manca."),
+         titolo="Su Google non ti trova nessuno se stai solo qui",
+         corpo="Su Instagram ti trova chi sa gia' come ti chiami. Chi invece "
+               "cerca il tuo mestiere insieme al nome del suo comune finisce "
+               "da qualcun altro, perche' in quella lista tu non compari. E' "
+               "gente che non ti conosce ancora, ed e' la parte che ti manca."),
     dict(tag="I primi secondi", grafica=dieci_secondi,
-         titolo="Dove sei, e come si prenota",
-         corpo="Sono le prime due cose che un cliente cerca quando apre il tuo "
-               "sito. Se deve cercarle, chiude. Vanno in alto e grandi, non in "
-               "fondo alla pagina contatti."),
+         titolo="Chi apre il tuo sito cerca due cose",
+         corpo="Dove sei e come si prenota. Le cerca nei primi dieci secondi. "
+               "Se non le vede torna indietro e prova un altro nome, e tu non "
+               "lo sai nemmeno. Vanno in alto e grandi, non in fondo alla "
+               "pagina dei contatti."),
     dict(tag="Telefono", grafica=telefono,
-         titolo="Il tuo sito lo guardano in piedi",
+         titolo="Il tuo sito lo guardano in piedi, con una mano",
          corpo="Quasi nessuno apre il sito di un negozio dal computer. Lo apre "
-               "dal telefono, con una mano, mentre fa altro. Un sito disegnato "
-               "sul monitor e provato solo li', in quella situazione, non tiene."),
+               "dal telefono mentre sta facendo altro, magari in fila alla "
+               "cassa. Un sito disegnato su un monitor grande e provato solo "
+               "li', in quella situazione, non regge."),
     dict(tag="Costo zero", grafica=scheda,
-         titolo="La scheda Google non si paga",
-         corpo="Orari, indirizzo, foto e recensioni in un posto solo. Si "
-               "compila in un pomeriggio. Chi cerca il tuo mestiere nella tua "
-               "zona ti trova li' prima che sul sito."),
+         titolo="La scheda su Google te la regalano",
+         corpo="Ci metti gli orari, l'indirizzo, qualche foto, e le recensioni "
+               "si appoggiano li' da sole. Ci vuole un pomeriggio e non si "
+               "paga niente. Chi cerca il tuo mestiere nella tua zona ti trova "
+               "la' prima che sul sito."),
     dict(tag="Modelli pronti", grafica=modello,
-         titolo="Un modello ti da' le sezioni di un altro",
-         corpo="I temi pronti nascono per un'attivita' generica. Ti ritrovi con "
-               "lo spazio per un blog che non scriverai e senza quello per la "
-               "cosa che vendi davvero. Il sito segue il mestiere, non il "
-               "contrario."),
+         titolo="Con un modello pronto hai le sezioni di un altro",
+         corpo="I temi comprati nascono per un'attivita' qualsiasi. Ti ritrovi "
+               "con lo spazio per un blog che non scriverai mai e senza un "
+               "posto per la cosa che vendi davvero. Dovrebbe essere il sito a "
+               "seguire il mestiere, non il contrario."),
     dict(tag="Agenda", grafica=notte,
-         titolo="Le prenotazioni arrivano quando sei chiuso",
-         corpo="Chi decide alle undici di sera non telefona, e la mattina dopo "
-               "se ne dimentica. Un'agenda dentro il sito raccoglie quella "
-               "richiesta mentre il negozio e' chiuso."),
+         titolo="Le prenotazioni ti arrivano quando sei chiuso",
+         corpo="Chi decide alle undici di sera non ti telefona, e la mattina "
+               "dopo se ne e' gia' dimenticato. Con un'agenda dentro il sito "
+               "quella richiesta resta li' ad aspettarti, e la trovi quando "
+               "apri."),
     dict(tag="Fotografie", grafica=foto,
-         titolo="Un sito sembra vecchio per le foto",
-         corpo="Il codice non si vede, le fotografie si'. Cinque scatti fatti "
-               "di giorno, con la luce che entra dalla finestra, cambiano una "
-               "pagina piu' di qualunque animazione."),
+         titolo="Se un sito sembra vecchio, guarda le foto",
+         corpo="Il codice non lo vede nessuno, le fotografie si'. Cinque "
+               "scatti fatti di giorno, con la luce che entra dalla finestra, "
+               "cambiano una pagina piu' di qualunque animazione."),
     dict(tag="Come lavoriamo", grafica=bozza,
-         titolo="Il sito lo vedi prima di pagarlo",
-         corpo="Guardiamo il tuo profilo e costruiamo una bozza vera del sito, "
-               "poi te la mandiamo. Si apre dal telefono e si scorre come "
-               "quello finito. Nessun costo e nessun impegno: se non ti "
-               "convince, l'hai vista e basta."),
+         titolo="Il sito lo vedi prima, i soldi vengono dopo",
+         corpo="Guardiamo il tuo profilo e da li' costruiamo una bozza vera "
+               "del sito, poi te la mandiamo. Si apre dal telefono e si scorre "
+               "come quello finito. Non costa niente e non ti impegna a nulla: "
+               "se non ti convince, l'hai vista e basta."),
 ]
 
 # gli accenti veri: il sorgente non porta le lettere accentate, e nemmeno
@@ -224,6 +229,11 @@ ACCENTI = [
     (r"\bsi'", "s\u00ec"), (r"\bda'", "d\u00e0"), (r"\be'(?=[\s,.:;]|$)", "\u00e8"),
     (r"\battivita'", "attivit\u00e0"), (r"\bqualita'", "qualit\u00e0"),
     (r"\bperche'", "perch\u00e9"), (r"\bpero'", "per\u00f2"),
+    # a inizio frase: «E' gente» restava con l'apostrofo
+    (r"\bE'(?=[\s,.:;]|$)", "\u00c8"), (r"\bGia'", "Gi\u00e0"),
+    (r"\bPiu'", "Pi\u00f9"), (r"\bLi'", "L\u00ec"), (r"\bSi'", "S\u00ec"),
+    (r"\bDa'", "D\u00e0"), (r"\bPerche'", "Perch\u00e9"),
+    (r"\bPero'", "Per\u00f2"), (r"\bLa'", "L\u00e0"), (r"\bla'", "l\u00e0"),
 ]
 
 def accenta(t):
@@ -361,8 +371,9 @@ def main():
     tot = len(STORIE)
     for i, s in enumerate(STORIE, 1):
         titolo = accenta(s["titolo"])
-        # i titoli lunghi scendono di corpo per restare su tre righe
-        h1 = 86 if len(titolo) > 38 else 96
+        # 86 px tiene i titoli di questa serie su due righe; sotto i trenta
+        # caratteri ci sta il corpo grande
+        h1 = 96 if len(titolo) <= 30 else (86 if len(titolo) <= 48 else 78)
         html = PAGINA.format(
             n=i, tot=tot, tag=s["tag"], titolo=titolo,
             corpo=accenta(s["corpo"]), grafica=accenta(s["grafica"]()), corpo_h1=h1,
