@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 17/09/2026 — Nicola: «professionale, impersonale»
+
+Registro scelto per il copy dei siti dopo la bocciatura di Shaddai giro 1: via l'impalcatura io/tu, le azioni si dicono col soggetto vero (il mapping, le lunghezze, la laminazione). Supera in parte la direttiva del 16/09 sulla prima persona, che resta valida solo sul non dire mai da dove viene un'informazione
+
 ### 17/09/2026 — Nicola: «solito problema, gli script, le frasi fanno cagare»
 
 Bozza Shaddai giro 1, quinta bocciatura di fila sul copy dopo Mikuma, Custom Beauty Nails, New Fantasy e Barbershop. Far leggere all'operatore i siti veri del mestiere non ha spostato il risultato: il testo esce parlato, da messaggio, e deve essere scritto
