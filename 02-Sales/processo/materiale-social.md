@@ -1,9 +1,9 @@
 ---
 riga: I post pubblicati sul profilo Instagram di DenkiCode - cosa e' uscito, con che didascalia, e dove stanno i file.
 type: risorsa
-updated: 2026-09-14
+updated: 2026-09-16
 source: claude
-verificato: 2026-09-14
+verificato: 2026-09-16
 tags: [social, materiale, lead]
 ---
 
@@ -59,6 +59,56 @@ piccole in fondo.
 Gli screenshot sono presi dai siti online il 14 settembre 2026, non da una
 copia locale: banner dei cookie e badge di Netlify tagliati fuori
 dall'inquadratura, niente ritocchi sopra la pagina.
+
+## Serie del 16 settembre 2026 - le otto storie da argomento
+
+Otto storie verticali **1080x1920**, una per argomento. Cosa diverso dai post
+del 14: li' l'immagine porta uno screenshot e il testo sta nella didascalia,
+qui il testo **e' il contenuto** e non c'e' nessun lavoro da mostrare. Una
+storia dura ventiquattr'ore, non ha didascalia sotto e si guarda per due
+secondi: se l'immagine non dice niente da sola, non dice niente.
+
+| # | Titolo | Argomento |
+|---|---|---|
+| 01 | Il link in bio non ti fa trovare su Google | farsi trovare |
+| 02 | Dove sei, e come si prenota | i primi secondi sul sito |
+| 03 | Il tuo sito lo guardano in piedi | il telefono |
+| 04 | La scheda Google non si paga | costo zero |
+| 05 | Un modello ti da' le sezioni di un altro | modelli pronti |
+| 06 | Le prenotazioni arrivano quando sei chiuso | agenda nel sito |
+| 07 | Un sito sembra vecchio per le foto | fotografie |
+| 08 | Il sito lo vedi prima di pagarlo | come lavoriamo |
+
+**La 08 e' l'unica che chiede qualcosa**, e porta il gancio della bozza gia'
+fatta ([[stile-comunicazione]], regola dell'11 settembre). Va per ultima, con
+lo sticker link. Sulle altre sette il dominio e' stampato in fondo
+all'immagine e lo sticker non serve.
+
+**I file**: `~/Desktop/denki-storie-instagram-2026-09-16/` sul Mac di Patrick,
+otto JPEG piu' `png/` come sorgente e `note-pubblicazione.txt` con l'ordine.
+Fuori dal vault come quelli del 14: il vault e' testo.
+
+**Il sorgente invece sta nel vault**, in `03-Storage/brand/social/`:
+`genera-storie.py` tiene testi e disegni, `rendi-storie.sh` rifa' i PNG con
+Chrome headless e i JPEG con `sips`. Una correzione si fa li' e si ri-rende in
+dieci secondi, senza riaprire Affinity.
+
+Impaginazione uguale su tutte e otto: simbolo e nome in testa col numero della
+serie, un disegno fatto in SVG a meta' pagina, etichetta dell'argomento in
+gradiente, titolo grande, tre o quattro righe di corpo, `denkicode.com` in
+fondo. **Il testo sta dentro una fascia centrale con 236 px liberi sopra e
+sotto**, dove Instagram mette il nome utente e la barra delle risposte.
+
+⚠️ **Questa serie porta prosa sull'immagine, e il 14 settembre la prosa era
+stata bocciata.** Non e' la stessa cosa: li' la frase si aggiungeva accanto
+allo screenshot che era gia' la prova, qui l'affermazione e' l'unica cosa che
+c'e'. Resta una scelta da confermare: se Patrick le vuole senza testo, le
+storie non hanno piu' un contenuto e la serie non ha senso.
+
+I testi sono passati da [[voce-denkicode]] e restano `source: claude`: nessun
+numero, nessuna statistica, nessuna percentuale di conversione, perche' non
+avremmo modo di sostenerla. Le otto affermazioni sono tutte verificabili a
+occhio da chi le legge.
 
 ## Le cose da sapere prima di pubblicare
 
