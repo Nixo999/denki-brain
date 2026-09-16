@@ -104,6 +104,10 @@ Vincolo fiscale attivo, dettaglio in [[vincoli-fiscali]]:
 
 Scritte da `regola.py` nel momento in cui sono state dette.
 
+### 16/09/2026 — Patrick: «non so che problemi tu abbia, ma c'e' sempre qualcosa che non va un umano non si porrebbe mai cosi, non hanno senso, cerca di parlare normalmente»
+
+secondo giro bocciato sulle stesse storie: le frasi erano costruite per antitesi («non X, ma Y») e chiudevano con la morale, cioe' aforismi. Chi parla davvero dice una situazione concreta e si ferma li': in fila alla cassa, la luce della finestra, un pomeriggio di lavoro. Niente frase che riassume il senso di quella prima
+
 ### 16/09/2026 — Patrick: «mi piace molto, ma le scritte non sono umane e discorsive, mantieni il significato ma aggiusta le frasi e i titoli»
 
 le otto storie del 16 settembre erano scritte per sentenze: titolo assertivo e corpo telegrafico, corretti ma da manuale. Un testo che sta su un'immagine si legge come parlato, con il soggetto esplicito e le frasi che si tengono, non come una riga di documentazione
