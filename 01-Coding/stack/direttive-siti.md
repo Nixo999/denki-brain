@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 16/09/2026 — Nicola: «questo deve essere il nostro logo»
+
+Bozza Barbershop SNIA giro 2: nel capitolo DenkiCode restava un path SVG che imitava a mano l'anello e il 気. Nel punto dove va il nostro marchio ci va il file ufficiale, mai un ridisegno - vale anche quando il ridisegno serve a farlo animare
+
 ### 16/09/2026 — Nicola: «migliora le espressioni, sintassi errata, tono sbagliato, impostazione delle frasi errata»
 
 Bozza Barbershop SNIA giro 1, terza bocciatura di fila sul copy dopo Mikuma e Custom Beauty Nails. Non basta che le frasi siano lunghe e col mestiere dentro: devono essere scritte bene in italiano, con la sintassi giusta e il tono di chi parla
