@@ -16,7 +16,7 @@ Piattaforma interna a due utenti: Nicola (siti, dal lead alla bozza) e Patrick
 (analisi e outreach). Un database condiviso è l'unica memoria: gli agenti non
 ricordano niente, leggono dal DB, fanno una cosa, scrivono sul DB. Cliente: interno.
 
-**Repo**: `~/lavoro/denki-agents`, solo locale: il remote `Nixo999/denki-agents` non esiste (14/09/2026)
+**Repo**: `Nixo999/denki-agents` (privato) in `~/lavoro/denki-agents`, ramo `main` (16/09/2026)
 **Online**: il pacchetto dice VPS Hetzner CX22 con Docker; nel vault non risulta (14/09/2026)
 **Memoria tecnica**: `CLAUDE.md`, `docs/spec-fase-1.md`, `docs/routing.md`, `docs/handoff.md` nel repo
 
@@ -66,7 +66,7 @@ questa nota.
 - [x] Docker Desktop 4.91 sul Mac di Nicola: motore 29.8 e Compose 5.5 rispondono (14/09/2026)
 - [ ] pnpm: sul Mac c'è solo corepack (14/09/2026)
 - [ ] chiavi OpenAI e Google: le crea e le scrive Nicola → [[credenziali]]
-- [ ] remote GitHub `Nixo999/denki-agents`, privato: non esiste (14/09/2026)
+- [x] remote GitHub `Nixo999/denki-agents` privato: creato e pushato da Claude, come da [[2026-09-03-gh-crea-repository]] (16/09/2026)
 - [ ] poi il prompt del pacchetto, in una sessione aperta dentro `~/lavoro/denki-agents`
 - [x] fase 2: embedding su `text-embedding-3-small` a 768 dimensioni (`1c92389`, 16/09/2026). Non per il prezzo: è l'unico a 0,02 $ con l'endpoint embeddings documentato in LiteLLM. OpenAI non dichiara l'italiano: se il recupero è debole si cambia modello e si rifà l'indice, quattro centesimi
 - [ ] fase 2: chi è `momo`? Una lista chiamate ha bisogno di un destinatario (16/09/2026)
@@ -76,7 +76,7 @@ questa nota.
 - [ ] dal 01/01/2027 `gemini-3.8-flash` va a 1,50/7,50: i fallback di `seo_meta`, `qa_tecnico` e `report_periodico` diventano impossibili, la sola uscita tocca il tetto
 - [ ] VPS: esiste? TODO
 - [ ] vault o database per i lead: oggi i contattati stanno nei CSV del banco → [[contattati]]. Si decide quando arrivano le tabelle di business
-- [ ] quando nasce il remote: riga nella tabella repo di `claude-md-globale` e di `/nicola`
+- [x] righe del repo aggiunte in `claude-md-globale`, `/nicola` e `/aggiorna-progetti` (16/09/2026)
 
 ## Collegamenti
 

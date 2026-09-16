@@ -24,6 +24,7 @@ Per ogni progetto che ha un repository, controlla l'attività vera. I repo noti:
 |---|---|
 | opero | `github.com/Nixo999/opero-sito` |
 | denkishift | `github.com/Nixo999/smooth-duty` |
+| denki-agents | `github.com/Nixo999/denki-agents` |
 
 Se il repo è già clonato da qualche parte sul disco, usalo. Altrimenti leggi i
 commit recenti via API senza clonare:

@@ -85,10 +85,10 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   serve uno store ospitato (una giornata). PIN area salone `1234`. Il DM è finito
   in un autorisponditore: il link va su WhatsApp, da Patrick → [[sito-newfantasy]]
 - **denki-agents** (14/09): piattaforma multi-agente interna, la fase 1 è solo
-  il gateway verso i modelli. Repo **solo locale** in `~/lavoro/denki-agents`,
+  il gateway verso i modelli. Repo `Nixo999/denki-agents` privato (16/09),
   spec corretta e listino verificato, **nessuna riga di codice**. Docker sul
-  Mac c'è. Prima del prompt mancano le chiavi OpenAI e Google e il remote
-  GitHub, tutte e due di Nicola. **La fase 2, il cervello, è scritta** (16/09):
+  Mac c'è. Prima del prompt mancano solo le chiavi OpenAI e Google, e le
+  inserisce Nicola. **La fase 2, il cervello, è scritta** (16/09):
   memoria, regista, flussi, fermate umane e indice semantico in pgvector, e
   copre gli otto agenti chiesti da Patrick → [[denki-agents]]
 

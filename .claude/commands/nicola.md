@@ -80,6 +80,7 @@ La cartella si chiama **come il repo**.
 |---|---|---|---|
 | **OperO** | `~/lavoro/opero-sito` | `main` | `CLAUDE.md` + `docs/handoff.md` |
 | **DenkiShift** | `~/lavoro/smooth-duty` | `main` | `CLAUDE.md` + `docs/` |
+| **denki-agents** | `~/lavoro/denki-agents` | `main` | `CLAUDE.md` + `docs/spec-fase-1.md` e `spec-fase-2.md` |
 | **OperO 1** (sola lettura) | `~/lavoro/sebapp-bolanos` | `origin/main` | è la specifica, non si tocca |
 | **cococat** | `~/lavoro/cococat-site` | — | sito vetrina |
 
