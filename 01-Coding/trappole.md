@@ -446,6 +446,17 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Git, account e pubblicazione
 
+- `[TRAPPOLA]` **Un `[[redirects]]` di Netlify senza `force = true` non scatta
+  se il file esiste davvero.** Su Custom Beauty Nails la regola che doveva
+  nascondere `BRIEF.md` era scritta e il file rispondeva `200` online: il
+  nostro processo, le didascalie e le misure erano leggibili da chiunque avesse
+  l'indirizzo. → nei siti bozza si sbarrano **con `force = true`** tutti i file
+  di lavoro (`BRIEF.md`, `PRODUCT.md`, `DESIGN.md`, `strumenti/`,
+  `originali/`), e si verifica con `curl` che rispondano 404, non che la regola
+  sia scritta. ⚠️ **`/.netlify/*` e' riservato e il redirect non lo ferma**: il
+  badge «Powered by Netlify» si spegne solo dal pannello del progetto.
+  (16/09/2026, [[sito-custombeautynails]])
+
 - **`gh` tiene un solo account nel keyring.** Con due account, il push sulla repo
   dell'altro dà `403` o `Repository not found`, e sembra un problema del repo. →
   `gh auth login` con l'account giusto. La paternità dei commit è un'altra cosa
