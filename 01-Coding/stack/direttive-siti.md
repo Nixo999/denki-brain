@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 16/09/2026 — Nicola: «è bellissimo ma devi rifare tutta la parte di script, le scritte fanno schifo sembra fatto da un bambino di 10 anni devono essere professionali»
+
+bozza Custom Beauty Nails online, giro 1: il copy era tutto in frasi corte e spezzate ('Rosso pieno, mandorla, niente altro sopra'), lessico da conversazione e nessuna competenza di mestiere in vista. E' la seconda volta dopo Mikuma dell'11 settembre: 'discorsivo' non vuol dire frasi da due parole, vuol dire periodi interi con dentro il mestiere
+
 ### 16/09/2026 — Nicola: «aggiusta i testi, non dire mai da dove lo prendi, e fai sembra che scriva lui le note»
 
 New Fantasy giro 2: in pagina c'era «Dal profilo Instagram del salone» sotto la citazione e «il colore è preso dai suoi capelli». Il sito parla in prima persona come il titolare, e la provenienza di frasi, foto e numeri non si scrive mai
