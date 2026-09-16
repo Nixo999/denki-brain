@@ -1,8 +1,8 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura.
-updated: 2026-09-15
-verificato: 2026-09-15
+updated: 2026-09-16
+verificato: 2026-09-16
 source: denkicode
 tags: [stato, fatti]
 ---

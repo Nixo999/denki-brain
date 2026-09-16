@@ -5,7 +5,7 @@ status: lead
 progetti: [sito-newfantasy]
 updated: 2026-09-16
 source: claude
-verificato: 2026-09-15
+verificato: 2026-09-16
 settore: parrucchieri
 ---
 

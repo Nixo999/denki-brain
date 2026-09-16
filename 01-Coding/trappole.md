@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Errori tecnici già pagati e strade scartate, per dominio. Descrittivo, non è un rulebook - le regole stanno in convenzioni.
-updated: 2026-09-15
+updated: 2026-09-16
 verificato: 2026-09-10
 source: denkicode
 tags: [trappole, memoria, frontend, gsap, git]
@@ -433,6 +433,14 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 - **Le credenziali non le digito io.** `netlify login` apre il browser e chiede
   l'accesso di Nicola: si prepara tutto e ci si ferma lì. [[credenziali]]
 
+- `[TRAPPOLA]` **`netlify sites:create --name X` con un nome già preso crea
+  `X-NNN` e non dà errore.** `newfantasy` era di qualcun altro: è uscito
+  `newfantasy-306`, e il deploy ci è finito sopra. → si legge l'URL stampato
+  prima di pubblicare, e se ha il suffisso si cancella (`sites:delete <id>
+  --force`) e si ricrea con un nome libero. Il CLI non è in `npx --no-install`
+  ma nella cache: `~/.npm/_npx/da5c1b6ea715e8b4/node_modules/.bin/netlify`.
+  ([[sito-newfantasy]], 16 settembre)
+
 ## Far modificare il sito al cliente
 
 - **Con uno store a file, pubblicare vuol dire fare un commit.** Un sito statico
@@ -642,6 +650,13 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   una riga.** Lo stesso lavoro spezzato in due comandi passa senza chiedere
   niente. → non si accorpano con `&&` i comandi di una catena lunga.
   ([[sito-nails-robyy]], 13-14 settembre)
+
+- `[TRAPPOLA]` **Un operatore di costruzione su Opus muore due volte in un
+  modo diverso.** La sera del 15/09 per limite di sessione (reset alle 3:10),
+  la mattina dopo per stallo a 600 s mentre scriveva l'`index.html` intero in
+  un colpo. → il file grande si scrive a pezzi, e se il giro muore due volte
+  il direttore costruisce da sé con la catena caricata invece di rilanciare
+  una terza volta. ([[sito-newfantasy]], 16 settembre)
 
 ## Collegamenti
 
