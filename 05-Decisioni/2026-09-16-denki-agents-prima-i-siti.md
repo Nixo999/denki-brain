@@ -65,6 +65,10 @@ Niente di dichiarato.
   LiteLLM non è documentato: va provato. Il costo che stima viene dai listini
   suoi, non dal gateway. I permessi limitano i tool: l'isolamento del server
   va fatto a parte.
+- **Il limite di spesa si alza se serve.** Sulle chiavi c'è un limite di 20 $
+  al mese per account, e un sito costruito in autonomia si paga a token sulla
+  chiave API. Nicola, 16/09: «nel caso quello lo aumento o cambiamo chiave
+  dopo».
 - Il fallback di `revisione_visiva` su Fable lascia 5.000 token d'ingresso: le
   catture delle pagine lo riempiono subito.
 - **Online, con un login serio.** Nicola, 16/09: «deve essere online con un
