@@ -1,5 +1,5 @@
 ---
-riga: In denki-agents viene prima la parte che fa i siti - Nicola ci vuole spostare la produzione dei siti, a breve.
+riga: In denki-agents prima la parte che fa i siti - Nicola ci sposta la produzione e ne descrive il flusso, dal login alla chat per progetto.
 type: decisione
 data: 2026-09-16
 progetto: denki-agents
@@ -20,6 +20,23 @@ stato: presa
 
 Nicola: «voglio fare in modo che a breve sia pronta soprattutto la parte che fa
 i siti, che voglio spostare lì la produzione».
+
+## Il flusso che vuole Nicola
+
+Nicola, 16/09/2026, subito dopo (refusi corretti, parole sue):
+
+«voglio una schermata sulla piattaforma di accesso a denki agent, che vorrei
+fosse su un sito, e io devo avere la pagina progetti, da lì deve esserci
+l'elenco di tutti i siti e gli altri progetti attivi, cliccando su uno già
+esistente o su crea nuovo, deve aprirsi su uno già esistente la chat con la AI
+che si occupa di interfacciarsi con me che conosce tutto su quel progetto, e mi
+permette scrivendo a lei di modificarlo, mentre se nuovo mi fa inserire prima il
+nome del progetto, e poi subito mi fa le domande per crearlo, la creazione deve
+essere fatta tutta in modo autonomo dopo le prime domande a cui rispondo io, e
+deve seguire come la facciamo adesso, usando fable e astra gpt6 in combinazione
+per fare dei siti bellissimi e che non devono sembrare fatti con ai, infatti
+voglio che sia possibile addestrarla dandogli esempi e altro come anche le skill
+di claude code, in modo che migliori sempre»
 
 ## Cosa si è scartato
 

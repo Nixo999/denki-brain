@@ -269,7 +269,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-14-denki-agents-parte-dal-gateway]] — denki-agents parte dal gateway verso i modelli - modello, prezzo e tetto di ogni task nel database, mai nel codice.
 - [[2026-09-15-morgan-entra-parrucchiere-presidio]] — Edo e Gabriele fuori per sempre. Entra Morgan (fratello di Patrick): non chiama, segnala. Primo frutto un parrucchiere pagato col sito.
 - [[2026-09-16-cervello-denki-agents]] — Il cervello di denki-agents - memoria, regista e fermate umane in un Postgres solo con pgvector, e il prompt si compone a budget.
-- [[2026-09-16-denki-agents-prima-i-siti]] — ⚠️ In denki-agents viene prima la parte che fa i siti - Nicola ci vuole spostare la produzione dei siti, a breve.
+- [[2026-09-16-denki-agents-prima-i-siti]] — ⚠️ In denki-agents prima la parte che fa i siti - Nicola ci sposta la produzione e ne descrive il flusso, dal login alla chat per progetto.
 - [[2026-09-16-vbag-gestionale-login]] — ⚠️ V-BAG - il gestionale di Giulia ha un login vero e pubblica dal telefono via Netlify Function + commit su GitHub. Store a file confermato.
 
 ## 06-Daily
