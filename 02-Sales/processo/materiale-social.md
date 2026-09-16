@@ -60,9 +60,9 @@ Gli screenshot sono presi dai siti online il 14 settembre 2026, non da una
 copia locale: banner dei cookie e badge di Netlify tagliati fuori
 dall'inquadratura, niente ritocchi sopra la pagina.
 
-## Serie del 16 settembre 2026 - le otto storie da argomento
+## Serie del 16 settembre 2026 - la copertina e cinque argomenti
 
-Otto storie verticali **1080x1920**, una per argomento. Cosa diverso dai post
+Sei storie verticali **1080x1920**, una per argomento. Cosa diverso dai post
 del 14: li' l'immagine porta uno screenshot e il testo sta nella didascalia,
 qui il testo **e' il contenuto** e non c'e' nessun lavoro da mostrare. Una
 storia dura ventiquattr'ore, non ha didascalia sotto e si guarda per due
@@ -70,30 +70,33 @@ secondi: se l'immagine non dice niente da sola, non dice niente.
 
 | # | Titolo | Argomento |
 |---|---|---|
+| 00 | Cinque cose sul sito del tuo negozio | copertina della serie |
 | 01 | Chi ha bisogno adesso cerca su Google | farsi trovare |
 | 02 | Guarda l'indirizzo e il telefono, poi decide | i primi secondi sul sito |
 | 03 | Il tuo sito lo aprono col telefono in una mano | il telefono |
-| 04 | La scheda su Google te la danno gratis | costo zero |
-| 05 | Ti ritrovi un blog che non scriverai mai | modelli pronti |
-| 06 | Chi decide alle undici di sera non ti telefona | agenda nel sito |
-| 07 | Se il sito ti sembra vecchio, guarda le foto | fotografie |
-| 08 | Il sito lo vedi prima di tirare fuori un euro | come lavoriamo |
+| 04 | Chi decide alle undici di sera non ti telefona | agenda nel sito |
+| 05 | Se il sito ti sembra vecchio, guarda le foto | fotografie |
 
-⚠️ **I testi sono al terzo giro: i primi due bocciati da Patrick il 16
-settembre**, «le scritte non sono umane e discorsive» e poi «un umano non si
-porrebbe mai cosi'». Il difetto non erano le parole: le frasi erano costruite
-per antitesi («non X, ma Y») e chiudevano tirando la morale di quella prima,
-cioe' aforismi. Il terzo giro dice una situazione concreta e si ferma li': in
-fila alla cassa, la luce della finestra, un pomeriggio di lavoro. Le due frasi
-stanno in [[stile-comunicazione]].
+⚠️ **La serie era di otto, Patrick ne ha tolte tre il 16 settembre**: la scheda
+Google, i modelli pronti e la storia sul come lavoriamo. Restano cinque
+argomenti piu' la copertina, che porta il titolo e fa da indice.
 
-**La 08 e' l'unica che chiede qualcosa**, e porta il gancio della bozza gia'
-fatta ([[stile-comunicazione]], regola dell'11 settembre). Va per ultima, con
-lo sticker link. Sulle altre sette il dominio e' stampato in fondo
-all'immagine e lo sticker non serve.
+⚠️ **I testi sono al terzo giro: i primi due bocciati lo stesso giorno**, «le
+scritte non sono umane e discorsive» e poi «un umano non si porrebbe mai
+cosi'». Il difetto non erano le parole: le frasi erano costruite per antitesi
+(«non X, ma Y») e chiudevano tirando la morale di quella prima, cioe' aforismi.
+Il terzo giro dice una situazione concreta e si ferma li': in fila alla cassa,
+la luce della finestra, un pomeriggio di lavoro. Le due frasi stanno in
+[[stile-comunicazione]].
+
+**La copertina e' l'unica che chiede qualcosa**: lo sticker link va li'. Sulle
+altre cinque il dominio e' stampato in fondo all'immagine. Il gancio della
+bozza gia' fatta non compare piu' in questa serie: la storia che lo portava e'
+una delle tre tolte, e quel gancio resta il mestiere del DM
+([[stile-comunicazione]], regola dell'11 settembre).
 
 **I file**: `~/Desktop/denki-storie-instagram-2026-09-16/` sul Mac di Patrick,
-otto JPEG piu' `png/` come sorgente e `note-pubblicazione.txt` con l'ordine.
+sei JPEG piu' `png/` come sorgente e `note-pubblicazione.txt` con l'ordine.
 Fuori dal vault come quelli del 14: il vault e' testo.
 
 **Il sorgente invece sta nel vault**, in `03-Storage/brand/social/`:

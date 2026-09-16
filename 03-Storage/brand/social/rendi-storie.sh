@@ -8,6 +8,8 @@ FUORI="${1:-$HOME/Desktop/denki-storie-instagram-$OGGI}"
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 mkdir -p "$FUORI/png"
+# via i render del giro prima: la serie si rinumera quando una storia esce
+rm -f "$FUORI"/storia-*.jpg "$FUORI/png"/storia-*.png
 for f in "$QUI"/storie/storia-*.html; do
   n="$(basename "$f" .html)"
   "$CHROME" --headless=new --disable-gpu --no-sandbox --hide-scrollbars \

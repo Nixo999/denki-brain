@@ -80,48 +80,6 @@ def telefono():
   </g>
 </svg>"""
 
-def scheda():
-    return """
-<svg viewBox="0 0 880 340" class="art">
-  <rect x="0" y="10" width="560" height="310" rx="18" class="tratto"/>
-  <rect x="0" y="10" width="560" height="10" rx="5" fill="url(#g)"/>
-  <rect x="40" y="56" width="248" height="16" rx="8" class="riga"/>
-  <g class="stelle">
-    <text x="40" y="118" class="voce">★ ★ ★ ★ ★</text>
-  </g>
-  <line x1="40" y1="150" x2="520" y2="150" class="tratto-tenue"/>
-  <text x="40" y="192" class="voce-tenue">Orari</text>
-  <text x="300" y="192" class="voce">08:30 - 19:00</text>
-  <text x="40" y="240" class="voce-tenue">Indirizzo</text>
-  <text x="300" y="240" class="voce">Seveso, MB</text>
-  <text x="40" y="288" class="voce-tenue">Foto</text>
-  <text x="300" y="288" class="voce">12</text>
-  <text x="640" y="150" class="numero-grande">0 €</text>
-  <text x="640" y="196" class="micro">un pomeriggio</text>
-</svg>"""
-
-def modello():
-    return """
-<svg viewBox="0 0 880 386" class="art">
-  <g class="griglia">
-    <rect x="0" y="20" width="196" height="132" rx="10"/>
-    <rect x="216" y="20" width="196" height="132" rx="10"/>
-    <rect x="432" y="20" width="196" height="132" rx="10"/>
-    <rect x="0" y="176" width="196" height="132" rx="10"/>
-    <rect x="216" y="176" width="196" height="132" rx="10"/>
-  </g>
-  <rect x="446" y="186" width="238" height="164" rx="12" fill="url(#g)" opacity=".2"/>
-  <rect x="446" y="186" width="238" height="164" rx="12" stroke="url(#g)" fill="none" stroke-width="3"/>
-  <text x="466" y="244" class="voce">il tuo</text>
-  <text x="466" y="288" class="voce">mestiere</text>
-  <text x="744" y="76" class="micro">blog</text>
-  <line x1="744" y1="96" x2="836" y2="96" class="tratto-tenue"/>
-  <text x="744" y="140" class="micro">team</text>
-  <line x1="744" y1="160" x2="836" y2="160" class="tratto-tenue"/>
-  <text x="744" y="204" class="micro">eventi</text>
-  <line x1="744" y1="224" x2="836" y2="224" class="tratto-tenue"/>
-</svg>"""
-
 def notte():
     return """
 <svg viewBox="0 0 880 380" class="art">
@@ -152,31 +110,21 @@ def foto():
   <text x="470" y="336" class="micro">di giorno, luce naturale</text>
 </svg>"""
 
-def bozza():
-    return """
-<svg viewBox="0 0 880 340" class="art">
-  <rect x="0" y="14" width="880" height="306" rx="18" class="tratto"/>
-  <line x1="0" y1="82" x2="880" y2="82" class="tratto"/>
-  <circle cx="36" cy="48" r="8" class="riga-tenue-p"/>
-  <circle cx="64" cy="48" r="8" class="riga-tenue-p"/>
-  <circle cx="92" cy="48" r="8" class="riga-tenue-p"/>
-  <rect x="128" y="34" width="420" height="28" rx="14" class="debole"/>
-  <rect x="148" y="44" width="180" height="8" rx="4" class="riga-tenue"/>
-  <rect x="44" y="124" width="360" height="26" rx="6" class="riga"/>
-  <rect x="44" y="166" width="280" height="12" rx="6" class="riga-tenue"/>
-  <rect x="44" y="192" width="320" height="12" rx="6" class="riga-tenue"/>
-  <rect x="44" y="236" width="180" height="44" rx="22" fill="url(#g)"/>
-  <rect x="470" y="124" width="366" height="156" rx="12" fill="url(#g)" opacity=".22"/>
-  <line x1="470" y1="124" x2="836" y2="280" class="tratto-tenue"/>
-</svg>"""
-
 # ---------------------------------------------------------------- i contenuti
 
-# Ogni storia dice una situazione che al titolare capita davvero, e si ferma
-# li'. Niente antitesi («non X, ma Y») e nessuna frase che tira la morale di
-# quella prima: sono le due cose che facevano sembrare i primi due giri
-# scritti da una macchina. Patrick, 16 settembre: «cerca di parlare
-# normalmente».
+# La prima e' la copertina: porta il titolo della serie e l'indice delle cinque
+# che seguono. Le storie dicono una situazione che al titolare capita davvero e
+# si fermano li'. Niente antitesi e niente frase che tira la morale di quella
+# prima: Patrick, 16 settembre, «cerca di parlare normalmente».
+COPERTINA = dict(
+    tag="DenkiCode",
+    titolo="Cinque cose sul sito del tuo negozio",
+    corpo="Quelle che si vedono quando un cliente lo apre davvero.",
+    indice=["Chi ti cerca su Google", "I primi dieci secondi",
+            "Il telefono in una mano", "Le prenotazioni di sera",
+            "Le foto"],
+)
+
 STORIE = [
     dict(tag="Farsi trovare", grafica=ricerca,
          titolo="Chi ha bisogno adesso cerca su Google",
@@ -195,18 +143,6 @@ STORIE = [
                "se sei aperto. Dal computer quasi nessuno. Un sito provato solo "
                "sul monitor grande, sul telefono diventa una cosa da "
                "ingrandire con le dita."),
-    dict(tag="Costo zero", grafica=scheda,
-         titolo="La scheda su Google te la danno gratis",
-         corpo="Ci metti gli orari, l'indirizzo, qualche foto del negozio. Un "
-               "pomeriggio di lavoro. Da quel giorno chi cerca il tuo mestiere "
-               "in zona vede la tua scheda con le recensioni, e ti chiama da "
-               "li' senza passare dal sito."),
-    dict(tag="Modelli pronti", grafica=modello,
-         titolo="Ti ritrovi un blog che non scriverai mai",
-         corpo="I temi comprati hanno le sezioni di un'attivita' qualsiasi: il "
-               "blog, la pagina sul team. La cosa che vendi davvero finisce in "
-               "mezzo al resto con una foto piccola, e chi arriva non capisce "
-               "cosa fai."),
     dict(tag="Agenda", grafica=notte,
          titolo="Chi decide alle undici di sera non ti telefona",
          corpo="Aspetta domani, e domani ha da fare. Oppure intanto ha chiamato "
@@ -217,12 +153,6 @@ STORIE = [
          corpo="Le foto scure fatte col telefono la sera fanno sembrare vecchio "
                "qualsiasi sito. Cinque scatti di giorno, con la luce che entra "
                "dalla finestra, e la stessa pagina cambia faccia."),
-    dict(tag="Come lavoriamo", grafica=bozza,
-         titolo="Il sito lo vedi prima di tirare fuori un euro",
-         corpo="Guardiamo il tuo profilo, ti costruiamo la bozza del sito e te "
-               "la mandiamo. La apri dal telefono e la scorri come se fosse "
-               "finita. Se non ti piace, pazienza: non hai speso niente e non "
-               "hai firmato niente."),
 ]
 
 # gli accenti veri: il sorgente non porta le lettere accentate, e nemmeno
@@ -316,6 +246,22 @@ PAGINA = """<!doctype html>
   .sito {{ font-size:28px; font-weight:500; letter-spacing:.1em; color:#dededf; }}
 
   /* tratti comuni ai disegni */
+  .telaio.fronte {{ justify-content:center; }}
+  .marchione {{ width:150px; height:150px; display:block; }}
+  .fronte h1 {{
+    margin-top:56px; font-size:112px; line-height:.99; letter-spacing:-.042em;
+  }}
+  .fronte p {{ margin-top:34px; font-size:40px; color:#b6b6c0; max-width:760px; }}
+  .indice {{ margin-top:78px; border-top:1px solid #23232b; }}
+  .indice div {{
+    display:flex; align-items:baseline; gap:30px;
+    padding:25px 0; border-bottom:1px solid #23232b;
+    font-size:35px; color:#c9c9d2; letter-spacing:-.01em;
+  }}
+  .indice span {{
+    font-size:24px; font-weight:600; letter-spacing:.14em; color:#7a4bd0;
+    font-variant-numeric:tabular-nums;
+  }}
   .art text {{ font-family:-apple-system,"Helvetica Neue",sans-serif; }}
   .tratto {{ fill:none; stroke:#4a4a55; stroke-width:2.5; }}
   .tratto-tenue {{ fill:none; stroke:#2c2c34; stroke-width:2.5; }}
@@ -369,17 +315,52 @@ PAGINA = """<!doctype html>
 </div>
 """
 
+
+FRONTE = """<!doctype html>
+<meta charset="utf-8">
+<title>{titolo}</title>
+<style>{stile}</style>
+<div class="fondo"></div>
+<div class="trama"></div>
+<div class="telaio fronte">
+  <img class="marchione" src="../simbolo.svg" alt="">
+  <div class="tag" style="margin-top:44px">{tag}</div>
+  <h1>{titolo}</h1>
+  <p>{corpo}</p>
+  <div class="indice">{indice}</div>
+  <footer style="margin-top:58px">
+    <span class="barra"></span>
+    <span class="sito">denkicode.com</span>
+  </footer>
+</div>
+"""
+
 def main():
     FUORI.mkdir(exist_ok=True)
+    for f in FUORI.glob("storia-*.html"):
+        f.unlink()
     tot = len(STORIE)
+
+    stile = PAGINA[PAGINA.index("<style>") + 7:PAGINA.index("</style>")]
+    stile = stile.replace("{{", "{").replace("}}", "}")
+    indice = "".join(
+        f'<div><span>{i:02d}</span>{accenta(v)}</div>'
+        for i, v in enumerate(COPERTINA["indice"], 1)
+    )
+    (FUORI / "storia-00.html").write_text(
+        FRONTE.format(stile=stile, tag=COPERTINA["tag"],
+                      titolo=accenta(COPERTINA["titolo"]),
+                      corpo=accenta(COPERTINA["corpo"]), indice=indice),
+        encoding="utf-8")
+    print("storia-00.html  " + COPERTINA["titolo"] + "  (copertina)")
+
     for i, s in enumerate(STORIE, 1):
         titolo = accenta(s["titolo"])
-        # 86 px tiene i titoli di questa serie su due righe; sotto i trenta
-        # caratteri ci sta il corpo grande
         h1 = 96 if len(titolo) <= 30 else (86 if len(titolo) <= 48 else 78)
         html = PAGINA.format(
             n=i, tot=tot, tag=s["tag"], titolo=titolo,
-            corpo=accenta(s["corpo"]), grafica=accenta(s["grafica"]()), corpo_h1=h1,
+            corpo=accenta(s["corpo"]), grafica=accenta(s["grafica"]()),
+            corpo_h1=h1,
         )
         (FUORI / f"storia-{i:02d}.html").write_text(html, encoding="utf-8")
         print(f"storia-{i:02d}.html  {titolo}")

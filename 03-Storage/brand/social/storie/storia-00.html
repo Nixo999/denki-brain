@@ -1,6 +1,6 @@
 <!doctype html>
 <meta charset="utf-8">
-<title>Chi decide alle undici di sera non ti telefona</title>
+<title>Cinque cose sul sito del tuo negozio</title>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   html, body { width:1080px; height:1920px; overflow:hidden; }
@@ -46,7 +46,7 @@
     -webkit-background-clip:text; -webkit-text-fill-color:transparent;
   }
   h1 {
-    margin-top:30px; font-size:86px; line-height:1.015;
+    margin-top:30px; font-size:{corpo_h1}px; line-height:1.015;
     letter-spacing:-.035em; font-weight:700; color:#fff;
     text-wrap:balance;
   }
@@ -63,6 +63,22 @@
   .sito { font-size:28px; font-weight:500; letter-spacing:.1em; color:#dededf; }
 
   /* tratti comuni ai disegni */
+  .telaio.fronte { justify-content:center; }
+  .marchione { width:150px; height:150px; display:block; }
+  .fronte h1 {
+    margin-top:56px; font-size:112px; line-height:.99; letter-spacing:-.042em;
+  }
+  .fronte p { margin-top:34px; font-size:40px; color:#b6b6c0; max-width:760px; }
+  .indice { margin-top:78px; border-top:1px solid #23232b; }
+  .indice div {
+    display:flex; align-items:baseline; gap:30px;
+    padding:25px 0; border-bottom:1px solid #23232b;
+    font-size:35px; color:#c9c9d2; letter-spacing:-.01em;
+  }
+  .indice span {
+    font-size:24px; font-weight:600; letter-spacing:.14em; color:#7a4bd0;
+    font-variant-numeric:tabular-nums;
+  }
   .art text { font-family:-apple-system,"Helvetica Neue",sans-serif; }
   .tratto { fill:none; stroke:#4a4a55; stroke-width:2.5; }
   .tratto-tenue { fill:none; stroke:#2c2c34; stroke-width:2.5; }
@@ -91,33 +107,13 @@
 </style>
 <div class="fondo"></div>
 <div class="trama"></div>
-<svg width="0" height="0" style="position:absolute">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#923adf"/>
-      <stop offset="1" stop-color="#da2f9b"/>
-    </linearGradient>
-  </defs>
-</svg>
-<div class="telaio">
-  <header>
-    <img src="../simbolo.svg" alt="">
-    <span class="marchio">DenkiCode</span>
-    <span class="conta">06 / 08</span>
-  </header>
-  <div class="scena">
-<svg viewBox="0 0 880 380" class="art">
-  <g class="griglia-ore"><rect x="0" y="54" width="92" height="46" rx="8"/><rect x="108" y="54" width="92" height="46" rx="8"/><rect x="216" y="54" width="92" height="46" rx="8"/><rect x="324" y="54" width="92" height="46" rx="8"/><rect x="432" y="54" width="92" height="46" rx="8"/><rect x="540" y="54" width="92" height="46" rx="8"/><rect x="648" y="54" width="92" height="46" rx="8"/><rect x="756" y="54" width="92" height="46" rx="8"/><rect x="0" y="116" width="92" height="46" rx="8"/><rect x="108" y="116" width="92" height="46" rx="8"/><rect x="216" y="116" width="92" height="46" rx="8"/><rect x="324" y="116" width="92" height="46" rx="8"/><rect x="432" y="116" width="92" height="46" rx="8"/><rect x="540" y="116" width="92" height="46" rx="8"/><rect x="648" y="116" width="92" height="46" rx="8"/><rect x="756" y="116" width="92" height="46" rx="8"/><rect x="0" y="178" width="92" height="46" rx="8"/><rect x="108" y="178" width="92" height="46" rx="8"/><rect x="216" y="178" width="92" height="46" rx="8"/><rect x="324" y="178" width="92" height="46" rx="8"/><rect x="432" y="178" width="92" height="46" rx="8"/><rect x="540" y="178" width="92" height="46" rx="8"/><rect x="648" y="178" width="92" height="46" rx="8"/><rect x="756" y="178" width="92" height="46" rx="8"/><rect x="0" y="240" width="92" height="46" rx="8"/><rect x="108" y="240" width="92" height="46" rx="8"/><rect x="216" y="240" width="92" height="46" rx="8"/><rect x="324" y="240" width="92" height="46" rx="8"/><rect x="432" y="240" width="92" height="46" rx="8"/><rect x="540" y="240" width="92" height="46" rx="8"/><rect x="648" y="240" width="92" height="46" rx="8"/><rect x="756" y="240" width="92" height="46" rx="8"/></g>
-  <rect x="540" y="240" width="92" height="46" rx="8" fill="url(#g)"/>
-  <text x="586" y="270" class="ora" text-anchor="middle">23:40</text>
-  <line x1="586" y1="292" x2="586" y2="330" stroke="url(#g)" stroke-width="2"/>
-  <text x="586" y="362" class="micro" text-anchor="middle">prenotazione ricevuta</text>
-  <text x="0" y="30" class="micro">negozio chiuso</text>
-</svg></div>
-  <div class="tag">Agenda</div>
-  <h1>Chi decide alle undici di sera non ti telefona</h1>
-  <p>Aspetta domani, e domani ha da fare. Oppure intanto ha chiamato un altro. Con l’agenda dentro il sito ti lascia la prenotazione la sera stessa, e la trovi quando apri.</p>
-  <footer>
+<div class="telaio fronte">
+  <img class="marchione" src="../simbolo.svg" alt="">
+  <div class="tag" style="margin-top:44px">DenkiCode</div>
+  <h1>Cinque cose sul sito del tuo negozio</h1>
+  <p>Quelle che si vedono quando un cliente lo apre davvero.</p>
+  <div class="indice"><div><span>01</span>Chi ti cerca su Google</div><div><span>02</span>I primi dieci secondi</div><div><span>03</span>Il telefono in una mano</div><div><span>04</span>Le prenotazioni di sera</div><div><span>05</span>Le foto</div></div>
+  <footer style="margin-top:58px">
     <span class="barra"></span>
     <span class="sito">denkicode.com</span>
   </footer>
