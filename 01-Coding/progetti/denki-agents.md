@@ -24,7 +24,9 @@ ricordano niente, leggono dal DB, fanno una cosa, scrivono sul DB. Cliente: inte
 
 Pacchetto della fase 1 portato da Nicola: regole, spec, dati del seed. Repo
 locale creato, spec corretta e listino controllato sulle pagine ufficiali;
-nessuna riga di codice (16/09/2026) → [[registro-interventi]].
+costruzione della fase 1 cominciata il 16/09/2026: struttura, compose, config
+LiteLLM e schema scritti e provati, seed non ancora, commit solo locali →
+[[registro-interventi]].
 
 La fase 1 è solo il gateway verso i modelli: tre tabelle Postgres (`modelli`,
 `task_routing`, `esecuzioni`), LiteLLM come proxy unico, `esegui(task, input)`
