@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 16/09/2026 — Nicola: «migliora le espressioni, sintassi errata, tono sbagliato, impostazione delle frasi errata»
+
+Bozza Barbershop SNIA giro 1, terza bocciatura di fila sul copy dopo Mikuma e Custom Beauty Nails. Non basta che le frasi siano lunghe e col mestiere dentro: devono essere scritte bene in italiano, con la sintassi giusta e il tono di chi parla
+
 ### 16/09/2026 — Nicola: «il logo di denki in basso, deve essere il nostro ufficiale in rosso al posto di quel simbolo che hai messo»
 
 Bozza Barbershop SNIA giro 1: nel capitolo DenkiCode il marchio era ridisegnato e nel footer stava la versione a gradiente. Il logo DenkiCode non si ridisegna mai e non si ricolora a gusto del sito: si usa il file ufficiale
