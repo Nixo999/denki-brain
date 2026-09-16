@@ -88,7 +88,9 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   il gateway verso i modelli. Repo **solo locale** in `~/lavoro/denki-agents`,
   spec corretta e listino verificato, **nessuna riga di codice**. Docker sul
   Mac c'è. Prima del prompt mancano le chiavi OpenAI e Google e il remote
-  GitHub, tutte e due di Nicola → [[denki-agents]]
+  GitHub, tutte e due di Nicola. **La fase 2, il cervello, è scritta** (16/09):
+  memoria, regista, flussi, fermate umane e indice semantico in pgvector, e
+  copre gli otto agenti chiesti da Patrick → [[denki-agents]]
 
 ## Cosa è bloccato, e perché
 

@@ -24,12 +24,18 @@ ricordano niente, leggono dal DB, fanno una cosa, scrivono sul DB. Cliente: inte
 
 Pacchetto della fase 1 portato da Nicola: regole, spec, dati del seed. Repo
 locale creato, spec corretta e listino controllato sulle pagine ufficiali;
-nessuna riga di codice (14/09/2026) → [[registro-interventi]]. Le fasi dopo la
-1 non sono scritte (14/09/2026).
+nessuna riga di codice (16/09/2026) → [[registro-interventi]].
 
 La fase 1 è solo il gateway verso i modelli: tre tabelle Postgres (`modelli`,
 `task_routing`, `esecuzioni`), LiteLLM come proxy unico, `esegui(task, input)`
 e una CLI. 21 task (12 lato Nicola, 9 lato Patrick), 15 modelli su 8 provider.
+
+**La fase 2, il cervello, è scritta** in `docs/spec-fase-2.md` (16/09/2026):
+sette tabelle (aziende, liste, contatti, siti, trattative, lavori,
+disiscrizioni) più `indice_semantico` in pgvector, un regista che legge la coda
+ed è anche il calendario, nove flussi con le fermate di Nicola e Patrick, il
+cruscotto per chi non ha il vault. Non si costruisce prima che la fase 1 sia
+chiusa. Le fasi dopo la 2 non sono scritte (16/09/2026).
 
 ## Soldi
 
@@ -43,6 +49,8 @@ e una CLI. 21 task (12 lato Nicola, 9 lato Patrick), 15 modelli su 8 provider.
 
 - Si parte dal gateway, modello e prezzo di ogni task stanno nel database →
   [[2026-09-14-denki-agents-parte-dal-gateway]]
+- Il cervello sta in un database solo, Postgres con pgvector, e il prompt si
+  compone a budget → [[2026-09-16-cervello-denki-agents]]
 - Stack dal pacchetto: Node 22 (supporto fino al 30/04/2027), TypeScript
   strict, ESM, pnpm, Postgres 16, LiteLLM, Docker Compose, Zod, `pg`, SDK
   `openai` puntato su LiteLLM
@@ -60,6 +68,10 @@ questa nota.
 - [ ] chiavi OpenAI e Google: le crea e le scrive Nicola → [[credenziali]]
 - [ ] remote GitHub `Nixo999/denki-agents`, privato: non esiste (14/09/2026)
 - [ ] poi il prompt del pacchetto, in una sessione aperta dentro `~/lavoro/denki-agents`
+- [ ] fase 2: il modello di embedding non è scelto, verifica in corso sulle pagine ufficiali (16/09/2026)
+- [ ] fase 2: chi è `momo`? Una lista chiamate ha bisogno di un destinatario (16/09/2026)
+- [ ] fase 2: i due CSV dei contattati si importano una volta sola, poi il banco scrive nel database → [[contattati]]
+- [ ] mail a freddo: servono lista da Registro imprese, dominio secondario e 3-4 settimane di warm-up → [[2026-09-02-cold-email-gestionali]]
 - [ ] `gpt-5.6-sol` in promozione almeno fino al 21/11/2026: il prezzo dopo non è pubblicato
 - [ ] dal 01/01/2027 `gemini-3.8-flash` va a 1,50/7,50: i fallback di `seo_meta`, `qa_tecnico` e `report_periodico` diventano impossibili, la sola uscita tocca il tetto
 - [ ] VPS: esiste? TODO

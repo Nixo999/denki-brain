@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **192 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **193 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -263,6 +263,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-13-caller-fuori]] — Gabriele ed Edoardo si ritirano senza aver chiamato nessuno: il telefono resta su Giulia sola e le 87 righe passano a lei.
 - [[2026-09-14-denki-agents-parte-dal-gateway]] — denki-agents parte dal gateway verso i modelli - modello, prezzo e tetto di ogni task nel database, mai nel codice.
 - [[2026-09-15-morgan-entra-parrucchiere-presidio]] — Edo e Gabriele fuori per sempre. Entra Morgan (fratello di Patrick): non chiama, segnala. Primo frutto un parrucchiere pagato col sito.
+- [[2026-09-16-cervello-denki-agents]] — Il cervello di denki-agents - memoria, regista e fermate umane in un Postgres solo con pgvector, e il prompt si compone a budget.
 
 ## 06-Daily
 
