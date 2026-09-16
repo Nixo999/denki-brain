@@ -14,6 +14,7 @@ brutto. Un sito che passa puo' essere ancora brutto; uno che non passa lo e'
 di sicuro.
 """
 import re
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -35,6 +36,22 @@ def testo(d):
     return t
 
 
+def lato_lungo(p):
+    """Il lato lungo in pixel: sips sul Mac, Pillow su Linux. Senza nessuno dei due si
+    ferma e lo dice: prima un errore finiva nell'except qui sotto e la foto passava."""
+    if shutil.which("sips"):
+        out = subprocess.run(["sips", "-g", "pixelWidth", "-g", "pixelHeight", str(p)],
+                             capture_output=True, text=True).stdout
+        n = [int(x) for x in re.findall(r":\s*(\d+)", out)]
+        return max(n) if n else None
+    try:
+        from PIL import Image
+    except ImportError:
+        sys.exit("controlla-sito: per misurare le foto serve sips (macOS) o Pillow (pip install pillow)")
+    with Image.open(p) as im:
+        return max(im.size)
+
+
 def foto_piccole(d):
     piccole = []
     for p in sorted((d / "assets" / "img").glob("*")):
@@ -43,11 +60,9 @@ def foto_piccole(d):
         if any(x in p.name.lower() for x in NON_FOTO):
             continue
         try:
-            out = subprocess.run(["sips", "-g", "pixelWidth", "-g", "pixelHeight", str(p)],
-                                 capture_output=True, text=True).stdout
-            n = [int(x) for x in re.findall(r":\s*(\d+)", out)]
-            if n and max(n) < MIN_FOTO:
-                piccole.append((p.name, max(n)))
+            lato = lato_lungo(p)
+            if lato is not None and lato < MIN_FOTO:
+                piccole.append((p.name, lato))
         except Exception:
             pass
     return piccole
