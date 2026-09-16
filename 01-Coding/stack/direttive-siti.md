@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-09-16
+updated: 2026-09-17
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 17/09/2026 — Nicola: «solito problema, gli script, le frasi fanno cagare»
+
+Bozza Shaddai giro 1, quinta bocciatura di fila sul copy dopo Mikuma, Custom Beauty Nails, New Fantasy e Barbershop. Far leggere all'operatore i siti veri del mestiere non ha spostato il risultato: il testo esce parlato, da messaggio, e deve essere scritto
 
 ### 16/09/2026 — Nicola: «l'impostazione delle frasi è completamente sbagliata, guarda dei bei siti di gente che ha saloni eccetera, copia quella impostazione verbale e delle frasi»
 
