@@ -67,10 +67,18 @@ Niente di dichiarato.
   va fatto a parte.
 - Il fallback di `revisione_visiva` su Fable lascia 5.000 token d'ingresso: le
   catture delle pagine lo riempiono subito.
-- `TODO`: «su un sito» vuol dire internet aperto con un login serio, o accesso
-  solo da una rete privata.
-- `TODO`: quali sono gli «altri progetti attivi». Solo siti, o anche OperO e
-  DenkiShift, che hanno repo e regole di produzione loro.
+- **Online, con un login serio.** Nicola, 16/09: «deve essere online con un
+  login serio». Vale il contrario della spec della fase 2, che teneva il
+  cruscotto fuori da internet aperto.
+- **Anche i gestionali.** Nicola, 16/09: «sì anche i gestionali contano come
+  processi». Su OperO e DenkiShift restano le regole di sempre: la produzione
+  resta fuori, OperO è il prodotto di [[sebastian-torres]], DenkiShift non è
+  installabile. Ne segue che l'agente di un gestionale non tocca la
+  produzione: la messa online resta una fermata di una persona.
+- **L'ordine, approvato.** Nicola, 16/09: «l'ordine che hai deciso tu va bene
+  vai». 1) chiudere la fase 1, cioè `esegui()`, CLI e README; 2) riscrivere la
+  spec, poi un sito vero costruito in autonomia da riga di comando e misurato
+  con `controlla-sito`; 3) login, pagina progetti, chat e deploy sul VPS.
 - `TODO`: gli agenti di Patrick vengono dopo i siti o insieme.
 
 ## Collegamenti
