@@ -1,7 +1,7 @@
 ---
 riga: Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 type: area
-updated: 2026-09-11
+updated: 2026-09-16
 source: claude
 prodotto: siti-vetrina
 stato: da-provare
@@ -134,6 +134,25 @@ Handle esatto, **follower**, bio, **link in bio**. Serve a stabilire tre cose:
 > (Pagine Gialle, maneggionline, toelettatori.it). L'API `web_profile_info`
 > risponde 429: non usarla. Le pagine degli hashtag si disegnano nel browser e
 > dal sorgente non esce nessun profilo.
+
+> [!tip] Aggiunto il 16 settembre 2026 — il profilo si legge dall'API, non dalla pagina
+> Dalla sessione di Patrick, in una scheda su instagram.com: la ricerca
+> (`/web/search/topsearch/?context=blended&query=…`) dà il `pk` di ogni
+> utente, e `GET /api/v1/users/{pk}/info/` con l'header
+> `x-ig-app-id: 936619743392459` risponde in mezzo secondo con `biography`,
+> `external_url`, `bio_links`, `follower_count`, `media_count`, `is_private`,
+> `category`, `city_name`, `address_street` e `public_phone_number`.
+> `web_profile_info` risponde ancora 429; questo endpoint ha retto **684
+> letture in due giri** da cinque e tre minuti. Tre cose pagate: i
+> `setTimeout` in una scheda nascosta sono rallentati, quindi le pause si
+> fanno con le richieste stesse e non con i timer; il tool JavaScript si
+> spegne a 45 secondi, quindi i giri lunghi si lanciano come funzione
+> asincrona che scrive in `window` e si interroga dopo; la CSP di Instagram
+> blocca `fetch` verso localhost, e i dati escono dalla pagina con un
+> `<form method=POST>` verso un server locale, che è una navigazione e passa.
+> Il `meta description` della pagina scaricata con `fetch` porta la bio di
+> chi guarda, non del profilo: non si usa.
+> Provato in [[2026-09-16-tre-liste-bergamo-lago-aziende]].
 
 ### 3. Il sito lo verifica lo script, non chi scrive la lista
 

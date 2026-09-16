@@ -162,6 +162,7 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
 |---|---|---|---|---|---|---|
 | 2026-09-06 sera | Nicola +claude | [[sito-salone-di-andrea]] | `Nixo999/salonediandrea-site` (nuovo, privato) `main` | — | Bozza sito vetrina Il Salone di Andrea (Dalmine): scroll-telling scuro, dati verificati da Instagram e directory, noindex. Repo creato con `gh`, pushato; poi finish review (otto rilievi) e fix di scorrimento | `138e523` → `af2a148` |
+| 2026-09-16 | Claude per Patrick | banco DM e strumenti liste | Nixo999/denki-brain | nessuno | controlla-lista.py: la regex degli errori dei motori cercava «403» da solo e lo trovava in «403 post» e nei telefoni, ora cerca «http error 403». Tre liste del 16/9 pubblicate sul banco (151 righe), 355 invii del 10-14/9 letti dalla posta e datati | — |
 
 ## 2026-09-03
 

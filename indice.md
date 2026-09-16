@@ -7,7 +7,11 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
+<<<<<<< Updated upstream
 Tutte le **191 note** del vault, per cartella, con una riga a testa. Serve a un
+=======
+Tutte le **192 note** del vault, per cartella, con una riga a testa. Serve a un
+>>>>>>> Stashed changes
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -138,6 +142,10 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-14-lista-siti-bs-bg]] — La lista siti del 14 settembre - 43 righe su parrucchieri e barber fra Brescia e Bergamo da 99 profili aperti - e le due liste che non sono state fatte, col motivo.
 - [[2026-09-14-rilanci-lead-aperti]] — I lead aperti al 14 settembre letti dalla posta intera - quattro bozze promesse e mai consegnate, una chiamata da fare oggi, e la seconda critica sull'AI in otto giorni.
 - [[2026-09-15-rilanci-lead-aperti]] — I lead aperti al 15 settembre sera letti dalla posta intera - una bozza chiesta alle 21:14 che non esiste, un'email da mandare a Koinè, quattro bozze consegnate e zero chiamate fatte.
+<<<<<<< Updated upstream
+=======
+- [[2026-09-16-tre-liste-bergamo-lago-aziende]] — Le tre liste del 16 settembre - 51 siti sulla bellezza di Bergamo, 50 DenkiShift fra alberghi di lago e di montagna, 50 ricerca su concessionarie, arredo, ottici e immobiliari - e il modo nuovo di leggere i profili.
+>>>>>>> Stashed changes
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
