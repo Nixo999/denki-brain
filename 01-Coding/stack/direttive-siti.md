@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 16/09/2026 — Nicola: «l'impostazione delle frasi è completamente sbagliata, guarda dei bei siti di gente che ha saloni eccetera, copia quella impostazione verbale e delle frasi»
+
+Bozza Barbershop SNIA giro 2, quarta bocciatura di fila sul copy. Il modo di scrivere non si inventa a tavolino: prima di scrivere si vanno a leggere i siti veri di quel mestiere fatti bene, e si prende da li la lunghezza delle frasi, la persona, come aprono i paragrafi e come sono scritti i titoli di sezione
+
 ### 16/09/2026 — Nicola: «questo deve essere il nostro logo»
 
 Bozza Barbershop SNIA giro 2: nel capitolo DenkiCode restava un path SVG che imitava a mano l'anello e il 気. Nel punto dove va il nostro marchio ci va il file ufficiale, mai un ridisegno - vale anche quando il ridisegno serve a farlo animare
