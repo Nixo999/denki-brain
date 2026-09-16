@@ -68,7 +68,7 @@ questa nota.
 - [ ] chiavi OpenAI e Google: le crea e le scrive Nicola → [[credenziali]]
 - [ ] remote GitHub `Nixo999/denki-agents`, privato: non esiste (14/09/2026)
 - [ ] poi il prompt del pacchetto, in una sessione aperta dentro `~/lavoro/denki-agents`
-- [ ] fase 2: il modello di embedding non è scelto, verifica in corso sulle pagine ufficiali (16/09/2026)
+- [x] fase 2: embedding su `text-embedding-3-small` a 768 dimensioni (`1c92389`, 16/09/2026). Non per il prezzo: è l'unico a 0,02 $ con l'endpoint embeddings documentato in LiteLLM. OpenAI non dichiara l'italiano: se il recupero è debole si cambia modello e si rifà l'indice, quattro centesimi
 - [ ] fase 2: chi è `momo`? Una lista chiamate ha bisogno di un destinatario (16/09/2026)
 - [ ] fase 2: i due CSV dei contattati si importano una volta sola, poi il banco scrive nel database → [[contattati]]
 - [ ] mail a freddo: servono lista da Registro imprese, dominio secondario e 3-4 settimane di warm-up → [[2026-09-02-cold-email-gestionali]]
