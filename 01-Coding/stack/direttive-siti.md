@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 16/09/2026 — Nicola: «metti qualcossa su di noi e sui trapianti anche in alto, cosi uno non deve scorrere tutto il sito»
+
+Bozza Barbershop SNIA giro 1: DenkiCode e il servizio secondario stavano solo in fondo. Quello che conta - il secondo servizio e la firma DenkiCode quando il cliente l'ha chiesta - va anche sopra la piega, non solo in fondo alla spina dello scroll
+
 ### 16/09/2026 — Nicola: «togli il carosello di frasi»
 
 Bozza Barbershop SNIA giro 1: il nastro di parole in corsa sotto l'hero (marquee). Non si mette su nessun sito: e' un elemento da template che non dice niente e mangia una fascia intera
