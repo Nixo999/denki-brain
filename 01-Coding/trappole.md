@@ -696,6 +696,11 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   vivo resta bloccata. → si dichiara il buco e il `curl` lo lancia Nicola.
   ([[sito-hairstylebrescia]], 16 settembre)
 
+- `[TRAPPOLA]` **`translate(42%)` dentro `transform` misura l'elemento, non il
+  contenitore.** Undici attrezzi che dovevano stare su un anello intorno alla
+  foto stavano tutti al centro, a 23 px. → `container-type:inline-size` sul
+  contenitore e il raggio in `cqw`. ([[sito-newfantasy]], 16 settembre)
+
 ## Collegamenti
 
 [[registro-interventi]] · [[processo-siti]] · [[convenzioni]] · [[netlify]] ·

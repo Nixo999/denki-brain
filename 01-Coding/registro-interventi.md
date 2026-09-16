@@ -42,6 +42,7 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
 |---|---|---|---|---|---|---|
+| 16/09, mattina | Nicola con Trevis (Fable) | [[sito-newfantasy]] | `Nixo999/newfantasy-site` (`main`) | — (localStorage) | **Giro 2 dopo la bocciatura «non dovevi fare solo un sito basato sul fatto che sia un gestionale»**: via l'agenda dall'apertura e la sezione delle durate; dentro l'esplosione di attrezzi del logo intorno a una foto, la frase loro sul rosso fuoco, i tre nomi grandi, cosa fanno con parole loro, promo di settembre e prodotto del mese, nastro di parole, parallasse sulle foto. Direttiva scritta con `regola.py`. 8/8, overflow 0 a 1440 e 375, console pulita, online. Trappola: `translate()` in percentuale dentro `transform` misura l'elemento, non il contenitore → `cqw` | vedi git log |
 | 07:40 | Nicola +claude | [[sito-hairstylebrescia]] | `hairstylebrescia-site` | — | Bozza Hair Style Parrucchieri (Brescia, gancio sposa) costruita col processo intero da un operatore su Sonnet: mondo A «La prova», 13 svg, un pin, 8/8; repo privata `Nixo999/hairstylebrescia-site`, online su hairstylebrescia.netlify.app coi tre sbarramenti nei file (`curl` sul vivo bloccato dal classificatore, lo fa Nicola) | `853401d` |
 
 ## 2026-09-15

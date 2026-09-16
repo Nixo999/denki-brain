@@ -245,6 +245,19 @@ orarie. Un solo pin, il nastro del mese. Rosso solo per l'attesa.»
 è l'innesto C: i campioni di colore e le loro parole fra la griglia e la
 prenotazione.
 
+## Giro 2, 16 settembre 2026 — la bocciatura
+
+Nicola: «non hai capito niente, non dovevi fare solo un sito basato sul fatto
+che sia un gestionale, rifai la parte del sito, aggiungendo un po' di vita e
+fai capire la personalità del cliente». Scritta in [[direttive-siti]]. Rifatta
+la vetrina sopra la prenotazione: l'esplosione di attrezzi del logo in anello
+intorno a `onde-viola.jpg` (11 `<svg>` che entrano e respirano), la loro frase
+sul rosso fuoco in grande, i tre nomi a 9rem, «cosa facciamo, con parole
+nostre», la promo di settembre e il prodotto del mese (numeri loro, dai post),
+un nastro di parole che scorre, parallasse sulle cinque foto. Tolte l'agenda in
+apertura e la sezione delle durate. La prenotazione e il gestionale non sono
+cambiati.
+
 ## Costruzione e verifica, 16 settembre 2026
 
 Il giro di costruzione su Opus è morto due volte (limite di sessione alle
