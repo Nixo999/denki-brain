@@ -28,7 +28,8 @@ nessuna riga di codice (16/09/2026) → [[registro-interventi]].
 
 La fase 1 è solo il gateway verso i modelli: tre tabelle Postgres (`modelli`,
 `task_routing`, `esecuzioni`), LiteLLM come proxy unico, `esegui(task, input)`
-e una CLI. 21 task (12 lato Nicola, 9 lato Patrick), 15 modelli su 8 provider.
+e una CLI. 21 task (12 lato Nicola, 9 lato Patrick), 10 modelli di chat e uno di
+embedding su 3 provider (16/09/2026).
 
 **La fase 2, il cervello, è scritta** in `docs/spec-fase-2.md` (16/09/2026):
 sette tabelle (aziende, liste, contatti, siti, trattative, lavori,
@@ -51,6 +52,10 @@ chiusa. Le fasi dopo la 2 non sono scritte (16/09/2026).
   [[2026-09-14-denki-agents-parte-dal-gateway]]
 - Il cervello sta in un database solo, Postgres con pgvector, e il prompt si
   compone a budget → [[2026-09-16-cervello-denki-agents]]
+- **Per adesso tre provider: OpenAI, Anthropic, Google.** Nicola, 16/09/2026: «per
+  adesso basiamoci solo su questi 3 e poi in futuro se tutto funziona come voglio
+  aggiungiamo altre». Gli altri cinque restano verificati in fondo a `docs/routing.md`
+  (`1fdf30b`)
 - Stack dal pacchetto: Node 22 (supporto fino al 30/04/2027), TypeScript
   strict, ESM, pnpm, Postgres 16, LiteLLM, Docker Compose, Zod, `pg`, SDK
   `openai` puntato su LiteLLM
@@ -65,7 +70,7 @@ questa nota.
 - [x] listino controllato sulle pagine ufficiali (`00591f7`): tre ID del pacchetto sbagliati (`mistral-large-3`, `gemini-3.1-pro`, `deepseek-v4-flash`), Mistral quattro volte più basso, `gpt-6-astra` a 50 in uscita. Senza `temperature` anche `gpt-6-astra` e i Gemini 3
 - [x] Docker Desktop 4.91 sul Mac di Nicola: motore 29.8 e Compose 5.5 rispondono (14/09/2026)
 - [ ] pnpm: sul Mac c'è solo corepack (14/09/2026)
-- [ ] chiavi OpenAI e Google: le crea e le scrive Nicola → [[credenziali]]
+- [x] chiavi OpenAI, Anthropic e Google nel `.env`, create da Nicola con credito iniziale: rispondono tutte e tre e i modelli del listino sono visibili sugli account (16/09/2026) → [[credenziali]]
 - [x] remote GitHub `Nixo999/denki-agents` privato: creato e pushato da Claude, come da [[2026-09-03-gh-crea-repository]] (16/09/2026)
 - [ ] poi il prompt del pacchetto, in una sessione aperta dentro `~/lavoro/denki-agents`
 - [x] fase 2: embedding su `text-embedding-3-small` a 768 dimensioni (`1c92389`, 16/09/2026). Non per il prezzo: è l'unico a 0,02 $ con l'endpoint embeddings documentato in LiteLLM. OpenAI non dichiara l'italiano: se il recupero è debole si cambia modello e si rifà l'indice, quattro centesimi

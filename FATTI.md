@@ -92,8 +92,8 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
 - **denki-agents** (14/09): piattaforma multi-agente interna, la fase 1 è solo
   il gateway verso i modelli. Repo `Nixo999/denki-agents` privato (16/09),
   spec corretta e listino verificato, **nessuna riga di codice**. Docker sul
-  Mac c'è. Prima del prompt mancano solo le chiavi OpenAI e Google, e le
-  inserisce Nicola. **La fase 2, il cervello, è scritta** (16/09):
+  Mac c'è, e le chiavi OpenAI, Anthropic e Google sono nel `.env` e rispondono
+  (16/09). Manca solo far partire il prompt, per adesso su tre provider. **La fase 2, il cervello, è scritta** (16/09):
   memoria, regista, flussi, fermate umane e indice semantico in pgvector, e
   copre gli otto agenti chiesti da Patrick → [[denki-agents]]
 
