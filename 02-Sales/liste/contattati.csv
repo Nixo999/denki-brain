@@ -74,6 +74,7 @@ Data,Da,Account IG,Nome,Comune,Segmento,Tipo,Lista
 2026-09-03,Patrick Sappa,@teskyo_piercing_shop,Teskyo Piercing Shop,Cantu (CO),Piercing/tattoo,primo,lista-corrente.csv
 2026-09-03,Patrick Sappa,@unique___your_style_,Unique Your Style,Treviglio (BG),Parrucchieri,primo,lista-corrente.csv
 2026-09-03,Patrick Sappa,@zeinaink_tattoostudio,Zeina Ink Tattoo Studio,Carugo (CO),Tattoo/piercing,primo,lista-corrente.csv
+2026-09-08,Patrick Sappa,@napoletanopizzeriatrattoria,Napoletano Pizzeria Trattoria,Cermenate (CO),Pizzeria,primo,
 2026-09-09,Patrick Sappa,@alambiccobesozzo,L'Alambicco,Besozzo (VA),Bar/vinoteca,primo,2026-09-09-instagram-ristorazione-va-co-lc-bg.csv
 2026-09-09,Patrick Sappa,@albranca2020,Al Branca Ristorante,Luino (VA),Ristorante,primo,2026-09-09-instagram-ristorazione-va-co-lc-bg.csv
 2026-09-09,Patrick Sappa,@almottarone,Ristorante Al Mottarone,Laveno Mombello (VA),Ristorante/pizzeria,primo,2026-09-09-instagram-ristorazione-va-co-lc-bg.csv
@@ -160,415 +161,429 @@ Data,Da,Account IG,Nome,Comune,Segmento,Tipo,Lista
 2026-09-09,Patrick Sappa,@toelettatura_snoopy_gavirate,Toelettatura Snoopy,Gavirate (VA),Toelettatura,primo,2026-09-09-instagram-anello1-pet.csv
 2026-09-09,Patrick Sappa,@toelettaturagiulietta,Toelettatura Giulietta,Varese (VA),Toelettatura,primo,2026-09-09-instagram-anello1-pet.csv
 2026-09-09,Patrick Sappa,@unparadisoperiltuoamico,Un paradiso per il tuo amico (Emma),Bizzarone (CO),Pet sitting/pensione,primo,2026-09-09-instagram-anello1-pet.csv
+2026-09-10,Patrick Sappa,@101caniegatti,101 Cani e Gatti,Merate (LC),Pet shop con toelettatura,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
+2026-09-10,Patrick Sappa,@_cristabel.nails_,Cristabel Nails,Como (CO),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@alchimiahairexperience,L'Alchimia Hair Experience,Somma Lombardo (VA),Parrucchieri,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@alessandra_nails_oggiono,"Alessandra Noto, onicotecnica",Oggiono (LC),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@alyynails,Alyy Nails Studio,Lecco (LC),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@andrea_lashmaker_bustoa,"EsteticAndrea, lashmaker",Busto Arsizio (VA),Lashmaker/estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@angel_estetica_cantu,Angel Estetica & Benessere,Cantù (CO),Estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@antheasaronno,Centro Estetico Anthea,Saronno (VA),Estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@autentiko_gusto_napoletano,Autentiko,Appiano Gentile (CO),Pizzeria/ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@barber_garage_busto_arsizio,Barber Garage,Busto Arsizio (VA),Barber,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@barber_shop_gold_2,Barber Shop Gold 2,Busto Arsizio (VA),Barber,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@baucettitoelettatura,Baucetti Toelettatura,Treviglio (BG),Toelettatura,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
+2026-09-10,Patrick Sappa,@bbpowerhorse_equitazione,Centro Ippico BB Power Horse,Bodio Lomnago (VA),Centro ippico,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
+2026-09-10,Patrick Sappa,@bella.hairstudio5,Bella Hair Studio,Saronno (VA),Parrucchieri,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@belvederebellagio,Belvedere Bellagio,Bellagio (CO),Albergo,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@bioesteticabusto,Bio Estetica di Alessia,Busto Arsizio (VA),Estetica avanzata,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@blueladies_saronno,Blue Ladies Parrucchieri,Saronno (VA),Parrucchieri,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@calmaegessobustoarsizio,Calma e Gesso,Busto Arsizio (VA),Bar e ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@caminhotelluino,Camin Hotel Luino,Luino (VA),Albergo con ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@capriccio84patisserie,Capriccio Pasticceria,Presezzo (BG),Pasticceria/caffetteria,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@centro_estetica_glamour,Centro Estetica Glamour,Osio Sotto (BG),Estetica/solarium,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@centroippicolepuledre,Centro Ippico Le Puledre,Cislago (VA),Centro ippico,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
+2026-09-10,Patrick Sappa,@cgdecor_imbianchino_varese,CG Decor di Antonio Cigliola,Oggiona con Santo Stefano (VA),Imbianchino/cartongessista,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@class_luxurybeauty_pmu,CLASS luxury beauty & permanent make-up,Luino (VA),Estetica avanzata/PMU,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@debby.nails.design,"Debora, onicotecnica",Busto Arsizio (VA),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@deipregi,DeiPregi Hair&Beauty,Saronno (VA),Parrucchieri/estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@diamond.nails.cantu,Diamond Nails,Cantù (CO),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@dolci_di_bea,Dolci di Bea,Bergamo (BG),Pasticceria e bar,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@ela__nails__gallarate,Ela Nails,Gallarate (VA),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@elleffehairstudio,Elleffe hair studio,Castiglione Olona (VA),Parrucchieri/barber,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@ellepetsitter,Elle Pet Sitter,Lugano (TI),Pet sitter,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
+2026-09-10,Patrick Sappa,@essenziabeautystudio,Essenzia Beauty Studio,Bergamo (BG),Estetica/massaggi,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@esteticaeasytradate,Easy Estetica & Benessere,Tradate (VA),Estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@esteticain_cantu,Estetica In,Cantù (CO),Estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@esteticaladolcevitabusto,La Dolce Vita di Sara & Rossana,Busto Arsizio (VA),Estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@esteticamarina.tradate,Estetica Marina,Tradate (VA),Estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@esteticaverdesalvia,Verde Salvia Estetica,Bergamo (BG),Estetica/solarium,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@franpetslecco2026,Franpets Toelettatura,Lecco (LC),Toelettatura,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
+2026-09-10,Patrick Sappa,@glam_gavirate,GLAM hair-styling & estetica,Gavirate (VA),Parrucchieri/estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@gymnasiumlecco,Gymnasium Different Fit,Lecco (LC),Palestra,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@hotelasnigocernobbio,Hotel Asnigo,Cernobbio (CO),Albergo con ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@hotelcentralebellagio,Hotel Centrale Bellagio,Bellagio (CO),Albergo,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@hoteldecharmelaveno,Hotel De Charme Laveno,Laveno Mombello (VA),Albergo,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@il_gattopardo_dalmine,Il Gattopardo,Dalmine (BG),Ristorante/pizzeria,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@ilclubbinoalzano,Il Clubbino,Alzano Lombardo (BG),"Bar, ristorante, pizzeria, hamburgeria",primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@in19_nails_gallarate,In19 Nails,Gallarate (VA),Nails,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@irmapezzottabergamo,Irma Pezzotta toelettatura e scuola,Bergamo (BG),Toelettatura,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
+2026-09-10,Patrick Sappa,@la_casa_del_lupo,La Casa del Lupo,Valgreghentino (LC),Pensione e asilo per cani,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
+2026-09-10,Patrick Sappa,@luana.nailslab,Luana NailsLab,Cantù (CO),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@maistapizzeria,Maistà pizza & cucina,Bergamo (BG),"Pizzeria, due sedi",primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@mep.parrucchiere,MeP parrucchiere,Cassano Magnago (VA),Parrucchieri,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@missdarling_beauty_c_saronno,MissDarling Beauty Center,Saronno (VA),Estetica avanzata,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@nails.varese_avignio,Manicure & Pedicure Varese (Avignio),Varese (VA),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@nails_style.varese,Nails Style,Varese (VA),Nails/estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@nailsbyirsi_gallarate,Nails by Irsi,Gallarate (VA),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@nailslikehermes,"Rebecca, onicotecnica",Merate (LC),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@nailstradate,Nails Tradate Paola,Tradate (VA),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@nicholegramegna_nails,"Nichole, onicotecnica",Como (CO),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@novart.hairstudio,NØVART hair studio,Saronno (VA),Parrucchieri,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@ondacernobbio,Onda Cernobbio,Cernobbio (CO),Ristorante/pizzeria/bar,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@ororossoristorante,Oro Rosso,Tradate (VA),Ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@osterialombardamerate,Osteria Lombarda,Merate (LC),Ristorante/enoteca,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@p.nails_lecco,P.Unghie,Lecco (LC),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@papillonristorante,Papillon,Sesto Calende (VA),Ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@passionnails_tradate,Passion Nails,Tradate (VA),Nails,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@peaceanddogs.lugano,Peace & dogs di Luana Spada,Lugano (TI),Dog sitter e pensione casalinga,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
+2026-09-10,Patrick Sappa,@plinioarosio,Ristorante Plinio 1988,Arosio (CO),Ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@potadogtoelettatura,Pota Dog Toelettatura,Chiuduno (BG),Toelettatura,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
+2026-09-10,Patrick Sappa,@prettydogs_varese,Toelettatura Pretty Dogs,Varese (VA),Toelettatura,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
+2026-09-10,Patrick Sappa,@ristorante.tabularosa,Tabula Rosa,Lecco e Calolziocorte (LC),"Ristorante, due sedi",primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@ristorantedapietro,Da Pietro 1955,Como (CO),Ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@ristorantedelporto_menaggio,Ristorante del Porto,Menaggio (CO),Ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@ristorantepizzeriasanvigilio,Ristorante Pizzeria San Vigilio,Bergamo (BG),Ristorante/pizzeria,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@ristorantetarantola,Ristorante Tarantola,Appiano Gentile (CO),Ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@samsara_hair_saronno,Samsara Hair and Soul,Saronno (VA),Parrucchieri,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@scodinzolandia_cantu,Scodinzolandia,Cantù (CO),Toelettatura,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
+2026-09-10,Patrick Sappa,@tigarba_,Tigarba,Busto Arsizio (VA),Ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@toelettatura_belli_e_pelosi,Toelettatura Belli e Pelosi,Malnate (VA),Toelettatura,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
+2026-09-10,Patrick Sappa,@valentinacauli.nails,"Valentina Cauli, unghie e laminazione",Garbagnate Monastero (LC),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@vanity_seriate,Estetica Vanity,Seriate (BG),Estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@vecchiopozzo_stezzano,Vecchio Pozzo,Stezzano (BG),"Pub, ristorante e pizzeria",primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@veronica_nails_como,Veronica Nails,Como (CO),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@villacocca_gavirate,Villa Cocca,Gavirate (VA),Ristorante/pizzeria/eventi,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
+2026-09-10,Patrick Sappa,@wild_dog_trainer,Wild Dog Trainer,Ticino (TI),Istruttore cinofilo,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
+2026-09-10,Patrick Sappa,@wowpetcouture,WOW Pet Couture,Paladina (BG),Toelettatura e boutique,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
+2026-09-10,Patrick Sappa,@xoval.nails,"Valentina Unghie, onicotecnica",Erba (CO),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
+2026-09-12,Patrick Sappa,@_onda_group_,Onda Group Serramenti,Varese (VA),Serramenti e infissi,primo,2026-09-11-instagram-ricerca-mb-va-co.csv
 2026-09-12,Patrick Sappa,@abcgaragebg,ABC Garage,Treviolo (BG),Carrozzeria,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@afrodite.estetica.agrate,Afrodite Estetica,Agrate Brianza (MB),Estetica,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@agriturismoteresadellefragole,Teresa delle Fragole,Brianza (MB),Azienda agricola e agriturismo,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
 2026-09-12,Patrick Sappa,@alka_impiantiallarme,Alka Impianti,Bergamo (BG),Impianti elettrici,primo,2026-09-12-instagram-ricerca-lombardia.csv
 2026-09-12,Patrick Sappa,@amare_edilizia_como,Amare Edilizia,Como (CO),Edilizia e materiali,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@art_hotel_varese,Art Hotel Varese,Varese (VA),Albergo,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
 2026-09-12,Patrick Sappa,@artech_edilizia_completa,Artech Edilizia,Como (CO),Edilizia e materiali,primo,2026-09-12-instagram-ricerca-lombardia.csv
 2026-09-12,Patrick Sappa,@autofficina_previtali_bergamo,Autofficina Previtali,Bergamo (BG),Autofficina,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@autofficinacantu,Autofficina Cantù,Cantù (CO),Autofficina,primo,2026-09-11-instagram-ricerca-mb-va-co.csv
 2026-09-12,Patrick Sappa,@autofficinamantovansnc,Autofficina Mantovan,Mantova (MN),Autofficina,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@barbershop_adamseregno,Adam Barbershop,Seregno (MB),Barber,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@beautydream_dibicenter,Estetica Beauty Dream,Arcore (MB),Estetica,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@beautynails.jennyfer,Beauty Nails Jennyfer,Besana in Brianza (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@beitalianrestaurant,Casa Cuomo,Seregno (MB),Ristorante,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@bellavistalecco,Hotel Bellavista,Valmadrera (LC),Albergo,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
 2026-09-12,Patrick Sappa,@bellini_wood,Bellini Wood,Mantova (MN),Falegnameria,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@besa_nails2800,Besa Nails,Besana in Brianza (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@besana_milena_estetica,Milena Besana Estetica,Besana in Brianza (MB),Estetica,primo,2026-09-11-instagram-siti-brianza.csv
 2026-09-12,Patrick Sappa,@bg.impianti,BG Impianti,Milano (MI),Impianti elettrici,primo,2026-09-12-instagram-ricerca-lombardia.csv
 2026-09-12,Patrick Sappa,@bicego_edilizia,F.lli Bicego,Legnano (MI),Edilizia e materiali,primo,2026-09-12-instagram-ricerca-lombardia.csv
 2026-09-12,Patrick Sappa,@bigmat_simed,BigMat Simed,Pavia (PV),Edilizia e materiali,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@bis_hotelvarese,Bis Hotel Varese,Varese (VA),Albergo,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@bistrotcattaneomonza,Bistrot Cattaneo,Monza (MB),"Bar, pasticceria e ristorante",primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
 2026-09-12,Patrick Sappa,@bontempiimpianti,Bontempi Impianti,Brescia (BS),Impianti elettrici,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@boom_seregno,Boom Seregno,Seregno (MB),Pizzeria con area bimbi,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
 2026-09-12,Patrick Sappa,@bottegan8,Bottega N8,Bergamo (BG),Ristorante,primo,2026-09-12-instagram-denkishift-lombardia.csv
 2026-09-12,Patrick Sappa,@cameletticlaudioedilizia,Cameletti Claudio,Brescia (BS),Edilizia e materiali,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@capolagohotel,Capolago Hotel,Varese (VA),Albergo,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
 2026-09-12,Patrick Sappa,@carpenteria_bonatese,Carpenteria Bonatese,Bergamo (BG),Carpenteria,primo,2026-09-12-instagram-ricerca-lombardia.csv
 2026-09-12,Patrick Sappa,@carrozzeria_borgovico,Carrozzeria Borgovico,Como (CO),Carrozzeria,primo,2026-09-12-instagram-ricerca-lombardia.csv
 2026-09-12,Patrick Sappa,@carrozzeria_lo.di,Carrozzeria LO.DI,Lodi (LO),Carrozzeria,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@carrozzeria_top_car_limbiate,Carrozzeria Top Car,Limbiate (MB),Carrozzeria e noleggio,primo,2026-09-11-instagram-ricerca-mb-va-co.csv
 2026-09-12,Patrick Sappa,@carrozzeria_villetta_milano_,Carrozzeria Villetta,Milano (MI),Carrozzeria,primo,2026-09-12-instagram-ricerca-lombardia.csv
 2026-09-12,Patrick Sappa,@carrozzeriabianchi.lodi,Carrozzeria Bianchi,Lodi (LO),Carrozzeria,primo,2026-09-12-instagram-ricerca-lombardia.csv
 2026-09-12,Patrick Sappa,@carrozzeriamilano,Carrozzeria Milano,Milano (MI),Carrozzeria,primo,2026-09-12-instagram-ricerca-lombardia.csv
 2026-09-12,Patrick Sappa,@carrozzeriasportmilano,Carrozzeria Sport,Milano (MI),Carrozzeria,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@carrozzeriatecnocar.rs,Tecnocar RS,Castelnuovo Bozzente (CO),Carrozzeria,primo,2026-09-11-instagram-ricerca-mb-va-co.csv
+2026-09-12,Patrick Sappa,@centro_estetico.misinto,Rosa del Deserto Estetica & Solarium,Misinto (MB),Estetica,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@climatristorante.monza,Climat,Monza (MB),Ristorante,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@comodo_edilizia,Impresa Edilizia Comodo,Besozzo (VA),Impresa edile,primo,2026-09-11-instagram-ricerca-mb-va-co.csv
+2026-09-12,Patrick Sappa,@dons_barbershop_seregno,Don's Barbershop,Seregno (MB),Barber,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@dorotea_nailss,Dorotea Nails,Muggio (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
 2026-09-12,Patrick Sappa,@edilporte_brescia,Edilporte,Quinzano d'Oglio (BS),Serramenti e infissi,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@eg_estetica_glamour_misinto,Estetica Glamour di Martina Ciccolella,Misinto (MB),Estetica,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@eliteparrucchieriestetica.mb,Elite Muggio,Muggio (MB),Parrucchieri e estetica,primo,2026-09-11-instagram-siti-brianza.csv
 2026-09-12,Patrick Sappa,@energy_system_suisio,Energy System,Suisio (BG),Impianti elettrici,primo,2026-09-12-instagram-ricerca-lombardia.csv
 2026-09-12,Patrick Sappa,@entesistemaediliziabrescia,ESEB,Brescia (BS),Edilizia e materiali,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@estetica.evelyn,Centro Estetico Evelyn,Seregno (MB),Estetica,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@estetica.nicla,Centro Estetico di Nicla Sottocorna,Arcore (MB),Estetica,primo,2026-09-11-instagram-siti-brianza.csv
 2026-09-12,Patrick Sappa,@esteticaeternity_legnano,Estetica Eternity,Legnano (MI),Estetica,primo,2026-09-12-instagram-siti-milano.csv
+2026-09-12,Patrick Sappa,@esteticakarismavimercate,Estetica Karisma,Vimercate (MB),Estetica,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@esthermateus.nails,Esther Mateus Nail Designer,Usmate Velate (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@eurotaverna_official,Eurotaverna,Desio (MB),Ristorante con sala eventi,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@eversun_giussano,Eversun Estetica e Solarium,Giussano (MB),Estetica,primo,2026-09-11-instagram-siti-brianza.csv
 2026-09-12,Patrick Sappa,@falegnameria.sbanotto,Falegnameria Sbanotto,Milano (MI),Falegnameria,primo,2026-09-12-instagram-ricerca-lombardia.csv
 2026-09-12,Patrick Sappa,@falegnameriamaffeisvertova,Falegnameria Maffeis,Vertova (BG),Falegnameria,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@fiorillo_monza,Fiorillo,Monza (MB),Pizzeria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@fm_labeaute,FM La Beautè,Lissone (MB),Estetica avanzata,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@franci.nails_,Franci Nails,Giussano (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@g.nails_caratebrianza,G Nails,Carate Brianza (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
 2026-09-12,Patrick Sappa,@galli.franco.edilizia,Galli Franco,Lecco (LC),Edilizia e materiali,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@gbstudio____,GB Studio Nails & Beauty,Bovisio Masciago (MB),Nail e estetica,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@ge_nailsboutique,Nails Boutique Seregno,Seregno (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@giorgia_artist,Giorgia Artist Nails & Beauty,Biassono (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@giuliaprada.nailstudio,Giulia Prada Nail Studio,Desio (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@giussanoserramenti_,Giussano Serramenti,Giussano (MB),Serramenti e infissi,primo,2026-09-11-instagram-ricerca-mb-va-co.csv
+2026-09-12,Patrick Sappa,@hairtist_muggio,Hairtist,Muggio (MB),Parrucchieri,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@hotel_pioppeto,Hotel Pioppeto,Saronno (VA),Albergo,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@hotelalberilecco,Hotel Alberi,Lecco (LC),Albergo,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@hoteldelavillemonza,Hotel de la Ville,Monza (MB),Albergo con ristorante,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
 2026-09-12,Patrick Sappa,@hotelmodernopavia,Hotel Moderno,Pavia (PV),Albergo,primo,2026-09-12-instagram-denkishift-lombardia.csv
+2026-09-12,Patrick Sappa,@hotelroyalfalcone_monza,Hotel Royal Falcone,Monza (MB),Albergo,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@il_villino_seregno,Ristorante il Villino,Seregno (MB),Ristorante,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@ilpoetadesio,Pizzeria Il Poeta,Desio (MB),Pizzeria kebab,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@kinghoney_nails,King Honey Nails,Arcore (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
 2026-09-12,Patrick Sappa,@labdesign_falegnameria__milano,Colombo & Garavaglia LabDesign,Milano (MI),Falegnameria,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@lamaisondichiara,La Maison di Chiara,Nova Milanese (MB),Estetica,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@lauravaredonailshair,Laura Varedo Nails Hair,Varedo (MB),Nail e parrucchieri,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@lilly.nails_cesano.maderno,Lilly Nails,Cesano Maderno (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@lily.nails.desio,Lily Nails di Francesca Vangi,Desio (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
 2026-09-12,Patrick Sappa,@lodifai_windows_e_doors,Lodifai Serramenti,Lodi (LO),Serramenti e infissi,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@madynails_md,Mady Nails,Concorezzo (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
 2026-09-12,Patrick Sappa,@mantoanellicar,Carrozzeria Mantoanelli,Inzago (MI),Carrozzeria,primo,2026-09-12-instagram-ricerca-lombardia.csv
 2026-09-12,Patrick Sappa,@mara_carrozzeria_brescia,La Carrozziera di Brescia,Brescia (BS),Carrozzeria,primo,2026-09-12-instagram-ricerca-lombardia.csv
 2026-09-12,Patrick Sappa,@marikanails._,Marika Nails,Milano (MI),Nail,primo,2026-09-12-instagram-siti-milano.csv
 2026-09-12,Patrick Sappa,@matii.nails_,Matilde Corrado Unghie,Rho (MI),Nail,primo,2026-09-12-instagram-siti-milano.csv
+2026-09-12,Patrick Sappa,@meridas_ristorante_lissone,Meridas,Lissone (MB),Ristorante,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@mev_electronics_varese,MEV Electronics,Provincia di Varese e Como,Impianti elettrici e fotovoltaico,primo,2026-09-11-instagram-ricerca-mb-va-co.csv
 2026-09-12,Patrick Sappa,@milanorestauriecosostenibile,Milano Restauri,Milano (MI),Edilizia e materiali,primo,2026-09-12-instagram-ricerca-lombardia.csv
 2026-09-12,Patrick Sappa,@milanoserramenti,Milano Serramenti,Milano (MI),Serramenti e infissi,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@monster_style_seregno,Monster Style,Seregno (MB),Parrucchieri,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@monzaevoluzione,Monza Evoluzione,Monza (MB),Autofficina,primo,2026-09-11-instagram-ricerca-mb-va-co.csv
+2026-09-12,Patrick Sappa,@monzaserramenti,Monza Serramenti,Monza (MB),Serramenti e infissi,primo,2026-09-11-instagram-ricerca-mb-va-co.csv
+2026-09-12,Patrick Sappa,@movementmonza,Movement,Monza (MB),Studio di ginnastica e pilates,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
 2026-09-12,Patrick Sappa,@mvserramenti,MV Serramenti,Gorlago (BG),Serramenti e infissi,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@nails_by_xhesi_.barlassina,Nails by Xhesi,Barlassina (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
 2026-09-12,Patrick Sappa,@nailsandbeautygiada,Nails and Beauty Giada,Legnano (MI),Nail,primo,2026-09-12-instagram-siti-milano.csv
+2026-09-12,Patrick Sappa,@nailsmeda,Meda Nails,Meda (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@palestracityfit,Cityfit,Lissone (MB),Palestra,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@palestraenergydesio,Energy Desio,Desio (MB),Palestra,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@palestrapegasolissone,Palestra Pegaso,Lissone (MB),Palestra,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@parrucchiere_leo_varedo,Parrucchiere Leo,Varedo (MB),Parrucchieri,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@pasticceria_bona_monza,Pasticceria Bona,Monza (MB),Pasticceria e caffetteria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@pasticceria_lievito_monza,Pasticceria Lievito,Monza (MB),Pasticceria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
 2026-09-12,Patrick Sappa,@pasticceriabresciadue,Pasticceria Bresciadue,Brescia (BS),Pasticceria con laboratorio,primo,2026-09-12-instagram-denkishift-lombardia.csv
+2026-09-12,Patrick Sappa,@pasticceriadolci_lissone,Pasticceria Dolci,Lissone (MB),Pasticceria con catering,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
 2026-09-12,Patrick Sappa,@pasticceriaoscarbergamo,Pasticceria Oscar,Stezzano (BG),Pasticceria e gelateria,primo,2026-09-12-instagram-denkishift-lombardia.csv
+2026-09-12,Patrick Sappa,@pasticceriapasserinilissone,Pasticceria Passerini,Lissone (MB),Pasticceria con più sedi,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@pizzeria.lafontana_monza,Pizzeria La Fontana,Monza (MB),Pizzeria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@pizzeriadaaldoseregno,Pizzeria Da Aldo,Seregno (MB),Pizzeria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@pizzeriadelcentromonza,Pizzeria del Centro,Monza (MB),Pizzeria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@pizzeriaveliero,Pizzeria Veliero,Desio (MB),Pizzeria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
 2026-09-12,Patrick Sappa,@prestigenailsandbeautybar,Prestige Nails and Beauty Bar,Sesto San Giovanni (MI),Nail,primo,2026-09-12-instagram-siti-milano.csv
+2026-09-12,Patrick Sappa,@puracute,Puracute,Seregno (MB),Parrucchiere tricologo,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@revolution.concorezzo,Revolution Parrucchiere,Concorezzo (MB),Parrucchieri,primo,2026-09-11-instagram-siti-brianza.csv
 2026-09-12,Patrick Sappa,@rimag_official,RIMAG Serramenti,Bergamo (BG),Serramenti e infissi,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@ristorante.alcapolinea,Al Capolinea,Cantù (CO),Ristorante pizzeria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
 2026-09-12,Patrick Sappa,@ristorante_forchettone,Ristorante Forchettone,Brescia (BS),Ristorante,primo,2026-09-12-instagram-denkishift-lombardia.csv
 2026-09-12,Patrick Sappa,@ristorante_lestagioni,Ristorante Le Stagioni,Orio al Serio (BG),Ristorante,primo,2026-09-12-instagram-denkishift-lombardia.csv
+2026-09-12,Patrick Sappa,@ristorante_marienplatz,Marienplatz,Vimercate (MB),Ristorante birreria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@ristorantevillareale_monza,Ristorante Villa Reale,Monza (MB),Ristorante,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@roox.nails_,Roox Nails,Seregno (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
 2026-09-12,Patrick Sappa,@rosa.bottonenails,Rosa Bottone Onicotecnica,Milano (MI),Nail,primo,2026-09-12-instagram-siti-milano.csv
 2026-09-12,Patrick Sappa,@rosser.serramenti.cremona,Rosser Serramenti,Cremona (CR),Serramenti e infissi,primo,2026-09-12-instagram-ricerca-lombardia.csv
 2026-09-12,Patrick Sappa,@rotabiasetti,RotaBiasetti,Bergamo (BG),Panificio e pasticceria,primo,2026-09-12-instagram-denkishift-lombardia.csv
 2026-09-12,Patrick Sappa,@rs_serramenti_group,RS Serramenti,Rovato (BS),Serramenti e infissi,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@sb.nails3112,SB Nails & Beauty Room,Brugherio (MB),Nail e estetica,primo,2026-09-11-instagram-siti-brianza.csv
 2026-09-12,Patrick Sappa,@serena.nailslab,Serena Di Bari Nail Artist,Milano (MI),Nail,primo,2026-09-12-instagram-siti-milano.csv
+2026-09-12,Patrick Sappa,@seta_monza,Seta Monza,Monza (MB),Ristorante e pizzeria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
 2026-09-12,Patrick Sappa,@sgmanagementmilano,SG Management,Milano (MI),Logistica e magazzini,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@skinharmonybymelania,Skin Harmony by Melania,Desio (MB),Estetica avanzata,primo,2026-09-11-instagram-siti-brianza.csv
 2026-09-12,Patrick Sappa,@societatrasportibergamo,Società Trasporti Bergamo,Lallio (BG),Trasporti,primo,2026-09-12-instagram-ricerca-lombardia.csv
 2026-09-12,Patrick Sappa,@softnails.studio,Soft Nails Studio,Milano (MI),Nail,primo,2026-09-12-instagram-siti-milano.csv
 2026-09-12,Patrick Sappa,@tecnal_serramenti_pavia,Tecnal Serramenti,Pavia (PV),Serramenti e infissi,primo,2026-09-12-instagram-ricerca-lombardia.csv
 2026-09-12,Patrick Sappa,@trasporti_bresciani,Trasporti Bresciani,Brescia (BS),Trasporti,primo,2026-09-12-instagram-ricerca-lombardia.csv
 2026-09-12,Patrick Sappa,@trasportisemplicipavia,Trasporti Semplici,Pavia (PV),Trasporti,primo,2026-09-12-instagram-ricerca-lombardia.csv
 2026-09-12,Patrick Sappa,@tronchinails,Martina Tronconi Unghie,Milano (MI),Nail,primo,2026-09-12-instagram-siti-milano.csv
-2026-09-12,Patrick Sappa,@vigevanotrasportisrl,Vigevano Trasporti,Vigevano (PV),Trasporti,primo,2026-09-12-instagram-ricerca-lombardia.csv
-2026-09-08,Patrick Sappa,@napoletanopizzeriatrattoria,Napoletano Pizzeria Trattoria,Cermenate (CO),Pizzeria,primo,
-2026-09-10,Patrick Sappa,@prettydogs_varese,Toelettatura Pretty Dogs,Varese (VA),Toelettatura,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
-2026-09-10,Patrick Sappa,@toelettatura_belli_e_pelosi,Toelettatura Belli e Pelosi,Malnate (VA),Toelettatura,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
-2026-09-10,Patrick Sappa,@bbpowerhorse_equitazione,Centro Ippico BB Power Horse,Bodio Lomnago (VA),Centro ippico,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
-2026-09-10,Patrick Sappa,@centroippicolepuledre,Centro Ippico Le Puledre,Cislago (VA),Centro ippico,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
-2026-09-10,Patrick Sappa,@scodinzolandia_cantu,Scodinzolandia,Cantù (CO),Toelettatura,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
-2026-09-10,Patrick Sappa,@101caniegatti,101 Cani e Gatti,Merate (LC),Pet shop con toelettatura,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
-2026-09-10,Patrick Sappa,@franpetslecco2026,Franpets Toelettatura,Lecco (LC),Toelettatura,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
-2026-09-10,Patrick Sappa,@la_casa_del_lupo,La Casa del Lupo,Valgreghentino (LC),Pensione e asilo per cani,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
-2026-09-10,Patrick Sappa,@irmapezzottabergamo,Irma Pezzotta toelettatura e scuola,Bergamo (BG),Toelettatura,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
-2026-09-10,Patrick Sappa,@wowpetcouture,WOW Pet Couture,Paladina (BG),Toelettatura e boutique,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
-2026-09-10,Patrick Sappa,@potadogtoelettatura,Pota Dog Toelettatura,Chiuduno (BG),Toelettatura,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
-2026-09-10,Patrick Sappa,@baucettitoelettatura,Baucetti Toelettatura,Treviglio (BG),Toelettatura,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
-2026-09-10,Patrick Sappa,@peaceanddogs.lugano,Peace & dogs di Luana Spada,Lugano (TI),Dog sitter e pensione casalinga,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
-2026-09-10,Patrick Sappa,@ellepetsitter,Elle Pet Sitter,Lugano (TI),Pet sitter,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
-2026-09-10,Patrick Sappa,@wild_dog_trainer,Wild Dog Trainer,Ticino (TI),Istruttore cinofilo,primo,2026-09-10-instagram-animali-va-co-lc-bg-ti.csv
-2026-09-10,Patrick Sappa,@blueladies_saronno,Blue Ladies Parrucchieri,Saronno (VA),Parrucchieri,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@bella.hairstudio5,Bella Hair Studio,Saronno (VA),Parrucchieri,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@novart.hairstudio,NØVART hair studio,Saronno (VA),Parrucchieri,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@samsara_hair_saronno,Samsara Hair and Soul,Saronno (VA),Parrucchieri,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@missdarling_beauty_c_saronno,MissDarling Beauty Center,Saronno (VA),Estetica avanzata,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@antheasaronno,Centro Estetico Anthea,Saronno (VA),Estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@deipregi,DeiPregi Hair&Beauty,Saronno (VA),Parrucchieri/estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@angel_estetica_cantu,Angel Estetica & Benessere,Cantù (CO),Estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@esteticain_cantu,Estetica In,Cantù (CO),Estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@luana.nailslab,Luana NailsLab,Cantù (CO),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@diamond.nails.cantu,Diamond Nails,Cantù (CO),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@class_luxurybeauty_pmu,CLASS luxury beauty & permanent make-up,Luino (VA),Estetica avanzata/PMU,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@nailslikehermes,"Rebecca, onicotecnica",Merate (LC),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@alessandra_nails_oggiono,"Alessandra Noto, onicotecnica",Oggiono (LC),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@alyynails,Alyy Nails Studio,Lecco (LC),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@p.nails_lecco,P.Unghie,Lecco (LC),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@valentinacauli.nails,"Valentina Cauli, unghie e laminazione",Garbagnate Monastero (LC),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@glam_gavirate,GLAM hair-styling & estetica,Gavirate (VA),Parrucchieri/estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@alchimiahairexperience,L'Alchimia Hair Experience,Somma Lombardo (VA),Parrucchieri,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@nails_style.varese,Nails Style,Varese (VA),Nails/estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@esteticaeasytradate,Easy Estetica & Benessere,Tradate (VA),Estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@esteticamarina.tradate,Estetica Marina,Tradate (VA),Estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@passionnails_tradate,Passion Nails,Tradate (VA),Nails,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@nailstradate,Nails Tradate Paola,Tradate (VA),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@mep.parrucchiere,MeP parrucchiere,Cassano Magnago (VA),Parrucchieri,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@elleffehairstudio,Elleffe hair studio,Castiglione Olona (VA),Parrucchieri/barber,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@in19_nails_gallarate,In19 Nails,Gallarate (VA),Nails,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@debby.nails.design,"Debora, onicotecnica",Busto Arsizio (VA),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@barber_garage_busto_arsizio,Barber Garage,Busto Arsizio (VA),Barber,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@esteticaladolcevitabusto,La Dolce Vita di Sara & Rossana,Busto Arsizio (VA),Estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@bioesteticabusto,Bio Estetica di Alessia,Busto Arsizio (VA),Estetica avanzata,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@cgdecor_imbianchino_varese,CG Decor di Antonio Cigliola,Oggiona con Santo Stefano (VA),Imbianchino/cartongessista,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@xoval.nails,"Valentina Unghie, onicotecnica",Erba (CO),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@veronica_nails_como,Veronica Nails,Como (CO),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@nicholegramegna_nails,"Nichole, onicotecnica",Como (CO),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@_cristabel.nails_,Cristabel Nails,Como (CO),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@vanity_seriate,Estetica Vanity,Seriate (BG),Estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@centro_estetica_glamour,Centro Estetica Glamour,Osio Sotto (BG),Estetica/solarium,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@esteticaverdesalvia,Verde Salvia Estetica,Bergamo (BG),Estetica/solarium,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@essenziabeautystudio,Essenzia Beauty Studio,Bergamo (BG),Estetica/massaggi,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@andrea_lashmaker_bustoa,"EsteticAndrea, lashmaker",Busto Arsizio (VA),Lashmaker/estetica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@barber_shop_gold_2,Barber Shop Gold 2,Busto Arsizio (VA),Barber,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@ela__nails__gallarate,Ela Nails,Gallarate (VA),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@nailsbyirsi_gallarate,Nails by Irsi,Gallarate (VA),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@nails.varese_avignio,Manicure & Pedicure Varese (Avignio),Varese (VA),Onicotecnica,primo,2026-09-10-instagram-siti-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@hoteldecharmelaveno,Hotel De Charme Laveno,Laveno Mombello (VA),Albergo,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@caminhotelluino,Camin Hotel Luino,Luino (VA),Albergo con ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@hotelasnigocernobbio,Hotel Asnigo,Cernobbio (CO),Albergo con ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@belvederebellagio,Belvedere Bellagio,Bellagio (CO),Albergo,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@hotelcentralebellagio,Hotel Centrale Bellagio,Bellagio (CO),Albergo,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@villacocca_gavirate,Villa Cocca,Gavirate (VA),Ristorante/pizzeria/eventi,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@tigarba_,Tigarba,Busto Arsizio (VA),Ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@calmaegessobustoarsizio,Calma e Gesso,Busto Arsizio (VA),Bar e ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@ristorantedelporto_menaggio,Ristorante del Porto,Menaggio (CO),Ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@ristorantepizzeriasanvigilio,Ristorante Pizzeria San Vigilio,Bergamo (BG),Ristorante/pizzeria,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@il_gattopardo_dalmine,Il Gattopardo,Dalmine (BG),Ristorante/pizzeria,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@ororossoristorante,Oro Rosso,Tradate (VA),Ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@papillonristorante,Papillon,Sesto Calende (VA),Ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@autentiko_gusto_napoletano,Autentiko,Appiano Gentile (CO),Pizzeria/ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@ristorantetarantola,Ristorante Tarantola,Appiano Gentile (CO),Ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@plinioarosio,Ristorante Plinio 1988,Arosio (CO),Ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@osterialombardamerate,Osteria Lombarda,Merate (LC),Ristorante/enoteca,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@ristorantedapietro,Da Pietro 1955,Como (CO),Ristorante,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@ondacernobbio,Onda Cernobbio,Cernobbio (CO),Ristorante/pizzeria/bar,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@gymnasiumlecco,Gymnasium Different Fit,Lecco (LC),Palestra,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@capriccio84patisserie,Capriccio Pasticceria,Presezzo (BG),Pasticceria/caffetteria,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@dolci_di_bea,Dolci di Bea,Bergamo (BG),Pasticceria e bar,primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@ristorante.tabularosa,Tabula Rosa,Lecco e Calolziocorte (LC),"Ristorante, due sedi",primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@maistapizzeria,Maistà pizza & cucina,Bergamo (BG),"Pizzeria, due sedi",primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@ilclubbinoalzano,Il Clubbino,Alzano Lombardo (BG),"Bar, ristorante, pizzeria, hamburgeria",primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-10,Patrick Sappa,@vecchiopozzo_stezzano,Vecchio Pozzo,Stezzano (BG),"Pub, ristorante e pizzeria",primo,2026-09-10-instagram-denkishift-va-co-lc-bg.csv
-2026-09-12,Patrick Sappa,@giussanoserramenti_,Giussano Serramenti,Giussano (MB),Serramenti e infissi,primo,2026-09-11-instagram-ricerca-mb-va-co.csv
-2026-09-12,Patrick Sappa,@carrozzeria_top_car_limbiate,Carrozzeria Top Car,Limbiate (MB),Carrozzeria e noleggio,primo,2026-09-11-instagram-ricerca-mb-va-co.csv
-2026-09-12,Patrick Sappa,@monzaserramenti,Monza Serramenti,Monza (MB),Serramenti e infissi,primo,2026-09-11-instagram-ricerca-mb-va-co.csv
-2026-09-12,Patrick Sappa,@mev_electronics_varese,MEV Electronics,Provincia di Varese e Como,Impianti elettrici e fotovoltaico,primo,2026-09-11-instagram-ricerca-mb-va-co.csv
-2026-09-12,Patrick Sappa,@carrozzeriatecnocar.rs,Tecnocar RS,Castelnuovo Bozzente (CO),Carrozzeria,primo,2026-09-11-instagram-ricerca-mb-va-co.csv
-2026-09-12,Patrick Sappa,@autofficinacantu,Autofficina Cantù,Cantù (CO),Autofficina,primo,2026-09-11-instagram-ricerca-mb-va-co.csv
-2026-09-12,Patrick Sappa,@monzaevoluzione,Monza Evoluzione,Monza (MB),Autofficina,primo,2026-09-11-instagram-ricerca-mb-va-co.csv
-2026-09-12,Patrick Sappa,@comodo_edilizia,Impresa Edilizia Comodo,Besozzo (VA),Impresa edile,primo,2026-09-11-instagram-ricerca-mb-va-co.csv
-2026-09-12,Patrick Sappa,@_onda_group_,Onda Group Serramenti,Varese (VA),Serramenti e infissi,primo,2026-09-11-instagram-ricerca-mb-va-co.csv
-2026-09-12,Patrick Sappa,@bis_hotelvarese,Bis Hotel Varese,Varese (VA),Albergo,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@art_hotel_varese,Art Hotel Varese,Varese (VA),Albergo,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@capolagohotel,Capolago Hotel,Varese (VA),Albergo,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@hotelroyalfalcone_monza,Hotel Royal Falcone,Monza (MB),Albergo,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@hotel_pioppeto,Hotel Pioppeto,Saronno (VA),Albergo,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@hotelalberilecco,Hotel Alberi,Lecco (LC),Albergo,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@bellavistalecco,Hotel Bellavista,Valmadrera (LC),Albergo,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@hoteldelavillemonza,Hotel de la Ville,Monza (MB),Albergo con ristorante,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@eurotaverna_official,Eurotaverna,Desio (MB),Ristorante con sala eventi,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@beitalianrestaurant,Casa Cuomo,Seregno (MB),Ristorante,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@boom_seregno,Boom Seregno,Seregno (MB),Pizzeria con area bimbi,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@il_villino_seregno,Ristorante il Villino,Seregno (MB),Ristorante,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@pizzeriadaaldoseregno,Pizzeria Da Aldo,Seregno (MB),Pizzeria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@bistrotcattaneomonza,Bistrot Cattaneo,Monza (MB),"Bar, pasticceria e ristorante",primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@fiorillo_monza,Fiorillo,Monza (MB),Pizzeria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@pizzeriadelcentromonza,Pizzeria del Centro,Monza (MB),Pizzeria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@seta_monza,Seta Monza,Monza (MB),Ristorante e pizzeria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@climatristorante.monza,Climat,Monza (MB),Ristorante,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@ristorantevillareale_monza,Ristorante Villa Reale,Monza (MB),Ristorante,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@ristorante_marienplatz,Marienplatz,Vimercate (MB),Ristorante birreria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@meridas_ristorante_lissone,Meridas,Lissone (MB),Ristorante,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
 2026-09-12,Patrick Sappa,@unico_cantu,Unico Cantù,Cantù (CO),Ristorante e lounge bar,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@ristorante.alcapolinea,Al Capolinea,Cantù (CO),Ristorante pizzeria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@pizzeriaveliero,Pizzeria Veliero,Desio (MB),Pizzeria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@ilpoetadesio,Pizzeria Il Poeta,Desio (MB),Pizzeria kebab,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@pizzeria.lafontana_monza,Pizzeria La Fontana,Monza (MB),Pizzeria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@pasticceriadolci_lissone,Pasticceria Dolci,Lissone (MB),Pasticceria con catering,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@pasticceria_lievito_monza,Pasticceria Lievito,Monza (MB),Pasticceria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@pasticceria_bona_monza,Pasticceria Bona,Monza (MB),Pasticceria e caffetteria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@pasticceriapasserinilissone,Pasticceria Passerini,Lissone (MB),Pasticceria con più sedi,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@viviildolce,Vivi il Dolce,Desio (MB),Pasticceria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@palestracityfit,Cityfit,Lissone (MB),Palestra,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@palestraenergydesio,Energy Desio,Desio (MB),Palestra,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@palestrapegasolissone,Palestra Pegaso,Lissone (MB),Palestra,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@viscontafitness,Visconta Fitness,Monza (MB),Palestra e boxe,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@movementmonza,Movement,Monza (MB),Studio di ginnastica e pilates,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@agriturismoteresadellefragole,Teresa delle Fragole,Brianza (MB),Azienda agricola e agriturismo,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
-2026-09-12,Patrick Sappa,@vics.nailss,Vics Nails,Lentate sul Seveso (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@nailsmeda,Meda Nails,Meda (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@roox.nails_,Roox Nails,Seregno (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@ge_nailsboutique,Nails Boutique Seregno,Seregno (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@veronailsnailartstudio,Veronails,Seregno (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@estetica.evelyn,Centro Estetico Evelyn,Seregno (MB),Estetica,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@monster_style_seregno,Monster Style,Seregno (MB),Parrucchieri,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@puracute,Puracute,Seregno (MB),Parrucchiere tricologo,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@dons_barbershop_seregno,Don's Barbershop,Seregno (MB),Barber,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@barbershop_adamseregno,Adam Barbershop,Seregno (MB),Barber,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@nails_by_xhesi_.barlassina,Nails by Xhesi,Barlassina (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@lilly.nails_cesano.maderno,Lilly Nails,Cesano Maderno (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@lily.nails.desio,Lily Nails di Francesca Vangi,Desio (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@giuliaprada.nailstudio,Giulia Prada Nail Studio,Desio (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@skinharmonybymelania,Skin Harmony by Melania,Desio (MB),Estetica avanzata,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@fm_labeaute,FM La Beautè,Lissone (MB),Estetica avanzata,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@franci.nails_,Franci Nails,Giussano (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@eversun_giussano,Eversun Estetica e Solarium,Giussano (MB),Estetica,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@g.nails_caratebrianza,G Nails,Carate Brianza (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@gbstudio____,GB Studio Nails & Beauty,Bovisio Masciago (MB),Nail e estetica,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@eg_estetica_glamour_misinto,Estetica Glamour di Martina Ciccolella,Misinto (MB),Estetica,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@centro_estetico.misinto,Rosa del Deserto Estetica & Solarium,Misinto (MB),Estetica,primo,2026-09-11-instagram-siti-brianza.csv
 2026-09-12,Patrick Sappa,@valentinamandala_nails,Valentina Mandala Nails,Nova Milanese (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@lamaisondichiara,La Maison di Chiara,Nova Milanese (MB),Estetica,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@dorotea_nailss,Dorotea Nails,Muggio (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@hairtist_muggio,Hairtist,Muggio (MB),Parrucchieri,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@eliteparrucchieriestetica.mb,Elite Muggio,Muggio (MB),Parrucchieri e estetica,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@giorgia_artist,Giorgia Artist Nails & Beauty,Biassono (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@besa_nails2800,Besa Nails,Besana in Brianza (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@beautynails.jennyfer,Beauty Nails Jennyfer,Besana in Brianza (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@besana_milena_estetica,Milena Besana Estetica,Besana in Brianza (MB),Estetica,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@kinghoney_nails,King Honey Nails,Arcore (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@beautydream_dibicenter,Estetica Beauty Dream,Arcore (MB),Estetica,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@estetica.nicla,Centro Estetico di Nicla Sottocorna,Arcore (MB),Estetica,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@esteticakarismavimercate,Estetica Karisma,Vimercate (MB),Estetica,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@afrodite.estetica.agrate,Afrodite Estetica,Agrate Brianza (MB),Estetica,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@madynails_md,Mady Nails,Concorezzo (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@revolution.concorezzo,Revolution Parrucchiere,Concorezzo (MB),Parrucchieri,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@sb.nails3112,SB Nails & Beauty Room,Brugherio (MB),Nail e estetica,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@lauravaredonailshair,Laura Varedo Nails Hair,Varedo (MB),Nail e parrucchieri,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@parrucchiere_leo_varedo,Parrucchiere Leo,Varedo (MB),Parrucchieri,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-12,Patrick Sappa,@esthermateus.nails,Esther Mateus Nail Designer,Usmate Velate (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
-2026-09-13,Patrick Sappa,@fondazionemadonnadelboldesico,Casa di riposo Madonna del Boldesico ETS,Grumello del Monte (BG),RSA,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@fondazione_rsa_nembro_onlus,Fondazione RSA Casa Riposo Nembro ONLUS,Nembro (BG),RSA,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@fondazione_honegger_rsa_onlus,Fondazione Honegger RSA,Albino (BG),RSA,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@rsacantello_istpalazzolo,RSA Istituto Palazzolo - Casa San Giuseppe,Cantello (VA),RSA,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@rsavilladellapace,Villa della Pace,Stezzano (BG),RSA,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@bergamo_sanita,Centro Medico Bergamo Sanità,Nembro (BG),Centro medico e casa di riposo,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@capriolo_istpalazzolo,Istituto Palazzolo - Casa di Capriolo,Capriolo (BS),Comunita' educativa,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-12,Patrick Sappa,@veronailsnailartstudio,Veronails,Seregno (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@vics.nailss,Vics Nails,Lentate sul Seveso (MB),Nail,primo,2026-09-11-instagram-siti-brianza.csv
+2026-09-12,Patrick Sappa,@vigevanotrasportisrl,Vigevano Trasporti,Vigevano (PV),Trasporti,primo,2026-09-12-instagram-ricerca-lombardia.csv
+2026-09-12,Patrick Sappa,@viscontafitness,Visconta Fitness,Monza (MB),Palestra e boxe,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
+2026-09-12,Patrick Sappa,@viviildolce,Vivi il Dolce,Desio (MB),Pasticceria,primo,2026-09-11-instagram-denkishift-mb-va-co-lc.csv
 2026-09-13,Patrick Sappa,@_cormano_soccorso_onlus_,Cooperativa Sociale Cormano Soccorso ONLUS,Cusano Milanino (MI),Soccorso e ambulanze,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@fondazione_rosadeiventi_onlus,Fondazione RosaDeiVenti ONLUS,Como (CO),Comunita' minori,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@ilcalabronebrescia,Il Calabrone cooperativa sociale ETS,Brescia (BS),Cooperativa sociale,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@koinecoopsociale,Koinè cooperativa sociale,Novate Milanese (MI),Cooperativa sociale e asili nido,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@_iozzi_marta_,Marta Iozzi Lash e Nail,Desenzano del Garda (BS),Nail e ciglia,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@_nailsbyfrances_,Nails by Frances,Desenzano del Garda (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@abiciditipografia,ABiCiDi,Milano (MI),Tipografia,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@aestheticdesigndesenzano,Aesthetic Design Studio Estetico,Desenzano del Garda (BS),Nail e ciglia,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@alessiacadei_pmu,Alessia Cadei PMU,Brescia (BS),PMU,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@anna_ciglia_brescia,Anna Trucco Permanente ed Extension,Brescia (BS),PMU e ciglia,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@armagnimilano,Pasticceria Panetteria Armagni,Milano (MI),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@asiab_lashmaker,Asia B Lash Maker,Brescia (BS),Ciglia,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@autolavaggioadomiciliobrescia,Autolavaggio a Domicilio Brescia,Brescia (BS),Autolavaggio,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@autolavaggiolineatest_milano,Autolavaggio Linea Test Srl,Milano (MI),Autolavaggio,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@azienda_agricola_bergamo,Azienda Agricola Bergamo,Bergamo (BG),Azienda agricola,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@aziendaagricolamantovani,Azienda Agricola Mantovani,San Giovanni del Dosso (MN),Azienda agricola,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@basesana.official,Basesana Poliambulatorio,Milano (MI),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@bclean_brescia,B-CLEAN Impresa di pulizie,Brescia (BS),Impresa di pulizie,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@beautyewaxbrescia,Beauty e Wax,Brescia (BS),Estetica,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@bergamo_sanita,Centro Medico Bergamo Sanità,Nembro (BG),Centro medico e casa di riposo,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@bossbarberbrescia,Boss Barber Brescia,Brescia (BS),Barber,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@brescia_unghie,Brescia Unghie,Brescia (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@brescianifabbro,Bresciani Fabbro,Milano (MI),Fabbro,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@brows_nails_it,Nail Artist Darfo,Darfo Boario Terme (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@camynailsmontichiari,Camy Shine Nails,Montichiari (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@capriolo_istpalazzolo,Istituto Palazzolo - Casa di Capriolo,Capriolo (BS),Comunita' educativa,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@carpenteria.milano,Carpenteria Milano,Milano (MI),Carpenteria,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@carpenteria_metallica_rubini,Carpenteria Metallica Rubini,Barbata (BG),Carpenteria,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@casamedicabg,CasaMedica Centro Medico Bergamo,Bergamo (BG),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@cdsvarese,CDS Centro Medico Dentistico,Varese (VA),Studio dentistico,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@celli.nails.desenzano,Celeste De Pieri Nail Artist,Desenzano del Garda (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@centro_estetico_diamante_blu,Diamante Blu di Giovanna Gipponi,Brescia (BS),Estetica avanzata,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@centroradiologiaefisioterapia,Struttura medica polispecialistica,Gorle (BG),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@centrosanitariosangiovanni,Poliambulatorio San Giovanni,Brescia (BS),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@citylifeinstitute,City Life Institute,Milano (MI),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@cl_ristrutturazioni_milano,CL Ristrutturazioni,Milano (MI),Ristrutturazioni,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@classika_estetista,Classika Estetista,Brescia (BS),Estetica e nail,primo,2026-09-13-instagram-siti-brescia.csv
 2026-09-13,Patrick Sappa,@coesacoopsoc,Cooperativa Sociale Coesa,Milano (MI),Cooperativa sociale,primo,2026-09-13-instagram-denkishift-lombardia.csv
 2026-09-13,Patrick Sappa,@cooperativamiledu,Miledù impresa sociale,Como (CO),Cooperativa sociale,primo,2026-09-13-instagram-denkishift-lombardia.csv
 2026-09-13,Patrick Sappa,@coopleonardocomo,Cooperativa Sociale Leonardo,Como (CO),Cooperativa sociale,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@metacoopmonza,META Cooperativa Sociale,Monza (MB),Cooperativa sociale,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@lacascinadesenzano,Cooperativa Sociale La Cascina,Desenzano del Garda (BS),Cooperativa sociale,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@bclean_brescia,B-CLEAN Impresa di pulizie,Brescia (BS),Impresa di pulizie,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@milano_impresa_di_pulizie,Milano Multi Servizi,Milano (MI),Impresa di pulizie,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@casamedicabg,CasaMedica Centro Medico Bergamo,Bergamo (BG),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@centroradiologiaefisioterapia,Struttura medica polispecialistica,Gorle (BG),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@studiberrutibergamo,Studi Berruti - Poliambulatorio Goisis,Osio Sotto (BG),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@poliambulatoriorehabilita,Centro Rehabilita,Brescia (BS),Poliambulatorio e riabilitazione,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@venini23.centromedicomilano,Venini23 Centro Medico Polispecialistico,Milano (MI),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@missorimedicalcenter_mi,Missori Medical Center,Milano (MI),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@basesana.official,Basesana Poliambulatorio,Milano (MI),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@poliambulatorio_takecare,Poliambulatorio Take Care,Milano (MI),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@citylifeinstitute,City Life Institute,Milano (MI),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@poliambulatorio_iris_bergamo,Poliambulatorio IRIS,Bergamo (BG),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@podomedicalcenter,Podo Medical Center,Bergamo (BG),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@ledaclinic.bergamo,Leda Clinic,Bergamo (BG),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@centrosanitariosangiovanni,Poliambulatorio San Giovanni,Brescia (BS),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@veinclinicbrescia,Vein Clinic Brescia,Brescia (BS),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@symbolmed,Symbolmed Poliambulatorio,Brescia (BS),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@istituto_biomedico_italiano,Istituto Biomedico Italiano,Pavia (PV),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@polimedical_missaglia,Polimedical Centro Polispecialistico,Missaglia (LC),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@fargo.centro.medico,FARGO Centro Medico,Varese (VA),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@cdsvarese,CDS Centro Medico Dentistico,Varese (VA),Studio dentistico,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@panificio_testa_treviglio,Panificio Testa,Treviglio (BG),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@panificiolongonicarate,Panificio Fratelli Longoni,Carate Brianza (MB),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@panificiofrusconi,Panificio Frusconi,Milano (MI),Panificio e catering,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@lissana.panificiomilano,Panificio Lissana,Milano (MI),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@panificiopasticceriamaffia,Maffia Pane e Pasticceria,Olgiate Comasco (CO),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@armagnimilano,Pasticceria Panetteria Armagni,Milano (MI),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@panificio.vita,Panificio Vita,Milano (MI),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@panificiocomotti,Comotti Dolci e Caffé,Bolgare (BG),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@vaccani_lecco,Panificio Vaccani,Lecco (LC),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@pancecco,Panificio Pancecco,Desio (MB),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@panificio_brescianini,Panificio e Caffetteria Brescianini,Brescia (BS),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@panificiomarini,Panificio Marini,Brescia (BS),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@panificio_lorusso_varese,Panificio Pasticceria Lorusso,Varese (VA),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
-2026-09-13,Patrick Sappa,@_nailsbyfrances_,Nails by Frances,Desenzano del Garda (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@beautyewaxbrescia,Beauty e Wax,Brescia (BS),Estetica,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@brescia_unghie,Brescia Unghie,Brescia (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@brows_nails_it,Nail Artist Darfo,Darfo Boario Terme (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@camynailsmontichiari,Camy Shine Nails,Montichiari (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@celli.nails.desenzano,Celeste De Pieri Nail Artist,Desenzano del Garda (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@classika_estetista,Classika Estetista,Brescia (BS),Estetica e nail,primo,2026-09-13-instagram-siti-brescia.csv
 2026-09-13,Patrick Sappa,@dabonails,Dabo Nails,Rovato (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@dacciuntaglio_brescia,Dacci un Taglio,Brescia (BS),Parrucchieri,primo,2026-09-13-instagram-siti-brescia.csv
 2026-09-13,Patrick Sappa,@damian_roxana92,Roxana Unghie Desenzano,Desenzano del Garda (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
 2026-09-13,Patrick Sappa,@denisazbranca,Denisa Nails,Lumezzane (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
 2026-09-13,Patrick Sappa,@dianails_brescia,Diana Brescia Unghie,Brescia (BS),Nail e PMU,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@doppiainvidiabrescia,Doppia Invidia Centro Estetico,Brescia (BS),Estetica e nail,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@dpa_architect,DPA Davide Panzeri Architetto,Lecco (LC),Studio di architettura,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@edil_carboni_brescia,Ristrutturazioni Carboni,Brescia (BS),Ristrutturazioni,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@extension_ciglia_brescia_,Ciglia Brescia,Brescia (BS),Ciglia,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@extensionciglia_k_brescia,Cristina Chistol Extension Ciglia,Brescia (BS),Ciglia,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@fabbro_bergamo,Fabbro Bergamo,Fino Mornasco (CO),Fabbro,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@fargo.centro.medico,FARGO Centro Medico,Varese (VA),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@findpartssrl,Find Parts SRL,Cagno (CO),Ricambi auto,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@flowernails.mazzano,Flower Nails,Mazzano (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@fondazione_honegger_rsa_onlus,Fondazione Honegger RSA,Albino (BG),RSA,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@fondazione_rosadeiventi_onlus,Fondazione RosaDeiVenti ONLUS,Como (CO),Comunita' minori,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@fondazione_rsa_nembro_onlus,Fondazione RSA Casa Riposo Nembro ONLUS,Nembro (BG),RSA,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@fondazionemadonnadelboldesico,Casa di riposo Madonna del Boldesico ETS,Grumello del Monte (BG),RSA,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@frigeriogomme_susa,Frigerio Gomme,Milano (MI),Gommista,primo,2026-09-13-instagram-ricerca-lombardia.csv
 2026-09-13,Patrick Sappa,@giorgia.beautystudio,Giorgia Beauty Studio,Brescia (BS),Estetica avanzata,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@glab.milano,G Lab Milano,Milano (MI),Arredamento su misura,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@griffe.nails,GRIFFE Salone e Corsi Unghie,Brescia (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@gz_impresa_edile,GZ Srl,Como (CO),Impresa edile,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@hrm_ristrutturazioni,HRM Ristrutturazioni,Bergamo (BG),Ristrutturazioni,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@idraulico_fabbro_milano_,Fabbro Idraulico Milano Monza,Milano (MI),Idraulica e fabbro,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@ilcalabronebrescia,Il Calabrone cooperativa sociale ETS,Brescia (BS),Cooperativa sociale,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@istituto_biomedico_italiano,Istituto Biomedico Italiano,Pavia (PV),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@italwood_milano,Italwood Parquet,Cormano (MI),Parquet e forniture,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@j.olga_brescia,J.OLGA Parrucchieri,Brescia (BS),Parrucchieri,primo,2026-09-13-instagram-siti-brescia.csv
 2026-09-13,Patrick Sappa,@jessica_taiola_nails,Jessica Nails,Lumezzane (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@koinecoopsociale,Koinè cooperativa sociale,Novate Milanese (MI),Cooperativa sociale e asili nido,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@la_tipografia_group_brescia,La Tipografia Group,Brescia (BS),Tipografia,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@lacascinadesenzano,Cooperativa Sociale La Cascina,Desenzano del Garda (BS),Cooperativa sociale,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@lashmaker._brescia,Marina Lashmaker,Brescia (BS),Ciglia,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@laurafranzoni_lashmaker,Laura Franzoni Lash Maker,Brescia (BS),Ciglia,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@ldds.disinfestazioni,LDDS Disinfestazioni,Lumezzane (BS),Disinfestazione,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@ledaclinic.bergamo,Leda Clinic,Bergamo (BG),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@legnopiu_brescia,Legno Piu Infissi,Concesio (BS),Infissi,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@lissana.panificiomilano,Panificio Lissana,Milano (MI),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@loretoprint,Loreto Print,Milano (MI),Tipografia,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@martinanailsboutiqueeacademy,Martina Nails Boutique e Academy,Brescia (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@mary_permanente,Mary Trucco Permanente,Brescia (BS),PMU e tattoo,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@marye_tattoo,MARYE PMU e Fine Line Tattoo,Rezzato (BS),PMU e tattoo,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@metacoopmonza,META Cooperativa Sociale,Monza (MB),Cooperativa sociale,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@milano_impresa_di_pulizie,Milano Multi Servizi,Milano (MI),Impresa di pulizie,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@milanoparquetsrl,Milano Parquet,Buccinasco (MI),Parquet,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@missorimedicalcenter_mi,Missori Medical Center,Milano (MI),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@mologni_ferrobattuto,Mologni SNC,Nembro (BG),Fabbro e carpenteria,primo,2026-09-13-instagram-ricerca-lombardia.csv
 2026-09-13,Patrick Sappa,@nadia_ohmynails,Nadia Natural Nail Artist,Brescia (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
 2026-09-13,Patrick Sappa,@naif_passirano,Naif Centro Estetico,Passirano (BS),Estetica avanzata,primo,2026-09-13-instagram-siti-brescia.csv
 2026-09-13,Patrick Sappa,@nails.by.miicaela,Micaela Pizzi Unghie,Brescia (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
 2026-09-13,Patrick Sappa,@nails.robyy,Roberta Nail Artist,Brescia (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
 2026-09-13,Patrick Sappa,@nails_art_by_pinkploy,Nails Art by Pinkploy,Brescia (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
 2026-09-13,Patrick Sappa,@nails_brescia,Brescia Nails tecnica ucraina,Brescia (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@nailsbysara2.0,Sara Nails Lumezzane,Lumezzane (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@palomagardone,Paloma Gardone Nail Design,Gardone Val Trompia (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@sofi_nailsandbeauty,Sofi Nails and Beauty,Verolanuova (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@tati_estetista,Tati Estetista,Brescia (BS),Nail e estetica,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@vale_nails_chiari,Valenails,Chiari (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@vanessa.estetista,Vanessa Estetista,Bovezzo (BS),Estetica,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@j.olga_brescia,J.OLGA Parrucchieri,Brescia (BS),Parrucchieri,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@parrucchierebrescia,FE HAIR,Brescia (BS),Parrucchieri,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@dacciuntaglio_brescia,Dacci un Taglio,Brescia (BS),Parrucchieri,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@bossbarberbrescia,Boss Barber Brescia,Brescia (BS),Barber,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@_iozzi_marta_,Marta Iozzi Lash e Nail,Desenzano del Garda (BS),Nail e ciglia,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@martinanailsboutiqueeacademy,Martina Nails Boutique e Academy,Brescia (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@griffe.nails,GRIFFE Salone e Corsi Unghie,Brescia (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@lashmaker._brescia,Marina Lashmaker,Brescia (BS),Ciglia,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@laurafranzoni_lashmaker,Laura Franzoni Lash Maker,Brescia (BS),Ciglia,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@extensionciglia_k_brescia,Cristina Chistol Extension Ciglia,Brescia (BS),Ciglia,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@extension_ciglia_brescia_,Ciglia Brescia,Brescia (BS),Ciglia,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@anna_ciglia_brescia,Anna Trucco Permanente ed Extension,Brescia (BS),PMU e ciglia,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@simonafasci_pmu,Simona Fasci Ricostruzione Sopracciglia,Brescia (BS),PMU,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@nataliia_pmu_brescia,Natalia Cojocaru Dermopigmentista,Brescia (BS),PMU,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@marye_tattoo,MARYE PMU e Fine Line Tattoo,Rezzato (BS),PMU e tattoo,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@alessiacadei_pmu,Alessia Cadei PMU,Brescia (BS),PMU,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@saratruccopermanente,Sara Trucco Permanente,Mazzano (BS),PMU,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@saraa_pmuartist,Sara Gabrieli Trucco Permanente,Brescia (BS),PMU e ciglia,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@centro_estetico_diamante_blu,Diamante Blu di Giovanna Gipponi,Brescia (BS),Estetica avanzata,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@aestheticdesigndesenzano,Aesthetic Design Studio Estetico,Desenzano del Garda (BS),Nail e ciglia,primo,2026-09-13-instagram-siti-brescia.csv
 2026-09-13,Patrick Sappa,@nailsbyaaurora,Aurora Nails,Brescia (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@flowernails.mazzano,Flower Nails,Mazzano (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@doppiainvidiabrescia,Doppia Invidia Centro Estetico,Brescia (BS),Estetica e nail,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@asiab_lashmaker,Asia B Lash Maker,Brescia (BS),Ciglia,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@mary_permanente,Mary Trucco Permanente,Brescia (BS),PMU e tattoo,primo,2026-09-13-instagram-siti-brescia.csv
-2026-09-13,Patrick Sappa,@pawashbergamo,PA WASH Bergamo,Bergamo (BG),Autolavaggio,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@findpartssrl,Find Parts SRL,Cagno (CO),Ricambi auto,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@ldds.disinfestazioni,LDDS Disinfestazioni,Lumezzane (BS),Disinfestazione,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@carpenteria.milano,Carpenteria Milano,Milano (MI),Carpenteria,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@carpenteria_metallica_rubini,Carpenteria Metallica Rubini,Barbata (BG),Carpenteria,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@studiotecnico.zanolariccardo,Studio Tecnico Zanola,Montichiari (BS),Studio tecnico,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@azienda_agricola_bergamo,Azienda Agricola Bergamo,Bergamo (BG),Azienda agricola,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@aziendaagricolamantovani,Azienda Agricola Mantovani,San Giovanni del Dosso (MN),Azienda agricola,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@fabbro_bergamo,Fabbro Bergamo,Fino Mornasco (CO),Fabbro,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@mologni_ferrobattuto,Mologni SNC,Nembro (BG),Fabbro e carpenteria,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@brescianifabbro,Bresciani Fabbro,Milano (MI),Fabbro,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@vetreriabonometti,Vetreria Bonometti,Brescia (BS),Vetreria,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@qdquadro,QD Quadro Vetreria,Milano (MI),Vetreria,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@la_tipografia_group_brescia,La Tipografia Group,Brescia (BS),Tipografia,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@loretoprint,Loreto Print,Milano (MI),Tipografia,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@abiciditipografia,ABiCiDi,Milano (MI),Tipografia,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@frigeriogomme_susa,Frigerio Gomme,Milano (MI),Gommista,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@autolavaggioadomiciliobrescia,Autolavaggio a Domicilio Brescia,Brescia (BS),Autolavaggio,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@autolavaggiolineatest_milano,Autolavaggio Linea Test Srl,Milano (MI),Autolavaggio,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@idraulico_fabbro_milano_,Fabbro Idraulico Milano Monza,Milano (MI),Idraulica e fabbro,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@traslochi_milano_decorato,Traslochi Milano by Decorato,Milano (MI),Traslochi,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@cl_ristrutturazioni_milano,CL Ristrutturazioni,Milano (MI),Ristrutturazioni,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@edil_carboni_brescia,Ristrutturazioni Carboni,Brescia (BS),Ristrutturazioni,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@hrm_ristrutturazioni,HRM Ristrutturazioni,Bergamo (BG),Ristrutturazioni,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@italwood_milano,Italwood Parquet,Cormano (MI),Parquet e forniture,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@milanoparquetsrl,Milano Parquet,Buccinasco (MI),Parquet,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@nailsbysara2.0,Sara Nails Lumezzane,Lumezzane (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@nataliia_pmu_brescia,Natalia Cojocaru Dermopigmentista,Brescia (BS),PMU,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@palomagardone,Paloma Gardone Nail Design,Gardone Val Trompia (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@pancecco,Panificio Pancecco,Desio (MB),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@panificio.vita,Panificio Vita,Milano (MI),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@panificio_brescianini,Panificio e Caffetteria Brescianini,Brescia (BS),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@panificio_lorusso_varese,Panificio Pasticceria Lorusso,Varese (VA),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@panificio_testa_treviglio,Panificio Testa,Treviglio (BG),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@panificiocomotti,Comotti Dolci e Caffé,Bolgare (BG),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@panificiofrusconi,Panificio Frusconi,Milano (MI),Panificio e catering,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@panificiolongonicarate,Panificio Fratelli Longoni,Carate Brianza (MB),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@panificiomarini,Panificio Marini,Brescia (BS),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@panificiopasticceriamaffia,Maffia Pane e Pasticceria,Olgiate Comasco (CO),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
 2026-09-13,Patrick Sappa,@parquetspecialistmilano,Parquet Specialist Milano,Milano (MI),Parquet,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@parrucchierebrescia,FE HAIR,Brescia (BS),Parrucchieri,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@pavimenti_resina_milano,Pavimenti in Resina Milano,Milano (MI),Pavimenti in resina,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@pawashbergamo,PA WASH Bergamo,Bergamo (BG),Autolavaggio,primo,2026-09-13-instagram-ricerca-lombardia.csv
 2026-09-13,Patrick Sappa,@pentamultiservice__srl,Pentamultiservice Srl,Milano (MI),Ristrutturazioni,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@podomedicalcenter,Podo Medical Center,Bergamo (BG),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@poliambulatorio_iris_bergamo,Poliambulatorio IRIS,Bergamo (BG),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@poliambulatorio_takecare,Poliambulatorio Take Care,Milano (MI),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@poliambulatoriorehabilita,Centro Rehabilita,Brescia (BS),Poliambulatorio e riabilitazione,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@polimedical_missaglia,Polimedical Centro Polispecialistico,Missaglia (LC),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@qdquadro,QD Quadro Vetreria,Milano (MI),Vetreria,primo,2026-09-13-instagram-ricerca-lombardia.csv
 2026-09-13,Patrick Sappa,@rbimpresaedile,Ristrutturazioni Bergamasche Srl,Clusone (BG),Impresa edile,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@resine_microcementi,Resine e Microcementi,Milano (MI),Pavimenti in resina,primo,2026-09-13-instagram-ricerca-lombardia.csv
 2026-09-13,Patrick Sappa,@rgmnewsrl,RGM New Srl,Remedello (BS),Impresa edile,primo,2026-09-13-instagram-ricerca-lombardia.csv
 2026-09-13,Patrick Sappa,@ristrutturadesso,Ristruttura Desso,Milano (MI),Ristrutturazioni,primo,2026-09-13-instagram-ricerca-lombardia.csv
 2026-09-13,Patrick Sappa,@ristrutturazioni_vm,VM Impresa Edile,Milano (MI),Ristrutturazioni,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@vva_ristrutturazioni,VVA Ristrutturazioni,Milano (MI),Ristrutturazioni,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@dpa_architect,DPA Davide Panzeri Architetto,Lecco (LC),Studio di architettura,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@glab.milano,G Lab Milano,Milano (MI),Arredamento su misura,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@gz_impresa_edile,GZ Srl,Como (CO),Impresa edile,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@legnopiu_brescia,Legno Piu Infissi,Concesio (BS),Infissi,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@pavimenti_resina_milano,Pavimenti in Resina Milano,Milano (MI),Pavimenti in resina,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-13,Patrick Sappa,@resine_microcementi,Resine e Microcementi,Milano (MI),Pavimenti in resina,primo,2026-09-13-instagram-ricerca-lombardia.csv
 2026-09-13,Patrick Sappa,@royal_porte,Royal Porte e Infissi,Torbole Casaglia (BS),Infissi,primo,2026-09-13-instagram-ricerca-lombardia.csv
-2026-09-14,Patrick Sappa,@mari_acconciature,Mari Acconciature,Montichiari (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@hairemotion_,Hair Emotion,Montichiari (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@parruchierihairstyle,Parrucchieri Hair Style,Montichiari (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@madmats_acconciature,TheBarberShop 73 Hair&Beauty,Lumezzane (BS),Barber e parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@marnier_hairsalon,Marnier Hair Salon,Brescia,Barber,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@beardman_barber_shop,Beardman Barber Shop,Brescia,Barber,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@elisiracconciature,Elisir Acconciature di Ferrari Claudia,Provaglio d'Iseo (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@aeg_acconciature,A&G Acconciature,Bagnolo Mella (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@proc.2020,PROC Brescia,Brescia,Parrucchiere ed estetica,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@barbiere_simo2style,Barber Shop Simo 2 Style,Brescia,Barber,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@hairstyle_brescia,Hair Style Parrucchieri,Brescia,Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@gentlemanbarberspagussago,Gentleman Barber SPA,Gussago (BS),Barber,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@barbershop_radouane,Barbershop Radouane,Darfo Boario Terme (BS),Barber,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@prior.desenzano,Prior Desenzano del Garda,Desenzano del Garda (BS),Parrucchiere e barber,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@s.nailhairsalondesenzano,S Nail Hair Salon,Desenzano del Garda (BS),Parrucchiere e nail,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@individuals__parrucchieri,Individuals Parrucchieri,Verolanuova (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@valentinacrazyhair,Valentina Crazy Hair,Verolanuova (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@team_giancarlo_parrucchieri,Team Giancarlo Parrucchieri,Rezzato (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@hairsalon_18,Hair Salon 18,Castenedolo (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@parrucchierilocos,Locos Parrucchieri Unisex,Bedizzole (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@parrucchieri_vindico,Parrucchieri Vindico,Bedizzole (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@dalle_sorelle_parrucchiere,Dalle Sorelle Parrucchiere,Bovezzo (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@elitesarnico,Elite Elisa,Sarnico (BG),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@swit_barber_shop,Swit Barber Shop,Treviglio (BG),Barber,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@barber_shop_albino_karim,Karim Barber Shop,Albino (BG),Barber,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-13,Patrick Sappa,@rsacantello_istpalazzolo,RSA Istituto Palazzolo - Casa San Giuseppe,Cantello (VA),RSA,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@rsavilladellapace,Villa della Pace,Stezzano (BG),RSA,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@saraa_pmuartist,Sara Gabrieli Trucco Permanente,Brescia (BS),PMU e ciglia,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@saratruccopermanente,Sara Trucco Permanente,Mazzano (BS),PMU,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@simonafasci_pmu,Simona Fasci Ricostruzione Sopracciglia,Brescia (BS),PMU,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@sofi_nailsandbeauty,Sofi Nails and Beauty,Verolanuova (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@studiberrutibergamo,Studi Berruti - Poliambulatorio Goisis,Osio Sotto (BG),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@studiotecnico.zanolariccardo,Studio Tecnico Zanola,Montichiari (BS),Studio tecnico,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@symbolmed,Symbolmed Poliambulatorio,Brescia (BS),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@tati_estetista,Tati Estetista,Brescia (BS),Nail e estetica,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@traslochi_milano_decorato,Traslochi Milano by Decorato,Milano (MI),Traslochi,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@vaccani_lecco,Panificio Vaccani,Lecco (LC),Panificio con laboratorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@vale_nails_chiari,Valenails,Chiari (BS),Nail,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@vanessa.estetista,Vanessa Estetista,Bovezzo (BS),Estetica,primo,2026-09-13-instagram-siti-brescia.csv
+2026-09-13,Patrick Sappa,@veinclinicbrescia,Vein Clinic Brescia,Brescia (BS),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@venini23.centromedicomilano,Venini23 Centro Medico Polispecialistico,Milano (MI),Poliambulatorio,primo,2026-09-13-instagram-denkishift-lombardia.csv
+2026-09-13,Patrick Sappa,@vetreriabonometti,Vetreria Bonometti,Brescia (BS),Vetreria,primo,2026-09-13-instagram-ricerca-lombardia.csv
+2026-09-13,Patrick Sappa,@vva_ristrutturazioni,VVA Ristrutturazioni,Milano (MI),Ristrutturazioni,primo,2026-09-13-instagram-ricerca-lombardia.csv
 2026-09-14,Patrick Sappa,@acconciature.valentina,Acconciature ed Estetica,Alzano Lombardo (BG),Parrucchiere ed estetica,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@luca_e_valeria,Luca & Valeria Parrucchieri,Romano di Lombardia (BG),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@eliteromano,Elite Hair Style,Romano di Lombardia (BG),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@yaripanzeriparrucchieri,Yari Panzeri Parrucchiere,Bergamo,Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@barbershop_sarnico,Barbershop Sarnico,Sarnico (BG),Barber,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@parrucchiere_gogna,Parrucchiere Gogna,Brescia,Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@nuovaequipeparrucchieri,Nuova Equipe Sarezzo,Sarezzo (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
 2026-09-14,Patrick Sappa,@acconciature_sonia_sarezzo,Acconciature Sonia di Palini Sonia,Sarezzo (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@etrehair_rodengo,Etre Hair Spa,Rodengo Saiano (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@rebelhairbyrebecca,Rebel Hair by Rebecca,Rodengo Saiano (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@hairbeautyfarm,Hair Beauty Farm,Breno (BS),Parrucchiere ed estetica,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@barbisi_barbiereincittaalta,Barbisi Barbiere in Citta Alta,Bergamo,Barber,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@justatrim_acconciature,Just a Trim,Calcinato (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
-2026-09-14,Patrick Sappa,@vitalsalon1,Vital Salon,Montichiari (BS),Parrucchiere ed estetica,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@aeg_acconciature,A&G Acconciature,Bagnolo Mella (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@barber_shop_albino_karim,Karim Barber Shop,Albino (BG),Barber,primo,2026-09-14-instagram-siti-bs-bg.csv
 2026-09-14,Patrick Sappa,@barberiadisalo,Barberia di Salo,Salo (BS),Barber,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@barbershop_radouane,Barbershop Radouane,Darfo Boario Terme (BS),Barber,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@barbershop_sarnico,Barbershop Sarnico,Sarnico (BG),Barber,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@barbiere_simo2style,Barber Shop Simo 2 Style,Brescia,Barber,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@barbisi_barbiereincittaalta,Barbisi Barbiere in Citta Alta,Bergamo,Barber,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@beardman_barber_shop,Beardman Barber Shop,Brescia,Barber,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@dalle_sorelle_parrucchiere,Dalle Sorelle Parrucchiere,Bovezzo (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@elisiracconciature,Elisir Acconciature di Ferrari Claudia,Provaglio d'Iseo (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@eliteromano,Elite Hair Style,Romano di Lombardia (BG),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@elitesarnico,Elite Elisa,Sarnico (BG),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@etrehair_rodengo,Etre Hair Spa,Rodengo Saiano (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@gentlemanbarberspagussago,Gentleman Barber SPA,Gussago (BS),Barber,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@hairbeautyfarm,Hair Beauty Farm,Breno (BS),Parrucchiere ed estetica,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@hairemotion_,Hair Emotion,Montichiari (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@hairsalon_18,Hair Salon 18,Castenedolo (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@hairstyle_brescia,Hair Style Parrucchieri,Brescia,Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@individuals__parrucchieri,Individuals Parrucchieri,Verolanuova (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@justatrim_acconciature,Just a Trim,Calcinato (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@luca_e_valeria,Luca & Valeria Parrucchieri,Romano di Lombardia (BG),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@madmats_acconciature,TheBarberShop 73 Hair&Beauty,Lumezzane (BS),Barber e parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@mari_acconciature,Mari Acconciature,Montichiari (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@marnier_hairsalon,Marnier Hair Salon,Brescia,Barber,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@nuovaequipeparrucchieri,Nuova Equipe Sarezzo,Sarezzo (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@parrucchiere_gogna,Parrucchiere Gogna,Brescia,Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@parrucchieri_vindico,Parrucchieri Vindico,Bedizzole (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@parrucchierilocos,Locos Parrucchieri Unisex,Bedizzole (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@parruchierihairstyle,Parrucchieri Hair Style,Montichiari (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@prior.desenzano,Prior Desenzano del Garda,Desenzano del Garda (BS),Parrucchiere e barber,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@proc.2020,PROC Brescia,Brescia,Parrucchiere ed estetica,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@rebelhairbyrebecca,Rebel Hair by Rebecca,Rodengo Saiano (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@s.nailhairsalondesenzano,S Nail Hair Salon,Desenzano del Garda (BS),Parrucchiere e nail,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@swit_barber_shop,Swit Barber Shop,Treviglio (BG),Barber,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@team_giancarlo_parrucchieri,Team Giancarlo Parrucchieri,Rezzato (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@valentinacrazyhair,Valentina Crazy Hair,Verolanuova (BS),Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@vitalsalon1,Vital Salon,Montichiari (BS),Parrucchiere ed estetica,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-14,Patrick Sappa,@yaripanzeriparrucchieri,Yari Panzeri Parrucchiere,Bergamo,Parrucchiere,primo,2026-09-14-instagram-siti-bs-bg.csv
+2026-09-16,Patrick Sappa,@dursomelissa_,Melissa D'Urso,Bergamo (BG),Ciglia e PMU,primo,2026-09-16-instagram-siti-bergamo.csv
+2026-09-16,Patrick Sappa,@giusitruccopermanente,Giusi PMU,Bergamo (BG),PMU,primo,2026-09-16-instagram-siti-bergamo.csv
+2026-09-16,Patrick Sappa,@gloriacassader_lashes,Gloria Cassader Lashes,Alzano Lombardo (BG),Ciglia,primo,2026-09-16-instagram-siti-bergamo.csv
+2026-09-16,Patrick Sappa,@joiss.creation,Joice Estefania,Verdello (BG),Nail e ciglia,primo,2026-09-16-instagram-siti-bergamo.csv
+2026-09-16,Patrick Sappa,@juliapareestetica,Centro Estetico Julia Pare,Bergamo (BG),Estetica,primo,2026-09-16-instagram-siti-bergamo.csv
+2026-09-16,Patrick Sappa,@lash.angy_,Angelica Teli Lash e PMU,Bergamo (BG),Ciglia e PMU,primo,2026-09-16-instagram-siti-bergamo.csv
+2026-09-16,Patrick Sappa,@lash_studio_elvita_solis,Elvita Lash e PMU,Bergamo (BG),Ciglia e PMU,primo,2026-09-16-instagram-siti-bergamo.csv
+2026-09-16,Patrick Sappa,@lashlamipmu_bg,Lash Lami PMU,Bergamo (BG),Ciglia e PMU,primo,2026-09-16-instagram-siti-bergamo.csv
+2026-09-16,Patrick Sappa,@llashed.it,Llashed,Bergamo (BG),Ciglia,primo,2026-09-16-instagram-siti-bergamo.csv
+2026-09-16,Patrick Sappa,@madeforyournails,Alessia Napoletano Onicotecnica,Ponte San Pietro (BG),Nail,primo,2026-09-16-instagram-siti-bergamo.csv
+2026-09-16,Patrick Sappa,@odabeauty.bergamo,Oda Beauty,Bergamo (BG),Estetica e nail,primo,2026-09-16-instagram-siti-bergamo.csv
+2026-09-16,Patrick Sappa,@parisinails,Lorenza Parisi Nails,Bergamo (BG),Nail,primo,2026-09-16-instagram-siti-bergamo.csv
+2026-09-16,Patrick Sappa,@saralashtech,Sara Lash Tech,Stezzano (BG),Ciglia,primo,2026-09-16-instagram-siti-bergamo.csv
+2026-09-16,Patrick Sappa,@unghiettee,Unghiettee,Bergamo (BG),Nail,primo,2026-09-16-instagram-siti-bergamo.csv
+2026-09-16,Patrick Sappa,@yanart.brows,Yanart Brows,Bergamo (BG),PMU,primo,2026-09-16-instagram-siti-bergamo.csv
