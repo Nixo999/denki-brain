@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura.
-updated: 2026-09-16
+updated: 2026-09-17
 verificato: 2026-09-16
 source: denkicode
 tags: [stato, fatti]
@@ -89,13 +89,14 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   al sito** su `localStorage`: la demo vale su un dispositivo solo, per venderlo
   serve uno store ospitato (una giornata). PIN area salone `1234`. Il DM è finito
   in un autorisponditore: il link va su WhatsApp, da Patrick → [[sito-newfantasy]]
-- **denki-agents** (14/09): piattaforma multi-agente interna, la fase 1 è solo
-  il gateway verso i modelli. Repo `Nixo999/denki-agents` privato (16/09),
-  spec corretta e listino verificato, **nessuna riga di codice**. Docker sul
-  Mac c'è, e le chiavi OpenAI, Anthropic e Google sono nel `.env` e rispondono
-  (16/09). Manca solo far partire il prompt, per adesso su tre provider. **La fase 2, il cervello, è scritta** (16/09):
-  memoria, regista, flussi, fermate umane e indice semantico in pgvector, e
-  copre gli otto agenti chiesti da Patrick → [[denki-agents]]
+- **denki-agents**: piattaforma multi-agente interna. **La fase 1, il gateway,
+  è chiusa** (16/09): le cinque prove della definizione di fatto passano con
+  chiamate vere sul Mac, Postgres e LiteLLM in Docker, commit solo locali.
+  **Prima la parte che fa i siti**: Nicola la vuole online con un login serio,
+  una pagina progetti con siti e gestionali, una chat per progetto e la
+  creazione dei siti autonoma con Fable e Astra. Ordine approvato: gateway,
+  cantiere autonomo da riga di comando, piattaforma. La spec della fase 2 va
+  riscritta → [[denki-agents]], [[2026-09-16-denki-agents-prima-i-siti]]
 
 ## Cosa è bloccato, e perché
 
