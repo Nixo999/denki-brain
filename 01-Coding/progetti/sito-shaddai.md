@@ -82,6 +82,24 @@ contro-esempio e scartato), poi passato da [[voce-denkicode]].
 nessun contrasto sotto AA a 1440 e 375, console pulita, pagina completa senza JS
 (8112 px, zero elementi invisibili).
 
+## Giro 2 — il copy, rifatto impersonale
+
+Nicola ha bocciato i testi del giro 1 («solito problema, gli script, le frasi
+fanno cagare») e ha scelto il registro: **professionale, impersonale**. Il
+difetto non erano «alcune frasi» ma quattro tic ripetuti — ogni paragrafo che
+chiudeva con una battuta in seconda persona, «Ideale per chi» dieci volte su
+dieci schede, titoli che aprivano col no, e un lessico da chat. Riscritte 41
+stringhe: soggetto il trattamento, verbi impersonali, titoli affermativi, e
+«one to one» definito una volta sola invece di tre. Prima persona solo in «Chi
+sono» e nelle citazioni sue.
+
+**I siti di lash artist veri non si sono potuti leggere**: il DNS di questa
+macchina blocca i domini piccoli (lenalashes, lashbar, ilariamari, herbeauty,
+accademiadellosguardo). L'impostazione delle frasi e' stata presa da Clio
+Makeup, Grazia, Passione Beauty e dalle schede salone di Treatwell. Se la
+direttiva «guarda i siti veri del mestiere» deve valere davvero, serve una
+macchina con la rete aperta.
+
 ## Aperto
 
 - **Mai vista su un browser vero ne' su un telefono fisico**: le misure sono
@@ -90,5 +108,7 @@ nessun contrasto sotto AA a 1440 e 375, console pulita, pagina completa senza JS
   css-tree): il suo `[]` e' un sotto-conteggio, non un via libera.
 - Su 375 le foto degli effetti stanno dentro card: da guardare contro la
   direttiva «niente foto in cornicette» di [[direttive-siti]].
+- Le descrizioni tecniche dei sei effetti e dei quattro trattamenti sono
+  mestiere standard, **non parole sue verificate**: nessuno gliele ha fatte
+  confermare.
 - Non pubblicata. Nessun remote, i tre sbarramenti sono al loro posto.
-
