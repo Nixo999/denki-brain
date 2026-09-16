@@ -634,6 +634,20 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   visibili su Instagram, e per la copertina, che è a 946×2048.
   ([[sito-newfantasy]])
 
+- `[TRAPPOLA]` **La taglia vera della foto sta nel parametro `efg` dell'URL, ed e'
+  base64.** `atob(efg)` restituisce il tag di encoding: dentro c'e'
+  `regular_photo` con la larghezza (1080, 1350, 1440) oppure
+  `video_first_frame_thumbnail` a 640. Filtrando li' si separano le foto dai
+  fotogrammi dei Reel **senza scaricarle**, e si evita di impaginare copertine a
+  640 px. Cercare `regular_photo` nell'URL non decodificato non trova niente.
+  (16/09/2026, [[sito-shaddai]])
+- `[TRAPPOLA]` **Da loggati il grid non carica altri post se il pannello e'
+  nascosto.** Sette scroll programmati, bottino fermo a dodici immagini: senza
+  pannello visibile non scattano gli IntersectionObserver, la stessa causa della
+  pagina bianca di [[sito-castiglione]]. Per un profilo da cento post il primo
+  schermo basta; sopra, o si mostra il pannello o si va per URL dei singoli post.
+  (16/09/2026, [[sito-shaddai]])
+
 ## Liste e banco DM
 
 - **Una frase di verifica ripetuta su sessanta righe è un modello, non un

@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **197 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **199 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -62,6 +62,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-pinkploy]] — Online su pinkploy.netlify.app per @nails_art_by_pinkploy, onicotecnica a Brescia centro - mondo B «lo spessore», l'unghia in quota.
 - [[sito-pizzeria-lobidu]] — ⚠️ Pizzeria Lobidù, pizzeria siciliana, Via IV Novembre 13, 21049 Tradate (VA).
 - [[sito-salone-di-andrea]] — ⚠️ Sito vetrina in una pagina per Il Salone di Andrea, parrucchiere donna e uomo di Andrea Bielli a Dalmine (BG), Viale Natale Betelli 58.
+- [[sito-shaddai]] — Bozza di sito vetrina non commissionata per Shaddai Extension Lash, lash artist a Bergamo, costruita il 16 settembre 2026 dai contenuti veri del profilo Instagram.
 
 **skills/**
 
@@ -107,6 +108,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[parrucchiere-morgan]] — Portato da Morgan il 15/9: espone volantini e biglietti e parla coi clienti in cambio del sito gratis, zero percentuali. Nome TODO.
 - [[pinkploy]] — Onicotecnica a Brescia centro, @nails_art_by_pinkploy, 832 follower. Bozza online dal 14/9, il secondo DM col link tocca a Patrick.
 - [[sebastian-torres]] — Privato, non un'azienda. Sta aprendo la sua attività, e l'attività è opero - l'app che stiamo costruendo noi è la sua idea imprenditoriale.
+- [[shaddai-extension-lash]] — Lash artist a domicilio a Bergamo, 736 follower, nessun sito - bozza costruita il 16 settembre 2026, DM non ancora inviato.
 - [[shari-piras]] — ⚠️ Shari Piras, tatuatrice, Merate (LC). Due account - @shari_tattooer (4.504 follower, 493 post) è la persona, @atelierselva_ (593 follower, 41...
 
 **contratti/**
