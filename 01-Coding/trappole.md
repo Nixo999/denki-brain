@@ -365,6 +365,15 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   lo sia, o la ricerca binaria dà il punto sbagliato senza errore.
   (16/09/2026, [[sito-barbershop-snia]])
 
+- `[TRAPPOLA]` **Uno ScrollTrigger che finisce a `bottom <n>%` sull'ultima
+  sezione della pagina non si completa mai.** Il punto di fine sta oltre lo
+  scroll massimo, la timeline resta a meta', e tutto quello che l'ultima parte
+  doveva accendere non si accende: su [[sito-barbershop-snia]] il logo
+  DenkiCode, messo a `opacity: 0` da `gsap.set`, non e' mai tornato visibile.
+  → sull'ultima sezione si chiude a `bottom bottom`, **e quello che deve
+  restare visibile non si affida a una timeline con scrub**: si rivela con
+  l'observer, che un fallback ce l'ha. (16/09/2026)
+
 ## CSS e layout
 
 - **Un bottone più lungo in barra non dà overflow di pagina: si sovrappone
