@@ -161,6 +161,34 @@ la catena: una sola skill non basta, e il passo di carattere
 La versione notte di DSI era bella e sbagliata: era il gusto Denki, non il
 loro. Se il cliente ha logo, colori e voce, quelli comandano.
 
+## Parlato e scritto — la lista da passare prima di dire che il copy è finito
+
+Cinque bocciature di fila sul copy (Mikuma, Custom Beauty Nails, New Fantasy,
+Barbershop, Shaddai) hanno tutte la stessa causa, e il 17 settembre 2026 l'ha
+detta Nicola: **il testo esce parlato, da messaggio, e deve essere scritto.**
+Leggere i siti veri del mestiere non è bastato, perché il difetto non è il
+lessico né il tono: è la sintassi. Sette segni, ognuno con l'esempio vero preso
+dal giro 3 di [[sito-barbershop-snia]], e la correzione.
+
+| Il segno | Com'era | Com'è |
+|---|---|---|
+| **Soggetto che manca** | «Sopra la testa si dirada, dietro la nuca resta folta» — chi si dirada? | «Quando i capelli si diradano sopra e restano folti dietro la nuca» |
+| **Pronome senza antecedente** | «nessun taglio **lo** nasconde» — che cosa? | «nessun taglio riesce più a mascherare la differenza» |
+| **Soggetto sbagliato per vicinanza** | «si aprono i canali, poi **si innestano**» — l'ultimo nominato erano i canali | «si aprono i canali, e lì i bulbi vengono innestati» |
+| **Dislocazione a sinistra** | «Questo sito **me l'**hanno fatto», «in Albania **ci** sono stato» | il soggetto in testa: «DenkiCode ha costruito questo sito» |
+| **`gli` per `loro`** | «**gli** faccio sentire il rumore» | «la macchinetta viene accesa a distanza» |
+| **Participi e gerundi appesi** | «se ne parla in bottega, **seduti, guardando** la testa» | «se ne parla in bottega, davanti allo specchio» |
+| **Modi di dire orali** | «vogliono pazienza», «ci fanno l'orecchio», «trova posto», «e intanto», «come si deve» | «richiedono pazienza», «finché il rumore non diventa familiare», «passa dopo cena» |
+
+E un errore di grammatica vero, che nessuna delle due letture aveva preso:
+**«si lavora una persona alla volta»**. `Si lavora` è impersonale e non regge un
+oggetto diretto. Si scrive «la bottega lavora su appuntamento» o «si riceve una
+persona alla volta».
+
+La prova è meccanica e si fa prima di consegnare: **si legge ogni frase da sola,
+fuori dal paragrafo.** Se fuori contesto non si capisce chi è il soggetto o a
+cosa si riferisce un pronome, quella frase è parlata e va riscritta.
+
 ## Come si aggiunge una direttiva
 
 **Nel momento in cui viene detta**, non a fine sessione:

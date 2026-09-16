@@ -192,6 +192,40 @@ Rimisurato: 8/8, **0 testi sotto AA**, **overflow 0 su tredici larghezze**,
 console pulita, e la scorsa completa della pagina chiude tutto — archi a 0,
 logo a 1, tre battute a 1, nodi a 0, **0 rivelazioni spente su 29**.
 
+## Giro 4 — 17/09: «sparli e fai un pasticcio ogni volta»
+
+> «ti prego mettici del tempo, ma analizza le frasi, sparli e fai un pasticcio
+> ogni volta, poi impagina meglio il tutto» — e subito dopo: «professionale,
+> impersonale»
+
+**Il copy.** Ogni frase riletta da sola, fuori dal paragrafo. I difetti non
+erano di tono: erano soggetti mancanti, pronomi senza antecedente, dislocazioni
+a sinistra, `gli` per `loro`, participi appesi e un errore di grammatica vero
+(«si lavora una persona alla volta»: `si lavora` è impersonale e non regge un
+oggetto). Le sette categorie, con gli esempi, sono adesso una lista fissa in
+[[direttive-siti]], da passare prima di consegnare qualunque copy.
+
+Poi tutto portato in **impersonale**, sul modello di Antica Barbieria Colla: via
+«Sono Andrea», «io ho il tempo», «propongo», «chiamateli da parte mia». La
+verifica è meccanica: zero occorrenze di prima persona in pagina, fuori dalle
+recensioni, che sono i clienti che parlano.
+
+**L'impaginazione.**
+
+- La **galleria** era a denti di sega: le foto pari scendevano di 56 px e ogni
+  didascalia più lunga spostava la riga dopo. È la cosa bocciata su Mikuma, ed
+  era rientrata dalla finestra. Adesso è una griglia dichiarata con le righe
+  della stessa altezza e le didascalie allineate in basso.
+- Le **recensioni** avevano lo stesso sfalsamento: adesso sono un 2×2 con i
+  filetti di separazione.
+- **«Forbice e rasoio»** aveva metà fascia nera vuota: forbici da 330 a 460 px e
+  colonne 7/6 invece di 1/1.
+- La **fascia DenkiCode** stava fuori dal `.wrap` e partiva dal bordo della
+  pagina invece che dalla colonna.
+
+Rimisurato: 8/8, 0 testi sotto AA, overflow 0 su tredici larghezze, 0
+rivelazioni spente su 29, console pulita.
+
 ## Non verificato, e aperto
 
 - ⬜ **Non pubblicato**: il comando Netlify è stato bloccato dal classificatore
