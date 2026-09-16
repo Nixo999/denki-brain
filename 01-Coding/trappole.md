@@ -224,6 +224,15 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   file, o si scatta due volte e si tiene la seconda.
   ([[sito-hairstylebrescia]], 16 settembre)
 
+- `[TRAPPOLA]` **Il pannello browser può restare `visibilityState: hidden` per
+  tutta la sessione**: dipinge il primo frame e poi gli screenshot dopo lo
+  scroll tornano vuoti. Il JS però gira, quindi le misure (overflow, contrasti,
+  prestazioni) restano valide da lì. Le immagini si prendono da Chrome headless
+  via CDP. ⚠️ **`cattura-fette.mjs` cerca Brave**, che sul Mac di Patrick non
+  c'è: lì serve uno script su `/Applications/Google Chrome.app`, e
+  `Emulation.setDeviceMetricsOverride` scende a 375 dove `--window-size` no.
+  (16/09/2026, [[sito-barbershop-snia]])
+
 ## Immagini e `sips`
 
 - `[TRAPPOLA]` **`sips` scrive in place, e `git restore` non ripristina un file
@@ -339,6 +348,22 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   pannello con testo e quadrante**, che scorre via mentre le foto restano
   ferme. → si pinna il contenitore intero (`.giro-dentro`), non il figlio.
   (operatore su Sonnet, [[sito-hairstylebrescia]], 16 settembre)
+
+- `[TRAPPOLA]` **Il perno di rotazione di un `<g>` SVG non si imposta né con
+  `svgOrigin` di GSAP né con `transform-origin` CSS + `transform-box:view-box`:
+  sbagliano tutti e due, e a 375 px le lame delle forbici sparivano fuori dal
+  viewBox. → si ruota con l'**attributo** `transform="rotate(a cx cy)"` scritto
+  a mano. (16/09/2026, [[sito-barbershop-snia]])
+- `[TRAPPOLA]` **Un path costruito in JS sugli ancoraggi della pagina va
+  misurato con la catena `offsetTop`/`offsetParent`, mai con
+  `getBoundingClientRect`.** Le rivelazioni (`translate 0 18px`) e i
+  `position:sticky` spostano gli elementi mentre il path si misura, e il tratto
+  nasce storto. (16/09/2026, [[sito-barbershop-snia]])
+- **`getPointAtLength` in ricerca binaria a ogni frame non è un problema**:
+  misurato su un path da 8.292 px, 18 iterazioni costano **0,56 ms** contro i
+  16,7 di budget. Vale finché la `y` del path è monotòna — e va verificato che
+  lo sia, o la ricerca binaria dà il punto sbagliato senza errore.
+  (16/09/2026, [[sito-barbershop-snia]])
 
 ## CSS e layout
 

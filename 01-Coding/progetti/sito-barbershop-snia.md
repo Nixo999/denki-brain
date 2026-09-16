@@ -96,6 +96,47 @@ come una transizione da template, e il teal era campionato a occhio da una
 locandina che non è sua) e «Tre giorni» (le facciate delle case del villaggio
 rischiavano il cartoon, e il cartoon è già stato bocciato su Mikuma).
 
+## Com'è venuto — giro 1, 16/09
+
+Costruito in `~/lavoro/barbershop-snia-site` (repo locale, **nessun remote**),
+commit `3b9754f` più la correzione del copy. `controlla-sito.py` **8/8**.
+
+Capitoli: hero col marchio capovolto che ruota di 180° e l'h1 che si tende
+sull'asse `wdth` di Anybody · nastro in corsa · «Il taglio e la barba» con sei
+foto in bianco e nero e le didascalie sul servizio · pin «Sulla poltrona», dove
+le forbici si chiudono e spezzano il filo · «Chi si siede da me», quattro
+recensioni verbatim col nome · «Tre giorni, dalle 10 alle 22», telaio a sette
+fili e arco delle ore che legge l'ora di Roma · «Quando i capelli non ci sono
+più», cranio a 214 punti con 44 innesti che si piantano allo scrub, i quattro
+nodi verso Tirana · **capitolo DenkiCode**, dove il filo disegna il simbolo ·
+footer. **17 `<svg>` inline.**
+
+Misurato: console pulita, `scrollWidth == innerWidth` su dieci larghezze da 320
+a 1440, zero testi sotto AA, pagina completa senza JS e in `?cattura`, arco
+delle ore verificato in due stati reali («aperto fino alle 22» e «chiuso,
+riapre venerdì alle 10» — quest'ultimo alle 22:24 di mercoledì, ed è giusto).
+Il filo è un solo path da 8.292 px con `y` monotòna: la ricerca binaria costa
+0,56 ms a frame.
+
+**Corretto dal direttore**: il copy diceva «chi lo vuole lo accompagno a fare
+il trapianto in Albania». Non è verificato da nessuna parte. Adesso dice solo
+quello che è dimostrabile — il pacchetto lo propone lui (suo post) e a Tirana
+c'è stato (suo post).
+
+## Non verificato, e aperto
+
+- ⬜ **Non pubblicato**: il comando Netlify è stato bloccato dal classificatore
+  dell'auto mode. Lo lancia Nicola. Finché non è online, la bozza non esiste
+  → [[netlify]]
+- Safari e iOS reali mai provati: `font-variation-settings` animato, la
+  proprietà `translate`, il pin con la barra indirizzi che si ridimensiona
+- Hover e focus scritti e non misurati (un `::focus-visible` universale, rosso
+  su nero: contrasto 3,0 — al limite)
+- La riga «chiamateli pure da parte mia» attribuita ad Andrea **va fatta
+  leggere a lui** prima del go-live: è l'accordo, ma non gliel'ha detta nessuno
+- Restano `TODO` il listino prezzi, il CAP, il nome della clinica e il civico
+  (22D contro 20)
+
 ## Collegamenti
 
 [[parrucchiere-morgan]] · [[morgan]] · [[processo-siti]] · [[direttive-siti]] ·
