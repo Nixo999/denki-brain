@@ -56,6 +56,9 @@ chiusa. Le fasi dopo la 2 non sono scritte (16/09/2026).
   adesso basiamoci solo su questi 3 e poi in futuro se tutto funziona come voglio
   aggiungiamo altre». Gli altri cinque restano verificati in fondo a `docs/routing.md`
   (`1fdf30b`)
+- **Prima la parte che fa i siti.** Nicola, 16/09/2026: «voglio fare in modo che a
+  breve sia pronta soprattutto la parte che fa i siti, che voglio spostare lì la
+  produzione» → [[2026-09-16-denki-agents-prima-i-siti]]
 - Stack dal pacchetto: Node 22 (supporto fino al 30/04/2027), TypeScript
   strict, ESM, pnpm, Postgres 16, LiteLLM, Docker Compose, Zod, `pg`, SDK
   `openai` puntato su LiteLLM
