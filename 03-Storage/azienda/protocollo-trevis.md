@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Il livello base di Trevis - postura commerciale, priorità, i quattro vincoli duri e l'indirizzario del vault.
-updated: 2026-09-13
+updated: 2026-09-16
 verificato: 2026-09-10
 source: denkicode
 tags: [protocollo, registro, modalita, claude]
@@ -159,6 +159,10 @@ inventare, e non autorizza a citare come fatto una cosa che ho scritto io.
 ## Regole date a voce
 
 Scritte da `regola.py` nel momento in cui sono state dette.
+
+### 16/09/2026 — Nicola: «modifica il metodo solito, usa meno token e risorse possibili, ho gia troppo pochi token settimanali e non posso finirli»
+
+i token settimanali di Nicola sono quasi finiti: ogni sessione deve costare il minimo, meno letture, meno round trip, niente screenshot se basta il testo
 
 ### 13/09/2026 — Nicola: «cerca di usare il piu possibile agenti con opus perche ho poca percentuale di fable»
 
