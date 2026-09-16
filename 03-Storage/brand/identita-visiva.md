@@ -31,6 +31,7 @@ sono i file, quale si usa quando, e cosa manca.
 | `logo-denkishift.svg` | **Il marchio di DenkiShift**, vettoriale | Dentro l'app e ovunque serva il logo del prodotto |
 | `logo-simbolo.svg` | **Solo il simbolo** (anello con 気), fondi chiari, 4,5 KB | La firma «Powered by DenkiCode» nel piè di pagina dei siti |
 | `logo-simbolo-scuro.svg` | Stesso simbolo per fondi scuri | Stessa firma, su footer nero o grigio |
+| `logo-simbolo-bn.svg` | **Il simbolo in soli grigi**, per la stampa in ufficio: stessi tracciati, la metà col gradiente diventa `#7D7D7D` | Materiale stampato in bianco e nero, tipo il tagliandino |
 
 Il marchio è del **13 maggio 2026** e non è più stato toccato: è la parte
 stabile dell'identità.

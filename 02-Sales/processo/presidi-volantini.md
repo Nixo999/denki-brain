@@ -91,15 +91,14 @@ bianco e nero (`03-Storage/brand/stampa/tagliandino-bozza-gratuita.pdf` →
 [[identita-visiva]]). Dice:
 
 ```
-Bozza gratuita del tuo sito — la vedi prima, poi decidi. Nessun impegno.
+Bozza gratuita del tuo sito — prima vedi il lavoro, poi decidi. Nessun impegno.
 392 749 2448 · Patrick · chiama o scrivi su WhatsApp
 ```
 
-Si attacca sul lato «STANCHI DI ESSERE INVISIBILI ONLINE?», che è quello che
-si lascia in vista. La sigla del presidio resta scritta a mano, nel campo
-`rif. ______` in fondo al tagliandino: è tutto il tracciamento che serve.
-Quando qualcuno chiama si sa da quale presidio è uscito, senza QR e senza
-ristampe.
+Si attacca sul lato «STANCHI DI ESSERE INVISIBILI ONLINE?», che è quello che si
+lascia in vista. La sigla del presidio si continua a scrivere a mano sul blocco,
+non sul tagliandino: è tutto il tracciamento che serve, e quando qualcuno chiama
+si sa da quale presidio è uscito, senza QR e senza ristampe.
 
 ## Come si misura, e quando si chiude un presidio
 
