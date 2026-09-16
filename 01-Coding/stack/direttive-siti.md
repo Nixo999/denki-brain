@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 16/09/2026 — Nicola: «il logo di denki in basso, deve essere il nostro ufficiale in rosso al posto di quel simbolo che hai messo»
+
+Bozza Barbershop SNIA giro 1: nel capitolo DenkiCode il marchio era ridisegnato e nel footer stava la versione a gradiente. Il logo DenkiCode non si ridisegna mai e non si ricolora a gusto del sito: si usa il file ufficiale
+
 ### 16/09/2026 — Nicola: «metti qualcossa su di noi e sui trapianti anche in alto, cosi uno non deve scorrere tutto il sito»
 
 Bozza Barbershop SNIA giro 1: DenkiCode e il servizio secondario stavano solo in fondo. Quello che conta - il secondo servizio e la firma DenkiCode quando il cliente l'ha chiesta - va anche sopra la piega, non solo in fondo alla spina dello scroll
