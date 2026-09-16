@@ -70,19 +70,22 @@ secondi: se l'immagine non dice niente da sola, non dice niente.
 
 | # | Titolo | Argomento |
 |---|---|---|
-| 01 | Su Google non ti trova nessuno se stai solo qui | farsi trovare |
-| 02 | Chi apre il tuo sito cerca due cose | i primi secondi sul sito |
-| 03 | Il tuo sito lo guardano in piedi, con una mano | il telefono |
-| 04 | La scheda su Google te la regalano | costo zero |
-| 05 | Con un modello pronto hai le sezioni di un altro | modelli pronti |
-| 06 | Le prenotazioni ti arrivano quando sei chiuso | agenda nel sito |
-| 07 | Se un sito sembra vecchio, guarda le foto | fotografie |
-| 08 | Il sito lo vedi prima, i soldi vengono dopo | come lavoriamo |
+| 01 | Chi ha bisogno adesso cerca su Google | farsi trovare |
+| 02 | Guarda l'indirizzo e il telefono, poi decide | i primi secondi sul sito |
+| 03 | Il tuo sito lo aprono col telefono in una mano | il telefono |
+| 04 | La scheda su Google te la danno gratis | costo zero |
+| 05 | Ti ritrovi un blog che non scriverai mai | modelli pronti |
+| 06 | Chi decide alle undici di sera non ti telefona | agenda nel sito |
+| 07 | Se il sito ti sembra vecchio, guarda le foto | fotografie |
+| 08 | Il sito lo vedi prima di tirare fuori un euro | come lavoriamo |
 
-⚠️ **Il primo giro dei testi e' stato bocciato il 16 settembre**: «le scritte
-non sono umane e discorsive». Erano sentenze corrette e telegrafiche, da
-manuale. Riscritti in forma parlata con lo stesso significato, e la regola sta
-in [[stile-comunicazione]].
+⚠️ **I testi sono al terzo giro: i primi due bocciati da Patrick il 16
+settembre**, «le scritte non sono umane e discorsive» e poi «un umano non si
+porrebbe mai cosi'». Il difetto non erano le parole: le frasi erano costruite
+per antitesi («non X, ma Y») e chiudevano tirando la morale di quella prima,
+cioe' aforismi. Il terzo giro dice una situazione concreta e si ferma li': in
+fila alla cassa, la luce della finestra, un pomeriggio di lavoro. Le due frasi
+stanno in [[stile-comunicazione]].
 
 **La 08 e' l'unica che chiede qualcosa**, e porta il gancio della bozza gia'
 fatta ([[stile-comunicazione]], regola dell'11 settembre). Va per ultima, con

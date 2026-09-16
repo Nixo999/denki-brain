@@ -56,8 +56,8 @@ def telefono():
     e in basso gli finiva sopra."""
     return """
 <svg viewBox="0 0 880 452" class="art">
-  <text x="96" y="24" class="micro">telefono, una mano</text>
-  <text x="470" y="24" class="micro">monitor, quasi mai</text>
+  <text x="96" y="24" class="micro">dal telefono</text>
+  <text x="470" y="24" class="micro">dal computer</text>
   <g transform="rotate(-6 200 250)">
     <rect x="96" y="64" width="208" height="356" rx="34" class="tratto"/>
     <rect x="176" y="84" width="48" height="7" rx="3.5" class="riga-tenue"/>
@@ -172,54 +172,57 @@ def bozza():
 
 # ---------------------------------------------------------------- i contenuti
 
+# Ogni storia dice una situazione che al titolare capita davvero, e si ferma
+# li'. Niente antitesi («non X, ma Y») e nessuna frase che tira la morale di
+# quella prima: sono le due cose che facevano sembrare i primi due giri
+# scritti da una macchina. Patrick, 16 settembre: «cerca di parlare
+# normalmente».
 STORIE = [
     dict(tag="Farsi trovare", grafica=ricerca,
-         titolo="Su Google non ti trova nessuno se stai solo qui",
-         corpo="Su Instagram ti trova chi sa gia' come ti chiami. Chi invece "
-               "cerca il tuo mestiere insieme al nome del suo comune finisce "
-               "da qualcun altro, perche' in quella lista tu non compari. E' "
-               "gente che non ti conosce ancora, ed e' la parte che ti manca."),
+         titolo="Chi ha bisogno adesso cerca su Google",
+         corpo="Scrive il mestiere e il nome del paese, apre i primi risultati "
+               "e chiama il primo che risponde. Su Instagram invece ti trova "
+               "chi sa gia' come ti chiami. Questo qui no, e senza un sito non "
+               "ti vede nemmeno."),
     dict(tag="I primi secondi", grafica=dieci_secondi,
-         titolo="Chi apre il tuo sito cerca due cose",
-         corpo="Dove sei e come si prenota. Le cerca nei primi dieci secondi. "
-               "Se non le vede torna indietro e prova un altro nome, e tu non "
-               "lo sai nemmeno. Vanno in alto e grandi, non in fondo alla "
-               "pagina dei contatti."),
+         titolo="Guarda l'indirizzo e il telefono, poi decide",
+         corpo="Apre il sito e cerca dove sei e come si prenota. Ci mette dieci "
+               "secondi. Se le deve andare a cercare in fondo alla pagina dei "
+               "contatti, chiude e prova un altro nome."),
     dict(tag="Telefono", grafica=telefono,
-         titolo="Il tuo sito lo guardano in piedi, con una mano",
-         corpo="Quasi nessuno apre il sito di un negozio dal computer. Lo apre "
-               "dal telefono mentre sta facendo altro, magari in fila alla "
-               "cassa. Un sito disegnato su un monitor grande e provato solo "
-               "li', in quella situazione, non regge."),
+         titolo="Il tuo sito lo aprono col telefono in una mano",
+         corpo="In fila alla cassa, sul divano, davanti alla vetrina per vedere "
+               "se sei aperto. Dal computer quasi nessuno. Un sito provato solo "
+               "sul monitor grande, sul telefono diventa una cosa da "
+               "ingrandire con le dita."),
     dict(tag="Costo zero", grafica=scheda,
-         titolo="La scheda su Google te la regalano",
-         corpo="Ci metti gli orari, l'indirizzo, qualche foto, e le recensioni "
-               "si appoggiano li' da sole. Ci vuole un pomeriggio e non si "
-               "paga niente. Chi cerca il tuo mestiere nella tua zona ti trova "
-               "la' prima che sul sito."),
+         titolo="La scheda su Google te la danno gratis",
+         corpo="Ci metti gli orari, l'indirizzo, qualche foto del negozio. Un "
+               "pomeriggio di lavoro. Da quel giorno chi cerca il tuo mestiere "
+               "in zona vede la tua scheda con le recensioni, e ti chiama da "
+               "li' senza passare dal sito."),
     dict(tag="Modelli pronti", grafica=modello,
-         titolo="Con un modello pronto hai le sezioni di un altro",
-         corpo="I temi comprati nascono per un'attivita' qualsiasi. Ti ritrovi "
-               "con lo spazio per un blog che non scriverai mai e senza un "
-               "posto per la cosa che vendi davvero. Dovrebbe essere il sito a "
-               "seguire il mestiere, non il contrario."),
+         titolo="Ti ritrovi un blog che non scriverai mai",
+         corpo="I temi comprati hanno le sezioni di un'attivita' qualsiasi: il "
+               "blog, la pagina sul team. La cosa che vendi davvero finisce in "
+               "mezzo al resto con una foto piccola, e chi arriva non capisce "
+               "cosa fai."),
     dict(tag="Agenda", grafica=notte,
-         titolo="Le prenotazioni ti arrivano quando sei chiuso",
-         corpo="Chi decide alle undici di sera non ti telefona, e la mattina "
-               "dopo se ne e' gia' dimenticato. Con un'agenda dentro il sito "
-               "quella richiesta resta li' ad aspettarti, e la trovi quando "
-               "apri."),
+         titolo="Chi decide alle undici di sera non ti telefona",
+         corpo="Aspetta domani, e domani ha da fare. Oppure intanto ha chiamato "
+               "un altro. Con l'agenda dentro il sito ti lascia la prenotazione "
+               "la sera stessa, e la trovi quando apri."),
     dict(tag="Fotografie", grafica=foto,
-         titolo="Se un sito sembra vecchio, guarda le foto",
-         corpo="Il codice non lo vede nessuno, le fotografie si'. Cinque "
-               "scatti fatti di giorno, con la luce che entra dalla finestra, "
-               "cambiano una pagina piu' di qualunque animazione."),
+         titolo="Se il sito ti sembra vecchio, guarda le foto",
+         corpo="Le foto scure fatte col telefono la sera fanno sembrare vecchio "
+               "qualsiasi sito. Cinque scatti di giorno, con la luce che entra "
+               "dalla finestra, e la stessa pagina cambia faccia."),
     dict(tag="Come lavoriamo", grafica=bozza,
-         titolo="Il sito lo vedi prima, i soldi vengono dopo",
-         corpo="Guardiamo il tuo profilo e da li' costruiamo una bozza vera "
-               "del sito, poi te la mandiamo. Si apre dal telefono e si scorre "
-               "come quello finito. Non costa niente e non ti impegna a nulla: "
-               "se non ti convince, l'hai vista e basta."),
+         titolo="Il sito lo vedi prima di tirare fuori un euro",
+         corpo="Guardiamo il tuo profilo, ti costruiamo la bozza del sito e te "
+               "la mandiamo. La apri dal telefono e la scorri come se fosse "
+               "finita. Se non ti piace, pazienza: non hai speso niente e non "
+               "hai firmato niente."),
 ]
 
 # gli accenti veri: il sorgente non porta le lettere accentate, e nemmeno
