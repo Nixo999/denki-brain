@@ -269,6 +269,16 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## GSAP e motion
 
+- `[TRAPPOLA]` **Dentro una sezione pinnata a `100vh` con `overflow:hidden`, il
+  testo che sfora non si vede e non avvisa.** Su Custom Beauty Nails il copy
+  rifatto ha portato il blocco della spina da ~660 a ~790 px: a 375x667 gli
+  ultimi due righi finivano sotto il taglio, a 760x900 ne restavano fuori 95, e
+  non compare nessuna barra di scorrimento. → chi allunga un testo dentro un pin
+  **misura l'altezza del blocco**, non la guarda, e le media query si scrivono
+  su larghezza **e altezza**. ⚠️ `--vh` costruito su `1vh` e' il viewport grande
+  di iOS: con la barra dell'URL visibile lo spazio vero e' meno di quello
+  misurato in headless. (16/09/2026, [[sito-custombeautynails]])
+
 - **La natura simulata in CSS non regge accanto a una foto vera nella stessa
   pagina.** Tre giri su Mikuma Dogs: l'acqua a righe ripetute nel giro 1, le
   caustiche «come nebbia» nel giro 3, e Nicola: «sembra finta, eliminala, non
