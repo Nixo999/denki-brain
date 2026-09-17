@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 17/09/2026 — Nicola: «crea cose in 3d per i tagli e per i trapianti, rendilo piu pieno, lo vedo vuoto, trova qualcosa che mi accompagni per tutto il sito»
+
+Bozza Barbershop SNIA giro 10, dopo che la struttura a due porte era stata approvata come base. Tre cose: il 3D sulla materia del mestiere (non decorazione), la densita' - le pagine ariose lette da Nicola sembrano vuote, non eleganti - e un elemento che accompagni tutta la pagina. ATTENZIONE: il filo era esattamente questo ed e' stato bocciato, quindi non una linea che segue lo scroll: deve essere l'oggetto del mestiere
+
 ### 17/09/2026 — Nicola: «no il filo fa proprio cagare, reimpagina, reimposta, rifai le animazioni, rifai lo sfondo, cerca di non renderlo un ai slop»
 
 Bozza Barbershop SNIA giro 8, dopo due giri di correzioni sul filo. Un elemento grafico che attraversa tutta la pagina non si aggiusta a colpi di opacita' e spessore: se al secondo giro non regge, la direzione e' finita e si torna al passo 2 del processo. E la spina dello scroll non deve essere una linea che segue lo scroll: e' il pattern piu' riconoscibile come AI
