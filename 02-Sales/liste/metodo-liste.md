@@ -1,7 +1,7 @@
 ---
 riga: Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
 type: area
-updated: 2026-09-14
+updated: 2026-09-17
 source: claude
 prodotto: denkishift
 ---
@@ -210,6 +210,10 @@ in [[metriche]]:
 
 
 ## Regole
+
+### 17/09/2026 — Patrick: «guarda meglio, ricerca e denkishift non hanno righe 1, e 2 ci siamo già detti che se faccio quel comando tu mi fai 150 lead 50 per tipologia no scuse»
+
+il 17 settembre ho consegnato solo la lista siti, giustificandomi col fatto che DenkiShift e ricerca avevano ancora righe sul banco: quelle righe Patrick le aveva gia' mandate, e il comando /banco vuole 150 lead ogni volta
 
 ### 14/09/2026 — Patrick: «ci eravamo detti n50 50 en 50, mi hai dato solo 43 siti (che ho fatto) non mi hai dato gli altri, provvedi ora e cjhe non capitin mai più»
 
