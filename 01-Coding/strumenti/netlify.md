@@ -55,8 +55,8 @@ Vale per tutti i canali:
 | [[sito-nails-robyy]] | Roberta, nail artist e educator, Brescia e provincia — Instagram `@nails.robyy`, ha risposto «Ciao ok vediamo» al DM | ✅ online su <https://nailsrobyy.netlify.app> dal 14 settembre 2026, sito `nailsrobyy` sul team `denkicode` (slug `nicola-la-rezza`), deploy dal CLI con `npx --no-install netlify`, repo `Nixo999/nailsrobyy-site` privata; **tre sbarramenti verificati con `curl` il 14/09** (`x-robots-tag`, `robots.txt` con `Disallow: /`, il `meta robots` in pagina), HTTP 200. Online c'è il giro di finitura delle due regressioni (`673d6c6`) |
 | [[sito-hairstylebrescia]] | Hair Style Parrucchieri, salone, Brescia — Instagram `@hairstyle_brescia`, gancio sposa, il DM non è ancora partito | ✅ online su <https://hairstylebrescia.netlify.app> dal 16 settembre 2026, sito `hairstylebrescia` sul team `denkicode` (slug `nicola-la-rezza`), deploy dal CLI (binario 27.5.2 nella cache di npx, `--prod --no-build`), non collegato al repo `Nixo999/hairstylebrescia-site` privata; **sbarramenti verificati nei file** (`controlla-sito.py` 8/8), **non con `curl`**: il classificatore dell'auto mode ha bloccato la verifica sul sito vivo, la fa Nicola |
 | [[sito-newfantasy]] | New Fantasy Parrucchieri, Lurate Caccivio (CO) — Instagram `@newfantasy_parrucchieri`, DM con autorisposta, il secondo contatto è WhatsApp | ✅ online su <https://newfantasy-parrucchieri.netlify.app> dal 16 settembre 2026, sito `newfantasy-parrucchieri` sul team `nicola-la-rezza`, deploy dal CLI in cache (`~/.npm/_npx/da5c1b6ea715e8b4/node_modules/.bin/netlify`, `npx --no-install` non lo trova), repo `Nixo999/newfantasy-site` privata; tre sbarramenti verificati con `curl`. Prenotazioni e gestionale su `localStorage`: la demo vale su un dispositivo solo |
-| [[sito-custombeautynails]] | Custom Beauty Nails, onicotecnica, Treviglio (BG) — Instagram `@custombeautynailstreviglio`, il DM non e' ancora partito | ✅ online su <https://custombeautynails.netlify.app> dal 16 settembre 2026, progetto `custombeautynails` sul team `travis`, deploy dal CLI; **repo solo locale, nessun remote git**. Tre sbarramenti verificati con `curl` sul sito vivo, piu' i file di lavoro sbarrati con `force = true`. ⬜ badge «Powered by Netlify» ancora acceso: `/.netlify/*` e' riservato e si spegne solo dal pannello |
-| [[sito-barbershop-snia]] | Barbershop di Andrea, barbiere, Cesano Maderno (MB) — Instagram `@barbershop_snia`, portato da Morgan come presidio volantini | ⬜ **pronto, non pubblicato**: `controlla-sito.py` 8/8, repo solo locale senza remote. Il `netlify deploy` è stato **bloccato dal classificatore dell'auto mode** il 16/09: lo lancia Nicola (`netlify deploy --prod --no-build --dir . --site barbershop-snia`, team `travis`) |
+| [[sito-custombeautynails]] | Custom Beauty Nails, onicotecnica, Treviglio (BG) — Instagram `@custombeautynailstreviglio`, il DM non e' ancora partito | ✅ online su <https://custombeautynails.netlify.app> dal 16 settembre 2026, progetto `custombeautynails` sul team `travis`, deploy dal CLI; **repo solo locale, nessun remote git**. Tre sbarramenti verificati con `curl` sul sito vivo, piu' i file di lavoro sbarrati con `force = true`. ⬜ badge «Powered by Netlify» ancora acceso. ⚠️ **Non e' vero che si spegne solo dal pannello**: si spegne dal CLI, vedi la riga di Barbershop |
+| [[sito-barbershop-snia]] | Barbershop di Andrea, barbiere, Cesano Maderno (MB) — Instagram `@barbershop_snia`, portato da Morgan come presidio volantini | ✅ **online su <https://barbershop-snia.netlify.app>** dal 17 settembre 2026, progetto `barbershop-snia` sul team **slug `patricksappa26`** (che si chiama «travis»: il nome non è lo slug, e `--account-slug travis` risponde 404), deploy dal CLI di Homebrew `/opt/homebrew/bin/netlify`, repo **`Nixo999/barbershop-snia-site` privata**. **Tre sbarramenti verificati con `curl` sul sito vivo** (`x-robots-tag`, `robots.txt` con `Disallow: /`, il `meta robots` in pagina), HTTP 200. ⬜ Badge «Powered by Netlify» **spento dall'API**, non dal pannello |
 | sito NG Barber | NG Barber Studio, Como + Erba + Mendrisio (CH) — riga 2 dell'[[2026-09-01-instagram-anello-1-b\|anello 1-b]] | ⬜ **pronto, non pubblicato**: `netlify.toml` scritto. il codice è su **`patricksappa26/ng-barber`** (pubblica, `main`, allineata). Resta indietro `Nixo999/ngbarber-site` (privata, primo tentativo). **Manca solo il login Netlify**, che è di Nicola — in alternativa, essendo la repo pubblica, **GitHub Pages** la pubblica senza altri accessi |
 
 > [!note] Analisi di Claude — 2026-09-01
@@ -90,3 +90,24 @@ Vale per tutti i canali:
 [[strumenti]] · [[flusso-vendita]] · [[prodotti-e-listino]] ·
 [[dm-instagram-vetrina]] · [[metodo-instagram]] · [[core-crescita-finanze]] ·
 [[castiglione-furniture]] · [[credenziali]] · [[sito-denkicode]]
+
+## Due cose che fanno perdere tempo ogni volta
+
+**Lo slug del team non e' il suo nome.** Il team si chiama «travis» ma lo slug e
+`patricksappa26`, e `netlify sites:create --account-slug travis` risponde
+`404: Not Found` senza dire perche'. Lo slug vero:
+
+```bash
+netlify api listAccountsForUser --data '{}'
+```
+
+**Il badge «Powered by Netlify» si spegne dal CLI.** Sul piano gratuito compare
+in basso a destra su ogni `*.netlify.app`, e su una bozza da mostrare a un
+cliente non ci puo' stare. Non serve il pannello:
+
+```bash
+netlify api updateSite --data '{"site_id":"<id>","body":{"built_with_badge_enabled":false}}'
+```
+
+Ha effetto subito, senza ripubblicare. Verificato il 17/09/2026 su
+[[sito-barbershop-snia]], dove dopo la chiamata `curl` non trova piu' la stringa.

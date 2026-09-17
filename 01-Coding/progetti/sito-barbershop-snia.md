@@ -6,7 +6,7 @@ client: parrucchiere-morgan
 stack: HTML statico + GSAP, starter DenkiCode, Netlify
 started: 2026-09-16
 deadline:
-updated: 2026-09-16
+updated: 2026-09-17
 source: claude
 verificato:
 tags: [sito, barbiere, presidio, cesano-maderno]
@@ -228,9 +228,11 @@ rivelazioni spente su 29, console pulita.
 
 ## Non verificato, e aperto
 
-- ⬜ **Non pubblicato**: il comando Netlify è stato bloccato dal classificatore
-  dell'auto mode. Lo lancia Nicola. Finché non è online, la bozza non esiste
-  → [[netlify]]
+- ✅ **Online dal 17/09 su <https://barbershop-snia.netlify.app>**, repo
+  `Nixo999/barbershop-snia-site` privata. Tre sbarramenti verificati con `curl`
+  sul sito vivo e badge Netlify spento dall'API → [[netlify]]
+- ⬜ **Il link non è ancora partito.** Lo manda Patrick, e prima va chiarito con
+  Andrea quello che resta aperto qui sotto
 - Safari e iOS reali mai provati: `font-variation-settings` animato, la
   proprietà `translate`, il pin con la barra indirizzi che si ridimensiona
 - Hover e focus scritti e non misurati (un `::focus-visible` universale, rosso
