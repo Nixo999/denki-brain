@@ -111,4 +111,7 @@ macchina con la rete aperta.
 - Le descrizioni tecniche dei sei effetti e dei quattro trattamenti sono
   mestiere standard, **non parole sue verificate**: nessuno gliele ha fatte
   confermare.
-- Non pubblicata. Nessun remote, i tre sbarramenti sono al loro posto.
+- **Online dal 17/09/2026 su <https://shaddailash.netlify.app>** (progetto
+  `shaddailash`, team `travis`, deploy dal CLI). Tre sbarramenti verificati con
+  `curl` sul vivo. **Il repo e' solo locale**: `gh repo create` e' stato bloccato
+  dal classificatore dell'auto mode, lo lancia Nicola.
