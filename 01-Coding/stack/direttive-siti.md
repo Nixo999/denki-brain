@@ -31,7 +31,6 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
-<<<<<<< HEAD
 ### 17/09/2026 — Nicola: «sono professionali, modici nei prezzi e molto veloci»
 
 Bozza Barbershop SNIA giro 6, al posto di 'lavorano bene, consegnano in fretta e costano poco'. E' la formula con cui DenkiCode si descrive dentro il sito di un cliente: si usa questa, non una parafrasi
@@ -39,11 +38,10 @@ Bozza Barbershop SNIA giro 6, al posto di 'lavorano bene, consegnano in fretta e
 ### 17/09/2026 — Nicola: «fai una ricerca approfondita su internet di cosa serve per annullare l'AI slop sui siti, e tutti i metodi per far sembrare che un sito non sia fatto dall'AI, usa poi quei risultati come base per controllare i siti futuri»
 
 i siti non devono sembrare fatti con l'AI: la ricerca diventa il metro con cui si controlla ogni sito nuovo
-=======
+
 ### 17/09/2026 — Nicola: «elimina frasi senza senso, migliora l'armonia delle frasi, ogni tanto sparli e metti frasi fatte ancora sintatticamente da un bimbo»
 
 Shaddai giro 2, sesta bocciatura di fila sul copy: il registro impersonale era giusto ma dentro restano frasi che non vogliono dire niente (la lettura e' di volume, si leggono da tre metri), frasi fatte da post Instagram (si nota che qualcosa c'e', non si capisce cosa) e periodi tutti della stessa lunghezza. Impersonale non basta: le frasi devono anche stare in piedi da sole e avere ritmo diverso
->>>>>>> cb6c5ff (Regola nuova di Nicola: elimina frasi senza senso, migliora l'armonia delle frasi, o)
 
 ### 17/09/2026 — Nicola: «nel banner di denkicode togli a seveso, aggiungi che siamo bravi veloci ed economici»
 
