@@ -29,7 +29,9 @@ provate con chiamate vere sul Mac, commit solo locali → [[registro-interventi]
 Adesso il cantiere autonomo, poi la piattaforma online →
 [[2026-09-16-denki-agents-prima-i-siti]]. **Il cantiere gira come meccanismo**
 (17/09/2026): `pnpm run cantiere` su Haiku ha fatto un giro di prova completo per
-0,22 USD. Il primo sito vero aspetta budget e lead → `docs/spec-cantiere.md`.
+0,22 USD. **Il sito a un dollaro gira** (17/09/2026, pomeriggio): `pnpm run sito` ha
+costruito tre bozze di prova per 0,57-0,82 USD, 8/8, critica 4-5/10, senza foto →
+`docs/spec-cantiere.md`, [[anti-slop-siti]].
 
 La fase 1 è solo il gateway verso i modelli: tre tabelle Postgres (`modelli`,
 `task_routing`, `esecuzioni`), LiteLLM come proxy unico, `esegui(task, input)`
@@ -86,6 +88,9 @@ questa nota.
 - [x] cantiere, foto da Instagram in automatico: si fa, deciso da Nicola il 17/09/2026 → [[2026-09-17-cantiere-un-dollaro-in-locale]]. Serve un token Apify che inserisce lui
 - [x] cantiere, budget: **un dollaro a sito**, deciso da Nicola il 17/09/2026. Il cantiere va ridisegnato per starci → [[2026-09-17-cantiere-un-dollaro-in-locale]]
 - [x] cantiere, lead del primo sito: i siti esistenti non si rifanno adesso, deciso da Nicola il 17/09/2026
+- [ ] sito a un dollaro, un giro con foto vere di un lead: serve il token di Apify, che inserisce Nicola (17/09/2026)
+- [ ] sito a un dollaro, il livello: 5/10 per la critica di Astra. In ordine: foto vere, critica sulle catture `?cattura`, batch e flex a meta' prezzo, registro dei mondi gia' usati (17/09/2026)
+- [ ] tre siti di prova in `~/lavoro/prova-bottega-aurelio*-site`, attivita' inventata: da cancellare quando non servono (17/09/2026)
 - [ ] server: per adesso tutto in locale, deciso da Nicola il 17/09/2026. Quando si riapre: il CX22 non si vende dal 01/01/2026, e con un browser dentro servono 8 GB
 - [x] fase 2: embedding su `text-embedding-3-small` a 768 dimensioni (`1c92389`, 16/09/2026). Non per il prezzo: è l'unico a 0,02 $ con l'endpoint embeddings documentato in LiteLLM. OpenAI non dichiara l'italiano: se il recupero è debole si cambia modello e si rifà l'indice, quattro centesimi
 - [ ] fase 2: chi è `momo`? Una lista chiamate ha bisogno di un destinatario (16/09/2026)

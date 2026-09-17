@@ -98,8 +98,11 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   cantiere autonomo da riga di comando, piattaforma. **Il cantiere gira come
   meccanismo** (17/09): un giro di prova su Haiku, 0,22 USD. **Un dollaro a
   sito**, tutto in locale, foto da Instagram in automatico, i siti esistenti non
-  si rifanno: deciso da Nicola il 17/09. Il cantiere va ridisegnato per stare
-  nel dollaro → [[denki-agents]], [[2026-09-17-cantiere-un-dollaro-in-locale]]
+  si rifanno: deciso da Nicola il 17/09. **`pnpm run sito` sta nel dollaro**:
+  tre bozze di prova su un'attivita' inventata, 0,57-0,82 USD, 8/8, critica
+  4-5/10, senza foto. Manca il token di Apify per un giro con foto vere. I
+  controlli anti-slop valgono per tutti i siti → [[denki-agents]],
+  [[anti-slop-siti]], [[2026-09-17-cantiere-un-dollaro-in-locale]]
 
 ## Cosa è bloccato, e perché
 
