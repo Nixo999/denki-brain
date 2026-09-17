@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 17/09/2026 — Nicola: «nel banner di denkicode togli a seveso, aggiungi che siamo bravi veloci ed economici»
+
+Bozza Barbershop SNIA giro 5. Il blocco DenkiCode dentro un sito cliente non dice dove stiamo, che restringe il bacino: dice che lavoriamo bene, in fretta e che costiamo poco. E' l'unica pubblicita' che abbiamo su quella pagina
+
 ### 17/09/2026 — Nicola: «frasi sotto le foto dei tagli»
 
 Bozza Barbershop SNIA giro 5, nell'elenco delle cose da eliminare. Le didascalie sotto le foto di una galleria si tolgono: la foto si spiega da sola, e una riga di testo sotto ognuna spezza la griglia e aggiunge parole che nessuno legge
