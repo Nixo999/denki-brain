@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **205 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **206 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -145,6 +145,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-14-rilanci-lead-aperti]] — I lead aperti al 14 settembre letti dalla posta intera - quattro bozze promesse e mai consegnate, una chiamata da fare oggi, e la seconda critica sull'AI in otto giorni.
 - [[2026-09-15-rilanci-lead-aperti]] — I lead aperti al 15 settembre sera letti dalla posta intera - una bozza chiesta alle 21:14 che non esiste, un'email da mandare a Koinè, quattro bozze consegnate e zero chiamate fatte.
 - [[2026-09-16-tre-liste-bergamo-lago-aziende]] — Le tre liste del 16 settembre - 51 siti sulla bellezza di Bergamo, 50 DenkiShift fra alberghi di lago e di montagna, 50 ricerca su concessionarie, arredo, ottici e immobiliari - e il modo nuovo di leggere i profili.
+- [[2026-09-17-brianza-gestionali-1m]] — 100 aziende +1M di fatturato entro 10 km da Seveso per la campagna gestionali. File - 2026-09-17-brianza-gestionali-1m.csv, piu' 237 di riserva.
 - [[2026-09-17-denkishift-e-ricerca]] — Le due liste che mancavano al 17 settembre - 50 DenkiShift e 50 ricerca di mercato in Lombardia - costruite col chaining di Instagram dopo che l'endpoint di ricerca si e' bloccato, e il difetto del banco che le faceva sembrare vuote.
 - [[2026-09-17-rilanci-lead-aperti]] — I lead aperti al 17 settembre letti dalla posta - la bozza chiesta da Hair Style ferma da due giorni, l'email a Koine' mai partita, sette bozze consegnate e zero chiamate fatte, e 262 righe sul banco mai mandate.
 - [[2026-09-17-siti-piemonte]] — La lista siti del 17 settembre - 50 righe di bellezza fra Torino e il resto del Piemonte, zona nuova aperta perche' la Lombardia della bellezza e' finita, e le toelettature abbandonate dopo 110 ricerche.
