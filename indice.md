@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **200 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **201 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -271,6 +271,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-16-cervello-denki-agents]] — Il cervello di denki-agents - memoria, regista e fermate umane in un Postgres solo con pgvector, e il prompt si compone a budget.
 - [[2026-09-16-denki-agents-prima-i-siti]] — ⚠️ In denki-agents prima la parte che fa i siti - Nicola ci sposta la produzione e ne descrive il flusso, dal login alla chat per progetto.
 - [[2026-09-16-vbag-gestionale-login]] — ⚠️ V-BAG - il gestionale di Giulia ha un login vero e pubblica dal telefono via Netlify Function + commit su GitHub. Store a file confermato.
+- [[2026-09-17-cantiere-un-dollaro-in-locale]] — ⚠️ Il cantiere di denki-agents costa al massimo un dollaro a sito, gira in locale, raccoglie le foto da Instagram in automatico.
 
 ## 06-Daily
 

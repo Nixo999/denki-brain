@@ -83,10 +83,10 @@ questa nota.
 - [x] prompt del pacchetto eseguito e fase 1 chiusa (16/09/2026): numeri, scelte e problemi in `docs/handoff.md`
 - [ ] Gemini 3.8 Flash ragiona coi token d'uscita: `seo_meta` esce troncato a 1.500 token. Manca un modo di regolare il ragionamento per task (16/09/2026)
 - [ ] push dei commit: Nicola non ha ancora deciso se serve avere tutto su git (16/09/2026)
-- [ ] cantiere, foto da Instagram in automatico: Apify costerebbe 0-19 USD al mese, ma i Termini di Instagram vietano la raccolta automatica e nelle foto ci sono persone. Decide Nicola (17/09/2026)
-- [ ] cantiere, primo sito vero: budget da decidere e limite di 20 USD al mese della chiave Anthropic da alzare; un giro di prova a prezzi Fable costerebbe 1,73 USD (17/09/2026)
-- [ ] cantiere, lead del primo sito: meglio una bozza gia' sotto il livello, Lobidu' o Da Caterina (17/09/2026)
-- [ ] server: il CX22 del pacchetto non si vende dal 01/01/2026, e il 17/09 Hetzner segna non disponibili CX e CAX. Con un browser dentro servono 8 GB (17/09/2026)
+- [x] cantiere, foto da Instagram in automatico: si fa, deciso da Nicola il 17/09/2026 → [[2026-09-17-cantiere-un-dollaro-in-locale]]. Serve un token Apify che inserisce lui
+- [x] cantiere, budget: **un dollaro a sito**, deciso da Nicola il 17/09/2026. Il cantiere va ridisegnato per starci → [[2026-09-17-cantiere-un-dollaro-in-locale]]
+- [x] cantiere, lead del primo sito: i siti esistenti non si rifanno adesso, deciso da Nicola il 17/09/2026
+- [ ] server: per adesso tutto in locale, deciso da Nicola il 17/09/2026. Quando si riapre: il CX22 non si vende dal 01/01/2026, e con un browser dentro servono 8 GB
 - [x] fase 2: embedding su `text-embedding-3-small` a 768 dimensioni (`1c92389`, 16/09/2026). Non per il prezzo: è l'unico a 0,02 $ con l'endpoint embeddings documentato in LiteLLM. OpenAI non dichiara l'italiano: se il recupero è debole si cambia modello e si rifà l'indice, quattro centesimi
 - [ ] fase 2: chi è `momo`? Una lista chiamate ha bisogno di un destinatario (16/09/2026)
 - [ ] fase 2: i due CSV dei contattati si importano una volta sola, poi il banco scrive nel database → [[contattati]]

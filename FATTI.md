@@ -96,9 +96,10 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   una pagina progetti con siti e gestionali, una chat per progetto e la
   creazione dei siti autonoma con Fable e Astra. Ordine approvato: gateway,
   cantiere autonomo da riga di comando, piattaforma. **Il cantiere gira come
-  meccanismo** (17/09): un giro di prova su Haiku, 0,22 USD. Il primo sito vero
-  aspetta due decisioni di Nicola, il budget con il limite della chiave da
-  alzare e il lead → [[denki-agents]], [[2026-09-16-denki-agents-prima-i-siti]]
+  meccanismo** (17/09): un giro di prova su Haiku, 0,22 USD. **Un dollaro a
+  sito**, tutto in locale, foto da Instagram in automatico, i siti esistenti non
+  si rifanno: deciso da Nicola il 17/09. Il cantiere va ridisegnato per stare
+  nel dollaro → [[denki-agents]], [[2026-09-17-cantiere-un-dollaro-in-locale]]
 
 ## Cosa è bloccato, e perché
 
