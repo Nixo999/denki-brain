@@ -100,6 +100,19 @@ Makeup, Grazia, Passione Beauty e dalle schede salone di Treatwell. Se la
 direttiva «guarda i siti veri del mestiere» deve valere davvero, serve una
 macchina con la rete aperta.
 
+## Giro 3 — le frasi, una per una
+
+Sesta bocciatura di fila sul copy, e la prima limata **a mano dal direttore**
+invece che passata a un operatore: il registro impersonale del giro 2 era
+giusto, ma dentro restavano modi di dire che non significano niente («da
+lontano la lettura e' di volume»), frasi fatte da post Instagram («si nota che
+qualcosa c'e', non si capisce cosa») e periodi tutti della stessa lunghezza.
+Ventiquattro sostituzioni, piu' il blocco che Nicola ha indicato per nome.
+
+**Quello che si porta via da qui**: delegare il copy a un operatore ha prodotto
+sei giri di bocciature. L'impostazione la puo' dare un brief, la frase singola
+no: quella la sistema chi legge la pagina riga per riga.
+
 ## Aperto
 
 - **Mai vista su un browser vero ne' su un telefono fisico**: le misure sono
