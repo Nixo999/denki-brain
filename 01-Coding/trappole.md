@@ -657,6 +657,17 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   schermo basta; sopra, o si mostra il pannello o si va per URL dei singoli post.
   (16/09/2026, [[sito-shaddai]])
 
+- `[TRAPPOLA]` **Il DNS di questa sandbox non risolve i sottodomini `netlify.app`
+  appena creati**, e `curl` esce con codice 6 e `%{http_code}` 000 — che si legge
+  come «il sito è giù», mentre il sito sta benissimo. `host` invece li risolve,
+  quindi non è il DNS di sistema: è il risolutore del processo. Il 17/09/2026
+  `pinkploy.netlify.app` rispondeva 200 e `barbershop-snia.netlify.app` e
+  `custombeautynails.netlify.app` no. → **la verifica dei tre sbarramenti si fa
+  sul permalink del deploy pubblicato**, che risolve:
+  `https://<deploy-id>--<sito>.netlify.app`. L'id del deploy vivo si legge con
+  `netlify api getSite`, campo `published_deploy.id`, ed è esattamente quello che
+  la produzione serve. ([[sito-barbershop-snia]])
+
 ## Liste e banco DM
 
 - **Una frase di verifica ripetuta su sessanta righe è un modello, non un

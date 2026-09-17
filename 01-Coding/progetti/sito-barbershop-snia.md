@@ -226,6 +226,27 @@ recensioni, che sono i clienti che parlano.
 Rimisurato: 8/8, 0 testi sotto AA, overflow 0 su tredici larghezze, 0
 rivelazioni spente su 29, console pulita.
 
+## Giro 5 — 17/09, e la pubblicazione
+
+Tolte le due frasi indicate e **le sei didascalie sotto le foto dei tagli**
+(regola nuova). Il paragrafo dei bambini era impersonale e passivo insieme —
+«si fanno sedere... viene accesa» — che fa una frase da circolare: rifatto come
+sequenza di passaggi. Le tre battute del pin avevano tutte e tre la stessa
+forma (frase, due punti, spiegazione), e tre volte di fila si sente: adesso
+hanno tre forme diverse. Il blocco DenkiCode non dice piu' dove stiamo, che
+restringe il bacino, ma **perche' chiamarci**: «lavorano bene, consegnano in
+fretta e costano poco».
+
+Senza le didascalie la colonna di sinistra restava mezza vuota accanto a sei
+foto: titolo e testo sono passati in alto su due colonne, e le foto sotto a
+tutta larghezza in una griglia 3x2. L'`alt` delle foto e' tornato a servire,
+perche' prima la descrizione la portava la didascalia.
+
+**Online e ripubblicato.** Verifica fatta sul permalink del deploy pubblicato,
+non sul dominio: il risolutore della sandbox non conosce
+`barbershop-snia.netlify.app` e `curl` esce 000 come se il sito fosse giu'
+→ [[trappole]], [[netlify]].
+
 ## Non verificato, e aperto
 
 - ✅ **Online dal 17/09 su <https://barbershop-snia.netlify.app>**, repo

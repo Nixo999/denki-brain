@@ -112,3 +112,14 @@ netlify api updateSite --data '{"site_id":"<id>","body":{"built_with_badge_enabl
 
 Ha effetto subito, senza ripubblicare. Verificato il 17/09/2026 su
 [[sito-barbershop-snia]], dove dopo la chiamata `curl` non trova piu' la stringa.
+
+**E se `curl` dice che il sito e' giu', probabilmente non lo e'.** Il risolutore
+di questa sandbox non conosce i sottodomini `netlify.app` appena creati: `curl`
+esce con codice 6 mentre `host` li risolve senza problemi. Gli sbarramenti si
+verificano sul permalink del deploy pubblicato, che e' quello che la produzione
+serve davvero:
+
+```bash
+netlify api getSite --data '{"site_id":"<id>"}'   # published_deploy.id
+curl -sI https://<deploy-id>--<sito>.netlify.app/ | grep -i x-robots-tag
+```
