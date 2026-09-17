@@ -28,3 +28,39 @@
   for = "/assets/img/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
+
+# Sbarramento dei file di lavoro. Brief, mondo, verita' di prodotto e le
+# cartelle degli strumenti sono materiale interno: su Shaddai, il 17/09/2026,
+# al primo deploy rispondevano 200 e chiunque avesse il link li leggeva.
+# `force = true` serve perche' senza quello un file che esiste davvero viene
+# servito lo stesso. Righe nuove da aggiungere qui se il sito ne porta altri.
+[[redirects]]
+  from = "/BRIEF.md"
+  to = "/index.html"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/MONDO.md"
+  to = "/index.html"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/PRODUCT.md"
+  to = "/index.html"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/DESIGN.md"
+  to = "/index.html"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/.impeccable/*"
+  to = "/index.html"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/.claude/*"
+  to = "/index.html"
+  status = 404
+  force = true
