@@ -128,7 +128,12 @@ l'apertura né la spina. Catture a pagina intera a 1440 e a 375, e si guardano.
 
 ```bash
 python3 01-Coding/strumenti/controlla-sito.py ~/lavoro/<cartella>
+python3 01-Coding/strumenti/controlla-slop.py ~/lavoro/<cartella>
 ```
+
+`controlla-slop.py` misura i segni che fanno sembrare un sito fatto con l'AI, dalla
+ricerca del 17/09/2026: se esce 1 il sito non si consegna, e gli avvisi si guardano
+uno per uno. Cosa controlla e perché: `01-Coding/stack/anti-slop-siti.md`.
 
 Misura grafica inventata, racconto allo scroll, apertura, foto, firma e
 sbarramenti. **NG Barber e Fiftynine passano 8 su 8**: è tarato su quelli. Se

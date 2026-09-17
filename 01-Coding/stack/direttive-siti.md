@@ -39,6 +39,8 @@ Bozza Barbershop SNIA giro 6, al posto di 'lavorano bene, consegnano in fretta e
 
 i siti non devono sembrare fatti con l'AI: la ricerca diventa il metro con cui si controlla ogni sito nuovo
 
+La ricerca e i controlli: [[anti-slop-siti]]. Lo strumento: `python3 01-Coding/strumenti/controlla-slop.py <cartella>`, al passo 5-bis del processo.
+
 ### 17/09/2026 — Nicola: «elimina frasi senza senso, migliora l'armonia delle frasi, ogni tanto sparli e metti frasi fatte ancora sintatticamente da un bimbo»
 
 Shaddai giro 2, sesta bocciatura di fila sul copy: il registro impersonale era giusto ma dentro restano frasi che non vogliono dire niente (la lettura e' di volume, si leggono da tre metri), frasi fatte da post Instagram (si nota che qualcosa c'e', non si capisce cosa) e periodi tutti della stessa lunghezza. Impersonale non basta: le frasi devono anche stare in piedi da sole e avere ritmo diverso
