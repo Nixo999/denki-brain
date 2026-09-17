@@ -35,11 +35,15 @@ Niente è stato dedotto a memoria. Il procedimento, in quattro passaggi:
 4. **Telefono** — cercato su Pagine Gialle riga per riga. Vale **solo** se i
    token del nome coincidono esattamente **e** l'indirizzo è nel comune giusto:
    «2 Emme» non è «3 Emme Project», «Colombo R.» non è «Antonio Colombo e C.».
-   **337 numeri** su 1.752. La prova sta nella colonna `Note Strategiche`.
+   **367 numeri** su 1.752; **337** dopo aver tolto chi ha meno di sei persone e
+   le società dello stesso gruppo sullo stesso centralino. La prova — quale
+   ricerca, quale scheda, quale indirizzo — sta riga per riga nella colonna
+   `Note Strategiche`.
 
-Il taglio si rifà in un minuto dal JSON:
-`python3` sui file in `02-Sales/strumenti/` non serve — gli script stanno nello
-scratchpad della sessione, il JSON basta a rigenerare qualunque selezione.
+⚠️ **Gli script che hanno prodotto tutto questo vivevano nella sessione e non
+ci sono più.** Quello che resta e che conta è il JSON: da lì si rifà qualunque
+altro taglio — un altro settore, un altro raggio, un'altra soglia — senza
+riscaricare niente.
 
 ## Com'è composta la lista
 
