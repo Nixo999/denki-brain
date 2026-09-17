@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 17/09/2026 — Nicola: «frasi sotto le foto dei tagli»
+
+Bozza Barbershop SNIA giro 5, nell'elenco delle cose da eliminare. Le didascalie sotto le foto di una galleria si tolgono: la foto si spiega da sola, e una riga di testo sotto ognuna spezza la griglia e aggiunge parole che nessuno legge
+
 ### 17/09/2026 — Nicola: «professionale, impersonale»
 
 Bozza Barbershop SNIA giro 4, detto subito dopo 'analizza le frasi, sparli e fai un pasticcio ogni volta'. Il copy dei siti non si scrive in prima persona come il titolare: si scrive in impersonale, come Antica Barbieria Colla - 'il trattamento dura 25 minuti e viene eseguito con rasoio monouso sterile'. Supera la direttiva del 16/09 su New Fantasy ('fai sembrare che scriva lui le note'), che resta valida solo sul non dichiarare da dove viene un contenuto
