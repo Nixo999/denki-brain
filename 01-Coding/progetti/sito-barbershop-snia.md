@@ -328,6 +328,36 @@ Rimisurato: 8/8, **0 sotto AA** (è servito un `--rosso-testo` più scuro: sulla
 carta nuova il rosso del marchio non arrivava ad AA sotto i 18 px), overflow 0
 su tredici larghezze, 0 errori in console, 0 rivelazioni spente su 29.
 
+## Giro 9 — 17/09: le due porte, dalla ricerca sui migliori
+
+> «voglio che crei il sito più bello, significativo e unico che riesci a fare.
+> fai una ricerca dei competitor di settore e prendi spunto dai migliori siti»
+
+27 siti aperti e **letti nei sorgenti**: le costanti misurate stanno in
+[[livello-siti]]. Due cose che facevamo erano nella lista dei mediocri: le due
+carte con icona sotto l'hero, e la triade rosso/nero/bianco.
+
+**La struttura è la risposta al fatto più unico di Andrea.** Fa due mestieri
+sulla stessa materia, e il primo schermo adesso lo dichiara alla soglia: due
+porte pari, Bottega e Trapianto, con il suo marchio sulla cucitura. È come
+Anderson & Sheppard e Voutilainen tengono due mestieri sotto un nome, e **Barber
+Surgeons Guild è il precedente esatto** — barberia e ricostruzione dei capelli
+come porte pari.
+
+- Scala tipografica ×1,3 e un display fino a 8,4rem: nei premiati il rapporto
+  titolo/corpo non scende sotto 8:1, nei mediocri sta a 2 o 3.
+- **«10–22» a 11vw è il titolo della sezione orari.** Tre giorni su sette è il
+  fatto più raro che ha, e i numeri nei siti che reggono sono titoli. Via
+  l'arco, che lo diceva una seconda volta; lo stato vivo passa in testata.
+- La pagina finisce con un link solo, **«Prenota»** a tutta larghezza.
+- Nove recensioni al posto di quattro, elenco tipografico. Foto in ritratto 4:5.
+
+Misurato: 0 sotto AA fuori testata, overflow 0 su tredici larghezze, 0 blocchi
+allo `controlla-slop`, console pulita. ⚠️ Gli `<svg>` inline in pagina sono
+**8**: `controlla-sito.py` passa perché conta anche i file in `assets/`, ma il
+conto vero è sotto i nove. La pagina non dipende dalle foto lo stesso — porte,
+sfumatura, settimana, cranio, percorso — ma il numero va saputo.
+
 ## Non verificato, e aperto
 
 - ✅ **Online dal 17/09 su <https://barbershop-snia.netlify.app>**, repo
@@ -341,6 +371,7 @@ su tredici larghezze, 0 errori in console, 0 rivelazioni spente su 29.
   su nero: contrasto 3,0 — al limite)
 - La riga «chiamateli pure da parte mia» attribuita ad Andrea **va fatta
   leggere a lui** prima del go-live: è l'accordo, ma non gliel'ha detta nessuno
+- ⚠️ **I prezzi non esistono da nessuna parte**: né su Fresha né altrove, e la ricerca dice che il 29% sceglie un'attività locale proprio sui prezzi chiari. Vanno chiesti ad Andrea: è la cosa che manca di più
 - Restano `TODO` il listino prezzi, il CAP, il nome della clinica e il civico
   (22D contro 20)
 

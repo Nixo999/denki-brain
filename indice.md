@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **206 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **207 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -76,6 +76,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[convenzioni]] — Le REGOLE tecniche di casa - naming, commit, firma Powered by DenkiCode. Qui sta il modo giusto, non gli errori.
 - [[direttive-siti]] — Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
 - [[essenza-e-motion]] — Essenza da Instagram, metafora, spina dello scroll, grafica inventata e foto minime 1080px. Il metro misurato sono NG Barber e Fiftynine.
+- [[livello-siti]] — Le costanti visive dei siti premiati del settore, lette nei loro sorgenti il 17/09/2026 - rapporti, misure, palette. Il metro con cui si giudica un sito nuovo.
 - [[stack]] — Le tecnologie dei due gestionali. OperO Vite 8 + Tailwind 3, DenkiShift Next 16 + Tailwind 4. Restano diversi.
 
 **strumenti/**
