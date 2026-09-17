@@ -374,6 +374,27 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   restare visibile non si affida a una timeline con scrub**: si rivela con
   l'observer, che un fallback ce l'ha. (16/09/2026)
 
+- `[TRAPPOLA]` **Un `<svg>` alto quanto il documento che anima
+  `stroke-dashoffset` ridipinge tutto il documento a ogni frame.** Su
+  [[sito-barbershop-snia]] il filo stava in un SVG da 8.000 px: il calcolo
+  della lunghezza costava 0,56 ms (misurato, non e' quello), ma l'area di
+  raster era la pagina intera e sul Mac di Nicola si vedeva. → **l'SVG va
+  `position:fixed` alto un viewport, con dentro un `<g>` traslato di
+  `-scrollY`**: il path resta in coordinate di documento e l'area ridipinta
+  passa da 8.000 px a uno schermo. ⚠️ **`viewBox` e altezza CSS devono
+  coincidere** (`doc.clientHeight`, non `innerHeight`): se differiscono il
+  disegno si scala in verticale e il filo si stacca dalla pagina di qualche
+  punto percentuale. E il fisso vale solo con la motion viva: in `?cattura` e
+  senza JS torna `absolute` e alto quanto la pagina, o nelle catture a pagina
+  intera si vede solo nel primo schermo. (17/09/2026)
+- **`scrub` di ScrollTrigger non e' morbidezza, e' ritardo.** A `.8` l'elemento
+  arriva otto decimi di secondo dopo il dito e si legge come lag, non come
+  eleganza. Su quello che deve sembrare attaccato allo scroll si usa
+  `scrub: true`. (17/09/2026, [[sito-barbershop-snia]])
+- **Un alone si fa con un cerchio, non con `drop-shadow`.** Un filtro si
+  rasterizza a ogni frame in cui l'elemento si muove; un secondo cerchio piu'
+  grande e trasparente no. (17/09/2026, [[sito-barbershop-snia]])
+
 ## CSS e layout
 
 - **Un bottone più lungo in barra non dà overflow di pagina: si sovrappone

@@ -261,6 +261,32 @@ Ripubblicato e verificato sul permalink del deploy `6aab840f`: testo nuovo
 presente, frase e archi spariti, `x-robots-tag` al suo posto. 8/8, 0 sotto AA,
 overflow 0 su tredici larghezze, 19 `<svg>` inline.
 
+## Giro 7 — 17/09: il filo rifatto, tre difetti distinti
+
+> «ora lavora sull'estetica, il filo lagga e non è bello sovrasta e non gasa,
+> va bene l'idea ma non l'esecuzione»
+
+**Lagga.** Due cause. Lo `scrub: .8` di ScrollTrigger non è morbidezza, è
+ritardo: il filo arrivava otto decimi di secondo dopo il dito. E l'`<svg>` era
+alto quanto il documento, 8.000 px, quindi ogni cambio di `stroke-dashoffset`
+ridipingeva la pagina intera. Adesso `scrub: true`, e l'SVG è `position:fixed`
+alto un viewport con dentro un `<g>` traslato di `-scrollY`: **l'area ridipinta
+passa da 8.000 px a uno schermo**. In `?cattura` e senza JS torna assoluto e
+lungo quanto la pagina, verificato → [[trappole]].
+
+**Sovrasta.** Era un tratto pieno di rosso acceso a 2,5 px lungo tutta la
+pagina, che competeva col contenuto. Adesso la scia è **1,5 px al 38% di
+opacità**: il filo già filato si vede ma non chiama.
+
+**Non gasa.** Una linea che cresce non è un momento. Il colore vivo sta adesso
+solo negli **ultimi 150 px**, una testa spessa che corre davanti alla scia, e
+in punta un cerchio che pulsa con un alone dietro. L'alone è un cerchio e non
+un `drop-shadow`, che si rasterizzerebbe a ogni frame. Dove il filo è tagliato
+dalle forbici il path ha un buco: lì testa e punta si spengono, invece di
+restare appese fuori schermo.
+
+8/8, 0 sotto AA, overflow 0 su tredici larghezze, 0 rivelazioni spente su 29.
+
 ## Non verificato, e aperto
 
 - ✅ **Online dal 17/09 su <https://barbershop-snia.netlify.app>**, repo
