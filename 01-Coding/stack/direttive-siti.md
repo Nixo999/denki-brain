@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 17/09/2026 — Nicola: «fai una ricerca approfondita su internet di cosa serve per annullare l'AI slop sui siti, e tutti i metodi per far sembrare che un sito non sia fatto dall'AI, usa poi quei risultati come base per controllare i siti futuri»
+
+i siti non devono sembrare fatti con l'AI: la ricerca diventa il metro con cui si controlla ogni sito nuovo
+
 ### 17/09/2026 — Nicola: «nel banner di denkicode togli a seveso, aggiungi che siamo bravi veloci ed economici»
 
 Bozza Barbershop SNIA giro 5. Il blocco DenkiCode dentro un sito cliente non dice dove stiamo, che restringe il bacino: dice che lavoriamo bene, in fretta e che costiamo poco. E' l'unica pubblicita' che abbiamo su quella pagina
