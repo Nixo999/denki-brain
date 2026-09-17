@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 17/09/2026 — Nicola: «no il filo fa proprio cagare, reimpagina, reimposta, rifai le animazioni, rifai lo sfondo, cerca di non renderlo un ai slop»
+
+Bozza Barbershop SNIA giro 8, dopo due giri di correzioni sul filo. Un elemento grafico che attraversa tutta la pagina non si aggiusta a colpi di opacita' e spessore: se al secondo giro non regge, la direzione e' finita e si torna al passo 2 del processo. E la spina dello scroll non deve essere una linea che segue lo scroll: e' il pattern piu' riconoscibile come AI
+
 ### 17/09/2026 — Nicola: «il filo lagga e non è bello sovrasta e non gasa, va bene l'idea ma non l'esecuzione»
 
 Bozza Barbershop SNIA giro 7. Tre difetti distinti in una frase: lo scrub di GSAP a 0.8 fa trascinare l'elemento dietro lo scroll e si legge come lag; un tratto pieno di colore acceso lungo tutta la pagina compete col contenuto invece di accompagnarlo; e una linea che cresce e basta non e' un momento. La spina dello scroll si fa con una scia spenta e sottile e il colore vivo solo negli ultimi 150 px, dove il lettore sta guardando
