@@ -287,6 +287,47 @@ restare appese fuori schermo.
 
 8/8, 0 sotto AA, overflow 0 su tredici larghezze, 0 rivelazioni spente su 29.
 
+## Giro 8 — 17/09: il filo esce, e con lui il mondo che lo reggeva
+
+> «no il filo fa proprio cagare, reimpagina, reimposta, rifai le animazioni,
+> rifai lo sfondo, cerca di non renderlo un ai slop»
+
+Terzo giro sullo stesso elemento: la direzione era finita e andava sostituita,
+non corretta. **Via** l'SVG del filo, le 21 ancore, il blocco JS che lo
+costruiva, la bobina nell'hero, le forbici che lo tagliavano, il telaio a sette
+fili della settimana e i nodi sul percorso per Tirana.
+
+**Al suo posto**, cose che stanno in piedi da sole:
+
+- **Fondo a bande** invece del bianco unico: carta `#eceae4`, carta scura
+  `#e3e0d8` sotto recensioni e orari, nero sul momento e su DenkiCode.
+- **Il momento d'autore è la sfumatura**: ventisei righe che partono a cinque
+  gradini e diventano una salita continua. È la frase di Andrea disegnata, non
+  un'illustrazione accanto. Stato a riposo la rampa, così senza JS e in cattura
+  il disegno è già quello giusto.
+- La settimana è **sette caselle, tre piene**: un dato, non una metafora.
+- Il cranio era un triangolo che sembrava un albero: adesso è un'**ellisse**, la
+  testa vista dall'alto, con la zona degli innesti al centro.
+- **Le entrate non sono più la stessa salita dal basso su 29 elementi**, che
+  [[anti-slop-siti]] segna come il segno più riconoscibile di una pagina
+  generata: un velo per i titoli, una dissolvenza per i testi, uno scoprimento
+  dall'alto per le foto.
+
+**Anti-slop**, da 1 blocco a 0: le citazioni prendono le virgolette basse (il
+«non è X, è Y» è dei clienti, e così il controllo lo riconosce come citazione),
+favicon e `og:image` che mancavano — il link su WhatsApp usciva senza anteprima
+— i giorni minuscoli e un fatto verificabile per sezione.
+
+⚠️ **Una lezione pagata**: ripulire il CSS con una regex `.*?\n\}` in DOTALL ha
+mangiato 134 righe, fra cui tutto il blocco dei bottoni, e la pagina è andata
+online nella cattura di prova con i bottoni spariti. Recuperato con
+`git checkout HEAD -- assets/stile.css` e rifatto a sostituzioni esatte
+→ [[trappole]].
+
+Rimisurato: 8/8, **0 sotto AA** (è servito un `--rosso-testo` più scuro: sulla
+carta nuova il rosso del marchio non arrivava ad AA sotto i 18 px), overflow 0
+su tredici larghezze, 0 errori in console, 0 rivelazioni spente su 29.
+
 ## Non verificato, e aperto
 
 - ✅ **Online dal 17/09 su <https://barbershop-snia.netlify.app>**, repo

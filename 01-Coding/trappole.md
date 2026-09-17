@@ -509,6 +509,16 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   `overflow` vanno sull'`<img>`, non sul `figure` che contiene anche la
   didascalia. (operatore su Sonnet, [[sito-hairstylebrescia]], 16 settembre)
 
+- `[TRAPPOLA]` **Non si ripulisce un CSS con una regex `\.classe\{.*?\n\}` in
+  DOTALL.** Il `.*?` non si ferma alla graffa della regola: si ferma al primo
+  `\n}` che trova, e se la regola da togliere e' multiriga si porta via tutto
+  quello che sta in mezzo. Il 17/09/2026 su [[sito-barbershop-snia]] ha
+  cancellato 134 righe, fra cui l'intero blocco dei bottoni, e la pagina e'
+  andata in cattura con i bottoni ridotti a testo. → si ripristina con
+  `git checkout HEAD -- <file>` e si rifa' a **sostituzioni di stringhe
+  esatte**, una per blocco, che falliscono rumorosamente se il blocco e'
+  cambiato.
+
 ## Git, account e pubblicazione
 
 - `[TRAPPOLA]` **Un `[[redirects]]` di Netlify senza `force = true` non scatta
