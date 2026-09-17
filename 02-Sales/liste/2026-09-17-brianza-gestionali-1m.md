@@ -16,7 +16,8 @@ sopra il milione di fatturato. Schema a 8 colonne di [[ciclo-settimanale]].
 
 | File | Righe | Cos'è |
 |---|---|---|
-| `2026-09-17-brianza-gestionali-1m.csv` | **100** | la lista da chiamare |
+| `2026-09-17-brianza-gestionali-1m.xlsx` | **100 + 237** | **quello che si apre per chiamare.** Quattro fogli: come si compila, da chiamare, riserva, perché questi settori. Colonne separate, filtro su ogni intestazione, e la colonna `Esito` è un menu a tendina coi sei valori di [[metriche]] — scriverne altri non è più possibile |
+| `2026-09-17-brianza-gestionali-1m.csv` | **100** | le stesse righe nello schema a 8 colonne, per chi lavora sul foglio condiviso |
 | `2026-09-17-brianza-gestionali-1m-riserva.csv` | **237** | stesso filtro, stessa verifica: si pesca da qui quando le 100 finiscono |
 | `2026-09-17-brianza-anagrafica-1m.json` | 2.855 | l'anagrafica grezza, per rifare il taglio senza riscaricare niente |
 
