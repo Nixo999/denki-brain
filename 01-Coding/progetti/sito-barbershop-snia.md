@@ -247,6 +247,20 @@ non sul dominio: il risolutore della sandbox non conosce
 `barbershop-snia.netlify.app` e `curl` esce 000 come se il sito fosse giu'
 → [[trappole]], [[netlify]].
 
+## Giro 6 — 17/09, ripubblicato
+
+- **«Sono professionali, modici nei prezzi e molto veloci»**, parole di Nicola,
+  al posto della parafrasi del giro prima. Vale in tutte e due i punti in cui
+  DenkiCode compare, ed è adesso la formula fissa → [[direttive-siti]].
+- Via «Chi ha paura della macchinetta finisce comunque il taglio».
+- **Via i due archi concentrici dietro il logo DenkiCode**, con il loro blocco
+  GSAP. Il marchio sta da solo sul nero e il filo ci arriva sopra; il
+  contenitore ha perso l'`aspect-ratio` e il logo occupa tutta la colonna.
+
+Ripubblicato e verificato sul permalink del deploy `6aab840f`: testo nuovo
+presente, frase e archi spariti, `x-robots-tag` al suo posto. 8/8, 0 sotto AA,
+overflow 0 su tredici larghezze, 19 `<svg>` inline.
+
 ## Non verificato, e aperto
 
 - ✅ **Online dal 17/09 su <https://barbershop-snia.netlify.app>**, repo
