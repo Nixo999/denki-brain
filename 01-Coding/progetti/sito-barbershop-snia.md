@@ -358,6 +358,49 @@ allo `controlla-slop`, console pulita. ⚠️ Gli `<svg>` inline in pagina sono
 conto vero è sotto i nove. La pagina non dipende dalle foto lo stesso — porte,
 sfumatura, settimana, cranio, percorso — ma il numero va saputo.
 
+## Giro 10 — 17/09: la testa in 3D
+
+> «bella base di partenza, crea cose in 3d per i tagli e per i trapianti,
+> aggiusta i testi, rendilo piu pieno, lo vedo vuoto, trova qualcosa che mi
+> accompagni per tutto il sito»
+
+**La cosa che accompagna il sito è la testa.** Non una linea che segue lo
+scroll — quello era il filo, ed è stato bocciato due volte: è **l'oggetto del
+mestiere**, e serve i due mestieri con lo stesso oggetto. Una nuvola di 7.000
+capelli su una testa generata in codice con three.js, nessun modello da
+scaricare.
+
+- Nella sezione della sfumatura i capelli partono a **cinque gradini** e si
+  lisciano in una salita continua: è la stessa cosa che diceva il disegno 2D,
+  ma sulla testa vera.
+- Scendendo la testa si inclina verso l'alto, la **corona si dirada** e gli
+  innesti arrivano in rosso uno a uno.
+- I capelli escono piegati indietro e in giù, non a raggiera: a raggiera
+  sembrava un soffione.
+
+Il canvas è fisso, si accende **solo mentre le due sezioni che lo ospitano sono
+sullo schermo**, e quando parte spegne i due SVG che dicevano le stesse cose.
+Non parte mai senza WebGL, con `prefers-reduced-motion`, in `?cattura` o sotto
+i 760 px: lì restano i due disegni, già in pagina.
+
+**Più pieno**: blocco nuovo **Villaggio SNIA** col ritratto di Andrea e la
+storia vera del quartiere (anni Venti, gli operai della viscosa, le vie coi
+nomi delle regioni), e i padding delle sezioni stretti da 96-170 px a 76-132.
+
+**Testi**: tolte due ripetizioni, l'indirizzo stava in due sezioni e il modo di
+lavorare in tre.
+
+⚠️ **Per verificare il 3D serve un Chrome con WebGL**: `--disable-gpu` lo
+spegne e `canvas.getContext('webgl')` torna `null`, quindi lo script esce
+subito e sembra che il 3D non ci sia. Gli script di cattura vogliono
+`--use-gl=angle --use-angle=swiftshader --enable-unsafe-swiftshader`. E la
+cattura a pagina intera con il 3D acceso **non si fa**: il canvas fisso alto un
+viewport fa stirare la pagina a 41.000 px. Si cattura a fette, o con `?cattura`
+→ [[trappole]].
+
+Misurato: 0 sotto AA, overflow 0 su tredici larghezze, 0 errori in console,
+0 rivelazioni spente su 37, 0 blocchi allo `controlla-slop`.
+
 ## Non verificato, e aperto
 
 - ✅ **Online dal 17/09 su <https://barbershop-snia.netlify.app>**, repo

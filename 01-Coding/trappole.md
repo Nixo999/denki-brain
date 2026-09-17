@@ -233,6 +233,18 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   `Emulation.setDeviceMetricsOverride` scende a 375 dove `--window-size` no.
   (16/09/2026, [[sito-barbershop-snia]])
 
+- `[TRAPPOLA]` **Chrome headless con `--disable-gpu` non ha WebGL**:
+  `canvas.getContext('webgl')` torna `null`, un sito con three.js esce dal suo
+  ramo di avvio e sembra che il 3D non sia mai stato scritto. → per verificarlo
+  servono `--use-gl=angle --use-angle=swiftshader --enable-unsafe-swiftshader`
+  al posto di `--disable-gpu`. (17/09/2026, [[sito-barbershop-snia]])
+- `[TRAPPOLA]` **Con un canvas fisso alto un viewport la cattura a pagina
+  intera esplode**: headless allunga la finestra quanto il documento e tutto
+  ciò che è in `vh` si allunga con lei, e una pagina da 9.400 px ne ha
+  misurati **41.201**. → il 3D si fotografa a fette di viewport, la pagina
+  intera si fotografa con `?cattura`, dove il 3D è spento per costruzione.
+  (17/09/2026, [[sito-barbershop-snia]])
+
 ## Immagini e `sips`
 
 - `[TRAPPOLA]` **`sips` scrive in place, e `git restore` non ripristina un file
