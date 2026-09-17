@@ -111,8 +111,35 @@ perche' il centro apre il 10 ottobre e la bozza avrebbe poco da mostrare.
 | | Esito |
 |---|---|
 | `voce-check.py` | 1 tell su 50 (tre «e» in fila su @anastasia.nailstudio), riscritto, poi **0** |
-| `verifica-sito.py` | girato con i motori su 50 righe |
-| `controlla-lista.py` | **0** |
+| `verifica-sito.py` | girato con i motori su 50 righe: 6 SCARTATO e 6 PROBABILE |
+| `controlla-lista.py` | due passaggi, poi **0** |
+
+## I dodici rilievi dello script, e dieci erano falsi
+
+`verifica-sito.py` ha segnato **6 SCARTATO e 6 PROBABILE, e solo due erano
+veri**:
+
+- **@esteticaoxacuneo**, `esteticaoxa.it` «Estetista a Cuneo | Centro Estetico
+  OXA», e **@slimnowcenter**, `slimnowcenter.it` «SlimNow, centro estetico a
+  Cirie'». Il sito ce l'hanno: fuori, e in [[gia-col-sito]].
+- Gli altri dieci erano **omonimi**, e due li ha chiusi `curl`:
+  `martinails.it` e' Martina Beretta di **Macherio (MB)**, `beautyplanet.it` e'
+  la Beauty Planet di **Orbassano**. Poi `evolveestetica.com` a **Goiania**,
+  `magnoliaestetica.com` a **Parma**, `beauty-house.ch` a **Reiden**,
+  `estetica-benessere.ch` in Svizzera. E quattro domini generici o in vendita:
+  `nailtechnician.com`, `smilenails.com` (HugeDomains), `nailstudio.it`
+  («Welcome!»), `francescamontestetichlab.it`, che e' di Francesca Monte e non
+  di Denise.
+
+Le due tolte sono state sostituite con **@esteticamentechivasso** e
+**@cesteticcharme_asti**, verificate a parte.
+
+⚠️ **`controlla-lista.py` ha fermato la lista due volte, e aveva ragione tutte
+e due.** La prima per le nove righe con un dominio indovinato vivo e nessuna
+riga che dicesse di chi fosse: la prova va **scritta**, non pensata. La seconda
+per **quattro messaggi che non nominavano la piattaforma** che i motori avevano
+trovato (due schede Fresha, due Treatwell): e' la trappola per cui il titolare
+ti corregge e la trattativa muore. Riscritti.
 
 ## Collegamenti
 
