@@ -203,11 +203,14 @@ def controlla(d, con_impeccable=True):
         cv = statistics.pstdev(periodi) / statistics.mean(periodi)
         if cv < 0.4:
             avvisa.append(f"ritmo piatto: le frasi sono tutte lunghe uguali (variazione {cv:.2f}, sotto 0,40)")
+    if re.search(r"content\s*:\s*[\"'](?:\\2014|\u2014)", css):
+        avvisa.append("trattino lungo come decorazione nel CSS (content): il testo lo nasconde, la pagina lo mostra")
     h1 = [t for tag, t in p.titoli if tag == "h1"]
     if h1 and len(h1[0].split()) > 7:
         avvisa.append(f"titolo principale lungo {len(h1[0].split())} parole: il nome del cliente e una frase sotto (direttiva 14/09)")
-    minuscole = {"Il", "Lo", "La", "I", "Gli", "Le", "Un", "Una", "Di", "Del", "Della", "Dei", "Delle", "Da", "In", "Con", "Su",
-                 "Per", "Tra", "Fra", "E", "Ed", "O", "Nostro", "Nostra", "Nostri", "Nostre", "Tuo", "Tua", "Tuoi", "Tue", "Chi", "Come", "Dove", "Cosa"}
+    # niente parole di una lettera: la I di «via Umberto I» e' un numero, non un articolo
+    minuscole = {"Il", "Lo", "La", "Gli", "Le", "Un", "Una", "Di", "Del", "Della", "Dei", "Delle", "Da", "In", "Con", "Su",
+                 "Per", "Tra", "Fra", "Ed", "Nostro", "Nostra", "Nostri", "Nostre", "Tuo", "Tua", "Tuoi", "Tue", "Chi", "Come", "Dove", "Cosa"}
     maiuscole = [t for _, t in p.titoli if any(w in minuscole for w in re.findall(r"(?<=\s)[A-ZÀ-Ý][\w'’]*", re.sub(r"^\s*\d+[.)]?\s+", "", t)))]
     if maiuscole:
         avvisa.append(f"titoli con le maiuscole all'inglese: «{maiuscole[0][:60]}». In italiano solo la prima parola")
