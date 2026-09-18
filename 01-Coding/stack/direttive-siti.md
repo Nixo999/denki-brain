@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 18/09/2026 — Nicola: «studio del design terribile, troppo piatto, animazione all'avvio troppo semplice, studio dei font terribile, per niente particolare e non dà personalità al sito»
+
+Bocciatura del 18/09/2026 sulla bozza Adelina Nails, mondo «Il sigillo» giro 1: il direttore aveva letto «animazioni non esagerate» come «minime», vietato overdrive e saltato bolder; Bodoni Moda + Archivo è la coppia di default del lusso. Non esagerata non vuol dire semplice: l'apertura deve essere una sequenza che si ricorda, la pagina deve avere profondità, e il font si sceglie con uno studio vero, su specimen col nome del cliente
+
 ### 18/09/2026 — Nicola: «evita disegni, non ti vengono bene, piuttosto cerca su internet cose già fatte online ma evita di disegnare tu. Lascia l'icona in alto a sinistra ma elimina gli altri disegni. All'avvio togli il disegno fatto da te e lascia come animazione solo il nome che appare in modo scenico e poi scompare lasciando aprire il sito stile sipario»
 
 18/09/2026, giro 13 di Barbershop SNIA: bocciati il sigillo ridisegnato nell'avvio e le tavole SVG. Un disegno fatto da Claude non regge: o asset già pronti presi online, o tipografia
