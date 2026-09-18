@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-09-17
+updated: 2026-09-18
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 18/09/2026 — Nicola: «togli quella testa brutta brutta»
+
+Bozza Barbershop SNIA giro 11: la testa in 3D fatta di 7.000 capelli in three.js. Una nuvola di punti che imita una cosa reale legge come una cosa finta, ed e' la stessa bocciatura dell'acqua generata in CSS su Mikuma: o e' una foto vera o e' un segno grafico dichiaratamente astratto, mai un'imitazione
 
 ### 17/09/2026 — Nicola: «crea cose in 3d per i tagli e per i trapianti, rendilo piu pieno, lo vedo vuoto, trova qualcosa che mi accompagni per tutto il sito»
 
