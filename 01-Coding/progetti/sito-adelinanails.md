@@ -14,8 +14,8 @@ tags: [sito, bozza, nail, alessandria, instagram]
 
 # Sito Adelina Nails — bozza, Alessandria
 
-Cliente: [[adelina-nails]]. Cartella `~/lavoro/adelinanails-site` (git locale,
-nessun remote). Database: nessuno. Processo: [[processo-siti]].
+Cliente: [[adelina-nails]]. Cartella `~/lavoro/adelinanails-site`, repo **privata**
+`Nixo999/adelinanails-site` (`main`, pushata il 18/09). Database: nessuno. Processo: [[processo-siti]].
 
 ## Cosa cambia rispetto alle altre bozze — deciso da Nicola il 18/09
 
@@ -80,6 +80,8 @@ Foto di lavori usabili: **7**, non 8 (01, 02, 04, 05, 06, 10, 11; 04 a 912 px).
   view()` non è stato visto girare), iPhone con barra URL. `og:image` va resa
   assoluta il giorno della pubblicazione (annotato nel `LEGGIMI.md` del repo).
 - **Manca**: pubblicazione su Netlify coi tre sbarramenti, e il DM col link.
+  `netlify.toml` sbarra anche `RACCOLTA.md`, `COMPETITOR.md`, `LEGGIMI.md` e
+  `sorgenti/*`: da verificare con `curl` al primo deploy.
 
 ## Giri 2 e 3 — dopo la bocciatura di Nicola del 18/09
 
