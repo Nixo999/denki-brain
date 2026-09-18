@@ -401,6 +401,28 @@ viewport fa stirare la pagina a 41.000 px. Si cattura a fette, o con `?cattura`
 Misurato: 0 sotto AA, overflow 0 su tredici larghezze, 0 errori in console,
 0 rivelazioni spente su 37, 0 blocchi allo `controlla-slop`.
 
+## Giro 11 — 18/09: via la testa, due copertine
+
+> «togli quella testa brutta brutta. metti una copertina nuova in tutti e due i
+> box iniziali taglio e trapianti»
+
+La nuvola di 7.000 capelli **imitava una cosa reale**, ed è la stessa
+bocciatura dell'acqua generata in CSS su Mikuma: o è una foto vera o è un segno
+grafico dichiaratamente astratto, mai un'imitazione. Tolti `three.js`,
+`testa.js` e il canvas; tornano i due disegni SVG, che erano rimasti in pagina
+sotto la classe che li spegneva.
+
+**Le due copertine.** Il difetto era che non erano una coppia: una porta aveva
+la foto, l'altra solo il nero. Adesso **Bottega** ha la testa appoggiata al
+lavatoio, con la barba lunga e il bordo della vasca, e **Trapianto** ha il cuoio
+capelluto dall'alto, tenuto al 62% e sotto una vignetta, così legge come
+materia e non come una fotografia clinica. Stesso bianco e nero, stesso velo,
+stesso peso. La foto di Andrea al lavoro non si perde: passa in galleria, che
+arriva a sette.
+
+Misurato: 0 sotto AA, overflow 0 su tredici larghezze, 0 immagini senza alt,
+0 rivelazioni spente su 37.
+
 ## Non verificato, e aperto
 
 - ✅ **Online dal 17/09 su <https://barbershop-snia.netlify.app>**, repo
