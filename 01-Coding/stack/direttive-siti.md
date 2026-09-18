@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 18/09/2026 — Nicola: «aggiungi delle foto prese dal suo instagram e aggiungile nelle sezioni, ovviamente con un senso e non troppo in grande, poi manca un po di colore in più, cambia delle scritte che adesso sono nere e metti un po dei colori che ci sono anche nel loro logo, poi mancano delle belle recensioni scritte affianco alle loro recensioni su google, prendine alcune vere ma belle da lì»
+
+Bozza Dragonfly giro 1: sito solo tipografico, testo tutto nero, recensioni ridotte al voto. Anche quando il feed è povero si usano le sue foto, piccole e con un senso; i colori del testo vengono dal logo del cliente; accanto al voto Google vanno recensioni vere citate
+
 ### 18/09/2026 — Nicola: «l'animazione all'avvio si vede solo una volta, se ricarico la pagina ci deve essere di nuovo»
 
 Bozza Dragonfly giro 1: l'apertura era limitata a una volta per sessione con sessionStorage. L'apertura parte a ogni caricamento della pagina, resta saltabile e spenta con prefers-reduced-motion
