@@ -554,6 +554,12 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   documento. → si misurano i `getBoundingClientRect` dei titoli contro il
   contenitore; cura: `container-type` e corpo in `cqi`. ([[sito-adelinanails]], 18/09/2026)
 
+- `[TRAPPOLA]` **`container-type:inline-size` dentro una griglia con colonna
+  `auto` e `justify-content:center` misura 0 px**: la larghezza intrinseca del
+  contenitore è 0 e il testo va a una parola per riga. La sonda «titolo contro
+  contenitore» non lo vede, perché anche il contenitore è a 0. → colonna
+  esplicita `minmax(0,1fr)` e `width:100%`. ([[sito-adelinanails]], 19/09/2026)
+
 ## Git, account e pubblicazione
 
 - `[TRAPPOLA]` **Un `[[redirects]]` di Netlify senza `force = true` non scatta

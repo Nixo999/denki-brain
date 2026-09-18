@@ -1,14 +1,14 @@
 ---
 type: progetto
-riga: Bozza sito per Adelina Nails (Alessandria) in ~/lavoro/adelinanails-site - contenuto solo da profilo + inventario competitor, giro 3 «lacca, oro e rilievo», Melodrama + Grape Nuts, apertura in 4 tempi, 8/8 e slop 0, NON pubblicata.
+riga: Bozza sito per Adelina Nails (Alessandria) in ~/lavoro/adelinanails-site - contenuto solo da profilo + inventario competitor, giro 3 «lacca, oro e rilievo», Melodrama + Grape Nuts, apertura in 4 tempi, 8/8 - online su adelinanails-site.netlify.app dal 19/9 (deploy da GitHub).
 status: attivo
 client: adelina-nails
 stack: html-css-js
 started: 2026-09-18
 deadline:
-updated: 2026-09-18
+updated: 2026-09-19
 source: claude
-verificato: 2026-09-18
+verificato: 2026-09-19
 tags: [sito, bozza, nail, alessandria, instagram]
 ---
 
@@ -109,6 +109,16 @@ passare. Verbatim in [[direttive-siti]]. Il contenuto non è cambiato.
 - Controlli: 8/8, slop 0/0, 33 nodi AA, console 0. Commit locale `8e8d1f4`.
 - **Non verificato in più**: `container-type` senza fallback sui browser vecchi,
   LCP con le tre foto dell'hero non lazy, apertura su telefono fisico.
+
+## 19/09 — online, e la prima correzione da telefono vero
+
+Pubblicato da Nicola su `adelinanails-site.netlify.app`, deploy automatico dal
+push su GitHub. Da iPhone la sezione «Adelina» aveva il testo a una parola per
+riga: `container-type` a 0 px nella griglia centrata, corretto in `3b9569a`.
+Verificato online con `curl`: correzione servita, `RACCOLTA.md`,
+`COMPETITOR.md`, `LEGGIMI.md`, `PRODUCT.md` e `sorgenti/` a 404, `X-Robots-Tag:
+noindex`. **Falla del processo**: la sonda dell'overflow interno del giro 3 non
+poteva vederlo, e il direttore non ha guardato il fondo della cattura mobile.
 
 ## Collegamenti
 

@@ -90,10 +90,10 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   serve uno store ospitato (una giornata). PIN area salone `1234`. Il DM è finito
   in un autorisponditore: il link va su WhatsApp, da Patrick → [[sito-newfantasy]]
 - **Adelina Nails** (nail artist, Alessandria, `@nails_by_.adelina`) ha risposto
-  «Ciaooo, ok» al DM del 17/09. Bozza **costruita e non pubblicata** (18/09), repo privata
+  «Ciaooo, ok» al DM del 17/09. Bozza **online su `adelinanails-site.netlify.app`** (19/09), repo privata
   `Nixo999/adelinanails-site`, giro 3 dopo una bocciatura di Nicola sul giro 1 (piatto, font anonimi), 8/8 e slop 0. Primo sito col
   metodo «prima i competitor»: contenuto solo da profilo + [[competitor-siti-nail]],
-  niente inventato. Mancano pubblicazione su Netlify e DM col link (Patrick, con
+  niente inventato. Manca il DM col link (Patrick, con
   le domande su prezzi, orari, indirizzo) → [[sito-adelinanails]], [[adelina-nails]]
 - **denki-agents**: piattaforma multi-agente interna. **La fase 1, il gateway,
   è chiusa** (16/09): le cinque prove della definizione di fatto passano con
