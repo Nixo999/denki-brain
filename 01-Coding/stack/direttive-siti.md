@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 18/09/2026 — Nicola: «l'animazione all'avvio si vede solo una volta, se ricarico la pagina ci deve essere di nuovo»
+
+Bozza Dragonfly giro 1: l'apertura era limitata a una volta per sessione con sessionStorage. L'apertura parte a ogni caricamento della pagina, resta saltabile e spenta con prefers-reduced-motion
+
 ### 18/09/2026 — Nicola: «cambia il pettine che hai disegnato tu, i disegni fatti così non rendono mai bene fatti da te, cercalo su internet già fatto bene e usalo da lì o trova qualcos'altro da mettere, ma non disegnare mai tu robe del genere perché sembra proprio fatto dall'AI così»
 
 18/09/2026, giro 13 di Barbershop SNIA: bocciato anche il pettine fatto in CSS. Vale per ogni motivo figurativo, anche se è un gradiente e non un SVG: o asset già pronto, o tipografia
