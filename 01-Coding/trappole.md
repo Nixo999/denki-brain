@@ -407,6 +407,18 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   rasterizza a ogni frame in cui l'elemento si muove; un secondo cerchio piu'
   grande e trasparente no. (17/09/2026, [[sito-barbershop-snia]])
 
+- `[TRAPPOLA]` **Un `transform` CSS, anche solo dentro dei keyframes, sostituisce
+  l'attributo `transform` di un `<path>` SVG**: a fine animazione il pezzo torna
+  all'origine del viewBox. → la posizione va nelle coordinate del path, non in
+  un attributo. ([[sito-adelinanails]], 18/09/2026)
+- `[TRAPPOLA]` **Un'animazione su `animation-timeline: view()` non ha durata**,
+  quindi l'azzeramento di `animation-duration` in `base.css` non la ferma: sotto
+  `prefers-reduced-motion` resta a metà. → si spegne per nome.
+  ([[sito-adelinanails]], 18/09/2026)
+- `[TRAPPOLA]` **`opacity:initial` nel blocco reduced-motion resetta anche le
+  opacità dichiarate a mano** (un filetto a .7 diventa pieno). → si dichiara il
+  valore finale vero, non `initial`. ([[sito-adelinanails]], 18/09/2026)
+
 ## CSS e layout
 
 - **Un bottone più lungo in barra non dà overflow di pagina: si sovrappone
@@ -530,6 +542,11 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   `git checkout HEAD -- <file>` e si rifa' a **sostituzioni di stringhe
   esatte**, una per blocco, che falliscono rumorosamente se il blocco e'
   cambiato.
+
+- `[TRAPPOLA]` **`scrollbar-color` con un colore pieno dipinge una barra sul
+  bordo destro che in cattura sembra un elemento fuori griglia.** →
+  `scrollbar-width:thin` e colore a metà opacità. ([[sito-adelinanails]],
+  18/09/2026)
 
 ## Git, account e pubblicazione
 
@@ -835,6 +852,11 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   contenitore.** Undici attrezzi che dovevano stare su un anello intorno alla
   foto stavano tutti al centro, a 23 px. → `container-type:inline-size` sul
   contenitore e il raggio in `cqw`. ([[sito-newfantasy]], 16 settembre)
+
+- `[TRAPPOLA]` **`preview_start` legge `launch.json` dalla cartella della
+  sessione, non dal repo del sito.** Da una sessione aperta nel vault il server
+  del sito non parte per nome. → server da Bash e pannello con `preview_start
+  --url`. ([[sito-adelinanails]], 18/09/2026)
 
 ## Collegamenti
 
