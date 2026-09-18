@@ -135,6 +135,13 @@ Il team **`patricksappa26`** (che si chiama «travis», piano Free) ha esaurito 
 credito e **non accetta piu' pubblicazioni**. I siti gia' online restano online:
 si blocca solo il deploy nuovo.
 
+**Verificato il 18/09/2026 dal Mac di Nicola**: il CLI lì è loggato come Nicola
+(team `nicola-la-rezza`, 25 siti, deploy accettati: `operotest` pubblicato il
+18/09). `barbershop-snia` in quell'elenco **non c'è**: sta sul team di Patrick,
+quindi `netlify link --name barbershop-snia` dall'account di Nicola non lo trova.
+O si pubblica dall'account di Patrick quando torna il credito, o si crea un sito
+nuovo sul team di Nicola con un altro nome (e un altro link).
+
 Cosa vuol dire in pratica: **una bozza corretta oggi resta in locale**, e quello
 che il cliente vede e' il giro prima. Prima di dire a Patrick che una correzione
 e' online, si controlla quale deploy sta servendo la produzione:
