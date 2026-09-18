@@ -123,3 +123,25 @@ serve davvero:
 netlify api getSite --data '{"site_id":"<id>"}'   # published_deploy.id
 curl -sI https://<deploy-id>--<sito>.netlify.app/ | grep -i x-robots-tag
 ```
+
+## ⚠️ 18/09/2026: Netlify blocca i deploy, il credito e' finito
+
+```
+JSONHTTPError: Forbidden
+"error": "Account credit usage exceeded - new deploys are blocked until credits are added"
+```
+
+Il team **`patricksappa26`** (che si chiama «travis», piano Free) ha esaurito il
+credito e **non accetta piu' pubblicazioni**. I siti gia' online restano online:
+si blocca solo il deploy nuovo.
+
+Cosa vuol dire in pratica: **una bozza corretta oggi resta in locale**, e quello
+che il cliente vede e' il giro prima. Prima di dire a Patrick che una correzione
+e' online, si controlla quale deploy sta servendo la produzione:
+
+```bash
+netlify api getSite --data '{"site_id":"<id>"}'   # published_deploy.id e published_at
+```
+
+Da decidere: aggiungere credito, oppure spostare le bozze su un altro hosting
+(GitHub Pages regge, le repo dei siti sono su `Nixo999`).

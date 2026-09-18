@@ -401,6 +401,30 @@ viewport fa stirare la pagina a 41.000 px. Si cattura a fette, o con `?cattura`
 Misurato: 0 sotto AA, overflow 0 su tredici larghezze, 0 errori in console,
 0 rivelazioni spente su 37, 0 blocchi allo `controlla-slop`.
 
+## Giro 12 — 18/09: le copertine disegnate, e Netlify che si ferma
+
+> «lo vedi anche te che fan cagare, genera te delle immagini inerenti»
+
+**Non ho uno strumento per generare immagini fotografiche**, e gliel'ho detto
+prima di provarci. I ritagli di foto non reggevano a quella scala: uno era un
+orecchio e un mento, l'altro una macchia scura illeggibile. Al loro posto due
+**tavole disegnate** degli strumenti dei due mestieri, stesso tratto e stessa
+scala, come le tavole di un catalogo.
+
+- **Bottega**: il pettine da barbiere, con la metà a denti fitti e la metà a
+  denti larghi, e sotto la forbice aperta sul perno.
+- **Trapianto**: l'impiantatore — canna, zigrinatura, stantuffo e ago smussato —
+  con la punta dentro il campo dei fori, più fitto al centro.
+
+Il pallino rosso sta sul perno della forbice e sulla punta dell'ago: lo stesso
+segno nei due mestieri, e l'unico colore delle due copertine. Disegni
+dichiarati, non imitazioni: è la strada che resta dopo la bocciatura della
+testa in 3D.
+
+⚠️ **Il giro è committato e pushato ma NON è online**: Netlify ha risposto
+`Account credit usage exceeded - new deploys are blocked`. In produzione c'è
+ancora il giro 11, quello con le copertine fotografiche → [[netlify]].
+
 ## Giro 11 — 18/09: via la testa, due copertine
 
 > «togli quella testa brutta brutta. metti una copertina nuova in tutti e due i
