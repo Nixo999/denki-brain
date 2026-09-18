@@ -125,5 +125,6 @@ pastello delle slide (verde salvia `#DCE0CC`, crema `#F3EFD0`, lilla `#EAE0F0`).
 - Font: Boska Thin (titoli, solo a corpo grande) · Familjen Grotesk (lettura) · Caveat (solo frasi sue) · Martian Mono (minuti, prezzi, orari, telefono). Escluse le famiglie di SNIA e Fiftynine.
 - Palette: fondo `#EDE7F2`, ink `#1B1620`, accento `#6B4FA8`; campo scuro e giallo `#E8C84A` solo in apertura e nella sezione Skin Analyzer.
 - Zero disegni e loghi inventati (direttiva del 18/09): il controllo «grafica inventata» di `controlla-sito.py` fallisce per scelta.
-- Foto: il feed non ha foto del centro. Il sito regge senza; da chiedere a Elisa 5-6 foto vere.
+- Foto: **superato al giro 2** su richiesta di Nicola. In pagina quattro foto 4:5 dal suo Instagram, piccole: due vere (prodotti, cofanetto) e due ritagli senza scritte (pedicure, Skin Analyzer). Visti 22 post su 318: da chiedere a Elisa foto vere della cabina e sue.
+- Colore dal logo: lilla `#7B3F9E` titoli, turchese `#1D7474` citazioni e filetti, ocra `#8A7F0E` voto e tacche. Recensioni: tre vere da Google, integrali in `raw/recensioni.md` del repo. Apertura a ogni caricamento.
 - Orari in pagina = Fresha, **da confermare** con lei (un'altra fonte dice lun-ven 10-18, sab 10-15).
