@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 18/09/2026 — Nicola: «il sito deve essere sempre con una bella animazione all'avvio, e non ci devono essere muri di testo, ma non deve per forza avere animazioni assurde: voglio qualcosa che la affascini ma che soprattutto sia utile. Animazioni affascinanti ma non esagerate. Non voglio che ti inventi del contenuto da scrivere: scrivi solo dati che ritieni utili che hai visto che altri competitor mettono, dopo una ricerca adeguata sui siti dei competitor del suo ambiente»
+
+Detto il 18/09/2026 aprendo la bozza Adelina Nails: il contenuto viene dall'inventario dei competitor, non dalla fantasia, e la motion serve la lettura
+
 ### 18/09/2026 — Nicola: «togli quella testa brutta brutta»
 
 Bozza Barbershop SNIA giro 11: la testa in 3D fatta di 7.000 capelli in three.js. Una nuvola di punti che imita una cosa reale legge come una cosa finta, ed e' la stessa bocciatura dell'acqua generata in CSS su Mikuma: o e' una foto vera o e' un segno grafico dichiaratamente astratto, mai un'imitazione
