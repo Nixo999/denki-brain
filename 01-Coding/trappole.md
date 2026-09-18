@@ -548,6 +548,12 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   `scrollbar-width:thin` e colore a metà opacità. ([[sito-adelinanails]],
   18/09/2026)
 
+- `[TRAPPOLA]` **L'overflow di pagina a 0 non vede un titolo che esce dalla
+  propria scheda.** Una parola sola in un display largo («Scaramanzia»,
+  «Prenotazioni») non va a capo e sfora il contenitore senza allargare il
+  documento. → si misurano i `getBoundingClientRect` dei titoli contro il
+  contenitore; cura: `container-type` e corpo in `cqi`. ([[sito-adelinanails]], 18/09/2026)
+
 ## Git, account e pubblicazione
 
 - `[TRAPPOLA]` **Un `[[redirects]]` di Netlify senza `force = true` non scatta

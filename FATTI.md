@@ -91,7 +91,7 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   in un autorisponditore: il link va su WhatsApp, da Patrick → [[sito-newfantasy]]
 - **Adelina Nails** (nail artist, Alessandria, `@nails_by_.adelina`) ha risposto
   «Ciaooo, ok» al DM del 17/09. Bozza **costruita e non pubblicata** (18/09) in
-  `~/lavoro/adelinanails-site`, mondo «Il sigillo», 8/8 e slop 0. Primo sito col
+  `~/lavoro/adelinanails-site`, giro 3 dopo una bocciatura di Nicola sul giro 1 (piatto, font anonimi), 8/8 e slop 0. Primo sito col
   metodo «prima i competitor»: contenuto solo da profilo + [[competitor-siti-nail]],
   niente inventato. Mancano pubblicazione su Netlify e DM col link (Patrick, con
   le domande su prezzi, orari, indirizzo) → [[sito-adelinanails]], [[adelina-nails]]

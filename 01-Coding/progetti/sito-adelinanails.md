@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito per Adelina Nails (Alessandria) in ~/lavoro/adelinanails-site - contenuto solo da profilo + inventario competitor, mondo «Il sigillo», 8/8 e slop 0, costruita il 18/9 e NON pubblicata.
+riga: Bozza sito per Adelina Nails (Alessandria) in ~/lavoro/adelinanails-site - contenuto solo da profilo + inventario competitor, giro 3 «lacca, oro e rilievo», Melodrama + Grape Nuts, apertura in 4 tempi, 8/8 e slop 0, NON pubblicata.
 status: attivo
 client: adelina-nails
 stack: html-css-js
@@ -80,6 +80,33 @@ Foto di lavori usabili: **7**, non 8 (01, 02, 04, 05, 06, 10, 11; 04 a 912 px).
   view()` non è stato visto girare), iPhone con barra URL. `og:image` va resa
   assoluta il giorno della pubblicazione (annotato nel `LEGGIMI.md` del repo).
 - **Manca**: pubblicazione su Netlify coi tre sbarramenti, e il DM col link.
+
+## Giri 2 e 3 — dopo la bocciatura di Nicola del 18/09
+
+Parole sue sul giro 1: «studio del design terribile, troppo piatto, animazione
+all'avvio troppo semplice, studio dei font terribile, per niente particolare e
+non dà personalità al sito». Falla del direttore: «non esagerate» letto come
+«minime», `overdrive` vietato, `bolder` saltato, Bodoni + Archivo lasciata
+passare. Verbatim in [[direttive-siti]]. Il contenuto non è cambiato.
+
+- **Font**, tre studi su specimen (`.cantiere/specimen.png`): scelto **Melodrama
+  700 + Grape Nuts + Satoshi**. Grape Nuts solo sui suoi virgolettati. Tutti
+  **self-hosted** in `assets/fonts/` (132 KB), licenze lette alla fonte in
+  `LICENZE.md`, richieste esterne 0.
+- **Il mondo si è piegato, dichiarato**: da «documento che rilascia» a «lacca,
+  oro e rilievo». Gradienti per capitolo, grana, riflesso di lacca, banda rossa
+  piena su «Rosso», lettere a 44vw fuori margine, tavole con ombra vera
+  sovrapposte, parallasse con `animation-timeline: view()`.
+- **Apertura in 4 tempi, 3,0 s**: luce sulla lacca → nome lettera per lettera →
+  sipario → tre tavole dei suoi lavori a ventaglio nell'hero (due sotto i 600
+  px). CTA viva a 2,4 s, si salta a scroll/tap, non ripete nella sessione,
+  scostamento di impaginato 0.
+- **Overflow interno**: 5 casi veri che l'overflow di pagina non vedeva
+  («Prenotazioni» e «Scaramanzia» fuori dal proprio blocco). Chiusi con
+  `container-type` e titoli in `cqi`. Pagina 0 e interno 0 su 20 larghezze.
+- Controlli: 8/8, slop 0/0, 33 nodi AA, console 0. Commit locale `8e8d1f4`.
+- **Non verificato in più**: `container-type` senza fallback sui browser vecchi,
+  LCP con le tre foto dell'hero non lazy, apertura su telefono fisico.
 
 ## Collegamenti
 
