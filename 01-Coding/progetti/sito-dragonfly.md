@@ -15,7 +15,7 @@ deadline: TODO
 Centro estetico a Casale Monferrato (AL). Lead caldo da @dragonfly_estetica,
 318 post / 1364 follower, nessun sito. Cliente: [[dragonfly]] (nota da creare).
 
-**Repo**: `~/lavoro/dragonfly-site` (git locale, non pushato)
+**Repo**: `Nixo999/dragonfly-site` (privata, `main`, pushata il 18/09/2026) · cartella `~/lavoro/dragonfly-site` · non pubblicato su Netlify
 **Online**: nessuno
 **Assets**: `assets/img/` — 10 foto committabili + logo, `assets/img/raw/` vuota (gitignorata)
 
