@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 18/09/2026 — Nicola: «cerca di regolare bene l'uso dei token, sfrutta dei metodi che permettano di ottenere buoni risultati ma risparmiando il più possibile token»
+
+18/09/2026, bozza Adelina Nails: raccolta e ricerca a operatori Sonnet che tornano su file corti, il direttore legge i file e non le pagine
+
 ### 18/09/2026 — Nicola: «il sito deve essere sempre con una bella animazione all'avvio, e non ci devono essere muri di testo, ma non deve per forza avere animazioni assurde: voglio qualcosa che la affascini ma che soprattutto sia utile. Animazioni affascinanti ma non esagerate. Non voglio che ti inventi del contenuto da scrivere: scrivi solo dati che ritieni utili che hai visto che altri competitor mettono, dopo una ricerca adeguata sui siti dei competitor del suo ambiente»
 
 Detto il 18/09/2026 aprendo la bozza Adelina Nails: il contenuto viene dall'inventario dei competitor, non dalla fantasia, e la motion serve la lettura
