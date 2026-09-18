@@ -139,6 +139,7 @@ si blocca solo il deploy nuovo.
 (team `nicola-la-rezza`, 25 siti, deploy accettati: `operotest` pubblicato il
 18/09). `barbershop-snia` in quell'elenco **non c'è**: sta sul team di Patrick,
 quindi `netlify link --name barbershop-snia` dall'account di Nicola non lo trova.
+**Fatto il 18/09**: Nicola ha creato `barber-shop-snia` sul suo team, ed è quello il link buono.
 O si pubblica dall'account di Patrick quando torna il credito, o si crea un sito
 nuovo sul team di Nicola con un altro nome (e un altro link).
 

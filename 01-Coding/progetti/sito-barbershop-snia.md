@@ -485,15 +485,28 @@ Misurato: `controlla-sito` 8/8, `controlla-slop` 0 blocchi, overflow 0 su 320,
 375, 768, 1024 e 1440, 0 testi sotto AA fuori testata, 0 immagini senza `alt`,
 console pulita. SVG in pagina: 4, icona e frecce.
 
-⚠️ **Non è online**: commit `c5997f2` pushato, ma Netlify serve ancora il giro
-11 (credito del team finito → [[netlify]]). ⚠️ Il pettine è un motivo in CSS, non
-un'illustrazione: se Nicola lo legge come «disegno» si toglie con una regola.
+**Online dal 18/09 su <https://barber-shop-snia.netlify.app>**, sito nuovo sul
+team Netlify di Nicola (`nicola-la-rezza`), pubblicato da lui a mano: il vecchio
+`barbershop-snia.netlify.app` sta sul team di Patrick, col credito finito, ed è
+fermo al giro 11 → [[netlify]]. Online c'è il commit `c5997f2`.
+
+**Regola di lavoro detta da Nicola il 18/09**: «pusha solo su git per adesso,
+poi le modifiche non fare niente su netlify». Le sessioni committano e pushano
+su GitHub; su Netlify pubblica lui.
+
+**Il pettine è uscito** (`be8de0d`, solo su git, non ancora online): bocciato
+come «disegnato dall'AI» anche se era un gradiente CSS. In testa ai capitoli c'è
+un filetto doppio da tipografia, 4 px e 1 px. La regola generale è in
+[[direttive-siti]]: i motivi figurativi non si disegnano, o asset già pronto o
+tipografia. ⚠️ Il fondo a piastrella è anch'esso un motivo SVG fatto in sessione:
+Nicola l'ha visto online e non l'ha bocciato, ma è il prossimo candidato.
+
 ⚠️ WhatsApp in home è la leva che il mercato del trapianto usa 3 volte su 4: non
 è stato messo perché non è verificato che il 340 416 1806 sia su WhatsApp.
 
 ## Non verificato, e aperto
 
-- ✅ **Online dal 17/09 su <https://barbershop-snia.netlify.app>**, repo
+- ✅ **Link buono dal 18/09: <https://barber-shop-snia.netlify.app>**. Il vecchio <https://barbershop-snia.netlify.app>, repo
   `Nixo999/barbershop-snia-site` privata. Tre sbarramenti verificati con `curl`
   sul sito vivo e badge Netlify spento dall'API → [[netlify]]
 - ⬜ **Il link non è ancora partito.** Lo manda Patrick, e prima va chiarito con
