@@ -6,7 +6,7 @@ client: parrucchiere-morgan
 stack: HTML statico + GSAP, starter DenkiCode, Netlify
 started: 2026-09-16
 deadline:
-updated: 2026-09-17
+updated: 2026-09-18
 source: claude
 verificato:
 tags: [sito, barbiere, presidio, cesano-maderno]
@@ -446,6 +446,50 @@ arriva a sette.
 
 Misurato: 0 sotto AA, overflow 0 su tredici larghezze, 0 immagini senza alt,
 0 rivelazioni spente su 37.
+
+## Giro 13 — 18/09: la hero sul nome, il sipario, via i disegni
+
+> «rivedere il design della hero, un po' troppo grande, basato sulle foto:
+> preferisco qualcosa che si riporti alle 2 sezioni ma che si incentri sul nome
+> del negozio» — e a metà giro: «evita disegni, non ti vengono bene… lascia
+> l'icona in alto a sinistra ma elimina gli altri disegni», «gioca con i font e
+> gli sfondi come su bartabacchi 59»
+
+Le due regole sono finite in [[direttive-siti]] nel momento in cui sono state
+dette. La ricerca di mercato sta in [[competitor-siti-barber]] (operatore
+Sonnet, 15 siti, 86 righe): nei piccoli il nome del negozio è l'`h1` grande,
+l'elenco servizi c'è in 9 su 10, nessun barbiere di zona ha un sito vero,
+**nessuno ha un'animazione d'avvio**, e i siti di trapianto mostrano sempre il
+prezzo netto.
+
+- **Hero**: `h1` BARBERSHOP a tutta larghezza (prima la pagina non aveva un
+  `h1`), sotto «del Villaggio» in script e SNIA a stencil. Le due porte restano
+  ma in una fascia tipografica sotto il nome, col numero a stencil in contorno.
+- **Avvio, solo CSS**: le lettere salgono strette, il nome si allarga sull'asse
+  `wdth`, poi si spegne e due teli di piastrella si aprono a sipario. A riposo
+  il velo è `visibility:hidden`: senza animazioni non esiste.
+- **Identità**: Big Shoulders Stencil sui numeri (la fabbrica SNIA Viscosa),
+  Mr Dafoe su luogo e inviti (la vetrina del barbiere), fondo a **piastrella
+  metro** in SVG data-URI, testata di capitolo numerata col **pettine** a denti
+  fitti e larghi in `repeating-linear-gradient`.
+- **Via tutti i disegni**: tavole delle porte, sigillo, sfumatura, cranio,
+  percorso per Tirana. Con loro è uscito **GSAP**: il racconto allo scroll è
+  `animation-timeline:view()` nativo — i titoli si allargano entrando, lo stesso
+  gesto dell'avvio. Dove non è supportato la pagina è ferma e completa.
+- **Contenuto dal mercato**: elenco dei quattro servizi (senza prezzi: mancano
+  ancora), pacchetto trapianto come elenco numerato. **Niente FAQ**: le domande
+  ricorrenti le abbiamo, le risposte della clinica no, e non si inventano.
+- Galleria a 6 in 3×2, la settima foto regge il capitolo «Forbice e rasoio».
+
+Misurato: `controlla-sito` 8/8, `controlla-slop` 0 blocchi, overflow 0 su 320,
+375, 768, 1024 e 1440, 0 testi sotto AA fuori testata, 0 immagini senza `alt`,
+console pulita. SVG in pagina: 4, icona e frecce.
+
+⚠️ **Non è online**: commit `c5997f2` pushato, ma Netlify serve ancora il giro
+11 (credito del team finito → [[netlify]]). ⚠️ Il pettine è un motivo in CSS, non
+un'illustrazione: se Nicola lo legge come «disegno» si toglie con una regola.
+⚠️ WhatsApp in home è la leva che il mercato del trapianto usa 3 volte su 4: non
+è stato messo perché non è verificato che il 340 416 1806 sia su WhatsApp.
 
 ## Non verificato, e aperto
 

@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **210 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **211 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -74,6 +74,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 **stack/**
 
 - [[anti-slop-siti]] — ⚠️ Cosa fa sembrare un sito fatto con l'AI, dalla ricerca del 17/09/2026 - segni visivi e di testo, cosa blocca controlla-slop, cosa va guardato.
+- [[competitor-siti-barber]] — ⚠️ Inventario di 15 siti (6 barber Brianza, 5 barbershop italiani noti, 4 trapianto Albania) per il sito di Barbershop SNIA (Cesano Maderno).
 - [[competitor-siti-nail]] — ⚠️ Inventario di cosa pubblicano 15 siti di nail studio (5 Piemonte, 6 Italia, 4 estero) - sezioni, formati, FAQ ricorrenti, errori. Si riusa per ogni sito nail.
 - [[convenzioni]] — Le REGOLE tecniche di casa - naming, commit, firma Powered by DenkiCode. Qui sta il modo giusto, non gli errori.
 - [[direttive-siti]] — Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
