@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 18/09/2026 — Nicola: «cambia il pettine che hai disegnato tu, i disegni fatti così non rendono mai bene fatti da te, cercalo su internet già fatto bene e usalo da lì o trova qualcos'altro da mettere, ma non disegnare mai tu robe del genere perché sembra proprio fatto dall'AI così»
+
+18/09/2026, giro 13 di Barbershop SNIA: bocciato anche il pettine fatto in CSS. Vale per ogni motivo figurativo, anche se è un gradiente e non un SVG: o asset già pronto, o tipografia
+
 ### 18/09/2026 — Nicola: «studio del design terribile, troppo piatto, animazione all'avvio troppo semplice, studio dei font terribile, per niente particolare e non dà personalità al sito»
 
 Bocciatura del 18/09/2026 sulla bozza Adelina Nails, mondo «Il sigillo» giro 1: il direttore aveva letto «animazioni non esagerate» come «minime», vietato overdrive e saltato bolder; Bodoni Moda + Archivo è la coppia di default del lusso. Non esagerata non vuol dire semplice: l'apertura deve essere una sequenza che si ricorda, la pagina deve avere profondità, e il font si sceglie con uno studio vero, su specimen col nome del cliente
