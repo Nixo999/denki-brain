@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 18/09/2026 — Nicola: «consiglio per il design, gioca con i font e gli sfondi come ad esempio su bartabacchi 59, mi piace molto come i font diversi che escono dallo standard diano un senso di studio particolare sull'identità del cliente, fai qualcosa del genere anche per questo, ovviamente con dei font e dei dettagli che c'entrino con lui»
+
+18/09/2026, giro 13 di Barbershop SNIA: font fuori standard e sfondi lavorati leggono come studio sull'identità del cliente, il riferimento è bartabaccheria59
+
 ### 18/09/2026 — Nicola: «cerca di regolare bene l'uso dei token, sfrutta dei metodi che permettano di ottenere buoni risultati ma risparmiando il più possibile token»
 
 18/09/2026, bozza Adelina Nails: raccolta e ricerca a operatori Sonnet che tornano su file corti, il direttore legge i file e non le pagine
