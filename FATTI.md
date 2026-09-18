@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura.
-updated: 2026-09-17
+updated: 2026-09-18
 verificato: 2026-09-16
 source: denkicode
 tags: [stato, fatti]
@@ -89,6 +89,12 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   al sito** su `localStorage`: la demo vale su un dispositivo solo, per venderlo
   serve uno store ospitato (una giornata). PIN area salone `1234`. Il DM è finito
   in un autorisponditore: il link va su WhatsApp, da Patrick → [[sito-newfantasy]]
+- **Adelina Nails** (nail artist, Alessandria, `@nails_by_.adelina`) ha risposto
+  «Ciaooo, ok» al DM del 17/09. Bozza **costruita e non pubblicata** (18/09) in
+  `~/lavoro/adelinanails-site`, mondo «Il sigillo», 8/8 e slop 0. Primo sito col
+  metodo «prima i competitor»: contenuto solo da profilo + [[competitor-siti-nail]],
+  niente inventato. Mancano pubblicazione su Netlify e DM col link (Patrick, con
+  le domande su prezzi, orari, indirizzo) → [[sito-adelinanails]], [[adelina-nails]]
 - **denki-agents**: piattaforma multi-agente interna. **La fase 1, il gateway,
   è chiusa** (16/09): le cinque prove della definizione di fatto passano con
   chiamate vere sul Mac, Postgres e LiteLLM in Docker, commit solo locali.

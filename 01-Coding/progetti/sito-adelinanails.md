@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito per Adelina Nails (Alessandria) in ~/lavoro/adelinanails-site - contenuto solo da profilo + inventario competitor, direzione in corso.
+riga: Bozza sito per Adelina Nails (Alessandria) in ~/lavoro/adelinanails-site - contenuto solo da profilo + inventario competitor, mondo «Il sigillo», 8/8 e slop 0, costruita il 18/9 e NON pubblicata.
 status: attivo
 client: adelina-nails
 stack: html-css-js
@@ -62,3 +62,26 @@ direttore il 18/09 fra tre (B «Il ventaglio», C «I sessanta secondi»).
   tecnico. Rischio dichiarato: scivolare su crema/pergamena o sul lusso cupo.
 
 Foto di lavori usabili: **7**, non 8 (01, 02, 04, 05, 06, 10, 11; 04 a 912 px).
+
+## Stato al 18/09 — costruita, non pubblicata
+
+- `controlla-sito.py` **8/8**, `controlla-slop.py` **0 blocca, 0 avvisa**, overflow
+  0 su 20 larghezze (320-1920), 39 nodi di testo tutti AA (minimo 6,89:1),
+  console 0. Apertura chiusa a 1.180 ms, testo a opacità piena dal fotogramma
+  120 ms. Commit locale `1392774`. Catture in `.cantiere/`.
+- **Un giro bocciato dal direttore**: sotto i quattro stili c'erano righe di
+  tecnica («il charm va posato sul gel ancora morbido…») senza fonte. Ora ci sono
+  le sue caption verbatim, rilette dal post: `Dc-RNc4M_tB`, `Dc0sO66DL4H`,
+  `DcwTX_ljFUg`, `Dc_QMOdMslB`. Titoli dei capitoli presi dalle sue parole
+  (French, Pois e fiori, Scaramanzia, Rosso). Dai servizi è uscita
+  «ricostruzione»: non è in bio, caption né attestato. Restano Manicure, Gel,
+  French, Nail art, Pedicure.
+- **Non verificato**: Safari e Firefox veri (il ramo senza `animation-timeline:
+  view()` non è stato visto girare), iPhone con barra URL. `og:image` va resa
+  assoluta il giorno della pubblicazione (annotato nel `LEGGIMI.md` del repo).
+- **Manca**: pubblicazione su Netlify coi tre sbarramenti, e il DM col link.
+
+## Collegamenti
+
+[[adelina-nails]] · [[competitor-siti-nail]] · [[processo-siti]] ·
+[[direttive-siti]] · [[trappole]] · [[registro-interventi]]
