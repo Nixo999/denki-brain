@@ -107,7 +107,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[castiglione-furniture]] — ⚠️ Falegnameria su misura, @castiglione_furniture su Instagram.
 - [[custom-beauty-nails]] — Onicotecnica a Treviglio (BG), @custombeautynailstreviglio, 1.033 follower. Bozza online dal 16/9, il DM non e' ancora partito.
 - [[dsi-advertising]] — ⚠️ D.S.I. Advertising di Piras Sebastiano, Merate (LC).
-- [[edilida]] — Edilida SRL, impresa edile di Travagliato (BS). Ha compilato il modulo della ricerca il 18/09 e vuole il riepilogo. Lead da prototipo sulle scadenze di cantiere.
+- [[edilida]] — Edilida SRL, impresa edile di Travagliato (BS). Ha compilato il modulo della ricerca il 18/09. Si punta a una videochiamata sulle scadenze di cantiere, mail di lunedì 21.
 - [[il-salone-di-andrea]] — ⚠️ Parrucchiere donna e uomo di Andrea Bielli, Viale Natale Betelli 58, Dalmine.
 - [[laurafranzoni]] — Extension ciglia a Brescia, @laurafranzoni_lashmaker, 452 follower. Bozza online dal 14/9, il DM non è mai partito.
 - [[ms-service]] — ⚠️ Lead caldo - ha chiesto lui il materiale.

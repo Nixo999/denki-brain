@@ -43,8 +43,8 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
 - **Edilida** (impresa edile, Travagliato BS) ha **compilato il modulo della
   ricerca il 18/09**: strumenti che non si parlano, sito vecchio, il
   beneficio più grosso sulle **scadenze di attrezzature e sicurezza**. Enrico
-  ha lasciato la mail e il sì a essere avvisato. Mail di grazie di Patrick da
-  mandare; **il riepilogo di zona promesso a due (Penta, Edilida) non esiste**
+  ha lasciato la mail e il sì a essere avvisato. **Patrick punta a una
+  videochiamata**: mail lunedì 21 mattina presto, recupero giovedì 24; **il riepilogo di zona promesso a due (Penta, Edilida) non esiste**
   e il form ha 2 risposte in tutto → [[edilida]]
 - **V-BAG, gestionale con login** pushato il 16/09 (`28f51ad`): Giulia
   pubblica dal telefono via Netlify Function + commit su GitHub. **Spento
