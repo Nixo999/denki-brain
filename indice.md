@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **214 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **215 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -44,7 +44,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-adelinanails]] — Bozza sito per Adelina Nails (Alessandria) in ~/lavoro/adelinanails-site - contenuto solo da profilo + inventario competitor, giro 3 «lacca, oro e rilievo», Melodrama + Grape Nuts, apertura in 4 tempi, 8/8 - online su adelinanails-site.netlify.app dal 19/9 (deploy da GitHub).
 - [[sito-albybike]] — Sito vetrina per Albybike, negozio di biciclette - vendita, assistenza, riparazione, abbigliamento e integratori.
 - [[sito-atelier-selva]] — ⚠️ Sito per Shari Piras, tatuatrice fineline a Merate (LC), e per il suo studio privato Atelier Selva (Via Statale 147).
-- [[sito-barbershop-snia]] — ⚠️ Sito vetrina di Andrea, barbiere al Villaggio SNIA di Cesano Maderno, che fa anche da tramite per i trapianti in Albania. Primo presidio volantini, gratis.
+- [[sito-barbershop-snia]] — Sito vetrina di Andrea, barbiere al Villaggio SNIA di Cesano Maderno, che fa anche da tramite per i trapianti in Albania. Primo presidio volantini, gratis.
 - [[sito-castiglione]] — ⚠️ Sito vetrina non commissionato per castiglione-furniture, costruito il 30 agosto 2026 dai contenuti veri del loro profilo Instagram.
 - [[sito-custombeautynails]] — Custom Beauty Nails, onicotecnica a Treviglio (BG): bozza online su custombeautynails.netlify.app dal 16/9, mondo «Un centimetro di spazio», 21 SVG, 8/8, copy rifatto professionale dopo la bocciatura.
 - [[sito-da-caterina]] — ⚠️ Da Caterina Toelettatura Professionale, Via Introzzi 8, 21057 Olgiate Olona (VA).
@@ -157,6 +157,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-17-denkishift-e-ricerca]] — Le due liste che mancavano al 17 settembre - 50 DenkiShift e 50 ricerca di mercato in Lombardia - costruite col chaining di Instagram dopo che l'endpoint di ricerca si e' bloccato, e il difetto del banco che le faceva sembrare vuote.
 - [[2026-09-17-rilanci-lead-aperti]] — I lead aperti al 17 settembre letti dalla posta - la bozza chiesta da Hair Style ferma da due giorni, l'email a Koine' mai partita, sette bozze consegnate e zero chiamate fatte, e 262 righe sul banco mai mandate.
 - [[2026-09-17-siti-piemonte]] — La lista siti del 17 settembre - 50 righe di bellezza fra Torino e il resto del Piemonte, zona nuova aperta perche' la Lombardia della bellezza e' finita, e le toelettature abbandonate dopo 110 ricerche.
+- [[2026-09-19-siti-piemonte-capelli]] — La lista siti del 19 settembre - 50 parrucchieri e barber del Piemonte, secondo settore della zona dopo la bellezza del 17 - e la posta che dice che i DM non escono dall'account di Patrick.
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
