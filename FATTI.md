@@ -51,10 +51,14 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   finché Nicola non mette `ADMIN_PASSWORD` e `GITHUB_TOKEN` su Netlify.**
   Palette (11 colori) e manici (9) disegnati in SVG, WhatsApp `3924944950`
   → [[2026-09-16-vbag-gestionale-login]]
-- **Un parrucchiere-presidio, via Morgan** (15/09): espone volantini e
-  biglietti e parla coi clienti in cambio del sito gratis, nessuna
-  percentuale. **Nome, comune e foto `TODO`**: senza, il sito non parte
-  → [[parrucchiere-morgan]], [[2026-09-15-morgan-entra-parrucchiere-presidio]]
+- **Barbershop SNIA, il parrucchiere-presidio via Morgan** (Andrea, Cesano
+  Maderno): sito gratis in cambio di volantini e passaparola, nessuna
+  percentuale. Online su `barber-shop-snia.netlify.app` al giro 13; il **giro
+  14 del 19/09** (foto vere del posto, targa, listino letto dalla vetrina) è
+  su GitHub `a80cf9f` e **non ancora pubblicato: su Netlify pubblica Nicola**.
+  Prima del go-live: consenso dei genitori per il viso del bambino nella foto
+  del lavoro, o la foto si toglie → [[sito-barbershop-snia]],
+  [[parrucchiere-morgan]]
 - **Le 87 righe di Gabriele ed Edoardo passano a Giulia** — 27 siti/e-commerce,
   30 DenkiShift, 30 indagine, zone Groane e Vimercatese, siti riverificati a
   macchina il 13/09 → [[2026-09-13-liste-giulia-groane-vimercatese]]

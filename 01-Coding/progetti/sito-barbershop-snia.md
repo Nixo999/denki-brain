@@ -6,9 +6,9 @@ client: parrucchiere-morgan
 stack: HTML statico + GSAP, starter DenkiCode, Netlify
 started: 2026-09-16
 deadline:
-updated: 2026-09-18
+updated: 2026-09-19
 source: claude
-verificato:
+verificato: 2026-09-19
 tags: [sito, barbiere, presidio, cesano-maderno]
 ---
 
@@ -504,6 +504,55 @@ Nicola l'ha visto online e non l'ha bocciato, ma è il prossimo candidato.
 ⚠️ WhatsApp in home è la leva che il mercato del trapianto usa 3 volte su 4: non
 è stato messo perché non è verificato che il 340 416 1806 sia su WhatsApp.
 
+## Giro 14 — 19/09: le foto vere del posto, la targa, il listino
+
+> «modifica il sito di barbershop snia, ti mando le foto reali del logo e del
+> posto» — otto HEIC e tre Live Photo del 18/09 (IMG_5416-5426)
+
+**Cosa c'era nelle foto, verificato a occhio.** La targa dell'insegna:
+BARBERSHOP in un grottesco pesante dentro una targa bianca a doppio filetto con
+due bulloni, **montata capovolta** anche sul vetro e sulla cassetta delle
+lettere. Sul vetro il **listino**: taglio uomo + shampoo 15, taglio barber +
+shampoo 18, taglio bambino (fino a 11 anni) 12, taglio pensionato 12, barba +
+massaggio viso 10; «10.00/22.00 continuato»; «si riceve preferibilmente su
+appuntamento». Sul muro la targa del **civico 22**: il 22D della bio torna.
+Sull'insegna, piccolo, «Andrea il Barbiere» e «Barba & Capelli». Dentro:
+pareti chiare, soffitto nero, palladiana, palo del barbiere, una bici nera,
+barili-sgabello, Chesterfield in pelle nera, la collezione Jack Daniel's.
+
+**In pagina.** La targa vera come fascia a tutta larghezza sotto l'insegna
+tipografica (non si raddrizza: è il marchio; l'icona in barra ruota di 180° al
+passaggio per lo stesso motivo). In Bottega la foto di Andrea al lavoro e il
+**listino vero** con i prezzi a stencil e il puntinato sulla linea di base, al
+posto dell'elenco servizi senza prezzi. Sezione nuova **03 «La bottega»**,
+cinque foto in griglia dichiarata (tre ritratti 3:4 sopra, 2:1 e 1:1 sotto alla
+stessa altezza), a colori: il posto è già bianco e nero, e il poco colore che
+ha — la palladiana, il whisky — resta. Nel quartiere la vetrina dalla strada al
+posto del ritratto da Instagram. Negli orari la vetrina alla sera, e «orario
+continuato» nel testo. `og:image` dalla vetrina. «Andrea il Barbiere» nel
+piede. Capitoli rinumerati 01-07.
+
+**Immagini.** Da HEIC con PIL (`exif_transpose`, poi `thumbnail`): `sips`
+lascia l'orientamento nell'EXIF e tre verticali erano uscite coricate →
+[[trappole]]. Frame dei video con AVFoundation (primo frame, il più nitido).
+Nessuna webp: `cwebp` non c'è. Nove foto, 2,9 MB in tutto, lazy.
+
+⚠️ **Trappola nuova, pagata**: la sezione si chiamava `.dentro`, che è la
+classe di stato delle rivelazioni (`.rivela.dentro`). Ogni elemento rivelato
+prendeva il padding della sezione e la pagina era alta 21.000 px, a 1440. Le
+catture del pannello del browser non lo mostravano (dopo lo scroll non
+fotografano, come dice `cattura-fette.mjs`): l'ha detto il JS. Rinominata
+`.posto` → [[trappole]].
+
+Misurato: `controlla-sito` 8/8, `controlla-slop` 0 blocca, overflow 0 su 320,
+375, 414, 640, 768, 900, 1024, 1280 e 1440 (pannello), console pulita, 32
+fette headless a 1440 e 375 guardate. ⚠️ In headless mobile `scrollWidth` dice
+378 su 375: nel pannello dice 375, non ho trovato l'elemento. Commit `a80cf9f`,
+**pushato su GitHub e non pubblicato**: su Netlify pubblica Nicola.
+
+⚠️ **Il viso del bambino** in `andrea-al-lavoro.jpg` è riconoscibile: prima
+del go-live serve il consenso dei genitori, o si toglie la foto (una riga).
+
 ## Non verificato, e aperto
 
 - ✅ **Link buono dal 18/09: <https://barber-shop-snia.netlify.app>**. Il vecchio <https://barbershop-snia.netlify.app>, repo
@@ -517,7 +566,8 @@ Nicola l'ha visto online e non l'ha bocciato, ma è il prossimo candidato.
   su nero: contrasto 3,0 — al limite)
 - La riga «chiamateli pure da parte mia» attribuita ad Andrea **va fatta
   leggere a lui** prima del go-live: è l'accordo, ma non gliel'ha detta nessuno
-- ⚠️ **I prezzi non esistono da nessuna parte**: né su Fresha né altrove, e la ricerca dice che il 29% sceglie un'attività locale proprio sui prezzi chiari. Vanno chiesti ad Andrea: è la cosa che manca di più
+- ✅ **I prezzi ci sono dal 19/09**: letti dal vinile sulla vetrina (foto di Nicola del 18/09) e in pagina. Restano da far confermare a voce ad Andrea insieme al civico
+- ⚠️ **Consenso per il viso del bambino** in `andrea-al-lavoro.jpg`: senza, la foto si toglie prima del go-live
 - Restano `TODO` il listino prezzi, il CAP, il nome della clinica e il civico
   (22D contro 20)
 

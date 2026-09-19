@@ -247,6 +247,11 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Immagini e `sips`
 
+- **`sips` da HEIC lascia l'orientamento nell'EXIF: tre foto verticali sono
+  uscite coricate a 1600×1200 e `sips -r 90` a mano le ha girate una seconda
+  volta.** → da HEIC si passa con PIL, `ImageOps.exif_transpose` poi
+  `thumbnail`, e si guarda il risultato. (19/09/2026, [[sito-barbershop-snia]])
+
 - `[TRAPPOLA]` **`sips` scrive in place, e `git restore` non ripristina un file
   untracked.** Su Custom Beauty Nails il primo ritaglio sopra il watermark era
   giusto; per allargare il margine su due foto e' partito un
@@ -420,6 +425,12 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   valore finale vero, non `initial`. ([[sito-adelinanails]], 18/09/2026)
 
 ## CSS e layout
+
+- **Una sezione chiamata `.dentro` prende il padding su ogni elemento
+  rivelato: `dentro` è la classe di stato di `.rivela`.** Pagina alta 21.000 px
+  a 1440, e il pannello del browser non lo mostrava: l'ha detto `scrollHeight`.
+  → i nomi di sezione non riusano `dentro`, `js`, `cattura`, `rivela`, `aperto`.
+  (19/09/2026, [[sito-barbershop-snia]])
 
 - **Un bottone più lungo in barra non dà overflow di pagina: si sovrappone
   al marchio.** «Scrivimi su Instagram» in nav copriva «Mikuma.Dogs» di 50 px
