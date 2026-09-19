@@ -53,9 +53,10 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   → [[2026-09-16-vbag-gestionale-login]]
 - **Barbershop SNIA, il parrucchiere-presidio via Morgan** (Andrea, Cesano
   Maderno): sito gratis in cambio di volantini e passaparola, nessuna
-  percentuale. Online su `barber-shop-snia.netlify.app` al giro 13; il **giro
-  14 del 19/09** (foto vere del posto, targa, listino letto dalla vetrina) è
-  su GitHub `a80cf9f` e **non ancora pubblicato: su Netlify pubblica Nicola**.
+  percentuale. Online su `barber-shop-snia.netlify.app`, che **si pubblica da solo dal
+  repo**: giro 15 del 19/09 (`b381733`) con la targa fotografata come logo,
+  gli sfondi dalle foto del locale e il listino letto dalla vetrina. Nicola
+  non l'ha ancora rivisto.
   Prima del go-live: consenso dei genitori per il viso del bambino nella foto
   del lavoro, o la foto si toglie → [[sito-barbershop-snia]],
   [[parrucchiere-morgan]]

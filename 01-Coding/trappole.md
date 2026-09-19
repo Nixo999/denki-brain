@@ -62,6 +62,11 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Catture e verifica in headless
 
+- **Nel pannello del browser a scheda nascosta `innerHeight` è 0 e le
+  transizioni CSS non avanzano**: una rivelazione con `.dentro` messo e
+  `clip-path` ancora chiuso sembra rotta e non lo è. → lo stato di una motion
+  si legge in headless o a scheda visibile. (19/09/2026, [[sito-barbershop-snia]])
+
 - **Il pannello del browser dipinge solo il primo frame dopo il load.** Uno
   screenshot dopo lo scroll fotografa il nulla, o peggio fotografa una cosa
   falsa. → **Si misura, non si guarda**: `getBoundingClientRect` e computed
@@ -246,6 +251,11 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   (17/09/2026, [[sito-barbershop-snia]])
 
 ## Immagini e `sips`
+
+- **Una texture specchiata sui due assi da una foto in prospettiva fa chevron
+  e occhi simmetrici**, e le correzioni automatiche della pendenza erano rumore
+  (tre tentativi). → tessera tagliata fra due giunti trovati sui profili
+  detrendizzati, bordi laterali fusi in dissolvenza. (19/09/2026, [[sito-barbershop-snia]])
 
 - **`sips` da HEIC lascia l'orientamento nell'EXIF: tre foto verticali sono
   uscite coricate a 1600×1200 e `sips -r 90` a mano le ha girate una seconda

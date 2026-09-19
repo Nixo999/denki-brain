@@ -548,10 +548,50 @@ Misurato: `controlla-sito` 8/8, `controlla-slop` 0 blocca, overflow 0 su 320,
 375, 414, 640, 768, 900, 1024, 1280 e 1440 (pannello), console pulita, 32
 fette headless a 1440 e 375 guardate. ⚠️ In headless mobile `scrollWidth` dice
 378 su 375: nel pannello dice 375, non ho trovato l'elemento. Commit `a80cf9f`,
-**pushato su GitHub e non pubblicato**: su Netlify pubblica Nicola.
+pushato su GitHub; Netlify l'ha pubblicato da solo (il sito è collegato al repo).
 
 ⚠️ **Il viso del bambino** in `andrea-al-lavoro.jpg` è riconoscibile: prima
 del go-live serve il consenso dei genitori, o si toglie la foto (una riga).
+
+## Giro 15 — 19/09: «devi swappare il logo che hai messo tu con il suo originale»
+
+> «barber-shop-snia.netlify.app su questo dovevi cambiare le cose» — poi:
+> «devi swappare il logo che hai messo tu con il suo originale, e lo sfondo
+> deve essere nello stile del locale, le foto non devi metterle a caso»
+
+Il giro 14 aveva messo la targa vera **sotto la piega** e lasciato nel primo
+schermo l'icona ridisegnata e il nome tipografico: da telefono non cambiava
+niente. Tutte e due le frasi sono in [[direttive-siti]].
+
+- **Il logo è la targa fotografata**, ritagliata a mano sulla griglia di
+  coordinate (il rilevamento automatico prendeva le lettere o la fascia intera):
+  `h1` dell'hero, avvio al posto delle lettere, barra al posto dell'icona,
+  favicon su nero. Capovolta com'è montata. Via `favicon.svg` e la fascia.
+- **Sfondi dal locale**: le doghe chiare della parete (5419) come tessera da
+  giunto a giunto con la cucitura orizzontale in dissolvenza e il velo cotto
+  dentro; la palladiana sotto recensioni e orari (velo 55%); nero piatto per
+  il soffitto. La piastrella disegnata in SVG esce.
+- **Ogni foto ha un motivo che si dice in una riga**: il vetro col listino
+  accanto al listino; Andrea col bambino apre la galleria (7: tre grandi,
+  quattro piccole); quattro foto del posto in fila nell'ordine del testo; i
+  barili sulla via nel quartiere; la vetrina alla sera accanto al 10-22.
+
+Due strade scartate sulla texture: la tessera **specchiata sui due assi** da
+una foto in prospettiva fa chevron e occhi simmetrici (tre tentativi), e le
+correzioni automatiche della pendenza dei giunti erano rumore. Ha funzionato
+tagliare fra due giunti trovati sui profili detrendizzati e fondere i bordi
+→ [[trappole]].
+
+⚠️ La foto del listino non si vedeva nelle fette headless: la rivelazione
+`scopri` non finiva in tempo per la cattura; nel pannello nascosto
+`innerHeight` è 0 e le transizioni non avanzano, quindi neanche quella era una
+prova. Tolta la rivelazione dalla figura: sta ferma, e si vede.
+
+Misurato: 8/8 (`logo-targa-piccola.jpg` rinominata così perché il controllo la
+contava come foto), slop 0, documento 10.689 px a 1440, 22 fette guardate.
+Commit `b381733`, **pushato: il sito su Netlify è collegato al repo e si
+pubblica da solo** (verificato sul giro 14 alle 19:30). La regola del 18/09
+«non fare niente su Netlify» resta vera nel senso che non si tocca il pannello.
 
 ## Non verificato, e aperto
 
