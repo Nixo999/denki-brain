@@ -593,6 +593,38 @@ Commit `b381733`, **pushato: il sito su Netlify è collegato al repo e si
 pubblica da solo** (verificato sul giro 14 alle 19:30). La regola del 18/09
 «non fare niente su Netlify» resta vera nel senso che non si tocca il pannello.
 
+## Giro 16 — 19/09: «Prendi il logo, ricostruiscilo tu e mettilo»
+
+> «È un lavoro di merda perché hai letteralmente spiattellato tutto sopra il
+> sito. Prendi il logo, ricostruiscilo tu e mettilo. Non piazzare una foto a
+> caso. Stessa cosa, lo sfondo è letteralmente un collage di foto che ti ho
+> mandato, no, invece devi ricostruirlo tu.»
+
+Il giro 15 aveva letto «il suo originale» come «la sua foto». Sbagliato: il
+logo del cliente si **ricostruisce** fedele all'originale, e gli sfondi si
+**ricostruiscono** come motivi nello stile del locale. La regola è in
+[[direttive-siti]] con le sue parole, e supera quella del 18/09 sui disegni
+(che resta valida per i motivi figurativi inventati).
+
+- **La targa è un `<symbol>` SVG**: BARBERSHOP in Anybody 800 extra-expanded
+  convertito in tracciati con fontTools (il TTF statico scaricato da Google
+  Fonts), doppio filetto, tacche concave agli angoli, due bulloni. Un simbolo
+  solo, usato quattro volte: hero (`h1`, `role=img`), avvio (arriva capovolta
+  com'è montata e si raddrizza in 1,5 s), barra, `favicon.png` con la B.
+  ⚠️ La regola `.barra-marchio svg{width:40px}` del giro 13 vinceva sulla
+  targa in barra: serviva `.barra-marchio svg.barra-targa`.
+- **Le doghe** sono `muro.svg`, 1200×336: sei file da 56 px con giunti
+  sfalsati, cinque toni piatti a due punti di distanza, una riga d'ombra e una
+  di luce per giunto. Nessuna venatura: è un segno dichiarato, non legno finto.
+- **La palladiana** è `palladiana.svg`, 720×720: un diagramma di Voronoi
+  periodico (griglia 11×11 con jitter al 50% e il 14% dei punti tolti, così le
+  pietre hanno misure diverse), fuga di 3,5 px nel tono della malta.
+- **`og:image`** ricostruita con PIL e lo stesso font, su nero.
+- Via `targa.jpg`, `logo-targa-piccola.jpg`, `muro.jpg`, `pavimento.jpg`.
+
+Misurato: 8/8, slop 0, documento 10.690 px a 1440, 30 fette guardate.
+Commit `d20f2c2`, pushato; Netlify pubblica da solo.
+
 ## Non verificato, e aperto
 
 - ✅ **Link buono dal 18/09: <https://barber-shop-snia.netlify.app>**. Il vecchio <https://barbershop-snia.netlify.app>, repo
