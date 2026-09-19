@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-09-18
+updated: 2026-09-19
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 19/09/2026 — Nicola: «barber-shop-snia.netlify.app su questo dovevi cambiare le cose»
+
+Giro 14 di Barbershop SNIA: le foto vere del logo erano entrate come fascia sotto la piega, mentre il primo schermo teneva l'icona ridisegnata e il nome tipografico. Quando il cliente manda il logo vero, il logo vero va nel primo schermo - hero e barra - e il ridisegno esce
 
 ### 18/09/2026 — Nicola: «aggiungi delle foto prese dal suo instagram e aggiungile nelle sezioni, ovviamente con un senso e non troppo in grande, poi manca un po di colore in più, cambia delle scritte che adesso sono nere e metti un po dei colori che ci sono anche nel loro logo, poi mancano delle belle recensioni scritte affianco alle loro recensioni su google, prendine alcune vere ma belle da lì»
 
