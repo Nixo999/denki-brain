@@ -1,7 +1,7 @@
 ---
 riga: Il registro dei testi che legge un cliente - Lei o Tu, voce di Patrick. Non e' il registro di Trevis.
 type: risorsa
-updated: 2026-09-16
+updated: 2026-09-19
 source: denkicode
 ---
 
@@ -103,6 +103,10 @@ Vincolo fiscale attivo, dettaglio in [[vincoli-fiscali]]:
 ## Regole date a voce
 
 Scritte da `regola.py` nel momento in cui sono state dette.
+
+### 19/09/2026 — Patrick: «il tono deve essere professionale ma deve capire che sono un ragazzo che vuole partire ma che le cose le sa fare»
+
+detto il 19/09 sulla mail a Edilida, il primo lead uscito dalla ricerca di mercato. Vale su ogni testo che Patrick firma: l'eta' non si dichiara e non si scusa, si dimostra con la precisione di quello che si chiede e si porta
 
 ### 16/09/2026 — Patrick: «non so che problemi tu abbia, ma c'e' sempre qualcosa che non va un umano non si porrebbe mai cosi, non hanno senso, cerca di parlare normalmente»
 
