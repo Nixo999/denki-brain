@@ -1,7 +1,7 @@
 ---
 riga: Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
 type: area
-updated: 2026-09-17
+updated: 2026-09-19
 source: claude
 prodotto: denkishift
 ---
@@ -210,6 +210,10 @@ in [[metriche]]:
 
 
 ## Regole
+
+### 19/09/2026 — Patrick: «Come sempre hai fatto solo siti e non le altre due.»
+
+Terza volta in quattro giorni: il 14, il 17 e il 19 settembre la sessione ha consegnato la sola lista siti e ha giustificato le altre due con le righe vecchie ancora sul banco. Quella giustificazione e' esattamente la scusa che la regola del 12 settembre vieta. 50 per tipologia si consegnano sempre, anche se sul banco ci sono righe ferme: se restano ferme e' un problema di invii, non un motivo per non costruirle.
 
 ### 17/09/2026 — Patrick: «guarda meglio, ricerca e denkishift non hanno righe 1, e 2 ci siamo già detti che se faccio quel comando tu mi fai 150 lead 50 per tipologia no scuse»
 
