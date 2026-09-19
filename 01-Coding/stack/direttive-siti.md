@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 19/09/2026 — Nicola: «Prendi il logo, ricostruiscilo tu e mettilo. Non piazzare una foto a caso. Stessa cosa, lo sfondo è letteralmente un collage di foto che ti ho mandato, no, invece devi ricostruirlo tu»
+
+Giro 15 di Barbershop SNIA bocciato: «hai letteralmente spiattellato tutto sopra il sito». La foto dell'insegna al posto del logo e le foto della parete e del pavimento come sfondo sono un collage, non un sito. Il logo del cliente si ricostruisce in vettoriale fedele all'originale; lo sfondo si ricostruisce come motivo disegnato nello stile del locale. Supera la regola del 18/09 «un disegno fatto da Claude non regge»: vale ancora per i motivi figurativi inventati (pettine, tavole), non per la ricostruzione del logo e dei materiali del locale
+
 ### 19/09/2026 — Nicola: «devi swappare il logo che hai messo tu con il suo originale, e lo sfondo deve essere nello stile del locale, le foto non devi metterle a caso»
 
 Giro 15 di Barbershop SNIA. Tre regole in una: dove c'e' il logo del cliente si usa il suo originale (anche se e' solo una foto dell'insegna), mai un ridisegno; gli sfondi vengono dal locale fotografato (pareti, pavimento, soffitto), non da un motivo disegnato; ogni foto sta dove sta il suo contenuto, con un motivo che si puo' dire in una riga
