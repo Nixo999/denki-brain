@@ -11,16 +11,16 @@ stato: pubblicata
 
 # 19 settembre — capelli e barba in Piemonte, e un banco che sembrava vuoto
 
-Costruita **una lista sola**, i siti. DenkiShift e ricerca hanno 50 righe
-ciascuna del 17 settembre ancora da mandare sul banco, e aggiungerne altre 50
-per tipologia avrebbe portato a cento righe ferme per prodotto: stessa scelta
-del 17, per lo stesso motivo.
+Consegnata prima la sola lista siti, con la scusa che DenkiShift e ricerca
+avevano già righe sul banco. **Era un errore**, il terzo uguale in quattro
+giorni: Patrick l'ha bocciato lo stesso giorno e le altre due sono state
+costruite subito dopo → [[2026-09-19-denkishift-e-ricerca]].
 
 | Lista | Consegnate | Dove | Settore |
 |---|---|---|---|
 | Siti vetrina | **50** | Piemonte: TO, CN, AL, AT, BI, VC, NO, VB | parrucchieri, acconciature, barber |
-| DenkiShift | — | 50 righe del 17/09 ancora sul banco | — |
-| Ricerca di mercato | — | 50 righe del 17/09 ancora sul banco | — |
+| DenkiShift | **50** | tutta la Lombardia | pulizie, autotrasporti, nidi, agriturismi |
+| Ricerca di mercato | **50** | tutta la Lombardia | ingrossi, tessile, meccanica, impianti |
 
 ## Perche' i capelli, e perche' ancora il Piemonte
 
@@ -118,6 +118,7 @@ La lista di oggi la riapre.
 
 ## Collegamenti
 
-[[2026-09-17-siti-piemonte]] · [[2026-09-17-denkishift-e-ricerca]] ·
+[[2026-09-19-denkishift-e-ricerca]] · [[2026-09-17-siti-piemonte]] ·
+[[2026-09-17-denkishift-e-ricerca]] ·
 [[2026-09-17-rilanci-lead-aperti]] · [[metodo-instagram]] · [[metodo-liste]] ·
 [[stile-comunicazione]] · [[voce-denkicode]]
