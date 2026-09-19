@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 19/09/2026 — Nicola: «devi swappare il logo che hai messo tu con il suo originale, e lo sfondo deve essere nello stile del locale, le foto non devi metterle a caso»
+
+Giro 15 di Barbershop SNIA. Tre regole in una: dove c'e' il logo del cliente si usa il suo originale (anche se e' solo una foto dell'insegna), mai un ridisegno; gli sfondi vengono dal locale fotografato (pareti, pavimento, soffitto), non da un motivo disegnato; ogni foto sta dove sta il suo contenuto, con un motivo che si puo' dire in una riga
+
 ### 19/09/2026 — Nicola: «barber-shop-snia.netlify.app su questo dovevi cambiare le cose»
 
 Giro 14 di Barbershop SNIA: le foto vere del logo erano entrate come fascia sotto la piega, mentre il primo schermo teneva l'icona ridisegnata e il nome tipografico. Quando il cliente manda il logo vero, il logo vero va nel primo schermo - hero e barra - e il ridisegno esce
