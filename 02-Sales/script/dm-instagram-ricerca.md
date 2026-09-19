@@ -1,7 +1,7 @@
 ---
 riga: Il DM Instagram della ricerca di mercato - qui non si vende niente, si chiede il modulo, e chi risponde si qualifica da solo.
 type: area
-updated: 2026-09-11
+updated: 2026-09-19
 source: claude
 verificato: 2026-09-11
 prodotto: gestionale-custom
@@ -119,6 +119,20 @@ Dopo 4 giorni lavorativi, uno solo:
 > ricerca? Sono sei domande e due minuti, e il riepilogo di come sono messe le
 > altre aziende della zona glielo mando lo stesso.
 
+## Quando arriva un modulo
+
+> [!note] Scritto da Claude il 19/09/2026 al primo modulo vero. `TODO` Patrick: confermare o correggere.
+
+1. **Si legge dal pannello del form** e si copia nella scheda cliente **con le
+   sue parole**, come per la terza domanda di [[script-indagine]].
+2. **Si ringrazia sul canale che ha lasciato lui**, senza prodotto e senza
+   prezzo: la promessa «non le vendo niente» vale ancora. Una domanda sola,
+   sulla voce che ha scelto alla domanda 4.
+3. **Il seguito è quello di [[flusso-vendita]]**: le risposte a Nicola come
+   capitolato, prototipo mirato, poi Patrick con qualcosa in mano. Chi ha
+   lasciato il contatto ha detto sì a essere avvisato: il ricontatto è coperto.
+4. Il riepilogo promesso si conta da qui: ogni modulo è un debito in più.
+
 ## Come si misura
 
 **Quanti moduli su quante conversazioni**: è l'unico numero che conta in
@@ -126,7 +140,7 @@ questa lista. Sotto il 5% di risposte il testo o il settore non tengono.
 
 | Data | Righe | Risposte | Moduli | Lead usciti (siti / turni) |
 |---|---|---|---|---|
-| | | | | |
+| 2026-09-17 | 50 (Lombardia) | `TODO` (invii nel localStorage di Patrick) | 1 attribuito: Edilida, 18/09. Il form ne conta 2 | 1 sito («vecchio») / 0 turni. Capitolato: scadenze di cantiere → [[edilida]] |
 
 ## Collegamenti
 

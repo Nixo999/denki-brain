@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura.
-updated: 2026-09-18
+updated: 2026-09-19
 verificato: 2026-09-16
 source: denkicode
 tags: [stato, fatti]
@@ -40,6 +40,12 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
 
 ## Cosa è aperto adesso (15/09/2026)
 
+- **Edilida** (impresa edile, Travagliato BS) ha **compilato il modulo della
+  ricerca il 18/09**: strumenti che non si parlano, sito vecchio, il
+  beneficio più grosso sulle **scadenze di attrezzature e sicurezza**. Enrico
+  ha lasciato la mail e il sì a essere avvisato. Mail di grazie di Patrick da
+  mandare; **il riepilogo di zona promesso a due (Penta, Edilida) non esiste**
+  e il form ha 2 risposte in tutto → [[edilida]]
 - **V-BAG, gestionale con login** pushato il 16/09 (`28f51ad`): Giulia
   pubblica dal telefono via Netlify Function + commit su GitHub. **Spento
   finché Nicola non mette `ADMIN_PASSWORD` e `GITHUB_TOKEN` su Netlify.**
