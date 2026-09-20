@@ -677,6 +677,19 @@ Il terrazzo è uscito, `terrazzo.jpg` cancellato: sotto recensioni e orari
 texture stock): non si ripropone → [[direttive-siti]]. Resta il legno nero
 sulle fasce scure. 8/8, slop 0, overflow 0. Commit `b5ca562`, pushato.
 
+### Giro 17-ter — 20/09: via due foto
+
+> «cambia la foto affianco al paragrafo del trapianto che è proprio brutta e
+> togli anche quella della vetrata»
+
+Via `vetrina-listino.jpg` dalla Bottega (il listino-etichetta sta da solo, al
+centro) e `diradamento-dall-alto.webp` dal Trapianto. **Una foto buona del
+trapianto non l'abbiamo**, e una di stock farebbe passare per suo un risultato
+che non lo è: al suo posto una seconda etichetta, «Pacchetto — da 1.800 €», con
+hotel, navetta, visita e analisi. Il blocco numerato sotto è uscito, diceva le
+stesse quattro cose. ⬜ Se Andrea o la clinica mandano una foto vera, va lì.
+I due file restano in `assets/img` come materiale. 8/8, slop 0. Commit `d8408c9`, pushato.
+
 ## Non verificato, e aperto
 
 - ✅ **Link buono dal 18/09: <https://barber-shop-snia.netlify.app>**. Il vecchio <https://barbershop-snia.netlify.app>, repo
