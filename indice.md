@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **216 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **217 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -194,6 +194,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[pattern-interrupt]] — ⚠️ Le aperture - come si rompe lo schema nei primi sette secondi di una chiamata a freddo.
 - [[script-denkishift]] — ⚠️ Lo script telefonico di Giulia su DenkiShift, con le obiezioni e i looping.
 - [[script-ecommerce]] — ⚠️ Lo usano tutti e tre. Dove c'è [nome] ci va il proprio.
+- [[script-gestionali-brianza]] — ⚠️ Lo script di Patrick sulle 100 aziende +1M della Brianza. Qui si vende - l'obiettivo e' l'appuntamento conoscitivo, non il modulo.
 - [[script-indagine]] — ⚠️ Lo usano tutti e tre. Dove c'è [nome] ci va il proprio.
 - [[script-siti-vetrina]] — ⚠️ Lo usano tutti e tre - Giulia, Gabriele, Edoardo.
 
