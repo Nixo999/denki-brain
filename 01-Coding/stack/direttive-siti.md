@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 20/09/2026 — Nicola: «lo sfondo a pavimento toglilo, metti qualcosa di beige ma più sfondo piatto, basta provare con quell'idea lì»
+
+20/09/2026, giro 17-bis di Barbershop SNIA: terzo tentativo bocciato sul pavimento come sfondo (foto, SVG, texture stock). Dietro il testo va una tinta piatta; l'idea del pavimento non si ripropone
+
 ### 20/09/2026 — Nicola: «il logo della scritta barbershop deve essere come specchiato, non semplicemente scritto al contrario, ma proprio come se fosse visto attraverso lo specchio. I disegni che hai fatto per le mattonelle non mi piacciono: cerca degli sfondi che rispecchiano quello stile perché ci sta, ma o reale o disegnato bene, non da te. Aggiungi qualche dettaglio qua e là stile Jack Daniel's perché fa parte della personalità del mio cliente»
 
 20/09/2026, giro 17 di Barbershop SNIA: supera il «ricostruiscilo tu» del 19/09 per gli sfondi. Gli sfondi si prendono veri (texture fotografiche con licenza libera), il logo del cliente è riflesso e non ruotato
