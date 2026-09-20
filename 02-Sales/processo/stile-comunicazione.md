@@ -104,6 +104,10 @@ Vincolo fiscale attivo, dettaglio in [[vincoli-fiscali]]:
 
 Scritte da `regola.py` nel momento in cui sono state dette.
 
+### 20/09/2026 — Patrick: «io devo far finta di lavorare per la stra up non essere il capo»
+
+al telefono si presenta come uno del team commerciale, non come co-founder: abbassa la posta per chi ascolta e gli lascia la leva del «lo chiedo al mio responsabile tecnico» per chiudere data e prezzo in un secondo tempo
+
 ### 20/09/2026 — Patrick: «devo veendere non fare la ricerca, capire si che problemi hanno ma l'obbiettivo deve essere quello di vendere»
 
 lo script indagine chiudeva sul modulo Google e vietava di nominare il prodotto: su questa lista l'obiettivo e' l'appuntamento conoscitivo con un'azienda che paga, le domande sui problemi servono a costruire la vendita non a fare statistica
