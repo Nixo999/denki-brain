@@ -3,12 +3,12 @@ type: progetto
 riga: Sito vetrina di Andrea, barbiere al Villaggio SNIA di Cesano Maderno, che fa anche da tramite per i trapianti in Albania. Primo presidio volantini, gratis.
 status: attivo
 client: parrucchiere-morgan
-stack: HTML statico + GSAP, starter DenkiCode, Netlify
+stack: HTML statico senza librerie, starter DenkiCode, Netlify
 started: 2026-09-16
 deadline:
 updated: 2026-09-20
 source: claude
-verificato: 2026-09-19
+verificato: 2026-09-20
 tags: [sito, barbiere, presidio, cesano-maderno]
 ---
 
@@ -690,6 +690,35 @@ che non lo è: al suo posto una seconda etichetta, «Pacchetto — da 1.800 €�
 hotel, navetta, visita e analisi. Il blocco numerato sotto è uscito, diceva le
 stesse quattro cose. ⬜ Se Andrea o la clinica mandano una foto vera, va lì.
 I due file restano in `assets/img` come materiale. 8/8, slop 0. Commit `d8408c9`, pushato.
+
+## Giro 18 — 20/09: via il quartiere e la didascalia, le foto si aprono
+
+> «togli questa parte» (screenshot della sezione «Il quartiere») · «togli questa
+> scritta: Pareti di doghe chiare, soffitto nero e pavimento in palladiana…» ·
+> «rendi apribili le immagini dell'interno a tutto schermo»
+
+- **Sezione «Il quartiere» rimossa intera**, con la foto dei barili e la storia
+  del villaggio. I capitoli tornano a sei, rinumerati 01-06. Il **link a Google
+  Maps viveva solo là**: rimesso sull'indirizzo del piede, che era testo morto.
+- **«Dentro» resta il titolo, senza il paragrafo** che elencava quello che le
+  foto già mostrano.
+- **Le quattro foto dell'interno si aprono a tutto schermo.** Ognuna è un `<a>`
+  al file dentro un `<dialog>` nativo: frecce ai lati, contatore a stencil,
+  tasti cursore, Esc, clic sul fondo, scorrimento col dito, scroll della pagina
+  bloccato mentre è aperto, e la foto seguente precaricata. **Senza JS ogni
+  link apre il file**, verificato con `scriptEnabled=false`.
+- **Fra 761 e 900 px** le griglie passano a due colonne: lì non c'era né la
+  griglia larga né lo scorrimento del telefono, e ogni foto prendeva uno
+  schermo. Pagina a 820 px da **15.787 a 11.163** (a 1024 sono 8.433).
+
+Misurato: 8/8, slop 0 blocchi, **overflow 0 su 18 larghezze** da 320 a 1920,
+**0 rivelazioni spente su 51**, console pulita, e il visore provato con
+**tastiera vera** in Chrome headless (frecce, Esc che chiude e sblocca lo
+scroll, riapertura, bottone). Commit `b51a995`, pushato.
+
+⚠️ **Il pannello del browser non consegna i tasti alla pagina** quando c'è un
+`<dialog>` modale: né Esc né le frecce arrivavano, e sembrava un difetto del
+sito. La tastiera si prova con CDP → [[trappole]].
 
 ## Non verificato, e aperto
 

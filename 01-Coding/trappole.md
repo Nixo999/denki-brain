@@ -62,6 +62,22 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Catture e verifica in headless
 
+- `[TRAPPOLA]` **Il pannello del browser non consegna i tasti alla pagina
+  mentre c'è un `<dialog>` modale aperto.** Su Barbershop SNIA né `Escape` né
+  le frecce arrivavano — un listener di prova su `document` in fase di cattura
+  registrava **zero** eventi — e il visore sembrava rotto. Con la tastiera vera
+  via CDP (`Input.dispatchKeyEvent`, keyDown + keyUp con
+  `windowsVirtualKeyCode`) funzionava tutto al primo colpo. → **una scorciatoia
+  da tastiera si prova con CDP**, non dal pannello, e prima di dire che è rotta
+  si controlla che l'evento arrivi. (20/09/2026, [[sito-barbershop-snia]])
+- **L'evento `close` di un `<dialog>` non è arrivato**, quindi la pulizia
+  appesa a quell'evento non è mai partita: `overflow:hidden` restava sul body e
+  la pagina non scorreva più. E un `preventDefault()` su `cancel` (o sul
+  keydown di Esc) **annulla la chiusura nativa**: il visore restava aperto. →
+  la pulizia sta in una funzione idempotente chiamata da tutte le vie d'uscita,
+  Esc compreso con `setTimeout(…, 0)` dopo la chiusura nativa; nessun
+  `preventDefault`. (20/09/2026, [[sito-barbershop-snia]])
+
 - **Nel pannello del browser a scheda nascosta `innerHeight` è 0 e le
   transizioni CSS non avanzano**: una rivelazione con `.dentro` messo e
   `clip-path` ancora chiuso sembra rotta e non lo è. → lo stato di una motion
@@ -435,6 +451,14 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   valore finale vero, non `initial`. ([[sito-adelinanails]], 18/09/2026)
 
 ## CSS e layout
+
+- **Fra il punto in cui finisce lo scorrimento del telefono e quello in cui
+  parte la griglia larga si apre una fascia senza nessuna delle due.** Su
+  Barbershop SNIA, fra 761 e 900 px, ogni foto prendeva uno schermo intero e la
+  pagina misurava **15.787 px contro 8.433 a 1024**: si scorreva a vuoto. →
+  l'altezza del documento si misura su **tutte** le larghezze di prova, non
+  solo a 375 e 1440; un salto del doppio è un buco fra due media query.
+  (20/09/2026, [[sito-barbershop-snia]])
 
 - **Una sezione chiamata `.dentro` prende il padding su ogni elemento
   rivelato: `dentro` è la classe di stato di `.rivela`.** Pagina alta 21.000 px
