@@ -665,12 +665,13 @@ e lo `scroll-snap` vanno guardati su iOS. Commit `9583c0c`, pushato.
 > verticalmente» — «lo sfondo a pavimento toglilo, metti qualcosa di beige ma
 > più sfondo piatto, basta provare con quell'idea lì»
 
-**Com'è davvero il logo, letto sulla foto del vetro** (`vetrina-listino.jpg`,
-ritaglio in alto): le lettere stanno in ordine da sinistra a destra,
-B-A-R-B-E-R-S-H-O-P, e ognuna è **ribaltata sull'asse orizzontale**, come
-riflessa da uno specchio messo sotto. Non è una rotazione di 180° (che
-invertirebbe anche l'ordine: così l'avevano letta i giri 14-16, «capovolta») e
-non è lo specchio orizzontale del giro 17. In pagina: `rotateX(180deg)`.
+**Com'è davvero il logo — corretto da Nicola il 20/09**: «è sia invertito
+orizzontalmente che verticalmente», cioè **ruotato di 180°**, com'è montata la
+targa e come l'avevano letto i giri 14-16 («capovolta»). Le mie due letture
+erano sbagliate: lo specchio orizzontale (giro 17) e il solo ribaltamento
+verticale, ricavato da un ritaglio a bassa risoluzione di `vetrina-listino.jpg`
+dove le lettere simmetriche ingannano. **Sul logo vale la parola di chi c'è
+stato, non un ritaglio.** In pagina: `rotate(180deg)`, commit `139ae1e`.
 
 Il terrazzo è uscito, `terrazzo.jpg` cancellato: sotto recensioni e orari
 `#e2d9c8` piatto. **Terza bocciatura del pavimento come sfondo** (foto, SVG,

@@ -42,6 +42,7 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
 |---|---|---|---|---|---|---|
+| 20/09, giro 17-quater | Nicola +claude | [[sito-barbershop-snia]] | `Nixo999/barbershop-snia-site` (`main`, pushato) | — | Logo invertito sui due assi (180°): corretta la mia lettura sbagliata della foto | `139ae1e` |
 | 20/09, giro 17-ter | Nicola +claude | [[sito-barbershop-snia]] | `Nixo999/barbershop-snia-site` (`main`, pushato) | — | Via la foto del vetro e quella del diradamento; il pacchetto trapianto diventa un'etichetta | `d8408c9` |
 | 20/09, giro 17-bis | Nicola +claude | [[sito-barbershop-snia]] | `Nixo999/barbershop-snia-site` (`main`, pushato) | — | Logo ribaltato in verticale come sul vetro vero (`rotateX`), via il terrazzo: beige piatto | `b5ca562` |
 | 20/09, giro 17 | Nicola +claude | [[sito-barbershop-snia]] | `Nixo999/barbershop-snia-site` (`main`, pushato) | — | Logo riflesso allo specchio, titoli senza lo scatto, texture vere CC0 di ambientCG al posto degli SVG, listino a etichetta, mobile a strisce scroll-snap | `9583c0c` |
