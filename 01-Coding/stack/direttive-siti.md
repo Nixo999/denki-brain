@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-09-19
+updated: 2026-09-20
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 20/09/2026 — Nicola: «il logo della scritta barbershop deve essere come specchiato, non semplicemente scritto al contrario, ma proprio come se fosse visto attraverso lo specchio. I disegni che hai fatto per le mattonelle non mi piacciono: cerca degli sfondi che rispecchiano quello stile perché ci sta, ma o reale o disegnato bene, non da te. Aggiungi qualche dettaglio qua e là stile Jack Daniel's perché fa parte della personalità del mio cliente»
+
+20/09/2026, giro 17 di Barbershop SNIA: supera il «ricostruiscilo tu» del 19/09 per gli sfondi. Gli sfondi si prendono veri (texture fotografiche con licenza libera), il logo del cliente è riflesso e non ruotato
 
 ### 19/09/2026 — Nicola: «Prendi il logo, ricostruiscilo tu e mettilo. Non piazzare una foto a caso. Stessa cosa, lo sfondo è letteralmente un collage di foto che ti ho mandato, no, invece devi ricostruirlo tu»
 
