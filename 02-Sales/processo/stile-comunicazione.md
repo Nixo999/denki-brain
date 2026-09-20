@@ -1,7 +1,7 @@
 ---
 riga: Il registro dei testi che legge un cliente - Lei o Tu, voce di Patrick. Non e' il registro di Trevis.
 type: risorsa
-updated: 2026-09-19
+updated: 2026-09-20
 source: denkicode
 ---
 
@@ -103,6 +103,10 @@ Vincolo fiscale attivo, dettaglio in [[vincoli-fiscali]]:
 ## Regole date a voce
 
 Scritte da `regola.py` nel momento in cui sono state dette.
+
+### 20/09/2026 — Patrick: «devo veendere non fare la ricerca, capire si che problemi hanno ma l'obbiettivo deve essere quello di vendere»
+
+lo script indagine chiudeva sul modulo Google e vietava di nominare il prodotto: su questa lista l'obiettivo e' l'appuntamento conoscitivo con un'azienda che paga, le domande sui problemi servono a costruire la vendita non a fare statistica
 
 ### 19/09/2026 — Patrick: «il tono deve essere professionale ma deve capire che sono un ragazzo che vuole partire ma che le cose le sa fare»
 
