@@ -659,6 +659,24 @@ Misurato: 8/8, slop 0, overflow 0 a 330, 375, 1024 e 1440, console pulita.
 ⚠️ Non provato su telefono vero né su Safari: il `rotateY` con `perspective`
 e lo `scroll-snap` vanno guardati su iOS. Commit `9583c0c`, pushato.
 
+### Giro 17-bis — 20/09: il logo è ribaltato in verticale, il pavimento esce
+
+> «ho sbagliato a dirti io, la scritta del logo è anche sotto invertita
+> verticalmente» — «lo sfondo a pavimento toglilo, metti qualcosa di beige ma
+> più sfondo piatto, basta provare con quell'idea lì»
+
+**Com'è davvero il logo, letto sulla foto del vetro** (`vetrina-listino.jpg`,
+ritaglio in alto): le lettere stanno in ordine da sinistra a destra,
+B-A-R-B-E-R-S-H-O-P, e ognuna è **ribaltata sull'asse orizzontale**, come
+riflessa da uno specchio messo sotto. Non è una rotazione di 180° (che
+invertirebbe anche l'ordine: così l'avevano letta i giri 14-16, «capovolta») e
+non è lo specchio orizzontale del giro 17. In pagina: `rotateX(180deg)`.
+
+Il terrazzo è uscito, `terrazzo.jpg` cancellato: sotto recensioni e orari
+`#e2d9c8` piatto. **Terza bocciatura del pavimento come sfondo** (foto, SVG,
+texture stock): non si ripropone → [[direttive-siti]]. Resta il legno nero
+sulle fasce scure. 8/8, slop 0, overflow 0. Commit `b5ca562`, pushato.
+
 ## Non verificato, e aperto
 
 - ✅ **Link buono dal 18/09: <https://barber-shop-snia.netlify.app>**. Il vecchio <https://barbershop-snia.netlify.app>, repo
