@@ -6,7 +6,7 @@ client: parrucchiere-morgan
 stack: HTML statico + GSAP, starter DenkiCode, Netlify
 started: 2026-09-16
 deadline:
-updated: 2026-09-19
+updated: 2026-09-20
 source: claude
 verificato: 2026-09-19
 tags: [sito, barbiere, presidio, cesano-maderno]
@@ -624,6 +624,40 @@ logo del cliente si **ricostruisce** fedele all'originale, e gli sfondi si
 
 Misurato: 8/8, slop 0, documento 10.690 px a 1440, 30 fette guardate.
 Commit `d20f2c2`, pushato; Netlify pubblica da solo.
+
+## Giro 17 — 20/09: lo specchio, gli sfondi veri, l'etichetta, il telefono
+
+> «le animazioni dei titoletti non sono smooth, il logo deve essere come
+> specchiato, non semplicemente scritto al contrario… da telefono il sito è
+> troppo brutto, i disegni che hai fatto per le mattonelle non mi piacciono…
+> o reale o disegnato bene ma non da te… qualche dettaglio stile Jack Daniel's»
+
+La regola è in [[direttive-siti]] e **supera il «ricostruiscilo tu» del 19/09
+per gli sfondi**: il logo ricostruito resta, i motivi di fondo no.
+
+- **Logo riflesso**, non ruotato: `rotateY(180deg)` sulla targa in hero e barra,
+  come sta scritta sul suo vetro. All'avvio arriva leggibile e gira sull'asse
+  verticale; all'hover torna leggibile. L'`aria-label` dice «Barbershop».
+- **Titoli**: lo scatto veniva da `font-variation-settings` animato con
+  `animation-timeline` — ricalcolo del layout a ogni frame di scroll. Tolto;
+  resta il velo a tempo. Lo scroll muove solo `scale` e `clip-path`
+  → [[trappole]].
+- **Sfondi veri**: texture fotografiche **CC0 di ambientCG** — `Terrazzo018`
+  (pavimento, sotto recensioni e orari con velo all'86%) e `PaintedWood005`
+  (legno nero bruciato, su hero e fasce scure). Via `muro.svg` e
+  `palladiana.svg`. Pareti chiare in tinta piatta: una texture chiara buona non
+  l'ho trovata, e dietro il testo lungo disturba.
+- **Etichetta**: listino su legno nero con doppio filetto, «Listino» in script,
+  «Barba & Capelli» (è sulla sua insegna) in maiuscoletto largo; civico «N° 22»
+  in testa all'hero; filetti doppi attorno a Prenota. Solo tipografia e bordi:
+  nessun fregio disegnato, nessun marchio Jack Daniel's.
+- **Telefono**: gallerie e recensioni in strisce `scroll-snap`, corpo a 1rem,
+  quartiere a una colonna (era una griglia a due schiacciata). Pagina a 375 px
+  da 14.100 a 10.750 px.
+
+Misurato: 8/8, slop 0, overflow 0 a 330, 375, 1024 e 1440, console pulita.
+⚠️ Non provato su telefono vero né su Safari: il `rotateY` con `perspective`
+e lo `scroll-snap` vanno guardati su iOS. Commit `9583c0c`, pushato.
 
 ## Non verificato, e aperto
 
