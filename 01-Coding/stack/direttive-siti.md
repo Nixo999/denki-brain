@@ -35,9 +35,9 @@ quelle due, non è pronta.
 
 Detto appena dopo aver visto in testa il logo vero del cliente, ritagliato dalla pagina Facebook a 720 px, rosso #E10736. Ritira la regola scritta un'ora prima nella stessa sessione: il marchio torna COMPOSTO in Pinyon Script sul rosa chiaro #F0C7CB. Il file del logo resta nel repo e non e' referenziato. Quello che ne esce: la ricostruzione in caratteri non e' un ripiego, e un logo del cliente a fondo bianco e inchiostro saturo puo' stare peggio in pagina del nome composto - si mostrano tutti e due prima di sceglierne uno
 
-### 21/09/2026 — Nicola: «sostituisci desing capelli con il loro logo»
+### 21/09/2026 — Nicola: «sostituisci desing capelli con il loro logo» — ⚠️ SUPERATA lo stesso giorno
 
-Giro 3 di Design Capelli: il nome era composto in Pinyon Script, scelto su specimen contro cinque corsivi, come ricostruzione fedele del corsivo della foto profilo. Non basta: dove sta il marchio del cliente ci va il suo file originale, anche se e' piccolo o e' solo un'avatar di Instagram. Supera la parte della direttiva del 19/09 «prendi il logo, ricostruiscilo tu e mettilo», che resta valida solo quando del logo esiste soltanto una foto dell'insegna scattata di sbieco
+Giro 3 di Design Capelli: il nome era composto in Pinyon Script, scelto su specimen contro cinque corsivi, come ricostruzione fedele del corsivo della foto profilo. Non basta: dove sta il marchio del cliente ci va il suo file originale, anche se e' piccolo o e' solo un'avatar di Instagram. Supera la parte della direttiva del 19/09 «prendi il logo, ricostruiscilo tu e mettilo», che resta valida solo quando del logo esiste soltanto una foto dell'insegna scattata di sbieco. **Ritirata da Nicola un'ora dopo**, vista in pagina: «scusa rimetti come era sceurro prima desing capelli». Resta scritta perche' e' successa, ma non e' la regola: il marchio di Design Capelli e' tornato composto in Pinyon Script
 
 ### 20/09/2026 — Nicola: «lo sfondo a pavimento toglilo, metti qualcosa di beige ma più sfondo piatto, basta provare con quell'idea lì»
 

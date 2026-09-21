@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito per Design Capelli (Nichelino, TO) - mondo «la luce della via», la pagina schiarisce di un tono a sezione, logo vero del cliente in testa, Cabinet Grotesk + Gambetta. Online su designcapelli.netlify.app dal 21/9, giro 4, 8/8 e slop 0.
+riga: Bozza sito per Design Capelli (Nichelino, TO) - mondo «la luce della via», la pagina schiarisce di un tono a sezione, marchio composto in Pinyon Script, Cabinet Grotesk + Gambetta, apertura a 0,80 s. Online su designcapelli.netlify.app dal 21/9, giro 5, 8/8 e slop 0.
 status: attivo
 client: design-capelli
 stack: html-css-js
@@ -44,12 +44,12 @@ astratti sono la bocciatura «forme messe a caso».
 
 1. **I marchi sono due.** Quello di adesso è un **corsivo calligrafico rosso**;
    la vetrina porta un **serif in maiuscoletto** più vecchio, con D e C
-   ingrandite, ripetuto su tutto il vetro. In testa va il corsivo — dal giro 4
-   nel **suo file**, non ricostruito — e il serif resta nel motivo dei contatti.
-2. **I rossi in pagina sono due, e la differenza è spiegata sotto**: il logo è
-   `#E10736`, letto dal file a 720 px; il bordeaux dell'interfaccia è `#73343E`,
-   campionato quando del logo si aveva solo l'avatar a 150 px, sbiadito
-   dall'anti-aliasing.
+   ingrandite, ripetuto su tutto il vetro. In testa va il corsivo, **composto in
+   Pinyon Script**, e il serif resta nel motivo dei contatti.
+2. **Il rosso vero del logo è `#E10736`**, letto dal file a 720 px della pagina
+   Facebook. Il bordeaux dell'interfaccia è `#73343E`, campionato quando del logo
+   si aveva solo l'avatar a 150 px, sbiadito dall'anti-aliasing: in pagina resta
+   quello, perché il resto della pagina è approvato.
 
 ## Cosa non c'è, e perché
 
@@ -75,7 +75,7 @@ astratti sono la bocciatura «forme messe a caso».
 
 ## Come è fatto — otto sezioni, un tono ciascuna
 
-Radice scura → platino. 1 il logo con i tre fatti e la scala dei
+Radice scura → platino. 1 il marchio composto con i tre fatti e la scala dei
 dieci livelli · 2 dieci anni nella stessa vetrina · 3 il colore ha un numero
 (livelli e sei riflessi) · 4 alla luce della via · 5 la schiaritura, con le
 barre che salgono da 4 a 10 · 6 quello che non ha un codice (i servizi) · 7
@@ -90,19 +90,23 @@ tutto finito in **~0,80 s** (era 1,18 s). Parte a ogni caricamento, si spegne co
 **Tipografia**: Cabinet Grotesk 700/800 per il display e le cifre, Gambetta
 400/500 e italico per il testo.
 
-## Il marchio — giro 4, 21/09
+## Il marchio — giro 4 e giro 5, 21/09
 
-Nicola: **«sostituisci desing capelli con il loro logo»**. In testa c'era il nome
-composto in Pinyon Script, scelto su saggio contro cinque corsivi come
-ricostruzione fedele. Non basta: dove sta il marchio del cliente ci va **il suo
-file**. Preso a **720×720 dalla pagina Facebook** — l'avatar di Instagram è 150 px
-— fondo bianco tolto dal canale verde, inchiostro tenuto com'è.
+Nicola: **«sostituisci desing capelli con il loro logo»**. Il logo vero preso a
+**720×720 dalla pagina Facebook** — l'avatar di Instagram è 150 px — fondo bianco
+tolto dal canale verde, inchiostro tenuto com'è. **Il rosso vero è `#E10736`**,
+molto più acceso del bordeaux `#73343E` che la pagina usa per bottoni e link:
+quel valore era stato campionato dall'avatar a 150 px, sbiadito
+dall'anti-aliasing.
 
-**Il rosso vero del logo è `#E10736`**, molto più acceso del bordeaux `#73343E`
-che la pagina usa per bottoni e link: quel valore era stato campionato
-dall'avatar a 150 px, che è sbiadito dall'anti-aliasing. Il resto della pagina
-resta com'è — «per il resto va bene» — quindi in pagina convivono il rosso del
-logo e il bordeaux dell'interfaccia.
+**Visto in pagina, Nicola l'ha ritirato**: *«scusa rimetti come era sceurro prima
+desing capelli»*. Il marchio è tornato **composto in Pinyon Script** sul rosa
+chiaro `#F0C7CB`, come prima. Il file del logo resta in
+`assets/logo-designcapelli.png` e **non è referenziato da nessuna parte**.
+
+Quello che ne resta, ed è in [[direttive-siti]]: la ricostruzione in caratteri
+non è un ripiego, e un logo a fondo bianco con inchiostro saturo può stare in
+pagina peggio del nome composto. Si guardano tutti e due prima di sceglierne uno.
 
 ## Stato — online dal 21/09/2026
 
@@ -127,7 +131,7 @@ I due avvisi di slop restano di proposito: «qualità» e «professionalità» s
 dentro recensioni citate alla lettera, e i sette `cramped-padding` sono falsi
 positivi sullo shorthand con `var()`.
 
-**Quattro giri.** Il giro 1 era giusto di contenuto e **vuoto di desktop** — sezioni
+**Cinque giri.** Il giro 1 era giusto di contenuto e **vuoto di desktop** — sezioni
 a metà finestra e bande verticali morte, la bocciatura «lo vedo vuoto» già presa
 due volte. Il giro 2 ha densificato. Il giro 3 ha chiuso tre cose: il vuoto
 residuo in «La schiaritura», il motivo della vetrina che era diventato un
@@ -140,6 +144,9 @@ boot in fondo al body accende **dietro a GSAP dalla CDN**: la pagina compariva
 intera e mezzo secondo dopo il sipario le cadeva sopra. Ora si accende da uno
 script in testa e la sua uscita è in CSS. **Lo starter è stato corretto lo stesso
 giorno**, così non lo ripete nessun sito nuovo.
+
+**Giro 5** (21/09): il marchio torna composto. Dell'apertura resta tutto — la
+velocità e lo script in testa erano la parte che Nicola aveva approvato.
 
 `TODO` **il verdetto di Nicola** sul giro 4, e il DM col link è di Patrick.
 
