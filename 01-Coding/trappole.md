@@ -62,6 +62,30 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Catture e verifica in headless
 
+- `[TRAPPOLA]` **Se il server di anteprima muore, il browser continua a servire
+  dalla cache il sito di un'altra sessione che stava sulla stessa porta.** Il
+  21/09 la 8765 rispondeva con il titolo `Pizzeria Lobidù, Tradate` mentre
+  `lsof -iTCP:8765` non trovava nessuno in ascolto: la pagina veniva dalla cache
+  del pannello. Si stava per giudicare il sito sbagliato. → **prima di guardare
+  una cattura si controlla il titolo con `curl -s <url> | grep -o "<title>[^<]*"`**,
+  e la porta si sceglie diversa per ogni sito. (21/09/2026, [[sito-designcapelli]])
+
+- `[TRAPPOLA]` **`cattura-fette.mjs | head -3` uccide la cattura a metà e non lo
+  dice.** `head` chiude la pipe, node prende SIGPIPE e si ferma dopo tre fette:
+  restano 4 PNG su 6 e sembra che la pagina sia alta un solo schermo. → l'output
+  si porta su un file (`> cattura.log 2>&1`) e si guarda dopo, oppure si usa
+  `tail`. Il numero di fette atteso è `ceil(altezza / viewport)`, e si conta.
+  (21/09/2026, [[sito-designcapelli]])
+
+- `[TRAPPOLA]` **L'apertura si giudica contando le tinte di ogni fotogramma, non
+  a occhio.** Su Design Capelli fra l'ultimo salto di tono e la discesa del
+  marchio restavano **300 ms di schermo a una tinta sola** — vuoto — e nel
+  pannello non si notava. Campionando da CDP un PNG ogni 100 ms e contando le
+  tinte distinte, i fotogrammi vuoti escono da soli: `1 tinta` = niente in
+  pagina. Lo strumento è `01-Coding/strumenti/cattura-apertura.mjs`:
+  `node cattura-apertura.mjs <url> <cartella> 100,200,300,…`
+  (21/09/2026, [[sito-designcapelli]])
+
 - `[TRAPPOLA]` **Il pannello del browser non consegna i tasti alla pagina
   mentre c'è un `<dialog>` modale aperto.** Su Barbershop SNIA né `Escape` né
   le frecce arrivavano — un listener di prova su `document` in fase di cattura

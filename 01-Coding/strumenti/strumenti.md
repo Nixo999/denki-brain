@@ -22,5 +22,6 @@ Una nota per attrezzo, in `kebab-case`.
 | Netlify | pubblicazione dei siti **e delle bozze da mostrare** | → [[netlify]] |
 
 - `cattura-fette.mjs` — catture di pagina con **Brave o Chrome** headless via CDP (prende il primo che trova, o `BROWSER_CATTURE`: su alcune macchine Brave non e' installato): fette di viewport a 1440 e a 375 più cinque posizioni dentro ogni pin di ScrollTrigger. Il pannello non fotografa in modo attendibile dopo lo scroll; questo sì. `node 01-Coding/strumenti/cattura-fette.mjs <url> <w> <h> <mobile 0|1> <cartella> <prefisso>`
+- `cattura-apertura.mjs` — campiona **l'apertura** del sito: un PNG a ogni millisecondo che gli chiedi, dal `navigate` in poi, headless a 1440. Serve a trovare i fotogrammi vuoti, che nel pannello non si vedono: si contano le tinte distinte di ogni fotogramma, e `1 tinta` vuol dire schermo vuoto. `node 01-Coding/strumenti/cattura-apertura.mjs <url> <cartella> 100,200,300,…`
 
 Le credenziali **non stanno qui**: vedi [[credenziali]].
