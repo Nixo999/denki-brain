@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **221 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **222 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -163,6 +163,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-17-siti-piemonte]] — La lista siti del 17 settembre - 50 righe di bellezza fra Torino e il resto del Piemonte, zona nuova aperta perche' la Lombardia della bellezza e' finita, e le toelettature abbandonate dopo 110 ricerche.
 - [[2026-09-19-denkishift-e-ricerca]] — Le due liste che erano state saltate il 19 settembre - 50 DenkiShift e 50 ricerca in Lombardia - costruite col chaining dopo il terzo errore uguale in quattro giorni, e la scusa che non vale.
 - [[2026-09-19-siti-piemonte-capelli]] — La lista siti del 19 settembre - 50 parrucchieri e barber del Piemonte, secondo settore della zona dopo la bellezza del 17 - e la posta che dice che i DM non escono dall'account di Patrick.
+- [[2026-09-21-tre-liste]] — Le tre liste del 21 settembre - 50 studi di tatuaggi del Piemonte, 50 DenkiShift e 50 ricerca in Lombardia - e la ricerca di Instagram che si e' bloccata due volte in mezza giornata.
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.

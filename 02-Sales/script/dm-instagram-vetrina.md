@@ -1,11 +1,11 @@
 ---
 riga: Lo manda Patrick, dal suo account personale.
 type: area
-updated: 2026-09-10
+updated: 2026-09-21
 source: claude
 prodotto: siti-vetrina
 canale: instagram
-stato: versione-d
+stato: versione-e
 ---
 
 # Il DM di Instagram — un messaggio solo, sei ganci
@@ -414,6 +414,44 @@ Un esempio della lista del 10 settembre (Solestetica, Luino, gancio 2):
 
 Il banco usa la colonna `Messaggio` così com'è: il testo generato dai sei
 ganci resta come rete di sicurezza per le righe vecchie senza messaggio.
+
+## Versione E — quattro passi, e la bozza esiste già · **è questa che parte dal 13 settembre 2026**
+
+> [!important] Superata la promessa della D — Patrick, 11 e 13 settembre 2026
+> La D diceva «le preparo una prima schermata e gliela mando»: non vale più.
+> Patrick l'11 settembre: *«per i siti il gancio deve essere che la bozza è
+> già stata fatta»*. E il 13: *«il nostro gancio di vendita principale per i
+> siti è che ABBIAMO GIÀ CREATO UNA BOZZA/ANTEPRIMA INTERATTIVA DEL SITO per
+> il prospect, basata sui contenuti del loro profilo social»*.
+> La D resta scritta sopra perché è il metro con cui si misura la E, non
+> perché si possa ancora usare.
+> ⚠️ Il prezzo del gancio: quando uno risponde, la bozza deve esistere. Chi
+> manda questi cinquanta si compra il lavoro di farle.
+
+I quattro passi, nell'ordine, e le parole dei passi 3 e 4 le ha dettate Patrick:
+
+1. **Complimento vero**, su un dettaglio specifico del loro lavoro. È la riga
+   che dimostra che una persona ha guardato quel profilo, e non si genera da
+   una colonna: si scrive aprendo il profilo.
+2. **Il problema**, in una riga sola.
+3. **La bozza**: *«abbiamo preso ispirazione dal tuo profilo e abbiamo
+   realizzato una bozza del tuo sito»*.
+4. **Chiusura a frizione zero**: *«preferisci che te la mandi qui su Instagram,
+   o prima ne parliamo due minuti al telefono? In ogni caso zero costi e zero
+   impegno: se ti piace, poi ne parliamo. Se vuoi vedere cosa facciamo:
+   denkicode.com»*.
+   ⚠️ La scelta viene prima, la rassicurazione dopo: «zero costi» in apertura
+   di paragrafo suona come una giustificazione, dopo la domanda è una
+   rassicurazione.
+
+**Apertura**: «Ciao, sono Patrick di DenkiCode» va benissimo. Quello che fa
+chiudere la chat è il paragrafo di presentazione istituzionale, non il nome.
+Massimo cinque o sei righe, leggibili dal telefono.
+
+⚠️ **Tre errori di lingua**, Patrick il 13 settembre 2026: si dice **«ho notato
+però una cosa»** e non «una cosa l'ho notata»; quello che manca è **un sito**,
+non «un posto tuo»; **«ho preso le tue foto» sembra da stalker**, si scrive che
+le foto le hai guardate e ti è venuta voglia di provarci.
 
 ## Collegamenti
 
