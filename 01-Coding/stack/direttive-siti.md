@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 21/09/2026 — Nicola: «controlla perche sotto le foto hai scritto delle cose completamente inutili a uno spettatore del sito, tipo descrizioni della foto o titoletti completamente inutili»
+
+Su Design Capelli ogni foto aveva una didascalia che descriveva la foto - «Shag corto nero con frangia, dentro il salone», «Biondo perla ondulato, sul marciapiede» - cioe' il testo alternativo ripetuto a video. Chi guarda la foto vede gia' quello che c'e' dentro: una didascalia che descrive l'immagine non aggiunge niente e fa sembrare il sito compilato. Una didascalia sta in pagina solo se dice una cosa che la foto NON dice - un prezzo, un tempo, un nome, un fatto - altrimenti non esiste. Lo stesso per gli occhielli e i titoletti che ripetono il blocco che etichettano
+
 ### 21/09/2026 — Nicola: «scusa rimetti come era sceurro prima desing capelli»
 
 Detto appena dopo aver visto in testa il logo vero del cliente, ritagliato dalla pagina Facebook a 720 px, rosso #E10736. Ritira la regola scritta un'ora prima nella stessa sessione: il marchio torna COMPOSTO in Pinyon Script sul rosa chiaro #F0C7CB. Il file del logo resta nel repo e non e' referenziato. Quello che ne esce: la ricostruzione in caratteri non e' un ripiego, e un logo del cliente a fondo bianco e inchiostro saturo puo' stare peggio in pagina del nome composto - si mostrano tutti e due prima di sceglierne uno
