@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **219 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **221 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -49,7 +49,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-custombeautynails]] — Custom Beauty Nails, onicotecnica a Treviglio (BG): bozza online su custombeautynails.netlify.app dal 16/9, mondo «Un centimetro di spazio», 21 SVG, 8/8, copy rifatto professionale dopo la bocciatura.
 - [[sito-da-caterina]] — ⚠️ Da Caterina Toelettatura Professionale, Via Introzzi 8, 21057 Olgiate Olona (VA).
 - [[sito-denkicode]] — Sito di DenkiCode. È qui che sta la galleria dei lavori - il posto dove si mostra a un cliente cosa abbiamo già fatto.
-- [[sito-designcapelli]] — Bozza sito per Design Capelli (Nichelino, TO) - mondo «la luce della via», la pagina schiarisce di un tono a sezione, marchio composto in Pinyon Script, Cabinet Grotesk + Gambetta, apertura a 0,80 s. Online su designcapelli.netlify.app dal 21/9, giro 5, 8/8 e slop 0.
+- [[sito-designcapelli]] — Bozza sito per Design Capelli (Nichelino, TO) - mondo «la luce della via», la pagina schiarisce di un tono a sezione, marchio composto in Pinyon Script, Cabinet Grotesk + Gambetta, apertura a 0,80 s. Online su designcapelli.netlify.app dal 21/9, giro 6, 8/8, slop 0 e testo 0.
 - [[sito-dianails]] — Diana @dianails_brescia, onicotecnica e PMU a Brescia: bozza creata in C:\Users\User\Desktop\dianails-site, mondo A «la regola del 90°», 8/8 sbarramenti verificati.
 - [[sito-dragonfly]] — ⚠️ Raccolta materiale per sito vetrina di Dragonfly Beauty&Relax, centro estetico a Casale Monferrato, lead da Instagram.
 - [[sito-dsi-advertising]] — ⚠️ Sito vetrina in una pagina per D.S.I. Advertising di Piras Sebastiano, Merate (LC) - dal 1992 progetta e produce articoli promozionali per il...
@@ -80,9 +80,11 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[competitor-siti-estetica]] — ⚠️ 13 siti di centri estetici (5 locali AL/VC/AT, 5 boutique italiane, 3 specialistici) - sezioni, info reali, stile, scaletta per Dragonfly.
 - [[competitor-siti-nail]] — ⚠️ Inventario di cosa pubblicano 15 siti di nail studio (5 Piemonte, 6 Italia, 4 estero) - sezioni, formati, FAQ ricorrenti, errori. Si riusa per ogni sito nail.
 - [[convenzioni]] — Le REGOLE tecniche di casa - naming, commit, firma Powered by DenkiCode. Qui sta il modo giusto, non gli errori.
+- [[copy-siti-competitor]] — ⚠️ Ricerca su 11 siti di parrucchieri, quartiere e fascia alta: didascalie, titoli, bottoni, punteggiatura; confronto con Design Capelli.
 - [[direttive-siti]] — Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
 - [[essenza-e-motion]] — Essenza da Instagram, metafora, spina dello scroll, grafica inventata e foto minime 1080px. Il metro misurato sono NG Barber e Fiftynine.
 - [[livello-siti]] — Le costanti visive dei siti premiati del settore, lette nei loro sorgenti il 17/09/2026 - rapporti, misure, palette. Il metro con cui si giudica un sito nuovo.
+- [[scrittura-web]] — ⚠️ Regole verificabili per il testo dei siti: didascalie, leggibilità Gulpease, punteggiatura, SEO locale, microcopy, tutte con fonte.
 - [[stack]] — Le tecnologie dei due gestionali. OperO Vite 8 + Tailwind 3, DenkiShift Next 16 + Tailwind 4. Restano diversi.
 
 **strumenti/**

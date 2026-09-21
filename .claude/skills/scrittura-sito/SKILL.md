@@ -60,6 +60,44 @@ l'icona fa il resto.
 per chi legge con la voce, con una classe che la toglie dallo schermo
 (`.solo-lettori`). Chi vede la pagina non la legge, chi la ascolta sì.
 
+## Cosa fanno i saloni veri — 11 siti aperti e letti
+
+Ricerca del 21/09, sei saloni di quartiere fra Torino e la Brianza e cinque di
+fascia alta o catena. Per esteso in [[copy-siti-competitor]].
+
+- **Dieci su undici non scrivono niente sotto le foto.** L'undicesimo, Rossano
+  Ferretti, mette due righe sotto le foto prodotto: «Idrata e ammorbidisce»,
+  «Rimuove il crespo e disciplina». Sono benefici, non descrizioni. **Nessuno
+  descrive cosa si vede nell'immagine.** Era l'unica cosa che facevamo noi e
+  loro no.
+- **Il titolo del primo schermo sta in cinque parole**, minimo due, massimo
+  otto. Due siti su undici non ne hanno nessuno e aprono con un paragrafo: è la
+  cosa che li fa sembrare vecchi.
+- **«Scopri di più» sta su nove siti su undici**, su Franco Curletto nove volte
+  nella stessa pagina. È il default del settore ed è quello che non si usa: non
+  dice dove porta.
+- **«Prenota» è il verbo del bottone in sei su undici**, spesso ripetuto per
+  sede o per servizio. È la parola che il cliente cerca, e va tenuta anche
+  quando il canale è WhatsApp: **«Prenota su WhatsApp»**, non «Scrivi».
+- **Sette su undici dichiarano l'anzianità** in prima schermata, «da oltre
+  trent'anni», «dal 1998». Noi la usiamo già: è la prova sociale che regge
+  quando non ci sono i prezzi.
+- **Cinque su undici richiamano il listino dalla home**, anche solo come
+  rimando. Se il cliente i prezzi ce li dà, il listino va in pagina: è la
+  seconda cosa che cercano dopo gli orari.
+- **Quasi tutti hanno una sezione sul titolare o sul team** col nome e gli anni
+  di mestiere: «quasi vent'anni di gavetta», «Joseph Zarra, oltre 30 anni». Noi
+  ci mettiamo una riga. Il nome della persona si chiede, non si inventa.
+- **Tutti hanno almeno un punto esclamativo o un imperativo entusiasta**
+  («Prenota ora!», «...fiducia !»). Noi zero, e si resta a zero: è la cosa che
+  distingue un testo scritto da uno gridato.
+
+Le parole che ricorrono di più nel loro copy: *scopri* (9/11), l'anzianità
+dichiarata (7/11), *prenota* (6/11), *listino* (5/11), *stile* (5/11), *cura*
+(5/11), *esperienza* (4/11), *bellezza* (4/11), *su misura* (3/11),
+*professionalità* (3/11). Le ultime quattro sono anche parole da densità per
+`controlla-slop.py`: si nominano solo se accanto c'è un fatto.
+
 ## Il testo che resta
 
 - **Una persona non legge, scansiona.** Il 79% scansiona sempre una pagina

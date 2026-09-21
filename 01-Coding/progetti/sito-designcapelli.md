@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito per Design Capelli (Nichelino, TO) - mondo «la luce della via», la pagina schiarisce di un tono a sezione, marchio composto in Pinyon Script, Cabinet Grotesk + Gambetta, apertura a 0,80 s. Online su designcapelli.netlify.app dal 21/9, giro 5, 8/8 e slop 0.
+riga: Bozza sito per Design Capelli (Nichelino, TO) - mondo «la luce della via», la pagina schiarisce di un tono a sezione, marchio composto in Pinyon Script, Cabinet Grotesk + Gambetta, apertura a 0,80 s. Online su designcapelli.netlify.app dal 21/9, giro 6, 8/8, slop 0 e testo 0.
 status: attivo
 client: design-capelli
 stack: html-css-js
@@ -125,13 +125,14 @@ file di lavoro (`RACCOLTA`, `RICERCA`, `MONDO`, `MONDI`) rispondono **404**.
 | Contrasto | 91 nodi, zero falliti, minimo **7,05:1** |
 | Overflow | **0** a 1440, 1280, 1024, 901, 899, 768, 621, 619, 375, 320 |
 | Apertura | **~0,80 s**, zero fotogrammi a una tinta sola (misurati con `cattura-apertura.mjs`) |
-| Altezza documento | da 6590 px del giro 1 a **4677** |
+| Altezza documento | da 6590 px del giro 1 a **4571** |
+| `controlla-testo.py` | **0 blocca, 0 avvisa** (era 8 blocca) |
 
 I due avvisi di slop restano di proposito: «qualità» e «professionalità» stanno
 dentro recensioni citate alla lettera, e i sette `cramped-padding` sono falsi
 positivi sullo shorthand con `var()`.
 
-**Cinque giri.** Il giro 1 era giusto di contenuto e **vuoto di desktop** — sezioni
+**Sei giri.** Il giro 1 era giusto di contenuto e **vuoto di desktop** — sezioni
 a metà finestra e bande verticali morte, la bocciatura «lo vedo vuoto» già presa
 due volte. Il giro 2 ha densificato. Il giro 3 ha chiuso tre cose: il vuoto
 residuo in «La schiaritura», il motivo della vetrina che era diventato un
@@ -149,6 +150,26 @@ giorno**, così non lo ripete nessun sito nuovo.
 velocità e lo script in testa erano la parte che Nicola aveva approvato.
 
 `TODO` **il verdetto di Nicola** sul giro 4, e il DM col link è di Patrick.
+
+## Giro 6, 21/09 — il testo
+
+Nicola: *«sotto le foto hai scritto delle cose completamente inutili a uno
+spettatore del sito, tipo descrizioni della foto o titoletti completamente
+inutili»*, e la richiesta di aggiustare il metodo sulla base dei concorrenti.
+
+- **Otto didascalie tolte.** Sette ripetevano parola per parola l'`alt`
+  dell'immagine. L'`alt` resta: lo legge chi la foto non la vede.
+- **Le etichette «Dove», «Quando», «Telefono» escono dalla pagina** e restano
+  per chi legge con la voce (`.solo-lettori`). Restano le icone.
+- **«Prenota su WhatsApp» al posto di «Scrivi»**: dalla ricerca, *prenota* è il
+  verbo del bottone in 6 saloni su 11.
+- `controlla-testo.py` da **8 blocca a 0**. Documento da 4677 a 4571 px.
+
+Quello che ne è uscito per tutti: lo strumento
+[[strumenti|controlla-testo.py]], la skill `scrittura-sito`, e due note di
+ricerca, [[scrittura-web]] (18 fonti) e [[copy-siti-competitor]] (11 siti).
+**Sugli altri 15 siti l'errore c'è ancora**: 74 didascalie, NG Barber e
+Fiftynine compresi.
 
 ## Collegamenti
 
