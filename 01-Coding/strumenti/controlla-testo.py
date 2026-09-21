@@ -60,8 +60,17 @@ def testo(t):
     return re.sub(r"\s+", " ", t).strip()
 
 
+BLOCCHI = ("p", "li", "h1", "h2", "h3", "h4", "h5", "figcaption", "dd", "dt",
+           "blockquote", "td", "th", "div", "section", "footer", "header", "title")
+
+
 def visibile(html):
+    """Il testo come lo legge una persona. Fra un blocco e l'altro ci va un
+    confine di frase: senza, il titolo e la voce di elenco sotto si fondono in
+    un periodo di trenta parole che nessuno ha mai scritto."""
     h = re.sub(r"<script.*?</script>|<style.*?</style>|<svg.*?</svg>|<!--.*?-->", " ", html, flags=re.S)
+    h = re.sub(r"</(?:%s)\s*>" % "|".join(BLOCCHI), " ¶ ", h, flags=re.I)
+    h = re.sub(r"<br\s*/?>", " ¶ ", h, flags=re.I)
     return testo(h)
 
 
@@ -100,10 +109,13 @@ def controlla(cartella):
             blocca.append(f"la didascalia non dice niente che la foto non dica: «{corta}»")
 
     # ── 2. micro-titoli che ripetono la categoria ─────────────────────────────
-    micro = re.findall(r"<dt[^>]*>(.*?)</dt>", html, re.S)
+    # un'etichetta portata via dalla pagina e lasciata a chi legge con la voce
+    # non e' un titoletto inutile: e' il contrario, ed e' la correzione giusta
+    NASCOSTO = re.compile(r'class="[^"]*(?:solo-lettori|sr-only|visually-hidden|a11y)[^"]*"')
+    micro = [m for m in re.findall(r"<dt[^>]*>(.*?)</dt>", html, re.S) if not NASCOSTO.search(m)]
     micro += [m[1] for m in re.findall(
         r'<(h3|h4|span|p|b)[^>]*class="[^"]*(?:etichett|occhiell|label|kicker|micro)[^"]*"[^>]*>(.*?)</\1>',
-        html, re.S)]
+        html, re.S) if not NASCOSTO.search(m[0] + m[1])]
     trovate = sorted({testo(m) for m in micro if senza_accenti(testo(m)).lower().strip(" :") in ETICHETTE})
     if trovate:
         avvisa.append("micro-titoli che ripetono la categoria del contenuto sotto: "
@@ -111,7 +123,8 @@ def controlla(cartella):
 
     # ── 3. frasi, leggibilita', punteggiatura ─────────────────────────────────
     t = visibile(html)
-    frasi = [f for f in re.split(r"(?<=[.!?])\s+", t) if len(f.split()) > 1]
+    frasi = [f.strip() for f in re.split(r"(?<=[.!?])\s+|\s*¶\s*", t) if len(f.split()) > 1]
+    t = t.replace("¶", " ")
     if frasi:
         lunghe = [f for f in frasi if len(f.split()) > 30]
         if lunghe:
