@@ -21,6 +21,24 @@
 <link rel="stylesheet" href="assets/base.css">
 <!-- ?v= cambia a ogni pubblicazione: il telefono del cliente tiene il CSS vecchio -->
 <link rel="stylesheet" href="assets/stile.css?v=1">
+
+<!-- Le classi di stato si accendono QUI, non in fondo al body: il boot laggiu'
+     sta dietro ai due <script src> di GSAP, e con la CDN fredda arriva mezzo
+     secondo dopo la prima pittura. Un'apertura che vive sotto `.js` fa quindi
+     comparire la pagina intera e poi le lascia cadere sopra il sipario.
+     Pagato su Design Capelli il 21/09/2026: fotogrammi pieni fino a 800 ms,
+     sipario a 900. `.apertura` c'e' solo quando l'apertura deve davvero
+     partire, cosi' il sipario si puo' scrivere tutto in CSS e non dipende da
+     GSAP. -->
+<script>
+(function(d){
+  var cattura = new URLSearchParams(location.search).has('cattura');
+  d.classList.add('js');
+  if (cattura) d.classList.add('cattura');
+  if (!cattura && !matchMedia('(prefers-reduced-motion: reduce)').matches)
+    d.classList.add('apertura');
+})(document.documentElement);
+</script>
 </head>
 <body>
 

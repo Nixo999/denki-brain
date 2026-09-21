@@ -62,6 +62,16 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Catture e verifica in headless
 
+- `[TRAPPOLA]` **Un'apertura che vive sotto `.js` compare mezzo secondo dopo la
+  pagina, e le cade sopra.** `.js` lo metteva il boot in fondo al body, che sta
+  **dietro ai due `<script src>` di GSAP**: con la CDN fredda i fotogrammi erano
+  pieni di pagina fino a 800 ms e il sipario arrivava a 900. → le classi di stato
+  si accendono da uno `<script>` **in testa**, e l'uscita del sipario si scrive in
+  CSS invece che in una timeline GSAP, cosi' non dipende da una richiesta di rete.
+  Lo starter e' stato corretto lo stesso giorno: porta `.apertura` dalla testa.
+  (21/09/2026, [[sito-designcapelli]])
+
+
 - `[TRAPPOLA]` **Se il server di anteprima muore, il browser continua a servire
   dalla cache il sito di un'altra sessione che stava sulla stessa porta.** Il
   21/09 la 8765 rispondeva con il titolo `Pizzeria Lobidù, Tradate` mentre
