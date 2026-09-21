@@ -14,6 +14,10 @@ dell'immagine.
 foto non la vede; la `figcaption` la legge chi la sta guardando. Se dicono la
 stessa cosa, una delle due e' di troppo, ed e' sempre la seconda.
 
+Le soglie non sono a naso, vengono da [[scrittura-web]]: meno del 50% di parole
+piene in comune con l'alt, Gulpease sopra 60 (sotto, il testo e' faticoso per
+chi ha la licenza media), niente etichette generiche tipo «Scopri di piu'».
+
 Esce 1 se qualcosa blocca. Accanto a controlla-sito.py e controlla-slop.py.
 """
 import re
@@ -132,8 +136,15 @@ def controlla(cartella):
         lettere = len(re.findall(r"[A-Za-zÀ-ſ]", t))
         n = len(t.split())
         gulpease = 89 + (300 * len(frasi) - 10 * lettere) / n if n else 0
-        if gulpease < 55:
-            avvisa.append(f"Gulpease {gulpease:.0f}: sotto 55 il testo e' faticoso per chi ha la licenza media")
+        if gulpease < 60:
+            avvisa.append(f"Gulpease {gulpease:.0f}: sotto 60 il testo e' faticoso per chi ha la licenza media")
+
+    # un'etichetta che non dice dove porta
+    GENERICHE = re.compile(r"^(scopri(\s+di\s+pi[uù])?|leggi\s+di\s+pi[uù]|clicca\s+qui|qui|vai|continua|approfondisci|maggiori\s+informazioni|learn\s+more|read\s+more)[\s.!:]*$", re.I)
+    cieche = sorted({testo(m[1]) for m in re.findall(r"<(a|button)\b[^>]*>(.*?)</\1>", html, re.S)
+                     if GENERICHE.match(testo(m[1]))})
+    if cieche:
+        avvisa.append("etichette che non dicono dove portano: " + ", ".join(f"«{c}»" for c in cieche))
 
     # i punti esclamativi delle recensioni citate non contano
     citato = " ".join(testo(q) for q in re.findall(r"<(?:blockquote|q)\b.*?</(?:blockquote|q)>", html, re.S))
