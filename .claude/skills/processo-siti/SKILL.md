@@ -87,7 +87,11 @@ L'operatore che costruisce carica, in quest'ordine:
 3. La skill di stile, **una sola**: `high-end-visual-design`, `minimalist-ui` o
    `industrial-brutalist-ui`. Due si contraddicono.
 4. `ui-ux-pro-max` per pescare un valore preciso, non una direzione.
-5. `voce-denkicode` sul copy, prima della review.
+5. **`scrittura-sito` mentre scrivi il copy**, non dopo: dice cosa va sotto
+   una foto e cosa non ci va, come si chiamano le sezioni, cosa si scrive su
+   un bottone. Nata dalle 82 didascalie da buttare trovate il 21/09 su 16
+   siti, NG Barber e Fiftynine compresi.
+6. `voce-denkicode` sul tono, prima della review. È un'altra cosa e viene dopo.
 
 Modo di impeccable: **Persuade**. È una vetrina, il visitatore deve decidere e
 agire.
@@ -129,7 +133,13 @@ l'apertura né la spina. Catture a pagina intera a 1440 e a 375, e si guardano.
 ```bash
 python3 01-Coding/strumenti/controlla-sito.py ~/lavoro/<cartella>
 python3 01-Coding/strumenti/controlla-slop.py ~/lavoro/<cartella>
+python3 01-Coding/strumenti/controlla-testo.py ~/lavoro/<cartella>
 ```
+
+`controlla-testo.py` misura il **testo**: didascalie che ripetono il testo
+alternativo o che non dicono niente che la foto non dica, titoletti che ripetono
+la categoria del contenuto sotto, bottoni che non dicono dove portano, Gulpease.
+Se esce 1 il sito non si consegna. Le regole stanno nella skill `scrittura-sito`.
 
 `controlla-slop.py` misura i segni che fanno sembrare un sito fatto con l'AI, dalla
 ricerca del 17/09/2026: se esce 1 il sito non si consegna, e gli avvisi si guardano
