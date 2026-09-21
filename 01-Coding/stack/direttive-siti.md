@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 21/09/2026 — Nicola: «smettila di usare pizzeria labidu come esempio in tutti i siti»
+
+Lobidu e' un cliente vero, non un esempio da riusare: il suo nome non va messo come segnaposto o come riferimento negli altri siti
+
 ### 21/09/2026 — Nicola: «controlla perche sotto le foto hai scritto delle cose completamente inutili a uno spettatore del sito, tipo descrizioni della foto o titoletti completamente inutili»
 
 Su Design Capelli ogni foto aveva una didascalia che descriveva la foto - «Shag corto nero con frangia, dentro il salone», «Biondo perla ondulato, sul marciapiede» - cioe' il testo alternativo ripetuto a video. Chi guarda la foto vede gia' quello che c'e' dentro: una didascalia che descrive l'immagine non aggiunge niente e fa sembrare il sito compilato. Una didascalia sta in pagina solo se dice una cosa che la foto NON dice - un prezzo, un tempo, un nome, un fatto - altrimenti non esiste. Lo stesso per gli occhielli e i titoletti che ripetono il blocco che etichettano
