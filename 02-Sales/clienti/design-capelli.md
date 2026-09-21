@@ -1,6 +1,6 @@
 ---
 type: cliente
-riga: Parrucchiere a Nichelino (TO), @designcapelli, 203 follower, dal 2015 in via XXV Aprile, nessun sito. Ha risposto «Buonasera qui grazie» al DM del 20/9: vuole la bozza nel DM.
+riga: Parrucchiere a Nichelino (TO), @designcapelli, 203 follower, dal 2015 in via XXV Aprile, nessun sito. Ha risposto «Buonasera qui grazie» al DM del 20/9. Bozza online su designcapelli.netlify.app dal 21/9, il DM col link e' di Patrick.
 status: lead
 progetti: [sito-designcapelli]
 updated: 2026-09-21
@@ -44,6 +44,11 @@ DM di Patrick il **20/09/2026 alle 22:51**, gancio «dieci anni nello stesso
 posto». Lei ha risposto alle **23:04**: *«Buonasera qui grazie»* — la bozza la
 vuole **nel DM**, non al telefono. Registrata in
 `02-Sales/liste/risposte-dm.csv`.
+
+## La bozza
+
+Online su **<https://designcapelli.netlify.app>** dal 21/09/2026, tre sbarramenti
+verificati. **Il DM col link lo manda Patrick**, e lei lo aspetta nel DM.
 
 ## Cosa serve chiederle
 

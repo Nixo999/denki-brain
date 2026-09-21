@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura.
-updated: 2026-09-19
+updated: 2026-09-21
 verificato: 2026-09-16
 source: denkicode
 tags: [stato, fatti]
@@ -107,6 +107,14 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   metodo «prima i competitor»: contenuto solo da profilo + [[competitor-siti-nail]],
   niente inventato. Manca il DM col link (Patrick, con
   le domande su prezzi, orari, indirizzo) → [[sito-adelinanails]], [[adelina-nails]]
+- **Design Capelli** (parrucchiere di Daniela Cantello, Nichelino TO, `@designcapelli`)
+  ha risposto **«Buonasera qui grazie»** al DM di Patrick del 20/09: vuole la
+  bozza nel DM. Online su `designcapelli.netlify.app` (21/09), mondo «la luce
+  della via» — la pagina schiarisce di un tono a sezione — 8/8, slop 0, tre
+  sbarramenti con `curl`. Recensioni Google vere (4,5 su 21). ⚠️ **Gli orari
+  confliggono** fra PagineGialle e Fresha: Patrick li fa confermare a Daniela
+  prima del go-live. **Il DM col link è di Patrick** → [[sito-designcapelli]],
+  [[design-capelli]]
 - **denki-agents**: piattaforma multi-agente interna. **La fase 1, il gateway,
   è chiusa** (16/09): le cinque prove della definizione di fatto passano con
   chiamate vere sul Mac, Postgres e LiteLLM in Docker, commit solo locali.
