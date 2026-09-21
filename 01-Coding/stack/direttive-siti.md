@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-09-20
+updated: 2026-09-21
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 21/09/2026 — Nicola: «sostituisci desing capelli con il loro logo»
+
+Giro 3 di Design Capelli: il nome era composto in Pinyon Script, scelto su specimen contro cinque corsivi, come ricostruzione fedele del corsivo della foto profilo. Non basta: dove sta il marchio del cliente ci va il suo file originale, anche se e' piccolo o e' solo un'avatar di Instagram. Supera la parte della direttiva del 19/09 «prendi il logo, ricostruiscilo tu e mettilo», che resta valida solo quando del logo esiste soltanto una foto dell'insegna scattata di sbieco
 
 ### 20/09/2026 — Nicola: «lo sfondo a pavimento toglilo, metti qualcosa di beige ma più sfondo piatto, basta provare con quell'idea lì»
 
