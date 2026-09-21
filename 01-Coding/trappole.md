@@ -452,6 +452,15 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## CSS e layout
 
+- `[TRAPPOLA]` **L'endpoint multi-famiglia di Fontshare serve la famiglia
+  sbagliata, e il testo cade sul serif di sistema senza dire niente.** Chiedendo
+  `?f[]=cabinet-grotesk&f[]=gambetta` in un solo `<link>` torna **Satoshi** al
+  posto della seconda famiglia: `font-family: Gambetta` non trova niente e il
+  browser ripiega in silenzio, quindi la pagina *sembra* solo un po' diversa. →
+  **un `<link>` separato per ogni famiglia di Fontshare**, e dopo si controlla
+  con `document.fonts.check()` che la famiglia chiesta sia davvero caricata.
+  (21/09/2026, [[sito-designcapelli]])
+
 - **Fra il punto in cui finisce lo scorrimento del telefono e quello in cui
   parte la griglia larga si apre una fascia senza nessuna delle due.** Su
   Barbershop SNIA, fra 761 e 900 px, ogni foto prendeva uno schermo intero e la
@@ -700,6 +709,22 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   e vanno scritti come due messaggi diversi.
 
 ## Scraping
+
+- `[TRAPPOLA]` **In zsh una variabile di ciclo che si chiama `path` cancella il
+  `PATH`.** `while IFS='|' read -r q host path name` e dalla riga dopo `curl`,
+  `ls` e `sed` rispondono `command not found`: in zsh `path` è l'array legato a
+  `PATH`, e assegnarlo lo sostituisce. → nei cicli non si usano `path`, `cdpath`,
+  `fpath`, `manpath`. (21/09/2026, [[sito-designcapelli]])
+
+- `[TRAPPOLA]` **Da Instagram senza login si scende a 640 px e non più in giù,
+  e l'URL è firmato.** Cambiare `s640x640` in `s1080x1080` dentro `stp=` fa
+  rispondere al CDN **`URL signature mismatch`** e scrive un file di 22 byte con
+  quel testo dentro — non un JPEG rotto, proprio un file finto. La pagina del
+  singolo post rimanda al login e anche il suo `og:image` è a 640. → o si accetta
+  che le foto sono sotto il minimo di 1080 e **il sito non dipende da loro**, o
+  si chiedono gli originali al cliente. E dopo ogni scaricamento si controlla con
+  `sips -g pixelWidth`: un file da 22 byte non è una foto.
+  (21/09/2026, [[sito-designcapelli]])
 
 - **Gli URL delle foto Instagram scadono** (firme CDN a giorni). → si scaricano
   in locale subito, nella stessa sessione.
