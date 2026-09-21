@@ -62,6 +62,17 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Catture e verifica in headless
 
+- `[TRAPPOLA]` **Uno zero di `grep -c` su un `curl` non distingue «non c'è»
+  da «non è arrivato niente».** Sei giri su `vbag.it/styles.css` davano `0`
+  occorrenze della regola nuova e l'ho riferito come «forse il deploy non è
+  mai andato online»: le risposte erano **vuote**, `shasum` a `da39a3ee5e6b`,
+  che è l'hash della stringa vuota. Il giro dopo la regola c'era, 11 volte —
+  Nicola stava giudicando il sito vero, e gli ho detto il contrario. → un
+  conteggio a zero si legge **insieme alla lunghezza della risposta**: si
+  scarica il file (`curl -o`) e si fa `diff` con quello locale, oppure si
+  stampa anche `wc -c`. Un `grep -c` da solo su una risposta di rete non è una
+  misura. (21/09/2026, sito V-BAG)
+
 - `[TRAPPOLA]` **Un'apertura che vive sotto `.js` compare mezzo secondo dopo la
   pagina, e le cade sopra.** `.js` lo metteva il boot in fondo al body, che sta
   **dietro ai due `<script src>` di GSAP**: con la CDN fredda i fotogrammi erano
