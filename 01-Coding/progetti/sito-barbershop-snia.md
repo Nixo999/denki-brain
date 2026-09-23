@@ -720,7 +720,7 @@ scroll, riapertura, bottone). Commit `b51a995`, pushato.
 `<dialog>` modale: né Esc né le frecce arrivavano, e sembrava un difetto del
 sito. La tastiera si prova con CDP → [[trappole]].
 
-## Giro 18 — 23/09: il prima e dopo del trapianto
+## Giro 19 — 23/09: il prima e dopo del trapianto
 
 > «aggiungi una foto alla sezione trapianti… qualcuno senza capelli… e poi
 > scorrendo sulla foto ci sia l'effetto prima e dopo, il dopo sempre la stessa
@@ -746,7 +746,7 @@ Tirana quello di un altro. ⬜ **Prima del go-live**: il prima/dopo in una
 pubblicità sanitaria va controllato; la soluzione pulita è una coppia vera
 della clinica, col consenso del paziente, che prende il posto di questa.
 
-8/8, slop 0, overflow 0 a 375 e 1024, console pulita. Commit `48ca1c4`, pushato.
+8/8, slop 0, overflow 0 a 375 e 1024, console pulita. Commit `065960d`, pushato dopo un rebase sul giro 18 (`b51a995`, visore delle foto), che non avevo tirato giù prima di cominciare: conflitti solo additivi, tenuti tutti e due, e un `})();` del visore perso nella fusione e rimesso.
 
 ## Non verificato, e aperto
 
