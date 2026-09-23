@@ -720,6 +720,34 @@ scroll, riapertura, bottone). Commit `b51a995`, pushato.
 `<dialog>` modale: né Esc né le frecce arrivavano, e sembrava un difetto del
 sito. La tastiera si prova con CDP → [[trappole]].
 
+## Giro 18 — 23/09: il prima e dopo del trapianto
+
+> «aggiungi una foto alla sezione trapianti… qualcuno senza capelli… e poi
+> scorrendo sulla foto ci sia l'effetto prima e dopo, il dopo sempre la stessa
+> persona ma con i capelli»
+
+**Le foto non sono nostre né generate**: coppia di **Kevin Ende, Wikimedia
+Commons, pubblico dominio** («Man before/after receiving hair transplant»),
+prima e dopo in due file. Allineate a mano sulle pupille — stessa inclinazione,
+il dopo scalato di 1,052 — e ritagliate in 4:5 con `sips`; controllo con
+sovrapposizione in `mix-blend-mode: difference`. Resta uno scarto minimo sulla
+bocca (nel dopo il viso è un poco più lungo).
+
+**L'effetto**: il dopo scende dall'alto legato allo scroll, così i capelli
+compaiono per primi. Sopra i 900 px la foto è `sticky` e conta lo scorrimento
+della sezione; sotto, il passaggio della foto. Una variabile `--p` e un
+`clip-path`, senza librerie. A riposo (cattura, reduced-motion, senza JS) resta
+a metà con «prima» e «dopo» visibili. Il riquadro del pacchetto è passato sotto
+il testo; il paragrafo col prezzo, doppione, è uscito.
+
+⚠️ **Didascalia obbligata**: «Immagine dimostrativa, non un paziente della
+struttura». Senza, la pagina farebbe passare per un risultato della clinica di
+Tirana quello di un altro. ⬜ **Prima del go-live**: il prima/dopo in una
+pubblicità sanitaria va controllato; la soluzione pulita è una coppia vera
+della clinica, col consenso del paziente, che prende il posto di questa.
+
+8/8, slop 0, overflow 0 a 375 e 1024, console pulita. Commit `48ca1c4`, pushato.
+
 ## Non verificato, e aperto
 
 - ✅ **Link buono dal 18/09: <https://barber-shop-snia.netlify.app>**. Il vecchio <https://barbershop-snia.netlify.app>, repo
