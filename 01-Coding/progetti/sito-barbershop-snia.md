@@ -748,6 +748,22 @@ della clinica, col consenso del paziente, che prende il posto di questa.
 
 8/8, slop 0, overflow 0 a 375 e 1024, console pulita. Commit `065960d`, pushato dopo un rebase sul giro 18 (`b51a995`, visore delle foto), che non avevo tirato giù prima di cominciare: conflitti solo additivi, tenuti tutti e due, e un `})();` del visore perso nella fusione e rimesso.
 
+### Giro 19-bis — 23/09: la foto si ferma al centro
+
+> «rimpicciolisci un po' la foto… allo scroll appena ci arrivo l'animazione
+> parte troppo presto e me la perdo per quando la foto è al centro»
+
+La foto passa a 380 px (300 da telefono) e si ferma col **centro a metà
+schermo**; il dopo scende solo mentre è ferma. Misurato a 1024 e a 375:
+avanzamento 0 finché la foto non è centrata, da 0 a 1 con il centro fermo al
+50 per cento, poi la pagina riparte. La corsa è la colonna a fianco del testo;
+da telefono uno spazio di 70vh sotto la foto.
+
+⚠️ **Trappola pagata**: la sosta da telefono era un `padding-bottom`, e la foto
+scorreva via lo stesso — **un elemento `sticky` non entra nel padding del suo
+contenitore**. Serve contenuto vero: un `::after` alto 70vh → [[trappole]].
+Commit `753c8a1`, pushato.
+
 ## Non verificato, e aperto
 
 - ✅ **Link buono dal 18/09: <https://barber-shop-snia.netlify.app>**. Il vecchio <https://barbershop-snia.netlify.app>, repo

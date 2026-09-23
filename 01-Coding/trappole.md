@@ -497,6 +497,12 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## CSS e layout
 
+**`sticky` non entra nel padding del contenitore.** Su [[sito-barbershop-snia]]
+(23/09) la foto del prima e dopo doveva restare ferma per 70vh sotto di sé: con
+`padding-bottom:70vh` sul contenitore scorreva via lo stesso, perché lo sticky
+è vincolato al content box. Funziona con contenuto vero, un `::after` con
+`display:block;height:70vh`.
+
 - `[TRAPPOLA]` **L'endpoint multi-famiglia di Fontshare serve la famiglia
   sbagliata, e il testo cade sul serif di sistema senza dire niente.** Chiedendo
   `?f[]=cabinet-grotesk&f[]=gambetta` in un solo `<link>` torna **Satoshi** al
