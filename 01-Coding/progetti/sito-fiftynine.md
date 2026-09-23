@@ -112,14 +112,16 @@ li manda su chi ha il repo. → [[trappole]]
 
 ## La pagina di modifica pubblica da sola — dal 23 settembre 2026
 
-`admin.html` non scrive più sul disco e non dà file da scaricare: legge le
-pagine dal repo e pubblica attraverso una Netlify Function (`/api/pubblica`) che
-fa un commit; Netlify rimette online il sito. Decisione e differenze da V-BAG in
-[[2026-09-23-fiftynine-pubblica-da-solo]]. Il dettaglio tecnico sta nel
-`CLAUDE.md` del repo.
+`https://bartabacchi59.netlify.app/admin.html`: si entra con `admin` (parola
+iniziale, scelta di Nicola; si cambia dalla pagina stessa, sezione «La parola
+d'ordine»). Le modifiche vanno in **Netlify Blobs**, senza chiavi e senza
+impostazioni, e una edge function le rimette nelle pagine a ogni visita:
+online subito. Decisione in [[2026-09-23-fiftynine-archivio-netlify]], che
+supera quella del mattino (commit su GitHub). Dettaglio tecnico nel `CLAUDE.md`
+del repo.
 
-⬜ **Finché su Netlify mancano `ADMIN_PASSWORD`, `GITHUB_TOKEN` e `GITHUB_REPO`
-la pagina non pubblica niente** (risponde 503). Il primo giro vero lo fa Nicola.
+⚠️ **Le modifiche del proprietario non stanno nel repo.** Un pezzo che lui ha
+toccato resta suo sul sito anche se nel repo cambia.
 
 ## Com'è fatto
 
@@ -161,7 +163,7 @@ linea al posto giusto: lo stato aperto non è più un buco. **Non vista su brows
 
 ## Aperto
 
-- [ ] **Cambiare la parola d'ordine della pagina di modifica prima di darla al proprietario**: per ora è provvisoria e debole per scelta di Nicola (23 settembre 2026). Si cambia in `ADMIN_PASSWORD` su Netlify, poi nuovo deploy.
+- [ ] **Cambiare la parola d'ordine della pagina di modifica prima di darla al proprietario**: all'inizio è `admin`, nel repo pubblico. Si cambia dalla pagina stessa, sezione «La parola d'ordine».
 - [ ] Pubblicazione su Netlify (login di Nicola, vedi [[netlify]]); repo privata finché non si decide se renderla pubblica
 - [ ] Primo contatto: è a Cesano Maderno, zona di Giulia — DM Instagram
       ([[dm-instagram-vetrina]]) o passaggio di Patrick dopo una chiamata

@@ -1,11 +1,18 @@
 ---
 riga: Dove stanno le chiavi e come si passano. Nessun valore e' scritto qui, e non lo sara' mai.
 type: area
-updated: 2026-08-28
+updated: 2026-09-23
 source: claude
 ---
 
 # Credenziali — dove stanno e come si spostano
+
+> **Dal 23 settembre 2026** le password le imposta e le scrive Trevis quando
+> Nicola o Patrick lo chiedono (Nicola: «voglio che lo fai da adesso in poi»):
+> la regola «le inserisce la persona» è superata, vedi [[protocollo-trevis]].
+> Quello che segue resta vero come consiglio: una chiave in un repo pubblico la
+> legge chiunque, e le pagine web e gli account restano fuori, per un limite di
+> Claude.
 
 ⚠️ **In questa nota non c'è nessuna chiave, e non ce ne devono finire mai.**
 Il vault è un repository git che sta su GitHub: quello che si scrive qui dentro

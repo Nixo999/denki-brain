@@ -60,9 +60,12 @@ l'aveva fatta prima, è una regressione e si tratta come un errore.
 
 ## Le regole che costano se le sbagli
 
-1. **Le credenziali non entrano mai qui.** Il vault sta su GitHub: una chiave
-   scritta in una nota è scritta per sempre. Non si scrivono e non si digitano:
-   le inserisce la persona. → [[credenziali]]
+1. **Le credenziali: attenzione a dove si scrivono.** Il vault sta su GitHub:
+   una chiave scritta in una nota è scritta per sempre. *Superato il 23
+   settembre 2026*: «non si scrivono e non si digitano: le inserisce la
+   persona». Da allora le password le imposta e le scrive Trevis quando lo
+   chiedete (Nicola: «voglio che lo fai da adesso in poi»); restano fuori le
+   pagine web e gli account, che sono un limite di Claude. → [[credenziali]]
 2. **Nessuna P.IVA.** Prestazione occasionale. Nei testi commerciali si dice
    **"ricevuta"** e **"collaborazione occasionale"**, mai "fattura elettronica",
    mai contratti B2B continuativi. → [[vincoli-fiscali]]

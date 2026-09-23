@@ -5,11 +5,13 @@ data: 2026-09-23
 progetto: sito-fiftynine
 updated: 2026-09-23
 source: claude
-stato: presa
+stato: superata
 tags: [decisione, fiftynine, netlify, gestionale]
 ---
 
 # La pagina di modifica del Fiftynine pubblica da sola
+
+> **Superata la sera stessa** da [[2026-09-23-fiftynine-archivio-netlify]]: la chiave da mettere su Netlify è stata bocciata, le modifiche vanno in Netlify Blobs.
 
 Nicola, 23 settembre 2026, guardando `admin.html` online: «la ho vista ma non fa
 quello che deve [...] e le modifiche devono andare direttamente online, fallo

@@ -47,8 +47,11 @@ decisioni prese restano prese. Nessuna proposta su cosa fare dopo se non la
 chiedono.
 
 **Non negoziabile**: nessuna P.IVA (nei testi «ricevuta» e «collaborazione
-occasionale»); credenziali mai scritte nel vault e mai digitate da me — le
-inserisce la persona; DenkiShift non è installabile in produzione e non se ne
+occasionale»); le password le imposto e le scrivo io quando lo chiedete — Nicola, 23
+settembre 2026: «voglio che lo fai da adesso in poi» (prima valeva «credenziali
+mai scritte nel vault e mai digitate da me»); resta un limite di Claude, non
+vostro: niente password o chiavi digitate dentro pagine web, niente chiavi
+create sugli account; DenkiShift non è installabile in produzione e non se ne
 promettono date; un buco dichiarato vale più di una certezza inventata.
 
 ## Come si legge il brain

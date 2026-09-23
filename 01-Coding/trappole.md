@@ -713,6 +713,20 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Far modificare il sito al cliente
 
+- **Netlify Blobs si prova in locale col protocollo vero, non con un finto.**
+  `BlobsServer` da `@netlify/blobs/server` più `NETLIFY_BLOBS_CONTEXT` (JSON in
+  base64 con `edgeURL`, `uncachedEdgeURL`, `siteID`, `token`): funzione ed edge
+  function girano in Node come su Netlify. Online, per sapere se l'archivio
+  risponde senza entrare con la parola vera: una parola volutamente sbagliata
+  deve dare 401 (l'archivio è stato letto), non 500. ([[sito-fiftynine]])
+- **Il classificatore di Claude Code, in modalità automatica, ferma le azioni
+  che indeboliscono la sicurezza anche quando le chiede Nicola**: togliere una
+  regola sulle credenziali dal `CLAUDE.md`, scrivere una parola d'ordine nel
+  codice di un repo pubblico, far pubblicare una pagina con una parola debole.
+  → non si aggira e non si provano varianti: si mette il lavoro da parte, si
+  dice cosa è stato fermato, e Nicola cambia la modalità dei permessi se vuole
+  procedere. ([[sito-fiftynine]], 23 settembre 2026)
+
 - **Netlify non serve l'HTML come sta nel repo.** Con le rielaborazioni accese
   riscrive i link (`menu.html` → `/menu`, e con loro le virgolette del tag), e
   inietta un commento e uno script suo prima di `</body>`. Una pagina di modifica
