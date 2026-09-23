@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-09-21
+updated: 2026-09-23
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 23/09/2026 — Nicola: «la ho vista ma non fa quello che deve, deve poter modificare le foto direttamente da li e e anche i meni e anche le scrtte sotto i piatti del menu e delle promozioni tipo quella dell aperitivo, e le modifiche devono andare direttamente online, fallo cosi»
+
+La pagina di modifica del Fiftynine (admin.html) scriveva sul disco o consegnava i file da scaricare, e andava online solo quando Nicola faceva il commit: bocciata. Una pagina di modifica per il cliente pubblica da sola.
 
 ### 21/09/2026 — Nicola: «smettila di usare pizzeria labidu come esempio in tutti i siti»
 
