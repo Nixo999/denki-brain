@@ -161,6 +161,7 @@ linea al posto giusto: lo stato aperto non è più un buco. **Non vista su brows
 
 ## Aperto
 
+- [ ] **Cambiare la parola d'ordine della pagina di modifica prima di darla al proprietario**: per ora è provvisoria e debole per scelta di Nicola (23 settembre 2026). Si cambia in `ADMIN_PASSWORD` su Netlify, poi nuovo deploy.
 - [ ] Pubblicazione su Netlify (login di Nicola, vedi [[netlify]]); repo privata finché non si decide se renderla pubblica
 - [ ] Primo contatto: è a Cesano Maderno, zona di Giulia — DM Instagram
       ([[dm-instagram-vetrina]]) o passaggio di Patrick dopo una chiamata
