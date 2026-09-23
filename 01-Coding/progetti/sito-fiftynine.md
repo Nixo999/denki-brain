@@ -6,7 +6,7 @@ client: bar-tabacchi-fiftynine
 stack: [html, netlify]
 started: 2026-09-01
 deadline: TODO
-updated: 2026-09-16
+updated: 2026-09-23
 source: claude
 valore: TODO
 incassato: 0
@@ -23,7 +23,7 @@ Cliente: [[bar-tabacchi-fiftynine]] — nato come bozza al buio il 1° settembre
 il proprietario ha mandato il menù in PDF**: da lì è una trattativa.
 
 **Repo**: `github.com/Nixo999/fiftynine-site` (privato) **e `github.com/Nixo999/bartabaccheria59` (pubblico)** — sul Mac di Nicola si lavora in `~/lavoro/bartabaccheria59`, che ha il `pushurl` doppio e scrive su tutti e due; `~/lavoro/fiftynine-site` e` una copia che si allinea con `git pull`
-**Online**: **si', su `https://bartabacchi59.it`** — dominio suo, non un indirizzo di anteprima (verificato il 12 settembre 2026: risponde 200 e serve il sito, titolo «Bar Tabacchi Fiftynine e Pizzeria — Cesano Maderno»). Sito Netlify `bartabacchi59` sull'account `denkicode`, pubblica dal repo. Fino al 9 settembre non lo era, e la riga qui diceva il contrario: corretta. Da qui e' in galleria su [[sito-denkicode]]
+**Online**: **sì, https://bartabacchi59.netlify.app** (verificato il 23 settembre 2026), collegato a GitHub: ogni push o pubblicazione dalla pagina di modifica si vede in circa 10 secondi. Il sito resta `noindex`.
 **Stack**: HTML puro, un solo `index.html`, zero build. `netlify.toml` e
 `robots.txt` con lo schema di NG Barber: **noindex** finché il sito non è loro.
 
@@ -109,6 +109,17 @@ del repo, scritto lo stesso giorno.
 computer con Chrome la pagina scrive da sé nella cartella; da Safari o da
 telefono consegna i file da scaricare. In tutti e due i casi va online quando
 li manda su chi ha il repo. → [[trappole]]
+
+## La pagina di modifica pubblica da sola — dal 23 settembre 2026
+
+`admin.html` non scrive più sul disco e non dà file da scaricare: legge le
+pagine dal repo e pubblica attraverso una Netlify Function (`/api/pubblica`) che
+fa un commit; Netlify rimette online il sito. Decisione e differenze da V-BAG in
+[[2026-09-23-fiftynine-pubblica-da-solo]]. Il dettaglio tecnico sta nel
+`CLAUDE.md` del repo.
+
+⬜ **Finché su Netlify mancano `ADMIN_PASSWORD`, `GITHUB_TOKEN` e `GITHUB_REPO`
+la pagina non pubblica niente** (risponde 503). Il primo giro vero lo fa Nicola.
 
 ## Com'è fatto
 

@@ -1,7 +1,7 @@
 ---
 riga: Una riga per intervento - chi, quando, progetto, repository e QUALE DATABASE. La colonna database e' il motivo del file.
 type: risorsa
-updated: 2026-09-18
+updated: 2026-09-23
 source: denkicode
 tags: [registro, interventi, repo, database]
 ---
@@ -37,6 +37,12 @@ pubblicato senza la sua migrazione apre un tabellone vuoto.
 Colonne: **Quando** (data e ora) · **Chi** (persona, e `+claude` se il lavoro è
 stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 (`—` se non toccato, `sviluppo`/`produzione` + stato) · **Cosa** · **Commit**.
+
+## 2026-09-23
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| pomeriggio | Nicola +claude | [[sito-fiftynine]] | `bartabaccheria59` (push doppio, `51c00d3` su tutti e due) | — | **La pagina di modifica pubblica da sola.** Bocciata la versione che scriveva sul disco o dava i file da scaricare («le modifiche devono andare direttamente online»). Netlify Function `/api/pubblica`: legge le pagine dal repo, riceve quelle nuove e le foto, **un commit solo** con la Git Data API; Netlify rimette online il sito (misurato: 10 secondi). Stessa strada di V-BAG, con le differenze in [[2026-09-23-fiftynine-pubblica-da-solo]]. Fallisce chiusa (online adesso risponde **503 non-configurato**), la parola d'ordine non permette di scrivere fuori dai pezzi marcati né di aggiungere codice, 409 se il ramo si è mosso. `prova-pubblica.mjs` 30 su 30, ogni controllo tolto a turno viene notato; il corpo prodotto dal browser passa dalla funzione vera con 200; `prova-admin` 42 su 42. ⚠️ **Netlify rielabora l'HTML servito** (link a `menu.html` riscritti in `/menu`, commento e script iniettati): la versione di prima leggeva quello, e riscriverlo avrebbe sporcato il repo. Uscito anche `59e2a7f` (orari e scritte) di un'altra sessione, rimasto a terra dal 16. ⬜ **Resta a Nicola**: `ADMIN_PASSWORD`, `GITHUB_TOKEN`, `GITHUB_REPO` su Netlify e un nuovo deploy. | `51c00d3` |
 
 ## 2026-09-16
 

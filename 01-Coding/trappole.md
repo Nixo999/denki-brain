@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Errori tecnici già pagati e strade scartate, per dominio. Descrittivo, non è un rulebook - le regole stanno in convenzioni.
-updated: 2026-09-16
+updated: 2026-09-23
 verificato: 2026-09-10
 source: denkicode
 tags: [trappole, memoria, frontend, gsap, git]
@@ -712,6 +712,15 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   ([[sito-newfantasy]], 16 settembre)
 
 ## Far modificare il sito al cliente
+
+- **Netlify non serve l'HTML come sta nel repo.** Con le rielaborazioni accese
+  riscrive i link (`menu.html` → `/menu`, e con loro le virgolette del tag), e
+  inietta un commento e uno script suo prima di `</body>`. Una pagina di modifica
+  che legge l'HTML dal sito e lo riscrive nel repo lo sporca a ogni salvataggio,
+  e gli script iniettati si moltiplicano. → **si legge dal repo** (Contents API
+  con `accept: application/vnd.github.raw+json`), mai dal sito; e per sapere se
+  un deploy è arrivato non si confronta il file intero, si cerca un segno
+  scritto apposta (una `meta` con la versione). ([[sito-fiftynine]])
 
 - **Con uno store a file, pubblicare vuol dire fare un commit.** Un sito statico
   non scrive su sé stesso: `dati/*.json` più le foto è la soluzione più leggera e
