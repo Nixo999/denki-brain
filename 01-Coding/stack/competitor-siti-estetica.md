@@ -1,7 +1,7 @@
 ---
 type: risorsa
-riga: 13 siti di centri estetici (5 locali AL/VC/AT, 5 boutique italiane, 3 specialistici) - sezioni, info reali, stile, scaletta per Dragonfly.
-updated: 2026-09-18
+riga: 18 siti di centri estetici (5 locali AL/VC/AT, 5 boutique italiane, 3 specialistici, 5 Torino collina) - sezioni, info reali, stile, per Dragonfly e Lei Beauty Room.
+updated: 2026-09-24
 source: claude
 tags: [siti, estetica, competitor, ricerca]
 ---
@@ -10,6 +10,10 @@ Raccolto il 18/09/2026 con WebSearch/WebFetch per il sito vetrina di **Dragonfly
 Beauty & Relax** (Casale Monferrato). **Non verificato a mano**: prima di citare
 un sito per nome si riapre. Home + al massimo una pagina servizi/listino per
 sito, per budget di token.
+
+Aggiunta del 24/09/2026: sezione 4, 5 siti di Torino città/prima collina, per il
+sito vetrina di **Lei Beauty Room** (Torino Cavoretto, fascia medio-alta).
+Stesso metodo, stesso schema di riga per sito.
 
 ## 1. Locali (Casale Monferrato, Alessandria, Vercelli, Asti — Valenza scartata: solo pagine Facebook, nessun sito indipendente raggiungibile)
 
@@ -71,6 +75,28 @@ Info reali: indirizzo sì, orari no, prezzi no, titolare Federica Fochesato, per
 Info reali: camera HD 20MP, multispettrale, **14 indicatori di pelle in 25 secondi**, report con AI/simulazione 3D, confronto fotografico nel tempo, **prezzo promo dichiarato** ("19€" per l'analisi in una finestra promo).
 Scrittura: diretta, seconda persona, frasi corte; titolo: "Un'analisi completa e precisa in pochi secondi".
 
+## 4. Torino, 24/09/2026 (Torino città e prima collina, per Lei Beauty Room — Cavoretto)
+
+**Isidea Studio di Estetica e Benessere** (Corso Casale, ai piedi della collina verso Gran Madre/Cavoretto) — isideastudioestetica.it — sezioni: home/benvenuti > chi siamo > trattamenti corpo (4) > trattamenti viso (3) > fiori di Bach > promozioni e news > contatti/mappa > offerte.
+Info reali: indirizzo sì (C. Casale 170), orari no, prezzi no, prenota **solo WhatsApp** (form di contatto segnato esplicitamente "NO PRENOTAZIONI"), titolare Rossella Carnevale nominata e raccontata (dal 2016, 15+ anni di esperienza), zero recensioni/FAQ/certificazioni.
+Scrittura: mista prima/terza persona, registro naturale-olistico (Dea Iside, fiori di Bach, Shiatsu, "benessere a 360°"); foto hero e trattamenti sono **stock** riconoscibili (modella con fiore tra i capelli, candele, pietre) non scatti reali del centro.
+
+**Nova Estetica — Torino Gran Madre** (Piazza Gozzano, Gran Madre/collina) — nova-estetica.it — sito di catena multi-sede: home generica (hero + "cosa dicono di noi") > pagina-sede separata (solo indirizzo/mail/telefono/orari) > pagine comuni trattamenti e prenotazione.
+Info reali: orari sì per la sede, indirizzo sì, prezzi no (11 trattamenti/tecnologie elencati, zero euro), prenota solo con **form unico** (menu a tendina "scegli il tuo centro" fra 7 sedi Piemonte+Marche, tra cui una seconda sede Torino in Corso Moncalieri, Cavoretto), titolare non nominata per la sede di Torino, 5 testimonianze in home non filtrate per sede (una cita Verbania).
+Scrittura: enfasi tutta tecnologica (Ultrasuono, Onde d'Urto, Radiofrequenza, Stimolipo, Nova Sphere, Novatonic, Dôme), zero calore locale; la pagina-sede è puro NAP, nessun contenuto proprio del quartiere.
+
+**Hintime Point Crocetta** (Corso Filippo Turati, Crocetta) — hintimepointcrocetta.it — sezioni: hero (CTA "Nuova Cliente") > presentazione centro > promo del mese > 3 trattamenti in evidenza > 5 categorie trattamenti > testimonial > FAQ (4) > form prenotazione > footer.
+Info reali: indirizzo sì, orari no, prezzo solo sulla promo (epilazione laser "9€ a seduta, prime 3 sedute"), prenota form/telefono/WhatsApp (nessuna piattaforma di booking), team anonimo ("Personal Beauty Trainer" formate dall'Academy Hintime), 3 recensioni Google nominative, marchi Time Skin Care + laser diodo 808 + EMS.
+Scrittura: seconda persona informale ("Regalati un momento", "Basta cerette e rasoi!"), tono da franchise/academy, zero foto di interni o del team.
+
+**Rita Estetica** (Corso Massimo d'Azeglio, San Salvario/lungo Po) — ritaestetica.it — sezioni: hero > "oasi di benessere" > trattamenti > contatti > promo "Lisce per sempre" > buoni regalo > loghi marchi partner > footer.
+Info reali: orari sì (mar-ven 9:30-19:30, sab 9-17:30, chiuso dom/lun), indirizzo sì, prezzi no, **nessuna prenotazione online**, solo telefono ed email personale (dominio non aziendale), titolare non nominata, marchi Dibi/EpilZero/LPG/OPI, zero recensioni.
+Scrittura: imperativo motivazionale ("abbi cura del tuo corpo perché è l'unico posto in cui ci resterai"), claim "oasi di benessere" — già nella lista delle frasi fatte da non usare di questa nota.
+
+**Centro EQB** (Largo Re Umberto, Crocetta) — centroeqb.it — sezioni: home > chi siamo > servizi > donna > uomo > relax > news > contatti.
+Info reali: orari sì (lun 9:30-17:30, mar-ven 9:30-20, sab 9-17), indirizzo sì, prezzi no, nessuna prenotazione online (telefono/email), team non nominato ("alta professionalità delle nostre estetiste"), zero marchi/macchinari citati per nome, zero recensioni.
+Scrittura: elegante ma generica, il più povero di visivo dei 5 (logo + una sola immagine tema relax stock).
+
 ## Sintesi
 
 **1. Obbligatorie** (su 12 home confrontabili, esclusa la sola pagina-tecnologia di Di Donato): indirizzo esplicito 12/12, titolare nominata 11/12, un canale di contatto diretto (tel/whatsapp/email) 12/12, marchi o macchinari citati (anche generici) 7/12, orari pubblicati 6/12. Sotto soglia ma degni di nota: recensioni Google 5/12, listino con prezzi in home 0/12 (chi ha un listino lo linka a parte: A&B, Estetica Cinzia), FAQ 1/12, certificazioni 1/12 (solo Piede Sano, perché è anche uno studio medico).
@@ -94,3 +120,5 @@ Scrittura: diretta, seconda persona, frasi corte; titolo: "Un'analisi completa e
 10. Contatti/mappa in footer.
 
 **Buchi da colmare con Dragonfly, non da inventare**: nome e formazione della titolare, orari reali, marchi/macchinari usati (skin analyzer compreso — modello e cosa misura), se e come si mostra un prezzo, recensioni Google esistenti.
+
+**6. Torino collina (24/09/2026) contro la provincia**: i prezzi si vedono **meno**, non di più — 0/5 pubblicano un listino o un "a partire da" in home (contro 2/12 in provincia che linkano un listino a parte), l'unico numero è la promo-civetta di Hintime; la fascia medio-alta non passa dal sito, quindi va costruita apposta per Lei Beauty Room, non copiata. Il tono è **più distante**, non più formale: 3 siti su 5 sono catena/academy/minimal-corporate (Nova, Hintime, EQB) contro un tessuto di provincia fatto quasi solo di titolari singole; solo 1/5 (Isidea) nomina e racconta la titolare, contro 11/12 in provincia — è il buco più netto rispetto al modello A&B/La Maison. La prenotazione resta manuale ovunque: nessuno dei 5 ha una piattaforma di booking sul proprio sito (WhatsApp o form, mai un bottone Fresha/Treatwell integrato) — stesso limite della provincia. In hero prevale la **foto stock riconoscibile** (modella, candele, pietre) o l'immagine-tecnologia da catalogo, mai un interno reale del centro: sul visivo Torino collina è più debole della provincia, non più curata.
