@@ -6,7 +6,7 @@ client: sebastian-torres
 stack: [react-19, typescript, vite-8, tailwind-3, react-router-7, tanstack-query, supabase, capacitor-6]
 started: 2026-07-20
 deadline: TODO
-updated: 2026-09-11
+updated: 2026-09-24
 source: repo
 valore: 2400
 incassato: 400
@@ -131,6 +131,7 @@ rinunciate**, e la differenza la nota il cliente, non noi.
 | 2026-08-22 | **XML SDI richiesto di nuovo** → [[2026-08-22-xml-sdi-da-quotare]] |
 | 2026-08-25/27 | Tre liste di segnalazioni in tre giorni |
 | 2026-08-29 | **OperO Choice**: messaggio a schermo pieno scelto dal Super Admin. Chiesto a voce, non esiste in OperO 1 → **lavoro nuovo da quotare**, come l'XML SDI |
+| 2026-09-24 | **Intermediar + Receive**: specifica di 40 punti per la collaborazione fra aziende. Seba: farla conoscere, **non iniziarla** → [[opero-intermediar-receive]]. Lavoro nuovo, il più grosso finora |
 
 ## Il ritmo attuale, e cosa dice
 
@@ -166,8 +167,10 @@ misurando con `getComputedStyle` / `getBoundingClientRect`. Vedi [[convenzioni]]
 - [ ] Lavoratori provvisori (4 tabelle + edge function)
 - [ ] Applicare la migrazione `20260826110000` (trigger finestra)
 - [ ] Decidere una data di go-live e dirla al cliente
+- [ ] **Intermediar + Receive**: fermo per scelta di Seba. Quando parte, si quota prima del codice → [[opero-intermediar-receive]]
 
 ## Collegamenti
 
 [[sebastian-torres]] · [[stack]] · [[convenzioni]] · [[vincoli-fiscali]] ·
-[[2026-08-11-opero-scope-allargato]] · [[2026-08-22-xml-sdi-da-quotare]]
+[[2026-08-11-opero-scope-allargato]] · [[2026-08-22-xml-sdi-da-quotare]] ·
+[[opero-intermediar-receive]]

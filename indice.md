@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **230 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **232 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -40,6 +40,8 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[denki-agents]] — Piattaforma interna multi-agente - ogni task sul suo modello via LiteLLM, costo di ogni chiamata in Postgres. Fase 1: solo il gateway.
 - [[denkishift-interfaccia]] — ⚠️ Obiettivo dichiarato - un'interfaccia che si venda da sola durante la demo di Patrick, calibrata su due utenti che non sono due gradini dello...
 - [[denkishift]] — Prodotto di punta, turni per squadre a orario variabile. Dimostrabile, NON installabile in produzione.
+- [[opero-intermediar-receive-testo]] — Testo integrale della specifica Intermediar + Receive mandata da Seba il 24/09/2026. La fonte: la sintesi sta in opero-intermediar-receive.
+- [[opero-intermediar-receive]] — ⚠️ Intermediar + Receive, il prossimo pezzo di OperO chiesto da Seba il 24/09 - da conoscere, non da fare. Principi, demo minima, buchi della specifica.
 - [[opero]] — Il prodotto che Sebastian rivende, non un gestionale nostro. Chi tocca il Super Admin tocca il suo conto economico.
 - [[sito-adelinanails]] — Bozza sito per Adelina Nails (Alessandria) in ~/lavoro/adelinanails-site - contenuto solo da profilo + inventario competitor, giro 3 «lacca, oro e rilievo», Melodrama + Grape Nuts, apertura in 4 tempi, 8/8 - online su adelinanails-site.netlify.app dal 19/9 (deploy da GitHub).
 - [[sito-albybike]] — Sito vetrina per Albybike, negozio di biciclette - vendita, assistenza, riparazione, abbigliamento e integratori.

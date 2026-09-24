@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura.
-updated: 2026-09-21
+updated: 2026-09-24
 verificato: 2026-09-16
 source: denkicode
 tags: [stato, fatti]
@@ -115,6 +115,11 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   confliggono** fra PagineGialle e Fresha: Patrick li fa confermare a Daniela
   prima del go-live. **Il DM col link è di Patrick** → [[sito-designcapelli]],
   [[design-capelli]]
+- **OperO, Intermediar + Receive** (24/09/2026): Seba ha mandato la specifica
+  della collaborazione fra aziende e ha chiesto di **conoscerla, non di
+  iniziarla**. Lavoro nuovo, fuori dai 2.400 €. Sei buchi da chiedere a lui
+  quando si parte, il primo è da dove vengono i € dei Conti
+  → [[opero-intermediar-receive]]
 - **denki-agents**: piattaforma multi-agente interna. **La fase 1, il gateway,
   è chiusa** (16/09): le cinque prove della definizione di fatto passano con
   chiamate vere sul Mac, Postgres e LiteLLM in Docker, commit solo locali.
