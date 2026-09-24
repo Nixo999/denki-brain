@@ -1,7 +1,7 @@
 ---
 riga: Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
 type: area
-updated: 2026-09-19
+updated: 2026-09-24
 source: claude
 prodotto: denkishift
 ---
@@ -210,6 +210,10 @@ in [[metriche]]:
 
 
 ## Regole
+
+### 24/09/2026 — Patrick: «elimina la sezione denkishift e i suoi 50 lead. aumenta la sezione siti a 100 lead e quella di ricerca a 60. quindi ora ogni volta che lancio il comando banco, fermo restando le vecchie regole, ora devi generare 100 lead per i siti e 60 per la ricerca.»
+
+da ora /banco costruisce due liste, 100 siti e 60 ricerca, e DenkiShift esce dal banco. Supera il 50-50-50 del 12 settembre solo nei numeri e nel numero di liste: zone, settori e niente scuse restano come prima
 
 ### 19/09/2026 — Patrick: «Come sempre hai fatto solo siti e non le altre due.»
 
