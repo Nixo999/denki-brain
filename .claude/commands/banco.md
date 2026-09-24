@@ -1,6 +1,6 @@
 ---
-description: Apre il banco DM e, se oggi non ci sono, costruisce e pubblica le tre liste del giorno — 50 siti, 50 DenkiShift, 50 ricerca di mercato
-argument-hint: "[apri | siti | denkishift | ricerca | un numero, es. «siti 30»]"
+description: Apre il banco DM e, se oggi non ci sono, costruisce e pubblica le due liste del giorno — 100 siti e 60 ricerca di mercato
+argument-hint: "[apri | siti | ricerca | un numero, es. «siti 30»]"
 ---
 
 # /banco — il banco DM, con le liste del giorno già dentro
@@ -18,9 +18,19 @@ Registro Trevis, già in `~/.claude/CLAUDE.md`: niente presentazioni, niente
 | le liste di **oggi** esistono già in `02-Sales/liste/` | si apre il banco e si risponde in tre righe. Costa un minuto |
 | non ci sono, o l'argomento dice quale rifare | si costruiscono, si verificano, si pubblicano, poi si apre |
 
-`/banco apri` salta sempre la costruzione. `/banco siti`, `/banco denkishift`,
-`/banco ricerca` ne rifanno una sola. Un numero cambia le righe: `/banco siti 30`,
-ma **il valore normale è 50 per ognuna**.
+`/banco apri` salta sempre la costruzione. `/banco siti` e `/banco ricerca` ne
+rifanno una sola. Un numero cambia le righe: `/banco siti 30`, ma **il valore
+normale è 100 per i siti e 60 per la ricerca**.
+
+> [!important] Dal 24 settembre 2026 le liste sono due, e DenkiShift non c'è più
+> Patrick: *«elimina la sezione denkishift e i suoi 50 lead. aumenta la sezione
+> siti a 100 lead e quella di ricerca a 60. quindi ora ogni volta che lancio il
+> comando banco, fermo restando le vecchie regole, ora devi generare 100 lead
+> per i siti e 60 per la ricerca.»*
+>
+> **100 siti e 60 ricerca, ogni volta.** Tutto il resto — zone, un settore al
+> giorno, niente scuse, i due controlli, la posta — resta com'era. Scritta in
+> [[metodo-liste]].
 
 ---
 
@@ -36,19 +46,21 @@ python3 "$V/02-Sales/strumenti/stato-banco.py"
 ls -1 "$V/02-Sales/liste"/$(date +%F)-*.csv 2>/dev/null || echo "nessuna lista di oggi"
 ```
 
-L'ultima riga decide: se le tre liste di oggi ci sono, si va al passo 5.
+L'ultima riga decide: se le due liste di oggi ci sono, si va al passo 5.
 
 ⚠️ **Il conto vero degli invii sta nel browser di Patrick**, non nei CSV. Se
 lui dice di averne mandati trenta e lo script dice zero, ha ragione lui.
 
 ---
 
-## 2 · Le tre liste, e sono tre mestieri diversi
+## 2 · Le due liste, e sono due mestieri diversi
 
 Regola di Patrick dell'11 settembre 2026, in [[metodo-liste]]: *«gli script e i
 ganci devono essere inerenti alla tipologia di servizio per cui li contattiamo
 e anche le aziende devono essere ad alta conversione in base al servizio che
-stiamo offrendo»*. Quindi: **tre liste, tre target, tre testi. Non si mescolano.**
+stiamo offrendo»*. Quindi: **due liste, due target, due testi. Non si
+mescolano.** Erano tre fino al 24 settembre 2026, quando DenkiShift è uscito
+dal banco (2b qui sotto).
 
 > [!important] Il 12 settembre 2026 Patrick ha fissato quantità e perimetro
 > *«io voglio 50 contatti per tipologia, non mi interessano scuse […] basta che
@@ -56,14 +68,15 @@ stiamo offrendo»*. Quindi: **tre liste, tre target, tre testi. Non si mescolano
 > possono essere in tutta italia. ogni giorno facciamo settori diversi e per
 > quanto riguarda i siti ogni volta che finiamo una zona ne iniziamo un'altra»*
 >
-> **50 righe per lista, sempre.** Il bacino non è una scusa: se un settore in
-> una zona si esaurisce si cambia settore, e se sono finiti i settori si cambia
-> zona. Si consegna 50, 50 e 50.
+> ~~**50 righe per lista, sempre.**~~ *Superato nei numeri il 24 settembre
+> 2026: **100 siti e 60 ricerca**, vedi sopra.* Il resto vale ancora: il
+> bacino non è una scusa, se un settore in una zona si esaurisce si cambia
+> settore, e se sono finiti i settori si cambia zona. Si consegna 100 e 60.
 >
 > | Lista | Dove si pesca |
 > |---|---|
 > | Siti | **tutta Italia** |
-> | DenkiShift | **tutta la Lombardia** |
+> | ~~DenkiShift~~ | *tolta il 24 settembre 2026* |
 > | Ricerca di mercato | **tutta la Lombardia** |
 >
 > **Un settore al giorno.** La zona dei siti si esaurisce in circa quindici
@@ -80,7 +93,7 @@ Il come si costruisce una riga — trovare il profilo, leggerlo, verificare, non
 riscrivere a chi è già in lista — sta in [[metodo-instagram]] e non si ripete
 qui. Qui c'è **chi ci va dentro** e **cosa gli si dice**.
 
-### 2a · Siti vetrina — 50 righe, tutta Italia, colonna `Prodotto: siti`
+### 2a · Siti vetrina — 100 righe, tutta Italia, colonna `Prodotto: siti`
 
 **Chi converte** (misurato, [[metodo-instagram]]): onicotecniche e nail center,
 estetiste singole, parrucchieri piccoli, barber, toelettature, tatuatori e PMU,
@@ -98,7 +111,7 @@ essere che la bozza è già stata fatta»*. Nel messaggio si scrive **«la bozza
 del suo sito è già pronta»**, non «gliela preparo», non «le mando una prima
 schermata».
 ⚠️ Il che vuol dire che quando uno risponde la bozza deve esistere: chi manda
-questi cinquanta si compra il lavoro di farle. È il prezzo del gancio più
+questi cento si compra il lavoro di farle. È il prezzo del gancio più
 forte che abbiamo, e lo paga chi risponde per primo.
 
 **La struttura, dal 13 settembre 2026 e sono quattro passi.** Patrick: *«il
@@ -132,41 +145,22 @@ che si leggano dal telefono.
 
 ⚠️ **Il complimento non si genera da una colonna.** È l'unico pezzo che va
 scritto aprendo il profilo, ed è il motivo per cui il testo di ripiego del
-banco qui vale meno che per le altre due liste.
+banco qui vale meno che per la ricerca.
 
 Gancio `1-6` nella colonna, come oggi: 1 nessun sito, 2 dominio morto,
 3 parcheggiato, 4 link rotto, 5 piattaforma (Fresha, Wix, Linktree: **il
 messaggio la nomina**, o il titolare ti corregge), 6 vivo ma vecchio.
 
-### 2b · DenkiShift — 50 righe, tutta la Lombardia, colonna `Prodotto: denkishift`
+### 2b · DenkiShift — tolta il 24 settembre 2026
 
-**Chi converte** (resa del 10 settembre: ristoranti con sito 71%, alberghi
-43%): squadre da **8 a 50 persone su turni, indipendenti**. Alberghi con
-ristorante o spa, ristoranti con doppio turno, RSA e cooperative
-socio-assistenziali, imprese di pulizie, vigilanza privata, logistica e
-magazzini, palestre con reception e istruttori, panetterie e pasticcerie con
-laboratorio, poliambulatori.
-**Il sito non c'entra: chi ce l'ha curato è un candidato migliore**, perché è
-uno che investe. I profili scartati dalle liste siti «perché il sito ce
-l'hanno» sono il bacino naturale di questa.
-**Fuori**: catene e filiali (il software glielo impone la sede), sotto le 8
-persone, orario fisso.
+Non si costruisce più. Patrick: *«elimina la sezione denkishift e i suoi 50
+lead»*. Quel giorno sono uscite da `lista-corrente.csv` le 246 righe DenkiShift
+mai mandate (le liste restano in `02-Sales/liste/`); le 184 già partite
+restano sul banco fra i già contattati, e chi aveva letto o risposto resta fra
+i recuperi con il suo testo. Target, gancio e messaggio di prima stanno in
+[[dm-instagram-denkishift]] e nella storia di questo file.
 
-Gancio `T`. Il messaggio dice **una cosa vera vista sul profilo** (le trenta
-camere, il post che cerca un cameriere, la seconda sede), **una domanda sui
-turni**, cosa fa il programma in una frase, **che i primi due mesi sono
-gratuiti**, e chiede **dieci minuti in videochiamata**. Chiude con
-`www.denkicode.com`.
-⚠️ **Mai una data di attivazione**: DenkiShift non è installabile in produzione,
-e i due mesi gratis non dicono quando si comincia. Mai il prezzo al mese: se
-serve, il numero è il totale dell'anno → [[dm-instagram-denkishift]],
-[[denkishift]].
-
-> Patrick, 13 settembre 2026: *«per denkishift dire che i primi due mesi sono
-> gratuiti»* e *«per tutti e tre linka il nostro sito www.denkicode.com»*. Il
-> «mai un link» di prima vale ancora per i link di terzi, non per il nostro.
-
-### 2c · Ricerca di mercato — 50 righe, tutta la Lombardia, colonna `Prodotto: ricerca`
+### 2c · Ricerca di mercato — 60 righe, tutta la Lombardia, colonna `Prodotto: ricerca`
 
 **Chi converte**: aziende **strutturate**, che hanno già dei processi da
 raccontare. Officine e carrozzerie, impiantisti elettrici e termoidraulici,
@@ -195,12 +189,13 @@ scusa per vendere e la lista muore, per tutti e tre → [[script-indagine]].
 Il contraccambio si promette e **si mantiene**: il riepilogo di cosa è venuto
 fuori dalle aziende della zona.
 Il ritorno vero è che **chi risponde si qualifica da solo**: due delle sei
-domande chiedono com'è messo il sito e se i turni fanno male. Le risposte
-tornano indietro come lead per le altre due liste.
+domande chiedono com'è messo il sito e se i turni fanno male. Chi risponde
+male sul sito torna come lead per la lista siti; chi risponde male sui turni
+si dice a Patrick, perché DenkiShift dal 24 settembre non ha più una lista.
 
 ### 2d · Il messaggio: uno per riga, mai un modello
 
-Vale per tutte e tre. Ogni testo dice chi è Patrick, **cosa ha visto di quel
+Vale per tutte e due. Ogni testo dice chi è Patrick, **cosa ha visto di quel
 profilo**, il fatto verificato, cosa propone e **una domanda sola**. Tu o Lei
 secondo il tono del profilo, e non si mescolano nello stesso testo.
 
@@ -228,10 +223,9 @@ banco, se un dominio indovinato risponde e nessuno ha scritto perché non è
 loro, se i motori hanno risposto 429 o 403.
 
 La prova che il controllo cerca in colonna cambia col prodotto:
-`[verifica-sito]` per i siti, `[verifica-turni]` per DenkiShift (la prova è la
-squadra: camere, sale, orari, il post che cerca personale), `[verifica-azienda]`
-per la ricerca (la prova è che è strutturata: mezzi, magazzino, dipendenti
-visibili, più sedi).
+`[verifica-sito]` per i siti, `[verifica-azienda]` per la ricerca (la prova è
+che è strutturata: mezzi, magazzino, dipendenti visibili, più sedi).
+`[verifica-turni]` era di DenkiShift, e dal 24 settembre non serve più.
 
 ⚠️ **Non si pubblica una lista che non è uscita con 0**, nemmeno se Patrick la
 chiede di corsa. L'8 settembre 2026 ha scritto a gente col sito perché questo
@@ -297,8 +291,9 @@ Patrick) o `lista-denkicode.csv` (account DenkiCode).
 recuperi, che sono metà del valore del canale. Ogni riga porta:
 
 - `Lista` = il nome del file della lista, che comincia con la data;
-- `Prodotto` = `siti`, `denkishift` o `ricerca`, ed è la colonna su cui il
-  banco divide le pagine;
+- `Prodotto` = `siti` o `ricerca`, ed è la colonna su cui il banco divide le
+  pagine. `denkishift` dal 24 settembre non si scrive più: resta solo sulle
+  righe già partite;
 - `Messaggio` = il testo di quella riga;
 - `Scheda` = quello che si è letto del profilo, che Patrick legge prima di
   aprire la chat.
@@ -325,12 +320,12 @@ fi
 
 Il `.command` apre una finestra di Terminale che deve **restare aperta**: è il
 server che scrive gli invii nel vault. Il selettore in testata sceglie
-l'account, le cinque linguette sono Siti, DenkiShift, Ricerca, Da ricontattare,
-Già contattati.
+l'account, le quattro linguette sono Siti, Ricerca, Da ricontattare, Già
+contattati. La linguetta DenkiShift è stata tolta il 24 settembre 2026.
 
 **Le cose che a Patrick servono e che si dicono solo se le chiede**: `↩ Annulla
 l'ultimo` in testata (o ⌘Z) rimette in cima l'ultimo profilo segnato, per
-quando la chat si chiude prima di premere invio; `/` cerca; i tasti da 1 a 5
+quando la chat si chiude prima di premere invio; `/` cerca; i tasti da 1 a 4
 cambiano pagina.
 
 ---
@@ -355,7 +350,7 @@ Massimo sei righe:
 ```
 Patrick — <data>. <se ci sono lead fermi: quanti e da quanto, per primi>
 Banco DM aperto: <da mandare per account, recuperi>
-Liste di oggi: siti <n> · DenkiShift <n> · ricerca <n>. <una riga su cosa c'è dentro>
+Liste di oggi: siti <n> · ricerca <n>. <una riga su cosa c'è dentro>
 <una riga solo se qualcosa non è passato: quale riga, perché è rimasta fuori>
 ```
 

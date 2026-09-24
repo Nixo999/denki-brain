@@ -68,7 +68,7 @@
   nav.pagine button b{margin-left:7px;font-variant-numeric:tabular-nums;color:var(--fioco);font-weight:600}
   nav.pagine button.attiva{color:var(--testo);font-weight:640;border-bottom-color:var(--tinta)}
   nav.pagine button.attiva b{color:var(--tinta)}
-  #p-siti{--tinta:var(--siti)} #p-denkishift{--tinta:var(--denkishift)} #p-ricerca{--tinta:var(--ricerca)}
+  #p-siti{--tinta:var(--siti)} #p-ricerca{--tinta:var(--ricerca)}
   #p-recuperi{--tinta:var(--recuperi)} #p-fatti{--tinta:var(--fatti)}
 
   main{padding:22px;max-width:1180px;margin:0 auto}
@@ -171,7 +171,6 @@
   </div>
   <nav class="pagine">
     <button id="p-siti" class="attiva">Siti <b>0</b></button>
-    <button id="p-denkishift">DenkiShift <b>0</b></button>
     <button id="p-ricerca">Ricerca <b>0</b></button>
     <button id="p-recuperi">Da ricontattare <b>0</b></button>
     <button id="p-fatti">Già contattati <b>0</b></button>
@@ -221,10 +220,16 @@ const att = () => ACCOUNT[attivo];
 const RITMO_ORA = 25;
 const ATTESA_RECUPERO = 4;        // giorni lavorativi prima del secondo messaggio
 
-/* Le tre liste che escono da /banco, e sono tre mestieri diversi: target
-   diverso, gancio diverso, testo diverso. Mescolarli vuol dire scrivere la
-   cosa sbagliata alla persona giusta — regola di Patrick dell'11/09/2026,
-   scritta in metodo-liste.md. */
+/* Le liste che escono da /banco, e sono mestieri diversi: target diverso,
+   gancio diverso, testo diverso. Mescolarli vuol dire scrivere la cosa
+   sbagliata alla persona giusta — regola di Patrick dell'11/09/2026, scritta
+   in metodo-liste.md.
+   Dal 24/09/2026 sono due, siti e ricerca: Patrick, «elimina la sezione
+   denkishift e i suoi 50 lead». La linguetta non c'e` piu` e le righe mai
+   mandate sono uscite da lista-corrente.csv. «denkishift» resta qui sotto, coi
+   suoi testi e il suo recupero, solo per le righe gia` partite: stanno fra i
+   gia` contattati e fra i recuperi, e senza etichetta la cartella non si
+   disegna. */
 const PRODOTTI = {
   siti: {
     etichetta: "Siti vetrina",
@@ -828,7 +833,7 @@ function disegna(){
 
   /* i numeri sulle linguette: si aggiornano tutti, anche quelli delle pagine
      che non si stanno guardando */
-  ["siti","denkishift","ricerca"].forEach(p =>
+  ["siti","ricerca"].forEach(p =>
     document.querySelector("#p-" + p + " b").textContent = secchi[p].length);
   document.querySelector("#p-recuperi b").textContent = secchi.recuperi.length;
   document.querySelector("#p-fatti b").textContent = secchi.fatti.length;
@@ -910,7 +915,7 @@ function disegna(){
     }
   }
 
-  const daMandare = secchi.siti.length + secchi.denkishift.length + secchi.ricerca.length;
+  const daMandare = secchi.siti.length + secchi.ricerca.length;
   document.getElementById("oggi").textContent = oggi;
   const ora = document.getElementById("ora");
   ora.textContent = ultimaOra();
@@ -918,7 +923,7 @@ function disegna(){
   document.getElementById("restano").textContent = daMandare;
   document.getElementById("rec").textContent = secchi.recuperi.length;
   document.getElementById("cont").textContent = secchi.fatti.length;
-  ["siti","denkishift","ricerca","recuperi","fatti"].forEach(p =>
+  ["siti","ricerca","recuperi","fatti"].forEach(p =>
     document.getElementById("p-" + p).classList.toggle("attiva", p === pagina));
   misuraTutte(lista);
 }
@@ -968,7 +973,7 @@ function mostraPagina(p){
   disegna();
   window.scrollTo(0, 0);
 }
-["siti","denkishift","ricerca","recuperi","fatti"].forEach(p =>
+["siti","ricerca","recuperi","fatti"].forEach(p =>
   document.getElementById("p-" + p).addEventListener("click", () => mostraPagina(p)));
 
 const cerca = document.getElementById("cerca");
@@ -989,8 +994,8 @@ document.addEventListener("keydown", (e) => {
   }
   if (e.key === "/"){ e.preventDefault(); cerca.focus(); return; }
   const n = parseInt(e.key, 10);
-  const pagine = ["siti","denkishift","ricerca","recuperi","fatti"];
-  if (n >= 1 && n <= 5) mostraPagina(pagine[n-1]);
+  const pagine = ["siti","ricerca","recuperi","fatti"];
+  if (n >= 1 && n <= pagine.length) mostraPagina(pagine[n-1]);
 });
 
 /* Il riquadro del messaggio cresce col testo invece di scorrere. La misura si
