@@ -336,6 +336,11 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   `opacity`, `clip-path`, `elementFromPoint`), non l'immagine. (24/09/2026,
   [[sito-p0t-tattoo]])
 
+- `[TRAPPOLA]` **Un `<iframe>` di prova ha 2 px di bordo di default**: le misure
+  «a 1440» erano a 1436 e «a 375» a 371, e le altezze del documento non tornavano
+  fra un giro e l'altro. → `style="border:0"` sull'iframe, o si misura con
+  `resize_window` del pannello. (25/09/2026, [[sito-p0t-tattoo]])
+
 ## Immagini e `sips`
 
 - **Una texture specchiata sui due assi da una foto in prospettiva fa chevron

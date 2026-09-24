@@ -128,15 +128,20 @@ pagina che aveva prodotto.
   contatore ridotta a fotogramma e strato. Guardato dal direttore a 375
   schermata per schermata: regge tutto.
 
-Altezza 6.935 px a 375, 6.427 a 1440. Aperto: Safari vero su iPhone (con la
-barra degli indirizzi la pila dell'hero può finire sotto la piega); a 1440 la
-destra è più vuota di prima perché le foto restano a 360 px.
+**Giri 7-8, sopra i 900 px**: a 1440 il foglio restava nudo a destra per il
+60-75 % in LINEA e PUNTINATO. Titolo su due colonne e testo sulla terza, tre
+pezzi ai margini, due pezzi con foto fino a 480 px; il tetto dei 360 px vale
+sotto i 900. Nudo massimo a 1440: 21 / 11 / 1 / 2 %, a 900-1099 fra 0 e 12 %.
+Sotto i 900 non è cambiato niente.
+
+Altezza 6.976 px a 375, 6.427 a 1440. Aperto: Safari vero su iPhone (con la
+barra degli indirizzi la pila dell'hero può finire sotto la piega).
 
 ## Stato — online dal 24/09/2026
 
 **<https://p0t-tattoo.netlify.app>**, progetto `p0t-tattoo` sul team
 `nicola-la-rezza`, deploy dal CLI `--prod --no-build`, repo
-`Nixo999/p0t-tattoo-site` (privata, `main`, pushata, `5f912cd`).
+`Nixo999/p0t-tattoo-site` (privata, `main`, pushata, `a30b158`).
 
 **Tre sbarramenti verificati con `curl` sul permalink del deploy**: `meta
 robots`, `x-robots-tag`, `robots.txt` con `Disallow: /`. RACCOLTA, MONDO,
