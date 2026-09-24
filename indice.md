@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **233 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **234 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -173,6 +173,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-21-tre-liste]] — Le tre liste del 21 settembre - 50 studi di tatuaggi del Piemonte, 50 DenkiShift e 50 ricerca in Lombardia - e la ricerca di Instagram che si e' bloccata due volte in mezza giornata.
 - [[2026-09-23-tre-liste]] — Le tre liste del 23 settembre - 50 fotografi e truccatrici sposa del Piemonte, 50 birrifici, lidi e hotel di citta' per DenkiShift, 50 aziende artigiane per la ricerca - e i fotografi che il sito ce l'hanno nel 65% dei casi.
 - [[2026-09-25-banco-senza-liste]] — Il /banco del 24-25 settembre non ha costruito liste - API di Instagram e posta bloccate dal classificatore, DuckDuckGo e Brave fermi. Zero righe.
+- [[2026-09-25-opero-facchinaggio-allestimento]] — 100 aziende di facchinaggio e allestimento per le chiamate di Seba su OperO, da Seveso verso fuori (0,8-55 km), fatturato 250k-10M. Piu' 213 senza numero.
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
