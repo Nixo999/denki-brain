@@ -7,11 +7,8 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-<<<<<<< HEAD
 Tutte le **232 note** del vault, per cartella, con una riga a testa. Serve a un
-=======
 Tutte le **232 note** del vault, per cartella, con una riga a testa. Serve a un
->>>>>>> 2e0f359 (Sito p0t_tattoo online: registro, netlify, FATTI, cinque trappole, nota di progetto)
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
