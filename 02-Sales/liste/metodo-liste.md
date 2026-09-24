@@ -1,7 +1,7 @@
 ---
 riga: Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
 type: area
-updated: 2026-09-24
+updated: 2026-09-25
 source: claude
 prodotto: denkishift
 ---
@@ -210,6 +210,10 @@ in [[metriche]]:
 
 
 ## Regole
+
+### 25/09/2026 — Patrick: «sono stanco di dirtelo, crea i lead»
+
+il 25 settembre /banco si e' fermato a zero righe e ha riferito i blocchi (API di Instagram rifiutata dal classificatore della sessione, DuckDuckGo e Brave fermi) invece di costruire le liste con i mezzi che restavano: profili aperti uno per uno e motori a passo lento. E' la quarta volta dopo il 14, il 17 e il 19 settembre: le liste si consegnano, i blocchi si dicono in una riga
 
 ### 24/09/2026 — Patrick: «elimina la sezione denkishift e i suoi 50 lead. aumenta la sezione siti a 100 lead e quella di ricerca a 60. quindi ora ogni volta che lancio il comando banco, fermo restando le vecchie regole, ora devi generare 100 lead per i siti e 60 per la ricerca.»
 
