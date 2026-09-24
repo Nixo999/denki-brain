@@ -70,6 +70,9 @@ mandata nel DM.**
 4. Se vuole un **canale di prenotazione** dichiarato in pagina (WhatsApp,
    telefono, DM).
 
+Bozza online su <https://leibeautyroom.netlify.app> dal 24/09, in attesa del
+DM di Patrick.
+
 ## Collegamenti
 
 [[sito-leibeautyroom]] · [[metodo-liste]] · [[generazione-lead]]

@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito per Lei Beauty Room, centro estetico a Torino Cavoretto - materiale raccolto dal profilo (5 foto reali, tutte grafiche di marketing/stock, zero foto vere del locale), repo vuoto creato, in attesa di direzione e costruzione.
+riga: Bozza online su leibeautyroom.netlify.app dal 24/9, mondo «La stanza», giro 3, 8/8, slop 0, testo 0.
 status: attivo
 client: lei-beauty-room
 stack: html-css-js
@@ -206,6 +206,61 @@ processo, dichiarata** — il sito regge senza foto, le foto vere si chiedono
 dopo. `tel:` come bottone principale e DM Instagram come secondo, **niente
 `wa.me`** finché WhatsApp non è confermato. Nessun prezzo, nessun «a partire
 da», orari solo quello confermato.
+
+## Stato — online dal 24/09/2026
+
+**URL**: <https://leibeautyroom.netlify.app>. Repo `Nixo999/leibeautyroom-site`
+(privata), deploy di produzione dal CLI (`npx --no-install netlify deploy
+--prod --no-build`), non collegato al repo per il deploy automatico.
+
+**Tre sbarramenti verificati con `curl` il 24/09**, sul dominio pubblicato:
+
+```
+HTTP/2 200
+x-robots-tag: noindex, nofollow
+
+$ curl -s https://leibeautyroom.netlify.app/robots.txt
+User-agent: *
+Disallow: /
+
+$ curl -s https://leibeautyroom.netlify.app | grep -i 'meta name="robots"'
+<meta name="robots" content="noindex, nofollow">
+```
+
+CSS e JS online (`assets/stile.css?v=3`, `assets/sito.js?v=3`) identici ai
+file locali (`diff` a zero, 24021 e 6561 byte). Console pulita, GSAP e
+ScrollTrigger caricati, i tre font (Zodiak, Switzer, Ballet) `loaded`. Non
+provato su Safari e iOS veri.
+
+**I tre giri**:
+
+1. **Costruzione** — soglia con Tania e Anya, cinque stanze in pin unico,
+   16 SVG, apertura 1,3 s a ogni caricamento, 8/8.
+2. **Finish review** — nome in Ballet dentro l'arco, bottoni a 44 px,
+   «Il venerdì il centro apre alle 9».
+3. **Su bocciatura del direttore** («le stanze sono vuote») — tre archi a
+   gradini, campo di lacca con un riflesso che scorre, numero 01-05 in
+   Zodiak 800 tono su tono, voci vere prese dal profilo, indice laterale
+   vivo.
+
+**Due avvisi di `controlla-slop`**: «davvero» e «passione» — restano, sono
+dentro le recensioni Google riportate alla lettera, non testo scritto qui.
+
+**TODO per Patrick, da chiedere a Tania** (da `LEGGIMI.md` nel repo):
+
+- Il logo in vettoriale (SVG, PDF o AI) — oggi c'è solo l'avatar Instagram a
+  150 px in barra, il profilo dentro l'arco non si ridisegna.
+- WhatsApp sul 392 969 2727? Se sì, entra un bottone «Prenota su WhatsApp».
+- L'orario della settimana — in pagina c'è solo il venerdì alle 9.
+- Il listino, se vuole i prezzi in pagina — oggi nessun prezzo.
+- Le foto vere del centro e dei lavori — il sito regge senza, col materiale
+  vero entrano dentro l'arco.
+- Laminazione di cosa: ciglia, sopracciglia o tutte e due.
+- Anya: conferma del nome e del ruolo prima di pubblicare.
+- **«Massaggio» sta sotto Corpo per scelta dell'operatore**, la storia in
+  evidenza non dice di che massaggio è.
+
+**Il DM col link è di Patrick.** Mai provato Safari e iOS veri.
 
 ## Collegamenti
 

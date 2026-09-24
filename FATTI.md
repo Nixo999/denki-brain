@@ -115,6 +115,15 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   confliggono** fra PagineGialle e Fresha: Patrick li fa confermare a Daniela
   prima del go-live. **Il DM col link è di Patrick** → [[sito-designcapelli]],
   [[design-capelli]]
+- **Lei Beauty Room** (centro estetico, Torino Cavoretto, `@lei_beauty_room_`)
+  ha risposto **«Grazie manda pure qui»** al DM di Patrick del 24/09. Online
+  su `leibeautyroom.netlify.app` (24/09), mondo «La stanza» — l'arco del logo
+  è la porta, il colore della stanza è il colore della pagina — giro 3, 8/8,
+  slop 0, testo 0, tre sbarramenti con `curl`. **Zero foto vere del locale**:
+  il sito regge su tipografia, lacca e motion, le foto e il logo vettoriale si
+  chiedono a Tania. ⚠️ Niente `wa.me` finché WhatsApp non è confermato,
+  nessun prezzo. **Il DM col link è di Patrick** → [[sito-leibeautyroom]],
+  [[lei-beauty-room]]
 - **p0t_tattoo** (Ruben, tatuatore anime e cartoon da K-Ink Studio, Collegno TO,
   `@p0t_tattoo`) ha risposto «va benissimo anche qui su Instagram» al DM del
   24/09. Bozza online su `p0t-tattoo.netlify.app` (24/09 sera), mondo
