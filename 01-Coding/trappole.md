@@ -329,6 +329,13 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   pannello, che non si chiama così ma sta nella stessa riga di comando del
   browser. → si uccide per PID, non per pattern. (24/09/2026, [[sito-p0t-tattoo]])
 
+- `[TRAPPOLA]` **Nel pannello, il primo screenshot dopo uno scroll restituisce il
+  fotogramma precedente**: due catture di fila hanno mostrato carta nuda e poi la
+  pagina giusta, stessa posizione. → dopo uno scroll si cattura due volte e si
+  giudica la seconda; e con il pannello nascosto si legge il DOM (`className`,
+  `opacity`, `clip-path`, `elementFromPoint`), non l'immagine. (24/09/2026,
+  [[sito-p0t-tattoo]])
+
 ## Immagini e `sips`
 
 - **Una texture specchiata sui due assi da una foto in prospettiva fa chevron
@@ -534,6 +541,20 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   invece che dalla lacca precedente. → un campo per stanza con i suoi colori
   scritti fissi, e GSAP muove opacità e posizione, non il colore della
   variabile. (24/09/2026, [[sito-leibeautyroom]])
+
+- `[TRAPPOLA]` **Lo script delle apparizioni dietro GSAP dalla CDN parte quando parte
+  GSAP**: a freddo fino a 2,7 s, e chi scorre subito dopo il sipario trova carta
+  nuda. Cugina della trappola del sipario di [[sito-designcapelli]]. → `motion.js`
+  primo e sincrono, GSAP e ScrollTrigger `defer`, e quello che GSAP anima parte a
+  `DOMContentLoaded`. (24/09/2026, [[sito-p0t-tattoo]])
+- `[TRAPPOLA]` **In una scheda che non disegna fotogrammi le animazioni CSS non
+  avanzano e `animationend` non arriva mai** (pannello nascosto, scheda aperta in
+  secondo piano, `document.timeline.currentTime` fermo a 0). Se la fine
+  dell'apertura o le apparizioni aspettano quell'evento, la pagina resta al primo
+  istante: sipario su, tutto a opacità 0. → l'apertura ha un tetto duro (1,1 s o
+  il primo scroll), niente sotto l'hero dipende dalla classe dell'apertura, e se
+  entro 800 ms non arriva un `requestAnimationFrame` la pagina passa a uno stato
+  senza motion, tutto rivelato. (24/09/2026, [[sito-p0t-tattoo]])
 
 ## CSS e layout
 

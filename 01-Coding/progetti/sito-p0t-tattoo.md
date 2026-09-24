@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito per p0t_tattoo (Ruben, tatuatore anime e cartoon, Collegno TO) - mondo «Rodovetro × Retino», linea → puntinato → colore, Unbounded + Hanken Grotesk. Online su p0t-tattoo.netlify.app dal 24/9, 8/8, slop 0, testo 0.
+riga: Bozza sito per p0t_tattoo (Ruben, tatuatore anime e cartoon, Collegno TO) - mondo «Rodovetro × Retino», linea → puntinato → colore, Unbounded + Hanken Grotesk. Online su p0t-tattoo.netlify.app dal 24/9, giro 5 dopo il verdetto di Nicola, 8/8, slop 0, testo 0.
 status: attivo
 client: p0t-tattoo
 stack: html-css-js
@@ -80,11 +80,36 @@ perché GSAP aspettava eventi di scroll. GSAP resta per contatore e scala.
    del bottone. Lanterna e Attack on Titan restano larghi: stringerli taglia
    il pezzo.
 
+## Giri 4-5, 24/09 notte — il verdetto di Nicola
+
+«ok bello, ma dagli un filino di vita in più con animazioni ad apparizione allo
+scroll, e nella parte bianca è un filino troppo bianca», poi «aggiungi qualcosa
+per non lasciare tutto quel bianco». Tutte e due in [[direttive-siti]].
+
+- **Apparizioni in ogni sezione**: titoli tracciati da sinistra, testi dal
+  basso, pezzi e righe del foglio K-Ink dal lato del rodovetro, fori punzonati
+  uno per uno. 360–440 ms, sfalsamento 65 ms, niente rimbalzi.
+- **Il bianco**: LINEA su carta grigio caldo `#D9D5CB`, PUNTINATO su carta da
+  matita blu `#CBD8EC`, ognuna un foglio a tutta larghezza con bordo
+  d'inchiostro, fori, crocette, la scala del foglio sul margine, un righello di
+  campo accanto ai titoli, e il bordo verde del rodovetro che spunta a destra
+  come anticipo del COLORE. Fascia nuda massima 90 px a 1440.
+- **Due difetti trovati dal direttore sulla pagina vera**, non dalle misure:
+  `motion.js` dietro GSAP dalla CDN partiva fino a 2,7 s a freddo; e nel
+  pannello nascosto le animazioni CSS non avanzano, quindi l'apertura non
+  finiva mai e le apparizioni restavano a opacità 0. Ora l'apertura ha un
+  tetto a 1,1 s o al primo scroll, sotto l'hero niente dipende da lei, e senza
+  fotogrammi entro 800 ms la pagina si rivela intera. Tre trappole in
+  [[trappole]].
+
+Altezza 5.659 px a 1440, 7.741 a 375. Aperto: il CSS di Google Fonts blocca la
+prima pittura, a freddo l'hero può arrivare a 1,26 s.
+
 ## Stato — online dal 24/09/2026
 
 **<https://p0t-tattoo.netlify.app>**, progetto `p0t-tattoo` sul team
 `nicola-la-rezza`, deploy dal CLI `--prod --no-build`, repo
-`Nixo999/p0t-tattoo-site` (privata, `main`, pushata, `5bff752`).
+`Nixo999/p0t-tattoo-site` (privata, `main`, pushata, `503b85e`).
 
 **Tre sbarramenti verificati con `curl` sul permalink del deploy**: `meta
 robots`, `x-robots-tag`, `robots.txt` con `Disallow: /`. RACCOLTA, MONDO,
