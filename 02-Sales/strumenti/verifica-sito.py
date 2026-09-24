@@ -143,13 +143,20 @@ def cerca(q):
     if time.time() > ddg_bloccato_fino:
         try:
             pagina = scarica("https://html.duckduckgo.com/html/?q=" + urllib.parse.quote(q))
-            for m in re.finditer(r'result__a" href="([^"]+)', pagina):
-                h = html.unescape(m.group(1))
-                u = urllib.parse.parse_qs(urllib.parse.urlparse(h).query).get("uddg", [h])[0]
-                d = dominio(u)
-                if d and d not in dom:
-                    dom.append(d)
-            motori.append("ddg")
+            if "result__a" not in pagina and re.search(r"anomaly|challenge", pagina, re.I):
+                # 24/09/2026: DDG risponde 200 con la sua pagina anti-bot al posto dei
+                # risultati. Contata come «0 risultati», la riga passava per verificata
+                # senza che nessun motore l'avesse guardata. Si segna, e non si insiste.
+                ddg_bloccato_fino = time.time() + 900
+                errori.append("ddg pagina anti-bot")
+            else:
+                for m in re.finditer(r'result__a" href="([^"]+)', pagina):
+                    h = html.unescape(m.group(1))
+                    u = urllib.parse.parse_qs(urllib.parse.urlparse(h).query).get("uddg", [h])[0]
+                    d = dominio(u)
+                    if d and d not in dom:
+                        dom.append(d)
+                motori.append("ddg")
         except urllib.error.HTTPError as e:
             if e.code in (403, 429):
                 ddg_bloccato_fino = time.time() + 180

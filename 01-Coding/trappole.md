@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Errori tecnici già pagati e strade scartate, per dominio. Descrittivo, non è un rulebook - le regole stanno in convenzioni.
-updated: 2026-09-23
+updated: 2026-09-25
 verificato: 2026-09-10
 source: denkicode
 tags: [trappole, memoria, frontend, gsap, git]
@@ -956,7 +956,10 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   risponde 403 dopo ~50 richieste, Brave 429 dopo ~10, Bing ignora le
   virgolette e risponde con un'altra città. → la base è quello che non dipende
   da nessuno: indovinare i domini dal nome e aprirli (`verifica-sito.py`); i
-  motori sono un extra con 12 s di pausa.
+  motori sono un extra con 12 s di pausa. Il 25/9, partiti a 2,5 s, DuckDuckGo
+  ha dato la pagina anti-bot alla quarta ricerca, **con status 200**: lo script
+  la contava come «zero risultati». Adesso la riconosce e la scrive nella riga.
+  [[2026-09-25-banco-senza-liste]]
 - **Una regola scritta cede sotto il volume.** «Verificato, mai dedotto» stava
   nel metodo dal 30 agosto ed è stata violata su 62 righe. → il passo si
   trasforma in uno script che scrive la prova nella riga, e un secondo script
