@@ -8,7 +8,6 @@ tags: [indice]
 # Indice delle note — si legge prima di cercare
 
 Tutte le **232 note** del vault, per cartella, con una riga a testa. Serve a un
-Tutte le **232 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
