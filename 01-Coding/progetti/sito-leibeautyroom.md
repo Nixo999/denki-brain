@@ -167,6 +167,46 @@ chieste alla cliente**, come già successo su [[sito-designcapelli]] e
   100 recensioni + metodo nominato): Lei Beauty Room ha meno dati (niente
   orari completi, niente FAQ), ma il punteggio recensioni è più alto.
 
+## Mondo scelto — «La stanza», 24/09
+
+Tre mondi proposti dall'operatore di direzione su Opus (`MONDI.md` nel repo),
+scelto il primo con otto correzioni del direttore (`MONDO.md`).
+
+**La metafora.** Una beauty room è una stanza, e una recensione la chiama
+«piccola bomboniera». L'arco del logo diventa la porta, ed è **l'unica forma del
+sito**: porta nell'apertura, cornice ferma al centro durante le stanze, badge nei
+contatti. Mai sparsa come decorazione.
+
+**La spina.** Si entra dalla soglia con nome e indirizzo; l'arco resta fermo e
+dentro si passa da una stanza all'altra, cinque servizi con una lacca ciascuno,
+e **il colore della stanza è il colore della pagina** (sfondo, testo, arco
+cambiano insieme). In fondo l'arco incornicia il 5,0 di Google e si richiude nel
+badge dei contatti.
+
+**L'apertura**, a ogni caricamento: l'arco si disegna, cresce, ci si passa
+attraverso, il colore cambia, LEI sale lettera per lettera, il badge si sistema
+in barra. 1,0-1,5 s.
+
+**Palette e font.** Tortora `#A59886`, tortora scuro `#6E6356`, crema-oro
+`#E6CFAF`, prugna `#241A22`, bordeaux `#4E1422` (dal suo post «Autunno 2026»).
+Zodiak 300/800 + Switzer 400/500; Ballet solo per il nome delle cinque stanze.
+
+**Gli scarti.** «Lei» (tre lettere giganti come struttura): il rosa `#E0218A`
+è gusto nostro, e le lettere a tutta finestra rischiano l'hero da template. «La
+collina» (si sale dal Po a via alla Parrocchia): racconta il posto e non il
+mestiere, andrebbe bene anche al bar accanto, e giallo e verde tolgono spazio
+al tortora del marchio. La tenda giapponese del Kobido, uscita da impeccable,
+scartata dall'operatore: un servizio su sei non fa un'identità.
+
+**Le regole di costruzione date dal direttore.** Il profilo di donna del logo
+non si ridisegna: marchio ricomposto in Zodiak con l'arco in SVG geometrico,
+l'originale a 150 px solo in barra a 48 px o meno, il vettoriale si chiede a
+Tania. Le 5 grafiche stock del feed non vanno in pagina: **strada 2 del
+processo, dichiarata** — il sito regge senza foto, le foto vere si chiedono
+dopo. `tel:` come bottone principale e DM Instagram come secondo, **niente
+`wa.me`** finché WhatsApp non è confermato. Nessun prezzo, nessun «a partire
+da», orari solo quello confermato.
+
 ## Collegamenti
 
 [[lei-beauty-room]] · [[processo-siti]] · [[competitor-siti-estetica]] ·
