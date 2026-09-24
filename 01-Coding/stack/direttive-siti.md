@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 24/09/2026 — Nicola: «allora bellissimo, ma da telelfono inutilizabile, tienilo cosi da pc ma trova un modo per averlo funionante decentemente anche da telefoo, considera che è quasi piu imortante da telelfono visto che dovra aprirlo da li la prima volta»
+
+la bozza arriva nel DM Instagram e la cliente la apre dal telefono la prima volta: il telefono si guarda in movimento nel browser vero prima di consegnare, non solo misurato in headless
+
 ### 24/09/2026 — Nicola: «ok bello, ma dagli un filino di vita in piu con animazioni ad apparizione allo scroll, e nella partde binaca è un filino troppo bianca»
 
 verdetto su p0t-tattoo.netlify.app giro 3: le sezioni LINEA e PUNTINATO su carta #EDEFEB senza rivelazioni in entrata si leggono piatte e troppo bianche; le apparizioni allo scroll non sono un extra nemmeno quando la spina c'è
