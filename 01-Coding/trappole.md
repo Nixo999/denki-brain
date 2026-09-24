@@ -997,7 +997,7 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   motori sono un extra con 12 s di pausa. Il 25/9, partiti a 2,5 s, DuckDuckGo
   ha dato la pagina anti-bot alla quarta ricerca, **con status 200**: lo script
   la contava come «zero risultati». Adesso la riconosce e la scrive nella riga.
-  [[2026-09-25-banco-senza-liste]]
+  [[2026-09-25-barbieri-piemonte-e-ricerca]]
 - **Una regola scritta cede sotto il volume.** «Verificato, mai dedotto» stava
   nel metodo dal 30 agosto ed è stata violata su 62 righe. → il passo si
   trasforma in uno script che scrive la prova nella riga, e un secondo script

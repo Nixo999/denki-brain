@@ -172,7 +172,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-19-siti-piemonte-capelli]] — La lista siti del 19 settembre - 50 parrucchieri e barber del Piemonte, secondo settore della zona dopo la bellezza del 17 - e la posta che dice che i DM non escono dall'account di Patrick.
 - [[2026-09-21-tre-liste]] — Le tre liste del 21 settembre - 50 studi di tatuaggi del Piemonte, 50 DenkiShift e 50 ricerca in Lombardia - e la ricerca di Instagram che si e' bloccata due volte in mezza giornata.
 - [[2026-09-23-tre-liste]] — Le tre liste del 23 settembre - 50 fotografi e truccatrici sposa del Piemonte, 50 birrifici, lidi e hotel di citta' per DenkiShift, 50 aziende artigiane per la ricerca - e i fotografi che il sito ce l'hanno nel 65% dei casi.
-- [[2026-09-25-banco-senza-liste]] — Il /banco del 24-25 settembre non ha costruito liste - API di Instagram e posta bloccate dal classificatore, DuckDuckGo e Brave fermi. Zero righe.
+- [[2026-09-25-barbieri-piemonte-e-ricerca]] — Le due liste del 25 settembre - 101 barbieri del Piemonte e 62 aziende lombarde per la ricerca - costruite con Google e Pagine Gialle dopo il blocco di Instagram.
 - [[2026-09-25-opero-facchinaggio-allestimento]] — 100 aziende di facchinaggio e allestimento per le chiamate di Seba su OperO, da Seveso verso fuori (0,8-55 km), fatturato 250k-10M. Piu' 213 senza numero.
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
