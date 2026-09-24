@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito per Lei Beauty Room (Torino Cavoretto) - mondo «La stanza», l'arco del logo è la porta, il colore della stanza è il colore della pagina. Online su leibeautyroom.netlify.app dal 24/9, giro 4 (telefono senza pin), 8/8, slop 0, testo 0.
+riga: Bozza sito per Lei Beauty Room (Torino Cavoretto) - mondo «La stanza», l'arco del logo è la porta. Online su leibeautyroom.netlify.app, giro 5: sul telefono cinque porte diverse con tre foto vere da Google e Instagram, 8/8.
 status: attivo
 client: lei-beauty-room
 stack: html-css-js
@@ -290,6 +290,46 @@ confrontate in 20 fotogrammi a 900 e 1440, 0 pixel diversi. Online `?v=4`,
 non c'è Xcode, niente simulatore. Il bottone fisso copre per un attimo il
 bottone della stanza che gli passa sotto. iPad (tocco, ≥ 900 px) prende la
 versione impilata, misurata per ragionamento.
+
+## Giro 5, 25/09 — vita sul telefono
+
+Nicola sul giro 4, dal telefono: «troppo tutto uguale, trova un modo da
+telefono per dargli un po' di vita, così non ha niente, magari qualche foto da
+Instagram o disegni di porte di formati diversi, fai che si apra in modo
+diverso». Regola in [[direttive-siti]].
+
+**Foto vere trovate** (Sonnet, senza login): 4 dalla galleria Google Maps del
+locale, 1 da Instagram (post di `_annzh_` con `@lei_beauty_room_`), 1 ritratto
+di Tania da Torino Oggi. Instagram da `curl` è chiuso anche sull'embed; le
+storie in evidenza restano dietro login. Inventario in
+`assets/img/vere/INVENTARIO.md` nel repo (cartella fuori da git, 404 online).
+
+**Le cinque porte sul telefono** (`4d32f44`, tutto sotto
+`(max-width: 899px), (hover: none)`; da 900 px col mouse 28 fotogrammi
+confrontati, 0 pixel diversi):
+
+| Stanza | Porta | Apertura | Dentro |
+|---|---|---|---|
+| Viso | arco a tutto sesto | si alza dal pavimento | foto del trattamento viso sotto l'arco LED (Google, dal centro) |
+| Corpo | sesto acuto, a destra | contorno che si disegna, poi si riempie | l'angolo con la poltrona (Google, da una cliente) |
+| Mani e piedi | due ante sotto una lunetta | le ante girano in prospettiva, la lacca riflette | unghie coi fiori pressati (Instagram, con Anya) |
+| Laser | rettangolo a spigoli vivi | il pannello scorre nel muro | la frase di Tania sul laser |
+| Kobido e laminazione | porta della luna | cresce dal centro | il nome che si scrive |
+
+Le tre foto hanno **un trattamento solo**: tre toni della lacca della stanza,
+fatto con PIL, ritaglio a 1080, 69-78 KB l'una. Nessuna didascalia a video.
+Scartati il ritratto di Torino Oggi (diritti), il selfie allo specchio (non è
+certo che sia Tania), il fotogramma del video pedicure, le 5 grafiche stock.
+Dopo la porta entrano in fila numero, nome, riga, voci, bottone. Nella soglia le
+cinque lacche entrano a gradini, la citazione di Tania e Anya si scrive.
+
+**Misure**: 8/8, slop 0 (2 avvisi nelle recensioni), testo 0, overflow 0 su 12
+larghezze, console pulita, ~400 KB sul telefono di cui 216 di foto.
+
+**Aperto**: le tre foto sono prese da Google e Instagram **senza un ok di
+Tania** (TODO per Patrick in `LEGGIMI.md`); WebKit vero mai provato; il
+movimento visto solo in headless. Il bottone «Chiama» fisso copriva i bottoni
+delle stanze in fondo alla finestra: corretto al giro 6.
 
 ## Collegamenti
 

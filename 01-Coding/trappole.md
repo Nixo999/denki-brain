@@ -561,6 +561,12 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   entro 800 ms non arriva un `requestAnimationFrame` la pagina passa a uno stato
   senza motion, tutto rivelato. (24/09/2026, [[sito-p0t-tattoo]])
 
+- `[TRAPPOLA]` **Un elemento chiuso da `clip-path` ha area zero e
+  l'IntersectionObserver non lo vede mai entrare**: la porta chiusa non si
+  apriva perché l'osservatore aspettava un'intersezione che non poteva
+  esserci. → si osserva la stanza (la sezione), non la porta.
+  (25/09/2026, [[sito-leibeautyroom]])
+
 ## CSS e layout
 
 **`sticky` non entra nel padding del contenitore.** Su [[sito-barbershop-snia]]
@@ -731,6 +737,11 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   contenitore» non lo vede, perché anche il contenitore è a 0. → colonna
   esplicita `minmax(0,1fr)` e `width:100%`. ([[sito-adelinanails]], 19/09/2026)
 
+- `[TRAPPOLA]` **`text-indent` si eredita dentro gli `inline-block`**: la
+  citazione scritta parola per parola (una `span` per parola) mangiava lo
+  spazio prima di ogni parola. → `text-indent: 0` sulle `span`, o l'indent
+  solo sul contenitore con `display: block`. (25/09/2026, [[sito-leibeautyroom]])
+
 ## Git, account e pubblicazione
 
 - `[TRAPPOLA]` **Un `[[redirects]]` di Netlify senza `force = true` non scatta
@@ -776,6 +787,14 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   --force`) e si ricrea con un nome libero. Il CLI non è in `npx --no-install`
   ma nella cache: `~/.npm/_npx/da5c1b6ea715e8b4/node_modules/.bin/netlify`.
   ([[sito-newfantasy]], 16 settembre)
+
+- `[TRAPPOLA]` **Il deploy dal CLI di Netlify pubblica tutta la cartella**:
+  `/catture/` (le schermate di lavoro) e `/assets/img/vere/` (gli originali
+  delle foto, compreso il ritratto coi diritti da verificare) rispondevano 200
+  online fino al giro 4, anche se fuori da git. → in `netlify.toml` una regola
+  `404` per `/catture/*` e `/assets/img/vere/*`, verificata con `curl`; e
+  `MONDO.md`, `PRODUCT.md`, `LEGGIMI.md` si controllano allo stesso modo.
+  (25/09/2026, [[sito-leibeautyroom]])
 
 ## Far modificare il sito al cliente
 
