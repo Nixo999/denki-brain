@@ -1,12 +1,12 @@
 ---
 type: progetto
-riga: Bozza online su leibeautyroom.netlify.app dal 24/9, mondo «La stanza», giro 3, 8/8, slop 0, testo 0.
+riga: Bozza sito per Lei Beauty Room (Torino Cavoretto) - mondo «La stanza», l'arco del logo è la porta, il colore della stanza è il colore della pagina. Online su leibeautyroom.netlify.app dal 24/9, giro 4 (telefono senza pin), 8/8, slop 0, testo 0.
 status: attivo
 client: lei-beauty-room
 stack: html-css-js
 started: 2026-09-24
 deadline:
-updated: 2026-09-24
+updated: 2026-09-25
 source: claude
 verificato: 2026-09-24
 tags: [sito, bozza, estetica, torino, cavoretto, instagram]
@@ -261,6 +261,35 @@ dentro le recensioni Google riportate alla lettera, non testo scritto qui.
   evidenza non dice di che massaggio è.
 
 **Il DM col link è di Patrick.** Mai provato Safari e iOS veri.
+
+## Giro 4, 25/09 — il telefono
+
+Nicola sul giro 3: «bellissimo, ma da telefono inutilizzabile, tienilo così da
+pc ma trova un modo per averlo funzionante decentemente anche da telefono». La
+regola è in [[direttive-siti]] (24/09): la bozza si apre dal DM, sul telefono,
+la prima volta.
+
+**La causa.** Il pin con lo scrub c'era a ogni larghezza: 3.100 px di scroll
+per cinque stanze, una spinta del pollice ne attraversa due, quasi ogni
+fotogramma era un cambio a metà. L'apertura durava 1,6 s e la saltava solo un
+tocco sulla porta. «Chiama» stava in alto a destra. Nessun giro aveva guardato
+il telefono in movimento: il giro 2 e il 3 lo avevano misurato in headless a
+pannello nascosto, dove il pin non si aggancia.
+
+**La correzione** (`78e408f`, `6e80012`, `07fb853`), tutta sotto
+`(max-width: 899px), (hover: none)`: niente pin, cinque sezioni impilate alte
+una finestra (`100svh` con fallback), un momento solo per stanza (la porta a
+gradini si alza quando la stanza è entrata a metà, senza GSAP); «Chiama» fisso
+in basso a destra a 48 px; apertura a 970 ms, il primo tocco ovunque la salta.
+Il pin parte solo con `(min-width: 900px) and (hover: hover)`: v3 e v4
+confrontate in 20 fotogrammi a 900 e 1440, 0 pixel diversi. Online `?v=4`,
+`curl` 200 e `noindex`, CSS e JS identici al locale.
+
+**Non verificato**: WebKit vero (Safari, browser interno di Instagram): `svh`,
+`clip-path` con valori negativi, `env(safe-area-inset-bottom)`. Su questo Mac
+non c'è Xcode, niente simulatore. Il bottone fisso copre per un attimo il
+bottone della stanza che gli passa sotto. iPad (tocco, ≥ 900 px) prende la
+versione impilata, misurata per ragionamento.
 
 ## Collegamenti
 

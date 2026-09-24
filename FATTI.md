@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura.
-updated: 2026-09-24
+updated: 2026-09-25
 verificato: 2026-09-16
 source: denkicode
 tags: [stato, fatti]
@@ -124,6 +124,10 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   chiedono a Tania. ⚠️ Niente `wa.me` finché WhatsApp non è confermato,
   nessun prezzo. **Il DM col link è di Patrick** → [[sito-leibeautyroom]],
   [[lei-beauty-room]]
+  **Giro 4 del 25/09 dopo la bocciatura «da telefono inutilizzabile»**: sotto i
+  900 px niente pin, cinque stanze impilate, «Chiama» fisso, apertura a 1 s
+  saltabile; da PC identico. ⚠️ **WebKit vero mai provato**: senza Xcode non c'è
+  simulatore, il link va aperto da un iPhone prima del DM
 - **p0t_tattoo** (Ruben, tatuatore anime e cartoon da K-Ink Studio, Collegno TO,
   `@p0t_tattoo`) ha risposto «va benissimo anche qui su Instagram» al DM del
   24/09. Bozza online su `p0t-tattoo.netlify.app` (24/09 sera), mondo
