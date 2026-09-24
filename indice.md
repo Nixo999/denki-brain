@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-09-23
+updated: 2026-09-24
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **225 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **226 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -77,8 +77,9 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 - [[anti-slop-siti]] — ⚠️ Cosa fa sembrare un sito fatto con l'AI, dalla ricerca del 17/09/2026 - segni visivi e di testo, cosa blocca controlla-slop, cosa va guardato.
 - [[competitor-siti-barber]] — ⚠️ Inventario di 15 siti (6 barber Brianza, 5 barbershop italiani noti, 4 trapianto Albania) per il sito di Barbershop SNIA (Cesano Maderno).
-- [[competitor-siti-estetica]] — ⚠️ 13 siti di centri estetici (5 locali AL/VC/AT, 5 boutique italiane, 3 specialistici) - sezioni, info reali, stile, scaletta per Dragonfly.
+- [[competitor-siti-estetica]] — ⚠️ 18 siti di centri estetici (5 locali AL/VC/AT, 5 boutique italiane, 3 specialistici, 5 Torino collina) - sezioni, info reali, stile, per Dragonfly e Lei Beauty Room.
 - [[competitor-siti-nail]] — ⚠️ Inventario di cosa pubblicano 15 siti di nail studio (5 Piemonte, 6 Italia, 4 estero) - sezioni, formati, FAQ ricorrenti, errori. Si riusa per ogni sito nail.
+- [[competitor-siti-tattoo]] — ⚠️ Inventario di cosa pubblicano 14 siti di studi/tatuatori tattoo (5 Piemonte, 5 Italia, 4 estero) - sezioni, FAQ, parole anime, errori.
 - [[convenzioni]] — Le REGOLE tecniche di casa - naming, commit, firma Powered by DenkiCode. Qui sta il modo giusto, non gli errori.
 - [[copy-siti-competitor]] — ⚠️ Ricerca su 11 siti di parrucchieri, quartiere e fascia alta: didascalie, titoli, bottoni, punteggiatura; confronto con Design Capelli.
 - [[direttive-siti]] — Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
