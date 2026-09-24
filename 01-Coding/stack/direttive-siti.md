@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-09-24
+updated: 2026-09-25
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 25/09/2026 — Nicola: «troppo tutto uguale, trova un modo da telefono per dargli un po di vita, cosi non ha niente, magari wualche foto da istgram o disengni di porte di formati diversi, fai che si apra in modo diverso, basta cye gli dai vita e personalita anche da telefono»
+
+verdetto sul giro 4 di leibeautyroom.netlify.app: cinque stanze impilate identiche nella forma e nel movimento si leggono come niente; sul telefono ogni stanza deve avere una porta di forma sua, un'apertura sua e qualcosa dentro (una foto sua da Instagram o dalla scheda Google), e il telefono si giudica con lo stesso metro del PC
 
 ### 24/09/2026 — Nicola: «bello ma risulta un po macchinoso e i blocchi a volte semrano non centrare molto tra di loro, poi aggiustalo benissmo per il mobile da telelfono, deve essere molto bello principalmente anche da li, visto he sara molto rpobabilmnte visto da li per la prima volta non da pc»
 
