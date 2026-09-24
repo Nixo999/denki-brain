@@ -1,14 +1,14 @@
 ---
 type: progetto
-riga: Bozza sito per p0t_tattoo (Ruben, tatuatore anime e cartoon, Collegno TO) - mondo «Rodovetro × Retino», linea → puntinato → colore, Unbounded + Hanken Grotesk. Online su p0t-tattoo.netlify.app dal 24/9, giro 5 dopo il verdetto di Nicola, 8/8, slop 0, testo 0.
+riga: Bozza sito per p0t_tattoo (Ruben, tatuatore anime e cartoon, Collegno TO) - mondo «Rodovetro × Retino», linea → puntinato → colore, Unbounded + Hanken Grotesk. Online su p0t-tattoo.netlify.app dal 24/9, giro 6 (meno macchinoso, mobile per primo), 8/8, slop 0, testo 0.
 status: attivo
 client: p0t-tattoo
 stack: html-css-js
 started: 2026-09-24
 deadline:
-updated: 2026-09-24
+updated: 2026-09-25
 source: claude
-verificato: 2026-09-24
+verificato: 2026-09-25
 tags: [sito, bozza, tattoo, collegno, torino, instagram]
 ---
 
@@ -105,11 +105,38 @@ per non lasciare tutto quel bianco». Tutte e due in [[direttive-siti]].
 Altezza 5.659 px a 1440, 7.741 a 375. Aperto: il CSS di Google Fonts blocca la
 prima pittura, a freddo l'hero può arrivare a 1,26 s.
 
+## Giro 6, 25/09 notte — «macchinoso», «i blocchi non si parlano», «prima il telefono»
+
+Verdetto di Nicola sul giro 5, in [[direttive-siti]]. Operatore **nuovo** su
+Opus: quello dei giri 1-5 aveva 450k token di contesto ed era ancorato alla
+pagina che aveva prodotto.
+
+- **Un sistema solo**: ogni sezione è un foglio costruito uguale, bordo in
+  testa, fori, titolo a una riga, contenuto; stessi margini e una scala di
+  spazi; titoli tutti in Unbounded 900 alla stessa misura.
+- **Tolto**: righello di campo, scala del foglio, crocette, scala di tono,
+  bordo del rodovetro che spuntava. Fondi da 9 a 4: carta grigia `#DFE1DC`
+  fino al COLORE, verde per il COLORE, giallo per progetti, studio e prenota,
+  inchiostro per il piede. Segni decorativi da 30 a 15, elementi che entrano
+  da 44 a 17, apparizioni tutte dal basso; l'unico momento è il foglio verde
+  che entra da destra col suo titolo.
+- **GSAP è uscito**: restava per il contatore e la scala di tono; la scala
+  non c'è più e il contatore lo calcola `motion.js`. La spina resta e
+  `controlla-sito` la vede (8/8).
+- **Il telefono per primo**: hero con nome, frase, bottone e pila dentro
+  375×812, bottoni a tutta larghezza, testo mai sotto 16 px, la barra del
+  contatore ridotta a fotogramma e strato. Guardato dal direttore a 375
+  schermata per schermata: regge tutto.
+
+Altezza 6.935 px a 375, 6.427 a 1440. Aperto: Safari vero su iPhone (con la
+barra degli indirizzi la pila dell'hero può finire sotto la piega); a 1440 la
+destra è più vuota di prima perché le foto restano a 360 px.
+
 ## Stato — online dal 24/09/2026
 
 **<https://p0t-tattoo.netlify.app>**, progetto `p0t-tattoo` sul team
 `nicola-la-rezza`, deploy dal CLI `--prod --no-build`, repo
-`Nixo999/p0t-tattoo-site` (privata, `main`, pushata, `503b85e`).
+`Nixo999/p0t-tattoo-site` (privata, `main`, pushata, `5f912cd`).
 
 **Tre sbarramenti verificati con `curl` sul permalink del deploy**: `meta
 robots`, `x-robots-tag`, `robots.txt` con `Disallow: /`. RACCOLTA, MONDO,
