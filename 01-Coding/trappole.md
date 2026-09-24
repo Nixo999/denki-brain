@@ -311,6 +311,14 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   intera si fotografa con `?cattura`, dove il 3D è spento per costruzione.
   (17/09/2026, [[sito-barbershop-snia]])
 
+- `[TRAPPOLA]` **`cattura-fette.mjs` lanciato due volte di fila si aggancia
+  all'istanza di Chrome della corsa precedente** e misura la pagina alla
+  larghezza sbagliata: la corsa a 1440 ha riportato `documento 812 x 375`,
+  cioè la finestra della corsa a 375 ancora viva. → una corsa alla volta, e
+  prima di leggere i numeri si controlla la riga `documento` nel log: se la
+  larghezza non è quella chiesta, si rilancia da solo.
+  (24/09/2026, [[sito-leibeautyroom]])
+
 ## Immagini e `sips`
 
 - **Una texture specchiata sui due assi da una foto in prospettiva fa chevron
