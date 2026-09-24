@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 24/09/2026 — Nicola: «bello ma risulta un po macchinoso e i blocchi a volte semrano non centrare molto tra di loro, poi aggiustalo benissmo per il mobile da telelfono, deve essere molto bello principalmente anche da li, visto he sara molto rpobabilmnte visto da li per la prima volta non da pc»
+
+verdetto su p0t-tattoo.netlify.app giro 5: sette colori di fondo, righelli, crocette e scala in ogni sezione fanno una pagina macchinosa, e ogni sezione ha una costruzione diversa; il primo sguardo del cliente arriva dal DM di Instagram, quindi dal telefono, e il sito si giudica prima a 375 e poi a 1440
+
 ### 24/09/2026 — Nicola: «allora bellissimo, ma da telelfono inutilizabile, tienilo cosi da pc ma trova un modo per averlo funionante decentemente anche da telefoo, considera che è quasi piu imortante da telelfono visto che dovra aprirlo da li la prima volta»
 
 la bozza arriva nel DM Instagram e la cliente la apre dal telefono la prima volta: il telefono si guarda in movimento nel browser vero prima di consegnare, non solo misurato in headless
