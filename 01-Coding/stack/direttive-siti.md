@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 24/09/2026 — Nicola: «ok bello, ma dagli un filino di vita in piu con animazioni ad apparizione allo scroll, e nella partde binaca è un filino troppo bianca»
+
+verdetto su p0t-tattoo.netlify.app giro 3: le sezioni LINEA e PUNTINATO su carta #EDEFEB senza rivelazioni in entrata si leggono piatte e troppo bianche; le apparizioni allo scroll non sono un extra nemmeno quando la spina c'è
+
 ### 24/09/2026 — Nicola: «usa lo stesso metodo nuovo degli scorsi, usa piu odelli tra cui opus 5.5, per fare meno uso possibile di token settimanali. dai pero molta personalita e vita al sito»
 
 i token settimanali di Fable sono il limite: il direttore resta su Fable e non legge i file, raccolta/ricerca/verifica su Sonnet, direzione e costruzione su Opus
