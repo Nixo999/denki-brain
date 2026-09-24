@@ -950,6 +950,20 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   `netlify api getSite`, campo `published_deploy.id`, ed è esattamente quello che
   la produzione serve. ([[sito-barbershop-snia]])
 
+- `[TRAPPOLA]` **La galleria «Foto» di una scheda Google Maps, aperta nel
+  pannello browser con un account Google dentro, mescola alle foto del locale
+  un carosello di foto personali dell'account** (un supermercato, una
+  biblioteca, un rifugio), sotto lo stesso prefisso `lh3.googleusercontent.com`.
+  Raccolte per prefisso URL sarebbero finite nella cartella del cliente. → si
+  isolano per posizione nel DOM della galleria del locale, non per prefisso, e
+  si guardano una per una prima di tenerle. (25/09/2026, [[sito-leibeautyroom]])
+- `[TRAPPOLA]` **Anche `instagram.com/p/<shortcode>/embed/captioned/` da `curl`
+  torna il guscio di login** (25/09/2026): la strada dell'embed, che il 15/09
+  passava, è chiusa. Le foto vere del locale sono arrivate dalla galleria di
+  Google Maps nel pannello browser (4 su 6, «dal proprietario»), non da
+  Instagram. → per un centro senza foto nel feed si parte da Google Maps.
+  (25/09/2026, [[sito-leibeautyroom]])
+
 ## Liste e banco DM
 
 - **Una frase di verifica ripetuta su sessanta righe è un modello, non un
