@@ -316,7 +316,9 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   larghezza sbagliata: la corsa a 1440 ha riportato `documento 812 x 375`,
   cioè la finestra della corsa a 375 ancora viva. → una corsa alla volta, e
   prima di leggere i numeri si controlla la riga `documento` nel log: se la
-  larghezza non è quella chiesta, si rilancia da solo.
+  larghezza non è quella chiesta, si rilancia da solo. Al giro 3 due corse di
+  fila sulla stessa porta CDP fallivano del tutto: serve `pkill` del Chrome
+  headless e un'attesa fra una corsa e l'altra.
   (24/09/2026, [[sito-leibeautyroom]])
 
 - `[TRAPPOLA]` **Su macOS `timeout` non esiste**: una cattura headless che si
@@ -525,6 +527,13 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 - `[TRAPPOLA]` **Il contorno di un font pesante fatto con `-webkit-text-stroke`
   mostra le sovrapposizioni interne dei glifi** (Unbounded 900). → `paint-order:
   stroke fill` e il pieno del colore della carta. (24/09/2026, [[sito-p0t-tattoo]])
+
+- `[TRAPPOLA]` **GSAP che interpola una variabile CSS di colore letta da un
+  altro elemento parte da trasparente**: il tween su `--luce` leggeva il valore
+  iniziale come `rgba(0,0,0,0)` e il campo dentro l'arco si accendeva dal nero
+  invece che dalla lacca precedente. → un campo per stanza con i suoi colori
+  scritti fissi, e GSAP muove opacità e posizione, non il colore della
+  variabile. (24/09/2026, [[sito-leibeautyroom]])
 
 ## CSS e layout
 
