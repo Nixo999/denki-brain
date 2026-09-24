@@ -43,7 +43,7 @@ proprio: `kinkstudiotattoo.it` non risolve, Fresha non affiliato, PagineGialle
 
 | Cosa | Quando | Stato |
 |---|---|---|
-| Bozza sito → [[sito-p0t-tattoo]] | 24/09/2026 | in costruzione |
+| Bozza sito → [[sito-p0t-tattoo]] | 24/09/2026 | online su <https://p0t-tattoo.netlify.app>, il DM col link è di Patrick |
 
 ## Come si comporta
 

@@ -319,6 +319,14 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   larghezza non è quella chiesta, si rilancia da solo.
   (24/09/2026, [[sito-leibeautyroom]])
 
+- `[TRAPPOLA]` **Su macOS `timeout` non esiste**: una cattura headless che si
+  blocca tiene fermo l'operatore per sempre (600 s di stallo il 24/09). → si
+  incapsula in `perl -e 'alarm 120; exec @ARGV' -- node …`, o si usa `gtimeout`
+  di coreutils. (24/09/2026, [[sito-p0t-tattoo]])
+- `[TRAPPOLA]` **`pkill -f headless` spegne anche il server di anteprima** del
+  pannello, che non si chiama così ma sta nella stessa riga di comando del
+  browser. → si uccide per PID, non per pattern. (24/09/2026, [[sito-p0t-tattoo]])
+
 ## Immagini e `sips`
 
 - **Una texture specchiata sui due assi da una foto in prospettiva fa chevron
@@ -502,6 +510,21 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 - `[TRAPPOLA]` **`opacity:initial` nel blocco reduced-motion resetta anche le
   opacità dichiarate a mano** (un filetto a .7 diventa pieno). → si dichiara il
   valore finale vero, non `initial`. ([[sito-adelinanails]], 18/09/2026)
+
+- `[TRAPPOLA]` **Un'animazione GSAP legata allo scroll resta ferma se allo script
+  non arrivano eventi di scroll.** A pagina già scrollata (link con ancora,
+  ricarica a metà, `scrollTo` programmatico) il rodovetro restava fuori schermo
+  e al suo posto si vedeva carta vuota per due terzi del viewport. → la spina
+  che deve stare «già a posto» va in CSS con `animation-timeline: view()`, che
+  legge la posizione e non gli eventi; in GSAP restano i contatori e le scale.
+  (24/09/2026, [[sito-p0t-tattoo]])
+- `[TRAPPOLA]` **Con GSAP 3.13 la proprietà CSS `translate` viene azzerata appena
+  si anima `x`/`y`**, e lo sfalsamento di un'ombra o di un livello sparisce.
+  → gli sfalsamenti fissi si mettono in `inset`, non in `translate`.
+  (24/09/2026, [[sito-p0t-tattoo]])
+- `[TRAPPOLA]` **Il contorno di un font pesante fatto con `-webkit-text-stroke`
+  mostra le sovrapposizioni interne dei glifi** (Unbounded 900). → `paint-order:
+  stroke fill` e il pieno del colore della carta. (24/09/2026, [[sito-p0t-tattoo]])
 
 ## CSS e layout
 

@@ -1,7 +1,7 @@
 ---
 riga: Detto da Patrick il 31 agosto 2026 - *«il sito di Castiglione, come tutti i siti bozza, viene messo su Netlify per farlo vedere»*.
 type: risorsa
-updated: 2026-09-17
+updated: 2026-09-24
 source: denkicode
 tags: [strumenti, hosting, bozze, siti-vetrina]
 ---
@@ -59,6 +59,7 @@ Vale per tutti i canali:
 | [[sito-shaddai]] | Shaddai Extension Lash, lash artist a domicilio, Bergamo — Instagram `@shaddai_extensionlash`, il DM non e' ancora partito | ✅ **online su <https://shaddailash.netlify.app>** dal 17 settembre 2026, progetto `shaddailash` sul team `travis` (slug API **`patricksappa26`**: `--account-slug travis` risponde 404), deploy dal CLI `--prod --no-build`; **repo solo locale**, `gh repo create` bloccato dal classificatore dell'auto mode, lo lancia Nicola. Tre sbarramenti verificati con `curl` sul vivo, piu' `BRIEF.md`, `MONDO.md`, `PRODUCT.md`, `.impeccable/` e `.claude/` sbarrati con `force = true` — **al primo deploy erano serviti a 200** |
 | [[sito-barbershop-snia]] | Barbershop di Andrea, barbiere, Cesano Maderno (MB) — Instagram `@barbershop_snia`, portato da Morgan come presidio volantini | ✅ **online su <https://barbershop-snia.netlify.app>** dal 17 settembre 2026, progetto `barbershop-snia` sul team **slug `patricksappa26`** (che si chiama «travis»: il nome non è lo slug, e `--account-slug travis` risponde 404), deploy dal CLI di Homebrew `/opt/homebrew/bin/netlify`, repo **`Nixo999/barbershop-snia-site` privata**. **Tre sbarramenti verificati con `curl` sul sito vivo** (`x-robots-tag`, `robots.txt` con `Disallow: /`, il `meta robots` in pagina), HTTP 200. ⬜ Badge «Powered by Netlify» **spento dall'API**, non dal pannello |
 | [[sito-designcapelli]] | Design Capelli, parrucchiere di Daniela Cantello, Nichelino (TO) — Instagram `@designcapelli`, ha risposto «Buonasera qui grazie» e aspetta la bozza nel DM | ✅ **online su <https://designcapelli.netlify.app>** dal 21 settembre 2026, progetto `designcapelli` sul team `nicola-la-rezza`, deploy dal CLI `--prod --no-build`, repo `Nixo999/designcapelli-site` privata; **tre sbarramenti verificati con `curl` sul deploy pubblicato**, i quattro file di lavoro rispondono 404, badge «Powered by Netlify» spento dall'API |
+| [[sito-p0t-tattoo]] | p0t_tattoo, Ruben, tatuatore anime e cartoon da K-Ink Studio, Collegno (TO) — Instagram `@p0t_tattoo`, ha risposto «va benissimo anche qui su Instagram» e aspetta la bozza nel DM | ✅ **online su <https://p0t-tattoo.netlify.app>** dal 24 settembre 2026, progetto `p0t-tattoo` sul team `nicola-la-rezza`, deploy dal CLI `--prod --no-build`, repo `Nixo999/p0t-tattoo-site` privata; **tre sbarramenti verificati con `curl` sul deploy pubblicato**, RACCOLTA/MONDO/MONDI/PRODUCT e `sorgenti/` rispondono 404 |
 | sito NG Barber | NG Barber Studio, Como + Erba + Mendrisio (CH) — riga 2 dell'[[2026-09-01-instagram-anello-1-b\|anello 1-b]] | ⬜ **pronto, non pubblicato**: `netlify.toml` scritto. il codice è su **`patricksappa26/ng-barber`** (pubblica, `main`, allineata). Resta indietro `Nixo999/ngbarber-site` (privata, primo tentativo). **Manca solo il login Netlify**, che è di Nicola — in alternativa, essendo la repo pubblica, **GitHub Pages** la pubblica senza altri accessi |
 
 > [!note] Analisi di Claude — 2026-09-01
