@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 25/09/2026 — Nicola: «usa sempre il nuovo metodo per iusare pochi token»
+
+detto aprendo la bozza di toelettatura.perunpelo: il metodo a più modelli del 24/09 (raccolta e competitor su Sonnet, direzione e costruzione su Opus, il direttore legge solo i file corti) vale per ogni sito da adesso, non solo per p0t_tattoo
+
 ### 25/09/2026 — Nicola: «molto meglio da teleono, ma rendi a scomparsa le sezioni e che appaiono potendo cliccare sul menu, quello che ce adesso diciso a colore non è molto carino e intuibile, rendi piu semplice la navigazione se no è solo un muro di foto e disegni»
 
 verdetto sul giro 6 di leibeautyroom.netlify.app dal telefono: cinque stanze una sotto l'altra sono un muro di foto e disegni, e l'indice a fasce di colore non dice dove porta. Sul telefono le sezioni dei servizi stanno chiuse e si aprono da un menu con i nomi in chiaro; la navigazione viene prima della grafica
