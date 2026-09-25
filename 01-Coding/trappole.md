@@ -574,6 +574,12 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   esserci. → si osserva la stanza (la sezione), non la porta.
   (25/09/2026, [[sito-leibeautyroom]])
 
+- `[TRAPPOLA]` **Con `invalidateOnRefresh` un tween `.to` su una variabile CSS
+  rilegge come partenza il valore che ha in quel momento**, cioè quello finale
+  se il refresh arriva a scroll già fatto: la passata restava ferma a 100 e la
+  fascia non si muoveva più. → `fromTo` col valore di partenza scritto e
+  `immediateRender: false`. (25/09/2026, [[sito-perunpelo]])
+
 ## CSS e layout
 
 **`sticky` non entra nel padding del contenitore.** Su [[sito-barbershop-snia]]
@@ -748,6 +754,13 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   citazione scritta parola per parola (una `span` per parola) mangiava lo
   spazio prima di ogni parola. → `text-indent: 0` sulle `span`, o l'indent
   solo sul contenitore con `display: block`. (25/09/2026, [[sito-leibeautyroom]])
+
+- `[TRAPPOLA]` **`window.open(url, '_blank', 'noopener')` restituisce sempre
+  `null`**, anche quando la scheda si apre: un ripiego `if (!w) location.href =
+  url` apre il link due volte (WhatsApp in una scheda nuova e anche in quella
+  del sito). → si apre senza `noopener`, si stacca a mano con `w.opener = null`,
+  e `location.href` resta solo per il popup bloccato. (25/09/2026,
+  [[sito-perunpelo]])
 
 ## Git, account e pubblicazione
 

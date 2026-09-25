@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **235 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **238 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -66,6 +66,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-ngbarber]] — ⚠️ Bozza vetrina per ng-barber, riga 2 dell'anello 1-b delle liste Instagram, gancio 5.
 - [[sito-osteria-tarilli]] — ⚠️ Osteria Tarilli, Via Ronco Nuovo 2, 6949 Comano (TI), a 300 m dalla RSI.
 - [[sito-p0t-tattoo]] — Bozza sito per p0t_tattoo (Ruben, tatuatore anime e cartoon, Collegno TO) - mondo «Rodovetro × Retino», linea → puntinato → colore, Unbounded + Hanken Grotesk. Online su p0t-tattoo.netlify.app dal 24/9, giro 9 (mobile per primo, desktop pieno, testa con spessore), 8/8, slop 0, testo 0.
+- [[sito-perunpelo]] — Bozza sito Per un Pelo (toelettatura di Ambra Longoni, Nembro BG), lettere arruffate che si pettinano. perunpelo.netlify.app dal 25/9, 8/8.
 - [[sito-pinkploy]] — Online su pinkploy.netlify.app per @nails_art_by_pinkploy, onicotecnica a Brescia centro - mondo B «lo spessore», l'unghia in quota.
 - [[sito-pizzeria-lobidu]] — ⚠️ Pizzeria Lobidù, pizzeria siciliana, Via IV Novembre 13, 21049 Tradate (VA).
 - [[sito-salone-di-andrea]] — ⚠️ Sito vetrina in una pagina per Il Salone di Andrea, parrucchiere donna e uomo di Andrea Bielli a Dalmine (BG), Viale Natale Betelli 58.
@@ -84,6 +85,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[competitor-siti-estetica]] — ⚠️ 18 siti di centri estetici (5 locali AL/VC/AT, 5 boutique italiane, 3 specialistici, 5 Torino collina) - sezioni, info reali, stile, per Dragonfly e Lei Beauty Room.
 - [[competitor-siti-nail]] — ⚠️ Inventario di cosa pubblicano 15 siti di nail studio (5 Piemonte, 6 Italia, 4 estero) - sezioni, formati, FAQ ricorrenti, errori. Si riusa per ogni sito nail.
 - [[competitor-siti-tattoo]] — ⚠️ Inventario di cosa pubblicano 14 siti di studi/tatuatori tattoo (5 Piemonte, 5 Italia, 4 estero) - sezioni, FAQ, parole anime, errori.
+- [[competitor-siti-toelettatura]] — ⚠️ Inventario di 15 siti di toelettatura (5 Bergamo/Val Seriana, 6 Italia curati, 4 estero) - sezioni, FAQ, vocabolario, errori. Per il sito di Ambra Longoni, Nembro.
 - [[convenzioni]] — Le REGOLE tecniche di casa - naming, commit, firma Powered by DenkiCode. Qui sta il modo giusto, non gli errori.
 - [[copy-siti-competitor]] — ⚠️ Ricerca su 11 siti di parrucchieri, quartiere e fascia alta: didascalie, titoli, bottoni, punteggiatura; confronto con Design Capelli.
 - [[direttive-siti]] — Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
@@ -126,6 +128,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[ng-barber]] — ⚠️ Barbershop, @ngbarberstudio123. Riga 2 dell'anello 1-b, gancio 5 - l'unico link in bio è ngbarber.my-booking-app.com, cioè un'app di prenotaz...
 - [[p0t-tattoo]] — Ruben, tatuatore anime e cartoon (@p0t_tattoo, 307 follower) da K-Ink Studio Tattoo, via Adua 9b Collegno (TO). Ha risposto al DM del 24/09 - la bozza la vuole su Instagram.
 - [[parrucchiere-morgan]] — Portato da Morgan il 15/9: espone volantini e biglietti e parla coi clienti in cambio del sito gratis, zero percentuali. Nome TODO.
+- [[perunpelo]] — Ambra Longoni, groomer di Per un Pelo Toelettatura, Nembro (BG), @toelettatura.perunpelo. 5,0 su 102 su Google. Ha risposto al DM il 25/09 - vuole la bozza.
 - [[pinkploy]] — Onicotecnica a Brescia centro, @nails_art_by_pinkploy, 832 follower. Bozza online dal 14/9, il secondo DM col link tocca a Patrick.
 - [[sebastian-torres]] — Privato, non un'azienda. Sta aprendo la sua attività, e l'attività è opero - l'app che stiamo costruendo noi è la sua idea imprenditoriale.
 - [[shaddai-extension-lash]] — Lash artist a domicilio a Bergamo, 736 follower, nessun sito - bozza costruita il 16 settembre 2026, DM non ancora inviato.

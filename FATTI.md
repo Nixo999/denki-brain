@@ -140,6 +140,14 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   costruzione, Fable solo direttore. **Il DM col link è di Patrick**, su
   Instagram. Da chiedergli prezzi, caparra, i suoi giorni, foto dei guariti
   → [[sito-p0t-tattoo]], [[p0t-tattoo]]
+- **Per un Pelo** (toelettatura di Ambra Longoni, Nembro BG, `@toelettatura.perunpelo`)
+  ha risposto **«si me la mandi pure»** al DM di Patrick del 9/09, il 25/09.
+  Online su `perunpelo.netlify.app` (25/09), mondo «Per un Pelo», le lettere
+  entrano arruffate e si pettinano. 8/8, slop 0, testo 0, tre sbarramenti
+  con `curl`. 5,0 su 102 recensioni Google, sei citate. Primo sito col metodo a
+  più modelli **per regola**. ⚠️ Sul telefono i servizi non si aprono sul posto,
+  il menu porta alla passata. Safari e iPhone veri mai provati. **Il DM col
+  link è di Patrick** → [[sito-perunpelo]], [[perunpelo]]
 - **OperO, Intermediar + Receive** (24/09/2026): Seba ha mandato la specifica
   della collaborazione fra aziende e ha chiesto di **conoscerla, non di
   iniziarla**. Lavoro nuovo, fuori dai 2.400 €. Sei buchi da chiedere a lui
