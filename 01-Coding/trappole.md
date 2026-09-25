@@ -762,6 +762,11 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   e `location.href` resta solo per il popup bloccato. (25/09/2026,
   [[sito-perunpelo]])
 
+- `[TRAPPOLA]` **Un `<source>` dentro un `<picture>` messo a `display:contents`
+  occupa una cella della griglia**: fra 600 e 1023 px i quattro servizi erano
+  alti 4.858 px, con le celle vuote dove stavano i `<source>`. →
+  `picture > source{display:none}`. (25/09/2026, [[sito-perunpelo]])
+
 ## Git, account e pubblicazione
 
 - `[TRAPPOLA]` **Un `[[redirects]]` di Netlify senza `force = true` non scatta
