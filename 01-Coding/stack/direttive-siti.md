@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 25/09/2026 — Nicola: «poi le foto caricano troppo lentamente»
+
+giro 1 di perunpelo.netlify.app: sei JPEG a 1440 px da 143-227 KB l'una, senza srcset né WebP, mostrate a 200-400 px sul telefono. Le foto si servono alla misura in cui compaiono
+
 ### 25/09/2026 — Nicola: «allora da pc ce troppo spazio vuoto, mentre da telefono è gestito bene lo spazio delle sezioni ma non va bene lanimazione allo scrool cosi, viene dfficile da usare e navigare come sito»
 
 verdetto sul giro 1 di perunpelo.netlify.app: a 1440 la passata e il blocco di Ambra lasciano schermi mezzi vuoti; sul telefono la misura delle sezioni va bene, ma il pin che trattiene la pagina mentre la fascia pettina le parole rende il sito difficile da scorrere e da navigare. Sul telefono lo scroll resta di chi legge
