@@ -85,7 +85,14 @@ il giorno del saldo.
 ## Aperto
 
 - [ ] Decidere chi firma: Nicola, Patrick o tutti e due
-- [ ] Controproposta a Seba, con la voce di Patrick → [[stile-comunicazione]]
+- [x] **Testo corretto scritto** (25/09/2026): PDF e Word in
+      `~/Downloads/Accordo-riservatezza-OperO-controproposta.*` sul Mac di
+      Patrick, fuori dal vault perché c'è il codice fiscale di Seba. Stessa
+      numerazione del suo, più un art. 3-bis su incarico e compensi. Cifre
+      scelte da Claude, da trattare: penali al 25/50/100% dei compensi degli
+      ultimi 12 mesi, 10% sui ritardi di Seba, **saldo alla firma**
+- [ ] Confermare 2.400 / 400 / 2.000 prima di mandarlo: nel vault sono fermi all'11/09/2026
+- [ ] Mandarlo a Seba, con la voce di Patrick → [[stile-comunicazione]]
 - [ ] `TODO` — le due liste di facchinaggio del 25/09 hanno un prezzo, o sono dentro i 2.400 €?
 - [ ] Versione finale letta da un avvocato prima della firma
 
