@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito Per un Pelo (toelettatura di Ambra Longoni, Nembro BG), lettere arruffate che si pettinano. perunpelo.netlify.app dal 25/9, 8/8.
+riga: Bozza sito Per un Pelo (toelettatura di Ambra Longoni, Nembro BG), lettere che si pettinano. Giro 2 online su perunpelo.netlify.app.
 status: attivo
 client: perunpelo
 stack: html-css-js
@@ -42,8 +42,10 @@ zero si mettono in riga. È l'unica lingua di movimento della pagina.
   «Pelo» arrivano arruffati dai due lati, si fermano per un pelo e si pettinano.
 - **Testa a tre livelli**: «PELO» enorme dietro, Spillo in mezzo, il nome
   davanti, con parallasse.
-- **La passata**: un pin con Bagno, Tosatura, Taglio e Prima volta. Una fascia
-  (`clip-path` su due copie della parola) pettina la parola mentre scendi.
+- **La passata**: Bagno, Tosatura, Taglio e Prima volta. Una fascia
+  (`clip-path` su due copie della parola) pettina la parola una volta, a tempo,
+  quando entra. Dal giro 2 niente pin: sul telefono quattro blocchi, a 1440 una
+  fila con le foto grandi sfalsate.
 - Poi Ambra, con l'illustrazione del 2023 e le sue parole. Le recensioni: 5,0
   su 102 e sei citazioni vere. Dove e orari, con la riga di oggi segnata. In
   fondo «Prenota», che compone il messaggio WhatsApp con nome, razza e servizio.
@@ -61,23 +63,23 @@ fuori perché non risultano da nessuna fonte.
 |---|---|---|
 | 1 | operatore Opus | costruzione, `2f3dd7c` |
 | 1-bis | direttore | virgola di «5,0» sopra «102 recensioni», blocco di Ambra vuoto a 1440 riempito con le sue parole del 2023, `ad922e5` |
+| 2 | operatore Opus nuovo | verdetto di Nicola sul giro 1 (PC vuoto, scroll che trattiene sul telefono, foto lente): pin tolto ovunque, servizi in fila a 1440, foto in WebP, `847e857` |
 
 ## Misurato
 
 | Cosa | Valore |
 |---|---|
-| Livello | 8/8, slop 0 blocchi (3 avvisi), testo 0 blocchi (1 avviso: una frase di 41 parole) |
+| Livello | 8/8, slop 0, testo 0 (giro 1 e giro 2) |
+| Scroll a 375 | 15 passi da 400 px, nessuno trattenuto; `.pin-spacer` 0 a ogni larghezza (giro 2) |
+| Immagini a 375, primo caricamento | 98 KB invece di 547; la foto più grande servita al telefono pesa 27 KB invece di 179 (giro 2) |
 | Overflow | 0 a 320, 375, 600, 1023, 1024, 1280 e 1440 |
 | Sbarramenti | `x-robots-tag`, `robots.txt` e `meta robots` verificati con `curl` sul deploy pubblicato, file di lavoro a 404, badge spento |
-| Token | Sonnet 141k + 122k · Opus 395k fra direzione e costruzione · direttore Opus 5.5 |
+| Token | Sonnet 141k + 122k · Opus 395k fra direzione e costruzione del giro 1 · Opus 191k il giro 2 · direttore Opus 5.5 |
 
 ## Da sapere prima del DM
 
-- **Sul telefono i servizi non si aprono sul posto**: il menu porta alla
-  parola dentro la passata. È uno scarto dalla direttiva del 25/09 su Lei
-  Beauty Room (sezioni chiuse che si aprono dal menu), scelto perché qui i
-  quattro servizi stanno già in un pin solo e non fanno muro. Se Nicola li vuole
-  a scomparsa, va rifatto.
+- **Niente pin dal giro 2**: GSAP resta solo per la parallasse della testa.
+  Il menu porta a sezioni vere.
 - Il marchio è scontornato da `03`, a circa 450 px. Il file originale va
   chiesto ad Ambra.
 - **Non verificato**: Safari e un iPhone vero; la pagina senza JS e con

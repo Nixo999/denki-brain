@@ -66,7 +66,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-ngbarber]] — ⚠️ Bozza vetrina per ng-barber, riga 2 dell'anello 1-b delle liste Instagram, gancio 5.
 - [[sito-osteria-tarilli]] — ⚠️ Osteria Tarilli, Via Ronco Nuovo 2, 6949 Comano (TI), a 300 m dalla RSI.
 - [[sito-p0t-tattoo]] — Bozza sito per p0t_tattoo (Ruben, tatuatore anime e cartoon, Collegno TO) - mondo «Rodovetro × Retino», linea → puntinato → colore, Unbounded + Hanken Grotesk. Online su p0t-tattoo.netlify.app dal 24/9, giro 9 (mobile per primo, desktop pieno, testa con spessore), 8/8, slop 0, testo 0.
-- [[sito-perunpelo]] — Bozza sito Per un Pelo (toelettatura di Ambra Longoni, Nembro BG), lettere arruffate che si pettinano. perunpelo.netlify.app dal 25/9, 8/8.
+- [[sito-perunpelo]] — Bozza sito Per un Pelo (toelettatura di Ambra Longoni, Nembro BG), lettere che si pettinano. Giro 2 online su perunpelo.netlify.app.
 - [[sito-pinkploy]] — Online su pinkploy.netlify.app per @nails_art_by_pinkploy, onicotecnica a Brescia centro - mondo B «lo spessore», l'unghia in quota.
 - [[sito-pizzeria-lobidu]] — ⚠️ Pizzeria Lobidù, pizzeria siciliana, Via IV Novembre 13, 21049 Tradate (VA).
 - [[sito-salone-di-andrea]] — ⚠️ Sito vetrina in una pagina per Il Salone di Andrea, parrucchiere donna e uomo di Andrea Bielli a Dalmine (BG), Viale Natale Betelli 58.
