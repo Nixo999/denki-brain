@@ -33,7 +33,7 @@ in bianco, campo «C.F./P.IVA». Il codice fiscale di Seba qui non si scrive.
 | 6 | Penali 5.000 / 15.000 / 25.000 / 30.000 €, più il maggior danno | Dovute senza prova del danno (art. 1382 c.c.). Cumulabili se l'interesse è diverso |
 | 7 | Consegna del codice **a fine incarico o su richiesta**; copie solo se lo impone la legge | La leva sui 2.000 € sparisce. Niente copia per difendersi |
 | 8 | Clausola invalida sostituita da una lecita con lo stesso scopo | Scritto per salvare l'art. 4 davanti a un giudice |
-| 9-10 | Legge italiana, foro non fissato; da coordinare con un contratto d'incarico | Lo dice lui stesso: manca il contratto vero |
+| 9-10 | Legge italiana, foro non fissato; da coordinare con un contratto d'incarico | Lo dice il foglio stesso: manca il contratto vero |
 
 ## I numeri
 
@@ -51,7 +51,7 @@ scattare due: 25.000 + 30.000.
    «in via prevalente» a quei settori), ma una cooperativa di facchinaggio è
    squadre a orario variabile, e OperO ha turni, ore e disponibilità →
    [[denkishift]]. Serve l'esclusione per nome.
-3. **Firma una persona**, non DenkiCode, e risponde lei. Il firmatario naturale
+3. **Firma una persona**, non DenkiCode, e ne risponde di tasca propria. Il firmatario naturale
    è Nicola; le ricevute di OperO vanno su Patrick → [[vincoli-fiscali]].
 4. **Fisco.** «Collaboratore autonomo / Freelancer», «incarichi», P.IVA: il
    foglio descrive un rapporto continuativo, l'opposto della prestazione
@@ -60,9 +60,9 @@ scattare due: 25.000 + 30.000.
    penale per lui, nessun tetto, nessun diritto di citare OperO come lavoro
    nostro. È l'unico gestionale che possiamo mostrare a un lead.
 
-**Cosa è giusto riconoscergli**: il suo codice sta sul nostro GitHub,
+**Cosa è giusto riconoscere a Seba**: il suo codice sta sul nostro GitHub,
 conosciamo listino, clienti e roadmap, e le due liste di facchinaggio del
-25/09 le abbiamo costruite noi. Un fondatore al suo posto chiede questo. Il
+25/09 le abbiamo costruite noi. Chi fonda un'attività al suo posto chiede questo. Il
 problema è la taratura, non la richiesta.
 
 ## La controproposta
@@ -72,7 +72,7 @@ problema è la taratura, non la richiesta.
 | 4 | 12 mesi (24 al massimo), decade se i compensi non vengono pagati; DenkiShift, siti e gestionali per altri settori esclusi per nome |
 | 6 | Tetto complessivo pari a quanto pagato negli ultimi 12 mesi, niente maggior danno, penale reciproca sui ritardi di pagamento |
 | 1-2 | Via «know-how»; eccezioni standard; competenze generali libere; riservatezza reciproca |
-| 3 | Restano nostri strumenti e componenti preesistenti o sviluppati fuori da OperO, con licenza d'uso a lui per OperO. I diritti sui deliverable passano **al saldo** |
+| 3 | Restano nostri strumenti e componenti preesistenti o sviluppati fuori da OperO, con licenza d'uso a Seba per OperO. I diritti sui deliverable passano **al saldo** |
 | 7 | Consegna a saldo avvenuto; una copia per tutela legale e contabile; diritto di citare OperO |
 | Parti | «Collaborazione occasionale», solo codice fiscale |
 
