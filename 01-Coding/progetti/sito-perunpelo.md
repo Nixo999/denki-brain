@@ -83,11 +83,11 @@ fuori perché non risultano da nessuna fonte.
 - Il marchio è scontornato da `03`, a circa 450 px. Il file originale va
   chiesto ad Ambra.
 - **Non verificato**: Safari e un iPhone vero; la pagina senza JS e con
-  `prefers-reduced-motion` aperta davvero; lo scorrimento dopo il salto dal
-  menu; il font di ripiego a CDN fredda. Il movimento a 375 l'ha guardato
-  l'operatore nel pannello (apertura campionata, passata in cinque posizioni).
-- `TODO` il verdetto di Nicola. Il DM col link è di Patrick. Le domande per
-  Ambra stanno in [[perunpelo]].
+  `prefers-reduced-motion` aperta davvero; il font di ripiego a CDN fredda; il
+  peso delle immagini a DPR 2. Il giro 2 è misurato in Brave headless: scroll
+  a passi, atterraggi del menu, opacità a 400 ms dal salto.
+- `TODO` il verdetto di Nicola sul giro 2. Il DM col link è di Patrick. Le
+  domande per Ambra stanno in [[perunpelo]].
 
 ## Collegamenti
 
