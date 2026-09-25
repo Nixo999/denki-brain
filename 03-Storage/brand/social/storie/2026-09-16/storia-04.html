@@ -1,6 +1,6 @@
 <!doctype html>
 <meta charset="utf-8">
-<title>Guarda l’indirizzo e il telefono, poi decide</title>
+<title>Chi decide alle undici di sera non ti telefona</title>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   html, body { width:1080px; height:1920px; overflow:hidden; }
@@ -54,6 +54,7 @@
     margin-top:38px; max-width:800px;
     font-size:38px; line-height:1.46; letter-spacing:-.008em;
     font-weight:400; color:#a6a6b2;
+    text-wrap:pretty;
   }
   footer { margin-top:64px; display:flex; align-items:center; gap:30px; }
   .barra {
@@ -104,6 +105,12 @@
   .numero-grande { font-size:96px; font-weight:700; fill:#fff; letter-spacing:-.045em; }
   .ora { font-size:26px; font-weight:700; fill:#0a0a0d; }
   .stelle text { fill:#f0389f; letter-spacing:.12em; }
+  .link { font-size:30px; font-weight:600; fill:#0a0a0d; }
+  .strada { fill:#131318; }
+  .lettera { font-size:54px; font-weight:700; fill:#e6e6ea; }
+  .percorso { fill:none; stroke:url(#g); stroke-width:4; stroke-dasharray:12 10;
+              stroke-linecap:round; }
+  .virgolette { font-size:150px; font-weight:700; fill:url(#g); }
 </style>
 <div class="fondo"></div>
 <div class="trama"></div>
@@ -117,27 +124,22 @@
 </svg>
 <div class="telaio">
   <header>
-    <img src="../simbolo.svg" alt="">
+    <img src="../../simbolo.svg" alt="">
     <span class="marchio">DenkiCode</span>
-    <span class="conta">02 / 05</span>
+    <span class="conta">04 / 05</span>
   </header>
   <div class="scena">
-<svg viewBox="0 0 880 340" class="art">
-  <circle cx="150" cy="160" r="112" class="binario"/>
-  <circle cx="150" cy="160" r="112" class="arco" stroke="url(#g)"
-    stroke-dasharray="703" stroke-dashoffset="211" transform="rotate(-90 150 160)"/>
-  <text x="150" y="182" class="numero" text-anchor="middle">10</text>
-  <text x="150" y="316" class="micro" text-anchor="middle">secondi</text>
-  <rect x="340" y="62" width="500" height="80" rx="12" fill="url(#g)" opacity=".16"/>
-  <rect x="340" y="62" width="6" height="80" fill="url(#g)"/>
-  <text x="376" y="110" class="voce">L’indirizzo</text>
-  <rect x="340" y="178" width="500" height="80" rx="12" fill="url(#g)" opacity=".16"/>
-  <rect x="340" y="178" width="6" height="80" fill="url(#g)"/>
-  <text x="376" y="226" class="voce">Il tasto per prenotare</text>
+<svg viewBox="0 0 880 380" class="art">
+  <g class="griglia-ore"><rect x="0" y="54" width="92" height="46" rx="8"/><rect x="108" y="54" width="92" height="46" rx="8"/><rect x="216" y="54" width="92" height="46" rx="8"/><rect x="324" y="54" width="92" height="46" rx="8"/><rect x="432" y="54" width="92" height="46" rx="8"/><rect x="540" y="54" width="92" height="46" rx="8"/><rect x="648" y="54" width="92" height="46" rx="8"/><rect x="756" y="54" width="92" height="46" rx="8"/><rect x="0" y="116" width="92" height="46" rx="8"/><rect x="108" y="116" width="92" height="46" rx="8"/><rect x="216" y="116" width="92" height="46" rx="8"/><rect x="324" y="116" width="92" height="46" rx="8"/><rect x="432" y="116" width="92" height="46" rx="8"/><rect x="540" y="116" width="92" height="46" rx="8"/><rect x="648" y="116" width="92" height="46" rx="8"/><rect x="756" y="116" width="92" height="46" rx="8"/><rect x="0" y="178" width="92" height="46" rx="8"/><rect x="108" y="178" width="92" height="46" rx="8"/><rect x="216" y="178" width="92" height="46" rx="8"/><rect x="324" y="178" width="92" height="46" rx="8"/><rect x="432" y="178" width="92" height="46" rx="8"/><rect x="540" y="178" width="92" height="46" rx="8"/><rect x="648" y="178" width="92" height="46" rx="8"/><rect x="756" y="178" width="92" height="46" rx="8"/><rect x="0" y="240" width="92" height="46" rx="8"/><rect x="108" y="240" width="92" height="46" rx="8"/><rect x="216" y="240" width="92" height="46" rx="8"/><rect x="324" y="240" width="92" height="46" rx="8"/><rect x="432" y="240" width="92" height="46" rx="8"/><rect x="540" y="240" width="92" height="46" rx="8"/><rect x="648" y="240" width="92" height="46" rx="8"/><rect x="756" y="240" width="92" height="46" rx="8"/></g>
+  <rect x="540" y="240" width="92" height="46" rx="8" fill="url(#g)"/>
+  <text x="586" y="270" class="ora" text-anchor="middle">23:40</text>
+  <line x1="586" y1="292" x2="586" y2="330" stroke="url(#g)" stroke-width="2"/>
+  <text x="586" y="362" class="micro" text-anchor="middle">prenotazione ricevuta</text>
+  <text x="0" y="30" class="micro">negozio chiuso</text>
 </svg></div>
-  <div class="tag">I primi secondi</div>
-  <h1>Guarda l’indirizzo e il telefono, poi decide</h1>
-  <p>Apre il sito e cerca dove sei e come si prenota. Ci mette dieci secondi. Se le deve andare a cercare in fondo alla pagina dei contatti, chiude e prova un altro nome.</p>
+  <div class="tag">Agenda</div>
+  <h1>Chi decide alle undici di sera non ti telefona</h1>
+  <p>Aspetta domani, e domani ha da fare. Oppure intanto ha chiamato un altro. Con l’agenda dentro il sito ti lascia la prenotazione la sera stessa, e la trovi quando apri.</p>
   <footer>
     <span class="barra"></span>
     <span class="sito">denkicode.com</span>

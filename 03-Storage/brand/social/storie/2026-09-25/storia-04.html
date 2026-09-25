@@ -1,6 +1,6 @@
 <!doctype html>
 <meta charset="utf-8">
-<title>Chi decide alle undici di sera non ti telefona</title>
+<title>La prima volta nessuno sa dove parcheggiare</title>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   html, body { width:1080px; height:1920px; overflow:hidden; }
@@ -54,6 +54,7 @@
     margin-top:38px; max-width:800px;
     font-size:38px; line-height:1.46; letter-spacing:-.008em;
     font-weight:400; color:#a6a6b2;
+    text-wrap:pretty;
   }
   footer { margin-top:64px; display:flex; align-items:center; gap:30px; }
   .barra {
@@ -104,6 +105,12 @@
   .numero-grande { font-size:96px; font-weight:700; fill:#fff; letter-spacing:-.045em; }
   .ora { font-size:26px; font-weight:700; fill:#0a0a0d; }
   .stelle text { fill:#f0389f; letter-spacing:.12em; }
+  .link { font-size:30px; font-weight:600; fill:#0a0a0d; }
+  .strada { fill:#131318; }
+  .lettera { font-size:54px; font-weight:700; fill:#e6e6ea; }
+  .percorso { fill:none; stroke:url(#g); stroke-width:4; stroke-dasharray:12 10;
+              stroke-linecap:round; }
+  .virgolette { font-size:150px; font-weight:700; fill:url(#g); }
 </style>
 <div class="fondo"></div>
 <div class="trama"></div>
@@ -117,22 +124,30 @@
 </svg>
 <div class="telaio">
   <header>
-    <img src="../simbolo.svg" alt="">
+    <img src="../../simbolo.svg" alt="">
     <span class="marchio">DenkiCode</span>
     <span class="conta">04 / 05</span>
   </header>
   <div class="scena">
-<svg viewBox="0 0 880 380" class="art">
-  <g class="griglia-ore"><rect x="0" y="54" width="92" height="46" rx="8"/><rect x="108" y="54" width="92" height="46" rx="8"/><rect x="216" y="54" width="92" height="46" rx="8"/><rect x="324" y="54" width="92" height="46" rx="8"/><rect x="432" y="54" width="92" height="46" rx="8"/><rect x="540" y="54" width="92" height="46" rx="8"/><rect x="648" y="54" width="92" height="46" rx="8"/><rect x="756" y="54" width="92" height="46" rx="8"/><rect x="0" y="116" width="92" height="46" rx="8"/><rect x="108" y="116" width="92" height="46" rx="8"/><rect x="216" y="116" width="92" height="46" rx="8"/><rect x="324" y="116" width="92" height="46" rx="8"/><rect x="432" y="116" width="92" height="46" rx="8"/><rect x="540" y="116" width="92" height="46" rx="8"/><rect x="648" y="116" width="92" height="46" rx="8"/><rect x="756" y="116" width="92" height="46" rx="8"/><rect x="0" y="178" width="92" height="46" rx="8"/><rect x="108" y="178" width="92" height="46" rx="8"/><rect x="216" y="178" width="92" height="46" rx="8"/><rect x="324" y="178" width="92" height="46" rx="8"/><rect x="432" y="178" width="92" height="46" rx="8"/><rect x="540" y="178" width="92" height="46" rx="8"/><rect x="648" y="178" width="92" height="46" rx="8"/><rect x="756" y="178" width="92" height="46" rx="8"/><rect x="0" y="240" width="92" height="46" rx="8"/><rect x="108" y="240" width="92" height="46" rx="8"/><rect x="216" y="240" width="92" height="46" rx="8"/><rect x="324" y="240" width="92" height="46" rx="8"/><rect x="432" y="240" width="92" height="46" rx="8"/><rect x="540" y="240" width="92" height="46" rx="8"/><rect x="648" y="240" width="92" height="46" rx="8"/><rect x="756" y="240" width="92" height="46" rx="8"/></g>
-  <rect x="540" y="240" width="92" height="46" rx="8" fill="url(#g)"/>
-  <text x="586" y="270" class="ora" text-anchor="middle">23:40</text>
-  <line x1="586" y1="292" x2="586" y2="330" stroke="url(#g)" stroke-width="2"/>
-  <text x="586" y="362" class="micro" text-anchor="middle">prenotazione ricevuta</text>
-  <text x="0" y="30" class="micro">negozio chiuso</text>
+<svg viewBox="0 0 880 360" class="art">
+  <rect x="0" y="40" width="880" height="34" class="strada"/>
+  <rect x="0" y="236" width="880" height="34" class="strada"/>
+  <rect x="300" y="0" width="34" height="360" class="strada"/>
+  <rect x="640" y="0" width="34" height="360" class="strada"/>
+  <text x="60" y="110" class="micro">parcheggio</text>
+  <rect x="60" y="126" width="120" height="84" rx="12" fill="none" stroke="url(#g)" stroke-width="3"/>
+  <text x="120" y="186" class="lettera" text-anchor="middle">P</text>
+  <path d="M180 168 H317 V253 H780 V218" class="percorso"/>
+  <g transform="translate(780 150)">
+    <path d="M0 64 C -14 42 -34 26 -34 0 A34 34 0 0 1 34 0 C 34 26 14 42 0 64 Z" fill="url(#g)"/>
+    <circle cx="0" cy="0" r="12" fill="#0a0a0d"/>
+  </g>
+  <text x="780" y="104" class="micro" text-anchor="middle">ingresso</text>
+  <text x="420" y="316" class="micro">a piedi</text>
 </svg></div>
-  <div class="tag">Agenda</div>
-  <h1>Chi decide alle undici di sera non ti telefona</h1>
-  <p>Aspetta domani, e domani ha da fare. Oppure intanto ha chiamato un altro. Con l’agenda dentro il sito ti lascia la prenotazione la sera stessa, e la trovi quando apri.</p>
+  <div class="tag">La prima volta</div>
+  <h1>La prima volta nessuno sa dove parcheggiare</h1>
+  <p>Il cliente nuovo fa due volte il giro dell’isolato, poi ti chiama dalla strada perché non trova l’ingresso. Sul sito basta una riga sotto la mappa: dove si lascia la macchina e da che parte si entra.</p>
   <footer>
     <span class="barra"></span>
     <span class="sito">denkicode.com</span>

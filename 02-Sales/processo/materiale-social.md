@@ -1,7 +1,7 @@
 ---
-riga: I post pubblicati sul profilo Instagram di DenkiCode - cosa e' uscito, con che didascalia, e dove stanno i file.
+riga: I post e le storie Instagram di DenkiCode - cosa e' uscito, con che testo, e dove stanno i file e il sorgente per rifarli.
 type: risorsa
-updated: 2026-09-16
+updated: 2026-09-25
 source: claude
 verificato: 2026-09-16
 tags: [social, materiale, lead]
@@ -102,7 +102,11 @@ Fuori dal vault come quelli del 14: il vault e' testo.
 **Il sorgente invece sta nel vault**, in `03-Storage/brand/social/`:
 `genera-storie.py` tiene testi e disegni, `rendi-storie.sh` rifa' i PNG con
 Chrome headless e i JPEG con `sips`. Una correzione si fa li' e si ri-rende in
-dieci secondi, senza riaprire Affinity.
+dieci secondi, senza riaprire Affinity. **Ogni serie ha la sua cartella**,
+`storie/<data>/`: `genera-storie.py 2026-09-16` e `rendi-storie.sh 2026-09-16`
+rifanno quella, senza argomenti rifanno l'ultima. Il JPEG finisce in
+`~/Desktop/denki-storie-instagram-<data>/`. Rigenerata dopo il cambio del
+25 settembre, la serie del 16 esce identica al byte ai PNG consegnati.
 
 Impaginazione uguale su tutte e otto: simbolo e nome in testa col numero della
 serie, un disegno fatto in SVG a meta' pagina, etichetta dell'argomento in
@@ -120,6 +124,32 @@ I testi sono passati da [[voce-denkicode]] e restano `source: claude`: nessun
 numero, nessuna statistica, nessuna percentuale di conversione, perche' non
 avremmo modo di sostenerla. Le otto affermazioni sono tutte verificabili a
 occhio da chi le legge.
+
+## Serie del 25 settembre 2026 - altre cinque cose
+
+Il seguito della serie del 16, chiesto da Patrick il 25 settembre: stessa
+impaginazione, stessa copertina con l'indice, cinque argomenti nuovi.
+
+| # | Titolo | Argomento |
+|---|---|---|
+| 00 | Altre cinque cose sul sito del tuo negozio | copertina della serie |
+| 01 | Il prezzo te lo chiedono mentre lavori | il listino sul sito |
+| 02 | Chi apre il profilo guarda le ultime foto | i servizi che non si postano |
+| 03 | Un cliente contento ti consiglia su WhatsApp | il link a chi non ha Instagram |
+| 04 | La prima volta nessuno sa dove parcheggiare | parcheggio e ingresso |
+| 05 | I complimenti piu' belli arrivano in DM | i messaggi dei clienti, col permesso |
+
+**Nessun argomento torna**: ne' i cinque del 16 ne' i tre che Patrick aveva
+tolto. **Scartata una storia sui profili rubati** con un messaggio finto da
+Instagram: insegnava a diffidare dei DM con un link, cioe' del canale con cui
+scrive Patrick.
+
+Testi scritti con le due regole del 16 (situazione concreta, niente antitesi,
+niente morale in chiusura), `voce-check.py` pulito su tutte e sei. **Patrick
+non li ha ancora riletti**: restano `source: claude` fino al suo ok.
+
+**I file**: `~/Desktop/denki-storie-instagram-2026-09-25/` sul Mac di Patrick,
+sei JPEG, `png/` e `note-pubblicazione.txt`.
 
 ## Le cose da sapere prima di pubblicare
 

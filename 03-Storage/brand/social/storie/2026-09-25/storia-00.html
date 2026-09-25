@@ -1,0 +1,127 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Altre cinque cose sul sito del tuo negozio</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1080px; height:1920px; overflow:hidden; }
+  body {
+    background:#07070a;
+    font-family:-apple-system,"SF Pro Display","Helvetica Neue",Helvetica,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .fondo {
+    position:absolute; inset:0;
+    background:
+      radial-gradient(900px 620px at 92% -6%, rgba(218,47,155,.20), transparent 68%),
+      radial-gradient(820px 640px at -12% 104%, rgba(146,58,223,.18), transparent 70%);
+  }
+  .trama {
+    position:absolute; inset:0; opacity:.30;
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,.045) 1px, transparent 1px);
+    background-size:90px 90px;
+    mask-image:radial-gradient(760px 900px at 50% 42%, #000 20%, transparent 78%);
+  }
+  .telaio {
+    position:absolute; left:0; right:0; top:236px; bottom:236px;
+    padding:0 96px; display:flex; flex-direction:column;
+  }
+  header { display:flex; align-items:center; gap:22px; }
+  header img { width:62px; height:62px; }
+  .marchio {
+    font-size:25px; font-weight:600; letter-spacing:.34em;
+    color:#f3f3f5; text-transform:uppercase;
+  }
+  .conta {
+    margin-left:auto; font-size:24px; font-weight:500; letter-spacing:.16em;
+    color:#5c5c66; font-variant-numeric:tabular-nums;
+  }
+  .scena { flex:1; display:flex; align-items:center; padding:56px 0 24px; }
+  .art { width:100%; height:auto; max-height:470px; display:block; }
+  .tag {
+    font-size:26px; font-weight:600; letter-spacing:.22em;
+    text-transform:uppercase;
+    background:linear-gradient(96deg,#b34ae6,#f0389f);
+    -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+  }
+  h1 {
+    margin-top:30px; font-size:{corpo_h1}px; line-height:1.015;
+    letter-spacing:-.035em; font-weight:700; color:#fff;
+    text-wrap:balance;
+  }
+  p {
+    margin-top:38px; max-width:800px;
+    font-size:38px; line-height:1.46; letter-spacing:-.008em;
+    font-weight:400; color:#a6a6b2;
+    text-wrap:pretty;
+  }
+  footer { margin-top:64px; display:flex; align-items:center; gap:30px; }
+  .barra {
+    height:5px; width:132px; border-radius:3px;
+    background:linear-gradient(90deg,#923adf,#da2f9b);
+  }
+  .sito { font-size:28px; font-weight:500; letter-spacing:.1em; color:#dededf; }
+
+  /* tratti comuni ai disegni */
+  .telaio.fronte { justify-content:center; }
+  .marchione { width:150px; height:150px; display:block; }
+  .fronte h1 {
+    margin-top:56px; font-size:112px; line-height:.99; letter-spacing:-.042em;
+  }
+  .fronte p { margin-top:34px; font-size:40px; color:#b6b6c0; max-width:760px; }
+  .indice { margin-top:78px; border-top:1px solid #23232b; }
+  .indice div {
+    display:flex; align-items:baseline; gap:30px;
+    padding:25px 0; border-bottom:1px solid #23232b;
+    font-size:35px; color:#c9c9d2; letter-spacing:-.01em;
+  }
+  .indice span {
+    font-size:24px; font-weight:600; letter-spacing:.14em; color:#7a4bd0;
+    font-variant-numeric:tabular-nums;
+  }
+  .art text { font-family:-apple-system,"Helvetica Neue",sans-serif; }
+  .tratto { fill:none; stroke:#4a4a55; stroke-width:2.5; }
+  .tratto-tenue { fill:none; stroke:#2c2c34; stroke-width:2.5; }
+  .binario { fill:none; stroke:#22222a; stroke-width:14; }
+  .arco { fill:none; stroke-width:14; stroke-linecap:round; }
+  .debole { fill:#15151b; }
+  .riga { fill:#84848f; }
+  .riga-tenue { fill:#3d3d46; }
+  .riga-tenue-p { fill:#2c2c34; }
+  .griglia rect, .griglia-ore rect {
+    fill:none; stroke:#26262e; stroke-width:2.5; stroke-dasharray:9 8;
+  }
+  .griglia-ore rect { fill:#111116; stroke-dasharray:none; }
+  .mono {
+    font-size:30px; fill:#7c7c88;
+    font-family:"SF Mono",Menlo,monospace;
+  }
+  .voce { font-size:32px; font-weight:500; fill:#e6e6ea; }
+  .voce-tenue { font-size:32px; font-weight:400; fill:#6c6c78; }
+  .micro { font-size:23px; font-weight:500; letter-spacing:.14em; fill:#5e5e6a;
+           text-transform:uppercase; }
+  .numero { font-size:86px; font-weight:700; fill:#fff; letter-spacing:-.04em; }
+  .numero-grande { font-size:96px; font-weight:700; fill:#fff; letter-spacing:-.045em; }
+  .ora { font-size:26px; font-weight:700; fill:#0a0a0d; }
+  .stelle text { fill:#f0389f; letter-spacing:.12em; }
+  .link { font-size:30px; font-weight:600; fill:#0a0a0d; }
+  .strada { fill:#131318; }
+  .lettera { font-size:54px; font-weight:700; fill:#e6e6ea; }
+  .percorso { fill:none; stroke:url(#g); stroke-width:4; stroke-dasharray:12 10;
+              stroke-linecap:round; }
+  .virgolette { font-size:150px; font-weight:700; fill:url(#g); }
+</style>
+<div class="fondo"></div>
+<div class="trama"></div>
+<div class="telaio fronte">
+  <img class="marchione" src="../../simbolo.svg" alt="">
+  <div class="tag" style="margin-top:44px">DenkiCode</div>
+  <h1>Altre cinque cose sul sito del tuo negozio</h1>
+  <p>Queste ti capitano già, anche se il sito non ce l’hai.</p>
+  <div class="indice"><div><span>01</span>Chi ti chiede il prezzo</div><div><span>02</span>Le ultime foto del profilo</div><div><span>03</span>Il passaparola su WhatsApp</div><div><span>04</span>Il primo appuntamento</div><div><span>05</span>I complimenti in DM</div></div>
+  <footer style="margin-top:58px">
+    <span class="barra"></span>
+    <span class="sito">denkicode.com</span>
+  </footer>
+</div>

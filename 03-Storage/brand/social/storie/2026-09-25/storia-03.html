@@ -1,6 +1,6 @@
 <!doctype html>
 <meta charset="utf-8">
-<title>Il tuo sito lo aprono col telefono in una mano</title>
+<title>Un cliente contento ti consiglia su WhatsApp</title>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   html, body { width:1080px; height:1920px; overflow:hidden; }
@@ -54,6 +54,7 @@
     margin-top:38px; max-width:800px;
     font-size:38px; line-height:1.46; letter-spacing:-.008em;
     font-weight:400; color:#a6a6b2;
+    text-wrap:pretty;
   }
   footer { margin-top:64px; display:flex; align-items:center; gap:30px; }
   .barra {
@@ -104,6 +105,12 @@
   .numero-grande { font-size:96px; font-weight:700; fill:#fff; letter-spacing:-.045em; }
   .ora { font-size:26px; font-weight:700; fill:#0a0a0d; }
   .stelle text { fill:#f0389f; letter-spacing:.12em; }
+  .link { font-size:30px; font-weight:600; fill:#0a0a0d; }
+  .strada { fill:#131318; }
+  .lettera { font-size:54px; font-weight:700; fill:#e6e6ea; }
+  .percorso { fill:none; stroke:url(#g); stroke-width:4; stroke-dasharray:12 10;
+              stroke-linecap:round; }
+  .virgolette { font-size:150px; font-weight:700; fill:url(#g); }
 </style>
 <div class="fondo"></div>
 <div class="trama"></div>
@@ -117,38 +124,35 @@
 </svg>
 <div class="telaio">
   <header>
-    <img src="../simbolo.svg" alt="">
+    <img src="../../simbolo.svg" alt="">
     <span class="marchio">DenkiCode</span>
     <span class="conta">03 / 05</span>
   </header>
   <div class="scena">
 <svg viewBox="0 0 880 452" class="art">
-  <text x="96" y="24" class="micro">dal telefono</text>
-  <text x="470" y="24" class="micro">dal computer</text>
-  <g transform="rotate(-6 200 250)">
-    <rect x="96" y="64" width="208" height="356" rx="34" class="tratto"/>
-    <rect x="176" y="84" width="48" height="7" rx="3.5" class="riga-tenue"/>
-    <rect x="118" y="112" width="164" height="94" rx="10" fill="url(#g)" opacity=".3"/>
-    <rect x="118" y="226" width="126" height="11" rx="5.5" class="riga"/>
-    <rect x="118" y="254" width="164" height="8" rx="4" class="riga-tenue"/>
-    <rect x="118" y="272" width="140" height="8" rx="4" class="riga-tenue"/>
-    <rect x="118" y="310" width="112" height="38" rx="19" fill="url(#g)"/>
-    <rect x="118" y="370" width="164" height="8" rx="4" class="riga-tenue"/>
-    <rect x="118" y="388" width="96" height="8" rx="4" class="riga-tenue"/>
-  </g>
-  <g opacity=".4">
-    <rect x="470" y="86" width="390" height="242" rx="14" class="tratto-tenue"/>
-    <rect x="618" y="328" width="94" height="40" class="tratto-tenue"/>
-    <rect x="556" y="368" width="218" height="10" rx="5" class="tratto-tenue"/>
-    <rect x="504" y="126" width="230" height="14" rx="7" class="riga-tenue"/>
-    <rect x="504" y="158" width="322" height="9" rx="4.5" class="riga-tenue"/>
-    <rect x="504" y="180" width="286" height="9" rx="4.5" class="riga-tenue"/>
-    <rect x="504" y="236" width="140" height="36" rx="18" class="riga-tenue"/>
-  </g>
+  <text x="0" y="24" class="micro">su whatsapp</text>
+  <text x="600" y="24" class="micro">senza instagram</text>
+  <rect x="0" y="64" width="470" height="208" rx="28" class="debole"/>
+  <text x="32" y="116" class="voce">prova qui, ti trovi bene</text>
+  <rect x="32" y="144" width="406" height="96" rx="14" class="tratto-tenue"/>
+  <rect x="48" y="160" width="64" height="64" rx="10" fill="url(#g)" opacity=".35"/>
+  <rect x="128" y="172" width="200" height="12" rx="6" class="riga"/>
+  <rect x="128" y="198" width="150" height="9" rx="4.5" class="riga-tenue"/>
+  <path d="M482 168 C 530 168, 546 232, 590 232" fill="none" stroke="url(#g)"
+    stroke-width="3" stroke-dasharray="8 8"/>
+  <rect x="600" y="52" width="208" height="372" rx="34" class="tratto"/>
+  <circle cx="640" cy="100" r="18" class="riga-tenue"/>
+  <rect x="670" y="94" width="90" height="10" rx="5" class="riga-tenue"/>
+  <g opacity=".55"><rect x="617" y="140" width="54" height="54" rx="6" class="riga-tenue-p"/><rect x="677" y="140" width="54" height="54" rx="6" class="riga-tenue-p"/><rect x="737" y="140" width="54" height="54" rx="6" class="riga-tenue-p"/><rect x="617" y="200" width="54" height="54" rx="6" class="riga-tenue-p"/><rect x="677" y="200" width="54" height="54" rx="6" class="riga-tenue-p"/><rect x="737" y="200" width="54" height="54" rx="6" class="riga-tenue-p"/><rect x="617" y="260" width="54" height="54" rx="6" class="riga-tenue-p"/><rect x="677" y="260" width="54" height="54" rx="6" class="riga-tenue-p"/><rect x="737" y="260" width="54" height="54" rx="6" class="riga-tenue-p"/><rect x="617" y="320" width="54" height="54" rx="6" class="riga-tenue-p"/><rect x="677" y="320" width="54" height="54" rx="6" class="riga-tenue-p"/><rect x="737" y="320" width="54" height="54" rx="6" class="riga-tenue-p"/></g>
+  <rect x="612" y="236" width="184" height="176" rx="20" fill="#15151b" stroke="#2c2c34" stroke-width="2"/>
+  <rect x="636" y="262" width="136" height="10" rx="5" class="riga"/>
+  <rect x="646" y="284" width="116" height="8" rx="4" class="riga-tenue"/>
+  <rect x="636" y="320" width="136" height="48" rx="24" fill="url(#g)"/>
+  <text x="704" y="352" class="ora" text-anchor="middle">Accedi</text>
 </svg></div>
-  <div class="tag">Telefono</div>
-  <h1>Il tuo sito lo aprono col telefono in una mano</h1>
-  <p>In fila alla cassa, sul divano, davanti alla vetrina per vedere se sei aperto. Dal computer quasi nessuno. Un sito provato solo sul monitor grande, sul telefono diventa una cosa da ingrandire con le dita.</p>
+  <div class="tag">Passaparola</div>
+  <h1>Un cliente contento ti consiglia su WhatsApp</h1>
+  <p>Manda a un amico il link del tuo profilo. Se l’amico Instagram non ce l’ha, lo apre e dopo due foto la pagina gli chiede di accedere. Il sito si apre e basta, da qualunque telefono.</p>
   <footer>
     <span class="barra"></span>
     <span class="sito">denkicode.com</span>

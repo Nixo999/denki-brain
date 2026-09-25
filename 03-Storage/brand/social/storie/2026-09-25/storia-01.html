@@ -1,6 +1,6 @@
 <!doctype html>
 <meta charset="utf-8">
-<title>Cinque cose sul sito del tuo negozio</title>
+<title>Il prezzo te lo chiedono mentre lavori</title>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   html, body { width:1080px; height:1920px; overflow:hidden; }
@@ -46,7 +46,7 @@
     -webkit-background-clip:text; -webkit-text-fill-color:transparent;
   }
   h1 {
-    margin-top:30px; font-size:{corpo_h1}px; line-height:1.015;
+    margin-top:30px; font-size:86px; line-height:1.015;
     letter-spacing:-.035em; font-weight:700; color:#fff;
     text-wrap:balance;
   }
@@ -54,6 +54,7 @@
     margin-top:38px; max-width:800px;
     font-size:38px; line-height:1.46; letter-spacing:-.008em;
     font-weight:400; color:#a6a6b2;
+    text-wrap:pretty;
   }
   footer { margin-top:64px; display:flex; align-items:center; gap:30px; }
   .barra {
@@ -104,16 +105,50 @@
   .numero-grande { font-size:96px; font-weight:700; fill:#fff; letter-spacing:-.045em; }
   .ora { font-size:26px; font-weight:700; fill:#0a0a0d; }
   .stelle text { fill:#f0389f; letter-spacing:.12em; }
+  .link { font-size:30px; font-weight:600; fill:#0a0a0d; }
+  .strada { fill:#131318; }
+  .lettera { font-size:54px; font-weight:700; fill:#e6e6ea; }
+  .percorso { fill:none; stroke:url(#g); stroke-width:4; stroke-dasharray:12 10;
+              stroke-linecap:round; }
+  .virgolette { font-size:150px; font-weight:700; fill:url(#g); }
 </style>
 <div class="fondo"></div>
 <div class="trama"></div>
-<div class="telaio fronte">
-  <img class="marchione" src="../simbolo.svg" alt="">
-  <div class="tag" style="margin-top:44px">DenkiCode</div>
-  <h1>Cinque cose sul sito del tuo negozio</h1>
-  <p>Quelle che si vedono quando un cliente lo apre davvero.</p>
-  <div class="indice"><div><span>01</span>Chi ti cerca su Google</div><div><span>02</span>I primi dieci secondi</div><div><span>03</span>Il telefono in una mano</div><div><span>04</span>Le prenotazioni di sera</div><div><span>05</span>Le foto</div></div>
-  <footer style="margin-top:58px">
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#923adf"/>
+      <stop offset="1" stop-color="#da2f9b"/>
+    </linearGradient>
+  </defs>
+</svg>
+<div class="telaio">
+  <header>
+    <img src="../../simbolo.svg" alt="">
+    <span class="marchio">DenkiCode</span>
+    <span class="conta">01 / 05</span>
+  </header>
+  <div class="scena">
+<svg viewBox="0 0 880 400" class="art">
+  <text x="0" y="24" class="micro">messaggi</text>
+  <rect x="0" y="52" width="300" height="68" rx="34" class="debole"/>
+  <text x="34" y="97" class="voce">quanto costa?</text>
+  <text x="322" y="96" class="micro">10:14</text>
+  <rect x="0" y="136" width="254" height="68" rx="34" class="debole"/>
+  <text x="34" y="181" class="voce">info prezzo</text>
+  <text x="276" y="180" class="micro">13:52</text>
+  <rect x="0" y="220" width="186" height="68" rx="34" class="debole"/>
+  <text x="34" y="265" class="voce">prezzi?</text>
+  <text x="208" y="264" class="micro">17:30</text>
+  <rect x="452" y="304" width="428" height="92" rx="24" fill="url(#g)"/>
+  <rect x="476" y="322" width="56" height="56" rx="12" fill="#0a0a0d" opacity=".22"/>
+  <text x="556" y="346" class="link">Listino prezzi</text>
+  <rect x="556" y="360" width="170" height="8" rx="4" fill="#0a0a0d" opacity=".4"/>
+</svg></div>
+  <div class="tag">Prezzi</div>
+  <h1>Il prezzo te lo chiedono mentre lavori</h1>
+  <p>Hai qualcuno sulla poltrona e il telefono vibra. La sera riscrivi il listino da capo, e chi te l’aveva chiesto intanto ha già scritto a un altro negozio. Con i prezzi sul sito gli mandi un link. Ci vuole un attimo.</p>
+  <footer>
     <span class="barra"></span>
     <span class="sito">denkicode.com</span>
   </footer>

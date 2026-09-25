@@ -192,7 +192,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[flusso-vendita]] — I quattro flussi di vendita e lo Straight Line - come un lead arriva alla chiusura.
 - [[generazione-lead]] — Il collo di bottiglia dell'azienda - da dove arrivano i lead e quanti ne servono.
 - [[materiale-offline]] — Quello che abbiamo di fisico, e a cosa è agganciato.
-- [[materiale-social]] — I post pubblicati sul profilo Instagram di DenkiCode - cosa e' uscito, con che didascalia, e dove stanno i file.
+- [[materiale-social]] — I post e le storie Instagram di DenkiCode - cosa e' uscito, con che testo, e dove stanno i file e il sorgente per rifarli.
 - [[presidi-volantini]] — ⚠️ Terzo canale, deciso il 28/8/2026. Primo presidio vero il 15/9/2026: un parrucchiere via Morgan, pagato col sito gratis, non a risultato.
 - [[prodotti-e-listino]] — I quattro prodotti e i prezzi. I prezzi sono indicativi - l'aggancio, non la cifra finale.
 - [[stile-comunicazione]] — Il registro dei testi che legge un cliente - Lei o Tu, voce di Patrick. Non e' il registro di Trevis.
