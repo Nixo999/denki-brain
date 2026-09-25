@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 25/09/2026 — Nicola: «allora da pc ce troppo spazio vuoto, mentre da telefono è gestito bene lo spazio delle sezioni ma non va bene lanimazione allo scrool cosi, viene dfficile da usare e navigare come sito»
+
+verdetto sul giro 1 di perunpelo.netlify.app: a 1440 la passata e il blocco di Ambra lasciano schermi mezzi vuoti; sul telefono la misura delle sezioni va bene, ma il pin che trattiene la pagina mentre la fascia pettina le parole rende il sito difficile da scorrere e da navigare. Sul telefono lo scroll resta di chi legge
+
 ### 25/09/2026 — Nicola: «usa sempre il nuovo metodo per iusare pochi token»
 
 detto aprendo la bozza di toelettatura.perunpelo: il metodo a più modelli del 24/09 (raccolta e competitor su Sonnet, direzione e costruzione su Opus, il direttore legge solo i file corti) vale per ogni sito da adesso, non solo per p0t_tattoo
