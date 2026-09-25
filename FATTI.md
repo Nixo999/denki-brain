@@ -146,8 +146,9 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   arruffate e si pettinano. **Giro 2 del 25/09 sera** dopo il verdetto di Nicola
   (PC vuoto, scroll che trattiene sul telefono, foto lente): niente pin, servizi
   in fila a 1440, foto in WebP (98 KB a 375 invece di 547). 8/8, slop 0, testo 0,
-  sbarramenti con `curl`. Safari e iPhone veri mai provati. **Il DM col link è
-  di Patrick** → [[sito-perunpelo]], [[perunpelo]]
+  sbarramenti con `curl`. **Giro 3**: Nicola «bello», la fascia rosa resta solo
+  sui titoli e sui pezzi grandi. Safari e iPhone veri mai provati. **Il DM col
+  link è di Patrick** → [[sito-perunpelo]], [[perunpelo]]
 - **OperO, Intermediar + Receive** (24/09/2026): Seba ha mandato la specifica
   della collaborazione fra aziende e ha chiesto di **conoscerla, non di
   iniziarla**. Lavoro nuovo, fuori dai 2.400 €. Sei buchi da chiedere a lui

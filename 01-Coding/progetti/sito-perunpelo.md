@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito Per un Pelo (toelettatura di Ambra Longoni, Nembro BG), lettere che si pettinano. Giro 2 online su perunpelo.netlify.app.
+riga: Bozza sito Per un Pelo (toelettatura di Ambra Longoni, Nembro BG), lettere che si pettinano. Giro 3 online su perunpelo.netlify.app.
 status: attivo
 client: perunpelo
 stack: html-css-js
@@ -64,6 +64,7 @@ fuori perché non risultano da nessuna fonte.
 | 1 | operatore Opus | costruzione, `2f3dd7c` |
 | 1-bis | direttore | virgola di «5,0» sopra «102 recensioni», blocco di Ambra vuoto a 1440 riempito con le sue parole del 2023, `ad922e5` |
 | 2 | operatore Opus nuovo | verdetto di Nicola sul giro 1 (PC vuoto, scroll che trattiene sul telefono, foto lente): pin tolto ovunque, servizi in fila a 1440, foto in WebP, `847e857` |
+| 3 | stesso operatore del giro 2 | verdetto di Nicola sul giro 2 («bello», ma la riga rosa solo sui grandi): fascia da 19 a 10 elementi, il resto compare fermo, `39a4cba` |
 
 ## Misurato
 
@@ -86,7 +87,7 @@ fuori perché non risultano da nessuna fonte.
   `prefers-reduced-motion` aperta davvero; il font di ripiego a CDN fredda; il
   peso delle immagini a DPR 2. Il giro 2 è misurato in Brave headless: scroll
   a passi, atterraggi del menu, opacità a 400 ms dal salto.
-- `TODO` il verdetto di Nicola sul giro 2. Il DM col link è di Patrick. Le
+- `TODO` il verdetto di Nicola sul giro 3. Il DM col link è di Patrick. Le
   domande per Ambra stanno in [[perunpelo]].
 
 ## Collegamenti
