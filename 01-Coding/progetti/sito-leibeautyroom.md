@@ -329,7 +329,7 @@ larghezze, console pulita, ~400 KB sul telefono di cui 216 di foto.
 **Aperto**: le tre foto sono prese da Google e Instagram **senza un ok di
 Tania** (TODO per Patrick in `LEGGIMI.md`); WebKit vero mai provato; il
 movimento visto solo in headless. Il bottone «Chiama» fisso copriva i bottoni
-delle stanze in fondo alla finestra: corretto al giro 6.
+delle stanze in fondo alla finestra: corretto al giro 6 (`378373c`): il bottone fisso si ritira quando un altro bottone gli passa sotto, intersezioni visibili 0 a 320, 375 e 390. Misura fatta nel pannello browser con eventi di scroll sintetici: a pannello nascosto `scrollTo` non genera eventi di scroll.
 
 ## Collegamenti
 

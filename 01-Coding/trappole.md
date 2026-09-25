@@ -341,6 +341,13 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   fra un giro e l'altro. → `style="border:0"` sull'iframe, o si misura con
   `resize_window` del pannello. (25/09/2026, [[sito-p0t-tattoo]])
 
+- `[TRAPPOLA]` **Nel pannello browser nascosto `scrollTo` non genera eventi di
+  `scroll` e rAF non gira**: un listener di scroll misurato così sembra rotto
+  (il bottone fisso non si ritirava mai) mentre il codice era giusto. → nel test
+  si fa `dispatchEvent(new Event('scroll'))` dopo ogni `scrollTo`, e si evita
+  di mettere un rAF fra evento e stato: un rAF che non arriva lascia un latch
+  chiuso per sempre. (25/09/2026, [[sito-leibeautyroom]])
+
 ## Immagini e `sips`
 
 - **Una texture specchiata sui due assi da una foto in prospettiva fa chevron
