@@ -57,12 +57,13 @@ scattare due: 25.000 + 30.000.
    foglio descrive un rapporto continuativo, l'opposto della prestazione
    occasionale.
 5. **Una direzione sola**: nessuna riservatezza sulle cose nostre, nessuna
-   penale per lui, nessun tetto, nessun diritto di citare OperO come lavoro
+   penale a carico di Seba, nessun tetto, nessun diritto di citare OperO come lavoro
    nostro. È l'unico gestionale che possiamo mostrare a un lead.
 
 **Cosa è giusto riconoscere a Seba**: il suo codice sta sul nostro GitHub,
 conosciamo listino, clienti e roadmap, e le due liste di facchinaggio del
-25/09 le abbiamo costruite noi. Chi fonda un'attività al suo posto chiede questo. Il
+25/09 le abbiamo costruite noi. Chi fonda un'attività al suo posto chiede
+questo. Il
 problema è la taratura, non la richiesta.
 
 ## La controproposta
