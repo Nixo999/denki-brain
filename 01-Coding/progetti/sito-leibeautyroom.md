@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito per Lei Beauty Room (Torino Cavoretto) - mondo «La stanza», l'arco del logo è la porta. Online su leibeautyroom.netlify.app, giro 5: sul telefono cinque porte diverse con tre foto vere da Google e Instagram, 8/8.
+riga: Bozza sito per Lei Beauty Room (Torino Cavoretto) - mondo «La stanza». Online su leibeautyroom.netlify.app, giro 7: da PC il pin, sul telefono menu con i nomi e cinque stanze a scomparsa con porte diverse e tre foto vere, 8/8.
 status: attivo
 client: lei-beauty-room
 stack: html-css-js
@@ -330,6 +330,36 @@ larghezze, console pulita, ~400 KB sul telefono di cui 216 di foto.
 Tania** (TODO per Patrick in `LEGGIMI.md`); WebKit vero mai provato; il
 movimento visto solo in headless. Il bottone «Chiama» fisso copriva i bottoni
 delle stanze in fondo alla finestra: corretto al giro 6 (`378373c`): il bottone fisso si ritira quando un altro bottone gli passa sotto, intersezioni visibili 0 a 320, 375 e 390. Misura fatta nel pannello browser con eventi di scroll sintetici: a pannello nascosto `scrollTo` non genera eventi di scroll.
+
+## Giro 7, 25/09 — menu e stanze a scomparsa
+
+Nicola sul giro 6, dal telefono: «molto meglio da telefono, ma rendi a
+scomparsa le sezioni e che appaiono potendo cliccare sul menu, quello che c'è
+adesso diviso a colore non è molto carino e intuibile, rendi più semplice la
+navigazione se no è solo un muro di foto e disegni». Regola in [[direttive-siti]].
+
+**Sul telefono** (`61311d4`, `9c46993`, tutto sotto `(max-width: 899px),
+(hover: none)`): nella soglia, sotto «I trattamenti», cinque righe da 52 px
+con il nome del servizio in Switzer, la porta della stanza in piccolo nella sua
+lacca e una freccia, al posto delle cinque fasce di colore. Ogni stanza ha una
+testata da 64 px (`button` con `aria-expanded`) con numero, nome e freccia
+sulla sua lacca; il resto è chiuso e si apre con `grid-template-rows` 0fr→1fr
+in 600 ms, **una aperta alla volta** (indipendenti avrebbero rifatto il muro).
+All'apertura parte la porta della stanza e il contenuto entra in fila; la
+pagina scende finché la testata sta sotto il badge. `#viso` nell'URL apre la
+stanza. Senza JS tutto aperto. Scartata l'etichetta «Le cinque stanze»: farebbe
+credere a cinque stanze vere.
+
+**Da 1440 col mouse**: documento 7127 px e pin-spacer 4140 prima e dopo,
+posizioni al pixel identiche nelle cinque stanze del pin.
+
+**Misure**: 8/8, slop 0 (avviso nuovo sui numeri 01-05 delle testate, voluti),
+testo 0, overflow 0 su sei larghezze, console pulita, tocchi ≥ 48 px, bottone
+fisso 0 intersezioni visibili a quattro altezze con stanze chiuse e aperte.
+
+**Aperto**: a stanza aperta il badge in barra copre il numero della testata
+sopra; il «Chiama» fisso passa sopra le voci mentre si scorre. Safari e iPhone
+veri mai provati: la transizione di `grid-template-rows` va vista lì.
 
 ## Collegamenti
 

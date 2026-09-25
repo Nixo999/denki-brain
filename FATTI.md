@@ -124,10 +124,13 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   chiedono a Tania. ⚠️ Niente `wa.me` finché WhatsApp non è confermato,
   nessun prezzo. **Il DM col link è di Patrick** → [[sito-leibeautyroom]],
   [[lei-beauty-room]]
-  **Giro 5 del 25/09** dopo «troppo tutto uguale» sul telefono: cinque porte
-  di forma diversa, cinque aperture, **tre foto vere** (galleria Google del
-  locale, un post Instagram) dentro le porte con un trattamento solo; da PC
-  identico. ⚠️ Foto usate **senza un ok di Tania**: lo chiede Patrick. ⚠️ **WebKit vero mai provato**: senza Xcode non c'è
+  **Giri 5-7 del 25/09** sul telefono, tre bocciature di Nicola in fila
+  («inutilizzabile», «troppo tutto uguale», «muro di foto e disegni»): cinque
+  porte di forma diversa con **tre foto vere** (galleria Google del locale, un
+  post Instagram), poi **menu con i nomi in chiaro e stanze chiuse che si
+  aprono al tocco**, una alla volta. Da PC identico al giro approvato. ⚠️ Foto
+  usate **senza un ok di Tania**: lo chiede Patrick. Safari e iPhone veri mai
+  provati: il link va aperto da un iPhone prima del DM. ⚠️ **WebKit vero mai provato**: senza Xcode non c'è
   simulatore, il link va aperto da un iPhone prima del DM
 - **p0t_tattoo** (Ruben, tatuatore anime e cartoon da K-Ink Studio, Collegno TO,
   `@p0t_tattoo`) ha risposto «va benissimo anche qui su Instagram» al DM del
