@@ -44,6 +44,14 @@ def raccogli(qa):
 
 
 if __name__ == '__main__':
+    if len(sys.argv) > 1 and sys.argv[1] == 'facchinaggio':
+        # solo facchinaggio, ancore oltre la cintura di Seveso
+        CATEGORIE.pop('Eventi e manifestazioni - impianti ed attrezzature')
+        QUERY = ['facchinaggio', 'facchinaggio industriale', 'movimentazione merci', 'cooperativa facchinaggio']
+        ANCORE = ANCORE + ['novara', 'pavia', 'lodi', 'cremona', 'crema', 'treviglio', 'brescia', 'piacenza', 'vercelli', 'biella',
+                           'torino', 'alessandria', 'genova', 'verona', 'mantova', 'parma', 'reggio emilia', 'modena', 'bologna',
+                           'vigevano', 'voghera', 'sondrio', 'chivasso', 'asti', 'savona', 'vicenza', 'padova']
+    OUT = 'pg_categorie_f.json' if len(sys.argv) > 1 else 'pg_categorie.json'
     jobs = [(q, a) for a in ANCORE for q in QUERY]
     with ThreadPoolExecutor(3) as ex:
         tutte = [x for r in ex.map(raccogli, jobs) for x in r]
@@ -51,7 +59,7 @@ if __name__ == '__main__':
     for x in tutte:
         if x['cat'] in CATEGORIE and x['tel'] and x['link']:
             schede.setdefault(x['link'], dict(x, settore=CATEGORIE[x['cat']]))
-    json.dump(list(schede.values()), open('pg_categorie.json', 'w'), ensure_ascii=False)
+    json.dump(list(schede.values()), open(OUT, 'w'), ensure_ascii=False)
     import collections
     print('righe', len(tutte), 'schede uniche nelle due categorie', len(schede))
     print(collections.Counter(v['settore'] for v in schede.values()))

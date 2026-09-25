@@ -88,4 +88,5 @@ il 17/09 erano andati persi con la sessione.
 ## Collegamenti
 
 [[sebastian-torres]] · [[opero]] · [[metodo-liste]] · [[metriche]] ·
-[[2026-09-17-brianza-gestionali-1m]] · [[opero-intermediar-receive]]
+[[2026-09-17-brianza-gestionali-1m]] · [[opero-intermediar-receive]] ·
+[[2026-09-25-opero-facchinaggio]] (la versione solo facchinaggio)

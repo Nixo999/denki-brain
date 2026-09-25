@@ -31,10 +31,17 @@ def riga(cr, pgr, settore, fonte, livello):
                 settore=settore, pg=pgr, fonte=fonte, livello=livello)
 
 
-def tutte():
+# Lista solo facchinaggio: chi arriva dalla categoria di Pagine Gialle deve avere un'attivita' prevalente compatibile
+# (movimentazione e logistica, servizi integrati e pulizia, imballaggio conto terzi, servizi alle imprese, lavoro)
+FACCH_OK = ('52', '81', '82.92', '82.99', '78')
+
+
+def tutte(solo=None, pg_files=('pg_abbinate.json',)):
     out, scarti = {}, []
     for x in json.load(open(os.path.join(HERE, 'trovate.json'))).values():
         if x.get('scartata') or not x.get('esito'):
+            continue
+        if solo and SETT[x['ateco_lista']] != solo:
             continue
         cat = x['pg']['cat'].lower()
         if not any(k in cat for k in CAT_OK[x['ateco_lista']]):
@@ -47,9 +54,10 @@ def tutte():
                 scarti.append((x['nome'], x['ateco_lista'], x['pg']['adr'], 'omonimo probabile: sede legale lontana dalla scheda PG'))
                 continue
         out[x['piva']] = riga(x, x['pg'], SETT[x['ateco_lista']], 'ateco', x['esito'])
-    for v in json.load(open(os.path.join(HERE, 'pg_abbinate.json'))):
+    pgs = [v for f in pg_files if os.path.exists(os.path.join(HERE, f)) for v in json.load(open(os.path.join(HERE, f)))]
+    for v in pgs:
         cr = v.get('cr')
-        if not cr or cr['piva'] in out:
+        if not cr or cr['piva'] in out or (solo and v['settore'] != solo):
             continue
         pgr = {k: v[k] for k in ('nome', 'cat', 'adr', 'tel', 'link')}
         out[cr['piva']] = riga(cr, pgr, v['settore'], 'categoria', v['cr_esito'])
@@ -65,6 +73,8 @@ def tutte():
             scarti.append((r['nome'], r['settore'], r['personale'], 'costo del personale sotto 60.000 euro: niente squadra')); continue
         if r['fonte'] == 'categoria' and (r['ateco'] or '').split('.')[0] in FUORI:
             scarti.append((r['nome'], r['settore'], r['ateco'], 'attivita prevalente fuori settore')); continue
+        if solo == 'Facchinaggio' and r['fonte'] == 'categoria' and not (r['ateco'] or '').startswith(FACCH_OK):
+            scarti.append((r['nome'], r['settore'], r['ateco'], 'attivita prevalente non di facchinaggio')); continue
         if r['piva'] in ('09191930156',):
             scarti.append((r['nome'], r['settore'], '', 'BluNotte, gia\' nel giro di Seba')); continue
         tenute.append(r)
@@ -90,10 +100,13 @@ def tutte():
 
 
 if __name__ == '__main__':
-    u, s = tutte()
+    import sys
+    SOLO = sys.argv[1] if len(sys.argv) > 1 else None
+    OUTF = sys.argv[2] if len(sys.argv) > 2 else 'finale.json'
+    u, s = tutte(SOLO, ('pg_abbinate.json', 'pg_abbinate_f.json') if SOLO else ('pg_abbinate.json',))
     import collections
     print('tenute', len(u), collections.Counter(r['settore'] for r in u), 'senza km', sum(1 for r in u if r['km'] is None))
     print(collections.Counter(x[3] for x in s))
     for r in u[:110]:
         print(r['km'], r['km_da'], r['comune'], '|', r['nome'][:42], '|', r['settore'], '|', r['pg']['cat'][:40], '|', r['fatturato'], r['fonte'], r['livello'])
-    json.dump(dict(tenute=u, scarti=s), open(os.path.join(HERE, 'finale.json'), 'w'), ensure_ascii=False)
+    json.dump(dict(tenute=u, scarti=s), open(os.path.join(HERE, OUTF), 'w'), ensure_ascii=False)

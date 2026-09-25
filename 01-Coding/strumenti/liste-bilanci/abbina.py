@@ -86,7 +86,9 @@ def abbina(v, lista):
 
 
 if __name__ == '__main__':
-    pgs = json.load(open(os.path.join(HERE, 'pg_categorie.json')))
+    IN = sys.argv[2] if len(sys.argv) > 2 else 'pg_categorie.json'
+    OUTF = sys.argv[3] if len(sys.argv) > 3 else 'pg_abbinate.json'
+    pgs = json.load(open(os.path.join(HERE, IN)))
     for v in pgs:
         m = re.search(r'\d{5}\s+(.*?)\s*\((\w\w)\)$', v['adr'])
         v['comune_op'], v['prov_op'] = (m.group(1), m.group(2)) if m else (None, None)
@@ -104,5 +106,5 @@ if __name__ == '__main__':
         v['cr_esito'], v['cr'] = abbina(v, liste.get(v['comune_op'], [])) if v['comune_op'] in liste else (None, None)
         if v['cr']:
             scheda.leggi(v['cr'])
-    json.dump(pgs, open(os.path.join(HERE, 'pg_abbinate.json'), 'w'), ensure_ascii=False)
+    json.dump(pgs, open(os.path.join(HERE, OUTF), 'w'), ensure_ascii=False)
     print('abbinate', sum(1 for v in pgs if v['cr']), 'su', len(pgs))

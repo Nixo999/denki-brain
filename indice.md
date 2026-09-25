@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **234 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **235 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -174,6 +174,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-23-tre-liste]] — Le tre liste del 23 settembre - 50 fotografi e truccatrici sposa del Piemonte, 50 birrifici, lidi e hotel di citta' per DenkiShift, 50 aziende artigiane per la ricerca - e i fotografi che il sito ce l'hanno nel 65% dei casi.
 - [[2026-09-25-barbieri-piemonte-e-ricerca]] — Le due liste del 25 settembre - 101 barbieri del Piemonte e 62 aziende lombarde per la ricerca - costruite con Google e Pagine Gialle dopo il blocco di Instagram.
 - [[2026-09-25-opero-facchinaggio-allestimento]] — 100 aziende di facchinaggio e allestimento per le chiamate di Seba su OperO, da Seveso verso fuori (0,8-55 km), fatturato 250k-10M. Piu' 213 senza numero.
+- [[2026-09-25-opero-facchinaggio]] — 100 aziende di solo facchinaggio per Seba su OperO, da Seveso a Firenze (9,8-265 km), fatturato 250k-10M. 29 gia' nella lista mista. Piu' 149 senza numero.
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.

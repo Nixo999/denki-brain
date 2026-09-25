@@ -1005,6 +1005,10 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   ha dato la pagina anti-bot alla quarta ricerca, **con status 200**: lo script
   la contava come «zero risultati». Adesso la riconosce e la scrive nella riga.
   [[2026-09-25-barbieri-piemonte-e-ricerca]]
+- **Su companyreports i codici ATECO 2025 sono liste a parte.** `52.24`
+  (movimentazione merci) non sta dentro `52.24.4`, `90.02.01` non sta dentro
+  `90.02.09`: il 25/9 il primo giro li ha persi, 99 facchinaggi solo in Lombardia.
+  → per ogni settore si scaricano sia il codice 2007 sia il 2025. [[2026-09-25-opero-facchinaggio]]
 - **Una regola scritta cede sotto il volume.** «Verificato, mai dedotto» stava
   nel metodo dal 30 agosto ed è stata violata su 62 righe. → il passo si
   trasforma in uno script che scrive la prova nella riga, e un secondo script
