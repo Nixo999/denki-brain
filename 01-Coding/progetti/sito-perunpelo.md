@@ -70,7 +70,7 @@ fuori perché non risultano da nessuna fonte.
 
 | Cosa | Valore |
 |---|---|
-| Livello | 8/8, slop 0, testo 0 (giro 1 e giro 2) |
+| Livello | 8/8, slop 0, testo 0 (giri 1, 2 e 3) |
 | Scroll a 375 | 15 passi da 400 px, nessuno trattenuto; `.pin-spacer` 0 a ogni larghezza (giro 2) |
 | Immagini a 375, primo caricamento | 98 KB invece di 547; la foto più grande servita al telefono pesa 27 KB invece di 179 (giro 2) |
 | Overflow | 0 a 320, 375, 600, 1023, 1024, 1280 e 1440 |
