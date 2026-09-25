@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 25/09/2026 — Nicola: «bello ma lanimazione della riga rosa per far apparire le cose non mi fa impazzire sugli ultimi elementi della pagina, lasciala solo per le scritte grandi e per gli element grandi»
+
+verdetto sul giro 2 di perunpelo.netlify.app: la fascia rosa che pettina e rivela passava anche su orari, modulo di prenotazione e piede. Un segno di apertura forte sta sui titoli e sui pezzi grandi, le cose piccole compaiono quiete
+
 ### 25/09/2026 — Nicola: «poi le foto caricano troppo lentamente»
 
 giro 1 di perunpelo.netlify.app: sei JPEG a 1440 px da 143-227 KB l'una, senza srcset né WebP, mostrate a 200-400 px sul telefono. Le foto si servono alla misura in cui compaiono
