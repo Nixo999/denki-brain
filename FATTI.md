@@ -132,7 +132,7 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
 - **p0t_tattoo** (Ruben, tatuatore anime e cartoon da K-Ink Studio, Collegno TO,
   `@p0t_tattoo`) ha risposto «va benissimo anche qui su Instagram» al DM del
   24/09. Bozza online su `p0t-tattoo.netlify.app` (24/09 sera), mondo
-  «Rodovetro × Retino», giro 6 dopo due verdetti di Nicola («ok bello, ma…» e «macchinoso, i blocchi non si parlano, prima il telefono»: fogli uguali, 4 fondi, mobile per primo), 8/8, slop 0, testo 0, tre sbarramenti con `curl`.
+  «Rodovetro × Retino», giro 9 dopo quattro verdetti di Nicola («ok bello, ma…», «macchinoso, i blocchi non si parlano, prima il telefono», «la hero è un po' troppo piatta»): fogli uguali, 4 fondi, mobile per primo, testa con spessore, 8/8, slop 0, testo 0, tre sbarramenti con `curl`.
   Primo sito con più modelli: Sonnet raccolta e ricerca, Opus 5.5 direzione e
   costruzione, Fable solo direttore. **Il DM col link è di Patrick**, su
   Instagram. Da chiedergli prezzi, caparra, i suoi giorni, foto dei guariti

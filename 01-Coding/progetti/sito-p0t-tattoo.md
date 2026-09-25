@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito per p0t_tattoo (Ruben, tatuatore anime e cartoon, Collegno TO) - mondo «Rodovetro × Retino», linea → puntinato → colore, Unbounded + Hanken Grotesk. Online su p0t-tattoo.netlify.app dal 24/9, giro 6 (meno macchinoso, mobile per primo), 8/8, slop 0, testo 0.
+riga: Bozza sito per p0t_tattoo (Ruben, tatuatore anime e cartoon, Collegno TO) - mondo «Rodovetro × Retino», linea → puntinato → colore, Unbounded + Hanken Grotesk. Online su p0t-tattoo.netlify.app dal 24/9, giro 9 (mobile per primo, desktop pieno, testa con spessore), 8/8, slop 0, testo 0.
 status: attivo
 client: p0t-tattoo
 stack: html-css-js
@@ -134,14 +134,19 @@ pezzi ai margini, due pezzi con foto fino a 480 px; il tetto dei 360 px vale
 sotto i 900. Nudo massimo a 1440: 21 / 11 / 1 / 2 %, a 900-1099 fra 0 e 12 %.
 Sotto i 900 non è cambiato niente.
 
-Altezza 6.976 px a 375, 6.427 a 1440. Aperto: Safari vero su iPhone (con la
+**Giro 9, la testa** («un po' troppo piatta»): nome in due passaggi fuori
+registro, verde sotto l'inchiostro; pila di tre fogli opachi ruotati con bordi
+giallo e verde che spuntano; telaio d'inchiostro sulla testa. Sotto la testa
+niente è cambiato.
+
+Altezza 7.025 px a 375, 6.427 a 1440. Aperto: Safari vero su iPhone (con la
 barra degli indirizzi la pila dell'hero può finire sotto la piega).
 
 ## Stato — online dal 24/09/2026
 
 **<https://p0t-tattoo.netlify.app>**, progetto `p0t-tattoo` sul team
 `nicola-la-rezza`, deploy dal CLI `--prod --no-build`, repo
-`Nixo999/p0t-tattoo-site` (privata, `main`, pushata, `a30b158`).
+`Nixo999/p0t-tattoo-site` (privata, `main`, pushata, `c3d3ae6`).
 
 **Tre sbarramenti verificati con `curl` sul permalink del deploy**: `meta
 robots`, `x-robots-tag`, `robots.txt` con `Disallow: /`. RACCOLTA, MONDO,
