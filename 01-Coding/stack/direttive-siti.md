@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 25/09/2026 — Nicola: «per me bello, ma la hero è un po troppo piatta, dagli un po di spessore in piu»
+
+verdetto su p0t-tattoo.netlify.app giro 8: la testa con nome, frase, bottone e pila dei tre strati su carta piatta, senza sfalsamenti né livelli, legge piatta anche se il resto della pagina è approvato
+
 ### 25/09/2026 — Nicola: «troppo tutto uguale, trova un modo da telefono per dargli un po di vita, cosi non ha niente, magari wualche foto da istgram o disengni di porte di formati diversi, fai che si apra in modo diverso, basta cye gli dai vita e personalita anche da telefono»
 
 verdetto sul giro 4 di leibeautyroom.netlify.app: cinque stanze impilate identiche nella forma e nel movimento si leggono come niente; sul telefono ogni stanza deve avere una porta di forma sua, un'apertura sua e qualcosa dentro (una foto sua da Instagram o dalla scheda Google), e il telefono si giudica con lo stesso metro del PC
