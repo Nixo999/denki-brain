@@ -3,7 +3,7 @@ riga: Privato, non un'azienda. Sta aprendo la sua attività, e l'attività è op
 type: cliente
 status: attivo
 progetti: [opero]
-updated: 2026-08-28
+updated: 2026-09-25
 source: denkicode
 settore: software, in fase di avvio
 ---
@@ -101,6 +101,9 @@ Osservato dal lavoro di agosto 2026:
 ## Aperto
 
 - [ ] Incassare i **2.000 €** — ricevuta su Patrick
+- [ ] **Accordo di riservatezza e non concorrenza a 5 anni** che vuole far
+      firmare (25/09/2026): **non firmato**, penali fino a 30.000 €. La
+      controproposta lega la firma al saldo → [[accordo-riservatezza-opero]]
 - [ ] Quotare l'XML SDI prima di svilupparlo
 - [ ] Correggere il PDF del piano sulle funzioni rinunciate
 - [ ] `TODO` — come è arrivato a noi? Serve a [[generazione-lead]]

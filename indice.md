@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **238 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **239 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -136,6 +136,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 **contratti/**
 
+- [[accordo-riservatezza-opero]] — Riservatezza + non concorrenza a 5 anni che Seba vuole far firmare (25/09/2026). Non firmato - cosa morde e la controproposta.
 - [[contratti]] — ⚠️ Qui vanno gli accordi chiusi - cosa è stato promesso, a che prezzo, con quali tempi.
 
 **liste/**

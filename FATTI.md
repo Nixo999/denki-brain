@@ -154,6 +154,10 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   iniziarla**. Lavoro nuovo, fuori dai 2.400 €. Sei buchi da chiedere a lui
   quando si parte, il primo è da dove vengono i € dei Conti
   → [[opero-intermediar-receive]]
+- **Seba vuole far firmare riservatezza + non concorrenza a 5 anni**
+  (25/09/2026): penali da 5.000 a 30.000 €, codice consegnato a richiesta,
+  nessuna esclusione per DenkiShift. **Non firmato**: la controproposta lega la
+  firma al saldo dei 2.000 € → [[accordo-riservatezza-opero]]
 - **denki-agents**: piattaforma multi-agente interna. **La fase 1, il gateway,
   è chiusa** (16/09): le cinque prove della definizione di fatto passano con
   chiamate vere sul Mac, Postgres e LiteLLM in Docker, commit solo locali.
