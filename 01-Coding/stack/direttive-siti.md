@@ -35,7 +35,7 @@ quelle due, non è pronta.
 
 corregge la regola di un minuto prima: il permesso di spendere piu' token per andare in fretta vale solo per Soul Ink Torino City il 26/09/2026, non per i siti dopo; il metodo a piu' modelli per risparmiare token resta la regola
 
-### 26/09/2026 — Nicola: «intendevo anche per il pc cambia lo stile fallo piu premin e con lo stile deto nel messaggio prima, usa un po piu token basta che fai piu in fretta pero oggi»
+### 26/09/2026 — Nicola: «intendevo anche per il pc cambia lo stile fallo piu premin e con lo stile deto nel messaggio prima, usa un po piu token basta che fai piu in fretta pero oggi» — ⚠️ la parte sui token vale SOLO per Soul Ink, 26/09 (vedi la voce sopra)
 
 sul giro 2 di soul-ink-torino.netlify.app: il restyle premium con lo stile giapponese/americano e i colori delle sue foto vale anche da PC, non solo sul telefono; sui giri di correzione i token si spendono, la velocita' conta di piu' del risparmio
 
