@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 26/09/2026 — Nicola: «lo sfondo blu cosi fa schifo cambialo acneh da telelfon, fai qualcosa chw dia effetto piu premium e che risecchi lo stile gizpponese/americano del cliente. colorato anche come i suoi tatuaggi»
+
+verdetto sul giro 1 di soul-ink-torino.netlify.app: il campo indaco piatto con gli archi seigaiha dietro la sezione di Franco legge come economico; i fondi devono rispecchiare lo stile giapponese e americano dei suoi tatuaggi, con i colori delle sue foto (vermiglio, rosa peonia, oro, verde, indaco profondo), non un blu piatto
+
 ### 26/09/2026 — Nicola: «da telefono fa cagare, sembra molto una cosa economica, aggiusta le spaziature e lo sfondo che cosi da un effetto super da sito fatto in 5 minuti, con 2 robe sopra uno sfondo tutto uguale, non è per niente un bell effetto. anche le spaziature e i le cose un po impostate male»
 
 verdetto sul giro 1 di soul-ink-torino.netlify.app dal telefono: un fondo nero uguale dall'inizio alla fine con le card appoggiate sopra e spaziature a caso legge come un sito fatto in cinque minuti; sul telefono ogni sezione ha il suo campo (colore, motivo geometrico ai bordi, carta) e una scala di spazi dichiarata, come i 4 fondi di p0t
