@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 26/09/2026 — Nicola: «da telefono fa cagare, sembra molto una cosa economica, aggiusta le spaziature e lo sfondo che cosi da un effetto super da sito fatto in 5 minuti, con 2 robe sopra uno sfondo tutto uguale, non è per niente un bell effetto. anche le spaziature e i le cose un po impostate male»
+
+verdetto sul giro 1 di soul-ink-torino.netlify.app dal telefono: un fondo nero uguale dall'inizio alla fine con le card appoggiate sopra e spaziature a caso legge come un sito fatto in cinque minuti; sul telefono ogni sezione ha il suo campo (colore, motivo geometrico ai bordi, carta) e una scala di spazi dichiarata, come i 4 fondi di p0t
+
 ### 26/09/2026 — Nicola: «aggiusta velocemente il bordo blu a sinistra, di alcune foto e in generale al sito ce sempre una righa blu a sinistra, mi da parecchio fastidio, soprattto dal telelfono»
 
 verdetto sul giro 1 di soul-ink-torino.netlify.app dal telefono: la striscia fissa della manica di Franco sul bordo sinistro (archi indaco da 8-14 px) e il bordo blu a sinistra delle foto disturbano la lettura; le maniche restano nell'hero da PC e nei polsini in testa a ogni artista, mai come riga fissa sul bordo
