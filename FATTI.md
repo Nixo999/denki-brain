@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura.
-updated: 2026-09-25
+updated: 2026-09-26
 verificato: 2026-09-16
 source: denkicode
 tags: [stato, fatti]
@@ -140,6 +140,17 @@ giorno e da ricontrollare; **→** = non vive qui, vive là.
   costruzione, Fable solo direttore. **Il DM col link è di Patrick**, su
   Instagram. Da chiedergli prezzi, caparra, i suoi giorni, foto dei guariti
   → [[sito-p0t-tattoo]], [[p0t-tattoo]]
+- **Soul Ink Torino City** (studio tattoo, via Cremona 27/b Torino, `@soul_ink_torino_city`:
+  Franco Roggia giapponese dal 1999, Alessandro Audino tradizionale). Bozza
+  online su `soul-ink-torino.netlify.app` (26/09 sera), mondo «Munewari ×
+  cartigli», metodo a più modelli (Sonnet raccolta e competitor, Opus
+  direzione e costruzione, Fable direttore). Giro 2 online (`b8d83ca`), 8/8,
+  slop 0, testo 0, sbarramenti con `curl`. **Giro 3 in corso** dopo tre
+  verdetti di Nicola dal telefono (riga blu, «sembra economica», «sfondo blu
+  fa schifo»): campi per sezione coi colori delle sue foto. Zero contatti
+  pubblici dello studio: CTA sul DM Instagram, il numero di Alessandro solo
+  sulla sua scheda. DM del 21/09 non confermato; il DM col link è di Patrick
+  → [[sito-soul-ink]], [[soul-ink-torino-city]]
 - **Per un Pelo** (toelettatura di Ambra Longoni, Nembro BG, `@toelettatura.perunpelo`)
   ha risposto **«si me la mandi pure»** il 25/09 al DM di Patrick del 9/09.
   Online su `perunpelo.netlify.app`, mondo «Per un Pelo»: le lettere entrano
