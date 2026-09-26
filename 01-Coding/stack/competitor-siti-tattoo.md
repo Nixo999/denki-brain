@@ -1,7 +1,7 @@
 ---
 type: risorsa
-riga: Inventario di cosa pubblicano 14 siti di studi/tatuatori tattoo (5 Piemonte, 5 Italia, 4 estero) - sezioni, FAQ, parole anime, errori.
-updated: 2026-09-24
+riga: Inventario di cosa pubblicano 24 siti di studi/tatuatori tattoo (5 Piemonte, 5 Italia, 4 estero, + 10 Torino/giapponese) - sezioni, FAQ, parole anime/giapponese, errori.
+updated: 2026-09-26
 source: claude
 tags: [siti, competitor, tattoo, ricerca]
 ---
@@ -104,3 +104,41 @@ Per uno studio anime/cartoon di provincia con 3 post e nessuna recensione nota, 
 8. **Social in evidenza**, coerente col fatto che il cliente arriva già da Instagram — fonte: presente in 12/14 dei siti nail nel campione precedente e confermato qui in tutti i 14.
 
 Niente listino prezzi in questa scaletta: solo 1 sito su 14 lo pubblica, e senza numeri veri da @p0t_tattoo non si inventa (nessun prezzo osservato per questo cliente specifico, resta TODO).
+
+## 9. Torino e stile giapponese (26/09/2026, per Soul Ink Torino City)
+
+Raccolto per **Soul Ink Torino City** (Via Cremona 27/b, zona Aurora, due
+tatuatori residenti, giapponese tradizionale + neo-tradizionale, 738 post IG,
+nessun sito). Rapporto completo in `~/lavoro/soul-ink-site/COMPETITOR.md`.
+Non verificato a mano: prima di citare un sito per nome si riapre.
+
+**Torino, sito proprio (6 aperti + Veracruz già noto al §1, 2 falliti):**
+
+| Sito | URL | Nota |
+|---|---|---|
+| Hardtimes Tattoo | hardtimestattoo.it | 8 artisti, piercing con brand proprio ("Piercing by Layla"), niente FAQ/prezzi |
+| Studio Meno Uno | tatuaggitorino.it/japanese/ | Pagina di stile dedicata, muro di testo prima del portfolio, booking solo telefonico 7/7 |
+| BUUM Tattoo Studio | buumtattoostudio.com/torino | 5 artisti, FAQ vera (6 voci), booking Fresha, PMU |
+| Imago Amens (Hefrem Avagnina) | imagoamens.com | Stile orientale reinterpretato, niente piercing dichiarato |
+| DoctorTattoo | doctortattoo.net | Wabori/tebori, solo WhatsApp, niente FAQ |
+| Taurinorum Tattoo *(fallito)* | taurinorumtattoo.it | `ENOTFOUND`, non descritto |
+| Il Camaleonte Tatoo *(fallito)* | ilcamaleontetatoo.com | Dominio reindirizza a un post Instagram non correlato, non il sito dello studio |
+
+**Fuori Torino, specialisti giapponese tradizionale (4 aperti):**
+
+| Sito | URL | Nota |
+|---|---|---|
+| Danketsu Irezumi | danketsuirezumi.com | Granada, 2 artisti, *mon* come logo, 100% foto nel portfolio |
+| Luca Ortis | lucaortis.com | Londra, mono-artista, blog editoriale, print in vendita |
+| Northern Ink Tattoo | northerninktattoo.co.uk/japanese | UK, "Horiebi", sezione simbologia |
+| Tattoo Studio Ishi | irezumiya-ishi.com | Düsseldorf, sigillo+kanji stampati, booking solo telefonico 13:00-13:30 |
+
+**Sintesi (N=10 siti aperti in questa sezione):**
+- Portfolio fotografico 10/10; FAQ vera solo 2/10 (BUUM, Veracruz); aftercare dedicato 1/10 (Veracruz).
+- Motivo giapponese come *grafica* del sito (non solo foto nei lavori): 2/4 specialisti (Danketsu Irezumi, Irezumiya Ishi) — nessuno usa onde/koi disegnati come cornice ricorrente.
+- Piercing, quando offerto: sempre una persona nominata, in metà dei casi (2/4) una voce di menu o pagina propria — mai dentro il portfolio tatuaggi.
+- Prezzi/caparra in cifra: 0/10 in Torino+specialisti (l'unico caso reale del vault resta Taxi Tattoo, §1).
+- Stessa cloaking di dominio già vista il 24/09 (siti "premium" irraggiungibili via WebFetch): qui si aggiunge un caso più grave, un dominio che reindirizza a un contenuto Instagram non correlato invece di dare errore.
+
+Spazio libero per Soul Ink: nessuno dei 10 risolve insieme FAQ vera + piercing
+con voce propria + grafica giapponese disegnata (non fotografica).
