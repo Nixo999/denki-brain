@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 26/09/2026 — Nicola: «intendevo anche per il pc cambia lo stile fallo piu premin e con lo stile deto nel messaggio prima, usa un po piu token basta che fai piu in fretta pero oggi»
+
+sul giro 2 di soul-ink-torino.netlify.app: il restyle premium con lo stile giapponese/americano e i colori delle sue foto vale anche da PC, non solo sul telefono; sui giri di correzione i token si spendono, la velocita' conta di piu' del risparmio
+
 ### 26/09/2026 — Nicola: «lo sfondo blu cosi fa schifo cambialo acneh da telelfon, fai qualcosa chw dia effetto piu premium e che risecchi lo stile gizpponese/americano del cliente. colorato anche come i suoi tatuaggi»
 
 verdetto sul giro 1 di soul-ink-torino.netlify.app: il campo indaco piatto con gli archi seigaiha dietro la sezione di Franco legge come economico; i fondi devono rispecchiare lo stile giapponese e americano dei suoi tatuaggi, con i colori delle sue foto (vermiglio, rosa peonia, oro, verde, indaco profondo), non un blu piatto
