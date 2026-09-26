@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito per Soul Ink Torino City (studio tattoo, via Cremona 27/b Torino, Franco Roggia giapponese + Alessandro Audino tradizionale) - mondo «Munewari × cartigli», in costruzione dal 26/09.
+riga: Bozza sito per Soul Ink Torino City (studio tattoo, via Cremona 27/b Torino, Franco Roggia giapponese + Alessandro Audino tradizionale) - mondo «Munewari × cartigli», giro 3 online su soul-ink-torino.netlify.app dal 26/09, 8/8, slop 0, testo 0.
 status: attivo
 client: soul-ink-torino-city
 stack: html-css-js
@@ -8,6 +8,7 @@ started: 2026-09-26
 deadline:
 updated: 2026-09-26
 source: claude
+verificato: 2026-09-26
 tags: [sito, bozza, tattoo, torino, instagram, giapponese]
 ---
 
@@ -75,10 +76,47 @@ dei due. L'emblema esiste solo a 150 px: ricostruito in SVG e verificato per
 sovrapposizione contro l'avatar. Il numero di Alessandro compare solo sulla sua
 scheda, come suo.
 
-## Stato — giro 1 in costruzione (26/09/2026 sera)
+## I giri, 26/09
 
-`TODO` URL, commit, misure, verdetto di Nicola. I file di lavoro in
-`sorgenti/` restano fuori da git.
+1. Costruzione (Opus 5.5): 8/8 al primo giro, emblema in SVG con IoU 0,902
+   contro l'avatar, font self-hosted, WebP a 480/800/1200 con Pillow, spina in
+   CSS `animation-timeline`. Badge «Powered by Netlify» spento via API.
+2. Direttore sulla pagina vera e finish review (Sonnet): hero a 1440 vuota (solo
+   le curve su nero) → le due foto dentro le maniche; cartigli con la sola data
+   → soggetto; la manica di Alessandro era mostrata due volte (05 = 02); strisce
+   fisse ai bordi tolte dopo il verdetto «riga blu a sinistra».
+3. Operatore nuovo dopo «da telefono fa cagare, sembra molto una cosa
+   economica», «lo sfondo blu così fa schifo», «intendevo anche per il pc»:
+   ogni sezione col suo campo (lacca vermiglia per Franco, carta rosa peonia per
+   il cover up, verde hannya per le prime sedute, foglio flash per Alessandro,
+   indaco notte per come si lavora, washi per dove), scala di spazi
+   `--s1…--s6`, niente indaco piatto, niente seigaiha come fondo. Struttura,
+   copy, cartigli, emblema, apertura e spina invariati.
+
+## Stato — online dal 26/09/2026
+
+**<https://soul-ink-torino.netlify.app>**, progetto `soul-ink-torino` sul team
+`nicola-la-rezza`, deploy dal CLI `--prod --no-build`, repo
+`Nixo999/soul-ink-site` (privata, `main`, pushata, `39adf82`). Tre sbarramenti
+con `curl`; RACCOLTA, MONDI, MONDO, PRODUCT, COMPETITOR e `sorgenti/` 404.
+`index.html` si genera da `sorgenti/lavoro/pagina.src.html` con `costruisci.py`
+(fuori da git): si modifica il sorgente, non la pagina.
+
+| Misura | Esito |
+|---|---|
+| `controlla-sito.py` | **8/8** |
+| `controlla-slop.py` | **exit 0**, un avviso sul copy (sezione senza cifra) |
+| `controlla-testo.py` | **0 blocca, 0 avvisa** |
+| Overflow | **0** a 320, 375, 900, 1440 |
+| Contrasto minimo | 4,51 (rosso flash su carta, testo grande); corpo mai sotto 5,2 |
+| Apertura | 0,9-1,0 s, rigioca a ogni caricamento, nessun fotogramma a una tinta |
+| Altezza documento | 8.289 px a 375, 7.370 a 1440 |
+| Primo caricamento a 375 | 521 KB (giro 2), di cui 362 di immagini |
+| Token | Sonnet 405k + 97k + 179k · Opus 262k + 496k + 274k · Fable direttore |
+
+`TODO` il verdetto di Nicola sul giro 3; Safari e iPhone veri mai provati; il
+DM col link è di Patrick. Le domande per lo studio stanno in
+[[soul-ink-torino-city]].
 
 ## Collegamenti
 

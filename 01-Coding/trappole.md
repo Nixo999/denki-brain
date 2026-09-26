@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Errori tecnici già pagati e strade scartate, per dominio. Descrittivo, non è un rulebook - le regole stanno in convenzioni.
-updated: 2026-09-25
+updated: 2026-09-26
 verificato: 2026-09-10
 source: denkicode
 tags: [trappole, memoria, frontend, gsap, git]
@@ -347,6 +347,11 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   si fa `dispatchEvent(new Event('scroll'))` dopo ogni `scrollTo`, e si evita
   di mettere un rAF fra evento e stato: un rAF che non arriva lascia un latch
   chiuso per sempre. (25/09/2026, [[sito-leibeautyroom]])
+
+- **Il primo fotogramma catturato via CDP subito dopo `navigate` è falso**
+  (pagina a metà, elementi doppi): si scatta due volte e si tiene il secondo.
+  E sulla macchina possono girare Brave headless di altre sessioni sulle porte
+  9334 e 9341: si parte da 9377 in su (Soul Ink, 26/09).
 
 ## Immagini e `sips`
 
@@ -766,6 +771,19 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   occupa una cella della griglia**: fra 600 e 1023 px i quattro servizi erano
   alti 4.858 px, con le celle vuote dove stavano i `<source>`. →
   `picture > source{display:none}`. (25/09/2026, [[sito-perunpelo]])
+
+- **Ridefinire una variabile di colore su una sezione non cambia il colore già
+  ereditato dal `body`.** Su Soul Ink (26/09) i titoli restavano avorio sulla
+  carta rosa: `--carne` era ridefinita sulla sezione ma `color` lo prendeva il
+  `body`. Il colore va rimesso sulla sezione (`color: var(--carne)`), e i
+  blocchi a fondo scuro fisso (cartigli, targhe, sigillo) riportano le loro
+  variabili all'avorio da soli.
+- **Una `<figure>` in griglia con `width: auto` e `justify-self: start` va a
+  larghezza 0**: su Soul Ink da PC la bambola era sparita. Serve una larghezza
+  o `justify-self: stretch`.
+- **Con `vector-effect: non-scaling-stroke` il `stroke-dasharray` legato a
+  `pathLength` non traccia più**: la curva usciva a trattini. O si toglie il
+  `vector-effect`, o la curva si svela con `clip-path` (Soul Ink, 26/09).
 
 ## Git, account e pubblicazione
 
