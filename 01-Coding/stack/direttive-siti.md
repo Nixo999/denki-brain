@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-09-25
+updated: 2026-09-26
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 26/09/2026 — Nicola: «aggiusta velocemente il bordo blu a sinistra, di alcune foto e in generale al sito ce sempre una righa blu a sinistra, mi da parecchio fastidio, soprattto dal telelfono»
+
+verdetto sul giro 1 di soul-ink-torino.netlify.app dal telefono: la striscia fissa della manica di Franco sul bordo sinistro (archi indaco da 8-14 px) e il bordo blu a sinistra delle foto disturbano la lettura; le maniche restano nell'hero da PC e nei polsini in testa a ogni artista, mai come riga fissa sul bordo
 
 ### 25/09/2026 — Nicola: «bello ma lanimazione della riga rosa per far apparire le cose non mi fa impazzire sugli ultimi elementi della pagina, lasciala solo per le scritte grandi e per gli element grandi»
 
