@@ -376,6 +376,13 @@ settembre 2026 il meccanismo era agganciato solo alla bocciatura e a
 `/chiudi-sessione`: un «da adesso sui siti voglio sempre X» detto a metà
 sessione non scattava, e si perdeva con la conversazione.
 
+**Due righe, non un racconto.** Il titolo è la frase esatta; il `--perche` è la
+regola generale in una riga, quella che vale sul sito dopo. «Verdetto sul giro 1
+di X: il fondo blu piatto legge come economico» sta nella nota progetto di X;
+qui entra «un fondo uguale dall'inizio alla fine legge come un sito fatto in
+cinque minuti: ogni sezione ha il suo campo». Il 27/09/2026, 47 voci su 70
+erano verdetti su un giro: leggibili come storia, inutili come regola.
+
 Non si riscrivono le vecchie: una direttiva superata si marca superata, non si
 cancella. Questo file cresce e non si accorcia.
 

@@ -121,7 +121,7 @@ veri**:
 
 - **@esteticaoxacuneo**, `esteticaoxa.it` «Estetista a Cuneo | Centro Estetico
   OXA», e **@slimnowcenter**, `slimnowcenter.it` «SlimNow, centro estetico a
-  Cirie'». Il sito ce l'hanno: fuori, e in [[gia-col-sito]].
+  Cirie'». Il sito ce l'hanno: fuori, e in `gia-col-sito`.
 - Gli altri dieci erano **omonimi**, e due li ha chiusi `curl`:
   `martinails.it` e' Martina Beretta di **Macherio (MB)**, `beautyplanet.it` e'
   la Beauty Planet di **Orbassano**. Poi `evolveestetica.com` a **Goiania**,

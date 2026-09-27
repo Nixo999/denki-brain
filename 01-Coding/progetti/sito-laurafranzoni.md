@@ -416,7 +416,7 @@ linea palpebrale decorativa. Da sistemare se il giro dopo tocca quella sezione.
 
 ## Contesto commerciale
 
-Riga 233 di [[2026-09-13-instagram-siti-brescia]] — `@laurafranzoni_lashmaker`,
+Riga 233 di [[2026-09-13-instagram-siti-brescia.csv]] — `@laurafranzoni_lashmaker`,
 Laura Franzoni Lash Maker, Brescia (BS), segmento **Ciglia**, 452 follower, **gancio
 1**, prodotto **siti**. Trovata cercando «lash maker brescia» nella ricerca di
 Instagram, profilo letto il 12/9.

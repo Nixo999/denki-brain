@@ -787,7 +787,7 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Git, account e pubblicazione
 
-- `[TRAPPOLA]` **Un `[[redirects]]` di Netlify senza `force = true` non scatta
+- `[TRAPPOLA]` **Un `_redirects` di Netlify senza `force = true` non scatta
   se il file esiste davvero.** Su Custom Beauty Nails la regola che doveva
   nascondere `BRIEF.md` era scritta e il file rispondeva `200` online: il
   nostro processo, le didascalie e le misure erano leggibili da chiunque avesse

@@ -1,223 +1,77 @@
 ---
 type: risorsa
-riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura.
-updated: 2026-09-26
+riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura. Max 80 righe.
+updated: 2026-09-27
 verificato: 2026-09-16
 source: denkicode
 tags: [stato, fatti]
 ---
 
-# I fatti — stato al 15 settembre 2026
+# I fatti — stato al 27 settembre 2026
 
-**Questo file si riscrive, non si accumula.** È lo stato di adesso: quando un
-fatto cambia si sostituisce la riga, non se ne aggiunge una sotto. La storia
-sta in `05-Decisioni/` e nelle daily.
-
-Ogni riga è marcata: **senza data** = non scade; **(data)** = vero a quel
-giorno e da ricontrollare; **→** = non vive qui, vive là.
+**Questo file si riscrive, non si accumula: massimo 80 righe.** Una riga per
+cosa aperta. Il racconto dei giri sta nella nota progetto, la giornata nel
+[[registro-interventi]]. Senza data = non scade; (data) = vero quel giorno;
+→ = vive là.
 
 ## Chi
 
-- Patrick Sappa, 21, unica voce commerciale. **Non scrive codice e non usa il
-  terminale**: quando lavora lui, il brain fa tutto da solo.
+- Patrick Sappa, 21, unica voce commerciale. Non scrive codice, non usa il terminale.
 - Nicola Larezza, 22, lead dev. Scrive tutto il codice.
-- Giulia Venneri, 21, cold call a provvigione. **Non ha accesso al vault.**
-  **Unica persona al telefono** da oggi: ha chiuso le sue 131 righe in due
-  settimane (13/09/2026), il reso conto lo deve ancora girare Patrick.
-- Gabriele ed Edoardo **fuori in via definitiva** (15/09/2026): zero numeri
-  chiamati in quattordici giorni, non si riprovano → [[gabriele-edoardo]]
-- **Morgan, fratello di Patrick, dentro dal 15/09/2026.** Non chiama: porta
-  conoscenze. Primo frutto un parrucchiere-presidio. Compenso e ore `TODO`
-  → [[morgan]]
-- Patrick, Nicola e Giulia lavorano e studiano: DenkiCode è il terzo impegno
-  → [[team-e-vincoli]]
+- Giulia Venneri, 21, cold call a provvigione, **unica al telefono**, senza vault. 131 righe chiuse (13/09), **reso conto mai arrivato** → [[metriche]]
+- Morgan, fratello di Patrick, segnalatore dal 15/09: compenso e ore `TODO` → [[morgan]]
+- Gabriele ed Edoardo fuori in via definitiva (15/09) → [[gabriele-edoardo]]
+- DenkiCode è il terzo impegno di tutti e tre → [[team-e-vincoli]]
 
 ## Soldi
 
-- OperO: **2.000 € da incassare** (11/09/2026) → [[sebastian-torres]]
-- Albybike: sito online e **mai pagato** (11/09/2026) → [[albybike]]
-- Nessuna P.IVA, prestazione occasionale. Nei testi «ricevuta» → [[vincoli-fiscali]]
+- OperO: **2.000 € da incassare** (11/09) → [[sebastian-torres]]
+- Albybike: online e **mai pagato** (11/09) → [[albybike]]
+- Nessuna P.IVA: «ricevuta», «collaborazione occasionale» → [[vincoli-fiscali]]
 
-## Cosa è aperto adesso (15/09/2026)
+## Siti aperti — bozza online, il DM col link è di Patrick
 
-- **Edilida** (impresa edile, Travagliato BS) ha **compilato il modulo della
-  ricerca il 18/09**: strumenti che non si parlano, sito vecchio, il
-  beneficio più grosso sulle **scadenze di attrezzature e sicurezza**. Enrico
-  ha lasciato la mail e il sì a essere avvisato. **Patrick punta a una
-  videochiamata**: mail lunedì 21 mattina presto, recupero giovedì 24; **il riepilogo di zona promesso a due (Penta, Edilida) non esiste**
-  e il form ha 2 risposte in tutto → [[edilida]]
-- **V-BAG, gestionale con login** pushato il 16/09 (`28f51ad`): Giulia
-  pubblica dal telefono via Netlify Function + commit su GitHub. **Spento
-  finché Nicola non mette `ADMIN_PASSWORD` e `GITHUB_TOKEN` su Netlify.**
-  Palette (11 colori) e manici (9) disegnati in SVG, WhatsApp `3924944950`
-  → [[2026-09-16-vbag-gestionale-login]]
-- **Barbershop SNIA, il parrucchiere-presidio via Morgan** (Andrea, Cesano
-  Maderno): sito gratis in cambio di volantini e passaparola, nessuna
-  percentuale. Online su `barber-shop-snia.netlify.app`, che **si pubblica da solo dal
-  repo**: giro 16 del 19/09 con la targa **ricostruita in SVG** come logo, doghe e
-  palladiana come pattern SVG, listino letto dalla vetrina. Il giro 15 (foto
-  come logo e sfondo) è stato bocciato: «un collage». Nicola non ha ancora
-  rivisto il 16.
-  Prima del go-live: consenso dei genitori per il viso del bambino nella foto
-  del lavoro, o la foto si toglie → [[sito-barbershop-snia]],
-  [[parrucchiere-morgan]]
-- **Le 87 righe di Gabriele ed Edoardo passano a Giulia** — 27 siti/e-commerce,
-  30 DenkiShift, 30 indagine, zone Groane e Vimercatese, siti riverificati a
-  macchina il 13/09 → [[2026-09-13-liste-giulia-groane-vimercatese]]
-- **Il reso conto di Giulia non è ancora arrivato**: senza quello le sue
-  chiamate, risposte e appuntamenti restano `TODO` in [[metriche]], e oggi è
-  l'unico canale che ha girato davvero
-- **Mikuma Dogs** rifatto dal passo 2 col metodo nuovo e online su
-  `mikumadogs.netlify.app` (11/09 sera, giro 7 «il bianco e il nero»). Nicola:
-  «per il resto mi piace molto». Logo vero a 480 px, il file buono lo chiede
-  Patrick. Safari su iPhone non provato → [[sito-mikuma-dogs]]
-- **Lobidù** e **Da Caterina** online come bozze: zero grafica inventata,
-  nessun racconto allo scroll. Sotto il livello.
-- Bozze mai proposte: DSI, Atelier Selva, Salone di Andrea, Nails Mania,
-  Tarilli, Fiftynine.
-- **Castiglione** e **NG Barber** fermi. Il sorgente di NG Barber sta su una
-  repo **pubblica**.
-- **Pinkploy** (onicotecnica, Brescia) online su `pinkploy.netlify.app` (14/09),
-  mondo «lo spessore», 8/8. Nicola ha bocciato solo l'hero, la correzione è
-  online. Il DM col link è di Patrick, lei ha già risposto «si prova mandami»
-  → [[sito-pinkploy]]
-- **nails.robyy** (Roberta, nail artist e educator, Brescia) online su
-  `nailsrobyy.netlify.app` (14/09), mondo A «la sezione quotata», verdetto 8/8,
-  **tre sbarramenti verificati con `curl`**, due regressioni di finitura chiuse
-  (`673d6c6`). Bozza **attesa**: ha risposto «Ciao ok vediamo» al DM di Patrick.
-  Il DM col link è di Patrick → [[sito-nails-robyy]]
-- **Laura Franzoni** (ciglia, Brescia) online su `laurafranzoni.netlify.app`
-  (14/09), mondo «Dall'alto», 8/8 e overflow 0 su 27 larghezze. ⚠️ **Online c'è
-  il giro 2**: il giro 3 del copy è fermo in locale (`93081ec` non pushato alle
-  09:12). Il DM non è mai partito ed è di Patrick → [[sito-laurafranzoni]]
-- **Hair Style Parrucchieri** (salone, Brescia, gancio sposa) online su
-  `hairstylebrescia.netlify.app` (16/09), mondo A «La prova», 8/8, pin
-  verificato con catture headless. ⚠️ Sbarramenti verificati nei file, non
-  con `curl` (classificatore): lo fa Nicola. **Il DM non è ancora partito**
-  ed è di Patrick → [[sito-hairstylebrescia]]
-- **New Fantasy Parrucchieri** (Lurate Caccivio, `@newfantasy_parrucchieri`) online
-  su `newfantasy-parrucchieri.netlify.app` (16/09), mondo B «l'agenda a tre
-  colonne», 8/8, sbarramenti con `curl`. **Prenotazioni e gestionale interni
-  al sito** su `localStorage`: la demo vale su un dispositivo solo, per venderlo
-  serve uno store ospitato (una giornata). PIN area salone `1234`. Il DM è finito
-  in un autorisponditore: il link va su WhatsApp, da Patrick → [[sito-newfantasy]]
-- **Adelina Nails** (nail artist, Alessandria, `@nails_by_.adelina`) ha risposto
-  «Ciaooo, ok» al DM del 17/09. Bozza **online su `adelinanails-site.netlify.app`** (19/09), repo privata
-  `Nixo999/adelinanails-site`, giro 3 dopo una bocciatura di Nicola sul giro 1 (piatto, font anonimi), 8/8 e slop 0. Primo sito col
-  metodo «prima i competitor»: contenuto solo da profilo + [[competitor-siti-nail]],
-  niente inventato. Manca il DM col link (Patrick, con
-  le domande su prezzi, orari, indirizzo) → [[sito-adelinanails]], [[adelina-nails]]
-- **Design Capelli** (parrucchiere di Daniela Cantello, Nichelino TO, `@designcapelli`)
-  ha risposto **«Buonasera qui grazie»** al DM di Patrick del 20/09: vuole la
-  bozza nel DM. Online su `designcapelli.netlify.app` (21/09), mondo «la luce
-  della via» — la pagina schiarisce di un tono a sezione — 8/8, slop 0, tre
-  sbarramenti con `curl`. Recensioni Google vere (4,5 su 21). ⚠️ **Gli orari
-  confliggono** fra PagineGialle e Fresha: Patrick li fa confermare a Daniela
-  prima del go-live. **Il DM col link è di Patrick** → [[sito-designcapelli]],
-  [[design-capelli]]
-- **Lei Beauty Room** (centro estetico, Torino Cavoretto, `@lei_beauty_room_`)
-  ha risposto **«Grazie manda pure qui»** al DM di Patrick del 24/09. Online
-  su `leibeautyroom.netlify.app` (24/09), mondo «La stanza» — l'arco del logo
-  è la porta, il colore della stanza è il colore della pagina — giro 3, 8/8,
-  slop 0, testo 0, tre sbarramenti con `curl`. **Zero foto vere del locale**:
-  il sito regge su tipografia, lacca e motion, le foto e il logo vettoriale si
-  chiedono a Tania. ⚠️ Niente `wa.me` finché WhatsApp non è confermato,
-  nessun prezzo. **Il DM col link è di Patrick** → [[sito-leibeautyroom]],
-  [[lei-beauty-room]]
-  **Giri 5-7 del 25/09** sul telefono, tre bocciature di Nicola in fila
-  («inutilizzabile», «troppo tutto uguale», «muro di foto e disegni»): cinque
-  porte di forma diversa con **tre foto vere** (galleria Google del locale, un
-  post Instagram), poi **menu con i nomi in chiaro e stanze chiuse che si
-  aprono al tocco**, una alla volta. Da PC identico al giro approvato. ⚠️ Foto
-  usate **senza un ok di Tania**: lo chiede Patrick. Safari e iPhone veri mai
-  provati: il link va aperto da un iPhone prima del DM. ⚠️ **WebKit vero mai provato**: senza Xcode non c'è
-  simulatore, il link va aperto da un iPhone prima del DM
-- **p0t_tattoo** (Ruben, tatuatore anime e cartoon da K-Ink Studio, Collegno TO,
-  `@p0t_tattoo`) ha risposto «va benissimo anche qui su Instagram» al DM del
-  24/09. Bozza online su `p0t-tattoo.netlify.app` (24/09 sera), mondo
-  «Rodovetro × Retino», giro 9 dopo quattro verdetti di Nicola («ok bello, ma…», «macchinoso, i blocchi non si parlano, prima il telefono», «la hero è un po' troppo piatta»): fogli uguali, 4 fondi, mobile per primo, testa con spessore, 8/8, slop 0, testo 0, tre sbarramenti con `curl`.
-  Primo sito con più modelli: Sonnet raccolta e ricerca, Opus 5.5 direzione e
-  costruzione, Fable solo direttore. **Il DM col link è di Patrick**, su
-  Instagram. Da chiedergli prezzi, caparra, i suoi giorni, foto dei guariti
-  → [[sito-p0t-tattoo]], [[p0t-tattoo]]
-- **Soul Ink Torino City** (studio tattoo, via Cremona 27/b Torino, `@soul_ink_torino_city`:
-  Franco Roggia giapponese dal 1999, Alessandro Audino tradizionale). Bozza
-  online su `soul-ink-torino.netlify.app` (26/09), mondo «Munewari ×
-  cartigli», metodo a più modelli (Sonnet raccolta e competitor, Opus
-  direzione e costruzione, Fable direttore). **Giro 3 online (`39adf82`)**
-  dopo tre verdetti di Nicola dal telefono (riga blu, «sembra economica»,
-  «sfondo blu fa schifo», premium anche da PC): ogni sezione col suo campo
-  nei colori delle sue foto (lacca vermiglia, carta peonia, verde hannya,
-  foglio flash, indaco notte, washi). 8/8, slop 0, testo 0, sbarramenti
-  con `curl`. Zero contatti pubblici dello studio: CTA sul DM Instagram, il
-  numero di Alessandro solo sulla sua scheda. Safari e iPhone veri mai
-  provati. DM del 21/09 non confermato; **il DM col link è di Patrick**
-  → [[sito-soul-ink]], [[soul-ink-torino-city]]
-- **Per un Pelo** (toelettatura di Ambra Longoni, Nembro BG, `@toelettatura.perunpelo`)
-  ha risposto **«si me la mandi pure»** il 25/09 al DM di Patrick del 9/09.
-  Online su `perunpelo.netlify.app`, mondo «Per un Pelo»: le lettere entrano
-  arruffate e si pettinano. **Giro 2 del 25/09 sera** dopo il verdetto di Nicola
-  (PC vuoto, scroll che trattiene sul telefono, foto lente): niente pin, servizi
-  in fila a 1440, foto in WebP (98 KB a 375 invece di 547). 8/8, slop 0, testo 0,
-  sbarramenti con `curl`. **Giro 3**: Nicola «bello», la fascia rosa resta solo
-  sui titoli e sui pezzi grandi. Safari e iPhone veri mai provati. **Il DM col
-  link è di Patrick** → [[sito-perunpelo]], [[perunpelo]]
-- **OperO, Intermediar + Receive** (24/09/2026): Seba ha mandato la specifica
-  della collaborazione fra aziende e ha chiesto di **conoscerla, non di
-  iniziarla**. Lavoro nuovo, fuori dai 2.400 €. Sei buchi da chiedere a lui
-  quando si parte, il primo è da dove vengono i € dei Conti
-  → [[opero-intermediar-receive]]
-- **Seba vuole far firmare riservatezza + non concorrenza a 5 anni**
-  (25/09/2026): penali da 5.000 a 30.000 €, codice consegnato a richiesta,
-  nessuna esclusione per DenkiShift. **Non firmato**: la controproposta lega la
-  firma al saldo dei 2.000 € → [[accordo-riservatezza-opero]]
-- **denki-agents**: piattaforma multi-agente interna. **La fase 1, il gateway,
-  è chiusa** (16/09): le cinque prove della definizione di fatto passano con
-  chiamate vere sul Mac, Postgres e LiteLLM in Docker, commit solo locali.
-  **Prima la parte che fa i siti**: Nicola la vuole online con un login serio,
-  una pagina progetti con siti e gestionali, una chat per progetto e la
-  creazione dei siti autonoma con Fable e Astra. Ordine approvato: gateway,
-  cantiere autonomo da riga di comando, piattaforma. **Il cantiere gira come
-  meccanismo** (17/09): un giro di prova su Haiku, 0,22 USD. **Un dollaro a
-  sito**, tutto in locale, foto da Instagram in automatico, i siti esistenti non
-  si rifanno: deciso da Nicola il 17/09. **`pnpm run sito` sta nel dollaro**:
-  tre bozze di prova su un'attivita' inventata, 0,57-0,82 USD, 8/8, critica
-  4-5/10, senza foto. Manca il token di Apify per un giro con foto vere. I
-  controlli anti-slop valgono per tutti i siti → [[denki-agents]],
-  [[anti-slop-siti]], [[2026-09-17-cantiere-un-dollaro-in-locale]]
+| Sito | Online su | Stato (data) | Prossimo passo |
+|---|---|---|---|
+| [[sito-soul-ink]] | soul-ink-torino.netlify.app | giro 3 (26/09), verdetto di Nicola `TODO` | DM Instagram; lo studio non ha contatti pubblici |
+| [[sito-perunpelo]] | perunpelo.netlify.app | giro 3 (25/09), verdetto `TODO`; lei ha detto sì il 25/09 | DM, domande per Ambra in [[perunpelo]] |
+| [[sito-leibeautyroom]] | leibeautyroom.netlify.app | giro 7 (25/09): stanze chiuse che si aprono dal menu | ok di Tania sulle 3 foto prese da Google e Instagram; DM |
+| [[sito-p0t-tattoo]] | p0t-tattoo.netlify.app | giro 9 (25/09) | DM Instagram: prezzi, caparra, giorni, foto dei guariti |
+| [[sito-designcapelli]] | designcapelli.netlify.app | giro 1 (21/09); lei vuole la bozza nel DM | orari in conflitto PagineGialle/Fresha, li conferma Daniela; DM |
+| [[sito-adelinanails]] | adelinanails-site.netlify.app | giro 3 (19/09); lei ha risposto «ok» | DM con le domande su prezzi, orari, indirizzo |
+| [[sito-barbershop-snia]] | barber-shop-snia.netlify.app | giro 16 (19/09), Nicola non l'ha rivisto | consenso dei genitori per il viso del bambino, o la foto si toglie |
+| [[sito-newfantasy]] | newfantasy-parrucchieri.netlify.app | giro 1 (16/09); DM finito in un autorisponditore | link su WhatsApp; prenotazioni su `localStorage`, PIN `1234`: per venderlo serve uno store ospitato |
+| [[sito-hairstylebrescia]] | hairstylebrescia.netlify.app | 16/09; sbarramenti verificati nei file, non con `curl` | DM mai partito |
+| [[sito-laurafranzoni]] | laurafranzoni.netlify.app | online il giro 2; il giro 3 (`93081ec`) è in locale, non pushato | push, poi il DM mai partito |
+| [[sito-nails-robyy]] | nailsrobyy.netlify.app | 14/09; lei: «Ciao ok vediamo» | DM col link |
+| [[sito-pinkploy]] | pinkploy.netlify.app | 14/09; lei: «si prova mandami» | DM col link |
+| [[sito-mikuma-dogs]] | mikumadogs.netlify.app | giro 7 (11/09) | il file buono del logo lo chiede Patrick |
 
-## Cosa è bloccato, e perché
+Safari e iPhone veri **mai provati** su nessuno: il link si apre da un iPhone
+prima del DM. Fermi o mai proposti: DSI, Atelier Selva, Salone di Andrea,
+Nails Mania, Tarilli, Fiftynine, Castiglione, NG Barber (repo **pubblica**),
+Lobidù, Da Caterina: lo stato sta nella loro nota.
 
-- **Il campo «Chat» del banco DM non registra le risposte.** La riga
-  `@nails.robyy` del 13/09 dice ancora che il DM è partito, non che lei ha
-  risposto «Ciao ok vediamo»: la risposta è arrivata da uno screenshot di
-  Nicola. Finché il banco non la scrive, un lead che ha risposto è
-  indistinguibile da uno freddo (14/09/2026)
+## Altro aperto
 
-- **La migrazione dello storico di OperO non si fa piu'** (13/09/2026). Seba:
-  «non e' richiesta alcuna procedura automatizzata di migrazione per i dati
-  storici», settembre lo inserisce a mano lui, e di giugno-agosto vuole solo un
-  **report da consultare**. OperO 2 parte vuoto: trasformazione e caricamento
-  del piano non servono, **e il blocco al go-live non c'e' piu'**. Il report lo
-  scrive `strumenti/report-mesi.mjs` dai JSON dell'estrazione. ⚠️ **Manca solo
-  la chiave**: `OPERO1_SERVICE` da Settings → API del pannello di OperO 1,
-  oppure un login di segreteria. **La digita una persona**, non Claude
-  → [[opero]]
-- **DenkiShift non è installabile in produzione.** Dimostrabile, non vendibile
-  con una data → [[denkishift]]
-- **La produzione resta fuori** su tutti e due i prodotti. Patrick applica lo
-  schema solo in sviluppo → [[modifiche-al-database]]
-- **Le credenziali non entrano nel vault** e non le digita Claude → [[credenziali]]
-- Il collo di bottiglia è la **generazione lead**, non il closing → [[generazione-lead]]
+- **Edilida** (edile, Travagliato): modulo compilato il 18/09, Patrick punta a una videochiamata; il riepilogo di zona promesso a Penta ed Edilida **non esiste** → [[edilida]]
+- **V-BAG**, gestionale con login pushato il 16/09: spento finché Nicola non mette `ADMIN_PASSWORD` e `GITHUB_TOKEN` su Netlify → [[2026-09-16-vbag-gestionale-login]]
+- **OperO, Intermediar + Receive** (24/09): Seba vuole conoscerla, non iniziarla. Lavoro nuovo, fuori dai 2.400 €; sei buchi da chiedergli → [[opero-intermediar-receive]]
+- **Riservatezza + non concorrenza a 5 anni** (25/09): penali 5.000-30.000 €, **non firmato**, controproposta legata al saldo dei 2.000 € → [[accordo-riservatezza-opero]]
+- **denki-agents**: gateway chiuso (16/09), cantiere a **un dollaro a sito** in locale, 0,57-0,82 USD a bozza; manca il token Apify per un giro con foto vere → [[denki-agents]]
+- Le 87 righe di Gabriele ed Edoardo sono passate a Giulia (13/09) → [[2026-09-13-liste-giulia-groane-vimercatese]]
+
+## Bloccato, e perché
+
+- **Il campo «Chat» del banco DM non registra le risposte** (14/09): un lead che ha risposto è indistinguibile da uno freddo finché il banco non lo scrive
+- **OperO, storico**: la migrazione non si fa più (13/09), Seba vuole solo un report giugno-agosto da `strumenti/report-mesi.mjs`; manca la chiave `OPERO1_SERVICE` da Settings → API di OperO 1, o un login di segreteria → [[opero]]
+- **DenkiShift non è installabile in produzione**: dimostrabile, senza date → [[denkishift]]
+- **La produzione resta fuori** su tutti e due i prodotti → [[modifiche-al-database]]
+- **Le chiavi non entrano nel vault.** Le password le imposta Trevis dal 23/09 su richiesta; pagine web e account restano fuori → [[credenziali]]
+- Il collo di bottiglia è la **generazione lead** → [[generazione-lead]]
 
 ## Il livello dei siti
 
-**NG Barber e Fiftynine passano, gli altri no.** Dal metodo nuovo passano anche
-le bozze costruite col [[processo-siti]] intero: **nailsrobyy 8/8**, pinkploy
-8/8, laurafranzoni 8/8 (14/09/2026), hairstylebrescia 8/8 (16/09/2026). Prima di pubblicare:
-
-```bash
-python3 01-Coding/strumenti/controlla-sito.py ~/lavoro/<cartella>
-```
-
-Quello che è già stato bocciato sta in [[direttive-siti]], e non si ripete.
+Passano NG Barber, Fiftynine e le bozze fatte col [[processo-siti]] intero
+(8/8). Prima di pubblicare: `python3 01-Coding/strumenti/controlla-sito.py ~/lavoro/<cartella>`.
+Quello che è già stato bocciato sta in [[direttive-siti]] → [[livello-siti]]

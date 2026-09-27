@@ -5,6 +5,7 @@ data: 2026-08-30
 progetto: azienda
 source: denkicode
 tags: [tempo, abitudini, leadership, delega, ruolo]
+updated: 2026-09-10
 ---
 
 # Il tempo si blocca, l'obiettivo diventa sistema, la colpa si cerca prima qui dentro

@@ -126,7 +126,7 @@ Buongiorno, sul sito siamo fermi da qualche giorno. Se il momento non è questo 
 
 - **@gelatoalquadrato**, 16/09: al rilancio ha risposto **«Abbiamo gia' un
   sito…»**. Lista del 09/09, gancio 1 sbagliato. Segnato in
-  [[gia-col-sito]]: fa **7 su 7 giri**, e resta il difetto di lista piu'
+  `gia-col-sito`: fa **7 su 7 giri**, e resta il difetto di lista piu'
   costoso del canale.
 - **@camynailsmontichiari**, 16/09: **«Ma non hai altro da fare nella tua vita
   sinceramente»**. Patrick ha risposto a tono e ha chiuso. Primo insulto vero

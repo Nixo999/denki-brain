@@ -91,7 +91,7 @@ scriverla.
 
 | Plugin | Cosa fa |
 |---|---|
-| `canva` | Crea, ridimensiona e fa il **controllo di coerenza col brand**. Il più vicino al lavoro di [[patrick]] sui materiali |
+| `canva` | Crea, ridimensiona e fa il **controllo di coerenza col brand**. Il più vicino al lavoro di Patrick sui materiali |
 | `adobe-for-creativity` | Ritocco immagini, scontorni, automazioni creative |
 | `figma` | Legge file, componenti e **design token**, e li traduce in codice. Serve il giorno in cui un cliente arriva con un file Figma |
 | `hyperframes` | HTML → video, con GSAP. Una demo filmata di [[denkishift]] senza aprire un editor video |

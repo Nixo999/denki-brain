@@ -4,6 +4,7 @@ type: decisione
 data: 2026-09-11
 progetto: siti-vetrina
 source: claude
+updated: 2026-09-11
 ---
 
 # Il sito non è un referto: le fonti restano nei documenti

@@ -5,6 +5,7 @@ data: 2026-09-02
 progetto: azienda
 source: claude
 tags: [instagram, dm, outreach, automazione]
+updated: 2026-09-10
 ---
 
 # I DM di Instagram non si mandano da soli: si automatizza tutto tranne l'invio

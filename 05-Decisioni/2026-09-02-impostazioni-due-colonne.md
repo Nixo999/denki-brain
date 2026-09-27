@@ -4,6 +4,7 @@ type: decisione
 data: 2026-09-02
 progetto: denkishift
 source: claude
+updated: 2026-09-10
 ---
 
 # Le Impostazioni parlano a chi decide, e su un monitor stanno su due colonne

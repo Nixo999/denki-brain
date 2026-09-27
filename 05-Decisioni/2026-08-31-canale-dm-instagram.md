@@ -5,6 +5,7 @@ data: 2026-08-31
 progetto: azienda
 source: denkicode
 tags: [canali, instagram, dm, generazione-lead, siti-vetrina]
+updated: 2026-09-10
 ---
 
 # Il DM di Instagram diventa un canale, e lavora sul lontano

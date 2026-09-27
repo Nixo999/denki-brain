@@ -5,6 +5,7 @@ data: 2026-09-08
 progetto: azienda
 source: denkicode
 tags: [dm-instagram, generazione-lead, metriche, canali]
+updated: 2026-09-10
 ---
 
 # Il test dei 200 DM è chiuso: sotto l'1%, e nessuna chiusura

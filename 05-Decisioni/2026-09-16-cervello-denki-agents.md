@@ -5,6 +5,7 @@ data: 2026-09-16
 progetto: denki-agents
 source: denkicode
 stato: presa
+updated: 2026-09-16
 ---
 
 # Il cervello sta in un database solo: Postgres con pgvector, e il prompt si compone a budget

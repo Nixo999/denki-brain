@@ -2,7 +2,7 @@
 riga: Pizzeria Lobidù, pizzeria siciliana, Via IV Novembre 13, 21049 Tradate (VA).
 type: progetto
 status: bozza-locale
-cliente: "[[pizzeria-lobidu]]"
+cliente: pizzeria-lobidu
 created: 2026-09-10
 updated: 2026-09-11
 source: claude

@@ -1,12 +1,12 @@
 ---
 riga: Sito vetrina in una pagina per D.S.I. Advertising di Piras Sebastiano, Merate (LC) - dal 1992 progetta e produce articoli promozionali per il...
 type: progetto
-status: attivo
+status: in-pausa
 client: dsi-advertising
 stack: [html, gsap, netlify]
 started: 2026-09-02
 deadline: TODO
-updated: 2026-09-08
+updated: 2026-09-27
 source: claude
 valore: TODO
 incassato: 0

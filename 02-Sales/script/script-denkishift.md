@@ -1,10 +1,10 @@
 ---
 riga: Lo script telefonico di Giulia su DenkiShift, con le obiezioni e i looping.
 type: area
-updated: 2026-09-06
+updated: 2026-09-27
 source: claude
 prodotto: denkishift
-usato-da: [giulia, gabriele, edoardo]
+usato-da: [giulia]
 stato: da-provare
 ---
 

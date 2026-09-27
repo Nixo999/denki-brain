@@ -7,6 +7,11 @@
 Esiste perche' l'indice a mano resta indietro: nessun comando lo scriveva, e un
 indice vecchio fa concludere che una nota non esiste. La descrizione e' la prima
 frase di prosa dopo il titolo, come dice indice.md da sempre.
+
+Dal 27/09/2026 misura anche i tetti di come-si-scrive-una-nota.md: `riga:`
+oltre 140, progetto/cliente oltre 80 righe, decisione oltre 50, FATTI.md oltre
+80, voce di trappole oltre 4, `updated:` mancante. Non controlla piu' la tabella
+dei progetti in CLAUDE.md: e' stata tolta apposta, e l'avviso era rumore.
 """
 import re
 import sys
@@ -20,7 +25,7 @@ SEZIONI = [
     ("02-Sales", "Il lato commerciale: clienti, script, liste, processo"),
     ("03-Storage", "Azienda, team, sistemi"),
     ("05-Decisioni", "Una decisione per file, datata. Non si riscrivono"),
-    ("06-Daily", "Note di giornata e handoff"),
+    ("06-Daily", "Note di giornata, chiuse il 27/09/2026: storia, la giornata sta nel registro"),
     ("04-Archive", "Progetti chiusi e lead persi"),
     ("99-Templates", "Da copiare quando si crea una nota nuova"),
 ]
@@ -129,7 +134,9 @@ def oggi():
 def controlli():
     problemi = []
 
-    esistenti = {p.stem for p in VAULT.rglob("*.md") if ".git" not in p.parts}
+    # anche i CSV e gli altri file: [[lista.csv]] e' un link buono
+    _file = [p for p in VAULT.rglob("*") if p.is_file() and ".git" not in p.parts]
+    esistenti = {p.stem for p in _file if p.suffix == ".md"} | {p.name for p in _file}
     rotti = {}
     for p in VAULT.rglob("*.md"):
         # i template e il README contengono segnaposto finti apposta
@@ -141,14 +148,6 @@ def controlli():
                 rotti.setdefault(link, []).append(p.stem)
     for link, dove in sorted(rotti.items(), key=lambda x: -len(x[1])):
         problemi.append(f"link rotto: [[{link}]] × {len(dove)} (es. {dove[0]})")
-
-    claude = testo(VAULT / "CLAUDE.md")
-    for p in note("01-Coding/progetti"):
-        campi, _ = frontmatter(testo(p))
-        if campi.get("type") != "progetto":
-            continue
-        if campi.get("status") != "completato" and f"[[{p.stem}]]" not in claude:
-            problemi.append(f"progetto attivo fuori dalla tabella di CLAUDE.md: {p.stem}")
 
     senza_link = {}
     for riga in testo(VAULT / "01-Coding/registro-interventi.md").splitlines():
@@ -191,6 +190,47 @@ def controlli():
         )
     for s in scadute:
         problemi.append(f"`verificato:` piu' vecchio di 30 giorni su una nota che cambia: {s}")
+
+    # tetti di lunghezza (03-Storage/sistemi/come-si-scrive-una-nota.md): valgono
+    # su quello che si scrive dal 10/09/2026, le note vecchie restano come sono
+    DAL = "2026-09-10"
+    TETTI = {"progetto": 80, "cliente": 80, "decisione": 50}
+    righe_lunghe, sfora, senza_updated = [], [], []
+    for cartella, _ in SEZIONI:
+        for p in note(cartella):
+            if "99-Templates" in p.parts:
+                continue
+            t = testo(p)
+            campi, _ = frontmatter(t)
+            rel = str(p.relative_to(VAULT))
+            if len(campi.get("riga", "")) > 140:
+                righe_lunghe.append(f"{rel} ({len(campi['riga'])})")
+            if not campi.get("updated"):
+                senza_updated.append(rel)
+            tetto = TETTI.get(campi.get("type"))
+            n = len(t.splitlines())
+            if tetto and campi.get("updated", "") >= DAL and n > tetto:
+                sfora.append(f"{rel} ({n} > {tetto})")
+    n = len(testo(VAULT / "FATTI.md").splitlines())
+    if n > 80:
+        problemi.append(f"FATTI.md a {n} righe: il tetto e' 80, si taglia o si sposta nella nota progetto")
+    lunghe = []
+    for voce in re.split(r"\n(?=- `\[)", testo(VAULT / "01-Coding/trappole.md")):
+        if not voce.startswith("- `["):
+            continue
+        m = re.search(r"\((\d{2})/(\d{2})/(\d{4})", voce)
+        data = f"{m.group(3)}-{m.group(2)}-{m.group(1)}" if m else ""
+        righe = [r for r in voce.splitlines() if r.strip()]
+        if data >= DAL and len(righe) > 4:
+            lunghe.append(f"{voce[15:60].strip()}… ({len(righe)} righe, {data})")
+    if lunghe:
+        problemi.append(f"trappole oltre 4 righe × {len(lunghe)} (es. {lunghe[0]})")
+    if righe_lunghe:
+        problemi.append(f"`riga:` oltre 140 caratteri × {len(righe_lunghe)} (es. {', '.join(righe_lunghe[:3])})")
+    if sfora:
+        problemi.append(f"note oltre il tetto × {len(sfora)} (es. {', '.join(sfora[:3])})")
+    if senza_updated:
+        problemi.append(f"`updated:` mancante × {len(senza_updated)} (es. {senza_updated[0]})")
     return problemi
 
 

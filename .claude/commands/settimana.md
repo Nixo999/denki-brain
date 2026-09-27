@@ -28,8 +28,8 @@ git log --since="7 days ago" --name-only --pretty=format: | sort -u | grep -v '^
 
 ## 2. Cosa è cambiato nei progetti
 
-Leggi le note in `06-Daily/` degli ultimi 7 giorni: sono già il diario, non
-riscriverle — estraine i fatti.
+Leggi le righe degli ultimi 7 giorni in `01-Coding/registro-interventi.md`:
+sono già il diario, non riscriverle — estraine i fatti.
 
 Controlla i commit degli ultimi 7 giorni nei repo di codice
 (`opero-sito`, `smooth-duty`) via API GitHub, senza clonare.

@@ -14,7 +14,7 @@ tags: [sito, bozza, nail, brescia, instagram]
 
 # Sito Pinkploy — online, mondo «lo spessore»
 
-Onicotecnica a Brescia. Riga 121 della lista [[2026-09-13-instagram-siti-brescia]].
+Onicotecnica a Brescia. Riga 121 della lista [[2026-09-13-instagram-siti-brescia.csv]].
 Patrick le ha scritto sul protocollo di sterilizzazione MOZ in bio; **ha risposto
 il 13/09 — «Ciao hmm si prova mandami»**. Cliente: [[pinkploy]]. Bozza costruita
 e online (mondo B, sotto), link ancora da mandarle.

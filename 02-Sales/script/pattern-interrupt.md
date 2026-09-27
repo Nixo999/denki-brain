@@ -1,10 +1,10 @@
 ---
 riga: Le aperture - come si rompe lo schema nei primi sette secondi di una chiamata a freddo.
 type: area
-updated: 2026-08-31
+updated: 2026-09-27
 source: claude
 prodotto: denkishift
-usato-da: [giulia, gabriele, edoardo]
+usato-da: [giulia]
 stato: da-provare
 ---
 
@@ -14,7 +14,7 @@ stato: da-provare
 > Quattro aperture, quattro meccanismi psicologici diversi. Sono **ipotesi da
 > testare**, non verità: il verdetto lo danno le chiamate.
 
-**Le usano tutti e tre**: Giulia, Gabriele, Edoardo. Dove c'è `[nome]` ci va il
+**Le usa Giulia**, unica al telefono dal 15/09/2026 ([[gabriele-edoardo]] sono fuori). Dove c'è `[nome]` ci va il
 proprio.
 
 Servono a coprire gli **otto secondi** in cui l'interlocutore decide se stiamo

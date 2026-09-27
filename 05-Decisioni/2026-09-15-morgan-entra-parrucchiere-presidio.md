@@ -6,6 +6,7 @@ progetto: azienda
 source: denkicode
 stato: presa
 tags: [team, generazione-lead, presidi, segnalatori, canali]
+updated: 2026-09-15
 ---
 
 # Edo e Gabriele fuori per sempre, entra Morgan come segnalatore: il primo presidio è un parrucchiere, pagato col sito

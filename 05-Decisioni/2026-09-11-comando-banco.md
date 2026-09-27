@@ -5,6 +5,7 @@ data: 2026-09-11
 progetto: azienda
 source: denkicode
 tags: [banco-dm, dm-instagram, generazione-lead, liste, ricerca-di-mercato, comandi]
+updated: 2026-09-11
 ---
 
 # Il comando `/banco`, le tre liste al giorno e l'annulla

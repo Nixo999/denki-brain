@@ -14,7 +14,11 @@ Tre proprieta', e sono il punto:
 - **subito**, non a fine sessione: una regola detta e non scritta e' persa;
 - **nel file giusto**, non in un raccoglitore: una regola sui siti fra le
   convenzioni dei commit non la legge nessuno;
-- **verbatim**: la frase di chi l'ha detta non si riassume e non si ammorbidisce.
+- **verbatim**: la frase di chi l'ha detta non si riassume e non si ammorbidisce;
+- **due righe**: la frase nel titolo, e in `--perche` la regola generale in una
+  riga, quella che vale la prossima volta. Il verdetto sul giro N di un sito
+  preciso resta nella nota progetto: il 27/09/2026, 47 voci su 70 in
+  direttive-siti erano verdetti su un giro, non regole.
 
 I file crescono e non si accorciano. Una regola superata si marca superata,
 non si cancella: serve sapere che c'e' stata.

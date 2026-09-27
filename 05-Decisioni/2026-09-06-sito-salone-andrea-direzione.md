@@ -5,6 +5,7 @@ data: 2026-09-06
 progetto: sito-salone-di-andrea
 who: nicola
 source: claude
+updated: 2026-09-10
 ---
 
 # Il dado si ritira quando Nicola appunta: NG Barber è la grammatica di riferimento per i siti "spettacolari"

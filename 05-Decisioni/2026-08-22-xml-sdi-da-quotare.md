@@ -4,6 +4,7 @@ type: decisione
 data: 2026-08-22
 progetto: opero
 source: repo
+updated: 2026-09-10
 ---
 
 # L'XML SDI è lavoro nuovo, da quotare

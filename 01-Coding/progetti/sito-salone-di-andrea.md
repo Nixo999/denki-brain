@@ -1,12 +1,12 @@
 ---
 riga: Sito vetrina in una pagina per Il Salone di Andrea, parrucchiere donna e uomo di Andrea Bielli a Dalmine (BG), Viale Natale Betelli 58.
 type: progetto
-status: attivo
+status: in-pausa
 client: il-salone-di-andrea
 stack: [html, gsap, netlify]
 started: 2026-09-06
 deadline: TODO
-updated: 2026-09-08
+updated: 2026-09-27
 source: claude
 valore: TODO
 incassato: 0

@@ -1,7 +1,7 @@
 ---
 riga: Il registro dei testi che legge un cliente - Lei o Tu, voce di Patrick. Non e' il registro di Trevis.
 type: risorsa
-updated: 2026-09-20
+updated: 2026-09-27
 source: denkicode
 ---
 
@@ -41,7 +41,7 @@ saltarla e non anticiparla al telefono.
 
 | Fase | Canale |
 |---|---|
-| **Prospezione** | Chiamate a freddo (Giulia, Gabriele, Edoardo) **sul vicino**, DM Instagram (Patrick) **sul lontano**, email. Il porta-a-porta a freddo è chiuso dal 31 agosto 2026 → [[2026-08-31-stop-porta-a-porta-a-freddo]] |
+| **Prospezione** | Chiamate a freddo (Giulia; Gabriele ed Edoardo fuori dal 15/09/2026) **sul vicino**, DM Instagram (Patrick) **sul lontano**, email. Il porta-a-porta a freddo è chiuso dal 31 agosto 2026 → [[2026-08-31-stop-porta-a-porta-a-freddo]] |
 | **Trattativa e chiusura** | Telefonata, video-call, incontro dal vivo |
 | **Operatività e assistenza** | **WhatsApp** — canale principale con le PMI locali |
 | **Comunicazioni formali** | Email |

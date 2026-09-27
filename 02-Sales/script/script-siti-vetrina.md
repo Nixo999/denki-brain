@@ -1,16 +1,16 @@
 ---
-riga: Lo usano tutti e tre - Giulia, Gabriele, Edoardo.
+riga: Lo usa Giulia, unica al telefono dal 15/09/2026.
 type: area
-updated: 2026-09-06
+updated: 2026-09-27
 source: claude
 prodotto: sito-vetrina
-usato-da: [giulia, gabriele, edoardo]
+usato-da: [giulia]
 stato: da-provare
 ---
 
 # Script — Siti vetrina
 
-**Lo usano tutti e tre**: Giulia, Gabriele, Edoardo. Dove c'è `[nome]` ci va il
+**Lo usa Giulia**, unica al telefono dal 15/09/2026 ([[gabriele-edoardo]] sono fuori). Dove c'è `[nome]` ci va il
 proprio.
 
 **Obiettivo: farsi dare il numero WhatsApp per mandare la bozza.** Non

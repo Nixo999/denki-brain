@@ -4,6 +4,7 @@ type: decisione
 data: 2026-09-08
 progetto: azienda
 source: claude
+updated: 2026-09-10
 ---
 
 # Ogni progetto porta la firma nel piè di pagina

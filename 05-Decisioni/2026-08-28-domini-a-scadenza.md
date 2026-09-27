@@ -5,6 +5,7 @@ data: 2026-08-28
 progetto: azienda
 source: denkicode
 stato: aperta
+updated: 2026-09-10
 ---
 
 # Domini: comprare a 1 €, lasciar scadere, ricomprare

@@ -5,6 +5,7 @@ data: 2026-09-10
 progetto: azienda
 source: denkicode
 tags: [dm-instagram, generazione-lead, liste, denkishift, siti-vetrina, script]
+updated: 2026-09-10
 ---
 
 # Ogni lista DM è 50 siti più 30 DenkiShift, con un messaggio scritto per ognuno

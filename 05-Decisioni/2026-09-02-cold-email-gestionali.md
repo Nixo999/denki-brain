@@ -6,6 +6,7 @@ progetto: azienda
 source: denkicode
 verificato: 2026-09-13
 tags: [email, outreach, denkishift, gdpr, deliverability]
+updated: 2026-09-13
 ---
 
 # La cold email si automatizza tutta, ma in Italia la base giuridica non è il legittimo interesse

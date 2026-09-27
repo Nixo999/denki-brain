@@ -5,6 +5,7 @@ data: 2026-08-31
 progetto: azienda
 source: denkicode
 tags: [canali, porta-a-porta, blitz, generazione-lead]
+updated: 2026-09-10
 ---
 
 # Il porta-a-porta a freddo si chiude: Patrick va solo dove ha già chiamato

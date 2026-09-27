@@ -5,6 +5,7 @@ data: 2026-08-30
 progetto: azienda
 source: denkicode
 tags: [liste, siti, verifica, metodo]
+updated: 2026-09-10
 ---
 
 # «Non ha il sito» si verifica su Google e sul dominio, non su Pagine Gialle

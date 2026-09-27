@@ -1,7 +1,7 @@
 ---
 riga: Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 type: area
-updated: 2026-09-16
+updated: 2026-09-27
 source: claude
 prodotto: siti-vetrina
 stato: da-provare
@@ -380,7 +380,7 @@ Le contromisure, che costano poco e servono davvero:
 un **blocco separato**, o si finisce per verificare male mentre si scrive.
 
 E vale la regola dell'E-Myth di [[core-strutturale]]: questo file **è** la SOP.
-Il giorno in cui l'invio passa a Gabriele o Edoardo, si consegna questo più
+Il giorno in cui l'invio passa a un'altra persona (Gabriele ed Edoardo sono fuori dal 15/09/2026), si consegna questo più
 [[dm-instagram-vetrina]] e non serve altro.
 
 ## Come si chiede la lista

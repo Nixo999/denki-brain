@@ -4,6 +4,7 @@ type: decisione
 data: 2026-08-28
 progetto: azienda
 source: denkicode
+updated: 2026-09-10
 ---
 
 # Il materiale commerciale si costruisce su sette framework, non a sentimento

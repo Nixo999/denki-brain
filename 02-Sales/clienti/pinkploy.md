@@ -15,7 +15,7 @@ Onicotecnica a **Brescia centro**, `@nails_art_by_pinkploy`, nome mostrato
 «Unghie Brescia / Nails Brescia 💝💘». 832 follower, 301 seguiti, 344 post.
 **Nome e cognome non sono scritti da nessuna parte**: `TODO`. Nessun sito, e non
 risulta sui motori né su Maps con questo nome, riverificato il 13/9. Viene dalla
-riga **121** della lista [[2026-09-13-instagram-siti-brescia]], segmento Nail,
+riga **121** della lista [[2026-09-13-instagram-siti-brescia.csv]], segmento Nail,
 gancio 1, dove la verifica del 12/9 diceva «0 risultati · nessun dominio».
 
 ## Il DM di Patrick, verbatim
@@ -53,4 +53,4 @@ a **640 px**, non bastano per un sito che dipenda dalle foto.
 
 ## Collegamenti
 
-[[sito-pinkploy]] · [[stile-comunicazione]] · [[2026-09-13-instagram-siti-brescia]]
+[[sito-pinkploy]] · [[stile-comunicazione]] · [[2026-09-13-instagram-siti-brescia.csv]]

@@ -99,7 +99,7 @@ pushato**: il push pubblica su `bartabacchi59.it`.
 
 **Niente database e niente login**: lo store sono i file del sito. Ogni pezzo
 modificabile sta fra due commenti (`<!-- @menu pizze -->` … `<!-- /@menu -->`)
-e si riscrive solo quello. È la differenza con [[sito-vbag]], dove lo store è
+e si riscrive solo quello. È la differenza con [[2026-09-16-vbag-gestionale-login]], dove lo store è
 un JSON: qui il menù è il contenuto principale, e con un JSON senza JS sarebbe
 una pagina vuota. `prova-admin.html` verifica il giro completo — 42 asserzioni,
 i file devono restare **identici al byte**. Il dettaglio sta nel `CLAUDE.md`

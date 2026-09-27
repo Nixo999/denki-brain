@@ -19,7 +19,7 @@ Costruzioni e ristrutturazioni dal 1972, Travagliato (BS). Instagram
 
 | | |
 |---|---|
-| Come è arrivato | DM Instagram di Patrick, lista [[2026-09-17-instagram-ricerca-lombardia]] (ricerca di mercato, nessun prodotto nominato) |
+| Come è arrivato | DM Instagram di Patrick, lista [[2026-09-17-instagram-ricerca-lombardia.csv]] (ricerca di mercato, nessun prodotto nominato) |
 | Referente | **Enrico**, `enrico@edilida.it` (lasciata da lui nel modulo, con il sì a essere avvisato «se svilupperemo una tecnologia mirata per il suo settore») |
 | Canale | Email, quella che ha lasciato. La chat IG è quella del primo DM |
 | Chi gli parla | Patrick |

@@ -1,10 +1,10 @@
 ---
 riga: Lo usano tutti e tre. Dove c'è [nome] ci va il proprio.
 type: area
-updated: 2026-08-31
+updated: 2026-09-27
 source: claude
 prodotto: e-commerce
-usato-da: [giulia, gabriele, edoardo]
+usato-da: [giulia]
 stato: da-provare
 ---
 

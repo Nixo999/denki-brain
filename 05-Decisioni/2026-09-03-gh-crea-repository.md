@@ -4,6 +4,7 @@ type: decisione
 data: 2026-09-03
 progetto: azienda
 source: claude
+updated: 2026-09-10
 ---
 
 # I repository su GitHub li crea Claude, il login lo fa la persona

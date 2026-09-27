@@ -5,6 +5,7 @@ data: 2026-09-13
 progetto: azienda
 source: denkicode
 tags: [team, cold-call, generazione-lead, liste, canali]
+updated: 2026-09-13
 ---
 
 # Gabriele ed Edoardo fuori: il telefono resta su Giulia sola

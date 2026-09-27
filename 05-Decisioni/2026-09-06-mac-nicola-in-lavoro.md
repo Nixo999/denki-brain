@@ -4,6 +4,7 @@ type: decisione
 data: 2026-09-06
 progetto: azienda
 source: claude
+updated: 2026-09-10
 ---
 
 # Il Mac di Nicola: tutto in `~/lavoro`, e le skill di design hanno finalmente una provenienza scritta

@@ -5,6 +5,7 @@ data: 2026-09-07
 progetto: azienda
 source: claude
 tags: [instagram, dm, banco-dm, denkicode]
+updated: 2026-09-10
 ---
 
 # Il banco DM scrive da due account, e il tetto è di ognuno

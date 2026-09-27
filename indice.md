@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-09-25
+updated: 2026-09-27
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **239 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **245 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -71,12 +71,15 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-pizzeria-lobidu]] — ⚠️ Pizzeria Lobidù, pizzeria siciliana, Via IV Novembre 13, 21049 Tradate (VA).
 - [[sito-salone-di-andrea]] — ⚠️ Sito vetrina in una pagina per Il Salone di Andrea, parrucchiere donna e uomo di Andrea Bielli a Dalmine (BG), Viale Natale Betelli 58.
 - [[sito-shaddai]] — Bozza di sito vetrina non commissionata per Shaddai Extension Lash, lash artist a Bergamo, costruita il 16 settembre 2026 dai contenuti veri del profilo Instagram.
+- [[sito-soul-ink]] — Bozza sito per Soul Ink Torino City (studio tattoo, via Cremona 27/b Torino, Franco Roggia giapponese + Alessandro Audino tradizionale) - mondo «Munewari × cartigli», giro 3 online su soul-ink-torino.netlify.app dal 26/09, 8/8, slop 0, testo 0.
 
 **skills/**
 
 - [[design-frontend]] — ⚠️ Quattro skill di design sono installate a livello di account (~/.claude/skills/), quindi valgono in ogni cartella - OperO, DenkiShift, cococa...
 - [[processo-siti]] — ⚠️ Nota di catalogo, non la skill. È il wikilink più citato del vault (quindici richiami e nessun file, fino al 7 settembre 2026) perché ogni s...
+- [[proposta-commerciale]] — Nota di catalogo della skill proposta-commerciale, non la skill - preventivi WhatsApp per i siti, PDF «Piano di Sviluppo» per i gestionali.
 - [[skills]] — ⚠️ Quale strumento di Claude si usa per quale lavoro.
+- [[voce-denkicode]] — Nota di catalogo della skill voce-denkicode, non la skill. Esisteva solo come wikilink rotto, il piu' citato del vault (27 richiami al 27/09/2026).
 
 **stack/**
 
@@ -84,7 +87,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[competitor-siti-barber]] — ⚠️ Inventario di 15 siti (6 barber Brianza, 5 barbershop italiani noti, 4 trapianto Albania) per il sito di Barbershop SNIA (Cesano Maderno).
 - [[competitor-siti-estetica]] — ⚠️ 18 siti di centri estetici (5 locali AL/VC/AT, 5 boutique italiane, 3 specialistici, 5 Torino collina) - sezioni, info reali, stile, per Dragonfly e Lei Beauty Room.
 - [[competitor-siti-nail]] — ⚠️ Inventario di cosa pubblicano 15 siti di nail studio (5 Piemonte, 6 Italia, 4 estero) - sezioni, formati, FAQ ricorrenti, errori. Si riusa per ogni sito nail.
-- [[competitor-siti-tattoo]] — ⚠️ Inventario di cosa pubblicano 14 siti di studi/tatuatori tattoo (5 Piemonte, 5 Italia, 4 estero) - sezioni, FAQ, parole anime, errori.
+- [[competitor-siti-tattoo]] — ⚠️ Inventario di cosa pubblicano 24 siti di studi/tatuatori tattoo (5 Piemonte, 5 Italia, 4 estero, + 10 Torino/giapponese) - sezioni, FAQ, parole anime/giapponese, errori.
 - [[competitor-siti-toelettatura]] — ⚠️ Inventario di 15 siti di toelettatura (5 Bergamo/Val Seriana, 6 Italia curati, 4 estero) - sezioni, FAQ, vocabolario, errori. Per il sito di Ambra Longoni, Nembro.
 - [[convenzioni]] — Le REGOLE tecniche di casa - naming, commit, firma Powered by DenkiCode. Qui sta il modo giusto, non gli errori.
 - [[copy-siti-competitor]] — ⚠️ Ricerca su 11 siti di parrucchieri, quartiere e fascia alta: didascalie, titoli, bottoni, punteggiatura; confronto con Design Capelli.
@@ -133,6 +136,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sebastian-torres]] — Privato, non un'azienda. Sta aprendo la sua attività, e l'attività è opero - l'app che stiamo costruendo noi è la sua idea imprenditoriale.
 - [[shaddai-extension-lash]] — Lash artist a domicilio a Bergamo, 736 follower, nessun sito - bozza costruita il 16 settembre 2026, DM non ancora inviato.
 - [[shari-piras]] — ⚠️ Shari Piras, tatuatrice, Merate (LC). Due account - @shari_tattooer (4.504 follower, 493 post) è la persona, @atelierselva_ (593 follower, 41...
+- [[soul-ink-torino-city]] — Soul Ink Torino City, studio di tatuaggi in via Cremona 27/b Torino (@soul_ink_torino_city, 738 post) - Franco Roggia (giapponese, dal 1999) e Alessandro Audino (tradizionale). Bozza in costruzione dal 26/09, DM non confermato.
 
 **contratti/**
 
@@ -216,7 +220,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[script-ecommerce]] — ⚠️ Lo usano tutti e tre. Dove c'è [nome] ci va il proprio.
 - [[script-gestionali-brianza]] — ⚠️ Lo script di Patrick sulle 100 aziende +1M della Brianza. Qui si vende - l'obiettivo e' l'appuntamento conoscitivo, non il modulo.
 - [[script-indagine]] — ⚠️ Lo usano tutti e tre. Dove c'è [nome] ci va il proprio.
-- [[script-siti-vetrina]] — ⚠️ Lo usano tutti e tre - Giulia, Gabriele, Edoardo.
+- [[script-siti-vetrina]] — ⚠️ Lo usa Giulia, unica al telefono dal 15/09/2026.
 
 ## 03-Storage
 
@@ -285,7 +289,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-02-impostazioni-due-colonne]] — ⚠️ Chiesta da Nicola il 2 settembre 2026 con un brief esplicito - «i testi sono infantilizzati, poco professionali e strutturati male, e da desk...
 - [[2026-09-03-bozza-gia-fatta]] — ⚠️ Chiesta da Nicola il 3 settembre 2026, insieme all'installazione del banco DM sul MacBook di Patrick.
 - [[2026-09-03-gh-crea-repository]] — ⚠️ Decisione di Nicola, 3 settembre 2026 - «voglio impostare che da adesso tu possa creare le mie repository».
-- [[2026-09-03-tetto-dm-65]] — ⚠️ Deciso da Nicola il 3 settembre 2026, la sera stessa del primo giro vero.
+- [[2026-09-03-tetto-dm-65]] — ⚠️ Superata l'11/09/2026 (Patrick, «togli il limite giornaliero» → metodo-liste). Il 3/09 Nicola aveva fissato 65 DM al giorno, misurati.
 - [[2026-09-06-mac-nicola-in-lavoro]] — ⚠️ Decisione di Nicola, 6 settembre 2026 - messa in piedi da zero una seconda macchina sua, un MacBook Pro, e tutto sta in ~/lavoro — vault e re...
 - [[2026-09-06-sito-salone-andrea-direzione]] — ⚠️ Decisione. Sul sito di sito-salone-di-andrea il concept-seed di impeccable (seed e5bd3d89) aveva assegnato «Il rullo» - un fotogramma a scher...
 - [[2026-09-06-skill-voce-denkicode]] — ⚠️ Il fatto. Un lead, angolorelax_nembro, ha risposto a un DM Instagram scritto da Claude per conto di Patrick dicendo, testuale - *'è un banale...
@@ -310,10 +314,12 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-17-cantiere-un-dollaro-in-locale]] — ⚠️ Il cantiere di denki-agents costa al massimo un dollaro a sito, gira in locale, raccoglie le foto da Instagram in automatico.
 - [[2026-09-23-fiftynine-archivio-netlify]] — ⚠️ Fiftynine - le modifiche della pagina di modifica vanno in Netlify Blobs, senza chiavi, e una edge function le rimette nelle pagine; parola iniziale admin, si cambia dalla pagina.
 - [[2026-09-23-fiftynine-pubblica-da-solo]] — ⚠️ Fiftynine - la pagina di modifica pubblica da sola come V-BAG (Netlify Function + commit su GitHub), ma in un commit solo e con la parola d'ordine in sessionStorage.
+- [[2026-09-27-daily-abolita]] — Le daily non si scrivono più - la giornata sta nel registro interventi, lo stato in FATTI sotto le 80 righe. Approvata da Nicola il 27/09/2026.
+- [[2026-09-27-verificato-in-chiusura]] — verificato lo scrive /chiudi-sessione sulle note toccate in sessione che Nicola o Patrick approvano. 109 note su 246 erano ipotesi. 27/09/2026.
 
 ## 06-Daily
 
-*Note di giornata e handoff*
+*Note di giornata, chiuse il 27/09/2026: storia, la giornata sta nel registro*
 
 - [[2026-08-28-avvio-vault]] — ⚠️ Prima nota del vault. Scritta da Claude a fine costruzione, per lasciare un punto di partenza invece di una cartella muta.
 - [[2026-08-29-interfaccia-denkishift]] — ⚠️ Richiesta arrivata in sessione - rifare l'interfaccia perché si venda da sola in demo, su due utenti che non sono due gradini dello stesso ru...

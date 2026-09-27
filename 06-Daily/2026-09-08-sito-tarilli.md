@@ -4,6 +4,7 @@ type: daily
 data: 2026-09-08
 source: claude
 tags: [daily, sito-osteria-tarilli, frontend, impeccable]
+updated: 2026-09-10
 ---
 
 # 8 settembre 2026, sera — «pizzeria Tarilli» che è un'osteria
@@ -97,4 +98,4 @@ hanno un `?v=` nel link; la cache lunga resta alle foto. Secondo deploy con
 ## Collegamenti
 
 [[sito-osteria-tarilli]] · [[processo-siti]] · [[trappole]] ·
-[[registro-interventi]] · [[2026-09-07-instagram-ticino-ristorazione]]
+[[registro-interventi]] · [[2026-09-07-instagram-ticino-ristorazione.csv]]

@@ -5,6 +5,7 @@ data: 2026-09-01
 progetto: azienda
 who: nicola
 source: claude
+updated: 2026-09-10
 ---
 
 # Le skill di design diventano un processo unico per i siti

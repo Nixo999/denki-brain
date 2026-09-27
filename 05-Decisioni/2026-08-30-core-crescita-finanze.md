@@ -5,6 +5,7 @@ data: 2026-08-30
 progetto: azienda
 source: denkicode
 tags: [offerte, prezzo, garanzie, funnel, finanze]
+updated: 2026-09-10
 ---
 
 # L'offerta si ingegnerizza, il prezzo non si sconta, l'utile si mette via per primo

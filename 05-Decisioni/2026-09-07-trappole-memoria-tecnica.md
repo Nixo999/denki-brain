@@ -4,6 +4,7 @@ type: decisione
 data: 2026-09-07
 progetto: azienda
 source: claude
+updated: 2026-09-10
 ---
 
 # Le daily diventano la memoria di Trevis, e le lezioni si sedimentano in trappole.md

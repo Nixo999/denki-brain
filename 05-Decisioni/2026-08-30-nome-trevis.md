@@ -5,6 +5,7 @@ data: 2026-08-30
 progetto: azienda
 source: denkicode
 tags: [protocollo, registro, nome]
+updated: 2026-09-10
 ---
 
 # L'assistente si chiama Trevis

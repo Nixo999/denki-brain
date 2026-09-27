@@ -2,7 +2,7 @@
 riga: Osteria Tarilli, Via Ronco Nuovo 2, 6949 Comano (TI), a 300 m dalla RSI.
 type: progetto
 status: bozza-online
-cliente: "[[osteria-tarilli]]"
+cliente: osteria-tarilli
 created: 2026-09-08
 updated: 2026-09-08
 source: claude
@@ -13,7 +13,7 @@ tags: [sito-vetrina, bozza, ticino, ristorazione]
 # Sito Osteria Tarilli — bozza non commissionata
 
 **Osteria Tarilli**, Via Ronco Nuovo 2, 6949 Comano (TI), a 300 m dalla RSI.
-Riga della lista [[2026-09-07-instagram-ticino-ristorazione]], gancio 1.
+Riga della lista [[2026-09-07-instagram-ticino-ristorazione.csv]], gancio 1.
 Instagram `@osteria.tarilli`: 2.055 follower, 28 post. Nessun sito: solo
 Instagram, Facebook, HappyCow, Tripadvisor e i portali.
 
@@ -93,4 +93,4 @@ caption del cliente (parmigiana 8/9, bernese 11/7): fonti scritte in
 ## Collegamenti
 
 [[processo-siti]] · [[trappole]] · [[registro-interventi]] · [[netlify]] ·
-[[2026-09-07-instagram-ticino-ristorazione]] · [[dm-instagram-vetrina]]
+[[2026-09-07-instagram-ticino-ristorazione.csv]] · [[dm-instagram-vetrina]]

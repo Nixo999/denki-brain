@@ -595,6 +595,8 @@ pubblica da solo** (verificato sul giro 14 alle 19:30). La regola del 18/09
 
 ## Giro 16 — 19/09: «Prendi il logo, ricostruiscilo tu e mettilo»
 
+`TODO` il verdetto di Nicola sul giro 16: al 27/09/2026 non l'ha ancora rivisto.
+
 > «È un lavoro di merda perché hai letteralmente spiattellato tutto sopra il
 > sito. Prendi il logo, ricostruiscilo tu e mettilo. Non piazzare una foto a
 > caso. Stessa cosa, lo sfondo è letteralmente un collage di foto che ti ho

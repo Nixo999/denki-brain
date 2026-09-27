@@ -49,6 +49,8 @@ python3 01-Coding/strumenti/regola.py <siti|voce|codice|liste|registro|prezzi|va
 
 Va nel file dove verrà riletta, con **le parole di chi l'ha detta**, e si
 committa da solo. Poi una riga sola di conferma, che dice dove è finita.
+`--perche` è la regola generale in una riga, quella che vale la prossima volta:
+il verdetto sul giro di un sito preciso sta nella sua nota progetto.
 
 Tre errori da non fare: aspettare `/chiudi-sessione` (una regola detta a metà
 sessione e non scritta è persa), riassumerla con parole tue, o metterla in un
@@ -110,7 +112,7 @@ framework si sta usando.
 03-Storage/      azienda/ team/ sistemi/ brand/
 04-Archive/      progetti chiusi e lead persi. Non si cancella: si archivia
 05-Decisioni/    una decisione per file, datata
-06-Daily/        note di giornata, max 40 righe, scritte a domande
+06-Daily/        chiuso il 27/09/2026: storia. La giornata sta nel registro interventi
 99-Templates/    da copiare quando si crea una nota nuova
 ```
 
@@ -119,8 +121,8 @@ Un progetto sta in `01-Coding/progetti/`, il cliente che lo paga in
 
 ## Naming e frontmatter
 
-File in `kebab-case`. Note datate `YYYY-MM-DD-titolo.md` in `05-Decisioni/` e
-`06-Daily/`. **Un nome, un file**: il sito è `sito-albybike`, il cliente
+File in `kebab-case`. Note datate `YYYY-MM-DD-titolo.md` in `05-Decisioni/`.
+**Un nome, un file**: il sito è `sito-albybike`, il cliente
 `albybike`.
 
 Obbligatori su ogni nota: `type:`, `riga:`, `updated:`, `source:`. Le dashboard
@@ -170,6 +172,11 @@ si legge a ogni sessione e **si riscrive** a ogni chiusura invece di accumulare.
 
 Una tabella di progetti dentro il manuale invecchia in silenzio, ed è successo:
 per giorni ha elencato progetti che non erano più a quel punto.
+
+**`FATTI.md` sta sotto le 80 righe**: una riga per cosa aperta, il racconto dei
+giri nella nota progetto. La giornata sta nel [[registro-interventi]], una riga
+per intervento: dal 27/09/2026 sostituisce le daily, che non venivano più
+scritte ([[2026-09-27-daily-abolita]]).
 
 ## Comandi
 

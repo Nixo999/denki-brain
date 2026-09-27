@@ -48,7 +48,7 @@ for p in "$V" "$PWD" "$HOME/lavoro/denki-brain" "$HOME/Desktop/denki-brain" "$HO
 done
 cd "$V" && git pull --rebase --autostash -q 2>&1 | tail -2
 python3 "$V/01-Coding/strumenti/installa-macchina.py"
-ls -1 "$V/06-Daily" | sort | tail -1
+grep '^| ' "$V/01-Coding/registro-interventi.md" | grep -v '^| Quando' | head -5 | cut -c1-200
 python3 "$V/02-Sales/strumenti/stato-banco.py"
 ls -1t "$V/02-Sales/liste"/*.csv | head -3
 ```
@@ -116,7 +116,7 @@ lista aggiornata dal banco.
 ## 2. Leggi il minimo, poi allarga solo se serve
 
 Sempre: `CLAUDE.md` del vault (salta se è già nel contesto), **`FATTI.md`** e
-l'ultima nota di `06-Daily/`.
+le prime cinque righe del registro interventi, già stampate dal comando sopra.
 
 `FATTI.md` è lo stato di adesso — chi, soldi, cosa è aperto, cosa è bloccato —
 ed è corto perché si riscrive a ogni chiusura invece di accumulare. È la cosa

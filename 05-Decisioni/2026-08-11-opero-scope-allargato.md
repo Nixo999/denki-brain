@@ -4,6 +4,7 @@ type: decisione
 data: 2026-08-11
 progetto: opero
 source: repo
+updated: 2026-09-10
 ---
 
 # La regola "stessa app, codice migliore" non è più assoluta

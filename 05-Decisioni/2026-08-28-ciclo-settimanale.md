@@ -5,6 +5,7 @@ data: 2026-08-28
 progetto: azienda
 source: denkicode
 stato: presa
+updated: 2026-09-10
 ---
 
 # La settimana commerciale è un ciclo fisso domenica → domenica, con 4 output e 5 input

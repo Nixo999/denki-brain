@@ -4,6 +4,7 @@ type: decisione
 data: 2026-08-28
 progetto: azienda
 source: denkicode
+updated: 2026-09-10
 ---
 
 # L'assistente si chiama Trevis e ha un livello base commerciale

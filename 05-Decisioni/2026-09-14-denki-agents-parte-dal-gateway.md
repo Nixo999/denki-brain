@@ -5,6 +5,7 @@ data: 2026-09-14
 progetto: denki-agents
 source: denkicode
 stato: presa
+updated: 2026-09-14
 ---
 
 # denki-agents parte dal gateway: modello e prezzo di ogni task stanno nel database

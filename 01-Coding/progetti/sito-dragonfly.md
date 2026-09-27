@@ -13,7 +13,7 @@ deadline: TODO
 # Sito Dragonfly Beauty&Relax
 
 Centro estetico a Casale Monferrato (AL). Lead caldo da @dragonfly_estetica,
-318 post / 1364 follower, nessun sito. Cliente: [[dragonfly]] (nota da creare).
+318 post / 1364 follower, nessun sito. Cliente: dragonfly (nota da creare).
 
 **Repo**: `Nixo999/dragonfly-site` (privata, `main`, pushata il 18/09/2026) · cartella `~/lavoro/dragonfly-site` · non pubblicato su Netlify
 **Online**: nessuno
@@ -117,7 +117,7 @@ pastello delle slide (verde salvia `#DCE0CC`, crema `#F3EFD0`, lilla `#EAE0F0`).
 
 ## Collegamenti
 
-[[dragonfly]] (cliente, da creare) · [[convenzioni]] · [[trappole]]
+dragonfly (cliente, da creare) · [[convenzioni]] · [[trappole]]
 
 ## Direzione scelta (18/09/2026)
 

@@ -5,6 +5,7 @@ data: 2026-09-03
 progetto: azienda
 source: claude
 tags: [instagram, dm, offerta, garanzia, bozza]
+updated: 2026-09-10
 ---
 
 # La bozza non si propone più: si annuncia già fatta

@@ -4,6 +4,7 @@ type: decisione
 data: 2026-09-07
 progetto: azienda
 source: claude
+updated: 2026-09-10
 ---
 
 # L'indice si genera, non si aggiorna a mano

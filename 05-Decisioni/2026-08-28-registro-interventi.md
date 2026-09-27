@@ -4,6 +4,7 @@ type: decisione
 data: 2026-08-28
 progetto: azienda
 source: denkicode
+updated: 2026-09-10
 ---
 
 # Chi tocca un progetto lo scrive nel brain, non solo nel repo

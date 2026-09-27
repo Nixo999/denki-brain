@@ -4,6 +4,7 @@ type: daily
 data: 2026-09-08
 source: claude
 tags: [daily, sito-fiftynine, frontend, admin]
+updated: 2026-09-10
 ---
 
 # 8 settembre 2026 — le foto del bar, e il lunedì che chiude alle 19:30
@@ -180,5 +181,5 @@ storia. Da sistemare: ricaricare unendo per handle, non sostituendo.
 
 ## Collegamenti
 
-[[sito-fiftynine]] · [[contattati]] · [[metodo-instagram]] · [[trappole]] · [[registro-interventi]] · [[sito-vbag]] ·
+[[sito-fiftynine]] · [[contattati]] · [[metodo-instagram]] · [[trappole]] · [[registro-interventi]] · [[2026-09-16-vbag-gestionale-login]] ·
 [[netlify]] · [[processo-siti]]

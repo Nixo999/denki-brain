@@ -4,6 +4,7 @@ type: decisione
 data: 2026-08-29
 progetto: denkishift
 source: claude
+updated: 2026-09-10
 ---
 
 # Il menu di DenkiShift è l'elenco delle domande, non delle pagine

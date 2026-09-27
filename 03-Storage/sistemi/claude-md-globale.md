@@ -81,6 +81,8 @@ python3 01-Coding/strumenti/regola.py <siti|voce|codice|liste|registro|prezzi|va
 
 Va nel file dove verrà riletta, con **le parole di chi l'ha detta**, e si
 committa da solo. Poi una riga sola di conferma, che dice dove è finita.
+`--perche` è la regola generale in una riga, quella che vale la prossima volta:
+il verdetto sul giro di un sito preciso sta nella sua nota progetto.
 
 Tre errori da non fare: aspettare `/chiudi-sessione` (una regola detta a metà
 sessione e non scritta è persa), riassumerla con parole tue, o metterla in un

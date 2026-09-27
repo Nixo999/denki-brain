@@ -4,6 +4,7 @@ type: decisione
 data: 2026-08-30
 progetto: azienda
 source: denkicode
+updated: 2026-09-10
 ---
 
 # DenkiCode si tratta come una macchina a processi, non come un lavoretto

@@ -1,5 +1,6 @@
 ---
 type: risorsa
+riga: Tabelle Dataview - progetti attivi, fermi da 14 giorni, clienti, decisioni recenti. Si apre in Obsidian col plugin.
 updated: 2026-08-28
 source: claude
 ---

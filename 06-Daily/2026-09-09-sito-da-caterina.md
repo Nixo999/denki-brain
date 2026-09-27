@@ -4,6 +4,7 @@ type: daily
 data: 2026-09-09
 source: claude
 tags: [daily, sito-da-caterina, frontend, impeccable, netlify]
+updated: 2026-09-10
 ---
 
 # 9 settembre 2026, sera — Da Caterina: l'album delle figurine

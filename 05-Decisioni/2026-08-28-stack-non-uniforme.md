@@ -5,6 +5,7 @@ data: 2026-08-28
 progetto: azienda
 source: claude
 stato: aperta
+updated: 2026-09-10
 ---
 
 # Lo stack non è uniforme — decisione aperta

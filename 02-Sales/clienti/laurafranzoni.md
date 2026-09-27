@@ -35,7 +35,7 @@ un bottone: **l'unico canale è il DM**, e lo dice lei tre volte.
 
 ## Da dove viene
 
-Riga **233** della lista [[2026-09-13-instagram-siti-brescia]], segmento
+Riga **233** della lista [[2026-09-13-instagram-siti-brescia.csv]], segmento
 **Ciglia**, **gancio 1**, prodotto siti. Trovata cercando «lash maker brescia»
 nella ricerca di Instagram, profilo letto il 12/9.
 
@@ -67,4 +67,4 @@ inventano.
 
 ## Collegamenti
 
-[[sito-laurafranzoni]] · [[stile-comunicazione]] · [[2026-09-13-instagram-siti-brescia]]
+[[sito-laurafranzoni]] · [[stile-comunicazione]] · [[2026-09-13-instagram-siti-brescia.csv]]

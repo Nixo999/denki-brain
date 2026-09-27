@@ -24,7 +24,7 @@ for p in "$V" "$PWD" "$HOME/lavoro/denki-brain" "$HOME/Desktop/denki-brain"; do
 done
 cd "$V" && git pull --rebase --autostash -q 2>&1 | tail -2
 python3 "$V/01-Coding/strumenti/installa-macchina.py"
-ls -1 "$V/06-Daily" | sort | tail -1
+grep '^| ' "$V/01-Coding/registro-interventi.md" | grep -v '^| Quando' | head -5 | cut -c1-200
 ```
 
 ⚠️ **La riga di `installa-macchina.py` non è opzionale e va dopo il pull.**
@@ -42,7 +42,9 @@ Vault non trovato → **chiedi il percorso**, non cercarlo a tappeto.
 1-bis. **`FATTI.md`** — lo stato di adesso: chi, soldi, cosa è aperto, cosa è
    bloccato. È corto e si riscrive a ogni chiusura, quindi è la cosa più
    aggiornata che c'è. Sempre.
-2. L'ultima nota di `06-Daily/`. Sono tarate a 40 righe: si legge intera.
+2. Le prime cinque righe del registro interventi, già stampate dal comando
+   sopra: cosa è stato fatto ieri, da chi, su che repo. Non aprire il file.
+   Le daily non si scrivono più dal 27/09/2026.
 3. **Solo se** `$ARGUMENTS` nomina un progetto: la sua riga in `indice.md`, e la
    nota solo se quella riga dice che serve.
 
@@ -53,8 +55,8 @@ cartelle. Se manca un dato: `python3 01-Coding/strumenti/cerca.py <parole>` ordi
 buono**: una nota `source: claude` senza `verificato:` è un'ipotesi. Il fatto si
 controlla dove vive davvero — `git log` del repo, il sito online, lo schema del
 database, o Nicola — e chi lo controlla scrive `verificato: <data>` nella nota.
-Vale anche per la daily di ieri: la scrive Nicola a domande, ma un numero senza
-data resta un numero da ricontrollare.
+Vale anche per la riga del registro di ieri: un numero senza data resta un
+numero da ricontrollare.
 
 ## 3. `trappole.md` — a sezioni, non tutto
 
@@ -97,7 +99,9 @@ altrove.
   uniformare di tua iniziativa.
 - **Il push non ha la stessa regola ovunque.** Conferma nel `CLAUDE.md` del repo.
   Il vault invece si pusha sempre e subito.
-- **Credenziali mai nel vault**, e mai digitate da te.
+- **Credenziali mai nel vault.** Le password le imposti e le scrivi tu quando
+  Nicola o Patrick lo chiedono (dal 23/09/2026); non le digiti in pagine web e
+  non crei chiavi sugli account → [[credenziali]].
 - **Se emerge una scelta**, nota nuova in `05-Decisioni/`, corta. Quello
   che generi tu è `source: claude` e nasce senza `verificato:`.
 - **Il Mac di Patrick applica le modifiche allo schema di DenkiShift in

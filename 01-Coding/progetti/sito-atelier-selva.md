@@ -1,12 +1,12 @@
 ---
 riga: Sito per Shari Piras, tatuatrice fineline a Merate (LC), e per il suo studio privato Atelier Selva (Via Statale 147).
 type: progetto
-status: attivo
+status: in-pausa
 client: shari-piras
 stack: [html, gsap, netlify]
 started: 2026-09-03
 deadline: TODO
-updated: 2026-09-08
+updated: 2026-09-27
 source: claude
 valore: 200
 incassato: 0

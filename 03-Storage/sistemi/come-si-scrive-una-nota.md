@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Le regole di scrittura del vault - riga, verificato, marcatura per affermazione, tre classi di memoria, tetti di lunghezza.
-updated: 2026-09-11
+updated: 2026-09-27
 verificato: 2026-09-11
 source: denkicode
 tags: [convenzioni, memoria, frontmatter, verifica]
@@ -110,12 +110,16 @@ proposito puo' essere lunga quanto serve, purche' ogni riga cambi qualcosa.
 
 | Nota | Tetto | Perche' |
 |---|---|---|
-| Daily | **40 righe, duro** | Si legge a ogni sessione. Quella del 7 settembre era 5.341 parole |
+| `FATTI.md` | **80 righe, duro** | Si legge a ogni sessione. Il 26 settembre era a 223 |
 | Voce di `trappole.md` | **4 righe, duro** | Trappola, contromisura, dove e' stata pagata |
 | Decisione | ~50 righe | Contesto, scelta, scartato, conseguenze. Il resto e' racconto |
 | Progetto, cliente | ~80 righe | Oltre, e' un archivio: si spezza |
+| Daily | *superato il 27/09/2026* | Era 40 righe. Le daily non si scrivono piu': la giornata sta nel registro interventi → [[2026-09-27-daily-abolita]] |
 
 Fuori tetto si taglia il contenuto, non si comprime la sintassi.
+
+`genera-indice.py` misura questi tetti e stampa chi li sfora: dal 27/09/2026 un
+tetto e' una cosa che si controlla, non un'intenzione.
 
 **Le note scritte prima del 10 settembre 2026 restano come sono.** Le daily
 vecchie arrivano a 662 righe: sono il registro di com'e' andata quel giorno e

@@ -6,7 +6,7 @@ client: sebastian-torres
 stack: [react-19, typescript, vite-8, tailwind-3, react-router-7, tanstack-query, supabase, capacitor-6]
 started: 2026-07-20
 deadline: TODO
-updated: 2026-09-24
+updated: 2026-09-27
 source: repo
 valore: 2400
 incassato: 400
@@ -89,7 +89,14 @@ database:
 **Non iniziati**: lavoratori provvisori, app native compilate. La **migrazione
 dello storico** ha il piano e la mappatura, non ha l'accesso ai dati.
 
-> [!warning] La migrazione dello storico è il rischio numero uno
+> [!warning] La migrazione dello storico è il rischio numero uno — **superato il 13/09/2026**
+> Seba: «non è richiesta alcuna procedura automatizzata di migrazione per i
+> dati storici». Settembre lo inserisce a mano lui, di giugno-agosto vuole un
+> **report da consultare**, che scrive `strumenti/report-mesi.mjs` dai JSON
+> dell'estrazione. OperO 2 parte vuoto e il blocco al go-live non c'è più.
+> Manca solo la chiave `OPERO1_SERVICE` (Settings → API di OperO 1) o un login
+> di segreteria. Quello che segue è la storia del piano, non lo stato.
+>
 > Il piano la dava chiusa a fine settimana 1. È l'unico pezzo che al go-live non
 > si può rimandare. **Piano e mappatura esistono dall'11 settembre 2026**, in
 > `docs/migrazione-storico.md` del repo: 44 tabelle di OperO 1 contro 38 di
@@ -163,11 +170,12 @@ misurando con `getComputedStyle` / `getBoundingClientRect`. Vedi [[convenzioni]]
 - [ ] Incassare i **2.000 €** residui — ricevuta su Patrick
 - [ ] **Quotare l'XML SDI** come lavoro nuovo, non regalarlo
 - [ ] **Correggere il PDF consegnato** al cliente sulle funzioni rinunciate
-- [ ] **Migrazione dello storico: chiedere a Seba l'accesso al database.** È l'unica cosa che blocca, piano e mappatura sono scritti
+- [ ] **Report giugno-agosto da `strumenti/report-mesi.mjs`**: manca la chiave `OPERO1_SERVICE` o un login di segreteria (13/09). La migrazione non si fa più
 - [ ] Lavoratori provvisori (4 tabelle + edge function)
 - [ ] Applicare la migrazione `20260826110000` (trigger finestra)
 - [ ] Decidere una data di go-live e dirla al cliente
 - [ ] **Intermediar + Receive**: fermo per scelta di Seba. Quando parte, si quota prima del codice → [[opero-intermediar-receive]]
+- [ ] **Riservatezza + non concorrenza a 5 anni** (25/09): non firmato, la controproposta lega la firma al saldo dei 2.000 € → [[accordo-riservatezza-opero]]
 
 ## Collegamenti
 
