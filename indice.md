@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **245 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **246 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -26,6 +26,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 *Catture al volo, non ancora sistemate*
 
+- [[2026-09-27-ricerca-brain-siti-claude-code]] — ⚠️ Ricerca del 27/09/2026 su cosa adottare per brain, siti e Claude Code - classifica per resa/sforzo, con fonti. Ipotesi da verificare prima di muoversi.
 - [[come-si-usa-inbox]] — ⚠️ Questa cartella è il posto dove buttare le cose senza pensarci.
 
 ## 01-Coding
