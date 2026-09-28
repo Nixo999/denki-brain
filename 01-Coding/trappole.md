@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Errori tecnici già pagati e strade scartate, per dominio. Descrittivo, non è un rulebook - le regole stanno in convenzioni.
-updated: 2026-09-26
+updated: 2026-09-28
 verificato: 2026-09-10
 source: denkicode
 tags: [trappole, memoria, frontend, gsap, git]
@@ -1087,6 +1087,17 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   lasciando « date a voce» orfano sotto il testo. → il titolo si cerca come
   riga intera con una regex, e la regola si infila davanti alla prima `###`,
   cioe' dopo l'eventuale riga che spiega la sezione.
+
+- **Xcode installato senza accettare la licenza spegne `python3` e `git` di
+  sistema, e con loro il banco.** Il 28/09/2026 sul Mac di Patrick `xcode-select`
+  puntava a Xcode 27 appena comparso: `/usr/bin/python3` e `/usr/bin/git` sono
+  shim che rifiutano di partire finché la licenza non è accettata, quindi
+  `Banco DM.command` (usa entrambi) non apriva niente e il `git pull` di inizio
+  sessione falliva in silenzio con lo stesso messaggio. I Command Line Tools in
+  `/Library/Developer/CommandLineTools` funzionano lo stesso, chiamati per
+  percorso. Fix: `sudo xcode-select -s /Library/Developer/CommandLineTools`
+  (o `sudo xcodebuild -license accept` se Xcode serve davvero). Serve la
+  password: lo lancia la persona, non Trevis. (Mac di Patrick, 28/09/2026)
 
 ## Skill e strumenti di processo
 
