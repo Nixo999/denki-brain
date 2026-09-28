@@ -1,7 +1,7 @@
 ---
 riga: Una riga per intervento - chi, quando, progetto, repository e QUALE DATABASE. La colonna database e' il motivo del file.
 type: risorsa
-updated: 2026-09-27
+updated: 2026-09-29
 source: denkicode
 tags: [registro, interventi, repo, database]
 ---
@@ -37,6 +37,12 @@ pubblicato senza la sua migrazione apre un tabellone vuoto.
 Colonne: **Quando** (data e ora) · **Chi** (persona, e `+claude` se il lavoro è
 stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 (`—` se non toccato, `sviluppo`/`produzione` + stato) · **Cosa** · **Commit**.
+
+## 2026-09-29
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| 28/09 sera → 29/09 | Patrick con Trevis (Opus) | — banco DM | `denki-brain` (`main`, pushata) | — (il vault non ha database) | **`/banco`: 100 siti e 60 ricerca pubblicate** su `lista-corrente.csv` (732 da mandare). Siti: ciglia e sopracciglia del Piemonte, Google su tutte le 100 righe (30 rifatte a mano). Ricerca: impiantisti, falegnamerie, agricole, ingrossi, studi tecnici in 12 province; «qui in zona» corretto su 19 righe lontane. Posta: Per Un Pelo aggiornata, Design Capelli e Adelina non trovate nella posta di Patrick → [[2026-09-29-ciglia-piemonte-e-ricerca]] | vedi git |
 
 ## 2026-09-27
 
