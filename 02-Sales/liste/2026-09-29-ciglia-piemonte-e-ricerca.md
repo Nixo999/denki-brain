@@ -65,17 +65,24 @@ Tutti e due i file sono passati da `controlla-lista.py` con 0 e da
 
 ## La posta, letta il 28 e il 29
 
-Nessuna risposta nuova da lead fra il 21 e il 29/9 nella posta di Patrick.
-L'unica mossa è **Per Un Pelo**: «si me la mandi pure» il 25/9 alle 8:51, link
-mandato alle 20:39, nessuna risposta. Aggiornati `risposte-dm.csv` e l'esito
-sul banco.
+Nessuna risposta nuova da lead fra il 21 e il 29/9 nella posta di
+`@patrick.sappa`. L'unica mossa è **Per Un Pelo**: «si me la mandi pure» il
+25/9 alle 8:51, link mandato alle 20:39, nessuna risposta. Aggiornati
+`risposte-dm.csv` e l'esito sul banco.
 
-⚠️ **Design Capelli e Adelina non sono nella posta di Patrick** fra il 13 e il
-28/9, eppure [[FATTI]] li dà in attesa della bozza dal 20 e dal 19/9. O la
-conversazione sta su un altro account, o nelle richieste. `TODO` Patrick.
+⚠️ **La posta che si legge da qui non è quella da cui partono i DM.** Era già
+scritto il 19/9 in [[2026-09-19-siti-piemonte-capelli]]: dal 16/9 Patrick
+manda da un altro account. Il 29/9 sera il banco segna **tutte le 160 righe
+di oggi come mandate**, e nella posta di `@patrick.sappa` il 29/9 non si apre
+nessun thread nuovo. Quindi le risposte a questi DM, e con ogni probabilità
+Design Capelli e Adelina (che [[FATTI]] dà in attesa della bozza dal 20 e dal
+19/9), stanno in una casella che il passo 3-bis non legge. Quale account sia,
+e come leggerlo: `TODO` Patrick.
 
-⚠️ **Nessun DM parte dal banco dal 17/9.** Con queste due liste i profili da
-mandare sono 732.
+*Corretto il 29/9 sera:* qui c'era scritto «nessun DM parte dal banco dal
+17/9». Era dedotto da `contattati.csv`, che fra il 17 e il 29 è fermo. Il
+server del banco funziona, lo mostrano i 160 di oggi. Degli invii fra il 17 e
+il 29, se ci sono, il file non sa niente.
 
 ## Trappole nuove
 
