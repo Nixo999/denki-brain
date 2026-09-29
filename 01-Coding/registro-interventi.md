@@ -42,6 +42,7 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
 |---|---|---|---|---|---|---|
+| 29/09 | Patrick con Trevis (Opus) | — banco DM | `denki-brain` (`main`, pushata) | — (il vault non ha database) | **`/banco` pesca per luogo.** La provincia è il luogo, si parte da Monza e Brianza e ci si allontana da Seveso; un settore fino in fondo, poi il prossimo nello stesso luogo; a 10 finiti (o finiti gli attivi) si cambia. Bellezza in pausa (unghie, estetica, ciglia e PMU, capelli, barbieri, trucco): settori attivi toelettature, personal trainer singoli, pasticcerie e cake designer, sartorie e tappezzieri, tatuatori, fotografi, fioristi e wedding, ristorazione piccola. Stato in `02-Sales/liste/rotazione.csv`, ricostruito dal banco. Tre regole di Patrick in [[metodo-liste]] | vedi git |
 | 28/09 sera → 29/09 | Patrick con Trevis (Opus) | — banco DM | `denki-brain` (`main`, pushata) | — (il vault non ha database) | **`/banco`: 100 siti e 60 ricerca pubblicate** su `lista-corrente.csv` (732 da mandare). Siti: ciglia e sopracciglia del Piemonte, Google su tutte le 100 righe (30 rifatte a mano). Ricerca: impiantisti, falegnamerie, agricole, ingrossi, studi tecnici in 12 province; «qui in zona» corretto su 19 righe lontane. Posta: Per Un Pelo aggiornata, Design Capelli e Adelina non trovate nella posta di Patrick → [[2026-09-29-ciglia-piemonte-e-ricerca]] | vedi git |
 
 ## 2026-09-27

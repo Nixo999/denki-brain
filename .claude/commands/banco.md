@@ -28,8 +28,24 @@ normale è 100 per i siti e 60 per la ricerca**.
 > comando banco, fermo restando le vecchie regole, ora devi generare 100 lead
 > per i siti e 60 per la ricerca.»*
 >
-> **100 siti e 60 ricerca, ogni volta.** Tutto il resto — zone, un settore al
-> giorno, niente scuse, i due controlli, la posta — resta com'era. Scritta in
+> **100 siti e 60 ricerca, ogni volta.** Tutto il resto — ~~zone, un settore al
+> giorno,~~ niente scuse, i due controlli, la posta — resta com'era. Scritta in
+> [[metodo-liste]]. *Zone e settori superati il 29/09/2026, riquadro sotto.*
+
+> [!important] Dal 29 settembre 2026 si pesca per luogo, e la bellezza è in pausa
+> Patrick: *«prima sfondiamo un settore in un luogo. Una volta finiti i lead
+> disponibili, sfondiamo un altro settore nello stesso luogo, poi un altro
+> ancora. Una volta arrivato a 10 settori fatti in quel luogo, si cambia luogo
+> e ci si allontana da casa. Piuttosto di fare come ora, che prima finiamo un
+> settore in tutta Italia e cambiamo settore.»*
+> E subito dopo: *«ora basta unghie ecc, cambiamo settore»*, *«non escono per
+> sempre ma dopo 3 settimane sono stufo, cambiamo area, puntiamo su altro»*.
+>
+> **Il luogo è la provincia**, si parte da casa (Seveso, Monza e Brianza) e ci
+> si allontana. Un settore si finisce, poi il prossimo nello **stesso** luogo.
+> Unghie, estetica, ciglia e PMU, parrucchieri, barbieri e trucco sono **in
+> pausa**: tornano quando lo dice Patrick. Come si fa sta al passo 2-bis, lo
+> stato sta in `02-Sales/liste/rotazione.csv`. Le frasi sono in
 > [[metodo-liste]].
 
 ---
@@ -79,11 +95,15 @@ dal banco (2b qui sotto).
 > | ~~DenkiShift~~ | *tolta il 24 settembre 2026* |
 > | Ricerca di mercato | **tutta la Lombardia** |
 >
-> **Un settore al giorno.** La zona dei siti si esaurisce in circa quindici
+> ~~**Un settore al giorno.** La zona dei siti si esaurisce in circa quindici
 > settori, cioè quindici giorni, poi si passa alla successiva:
 > **Monza e Brianza → Milano → Como → Varese → Brescia → …** e così via
 > scendendo fino alla Sicilia. Quale zona è aperta e quali settori sono già
-> stati fatti si legge nelle note delle liste in `02-Sales/liste/`.
+> stati fatti si legge nelle note delle liste in `02-Sales/liste/`.~~
+> *Superato il 29 settembre 2026.* In pratica la «zona» era diventata una
+> regione intera e il settore si faceva su tutta la regione in un giorno: in
+> nessuna provincia un settore è mai stato finito. Da oggi luogo per luogo,
+> settore per settore, fino in fondo → passo 2-bis.
 >
 > ⚠️ **Il settore che rende zero si abbandona lo stesso giorno.** Il 12
 > settembre i tatuatori della Brianza hanno dato 1 riga su 7: sei avevano il
@@ -99,11 +119,16 @@ qui. Qui c'è **chi ci va dentro** e **cosa gli si dice**.
 estetiste singole, parrucchieri piccoli, barber, toelettature, tatuatori e PMU,
 fotografi e wedding. Nei comuni grossi i saloni con la vetrina il sito ce
 l'hanno già: **restano le singole**, ed è lì che si pesca.
+⚠️ *Dal 29 settembre 2026 la cura della persona è in pausa* (unghie,
+estetica, ciglia e PMU, parrucchieri, barbieri, trucco). **Resta vero il
+criterio**: attività singole o piccole, che vivono di foto, senza sito. I
+settori attivi sono quelli del passo 2-bis.
 **Fuori**: mobilifici e arredamento (6 su 6 col sito), negozi (la domanda
 giusta è «vende online», è un altro flusso), catene, chi ha un sito vivo e
 curato, i profili sotto i ~200 follower.
-**Dove**: la zona aperta in quel momento della rotazione, e dentro quella il
-settore del giorno. La zona si chiude dopo una quindicina di settori.
+**Dove**: ~~la zona aperta in quel momento della rotazione, e dentro quella il
+settore del giorno. La zona si chiude dopo una quindicina di settori.~~ Il
+luogo e il settore aperti in `rotazione.csv`, passo 2-bis.
 
 **Il gancio è uno solo, e dall'11 settembre 2026 non si ammorbidisce**
 ([[stile-comunicazione]], regola di Patrick): *«per i siti il gancio deve
@@ -206,6 +231,89 @@ python3 02-Sales/strumenti/voce-check.py --csv 02-Sales/liste/<lista>.csv
 Toglie i tell da macchina: em dash, «quindi», elenchi di tre, «soluzione»,
 frasi-cuscinetto, le tracce del nostro processo finite in un testo cliente.
 Quello che resta lo rilegge una persona → [[voce-denkicode]].
+
+---
+
+## 2-bis · Dove si pesca: luogo per luogo, settore per settore
+
+Regola di Patrick del 29 settembre 2026, in testa a questo file. Vale per
+tutte e due le liste: i siti partono da casa e vanno verso tutta Italia, la
+ricerca fa lo stesso dentro la Lombardia.
+
+**Il luogo è la provincia.** Si parte da casa e ci si allontana, in quest'ordine
+(distanza in linea d'aria da Seveso, calcolata il 29/09/2026):
+
+| Lista | Ordine dei luoghi |
+|---|---|
+| Siti | MB → CO → MI → LC → VA → BG → NO → LO → PV → VB → VC → PC → SO → BS → BI → CR → AL → AT → TO → PR → GE → MN → AO → VR → … |
+| Ricerca | MB → CO → MI → LC → VA → BG → LO → PV → SO → BS → CR → MN |
+
+**I settori, nell'ordine in cui si aprono in ogni luogo:**
+
+| # | Siti (8 attivi) | Ricerca (10) |
+|---|---|---|
+| 1 | toelettature e dog trainer | officine e carrozzerie |
+| 2 | personal trainer singoli, istruttori di pilates e yoga | impiantisti elettrici e termoidraulici |
+| 3 | pasticcerie e cake designer | edilizia e serramenti |
+| 4 | sartorie, atelier e tappezzieri | falegnamerie |
+| 5 | tatuatori e piercing | meccanica e carpenterie |
+| 6 | fotografi e videomaker | ingrossi e distribuzione |
+| 7 | fioristi e wedding planner | trasporti e logistica |
+| 8 | ristorazione piccola: gelaterie, pizzerie d'asporto, bar | aziende agricole con vendita |
+| 9 | — | alimentari artigianali: caseifici, salumifici, pastifici, torrefazioni |
+| 10 | — | studi tecnici |
+
+- **Toelettature per prime** perché hanno già dato due lead caldi, Per Un
+  Pelo e Mikuma, e in Monza e Brianza non sono mai state fatte.
+- **Personal trainer** li ha scelti Patrick il 29/09 fra quattro, «uno di
+  quelli con più alto tasso di conversione». Nessuno dei quattro era misurato.
+  L'unico dato è dell'8/09 in Ticino: 12 fra palestre e studi su 15 avevano il
+  sito. Quindi **solo i singoli**: niente palestre, niente studi con reception.
+- **In pausa**: unghie, estetica, ciglia e PMU, parrucchieri, barbieri, trucco
+  sposa. Non si aprono finché Patrick non lo dice.
+
+**Quando un settore è finito in un luogo.** Quando la ricerca l'ha passato
+tutto. Le parole del settore, almeno tre varianti («toelettatura», «dog
+grooming», «toelettatrice»), si incrociano con i comuni della provincia sopra
+i 5.000 abitanti, sull'API di Instagram e su Google `site:instagram.com`. E gli
+ultimi 20 profili nuovi aperti non hanno dato una riga. Vale ancora la regola
+del 12/09: un settore che rende quasi zero, meno di una riga ogni cinque
+profili dopo i primi trenta, si chiude lo stesso giorno e conta come finito.
+
+**Come si riempiono le righe del giorno.** Il settore aperto nel luogo aperto,
+fino in fondo. Se finisce prima delle 100 (o delle 60), si apre il settore
+successivo **nello stesso luogo**. Un giorno può toccare più settori, e un
+settore può durare più giorni: non c'è più «un settore al giorno».
+
+**Quando si cambia luogo**: a **10 settori finiti** in quel luogo, oppure
+quando non ne resta nessuno attivo da aprire. Con 8 settori attivi, oggi i
+siti chiudono il luogo all'ottavo. Allora si passa al luogo successivo
+dell'ordine, e si riparte dal settore 1.
+
+**Lo stato sta in `02-Sales/liste/rotazione.csv`**, una riga per lista, luogo
+e settore: `Stato` (`parziale` o `esaurito`), `Righe`, `Ultima lista`, `Nota`.
+È stato ricostruito il 29/09 dalle righe del banco. Tutto quello che c'era
+prima è `parziale`, perché nessun settore era mai stato finito in una
+provincia. Si legge prima di cominciare:
+
+```bash
+python3 -c "
+import csv
+for r in csv.DictReader(open('02-Sales/liste/rotazione.csv')):
+    if r['Luogo'] in ('MB',): print(r['Lista'], r['Settore'], r['Stato'], r['Righe'])"
+```
+
+E si aggiorna al passo 6: righe aggiunte, `esaurito` quando lo è, e in
+`Nota` il perché («ultimi 20 profili senza una riga», «18 su 25 col sito»).
+
+⚠️ **In Monza e Brianza e a Milano chiama Giulia.** Prima di pubblicare, i nomi
+delle righe di quelle due province si cercano nelle sue liste
+(`02-Sales/liste/*giulia*`): un'attività non riceve sia la chiamata sia il DM
+([[metodo-instagram]], regola del 31/08).
+
+⚠️ **Nella ricerca «qui in zona» vale solo vicino a casa.** Oltre i 50 km da
+Seveso si scrive la zona vera: «le falegnamerie della Valtellina». Il 29/09
+era sbagliato su 19 righe su 60.
 
 ---
 
@@ -336,9 +444,14 @@ cambiano pagina.
    da quanti profili aperti, cosa è stato scartato e perché, la resa per
    settore, le trappole nuove. È il file che dice se il segmento vale un altro
    giro → [[metodo-instagram]].
-2. **[[registro-interventi]]**: una riga con chi, quando, progetto, repository
+   Per ogni settore toccato: luogo, profili letti, righe, finito sì o no.
+2. **`02-Sales/liste/rotazione.csv`**: le righe aggiunte per luogo e settore,
+   `esaurito` sui settori finiti, e il perché in `Nota`. Se il luogo è
+   arrivato a dieci settori finiti, o non ne ha più di attivi, lo si dice
+   nella nota: la prossima lista parte dal luogo successivo.
+3. **[[registro-interventi]]**: una riga con chi, quando, progetto, repository
    e **quale database** (qui nessuno).
-3. `python3 01-Coding/strumenti/genera-indice.py`, poi `git add`, `commit`,
+4. `python3 01-Coding/strumenti/genera-indice.py`, poi `git add`, `commit`,
    `push`. Una modifica non pushata è una modifica persa.
 
 ---
@@ -350,7 +463,7 @@ Massimo sei righe:
 ```
 Patrick — <data>. <se ci sono lead fermi: quanti e da quanto, per primi>
 Banco DM aperto: <da mandare per account, recuperi>
-Liste di oggi: siti <n> · ricerca <n>. <una riga su cosa c'è dentro>
+Liste di oggi: siti <n> · ricerca <n>. <luogo e settori: quali finiti, quale resta aperto>
 <una riga solo se qualcosa non è passato: quale riga, perché è rimasta fuori>
 ```
 
