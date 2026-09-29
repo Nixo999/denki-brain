@@ -1,7 +1,7 @@
 ---
 riga: Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
 type: area
-updated: 2026-09-25
+updated: 2026-09-29
 source: claude
 prodotto: denkishift
 ---
@@ -210,6 +210,10 @@ in [[metriche]]:
 
 
 ## Regole
+
+### 29/09/2026 — Patrick: «Facciamo un'ulteriore modifica a bacodm. Dobbiamo far sì che sia più dinamica la scelta dei lead. Quindi prima sfondiamo un settore in un luogo. Una volta finiti i lead disponibili, sfondiamo un altro settore nello stesso luogo, poi un altro ancora. Una volta arrivato a 10 settori fatti in quel luogo, si cambia luogo e ci si allontana da casa. Piuttosto di fare come ora, che prima finiamo un settore in tutta Italia e cambiamo settore.»
+
+le liste del banco si costruiscono per luogo: un settore fino a esaurire i lead di quel luogo, poi il settore dopo nello stesso luogo; a 10 settori fatti si passa al luogo successivo, piu' lontano da Seveso
 
 ### 25/09/2026 — Patrick: «sono stanco di dirtelo, crea i lead»
 
