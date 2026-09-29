@@ -211,6 +211,10 @@ in [[metriche]]:
 
 ## Regole
 
+### 29/09/2026 — Patrick: «non esconon per sempre ma dopop 3 settimane sono stufo, cambiamo area, puntiamo su altro»
+
+unghie, estetica, ciglia, capelli e trucco sono in pausa, non chiusi: le liste siti puntano su altri settori finche' Patrick non li riapre
+
 ### 29/09/2026 — Patrick: «ora basta unghie ecc, cambiamo settore»
 
 la bellezza (unghie e settori simili) e' stata battuta abbastanza: le liste siti pescano in settori nuovi, non nei soliti della cura della persona
