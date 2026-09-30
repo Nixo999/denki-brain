@@ -14,7 +14,7 @@ tags: [sito, bozza, toelettatura, pet, giussano, brianza, instagram]
 
 # Sito Pet Living Toelettatura — bozza, Giussano (MB)
 
-Cartella `~/lavoro/petliving-site`, dallo starter. Il cliente sta in
+Cartella `~/lavoro/petliving-site`, dallo starter. Repo `Nixo999/petliving-site` privata, **online su <https://petliving.netlify.app>** dal 30/09 (progetto `petliving`, team `nicola-la-rezza`, deploy dal CLI `--prod --no-build`); tre sbarramenti e i file di lavoro (RACCOLTA, MONDI, MONDO, COMPETITOR, PRODUCT, `sorgenti/`, `catture/`) verificati con `curl`: 404. Il cliente sta in
 [[petliving]]: ha risposto al DM di Patrick il 30/09 («Se vuole mandarci
 qualcosa intanto....grazie»). Nicola, 30/09: «nuovo sito da fare, impegnati
 molto nei dettagli, fallo seguendo il solito metodo, dagli molta vita e un look
@@ -89,7 +89,7 @@ stripping non ha una foto: si racconta, e la foto si chiede a loro.
 
 | Giro | Chi | Cosa |
 |---|---|---|
-| 1 | operatore Opus | direzione + costruzione, 30/09 |
+| 1 | operatore Opus | direzione + costruzione, 30/09, `b5f7f0a`; 8/8, slop 0 (4 avvisi: vetro sfocato sulle barre, «passione» in citazione, giorni maiuscoli, 3 sezioni senza fatto verificabile), testo 0; overflow 0 a 375 e 1440, console vuota; polish e bolder/delight **non fatti**; catture `catture/pagina-d.png` e `pagina-m.png` **non guardate dal direttore** (tetto token); senza JS e bordi 899/900 non verificati; i «dieci anni» non scritti perché non confermati |
 
 ## Da chiedere a Pet Living
 
