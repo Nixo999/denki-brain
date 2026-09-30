@@ -578,3 +578,19 @@ L'integrazione tra le due piattaforme si divide in due flussi speculari.
 - «per quanto riguarda WhatsApp si intende solo l'aspetto, non una chat»
 - «Va benissimo aggiungere il pallino giallo se viene modificato»- «per la questione pallini, decidi tu, nel senso, magari cambia anche il tipo, io ho pensato ai pallini perché era comodo a livello visivo»
 - «coopero è gratuito perché serve alle aziende che non hanno opero, ok? Invece opero è quello a pagamento e l'obiettivo è far diventare a pagamento, o meglio, probabilmente in futuro diventerà a pagamento anche coopero, ma l'obiettivo è anche che chi utilizza coopero sia talmente tanto preso da questa cosa che gli venga voglia di acquistare opero»
+
+**Mockup di Patrick, 30/09/2026**
+
+«questo è un mockup MOLTO GROSSOLANO da prendere con le pinze di come immagino
+le interfacce, come vedi ci sono tante cose errate e anche brutte
+esteticamente ma è solo per darti un idea». L'immagine non è nel vault: qui le
+otto schermate, com'erano.
+
+1. **CO-OPERO, dashboard cliente**: saluto, bottone «Richiedi nuovo lavoro», tre contatori (lavori attivi, in attesa, completati negli ultimi 30 giorni), ultime richieste con lo stato. Menu: Home, Richiedi nuovo lavoro, I miei lavori richiesti, Conti.
+2. **CO-OPERO, richiedi nuovo lavoro**: «Chi ti serve?» (una figura o un servizio da un elenco), data, ora, luogo, note fino a 500 caratteri, «Invia richiesta».
+3. **CO-OPERO, lavori richiesti**: schede Tutti, In corso, Completati, Annullati; ogni riga ha servizio e città, data e ora, stato.
+4. **CO-OPERO, conti**: «Saldo disponibile € 1.240,00»; rendicontazione con schede Tutti, Lavori, Pagamenti; righe in uscita «Pagato», in entrata «Accredito».
+5. **OperO, pagina Richieste**: ricerca, elenco di aziende clienti con data e ora della richiesta e lo stato sulla riga (nuova, accettata, rifiutata, lavoro in corso, lavoro completato). Menu: Home, Richieste, Lavori, Conti, Gruppo, Report, Impostazioni.
+6. **OperO, dettaglio richiesta e accettazione**: figura, data e ora, luogo e note del cliente; sotto, nominativi da scegliere o aggiungere, cellulari, note interne, bottone «Accetta e crea commessa».
+7. **OperO, Gruppo / Intermediar**: «Nuova richiesta», schede Tutte, In attesa, Accettate, Rifiutate; ogni riga ha fornitore, ruolo o servizio, data, stato.
+8. **CO-OPERO, dashboard fornitore**: saluto, «Richieste in arrivo» col numero delle nuove, elenco con Da valutare, Accettata, Rifiutata. Menu: Home, Richieste (col numero), Lavori, Conti.

@@ -54,11 +54,40 @@ Nicola e Seba prima di costruirla.
 | Nuova (per chi la manda: «In attesa») | blu | chi la riceve |
 | Modificata, la conferma è caduta | giallo, col diff | chi la riceve |
 | Confermata | verde | nessuno |
+| In corso, il giorno del lavoro, da sola | verde | nessuno |
+| Chiusa (completata o incompleta, come in OperO) | grigio, card attenuata | nessuno |
 | Rifiutata | rosso | nessuno |
 | Annullata da chi l'ha chiesta | grigio | nessuno |
-| Chiusa | grigio, card attenuata | nessuno |
 
 - **Stesse parole ai due capi**: è la stessa richiesta, cambia solo chi ha il numero.
+
+## Il mockup del 30/09 — cosa aggiunge, cosa non torna
+
+Otto schermate di Patrick, «da prendere con le pinze», descritte in
+[[opero-intermediar-receive-testo]]. Si legge l'idea, non il disegno.
+
+> [!note] Analisi di Claude — 30/09/2026
+> - **Aggiunge**: CO-OPERO cliente ha Home, Richiedi nuovo lavoro, Lavori
+>   richiesti, Conti; CO-OPERO fornitore ha Home, Richieste, Lavori, Conti. In
+>   OperO, Richieste e Gruppo diventano due voci del menu.
+> - **Gruppo voce di menu** contro il 24/09, che voleva Intermediar «un
+>   controllo a destra della bottom nav, non una quinta voce». `TODO`
+> - **Le parole degli stati cambiano a ogni schermata**: In attesa, Da
+>   valutare e Nuova richiesta sono la stessa cosa. Il giallo non c'è ancora.
+> - **Nella pagina Richieste lo stato sta sulla riga dell'azienda**: è il caso
+>   che il numero tondo risolve. Il numero c'è già nel menu del fornitore.
+> - **Manca «Rifiuta»** nel dettaglio: c'è solo «Accetta e crea commessa».
+> - **Manca «quanti»**: «Chi ti serve?» è una figura sola, e il dettaglio
+>   accetta due nomi. Il caso vero è 8 facchini, o 2 facchini e un autista.
+> - **Nomi e cellulari in due liste separate**: in OperO il lavoratore ha già
+>   il telefono nel profilo, sceglierlo basta. Un nome aggiunto a mano in un
+>   lavoro non entra: serve un account.
+> - **«Saldo disponibile» e «Accredito» sono un portafoglio**, cioè soldi che
+>   passano dalla piattaforma. Il 30/09 i Conti erano «vedere i costi e la
+>   rendicontazione». Nel repo c'è «fatturato» (`invoiced_at`), un «pagato»
+>   non l'ho visto. `TODO`
+> - Dopo l'accettazione la richiesta diventa un lavoro, e il cliente la segue
+>   fino in fondo: da qui lo stato «In corso» nella tabella sopra.
 
 ## Cosa dice il repo oggi
 
