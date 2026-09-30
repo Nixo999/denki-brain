@@ -29,6 +29,8 @@ sulla vetrina nostra, e costa il tempo di scriverlo una volta.
 **Patrick, 30/09/2026: «nella griglia possiamo anche mettere altro».** La
 griglia non e' solo portfolio: ci stanno consigli, caroselli e reel che non
 mostrano un nostro lavoro. Il piano sta in [[piano-instagram]].
+Le bozze no, stesso giorno: «no le bozze no». Un sito su `*.netlify.app` fatto
+a un lead non va in griglia.
 
 La galleria di [[sito-denkicode]] e la serie di post mostrano gli stessi
 lavori: **la regola del dominio vale anche qui**. Si posta un sito che sta su
