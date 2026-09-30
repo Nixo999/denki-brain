@@ -23,6 +23,7 @@ codice, niente quotazione, niente date. Testi integrali →
 - **Flusso 1, in entrata.** CO-OPERO Clienti ha **tre pagine e basta** (Patrick, 30/09): **Nuovo lavoro** (chi serve, data e ora, luogo, note), **Lavori** (in corso e tutti), **Conti**. **Conti è solo una stima**: a lavoro chiuso il cliente vede, all'incirca, quanto dovrà pagare. Niente saldo, niente pagamenti. In OperO la richiesta atterra nella pagina **Richieste**: elenco di aziende clienti con l'aspetto di WhatsApp, **non una chat** (Patrick, 30/09), con gli stati qui sotto. Accettare vuol dire mettere nomi e cellulari dei lavoratori e le note: nasce il lavoro in OperO e la conferma torna al cliente.
 - **Flusso 2, in uscita.** Dalla pagina **Gruppo** (Intermediar) l'azienda chiede manodopera a una cooperativa o a un fornitore. Il fornitore, da CO-OPERO Fornitori, accetta o rifiuta. Se accetta mette ruoli e nomi, conferma, e lo stato torna nella scheda di Gruppo.
 - **Richieste** riceve solo dai clienti, **Gruppo** manda solo ai fornitori.
+- **Prima il flusso 1** (Patrick, 30/09): «il portale fornitori [...] lo vedremo in un secondo momento, ora ci dobbiamo concentrare solo su questa parte». Gruppo e CO-OPERO Fornitori aspettano.
 
 > [!note] Analisi di Claude — 30/09/2026, il riassetto letto contro il 24/09
 > - CO-OPERO Fornitori è il **Receive** del 24/09, la pagina Gruppo è
@@ -101,6 +102,7 @@ toccato.
 - **I prezzi al cliente ci sono**: tariffe per cliente e per mansione, calcolate da `lib/invoiceEngine.ts`. I Conti del flusso 1 sanno da dove prendere i €. Per i fornitori del flusso 2 una tariffa non esiste.
 - **Niente tempo reale, niente notifiche web.** Le push sono solo native (FCM, APNs) e partono dalla segreteria: un portale web oggi non riceve niente da solo.
 - **La chat c'è nel database e non si usa**: tabelle `chat_*` mai collegate, chat tolta da Seba il 4/08. «Tipo WhatsApp» è solo l'aspetto (Patrick, 30/09): la chat resta fuori.
+- **Il menu della segreteria** oggi è Lavori, Nuovo lavoro, Conti, Clienti, più Gestione e Amministrazione per chi li ha (`lib/navConfig.tsx`). Sul telefono è l'isola in basso, sul computer la colonna a sinistra: una voce in più sul telefono si paga.
 - **Un lavoro non ha una colonna di stato**: si ricava da annullato, chiuso, fatturato. Gli stati della richiesta sarebbero i primi scritti.
 
 ## Regole del flusso, dal 24/09
