@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Inventario di 15 siti di toelettatura (5 Bergamo/Val Seriana, 6 Italia curati, 4 estero) - sezioni, FAQ, vocabolario, errori. Per il sito di Ambra Longoni, Nembro.
-updated: 2026-09-25
+updated: 2026-09-30
 source: claude
 tags: [siti, competitor, toelettatura, pet]
 ---
@@ -118,6 +118,14 @@ successo. L'account Instagram trovato per "toelettatura.perunpelo" a Nembro è
 - **Parioli Toelettatura**: solo prezzi dei prodotti in vendita (mangime McAdams, €3,99-119,90), non dei trattamenti.
 - Tutti gli altri 13 siti: nessun prezzo di toelettatura pubblicato. La fascia-per-taglia che si trova nel campione nail (es. Bella Nail, «da 30€») **non ha un equivalente pubblicato in nessun sito di toelettatura del campione** — è un dato che nel settore si dà solo al telefono.
 
+## Brianza, 30/09/2026 — per [[sito-petliving]]
+
+17 attività fra Giussano, Seregno, Carate, Mariano, Desio, Lissone, Meda,
+Seveso, Cesano, Bovisio, Cantù e Monza, più 5 saloni premium (Mon Joli
+Chien, The Pet Spa London, George's Dog Boutique, Pupstudio NYC, Petin
+Milano). **0 su 17 pubblica prezzi, nessuna toelettatura a Giussano ha un
+sito.** Tabelle complete in `COMPETITOR.md` del repo `petliving-site`.
+
 ## Collegamenti
 
-[[sito-perunpelo]] · [[processo-siti]] · [[competitor-siti-nail]]
+[[sito-perunpelo]] · [[sito-petliving]] · [[processo-siti]] · [[competitor-siti-nail]]

@@ -1026,6 +1026,11 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   Instagram. → per un centro senza foto nel feed si parte da Google Maps.
   (25/09/2026, [[sito-leibeautyroom]])
 
+- `[TRAPPOLA]` **Su alcuni profili la caption sta nel primo commento, o non c'è.**
+  Il testo letto da `<main>` di un post può essere il commento di un cliente,
+  non le parole del profilo: si controlla chi lo firma prima di citarlo.
+  (30/09/2026, [[sito-petliving]])
+
 ## Liste e banco DM
 
 - **Una frase di verifica ripetuta su sessanta righe è un modello, non un
