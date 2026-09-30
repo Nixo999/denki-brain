@@ -12,8 +12,8 @@ tags: [social, materiale, lead]
 Quello che esce dal profilo di DenkiCode, e dove stanno i file. Il materiale
 fisico sta in [[materiale-offline]], l'identita' visiva in [[identita-visiva]].
 
-⚠️ **L'handle del profilo non e' scritto da nessuna parte nel vault.** `TODO` -
-lo scrive Patrick qui la prima volta che pubblica.
+**Il profilo e' `@denkicode`**, account professionale (screenshot di Patrick,
+30 settembre 2026: 5 post, 87 follower, 27 seguiti).
 
 **Dal 30 settembre 2026 la pubblicazione passa a uno script** con l'API
 ufficiale di Instagram, scelta di Patrick: finche' Nicola non lo costruisce si

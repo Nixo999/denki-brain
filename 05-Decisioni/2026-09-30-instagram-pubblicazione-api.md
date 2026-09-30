@@ -59,12 +59,12 @@ nessuno.
 
 | Cosa | Chi |
 |---|---|
-| L'handle del profilo DenkiCode, che il vault non ha | Patrick `TODO` |
-| Il profilo e' professionale? E' collegato a una Pagina Facebook? | Patrick `TODO` |
+| ~~L'handle del profilo~~: **`@denkicode`**, dallo screenshot di Patrick del 30/09 | fatto |
+| ~~Il profilo e' professionale?~~ **Si'**: ha la dashboard (1042 visualizzazioni in 30 giorni al 30/09). Collegato a una Pagina Facebook? | Patrick `TODO` |
 | App sviluppatore Meta e token | Nicola o Patrick, non Trevis |
 | Dove stanno le immagini pubbliche, dove e quando gira lo script | Nicola |
 | Il token in una variabile d'ambiente, mai nel vault | Nicola |
-| Calendario: quanti post e storie, che giorni, che ore | Patrick |
+| Calendario: quanti post e storie, che giorni, che ore | Patrick l'ha passato a Trevis il 30/09 → [[piano-instagram]] |
 | La copertina con lo sticker link: a mano o senza sticker | Patrick |
 
 **La serie del 25/09 non entra in coda** finche' Patrick non l'ha riletta
