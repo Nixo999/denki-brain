@@ -348,6 +348,14 @@ volta che lancio il comando /banco fallo in automatico»*. **Prima di aprire il
 banco si legge la posta di Instagram**, si segnano gli esiti e si dice cosa non
 funziona. **Si legge e si segna: nessun messaggio parte da qui.**
 
+> [!warning] I DM partono dall'account DenkiCode — Patrick, 30/09/2026: *«li mando da denkicode»*
+> Nel browser dell'app la sessione aperta è quella di `@patrick.sappa`: da lì
+> il 29/09 i 160 DM del giorno non si vedevano, e nemmeno Design Capelli e
+> Adelina. **La posta da leggere è quella dell'account DenkiCode.** Finché
+> quell'account non è aperto nel browser dell'app, e ce lo apre Patrick perché
+> le password nelle pagine web non si digitano da qui, il passo 3-bis vede
+> solo `@patrick.sappa` e lo dice nella risposta.
+
 Dal browser con la sessione di Patrick, su `instagram.com/direct/inbox/`:
 
 ```js

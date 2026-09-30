@@ -76,8 +76,9 @@ manda da un altro account. Il 29/9 sera il banco segna **tutte le 160 righe
 di oggi come mandate**, e nella posta di `@patrick.sappa` il 29/9 non si apre
 nessun thread nuovo. Quindi le risposte a questi DM, e con ogni probabilità
 Design Capelli e Adelina (che [[FATTI]] dà in attesa della bozza dal 20 e dal
-19/9), stanno in una casella che il passo 3-bis non legge. Quale account sia,
-e come leggerlo: `TODO` Patrick.
+19/9), stanno in una casella che il passo 3-bis non legge. È l'account
+DenkiCode: Patrick, 30/09, «li mando da denkicode». Per leggerlo va aperto
+nel browser dell'app, e lo apre lui.
 
 *Corretto il 29/9 sera:* qui c'era scritto «nessun DM parte dal banco dal
 17/9». Era dedotto da `contattati.csv`, che fra il 17 e il 29 è fermo. Il
