@@ -1,7 +1,7 @@
 ---
 riga: Prestazione occasionale, nessuna P.IVA. Nei testi 'ricevuta', mai 'fattura elettronica'.
 type: area
-updated: 2026-08-28
+updated: 2026-09-30
 source: denkicode
 scadenza: 2026-11-30
 ---
@@ -51,7 +51,7 @@ clienti.
 
 | Chi emette | Documentato 2026 | Atteso | Residuo sul tetto |
 |---|---|---|---|
-| **Patrick** | 0 € | **2.000 €** ([[sebastian-torres]]) | **~3.000 €** dopo l'incasso |
+| **Patrick** | `TODO`: 1.000 € entrati da OperO dopo l'11/09, ricevuta? (30/09) | **1.000 €** ([[sebastian-torres]]) | **~3.000 €** se i 1.000 entrati hanno ricevuta, **~4.000 €** se no |
 | Nicola | 0 € | — | 5.000 € |
 
 ⚠️ **I 400 € già presi da [[sebastian-torres]] non hanno ricevuta**: accordo
@@ -59,7 +59,7 @@ fra privati, nessun documento emesso. Quindi non consumano il tetto di nessuno
 dei due, ma non esistono nemmeno come entrata dimostrabile — vale la pena
 saperlo il giorno in cui si apre la P.IVA e si guarda indietro all'anno.
 
-⚠️ **Incassati i 2.000 €, a Patrick restano ~3.000 €**: a listino sono sei siti
+⚠️ **Incassati i 1.000 € che mancano, a Patrick restano ~3.000-4.000 €** (30/09): a listino sono sei siti
 vetrina con canone, oppure **tre e-commerce** ([[prodotti-e-listino]]). Da lì
 in poi le ricevute vanno su Nicola, o serve la P.IVA. **Non è un problema di
 novembre: è un problema del quarto cliente.**

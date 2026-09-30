@@ -91,7 +91,8 @@ il giorno del saldo.
       numerazione del suo, più un art. 3-bis su incarico e compensi. Cifre
       scelte da Claude, da trattare: penali al 25/50/100% dei compensi degli
       ultimi 12 mesi, 10% sui ritardi di Seba, **saldo alla firma**
-- [ ] Confermare 2.400 / 400 / 2.000 prima di mandarlo: nel vault sono fermi all'11/09/2026
+- [x] Confermare i numeri: 2.400 pattuiti, 1.400 incassati, 1.000 da incassare (Patrick, 30/09)
+- [ ] **Soci** (30/09): Patrick, Nicola e Seba «probabilmente» soci. Un accordo di non concorrenza scritto per un fornitore va riletto → [[sebastian-torres]]
 - [ ] Mandarlo a Seba, con la voce di Patrick → [[stile-comunicazione]]
 - [ ] `TODO` — le due liste di facchinaggio del 25/09 hanno un prezzo, o sono dentro i 2.400 €?
 - [ ] Versione finale letta da un avvocato prima della firma

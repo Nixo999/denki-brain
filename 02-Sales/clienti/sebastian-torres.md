@@ -3,7 +3,7 @@ riga: Privato, non un'azienda. Sta aprendo la sua attività, e l'attività è op
 type: cliente
 status: attivo
 progetti: [opero]
-updated: 2026-09-25
+updated: 2026-09-30
 source: denkicode
 settore: software, in fase di avvio
 ---
@@ -48,11 +48,25 @@ del padre. È la sua prima installazione reale, non un prototipo.
 
 | | |
 |---|---|
-| Pattuito | **2.400 €** |
-| Incassato | **400 €** (al 2026-08-28) |
-| **Credito aperto** | **2.000 €** |
-| I 400 € presi | **Nessuna ricevuta emessa** — accordo fra privati |
-| I 2.000 € da incassare | Ricevuta per prestazione occasionale su **Patrick** → [[vincoli-fiscali]] |
+| Pattuito | **2.400 €**, la «prima tranche» (Patrick, 30/09). Le tranche dopo: `TODO` |
+| Incassato | **1.400 €** (30/09) |
+| **Credito aperto** | **1.000 €** (30/09) |
+| I primi 400 € | **Nessuna ricevuta emessa** — accordo fra privati |
+| I 1.000 € entrati dopo l'11/09 | Data e ricevuta: `TODO` |
+| I 1.000 € da incassare | Ricevuta per prestazione occasionale su **Patrick** → [[vincoli-fiscali]] |
+
+## Soci — 30/09/2026
+
+Patrick: «probabilmente diventiamo soci. Dobbiamo chiarirlo in maniera più
+specifica», e «siamo soci insieme a Nicola, quindi io, Seba, Nicola». Il
+riassetto di OperO + CO-OPERO l'hanno fatto Patrick e Seba insieme →
+[[opero-intermediar-receive]].
+
+Da chiarire, `TODO`: la forma (società, quote, chi porta cosa), che fine fanno
+il credito e le tranche, e l'accordo di non concorrenza del 25/09, scritto per
+un fornitore e non per un socio → [[accordo-riservatezza-opero]]. Con la regola
+«nessuna P.IVA» di mezzo, la forma si guarda con un commercialista prima di
+firmare → [[vincoli-fiscali]].
 
 ## Come si comporta
 
@@ -100,7 +114,8 @@ Osservato dal lavoro di agosto 2026:
 
 ## Aperto
 
-- [ ] Incassare i **2.000 €** — ricevuta su Patrick
+- [ ] Incassare i **1.000 €** della prima tranche (30/09) — ricevuta su Patrick
+- [ ] **Soci**: forma, quote, credito e accordo da chiarire (30/09)
 - [ ] **Accordo di riservatezza e non concorrenza a 5 anni** che vuole far
       firmare (25/09/2026): **non firmato**, penali fino a 30.000 €. La
       controproposta lega la firma al saldo → [[accordo-riservatezza-opero]]

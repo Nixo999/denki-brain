@@ -576,4 +576,5 @@ L'integrazione tra le due piattaforme si divide in due flussi speculari.
 **Precisazioni di Patrick, 30/09/2026**
 
 - «per quanto riguarda WhatsApp si intende solo l'aspetto, non una chat»
-- «Va benissimo aggiungere il pallino giallo se viene modificato»
+- «Va benissimo aggiungere il pallino giallo se viene modificato»- «per la questione pallini, decidi tu, nel senso, magari cambia anche il tipo, io ho pensato ai pallini perché era comodo a livello visivo»
+- «coopero è gratuito perché serve alle aziende che non hanno opero, ok? Invece opero è quello a pagamento e l'obiettivo è far diventare a pagamento, o meglio, probabilmente in futuro diventerà a pagamento anche coopero, ma l'obiettivo è anche che chi utilizza coopero sia talmente tanto preso da questa cosa che gli venga voglia di acquistare opero»

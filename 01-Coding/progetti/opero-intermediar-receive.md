@@ -19,7 +19,8 @@ codice, niente quotazione, niente date. Testi integrali →
 ## Il modello del 30/09: OperO al centro, CO-OPERO doppio ponte
 
 - **OperO** è il gestionale a pagamento dell'azienda. **CO-OPERO** è un portale web **gratuito** con due sezioni, per chi OperO non ce l'ha. Deciso da Patrick e Seba (30/09): supera il Receive a pagamento del 24/09.
-- **Flusso 1, in entrata.** Il cliente dell'azienda, da CO-OPERO Clienti, fa «Richiedi nuovo lavoro» (chi serve, data e ora, luogo, note), poi segue «Lavori richiesti» e «Conti». In OperO la richiesta atterra nella pagina **Richieste**: elenco di aziende clienti con l'aspetto di WhatsApp, **non una chat** (Patrick, 30/09), col pallino 🔵 nuova · 🟡 modificata dopo la conferma · 🟢 accettata · 🔴 rifiutata. Accettare vuol dire mettere nomi e cellulari dei lavoratori e le note: nasce il lavoro in OperO e la conferma torna al cliente.
+- **Perché è gratis**, parole di Patrick (30/09): «coopero è gratuito perché serve alle aziende che non hanno opero», «probabilmente in futuro diventerà a pagamento anche coopero, ma l'obiettivo è anche che chi utilizza coopero sia talmente tanto preso da questa cosa che gli venga voglia di acquistare opero». **CO-OPERO è l'amo, OperO è la vendita.**
+- **Flusso 1, in entrata.** Il cliente dell'azienda, da CO-OPERO Clienti, fa «Richiedi nuovo lavoro» (chi serve, data e ora, luogo, note), poi segue «Lavori richiesti» e «Conti». In OperO la richiesta atterra nella pagina **Richieste**: elenco di aziende clienti con l'aspetto di WhatsApp, **non una chat** (Patrick, 30/09), con gli stati qui sotto. Accettare vuol dire mettere nomi e cellulari dei lavoratori e le note: nasce il lavoro in OperO e la conferma torna al cliente.
 - **Flusso 2, in uscita.** Dalla pagina **Gruppo** (Intermediar) l'azienda chiede manodopera a una cooperativa o a un fornitore. Il fornitore, da CO-OPERO Fornitori, accetta o rifiuta. Se accetta mette ruoli e nomi, conferma, e lo stato torna nella scheda di Gruppo.
 - **Richieste** riceve solo dai clienti, **Gruppo** manda solo ai fornitori.
 
@@ -30,15 +31,34 @@ codice, niente quotazione, niente date. Testi integrali →
 > - I due flussi sono **la stessa richiesta vista dai due capi**: BluNotte che
 >   chiede a Bolanos è flusso 2 per BluNotte e flusso 1 per Bolanos. È il
 >   principio del 24/09, «una richiesta, un'entità sola», e regge ancora.
-> - **Gratis contro pagato.** Il 24/09 Receive era OperO ridotto, ~49,90 €/mese
->   dopo 30 giorni, e il §40 dice «Receive non deve diventare OperO
->   gratuito». Il 30/09 Patrick e Seba lo fanno gratuito: il 24/09 è superato.
+> - **Il gratis regge se si ferma dove OperO comincia.** Il §40 del 24/09,
+>   «Receive non deve diventare OperO gratuito», vale ancora nello spirito:
+>   CO-OPERO riceve, conferma e fa vedere i conti, ma non gestisce lavoratori,
+>   turni e paghe. Se il gratis fa tutto, nessuno compra. E il passaggio va
+>   fatto senza rifare niente: l'identità che evolve del 24/09, esterna →
+>   CO-OPERO → OperO, è il gancio della vendita.
 > - **«Richieste» cambia significato**: il 24/09 era una tab dentro
 >   Intermediar, in uscita. Il 30/09 è la pagina in entrata.
-> - **Il giallo è entrato** (Patrick, 30/09: «va benissimo aggiungere il
->   pallino giallo se viene modificato»). Restano fuori «chiusa» e
->   l'annullamento del cliente. E il pallino sta sull'azienda, non sulla
->   richiesta: stesso cliente, una nuova e una rifiutata, che colore? `TODO`
+
+## Gli stati — decisi il 30/09
+
+Patrick: «per la questione pallini, decidi tu [...] io ho pensato ai pallini
+perché era comodo a livello visivo». Scelta di Claude (30/09), da far vedere a
+Nicola e Seba prima di costruirla.
+
+- **Lo stato è della richiesta, il numero è di chi deve muoversi.** Nella lista delle aziende, in Richieste e in Gruppo, ogni riga ha solo un numero tondo come i messaggi non letti di WhatsApp: quante richieste aspettano **te**. In cima chi ha qualcosa da fare, poi l'ultima attività. Così un cliente con una richiesta nuova e una rifiutata non ha un colore conteso.
+- **Dentro l'azienda, ogni richiesta ha un'etichetta con colore e parola**, mai il colore da solo: rosso e verde sono la coppia che un daltonico confonde.
+
+| Stato | Colore | Chi deve muoversi |
+|---|---|---|
+| Nuova (per chi la manda: «In attesa») | blu | chi la riceve |
+| Modificata, la conferma è caduta | giallo, col diff | chi la riceve |
+| Confermata | verde | nessuno |
+| Rifiutata | rosso | nessuno |
+| Annullata da chi l'ha chiesta | grigio | nessuno |
+| Chiusa | grigio, card attenuata | nessuno |
+
+- **Stesse parole ai due capi**: è la stessa richiesta, cambia solo chi ha il numero.
 
 ## Cosa dice il repo oggi
 
@@ -52,26 +72,22 @@ toccato.
 - **I prezzi al cliente ci sono**: tariffe per cliente e per mansione, calcolate da `lib/invoiceEngine.ts`. I Conti del flusso 1 sanno da dove prendere i €. Per i fornitori del flusso 2 una tariffa non esiste.
 - **Niente tempo reale, niente notifiche web.** Le push sono solo native (FCM, APNs) e partono dalla segreteria: un portale web oggi non riceve niente da solo.
 - **La chat c'è nel database e non si usa**: tabelle `chat_*` mai collegate, chat tolta da Seba il 4/08. «Tipo WhatsApp» è solo l'aspetto (Patrick, 30/09): la chat resta fuori.
-- **Un lavoro non ha una colonna di stato**: si ricava da annullato, chiuso, fatturato. Il pallino sarebbe il primo stato scritto.
+- **Un lavoro non ha una colonna di stato**: si ricava da annullato, chiuso, fatturato. Gli stati della richiesta sarebbero i primi scritti.
 
 ## Regole del flusso, dal 24/09
 
-- Da confermare e modificata dopo conferma: **giallo**. Confermato: normale. Chiuso: card attenuata.
 - Una modifica dopo la conferma la **invalida** e mostra il diff (`08:00 → 07:30`). Cambiare referente no. Quali modifiche contano: `TODO` (§40).
 - La chiusura è del servizio, non del lavoratore. Se il fornitore non chiude, chiude chi ha chiesto.
 - Dopo la conferma chi ha chiesto vede per primi **referente e convocati** con telefono; la richiesta sta sotto, in «Dettagli richiesta ›».
 - Ruoli liberi: **richiesto ≠ ruolo creato, accettato = ruolo acquisito**, con autocomplete.
 
-**Demo minima (§39)**: BluNotte → richiesta a Bolanos → Bolanos prepara la
-squadra, sceglie il referente e conferma → Paolo vede i convocati → modifica →
-la conferma cade → Bolanos riconferma → chiusura. Più lo stesso giro con
-un'azienda senza OperO.
+**Demo minima** → §39 in [[opero-intermediar-receive-testo]].
 
 ## Cosa morde
 
-1. **Lavoro nuovo, fuori dai 2.400 €**, e col flusso 1 più grande del 24/09: sono tre facce nuove (Richieste, Gruppo, il portale). I 2.000 € del primo non sono entrati → [[opero]].
+1. **Lavoro nuovo, fuori dai 2.400 €**, e col flusso 1 più grande del 24/09: sono tre facce nuove (Richieste, Gruppo, il portale). Del primo mancano 1.000 € (30/09) → [[opero]].
 2. **Una richiesta con due proprietari**: la stessa riga letta da chi chiede e da chi esegue, con campi diversi, e lo storico delle modifiche per il diff. Le policy oggi ragionano per un'azienda sola.
-3. **Il ricavo di Seba**: con CO-OPERO gratis il piano di Receive in `workspace_plans` non serve più, e un portale gratuito rende solo se porta aziende a OperO.
+3. **Il ricavo**: con CO-OPERO gratis il piano di Receive in `workspace_plans` non serve più. Il portale rende solo se porta aziende a OperO, e da quando i soci sono tre (30/09) è ricavo anche nostro → [[sebastian-torres]].
 4. **Nomi e telefoni passano da un'azienda all'altra**, ora in tutti e due i versi: i lavoratori dell'azienda al cliente (flusso 1), quelli del fornitore all'azienda (flusso 2). Serve una base, e non è una scelta tecnica.
 5. **L'accordo del 25/09** mette «Coopero/cOperO» nel perimetro della non concorrenza → [[accordo-riservatezza-opero]].
 

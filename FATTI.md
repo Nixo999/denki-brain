@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura. Max 80 righe.
-updated: 2026-09-27
+updated: 2026-09-30
 verificato: 2026-09-16
 source: denkicode
 tags: [stato, fatti]
@@ -22,10 +22,11 @@ cosa aperta. Il racconto dei giri sta nella nota progetto, la giornata nel
 - Morgan, fratello di Patrick, segnalatore dal 15/09: compenso e ore `TODO` → [[morgan]]
 - Gabriele ed Edoardo fuori in via definitiva (15/09) → [[gabriele-edoardo]]
 - DenkiCode è il terzo impegno di tutti e tre → [[team-e-vincoli]]
+- Patrick, Nicola e Seba «probabilmente» soci in OperO (30/09): forma, quote e credito da chiarire → [[sebastian-torres]]
 
 ## Soldi
 
-- OperO: **2.000 € da incassare** (11/09) → [[sebastian-torres]]
+- OperO: **1.400 € incassati, 1.000 € da incassare**, gli ultimi della prima tranche (30/09); ricevuta dei 1.000 entrati `TODO` → [[sebastian-torres]]
 - Albybike: online e **mai pagato** (11/09) → [[albybike]]
 - Nessuna P.IVA: «ricevuta», «collaborazione occasionale» → [[vincoli-fiscali]]
 
@@ -57,7 +58,7 @@ Lobidù, Da Caterina: lo stato sta nella loro nota.
 - **Edilida** (edile, Travagliato): modulo compilato il 18/09, Patrick punta a una videochiamata; il riepilogo di zona promesso a Penta ed Edilida **non esiste** → [[edilida]]
 - **V-BAG**, gestionale con login pushato il 16/09: spento finché Nicola non mette `ADMIN_PASSWORD` e `GITHUB_TOKEN` su Netlify → [[2026-09-16-vbag-gestionale-login]]
 - **OperO, Intermediar + Receive → CO-OPERO** (30/09): portale gratuito con Clienti in entrata e Fornitori in uscita. Deciso da Patrick e Seba, supera il Receive a pagamento del 24/09. Da conoscere, non da fare; lavoro nuovo fuori dai 2.400 € → [[opero-intermediar-receive]]
-- **Riservatezza + non concorrenza a 5 anni** (25/09): penali 5.000-30.000 €, **non firmato**, controproposta legata al saldo dei 2.000 € → [[accordo-riservatezza-opero]]
+- **Riservatezza + non concorrenza a 5 anni** (25/09): penali 5.000-30.000 €, **non firmato**, controproposta legata al saldo, ora 1.000 € (30/09); da rileggere se si diventa soci → [[accordo-riservatezza-opero]]
 - **denki-agents**: gateway chiuso (16/09), cantiere a **un dollaro a sito** in locale, 0,57-0,82 USD a bozza; manca il token Apify per un giro con foto vere → [[denki-agents]]
 - Le 87 righe di Gabriele ed Edoardo sono passate a Giulia (13/09) → [[2026-09-13-liste-giulia-groane-vimercatese]]
 

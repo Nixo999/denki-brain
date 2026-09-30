@@ -1,7 +1,7 @@
 ---
 riga: I numeri del funnel con la data accanto. Un numero senza data non e' una metrica.
 type: area
-updated: 2026-09-15
+updated: 2026-09-30
 source: denkicode
 ---
 
@@ -66,10 +66,10 @@ righe vuote qui sopra: sono `source: denkicode`, non stime.
 | **Gabriele ed Edoardo** | **0** in quattordici giorni. Canale chiuso il 13/09, fuori in via definitiva il 15/09 → [[2026-09-13-caller-fuori]] | — | — | **0 €** |
 | **Referral** | 1 ([[shari-piras]]) | 1 | 1 ([[dsi-advertising]]) | **0 €** |
 | **Presìdi** | 1 su 10 ([[bar-tabacchi-fiftynine]]), **+1 fuori giro il 15/09**: il parrucchiere di [[morgan]] → [[parrucchiere-morgan]] | 1 | baratto, non vendita | **0 €** |
-| **Rete personale** | non è un canale | — | [[albybike]], [[sebastian-torres]] | **400 €** |
+| **Rete personale** | non è un canale | — | [[albybike]], [[sebastian-torres]] | **1.400 €** (30/09) |
 
-**Sei settimane, oltre 250 contatti a freddo, zero euro.** I 400 € incassati e
-i 2.000 € di credito vengono tutti da fuori i canali commerciali.
+**Sei settimane, oltre 250 contatti a freddo, zero euro.** I 1.400 € incassati e
+i 1.000 € di credito (30/09) vengono tutti da fuori i canali commerciali.
 
 ⚠️ **Il tasso del DM è ~1%**, contro il 5% sotto cui [[dm-instagram-vetrina]]
 dichiara che il messaggio non tiene. Il test è chiuso →

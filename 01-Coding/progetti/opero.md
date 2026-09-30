@@ -9,7 +9,7 @@ deadline: TODO
 updated: 2026-09-30
 source: repo
 valore: 2400
-incassato: 400
+incassato: 1400
 ---
 
 # OperO — gestionale cantieri e fatturazione
@@ -59,18 +59,22 @@ immagini, creazione account). Vedi [[2026-08-11-opero-scope-allargato]].
 | | |
 |---|---|
 | Prezzo pattuito | **2.400 €** |
-| Incassato al 2026-08-28 | **400 €** |
-| **Da incassare** | **2.000 €** |
-| I 400 € già presi | **Senza ricevuta** — accordo fra privati |
-| I 2.000 € futuri | Ricevuta per prestazione occasionale intestata a **Patrick** → [[vincoli-fiscali]] |
+| Incassato al 2026-09-30 | **1.400 €** (Patrick) |
+| **Da incassare** | **1.000 €**, «gli ultimi 1.000 della prima tranche» (Patrick, 30/09). Le tranche dopo: `TODO` |
+| I primi 400 € | **Senza ricevuta** — accordo fra privati |
+| I 1.000 € entrati dopo l'11/09 | Data e ricevuta: `TODO` → [[vincoli-fiscali]] |
+| I 1.000 € che mancano | Ricevuta per prestazione occasionale intestata a **Patrick** → [[vincoli-fiscali]] |
 
-⚠️ I 2.000 € futuri si mangiano il **40%** del tetto annuo di Patrick in un
-colpo solo. I 400 € già presi non lo toccano, perché non è stata emessa nessuna
+**Soci (30/09)**: Patrick, Nicola e Seba «probabilmente» diventano soci.
+Forma da chiarire → [[sebastian-torres]].
+
+⚠️ Scritto il 28/08, quando ne mancavano 2.000: sul tetto di Patrick pesano i
+1.000 che mancano più i 1.000 entrati, se hanno avuto ricevuta. I 400 € già presi non lo toccano, perché non è stata emessa nessuna
 ricevuta.
 
 ⚠️ **Il credito dipende dall'impresa di Seba, non da un budget IT.** Lui ha un
 cliente pagante (suo padre) e un secondo in attesa. Se quel secondo non firma,
-i 2.000 € non hanno una fonte evidente. Non è un giudizio su di lui: è la
+i 1.000 € che mancano (30/09) non hanno una fonte evidente. Non è un giudizio su di lui: è la
 ragione per cui vale la pena sapere a che punto è quella trattativa. Vedi
 [[sebastian-torres]].
 
@@ -168,7 +172,7 @@ misurando con `getComputedStyle` / `getBoundingClientRect`. Vedi [[convenzioni]]
 
 ## Aperto
 
-- [ ] Incassare i **2.000 €** residui — ricevuta su Patrick
+- [ ] Incassare i **1.000 €** residui della prima tranche (30/09) — ricevuta su Patrick
 - [ ] **Quotare l'XML SDI** come lavoro nuovo, non regalarlo
 - [ ] **Correggere il PDF consegnato** al cliente sulle funzioni rinunciate
 - [ ] **Report giugno-agosto da `strumenti/report-mesi.mjs`**: manca la chiave `OPERO1_SERVICE` o un login di segreteria (13/09). La migrazione non si fa più
@@ -176,7 +180,7 @@ misurando con `getComputedStyle` / `getBoundingClientRect`. Vedi [[convenzioni]]
 - [ ] Applicare la migrazione `20260826110000` (trigger finestra)
 - [ ] Decidere una data di go-live e dirla al cliente
 - [ ] **Intermediar + Receive**: fermo per scelta di Seba. Quando parte, si quota prima del codice → [[opero-intermediar-receive]]
-- [ ] **Riservatezza + non concorrenza a 5 anni** (25/09): non firmato, la controproposta lega la firma al saldo dei 2.000 € → [[accordo-riservatezza-opero]]
+- [ ] **Riservatezza + non concorrenza a 5 anni** (25/09): non firmato, la controproposta lega la firma al saldo, ora 1.000 € (30/09) → [[accordo-riservatezza-opero]]
 
 ## Collegamenti
 
