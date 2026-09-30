@@ -6,7 +6,7 @@ client: bar-tabacchi-fiftynine
 stack: [html, netlify]
 started: 2026-09-01
 deadline: TODO
-updated: 2026-09-23
+updated: 2026-09-30
 source: claude
 valore: TODO
 incassato: 0
@@ -172,6 +172,12 @@ linea al posto giusto: lo stato aperto non è più un buco. **Non vista su brows
 - [ ] **Chiedere le foto che mancano**: colazione, frittini, gyoza — sulla chiavetta non c'erano
 - [ ] Provare a mano il ramo `showDirectoryPicker` su Chrome da computer, e la pagina di modifica su iPhone: nel pannello parte sempre il ramo dei download
 - [ ] **Push di `59e2a7f`** (orari e scritte nella pagina di modifica): scrive su tutti e due i repo e va online sul dominio del bar. Decide Nicola
+
+✅ **Avviso cookie** — su home e menù dal 30 settembre 2026 (`464d0df`, online su
+`bartabacchi59.it`), chiesto da Nicola per tutti i siti su un dominio loro. Registra
+la scelta e non accende niente: il sito non ha cookie di analisi. Mancano la pagina
+dell'informativa (serve il titolare, `TODO`) e il link per riaprire la scelta;
+Google Fonts parte ancora da remoto. Dettaglio nel `CLAUDE.md` del repo.
 
 ✅ **Firma nel piè di pagina** — «Powered by DenkiCode», simbolo e link a
 `denkicode.com`, dalla sera dell'8 settembre 2026 (`c5cae57, commit locale in bartabaccheria59, non pushato`). Regola e markup in
