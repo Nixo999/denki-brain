@@ -46,6 +46,12 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 | 30/09, pomeriggio | Nicola con Claude (thread progetto opero) | [[opero]] | `Nixo999/opero-sito` (`main`, pushata → operotest) | — nessuno, solo codice | **Conti dell'ufficio con ore mancanti** (Seba: 106 ore dal lavoratore, 70 in ufficio). `useWorkerMonthHours` leggeva le chiamate di tutti in una richiesta sola e Supabase si ferma a 1000 righe: ora legge a pagine. Solo build verificata, non provata nel browser né sui dati | `b71289d` |
 | 30/09, pomeriggio | Patrick con Trevis (Opus) | [[opero]] · [[opero-intermediar-receive]] | `denki-brain` (`main`, pushata); `Nixo999/opero-sito` **solo letto** (clone in scratch, commit `3f980c6`), niente toccato | — nessuno | **CO-OPERO imparato, non costruito.** Riassetto di Patrick e Seba: portale gratuito, prima il flusso clienti → pagina Richieste, fornitori rimandati. Letto contro la specifica del 24/09 e contro il repo (un utente un'azienda, clienti senza login, niente notifiche web). Decisi con Patrick: pallino giallo, WhatsApp solo aspetto, 3 pagine cliente, Conti = stima alla chiusura, accesso link + codice, Richieste pagina a sé, notifica; stati delle richieste delegati a Claude. 4 domande aspettano Seba. Soldi: 1.400 incassati, 1.000 da incassare. Soci Patrick, Nicola, Seba (probabile) | `368d0fe` → `bc4fbd3` |
 
+## 2026-09-30
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| 30/09, fino alle 21:30 | Patrick con Trevis (Opus) | — banco DM | `denki-brain` (`main`, pushata) | — (il vault non ha database) | **`/banco`, prime liste per luogo: 100 siti e 61 ricerca pubblicati a blocchi.** Siti da MB 22, CO 50, LC 25, MI 3, senza bellezza; ricerca da MB 49 e CO 12. MB chiusa per tutte e due le liste. Ogni blocco riletto prima di pubblicarlo: complimenti riscritti con il verbo, deduzioni tolte, otto domini omonimi aperti. `/banco` 3-bis: i DM partono dall'account DenkiCode. `rotazione.csv` aggiornato → [[2026-09-30-siti-e-ricerca-mb-co-lc-mi]] | vedi git |
+
 ## 2026-09-29
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
