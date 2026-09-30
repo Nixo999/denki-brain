@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **250 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **255 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -69,6 +69,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-osteria-tarilli]] — ⚠️ Osteria Tarilli, Via Ronco Nuovo 2, 6949 Comano (TI), a 300 m dalla RSI.
 - [[sito-p0t-tattoo]] — Bozza sito per p0t_tattoo (Ruben, tatuatore anime e cartoon, Collegno TO) - mondo «Rodovetro × Retino», linea → puntinato → colore, Unbounded + Hanken Grotesk. Online su p0t-tattoo.netlify.app dal 24/9, giro 9 (mobile per primo, desktop pieno, testa con spessore), 8/8, slop 0, testo 0.
 - [[sito-perunpelo]] — Bozza sito Per un Pelo (toelettatura di Ambra Longoni, Nembro BG), lettere che si pettinano. Giro 3 online su perunpelo.netlify.app.
+- [[sito-petliving]] — Bozza sito Pet Living Toelettatura (Giussano MB, seconda sede Bovisio), lo stripping come mestiere. Chiesta da Nicola il 30/09, metodo a più modelli.
 - [[sito-pinkploy]] — Online su pinkploy.netlify.app per @nails_art_by_pinkploy, onicotecnica a Brescia centro - mondo B «lo spessore», l'unghia in quota.
 - [[sito-pizzeria-lobidu]] — ⚠️ Pizzeria Lobidù, pizzeria siciliana, Via IV Novembre 13, 21049 Tradate (VA).
 - [[sito-salone-di-andrea]] — ⚠️ Sito vetrina in una pagina per Il Salone di Andrea, parrucchiere donna e uomo di Andrea Bielli a Dalmine (BG), Viale Natale Betelli 58.
@@ -134,6 +135,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[p0t-tattoo]] — Ruben, tatuatore anime e cartoon (@p0t_tattoo, 307 follower) da K-Ink Studio Tattoo, via Adua 9b Collegno (TO). Ha risposto al DM del 24/09 - la bozza la vuole su Instagram.
 - [[parrucchiere-morgan]] — Portato da Morgan il 15/9: espone volantini e biglietti e parla coi clienti in cambio del sito gratis, zero percentuali. Nome TODO.
 - [[perunpelo]] — Ambra Longoni, groomer di Per un Pelo Toelettatura, Nembro (BG), @toelettatura.perunpelo. 5,0 su 102 su Google. Ha risposto al DM il 25/09 - vuole la bozza.
+- [[petliving]] — Pet Living Toelettatura, Giussano (MB) + Bovisio Masciago, @petlivingtoelettatura. Ha risposto al DM il 30/09, vuole vedere qualcosa. Bozza in sito-petliving.
 - [[pinkploy]] — Onicotecnica a Brescia centro, @nails_art_by_pinkploy, 832 follower. Bozza online dal 14/9, il secondo DM col link tocca a Patrick.
 - [[sebastian-torres]] — Privato, non un'azienda. Sta aprendo la sua attività, e l'attività è opero - l'app che stiamo costruendo noi è la sua idea imprenditoriale.
 - [[shaddai-extension-lash]] — Lash artist a domicilio a Bergamo, 736 follower, nessun sito - bozza costruita il 16 settembre 2026, DM non ancora inviato.
@@ -197,12 +199,15 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[canali-indiretti]] — Chi vende al posto vostro - caller, agenzie a performance, rivenditori. Prezzi al 13/9/2026. Primo segnalatore in casa: Morgan, 15/9.
 - [[ciclo-settimanale]] — Dettato da Patrick il 28 agosto 2026. È il processo fisso.
 - [[core-commerciale]] — Consultazione, non obbligo. I framework con cui si costruisce un testo commerciale.
+- [[didascalie-instagram]] — ⚠️ Testi pronti da copiare per le prime due settimane del piano Instagram - slide dei caroselli, righe dei Reel, didascalie e hashtag.
 - [[flusso-vendita]] — I quattro flussi di vendita e lo Straight Line - come un lead arriva alla chiusura.
 - [[generazione-lead]] — Il collo di bottiglia dell'azienda - da dove arrivano i lead e quanti ne servono.
 - [[materiale-offline]] — Quello che abbiamo di fisico, e a cosa è agganciato.
 - [[materiale-social]] — I post e le storie Instagram di DenkiCode - cosa e' uscito, con che testo, e dove stanno i file e il sorgente per rifarli.
+- [[piano-instagram]] — ⚠️ Cosa pubblica @denkicode, quanto, quando, con che didascalie e hashtag. Deciso da Trevis il 30/09/2026 su delega di Patrick, si rivede a 4 settimane.
 - [[presidi-volantini]] — ⚠️ Terzo canale, deciso il 28/8/2026. Primo presidio vero il 15/9/2026: un parrucchiere via Morgan, pagato col sito gratis, non a risultato.
 - [[prodotti-e-listino]] — I quattro prodotti e i prezzi. I prezzi sono indicativi - l'aggancio, non la cifra finale.
+- [[ricerca-instagram]] — ⚠️ Come funziona Instagram al 30/09/2026 per un profilo piccolo - algoritmo, orari, hashtag, didascalie, API - e chi vende siti su Instagram. Con le fonti.
 - [[stile-comunicazione]] — Il registro dei testi che legge un cliente - Lei o Tu, voce di Patrick. Non e' il registro di Trevis.
 
 **report/**
