@@ -62,9 +62,28 @@ NYC, Petin Milano): palette corta e calda, serif sui titoli in 2 su 5, prezzo
 fuori dalla home, nessuno disegna. Le 376 recensioni Facebook non si
 confrontano coi numeri Google degli altri.
 
-## Il mondo scelto
+## Il mondo scelto — «Il Manto»
 
-`TODO` — si scrive alla scelta, con il seed di impeccable.
+Seed di impeccable `a2bab22e`. Tre mondi in `MONDI.md` del repo: «L'Agenda»
+(la settimana martedì-sabato, assegnato dal tiro), «Il Manto» (scelto), «La
+Posa» (il loro set fotografico a piani di colore, innestato). Scelto dal
+direttore il 30/09 perché è l'unico che mette al centro lo stripping, cioè
+il motivo per cui la gente fa strada per venire da loro: non si sposta su
+un'altra toelettatura.
+
+**La metafora.** Il ciclo del pelo duro, che si toglia a mano tre o quattro
+volte l'anno. Il nome si spoglia di un livello di tratti; la spina è un dente
+di sega di dodici mesi, coi mesi dello stripping marcati. Campi blu parete e
+nero tavolo, accento arancio del fiocco.
+
+**Innesti.** Da «La Posa» i piani di colore sovrapposti come trattamento
+unico delle sei foto e come spessore della testa. Da «L'Agenda» solo la riga
+«oggi» negli orari, mai «aperto adesso».
+
+**Limiti dati alla costruzione.** Il dente di sega è un segno discreto, non
+una linea che cresce con lo scroll né un grafico con assi; il nome che si
+spoglia è tipografia, nessun disegno figurativo; sul telefono niente pin. Lo
+stripping non ha una foto: si racconta, e la foto si chiede a loro.
 
 ## Giri
 
@@ -74,7 +93,7 @@ confrontano coi numeri Google degli altri.
 
 ## Da chiedere a Pet Living
 
-1. Il file del logo, e i colori ufficiali.
+1. Il file del logo, i colori ufficiali e **una foto di stripping** (nessuna delle sei lo mostra).
 2. Nomi dei titolari e come vogliono comparire.
 3. Il negozio che li ospita: si nomina o no?
 4. Servizi che fanno davvero, oltre a bagno, tosatura, forbice e stripping.
