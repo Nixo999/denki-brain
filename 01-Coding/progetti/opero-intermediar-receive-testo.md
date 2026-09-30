@@ -576,8 +576,10 @@ L'integrazione tra le due piattaforme si divide in due flussi speculari.
 **Precisazioni di Patrick, 30/09/2026**
 
 - «per quanto riguarda WhatsApp si intende solo l'aspetto, non una chat»
-- «Va benissimo aggiungere il pallino giallo se viene modificato»- «per la questione pallini, decidi tu, nel senso, magari cambia anche il tipo, io ho pensato ai pallini perché era comodo a livello visivo»
+- «Va benissimo aggiungere il pallino giallo se viene modificato»
+- «per la questione pallini, decidi tu, nel senso, magari cambia anche il tipo, io ho pensato ai pallini perché era comodo a livello visivo»
 - «coopero è gratuito perché serve alle aziende che non hanno opero, ok? Invece opero è quello a pagamento e l'obiettivo è far diventare a pagamento, o meglio, probabilmente in futuro diventerà a pagamento anche coopero, ma l'obiettivo è anche che chi utilizza coopero sia talmente tanto preso da questa cosa che gli venga voglia di acquistare opero»
+- «conti è proprio sbagliata, infatti conti deve essere solo che quando si chiude il lavoro il, ehm cliente, vede, pressa poco, in maniera non precisa, quindi una stima, di quanto dovrà pagare. E basta. E anche le pagine devono essere semplicemente il nuovo lavoro, lavori in corso, barra, lavori in generale, e conti. Fine.»
 
 **Mockup di Patrick, 30/09/2026**
 
