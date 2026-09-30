@@ -20,7 +20,7 @@ codice, niente quotazione, niente date. Testi integrali →
 
 - **OperO** è il gestionale a pagamento dell'azienda. **CO-OPERO** è un portale web **gratuito** con due sezioni, per chi OperO non ce l'ha. Deciso da Patrick e Seba (30/09): supera il Receive a pagamento del 24/09.
 - **Perché è gratis**, parole di Patrick (30/09): «coopero è gratuito perché serve alle aziende che non hanno opero», «probabilmente in futuro diventerà a pagamento anche coopero, ma l'obiettivo è anche che chi utilizza coopero sia talmente tanto preso da questa cosa che gli venga voglia di acquistare opero». **CO-OPERO è l'amo, OperO è la vendita.**
-- **Flusso 1, in entrata.** CO-OPERO Clienti ha **tre pagine e basta** (Patrick, 30/09): **Nuovo lavoro** (chi serve, data e ora, luogo, note), **Lavori** (in corso e tutti), **Conti**. **Conti è solo una stima**: a lavoro chiuso il cliente vede, all'incirca, quanto dovrà pagare. Niente saldo, niente pagamenti. In OperO la richiesta atterra nella pagina **Richieste**: elenco di aziende clienti con l'aspetto di WhatsApp, **non una chat** (Patrick, 30/09), con gli stati qui sotto. Accettare vuol dire mettere nomi e cellulari dei lavoratori e le note: nasce il lavoro in OperO e la conferma torna al cliente.
+- **Flusso 1, in entrata.** CO-OPERO Clienti ha **tre pagine e basta** (Patrick, 30/09): **Nuovo lavoro** (chi serve, data e ora, luogo, note), **Lavori** (in corso e tutti), **Conti**. **Conti è solo una stima**: a lavoro chiuso il cliente vede, all'incirca, quanto dovrà pagare. Niente saldo, niente pagamenti. In OperO la richiesta atterra nella pagina **Richieste**: elenco di aziende clienti con l'aspetto di WhatsApp, **non una chat** (Patrick, 30/09), con gli stati di [[co-opero-clienti]]. Accettare vuol dire mettere nomi e cellulari dei lavoratori e le note: nasce il lavoro in OperO e la conferma torna al cliente.
 - **Flusso 2, in uscita.** Dalla pagina **Gruppo** (Intermediar) l'azienda chiede manodopera a una cooperativa o a un fornitore. Il fornitore, da CO-OPERO Fornitori, accetta o rifiuta. Se accetta mette ruoli e nomi, conferma, e lo stato torna nella scheda di Gruppo.
 - **Richieste** riceve solo dai clienti, **Gruppo** manda solo ai fornitori.
 - **Prima il flusso 1** (Patrick, 30/09): «il portale fornitori [...] lo vedremo in un secondo momento, ora ci dobbiamo concentrare solo su questa parte». Gruppo e CO-OPERO Fornitori aspettano.
@@ -41,80 +41,10 @@ codice, niente quotazione, niente date. Testi integrali →
 > - **«Richieste» cambia significato**: il 24/09 era una tab dentro
 >   Intermediar, in uscita. Il 30/09 è la pagina in entrata.
 
-## Flusso 1 — cosa ha deciso Patrick il 30/09
+## Flusso 1, stati e mockup → [[co-opero-clienti]]
 
-Parole intere in [[opero-intermediar-receive-testo]].
-
-- **Accesso**: il cliente che oggi scrive su WhatsApp riceve dalla segreteria un link, entra in CO-OPERO col suo codice («come Alus001») e da lì manda le richieste.
-- **Richieste è una pagina a sé** in OperO, staccata da Nuovo lavoro, che resta **manuale**: «lo so che è ridondante ma preferisco così».
-- **Dove va**: in futuro Nuovo lavoro sparisce, perché «non ci dovranno essere clienti che non usano Coopero». Per ora le pagine sono due.
-- **Chi ti serve**: più lavoratori, di tipi diversi, nella stessa richiesta.
-- **Stima dei Conti**: arriva da sola quando il lavoro si chiude su OperO, come la chiusura di oggi.
-- **Notifica**: sì, la segreteria la riceve quando arriva una richiesta.
-- **Aspettano Seba**: accetto con modifica, motivo del rifiuto, modifica e annullamento del cliente, cambio di un lavoratore dopo la conferma.
-
-> [!note] Analisi di Claude — 30/09/2026
-> - **Il codice identifica, non protegge.** «Alus001» si indovina: chi prova
->   Alus002 vede nomi e cellulari dei lavoratori e i costi di un altro
->   cliente. Il codice può restare quello che il cliente vede, l'accesso
->   deve passare da qualcosa che non si indovina: il link lungo, un PIN, un
->   codice via SMS. `TODO` Nicola.
-> - **Una voce in più sul telefono**: con Richieste l'isola in basso passa da
->   4 a 5 voci, 7 per un admin con Gestione. Scelta di Patrick.
-> - **La notifica non esiste ancora**: oggi le push partono solo dalla
->   segreteria verso i lavoratori. Una richiesta del cliente ne vuole una
->   che parta dal server.
-> - **La stima può muoversi**: se la segreteria corregge le ore dopo la
->   chiusura, la stima si aggiorna. È una stima, ma il cliente lo vede.
-
-## Gli stati — decisi il 30/09
-
-Patrick: «per la questione pallini, decidi tu [...] io ho pensato ai pallini
-perché era comodo a livello visivo». Scelta di Claude (30/09), da far vedere a
-Nicola e Seba prima di costruirla.
-
-- **Lo stato è della richiesta, il numero è di chi deve muoversi.** Nella lista delle aziende, in Richieste e in Gruppo, ogni riga ha solo un numero tondo come i messaggi non letti di WhatsApp: quante richieste aspettano **te**. In cima chi ha qualcosa da fare, poi l'ultima attività. Così un cliente con una richiesta nuova e una rifiutata non ha un colore conteso.
-- **Dentro l'azienda, ogni richiesta ha un'etichetta con colore e parola**, mai il colore da solo: rosso e verde sono la coppia che un daltonico confonde.
-
-| Stato | Colore | Chi deve muoversi |
-|---|---|---|
-| Nuova (per chi la manda: «In attesa») | blu | chi la riceve |
-| Modificata, la conferma è caduta | giallo, col diff | chi la riceve |
-| Confermata | verde | nessuno |
-| In corso, il giorno del lavoro, da sola | verde | nessuno |
-| Chiusa (completata o incompleta, come in OperO) | grigio, card attenuata | nessuno |
-| Rifiutata | rosso | nessuno |
-| Annullata da chi l'ha chiesta | grigio | nessuno |
-
-- **Stesse parole ai due capi**: è la stessa richiesta, cambia solo chi ha il numero.
-
-## Il mockup del 30/09 — cosa aggiunge, cosa non torna
-
-Otto schermate di Patrick, «da prendere con le pinze», descritte in
-[[opero-intermediar-receive-testo]]. Si legge l'idea, non il disegno.
-
-> [!note] Analisi di Claude — 30/09/2026
-> - **Aggiunge**: in OperO, Richieste e Gruppo diventano due voci del menu.
->   Le pagine del cliente le ha poi fissate Patrick: tre, senza Home (sopra).
->   Quelle del fornitore nel mockup sono Home, Richieste, Lavori, Conti. `TODO`
-> - **Gruppo voce di menu** contro il 24/09, che voleva Intermediar «un
->   controllo a destra della bottom nav, non una quinta voce». `TODO`
-> - **Le parole degli stati cambiano a ogni schermata**: In attesa, Da
->   valutare e Nuova richiesta sono la stessa cosa. Il giallo non c'è ancora.
-> - **Nella pagina Richieste lo stato sta sulla riga dell'azienda**: è il caso
->   che il numero tondo risolve. Il numero c'è già nel menu del fornitore.
-> - **Manca «Rifiuta»** nel dettaglio: c'è solo «Accetta e crea commessa».
-> - **Manca «quanti»**: «Chi ti serve?» è una figura sola, e il dettaglio
->   accetta due nomi. Il caso vero è 8 facchini, o 2 facchini e un autista.
-> - **Nomi e cellulari in due liste separate**: in OperO il lavoratore ha già
->   il telefono nel profilo, sceglierlo basta. Un nome aggiunto a mano in un
->   lavoro non entra: serve un account.
-> - ~~«Saldo disponibile» e «Accredito»~~: sbagliati, Patrick (30/09). Conti è
->   la stima a lavoro chiuso. Si calcola con quello che c'è già, le tariffe
->   del cliente e `invoiceEngine` sulle ore vere; il cliente vede il totale,
->   non le regole, che oggi legge solo la segreteria.
-> - Dopo l'accettazione la richiesta diventa un lavoro, e il cliente la segue
->   fino in fondo: da qui lo stato «In corso» nella tabella sopra.
+Le decisioni di Patrick sul flusso dei clienti, gli stati delle richieste e il
+mockup del 30/09 stanno in una nota a sé.
 
 ## Cosa dice il repo oggi
 
@@ -150,7 +80,7 @@ toccato.
 
 ## Buchi — da chiedere a Seba quando si parte
 
-- **Le quattro del flusso 1 che aspettano lui** (sopra, 30/09).
+- **Le quattro del flusso 1 che aspettano lui** (30/09) → [[co-opero-clienti]].
 - **Come entra un fornitore su CO-OPERO**: il cliente entra con link e codice (30/09), il fornitore non è deciso.
 - **Da dove vengono i € dei Conti del flusso 2**: il fornitore non ha tariffa.
 - **I 40 facchini** non esistono come entità: manca il fabbisogno padre, e con lui il «40 su 40 coperti».
@@ -159,5 +89,5 @@ toccato.
 
 ## Collegamenti
 
-[[opero]] · [[sebastian-torres]] · [[opero-intermediar-receive-testo]] ·
+[[opero]] · [[co-opero-clienti]] · [[sebastian-torres]] · [[opero-intermediar-receive-testo]] ·
 [[accordo-riservatezza-opero]] · [[stack]] · [[modifiche-al-database]]
