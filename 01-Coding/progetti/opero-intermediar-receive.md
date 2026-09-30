@@ -20,7 +20,7 @@ codice, niente quotazione, niente date. Testi integrali →
 
 - **OperO** è il gestionale a pagamento dell'azienda. **CO-OPERO** è un portale web **gratuito** con due sezioni, per chi OperO non ce l'ha. Deciso da Patrick e Seba (30/09): supera il Receive a pagamento del 24/09.
 - **Perché è gratis**, parole di Patrick (30/09): «coopero è gratuito perché serve alle aziende che non hanno opero», «probabilmente in futuro diventerà a pagamento anche coopero, ma l'obiettivo è anche che chi utilizza coopero sia talmente tanto preso da questa cosa che gli venga voglia di acquistare opero». **CO-OPERO è l'amo, OperO è la vendita.**
-- **Flusso 1, in entrata.** Il cliente dell'azienda, da CO-OPERO Clienti, fa «Richiedi nuovo lavoro» (chi serve, data e ora, luogo, note), poi segue «Lavori richiesti» e «Conti». In OperO la richiesta atterra nella pagina **Richieste**: elenco di aziende clienti con l'aspetto di WhatsApp, **non una chat** (Patrick, 30/09), con gli stati qui sotto. Accettare vuol dire mettere nomi e cellulari dei lavoratori e le note: nasce il lavoro in OperO e la conferma torna al cliente.
+- **Flusso 1, in entrata.** CO-OPERO Clienti ha **tre pagine e basta** (Patrick, 30/09): **Nuovo lavoro** (chi serve, data e ora, luogo, note), **Lavori** (in corso e tutti), **Conti**. **Conti è solo una stima**: a lavoro chiuso il cliente vede, all'incirca, quanto dovrà pagare. Niente saldo, niente pagamenti. In OperO la richiesta atterra nella pagina **Richieste**: elenco di aziende clienti con l'aspetto di WhatsApp, **non una chat** (Patrick, 30/09), con gli stati qui sotto. Accettare vuol dire mettere nomi e cellulari dei lavoratori e le note: nasce il lavoro in OperO e la conferma torna al cliente.
 - **Flusso 2, in uscita.** Dalla pagina **Gruppo** (Intermediar) l'azienda chiede manodopera a una cooperativa o a un fornitore. Il fornitore, da CO-OPERO Fornitori, accetta o rifiuta. Se accetta mette ruoli e nomi, conferma, e lo stato torna nella scheda di Gruppo.
 - **Richieste** riceve solo dai clienti, **Gruppo** manda solo ai fornitori.
 
@@ -67,9 +67,9 @@ Otto schermate di Patrick, «da prendere con le pinze», descritte in
 [[opero-intermediar-receive-testo]]. Si legge l'idea, non il disegno.
 
 > [!note] Analisi di Claude — 30/09/2026
-> - **Aggiunge**: CO-OPERO cliente ha Home, Richiedi nuovo lavoro, Lavori
->   richiesti, Conti; CO-OPERO fornitore ha Home, Richieste, Lavori, Conti. In
->   OperO, Richieste e Gruppo diventano due voci del menu.
+> - **Aggiunge**: in OperO, Richieste e Gruppo diventano due voci del menu.
+>   Le pagine del cliente le ha poi fissate Patrick: tre, senza Home (sopra).
+>   Quelle del fornitore nel mockup sono Home, Richieste, Lavori, Conti. `TODO`
 > - **Gruppo voce di menu** contro il 24/09, che voleva Intermediar «un
 >   controllo a destra della bottom nav, non una quinta voce». `TODO`
 > - **Le parole degli stati cambiano a ogni schermata**: In attesa, Da
@@ -82,10 +82,10 @@ Otto schermate di Patrick, «da prendere con le pinze», descritte in
 > - **Nomi e cellulari in due liste separate**: in OperO il lavoratore ha già
 >   il telefono nel profilo, sceglierlo basta. Un nome aggiunto a mano in un
 >   lavoro non entra: serve un account.
-> - **«Saldo disponibile» e «Accredito» sono un portafoglio**, cioè soldi che
->   passano dalla piattaforma. Il 30/09 i Conti erano «vedere i costi e la
->   rendicontazione». Nel repo c'è «fatturato» (`invoiced_at`), un «pagato»
->   non l'ho visto. `TODO`
+> - ~~«Saldo disponibile» e «Accredito»~~: sbagliati, Patrick (30/09). Conti è
+>   la stima a lavoro chiuso. Si calcola con quello che c'è già, le tariffe
+>   del cliente e `invoiceEngine` sulle ore vere; il cliente vede il totale,
+>   non le regole, che oggi legge solo la segreteria.
 > - Dopo l'accettazione la richiesta diventa un lavoro, e il cliente la segue
 >   fino in fondo: da qui lo stato «In corso» nella tabella sopra.
 
