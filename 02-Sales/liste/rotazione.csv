@@ -4,14 +4,14 @@ siti,MB,barbieri,parziale,2,2026-09-11,
 siti,MB,parrucchieri,parziale,8,2026-09-11,
 siti,MB,unghie,parziale,21,2026-09-11,
 siti,MB,estetica,parziale,12,2026-09-11,
-siti,CO,tatuatori e piercing,parziale,15,2026-09-10,
+siti,CO,tatuatori e piercing,parziale,18,2026-09-30,"30/09: 16 profili, 3 righe"
 siti,CO,"ciglia, sopracciglia e PMU",parziale,2,2026-09-10,
 siti,CO,parrucchieri,parziale,4,,
 siti,CO,unghie,parziale,6,2026-09-10,
 siti,CO,estetica,parziale,3,2026-09-10,
 siti,CO,trucco sposa e wedding,parziale,2,,
-siti,CO,toelettature e dog trainer,parziale,3,2026-09-10,
-siti,CO,ristorazione,parziale,15,2026-09-09,
+siti,CO,toelettature e dog trainer,esaurito,4,2026-09-30,"30/09: 29 profili, 1 riga. Finito per resa"
+siti,CO,ristorazione,parziale,17,2026-09-30,"30/09: 5 profili, 2 righe"
 siti,MI,unghie,parziale,8,2026-09-12,
 siti,MI,estetica,parziale,1,2026-09-12,
 siti,LC,tatuatori e piercing,parziale,9,2026-09-10,
@@ -206,3 +206,8 @@ siti,MB,fotografi e videomaker,esaurito,4,2026-09-29,"30/09: 30 profili, 4 righe
 siti,MB,fioristi e wedding planner,esaurito,4,2026-09-29,"30/09: 29 profili, 4 righe. Finito per resa"
 siti,MB,ristorazione,esaurito,2,2026-09-29,"30/09: 31 profili, 2 righe. Finito per resa"
 ricerca,MB,meccanica e carpenterie,parziale,1,2026-09-29,"30/09: 11 profili, 1 riga. Aperto"
+siti,CO,"personal trainer, pilates e yoga",esaurito,2,2026-09-30,"30/09: 30 profili, 2 righe. Finito per resa"
+siti,CO,pasticcerie e cake designer,parziale,9,2026-09-30,"30/09: 43 profili, 9 righe. Rende: da continuare sui comuni piccoli"
+siti,CO,"sartorie, atelier e tappezzieri",esaurito,2,2026-09-30,"30/09: 20 profili, 2 righe. Fonti finite"
+siti,CO,fotografi e videomaker,parziale,1,2026-09-30,"30/09: 13 profili, 1 riga, 11 col sito"
+siti,CO,fioristi e wedding planner,parziale,0,2026-09-30,"30/09: 6 profili, 0 righe"
