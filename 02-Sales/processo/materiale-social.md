@@ -1,7 +1,7 @@
 ---
 riga: I post e le storie Instagram di DenkiCode - cosa e' uscito, con che testo, e dove stanno i file e il sorgente per rifarli.
 type: risorsa
-updated: 2026-09-25
+updated: 2026-09-30
 source: claude
 verificato: 2026-09-16
 tags: [social, materiale, lead]
@@ -14,6 +14,10 @@ fisico sta in [[materiale-offline]], l'identita' visiva in [[identita-visiva]].
 
 ⚠️ **L'handle del profilo non e' scritto da nessuna parte nel vault.** `TODO` -
 lo scrive Patrick qui la prima volta che pubblica.
+
+**Dal 30 settembre 2026 la pubblicazione passa a uno script** con l'API
+ufficiale di Instagram, scelta di Patrick: finche' Nicola non lo costruisce si
+pubblica a mano → [[2026-09-30-instagram-pubblicazione-api]].
 
 ## Perche' esiste questa nota
 

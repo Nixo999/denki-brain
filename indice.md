@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **248 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **249 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -319,6 +319,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-23-fiftynine-pubblica-da-solo]] — ⚠️ Fiftynine - la pagina di modifica pubblica da sola come V-BAG (Netlify Function + commit su GitHub), ma in un commit solo e con la parola d'ordine in sessionStorage.
 - [[2026-09-27-daily-abolita]] — Le daily non si scrivono più - la giornata sta nel registro interventi, lo stato in FATTI sotto le 80 righe. Approvata da Nicola il 27/09/2026.
 - [[2026-09-27-verificato-in-chiusura]] — verificato lo scrive /chiudi-sessione sulle note toccate in sessione che Nicola o Patrick approvano. 109 note su 246 erano ipotesi. 27/09/2026.
+- [[2026-09-30-instagram-pubblicazione-api]] — Post e storie di DenkiCode li pubblica uno script con l'API ufficiale di Instagram. Deciso da Patrick il 30/09/2026, tocca a Nicola.
 
 ## 06-Daily
 
