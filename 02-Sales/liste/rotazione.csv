@@ -101,10 +101,10 @@ siti,CN,fotografi e videomaker,parziale,4,2026-09-23,
 siti,CN,trucco sposa e wedding,parziale,3,2026-09-23,
 siti,TI,toelettature e dog trainer,parziale,2,2026-09-10,
 siti,TI,altro,parziale,1,2026-09-10,righe sparse di settori fuori elenco
-ricerca,MB,falegnamerie,parziale,2,2026-09-23,
-ricerca,MB,impiantisti,parziale,4,2026-09-29,
-ricerca,MB,officine e carrozzerie,parziale,6,2026-09-25,
-ricerca,MB,edilizia e serramenti,parziale,6,2026-09-23,
+ricerca,MB,falegnamerie,esaurito,5,2026-09-29,"30/09: 28 profili, 3 righe. Finito per resa"
+ricerca,MB,impiantisti,esaurito,5,2026-09-29,"30/09: 30 profili, 1 riga. Finito per resa"
+ricerca,MB,officine e carrozzerie,esaurito,11,2026-09-29,"30/09: 31 profili, 5 righe. Finito per resa: le strutturate sono quasi solo concessionarie"
+ricerca,MB,edilizia e serramenti,esaurito,11,2026-09-29,"30/09: 33 profili, 5 righe. Finito per resa"
 ricerca,MB,ingrossi e distribuzione,parziale,1,2026-09-19,
 ricerca,MB,trasporti e logistica,parziale,1,2026-09-21,
 ricerca,MB,alimentari artigianali,parziale,2,2026-09-29,
@@ -198,3 +198,11 @@ ricerca,MN,impiantisti,parziale,1,2026-09-29,
 ricerca,MN,officine e carrozzerie,parziale,3,2026-09-21,
 ricerca,MN,ingrossi e distribuzione,parziale,1,2026-09-23,
 ricerca,MN,aziende agricole con vendita,parziale,3,2026-09-29,
+siti,MB,toelettature e dog trainer,esaurito,6,2026-09-29,"29-30/09: 36 profili, 6 righe. Finito per resa: sotto i 200 follower, franchising, dentro i pet shop"
+siti,MB,"personal trainer, pilates e yoga",esaurito,3,2026-09-29,"30/09: 31 profili, 3 righe. Finito per resa. Dagli hashtag restano una quindicina di insegnanti mai aperti"
+siti,MB,pasticcerie e cake designer,esaurito,3,2026-09-29,"30/09: 30 profili, 3 righe. Finito per resa, 4 gia contattate"
+siti,MB,"sartorie, atelier e tappezzieri",esaurito,0,2026-09-29,"30/09: 17 profili, 0 righe. Finito: la ricerca non restituisce altri profili di MB"
+siti,MB,fotografi e videomaker,esaurito,4,2026-09-29,"30/09: 30 profili, 4 righe. Finito per resa: quasi tutti hanno il sito"
+siti,MB,fioristi e wedding planner,esaurito,4,2026-09-29,"30/09: 29 profili, 4 righe. Finito per resa"
+siti,MB,ristorazione,esaurito,2,2026-09-29,"30/09: 31 profili, 2 righe. Finito per resa"
+ricerca,MB,meccanica e carpenterie,parziale,1,2026-09-29,"30/09: 11 profili, 1 riga. Aperto"
