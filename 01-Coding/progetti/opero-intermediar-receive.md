@@ -12,13 +12,14 @@ tags: [opero, intermediar, receive, co-opero, specifica, sebastian-torres]
 **Da conoscere, non da fare.** Seba ha mandato la specifica il 24/09/2026 per
 farla conoscere, **non per iniziarla**. Il 30/09 Patrick ha portato un
 riassetto, anche quello da imparare e non da costruire: «non mettere mano al
-codice». Niente codice, niente quotazione, niente date. Testi integrali →
+codice». L'hanno riorganizzato **Patrick e Seba insieme** (30/09). Niente
+codice, niente quotazione, niente date. Testi integrali →
 [[opero-intermediar-receive-testo]].
 
 ## Il modello del 30/09: OperO al centro, CO-OPERO doppio ponte
 
-- **OperO** è il gestionale a pagamento dell'azienda. **CO-OPERO** è un portale web **gratuito** con due sezioni, per chi OperO non ce l'ha (30/09).
-- **Flusso 1, in entrata.** Il cliente dell'azienda, da CO-OPERO Clienti, fa «Richiedi nuovo lavoro» (chi serve, data e ora, luogo, note), poi segue «Lavori richiesti» e «Conti». In OperO la richiesta atterra nella pagina **Richieste**: elenco di aziende clienti come su WhatsApp, col pallino 🔵 nuova · 🔴 rifiutata · 🟢 accettata. Accettare vuol dire mettere nomi e cellulari dei lavoratori e le note: nasce il lavoro in OperO e la conferma torna al cliente.
+- **OperO** è il gestionale a pagamento dell'azienda. **CO-OPERO** è un portale web **gratuito** con due sezioni, per chi OperO non ce l'ha. Deciso da Patrick e Seba (30/09): supera il Receive a pagamento del 24/09.
+- **Flusso 1, in entrata.** Il cliente dell'azienda, da CO-OPERO Clienti, fa «Richiedi nuovo lavoro» (chi serve, data e ora, luogo, note), poi segue «Lavori richiesti» e «Conti». In OperO la richiesta atterra nella pagina **Richieste**: elenco di aziende clienti con l'aspetto di WhatsApp, **non una chat** (Patrick, 30/09), col pallino 🔵 nuova · 🟡 modificata dopo la conferma · 🟢 accettata · 🔴 rifiutata. Accettare vuol dire mettere nomi e cellulari dei lavoratori e le note: nasce il lavoro in OperO e la conferma torna al cliente.
 - **Flusso 2, in uscita.** Dalla pagina **Gruppo** (Intermediar) l'azienda chiede manodopera a una cooperativa o a un fornitore. Il fornitore, da CO-OPERO Fornitori, accetta o rifiuta. Se accetta mette ruoli e nomi, conferma, e lo stato torna nella scheda di Gruppo.
 - **Richieste** riceve solo dai clienti, **Gruppo** manda solo ai fornitori.
 
@@ -30,13 +31,12 @@ codice». Niente codice, niente quotazione, niente date. Testi integrali →
 >   chiede a Bolanos è flusso 2 per BluNotte e flusso 1 per Bolanos. È il
 >   principio del 24/09, «una richiesta, un'entità sola», e regge ancora.
 > - **Gratis contro pagato.** Il 24/09 Receive era OperO ridotto, ~49,90 €/mese
->   dopo 30 giorni, e il §40 di Seba dice «Receive non deve diventare OperO
->   gratuito». Il 30/09 CO-OPERO è gratuito. Se la scelta è di Seba supera il
->   24/09, se no è una proposta da portargli. `TODO`
+>   dopo 30 giorni, e il §40 dice «Receive non deve diventare OperO
+>   gratuito». Il 30/09 Patrick e Seba lo fanno gratuito: il 24/09 è superato.
 > - **«Richieste» cambia significato**: il 24/09 era una tab dentro
 >   Intermediar, in uscita. Il 30/09 è la pagina in entrata.
-> - **Tre pallini non coprono il ciclo del 24/09**: mancano «modificata dopo
->   la conferma» (il giallo, con la conferma che cade), «chiusa» e
+> - **Il giallo è entrato** (Patrick, 30/09: «va benissimo aggiungere il
+>   pallino giallo se viene modificato»). Restano fuori «chiusa» e
 >   l'annullamento del cliente. E il pallino sta sull'azienda, non sulla
 >   richiesta: stesso cliente, una nuova e una rifiutata, che colore? `TODO`
 
@@ -51,7 +51,7 @@ toccato.
 - **Chi sta in un lavoro deve avere un account** (`job_assignments.worker_id` → `auth.users`). Nomi e telefoni battuti da un fornitore lì non entrano. Il concetto più vicino sono i lavoratori provvisori, mai iniziati.
 - **I prezzi al cliente ci sono**: tariffe per cliente e per mansione, calcolate da `lib/invoiceEngine.ts`. I Conti del flusso 1 sanno da dove prendere i €. Per i fornitori del flusso 2 una tariffa non esiste.
 - **Niente tempo reale, niente notifiche web.** Le push sono solo native (FCM, APNs) e partono dalla segreteria: un portale web oggi non riceve niente da solo.
-- **La chat c'è nel database e non si usa**: tabelle `chat_*` mai collegate, chat tolta da Seba il 4/08. «Tipo WhatsApp» va letto come aspetto, non come chat. `TODO`
+- **La chat c'è nel database e non si usa**: tabelle `chat_*` mai collegate, chat tolta da Seba il 4/08. «Tipo WhatsApp» è solo l'aspetto (Patrick, 30/09): la chat resta fuori.
 - **Un lavoro non ha una colonna di stato**: si ricava da annullato, chiuso, fatturato. Il pallino sarebbe il primo stato scritto.
 
 ## Regole del flusso, dal 24/09
@@ -71,13 +71,12 @@ un'azienda senza OperO.
 
 1. **Lavoro nuovo, fuori dai 2.400 €**, e col flusso 1 più grande del 24/09: sono tre facce nuove (Richieste, Gruppo, il portale). I 2.000 € del primo non sono entrati → [[opero]].
 2. **Una richiesta con due proprietari**: la stessa riga letta da chi chiede e da chi esegue, con campi diversi, e lo storico delle modifiche per il diff. Le policy oggi ragionano per un'azienda sola.
-3. **Il ricavo di Seba**: se CO-OPERO è gratis, il piano di Receive in `workspace_plans` sparisce e con lui un'entrata prevista il 24/09.
+3. **Il ricavo di Seba**: con CO-OPERO gratis il piano di Receive in `workspace_plans` non serve più, e un portale gratuito rende solo se porta aziende a OperO.
 4. **Nomi e telefoni passano da un'azienda all'altra**, ora in tutti e due i versi: i lavoratori dell'azienda al cliente (flusso 1), quelli del fornitore all'azienda (flusso 2). Serve una base, e non è una scelta tecnica.
 5. **L'accordo del 25/09** mette «Coopero/cOperO» nel perimetro della non concorrenza → [[accordo-riservatezza-opero]].
 
 ## Buchi — da chiedere a Seba quando si parte
 
-- **Chi ha deciso il 30/09**, e se CO-OPERO gratis supera il modello a pagamento.
 - **Come entra un cliente o un fornitore su CO-OPERO**: invito dall'azienda o iscrizione libera.
 - **Da dove vengono i € dei Conti del flusso 2**: il fornitore non ha tariffa.
 - **I 40 facchini** non esistono come entità: manca il fabbisogno padre, e con lui il «40 su 40 coperti».

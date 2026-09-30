@@ -524,8 +524,8 @@ Questi punti sono vincolanti nella progettazione:
 
 ## Riassetto del 30/09/2026 — CO-OPERO bilaterale
 
-Portato da Patrick il 30/09/2026 con «abbiamo riorganizzato le idee» (chi,
-oltre a lui: `TODO`). È il prompt che si erano preparati per Claude, scritto
+Portato da Patrick il 30/09/2026 con «abbiamo riorganizzato le idee»: «siamo
+io e Seba insieme che abbiamo riorganizzato la struttura». È il prompt che si erano preparati per Claude, scritto
 con un assistente AI: qui sta com'è arrivato, tolto il preambolo della chat.
 Cosa cambia rispetto al 24/09 → [[opero-intermediar-receive]].
 
@@ -572,3 +572,8 @@ L'integrazione tra le due piattaforme si divide in due flussi speculari.
 > Tieni in considerazione questa struttura bipolare per definire la logica di
 > routing delle API, i dati di DB da scambiare (payload richieste, nominativi,
 > cambi di stato del pallino 🔵/🟢/🔴) e l'interfaccia utente.
+
+**Precisazioni di Patrick, 30/09/2026**
+
+- «per quanto riguarda WhatsApp si intende solo l'aspetto, non una chat»
+- «Va benissimo aggiungere il pallino giallo se viene modificato»
