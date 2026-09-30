@@ -34,7 +34,7 @@ cosa aperta. Il racconto dei giri sta nella nota progetto, la giornata nel
 
 | Sito | Online su | Stato (data) | Prossimo passo |
 |---|---|---|---|
-| [[sito-petliving]] | petliving.netlify.app | giro 1 (30/09), catture **non guardate** dal direttore, polish saltato; loro: «Se vuole mandarci qualcosa intanto» | Nicola guarda a 375 e 1440, poi il DM col link; foto di stripping e logo da chiedere |
+| [[sito-petliving]] | petliving.netlify.app | giro 2 (30/09) dopo il verdetto di Nicola; 375 guardata, 1440 no; loro: «Se vuole mandarci qualcosa intanto» | verdetto di Nicola sul giro 2, poi il DM col link; foto di stripping e logo da chiedere |
 | [[sito-soul-ink]] | soul-ink-torino.netlify.app | giro 3 (26/09), verdetto di Nicola `TODO` | DM Instagram; lo studio non ha contatti pubblici |
 | [[sito-perunpelo]] | perunpelo.netlify.app | giro 3 (25/09), verdetto `TODO`; lei ha detto sì il 25/09 | DM, domande per Ambra in [[perunpelo]] |
 | [[sito-leibeautyroom]] | leibeautyroom.netlify.app | giro 7 (25/09): stanze chiuse che si aprono dal menu | ok di Tania sulle 3 foto prese da Google e Instagram; DM |

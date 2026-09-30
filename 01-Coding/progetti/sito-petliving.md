@@ -90,6 +90,7 @@ stripping non ha una foto: si racconta, e la foto si chiede a loro.
 | Giro | Chi | Cosa |
 |---|---|---|
 | 1 | operatore Opus | direzione + costruzione, 30/09, `b5f7f0a`; 8/8, slop 0 (4 avvisi: vetro sfocato sulle barre, «passione» in citazione, giorni maiuscoli, 3 sezioni senza fatto verificabile), testo 0; overflow 0 a 375 e 1440, console vuota; polish e bolder/delight **non fatti**; catture `catture/pagina-d.png` e `pagina-m.png` **non guardate dal direttore** (tetto token); senza JS e bordi 899/900 non verificati; i «dieci anni» non scritti perché non confermati |
+| 2 | operatore Opus nuovo | verdetto di Nicola sul giro 1 («da telefono alcune scritte finiscono sotto le immagini», «un po' vuoto»): il ciuffo SVG di Toelettatura copriva «RA» del titolo e i piani GSAP scendevano sopra «Bagno»; testo con `z-index:1`, corsa dei piani a un terzo sotto i 900 con `matchMedia`, `overflow-x:clip`; aggiunti riga dati in testa, razze in lista, denti a tutta larghezza a 1440, ciuffo per servizio, 4,7 con cinquanta peli e i numeri in display, bordi a denti, nome grande nel piede. `96c3e42`, online. 8/8, slop 0 (stessi 4 avvisi), testo 0. Cattura a 375 guardata dal direttore a grandezza reale; **non verificati** dopo le correzioni: sonda `elementFromPoint` e `scrollWidth`, console, la cattura a 1440 per intero, `impeccable detect` |
 
 ## Da chiedere a Pet Living
 
