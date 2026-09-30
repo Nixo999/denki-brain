@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-09-26
+updated: 2026-09-30
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 30/09/2026 — Nicola: «aggiusta un po le spaziature, da telefono alcune scritte finiscono sotto le immagini. per resto bello il desing ma aggoiungi qualche dettaglio in piu perche cosi sia da telefono che da pc risulta un po vuoto»
+
+verdetto sul giro 1 di petliving.netlify.app: il passo di carattere (bolder, delight, animate) e polish saltati per fretta danno una pagina vuota su telefono e PC, non si salta mai; sul telefono si guarda a occhio che nessun testo finisca sotto o dietro le foto, lo stacking non lo misura l'overflow
 
 ### 26/09/2026 — Nicola: «solo per questo sito puoi usare piu token per fare prima, non anche per i prossimi, è che ho fretta oggi»
 
