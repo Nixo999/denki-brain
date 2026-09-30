@@ -105,15 +105,15 @@ ricerca,MB,falegnamerie,esaurito,5,2026-09-29,"30/09: 28 profili, 3 righe. Finit
 ricerca,MB,impiantisti,esaurito,5,2026-09-29,"30/09: 30 profili, 1 riga. Finito per resa"
 ricerca,MB,officine e carrozzerie,esaurito,11,2026-09-29,"30/09: 31 profili, 5 righe. Finito per resa: le strutturate sono quasi solo concessionarie"
 ricerca,MB,edilizia e serramenti,esaurito,11,2026-09-29,"30/09: 33 profili, 5 righe. Finito per resa"
-ricerca,MB,ingrossi e distribuzione,parziale,1,2026-09-19,
-ricerca,MB,trasporti e logistica,parziale,1,2026-09-21,
-ricerca,MB,alimentari artigianali,parziale,2,2026-09-29,
-ricerca,MB,aziende agricole con vendita,parziale,1,2026-09-29,
+ricerca,MB,ingrossi e distribuzione,esaurito,6,2026-09-30,"30/09: 30 profili, 5 righe. Finito per resa"
+ricerca,MB,trasporti e logistica,esaurito,3,2026-09-30,"30/09: 30 profili, 2 righe. Autotrasportatori sotto i 200 follower o fermi"
+ricerca,MB,alimentari artigianali,esaurito,12,2026-09-30,"30/09: 26 profili, 10 righe. Fonti finite"
+ricerca,MB,aziende agricole con vendita,esaurito,12,2026-09-30,"30/09: 35 profili, 11 righe. Fonti finite (nomi PG esauriti)"
 ricerca,MB,altro,parziale,11,2026-09-29,righe sparse di settori fuori elenco
 ricerca,CO,falegnamerie,parziale,1,2026-09-21,
 ricerca,CO,impiantisti,parziale,4,2026-09-29,
-ricerca,CO,officine e carrozzerie,parziale,8,2026-09-25,
-ricerca,CO,meccanica e carpenterie,parziale,3,2026-09-25,
+ricerca,CO,officine e carrozzerie,parziale,19,2026-09-30,"30/09: 27 profili, 11 righe. Aperto, rende"
+ricerca,CO,meccanica e carpenterie,parziale,4,2026-09-30,"30/09: vicla, 1 riga"
 ricerca,CO,edilizia e serramenti,parziale,8,2026-09-23,
 ricerca,CO,ingrossi e distribuzione,parziale,2,2026-09-29,
 ricerca,CO,aziende agricole con vendita,parziale,1,2026-09-29,
@@ -205,9 +205,10 @@ siti,MB,"sartorie, atelier e tappezzieri",esaurito,0,2026-09-29,"30/09: 17 profi
 siti,MB,fotografi e videomaker,esaurito,4,2026-09-29,"30/09: 30 profili, 4 righe. Finito per resa: quasi tutti hanno il sito"
 siti,MB,fioristi e wedding planner,esaurito,4,2026-09-29,"30/09: 29 profili, 4 righe. Finito per resa"
 siti,MB,ristorazione,esaurito,2,2026-09-29,"30/09: 31 profili, 2 righe. Finito per resa"
-ricerca,MB,meccanica e carpenterie,parziale,1,2026-09-29,"30/09: 11 profili, 1 riga. Aperto"
+ricerca,MB,meccanica e carpenterie,esaurito,1,2026-09-30,"30/09: 30 profili, 1 riga. Su PG 246 officine meccaniche, 2 con Instagram"
 siti,CO,"personal trainer, pilates e yoga",esaurito,2,2026-09-30,"30/09: 30 profili, 2 righe. Finito per resa"
 siti,CO,pasticcerie e cake designer,parziale,9,2026-09-30,"30/09: 43 profili, 9 righe. Rende: da continuare sui comuni piccoli"
 siti,CO,"sartorie, atelier e tappezzieri",esaurito,2,2026-09-30,"30/09: 20 profili, 2 righe. Fonti finite"
 siti,CO,fotografi e videomaker,parziale,1,2026-09-30,"30/09: 13 profili, 1 riga, 11 col sito"
 siti,CO,fioristi e wedding planner,parziale,0,2026-09-30,"30/09: 6 profili, 0 righe"
+ricerca,MB,studi tecnici,esaurito,0,2026-09-30,"30/09: 9 profili, 0 righe. 376 schede PG, una con Instagram: fonti finite"
