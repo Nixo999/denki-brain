@@ -580,6 +580,13 @@ L'integrazione tra le due piattaforme si divide in due flussi speculari.
 - «per la questione pallini, decidi tu, nel senso, magari cambia anche il tipo, io ho pensato ai pallini perché era comodo a livello visivo»
 - «coopero è gratuito perché serve alle aziende che non hanno opero, ok? Invece opero è quello a pagamento e l'obiettivo è far diventare a pagamento, o meglio, probabilmente in futuro diventerà a pagamento anche coopero, ma l'obiettivo è anche che chi utilizza coopero sia talmente tanto preso da questa cosa che gli venga voglia di acquistare opero»
 - «conti è proprio sbagliata, infatti conti deve essere solo che quando si chiude il lavoro il, ehm cliente, vede, pressa poco, in maniera non precisa, quindi una stima, di quanto dovrà pagare. E basta. E anche le pagine devono essere semplicemente il nuovo lavoro, lavori in corso, barra, lavori in generale, e conti. Fine.»
+- «il portale fornitori non devi vederlo ora lo vedremo in un secondo momento ora ci dobbiamo concentrare solo su questa parte»
+- «l'invito di Coopero è letteralmente che se io ho un'azienda cliente che ora mi sta scrivendo su WhatsApp, io gli invio semplicemente un link per accedere a Coopero e poi le richieste le mando direttamente su Coopero entrando con il suo eh, numero token, come vuoi chiamarlo, come Alus001. E, mh, accede e manda le richieste»
+- «per quanto riguarda le richieste a me io avrei un'altra pagina [...] perché eh, voglio tenere staccato richieste dal nuovo lavoro perché il nuovo lavoro deve essere una cosa manuale prettamente e sì, lo so che è ridondante ma preferisco così Anche perché l'obiettivo è in un futuro che non ci dovrà neanche essere nuovo lavoro perché si farà tutto tramite Coopero. O meglio, l'integrazione tra Coopero e Opero non va scritto a mano perché non ci dovranno essere clienti che non usano Coopero. Però questo è in futuro, quindi per ora voglio un'altra pagina.»
+- «per quanto riguarda chi ti serve, sì, si possono indicare anche più eh, lavoratori di, di diversi tipi»
+- «Per quanto riguarda le altre domande, io per ora non ti darei una risposta e aspetterei che mi dice qualcosa Seba.» (accetto con modifica e motivo del rifiuto, modifica e annullamento del cliente, cambio di un lavoratore)
+- «per quanto riguarda la stima dei conti, sì, quando il lavoro lo chiude e lo chiude come, a, come succede su Opero, cioè quando si chiude su Opero eh, arriva una stima di conti»
+- «per quanto riguarda la notifica, sì, è meglio che si riceva una notifica»
 
 **Mockup di Patrick, 30/09/2026**
 

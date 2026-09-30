@@ -41,6 +41,32 @@ codice, niente quotazione, niente date. Testi integrali →
 > - **«Richieste» cambia significato**: il 24/09 era una tab dentro
 >   Intermediar, in uscita. Il 30/09 è la pagina in entrata.
 
+## Flusso 1 — cosa ha deciso Patrick il 30/09
+
+Parole intere in [[opero-intermediar-receive-testo]].
+
+- **Accesso**: il cliente che oggi scrive su WhatsApp riceve dalla segreteria un link, entra in CO-OPERO col suo codice («come Alus001») e da lì manda le richieste.
+- **Richieste è una pagina a sé** in OperO, staccata da Nuovo lavoro, che resta **manuale**: «lo so che è ridondante ma preferisco così».
+- **Dove va**: in futuro Nuovo lavoro sparisce, perché «non ci dovranno essere clienti che non usano Coopero». Per ora le pagine sono due.
+- **Chi ti serve**: più lavoratori, di tipi diversi, nella stessa richiesta.
+- **Stima dei Conti**: arriva da sola quando il lavoro si chiude su OperO, come la chiusura di oggi.
+- **Notifica**: sì, la segreteria la riceve quando arriva una richiesta.
+- **Aspettano Seba**: accetto con modifica, motivo del rifiuto, modifica e annullamento del cliente, cambio di un lavoratore dopo la conferma.
+
+> [!note] Analisi di Claude — 30/09/2026
+> - **Il codice identifica, non protegge.** «Alus001» si indovina: chi prova
+>   Alus002 vede nomi e cellulari dei lavoratori e i costi di un altro
+>   cliente. Il codice può restare quello che il cliente vede, l'accesso
+>   deve passare da qualcosa che non si indovina: il link lungo, un PIN, un
+>   codice via SMS. `TODO` Nicola.
+> - **Una voce in più sul telefono**: con Richieste l'isola in basso passa da
+>   4 a 5 voci, 7 per un admin con Gestione. Scelta di Patrick.
+> - **La notifica non esiste ancora**: oggi le push partono solo dalla
+>   segreteria verso i lavoratori. Una richiesta del cliente ne vuole una
+>   che parta dal server.
+> - **La stima può muoversi**: se la segreteria corregge le ore dopo la
+>   chiusura, la stima si aggiorna. È una stima, ma il cliente lo vede.
+
 ## Gli stati — decisi il 30/09
 
 Patrick: «per la questione pallini, decidi tu [...] io ho pensato ai pallini
@@ -124,7 +150,8 @@ toccato.
 
 ## Buchi — da chiedere a Seba quando si parte
 
-- **Come entra un cliente o un fornitore su CO-OPERO**: invito dall'azienda o iscrizione libera.
+- **Le quattro del flusso 1 che aspettano lui** (sopra, 30/09).
+- **Come entra un fornitore su CO-OPERO**: il cliente entra con link e codice (30/09), il fornitore non è deciso.
 - **Da dove vengono i € dei Conti del flusso 2**: il fornitore non ha tariffa.
 - **I 40 facchini** non esistono come entità: manca il fabbisogno padre, e con lui il «40 su 40 coperti».
 - **Fatture**: se fattura il fornitore, cosa ci sta dentro, un PDF caricato o un dato?
