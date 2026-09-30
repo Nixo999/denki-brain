@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Riservatezza + non concorrenza a 5 anni che Seba vuole far firmare (25/09/2026). Non firmato - cosa morde e la controproposta.
-updated: 2026-09-25
+updated: 2026-09-30
 source: claude
 verificato: 2026-09-25
 cliente: sebastian-torres
@@ -24,7 +24,7 @@ in bianco, campo «C.F./P.IVA». Il codice fiscale di Seba qui non si scrive.
 
 | Art. | Cosa dice | Perché morde |
 |---|---|---|
-| Premesse | «Ecosistema OperO» = OperO, Intermediar, Receive, Coopero/cOperO e i loro sviluppi futuri | Il perimetro cresce a ogni modulo nuovo. Coopero nel vault non esiste |
+| Premesse | «Ecosistema OperO» = OperO, Intermediar, Receive, Coopero/cOperO e i loro sviluppi futuri | Il perimetro cresce a ogni modulo nuovo. Coopero è il portale gratuito del 30/09 → [[opero-intermediar-receive]] |
 | 1 | Protetto tutto ciò che non è pubblico: codice, schemi, architetture, logiche, flussi, prezzi, clienti, **know-how** e ogni materiale sviluppato negli incarichi | Il mestiere imparato su OperO diventa suo. Mancano le eccezioni standard (già noto, sviluppato in autonomia, ricevuto da terzi) |
 | 2 | Niente divulgazione né uso fuori da OperO, anche dopo la fine | Normale, se l'art. 1 viene ristretto |
 | 3 | Consegna di sorgenti e documentazione; niente riuso di componenti «dell'Ecosistema»; i diritti rimandati a un contratto d'incarico | Il contratto d'incarico non esiste. Nessuna esclusione per il codice nostro preesistente |

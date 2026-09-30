@@ -56,7 +56,7 @@ Lobidù, Da Caterina: lo stato sta nella loro nota.
 
 - **Edilida** (edile, Travagliato): modulo compilato il 18/09, Patrick punta a una videochiamata; il riepilogo di zona promesso a Penta ed Edilida **non esiste** → [[edilida]]
 - **V-BAG**, gestionale con login pushato il 16/09: spento finché Nicola non mette `ADMIN_PASSWORD` e `GITHUB_TOKEN` su Netlify → [[2026-09-16-vbag-gestionale-login]]
-- **OperO, Intermediar + Receive** (24/09): Seba vuole conoscerla, non iniziarla. Lavoro nuovo, fuori dai 2.400 €; sei buchi da chiedergli → [[opero-intermediar-receive]]
+- **OperO, Intermediar + Receive → CO-OPERO** (30/09): portale gratuito con Clienti in entrata e Fornitori in uscita. Da conoscere, non da fare; lavoro nuovo fuori dai 2.400 €; gratis contro il Receive a pagamento del 24/09 `TODO` → [[opero-intermediar-receive]]
 - **Riservatezza + non concorrenza a 5 anni** (25/09): penali 5.000-30.000 €, **non firmato**, controproposta legata al saldo dei 2.000 € → [[accordo-riservatezza-opero]]
 - **denki-agents**: gateway chiuso (16/09), cantiere a **un dollaro a sito** in locale, 0,57-0,82 USD a bozza; manca il token Apify per un giro con foto vere → [[denki-agents]]
 - Le 87 righe di Gabriele ed Edoardo sono passate a Giulia (13/09) → [[2026-09-13-liste-giulia-groane-vimercatese]]

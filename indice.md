@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-09-29
+updated: 2026-09-30
 source: claude
 tags: [indice]
 ---
@@ -41,8 +41,8 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[denki-agents]] — Piattaforma interna multi-agente - ogni task sul suo modello via LiteLLM, costo di ogni chiamata in Postgres. Fase 1: solo il gateway.
 - [[denkishift-interfaccia]] — ⚠️ Obiettivo dichiarato - un'interfaccia che si venda da sola durante la demo di Patrick, calibrata su due utenti che non sono due gradini dello...
 - [[denkishift]] — Prodotto di punta, turni per squadre a orario variabile. Dimostrabile, NON installabile in produzione.
-- [[opero-intermediar-receive-testo]] — Testo integrale della specifica Intermediar + Receive mandata da Seba il 24/09/2026. La fonte: la sintesi sta in opero-intermediar-receive.
-- [[opero-intermediar-receive]] — ⚠️ Intermediar + Receive, il prossimo pezzo di OperO chiesto da Seba il 24/09 - da conoscere, non da fare. Principi, demo minima, buchi della specifica.
+- [[opero-intermediar-receive-testo]] — Testi integrali: specifica Intermediar + Receive di Seba (24/09) e riassetto CO-OPERO portato da Patrick (30/09). La sintesi sta altrove.
+- [[opero-intermediar-receive]] — ⚠️ Ecosistema OperO + CO-OPERO (30/09) sopra Intermediar + Receive (24/09) - da conoscere, non da fare. Modello, cosa dice il repo oggi, buchi.
 - [[opero]] — Il prodotto che Sebastian rivende, non un gestionale nostro. Chi tocca il Super Admin tocca il suo conto economico.
 - [[sito-adelinanails]] — Bozza sito per Adelina Nails (Alessandria) in ~/lavoro/adelinanails-site - contenuto solo da profilo + inventario competitor, giro 3 «lacca, oro e rilievo», Melodrama + Grape Nuts, apertura in 4 tempi, 8/8 - online su adelinanails-site.netlify.app dal 19/9 (deploy da GitHub).
 - [[sito-albybike]] — Sito vetrina per Albybike, negozio di biciclette - vendita, assistenza, riparazione, abbigliamento e integratori.

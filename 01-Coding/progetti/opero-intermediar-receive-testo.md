@@ -1,7 +1,7 @@
 ---
 type: risorsa
-riga: Testo integrale della specifica Intermediar + Receive mandata da Seba il 24/09/2026. La fonte: la sintesi sta in opero-intermediar-receive.
-updated: 2026-09-24
+riga: Testi integrali: specifica Intermediar + Receive di Seba (24/09) e riassetto CO-OPERO portato da Patrick (30/09). La sintesi sta altrove.
+updated: 2026-09-30
 source: denkicode
 progetto: opero
 tags: [opero, intermediar, receive, specifica, sebastian-torres]
@@ -519,3 +519,56 @@ Questi punti sono vincolanti nella progettazione:
 - OperO completo può gestire e condividere la squadra.
 - Il sistema non deve bloccare un lavoro reale per un'azione digitale mancante.
 - La UX deve restare semplice anche quando la logica sottostante diventa complessa.
+
+---
+
+## Riassetto del 30/09/2026 — CO-OPERO bilaterale
+
+Portato da Patrick il 30/09/2026 con «abbiamo riorganizzato le idee» (chi,
+oltre a lui: `TODO`). È il prompt che si erano preparati per Claude, scritto
+con un assistente AI: qui sta com'è arrivato, tolto il preambolo della chat.
+Cosa cambia rispetto al 24/09 → [[opero-intermediar-receive]].
+
+> OperO è il cervello centrale, mentre CO-OPERO fa da doppio ponte (in entrata
+> per i clienti e in uscita per i fornitori).
+
+**1. Visione d'insieme dell'ecosistema**
+
+- **OperO**: è il gestionale principale (a pagamento) usato dall'azienda principale.
+- **CO-OPERO**: è un portale web gratuito bilaterale che gestisce sia le richieste in entrata (dai clienti dell'azienda) sia le richieste in uscita (verso i fornitori dell'azienda).
+
+**2. Mappatura dei collegamenti (OperO ↔ CO-OPERO)**
+
+L'integrazione tra le due piattaforme si divide in due flussi speculari.
+
+*Flusso 1: Clienti → OperO (gestione lavoro in entrata)*
+
+- Lato CO-OPERO (Sezione Clienti):
+  - È il portale gratuito usabile dai clienti dell'azienda (che non possiedono OperO).
+  - Il cliente entra, va su "Richiedi Nuovo Lavoro", inserisce chi gli serve, data/ora, luogo e note.
+  - Ha una sezione "Lavori Richiesti" (per monitorare lo stato) e una sezione "Conti" (per vedere i costi e la rendicontazione a lavoro finito).
+- Collegamento dentro OperO → pagina "Richieste":
+  - In OperO, tutte le chiamate/richieste provenienti da CO-OPERO (Sezione Clienti) atterrano nella pagina "Richieste".
+  - È strutturata come un'interfaccia tipo chat/WhatsApp: c'è l'elenco delle aziende clienti con un pallino di stato:
+    - 🔵 Pallino blu: nuova richiesta in arrivo.
+    - 🔴 Pallino rosso: richiesta rifiutata dall'operatore.
+    - 🟢 Pallino verde: richiesta accettata. Quando l'operatore accetta, inserisce i nominativi dei lavoratori, cellulari ed eventuali note. Questa azione crea automaticamente la commessa/lavoro dentro OperO e rimanda la conferma con i dettagli al cliente su CO-OPERO.
+
+*Flusso 2: OperO → Fornitori (gestione lavoro in uscita / subappalto)*
+
+- Collegamento dentro OperO → pagina "Gruppo / Intermediar":
+  - Quando l'azienda che usa OperO deve richiedere manodopera/servizi esternamente a una cooperativa o fornitore (che non usa OperO), avvia la procedura dalla sezione "Gruppo" (Intermediar).
+- Lato CO-OPERO (Sezione Fornitori):
+  - La richiesta inviata da OperO (Gruppo) arriva alla Sezione Fornitori di CO-OPERO.
+  - Il fornitore esterno riceve la richiesta nel suo portale gratuito CO-OPERO, decide se accettare o rifiutare.
+  - Se accetta, il fornitore inserisce i ruoli, i nominativi delle persone inviate e conferma.
+  - L'accettazione torna indietro ad OperO nella sezione Gruppo, aggiornando lo stato della scheda operativa.
+
+**3. Sintesi dei punti di contatto dentro OperO**
+
+1. Pagina "Richieste": riceve ed elabora solo i dati da CO-OPERO (Sezione Clienti).
+2. Pagina "Gruppo" (Intermediar): invia ed elabora le richieste verso CO-OPERO (Sezione Fornitori).
+
+> Tieni in considerazione questa struttura bipolare per definire la logica di
+> routing delle API, i dati di DB da scambiare (payload richieste, nominativi,
+> cambi di stato del pallino 🔵/🟢/🔴) e l'interfaccia utente.

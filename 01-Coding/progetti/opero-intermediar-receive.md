@@ -1,87 +1,90 @@
 ---
 type: risorsa
-riga: Intermediar + Receive, il prossimo pezzo di OperO chiesto da Seba il 24/09 - da conoscere, non da fare. Principi, demo minima, buchi della specifica.
-updated: 2026-09-24
+riga: Ecosistema OperO + CO-OPERO (30/09) sopra Intermediar + Receive (24/09) - da conoscere, non da fare. Modello, cosa dice il repo oggi, buchi.
+updated: 2026-09-30
 source: claude
 progetto: opero
-tags: [opero, intermediar, receive, specifica, sebastian-torres]
+tags: [opero, intermediar, receive, co-opero, specifica, sebastian-torres]
 ---
 
-# OperO — Intermediar + Receive
+# OperO — Intermediar, Receive, CO-OPERO
 
-**Da conoscere, non da fare.** Seba ha mandato la specifica il 24/09/2026 con
-l'indicazione di farla conoscere a Trevis, **non di iniziarla**: niente codice,
-niente quotazione, niente date. Parole sue → [[opero-intermediar-receive-testo]].
+**Da conoscere, non da fare.** Seba ha mandato la specifica il 24/09/2026 per
+farla conoscere, **non per iniziarla**. Il 30/09 Patrick ha portato un
+riassetto, anche quello da imparare e non da costruire: «non mettere mano al
+codice». Niente codice, niente quotazione, niente date. Testi integrali →
+[[opero-intermediar-receive-testo]].
 
-**In una riga**: OperO organizza le persone della propria azienda, Intermediar
-le aziende che lavorano per lei, Receive fa ricevere e confermare le richieste
-a un'azienda che OperO non ce l'ha.
+## Il modello del 30/09: OperO al centro, CO-OPERO doppio ponte
 
-**Il caso che la guida**: Paolo, per BluNotte, deve coprire 40 facchini e li
-spartisce fra Bolanos (8), la sua azienda e La Scelta Giusta. Oggi è tutto su
-WhatsApp. Flusso: richiesta → fornitore → conferma → squadra e referente →
-esecuzione → chiusura → conti.
+- **OperO** è il gestionale a pagamento dell'azienda. **CO-OPERO** è un portale web **gratuito** con due sezioni, per chi OperO non ce l'ha (30/09).
+- **Flusso 1, in entrata.** Il cliente dell'azienda, da CO-OPERO Clienti, fa «Richiedi nuovo lavoro» (chi serve, data e ora, luogo, note), poi segue «Lavori richiesti» e «Conti». In OperO la richiesta atterra nella pagina **Richieste**: elenco di aziende clienti come su WhatsApp, col pallino 🔵 nuova · 🔴 rifiutata · 🟢 accettata. Accettare vuol dire mettere nomi e cellulari dei lavoratori e le note: nasce il lavoro in OperO e la conferma torna al cliente.
+- **Flusso 2, in uscita.** Dalla pagina **Gruppo** (Intermediar) l'azienda chiede manodopera a una cooperativa o a un fornitore. Il fornitore, da CO-OPERO Fornitori, accetta o rifiuta. Se accetta mette ruoli e nomi, conferma, e lo stato torna nella scheda di Gruppo.
+- **Richieste** riceve solo dai clienti, **Gruppo** manda solo ai fornitori.
 
-## Il modello, in cinque righe
+> [!note] Analisi di Claude — 30/09/2026, il riassetto letto contro il 24/09
+> - CO-OPERO Fornitori è il **Receive** del 24/09, la pagina Gruppo è
+>   **Intermediar**. Il flusso 1 è **nuovo**: il 24/09 i clienti di
+>   un'azienda non entravano da nessuna parte.
+> - I due flussi sono **la stessa richiesta vista dai due capi**: BluNotte che
+>   chiede a Bolanos è flusso 2 per BluNotte e flusso 1 per Bolanos. È il
+>   principio del 24/09, «una richiesta, un'entità sola», e regge ancora.
+> - **Gratis contro pagato.** Il 24/09 Receive era OperO ridotto, ~49,90 €/mese
+>   dopo 30 giorni, e il §40 di Seba dice «Receive non deve diventare OperO
+>   gratuito». Il 30/09 CO-OPERO è gratuito. Se la scelta è di Seba supera il
+>   24/09, se no è una proposta da portargli. `TODO`
+> - **«Richieste» cambia significato**: il 24/09 era una tab dentro
+>   Intermediar, in uscita. Il 30/09 è la pagina in entrata.
+> - **Tre pallini non coprono il ciclo del 24/09**: mancano «modificata dopo
+>   la conferma» (il giallo, con la conferma che cade), «chiusa» e
+>   l'annullamento del cliente. E il pallino sta sull'azienda, non sulla
+>   richiesta: stesso cliente, una nuova e una rifiutata, che colore? `TODO`
 
-- **Una persona, più workspace.** Il cambio è alla Instagram, e il workspace attivo decide per chi si opera.
-- **Un'azienda, un'identità che evolve**: esterna (nome + telefono, usabile subito) → Receive → OperO completo. Mai una seconda riga.
-- **Una richiesta, un'entità sola** vista da due aziende: niente copia #456 della #1287.
-- **Intermediar sta dentro OperO**: un controllo a destra della bottom nav, non una quinta voce. Dentro: Lavori · Richieste · Gestione · Conti.
-- **Receive è OperO ridotto**, non gratis: 3 accessi, nessun lavoratore; trial di 30 giorni **dall'attivazione**, poi ~49,90 €/mese (ipotesi).
+## Cosa dice il repo oggi
 
-## Stati e regole del flusso
+Letto il 30/09/2026 in `Nixo999/opero-sito`, commit `3f980c6` (24/09). Niente
+toccato.
 
-- Da confermare e modificata dopo conferma: **giallo**. Confermato: aspetto normale, senza etichetta. Chiuso: card attenuata.
-- Una modifica dopo la conferma la **invalida** e mostra il diff (`08:00 → 07:30`). Cambiare referente **non** la invalida.
-- Niente «Annulla partecipazione»: gli annullamenti avranno una logica loro, dopo.
-- La chiusura è del servizio, non del lavoratore. Se il fornitore non chiude, **chiude Paolo** da Intermediar.
-- Dopo la conferma Paolo vede per prima cosa **referente e convocati** con telefono. Quello che aveva chiesto sta sotto, in «Dettagli richiesta ›».
-- Ruoli liberi: **richiesto ≠ ruolo creato, accettato = ruolo acquisito**, con autocomplete contro `Facchino`/`facchini`/`FACCHINO`.
+- **Un utente, un'azienda.** `profiles.company_id` è obbligatorio, non c'è una tabella di appartenenze, il login chiede il codice azienda e `has_role()` non guarda l'azienda. Una cooperativa fornitrice di due aziende OperO, o cliente e fornitore insieme, oggi non ha dove stare.
+- **I clienti non hanno login né portale.** `clients` è un nome dentro l'azienda; il referente del cliente è testo libero sul singolo lavoro.
+- **Fornitori e aziende esterne non esistono.** «Aziende» nell'Admin è la lista dei workspace del Super Admin.
+- **Chi sta in un lavoro deve avere un account** (`job_assignments.worker_id` → `auth.users`). Nomi e telefoni battuti da un fornitore lì non entrano. Il concetto più vicino sono i lavoratori provvisori, mai iniziati.
+- **I prezzi al cliente ci sono**: tariffe per cliente e per mansione, calcolate da `lib/invoiceEngine.ts`. I Conti del flusso 1 sanno da dove prendere i €. Per i fornitori del flusso 2 una tariffa non esiste.
+- **Niente tempo reale, niente notifiche web.** Le push sono solo native (FCM, APNs) e partono dalla segreteria: un portale web oggi non riceve niente da solo.
+- **La chat c'è nel database e non si usa**: tabelle `chat_*` mai collegate, chat tolta da Seba il 4/08. «Tipo WhatsApp» va letto come aspetto, non come chat. `TODO`
+- **Un lavoro non ha una colonna di stato**: si ricava da annullato, chiuso, fatturato. Il pallino sarebbe il primo stato scritto.
+
+## Regole del flusso, dal 24/09
+
+- Da confermare e modificata dopo conferma: **giallo**. Confermato: normale. Chiuso: card attenuata.
+- Una modifica dopo la conferma la **invalida** e mostra il diff (`08:00 → 07:30`). Cambiare referente no. Quali modifiche contano: `TODO` (§40).
+- La chiusura è del servizio, non del lavoratore. Se il fornitore non chiude, chiude chi ha chiesto.
+- Dopo la conferma chi ha chiesto vede per primi **referente e convocati** con telefono; la richiesta sta sotto, in «Dettagli richiesta ›».
+- Ruoli liberi: **richiesto ≠ ruolo creato, accettato = ruolo acquisito**, con autocomplete.
 
 **Demo minima (§39)**: BluNotte → richiesta a Bolanos → Bolanos prepara la
-squadra, sceglie il referente e conferma → Paolo vede i convocati → Paolo
-modifica → la conferma cade → Bolanos riconferma → chiusura. Più lo stesso giro
-con un'azienda Receive, senza squadra.
+squadra, sceglie il referente e conferma → Paolo vede i convocati → modifica →
+la conferma cade → Bolanos riconferma → chiusura. Più lo stesso giro con
+un'azienda senza OperO.
 
 ## Cosa morde
 
-> [!note] Analisi di Claude — 2026-09-24, non verificata
-> Il repo OperO non è sul Mac dove è stata scritta: le righe sullo schema sono
-> ipotesi finché qualcuno non le controlla nel repo.
+1. **Lavoro nuovo, fuori dai 2.400 €**, e col flusso 1 più grande del 24/09: sono tre facce nuove (Richieste, Gruppo, il portale). I 2.000 € del primo non sono entrati → [[opero]].
+2. **Una richiesta con due proprietari**: la stessa riga letta da chi chiede e da chi esegue, con campi diversi, e lo storico delle modifiche per il diff. Le policy oggi ragionano per un'azienda sola.
+3. **Il ricavo di Seba**: se CO-OPERO è gratis, il piano di Receive in `workspace_plans` sparisce e con lui un'entrata prevista il 24/09.
+4. **Nomi e telefoni passano da un'azienda all'altra**, ora in tutti e due i versi: i lavoratori dell'azienda al cliente (flusso 1), quelli del fornitore all'azienda (flusso 2). Serve una base, e non è una scelta tecnica.
+5. **L'accordo del 25/09** mette «Coopero/cOperO» nel perimetro della non concorrenza → [[accordo-riservatezza-opero]].
 
-1. **È lavoro nuovo, fuori dai 2.400 €**, e più grande di XML SDI e OperO
-   Choice messi insieme: è un secondo prodotto dentro il primo. I 2.000 € del
-   primo non sono ancora entrati → [[opero]].
-2. **Il legame utente-azienda.** Se oggi un utente appartiene a una sola
-   azienda, «una persona, più workspace» è il primo muro: servono le membership
-   e una RLS che legga il workspace attivo. `TODO`: controllare nel repo.
-3. **Una richiesta con due proprietari.** Le policy oggi ragionano per una
-   azienda sola, qui la stessa riga la leggono il richiedente e il fornitore con
-   campi diversi. Serve anche lo storico delle modifiche, perché il diff e
-   l'invalidazione della conferma ne dipendono.
-4. **Receive tocca il ricavo di Seba**: un piano nuovo in `workspace_plans`,
-   con un trial che parte all'attivazione e non alla creazione.
-5. **Nomi e telefoni dei lavoratori di Bolanos finiscono a BluNotte.** Sono
-   dati personali che passano da un'azienda all'altra. Serve una base, e non
-   è una scelta tecnica.
+## Buchi — da chiedere a Seba quando si parte
 
-## Buchi nella specifica — da chiedere a Seba quando si parte
-
-- **Da dove vengono i € dei Conti?** Il pannello della richiesta non ha un
-  prezzo né una tariffa concordata, e i Conti mostrano totali per categoria.
-- **I 40 facchini** non esistono come entità: si vedono solo le richieste per
-  azienda. Manca il fabbisogno padre, e con lui il «40 su 40 coperti».
-- **Quali modifiche sono «importanti»** (§40) e fanno cadere la conferma, e
-  quali no.
-- **Lavori e Richieste**: il §13 descrive Lavori, la tab Richieste non è
-  descritta. Pannello di creazione o lista?
-- **Fatture**: se fattura il fornitore a BluNotte, cosa ci sta dentro
-  Intermediar, un PDF caricato o un dato?
-- **Il referente Receive** è un nome libero o uno dei 3 accessi? Il §26 li
-  ammette tutti e due.
+- **Chi ha deciso il 30/09**, e se CO-OPERO gratis supera il modello a pagamento.
+- **Come entra un cliente o un fornitore su CO-OPERO**: invito dall'azienda o iscrizione libera.
+- **Da dove vengono i € dei Conti del flusso 2**: il fornitore non ha tariffa.
+- **I 40 facchini** non esistono come entità: manca il fabbisogno padre, e con lui il «40 su 40 coperti».
+- **Fatture**: se fattura il fornitore, cosa ci sta dentro, un PDF caricato o un dato?
+- **Il referente del fornitore** è un nome libero o un accesso (§26)?
 
 ## Collegamenti
 
 [[opero]] · [[sebastian-torres]] · [[opero-intermediar-receive-testo]] ·
-[[stack]] · [[modifiche-al-database]]
+[[accordo-riservatezza-opero]] · [[stack]] · [[modifiche-al-database]]
