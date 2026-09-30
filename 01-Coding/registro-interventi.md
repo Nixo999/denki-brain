@@ -1,7 +1,7 @@
 ---
 riga: Una riga per intervento - chi, quando, progetto, repository e QUALE DATABASE. La colonna database e' il motivo del file.
 type: risorsa
-updated: 2026-09-29
+updated: 2026-09-30
 source: denkicode
 tags: [registro, interventi, repo, database]
 ---
@@ -37,6 +37,12 @@ pubblicato senza la sua migrazione apre un tabellone vuoto.
 Colonne: **Quando** (data e ora) · **Chi** (persona, e `+claude` se il lavoro è
 stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 (`—` se non toccato, `sviluppo`/`produzione` + stato) · **Cosa** · **Commit**.
+
+## 2026-09-30
+
+| Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
+|---|---|---|---|---|---|---|
+| 30/09, pomeriggio | Patrick con Trevis (Opus) | [[opero]] · [[opero-intermediar-receive]] | `denki-brain` (`main`, pushata); `Nixo999/opero-sito` **solo letto** (clone in scratch, commit `3f980c6`), niente toccato | — nessuno | **CO-OPERO imparato, non costruito.** Riassetto di Patrick e Seba: portale gratuito, prima il flusso clienti → pagina Richieste, fornitori rimandati. Letto contro la specifica del 24/09 e contro il repo (un utente un'azienda, clienti senza login, niente notifiche web). Decisi con Patrick: pallino giallo, WhatsApp solo aspetto, 3 pagine cliente, Conti = stima alla chiusura, accesso link + codice, Richieste pagina a sé, notifica; stati delle richieste delegati a Claude. 4 domande aspettano Seba. Soldi: 1.400 incassati, 1.000 da incassare. Soci Patrick, Nicola, Seba (probabile) | `368d0fe` → `bc4fbd3` |
 
 ## 2026-09-29
 
