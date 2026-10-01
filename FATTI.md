@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura. Max 80 righe.
-updated: 2026-09-30
+updated: 2026-10-01
 verificato: 2026-09-16
 source: denkicode
 tags: [stato, fatti]
@@ -59,7 +59,7 @@ Lobidù, Da Caterina: lo stato sta nella loro nota.
 - **Edilida** (edile, Travagliato): modulo compilato il 18/09, Patrick punta a una videochiamata; il riepilogo di zona promesso a Penta ed Edilida **non esiste** → [[edilida]]
 - **V-BAG**, gestionale con login pushato il 16/09: spento finché Nicola non mette `ADMIN_PASSWORD` e `GITHUB_TOKEN` su Netlify → [[2026-09-16-vbag-gestionale-login]]
 - **OperO, Intermediar + Receive → CO-OPERO** (30/09): portale gratuito con Clienti in entrata e Fornitori in uscita. Deciso da Patrick e Seba, supera il Receive a pagamento del 24/09. Da conoscere, non da fare; lavoro nuovo fuori dai 2.400 € → [[opero-intermediar-receive]]
-- **Instagram in automatico** (30/09): Patrick ha scelto l'API ufficiale, post e storie li pubblica uno script. **Tocca a Nicola**: app Meta e token; profilo `@denkicode`, gia' professionale; Pagina Facebook `TODO`. Piano: 3 post a settimana + 1 storia al giorno, testi delle prime due settimane da rileggere per Patrick → [[piano-instagram]]
+- **Instagram in automatico** (30/09): Patrick ha scelto l'API ufficiale, post e storie li pubblica uno script. **Script scritto** (01/10, repo `denkicode-social`, locale, mai provato con un token vero); **tocca a Nicola**: repo remoto, app Meta, token; profilo `@denkicode`, gia' professionale; Pagina Facebook `TODO`. Piano: 3 post a settimana + 1 storia al giorno, testi delle prime due settimane da rileggere per Patrick → [[piano-instagram]]
 - **Riservatezza + non concorrenza a 5 anni** (25/09): penali 5.000-30.000 €, **non firmato**, controproposta legata al saldo, ora 1.000 € (30/09); da rileggere se si diventa soci → [[accordo-riservatezza-opero]]
 - **denki-agents**: gateway chiuso (16/09), cantiere a **un dollaro a sito** in locale, 0,57-0,82 USD a bozza; manca il token Apify per un giro con foto vere → [[denki-agents]]
 - Le 87 righe di Gabriele ed Edoardo sono passate a Giulia (13/09) → [[2026-09-13-liste-giulia-groane-vimercatese]]

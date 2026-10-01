@@ -3,7 +3,7 @@ type: decisione
 riga: Post e storie di DenkiCode li pubblica uno script con l'API ufficiale di Instagram. Deciso da Patrick il 30/09/2026, tocca a Nicola.
 data: 2026-09-30
 progetto: azienda
-updated: 2026-09-30
+updated: 2026-10-01
 source: denkicode
 tags: [social, instagram, automazione, nicola]
 ---
@@ -69,3 +69,7 @@ nessuno.
 
 **La serie del 25/09 non entra in coda** finche' Patrick non l'ha riletta
 ([[materiale-social]]).
+
+## Costruito il 1 ottobre 2026
+
+Script e cron nel repo `~/lavoro/denkicode-social` (Instagram Login, `graph.instagram.com`, niente Pagina Facebook; le immagini servite da `raw.githubusercontent.com`, quindi repo pubblico). Setup e limiti nel suo `README.md`. Mai provato con un token vero.
