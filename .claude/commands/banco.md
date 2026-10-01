@@ -427,17 +427,20 @@ python3 02-Sales/strumenti/stato-banco.py
 ## 5 · Aprire il banco
 
 ```bash
-if curl -s -o /dev/null --max-time 2 "http://localhost:8770/strumenti/banco-dm.html"; then
-  open "http://localhost:8770/strumenti/banco-dm.html"
-else
-  open "$V/02-Sales/strumenti/Banco DM.command"
-fi
+python3 "$V/02-Sales/strumenti/banco-server.py" --apri
 ```
 
-Il `.command` apre una finestra di Terminale che deve **restare aperta**: è il
-server che scrive gli invii nel vault. Il selettore in testata sceglie
-l'account, le quattro linguette sono Siti, Ricerca, Da ricontattare, Già
-contattati. La linguetta DenkiShift è stata tolta il 24 settembre 2026.
+Accende il server se è spento, staccato dalla chat, e apre la pagina. **Nessuna
+finestra di Terminale, e a Patrick non si chiede di lanciare niente**: regola
+di Nicola dell'1 ottobre 2026, in [[metodo-liste]]. ~~Il `.command` apre una
+finestra di Terminale che deve restare aperta~~ *superato l'1/10/2026*: il
+doppio click su `Banco DM.command` funziona ancora, ma fa la stessa cosa e la
+finestra si può chiudere. Se il comando dice che il server non parte, si legge
+il log che nomina e si ripara da qui, senza passare il problema a Patrick.
+
+Il selettore in testata sceglie l'account, le quattro linguette sono Siti,
+Ricerca, Da ricontattare, Già contattati. La linguetta DenkiShift è stata
+tolta il 24 settembre 2026.
 
 **Le cose che a Patrick servono e che si dicono solo se le chiede**: `↩ Annulla
 l'ultimo` in testata (o ⌘Z) rimette in cima l'ultimo profilo segnato, per

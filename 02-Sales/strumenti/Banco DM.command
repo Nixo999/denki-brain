@@ -25,15 +25,5 @@ cd "$V" || exit 1
 git pull --rebase --autostash -q 2>&1 | tail -1
 cd "$V/02-Sales" || exit 1
 
-# se e' gia' aperto da un'altra volta, non ne apro un secondo
-if ! curl -s -o /dev/null "http://localhost:$PORTA/strumenti/banco-dm.html"; then
-  python3 strumenti/banco-server.py $PORTA &
-  SERVER=$!
-  sleep 1
-fi
-
-open "http://localhost:$PORTA/strumenti/banco-dm.html"
-
-echo "Banco DM aperto nel browser."
-echo "Lascia stare questa finestra mentre mandi i messaggi: chiudendola si spegne."
-[ -n "$SERVER" ] && wait $SERVER
+# Il server parte staccato e si apre la pagina: questa finestra si puo' chiudere.
+python3 strumenti/banco-server.py --apri $PORTA

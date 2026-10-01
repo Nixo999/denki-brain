@@ -8,8 +8,15 @@ poi committa e pusha il vault due minuti dopo l'ultimo gesto. Cosi` l'elenco
 dei contattati vive nel brain e non solo nel localStorage del suo browser.
 
 Niente librerie: parte su qualunque Mac o PC con python3.
+
+    python3 banco-server.py --apri     # lo avvia staccato se non gira gia', e apre la pagina
+    python3 banco-server.py --sfondo   # lo avvia staccato e basta
+    python3 banco-server.py 8770       # in primo piano, come prima
+
+`--apri` e' il modo normale dall'1/10/2026: nessuna finestra di Terminale da
+tenere aperta, Patrick non lancia niente a mano. Lo chiama /banco dalla chat.
 """
-import csv, json, subprocess, sys, threading, signal
+import csv, json, subprocess, sys, tempfile, threading, signal, time, urllib.request, webbrowser
 from pathlib import Path
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 
@@ -124,8 +131,38 @@ def chiudi(*_):
     sys.exit(0)
 
 
+def vivo(url):
+    try:
+        urllib.request.urlopen(url, timeout=2).close()
+        return True
+    except Exception:
+        return False
+
+
+def sfondo(porta, url):
+    """Avvia il server staccato da chi lo lancia: sopravvive alla chat e al Terminale."""
+    if vivo(url):
+        return "gia' acceso"
+    log = Path(tempfile.gettempdir()) / "banco-dm.log"
+    with log.open("a") as f:
+        subprocess.Popen([sys.executable, str(Path(__file__).resolve()), str(porta)],
+                         stdin=subprocess.DEVNULL, stdout=f, stderr=f, start_new_session=True)
+    for _ in range(20):
+        if vivo(url):
+            return "acceso"
+        time.sleep(0.25)
+    sys.exit(f"Il server del banco non parte: leggi {log}")
+
+
 if __name__ == "__main__":
-    porta = int(sys.argv[1]) if len(sys.argv) > 1 else 8770
+    numeri = [a for a in sys.argv[1:] if a.isdigit()]
+    porta = int(numeri[0]) if numeri else 8770
+    url = f"http://localhost:{porta}/strumenti/banco-dm.html"
+    if "--apri" in sys.argv or "--sfondo" in sys.argv:
+        print(f"Banco DM {sfondo(porta, url)}: {url}")
+        if "--apri" in sys.argv:
+            webbrowser.open(url)
+        sys.exit(0)
     for s in (signal.SIGINT, signal.SIGTERM) + ((signal.SIGHUP,) if hasattr(signal, "SIGHUP") else ()):
         signal.signal(s, chiudi)
     print(f"Banco DM su http://localhost:{porta}/strumenti/banco-dm.html")
