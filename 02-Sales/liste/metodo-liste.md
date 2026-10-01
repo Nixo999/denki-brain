@@ -211,6 +211,10 @@ in [[metriche]]:
 
 ## Regole
 
+### 01/10/2026 — Nicola: «banco dm: ogni volta deve mandare un comando in java, cosa che non deve succedere, sostituisci o fai in modo sia automatico, patrick non deve mandare messaggi in terminale»
+
+Patrick scrive solo nella chat: niente Terminale, niente console del browser, niente comandi da incollare. Quello che serve lo lancia Trevis o parte da solo.
+
 ### 01/10/2026 — Nicola: «le ricerche sono spesso sbagliate e ridondanti nei settori, voglio che ci sia sempre un ricircolo di settori e luoghi, cercando di dare priorità a lead ad alta conversione tenendo conto anche del metodo di contatto»
 
 Settori e luoghi girano sempre: nessun settore si ripete giorno dopo giorno, la priorita' la decide la resa misurata (risposte per settore e per canale), non l'ordine fisso di un elenco.
