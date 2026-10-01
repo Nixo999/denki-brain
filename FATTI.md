@@ -66,7 +66,7 @@ Lobidù, Da Caterina: lo stato sta nella loro nota.
 
 ## Bloccato, e perché
 
-- **Il campo «Chat» del banco DM non registra le risposte** (14/09): un lead che ha risposto è indistinguibile da uno freddo finché il banco non lo scrive
+- **Banco DM** (01/10): `/banco` riscritto, il piano lo stampa `prossimo-giro.py`, mai girato sul Mac di Patrick. La posta non è letta dal 21/09 (367 DM senza esito, il campo «Chat» resta vuoto) e **733 righe sono sul banco mai mandate** → [[2026-10-01-banco-ricircolo]]
 - **OperO, storico**: la migrazione non si fa più (13/09), Seba vuole solo un report giugno-agosto da `strumenti/report-mesi.mjs`; manca la chiave `OPERO1_SERVICE` da Settings → API di OperO 1, o un login di segreteria → [[opero]]
 - **DenkiShift non è installabile in produzione**: dimostrabile, senza date → [[denkishift]]
 - **La produzione resta fuori** su tutti e due i prodotti → [[modifiche-al-database]]

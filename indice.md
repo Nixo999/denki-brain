@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-09-30
+updated: 2026-10-01
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **255 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **256 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -326,6 +326,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-27-daily-abolita]] — Le daily non si scrivono più - la giornata sta nel registro interventi, lo stato in FATTI sotto le 80 righe. Approvata da Nicola il 27/09/2026.
 - [[2026-09-27-verificato-in-chiusura]] — verificato lo scrive /chiudi-sessione sulle note toccate in sessione che Nicola o Patrick approvano. 109 note su 246 erano ipotesi. 27/09/2026.
 - [[2026-09-30-instagram-pubblicazione-api]] — Post e storie di DenkiCode li pubblica uno script con l'API ufficiale di Instagram. Deciso da Patrick il 30/09/2026, tocca a Nicola.
+- [[2026-10-01-banco-ricircolo]] — /banco riscritto l'1 ottobre - perche' la lista non usciva al primo colpo, il piano del giorno lo stampa uno script, Patrick non lancia piu' niente, e la resa misurata dei DM.
 
 ## 06-Daily
 
