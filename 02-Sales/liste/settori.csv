@@ -1,0 +1,25 @@
+Lista,Settore,Parole,Stato,Canale,Nota
+siti,toelettature e dog trainer,toelett|\bdog|\bcani\b|cinofil|\bpet\b|ippico,attivo,dm,
+siti,pasticcerie e cake designer,pasticcer|gelater|cake,attivo,dm,
+siti,"personal trainer, pilates e yoga",personal trainer|pilates|yoga|palestra|ginnastica|boxe,attivo,dm,
+siti,"sartorie, atelier e tappezzieri",sartor|atelier|tappezz|tessitur|tessuti|maglific|tendagg|calzaturific|ricamo|stampa digitale tessile,attivo,dm,
+siti,fioristi e wedding planner,fiorist|wedding|floral|vivai|florovivais|ingrosso fiori|garden|giardinagg|atelier sposa,attivo,dm,
+siti,tatuatori e piercing,tatu|tattoo|piercing,attivo,dm,
+siti,fotografi e videomaker,fotograf|videomaker,attivo,dm,
+siti,ristorazione,pizzeria|ristorante|\bbar\b|osteria|\bpub\b|street food|hamburgeria|birreria|enoteca|vineria|grotto|ristorazione,evitare,telefono,"01/10: 0 positivi su 157 DM, 11 risposte su 23 sono autorisposte, 6 dicono ho già il sito"
+siti,unghie,\bnails?\b|onicotecnica|unghie,pausa,dm,"in pausa dal 29/09, lo riapre Patrick"
+siti,estetica,estetic|solarium|massagg|skincare,pausa,dm,"in pausa dal 29/09, lo riapre Patrick"
+siti,"ciglia, sopracciglia e PMU",trucco permanente|ciglia|\bpmu\b|microblading|laminazione|lash|dermopigment|nanoblading|sopracciglia|hydralips|lip blush,pausa,dm,"in pausa dal 29/09, lo riapre Patrick"
+siti,parrucchieri,parrucc|\bhair|acconciat|tricolog|hairstyl,pausa,dm,"in pausa dal 29/09, lo riapre Patrick"
+siti,barbieri,barb,pausa,dm,"in pausa dal 29/09, lo riapre Patrick"
+siti,trucco sposa e wedding,make-up|trucco,pausa,dm,"in pausa dal 29/09, lo riapre Patrick"
+ricerca,officine e carrozzerie,officin|carrozzer|autofficin|gommist|concessionar|\bmoto\b|autodemoliz|ricambi auto|autolavagg|detailing|autoriparaz|\bauto\b|nautic|camper|revisioni|autoscuola|centro auto,attivo,dm,
+ricerca,edilizia e serramenti,edil|costruzion|ristruttur|serrament|infissi|pavimenti|parquet|marm|ponteggi|tetti|coperture|scavi|asfalt|resina|vetreria|arredament|arredo|arredi|imbianchino|cartongess|rivestiment|decorazione|insegne|vetrofanie,attivo,dm,
+ricerca,alimentari artigianali,alimentar|caseific|salumific|panific|pastific|caseari|torrefaz|birrificio|formaggi|salumi|gastronomia|street|ingrosso ittico|prodotti ittici,attivo,dm,
+ricerca,aziende agricole con vendita,agricol|allevament|cantina|ortofrutta|riseria|risicola|frantoio|ortaggi|frutta|suini|patate|orticoltura,attivo,dm,
+ricerca,ingrossi e distribuzione,ingross|distribuzion|noleggio|grossisti|cash and carry|commercio|forniture|colorificio|ferramenta,attivo,dm,
+ricerca,falegnamerie,falegnam,attivo,dm,
+ricerca,trasporti e logistica,trasport|trasloch|logistic|autotrasporti|autoservizi,evitare,telefono,"30/09 MB: 30 profili, 2 righe. Non stanno su Instagram"
+ricerca,impiantisti,impiant|termoidraul|idraulic|elettric|fotovoltaic|climatizzaz|caldaie|antincendio|domotica|automazione|efficientamento|spurghi|piscine,evitare,telefono,"30/09 MB: 30 profili, 1 riga. Non stanno su Instagram"
+ricerca,meccanica e carpenterie,carpenteria|fabbro|lamiere|meccanic|torneria|tornitura|stampi|verniciatura|packaging|lavanderia|corderia|sollevamento|riciclaggio|depurazione|siderurgic|lavorazioni,evitare,telefono,"su Pagine Gialle 246 officine meccaniche, 2 con Instagram"
+ricerca,studi tecnici,studio tecnico|architett|ingegner|immobiliar|agenzia|tipografia|serigraf|stampa|cartotecnica|vigilanza|disinfestazione|pulizie|gestione rifiuti|onoranze|ottica,evitare,telefono,"376 schede PG, 1 con Instagram"
