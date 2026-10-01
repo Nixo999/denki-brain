@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **256 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **258 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -39,6 +39,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 **progetti/**
 
 - [[co-opero-clienti]] — ⚠️ CO-OPERO lato clienti, deciso con Patrick il 30/09 - accesso, pagina Richieste in OperO, stati delle richieste, il mockup letto.
+- [[co-opero-prototipo]] — ⚠️ Prototipo di CO-OPERO (1/10) sul ramo coopero di opero-sito - cosa c'è, cosa manca per mostrarlo, dove va oltre le decisioni del 30/09.
 - [[denki-agents]] — Piattaforma interna multi-agente - ogni task sul suo modello via LiteLLM, costo di ogni chiamata in Postgres. Fase 1: solo il gateway.
 - [[denkishift-interfaccia]] — ⚠️ Obiettivo dichiarato - un'interfaccia che si venda da sola durante la demo di Patrick, calibrata su due utenti che non sono due gradini dello...
 - [[denkishift]] — Prodotto di punta, turni per squadre a orario variabile. Dimostrabile, NON installabile in produzione.
@@ -327,6 +328,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-27-verificato-in-chiusura]] — verificato lo scrive /chiudi-sessione sulle note toccate in sessione che Nicola o Patrick approvano. 109 note su 246 erano ipotesi. 27/09/2026.
 - [[2026-09-30-instagram-pubblicazione-api]] — Post e storie di DenkiCode li pubblica uno script con l'API ufficiale di Instagram. Deciso da Patrick il 30/09/2026, tocca a Nicola.
 - [[2026-10-01-banco-ricircolo]] — /banco riscritto l'1 ottobre - perche' la lista non usciva al primo colpo, il piano del giorno lo stampa uno script, Patrick non lancia piu' niente, e la resa misurata dei DM.
+- [[2026-10-01-coopero-prototipo]] — ⚠️ Prototipo di CO-OPERO chiesto da Nicola il 1/10 - quattro scelte tecniche proposte da Claude, in attesa del suo verdetto. Niente pubblicato.
 
 ## 06-Daily
 

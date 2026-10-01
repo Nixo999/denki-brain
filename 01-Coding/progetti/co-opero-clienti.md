@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: CO-OPERO lato clienti, deciso con Patrick il 30/09 - accesso, pagina Richieste in OperO, stati delle richieste, il mockup letto.
-updated: 2026-09-30
+updated: 2026-10-01
 source: claude
 progetto: opero
 tags: [opero, co-opero, richieste, stati, mockup]
@@ -12,6 +12,11 @@ tags: [opero, co-opero, richieste, stati, mockup]
 Il pezzo da cui si parte (Patrick, 30/09): il cliente chiede da CO-OPERO, la
 segreteria risponde dalla pagina Richieste di OperO. **Da imparare, non da
 costruire.** Il modello intero, il repo e i buchi → [[opero-intermediar-receive]].
+
+## Il prototipo
+
+Dal 1/10 c'è un prototipo che gira, chiesto da Nicola: ramo `coopero` di
+`opero-sito`, in locale, non pubblicato → [[co-opero-prototipo]].
 
 ## Flusso 1 — cosa ha deciso Patrick il 30/09
 
@@ -31,7 +36,7 @@ Parole intere in [[opero-intermediar-receive-testo]].
 >   Alus002 vede nomi e cellulari dei lavoratori e i costi di un altro
 >   cliente. Il codice può restare quello che il cliente vede, l'accesso
 >   deve passare da qualcosa che non si indovina: il link lungo, un PIN, un
->   codice via SMS. `TODO` Nicola.
+>   codice via SMS. ~~`TODO` Nicola~~ Nel prototipo del 1/10: link lungo → [[co-opero-prototipo]].
 > - **Una voce in più sul telefono**: con Richieste l'isola in basso passa da
 >   4 a 5 voci, 7 per un admin con Gestione. Scelta di Patrick.
 > - **La notifica non esiste ancora**: oggi le push partono solo dalla

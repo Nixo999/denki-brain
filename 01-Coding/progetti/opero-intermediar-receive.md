@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ecosistema OperO + CO-OPERO (30/09) sopra Intermediar + Receive (24/09) - da conoscere, non da fare. Modello, cosa dice il repo oggi, buchi.
-updated: 2026-09-30
+updated: 2026-10-01
 source: claude
 progetto: opero
 tags: [opero, intermediar, receive, co-opero, specifica, sebastian-torres]
@@ -15,6 +15,11 @@ riassetto, anche quello da imparare e non da costruire: «non mettere mano al
 codice». L'hanno riorganizzato **Patrick e Seba insieme** (30/09). Niente
 codice, niente quotazione, niente date. Testi integrali →
 [[opero-intermediar-receive-testo]].
+
+⚠️ **Dal 1/10 esiste un prototipo del flusso 1**, chiesto da Nicola: ramo
+`coopero` di `opero-sito`, in locale, non pubblicato e con la migrazione non
+applicata → [[co-opero-prototipo]]. Il flusso 2 (Gruppo, fornitori) resta da
+conoscere e basta.
 
 ## Il modello del 30/09: OperO al centro, CO-OPERO doppio ponte
 
