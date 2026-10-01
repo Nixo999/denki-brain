@@ -1,7 +1,7 @@
 ---
 riga: Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
 type: area
-updated: 2026-09-29
+updated: 2026-10-01
 source: claude
 prodotto: denkishift
 ---
@@ -210,6 +210,10 @@ in [[metriche]]:
 
 
 ## Regole
+
+### 01/10/2026 — Nicola: «le ricerche sono spesso sbagliate e ridondanti nei settori, voglio che ci sia sempre un ricircolo di settori e luoghi, cercando di dare priorità a lead ad alta conversione tenendo conto anche del metodo di contatto»
+
+Settori e luoghi girano sempre: nessun settore si ripete giorno dopo giorno, la priorita' la decide la resa misurata (risposte per settore e per canale), non l'ordine fisso di un elenco.
 
 ### 29/09/2026 — Patrick: «non esconon per sempre ma dopop 3 settimane sono stufo, cambiamo area, puntiamo su altro»
 
