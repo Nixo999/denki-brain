@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-10-02
+updated: 2026-10-03
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 03/10/2026 — Nicola: «in unovo lvoro sta tutto solo in alto e non mi smebra sfruttato bene lo spazio»
+
+Vale anche per i moduli, non solo per gli elenchi: da computer il contenuto si distribuisce in altezza fino alla barra in fondo, niente blocchi tutti in alto col vuoto sotto. Detto sul modulo «Nuovo lavoro» di CO-OPERO (3/10/2026).
 
 ### 02/10/2026 — Nicola: «ci sono delle spaziature che mi danno fastidio a volte troppo spazio vuoto, a volte troppo poco, rendilo abbastanz regolare. poi aggiusta le dimensioni dei oannelli in modo da sfruttare al meglio possibile lo spazio»
 
