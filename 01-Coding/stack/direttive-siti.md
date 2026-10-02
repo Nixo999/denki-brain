@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-09-30
+updated: 2026-10-02
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 02/10/2026 — Nicola: «ci sono delle spaziature che mi danno fastidio a volte troppo spazio vuoto, a volte troppo poco, rendilo abbastanz regolare. poi aggiusta le dimensioni dei oannelli in modo da sfruttare al meglio possibile lo spazio»
+
+Da computer una misura sola per margini e distanze, e pannelli che riempiono larghezza e altezza: niente vuoti a caso accanto a elementi stretti. Detto sul portale CO-OPERO (2/10/2026), vale per ogni schermata da scrivania.
 
 ### 30/09/2026 — Nicola: «aggiusta un po le spaziature, da telefono alcune scritte finiscono sotto le immagini. per resto bello il desing ma aggoiungi qualche dettaglio in piu perche cosi sia da telefono che da pc risulta un po vuoto»
 
