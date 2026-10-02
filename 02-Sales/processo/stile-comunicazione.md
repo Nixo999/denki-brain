@@ -1,7 +1,7 @@
 ---
 riga: Il registro dei testi che legge un cliente - Lei o Tu, voce di Patrick. Non e' il registro di Trevis.
 type: risorsa
-updated: 2026-09-27
+updated: 2026-10-03
 source: denkicode
 ---
 
@@ -103,6 +103,10 @@ Vincolo fiscale attivo, dettaglio in [[vincoli-fiscali]]:
 ## Regole date a voce
 
 Scritte da `regola.py` nel momento in cui sono state dette.
+
+### 03/10/2026 — Nicola: «per le storie, devono essere professionali, anche nel caso siano divertenti, e mi raccomando fai sempre una ricerca di mercato su aziende che fanno la nostra stessa cosa e che la fanno bene, mi raccomando fai attenzione ai testi»
+
+Una storia di @denkicode resta professionale anche quando fa sorridere, e prima di scriverla si guarda come la fanno le aziende del nostro mestiere che la fanno bene.
 
 ### 20/09/2026 — Patrick: «io devo far finta di lavorare per la stra up non essere il capo»
 
