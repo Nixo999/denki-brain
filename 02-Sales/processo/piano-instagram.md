@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Cosa pubblica @denkicode, quanto, quando, con che didascalie e hashtag. Deciso da Trevis il 30/09/2026 su delega di Patrick, si rivede a 4 settimane.
-updated: 2026-09-30
+updated: 2026-10-03
 source: claude
 tags: [social, instagram, piano, lead]
 ---
@@ -57,6 +57,31 @@ Tre post a settimana: sotto i tre la crescita si dimezza, sopra non ci sono
 le ore. **Il sabato niente**, i negozi lavorano. Gli orari sono un'ipotesi,
 perche' nessuno studio dice quando usano Instagram i titolari: restano fermi
 quattro settimane, poi si guarda.
+
+## Il calendario dal 3 ottobre 2026 — due linee sullo stesso profilo
+
+Nicola, 03/10/2026, sul calendario proposto con il [[brief-social-sarto]]:
+*«il calendario che hai creato va bene ma fallo partire in automatico da
+oggi»*. Vale da oggi e supera in due punti la tabella sopra: **il giovedì
+passa dalle 21:00 alle 13:30** e diventa della linea gestionali, e **le storie
+siti scendono da sette a quattro a settimana**. Patrick va avvisato.
+
+| Giorno | Ora | Cosa | Linea |
+|---|---|---|---|
+| lunedì | 8:00 | una storia | siti |
+| martedì | 13:30 | carosello, più la copertina in storia | siti |
+| mercoledì | 8:00 | sequenza di 3 storie, invito «scrivici SARTO» | gestionali |
+| giovedì | 13:30 | post, tipologie A → C → A → B, più la copertina in storia | gestionali |
+| venerdì | 8:00 | sequenza Relatable di 3 storie | gestionali |
+| sabato | 8:00 | una storia | siti |
+| domenica | 21:00 | Reel, più la copertina in storia | siti |
+
+**I sondaggi li pubblica Patrick a mano**: l'API non mette gli sticker. Dall'API
+esce il frame senza sticker; l'immagine base con la fascia vuota per lo
+sticker gliela lascia `02-Sales/strumenti/sondaggi.py` sul Desktop, e `/patrick`
+glielo ricorda da cinque ore prima. Il **caso studio (B) non esce senza il sì
+di Seba** ([[accordo-riservatezza-opero]]); la tipologia C non è ancora scritta.
+I testi stanno in [[bozze-social-2026-10-03]]. LinkedIn: `TODO`, nessun profilo.
 
 ## Cosa si pubblica: quattro serie fisse
 

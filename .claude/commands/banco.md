@@ -35,6 +35,10 @@ python3 "$V/02-Sales/strumenti/stato-banco.py"
 ls -1 "$V/02-Sales/liste"/$(date +%F)-*.csv 2>/dev/null || echo "nessuna lista di oggi"
 ```
 
+```bash
+python3 "$V/02-Sales/strumenti/sondaggi.py"   # il sondaggio di oggi lo pubblica Patrick a mano: se c'e', va in testa alla risposta
+```
+
 Il conto vero degli invii sta nel browser di Patrick: se non torna, ha ragione lui.
 
 ## 2 · Il piano del giorno

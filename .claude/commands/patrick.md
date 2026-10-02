@@ -53,6 +53,20 @@ python3 "$V/02-Sales/strumenti/stato-banco.py"
 ls -1t "$V/02-Sales/liste"/*.csv | head -3
 ```
 
+```bash
+python3 "$V/02-Sales/strumenti/sondaggi.py"
+```
+
+**Se stampa «SONDAGGIO DA PUBBLICARE A MANO», va in testa alla risposta, prima
+di tutto il resto, copiato com'è: giorno e ora, domanda, due risposte, dove sta
+l'immagine base sul Desktop, e i quattro passi.** Nicola, 3/10/2026: *«ricorda a
+patrick ogni volta che fa /patrick di creare dei sondaggi, come farlo, a che ora
+e quando, ricordaglielo fin dalle 5 ore precedenti e dagli una foto base del
+sondaggio»*. Le storie escono da sole dall'API (`Nixo999/denkicode-social`),
+ma lo sticker del sondaggio l'API non lo mette: quel frame lo pubblica Patrick
+dall'app, sopra l'immagine base. Se stampa solo «Prossimo sondaggio», una riga
+in fondo e basta.
+
 ⚠️ **La riga di `installa-macchina.py` non è opzionale e va dopo il pull.**
 `~/.claude/` (protocollo, agente `operatore`, comandi, skill nostre) è locale
 alla macchina: il pull porta le copie canoniche nel vault, non le installa.
