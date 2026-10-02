@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **259 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **260 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -210,6 +210,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[presidi-volantini]] — ⚠️ Terzo canale, deciso il 28/8/2026. Primo presidio vero il 15/9/2026: un parrucchiere via Morgan, pagato col sito gratis, non a risultato.
 - [[prodotti-e-listino]] — I quattro prodotti e i prezzi. I prezzi sono indicativi - l'aggancio, non la cifra finale.
 - [[ricerca-instagram]] — ⚠️ Come funziona Instagram al 30/09/2026 per un profilo piccolo - algoritmo, orari, hashtag, didascalie, API - e chi vende siti su Instagram. Con le fonti.
+- [[ricerca-storie]] — ⚠️ Ricerca del 03/10/2026 sulle storie Instagram di chi vende siti a piccole attivita, Italia ed estero - schemi che rendono, cosa evitare, fonti 2025-26. Storie non viste: solo highlights e feed da fuori.
 - [[stile-comunicazione]] — Il registro dei testi che legge un cliente - Lei o Tu, voce di Patrick. Non e' il registro di Trevis.
 
 **report/**

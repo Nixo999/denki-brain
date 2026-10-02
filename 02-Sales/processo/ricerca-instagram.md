@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Come funziona Instagram al 30/09/2026 per un profilo piccolo - algoritmo, orari, hashtag, didascalie, API - e chi vende siti su Instagram. Con le fonti.
-updated: 2026-09-30
+updated: 2026-10-03
 source: claude
 tags: [social, instagram, ricerca, lead]
 ---
@@ -99,3 +99,24 @@ professionale»; **un settore per post**; il rischio lo toglie l'offerta scritta
 in bio («free concept», «$0 upfront»). Cosa affonda gli altri: bio a slogan,
 griglia solo portfolio, piu' seguiti che follower, grafiche AI, raffiche e poi
 silenzio, contenuti che guardano solo gli altri designer.
+
+## Le storie — ricerca del 3 ottobre 2026
+
+Chiesta da Nicola («analizza i profili che fanno la stessa cosa nostra anche se
+sono all'estero»). Per esteso, con 27 profili e le fonti: [[ricerca-storie]].
+**Limite**: senza sessione Instagram le storie, attive o in evidenza, non si
+vedono; quello che segue viene da titoli degli highlights, copertine e feed.
+
+- Su 30 profili, 15 hanno un highlight di **recensioni**; poi lavori, squadra,
+  processo, prezzo, FAQ. La nostra serie «Consigli» quasi non esiste altrove.
+- Quello che si stacca è sempre **una persona**: foto del team 35 like su 847
+  follower, «giornata di riprese» 83 like su 601. Nella nicchia il resto fa
+  1-10 like a post.
+- Il copione «cliente di sera col telefono in mano», che è il nostro gancio,
+  da chi lo usa rende 0-4 like: evidenza debole.
+- Frequenza (Socialinsider, 161.180 storie): gli account da 1K a 5K ne fanno
+  circa 3 a settimana; una al giorno sta nella norma. Le immagini vengono
+  saltate più dei video. Orario: per chi apre il profilo dopo il DM conta
+  poco, la storia dura 24 ore.
+- Di 12 profili cercati che «lo fanno bene» ne sono usciti 7 con interazioni
+  vere; una dozzina scartati per seguiti > follower.
