@@ -248,16 +248,16 @@ def computer_spento():
 def pizzico():
     """Il sito da ingrandire con le dita: testo minuscolo e due polpastrelli."""
     minuscolo = "".join(
-        f'<rect x="276" y="{70 + i*16}" width="{w}" height="5" rx="2.5" class="riga-tenue"/>'
+        f'<rect x="316" y="{70 + i*16}" width="{w * 4 // 5}" height="5" rx="2.5" class="riga-tenue"/>'
         for i, w in enumerate([300, 280, 310, 260, 300, 240, 290, 270, 305, 250, 280, 230,
                                300, 270, 290, 260]))
     return f"""
 <svg viewBox="0 0 880 440" class="art">
-  <rect x="250" y="10" width="360" height="420" rx="40" class="tratto"/>
-  <rect x="396" y="26" width="66" height="8" rx="4" class="riga-tenue"/>
-  <rect x="276" y="44" width="120" height="8" rx="4" class="riga"/>
+  <rect x="290" y="10" width="290" height="420" rx="40" class="tratto"/>
+  <rect x="402" y="26" width="66" height="8" rx="4" class="riga-tenue"/>
+  <rect x="316" y="44" width="110" height="8" rx="4" class="riga"/>
   {minuscolo}
-  <rect x="276" y="340" width="70" height="16" rx="8" class="riga-tenue"/>
+  <rect x="316" y="340" width="70" height="16" rx="8" class="riga-tenue"/>
   <circle cx="390" cy="240" r="44" fill="url(#g)" opacity=".18"/>
   <circle cx="390" cy="240" r="24" fill="url(#g)"/>
   <circle cx="490" cy="170" r="44" fill="url(#g)" opacity=".18"/>
