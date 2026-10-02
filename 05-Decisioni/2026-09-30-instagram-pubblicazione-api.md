@@ -3,7 +3,7 @@ type: decisione
 riga: Post e storie di DenkiCode li pubblica uno script con l'API ufficiale di Instagram. Deciso da Patrick il 30/09/2026, tocca a Nicola.
 data: 2026-09-30
 progetto: azienda
-updated: 2026-10-01
+updated: 2026-10-02
 source: denkicode
 tags: [social, instagram, automazione, nicola]
 ---
@@ -73,3 +73,19 @@ nessuno.
 ## Costruito il 1 ottobre 2026
 
 Script e cron nel repo `~/lavoro/denkicode-social` (Instagram Login, `graph.instagram.com`, niente Pagina Facebook; le immagini servite da `raw.githubusercontent.com`, quindi repo pubblico). Setup e limiti nel suo `README.md`. Mai provato con un token vero.
+
+## Completato il 2 ottobre 2026, manca solo il token
+
+- **Il cron di GitHub non è puntuale**: chiesto ogni 20 minuti, l'1-2/10 è
+  girato 5 volte in 21 ore. Ora ogni giro aspetta sul posto il prossimo post
+  (entro 5 ore e mezza) e lo pubblica al minuto (`174ebd4`).
+- **Documentazione Meta riletta il 2/10** da un agente: endpoint e parametri
+  dello script combaciano; `v23.0` vale fino all'8/10/2027; **la Pagina
+  Facebook non serve** con Instagram Login; niente App Review sul proprio
+  account. Non trovato sulle pagine ufficiali: se le storie via API vogliono
+  un account Business, e se l'app deve passare a Live. Si scopre al primo giro.
+- **In `media/` quattro storie del 16/09** (01, 02, 03, 05). Fuori la
+  copertina, che vuole lo sticker link, e la 04 sull'agenda, che
+  [[piano-instagram]] vieta di promettere.
+- **A Nicola restano**: app Meta, token con `instagram_business_content_publish`,
+  i secret `IG_TOKEN` e `GH_PAT`. La coda resta vuota finché il token non c'è.
