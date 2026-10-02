@@ -1,6 +1,6 @@
 ---
 type: risorsa
-updated: 2026-10-02
+updated: 2026-10-03
 source: claude
 tags: [indice]
 ---

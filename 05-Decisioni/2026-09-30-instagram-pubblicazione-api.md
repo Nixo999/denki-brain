@@ -3,7 +3,7 @@ type: decisione
 riga: Post e storie di DenkiCode li pubblica uno script con l'API ufficiale di Instagram. Deciso da Patrick il 30/09/2026, tocca a Nicola.
 data: 2026-09-30
 progetto: azienda
-updated: 2026-10-02
+updated: 2026-10-03
 source: denkicode
 tags: [social, instagram, automazione, nicola]
 ---
@@ -89,3 +89,11 @@ Script e cron nel repo `~/lavoro/denkicode-social` (Instagram Login, `graph.inst
   [[piano-instagram]] vieta di promettere.
 - **A Nicola restano**: app Meta, token con `instagram_business_content_publish`,
   i secret `IG_TOKEN` e `GH_PAT`. La coda resta vuota finché il token non c'è.
+
+## Prima pubblicazione vera, 3 ottobre 2026
+
+App Meta «DenkiSocial» creata da Nicola (Business, caso d'uso Instagram, i due
+permessi `instagram_business_*`, `@denkicode` tester). `pubblica.py verifica`:
+token valido, **account BUSINESS**. Alle 00:12 la storia 01 del 16/09 è uscita
+via API (`fatto` in `coda.json`): **l'app in Development basta**, le storie
+passano. Resta `GH_PAT` per il rinnovo settimanale del token.
