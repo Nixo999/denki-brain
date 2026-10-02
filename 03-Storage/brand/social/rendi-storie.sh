@@ -9,6 +9,8 @@ QUI="$(cd "$(dirname "$0")" && pwd)"
 SERIE="${1:-$(ls "$QUI/storie" | sort | tail -1)}"
 FUORI="${2:-$HOME/Desktop/denki-storie-instagram-$SERIE}"
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+# sul Mac di Nicola Chrome non c'e': Brave rende uguale (come cattura-fette.mjs)
+[ -x "$CHROME" ] || CHROME="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
 [ -d "$QUI/storie/$SERIE" ] || { echo "serie $SERIE sconosciuta"; exit 1; }
 
 mkdir -p "$FUORI/png"
