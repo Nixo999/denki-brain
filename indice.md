@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **261 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **262 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -198,6 +198,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 **processo/**
 
+- [[bozze-social-2026-10-03]] — ⚠️ Bozze del 03/10/2026 - sei storie linea siti (Come funziona, Cose che succedono) e la linea gestionali del brief Sarto - analisi, calendario, due post, quattro sequenze. Da rileggere Nicola, poi Patrick.
 - [[brief-social-sarto]] — Brief di Nicola del 03/10/2026 per post e storie «Sarto del Software» - contrasto con i gestionali standard, tre tipi di post, storie in sequenze da 3, storie Relatable. Verbatim, con i punti che urtano le regole esistenti.
 - [[canali-indiretti]] — Chi vende al posto vostro - caller, agenzie a performance, rivenditori. Prezzi al 13/9/2026. Primo segnalatore in casa: Morgan, 15/9.
 - [[ciclo-settimanale]] — Dettato da Patrick il 28 agosto 2026. È il processo fisso.
