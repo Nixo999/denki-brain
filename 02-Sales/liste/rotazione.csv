@@ -110,23 +110,23 @@ ricerca,MB,trasporti e logistica,esaurito,3,2026-09-30,"30/09: 30 profili, 2 rig
 ricerca,MB,alimentari artigianali,esaurito,12,2026-09-30,"30/09: 26 profili, 10 righe. Fonti finite"
 ricerca,MB,aziende agricole con vendita,esaurito,12,2026-09-30,"30/09: 35 profili, 11 righe. Fonti finite (nomi PG esauriti)"
 ricerca,MB,altro,parziale,11,2026-09-29,righe sparse di settori fuori elenco
-ricerca,CO,falegnamerie,parziale,1,2026-09-21,
+ricerca,CO,falegnamerie,esaurito,3,2026-10-02,"2/10: 27 profili, 2 righe. Finito per resa"
 ricerca,CO,impiantisti,parziale,4,2026-09-29,
 ricerca,CO,officine e carrozzerie,parziale,19,2026-09-30,"30/09: 27 profili, 11 righe. Aperto, rende"
 ricerca,CO,meccanica e carpenterie,parziale,4,2026-09-30,"30/09: vicla, 1 riga"
-ricerca,CO,edilizia e serramenti,parziale,8,2026-09-23,
+ricerca,CO,edilizia e serramenti,parziale,28,2026-10-02,"2/10: 64 profili, 20 righe. Aperta, rende 1 su 3"
 ricerca,CO,ingrossi e distribuzione,parziale,2,2026-09-29,
 ricerca,CO,aziende agricole con vendita,parziale,1,2026-09-29,
 ricerca,CO,altro,parziale,6,2026-09-19,righe sparse di settori fuori elenco
-ricerca,MI,falegnamerie,parziale,3,2026-09-23,
+ricerca,MI,falegnamerie,esaurito,8,2026-10-02,"2/10: 31 profili, 4 righe (+1 trovata dal giro CO). Finito per resa"
 ricerca,MI,studi tecnici,parziale,2,2026-09-29,
 ricerca,MI,impiantisti,parziale,7,2026-09-25,
 ricerca,MI,officine e carrozzerie,parziale,20,2026-09-25,
 ricerca,MI,meccanica e carpenterie,parziale,4,2026-09-25,
-ricerca,MI,edilizia e serramenti,parziale,36,2026-09-25,
+ricerca,MI,edilizia e serramenti,parziale,47,2026-10-02,"2/10: 11 righe; operatore fermato prima del resoconto, profili non contati"
 ricerca,MI,ingrossi e distribuzione,parziale,9,2026-09-19,
 ricerca,MI,trasporti e logistica,parziale,7,2026-09-23,
-ricerca,MI,alimentari artigianali,parziale,3,2026-09-17,
+ricerca,MI,alimentari artigianali,parziale,23,2026-10-02,"2/10: 67 profili, 20 righe. Aperta, rende 1 su 3,4"
 ricerca,MI,aziende agricole con vendita,parziale,3,2026-09-21,
 ricerca,MI,altro,parziale,21,2026-09-25,righe sparse di settori fuori elenco
 ricerca,LC,falegnamerie,parziale,1,2026-09-29,
@@ -216,3 +216,9 @@ siti,LC,"personal trainer, pilates e yoga",esaurito,7,2026-09-30,"30/09: 31 prof
 siti,LC,pasticcerie e cake designer,esaurito,9,2026-09-30,"30/09: 30 profili, 9 righe. Profili da trovare finiti"
 siti,LC,"sartorie, atelier e tappezzieri",esaurito,3,2026-09-30,"30/09: 20 profili, 3 righe. Profili da trovare finiti"
 siti,MI,toelettature e dog trainer,parziale,3,2026-09-30,"30/09: 3 righe, lotto partito tardi e fermato a 100"
+siti,MI,tatuatori e piercing,parziale,25,2026-10-02,"2/10: 50 profili, 25 righe. Aperta, rende 1 su 2"
+siti,BS,toelettature e dog trainer,esaurito,17,2026-10-02,"2/10: 99 profili, 17 righe. Finito per resa: 35 fuori provincia, 20 col sito"
+siti,NO,toelettature e dog trainer,esaurito,4,2026-10-02,"2/10: 30 profili, 4 righe. Finito per resa"
+siti,LC,fotografi e videomaker,parziale,10,2026-10-02,"2/10: 35 profili, 10 righe. Fermata per fonti finite, non per resa: PG, matrimonio.com e Yahoo ridanno gli stessi nomi, quasi tutti col sito"
+siti,MI,"sartorie, atelier e tappezzieri",parziale,23,2026-10-02,"2/10: 23 righe; operatore fermato prima del resoconto, profili aperti non contati"
+siti,MI,"personal trainer, pilates e yoga",parziale,7,2026-10-02,"2/10: 10 righe scritte, 3 tolte (1 sito probabile, 2 su Fresha non nominata); operatore fermato, profili non contati"

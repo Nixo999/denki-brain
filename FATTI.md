@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura. Max 80 righe.
-updated: 2026-10-01
+updated: 2026-10-02
 verificato: 2026-09-16
 source: denkicode
 tags: [stato, fatti]
@@ -66,7 +66,7 @@ Lobidù, Da Caterina: lo stato sta nella loro nota.
 
 ## Bloccato, e perché
 
-- **Banco DM** (01/10): `/banco` riscritto, il piano lo stampa `prossimo-giro.py`, mai girato sul Mac di Patrick. La posta non è letta dal 21/09 (367 DM senza esito, il campo «Chat» resta vuoto) e **733 righe sono sul banco mai mandate** → [[2026-10-01-banco-ricircolo]]
+- **Banco DM** (02/10): 144 righe nuove sul banco Patrick (siti 86, ricerca 58), **877 da mandare**; cosa guardare prima dell'invio in [[2026-10-02-siti-e-ricerca-mi-bs-lc-co]]. La posta di DenkiCode non è letta (Instagram non loggato nel browser dell'app di Nicola); quella di `@patrick.sappa` letta l'1/10 → [[2026-10-01-banco-ricircolo]]
 - **OperO, storico**: la migrazione non si fa più (13/09), Seba vuole solo un report giugno-agosto da `strumenti/report-mesi.mjs`; manca la chiave `OPERO1_SERVICE` da Settings → API di OperO 1, o un login di segreteria → [[opero]]
 - **DenkiShift non è installabile in produzione**: dimostrabile, senza date → [[denkishift]]
 - **La produzione resta fuori** su tutti e due i prodotti → [[modifiche-al-database]]

@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-10-01
+updated: 2026-10-02
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **258 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **259 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -190,6 +190,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-25-opero-facchinaggio]] — 100 aziende di solo facchinaggio per Seba su OperO, da Seveso a Firenze (9,8-265 km), fatturato 250k-10M. 29 gia' nella lista mista. Piu' 149 senza numero.
 - [[2026-09-29-ciglia-piemonte-e-ricerca]] — Liste del 29/9 - 100 tecniche di ciglia e sopracciglia del Piemonte, 60 aziende lombarde per la ricerca. Google su ogni riga siti.
 - [[2026-09-30-siti-e-ricerca-mb-co-lc-mi]] — Liste del 29-30/9, prime con la regola dei luoghi: 100 siti da MB, CO, LC e MI senza bellezza, 61 ricerca da MB e CO. Resa e trappole.
+- [[2026-10-02-siti-e-ricerca-mi-bs-lc-co]] — Per Patrick - il /banco lasciato a meta' l'1/10 finito da Nicola il 2/10: 144 righe sul banco (siti 86, ricerca 58), cosa guardare prima di mandare
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
