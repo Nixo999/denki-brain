@@ -58,7 +58,7 @@ PIATTAFORMA = re.compile(r"(wixsite\.com|jimdofree\.com|business\.site|myshopify
                          r"\.menu$|menu\.|godaddysites|webnode|altervista|blogspot|wordpress\.com|"
                          r"weebly|site123|carrd\.co|strikingly)", re.I)
 PARCHEGGIO = re.compile(r"(apache2 (ubuntu )?default|it works|index of /|coming soon|domain is for sale|"
-                        r"questo dominio|sito in costruzione|under construction|parked|register\.it|aruba)", re.I)
+                        r"questo dominio|sito in costruzione|under construction|presto online|parked|register\.it|aruba)", re.I)
 PAUSA = 12  # secondi fra due ricerche: DuckDuckGo senza chiave si blocca se si corre
 
 
@@ -178,7 +178,18 @@ def cerca(q):
 
 
 def apri(dominio):
-    """(stato, titolo, corpo). stato: vivo | parcheggiato | morto | non risponde"""
+    """(stato, titolo, corpo). stato: vivo | parcheggiato | morto | non risponde
+    Il dominio nudo che non e' vivo si riprova col www: 2/10/2026, toelettaturaeself.it
+    NXDOMAIN e giadacalamida.it a 1 byte, tutti e due vivi sul www."""
+    esito = _apri(dominio)
+    if esito[0] != "vivo" and not dominio.startswith("www."):
+        www = _apri("www." + dominio)
+        if www[0] == "vivo":
+            return www
+    return esito
+
+
+def _apri(dominio):
     ip, stato_dns = _doh(dominio)
     if stato_dns == "nxdomain":
         return "morto", "", ""
@@ -192,7 +203,9 @@ def apri(dominio):
             corpo = _curl(schema + dominio, ip, 12)[:60000]
             t = re.search(r"<title[^>]*>(.*?)</title>", corpo, re.I | re.S)
             titolo = re.sub(r"\s+", " ", html.unescape(t.group(1))).strip()[:80] if t else ""
-            if PARCHEGGIO.search(titolo) or PARCHEGGIO.search(corpo[:3000]) or len(corpo.strip()) < 300:
+            # il testo visibile, non l'html: su SeedProd e WordPress il «Coming Soon» sta dopo 3000 caratteri di css
+            testo = re.sub(r"<[^>]+>", " ", re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", corpo))
+            if PARCHEGGIO.search(titolo) or PARCHEGGIO.search(testo[:3000]) or len(corpo.strip()) < 300:
                 return "parcheggiato", titolo, corpo
             return "vivo", titolo, corpo
         except Exception:
