@@ -104,6 +104,10 @@ Vincolo fiscale attivo, dettaglio in [[vincoli-fiscali]]:
 
 Scritte da `regola.py` nel momento in cui sono state dette.
 
+### 03/10/2026 — Nicola: «per quanto riguarda le prossime storie tieni conto della ricerca di mercato che hai fatto su cosa postare quando quanto e come postare. mi raccomando analizza i profili che fanno la stessa cosa nostra anche se sono all'estero»
+
+Ogni contenuto social parte dalla ricerca (ricerca-instagram, piano-instagram) e dai profili di chi fa il nostro mestiere, anche fuori dall'Italia: non si inventa a vuoto.
+
 ### 03/10/2026 — Nicola: «per le storie, devono essere professionali, anche nel caso siano divertenti, e mi raccomando fai sempre una ricerca di mercato su aziende che fanno la nostra stessa cosa e che la fanno bene, mi raccomando fai attenzione ai testi»
 
 Una storia di @denkicode resta professionale anche quando fa sorridere, e prima di scriverla si guarda come la fanno le aziende del nostro mestiere che la fanno bene.
