@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Genera le storie Instagram di DenkiCode: 1080x1920, un HTML per storia.
 
-Ogni serie ha la sua cartella, storie/<data>/. Senza argomenti rifa' l'ultima
-serie; con la data rifa' quella: `genera-storie.py 2026-09-16`.
+Ogni serie ha la sua cartella, storie/<chiave>/. La chiave comincia con la
+data (`2026-09-16`, `2026-10-07-sarto-1`). Senza argomenti rifa' l'ultima
+serie; con la chiave rifa' quella: `genera-storie.py 2026-09-16`.
 
 Il rendering in PNG/JPEG lo fa rendi-storie.sh con Chrome headless.
 I testi sono passati dalla skill voce-denkicode. Restano source: claude
@@ -239,6 +240,352 @@ def complimento():
   <rect x="578" y="254" width="110" height="10" rx="5" class="riga-tenue"/>
 </svg>"""
 
+# i disegni delle serie di ottobre: linea siti (A, B) e linea gestionali.
+# I telefoni sono disegnati da zero, niente schermate vere e niente loghi.
+
+def mano(schermo, x, y, giro=0, scala=1):
+    """Un telefono 200x360 tenuto in mano: le dita dietro, il pollice sopra.
+    Il palmo esce dal fondo del disegno."""
+    dita = "".join(f'<rect x="168" y="{d}" width="62" height="42" rx="21" class="dito"/>'
+                   for d in (128, 178, 228, 278))
+    return f"""
+  <g transform="translate({x} {y}) rotate({giro} 100 180) scale({scala})">
+    {dita}
+    <rect x="0" y="0" width="200" height="360" rx="32" class="telefono"/>
+    <rect x="76" y="16" width="48" height="7" rx="3.5" class="riga-tenue"/>
+    {schermo}
+    <path class="dito" d="M-40 560 C -44 420, -46 330, -22 268 C -8 234, 14 212, 40 204
+      C 60 198, 74 214, 64 232 C 50 258, 32 280, 28 310 C 24 336, 50 356, 96 372
+      C 136 386, 168 410, 184 560"/>
+  </g>"""
+
+def monitor():
+    quadri = "".join(
+        f'<rect x="{112 + c*100}" y="{140 + r*100}" width="92" height="92" rx="8" '
+        f'fill="url(#g)" opacity="{(.16, .34, .5)[(r + c) % 3]}"/>'
+        for r in range(2) for c in range(3))
+    return f"""
+<svg viewBox="0 0 880 430" class="art">
+  <text x="92" y="24" class="micro">profilo</text>
+  <text x="452" y="24" class="micro">bozza</text>
+  <rect x="64" y="44" width="752" height="330" rx="18" class="tratto"/>
+  <rect x="92" y="70" width="340" height="280" rx="10" class="debole"/>
+  <circle cx="132" cy="106" r="18" class="riga-tenue"/>
+  <rect x="164" y="100" width="120" height="10" rx="5" class="riga-tenue"/>
+  {quadri}
+  <rect x="452" y="70" width="336" height="280" rx="10" class="debole"/>
+  <rect x="472" y="90" width="296" height="96" rx="8" fill="url(#g)" opacity=".34"/>
+  <rect x="472" y="208" width="210" height="13" rx="6.5" class="riga"/>
+  <rect x="472" y="236" width="270" height="9" rx="4.5" class="riga-tenue"/>
+  <rect x="472" y="256" width="230" height="9" rx="4.5" class="riga-tenue"/>
+  <rect x="472" y="294" width="120" height="36" rx="18" fill="url(#g)"/>
+  <rect x="398" y="374" width="84" height="40" class="tratto-tenue"/>
+  <rect x="330" y="414" width="220" height="10" rx="5" class="tratto-tenue"/>
+</svg>"""
+
+def bozza_in_mano():
+    schermo = """
+    <rect x="18" y="40" width="164" height="96" rx="10" fill="url(#g)" opacity=".3"/>
+    <rect x="18" y="154" width="126" height="11" rx="5.5" class="riga"/>
+    <rect x="18" y="180" width="164" height="8" rx="4" class="riga-tenue"/>
+    <rect x="18" y="198" width="140" height="8" rx="4" class="riga-tenue"/>
+    <rect x="70" y="232" width="112" height="36" rx="18" fill="url(#g)"/>
+    <rect x="70" y="290" width="112" height="8" rx="4" class="riga-tenue"/>"""
+    return f"""
+<svg viewBox="0 0 880 452" class="art">
+  <text x="470" y="80" class="micro">in chat</text>
+  <rect x="470" y="110" width="390" height="140" rx="36" class="debole"/>
+  <path d="M496 236 L472 282 L540 246 Z" class="debole"/>
+  <rect x="510" y="152" width="300" height="12" rx="6" class="riga"/>
+  <rect x="510" y="190" width="220" height="12" rx="6" class="riga-tenue"/>
+  {mano(schermo, 150, 40, -6)}
+</svg>"""
+
+def insegna():
+    return """
+<svg viewBox="0 0 880 380" class="art">
+  <line x1="170" y1="0" x2="170" y2="40" class="tratto-tenue"/>
+  <line x1="710" y1="0" x2="710" y2="40" class="tratto-tenue"/>
+  <rect x="40" y="40" width="800" height="150" rx="10" class="tratto"/>
+  <rect x="58" y="58" width="764" height="114" rx="4" class="tratto-tenue"/>
+  <text x="440" y="135" class="insegna" text-anchor="middle">IL TUO NEGOZIO</text>
+  <path d="M440 200 V 252" class="percorso"/>
+  <rect x="40" y="268" width="800" height="96" rx="48" class="tratto"/>
+  <rect x="84" y="310" width="28" height="22" rx="4" class="riga"/>
+  <path d="M90 310 v-8 a8 8 0 0 1 16 0 v8" fill="none" stroke="#84848f" stroke-width="3"/>
+  <text x="140" y="331" class="mono-grande">iltuonegozio<tspan fill="url(#g)">.it</tspan></text>
+</svg>"""
+
+def comodino():
+    return """
+<svg viewBox="0 0 880 452" class="art">
+  <ellipse cx="636" cy="210" rx="190" ry="150" fill="url(#g)" opacity=".07"/>
+  <rect x="470" y="14" width="330" height="72" rx="36" class="debole"/>
+  <path d="M640 80 L660 112 L680 80 Z" class="debole"/>
+  <rect x="504" y="36" width="230" height="10" rx="5" class="riga"/>
+  <rect x="504" y="56" width="150" height="8" rx="4" class="riga-tenue"/>
+  <rect x="560" y="116" width="150" height="206" rx="22" class="telefono"/>
+  <rect x="574" y="134" width="122" height="170" rx="12" fill="url(#g)" opacity=".16"/>
+  <rect x="582" y="152" width="106" height="38" rx="10" fill="url(#g)" opacity=".7"/>
+  <path d="M536 190 q-14 34 0 68 M518 176 q-22 48 0 96" class="vibra"/>
+  <path d="M734 190 q14 34 0 68 M752 176 q22 48 0 96" class="vibra"/>
+  <rect x="110" y="168" width="300" height="152" rx="28" class="telefono"/>
+  <rect x="134" y="192" width="252" height="104" rx="12" class="debole"/>
+  <text x="260" y="274" class="cifre" text-anchor="middle">23:50</text>
+  <rect x="40" y="320" width="800" height="18" rx="6" class="tratto"/>
+  <rect x="70" y="338" width="740" height="130" class="tratto-tenue"/>
+  <line x1="70" y1="398" x2="810" y2="398" class="tratto-tenue"/>
+  <circle cx="440" cy="368" r="7" class="riga-tenue"/>
+</svg>"""
+
+def bancone():
+    return """
+<svg viewBox="0 0 880 452" class="art">
+  <rect x="110" y="10" width="660" height="200" rx="46" class="debole"/>
+  <path d="M290 204 L262 262 L360 204 Z" class="debole"/>
+  <text x="440" y="100" class="trattini" text-anchor="middle">_ _ . _ _ _ <tspan fill="url(#g)">_</tspan> .</text>
+  <text x="440" y="174" class="trattini" text-anchor="middle">. _ _ <tspan fill="url(#g)">.</tspan> _ _ _ . _</text>
+  <path d="M100 300 L780 300 L860 360 L20 360 Z" class="tratto"/>
+  <rect x="20" y="360" width="840" height="110" class="tratto-tenue"/>
+  <line x1="300" y1="360" x2="300" y2="452" class="tratto-tenue"/>
+  <line x1="580" y1="360" x2="580" y2="452" class="tratto-tenue"/>
+  <path d="M372 312 L524 312 L540 346 L356 346 Z" class="telefono"/>
+  <path d="M384 318 L514 318 L526 340 L372 340 Z" fill="url(#g)" opacity=".3"/>
+</svg>"""
+
+def rullino():
+    quadri = []
+    tinte = [.42, 0, .22, .3, .5, "pasta", 0, .18, .36, .26, 0, "bolletta"]
+    for k, t in enumerate(tinte):
+        x, y = 60 + (k % 3) * 90, 74 + (k // 3) * 90
+        if t == 0:
+            quadri.append(f'<rect x="{x}" y="{y}" width="84" height="84" rx="6" class="debole"/>')
+        elif t == "pasta":
+            quadri.append(
+                f'<rect x="{x}" y="{y}" width="84" height="84" rx="6" class="debole"/>'
+                f'<circle cx="{x+42}" cy="{y+42}" r="30" class="tratto"/>'
+                f'<circle cx="{x+42}" cy="{y+42}" r="18" class="tratto-tenue"/>'
+                f'<path d="M{x+28} {y+38} q7 -9 14 0 t14 0 M{x+28} {y+48} q7 -9 14 0 t14 0" '
+                f'fill="none" stroke="#84848f" stroke-width="2.5"/>')
+        elif t == "bolletta":
+            quadri.append(
+                f'<rect x="{x}" y="{y}" width="84" height="84" rx="6" class="debole"/>'
+                f'<rect x="{x+20}" y="{y+12}" width="44" height="60" rx="3" class="tratto"/>'
+                + "".join(f'<rect x="{x+28}" y="{y+22+i*11}" width="{28 - i*4}" height="4" '
+                          f'rx="2" class="riga-tenue"/>' for i in range(4)))
+        else:
+            quadri.append(f'<rect x="{x}" y="{y}" width="84" height="84" rx="6" '
+                          f'fill="url(#g)" opacity="{t}"/>')
+    return f"""
+<svg viewBox="0 0 880 452" class="art">
+  <rect x="40" y="6" width="300" height="440" rx="40" class="tratto"/>
+  <rect x="166" y="24" width="48" height="7" rx="3.5" class="riga-tenue"/>
+  <rect x="60" y="46" width="110" height="10" rx="5" class="riga-tenue"/>
+  {''.join(quadri)}
+  <path d="M330 206 H 420" class="filo"/><text x="436" y="214" class="micro">pranzo di domenica</text>
+  <path d="M330 296 H 420" class="filo"/><text x="436" y="304" class="micro">i lavori</text>
+  <path d="M330 386 H 420" class="filo"/><text x="436" y="394" class="micro">bolletta</text>
+</svg>"""
+
+def furgone():
+    schermo = """
+    <rect x="18" y="40" width="120" height="10" rx="5" class="riga-tenue"/>
+    <rect x="18" y="80" width="130" height="44" rx="22" class="debole"/>
+    <rect x="34" y="208" width="148" height="56" rx="28" fill="url(#g)"/>
+    <path d="M58 226 L74 236 L58 246 Z" fill="#0a0a0d"/>""" + "".join(
+        f'<rect x="{86 + i*8}" y="{236 - h/2}" width="4" height="{h}" rx="2" fill="#0a0a0d" opacity=".6"/>'
+        for i, h in enumerate((10, 22, 14, 28, 18, 24, 10, 16, 8, 12)))
+    return f"""
+<svg viewBox="0 0 880 452" class="art">
+  <defs><clipPath id="cielo"><rect x="0" y="0" width="880" height="410"/></clipPath></defs>
+  <circle cx="470" cy="410" r="170" fill="url(#g)" opacity=".22" clip-path="url(#cielo)"/>
+  <circle cx="470" cy="410" r="110" fill="url(#g)" opacity=".28" clip-path="url(#cielo)"/>
+  <line x1="0" y1="410" x2="880" y2="410" class="tratto-tenue"/>
+  <path d="M60 86 L8 60 L8 392 L60 370 Z" class="telefono"/>
+  <path d="M420 86 L472 60 L472 392 L420 370 Z" class="telefono"/>
+  <rect x="24" y="300" width="18" height="40" rx="4" fill="url(#g)"/>
+  <rect x="438" y="300" width="18" height="40" rx="4" fill="url(#g)"/>
+  <rect x="60" y="70" width="360" height="310" rx="22" class="tratto"/>
+  <rect x="88" y="100" width="304" height="240" rx="6" class="debole"/>
+  <line x1="88" y1="186" x2="392" y2="186" class="tratto-tenue"/>
+  <line x1="88" y1="264" x2="392" y2="264" class="tratto-tenue"/>
+  <rect x="110" y="140" width="70" height="46" rx="4" class="tratto-tenue"/>
+  <rect x="196" y="154" width="48" height="32" rx="4" class="tratto-tenue"/>
+  <rect x="300" y="218" width="72" height="46" rx="4" class="tratto-tenue"/>
+  <rect x="50" y="380" width="380" height="18" rx="6" class="tratto"/>
+  <rect x="84" y="398" width="72" height="24" rx="6" class="debole"/>
+  <rect x="324" y="398" width="72" height="24" rx="6" class="debole"/>
+  {mano(schermo, 620, 96, 8, .9)}
+</svg>"""
+
+def chiudi_lavoro():
+    righe = ""
+    for i, (w, forte) in enumerate([(150, 0), (120, 1), (170, 0)]):
+        y = 130 + i * 92
+        colore = 'fill="url(#g)"' if forte else 'class="riga"'
+        righe += (f'<circle cx="514" cy="{y}" r="18" {colore} opacity=".8"/>'
+                  f'<rect x="548" y="{y-14}" width="{w}" height="11" rx="5.5" {colore}/>'
+                  f'<rect x="548" y="{y+6}" width="90" height="8" rx="4" class="riga-tenue"/>'
+                  f'<text x="860" y="{y+10}" class="voce-tenue" text-anchor="end">{(8, 7, 8)[i]} h</text>'
+                  f'<line x1="490" y1="{y+46}" x2="880" y2="{y+46}" class="tratto-tenue"/>')
+    return f"""
+<svg viewBox="0 0 880 452" class="art">
+  <rect x="40" y="6" width="320" height="440" rx="40" class="telefono"/>
+  <rect x="176" y="24" width="48" height="7" rx="3.5" class="riga-tenue"/>
+  <text x="70" y="82" class="micro">cantiere</text>
+  <text x="70" y="128" class="schermo-titolo">Cantiere 1</text>
+  <line x1="70" y1="160" x2="330" y2="160" class="tratto-tenue"/>
+  <text x="70" y="208" class="voce-tenue">Inizio</text>
+  <text x="330" y="208" class="voce" text-anchor="end">7:30</text>
+  <line x1="70" y1="236" x2="330" y2="236" class="tratto-tenue"/>
+  <text x="70" y="284" class="voce-tenue">Fine</text>
+  <text x="330" y="284" class="voce" text-anchor="end">16:45</text>
+  <line x1="70" y1="312" x2="330" y2="312" class="tratto-tenue"/>
+  <rect x="64" y="350" width="272" height="64" rx="32" fill="url(#g)"/>
+  <text x="200" y="392" class="link" text-anchor="middle">Chiudi il lavoro</text>
+  <path d="M344 382 C 420 382, 420 222, 484 222" fill="none" stroke="url(#g)"
+    stroke-width="3" stroke-dasharray="8 8"/>
+  <text x="490" y="60" class="micro">in ufficio</text>
+  {righe}
+</svg>"""
+
+def logo():
+    return '<img class="marchione" src="../../simbolo.svg" alt="">'
+
+def niente():
+    return ""
+
+def lavagna():
+    return """
+<svg viewBox="0 0 880 430" class="art">
+  <rect x="10" y="10" width="860" height="380" rx="12" class="tratto"/>
+  <rect x="26" y="26" width="828" height="348" rx="6" class="tratto-tenue"/>
+  <ellipse cx="660" cy="150" rx="170" ry="40" fill="#fff" opacity=".045"/>
+  <ellipse cx="290" cy="306" rx="110" ry="34" fill="#fff" opacity=".045"/>
+  <text x="70" y="92" class="penna">domani</text>
+  <path d="M70 108 q60 10 140 -2" fill="none" stroke="url(#g)" stroke-width="3"/>
+  <text x="70" y="168" class="penna">Luca - Cantiere 4</text>
+  <text x="70" y="244" class="penna">Andrea - <tspan class="cancellato"
+    text-decoration="line-through">Cantiere 2</tspan> <tspan fill="url(#g)">Cantiere 4</tspan></text>
+  <text x="70" y="320" class="penna">Marco - <tspan opacity=".2">Cant</tspan>   Cantiere 3 ?</text>
+  <rect x="240" y="390" width="400" height="14" rx="7" class="tratto-tenue"/>
+  <rect x="300" y="376" width="96" height="14" rx="7" fill="url(#g)"/>
+  <rect x="420" y="376" width="96" height="14" rx="7" class="riga-tenue"/>
+</svg>"""
+
+def domani():
+    def faccia(x, nome):
+        return f"""
+  <g opacity=".45">
+    <rect x="{x}" y="70" width="180" height="320" rx="30" class="tratto-tenue"/>
+    <rect x="{x+20}" y="112" width="70" height="8" rx="4" class="riga-tenue"/>
+    <rect x="{x+20}" y="136" width="120" height="14" rx="7" class="riga"/>
+    <rect x="{x+20}" y="166" width="90" height="9" rx="4.5" class="riga-tenue"/>
+    <rect x="{x+20}" y="210" width="140" height="150" rx="10" class="debole"/>
+  </g>
+  <text x="{x}" y="430" class="micro">{nome}</text>"""
+    return f"""
+<svg viewBox="0 0 880 452" class="art">
+  <defs><clipPath id="mappa"><rect x="62" y="270" width="276" height="150" rx="14"/></clipPath></defs>
+  <rect x="40" y="6" width="320" height="440" rx="40" class="telefono"/>
+  <rect x="176" y="24" width="48" height="7" rx="3.5" class="riga-tenue"/>
+  <text x="70" y="82" class="micro">domani</text>
+  <text x="70" y="130" class="schermo-titolo">Cantiere 4</text>
+  <text x="70" y="182" class="voce">ore 7:30</text>
+  <text x="70" y="230" class="voce-tenue">con Luca e Andrea</text>
+  <g clip-path="url(#mappa)">
+    <rect x="62" y="270" width="276" height="150" class="debole"/>
+    <rect x="62" y="304" width="276" height="20" class="strada"/>
+    <rect x="62" y="376" width="276" height="20" class="strada"/>
+    <rect x="150" y="270" width="20" height="150" class="strada"/>
+    <rect x="262" y="270" width="20" height="150" class="strada"/>
+    <path d="M90 314 H160 V386 H272 V352" class="percorso"/>
+  </g>
+  <rect x="62" y="270" width="276" height="150" rx="14" class="tratto-tenue"/>
+  <g transform="translate(272 318) scale(.6)">
+    <path d="M0 64 C -14 42 -34 26 -34 0 A34 34 0 0 1 34 0 C 34 26 14 42 0 64 Z" fill="url(#g)"/>
+    <circle cx="0" cy="0" r="12" fill="#0a0a0d"/>
+  </g>
+  {faccia(450, "luca")}
+  {faccia(670, "andrea")}
+</svg>"""
+
+def non_risponde():
+    celle = "".join(
+        f'<rect x="{c*112}" y="{20 + r*48}" width="112" height="48" class="cella"/>'
+        + (f'<rect x="{c*112 + 16}" y="{38 + r*48}" width="{(56, 40, 64, 48)[(r*3 + c) % 4]}" '
+           f'height="9" rx="4.5" class="riga-tenue"/>' if c and r else "")
+        for r in range(6) for c in range(6))
+    return f"""
+<svg viewBox="0 0 880 320" class="art">
+  <g opacity=".7">{celle}</g>
+  <rect x="380" y="96" width="496" height="212" rx="16" class="telefono"/>
+  <line x1="380" y1="144" x2="876" y2="144" class="tratto-tenue"/>
+  <circle cx="412" cy="120" r="7" class="riga-tenue"/>
+  <circle cx="436" cy="120" r="7" class="riga-tenue"/>
+  <circle cx="460" cy="120" r="7" class="riga-tenue"/>
+  <text x="412" y="204" class="voce">Il programma non risponde</text>
+  <rect x="580" y="236" width="130" height="46" rx="23" class="tratto-tenue"/>
+  <rect x="724" y="236" width="130" height="46" rx="23" class="tratto"/>
+</svg>"""
+
+def cartella():
+    nomi = ["ore_ottobre.xlsx", "ore_ottobre_DEFINITIVO.xlsx",
+            "ore_ottobre_DEFINITIVO_v2_Marco.xlsx", "ore_ottobre_QUESTO.xlsx"]
+    righe = ""
+    for i, nome in enumerate(nomi):
+        y = 128 + i * 80
+        if i == 3:
+            righe += (f'<rect x="16" y="{y}" width="848" height="68" rx="10" fill="url(#g)" opacity=".16"/>'
+                      f'<rect x="16" y="{y}" width="6" height="68" fill="url(#g)"/>')
+        righe += (f'<path d="M44 {y+12} h26 l12 12 v34 h-38 Z" class="tratto"/>'
+                  f'<line x1="52" y1="{y+40}" x2="74" y2="{y+40}" class="tratto-tenue"/>'
+                  f'<line x1="52" y1="{y+50}" x2="74" y2="{y+50}" class="tratto-tenue"/>'
+                  f'<text x="104" y="{y+45}" class="mono">{nome}</text>')
+    return f"""
+<svg viewBox="0 0 880 452" class="art">
+  <rect x="0" y="8" width="880" height="440" rx="16" class="tratto-tenue"/>
+  <path d="M30 42 h26 l8 8 h36 v32 h-70 Z" class="tratto"/>
+  <text x="120" y="74" class="micro">cartella condivisa</text>
+  <line x1="0" y1="106" x2="880" y2="106" class="tratto-tenue"/>
+  {righe}
+</svg>"""
+
+def distanza():
+    def spillo(x):
+        return f"""
+  <g transform="translate({x} 86)">
+    <path d="M0 64 C -14 42 -34 26 -34 0 A34 34 0 0 1 34 0 C 34 26 14 42 0 64 Z" fill="url(#g)"/>
+    <circle cx="0" cy="0" r="12" fill="#0a0a0d"/>
+  </g>"""
+    return f"""
+<svg viewBox="0 0 880 250" class="art">
+  <line x1="0" y1="150" x2="880" y2="150" class="tratto-tenue"/>
+  <path d="M190 140 C 330 84, 550 84, 690 140" class="percorso"/>
+  <text x="440" y="70" class="voce" text-anchor="middle">40 km</text>
+  {spillo(150)}{spillo(730)}
+  <text x="150" y="200" class="micro" text-anchor="middle">cantiere 1</text>
+  <text x="730" y="200" class="micro" text-anchor="middle">cantiere 2</text>
+  <text x="150" y="238" class="mono" text-anchor="middle">10:00</text>
+  <text x="730" y="238" class="mono" text-anchor="middle">10:00</text>
+</svg>"""
+
+def quadretti():
+    linee = "".join(f'<line x1="40" y1="{y}" x2="840" y2="{y}" class="quadretto"/>'
+                    for y in range(40, 440, 30))
+    linee += "".join(f'<line x1="{x}" y1="10" x2="{x}" y2="440" class="quadretto"/>'
+                     for x in range(70, 840, 30))
+    return f"""
+<svg viewBox="0 0 880 452" class="art">
+  <rect x="40" y="10" width="800" height="430" rx="6" fill="#0e0e12"/>
+  {linee}
+  <line x1="118" y1="10" x2="118" y2="440" stroke="url(#g)" stroke-width="2" opacity=".5"/>
+  <rect x="40" y="10" width="800" height="430" rx="6" class="tratto-tenue"/>
+  <text x="140" y="124" class="penna" opacity=".45">lun. 6 - Cantiere 2 - 8</text>
+  <text x="140" y="234" class="penna">mar. 7 - <tspan fill="url(#g)">??</tspan> Monza (o Lissone)</text>
+  <text x="140" y="344" class="penna" opacity=".45">mer. 8 -</text>
+</svg>"""
+
 # ---------------------------------------------------------------- i contenuti
 
 # La prima di ogni serie e' la copertina: porta il titolo e l'indice delle
@@ -328,6 +675,133 @@ SERIE["2026-09-25"] = dict(copertina=dict(
                "conosce ancora."),
 ])
 
+# Ottobre: niente copertina, si numerano «1 / 3». Testi dalle bozze del 3/10
+# (02-Sales/processo/bozze-social-2026-10-03.md). Le emoji delle bozze
+# diventano un segno nell'etichetta: pallino verde per 🟢, fulmine per ⚡.
+# Il frame col sondaggio esce due volte: senza sticker (quello dell'API) e
+# -sondaggio, con la domanda in alto e la fascia vuota dove Patrick
+# appoggia lo sticker a mano.
+PALLINO = '<span class="pallino"></span>'
+FULMINE = ('<svg class="fulmine" viewBox="0 0 12 16"><path d="M7.5 0 L0 9.2 H5 '
+           'L4 16 L12 6.6 H6.8 Z" fill="url(#g)"/></svg>')
+
+SERIE["2026-10-05-come-funziona"] = dict(storie=[
+    dict(tag="Prima di scriverti", grafica=monitor,
+         titolo="Il tuo sito parte dal tuo profilo",
+         corpo="Sul monitor teniamo aperto il tuo profilo, e nella finestra di "
+               "fianco c'e' la bozza del sito che stiamo facendo per te. "
+               "Guardiamo che lavori fai piu' spesso e dove si trova il negozio. "
+               "Quando ti scriviamo, e' gia' pronta."),
+    dict(tag="La bozza", grafica=bozza_in_mano,
+         titolo="La guardi dal telefono, tra due clienti",
+         corpo="Ti mandiamo il link qui in DM. La apri appena il negozio si "
+               "svuota e la scorri col pollice, come fara' chi ti cerca. Se una "
+               "foto non ti convince o manca un servizio, ce lo scrivi nella "
+               "stessa chat e lo sistemiamo."),
+    dict(tag="Il primo giorno", grafica=insegna,
+         titolo="Il sito va online col tuo nome",
+         corpo="Nell'indirizzo c'e' il nome del negozio, lo stesso "
+               "dell'insegna. Il primo giorno lo apri dal telefono, e il link "
+               "finisce dritto nella chat di famiglia. Il sito e l'indirizzo "
+               "restano tuoi."),
+])
+
+SERIE["2026-10-05-cose-che-succedono"] = dict(storie=[
+    dict(tag="Gli orari", grafica=comodino,
+         titolo="Mezzanotte meno dieci, il telefono vibra",
+         corpo="E' una cliente: «Scusa l'ora, domani siete aperti?» "
+               "Le rispondi lo stesso, e ormai il sonno e' passato. Su un sito "
+               "gli orari stanno sotto il nome del negozio, e lei li trova da "
+               "sola."),
+    dict(tag="A voce", grafica=bancone,
+         titolo="Il nome del profilo, dettato al banco",
+         corpo="«Silvia, underscore, hair, punto, studio, tutto "
+               "attaccato.» Lei scrive e cancella. Alla fine ti passa il "
+               "telefono, e il profilo lo cerchi tu mentre in negozio c'e' gente "
+               "che aspetta. Un indirizzo col nome del negozio si detta in un "
+               "fiato."),
+    dict(tag="Il rullino", grafica=rullino,
+         titolo="Ti chiedono qualche foto dei lavori",
+         corpo="Apri il rullino e scorri, in mezzo al pranzo di domenica e agli "
+               "screenshot della bolletta. Dieci minuti dopo gliene hai mandate "
+               "sei, una per volta. Sul sito i lavori stanno gia' in fila, e "
+               "basta un link."),
+])
+
+SERIE["2026-10-07-sarto-1"] = dict(storie=[
+    dict(tag="Le ore delle squadre", grafica=furgone,
+         titolo="Le 18:30.",
+         corpo="La squadra chiude il furgone e le ore partono in un vocale sul "
+               "gruppo.",
+         sondaggio=dict(titolo="Le ore delle squadre, da voi, come arrivano "
+                               "in ufficio?", corpo="")),
+    dict(tag=PALLINO + "Le ore delle squadre", grafica=chiudi_lavoro,
+         titolo="Una schermata sola, sul telefono di chi lavora.",
+         corpo="Sceglie il cantiere, segna l'ora di fine e chiude. In ufficio "
+               "arriva gia' divisa per persona e per cantiere."),
+    dict(tag=FULMINE + "Le ore delle squadre", grafica=logo,
+         titolo="La schermata la disegniamo su come lavorate voi.",
+         corpo="Scrivici SARTO in DM e veniamo a vedere da dove partono le "
+               "vostre ore."),
+])
+
+SERIE["2026-10-09-relatable-1"] = dict(storie=[
+    dict(tag="Il foglio che non si salva", grafica=non_risponde,
+         titolo="Venerdi', 18:52. Hai appena finito di riportare le ore di "
+                "tutto il mese. Il foglio si chiude da solo. L'ultimo "
+                "salvataggio e' di martedi'.",
+         corpo=""),
+    dict(tag="Il foglio che non si salva", grafica=cartella,
+         titolo="Intanto, nella cartella condivisa, la famiglia si e' "
+                "allargata.",
+         corpo=""),
+    dict(tag=FULMINE + "Il foglio che non si salva", grafica=logo,
+         titolo="Nei programmi che scriviamo le ore si salvano mentre le "
+                "segni, e la versione e' una sola.",
+         corpo="Scrivici SARTO in DM.",
+         sondaggio=dict(titolo="Quante versioni di «definitivo» "
+                               "avete in cartella?",
+                        corpo="Nei programmi che scriviamo le ore si salvano "
+                              "mentre le segni. Scrivici SARTO in DM.",
+                        grafica=niente)),
+])
+
+SERIE["2026-10-14-sarto-2"] = dict(storie=[
+    dict(tag="Chi va dove domani", grafica=lavagna,
+         titolo="Le 17.",
+         corpo="Il programma di domani e' sulla lavagna dell'ufficio, e lo "
+               "vede solo chi passa di li'.",
+         sondaggio=dict(titolo="Chi va dove domani, da voi, dove sta "
+                               "scritto?", corpo="")),
+    dict(tag=PALLINO + "Chi va dove domani", grafica=domani,
+         titolo="La sera ognuno apre il telefono e trova il suo domani.",
+         corpo="Se l'ufficio sposta qualcuno, lo trova gia' scritto li'."),
+    dict(tag=FULMINE + "Chi va dove domani", grafica=logo,
+         titolo="Lo scriviamo partendo dalla vostra lavagna, con le parole "
+                "che usate gia'.",
+         corpo="Scrivici SARTO in DM."),
+])
+
+SERIE["2026-10-16-relatable-2"] = dict(storie=[
+    dict(tag="Le ore segnate a memoria", grafica=distanza,
+         titolo="Secondo il foglio ore, martedi' alle 10 Luca era su due "
+                "cantieri. A quaranta chilometri di distanza.",
+         corpo=""),
+    dict(tag="Le ore segnate a memoria", grafica=quadretti,
+         titolo="Il venerdi' glielo chiedi.",
+         corpo="«Martedi'… era il giorno che pioveva?» Da li' si "
+               "va a memoria, la sua e la tua."),
+    dict(tag=FULMINE + "Le ore segnate a memoria", grafica=logo,
+         titolo="Quando la squadra segna l'ora dal telefono prima di lasciare "
+                "il cantiere, il venerdi' non serve ricordarsi niente.",
+         corpo="Scrivici SARTO in DM.",
+         sondaggio=dict(titolo="Le ore, da voi, quando si segnano?",
+                        corpo="Con l'ora segnata dal telefono prima di "
+                              "lasciare il cantiere, il venerdi' non serve "
+                              "ricordarsi niente. Scrivici SARTO in DM.",
+                        grafica=niente)),
+])
+
 # gli accenti veri: il sorgente non porta le lettere accentate, e nemmeno
 # l'apostrofo tipografico. Si sostituiscono qui, in quest'ordine.
 ACCENTI = [
@@ -340,6 +814,8 @@ ACCENTI = [
     (r"\bPiu'", "Pi\u00f9"), (r"\bLi'", "L\u00ec"), (r"\bSi'", "S\u00ec"),
     (r"\bDa'", "D\u00e0"), (r"\bPerche'", "Perch\u00e9"),
     (r"\bPero'", "Per\u00f2"), (r"\bLa'", "L\u00e0"), (r"\bla'", "l\u00e0"),
+    (r"\bfara'", "far\u00e0"),
+    (r"\b([Ll]une|[Mm]arte|[Mm]ercole|[Gg]iove|[Vv]ener)di'", "\\1d\u00ec"),
 ]
 
 def accenta(t):
@@ -467,7 +943,7 @@ PAGINA = """<!doctype html>
   .percorso {{ fill:none; stroke:url(#g); stroke-width:4; stroke-dasharray:12 10;
               stroke-linecap:round; }}
   .virgolette {{ font-size:150px; font-weight:700; fill:url(#g); }}
-</style>
+</style>{extra}
 <div class="fondo"></div>
 <div class="trama"></div>
 <svg width="0" height="0" style="position:absolute">
@@ -478,15 +954,15 @@ PAGINA = """<!doctype html>
     </linearGradient>
   </defs>
 </svg>
-<div class="telaio">
+<div class="telaio{classe}">
   <header>
     <img src="../../simbolo.svg" alt="">
     <span class="marchio">DenkiCode</span>
-    <span class="conta">{n:02d} / {tot:02d}</span>
+    <span class="conta">{conta}</span>
   </header>
   <div class="scena">{grafica}</div>
   <div class="tag">{tag}</div>
-  <h1>{titolo}</h1>
+  <h1>{titolo}</h1>{sticker}
   <p>{corpo}</p>
   <footer>
     <span class="barra"></span>
@@ -515,41 +991,82 @@ FRONTE = """<!doctype html>
 </div>
 """
 
+# Solo per le serie senza copertina: le serie di settembre restano byte per
+# byte quelle di prima.
+EXTRA = """
+<style>
+  p:empty { display:none; }
+  .pallino { display:inline-block; width:22px; height:22px; border-radius:50%;
+             margin-right:18px; vertical-align:-1px; background:#34c77b; }
+  .fulmine { width:22px; height:29px; margin-right:16px; vertical-align:-4px; }
+  .scena .marchione { width:260px; height:260px; }
+  .telefono, .dito { fill:#0c0c10; stroke:#4a4a55; stroke-width:2.5; }
+  .vibra { fill:none; stroke:url(#g); stroke-width:3; stroke-linecap:round; }
+  .filo { fill:none; stroke:#3d3d46; stroke-width:2; stroke-dasharray:6 6; }
+  .cella { fill:none; stroke:#22222a; stroke-width:2; }
+  .quadretto { stroke:#1a1a21; stroke-width:1.5; }
+  .insegna { font-size:58px; font-weight:700; letter-spacing:.16em; fill:url(#g); }
+  .mono-grande { font-size:40px; fill:#c9c9d2; font-family:"SF Mono",Menlo,monospace; }
+  .trattini { font-size:64px; fill:#84848f; letter-spacing:.06em;
+              font-family:"SF Mono",Menlo,monospace; }
+  .cifre { font-size:82px; font-weight:700; letter-spacing:-.02em; fill:url(#g); }
+  .schermo-titolo { font-size:40px; font-weight:700; fill:#fff; letter-spacing:-.02em; }
+  .art .penna { font-size:44px; fill:#c9c9d2;
+           font-family:Noteworthy,"Bradley Hand","Marker Felt",cursive; }
+  .cancellato { opacity:.45; }
+  .sondaggio h1 { margin-top:84px; }
+  .sondaggio .scena { order:1; flex:none; padding:40px 0 0; }
+  .sondaggio .art { max-height:300px; }
+  .sondaggio footer { order:2; }
+  .sticker { flex:1; min-height:440px; display:flex; align-items:flex-end; }
+  .sticker span { font-size:23px; font-weight:500; letter-spacing:.14em;
+                  text-transform:uppercase; color:#5e5e6a; }
+</style>"""
+
 def main():
     serie = sys.argv[1] if len(sys.argv) > 1 else max(SERIE)
     if serie not in SERIE:
         sys.exit(f"serie {serie} sconosciuta, ci sono: {', '.join(sorted(SERIE))}")
-    copertina, storie = SERIE[serie]["copertina"], SERIE[serie]["storie"]
+    copertina, storie = SERIE[serie].get("copertina"), SERIE[serie]["storie"]
     fuori = FUORI / serie
     fuori.mkdir(parents=True, exist_ok=True)
     for f in fuori.glob("storia-*.html"):
         f.unlink()
     tot = len(storie)
-
-    stile = PAGINA[PAGINA.index("<style>") + 7:PAGINA.index("</style>")]
-    stile = stile.replace("{{", "{").replace("}}", "}")
-    indice = "".join(
-        f'<div><span>{i:02d}</span>{accenta(v)}</div>'
-        for i, v in enumerate(copertina["indice"], 1)
-    )
-    (fuori / "storia-00.html").write_text(
-        FRONTE.format(stile=stile, tag=copertina["tag"],
-                      titolo=accenta(copertina["titolo"]),
-                      corpo=accenta(copertina["corpo"]), indice=indice),
-        encoding="utf-8")
     print(f"serie {serie}")
-    print("storia-00.html  " + copertina["titolo"] + "  (copertina)")
+
+    if copertina:
+        stile = PAGINA[PAGINA.index("<style>") + 7:PAGINA.index("</style>")]
+        stile = stile.replace("{{", "{").replace("}}", "}")
+        indice = "".join(
+            f'<div><span>{i:02d}</span>{accenta(v)}</div>'
+            for i, v in enumerate(copertina["indice"], 1)
+        )
+        (fuori / "storia-00.html").write_text(
+            FRONTE.format(stile=stile, tag=copertina["tag"],
+                          titolo=accenta(copertina["titolo"]),
+                          corpo=accenta(copertina["corpo"]), indice=indice),
+            encoding="utf-8")
+        print("storia-00.html  " + copertina["titolo"] + "  (copertina)")
 
     for i, s in enumerate(storie, 1):
-        titolo = accenta(s["titolo"])
-        h1 = 96 if len(titolo) <= 30 else (86 if len(titolo) <= 48 else 78)
-        html = PAGINA.format(
-            n=i, tot=tot, tag=s["tag"], titolo=titolo,
-            corpo=accenta(s["corpo"]), grafica=accenta(s["grafica"]()),
-            corpo_h1=h1,
-        )
-        (fuori / f"storia-{i:02d}.html").write_text(html, encoding="utf-8")
-        print(f"storia-{i:02d}.html  {titolo}")
+        conta = f"{i:02d} / {tot:02d}" if copertina else f"{i} / {tot}"
+        versioni = [("", s)]
+        if "sondaggio" in s:
+            versioni.append(("-sondaggio", dict(s, tag="", **s["sondaggio"])))
+        for coda, v in versioni:
+            titolo = accenta(v["titolo"])
+            h1 = 96 if len(titolo) <= 30 else (86 if len(titolo) <= 48 else 78)
+            html = PAGINA.format(
+                conta=conta, tag=v["tag"], titolo=titolo,
+                corpo=accenta(v["corpo"]), grafica=accenta(v["grafica"]()),
+                corpo_h1=h1, extra="" if copertina else EXTRA,
+                classe=" sondaggio" if coda else "",
+                sticker='<div class="sticker"><span>rispondi qui sopra</span></div>'
+                        if coda else "",
+            )
+            (fuori / f"storia-{i:02d}{coda}.html").write_text(html, encoding="utf-8")
+            print(f"storia-{i:02d}{coda}.html  {titolo}")
 
 if __name__ == "__main__":
     main()
