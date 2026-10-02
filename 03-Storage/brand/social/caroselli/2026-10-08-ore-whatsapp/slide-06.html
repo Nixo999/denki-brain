@@ -1,0 +1,130 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Scrivici SARTO in DM</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1080px; height:1350px; overflow:hidden; }
+  body {
+    background:#07070a;
+    font-family:-apple-system,"SF Pro Display","Helvetica Neue",Helvetica,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .fondo {
+    position:absolute; inset:0;
+    background:
+      radial-gradient(820px 560px at 92% -6%, rgba(218,47,155,.20), transparent 68%),
+      radial-gradient(760px 560px at -12% 104%, rgba(146,58,223,.18), transparent 70%);
+  }
+  .trama {
+    position:absolute; inset:0; opacity:.30;
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,.045) 1px, transparent 1px);
+    background-size:90px 90px;
+    mask-image:radial-gradient(700px 680px at 50% 40%, #000 20%, transparent 78%);
+  }
+  .telaio {
+    position:absolute; left:0; right:0; top:76px; bottom:150px;
+    padding:0 88px; display:flex; flex-direction:column;
+  }
+  header { display:flex; align-items:center; gap:20px; }
+  header img { width:56px; height:56px; }
+  .marchio {
+    font-size:23px; font-weight:600; letter-spacing:.34em;
+    color:#f3f3f5; text-transform:uppercase;
+  }
+  .conta {
+    margin-left:auto; font-size:22px; font-weight:500; letter-spacing:.16em;
+    color:#5c5c66; font-variant-numeric:tabular-nums;
+  }
+  .scena { flex:1; min-height:0; display:flex; align-items:center; padding:34px 0 30px; }
+  .art { width:100%; height:100%; max-height:470px; display:block; }
+  .etichetta { display:flex; align-items:center; gap:16px; }
+  .segno { width:26px; height:26px; flex:none; }
+  .tag {
+    font-size:25px; font-weight:600; letter-spacing:.22em;
+    text-transform:uppercase;
+    background:linear-gradient(96deg,#b34ae6,#f0389f);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+  h1 {
+    margin-top:24px; font-size:118px; line-height:1.03;
+    letter-spacing:-.035em; font-weight:700; color:#fff;
+    text-wrap:balance;
+  }
+  .etichetta + h1 { margin-top:24px; }
+  p {
+    margin-top:28px; max-width:880px;
+    font-size:40px; line-height:1.42; letter-spacing:-.008em;
+    font-weight:400; color:#a6a6b2;
+    text-wrap:pretty;
+  }
+  footer {
+    position:absolute; left:88px; bottom:48px;
+    display:flex; align-items:center; gap:30px;
+  }
+  .barra {
+    height:5px; width:132px; border-radius:3px;
+    background:linear-gradient(90deg,#923adf,#da2f9b);
+  }
+  .sito { font-size:27px; font-weight:500; letter-spacing:.1em; color:#dededf; }
+
+  /* la slide di solo testo: centrata, il segno grande sopra */
+  .solo .testo { flex:1; display:flex; flex-direction:column; justify-content:center; }
+  .solo .segno { width:64px; height:64px; }
+  .grad {
+    background:linear-gradient(96deg,#b34ae6,#f0389f);
+    -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+  }
+
+  /* tratti comuni ai disegni */
+  .art text { font-family:-apple-system,"Helvetica Neue",sans-serif; }
+  .tratto { fill:none; stroke:#4a4a55; stroke-width:2.5; }
+  .tratto-tenue { fill:none; stroke:#2c2c34; stroke-width:2.5; }
+  .debole { fill:#15151b; }
+  .riga { fill:#84848f; }
+  .riga-tenue { fill:#3d3d46; }
+  .griglia rect, .griglia-ore rect {
+    fill:none; stroke:#26262e; stroke-width:2.5; stroke-dasharray:9 8;
+  }
+  .griglia-ore rect { fill:#111116; stroke-dasharray:none; }
+  .mono {
+    font-size:30px; fill:#7c7c88;
+    font-family:"SF Mono",Menlo,monospace;
+  }
+  .mono-p { font-size:24px; fill:#7c7c88; font-family:"SF Mono",Menlo,monospace; }
+  .voce { font-size:32px; font-weight:500; fill:#e6e6ea; }
+  .voce-p { font-size:27px; font-weight:500; fill:#e6e6ea; }
+  .micro { font-size:23px; font-weight:500; letter-spacing:.14em; fill:#5e5e6a;
+           text-transform:uppercase; }
+  .micro-p { font-size:20px; font-weight:600; letter-spacing:.12em; fill:#84848f;
+             text-transform:uppercase; }
+  .durata { font-size:22px; font-weight:500; fill:#84848f; font-variant-numeric:tabular-nums; }
+  .durata.scura { fill:#0a0a0d; }
+  .bottone { font-size:26px; font-weight:700; fill:#0a0a0d; }
+  .scritto { font-size:34px; font-weight:600; font-style:italic; fill:url(#g); }
+</style>
+<div class="fondo"></div>
+<div class="trama"></div>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#923adf"/>
+      <stop offset="1" stop-color="#da2f9b"/>
+    </linearGradient>
+  </defs>
+</svg>
+<div class="telaio solo">
+  <header>
+    <img src="../../simbolo.svg" alt="">
+    <span class="marchio">DenkiCode</span>
+    <span class="conta">06 / 06</span>
+  </header>
+  
+  <div class="testo"><div class="etichetta"><svg viewBox="0 0 24 24" class="segno"><path d="M14 1 L4 14 H11 L9 23 L20 9 H13 Z" fill="url(#g)"/></svg></div><h1>Scrivici <span class="grad">SARTO</span> in DM</h1><p>Veniamo a vedere da dove partono le vostre ore e ti diciamo cosa scriveremmo.<br>Siamo a Seveso.</p></div>
+</div>
+<footer>
+  <span class="barra"></span>
+  <span class="sito">denkicode.com</span>
+</footer>
