@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Prototipo di CO-OPERO (1/10) sul ramo coopero di opero-sito - cosa c'è, cosa manca per mostrarlo, dove va oltre le decisioni del 30/09.
-updated: 2026-10-01
+updated: 2026-10-02
 source: claude
 progetto: opero
 tags: [opero, co-opero, prototipo]
@@ -14,13 +14,15 @@ coopero, intanto sito […] devono già parlarsi, usa lo stesso database di
 opero»). Supera il «non mettere mano al codice» del 30/09 solo come **prova**:
 niente è pubblicato, niente è su `main`.
 
-- **Dove**: repo `opero-sito`, ramo `coopero`, quattro commit in locale. Com'è
+- **Dove**: repo `opero-sito`, ramo `coopero`, sei commit in locale. Com'è
   fatto lo dice il repo: `docs/coopero.md` e la voce del 1/10 in
   `docs/handoff.md`. **Sul tecnico ha ragione il repo.**
 - **Cosa c'è**: il portale dei clienti (Lavori, Nuovo, Conti) come secondo
   sito, da telefono e da computer, la pagina Richieste in OperO, lo schema.
   Dal verdetto di Nicola sul primo giro (1/10): Lavori è un giorno alla volta
-  con il calendario, e il modulo non chiede più il tipo di lavoro. Gira su un Supabase locale in
+  con il calendario, e il modulo non chiede più il tipo di lavoro. Dal 2/10:
+  da computer un margine solo e pannelli a tutta finestra, e le impostazioni
+  della persona (tema, testo, giorno di apertura, referente abituale). Gira su un Supabase locale in
   Docker; sul database di sviluppo la migrazione **non è applicata**.
 - **Cosa manca per mostrarlo a Patrick e Seba**: guardare il lato segreteria
   con Nicola (vuole un login), applicare la migrazione allo sviluppo,
