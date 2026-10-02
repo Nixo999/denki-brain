@@ -1,7 +1,7 @@
 ---
 riga: Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
 type: area
-updated: 2026-10-01
+updated: 2026-10-02
 source: claude
 prodotto: denkishift
 ---
@@ -210,6 +210,10 @@ in [[metriche]]:
 
 
 ## Regole
+
+### 02/10/2026 — Nicola: «no non è unaq me lo stai spammando, non va bene trova un modo pr non dovermelo chidere»
+
+Le liste non devono far partire richieste di permesso a raffica: niente Startpage (ogni JavaScript lì chiede il permesso a ogni azione), motori che reggono senza chiedere, e se una richiesta si ripete si ferma l'operatore che la genera
 
 ### 01/10/2026 — Nicola: «banco dm: ogni volta deve mandare un comando in java, cosa che non deve succedere, sostituisci o fai in modo sia automatico, patrick non deve mandare messaggi in terminale»
 
