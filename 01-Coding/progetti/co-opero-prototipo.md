@@ -14,7 +14,7 @@ coopero, intanto sito […] devono già parlarsi, usa lo stesso database di
 opero»). Supera il «non mettere mano al codice» del 30/09 solo come **prova**:
 niente è pubblicato, niente è su `main`.
 
-- **Dove**: repo `opero-sito`, ramo `coopero`, nove commit in locale. Com'è
+- **Dove**: repo `opero-sito`, ramo `coopero`, dieci commit in locale. Com'è
   fatto lo dice il repo: `docs/coopero.md` e la voce del 1/10 in
   `docs/handoff.md`. **Sul tecnico ha ragione il repo.**
 - **Cosa c'è**: il portale dei clienti (Lavori, Nuovo, Conti) come secondo
@@ -24,7 +24,7 @@ niente è pubblicato, niente è su `main`.
   da computer un margine solo e pannelli a tutta finestra, e le impostazioni
   della persona. Dal 3/10 le impostazioni seguono il profilo di OperO (dati,
   valuta, luoghi preferiti, versione) e «Nuovo lavoro» da computer riempie
-  la finestra in due colonne (chi e dove, quando). Gira su un Supabase locale
+  la finestra in due colonne (chi e dove, quando). Sempre il 3/10 tolta la scheda «Nuove richieste» dalle impostazioni, e Conti ha lavori chiusi d'esempio sul banco. Gira su un Supabase locale
   in Docker; sul database di sviluppo la migrazione **non è applicata**.
 - **Cosa manca per mostrarlo a Patrick e Seba**: guardare il lato segreteria
   con Nicola (vuole un login), applicare la migrazione allo sviluppo,
