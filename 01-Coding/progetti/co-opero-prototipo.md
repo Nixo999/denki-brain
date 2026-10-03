@@ -26,6 +26,7 @@ niente è pubblicato, niente è su `main`.
   valuta, luoghi preferiti, versione) e «Nuovo lavoro» da computer riempie
   la finestra in due colonne (chi e dove, quando). Sempre il 3/10 tolta la scheda «Nuove richieste» dalle impostazioni, e Conti ha lavori chiusi d'esempio sul banco. Gira su un Supabase locale
   in Docker; sul database di sviluppo la migrazione **non è applicata**.
+- **Lo schema del flusso per Seba e Patrick** (3/10): `02-Sales/report/coopero-flusso-richieste.pdf`, tre pagine (percorso, stati, cosa decidere). Si rigenera dall'HTML accanto con Brave headless.
 - **Cosa manca per mostrarlo a Patrick e Seba**: guardare il lato segreteria
   con Nicola (vuole un login), applicare la migrazione allo sviluppo,
   pubblicare il portale su un indirizzo suo, provarlo su un telefono vero.

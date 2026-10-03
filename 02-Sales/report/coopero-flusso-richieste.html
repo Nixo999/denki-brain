@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>CO-OPERO e OperO · il percorso di una richiesta</title>
+<style>
+  @page { size: A4; margin: 0; }
+  :root {
+    --ink: #13201e; --ink-2: #44524f; --ink-3: #7b8885;
+    --line: #dfe5e3; --paper: #ffffff; --wash: #f4f7f6;
+    --accent: #0f7a70; --accent-tint: #e3f3f0;
+    --blu: #2459c9; --blu-bg: #e7eefc;
+    --giallo: #9a6200; --giallo-bg: #fdf1d8;
+    --verde: #1d7a43; --verde-bg: #e2f4e8;
+    --grigio: #5c6866; --grigio-bg: #eceff0;
+    --rosso: #b42828; --rosso-bg: #fbe6e6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--paper); }
+  body {
+    font-family: -apple-system, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--ink); font-size: 10.5pt; line-height: 1.45;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .page { width: 210mm; height: 297mm; padding: 16mm 17mm 14mm; position: relative; page-break-after: always; overflow: hidden; }
+  .page:last-child { page-break-after: auto; }
+
+  .kicker { font-size: 8pt; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+  h1 { font-size: 23pt; line-height: 1.1; letter-spacing: -.02em; margin: 2mm 0 3mm; font-weight: 750; }
+  h2 { font-size: 13.5pt; letter-spacing: -.01em; margin: 0 0 3mm; font-weight: 700; }
+  .lead { font-size: 10.5pt; color: var(--ink-2); max-width: 165mm; }
+  .lead b { color: var(--ink); }
+
+  .foot { position: absolute; left: 17mm; right: 17mm; bottom: 9mm; display: flex; justify-content: space-between;
+          font-size: 7.5pt; color: var(--ink-3); border-top: 1px solid var(--line); padding-top: 2.5mm; }
+
+  /* ── Lo schema ── */
+  .flow { position: relative; width: 176mm; margin-top: 6mm; }
+  .lanes { display: grid; grid-template-columns: 1fr 14mm 1fr; }
+  .lane-h { font-size: 8pt; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 2mm 3mm; border-radius: 2mm 2mm 0 0; }
+  .lane-h small { display: block; font-size: 7.5pt; letter-spacing: 0; text-transform: none; font-weight: 500; color: var(--ink-2); margin-top: .5mm; }
+  .lane-h.c { background: var(--accent-tint); color: var(--accent); }
+  .lane-h.s { background: var(--wash); color: var(--ink); }
+  .stage { position: relative; height: 196mm; }
+  .stage .bg { position: absolute; top: 0; bottom: 0; border-radius: 0 0 2mm 2mm; }
+  .stage .bg.c { left: 0; width: 81mm; background: linear-gradient(var(--accent-tint), #f3faf9 30%, #f8fcfb); }
+  .stage .bg.s { right: 0; width: 81mm; background: linear-gradient(var(--wash), #fafbfb); }
+  svg.arrows { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+  .card { position: absolute; width: 75mm; background: #fff; border: 1px solid var(--line); border-radius: 2.2mm;
+          padding: 2.4mm 3mm 2.6mm; }
+  .card.c { left: 3mm; } .card.s { right: 3mm; }
+  .card .t { display: flex; align-items: center; gap: 2mm; font-weight: 700; font-size: 9.8pt; line-height: 1.25; }
+  .card .n { flex: none; width: 5mm; height: 5mm; border-radius: 50%; background: var(--ink); color: #fff; font-size: 7.5pt;
+             display: grid; place-items: center; font-weight: 700; }
+  .card.c .n { background: var(--accent); }
+  .card p { font-size: 8.6pt; color: var(--ink-2); margin-top: 1.2mm; line-height: 1.4; }
+  .card.ko { border-color: #f0c9c9; }
+  .card.ko .n { background: var(--rosso); }
+
+  .st { display: inline-block; font-size: 7.3pt; font-weight: 700; padding: .5mm 1.8mm; border-radius: 99px; white-space: nowrap; margin-left: auto; }
+  .st.blu { color: var(--blu); background: var(--blu-bg); }
+  .st.giallo { color: var(--giallo); background: var(--giallo-bg); }
+  .st.verde { color: var(--verde); background: var(--verde-bg); }
+  .st.grigio { color: var(--grigio); background: var(--grigio-bg); }
+  .st.rosso { color: var(--rosso); background: var(--rosso-bg); }
+
+  .tag { font-size: 7.2pt; font-weight: 700; fill: var(--ink-2); letter-spacing: .02em; }
+
+  /* ── Pagina 2 e 3 ── */
+  table { width: 100%; border-collapse: collapse; margin-top: 1mm; }
+  th { text-align: left; font-size: 7.6pt; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); font-weight: 700;
+       padding: 0 3mm 2mm 0; border-bottom: 1px solid var(--ink); }
+  td { padding: 2.6mm 3mm 2.6mm 0; border-bottom: 1px solid var(--line); vertical-align: top; font-size: 9.4pt; }
+  td:first-child { width: 30mm; }
+  td:last-child { width: 38mm; color: var(--ink-2); }
+  section + section { margin-top: 9mm; }
+
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+  .box { border: 1px solid var(--line); border-radius: 2.4mm; padding: 4mm 4.5mm; }
+  .box h3 { font-size: 10.5pt; margin-bottom: 1.5mm; }
+  .box p { font-size: 9.2pt; color: var(--ink-2); }
+  .box p + p { margin-top: 1.6mm; }
+  .eg { font-variant-numeric: tabular-nums; color: var(--ink); font-weight: 600; white-space: nowrap; }
+
+  ol.q { list-style: none; counter-reset: q; }
+  ol.q li { counter-increment: q; position: relative; padding: 3.2mm 0 3.2mm 11mm; border-bottom: 1px solid var(--line); }
+  ol.q li::before { content: counter(q); position: absolute; left: 0; top: 3mm; width: 7mm; height: 7mm; border-radius: 50%;
+                    background: var(--accent-tint); color: var(--accent); font-weight: 700; font-size: 9pt; display: grid; place-items: center; }
+  ol.q b { display: block; font-size: 10pt; }
+  ol.q span { display: block; font-size: 9pt; color: var(--ink-2); margin-top: .6mm; }
+  ol.q em { font-style: normal; color: var(--accent); font-weight: 600; }
+
+  ul.miss { list-style: none; }
+  ul.miss li { padding: 2.6mm 0 2.6mm 6mm; position: relative; border-bottom: 1px solid var(--line); font-size: 9.3pt; color: var(--ink-2); }
+  ul.miss li::before { content: ""; position: absolute; left: 0; top: 4.4mm; width: 2.2mm; height: 2.2mm; border-radius: 50%; border: 1.5px solid var(--ink-3); }
+  ul.miss b { color: var(--ink); }
+
+  .note { margin-top: 7mm; background: var(--wash); border-radius: 2.4mm; padding: 4mm 5mm; font-size: 9.2pt; color: var(--ink-2); }
+  .note b { color: var(--ink); }
+</style>
+</head>
+<body>
+
+<!-- ═════════════ Pagina 1: lo schema ═════════════ -->
+<div class="page">
+  <div class="kicker">CO-OPERO · flusso clienti</div>
+  <h1>Il percorso di una richiesta,<br>dal cliente alla segreteria</h1>
+  <p class="lead">CO-OPERO è il portale gratuito che l'azienda dà ai suoi clienti al posto del gruppo WhatsApp.
+    Il cliente chiede le persone da lì, la segreteria risponde da OperO. <b>Il database è uno solo</b>:
+    quello che l'ufficio cambia nel gestionale, il cliente lo vede senza che nessuno glielo scriva.</p>
+
+  <div class="flow">
+    <div class="lanes">
+      <div class="lane-h c">Cliente<small>CO-OPERO, da telefono o computer</small></div>
+      <div></div>
+      <div class="lane-h s">Segreteria<small>OperO, pagina Richieste</small></div>
+    </div>
+    <div class="stage" id="stage">
+      <div class="bg c"></div><div class="bg s"></div>
+      <svg class="arrows" id="arrows"></svg>
+
+      <div class="card s" data-r="0">
+        <div class="t"><span class="n">1</span>Crea l'accesso</div>
+        <p>Un link personale su WhatsApp per ogni persona del cliente, con un codice da dettare (<span class="eg">VERT001</span>).</p>
+      </div>
+      <div class="card c" data-r="1">
+        <div class="t"><span class="n">2</span>Chiede le persone<span class="st blu">In attesa</span></div>
+        <p>Quante e quali figure, giorno e ora, luogo, chi c'è sul posto e le note. Niente telefonate.</p>
+      </div>
+      <div class="card s" data-r="2">
+        <div class="t"><span class="n">3</span>La richiesta arriva</div>
+        <p>Arriva in Richieste, divisa per cliente. Il menu conta quelle ancora senza risposta.</p>
+      </div>
+      <div class="card c ko" data-r="3">
+        <div class="t"><span class="n">✕</span>Se l'ufficio dice no<span class="st rosso">Rifiutata</span></div>
+        <p>Il cliente vede il rifiuto con la nota dell'ufficio, per esempio «quel giorno siamo al completo».</p>
+      </div>
+      <div class="card s" data-r="3">
+        <div class="t"><span class="n">4</span>Accetta e compone la squadra</div>
+        <p>Si apre «Nuovo lavoro» già compilato. Si sceglie la squadra e, salvando, nasce il lavoro.</p>
+      </div>
+      <div class="card c" data-r="4">
+        <div class="t"><span class="n">5</span>Vede chi arriva<span class="st verde">Confermata</span></div>
+        <p>Orari, caposquadra e nomi vengono dal lavoro: se l'ufficio sposta l'ora, lo vede subito.</p>
+      </div>
+      <div class="card s" data-r="5">
+        <div class="t"><span class="n">6</span>Il lavoro si svolge e si chiude</div>
+        <p>Quel giorno il cliente lo vede «In corso». Alla fine il caposquadra lo chiude dal telefono.</p>
+      </div>
+      <div class="card s" data-r="6">
+        <div class="t"><span class="n">7</span>OperO calcola la stima</div>
+        <p>Con le tariffe di quel cliente, come una bozza di fattura. IVA esclusa, senza sconti fatti a mano.</p>
+      </div>
+      <div class="card c" data-r="7">
+        <div class="t"><span class="n">8</span>Legge quanto spenderà<span class="st grigio">Chiusa</span></div>
+        <p>In Conti il lavoro con la sua stima e il totale del mese. La cifra definitiva resta quella della fattura.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot"><span>DenkiCode · CO-OPERO, prototipo</span><span>3 ottobre 2026 · 1 / 3</span></div>
+</div>
+
+<!-- ═════════════ Pagina 2: stati e cambi ═════════════ -->
+<div class="page">
+  <div class="kicker">CO-OPERO · flusso clienti</div>
+  <h1 style="font-size:19pt">Cosa vede il cliente, e chi deve muoversi</h1>
+  <p class="lead">Ogni richiesta ha uno stato. Il cliente lo legge sempre con una parola e un colore insieme.
+    In OperO il numero accanto a «Richieste» conta solo quelle che aspettano l'ufficio.</p>
+
+  <section style="margin-top:6mm">
+    <table>
+      <thead><tr><th>Stato</th><th>Quando</th><th>Chi deve muoversi</th></tr></thead>
+      <tbody>
+        <tr><td><span class="st blu">In attesa</span></td><td>Il cliente l'ha appena mandata.</td><td><b>L'ufficio</b></td></tr>
+        <tr><td><span class="st giallo">Modificata</span></td><td>Il cliente ha cambiato qualcosa dopo la conferma. Si vede il prima e il dopo, per esempio <span class="eg">09:00 → 09:30</span>.</td><td><b>L'ufficio</b></td></tr>
+        <tr><td><span class="st verde">Confermata</span></td><td>C'è il lavoro, con la squadra.</td><td>Nessuno</td></tr>
+        <tr><td><span class="st verde">In corso</span></td><td>È il giorno del lavoro, o è passato e non è ancora chiuso.</td><td>Nessuno</td></tr>
+        <tr><td><span class="st grigio">Chiusa</span></td><td>Il caposquadra ha chiuso il lavoro. Compare la stima.</td><td>Nessuno</td></tr>
+        <tr><td><span class="st rosso">Rifiutata</span></td><td>L'ufficio ha detto no, con una nota se l'ha scritta.</td><td>Nessuno</td></tr>
+        <tr><td><span class="st grigio">Annullata</span></td><td>L'ha annullata il cliente, o l'ufficio ha annullato il lavoro.</td><td><b>L'ufficio</b>, se il lavoro è ancora in piedi</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Quando il cliente cambia idea</h2>
+    <div class="two">
+      <div class="box">
+        <h3>Modifica dopo la conferma</h3>
+        <p>La richiesta torna in Richieste come <b>Modificata</b>, con il prima e il dopo affiancati.</p>
+        <p>Se l'ufficio conferma, giorno, ora, luogo e referente passano sul lavoro da soli. Se rifiuta, resta valido quello confermato prima.</p>
+        <p>Cambiare solo il nome di chi c'è sul posto non riapre niente.</p>
+      </div>
+      <div class="box">
+        <h3>Annullo</h3>
+        <p>Il cliente può annullare finché il lavoro non è chiuso. La richiesta diventa <b>Annullata</b> subito.</p>
+        <p>Il lavoro in OperO lo annulla l'ufficio. Finché non lo fa, Richieste continua a segnalarlo.</p>
+        <p>Se è l'ufficio ad annullare il lavoro, il cliente lo vede annullato senza che nessuno glielo scriva.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="note"><b>Un solo modo di creare un lavoro.</b> Accettare una richiesta apre lo stesso «Nuovo lavoro» di sempre,
+    con le stesse regole sulla squadra. Se il cliente cambia la richiesta mentre l'ufficio la sta componendo, OperO si ferma
+    prima di creare un lavoro con i dati vecchi.</div>
+
+  <div class="foot"><span>DenkiCode · CO-OPERO, prototipo</span><span>3 ottobre 2026 · 2 / 3</span></div>
+</div>
+
+<!-- ═════════════ Pagina 3: da decidere ═════════════ -->
+<div class="page">
+  <div class="kicker">CO-OPERO · flusso clienti</div>
+  <h1 style="font-size:19pt">Da decidere, e cosa non c'è ancora</h1>
+  <p class="lead">Il prototipo segue una chat vera fra un cliente e una segreteria. Dove le regole non erano ancora
+    decise abbiamo messo la versione più semplice: si conferma o si stringe.</p>
+
+  <section style="margin-top:6mm">
+    <h2>Da decidere</h2>
+    <ol class="q">
+      <li><b>Il cliente può modificare una richiesta già confermata?</b>
+        <span><em>Oggi sì</em>: torna all'ufficio da riconfermare, con il prima e il dopo.</span></li>
+      <li><b>Può annullarla da solo dopo la conferma?</b>
+        <span><em>Oggi sì</em>, fino alla chiusura del lavoro. Il lavoro resta da annullare in OperO.</span></li>
+      <li><b>Il rifiuto deve avere un motivo?</b>
+        <span><em>Oggi è facoltativo</em>: se l'ufficio lo scrive, il cliente lo legge.</span></li>
+      <li><b>Si può confermare prima di avere tutti i nomi?</b>
+        <span><em>Oggi serve almeno una persona</em> in squadra. Le altre si aggiungono dal lavoro e il cliente le vede arrivare.
+          Nella chat vera la disponibilità si dà prima dei nomi: confermare a squadra vuota oggi non si può.</span></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Cosa non c'è ancora</h2>
+    <ul class="miss">
+      <li><b>Il preventivo e la controproposta.</b> Nella chat vera il prezzo si tratta prima della conferma, e l'ufficio a volte propone altro («aggiungo un allestitore»). Oggi c'è solo una nota alla conferma.</li>
+      <li><b>Il giorno stesso.</b> Ritardi e assenze restano al telefono. Il portale mostra il numero del caposquadra e quello dell'ufficio.</li>
+      <li><b>La stima istantanea.</b> Arriva quando la segreteria apre OperO dopo la chiusura, non nel momento in cui il caposquadra chiude.</li>
+      <li><b>Le notifiche.</b> L'ufficio vede il numero su «Richieste», che si aggiorna ogni minuto. Le notifiche sul telefono non ci sono.</li>
+      <li><b>Il secondo flusso</b>, da OperO verso i fornitori con la pagina Gruppo, non è iniziato.</li>
+    </ul>
+  </section>
+
+  <div class="foot"><span>DenkiCode · CO-OPERO, prototipo</span><span>3 ottobre 2026 · 3 / 3</span></div>
+</div>
+
+<script>
+  // Le schede si posano su righe fisse; le frecce si disegnano dalle loro misure vere.
+  const stage = document.getElementById('stage'), svg = document.getElementById('arrows');
+  const ROW = 24.6, TOP = 3; // mm
+  const mm = v => v * 96 / 25.4;
+  stage.querySelectorAll('.card').forEach(c => { c.style.top = (TOP + ROW * +c.dataset.r) + 'mm'; });
+  const cards = [...stage.querySelectorAll('.card')];
+  const box = el => { const s = stage.getBoundingClientRect(), r = el.getBoundingClientRect();
+    return { l: r.left - s.left, r: r.right - s.left, t: r.top - s.top, b: r.bottom - s.top, cx: (r.left + r.right) / 2 - s.left }; };
+  const W = stage.getBoundingClientRect().width, mid = W / 2;
+  let out = `<defs><marker id="h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 1 L10 5 L0 9 z" fill="#44524f"/></marker>
+    <marker id="hr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 1 L10 5 L0 9 z" fill="#b42828"/></marker></defs>`;
+  const line = (d, red) => out += `<path d="${d}" fill="none" stroke="${red ? '#b42828' : '#44524f'}" stroke-width="1.3" ${red ? 'stroke-dasharray="3 2.5"' : ''} marker-end="url(#${red ? 'hr' : 'h'})"/>`;
+  // Da una corsia all'altra: esce dal fianco interno in basso, entra nel fianco interno in alto.
+  const cross = (a, b, red, tag) => {
+    const A = box(a), B = box(b), fromRight = a.classList.contains('s');
+    const x1 = fromRight ? A.l : A.r, x2 = fromRight ? B.r : B.l;
+    const y1 = A.b - mm(5), y2 = B.t + mm(5);
+    line(`M${x1} ${y1} H${mid} V${y2} H${x2 + (fromRight ? 2 : -2)}`, red);
+    if (tag) out += `<text class="tag" x="${(x1 + mid) / 2}" y="${y1 - 4}" text-anchor="middle" ${red ? 'style="fill:#b42828"' : ''}>${tag}</text>`;
+  };
+  const down = (a, b, tag) => { const A = box(a), B = box(b);
+    line(`M${A.cx} ${A.b} V${B.t - 2}`);
+    if (tag) out += `<text class="tag" x="${A.cx + 6}" y="${(A.b + B.t) / 2 + 3}">${tag}</text>`; };
+  const [s1, c2, s3, c4, s4, c5, s6, s7, c8] = cards;
+  cross(s1, c2, false, 'link');
+  cross(c2, s3);
+  cross(s3, c4, true, 'no');
+  down(s3, s4, 'sì');
+  cross(s4, c5);
+  down(s6, s7);
+  cross(s7, c8);
+  // 5 → 6: la conferma non chiede niente al cliente; il filo riparte dal lavoro
+  { const A = box(c5), B = box(s6); line(`M${A.r} ${A.b - mm(5)} H${mid} V${B.t + mm(5)} H${B.l - 2}`); }
+  svg.innerHTML = out;
+</script>
+</body>
+</html>
