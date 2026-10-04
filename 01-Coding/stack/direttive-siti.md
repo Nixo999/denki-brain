@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 04/10/2026 — Nicola: «anche questa frase qui non va bene, cerca su internet cosa si scrive di base in questi contesti»
+
+Sulle schermate che esistono in ogni prodotto (ingresso, errori, link non valido) si usano le formule convenzionali dei prodotti noti, cercate e non inventate.
+
 ### 04/10/2026 — Nicola: «non va bene che quel menu per selezionare da teleldono occupi tutta la sceramata, rendilo in modo che sia piu dimanico e che non sia sempre a tutto schermo quel menu per selezionare chi serve»
 
 Da telefono un selettore non occupa tutta la schermata: mostra quello che è scelto e tiene il resto compatto, a un tocco.
