@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-10-03
+updated: 2026-10-04
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 04/10/2026 — Nicola: «aggiusta le frasi, devono essere piu corte  e semplici.»
+
+I testi dentro un prodotto sono corti e semplici: una cosa per frase, parole di tutti i giorni. Una frase che va riletta per capirla è sbagliata.
 
 ### 03/10/2026 — Nicola: «in unovo lvoro sta tutto solo in alto e non mi smebra sfruttato bene lo spazio»
 
