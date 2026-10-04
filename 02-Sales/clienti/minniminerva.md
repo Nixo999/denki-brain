@@ -1,6 +1,6 @@
 ---
 type: cliente
-riga: Minerva Esposito, MUA ad Alessandria, @minniminerva_make.up. Ha risposto al DM il 04/10 - curiosa, titubante sull'utilità. Bozza pronta in [[sito-minniminerva]], deploy da lanciare.
+riga: Minerva Esposito, MUA ad Alessandria, @minniminerva_make.up. Ha risposto al DM il 04/10 - curiosa, titubante sull'utilità. Bozza online: minervaesposito.netlify.app.
 status: lead
 progetti: [sito-minniminerva]
 updated: 2026-10-04
@@ -53,7 +53,7 @@ Il DM col link è di Patrick.
 
 ## Cosa le abbiamo consegnato
 
-Niente ancora. La bozza è pronta in locale ([[sito-minniminerva]]), il deploy su `minervaesposito.netlify.app` lo lancia Nicola.
+Bozza **online dal 04/10/2026** su <https://minervaesposito.netlify.app> ([[sito-minniminerva]]), tre sbarramenti attivi. Il DM col link non è partito.
 
 ## Da chiederle
 
