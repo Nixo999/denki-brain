@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Prototipo di CO-OPERO (1/10) sul ramo coopero di opero-sito - cosa c'è, cosa manca per mostrarlo, dove va oltre le decisioni del 30/09.
-updated: 2026-10-03
+updated: 2026-10-04
 source: claude
 progetto: opero
 tags: [opero, co-opero, prototipo]
@@ -12,9 +12,12 @@ tags: [opero, co-opero, prototipo]
 Nicola l'ha chiesto il 1/10 («prova a disegnare e creare una versione di
 coopero, intanto sito […] devono già parlarsi, usa lo stesso database di
 opero»). Supera il «non mettere mano al codice» del 30/09 solo come **prova**:
-niente è pubblicato, niente è su `main`.
+niente è su `main`, e online c'è solo il portale di prova.
 
-- **Dove**: repo `opero-sito`, ramo `coopero`, dieci commit in locale. Com'è
+- **Online dal 4/10**: `https://cooperotest.netlify.app` (Netlify, sito
+  `cooperotest`, caricato a mano con `npm run deploy:coopero`). Punta allo
+  sviluppo, dove la migrazione manca: **si apre ma non fa entrare nessuno**.
+- **Dove**: repo `opero-sito`, ramo `coopero`, undici commit in locale. Com'è
   fatto lo dice il repo: `docs/coopero.md` e la voce del 1/10 in
   `docs/handoff.md`. **Sul tecnico ha ragione il repo.**
 - **Cosa c'è**: il portale dei clienti (Lavori, Nuovo, Conti) come secondo
@@ -28,8 +31,9 @@ niente è pubblicato, niente è su `main`.
   in Docker; sul database di sviluppo la migrazione **non è applicata**.
 - **Lo schema del flusso per Seba e Patrick** (3/10): `02-Sales/report/coopero-flusso-richieste.pdf`, tre pagine (percorso, stati, cosa decidere). Si rigenera dall'HTML accanto con Brave headless.
 - **Cosa manca per mostrarlo a Patrick e Seba**: guardare il lato segreteria
-  con Nicola (vuole un login), applicare la migrazione allo sviluppo,
-  pubblicare il portale su un indirizzo suo, provarlo su un telefono vero.
+  con Nicola (vuole un login), applicare la migrazione allo sviluppo (senza,
+  il portale online resta chiuso), scrivere `VITE_COOPERO_URL` nei due
+  `.env`, mettere online anche il lato ufficio, provarlo su un telefono vero.
 - **Il codice si indovina, il link no**: era il `TODO` di [[co-opero-clienti]].
   Il cliente entra da un link con un segreto lungo; `VERT001` è solo il nome
   che si legge e si detta.
