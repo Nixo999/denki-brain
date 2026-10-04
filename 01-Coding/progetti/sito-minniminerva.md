@@ -20,18 +20,14 @@ commit, nessun remote. **Online su <https://minervaesposito.netlify.app>** dal
 team `denkicode`). Il deploy l'ha lanciato Nicola: a Trevis lo blocca il
 classificatore dell'auto mode. La cliente sta in [[minniminerva]].
 
-Nicola, 04/10: «fallo ispirandoti per bene alla loro personalità e fai una buona
-ricerca sui competitor per cosa scrivere di utile nel sito, fallo per bene
-soprattutto da telefono e anche da pc, deve essere strutturato e fatto con un
-design che stupisca ma che sia molto utile, perché la ragazza è titubante
-sull'utilità».
+Nicola, 04/10: «deve essere strutturato e fatto con un design che stupisca ma
+che sia molto utile, perché la ragazza è titubante sull'utilità».
 
 ## Il metodo
 
-Raccolta del profilo dal direttore (Fable) nel pannello: 12 post, 40 foto sopra
-i 1080 px. Concorrenti su **Sonnet** (`COMPETITOR.md`, 69 KB). Direzione e
-costruzione sullo **stesso operatore Opus**, due giri. Il direttore ha letto
-`MONDI.md`, il copy e le catture.
+Raccolta del direttore (Fable) nel pannello: 12 post, 40 foto sopra i 1080 px.
+Concorrenti su **Sonnet** (`COMPETITOR.md`). Direzione e costruzione sullo
+**stesso operatore Opus**, due giri.
 
 ## Il mondo: «Due occhi» (`MONDO.md`, seed `009985d9`)
 
@@ -87,6 +83,6 @@ un iPhone.
 
 ## Da chiederle
 
-L'elenco intero sta in `MONDO.md`. I primi: file del logo, numero WhatsApp, un
-prezzo di partenza, quando si fa la prova, se lavora a domicilio (oggi è in
-pagina), consenso su recensioni e foto delle clienti.
+Elenco intero in `MONDO.md`. I primi: file del logo, numero WhatsApp, un prezzo
+di partenza, quando si fa la prova, se lavora a domicilio (oggi è in pagina),
+consenso su recensioni e foto delle clienti.
