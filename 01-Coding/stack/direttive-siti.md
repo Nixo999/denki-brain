@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 04/10/2026 — Nicola: «non va bene che quel menu per selezionare da teleldono occupi tutta la sceramata, rendilo in modo che sia piu dimanico e che non sia sempre a tutto schermo quel menu per selezionare chi serve»
+
+Da telefono un selettore non occupa tutta la schermata: mostra quello che è scelto e tiene il resto compatto, a un tocco.
+
 ### 04/10/2026 — Nicola: «aggiusta le frasi, devono essere piu corte  e semplici.»
 
 I testi dentro un prodotto sono corti e semplici: una cosa per frase, parole di tutti i giorni. Una frase che va riletta per capirla è sbagliata.
