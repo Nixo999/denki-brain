@@ -65,15 +65,13 @@ ordine di calendario. Jost, fondo `#EEF0EF`, accento rossetto `#B4536A`.
 
 ## Come si pubblica
 
-Solo i file pubblici, da una cartella di sola pubblicazione: `catture/` pesa
-321 MB e `sorgenti/` 44 MB, e il CLI caricherebbe tutto.
+Solo i file pubblici: `catture/` pesa 321 MB e il CLI caricherebbe tutto.
 
 ```bash
 cd ~/lavoro/minniminerva-site && rm -rf /tmp/pubblica-minerva && mkdir /tmp/pubblica-minerva && rsync -a --exclude '*.json' index.html robots.txt netlify.toml assets /tmp/pubblica-minerva/ && cd /tmp/pubblica-minerva && netlify deploy --prod --no-build --dir . --site b65feb44-f910-459f-a359-89fec5fcd600
 ```
 
-Dopo ogni deploy i tre sbarramenti con `curl`. Prima del DM il link si apre da
-un iPhone.
+Dopo ogni deploy: tre sbarramenti con `curl`. Prima del DM: link da un iPhone.
 
 ## Da chiederle
 
