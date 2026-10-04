@@ -23,11 +23,8 @@ classificatore dell'auto mode. La cliente sta in [[minniminerva]].
 Nicola, 04/10: «deve essere strutturato e fatto con un design che stupisca ma
 che sia molto utile, perché la ragazza è titubante sull'utilità».
 
-## Il metodo
-
-Raccolta del direttore (Fable) nel pannello: 12 post, 40 foto sopra i 1080 px.
-Concorrenti su **Sonnet** (`COMPETITOR.md`). Direzione e costruzione sullo
-**stesso operatore Opus**, due giri.
+Metodo: raccolta del direttore (Fable), concorrenti su Sonnet
+(`COMPETITOR.md`), direzione e costruzione sullo stesso operatore Opus, due giri.
 
 ## Il mondo: «Due occhi» (`MONDO.md`, seed `009985d9`)
 
@@ -41,16 +38,13 @@ ordine di calendario. Jost, fondo `#EEF0EF`, accento rossetto `#B4536A`.
 
 ## Cosa fa di utile, cioè cosa Instagram non fa
 
-- **La richiesta che compone il messaggio**: servizio, data, ora, luogo,
-  persone, prova, stile, note. Esce un testo completo; «Copia e apri Instagram»
-  lo copia e apre la chat. Il bottone WhatsApp è cablato e nascosto: basta
-  scrivere il numero nella costante `WHATSAPP` in testa a `assets/sito.js`.
-- Sei percorsi da un selettore compatto, ognuno con la sua prova.
-- Sette domande con risposta, quelle a cui i file rispondono già.
-- Il triangolo Torino–Milano–Genova con Alessandria al centro.
-- `<title>` e JSON-LD scritti per «truccatrice sposa Alessandria», dove oggi
-  su Google non c'è il sito di nessuna truccatrice. Anteprima del link
-  (`og.jpg`) coi due occhi e il nome.
+- **La richiesta che compone il messaggio** (servizio, data, ora, luogo,
+  persone, prova, stile, note): «Copia e apri Instagram» lo copia e apre la
+  chat. WhatsApp è cablato e nascosto: il numero va nella costante `WHATSAPP`
+  in testa a `assets/sito.js`.
+- Sei percorsi, sette domande con risposta, il triangolo Torino–Milano–Genova.
+- `<title>` e JSON-LD per «truccatrice sposa Alessandria», dove su Google non
+  c'è il sito di nessuna truccatrice. Anteprima del link (`og.jpg`).
 
 ## Verificato il 04/10
 
