@@ -18,7 +18,10 @@ niente è su `main`, e online c'è solo il portale di prova.
   `cooperotest`, caricato a mano con `npm run deploy:coopero`). Punta allo
   sviluppo, dove **la migrazione c'è dal 4/10** (applicata da Nicola) ma non
   ci sono accessi né richieste: il link si crea da OperO in locale.
-- **Dove**: repo `opero-sito`, ramo `coopero`, dodici commit in locale. Com'è
+- **Dal telefono di Nicola (4/10)**: testi corti in tutto il portale,
+  «Chi ti serve?» compatto (righe solo per le figure scelte), ingresso
+  riscritto sulle formule dei prodotti noti. Da ripubblicare.
+- **Dove**: repo `opero-sito`, ramo `coopero`, quattordici commit in locale. Com'è
   fatto lo dice il repo: `docs/coopero.md` e la voce del 1/10 in
   `docs/handoff.md`. **Sul tecnico ha ragione il repo.**
 - **Cosa c'è**: il portale dei clienti (Lavori, Nuovo, Conti) come secondo
