@@ -16,8 +16,9 @@ niente è su `main`, e online c'è solo il portale di prova.
 
 - **Online dal 4/10**: `https://cooperotest.netlify.app` (Netlify, sito
   `cooperotest`, caricato a mano con `npm run deploy:coopero`). Punta allo
-  sviluppo, dove la migrazione manca: **si apre ma non fa entrare nessuno**.
-- **Dove**: repo `opero-sito`, ramo `coopero`, undici commit in locale. Com'è
+  sviluppo, dove **la migrazione c'è dal 4/10** (applicata da Nicola) ma non
+  ci sono accessi né richieste: il link si crea da OperO in locale.
+- **Dove**: repo `opero-sito`, ramo `coopero`, dodici commit in locale. Com'è
   fatto lo dice il repo: `docs/coopero.md` e la voce del 1/10 in
   `docs/handoff.md`. **Sul tecnico ha ragione il repo.**
 - **Cosa c'è**: il portale dei clienti (Lavori, Nuovo, Conti) come secondo
@@ -28,12 +29,12 @@ niente è su `main`, e online c'è solo il portale di prova.
   della persona. Dal 3/10 le impostazioni seguono il profilo di OperO (dati,
   valuta, luoghi preferiti, versione) e «Nuovo lavoro» da computer riempie
   la finestra in due colonne (chi e dove, quando). Sempre il 3/10 tolta la scheda «Nuove richieste» dalle impostazioni, e Conti ha lavori chiusi d'esempio sul banco. Gira su un Supabase locale
-  in Docker; sul database di sviluppo la migrazione **non è applicata**.
+  in Docker e, dal 4/10, sul database di sviluppo.
 - **Lo schema del flusso per Seba e Patrick** (3/10): `02-Sales/report/coopero-flusso-richieste.pdf`, tre pagine (percorso, stati, cosa decidere). Si rigenera dall'HTML accanto con Brave headless.
 - **Cosa manca per mostrarlo a Patrick e Seba**: guardare il lato segreteria
-  con Nicola (vuole un login), applicare la migrazione allo sviluppo (senza,
-  il portale online resta chiuso), scrivere `VITE_COOPERO_URL` nei due
-  `.env`, mettere online anche il lato ufficio, provarlo su un telefono vero.
+  con Nicola (vuole un login), fare un giro completo sullo sviluppo dal link
+  alla conferma, scrivere `VITE_COOPERO_URL` in `.env.production`, mettere
+  online anche il lato ufficio, provarlo su un telefono vero.
 - **Il codice si indovina, il link no**: era il `TODO` di [[co-opero-clienti]].
   Il cliente entra da un link con un segreto lungo; `VERT001` è solo il nome
   che si legge e si detta.
