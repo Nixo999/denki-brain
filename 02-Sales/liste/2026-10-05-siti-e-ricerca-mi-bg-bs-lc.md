@@ -26,7 +26,7 @@ mandare**, 7 recuperi maturi. Le righe le vedi da `/banco apri`.
 | siti | MI · fioristi e wedding planner | **19** | 61 | aperta, 1 su 3: fermata dai motori bloccati |
 | siti | BG · toelettature e dog trainer | **23** | 108 | aperta, fonti finite (46 fuori provincia, 16 col sito) |
 | siti | BS · tatuatori e piercing | **25** | 38 | aperta, 2 su 3; Pagine Gialle BS finita |
-| siti | MI · toelettature e dog trainer (riserva) | **RISERVA_MI_TOEL** | | |
+| siti | MI · toelettature e dog trainer (riserva) | **11** | 47 | aperta, 1 su 4: fermata per fonti finite |
 | siti | MI · pasticcerie e cake designer (riserva) | **RISERVA_MI_PAST** | | |
 | ricerca | MI · ingrossi e distribuzione | **19** | 81 | aperta, 1 su 4; fonti finite a una riga dalla quota |
 | ricerca | MI · aziende agricole con vendita | **20** | 57 | aperta, 1 su 3: restano nomi nel Parco Sud e nel Ticino |
@@ -37,12 +37,15 @@ mandare**, 7 recuperi maturi. Le righe le vedi da `/banco apri`.
 ## Da guardare prima di mandare
 
 - **Lutto o fermi.** @il_vg (fioristi): post del 11/4 per un lutto di dieci anni
-  fa. Fermi da mesi, scritto in scheda: @_happy_moments_milano (6/4),
+  fa. @bellezzacanina.toelettatura (MI): il cane della titolare è morto a
+  inizio maggio, ultimo post 19/6. Fermi da mesi, scritto in scheda: @_happy_moments_milano (6/4),
   @fioreriafaby (27/7), @fiordiloto_sandonato (15/5), @la_floreale (post
   propri fermi ad aprile 2025), @musofedele, @alphadogtoelettatura,
   @toelettaturalillyeilvagabondo (maggio-giugno), @lamodernadueserramenti
   (17/7), @frigeriomarmi_official (6/8), @bresciaparquet (24/7),
-  @bevyexpress (2/7), @centro_finiture_marsano (7/8).
+  @bevyexpress (2/7), @centro_finiture_marsano (7/8), @dogsplanetcernusco
+  (2/12/2025), @toelettatura_gliamicidipeter (14/5), @petloverscenter.legnano
+  (20/6; Pagine Gialle lo dà a Parabiago).
 - **Troppo grandi per un DM a freddo**: @colombo_costruzioni (SpA dal 1905,
   legge l'ufficio comunicazione), @cesi_ceramica (15K), @cascinapizzo (208K),
   @alice.educatrice.cinofila (57K). Decidi tu se partono.
@@ -85,6 +88,8 @@ mandare**, 7 recuperi maturi. Le righe le vedi da `/banco apri`.
   (@misterbufo_tattoostudio), Simone (@anubitattoo), Nick (@di.nero.tattoo,
   dalle didascalie). @whiteliliumphotography apre senza nome. @olga.melnikovafoto
   ha un secondo profilo @olgamelnikovafoto: il messaggio è per questo.
+  @maya_educatrice_cinofila ha anche @mayafanchini: si scrive da uno solo.
+  @toelettatura_marley: il sito Wix sta sotto l'account di un'altra persona.
 - **@poison_tattoostudio** (BS, 22,6K): «NO DM» in bio, pista per il telefono,
   non in lista. **@desy_rota_fotografa**: Como, dominio Wix non collegato,
   gancio buono per una cella di Como.
