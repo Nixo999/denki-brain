@@ -17,7 +17,7 @@ tutti e sette gli operatori con 101 righe già sul disco; ripresi dopo
 mezzanotte, finiti il 6/10 con quattro riserve per le celle chiuse corte.
 
 **Sul banco ci sono 160 righe nuove, tutte sul banco Patrick
-(`lista-corrente.csv`)**: siti 100, ricerca 60. In tutto ora **1010 da
+(`lista-corrente.csv`)**: siti 100, ricerca 60. In tutto ora **1037 da
 mandare**, 7 recuperi maturi. Le righe le vedi da `/banco apri`.
 
 | Lista | Cella | Righe | Profili | Stato cella |
@@ -28,7 +28,7 @@ mandare**, 7 recuperi maturi. Le righe le vedi da `/banco apri`.
 | siti | BS · tatuatori e piercing | **25** | 38 | aperta, 2 su 3; Pagine Gialle BS finita |
 | siti | MI · toelettature e dog trainer (riserva) | **11** | 47 | aperta, 1 su 4: fermata per fonti finite |
 | siti | MI · pasticcerie e cake designer (riserva) | **8** | 20 | aperta, 2 su 5: restano nomi (Lambertini e Micake, gancio 6, tenuti fuori) |
-| siti | LC · fioristi e wedding planner (riserva) | **RISERVA_LC_FIOR** | | |
+| siti | LC · fioristi e wedding planner (riserva) | **7** | 25 | aperta, 1 su 3,5: su matrimonio.com restano 10 fioristi e i wedding planner |
 | ricerca | MI · ingrossi e distribuzione | **19** | 81 | aperta, 1 su 4; fonti finite a una riga dalla quota |
 | ricerca | MI · aziende agricole con vendita | **20** | 57 | aperta, 1 su 3: restano nomi nel Parco Sud e nel Ticino |
 | ricerca | LC · edilizia e serramenti | **15** | 72 | esaurita: resa a 1 su 4,8 e Pagine Gialle finita |
@@ -57,12 +57,14 @@ mandare**, 7 recuperi maturi. Le righe le vedi da `/banco apri`.
 - **Domini liberi nel gancio** (tatuatori BS): @martacamisanitattoo,
   @pix_japanese_tattoo, @antikorpotattooshop, @the_good_choice_tattoo_parlor
   hanno in bio o su Movylo un dominio che non esiste: è il gancio 4, il
-  messaggio lo dice.
+  messaggio lo dice. @labohemefioriebonton (LC): link in bio 404, ma non
+  pubblica un lavoro da febbraio. @antheafiori_padernodadda: il link porta a
+  gmail.com, quasi certo un errore di compilazione; è anche in Interflora.
 - **Domini parcheggiati non attribuiti**: `barbaezampa.it` (@barba_e_zampa),
   `crudeliademon.it` (@crudelia_toelettatura), `mollalosso.it`
   (@toelettaturamollalosso), `lesdamesdesfleurs.com` (Coming Soon),
   `cheztrillievents.com` (solo il nome), `unicapasticceria.it` (whois
-  nascosto). Se sono loro, il gancio cambia.
+  nascosto), `fiorinfiorello.it` (pagina di default, niente lo lega a Lecco). Se sono loro, il gancio cambia.
 - **Fresha nei tatuatori BS**: 11 schede `lvp` «not currently affiliated»,
   il messaggio le nomina; @greedymonkey_tattoostudio ha una pagina Fresha
   attiva per i piercing, @anubitattoo quella di una piercer ospite.
@@ -90,7 +92,8 @@ mandare**, 7 recuperi maturi. Le righe le vedi da `/banco apri`.
   @la_fioreria_di_gigi_snc segue 2.571 profili con 401 follower.
 - **Nomi presi da Pagine Gialle, non dal profilo**: Alfonso
   (@misterbufo_tattoostudio), Simone (@anubitattoo), Nick (@di.nero.tattoo,
-  dalle didascalie). @whiteliliumphotography apre senza nome. @olga.melnikovafoto
+  dalle didascalie). @whiteliliumphotography e @naturalmente_fiori aprono
+  senza nome (la titolare di Naturalmente Fiori è appena diventata nonna, 2/10). @olga.melnikovafoto
   ha un secondo profilo @olgamelnikovafoto: il messaggio è per questo.
   @maya_educatrice_cinofila ha anche @mayafanchini: si scrive da uno solo.
   @toelettatura_marley: il sito Wix sta sotto l'account di un'altra persona.
@@ -128,12 +131,17 @@ mandare**, 7 recuperi maturi. Le righe le vedi da `/banco apri`.
 
 ## Trappole nuove
 
-- **Il DNS della sandbox non è affidabile**: `dig` e `curl` dicono «nessun
-  DNS» a domini vivi (gaialimandri.it, kisset.it, zampetteinbeauty.it,
+- **Il DNS della sandbox non è affidabile**, e nelle ultime ore il browser
+  dell'app ha smesso di aprire i domini piccoli («denied or failed»): `dig`
+  e `curl` dicono «nessun DNS» a domini vivi (gaialimandri.it, kisset.it, zampetteinbeauty.it,
   toelettamiconamore.it, gypsophila.it). Il «nessuno risponde» di
   `verifica-sito.py` lanciato da qui vale poco: i domini si provano nel
   browser, o con il DNS di Google. Toelettami Con Amore è uscita dalla lista
-  proprio per questo.
+  proprio per questo. Strade che hanno retto: `dns.google/resolve` dal
+  browser, il DNS su HTTPS di Cloudflare, `whois`, `curl --resolve` sull'IP.
+- **`verifica-sito.py` coi motori prende la parola del settore nel titolo**
+  («Fiori» su floraclick.net e angoliverdi.it) e segna SITO: due falsi su 7
+  righe, riletti a mano.
 - **La scratchpad è condivisa tra gli operatori**: `add.py`, `ys.py`, `pg.py`
   sovrascritti a vicenda, un CSV svuotato e ricostruito dal json (le 14
   righe sono tornate identiche, confrontate campo per campo). Ogni operatore

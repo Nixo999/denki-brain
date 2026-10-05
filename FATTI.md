@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura. Max 80 righe.
-updated: 2026-10-05
+updated: 2026-10-06
 verificato: 2026-09-16
 source: denkicode
 tags: [stato, fatti]
@@ -67,7 +67,7 @@ Nails Mania, Tarilli, Fiftynine, Castiglione, NG Barber (repo **pubblica**), Lob
 
 ## Bloccato, e perché
 
-- **Banco DM** (02/10): 144 righe nuove sul banco Patrick (siti 86, ricerca 58), **877 da mandare**; cosa guardare prima dell'invio in [[2026-10-02-siti-e-ricerca-mi-bs-lc-co]]. La posta di DenkiCode non è letta (Instagram non loggato nel browser dell'app di Nicola); quella di `@patrick.sappa` letta l'1/10 → [[2026-10-01-banco-ricircolo]]
+- **Banco DM** (06/10): 160 righe nuove sul banco Patrick (siti 100, ricerca 60, 11 celle con 4 riserve), **1037 da mandare**, nessun invio dal 29/09; cosa guardare prima dell'invio in [[2026-10-05-siti-e-ricerca-mi-bg-bs-lc]]. La posta di DenkiCode non è letta (nel browser dell'app è aperto `@patrick.sappa`, letta il 6/10: nessuna risposta nuova dopo l'1/10); 15 lead aperti fermi da 10 a 31 giorni → [[2026-10-01-banco-ricircolo]]
 - **OperO, storico**: la migrazione non si fa più (13/09), Seba vuole solo un report giugno-agosto da `strumenti/report-mesi.mjs`; manca la chiave `OPERO1_SERVICE` da Settings → API di OperO 1, o un login di segreteria → [[opero]]
 - **DenkiShift non è installabile in produzione**: dimostrabile, senza date → [[denkishift]]
 - **La produzione resta fuori** su tutti e due i prodotti → [[modifiche-al-database]]
