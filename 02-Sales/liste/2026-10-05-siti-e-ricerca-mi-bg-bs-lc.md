@@ -32,7 +32,7 @@ mandare**, 7 recuperi maturi. Le righe le vedi da `/banco apri`.
 | ricerca | MI · aziende agricole con vendita | **20** | 57 | aperta, 1 su 3: restano nomi nel Parco Sud e nel Ticino |
 | ricerca | LC · edilizia e serramenti | **15** | 72 | esaurita: resa a 1 su 4,8 e Pagine Gialle finita |
 | ricerca | BS · edilizia e serramenti (riserva) | **5** | 30 | esaurita per resa (13 sotto i 200 follower, 10 già contattati) |
-| ricerca | LC · alimentari artigianali (riserva) | **RISERVA_LC_ALIM** | | |
+| ricerca | LC · alimentari artigianali (riserva) | **1** | 1 | aperta: da Pagine Gialle restano Butti, Bonfanti, Marco d'Oggiono e altri 35 nomi |
 
 ## Da guardare prima di mandare
 
