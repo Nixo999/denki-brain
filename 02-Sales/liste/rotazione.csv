@@ -57,7 +57,7 @@ siti,VC,"ciglia, sopracciglia e PMU",parziale,4,2026-09-29,
 siti,VC,parrucchieri,parziale,3,2026-09-19,
 siti,VC,estetica,parziale,1,2026-09-17,
 siti,VC,fotografi e videomaker,parziale,1,2026-09-23,
-siti,BS,tatuatori e piercing,parziale,2,2026-09-13,
+siti,BS,tatuatori e piercing,parziale,27,2026-10-05,"5/10: 38 profili, 25 righe. Aperta, rende 2 su 3; Pagine Gialle BS finita"
 siti,BS,barbieri,parziale,6,2026-09-14,
 siti,BS,"ciglia, sopracciglia e PMU",parziale,14,2026-09-13,
 siti,BS,parrucchieri,parziale,23,2026-09-14,
@@ -124,17 +124,17 @@ ricerca,MI,impiantisti,parziale,7,2026-09-25,
 ricerca,MI,officine e carrozzerie,parziale,20,2026-09-25,
 ricerca,MI,meccanica e carpenterie,parziale,4,2026-09-25,
 ricerca,MI,edilizia e serramenti,parziale,47,2026-10-02,"2/10: 11 righe; operatore fermato prima del resoconto, profili non contati"
-ricerca,MI,ingrossi e distribuzione,parziale,9,2026-09-19,
+ricerca,MI,ingrossi e distribuzione,parziale,28,2026-10-05,"5/10: 81 profili, 19 righe. Aperta, fonti finite a una riga dalla quota"
 ricerca,MI,trasporti e logistica,parziale,7,2026-09-23,
 ricerca,MI,alimentari artigianali,parziale,23,2026-10-02,"2/10: 67 profili, 20 righe. Aperta, rende 1 su 3,4"
-ricerca,MI,aziende agricole con vendita,parziale,3,2026-09-21,
+ricerca,MI,aziende agricole con vendita,parziale,23,2026-10-05,"5/10: 57 profili, 20 righe. Aperta, rende 1 su 3: restano nomi nel Parco Sud e Ticino"
 ricerca,MI,altro,parziale,21,2026-09-25,righe sparse di settori fuori elenco
 ricerca,LC,falegnamerie,parziale,1,2026-09-29,
 ricerca,LC,studi tecnici,parziale,3,2026-09-29,
 ricerca,LC,impiantisti,parziale,3,2026-09-29,
 ricerca,LC,officine e carrozzerie,parziale,1,2026-09-21,
 ricerca,LC,meccanica e carpenterie,parziale,1,2026-09-25,
-ricerca,LC,edilizia e serramenti,parziale,5,2026-09-25,
+ricerca,LC,edilizia e serramenti,esaurito,20,2026-10-05,"5/10: 72 profili, 15 righe. Finito per resa e Pagine Gialle finita: 22 fermi, 14 sotto i 200 follower"
 ricerca,LC,alimentari artigianali,parziale,1,2026-09-25,
 ricerca,LC,aziende agricole con vendita,parziale,2,2026-09-29,
 ricerca,LC,altro,parziale,1,2026-09-23,righe sparse di settori fuori elenco
@@ -182,7 +182,7 @@ ricerca,BS,studi tecnici,parziale,1,2026-09-13,
 ricerca,BS,impiantisti,parziale,7,2026-09-29,
 ricerca,BS,officine e carrozzerie,parziale,11,2026-09-25,
 ricerca,BS,meccanica e carpenterie,parziale,6,2026-09-25,
-ricerca,BS,edilizia e serramenti,parziale,21,2026-09-25,
+ricerca,BS,edilizia e serramenti,esaurito,26,2026-10-05,"5/10: 30 profili, 5 righe. Finito per resa: 13 sotto i 200 follower, 5 morti, 10 gia contattati"
 ricerca,BS,ingrossi e distribuzione,parziale,10,2026-09-29,
 ricerca,BS,trasporti e logistica,parziale,2,2026-09-25,
 ricerca,BS,alimentari artigianali,parziale,4,2026-09-25,
@@ -222,3 +222,6 @@ siti,NO,toelettature e dog trainer,esaurito,4,2026-10-02,"2/10: 30 profili, 4 ri
 siti,LC,fotografi e videomaker,parziale,10,2026-10-02,"2/10: 35 profili, 10 righe. Fermata per fonti finite, non per resa: PG, matrimonio.com e Yahoo ridanno gli stessi nomi, quasi tutti col sito"
 siti,MI,"sartorie, atelier e tappezzieri",parziale,23,2026-10-02,"2/10: 23 righe; operatore fermato prima del resoconto, profili aperti non contati"
 siti,MI,"personal trainer, pilates e yoga",parziale,7,2026-10-02,"2/10: 10 righe scritte, 3 tolte (1 sito probabile, 2 su Fresha non nominata); operatore fermato, profili non contati"
+siti,MI,fotografi e videomaker,esaurito,7,2026-10-05,"5/10: 40 profili, 7 righe. Finito per resa: 12 col sito, 8 sotto i 200 follower, 7 morti; 20 fotografi MI stanno gia nella lista sartorie del 2/10"
+siti,MI,fioristi e wedding planner,parziale,19,2026-10-05,"5/10: 61 profili, 19 righe. Fermata per motori bloccati, non per resa: matrimonio.com e la pagina del profilo reggono"
+siti,BG,toelettature e dog trainer,parziale,23,2026-10-05,"5/10: 108 profili, 23 righe. Fermata per fonti finite: 46 fuori provincia, 16 col sito"
