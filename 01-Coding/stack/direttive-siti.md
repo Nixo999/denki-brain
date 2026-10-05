@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-10-04
+updated: 2026-10-05
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 05/10/2026 — Nicola: «questo sito fa cagare, non è per niente nello stile della sposa della cliente. dagli piu oeronalota, e cambia completamente la animazione allavvio facendola meglio e piu particolare e ad effetto, e dai piu personalita all intero sito»
+
+verdetto sul giro 2 di minervaesposito.netlify.app (mondo «Due occhi»: grigio freddo, sans geometrico, macro di occhi): il mondo visivo nasce dallo stile della cliente e del suo pubblico, qui la sposa (morbido, romantico, luminoso), non da una metafora concettuale; un'idea furba ma fredda viene bocciata. L'apertura è un momento particolare e ad effetto, non due forme che si aprono
 
 ### 04/10/2026 — Nicola: «anche questa frase qui non va bene, cerca su internet cosa si scrive di base in questi contesti»
 
