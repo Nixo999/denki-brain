@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 05/10/2026 — Nicola: «la foto della famigila con la donna che sorride è terribile, prendine una piu semplice»
+
+la foto che apre un sito è semplice: un soggetto solo su fondo pulito, non un gruppo in posa che ride
+
 ### 05/10/2026 — Nicola: «comunque schezavo fallo benissimo anche quezto sempre usadno claude desing prima e dandomi piu opzioni»
 
 ogni sito nuovo passa prima dalla tela Claude Design con più mondi a confronto e la costruzione parte dopo la scelta di Nicola; un «fallo veloce, senza Claude Design» non abbassa il livello
