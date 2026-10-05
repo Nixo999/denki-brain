@@ -1,0 +1,91 @@
+---
+type: progetto
+riga: Bozza sito Davide Milan, fotografo di diciottesimi e matrimoni, Milano. Tre mondi sulla tela Claude Design (05/10), sceglie Nicola.
+status: attivo
+client: davidemilan
+stack: html-css-js
+started: 2026-10-05
+deadline: TODO
+updated: 2026-10-05
+source: claude
+verificato: 2026-10-05
+tags: [sito, bozza, fotografia, milano, instagram]
+---
+
+# Sito Davide Milan — bozza, Milano
+
+Cartella `~/lavoro/davidemilan-site`, dallo starter. **Repo solo locale**, nessun
+remote, niente online. Cliente: [[davidemilan]]. Ha risposto al DM «Manda pure
+qui, sono curioso» (05/10): la bozza è la risposta.
+
+## Cosa c'è nella cartella
+
+- `PRODUCT.md`: la verità di prodotto, scritta dal direttore.
+- `MONDI.md`: i tre mondi dell'operatore di direzione (Opus), seed impeccable
+  `7ca53cfa`, modo Persuade, skill di stile `high-end-visual-design`.
+- `raccolta/` (fuori da git): `RACCOLTA.md` con bio, testi dell'Adobe Portfolio,
+  12 caption, locali, personalità con le prove; `foto/MANIFESTO.md` con 35 foto
+  sopra i 1080 px.
+
+## Il materiale, in una riga
+
+Non fa serate né concerti, come diceva la lista: **9 post su 12 sono
+diciottesimi**, 3 lo stesso matrimonio a Sestri Levante. Flash diretto e vicino,
+inquadrature storte, luce colorata dei locali, bianco e nero su emozione e
+folla, quasi tutto verticale. Foto dall'Adobe Portfolio
+`milandavide15.myportfolio.com` a 1920-3840 px. Concorrenti:
+[[competitor-siti-fotografi-eventi]].
+
+## Cosa ha chiesto Nicola (05/10)
+
+Telefono come schermo principale, «animato molto attentamente». Apertura nata
+dal suo carattere. Seconda schermata fissata: la pagina sembra ferma e
+scrollando succede qualcosa. Tela Claude Design prima, con più opzioni
+([[direttive-siti]]).
+
+## I tre mondi (`MONDI.md`)
+
+- **A «Il provino»**: il sito è il provino a contatto di una festa. Apertura: la
+  pellicola avanza a scatti fino al fotogramma 18, un rettangolo rosso lo
+  sceglie e lo apre a tutto schermo. Pin: un foglio di 12 fotogrammi, il rosso
+  ne stacca tre. Carta fredda, nero, rosso; Funnel Display + Sometype Mono.
+  Rischio: freddo, come «Due occhi».
+- **B «Flash»**: il buio del locale, ogni foto entra col lampo che l'ha fatta.
+  Apertura: la ragazza con le peonie quasi al buio, lampo, nome con l'ombra dura,
+  inquadratura storta. Pin: tre lampi che impilano tre stampe. Nero sala, bianco
+  lampo, un rosso; Big Shoulders Display + Martian Mono. Rischio: fondo tutto
+  uguale.
+- **C «La serata»**: il fondo va dal tramonto al faro viola. Apertura: un cono
+  di luce continua il faro della foto del palloncino «18». Pin: quattro campi di
+  colore, una parola per fase. Ambra, rosa, cobalto, viola, oro; Anybody.
+  Rischio: gradienti e viola letti come sito fatto con l'AI.
+
+L'operatore raccomanda B, da incrociare con C. **La scelta è di Nicola, `TODO`.**
+
+## Tela di design (05/10)
+
+<https://claude.ai/artifact/4WnNZAxC4fMZvYYAt1HKws> (privata). 22 foto caricate
+con il sì di Nicola («carica le foto»): il controllo dei permessi le aveva
+bloccate come uscita di dati. Tre tavole per mondo: apertura animata, seconda
+schermata allo scroll, pagina intera da telefono.
+
+## I giri
+
+- **Giro 0** (05/10): raccolta e concorrenti su Sonnet, direzione e tavole su
+  Opus. Nessun codice del sito ancora.
+
+## Da chiedere a Davide
+
+Prezzi e pacchetti · ore di copertura, numero di foto, tempi di consegna ·
+acconto e disdetta · mail, telefono, WhatsApp · liberatorie per i visi dei
+ragazzi dei diciottesimi · permesso sul commento della cliente del matrimonio ·
+file del logo (c'è solo a 150 px) · prova di battesimi e lauree, che stanno
+solo nella bio.
+
+## Non verificato
+
+Le caption oltre i primi 12 post e le sei storie in evidenza (serve il login) ·
+circa 250 foto dell'Adobe Portfolio mai guardate: le 35 tenute sono un campione
+a passo costante, viste in fogli-contatto · il pin sul telefono contrasta con
+la direttiva del 25/09 «lo scroll resta di chi legge»: tenuto perché chiesto
+da Nicola, massimo 2,5 schermi.
