@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito Minerva Esposito, MUA ad Alessandria. Online il giro 2 (bocciato); giro 3 «Il velo» pronto in locale, deploy da lanciare.
+riga: Bozza sito Minerva Esposito, MUA ad Alessandria. Online dal 05/10 il giro 3 «Il velo» (bianco su bianco), verdetto di Nicola da avere.
 status: attivo
 client: minniminerva
 stack: html-css-js
@@ -17,9 +17,9 @@ tags: [sito, bozza, make-up, sposa, alessandria, instagram]
 Cartella `~/lavoro/minniminerva-site`, dallo starter. **Repo solo locale**, 24
 commit, nessun remote. Netlify: <https://minervaesposito.netlify.app> (progetto
 `minervaesposito`, id `b65feb44-f910-459f-a359-89fec5fcd600`, team
-`denkicode`). **Online c'è il giro 2, quello bocciato**; il giro 3 (`38dadd6`)
-è in locale. Il deploy lo lancia Nicola: a Trevis lo blocca il classificatore
-dell'auto mode. Cliente: [[minniminerva]]. Concorrenti su Sonnet, operatori Opus.
+`denkicode`). **Online dal 05/10 c'è il giro 3** (`38dadd6`, deploy
+`6ac36c0ac14222146cb44a97`). Il deploy lo lancia Nicola: a Trevis lo blocca il
+classificatore dell'auto mode. Cliente: [[minniminerva]]. Concorrenti su Sonnet, operatori Opus.
 
 ## I giri
 
@@ -48,14 +48,16 @@ dell'auto mode. Cliente: [[minniminerva]]. Concorrenti su Sonnet, operatori Opus
 - Sei percorsi, sette domande con risposta, il triangolo Torino–Milano–Genova.
 - `<title>` e JSON-LD per «truccatrice sposa Alessandria». `og.jpg` rifatta.
 
-## Verificato il 05/10 (giro 3, in locale)
+## Verificato il 05/10 (giro 3)
 
 - `controlla-sito.py` 8/8, `controlla-slop.py` 0 blocca e 3 avvisi,
   `controlla-testo.py` 0/0, rilanciati dal direttore su `38dadd6`.
 - Apertura guardata dal direttore battuta per battuta a 375 e a 1440
   (`catture/g5/apertura-*.jpg`), fette a 375 e 1440, testa ritoccata in `g6`.
+- **Online, con `curl`**: 200, tre sbarramenti, file di lavoro 404, le 64
+  risorse della pagina 200; pagina viva a 375 con console pulita e overflow zero.
 - **Non verificato**: telefono vero e Safari; copia negli appunti e apertura di
-  Instagram su un telefono; niente del giro 3 è online.
+  Instagram su un telefono.
 
 ## Tela di design (05/10)
 
