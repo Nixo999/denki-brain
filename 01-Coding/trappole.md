@@ -1031,6 +1031,23 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   non le parole del profilo: si controlla chi lo firma prima di citarlo.
   (30/09/2026, [[sito-petliving]])
 
+- `[TRAPPOLA]` **«Non ha un sito» può essere falso anche con tutti i domini
+  morti: il riquadro «Sito web» della scheda Google può puntare a una pagina
+  Canva** (`*.canva.link`). Si legge con `get_page_text` e dentro ci sono i
+  testi e il logo in PNG trasparente. (05/10/2026, [[sito-jpp-merate]])
+- `[TRAPPOLA]` **I testi dei pacchetti di un catalogo WhatsApp Business si
+  leggono con `curl`**: stanno nell'`og:description` di
+  `whatsapp.com/product/<id>/<telefono>`. Il catalogo intero `wa.me/c/…` no.
+  (05/10/2026, [[sito-jpp-merate]])
+- `[TRAPPOLA]` **Su Google Maps la miniatura arriva alla taglia massima
+  cambiando il suffisso `=w…-h…-k-no` in `=s2400`.** Da sloggati non si sa se
+  la foto è «dal proprietario». (05/10/2026, [[sito-jpp-merate]])
+- `[TRAPPOLA]` **Dopo aver chiuso il modale di login di Instagram, le foto di
+  un carosello arrivano con 2-3 secondi di ritardo**: letto subito, il post
+  risulta senza immagini. → attesa di 2,5 s. E l'URL firmato va passato intero:
+  tolto anche solo `_nc_ohc`, torna il file da 22 byte. (05/10/2026,
+  [[sito-jpp-merate]])
+
 ## Liste e banco DM
 
 - **Una frase di verifica ripetuta su sessanta righe è un modello, non un

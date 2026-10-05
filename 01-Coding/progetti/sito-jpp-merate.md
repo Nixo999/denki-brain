@@ -36,10 +36,25 @@ bimbi, bianco e nero su fondo scuro per maternità e neonati. Colore loro: malva
 Concorrenti: [[competitor-siti-fotografi]] (48 siti; in Italia nessuno dà
 acconto e disdetta, 3 su 31 i tempi di consegna).
 
+## I tre mondi (`MONDI.md`, seed impeccable `039ca394`)
+
+- **A «Uno, due, tre, stella»**: in studio si scatta giocando a 1-2-3 stella.
+  Apertura: la conta su malva, lampo, la silhouette `gm-1` si ferma nitida.
+  Malva a tutto campo, Shrikhand + Figtree. Rischio: festa di compleanno.
+- **B «Il fondale»**: ogni sezione ha il colore del fondale della sua foto.
+  Apertura: scende il rotolo ocra, si accende la luce, due tagli a terracotta
+  e nero. Lexend Giga + Lexend. Rischio: dipende dai volti dei bambini.
+- **C «Il libro fustellato»**: cartoncini con un foro che si apre come un
+  diaframma, linguette come indice. Gabarito + Onest. Rischio: spostabile su
+  un altro fotografo per bambini.
+
+L'operatore raccomanda A coi campi di B. **La scelta è di Nicola, `TODO`.**
+
 ## Tela di design (05/10)
 
 <https://claude.ai/artifact/CQywDvzNzfnZSJyqEKMj7s> (privata). 16 foto e i due
-loghi caricati. I tre mondi vanno resi lì per la scelta di Nicola.
+loghi caricati. Quattro tavole per mondo: apertura in quattro battute, apertura
+animata, telefono, computer.
 
 ## I giri
 
