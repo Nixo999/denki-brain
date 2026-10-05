@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **265 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **267 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -60,6 +60,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-dsi-advertising]] — ⚠️ Sito vetrina in una pagina per D.S.I. Advertising di Piras Sebastiano, Merate (LC) - dal 1992 progetta e produce articoli promozionali per il...
 - [[sito-fiftynine]] — ⚠️ Sito vetrina in una pagina per Bar Tabacchi Fiftynine, bar tabaccheria e pizzeria in via Nazionale dei Giovi 59, Cesano Maderno (MB).
 - [[sito-hairstylebrescia]] — Hair Style Parrucchieri @hairstyle_brescia, salone a Brescia, gancio sposa - bozza online su hairstylebrescia.netlify.app dal 16/9, mondo A «La prova», 8/8, DM non partito.
+- [[sito-jpp-merate]] — Bozza sito Studio fotografico JPP, Merate. Raccolta, concorrenti e copy fatti il 05/10; tre mondi sulla tela Claude Design, Nicola deve scegliere.
 - [[sito-laurafranzoni]] — Laura Franzoni @laurafranzoni_lashmaker, ciglia a Brescia: bozza online su laurafranzoni.netlify.app dal 14/9, mondo «Dall'alto». Online c'è il giro 2, il giro 3 è fermo in locale.
 - [[sito-leibeautyroom]] — Bozza sito per Lei Beauty Room (Torino Cavoretto) - mondo «La stanza». Online su leibeautyroom.netlify.app, giro 7: da PC il pin, sul telefono menu con i nomi e cinque stanze a scomparsa con porte diverse e tre foto vere, 8/8.
 - [[sito-mikuma-dogs]] — Online su mikumadogs.netlify.app per Martina Carneli (mikuma.dogs), Como - giro 7 'il bianco e il nero', logo vero, Nicola: 'mi piace molto'.
@@ -129,6 +130,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[dsi-advertising]] — ⚠️ D.S.I. Advertising di Piras Sebastiano, Merate (LC).
 - [[edilida]] — Edilida SRL, impresa edile di Travagliato (BS). Ha compilato il modulo della ricerca il 18/09. Si punta a una videochiamata sulle scadenze di cantiere, mail di lunedì 21.
 - [[il-salone-di-andrea]] — ⚠️ Parrucchiere donna e uomo di Andrea Bielli, Viale Natale Betelli 58, Dalmine.
+- [[jpp-merate]] — Studio fotografico JPP (Just Pure Portraits), Merate, @jppmerate. Stefania ha risposto al DM il 05/10 e vuole una chiamata. Ha già una pagina Canva.
 - [[laurafranzoni]] — Extension ciglia a Brescia, @laurafranzoni_lashmaker, 452 follower. Bozza online dal 14/9, il DM non è mai partito.
 - [[lei-beauty-room]] — Centro estetico a Torino Cavoretto (via alla Parrocchia 4/c), @lei_beauty_room_, 671 follower, aperto dal 23/10/2025. Ha risposto «Grazie manda pure qui» al DM di Patrick del 24/9. Bozza in lavorazione, non ancora inviata.
 - [[minniminerva]] — Minerva Esposito, MUA ad Alessandria, @minniminerva_make.up. Ha risposto al DM il 04/10 - curiosa, titubante sull'utilità. Bozza online: minervaesposito.netlify.app.
