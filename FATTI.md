@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura. Max 80 righe.
-updated: 2026-10-04
+updated: 2026-10-05
 verificato: 2026-09-16
 source: denkicode
 tags: [stato, fatti]
@@ -34,7 +34,7 @@ cosa aperta. Il racconto dei giri sta nella nota progetto, la giornata nel
 
 | Sito | Online su | Stato (data) | Prossimo passo |
 |---|---|---|---|
-| [[sito-minniminerva]] | minervaesposito.netlify.app | giro 2 **bocciato** da Nicola (05/10): non è nel suo stile sposa; online c'è ancora quello | giro 3 nel suo bianco su bianco, poi il DM; prezzi, WhatsApp e logo da chiederle |
+| [[sito-minniminerva]] | minervaesposito.netlify.app | online il giro 2 **bocciato** (05/10); giro 3 «Il velo» pronto in locale (`38dadd6`), verdetto di Nicola `TODO` | deploy di Nicola, poi il DM; prezzi, WhatsApp e logo da chiederle |
 | [[sito-petliving]] | petliving.netlify.app | giro 2 (30/09) dopo il verdetto di Nicola; 375 guardata, 1440 no; loro: «Se vuole mandarci qualcosa intanto» | verdetto di Nicola sul giro 2, poi il DM col link; foto di stripping e logo da chiedere |
 | [[sito-soul-ink]] | soul-ink-torino.netlify.app | giro 3 (26/09), verdetto di Nicola `TODO` | DM Instagram; lo studio non ha contatti pubblici |
 | [[sito-perunpelo]] | perunpelo.netlify.app | giro 3 (25/09), verdetto `TODO`; lei ha detto sì il 25/09 | DM, domande per Ambra in [[perunpelo]] |
