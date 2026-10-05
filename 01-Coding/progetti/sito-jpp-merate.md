@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito Studio fotografico JPP, Merate. Tre mondi in dodici tavole guardabili in locale (05/10), niente online; Nicola deve scegliere.
+riga: Bozza sito Studio fotografico JPP, Merate. Scelto il mondo C «Il libro fustellato» (05/10), da rendere meno piatto; costruzione in locale.
 status: attivo
 client: jpp-merate
 stack: html-css-js
@@ -48,7 +48,10 @@ acconto e disdetta, 3 su 31 i tempi di consegna).
   diaframma, linguette come indice. Gabarito + Onest. Rischio: spostabile su
   un altro fotografo per bambini.
 
-L'operatore raccomanda A coi campi di B. **La scelta è di Nicola, `TODO`.**
+L'operatore raccomandava A coi campi di B. **Nicola ha scelto C il 05/10 sera**,
+con un verdetto sulle tavole: «però dagli un po di vita», «fatto così come è
+un po piatto». Sta in `MONDO.md`: le tavole sono il punto di partenza, il sito
+deve avere più spessore e più movimento.
 
 ## Le tavole (05/10) — in locale, niente online
 
@@ -72,7 +75,8 @@ macchinetta giocattolo.
 ## I giri
 
 - **Giro 0** (05/10): raccolta e concorrenti su Sonnet, direzione su Opus.
-  Nessun codice del sito ancora.
+- **Giro 1** (05/10 sera): costruzione del mondo C lanciata su un operatore
+  Opus, in locale sulla porta 8794, niente online. Esito `TODO`.
 
 ## Da chiedere a Stefania
 

@@ -34,7 +34,7 @@ cosa aperta. Il racconto dei giri sta nella nota progetto, la giornata nel
 
 | Sito | Online su | Stato (data) | Prossimo passo |
 |---|---|---|---|
-| [[sito-jpp-merate]] | **niente online**, tavole in locale | tre mondi in dodici tavole (05/10); Stefania ha risposto al DM, chiamata 06/10 fra le 17 e le 19; hanno già una pagina Canva | scelta del mondo (Nicola), poi costruzione; liberatoria minori e prezzi veri da chiederle |
+| [[sito-jpp-merate]] | **niente online**, tavole in locale | scelto il mondo C «Il libro fustellato» (05/10), «un po piatto, dagli vita»; costruzione in corso in locale; Stefania ha risposto al DM, chiamata 06/10 fra le 17 e le 19; hanno già una pagina Canva | verdetto di Nicola sul giro 1; liberatoria minori e prezzi veri da chiederle |
 | [[sito-minniminerva]] | minervaesposito.netlify.app | giro 3 «Il velo» online (05/10) dopo la bocciatura del giro 2; verdetto di Nicola `TODO` | verdetto, poi il DM col link; prezzi, WhatsApp e logo da chiederle |
 | [[sito-petliving]] | petliving.netlify.app | giro 2 (30/09) dopo il verdetto di Nicola; 375 guardata, 1440 no; loro: «Se vuole mandarci qualcosa intanto» | verdetto di Nicola sul giro 2, poi il DM col link; foto di stripping e logo da chiedere |
 | [[sito-soul-ink]] | soul-ink-torino.netlify.app | giro 3 (26/09), verdetto di Nicola `TODO` | DM Instagram; lo studio non ha contatti pubblici |
