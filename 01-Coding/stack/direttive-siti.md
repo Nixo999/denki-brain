@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 05/10/2026 — Nicola: «no fermo non pbblicare 3 siti diversi online. metti tutto su una porta server diversa e fammeli vedere offline»
+
+le opzioni di direzione si mostrano in locale su una porta del Mac; niente esce su un servizio esterno prima della scelta, e «pubblico» si dice solo quando si parla di mettere online
+
 ### 05/10/2026 — Nicola: «la foto della famigila con la donna che sorride è terribile, prendine una piu semplice»
 
 la foto che apre un sito è semplice: un soggetto solo su fondo pulito, non un gruppo in posa che ride
