@@ -27,7 +27,8 @@ mandare**, 7 recuperi maturi. Le righe le vedi da `/banco apri`.
 | siti | BG · toelettature e dog trainer | **23** | 108 | aperta, fonti finite (46 fuori provincia, 16 col sito) |
 | siti | BS · tatuatori e piercing | **25** | 38 | aperta, 2 su 3; Pagine Gialle BS finita |
 | siti | MI · toelettature e dog trainer (riserva) | **11** | 47 | aperta, 1 su 4: fermata per fonti finite |
-| siti | MI · pasticcerie e cake designer (riserva) | **RISERVA_MI_PAST** | | |
+| siti | MI · pasticcerie e cake designer (riserva) | **8** | 20 | aperta, 2 su 5: restano nomi (Lambertini e Micake, gancio 6, tenuti fuori) |
+| siti | LC · fioristi e wedding planner (riserva) | **RISERVA_LC_FIOR** | | |
 | ricerca | MI · ingrossi e distribuzione | **19** | 81 | aperta, 1 su 4; fonti finite a una riga dalla quota |
 | ricerca | MI · aziende agricole con vendita | **20** | 57 | aperta, 1 su 3: restano nomi nel Parco Sud e nel Ticino |
 | ricerca | LC · edilizia e serramenti | **15** | 72 | esaurita: resa a 1 su 4,8 e Pagine Gialle finita |
@@ -43,7 +44,9 @@ mandare**, 7 recuperi maturi. Le righe le vedi da `/banco apri`.
   propri fermi ad aprile 2025), @musofedele, @alphadogtoelettatura,
   @toelettaturalillyeilvagabondo (maggio-giugno), @lamodernadueserramenti
   (17/7), @frigeriomarmi_official (6/8), @bresciaparquet (24/7),
-  @bevyexpress (2/7), @centro_finiture_marsano (7/8), @dogsplanetcernusco
+  @bevyexpress (2/7), @centro_finiture_marsano (7/8), @gelateriabellidimamma
+  (28/4/2024: il dominio in bio porta a un casinò, gancio forte ma forse
+  nessuno legge), @dogsplanetcernusco
   (2/12/2025), @toelettatura_gliamicidipeter (14/5), @petloverscenter.legnano
   (20/6; Pagine Gialle lo dà a Parabiago).
 - **Troppo grandi per un DM a freddo**: @colombo_costruzioni (SpA dal 1905,
@@ -58,7 +61,8 @@ mandare**, 7 recuperi maturi. Le righe le vedi da `/banco apri`.
 - **Domini parcheggiati non attribuiti**: `barbaezampa.it` (@barba_e_zampa),
   `crudeliademon.it` (@crudelia_toelettatura), `mollalosso.it`
   (@toelettaturamollalosso), `lesdamesdesfleurs.com` (Coming Soon),
-  `cheztrillievents.com` (solo il nome). Se sono loro, il gancio cambia.
+  `cheztrillievents.com` (solo il nome), `unicapasticceria.it` (whois
+  nascosto). Se sono loro, il gancio cambia.
 - **Fresha nei tatuatori BS**: 11 schede `lvp` «not currently affiliated»,
   il messaggio le nomina; @greedymonkey_tattoostudio ha una pagina Fresha
   attiva per i piercing, @anubitattoo quella di una piercer ospite.
