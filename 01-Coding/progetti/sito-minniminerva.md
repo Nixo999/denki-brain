@@ -45,13 +45,11 @@ Metodo: raccolta del direttore (Fable), concorrenti su Sonnet
 
 ## Cosa fa di utile, cioè cosa Instagram non fa
 
-- **La richiesta che compone il messaggio** (servizio, data, ora, luogo,
-  persone, prova, stile, note): «Copia e apri Instagram» lo copia e apre la
-  chat. WhatsApp è cablato e nascosto: il numero va nella costante `WHATSAPP`
-  in testa a `assets/sito.js`.
+- **La richiesta che compone il messaggio**: «Copia e apri Instagram» lo copia
+  e apre la chat. WhatsApp è cablato e nascosto: il numero va nella costante
+  `WHATSAPP` in testa a `assets/sito.js`.
 - Sei percorsi, sette domande con risposta, il triangolo Torino–Milano–Genova.
-- `<title>` e JSON-LD per «truccatrice sposa Alessandria», dove su Google non
-  c'è il sito di nessuna truccatrice. Anteprima del link (`og.jpg`) rifatta.
+- `<title>` e JSON-LD per «truccatrice sposa Alessandria». `og.jpg` rifatta.
 
 ## Verificato il 05/10 (giro 3, in locale)
 
@@ -64,11 +62,9 @@ Metodo: raccolta del direttore (Fable), concorrenti su Sonnet
 
 ## Tela di design (05/10)
 
-`/design` di Nicola: pagina intera a telefono e computer più l'apertura in
-quattro battute, su <https://claude.ai/artifact/5ymszHnC9vsu58Ya7sFDCW>
-(privata). Scritta da un agente Opus, **mai guardata a schermo**. Lì il nome è
-in maiuscolo sottile (Jost) e il corsivo sta solo nelle firme: nel codice il
-nome è in corsivo. Sono due letture dello stesso mondo.
+Pagina intera a telefono e computer più l'apertura in quattro battute:
+<https://claude.ai/artifact/5ymszHnC9vsu58Ya7sFDCW> (privata, **mai guardata a
+schermo**). Lì il nome è in maiuscolo sottile, nel codice è in corsivo.
 
 ## Come si pubblica
 
