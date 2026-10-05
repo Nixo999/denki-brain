@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito Studio fotografico JPP, Merate. Raccolta, concorrenti e copy fatti il 05/10; tre mondi sulla tela Claude Design, Nicola deve scegliere.
+riga: Bozza sito Studio fotografico JPP, Merate. Tre mondi in dodici tavole guardabili in locale (05/10), niente online; Nicola deve scegliere.
 status: attivo
 client: jpp-merate
 stack: html-css-js
@@ -50,11 +50,24 @@ acconto e disdetta, 3 su 31 i tempi di consegna).
 
 L'operatore raccomanda A coi campi di B. **La scelta è di Nicola, `TODO`.**
 
-## Tela di design (05/10)
+## Le tavole (05/10) — in locale, niente online
 
-<https://claude.ai/artifact/CQywDvzNzfnZSJyqEKMj7s> (privata). 16 foto e i due
-loghi caricati. Quattro tavole per mondo: apertura in quattro battute, apertura
-animata, telefono, computer.
+Dodici comp in `sorgenti/tela/project`, quattro per mondo: apertura in quattro
+battute, apertura animata, telefono, computer. Si guardano col visore:
+
+```bash
+cd ~/lavoro/jpp-merate-site/sorgenti/tela && python3 -m http.server 8793 --bind 127.0.0.1
+```
+
+Nicola ha fermato la pubblicazione sulla tela Claude Design («non pubblicare 3
+siti diversi online», regola in [[direttive-siti]]): le opzioni si mostrano in
+locale. Sulla tela privata <https://claude.ai/artifact/CQywDvzNzfnZSJyqEKMj7s>
+restano 16 foto e i due loghi caricati prima dello stop, nessuna tavola.
+Le foto del visore stanno in `sorgenti/tela/_blob`, fuori da git.
+
+Bocciata il 05/10 la foto della famiglia con la giacca arancio
+(`canva-famiglia-colore-2400`): non si usa. In C apre la bambina con la
+macchinetta giocattolo.
 
 ## I giri
 
