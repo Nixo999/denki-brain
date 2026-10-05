@@ -19,10 +19,7 @@ commit, nessun remote. Netlify: <https://minervaesposito.netlify.app> (progetto
 `minervaesposito`, id `b65feb44-f910-459f-a359-89fec5fcd600`, team
 `denkicode`). **Online c'è il giro 2, quello bocciato**; il giro 3 (`38dadd6`)
 è in locale. Il deploy lo lancia Nicola: a Trevis lo blocca il classificatore
-dell'auto mode. La cliente sta in [[minniminerva]].
-
-Metodo: raccolta del direttore (Fable), concorrenti su Sonnet
-(`COMPETITOR.md`), direzione e costruzione su operatori Opus.
+dell'auto mode. Cliente: [[minniminerva]]. Concorrenti su Sonnet, operatori Opus.
 
 ## I giri
 
