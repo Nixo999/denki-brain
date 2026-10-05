@@ -199,7 +199,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-09-29-ciglia-piemonte-e-ricerca]] — Liste del 29/9 - 100 tecniche di ciglia e sopracciglia del Piemonte, 60 aziende lombarde per la ricerca. Google su ogni riga siti.
 - [[2026-09-30-siti-e-ricerca-mb-co-lc-mi]] — Liste del 29-30/9, prime con la regola dei luoghi: 100 siti da MB, CO, LC e MI senza bellezza, 61 ricerca da MB e CO. Resa e trappole.
 - [[2026-10-02-siti-e-ricerca-mi-bs-lc-co]] — Per Patrick - il /banco lasciato a meta' l'1/10 finito da Nicola il 2/10: 144 righe sul banco (siti 86, ricerca 58), cosa guardare prima di mandare
-- [[2026-10-05-siti-e-ricerca-mi-bg-bs-lc]] — Per Patrick - il /banco del 5/10 finito il 6/10 - 160 righe sul banco (siti 100, ricerca 60) da 11 celle, cosa guardare prima di mandare, i motori che sono saltati
+- [[2026-10-05-siti-e-ricerca-mi-bg-bs-lc]] — Per Patrick - il /banco del 5/10 finito il 6/10, 160 righe sul banco (siti 100, ricerca 60) da 11 celle, cosa guardare prima di mandare
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.

@@ -1,5 +1,5 @@
 ---
-riga: Per Patrick - il /banco del 5/10 finito il 6/10 - 160 righe sul banco (siti 100, ricerca 60) da 11 celle, cosa guardare prima di mandare, i motori che sono saltati
+riga: Per Patrick - il /banco del 5/10 finito il 6/10, 160 righe sul banco (siti 100, ricerca 60) da 11 celle, cosa guardare prima di mandare
 type: area
 updated: 2026-10-06
 source: claude
