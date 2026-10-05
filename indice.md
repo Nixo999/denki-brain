@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **264 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **265 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -91,6 +91,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[anti-slop-siti]] — ⚠️ Cosa fa sembrare un sito fatto con l'AI, dalla ricerca del 17/09/2026 - segni visivi e di testo, cosa blocca controlla-slop, cosa va guardato.
 - [[competitor-siti-barber]] — ⚠️ Inventario di 15 siti (6 barber Brianza, 5 barbershop italiani noti, 4 trapianto Albania) per il sito di Barbershop SNIA (Cesano Maderno).
 - [[competitor-siti-estetica]] — ⚠️ 18 siti di centri estetici (5 locali AL/VC/AT, 5 boutique italiane, 3 specialistici, 5 Torino collina) - sezioni, info reali, stile, per Dragonfly e Lei Beauty Room.
+- [[competitor-siti-fotografi]] — ⚠️ 48 siti di fotografi famiglia/newborn/maternità (16 zona Merate, 15 Italia, 12 estero, 5 premiati): sezioni, prezzi, FAQ, cliché.
 - [[competitor-siti-nail]] — ⚠️ Inventario di cosa pubblicano 15 siti di nail studio (5 Piemonte, 6 Italia, 4 estero) - sezioni, formati, FAQ ricorrenti, errori. Si riusa per ogni sito nail.
 - [[competitor-siti-tattoo]] — ⚠️ Inventario di cosa pubblicano 24 siti di studi/tatuatori tattoo (5 Piemonte, 5 Italia, 4 estero, + 10 Torino/giapponese) - sezioni, FAQ, parole anime/giapponese, errori.
 - [[competitor-siti-toelettatura]] — ⚠️ Inventario di 15 siti di toelettatura (5 Bergamo/Val Seriana, 6 Italia curati, 4 estero) - sezioni, FAQ, vocabolario, errori. Per il sito di Ambra Longoni, Nembro.
