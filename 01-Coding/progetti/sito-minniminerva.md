@@ -1,12 +1,12 @@
 ---
 type: progetto
-riga: Bozza sito Minerva Esposito, make-up artist ad Alessandria - mondo «Due occhi», richiesta che compone il messaggio. Online dal 04/10.
+riga: Bozza sito Minerva Esposito, make-up artist ad Alessandria. Online dal 04/10; giro 2 bocciato il 05/10 (non è nel suo stile sposa), si rifà la direzione.
 status: attivo
 client: minniminerva
 stack: html-css-js
 started: 2026-10-04
 deadline:
-updated: 2026-10-04
+updated: 2026-10-05
 source: claude
 verificato: 2026-10-04
 tags: [sito, bozza, make-up, sposa, alessandria, instagram]
@@ -26,15 +26,16 @@ che sia molto utile, perché la ragazza è titubante sull'utilità».
 Metodo: raccolta del direttore (Fable), concorrenti su Sonnet
 (`COMPETITOR.md`), direzione e costruzione sullo stesso operatore Opus, due giri.
 
-## Il mondo: «Due occhi» (`MONDO.md`, seed `009985d9`)
+## Giro 2 bocciato (05/10): «non è per niente nello stile della sposa»
 
-La sua prova trucco a due occhi diversi (Reel dell'11/09) diventa il modo di
-chiederle un appuntamento. In testa due tondi con due occhi truccati in due
-modi, «Più naturale» e «Più deciso»: toccarne uno preseleziona quella scelta
-nella richiesta. Allo scroll gli occhi si aprono sui due volti (pin solo da
-768 px in su). Innesti: un capitolo nero «divisa» con lei al lavoro e la toppa
-del logo; «5,0» e «7 recensioni» grandi col link a matrimonio.com; domande in
-ordine di calendario. Jost, fondo `#EEF0EF`, accento rossetto `#B4536A`.
+Nicola: «questo sito fa cagare, non è per niente nello stile della sposa della
+cliente. dagli più personalità, e cambia completamente l'animazione all'avvio».
+Il mondo «Due occhi» (due tondi con gli occhi, grigio `#EEF0EF`, Jost) era
+un'idea concettuale e fredda. **La falla era nella raccolta**: le otto
+copertine delle sue storie in evidenza sono tutte bianco su bianco (seta, rose,
+petali in rilievo, brillantini, calligrafia) e non le avevamo guardate. Ora
+stanno in `RACCOLTA.md` e in `sorgenti/_copertine-evidenza.jpg`. Si è tornati
+alla direzione: tre mondi nuovi nel suo stile, contenuti e pezzi utili restano.
 
 ## Cosa fa di utile, cioè cosa Instagram non fa
 
