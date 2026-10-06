@@ -95,6 +95,12 @@ schermata allo scroll, pagina intera da telefono.
   dello scroll e una pillola «SCORRI» col chevron rosso resta finché non si
   scrolla; il foglio entra negli 812 px. Regola in [[direttive-siti]].
 
+- **Giro 1-ter** (06/10, 11:44-12:00, dal telefono vero di Nicola): foto in testa
+  contenuta sopra la fascia (altezza misurata da script, `--fascia`); il 18
+  gigante dietro «La sera dei tuoi 18 anni» nascosto; **da telefono la selezione
+  gira da sola** (7 s, `once`) senza pin né scrub, da computer pin+scrub
+  (`5be6ade`). Nel foglio resta un vuoto sopra la pila a fine sequenza.
+
 ## Giro 2, da fare
 
 Guardare il 1440 · slop a 0 (segnaposto o regola) · favicon e og:image ·
