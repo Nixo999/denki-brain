@@ -1,12 +1,12 @@
 ---
 type: progetto
-riga: Bozza sito Davide Milan, fotografo di diciottesimi e matrimoni, Milano. Tre mondi sulla tela Claude Design (05/10), sceglie Nicola.
+riga: Bozza sito Davide Milan, fotografo di diciottesimi e matrimoni, Milano. Mondo A «Il provino» scelto il 06/10, costruzione in corso.
 status: attivo
 client: davidemilan
 stack: html-css-js
 started: 2026-10-05
 deadline: TODO
-updated: 2026-10-05
+updated: 2026-10-06
 source: claude
 verificato: 2026-10-05
 tags: [sito, bozza, fotografia, milano, instagram]
@@ -60,7 +60,7 @@ scrollando succede qualcosa. Tela Claude Design prima, con più opzioni
   colore, una parola per fase. Ambra, rosa, cobalto, viola, oro; Anybody.
   Rischio: gradienti e viola letti come sito fatto con l'AI.
 
-L'operatore raccomanda B, da incrociare con C. **La scelta è di Nicola, `TODO`.**
+L'operatore raccomandava B. **Nicola ha scelto A «Il provino» il 06/10** («io direi di fare il mondo a»), dalle tavole di apertura e scroll; le pagine intere di B e C non sono state finite, fermate per risparmiare token (90% del limite settimanale).
 
 ## Tela di design (05/10)
 
@@ -73,6 +73,12 @@ schermata allo scroll, pagina intera da telefono.
 
 - **Giro 0** (05/10): raccolta e concorrenti su Sonnet, direzione e tavole su
   Opus. Nessun codice del sito ancora.
+- **Giro 1** (06/10, mattina): copy (`COPY.md`) e foto web (`assets/img/`, 30 in
+  due taglie) in parallelo alle tavole; `BRIEF-COSTRUZIONE.md` scritto prima
+  della scelta; costruzione del mondo A su un operatore Opus, scadenza di Nicola
+  «prima delle 11». Sito Netlify `davidemilan` creato da Nicola sul team
+  `nicola-la-rezza` (il controllo permessi blocca a Trevis creazione e deploy),
+  badge spento, `.deploy/` è la copia da pubblicare senza `raccolta/`.
 
 ## Da chiedere a Davide
 
