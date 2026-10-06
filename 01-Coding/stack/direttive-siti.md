@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 06/10/2026 — Nicola: «aggiusta al volo la foto nella hero section tienila molto meno zummata, che zummando cosi tanto sulla sua faccia la qualita scende troppo, e poi rendi un po piu palese la animazione allo scrool quella con le foto, fatta cosi quasi non si capisce che devo scrollare»
+
+la foto della testa non si stringe sul viso (la qualità cala); una sezione fissata allo scroll deve dire da sola che si scrolla, con un segnale visibile
+
 ### 06/10/2026 — Nicola: «lagga un pochettino lanimazione ala avvio, rendila tutta di un fiato non lasciare pause tra lo scorrere delle pagine bucate»
 
 l'apertura è un gesto solo e continuo: le battute si sovrappongono, nessuna pausa tra una e l'altra, e se il 3D scatta si passa al ripiego piatto
