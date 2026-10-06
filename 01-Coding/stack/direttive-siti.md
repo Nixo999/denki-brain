@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 06/10/2026 — Nicola: «lagga un pochettino lanimazione ala avvio, rendila tutta di un fiato non lasciare pause tra lo scorrere delle pagine bucate»
+
+l'apertura è un gesto solo e continuo: le battute si sovrappongono, nessuna pausa tra una e l'altra, e se il 3D scatta si passa al ripiego piatto
+
 ### 06/10/2026 — Nicola: «cerca di fare piu cose in parallelo per ridurre un po i tempi»
 
 il tempo reale conta: raccolta, concorrenti, copy, foto e tavole vanno in parallelo su operatori diversi, in sequenza solo ciò che dipende davvero da un passo prima
