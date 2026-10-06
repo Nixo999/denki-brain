@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 06/10/2026 — Nicola: «da telefono è spaziato male, il menu sotto non va bene perché copre troppo il sito; nella parte con le 4 sezioni cliccabili le foto sono troppo grandi, non riesco a leggere il testo e vedere la foto insieme, ed è scomodo dover tornare su ogni volta per selezionare»
+
+sul telefono un menu fisso in basso sparisce mentre si scorre e torna solo risalendo; in una scheda a linguette foto e testo stanno nello stesso schermo (foto piccola di lato), e le linguette restano in vista mentre si legge
+
 ### 06/10/2026 — Nicola: «aggiusta al volo la foto nella hero section tienila molto meno zummata, che zummando cosi tanto sulla sua faccia la qualita scende troppo, e poi rendi un po piu palese la animazione allo scrool quella con le foto, fatta cosi quasi non si capisce che devo scrollare»
 
 la foto della testa non si stringe sul viso (la qualità cala); una sezione fissata allo scroll deve dire da sola che si scrolla, con un segnale visibile
