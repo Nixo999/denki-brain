@@ -84,7 +84,17 @@ macchinetta giocattolo.
   deploy `6ac4b9497e293b512f4d0f3e` lanciato da Nicola con `./pubblica.sh`
   (a Trevis il classificatore blocca `sites:create` e `deploy`). Tre
   sbarramenti e file di lavoro a 404 verificati con `curl` sul permalink.
-  Verdetto di Nicola `TODO`.
+  **Verdetto di Nicola dal telefono**: «principalmente va bene», ma l'apertura
+  «lagga un pochettino, rendila tutta di un fiato, non lasciare pause tra lo
+  scorrere delle pagine bucate» e sulle schede Dolce attesa e Percorso 12 mesi
+  «le scritte sotto nell'elenco non si vedono»; poi «smetti di controllare».
+  Corretto dal direttore (`d2a7157`) e ripubblicato (deploy
+  `6ac4bc858967a5a7513211a7`): sul telefono i cartoncini scorrono via invece
+  di girare in 3D, partono ogni 0,25 s sovrapposti, niente `filter`, tetto
+  2,2 s; elenco e prezzo bianchi su ardesia e malva.
+- **Giro 2, da fare**: i tre controlli (`controlla-sito.py`, `controlla-slop.py`,
+  `controlla-testo.py`) non sono mai arrivati a fine corsa, il polish da
+  computer non è stato guardato, Safari e iPhone veri no.
 
 ## Come si pubblica
 
