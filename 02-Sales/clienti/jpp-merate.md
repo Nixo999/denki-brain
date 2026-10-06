@@ -49,7 +49,9 @@ In zona la maternità parte da 220 €: sono sotto → [[competitor-siti-fotogra
 
 ## Conto economico
 
-Niente di pattuito. Bozza gratuita, come da DM.
+Niente di pattuito. Bozza gratuita, come da DM: **online dal 06/10 su
+<https://jppmerate.netlify.app>**, sbarrata ai motori. Il link lo manda
+Patrick dopo la chiamata, non prima.
 
 ## Come si comporta
 

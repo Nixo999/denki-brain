@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito Studio fotografico JPP, Merate. Scelto il mondo C «Il libro fustellato» (05/10), da rendere meno piatto; costruzione in locale.
+riga: Bozza sito Studio fotografico JPP, Merate. Mondo C «Il libro fustellato», giro 1 online su jppmerate.netlify.app dal 06/10; chiusura su Fable, verdetto di Nicola da avere.
 status: attivo
 client: jpp-merate
 stack: html-css-js
@@ -75,8 +75,26 @@ macchinetta giocattolo.
 ## I giri
 
 - **Giro 0** (05/10): raccolta e concorrenti su Sonnet, direzione su Opus.
-- **Giro 1** (05/10 sera): costruzione del mondo C lanciata su un operatore
-  Opus, in locale sulla porta 8794, niente online. Esito `TODO`.
+- **Giro 1** (05/10 sera → 06/10 mattina): costruzione del mondo C. Lavoro
+  diviso per file per fare in parallelo: `index.html` e apertura su Opus,
+  `stile.css` (telefono), `computer.css` (da 1024 px) e il resto della motion
+  (`motion.css`, `sito.js`) su Sonnet, chiusura su Fable. Sette stalli a 600 s
+  degli operatori, ripresi dal contesto. **Online dal 06/10**: Netlify
+  `jppmerate`, id `f6025060-2129-476b-90d4-5d735e9e4af7`, team `denkicode`,
+  deploy `6ac4b9497e293b512f4d0f3e` lanciato da Nicola con `./pubblica.sh`
+  (a Trevis il classificatore blocca `sites:create` e `deploy`). Tre
+  sbarramenti e file di lavoro a 404 verificati con `curl` sul permalink.
+  Verdetto di Nicola `TODO`.
+
+## Come si pubblica
+
+```bash
+cd ~/lavoro/jpp-merate-site && ./pubblica.sh
+```
+
+Copia in una cartella temporanea solo `index.html`, `robots.txt`,
+`netlify.toml` e `assets`, poi `deploy --prod --no-build` sul sito per id.
+Dopo ogni deploy: i tre sbarramenti con `curl` sul permalink del deploy.
 
 ## Da chiedere a Stefania
 
