@@ -88,6 +88,13 @@ schermata allo scroll, pagina intera da telefono.
   `e253248`) è arrivata alle 11:03 con 6/8, slop 2 e niente guardato: resta come
   riserva, non si pubblica. Online su `davidemilan.netlify.app`.
 
+- **Giro 1-bis** (06/10, 11:30): verdetto di Nicola «va bene», con due
+  correzioni fatte al volo dal direttore (commit `9b49a34`): la foto della testa
+  non si ingrandisce più sul viso (`sizes` era 267px e serviva la 800 ingrandita;
+  ora larga quanto lo schermo, taglia 1600); nel pin il primo stato scatta al 3%
+  dello scroll e una pillola «SCORRI» col chevron rosso resta finché non si
+  scrolla; il foglio entra negli 812 px. Regola in [[direttive-siti]].
+
 ## Giro 2, da fare
 
 Guardare il 1440 · slop a 0 (segnaposto o regola) · favicon e og:image ·
