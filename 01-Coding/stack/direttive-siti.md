@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-10-05
+updated: 2026-10-06
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 06/10/2026 — Nicola: «cerca di fare piu cose in parallelo per ridurre un po i tempi»
+
+il tempo reale conta: raccolta, concorrenti, copy, foto e tavole vanno in parallelo su operatori diversi, in sequenza solo ciò che dipende davvero da un passo prima
 
 ### 05/10/2026 — Nicola: «no fermo non pbblicare 3 siti diversi online. metti tutto su una porta server diversa e fammeli vedere offline»
 
