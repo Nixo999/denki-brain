@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito Davide Milan, fotografo di diciottesimi e matrimoni, Milano. Mondo A «Il provino» scelto il 06/10, costruzione in corso.
+riga: Bozza sito Davide Milan, fotografo di diciottesimi e matrimoni, Milano. Mondo A «Il provino», giro 1 del 06/10 su davidemilan.netlify.app, pubblicato da Nicola.
 status: attivo
 client: davidemilan
 stack: html-css-js
@@ -79,6 +79,18 @@ schermata allo scroll, pagina intera da telefono.
   «prima delle 11». Sito Netlify `davidemilan` creato da Nicola sul team
   `nicola-la-rezza` (il controllo permessi blocca a Trevis creazione e deploy),
   badge spento, `.deploy/` è la copia da pubblicare senza `raccolta/`.
+  **Consegnato alle 11:02** (commit `6eb73c1`): apertura trasportata dalla tavola,
+  pin con scrub e i quattro stati, copy com'è; controlla-sito 8/8, testo 0, slop
+  1 blocco (regex sui segnaposto); 1440 scritto e mai guardato; catena
+  (impeccable, trappole, direttive) non caricata per la scadenza. L'operatore
+  Opus si è bloccato due volte sulle scritture lunghe; una costruzione parallela
+  su Fable (ramo `fable`) era in corsa. Online su `davidemilan.netlify.app`.
+
+## Giro 2, da fare
+
+Guardare il 1440 · slop a 0 (segnaposto o regola) · favicon e og:image ·
+contrasti (20 segnalazioni) · passo bolder/delight/animate · `impeccable polish`
+· pagina senza JS, `?cattura`, reduced motion · mail del modulo Netlify Forms.
 
 ## Da chiedere a Davide
 
