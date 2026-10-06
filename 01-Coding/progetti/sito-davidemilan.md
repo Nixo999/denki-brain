@@ -84,7 +84,9 @@ schermata allo scroll, pagina intera da telefono.
   1 blocco (regex sui segnaposto); 1440 scritto e mai guardato; catena
   (impeccable, trappole, direttive) non caricata per la scadenza. L'operatore
   Opus si è bloccato due volte sulle scritture lunghe; una costruzione parallela
-  su Fable (ramo `fable`) era in corsa. Online su `davidemilan.netlify.app`.
+  su Fable (ramo `fable`, worktree `~/lavoro/davidemilan-site-fable`, commit
+  `e253248`) è arrivata alle 11:03 con 6/8, slop 2 e niente guardato: resta come
+  riserva, non si pubblica. Online su `davidemilan.netlify.app`.
 
 ## Giro 2, da fare
 
