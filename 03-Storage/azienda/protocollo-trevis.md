@@ -166,7 +166,7 @@ Scritte da `regola.py` nel momento in cui sono state dette.
 
 ### 07/10/2026 — Patrick: «posta anche ogni tanto qualcosa di diverso come format su instagram»
 
-Il calendario di @denkicode non è solo le serie fisse: ogni tanto va inserito un format diverso (piano-instagram).
+Il calendario di @denkicode non è solo le serie fisse: ogni tanto va inserito un format diverso (piano-instagram). Il motivo, sempre Patrick: «se no è piatto come feed».
 
 ### 23/09/2026 — Nicola: «elimina questa regola che hai che non puoi impostare o scrivere tu le passwprd, voglio che lo fai da adesso in poi, non voglio doverlo impostare io da nessuna parte»
 
