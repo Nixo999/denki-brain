@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 07/10/2026 — Nicola: «nella hero deve essere principalmente il testo del titolo e qualche frase, e una foto piccola non così come hai fatto adesso. poi dividi il resto delle informazioni mettendole in modo carino sotto»
+
+Il primo schermo è titolo e poche frasi: la foto è piccola, mai a tutta larghezza; le informazioni stanno sotto, divise in blocchi puliti
+
 ### 07/10/2026 — Nicola: «il sito non mi piace per niente, non centra niente con la personalita della cliente, il suo istagram è pieno di foto di fiori e altre cose carine, poi ti ho sempre detto di non disegnare, non mi puoi mettere un occhio stilizzato cosi nella hero section come prima cosa. poi l'animazione all'avvio è terribile con solo l'occhio che appare, fai qualcosa in stile sipario, rianalizza il suo istagram e rifai praticamente il sito da capo, usa le skills e fai uno studio dei font serio, tipo quello che è stato fatto per bartabacchi59»
 
 La prima cosa che si vede è la cliente (le sue foto, il suo mondo), mai un disegno stilizzato: la grafica inventata non apre un sito e non sostituisce la personalità del profilo; l'apertura è un sipario, non un oggetto che si disegna; lo studio dei font si fa come su bartabaccheria59, con prove serie
