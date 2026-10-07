@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito Luiza Lash Artist, extension ciglia, Torino. Mondo «Il ventaglio», online su cigliadiluiza.netlify.app dal 07/10, metodo a pezzi in parallelo su Fable.
+riga: Bozza sito Luiza Lash Artist, extension ciglia, Torino. Giro 2 «il cartoncino di Luiza» (crema, i suoi fiori, Italiana + Figtree) online su cigliadiluiza.netlify.app dal 07/10; giro 1 scuro bocciato.
 status: attivo
 client: ciglia-di-luiza
 stack: html-css-js
@@ -34,7 +34,23 @@ parallelo, **un file per operatore** in `parti/NN-nome.{html,css,js}` con contra
 Tempi reali: raccolta 10 min, direzione 18, costruzione 10-14, **circa 70 minuti** in tutto, non 30: la
 direzione è il pezzo lungo. Due operatori su sei si sono bloccati dopo aver scritto i file (watchdog).
 
-## Mondo e scelte
+## Giro 1 bocciato (07/10, pomeriggio)
+Nicola: «non c'entra niente con la personalità della cliente, il suo instagram è pieno di foto di fiori e altre cose
+carine, ti ho sempre detto di non disegnare, non mi puoi mettere un occhio stilizzato così nella hero section… l'animazione
+all'avvio è terribile… fai qualcosa in stile sipario… studio dei font serio». Regola in [[direttive-siti]]. La prima
+raccolta aveva visto gli stessi 12 post e letto «tono tecnico»: i fiori erano 4 su 12 (`raccolta/MONDO.md`).
+
+## Giro 2 «il cartoncino di Luiza» (07/10, 30 minuti)
+Direzione su Fable (`DIREZIONE-2.md`): pagina color carta come il suo carosello, le sue foto appoggiate con un filetto cipria,
+**nessun disegno**; sipario di lino in apertura (1,6 s, tutto CSS); **font provati a 375 con il suo testo** in `prove/`
+(Italiana+Figtree scelta contro Bodoni Moda+Manrope, Newsreader+Outfit, Marcellus+Albert Sans). 4 costruttori Fable
+in parallelo (`parti/`), montaggio con `monta.py`. Sezioni: hero fiori → «One to one o volume?» (8 chip, una scheda) →
+«Occhi chiusi, ci penso io» → lavori a strip occhio/fiore → «e tu invece, quale preferisci?». Le 12 foto del feed
+(`assets/img/f*.jpg`) sono a 640 px: usate solo piccole. ⚠️ `controlla-sito` dà **6/8** perché chiede ≥3 SVG inventati e
+foto ≥1080: in conflitto con la regola di Nicola «non disegnare»; pubblicato lo stesso. Slop 0 bloccanti, testo 0.
+Debole: la scheda effetti da PC è vuota a destra; la ricarica dura 3,2 s per i reveal, il sipario 1,6.
+
+## Mondo e scelte (giro 1, superato)
 «Il ventaglio»: mascara `#15100e`, osso, rosa `#ff5c8a` solo sull'azione; Imbue (display) + Ysabeau (testo).
 Sezioni: occhio (apertura 1,7 s), effetti (8 trattamenti, pin con scrub sul PC), ventaglio, seduta, lavori, DM.
 

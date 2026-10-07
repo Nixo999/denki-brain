@@ -34,7 +34,7 @@ cosa aperta. Il racconto dei giri sta nella nota progetto, la giornata nel
 
 | Sito | Online su | Stato (data) | Prossimo passo |
 |---|---|---|---|
-| [[sito-ciglia-di-luiza]] | cigliadiluiza.netlify.app | giro 1 (07/10), mondo «Il ventaglio»; lei ha risposto «ciao sì!» al DM; 375 e 1440 guardati, iPhone mai | verdetto di Nicola, poi DM col link; prezzi, indirizzo, foto originali da chiedere |
+| [[sito-ciglia-di-luiza]] | cigliadiluiza.netlify.app | giro 2 «il cartoncino di Luiza» (07/10) dopo la bocciatura del giro 1 scuro; lei ha risposto «ciao sì!»; 375 e 1440 guardati, iPhone mai | verdetto di Nicola, poi DM col link; prezzi, indirizzo, foto originali da chiedere |
 | [[sito-jpp-merate]] | jppmerate.netlify.app | giro 1 del mondo C «Il libro fustellato» online e ripubblicato dopo il verdetto di Nicola (06/10: «principalmente va bene», apertura tutta d'un fiato, elenchi bianchi sulle schede scure); **chiamata con Stefania il 06/10 alle 17**; hanno già una pagina Canva | giro 2: i tre controlli, polish da computer, iPhone vero; liberatoria minori e prezzi veri da chiederle |
 | [[sito-davidemilan]] | davidemilan.netlify.app | giro 1 mondo «Il provino» (06/10), pubblicato da Nicola; 1440 mai guardato, slop 1 | verdetto di Nicola; prezzi, ore, foto consegnate, tempi, mail e liberatorie da chiedere a Davide; DM col link |
 | [[sito-minniminerva]] | minervaesposito.netlify.app | giro 3 «Il velo» online (05/10) dopo la bocciatura del giro 2; verdetto di Nicola `TODO` | verdetto, poi il DM col link; prezzi, WhatsApp e logo da chiederle |
