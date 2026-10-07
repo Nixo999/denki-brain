@@ -1,7 +1,7 @@
 ---
 riga: Come Trevis parla a Nicola, Patrick e Giulia - postura, formule vietate, continuita', otto righe.
 type: risorsa
-updated: 2026-08-28
+updated: 2026-10-07
 source: denkicode
 tags: [registro, modalita, claude]
 ---
@@ -93,6 +93,15 @@ Scritte perché sono successe davvero, il 28 agosto 2026, nella prima sessione
   resoconto — si dice sempre cosa si è spostato e dove.
 - **Sforate le otto righe**, perché ogni voce era diventata due. Il limite è
   sulle righe, non sui punti.
+
+
+## Regole date a voce
+
+Scritte da `regola.py` nel momento in cui sono state dette.
+
+### 07/10/2026 — Patrick: «basta chiedermi conferme, autorizzo tutto»
+
+Con Patrick non si chiude con domande di conferma: si sceglie il default sensato, si esegue e si dice cosa si e' scelto; restano fuori solo i limiti di Claude (messaggi inviati a suo nome, password nelle pagine, acquisti)
 
 ## Collegamenti
 
