@@ -51,7 +51,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-atelier-selva]] — ⚠️ Sito per Shari Piras, tatuatrice fineline a Merate (LC), e per il suo studio privato Atelier Selva (Via Statale 147).
 - [[sito-barbershop-snia]] — Sito vetrina di Andrea, barbiere al Villaggio SNIA di Cesano Maderno, che fa anche da tramite per i trapianti in Albania. Primo presidio volantini, gratis.
 - [[sito-castiglione]] — ⚠️ Sito vetrina non commissionato per castiglione-furniture, costruito il 30 agosto 2026 dai contenuti veri del loro profilo Instagram.
-- [[sito-ciglia-di-luiza]] — Bozza sito Luiza Lash Artist, extension ciglia, Torino. Giro 2 «il cartoncino di Luiza» (crema, i suoi fiori, Italiana + Figtree) online su cigliadiluiza.netlify.app dal 07/10; giro 1 scuro bocciato.
+- [[sito-ciglia-di-luiza]] — Bozza sito Luiza Lash Artist, extension ciglia, Torino. Giro 3 «Da 1 a mega» (la pagina è la scala del volume della sua bio) online su cigliadiluiza.netlify.app dal 07/10, una testa sola su Fable; giri 1 e 2 bocciati.
 - [[sito-custombeautynails]] — Custom Beauty Nails, onicotecnica a Treviglio (BG): bozza online su custombeautynails.netlify.app dal 16/9, mondo «Un centimetro di spazio», 21 SVG, 8/8, copy rifatto professionale dopo la bocciatura.
 - [[sito-da-caterina]] — ⚠️ Da Caterina Toelettatura Professionale, Via Introzzi 8, 21057 Olgiate Olona (VA).
 - [[sito-davidemilan]] — Bozza sito Davide Milan, fotografo di diciottesimi e matrimoni, Milano. Mondo A «Il provino», giro 1 del 06/10 su davidemilan.netlify.app, pubblicato da Nicola.

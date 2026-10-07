@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito Luiza Lash Artist, extension ciglia, Torino. Giro 2 «il cartoncino di Luiza» (crema, i suoi fiori, Italiana + Figtree) online su cigliadiluiza.netlify.app dal 07/10; giro 1 scuro bocciato.
+riga: Bozza sito Luiza Lash Artist, extension ciglia, Torino. Giro 3 «Da 1 a mega» (la pagina è la scala del volume della sua bio) online su cigliadiluiza.netlify.app dal 07/10, una testa sola su Fable; giri 1 e 2 bocciati.
 status: attivo
 client: ciglia-di-luiza
 stack: html-css-js
@@ -49,6 +49,21 @@ in parallelo (`parti/`), montaggio con `monta.py`. Sezioni: hero fiori → «One
 (`assets/img/f*.jpg`) sono a 640 px: usate solo piccole. ⚠️ `controlla-sito` dà **6/8** perché chiede ≥3 SVG inventati e
 foto ≥1080: in conflitto con la regola di Nicola «non disegnare»; pubblicato lo stesso. Slop 0 bloccanti, testo 0.
 Debole: la scheda effetti da PC è vuota a destra; la ricarica dura 3,2 s per i reveal, il sipario 1,6.
+
+## Giro 2 bocciato e diagnosi (07/10, sera)
+Nicola: «lo studio del design fa schifo rispetto ai vecchi siti… cerca di capire cosa cambia rispetto a bartabacchi59».
+Diagnosi: nessuno aveva in testa la pagina intera (direttore 8 min + 4 costruttori 7 min su un pezzo), l'idea era un mood
+e non una struttura, la scelta fra mondi era saltata, `controlla-sito` spinge a disegnare (≥3 SVG) contro la regola.
+Fiftynine secondo Nicola ha preso «un paio d'ore», una testa sola.
+
+## Giro 3 «Da 1 a mega» (07/10, sera, ~45 min, online)
+Una testa sola su Fable: legge lei foto e raccolta, propone tre mondi con un primo schermo vero a 375 (`MONDI-3.md`,
+`mondi/a,b,c.html`, foglio `mondi/tre-mondi-375.png`), Nicola: «fai quello che raccomandi tu» → A. La pagina è la scala
+della sua bio «da one to one | mega volume»: 1 → 3 → 4 → 5 → mega, le sue foto sono i gradini (01 one to one, 02 4D,
+03 mega), il numero gigante in Bodoni Moda cambia allo scroll (sticky + ScrollTrigger da 768, niente sotto), poi la forma
+(foxy, wispy, wet), «Occhi chiusi, ci penso io», «e tu invece, quale preferisci?». Manrope per il testo, crema `#e4e0d5`.
+Sipario: il «1» sale e la foto si scopre dal basso, 1,35 s in CSS. Misurato 375 e 1440 (foglio `mondi/giro3-375.png`);
+slop 0, testo 0, `controlla-sito` 6/8 (conteggio SVG: conflitto con «non disegnare»). Non visto: tablet, Safari/iOS vero.
 
 ## Mondo e scelte (giro 1, superato)
 «Il ventaglio»: mascara `#15100e`, osso, rosa `#ff5c8a` solo sull'azione; Imbue (display) + Ysabeau (testo).
