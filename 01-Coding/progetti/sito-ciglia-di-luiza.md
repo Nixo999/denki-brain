@@ -64,6 +64,7 @@ della sua bio «da one to one | mega volume»: 1 → 3 → 4 → 5 → mega, le 
 (foxy, wispy, wet), «Occhi chiusi, ci penso io», «e tu invece, quale preferisci?». Manrope per il testo, crema `#e4e0d5`.
 Sipario: il «1» sale e la foto si scopre dal basso, 1,35 s in CSS. Misurato 375 e 1440 (foglio `mondi/giro3-375.png`);
 slop 0, testo 0, `controlla-sito` 6/8 (conteggio SVG: conflitto con «non disegnare»). Non visto: tablet, Safari/iOS vero.
+**3-bis** (sera): Nicola «nella hero deve essere principalmente il testo del titolo e qualche frase, e una foto piccola… dividi il resto in modo carino sotto» (regola in [[direttive-siti]]): hero = «1» + foto 01 a 150 px + titolo + tre frasi + bottone (bottone a 533 px); gradini 3/4/5/mega in blocchi con filetto e campo alternato. Ripubblicato (`300786b`).
 
 ## Mondo e scelte (giro 1, superato)
 «Il ventaglio»: mascara `#15100e`, osso, rosa `#ff5c8a` solo sull'azione; Imbue (display) + Ysabeau (testo).
