@@ -180,7 +180,9 @@
 <main>
   <div id="vecchio" class="stop" hidden>Il server sotto questa pagina è vecchio: i messaggi che segni
     restano solo in questo browser e non arrivano in <code>contattati.csv</code>. Chiudi la finestra del
-    terminale e riapri il banco con <b>«Banco DM.command»</b>.</div>
+    terminale e riapri il banco con <b>«Banco DM.command»</b>: il server vecchio lo spegne da solo.</div>
+  <div id="memoria" class="stop" hidden>Il browser non riesce più a salvare il banco: se chiudi o ricarichi
+    la pagina, quello che hai segnato da adesso sparisce. Prima di chiuderla premi <b>Scarica il CSV</b>.</div>
   <p class="nota" id="nota"></p>
   <div id="lista"></div>
   <div id="niente" class="vuoto" hidden></div>
@@ -645,8 +647,8 @@ async function avvio(){
       const risposta = await fetch(att().file, {cache:"no-store"});
       if (risposta.ok){
         const testo = await risposta.text();
-        if (!salvata || salvata.fonte !== testo){
-          fonte = testo;
+        if (!salvata || salvata.fonte !== impronta(testo)){
+          fonte = impronta(testo);
           const quando = risposta.headers.get("Last-Modified");
           carica(testo, "lista del " + (quando ? new Date(quando).toLocaleDateString("it-IT") : "giorno"));
           if (salvata) unisci(salvata);
@@ -731,11 +733,24 @@ function annota(r, file, azione, tipo){
     .catch(() => { document.getElementById("vecchio").hidden = false; });
 }
 
+/* La memoria tiene un'impronta della lista pubblicata, non il testo intero:
+   fino al 7/10/2026 ci teneva il CSV due volte (testo e righe), a 2.000 righe
+   passava i 5 MB che il browser concede, il salvataggio falliva in silenzio e
+   ogni invio segnato spariva alla riapertura. 160 DM del 5/10 persi cosi`. */
+function impronta(t){
+  let h = 5381;
+  for (let i = 0; i < t.length; i++) h = ((h << 5) + h + t.charCodeAt(i)) | 0;
+  return t.length + ":" + (h >>> 0).toString(36);
+}
+
 function ricorda(){
   try {
     localStorage.setItem(MEMORIA(), JSON.stringify(
       {nomeFile, intestazione, dati, fonte, orari, storico: storico.slice(-40), riaperte}));
-  } catch (e) {}
+    document.getElementById("memoria").hidden = true;
+  } catch (e) {
+    document.getElementById("memoria").hidden = false;
+  }
 }
 
 let timeoutBrindisi = null;

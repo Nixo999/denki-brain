@@ -104,6 +104,16 @@ class Banco(SimpleHTTPRequestHandler):
         self.send_header("Cache-Control", "no-store")
         super().end_headers()
 
+    def do_GET(self):
+        # risponde solo questo server: un `http.server` qualunque sulla stessa
+        # porta da' 404, e cosi' sfondo() lo riconosce come vecchio
+        if self.path == "/banco-vivo":
+            self.send_response(200)
+            self.send_header("Content-Length", "2")
+            self.end_headers()
+            return self.wfile.write(b"ok")
+        return super().do_GET()
+
     def do_POST(self):
         if self.path != "/segna":
             return self.send_error(404)
@@ -139,16 +149,42 @@ def vivo(url):
         return False
 
 
+def spegni_vecchio(porta):
+    """Spegne il server Python che occupa la porta senza essere questo.
+
+    Il 2/10/2026 sulla 8770 e' rimasto acceso un `python3 -m http.server`: la
+    pagina si apriva, i «Segna inviato» non arrivavano in contattati.csv, e
+    riaprire il banco non serviva perche' vivo() vedeva la porta occupata e si
+    fermava li'. Si tocca solo un processo Python: altro non e' nostro."""
+    try:
+        pid = subprocess.run(["lsof", "-t", "-nP", f"-iTCP:{porta}", "-sTCP:LISTEN"],
+                             capture_output=True, text=True).stdout.split()
+    except FileNotFoundError:
+        return
+    for p in pid:
+        cmd = subprocess.run(["ps", "-o", "command=", "-p", p], capture_output=True, text=True).stdout
+        if "ython" in cmd:
+            subprocess.run(["kill", p])
+            print(f"Spento il server vecchio sulla porta {porta} (pid {p}).")
+    for _ in range(20):
+        if not vivo(f"http://localhost:{porta}/"):
+            return
+        time.sleep(0.25)
+
+
 def sfondo(porta, url):
     """Avvia il server staccato da chi lo lancia: sopravvive alla chat e al Terminale."""
-    if vivo(url):
+    prova = url.split("/strumenti/")[0] + "/banco-vivo"
+    if vivo(prova):
         return "gia' acceso"
+    if vivo(url):
+        spegni_vecchio(porta)
     log = Path(tempfile.gettempdir()) / "banco-dm.log"
     with log.open("a") as f:
         subprocess.Popen([sys.executable, str(Path(__file__).resolve()), str(porta)],
                          stdin=subprocess.DEVNULL, stdout=f, stderr=f, start_new_session=True)
     for _ in range(20):
-        if vivo(url):
+        if vivo(prova):
             return "acceso"
         time.sleep(0.25)
     sys.exit(f"Il server del banco non parte: leggi {log}")
