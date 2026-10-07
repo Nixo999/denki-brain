@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 07/10/2026 — Nicola: «da pc usa meglio gli spazi non va bene così, poi togli la numerazione dei pezzi mi dà fastidio che il numero sembri il titolo. poi dai un titolo vero alla hero section che così sembra il numero 1 il titolo»
+
+Un numero grande non fa da titolo: ogni sezione, hero compresa, ha un titolo di parole; da PC lo spazio si usa (due colonne, foto di fianco), non colonne strette con vuoto intorno
+
 ### 07/10/2026 — Nicola: «nuovo sito, fallo con pochi agenti alla volta, usa meno token per fare un buon lavoro e usa il meno possibile fable, ispirati al design del sito ad esempio bartabacchi59 e ng barber e anche a barbershop. fallo con uno stile simile a quelli, studia i competitor per capire cosa mettere sul sito di informazioni simili, e usa lo stesso processo che è stato usato per creare i siti che ti ho dato di esempio, cerca di farlo al massimo in un oretta»
 
 Un sito nuovo si fa in un'ora con pochi agenti alla volta: raccolta e concorrenti su Sonnet, direzione corta e una testa sola a costruire, Fable solo dove il design lo richiede; stile dei modelli bartabaccheria59, NG Barber e Barbershop SNIA; prima si studiano i concorrenti per decidere quali informazioni mettere
