@@ -68,7 +68,7 @@ Nails Mania, Tarilli, Fiftynine, Castiglione, NG Barber (repo **pubblica**), Lob
 
 ## Bloccato, e perché
 
-- **Banco DM** (06/10): 160 righe nuove sul banco Patrick (siti 100, ricerca 60, 11 celle con 4 riserve), **1037 da mandare**, nessun invio dal 29/09; cosa guardare prima dell'invio in [[2026-10-05-siti-e-ricerca-mi-bg-bs-lc]]. La posta di DenkiCode non è letta (nel browser dell'app è aperto `@patrick.sappa`, letta il 6/10: nessuna risposta nuova dopo l'1/10); 15 lead aperti fermi da 10 a 31 giorni → [[2026-10-01-banco-ricircolo]]
+- **Banco DM** (07/10, dal banco aperto da Patrick): **160 da mandare** (siti 100, ricerca 60, le liste del 05/10), **1828 già scritti**, 0 recuperi. Il vault ha la data d'invio solo su 951 righe di `lista-corrente.csv` e `contattati.csv` si ferma al 29/09: le liste dal 19/09 al 02/10 risultano non mandate nei CSV ma sono partite dal browser. Finché il CSV del banco non rientra, `stato-banco.py` sbaglia il conto (diceva 1037) e `controlla-lista.py` non vede circa 877 contattati; cosa guardare prima dell'invio in [[2026-10-05-siti-e-ricerca-mi-bg-bs-lc]]. La posta di DenkiCode non è letta (nel browser dell'app è aperto `@patrick.sappa`, letta il 6/10: nessuna risposta nuova dopo l'1/10); 15 lead aperti fermi da 10 a 31 giorni → [[2026-10-01-banco-ricircolo]]
 - **OperO, storico**: la migrazione non si fa più (13/09), Seba vuole solo un report giugno-agosto da `strumenti/report-mesi.mjs`; manca la chiave `OPERO1_SERVICE` da Settings → API di OperO 1, o un login di segreteria → [[opero]]
 - **DenkiShift non è installabile in produzione**: dimostrabile, senza date → [[denkishift]]
 - **La produzione resta fuori** su tutti e due i prodotti → [[modifiche-al-database]]
