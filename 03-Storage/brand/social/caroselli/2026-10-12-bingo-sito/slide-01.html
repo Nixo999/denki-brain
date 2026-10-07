@@ -1,0 +1,125 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Il bingo del sito del negozio</title>
+<!--
+  Post singolo, non carosello: format fuori dalle serie fisse, chiesto da
+  Patrick il 7/10/2026 («aggiungi un post simpatico o comunque un po' diverso»).
+  Scritto a mano perche' genera-carosello.py vuole da 2 a 10 slide; il CSS di
+  base e' quello di PAGINA in genera-carosello.py. Si rende con
+  rendi-carosello.sh 2026-10-12-bingo-sito.
+-->
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1080px; height:1350px; overflow:hidden; }
+  body {
+    background:#07070a;
+    font-family:-apple-system,"SF Pro Display","Helvetica Neue",Helvetica,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .fondo {
+    position:absolute; inset:0;
+    background:
+      radial-gradient(820px 560px at 92% -6%, rgba(218,47,155,.20), transparent 68%),
+      radial-gradient(760px 560px at -12% 104%, rgba(146,58,223,.18), transparent 70%);
+  }
+  .trama {
+    position:absolute; inset:0; opacity:.30;
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,.045) 1px, transparent 1px);
+    background-size:90px 90px;
+    mask-image:radial-gradient(700px 680px at 50% 40%, #000 20%, transparent 78%);
+  }
+  .telaio {
+    position:absolute; left:0; right:0; top:76px; bottom:150px;
+    padding:0 88px; display:flex; flex-direction:column;
+  }
+  header { display:flex; align-items:center; gap:20px; }
+  header img { width:56px; height:56px; }
+  .marchio {
+    font-size:23px; font-weight:600; letter-spacing:.34em;
+    color:#f3f3f5; text-transform:uppercase;
+  }
+  h1 {
+    margin-top:64px; font-size:84px; line-height:1.03;
+    letter-spacing:-.035em; font-weight:700; color:#fff;
+  }
+
+  /* la cartella */
+  .cartella {
+    position:relative; margin-top:56px;
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:16px;
+  }
+  .casella {
+    height:196px; border-radius:18px; padding:24px 24px;
+    background:#111116; border:2.5px solid #26262e;
+    display:flex; flex-direction:column; justify-content:flex-end;
+    font-size:29px; line-height:1.18; letter-spacing:-.012em;
+    font-weight:600; color:#e6e6ea;
+    position:relative;
+  }
+  /* le tre della riga vinta: bordo in gradiente e il timbro */
+  .presa {
+    border:3px solid transparent;
+    background:
+      linear-gradient(#16101b,#16101b) padding-box,
+      linear-gradient(135deg,#923adf,#da2f9b) border-box;
+  }
+  .presa::before {
+    content:""; position:absolute; top:20px; right:20px;
+    width:34px; height:34px; border-radius:50%;
+    background:linear-gradient(135deg,#923adf,#da2f9b);
+  }
+  .libera .micro {
+    font-size:19px; font-weight:600; letter-spacing:.14em;
+    text-transform:uppercase; color:#b98be6; margin-bottom:12px;
+  }
+
+  .premio {
+    margin-top:44px;
+    font-size:34px; line-height:1.36; letter-spacing:-.008em;
+    font-weight:400; color:#a6a6b2;
+  }
+  .premio b { color:#fff; font-weight:600; }
+
+  footer {
+    position:absolute; left:88px; bottom:48px;
+    display:flex; align-items:center; gap:30px;
+  }
+  .barra {
+    height:5px; width:132px; border-radius:3px;
+    background:linear-gradient(90deg,#923adf,#da2f9b);
+  }
+  .sito { font-size:27px; font-weight:500; letter-spacing:.1em; color:#dededf; }
+</style>
+<div class="fondo"></div>
+<div class="trama"></div>
+<div class="telaio">
+  <header>
+    <img src="../../simbolo.svg" alt="">
+    <span class="marchio">DenkiCode</span>
+  </header>
+
+  <h1>Il bingo del sito del negozio.</h1>
+
+  <div class="cartella">
+    <div class="casella">«© 2019» in fondo alla pagina</div>
+    <div class="casella">Ci sono ancora gli orari di Natale</div>
+    <div class="casella presa">Il listino è un PDF da scaricare</div>
+
+    <div class="casella">Si legge solo allargando con due dita</div>
+    <div class="casella presa libera"><span class="micro">Casella libera</span>Il sito? C’è la pagina Facebook</div>
+    <div class="casella">Il numero non si può toccare per chiamare</div>
+
+    <div class="casella presa">La foto in alto è sgranata</div>
+    <div class="casella">«Sito in costruzione» da tre anni</div>
+    <div class="casella">Per prenotare bisogna telefonare</div>
+
+  </div>
+
+  <p class="premio">Hai fatto una riga?<br>Il premio è <b>la bozza del sito nuovo</b>, gratis.</p>
+</div>
+<footer>
+  <span class="barra"></span>
+  <span class="sito">denkicode.com</span>
+</footer>
