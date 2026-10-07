@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-10-06
+updated: 2026-10-07
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 07/10/2026 — Nicola: «usa fable 5.1 per il desind del sito non sonnet o opus»
+
+La direzione e il design visivo di un sito (mondo, font, apertura, scroll, costruzione grafica) vanno a operatori su Fable 5.1, non su Sonnet o Opus; Sonnet resta per raccolta e concorrenti.
 
 ### 06/10/2026 — Nicola: «da telefono è spaziato male, il menu sotto non va bene perché copre troppo il sito; nella parte con le 4 sezioni cliccabili le foto sono troppo grandi, non riesco a leggere il testo e vedere la foto insieme, ed è scomodo dover tornare su ogni volta per selezionare»
 
