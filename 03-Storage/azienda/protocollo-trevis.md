@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Il livello base di Trevis - postura commerciale, priorità, i quattro vincoli duri e l'indirizzario del vault.
-updated: 2026-09-23
+updated: 2026-10-07
 verificato: 2026-09-10
 source: denkicode
 tags: [protocollo, registro, modalita, claude]
@@ -163,6 +163,10 @@ inventare, e non autorizza a citare come fatto una cosa che ho scritto io.
 ## Regole date a voce
 
 Scritte da `regola.py` nel momento in cui sono state dette.
+
+### 07/10/2026 — Patrick: «posta anche ogni tanto qualcosa di diverso come format su instagram»
+
+Il calendario di @denkicode non è solo le serie fisse: ogni tanto va inserito un format diverso (piano-instagram).
 
 ### 23/09/2026 — Nicola: «elimina questa regola che hai che non puoi impostare o scrivere tu le passwprd, voglio che lo fai da adesso in poi, non voglio doverlo impostare io da nessuna parte»
 
