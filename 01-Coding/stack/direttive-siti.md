@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 07/10/2026 — Nicola: «prova a fare qualcosa per dargli un po' di vita e personalità, adesso è parecchio piatto, non modificare il formato del sito, aggiungi al massimo dei dettagli carini e animazioni semplici per non tenerlo come un foglio piatto»
+
+Dopo che il formato è approvato si passa alla vita: dettagli piccoli e animazioni semplici, senza toccare la struttura; un sito approvato nel formato non si consegna piatto
+
 ### 07/10/2026 — Nicola: «da pc usa meglio gli spazi non va bene così, poi togli la numerazione dei pezzi mi dà fastidio che il numero sembri il titolo. poi dai un titolo vero alla hero section che così sembra il numero 1 il titolo»
 
 Un numero grande non fa da titolo: ogni sezione, hero compresa, ha un titolo di parole; da PC lo spazio si usa (due colonne, foto di fianco), non colonne strette con vuoto intorno
