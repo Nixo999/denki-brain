@@ -1,7 +1,7 @@
 ---
 riga: Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
 type: area
-updated: 2026-10-02
+updated: 2026-10-07
 source: claude
 prodotto: denkishift
 ---
@@ -210,6 +210,10 @@ in [[metriche]]:
 
 
 ## Regole
+
+### 07/10/2026 — Patrick: «continui a chiedermi autorizzazioni»
+
+Nella costruzione delle liste una fonte che fa comparire a Patrick una richiesta di autorizzazione dell'app (il 7/10 Startpage: JavaScript chiesto a ogni azione) vale come bloccata: si lascia al primo avviso, come un captcha, e si passa alla successiva
 
 ### 02/10/2026 — Nicola: «no non è unaq me lo stai spammando, non va bene trova un modo pr non dovermelo chidere»
 
