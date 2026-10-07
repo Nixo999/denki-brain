@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **272 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **274 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -80,6 +80,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-salone-di-andrea]] — ⚠️ Sito vetrina in una pagina per Il Salone di Andrea, parrucchiere donna e uomo di Andrea Bielli a Dalmine (BG), Viale Natale Betelli 58.
 - [[sito-shaddai]] — Bozza di sito vetrina non commissionata per Shaddai Extension Lash, lash artist a Bergamo, costruita il 16 settembre 2026 dai contenuti veri del profilo Instagram.
 - [[sito-soul-ink]] — Bozza sito per Soul Ink Torino City (studio tattoo, via Cremona 27/b Torino, Franco Roggia giapponese + Alessandro Audino tradizionale) - mondo «Munewari × cartigli», giro 3 online su soul-ink-torino.netlify.app dal 26/09, 8/8, slop 0, testo 0.
+- [[sito-whitelilium]] — ⚠️ Bozza sito White Lilium Photography, fotografa maternity/newborn/famiglia, Trezzano sul Naviglio. Giro 1 «Il controluce» del 07/10, una testa sola su Fable.
 
 **skills/**
 
@@ -151,6 +152,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[shaddai-extension-lash]] — Lash artist a domicilio a Bergamo, 736 follower, nessun sito - bozza costruita il 16 settembre 2026, DM non ancora inviato.
 - [[shari-piras]] — ⚠️ Shari Piras, tatuatrice, Merate (LC). Due account - @shari_tattooer (4.504 follower, 493 post) è la persona, @atelierselva_ (593 follower, 41...
 - [[soul-ink-torino-city]] — Soul Ink Torino City, studio di tatuaggi in via Cremona 27/b Torino (@soul_ink_torino_city, 738 post) - Franco Roggia (giapponese, dal 1999) e Alessandro Audino (tradizionale). Bozza in costruzione dal 26/09, DM non confermato.
+- [[whitelilium]] — ⚠️ White Lilium Photography, fotografa maternity/newborn/famiglia a Trezzano sul Naviglio (MI). Lead Instagram del 05/10, ha risposto sì alla bozza il 07/10.
 
 **contratti/**
 

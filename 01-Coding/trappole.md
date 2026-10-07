@@ -1198,6 +1198,11 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   del sito non parte per nome. → server da Bash e pannello con `preview_start
   --url`. ([[sito-adelinanails]], 18/09/2026)
 
+- `[TRAPPOLA]` **`controlla-sito.py` conta le versioni `-800.jpg` dentro `assets/img/` come
+  «foto sotto 1080» e boccia il sito** (sito-whitelilium, 07/10/2026). → le versioni per
+  il telefono vanno in una sottocartella (`assets/img/800/`), che il glob non attraversa.
+
+
 ## Collegamenti
 
 [[registro-interventi]] · [[processo-siti]] · [[convenzioni]] · [[netlify]] ·
