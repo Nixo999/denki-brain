@@ -408,6 +408,8 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## GSAP e motion
 
+- `[TRAPPOLA]` **Un `@keyframes` su `visibility` da `visible` a `hidden` in Chrome lascia `visible` a fine corsa**: `visibility` interpola «visibile finché uno dei due lo è», quindi serve `50%,to{visibility:hidden}` o si spegne con `opacity`+`pointer-events`. Cugina: **GSAP 3.13 legge la `scale` CSS dell'`img` al boot e se la tiene inline**, sovrascrivendo l'animazione CSS: la posa 1.06→1 va sulla `figure`, non sull'`img` bersaglio di ScrollTrigger. (07/10/2026, [[sito-ciglia-di-luiza]])
+
 - `[TRAPPOLA]` **Dentro una sezione pinnata a `100vh` con `overflow:hidden`, il
   testo che sfora non si vede e non avvisa.** Su Custom Beauty Nails il copy
   rifatto ha portato il blocco della spina da ~660 a ~790 px: a 375x667 gli
