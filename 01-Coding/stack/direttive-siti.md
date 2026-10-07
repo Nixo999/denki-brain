@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 07/10/2026 — Nicola: «nuovo sito, fallo con pochi agenti alla volta, usa meno token per fare un buon lavoro e usa il meno possibile fable, ispirati al design del sito ad esempio bartabacchi59 e ng barber e anche a barbershop. fallo con uno stile simile a quelli, studia i competitor per capire cosa mettere sul sito di informazioni simili, e usa lo stesso processo che è stato usato per creare i siti che ti ho dato di esempio, cerca di farlo al massimo in un oretta»
+
+Un sito nuovo si fa in un'ora con pochi agenti alla volta: raccolta e concorrenti su Sonnet, direzione corta e una testa sola a costruire, Fable solo dove il design lo richiede; stile dei modelli bartabaccheria59, NG Barber e Barbershop SNIA; prima si studiano i concorrenti per decidere quali informazioni mettere
+
 ### 07/10/2026 — Nicola: «nella hero deve essere principalmente il testo del titolo e qualche frase, e una foto piccola non così come hai fatto adesso. poi dividi il resto delle informazioni mettendole in modo carino sotto»
 
 Il primo schermo è titolo e poche frasi: la foto è piccola, mai a tutta larghezza; le informazioni stanno sotto, divise in blocchi puliti
