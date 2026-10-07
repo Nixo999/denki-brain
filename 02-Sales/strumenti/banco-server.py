@@ -62,6 +62,37 @@ def segna(op):
     return len(righe)
 
 
+def segna_tanti(op):
+    """Tante righe in un colpo: quelle che il browser ricordava e il file no."""
+    p = FILE[op["file"]]
+    nuove = [{k: str(x.get(k, "")).strip() for k in CAMPI} for x in op.get("righe", [])]
+    chiave = lambda r: (r["Data"], r["Da"], r["Account IG"].lstrip("@").lower())
+    with lock:
+        righe = leggi(p)
+        viste = {chiave(r) for r in righe}
+        scritti = {r["Account IG"].lstrip("@").lower() for r in righe}
+        aggiunte = 0
+        for r in nuove:
+            h = r["Account IG"].lstrip("@").lower()
+            if r["Tipo"] == "primo" and h in scritti:      # il primo messaggio si conta una volta
+                continue
+            if r["Data"] and h and chiave(r) not in viste:
+                righe.append(r)
+                viste.add(chiave(r))
+                scritti.add(h)
+                aggiunte += 1
+        righe.sort(key=lambda r: (r["Data"], r["Da"], r["Account IG"].lower()))
+        salva(p, righe)
+        toccati.add(p)
+    # le date tornano anche nelle righe del banco, cosi' stato-banco e
+    # controlla-lista contano giusto senza aspettare il browser
+    subprocess.run([sys.executable, str(Path(__file__).resolve().parent / "allinea-contattati.py")],
+                   capture_output=True, text=True)
+    for banco in ("lista-corrente.csv", "lista-denkicode.csv"):
+        toccati.add(Path(__file__).resolve().parent / banco)
+    return aggiunte
+
+
 def commit():
     global timer
     with lock:
@@ -115,13 +146,13 @@ class Banco(SimpleHTTPRequestHandler):
         return super().do_GET()
 
     def do_POST(self):
-        if self.path != "/segna":
+        if self.path not in ("/segna", "/segna-tanti"):
             return self.send_error(404)
         try:
             op = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))))
             if op["file"] not in FILE:
                 raise ValueError("file sconosciuto")
-            n = segna(op)
+            n = segna(op) if self.path == "/segna" else segna_tanti(op)
         except Exception as e:
             return self.send_error(400, str(e))
         programma_commit()

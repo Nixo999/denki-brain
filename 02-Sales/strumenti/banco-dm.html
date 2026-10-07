@@ -707,13 +707,53 @@ function unisci(salvata){
   if (tenuti){ console.info("banco: tenute " + tenuti + " date di invio dalla memoria del browser"); disegna(); }
 }
 
-avvio();
+avvio().then(riallinea);
 
 document.getElementById("account").addEventListener("change", (e) => {
   attivo = e.target.value;
   localStorage.setItem("banco-dm-account", attivo);
-  avvio();
+  avvio().then(riallinea);
 });
+
+/* Quello che il browser ricorda e contattati.csv non sa, ci rientra da solo
+   all'apertura: un invio per riga, primi messaggi e recuperi, con la data vera.
+   Dal 19/09 al 2/10/2026 il server sotto la pagina non scriveva niente, ~877
+   invii vivevano solo qui, e farli rientrare voleva dire chiedere a Patrick
+   di scaricare un file e passarlo a qualcuno. */
+async function riallinea(){
+  if (!location.protocol.startsWith("http") || col.account === undefined) return;
+  let noti, giaScritti;
+  try {
+    const t = await fetch("/liste/contattati.csv", {cache:"no-store"}).then(x => x.ok ? x.text() : Promise.reject());
+    const righe = leggiCSV(t), h = righe[0] || [];
+    const iD = h.indexOf("Data"), iDa = h.indexOf("Da"), iA = h.indexOf("Account IG");
+    noti = new Set(righe.slice(1).map(x => [x[iD], x[iDa], pulito(x[iA])].join("|")));
+    giaScritti = new Set(righe.slice(1).map(x => pulito(x[iA])));   // un primo messaggio si conta una volta sola
+  } catch (e) { return; }
+  const da = att().etichetta, mancano = [];
+  dati.forEach(r => {
+    const h = pulito(r[col.account]);
+    if (!h) return;
+    [["primo", (r[col.inviato] || "").trim()], ["recupero", col.recupero !== undefined ? (r[col.recupero] || "").trim() : ""]]
+      .forEach(([tipo, data]) => {
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(data) || noti.has([data, da, h].join("|"))) return;
+        if (tipo === "primo" && giaScritti.has(h)) return;
+        mancano.push({Data: data, Da: da, "Account IG": "@" + h, Nome: (r[col.nome] || "").trim(),
+          Comune: r[col.comune] || "", Segmento: r[col.segmento] || "", Tipo: tipo,
+          Lista: (col.lista !== undefined && (r[col.lista] || "").trim()) || nomeFile});
+      });
+  });
+  if (!mancano.length) return;
+  try {
+    const x = await fetch("/segna-tanti", {method:"POST", headers:{"Content-Type":"application/json"},
+                          body: JSON.stringify({file: "contattati", righe: mancano})});
+    if (!x.ok) throw new Error(x.status);
+    document.getElementById("vecchio").hidden = true;
+    brindisi(mancano.length + " invii che stavano solo nel browser ora sono nel vault.");
+  } catch (e) {
+    document.getElementById("vecchio").hidden = false;
+  }
+}
 
 /* Ogni invio segnato va anche nel brain: il server (banco-server.py) lo
    scrive in liste/contattati.csv e committa. Da file:// non c'e` nessun
