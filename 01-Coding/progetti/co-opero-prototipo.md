@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Prototipo di CO-OPERO (1/10) sul ramo coopero di opero-sito - cosa c'è, cosa manca per mostrarlo, dove va oltre le decisioni del 30/09.
-updated: 2026-10-04
+updated: 2026-10-08
 source: claude
 progetto: opero
 tags: [opero, co-opero, prototipo]
@@ -12,7 +12,8 @@ tags: [opero, co-opero, prototipo]
 Nicola l'ha chiesto il 1/10 («prova a disegnare e creare una versione di
 coopero, intanto sito […] devono già parlarsi, usa lo stesso database di
 opero»). Supera il «non mettere mano al codice» del 30/09 solo come **prova**:
-niente è su `main`, e online c'è solo il portale di prova.
+dall'8/10 è su `main` (Nicola: «ok, mettila anche sul dominio ufficiale»): il lato
+ufficio sta su `operotest` e `operoworkspace.com`, il portale su `cooperotest`.
 
 - **Online dal 4/10**: `https://cooperotest.netlify.app` (Netlify, sito
   `cooperotest`, caricato a mano con `npm run deploy:coopero`). Punta allo
@@ -36,8 +37,8 @@ niente è su `main`, e online c'è solo il portale di prova.
 - **Lo schema del flusso per Seba e Patrick** (3/10): `02-Sales/report/coopero-flusso-richieste.pdf`, tre pagine (percorso, stati, cosa decidere). Si rigenera dall'HTML accanto con Brave headless.
 - **Cosa manca per mostrarlo a Patrick e Seba**: guardare il lato segreteria
   con Nicola (vuole un login), fare un giro completo sullo sviluppo dal link
-  alla conferma, scrivere `VITE_COOPERO_URL` in `.env.production`, mettere
-  online anche il lato ufficio, provarlo su un telefono vero.
+  alla conferma, provarlo su un telefono vero. `VITE_COOPERO_URL` e il lato ufficio
+  online sono fatti dall'8/10.
 - **Il codice si indovina, il link no**: era il `TODO` di [[co-opero-clienti]].
   Il cliente entra da un link con un segreto lungo; `VERT001` è solo il nome
   che si legge e si detta.
