@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-10-07
+updated: 2026-10-08
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **274 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **276 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -52,6 +52,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-barbershop-snia]] — Sito vetrina di Andrea, barbiere al Villaggio SNIA di Cesano Maderno, che fa anche da tramite per i trapianti in Albania. Primo presidio volantini, gratis.
 - [[sito-castiglione]] — ⚠️ Sito vetrina non commissionato per castiglione-furniture, costruito il 30 agosto 2026 dai contenuti veri del loro profilo Instagram.
 - [[sito-ciglia-di-luiza]] — Bozza sito Luiza Lash Artist, extension ciglia, Torino. Giro 3 «Da 1 a mega» (la pagina è la scala del volume della sua bio) online su cigliadiluiza.netlify.app dal 07/10, una testa sola su Fable; giri 1 e 2 bocciati.
+- [[sito-claudia-dogsitter]] — ⚠️ Bozza sito Claudia, educatrice cinofila e dog sitter ad Azzano San Paolo (BG). Giro 1 «Una giornata da Claudia» dell'08/10, una testa sola su Fable.
 - [[sito-custombeautynails]] — Custom Beauty Nails, onicotecnica a Treviglio (BG): bozza online su custombeautynails.netlify.app dal 16/9, mondo «Un centimetro di spazio», 21 SVG, 8/8, copy rifatto professionale dopo la bocciatura.
 - [[sito-da-caterina]] — ⚠️ Da Caterina Toelettatura Professionale, Via Introzzi 8, 21057 Olgiate Olona (VA).
 - [[sito-davidemilan]] — Bozza sito Davide Milan, fotografo di diciottesimi e matrimoni, Milano. Mondo A «Il provino», giro 1 del 06/10 su davidemilan.netlify.app, pubblicato da Nicola.
@@ -129,6 +130,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[albybike]] — Negozio di biciclette - vendita, assistenza e riparazione, abbigliamento e integratori per ciclismo.
 - [[bar-tabacchi-fiftynine]] — ⚠️ Bar tabaccheria e pizzeria in via Nazionale dei Giovi 59, Cesano Maderno (MB), telefono 0362 528451.
 - [[castiglione-furniture]] — ⚠️ Falegnameria su misura, @castiglione_furniture su Instagram.
+- [[claudia-dogsitter]] — ⚠️ Claudia, educatrice cinofila e dog sitter ad Azzano San Paolo (BG), @claudia_dogsitterbergamo. Ha risposto al DM l'08/10: «se vuoi mandarmela qui».
 - [[custom-beauty-nails]] — Onicotecnica a Treviglio (BG), @custombeautynailstreviglio, 1.033 follower. Bozza online dal 16/9, il DM non e' ancora partito.
 - [[davidemilan]] — Davide Milan, fotografo di diciottesimi e matrimoni, Milano, @davidemilan.ph. Il 05/10 ha risposto al DM: «Manda pure qui, sono curioso».
 - [[design-capelli]] — Parrucchiere a Nichelino (TO), @designcapelli, 203 follower, dal 2015 in via XXV Aprile, nessun sito. Ha risposto «Buonasera qui grazie» al DM del 20/9. Bozza online su designcapelli.netlify.app dal 21/9, il DM col link e' di Patrick.
