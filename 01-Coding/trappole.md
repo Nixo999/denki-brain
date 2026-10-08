@@ -1049,6 +1049,13 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   risulta senza immagini. → attesa di 2,5 s. E l'URL firmato va passato intero:
   tolto anche solo `_nc_ohc`, torna il file da 22 byte. (05/10/2026,
   [[sito-jpp-merate]])
+- `[TRAPPOLA]` **Instagram sloggato: la pagina di un post non ha l'`<img>` a
+  1440 nel DOM.** Gli URL grandi si leggono da
+  `performance.getEntriesByType('resource')` (host `*.fna.fbcdn.net`, firmati
+  con scadenza `oe=`: si scaricano subito con `curl -L`). E il primo `<img>`
+  con alt «Photo by» è la griglia dietro il modale, non il post: si filtra per
+  `naturalWidth >= 700` e si controlla l'ID. Le foto arrivano in WebP, non JPEG.
+  (08/10/2026, [[sito-claudia-dogsitter]])
 
 ## Liste e banco DM
 
