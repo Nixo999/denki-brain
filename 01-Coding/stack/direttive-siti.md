@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-10-07
+updated: 2026-10-08
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 08/10/2026 — Nicola: «usi troppi token per lo studio dei concorrenti, fallo in una maniera piu veloce e semplice da adesso in poi, leggi solo le infomrazioni che scrivono e come srteutturano il sito al volo, deve essere una cosa che consima poco»
+
+Lo studio dei concorrenti è una lettura al volo su Sonnet: 3-4 siti, solo quali informazioni mettono e in che ordine le sezioni, niente fetch lunghi né sintesi larghe; deve costare pochi token
 
 ### 07/10/2026 — Nicola: «prova a fare qualcosa per dargli un po' di vita e personalità, adesso è parecchio piatto, non modificare il formato del sito, aggiungi al massimo dei dettagli carini e animazioni semplici per non tenerlo come un foglio piatto»
 
