@@ -121,7 +121,7 @@ ricerca,CO,altro,parziale,6,2026-09-19,righe sparse di settori fuori elenco
 ricerca,MI,falegnamerie,esaurito,8,2026-10-02,"2/10: 31 profili, 4 righe (+1 trovata dal giro CO). Finito per resa"
 ricerca,MI,studi tecnici,parziale,2,2026-09-29,
 ricerca,MI,impiantisti,parziale,7,2026-09-25,
-ricerca,MI,officine e carrozzerie,parziale,20,2026-09-25,
+ricerca,MI,officine e carrozzerie,esaurito,28,2026-10-07,"7/10: 48 profili, 8 righe. Finito per resa: 18 fermi, 16 piccoli; le strutturate sono concessionarie"
 ricerca,MI,meccanica e carpenterie,parziale,4,2026-09-25,
 ricerca,MI,edilizia e serramenti,parziale,47,2026-10-02,"2/10: 11 righe; operatore fermato prima del resoconto, profili non contati"
 ricerca,MI,ingrossi e distribuzione,parziale,28,2026-10-05,"5/10: 81 profili, 19 righe. Aperta, fonti finite a una riga dalla quota"
@@ -129,10 +129,10 @@ ricerca,MI,trasporti e logistica,parziale,7,2026-09-23,
 ricerca,MI,alimentari artigianali,parziale,23,2026-10-02,"2/10: 67 profili, 20 righe. Aperta, rende 1 su 3,4"
 ricerca,MI,aziende agricole con vendita,parziale,23,2026-10-05,"5/10: 57 profili, 20 righe. Aperta, rende 1 su 3: restano nomi nel Parco Sud e Ticino"
 ricerca,MI,altro,parziale,21,2026-09-25,righe sparse di settori fuori elenco
-ricerca,LC,falegnamerie,parziale,1,2026-09-29,
+ricerca,LC,falegnamerie,esaurito,4,2026-10-07,"7/10: 30 profili, 3 righe. Finito per resa: 12 fermi, 7 fuori provincia, 5 negozi"
 ricerca,LC,studi tecnici,parziale,3,2026-09-29,
 ricerca,LC,impiantisti,parziale,3,2026-09-29,
-ricerca,LC,officine e carrozzerie,parziale,1,2026-09-21,
+ricerca,LC,officine e carrozzerie,esaurito,9,2026-10-07,"7/10: 44 profili, 8 righe. Finito per resa: 15 fermi, 12 piccoli"
 ricerca,LC,meccanica e carpenterie,parziale,1,2026-09-25,
 ricerca,LC,edilizia e serramenti,esaurito,20,2026-10-05,"5/10: 72 profili, 15 righe. Finito per resa e Pagine Gialle finita: 22 fermi, 14 sotto i 200 follower"
 ricerca,LC,alimentari artigianali,parziale,2,2026-10-05,"5/10: 1 profilo, 1 riga. Riserva da una riga; scorta da Pagine Gialle: Butti, Bonfanti, Marco d Oggiono, 5 caseifici, 8 torrefazioni"
@@ -177,7 +177,7 @@ ricerca,SO,falegnamerie,parziale,2,2026-09-29,
 ricerca,SO,officine e carrozzerie,parziale,2,2026-09-23,
 ricerca,SO,edilizia e serramenti,parziale,4,2026-09-29,
 ricerca,SO,altro,parziale,3,2026-09-29,righe sparse di settori fuori elenco
-ricerca,BS,falegnamerie,parziale,4,2026-09-29,
+ricerca,BS,falegnamerie,parziale,16,2026-10-07,"7/10: 44 profili, 12 righe. Aperta, rende 1 su 4; fermata per tempo"
 ricerca,BS,studi tecnici,parziale,1,2026-09-13,
 ricerca,BS,impiantisti,parziale,7,2026-09-29,
 ricerca,BS,officine e carrozzerie,parziale,11,2026-09-25,
@@ -215,15 +215,19 @@ ricerca,MB,studi tecnici,esaurito,0,2026-09-30,"30/09: 9 profili, 0 righe. 376 s
 siti,LC,"personal trainer, pilates e yoga",esaurito,7,2026-09-30,"30/09: 31 profili, 7 righe. Profili da trovare finiti"
 siti,LC,pasticcerie e cake designer,esaurito,9,2026-09-30,"30/09: 30 profili, 9 righe. Profili da trovare finiti"
 siti,LC,"sartorie, atelier e tappezzieri",esaurito,3,2026-09-30,"30/09: 20 profili, 3 righe. Profili da trovare finiti"
-siti,MI,toelettature e dog trainer,parziale,14,2026-10-05,"5/10: 47 profili, 11 righe. Riserva, fermata per fonti finite: Pagine Gialle da sempre gli stessi 25 nomi, 12 omonimi fuori provincia"
-siti,MI,tatuatori e piercing,parziale,25,2026-10-02,"2/10: 50 profili, 25 righe. Aperta, rende 1 su 2"
+siti,MI,toelettature e dog trainer,esaurito,18,2026-10-07,"7/10: 37 profili, 4 righe. Finito per resa: 14 fuori provincia, 9 col sito"
+siti,MI,tatuatori e piercing,parziale,49,2026-10-07,"7-8/10: 90 profili, 24 righe. Aperta, rende 1 su 4; fermata per nomi finiti, 17 col sito"
 siti,BS,toelettature e dog trainer,esaurito,17,2026-10-02,"2/10: 99 profili, 17 righe. Finito per resa: 35 fuori provincia, 20 col sito"
 siti,NO,toelettature e dog trainer,esaurito,4,2026-10-02,"2/10: 30 profili, 4 righe. Finito per resa"
 siti,LC,fotografi e videomaker,parziale,10,2026-10-02,"2/10: 35 profili, 10 righe. Fermata per fonti finite, non per resa: PG, matrimonio.com e Yahoo ridanno gli stessi nomi, quasi tutti col sito"
-siti,MI,"sartorie, atelier e tappezzieri",parziale,23,2026-10-02,"2/10: 23 righe; operatore fermato prima del resoconto, profili aperti non contati"
+siti,MI,"sartorie, atelier e tappezzieri",esaurito,27,2026-10-07,"7/10: 30 profili, 4 righe. Finito per resa: 15 col sito"
 siti,MI,"personal trainer, pilates e yoga",parziale,7,2026-10-02,"2/10: 10 righe scritte, 3 tolte (1 sito probabile, 2 su Fresha non nominata); operatore fermato, profili non contati"
 siti,MI,fotografi e videomaker,esaurito,7,2026-10-05,"5/10: 40 profili, 7 righe. Finito per resa: 12 col sito, 8 sotto i 200 follower, 7 morti; 20 fotografi MI stanno gia nella lista sartorie del 2/10"
 siti,MI,fioristi e wedding planner,parziale,19,2026-10-05,"5/10: 61 profili, 19 righe. Fermata per motori bloccati, non per resa: matrimonio.com e la pagina del profilo reggono"
 siti,BG,toelettature e dog trainer,parziale,23,2026-10-05,"5/10: 108 profili, 23 righe. Fermata per fonti finite: 46 fuori provincia, 16 col sito"
 siti,MI,pasticcerie e cake designer,parziale,8,2026-10-05,"5/10: 20 profili, 8 righe. Riserva da 8, rende 2 su 5; Pagine Gialle 397 schede, restano nomi (Lambertini e Micake col gancio 6 tenuti fuori)"
 siti,LC,fioristi e wedding planner,parziale,7,2026-10-05,"5/10: 25 profili, 7 righe. Riserva da 7, rende 1 su 3,5; su matrimonio.com restano 10 fioristi e tutti i wedding planner"
+siti,BS,"sartorie, atelier e tappezzieri",esaurito,4,2026-10-07,"7/10: 33 profili, 4 righe. Finito per resa: 10 sotto i 200 follower, 8 col sito, 7 fuori zona"
+siti,BS,"personal trainer, pilates e yoga",parziale,26,2026-10-07,"7-8/10: 105 profili, 26 righe. Aperta, rende 1 su 4; 33 col sito. Startpage era la fonte migliore, ora esclusa (chiede autorizzazioni)"
+siti,LO,toelettature e dog trainer,esaurito,6,2026-10-07,"7-8/10: 35 profili, 6 righe. Finito per resa e fonti finite: 11 sotto i 200 follower"
+ricerca,LC,ingrossi e distribuzione,parziale,18,2026-10-07,"7/10: circa 65 profili, 18 righe. Aperta, rende 1 su 3-4; fermata per fonti finite (Pagine Gialle in 429)"
