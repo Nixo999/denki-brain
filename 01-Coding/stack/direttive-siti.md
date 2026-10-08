@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 08/10/2026 — Nicola: «non doveva consegnare a 25 min? a me sembra stia andando da 45min, e poi perche usi sempre e solo fable? non si puo risparmiare un po'»
+
+Fable solo per la direzione (mondo, palette, font da provare, apertura, spina) scritta dal direttore; la costruzione del codice da una DIREZIONE.md già decisa, le foto, le prove font e le verifiche vanno su Opus o Sonnet. Un agente non sa che ora è: il tetto di tempo lo fa rispettare il direttore guardando il disco ogni 10 minuti e tagliando, e la lista di lettura del costruttore sta in 3 file
+
 ### 08/10/2026 — Nicola: «usi troppi token per lo studio dei concorrenti, fallo in una maniera piu veloce e semplice da adesso in poi, leggi solo le infomrazioni che scrivono e come srteutturano il sito al volo, deve essere una cosa che consima poco»
 
 Lo studio dei concorrenti è una lettura al volo su Sonnet: 3-4 siti, solo quali informazioni mettono e in che ordine le sezioni, niente fetch lunghi né sintesi larghe; deve costare pochi token
