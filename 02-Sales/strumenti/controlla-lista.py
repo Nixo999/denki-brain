@@ -99,7 +99,7 @@ def controlla(p):
             f"(es. {persa[0]}): li' non hai verificato, hai solo non trovato. "
             "Si rilancia, o la riga esce dalla lista")
 
-    PIATTAFORME = r"fresha|treatwell|booksy|planity|unobooking|zenoti|wavein|uala"
+    PIATTAFORME = r"fresha|treatwell|booksy|planity|unobooking|zenoti|wavein|\buala\b"
     piattaforma = [r.get("Account IG", "?") for r in righe
                    if tipo == "siti" and re.search(PIATTAFORME, r[col], re.I)
                    and not re.search(PIATTAFORME, r.get("Messaggio", ""), re.I)]
