@@ -789,6 +789,10 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Git, account e pubblicazione
 
+- **`netlify deploy --prod` si pianta su «Installing extensions · baseline»** (09/10/2026, [[sito-mitril-tattoo]]):
+  il sito è statico e la build non serve. → `netlify deploy --prod --no-build --dir <copia>`. E la copia si fa con
+  `rsync` senza `raccolta/`, `prove/`, `DIREZIONE.md` e `.git`: `--dir .` pubblica anche le note sul cliente.
+
 - `[TRAPPOLA]` **Un `_redirects` di Netlify senza `force = true` non scatta
   se il file esiste davvero.** Su Custom Beauty Nails la regola che doveva
   nascondere `BRIEF.md` era scritta e il file rispondeva `200` online: il

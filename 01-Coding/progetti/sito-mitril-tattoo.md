@@ -14,7 +14,8 @@ incassato: 0
 
 # Sito Mitril Tattoo
 
-Repo solo locale `~/lavoro/mitril-tattoo-site`. Cliente: [[mitril-tattoo]]. Il cliente ha chiesto la bozza
+Repo solo locale `~/lavoro/mitril-tattoo-site`. Online su <https://mitril-tattoo.netlify.app> dal 09/10
+(sito `mitril-tattoo`, id `f2fa2e5a-4fb8-450b-949e-d03280bac89f`), tre sbarramenti attivi. Cliente: [[mitril-tattoo]]. Il cliente ha chiesto la bozza
 nel DM Instagram il 09/10 («se vuoi mandarmi la bozza la vedo volentieri»).
 
 **Giro 1, 09/10.** Raccolta e concorrenti su Sonnet (`raccolta/RACCOLTA.md`, `raccolta/CONCORRENTI.md`),
