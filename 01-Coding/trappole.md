@@ -789,9 +789,11 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Git, account e pubblicazione
 
-- **`netlify deploy --prod` si pianta su «Installing extensions · baseline»** (09/10/2026, [[sito-mitril-tattoo]]):
-  il sito è statico e la build non serve. → `netlify deploy --prod --no-build --dir <copia>`. E la copia si fa con
-  `rsync` senza `raccolta/`, `prove/`, `DIREZIONE.md` e `.git`: `--dir .` pubblica anche le note sul cliente.
+- **`netlify deploy --prod` resta fermo un minuto e mezzo su «Installing extensions · baseline»** (09/10/2026,
+  [[sito-mitril-tattoo]]): non è piantato, ma sembra, e chi apre il link nel frattempo non trova niente. Il sito è
+  statico → `netlify deploy --prod --no-build --dir <copia>` esce in pochi secondi. La copia si fa con `rsync` senza
+  `raccolta/`, `prove/`, `DIREZIONE.md` e `.git`: `--dir .` pubblica anche le note sul cliente (successo qui per
+  cinque secondi, poi coperto dal deploy pulito).
 
 - `[TRAPPOLA]` **Un `_redirects` di Netlify senza `force = true` non scatta
   se il file esiste davvero.** Su Custom Beauty Nails la regola che doveva
