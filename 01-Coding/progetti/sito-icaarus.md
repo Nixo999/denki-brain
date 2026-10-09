@@ -41,7 +41,17 @@ che si apre, anelli olfattivi sul bottone finale. Palette dalla locandina di set
 - Il post Facebook su Rumba è un lutto: fuori dal sito.
 
 ## Giro 1 (09/10)
-TODO: esito della costruzione.
+Commit `84d9c68` (8 commit). Design rivisto da **Fable** su richiesta di Nicola («usa fable però per la direttiva del
+design»): via l'acronimo dal sito, campo a griglia hairline con tracciato continuo (il tratteggio era la pista di
+Claudia), nastro arancio che taglia il sipario + «START →», «4,9» piccolo. Terna **Big Shoulders Display + Hanken Grotesk
++ Bungee** (prova in `prove/font-375.png`). 1-bis dopo la cattura a 375: ICAARUS a 89% della larghezza con griglia e
+tracciato che finisce sul bottone «Prenota la consulenza»; «DOG in» a parole che riempiono la riga, 45svh; la riga sotto
+ogni parola si accende con la parola. Misurato: controlla-sito 8/8, slop 0 (3 avvisi), testo 0/0, overflow 0 a 375 e
+1440, console vuota, pagina completa senza JS. Tempi: raccolta 4 min, concorrenti 3, Fable 3, costruzione 17 + 1-bis 5:
+**circa 35 minuti**. Deboli: sipario blu vuoto ~300 ms finché GSAP arriva dalla CDN; font da Google; animazione del
+tracciato in hero non campionata; firma DenkiCode poco leggibile sul blu notte; recensioni con nome (Marinella,
+Vincenzo) senza consenso; «GIOCO» e «GARA» come «DOG in» sono nostri, loro usano RELAZIONE, RICERCA, NATURA.
+Non visto: iPhone e Safari veri. Verdetto di Nicola: TODO.
 
 ## Da chiedere (via Patrick, in telefonata)
 Foto vere del campo e dei cani al lavoro; chi sono (nomi, titoli); conferma dell'acronimo; orari; prezzi o «da»;
