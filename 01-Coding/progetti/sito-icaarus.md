@@ -3,7 +3,7 @@ riga: Bozza sito ICAARUS ASD, centro cinofilo a Brembate-Grignano (BG). Giro 1 �
 type: progetto
 status: attivo
 client: TODO
-stack: [html, css, gsap]
+stack: [html, css, gsap, netlify]
 started: 2026-10-09
 deadline: TODO
 updated: 2026-10-09
@@ -17,7 +17,8 @@ incassato: 0
 Lead dal banco del 6/10 (`02-Sales/liste/2026-10-05-instagram-siti-bg-toelettature.csv`), primo DM di Patrick il 7/10.
 Il 9/10 ha risposto su Instagram «Buongiorno, chiamami pure»: la bozza serve per la telefonata e la vedranno dal telefono.
 
-**Repo**: `~/lavoro/icaarus-site`, **solo locale**. Niente Netlify finché Nicola non lo decide.
+**Repo**: `~/lavoro/icaarus-site`, **solo locale**.
+**Online**: <https://icaarus.netlify.app> dal 9/10 (Nicola: «mettilo su netlify vai»), sbarramenti verificati. Riga in [[netlify]].
 **Memoria tecnica**: `DIREZIONE.md`, `raccolta/RACCOLTA.md`, `raccolta/CONCORRENTI.md`, `prove/` nel repo.
 
 ## Il metodo (09/10)
