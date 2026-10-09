@@ -14,7 +14,7 @@ siti,CO,toelettature e dog trainer,esaurito,4,2026-09-30,"30/09: 29 profili, 1 r
 siti,CO,ristorazione,parziale,36,2026-09-30,"30/09: 21 righe, rende circa una ogni 3. Aperto: la prossima lista CO riparte da qui"
 siti,MI,unghie,parziale,8,2026-09-12,
 siti,MI,estetica,parziale,1,2026-09-12,
-siti,LC,tatuatori e piercing,parziale,10,2026-09-30,"30/09: aperto, 1 riga"
+siti,LC,tatuatori e piercing,esaurito,14,2026-10-09,"9/10: 38 profili, 4 righe. Finito per resa: 13 fuori provincia, 5 grandi o catene, 6 sotto i 200"
 siti,LC,parrucchieri,parziale,2,,
 siti,LC,unghie,parziale,5,2026-09-10,
 siti,LC,estetica,parziale,1,,
@@ -123,7 +123,7 @@ ricerca,MI,studi tecnici,parziale,2,2026-09-29,
 ricerca,MI,impiantisti,parziale,7,2026-09-25,
 ricerca,MI,officine e carrozzerie,esaurito,28,2026-10-07,"7/10: 48 profili, 8 righe. Finito per resa: 18 fermi, 16 piccoli; le strutturate sono concessionarie"
 ricerca,MI,meccanica e carpenterie,parziale,4,2026-09-25,
-ricerca,MI,edilizia e serramenti,parziale,47,2026-10-02,"2/10: 11 righe; operatore fermato prima del resoconto, profili non contati"
+ricerca,MI,edilizia e serramenti,esaurito,53,2026-10-09,"9/10: 44 profili, 6 righe. Finito per resa: 12 handle gia contattati, il resto fermi o piccoli"
 ricerca,MI,ingrossi e distribuzione,parziale,28,2026-10-05,"5/10: 81 profili, 19 righe. Aperta, fonti finite a una riga dalla quota"
 ricerca,MI,trasporti e logistica,parziale,7,2026-09-23,
 ricerca,MI,alimentari artigianali,parziale,23,2026-10-02,"2/10: 67 profili, 20 righe. Aperta, rende 1 su 3,4"
@@ -160,7 +160,7 @@ ricerca,BG,alimentari artigianali,parziale,4,2026-09-25,
 ricerca,BG,aziende agricole con vendita,parziale,3,2026-09-17,
 ricerca,BG,altro,parziale,17,2026-09-25,righe sparse di settori fuori elenco
 ricerca,LO,officine e carrozzerie,parziale,2,2026-09-12,
-ricerca,LO,edilizia e serramenti,parziale,1,2026-09-12,
+ricerca,LO,edilizia e serramenti,esaurito,8,2026-10-09,"9/10: 37 profili, 7 righe. Finito per resa: provincia piccola, meta dei risultati fuori provincia"
 ricerca,LO,alimentari artigianali,parziale,2,2026-09-29,
 ricerca,LO,aziende agricole con vendita,parziale,2,2026-09-29,
 ricerca,LO,altro,parziale,1,2026-09-29,righe sparse di settori fuori elenco
