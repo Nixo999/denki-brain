@@ -870,8 +870,42 @@ dell'hero e la meta description. La colonna si è accorciata di 215 px: il
 binario del prima e dopo tiene `min-height:1095px` sopra i 900 px, così la
 corsa resta 541 px a 1280. `f1370db`, online.
 
+## Giro 21-bis — 10/10: il gestionale di Andrea e l'avviso cookie
+
+Patrick: «per accedere non fare nulla di complicato, fai solo che deve
+scrivere admin admin e la prima volta che entrerà dovrà impostare una
+password. Gestionale semplicissimo da usare: aggiungere togliere modificare
+immagini, modificare orari e prezzi». Più l'avviso cookie.
+
+- **`/admin`**, utente `admin`, password `admin`: al primo ingresso si sceglie
+  una password (almeno 6 caratteri, non `admin`), e **finché non lo fa il server
+  rifiuta ogni salvataggio**. Persa la password: `AZZERA` in `gestione.mjs`.
+- Andrea cambia **listino**, **orari giorno per giorno** (una fascia, niente
+  pausa pranzo), **foto dei lavori** e **foto della bottega**: aggiunge, toglie,
+  cambia, sposta, descrive. Le foto si riducono nel telefono a 1600 px.
+- Stessa strada del Fiftynine ([[2026-09-23-fiftynine-archivio-netlify]]):
+  Netlify Blobs senza chiavi, edge function che rimette i pezzi in pagina. **Una
+  differenza voluta**: qui la pagina manda dati e l'HTML lo scrive la edge
+  function scappando ogni testo, invece di accettare HTML con una lista nera.
+- Gli orari ora stanno **in un posto solo**: le dieci frasi che li ripetevano e
+  lo stato «aperto adesso» si generano da lì. Due testi cambiati di una virgola
+  per stare nello stampo (occhiello, descrizioni per Google).
+- Il pacchetto del trapianto **resta fuori** dal gestionale: regola della locandina.
+- ⚠️ **Il repo non vede le modifiche di Andrea**: dopo il suo primo salvataggio
+  listino, orari e foto del repo non contano più. Scritto nel `CLAUDE.md` del
+  repo, che prima non c'era.
+- Verificato: `prova-gestione.mjs` 43/43 con l'archivio vero in locale; giro
+  completo nel browser a 375 px (primo accesso, prezzo, domenica aperta, foto
+  caricata, salvataggio, home rigenerata); online dopo il deploy `d003e51`:
+  API 401 sulla parola sbagliata, `/admin` `noindex` + `no-store`, home con i
+  marcatori e `cookie.js`. **Il primo ingresso vero non l'ha fatto nessuno.**
+
 ## Non verificato, e aperto
 
+- ⬜ **Il primo ingresso su `/admin` deve farlo Andrea**: finché `admin`/`admin`
+  vale, chi conosce l'indirizzo può scegliere la password al posto suo. Se
+  succede, `AZZERA` in `gestione.mjs` e si ripubblica
+- ⬜ Gestionale mai provato su Safari/iPhone vero (foto dal rullino, HEIC)
 - ✅ **Link buono dal 18/09: <https://barber-shop-snia.netlify.app>**. Il vecchio <https://barbershop-snia.netlify.app>, repo
   `Nixo999/barbershop-snia-site` privata. Tre sbarramenti verificati con `curl`
   sul sito vivo e badge Netlify spento dall'API → [[netlify]]

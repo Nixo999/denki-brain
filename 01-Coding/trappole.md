@@ -927,6 +927,12 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   alla cieca: vuol dire che il file e' cambiato sotto, e sovrascriverlo perde
   il lavoro di qualcun altro.
 
+- **Una funzione Netlify accetta al massimo 6 MB di corpo** (funzioni sincrone),
+  e il base64 ne aggiunge un terzo. Le foto vanno **una per richiesta**, ridotte
+  nel browser prima di partire. Il Fiftynine ne manda fino a 12 da 1,5 MB nella
+  stessa richiesta: con più di tre foto grandi insieme rischia il rifiuto, mai
+  provato online. ([[sito-barbershop-snia]], 10 ottobre 2026)
+
 ## Supabase e chiavi nel browser
 
 - **La chiave anon è pubblica per definizione**: sta in chiaro nel JS che scarica
