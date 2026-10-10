@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **282 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **285 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -51,6 +51,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-atelier-selva]] — ⚠️ Sito per Shari Piras, tatuatrice fineline a Merate (LC), e per il suo studio privato Atelier Selva (Via Statale 147).
 - [[sito-barbershop-snia]] — Sito vetrina di Andrea, barbiere al Villaggio SNIA di Cesano Maderno, che fa anche da tramite per i trapianti in Albania. Primo presidio volantini, gratis.
 - [[sito-beba-evolution]] — ⚠️ Restyling del sito di Beba Evolution, parrucchiere di Barbara Tarantino a Villasanta (MB). Giro 1 «Il muro con la macchia» del 09/10.
+- [[sito-cakeroyal]] — ⚠️ Bozza vetrina per Cake Royal, pasticceria cake design a Borgosatollo (BS). Torta a tre piani che si monta allo scroll, nome che va su WhatsApp.
 - [[sito-castiglione]] — ⚠️ Sito vetrina non commissionato per castiglione-furniture, costruito il 30 agosto 2026 dai contenuti veri del loro profilo Instagram.
 - [[sito-ciglia-di-luiza]] — Bozza sito Luiza Lash Artist, extension ciglia, Torino. Giro 3 «Da 1 a mega» (la pagina è la scala del volume della sua bio) online su cigliadiluiza.netlify.app dal 07/10, una testa sola su Fable; giri 1 e 2 bocciati.
 - [[sito-claudia-dogsitter]] — ⚠️ Bozza sito Claudia, educatrice cinofila e dog sitter ad Azzano San Paolo (BG). Giro 1 «Una giornata da Claudia» dell'08/10, una testa sola su Fable.
@@ -132,6 +133,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[adelina-nails]] — Nail artist ad Alessandria, @nails_by_.adelina, 1.246 follower, nessun sito. Ha risposto «Ciaooo, ok» al primo DM del 17/9, bozza in costruzione dal 18/9.
 - [[albybike]] — Negozio di biciclette - vendita, assistenza e riparazione, abbigliamento e integratori per ciclismo.
 - [[bar-tabacchi-fiftynine]] — ⚠️ Bar tabaccheria e pizzeria in via Nazionale dei Giovi 59, Cesano Maderno (MB), telefono 0362 528451.
+- [[cake-royal]] — Pasticceria cake design a Borgosatollo (BS), @cakeroyal.bs. Lead dal DM Instagram del 10/10/2026, bozza del sito in costruzione.
 - [[castiglione-furniture]] — ⚠️ Falegnameria su misura, @castiglione_furniture su Instagram.
 - [[claudia-dogsitter]] — ⚠️ Claudia, educatrice cinofila e dog sitter ad Azzano San Paolo (BG), @claudia_dogsitterbergamo. Ha risposto al DM l'08/10: «se vuoi mandarmela qui».
 - [[custom-beauty-nails]] — Onicotecnica a Treviglio (BG), @custombeautynailstreviglio, 1.033 follower. Bozza online dal 16/9, il DM non e' ancora partito.
@@ -211,6 +213,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-10-05-siti-e-ricerca-mi-bg-bs-lc]] — Per Patrick - il /banco del 5/10 finito il 6/10, 160 righe sul banco (siti 100, ricerca 60) da 11 celle, cosa guardare prima di mandare
 - [[2026-10-07-siti-e-ricerca-bs-mi-lc-lo]] — Per Patrick - il /banco del 7/10 finito l'8/10, 117 righe sul banco (siti 68, ricerca 49) da 11 celle, cosa guardare prima di mandare
 - [[2026-10-09-siti-e-ricerca-co-lc-bs-mi]] — Per Patrick - il /banco del 9/10 finito il 10/10, siti 100 e ricerca 60 da 20 celle, cosa guardare prima di mandare
+- [[2026-10-10-siti-e-ricerca-no-mi-pc-co]] — Per Patrick - il /banco del 10/10, siti 74 (TO toelettature ancora in corsa) e ricerca 60 da 15 celle, cosa guardare prima di mandare
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
