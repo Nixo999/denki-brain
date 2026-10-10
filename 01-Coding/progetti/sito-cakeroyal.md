@@ -29,7 +29,9 @@ dopo il DM: @cakeroyal.bs ha risposto «appena ho un attimo vado a guardare».
 
 ## Buchi da chiedere al cliente
 - Logo in alta (c'è solo il profilo IG a 150 px): la wordmark è tipografica.
-- Foto pulite senza watermark e più varie (nozze, cupcake, vetrina).
+- Foto pulite senza watermark e più varie (nozze, cupcake, vetrina). Col ritaglio se ne
+  salvano 5 su 16, tre sono solo dettagli; coniglietta, saldatore e Marie intere hanno
+  il watermark sulla torta e restano fuori dal sito.
 - Prezzi, gusti, preavviso, consegna, intolleranze: NON TROVATO, in pagina non inventati.
 - WhatsApp attivo sul 328 002 5962: da confermare.
 - Nome titolare: una recensione dice «Liliana», da confermare.
