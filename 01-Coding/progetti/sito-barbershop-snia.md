@@ -839,6 +839,11 @@ Bottega, La bottega, Recensioni, Orari, Trapianto. Bottega e La bottega adesso
 si toccano sullo stesso fondo chiaro, separate dal filetto del capitolo. Overflow 0 a
 1280 e 375, console pulita, `0d58527`, online.
 
+Poi, sotto la targa: «togli questa frase» («Taglio, barba e trapianto di capelli.
+Mercoledì, venerdì e sabato, dalle 10 alle 22.»). Tolta; «del Villaggio SNIA»
+resta a 90 px dalle porte a 1280 e 118 a 375. Gli orari restano nella barra e
+nel capitolo Orari. `86c7659`, online.
+
 ## Non verificato, e aperto
 
 - ✅ **Link buono dal 18/09: <https://barber-shop-snia.netlify.app>**. Il vecchio <https://barbershop-snia.netlify.app>, repo
