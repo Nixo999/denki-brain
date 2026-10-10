@@ -795,6 +795,13 @@ etichette a 20 px.
 Guardato a 1280 e a 375, console pulita, overflow 0. Commit `1d0a2cc` (riquadro)
 e `c26fcb5` (soggetto), pushati: Netlify pubblica da solo.
 
+**Verdetto di Nicola sul prima**: «in linea generale mi piace ma questa immagine
+è irrealistica». L'attaccatura spostata resta folta e netta, a punta, con la
+fronte stirata. Due rifacimenti a mano con il bordo diradato sono peggio
+(macchie a zebra a piena risoluzione) e non sono usciti. ⬜ Il prima va rifatto
+con un modello di modifica: la quota anonima di Hugging Face è finita, serve un
+token o la modifica fatta da Nicola.
+
 ⚠️ **Visto per strada e non toccato**: il prezzo «1.800 €» del pacchetto è
 quasi invisibile. `.trapianto-copy p` (0,1,1) vince su `.etichetta-prezzo`
 (0,1,0) e lo colora `rgba(18,18,18,.72)` sul legno nero. La correzione è una

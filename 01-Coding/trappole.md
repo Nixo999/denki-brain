@@ -411,10 +411,12 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   poi l'API `/call/` restituisce `data: null` senza motivo (il motivo si legge
   con `/queue/join` + `/queue/data`: «ZeroGPU quota exceeded»). La sandbox non
   risolve `*.hf.space`: `nslookup` e poi `curl --resolve host:443:IP`. (10/10/2026, [[sito-barbershop-snia]])
-- `[SCARTATO]` **Un prima/dopo ritoccato a strati** (pelle estrapolata e
-  capelli radi disegnati a strisce) sembra finto: pettine, cuciture, colore
-  sballato. → **deformazione**: fronte allungata verso l'alto, capelli sopra
-  compressi; pelle e luce restano vere e la faccia combacia. (10/10/2026, [[sito-barbershop-snia]])
+- `[SCARTATO]` **Un prima di trapianto ricavato a mano dal dopo non regge.**
+  A strati (pelle estrapolata, capelli radi disegnati) fa pettine e cuciture;
+  per deformazione (fronte allungata, capelli compressi) l'attaccatura resta
+  folta e netta, e Nicola: «questa immagine è irrealistica». Il diradamento
+  disegnato fa zebra. → serve un modello che modifica l'immagine (Kontext,
+  Qwen-Image-Edit). (10/10/2026, [[sito-barbershop-snia]])
 
 ## GSAP e motion
 
