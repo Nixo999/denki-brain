@@ -798,9 +798,13 @@ e `c26fcb5` (soggetto), pushati: Netlify pubblica da solo.
 **Verdetto di Nicola sul prima**: «in linea generale mi piace ma questa immagine
 è irrealistica». L'attaccatura spostata resta folta e netta, a punta, con la
 fronte stirata. Due rifacimenti a mano con il bordo diradato sono peggio
-(macchie a zebra a piena risoluzione) e non sono usciti. ⬜ Il prima va rifatto
-con un modello di modifica: la quota anonima di Hugging Face è finita, serve un
-token o la modifica fatta da Nicola.
+(macchie a zebra a piena risoluzione) e non sono usciti. **Il prima l'ha fatto
+Nicola su ChatGPT**, partendo dal dopo e col prompt di modifica: tempie
+stempiate e capelli radi, corti. Riportato sulla geometria del dopo (scala 1,00,
+un pixel di spostamento, cercati su occhi, naso e bocca; scarto medio sul viso
+6 su 255, ChatGPT ridisegna un poco i lineamenti) e toni pareggiati sul fondo,
+che era più chiaro e faceva un salto di grigio sul taglio. Online, commit
+`f31211d`.
 
 ⚠️ **Visto per strada e non toccato**: il prezzo «1.800 €» del pacchetto è
 quasi invisibile. `.trapianto-copy p` (0,1,1) vince su `.etichetta-prezzo`

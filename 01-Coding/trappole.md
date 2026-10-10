@@ -415,8 +415,9 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   A strati (pelle estrapolata, capelli radi disegnati) fa pettine e cuciture;
   per deformazione (fronte allungata, capelli compressi) l'attaccatura resta
   folta e netta, e Nicola: «questa immagine è irrealistica». Il diradamento
-  disegnato fa zebra. → serve un modello che modifica l'immagine (Kontext,
-  Qwen-Image-Edit). (10/10/2026, [[sito-barbershop-snia]])
+  disegnato fa zebra. → un modello che modifica l'immagine: Nicola su ChatGPT,
+  allegando il dopo, un minuto; poi si riallinea su occhi, naso e bocca e si
+  pareggiano i toni del fondo. (10/10/2026, [[sito-barbershop-snia]])
 
 ## GSAP e motion
 
