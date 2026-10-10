@@ -116,6 +116,10 @@ mescolati. Ogni lista passa da `voce-check.py --csv` ([[voce-denkicode]]).
 
 Il dettaglio di una riga sta in [[metodo-instagram]]; qui l'ordine delle fonti,
 ed è la strada normale. Si legge soltanto: nessun follow, like o messaggio.
+Patrick, 10/10/2026: *«stop chiedere autorizzazioni fai da solo non chiedermi
+piu niente»*. Ogni dominio nuovo aperto nel browser dell'app gli chiede il
+permesso: **nel browser solo instagram.com**, il resto con curl. Una fonte che
+chiede permesso o viene negata si abbandona e non si riprova.
 
 **(1) Fonti senza JavaScript e senza API privata.** ⚠️ **Dal Mac di Patrick
 non sono ancora state misurate**: resa e tempi `TODO`, da scrivere nella nota
