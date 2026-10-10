@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura. Max 80 righe.
-updated: 2026-10-08
+updated: 2026-10-10
 verificato: 2026-09-16
 source: denkicode
 tags: [stato, fatti]
@@ -46,7 +46,7 @@ cosa aperta. Il racconto dei giri sta nella nota progetto, la giornata nel
 | [[sito-p0t-tattoo]] | p0t-tattoo.netlify.app | giro 9 (25/09) | DM Instagram: prezzi, caparra, giorni, foto dei guariti |
 | [[sito-designcapelli]] | designcapelli.netlify.app | giro 1 (21/09); lei vuole la bozza nel DM | orari in conflitto PagineGialle/Fresha, li conferma Daniela; DM |
 | [[sito-adelinanails]] | adelinanails-site.netlify.app | giro 3 (19/09); lei ha risposto «ok» | DM con le domande su prezzi, orari, indirizzo |
-| [[sito-barbershop-snia]] | barber-shop-snia.netlify.app | giro 16 (19/09), Nicola non l'ha rivisto | consenso dei genitori per il viso del bambino, o la foto si toglie |
+| [[sito-barbershop-snia]] | barber-shop-snia.netlify.app | giro 20 (10/10): prima e dopo con un ragazzo generato, riquadro montato; prezzo del pacchetto invisibile, da correggere | consenso dei genitori per il viso del bambino, o la foto si toglie |
 | [[sito-newfantasy]] | newfantasy-parrucchieri.netlify.app | giro 1 (16/09); DM finito in un autorisponditore | link su WhatsApp; prenotazioni su `localStorage`, PIN `1234`: per venderlo serve uno store ospitato |
 | [[sito-hairstylebrescia]] | hairstylebrescia.netlify.app | 16/09; sbarramenti verificati nei file, non con `curl` | DM mai partito |
 | [[sito-laurafranzoni]] | laurafranzoni.netlify.app | online il giro 2; il giro 3 (`93081ec`) è in locale, non pushato | push, poi il DM mai partito |

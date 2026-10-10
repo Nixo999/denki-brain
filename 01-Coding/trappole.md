@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Errori tecnici già pagati e strade scartate, per dominio. Descrittivo, non è un rulebook - le regole stanno in convenzioni.
-updated: 2026-09-28
+updated: 2026-10-10
 verificato: 2026-09-10
 source: denkicode
 tags: [trappole, memoria, frontend, gsap, git]
@@ -405,6 +405,16 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   di netto al suo bordo** (salto di 10 sul blu a x=1412 su 1440). → il fondo
   sull'elemento a tutta finestra, il contenuto tenuto a misura con
   `padding-inline: max(var(--pad), (100% - 1240px) / 2)`. ([[sito-pizzeria-lobidu]])
+
+- `[TRAPPOLA]` **Generare immagini senza chiave: Pollinations risponde 402
+  anche a 256 px, gli Space ZeroGPU di Hugging Face danno tre giri anonimi** e
+  poi l'API `/call/` restituisce `data: null` senza motivo (il motivo si legge
+  con `/queue/join` + `/queue/data`: «ZeroGPU quota exceeded»). La sandbox non
+  risolve `*.hf.space`: `nslookup` e poi `curl --resolve host:443:IP`. (10/10/2026, [[sito-barbershop-snia]])
+- `[SCARTATO]` **Un prima/dopo ritoccato a strati** (pelle estrapolata e
+  capelli radi disegnati a strisce) sembra finto: pettine, cuciture, colore
+  sballato. → **deformazione**: fronte allungata verso l'alto, capelli sopra
+  compressi; pelle e luce restano vere e la faccia combacia. (10/10/2026, [[sito-barbershop-snia]])
 
 ## GSAP e motion
 

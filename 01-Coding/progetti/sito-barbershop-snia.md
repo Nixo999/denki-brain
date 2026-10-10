@@ -6,7 +6,7 @@ client: parrucchiere-morgan
 stack: HTML statico senza librerie, starter DenkiCode, Netlify
 started: 2026-09-16
 deadline:
-updated: 2026-09-20
+updated: 2026-10-10
 source: claude
 verificato: 2026-09-20
 tags: [sito, barbiere, presidio, cesano-maderno]
@@ -766,6 +766,40 @@ scorreva via lo stesso — **un elemento `sticky` non entra nel padding del suo
 contenitore**. Serve contenuto vero: un `::after` alto 70vh → [[trappole]].
 Commit `753c8a1`, pushato.
 
+## Giro 20 — 10/10: un ragazzo nel prima e dopo, e il riquadro montato
+
+> «cambia solo ed esclusivamente il soggetto su cui si fa la transizione prima e
+> dopo il trapianto… sostituiscilo con un bel ragazzo e migliora l'estetica solo
+> di quel pezzettino lì, non toccare nient'altro»
+
+**Una coppia libera non esiste.** Wikimedia, Unsplash e Pexels non hanno lo
+stesso ragazzo giovane prima e dopo; su Magnific (ex Freepik) sono tutte a
+pagamento, quasi tutte generate, con uomini sui 35-40.
+
+**Il dopo è generato**: FLUX.1 schnell dallo Space pubblico di Hugging Face
+(Apache 2.0, uso commerciale libero), 896×1120, seme 27. **Il prima è lo stesso
+file deformato**: la fronte si allunga verso l'alto e i capelli sopra si
+comprimono, a M (tempie −96 px, centro −24): pelle, luce e bordo dell'attaccatura
+sono quelli veri, e la faccia combacia al pixel. Il primo tentativo, pelle
+riempita a strati e capelli radi disegnati, sembrava finto ed è stato buttato
+→ [[trappole]]. Didascalia: «Immagine generata a scopo dimostrativo, non un
+paziente della struttura».
+
+**Il riquadro** parla come l'etichetta «Pacchetto» che gli sta accanto: cornice
+di legno nero col doppio filetto, linea di taglio da 1 px con un segno rosso e
+l'ombra sotto (il dopo scende come un telo), «prima» e «dopo» in maiuscoletto
+largo su un rettangolo scuro invece dello script con l'ombra, vignetta leggera.
+Una scala Prima ◆ Dopo sotto la foto è stata provata e tolta: ripeteva le
+etichette a 20 px.
+
+Guardato a 1280 e a 375, console pulita, overflow 0. Commit `1d0a2cc` (riquadro)
+e `c26fcb5` (soggetto), pushati: Netlify pubblica da solo.
+
+⚠️ **Visto per strada e non toccato**: il prezzo «1.800 €» del pacchetto è
+quasi invisibile. `.trapianto-copy p` (0,1,1) vince su `.etichetta-prezzo`
+(0,1,0) e lo colora `rgba(18,18,18,.72)` sul legno nero. La correzione è una
+riga di CSS.
+
 ## Non verificato, e aperto
 
 - ✅ **Link buono dal 18/09: <https://barber-shop-snia.netlify.app>**. Il vecchio <https://barbershop-snia.netlify.app>, repo
@@ -780,6 +814,7 @@ Commit `753c8a1`, pushato.
 - La riga «chiamateli pure da parte mia» attribuita ad Andrea **va fatta
   leggere a lui** prima del go-live: è l'accordo, ma non gliel'ha detta nessuno
 - ✅ **I prezzi ci sono dal 19/09**: letti dal vinile sulla vetrina (foto di Nicola del 18/09) e in pagina. Restano da far confermare a voce ad Andrea insieme al civico
+- ⚠️ **Prezzo del pacchetto invisibile** (giro 20): nero al 72% sul legno nero, specificità di `.trapianto-copy p`
 - ⚠️ **Consenso per il viso del bambino** in `andrea-al-lavoro.jpg`: senza, la foto si toglie prima del go-live
 - Restano `TODO` il listino prezzi, il CAP, il nome della clinica e il civico
   (22D contro 20)
