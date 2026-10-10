@@ -1216,6 +1216,19 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   il telefono vanno in una sottocartella (`assets/img/800/`), che il glob non attraversa.
 
 
+- `[TRAPPOLA]` **Un mod di Claude Code che scrive `$.state` dentro `tool.call` o
+  `turn.step` ferma gli agenti in background.** Il pannello `agenti-live` registrava
+  l'ultima mossa e i token di ogni agente: tutti e quattro gli operatori di CO-OPERO
+  si sono fermati insieme, ciascuno sul punto di lanciare uno strumento, e il
+  watchdog li ha chiusi dopo 600 s. → un mod che guarda gli agenti legge e basta
+  (`$.agent.list`, `$.session.messages({ agentId })`, `$.session.usage`) da un
+  `ui.render` con un timer; niente hook sul loro percorso. (10/10/2026)
+
+- `[TRAPPOLA]` **Due agenti nello stesso browser integrato si rubano la scheda.**
+  `read_page` tornava vuoto e uno dei due si è fermato due volte all'apertura. →
+  un agente alla volta nel browser, o ciascuno con `tabs_create` e il suo `tabId`.
+  (10/10/2026)
+
 ## Collegamenti
 
 [[registro-interventi]] · [[processo-siti]] · [[convenzioni]] · [[netlify]] ·
