@@ -844,6 +844,10 @@ Mercoledì, venerdì e sabato, dalle 10 alle 22.»). Tolta; «del Villaggio SNIA
 resta a 90 px dalle porte a 1280 e 118 a 375. Gli orari restano nella barra e
 nel capitolo Orari. `86c7659`, online.
 
+In Bottega: «togli questa frase» («Il taglio di un bambino richiede più tempo di
+quello di un adulto…»). Tolta; resta un paragrafo, allineato alla base del
+titolo. `9f41b8c`, online.
+
 ## Non verificato, e aperto
 
 - ✅ **Link buono dal 18/09: <https://barber-shop-snia.netlify.app>**. Il vecchio <https://barbershop-snia.netlify.app>, repo

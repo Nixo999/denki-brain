@@ -42,6 +42,7 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
 |---|---|---|---|---|---|---|
+| 10/10, pomeriggio | Nicola con Trevis (Opus) | [[sito-barbershop-snia]] | `Nixo999/barbershop-snia-site`, `main`, **pushato**, online verificato | — nessuno | Bottega: tolta la frase sul taglio dei bambini | `9f41b8c` |
 | 10/10, pomeriggio | Nicola con Trevis (Opus) | [[sito-barbershop-snia]] | `Nixo999/barbershop-snia-site`, `main`, **pushato**, online verificato | — nessuno | Hero: tolta la frase sotto la targa («Taglio, barba e trapianto di capelli. Mercoledì, venerdì e sabato, dalle 10 alle 22.») | `86c7659` |
 | 10/10, pomeriggio | Nicola con Trevis (Opus) | [[sito-barbershop-snia]] | `Nixo999/barbershop-snia-site`, `main`, **pushato**, online verificato | — nessuno | Via la sezione «Il metodo» (Forbice e rasoio), capitoli rinumerati 01-05 | `0d58527` |
 | 10/10, pomeriggio | Nicola con Trevis (Opus) | [[sito-barbershop-snia]] | `Nixo999/barbershop-snia-site`, `main`, **pushato**, online verificato | — nessuno | Prezzo del pacchetto e riga «DHI e FUE · Tirana» bianchi: `.trapianto-copy p` li colorava di nero sul legno nero | `502320c` |
