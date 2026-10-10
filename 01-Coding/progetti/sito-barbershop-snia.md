@@ -829,6 +829,16 @@ dopo 180 ms di sosta e torna dopo 350 ms, e da telefono resta capovolta. Il
 gesto è lo stesso di prima. Provato con hover vero a 1280 e tocco a 375,
 console pulita, `4770d16`, online.
 
+### Giro 22 — 10/10: via «Il metodo»
+
+> «togli questa sezione» (screenshot di «02 Il metodo — Forbice e rasoio»)
+
+Tolta intera, con le tre battute su forbice, sfumatura e rasatura e la foto al
+lavatoio, che resta in `assets/img` come materiale. Capitoli rinumerati 01-05:
+Bottega, La bottega, Recensioni, Orari, Trapianto. Bottega e La bottega adesso
+si toccano sullo stesso fondo chiaro, separate dal filetto del capitolo. Overflow 0 a
+1280 e 375, console pulita, `0d58527`, online.
+
 ## Non verificato, e aperto
 
 - ✅ **Link buono dal 18/09: <https://barber-shop-snia.netlify.app>**. Il vecchio <https://barbershop-snia.netlify.app>, repo
