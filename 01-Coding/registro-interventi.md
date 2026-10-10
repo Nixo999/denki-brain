@@ -461,7 +461,7 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 | 12:13 | Nicola +claude | — | `denki-brain` | — | Protocollo Trevis come livello base a ogni avvio | `f563e75` `f84f378` |
 | 12:09 | Nicola +claude | [[denkishift]] | `smooth-duty` | ⬜ **sviluppo: `19-lavoratori-a-chiamata.sql` non eseguita** | Lavoratori a chiamata: chi tace non ha accettato | `1b160ea` |
 | ~12:00 | Patrick +claude | [[denkishift]] | `denki-brain` | 🟡 sviluppo: catena provata fino alla password, `.env` predisposti e vuoti | Corretta la fotografia del Mac in [[setup-macchina-nuova]]; su DenkiShift `db push` non esiste | `9358c87` |
-| 2026-10-10 | Claude per Patrick | banco DM (liste) | Nixo999/denki-brain | nessuno | /banco del 10/10: 160 invii del mattino allineati sul banco; liste del giorno siti 74 e ricerca 60 da 15 celle, 11 chiuse per resa o fonti in rotazione.csv. TO toelettature in corsa allo stop per limite d'uso. Regola di Patrick «non chiedermi piu niente» in protocollo-trevis e in banco.md (browser solo su domini gia aperti). Nota [[2026-10-10-siti-e-ricerca-no-mi-pc-co]] | — |
+| 2026-10-10 | Claude per Patrick | banco DM (liste) | Nixo999/denki-brain | nessuno | /banco del 10/10: 160 invii del mattino allineati sul banco; liste del giorno siti 94 e ricerca 60 da 16 celle, 12 chiuse per resa o fonti in rotazione.csv. TO toelettature fermata dal limite d'uso e ripresa: 20 righe. Regola di Patrick «non chiedermi piu niente» in protocollo-trevis e in banco.md (browser solo su domini gia aperti). Nota [[2026-10-10-siti-e-ricerca-no-mi-pc-co]] | — |
 
 ## Il debito aperto, in chiaro
 

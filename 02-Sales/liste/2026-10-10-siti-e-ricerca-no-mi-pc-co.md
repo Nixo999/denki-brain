@@ -1,5 +1,5 @@
 ---
-riga: Per Patrick - il /banco del 10/10, siti 74 (TO toelettature ancora in corsa) e ricerca 60 da 15 celle, cosa guardare prima di mandare
+riga: Per Patrick - il /banco del 10/10, siti 94 e ricerca 60 da 16 celle, cosa guardare prima di mandare
 type: area
 updated: 2026-10-10
 source: claude
@@ -9,12 +9,12 @@ canale: instagram
 stato: pubblicata
 ---
 
-# 10 ottobre: siti 74 su 100, ricerca 60 su 60
+# 10 ottobre: siti 94 su 100, ricerca 60 su 60
 
 Operatori Opus, uno per cella di `prossimo-giro.py`, sostituti dalle riserve e
 dal piano rifatto. Tutto sul banco Patrick (`lista-corrente.csv`). **TO
-toelettature (quota 20) era ancora in corsa** quando la sessione si è fermata
-per limite d'uso: il CSV, se arriva, va pubblicato con `pubblica-lista.py`.
+toelettature si è fermata per limite d'uso** a metà giro ed è stata ripresa:
+20 righe, pubblicate per ultime. I 6 siti mancanti non sono stati recuperati.
 
 | Lista | Cella | Righe | Profili | Stato |
 |---|---|---|---|---|
@@ -25,7 +25,7 @@ per limite d'uso: il CSV, se arriva, va pubblicato con `pubblica-lista.py`.
 | siti | VC · toelettature | 4 | 53 | esaurita (35 omonimi fuori) |
 | siti | NO · tatuatori | 11 | 93 | esaurita |
 | siti | NO · fioristi e wedding | 11 | 49 | aperta |
-| siti | TO · toelettature | — | — | in corsa |
+| siti | TO · toelettature | 20 | ~116 | esaurita, quota piena (1 su 5,8) |
 | ricerca | LO · falegnamerie | 4 | 30 | esaurita |
 | ricerca | CO · edilizia | 8 | 105 | esaurita (72 fuori provincia) |
 | ricerca | CO · officine | 11 | 56 | esaurita (21 fermi) |
@@ -50,7 +50,11 @@ per limite d'uso: il CSV, se arriva, va pubblicato con `pubblica-lista.py`.
 - **Al limite del segmento**: @vieviserramenti (serramenti in cella
   falegnamerie), @f.llicasconesnc, Giuffrè e Blindocasa (showroom con posa).
 - **Domini da riaprire**: blackislandtattoo.it, ifioridellamary.it,
-  margheritebianche.it, angelafiori.com (Squarespace in costruzione).
+  margheritebianche.it, angelafiori.com (Squarespace in costruzione),
+  bimbumbau.it (errore di database), mariannadogtrainer.com (di chi è?).
+- **TO**: sede solo da hashtag per @wet_wool_grooming e @oppudog;
+  @love_pets_di_michela e @pelosamente vendono anche mangimi;
+  @toelettatura_hollywood_dog ultimo post 16/9.
 
 ## Fonti, 10/10 dal Mac di Patrick
 

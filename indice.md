@@ -213,7 +213,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-10-05-siti-e-ricerca-mi-bg-bs-lc]] — Per Patrick - il /banco del 5/10 finito il 6/10, 160 righe sul banco (siti 100, ricerca 60) da 11 celle, cosa guardare prima di mandare
 - [[2026-10-07-siti-e-ricerca-bs-mi-lc-lo]] — Per Patrick - il /banco del 7/10 finito l'8/10, 117 righe sul banco (siti 68, ricerca 49) da 11 celle, cosa guardare prima di mandare
 - [[2026-10-09-siti-e-ricerca-co-lc-bs-mi]] — Per Patrick - il /banco del 9/10 finito il 10/10, siti 100 e ricerca 60 da 20 celle, cosa guardare prima di mandare
-- [[2026-10-10-siti-e-ricerca-no-mi-pc-co]] — Per Patrick - il /banco del 10/10, siti 74 (TO toelettature ancora in corsa) e ricerca 60 da 15 celle, cosa guardare prima di mandare
+- [[2026-10-10-siti-e-ricerca-no-mi-pc-co]] — Per Patrick - il /banco del 10/10, siti 94 e ricerca 60 da 16 celle, cosa guardare prima di mandare
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
