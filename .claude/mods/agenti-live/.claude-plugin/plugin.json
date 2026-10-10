@@ -1,0 +1,1 @@
+{ "name": "agenti-live", "version": "0.1.0", "description": "Pannello degli agenti in parallelo: limiti d'uso a lancetta, consumo per agente, dettaglio di cosa sta facendo", "types": "./types/index.d.ts" }

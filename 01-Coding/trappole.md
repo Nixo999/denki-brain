@@ -1162,6 +1162,7 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Skill e strumenti di processo
 
+- **Mod di Claude Code: nel terminale `'Svg' in $.ui.resolve(e)` è sempre vero.** La tabella degli elementi viene completata, e un elemento che la superficie non ha disegna un frammento vuoto: il ripiego «se non c'è Svg uso il testo» non scatta mai e il pannello resta muto. Si decide da `e.surface`. Il `claude` nel PATH (2.1.261) non ha `plugin test`: si usa il binario dell'app, `~/Library/Application Support/Claude/claude-code/<versione>/…/MacOS/claude`. ([[registro-interventi]], 10/10)
 - **`voce-denkicode` sulle didascalie e sul copy di un sito produce frasi da
   bambino.** Taglia connettivi e verbi e lascia frasi nominali che descrivono
   la foto («Ghiaia da una parte, erba dall'altra», «Sostenuto finché non si

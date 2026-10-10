@@ -30,7 +30,7 @@ CANONICHE = {
     "03-Storage/sistemi/agente-operatore.md": "agents/operatore.md",
 }
 # cartelle del vault ricopiate pari pari
-CARTELLE = ["commands", "skills", "hooks"]
+CARTELLE = ["commands", "skills", "hooks", "mods"]
 
 # Gli hook stanno a livello di ACCOUNT, non di progetto: Patrick apre Claude
 # dove capita, e un hook legato alla cartella del vault non scatterebbe mai.
@@ -98,7 +98,9 @@ def main(check):
         if not radice.is_dir():
             continue
         # gli hook sono script, non note: servono anche il bit di esecuzione
-        modelli = ("*.sh",) if cartella == "hooks" else ("*.md",)
+        # le mod sono codice (plugin di Claude Code): si caricano da
+        # CLAUDE_CODE_PLUGIN_DIRS nel settings.json della macchina, messo a mano
+        modelli = {"hooks": ("*.sh",), "mods": ("*.tsx", "*.ts", "*.json")}.get(cartella, ("*.md",))
         for modello in modelli:
             for q in radice.rglob(modello):
                 dest = CLAUDE / cartella / q.relative_to(radice)
