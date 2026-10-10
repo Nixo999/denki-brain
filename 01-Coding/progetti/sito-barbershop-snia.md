@@ -843,7 +843,7 @@ console pulita, `4770d16`, online.
 - La riga «chiamateli pure da parte mia» attribuita ad Andrea **va fatta
   leggere a lui** prima del go-live: è l'accordo, ma non gliel'ha detta nessuno
 - ✅ **I prezzi ci sono dal 19/09**: letti dal vinile sulla vetrina (foto di Nicola del 18/09) e in pagina. Restano da far confermare a voce ad Andrea insieme al civico
-- ⚠️ **Prezzo del pacchetto invisibile** (giro 20): nero al 72% sul legno nero, specificità di `.trapianto-copy p`
+- ✅ **Prezzo del pacchetto** bianco dal 10/10 («1800 euro non si legge fallo bianco»), con la riga «DHI e FUE · Tirana», che era invisibile per lo stesso motivo
 - ⚠️ **Consenso per il viso del bambino** in `andrea-al-lavoro.jpg`: senza, la foto si toglie prima del go-live
 - Restano `TODO` il listino prezzi, il CAP, il nome della clinica e il civico
   (22D contro 20)
