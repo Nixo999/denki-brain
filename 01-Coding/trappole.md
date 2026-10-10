@@ -421,6 +421,14 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## GSAP e motion
 
+- `[TRAPPOLA]` **`html{scroll-behavior:smooth}` sposta tutti gli ScrollTrigger di quanto
+  si è già scrollato.** Su Cake Royal i tre piani della torta partivano a −517 px con la
+  sezione a 792: a 375 la torta era già montata prima di arrivarci, e `refresh()` peggiorava
+  (−1517 a scroll 2000). I controlli passavano 8/8 e le catture in `?cattura` erano belle,
+  perché la motion lì è spenta. → niente scroll morbido sull'`html` nei siti con GSAP; si
+  verifica sulla pagina vera con `ScrollTrigger.getAll().map(t=>t.start)` contro
+  `getBoundingClientRect().top+scrollY` del trigger. (10/10/2026, [[sito-cakeroyal]])
+
 - `[TRAPPOLA]` **Un `@keyframes` su `visibility` da `visible` a `hidden` in Chrome lascia `visible` a fine corsa**: `visibility` interpola «visibile finché uno dei due lo è», quindi serve `50%,to{visibility:hidden}` o si spegne con `opacity`+`pointer-events`. Cugina: **GSAP 3.13 legge la `scale` CSS dell'`img` al boot e se la tiene inline**, sovrascrivendo l'animazione CSS: la posa 1.06→1 va sulla `figure`, non sull'`img` bersaglio di ScrollTrigger. (07/10/2026, [[sito-ciglia-di-luiza]])
 
 - `[TRAPPOLA]` **Dentro una sezione pinnata a `100vh` con `overflow:hidden`, il

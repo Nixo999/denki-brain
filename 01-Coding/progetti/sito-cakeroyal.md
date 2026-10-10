@@ -14,7 +14,9 @@ incassato: 0
 
 # Sito Cake Royal — bozza
 
-Repo locale `~/lavoro/cakeroyal-site` (nessun remoto ancora). Nato il 10/10/2026
+Repo locale `~/lavoro/cakeroyal-site` (nessun remoto ancora). **Online su
+<https://cakeroyal-bozza.netlify.app>** (progetto Netlify `cakeroyal-bozza`, sbarramenti attivi,
+non collegato al repo: si ripubblica con `netlify deploy` da una copia senza i `.md`). Nato il 10/10/2026
 dopo il DM: @cakeroyal.bs ha risposto «appena ho un attimo vado a guardare».
 
 ## Come è stato fatto (processo-siti, in un'ora)
@@ -25,7 +27,11 @@ dopo il DM: @cakeroyal.bs ha risposto «appena ho un attimo vado a guardare».
 - Metodo di NG Barber, Fiftynine, Barbershop SNIA (Sonnet) → `METODO.md`.
 - Direzione (Fable, un mondo solo) → `DIREZIONE.md`: «la torta si monta a piani,
   e in cima ci va il nome». Fraunces + Nunito, crema/cipria/oro/prugna.
-- Costruzione (Opus, operatore).
+- Costruzione (Fable, su richiesta di Nicola), controlli e testo (Sonnet).
+
+## Aperto
+- Badge «Powered by Netlify» sopra il bottone Chiama a 375: si spegne solo dal pannello del progetto.
+- Spina a 375: tra un blocco di testo e l'altro resta molto rosa vuoto.
 
 ## Buchi da chiedere al cliente
 - Logo in alta (c'è solo il profilo IG a 150 px): la wordmark è tipografica.
