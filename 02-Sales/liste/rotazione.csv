@@ -45,7 +45,7 @@ siti,NO,barbieri,parziale,10,2026-09-25,
 siti,NO,"ciglia, sopracciglia e PMU",parziale,13,2026-09-29,
 siti,NO,parrucchieri,parziale,3,2026-09-23,
 siti,NO,unghie,parziale,1,2026-09-17,
-siti,NO,fotografi e videomaker,parziale,3,2026-09-23,
+siti,NO,fotografi e videomaker,esaurito,4,2026-10-10,"10/10: 30 profili, 1 riga. Finito per resa: 16 col sito, 7 sotto i 200, 3 fermi; altri ~20 di matrimonio.com col sito prima di aprire il profilo"
 siti,NO,trucco sposa e wedding,parziale,1,2026-09-23,
 siti,VB,tatuatori e piercing,parziale,1,2026-09-21,
 siti,VB,barbieri,parziale,4,2026-09-25,
@@ -112,9 +112,9 @@ ricerca,MB,aziende agricole con vendita,esaurito,12,2026-09-30,"30/09: 35 profil
 ricerca,MB,altro,parziale,11,2026-09-29,righe sparse di settori fuori elenco
 ricerca,CO,falegnamerie,esaurito,3,2026-10-02,"2/10: 27 profili, 2 righe. Finito per resa"
 ricerca,CO,impiantisti,parziale,4,2026-09-29,
-ricerca,CO,officine e carrozzerie,parziale,19,2026-09-30,"30/09: 27 profili, 11 righe. Aperto, rende"
+ricerca,CO,officine e carrozzerie,esaurito,30,2026-10-10,"10/10: 56 profili, 11 righe. Finito per resa: 21 fermi, 15 fuori provincia, 6 piccoli"
 ricerca,CO,meccanica e carpenterie,parziale,4,2026-09-30,"30/09: vicla, 1 riga"
-ricerca,CO,edilizia e serramenti,parziale,28,2026-10-02,"2/10: 64 profili, 20 righe. Aperta, rende 1 su 3"
+ricerca,CO,edilizia e serramenti,esaurito,36,2026-10-10,"10/10: 105 profili, 8 righe. Finito per resa: 72 fuori provincia, 11 gia nelle liste, 14 piccoli o fermi"
 ricerca,CO,ingrossi e distribuzione,parziale,2,2026-09-29,
 ricerca,CO,aziende agricole con vendita,parziale,1,2026-09-29,
 ricerca,CO,altro,parziale,6,2026-09-19,righe sparse di settori fuori elenco
@@ -240,3 +240,4 @@ siti,NO,"sartorie, atelier e tappezzieri",esaurito,4,2026-10-09,"9/10: 40 profil
 siti,LO,"sartorie, atelier e tappezzieri",esaurito,3,2026-10-09,"9/10: 30 profili, 3 righe. Finito per resa: 12 sotto i 200, 7 fuori provincia"
 siti,VB,toelettature e dog trainer,esaurito,2,2026-10-09,"9/10: circa 85 profili, 2 righe. Finito per resa: le fonti danno risultati nazionali, 7 profili in provincia"
 siti,NO,"personal trainer, pilates e yoga",parziale,15,2026-10-09,"9/10: circa 80 profili, 15 righe. Aperta, rende 1 su 5; 17 col sito, hashtag di Novara finiti"
+ricerca,LO,falegnamerie,esaurito,4,2026-10-10,"10/10: 30 profili, 4 righe. Finito per resa: 11 fuori provincia, 7 singoli o piccoli, 6 fermi"
