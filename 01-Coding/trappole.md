@@ -800,6 +800,13 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   `pathLength` non traccia più**: la curva usciva a trattini. O si toglie il
   `vector-effect`, o la curva si svela con `clip-path` (Soul Ink, 26/09).
 
+- `[TRAPPOLA]` **Hover su un elemento che ruota: la zona sensibile ruota con
+  lui.** La targa larga 1.100 px a 90° copriva la riga sopra e sotto, il
+  puntatore vicino la riprendeva e la rotazione invertiva. → `pointer-events:none`
+  sull'elemento che gira, hover sulla scatola ferma che lo contiene, un ritardo
+  d'ingresso, e niente rotazione sotto `(hover:none),(pointer:coarse)`.
+  (10/10/2026, [[sito-barbershop-snia]])
+
 ## Git, account e pubblicazione
 
 - **`netlify deploy --prod` resta fermo un minuto e mezzo su «Installing extensions · baseline»** (09/10/2026,
@@ -831,6 +838,10 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   l'iPhone di Nicola vedeva ancora il difetto. → CSS e JS con
   `max-age=0, must-revalidate` (Netlify rivalida con ETag) e un `?v=` nel
   link; la cache lunga resta solo alle foto. ([[sito-osteria-tarilli]])
+- `[TRAPPOLA]` **La cache lunga sulle foto tiene la foto vecchia se la si
+  sostituisce con lo stesso nome**: `assets/img/*` a `max-age=604800`, il prima
+  rifatto era online e Chrome di Nicola mostrava ancora quello di stamattina.
+  → una foto cambiata prende **un nome nuovo**. (10/10/2026, [[sito-barbershop-snia]])
 - **`netlify deploy --prod` senza `--no-build` prova a installare plugin in
   `.netlify/plugins/` e puo' fallire li'** anche su un sito statico senza
   build: `--no-build`, e `.netlify/` nel `.gitignore`.

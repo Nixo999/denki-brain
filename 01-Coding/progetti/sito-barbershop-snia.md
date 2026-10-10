@@ -811,6 +811,24 @@ quasi invisibile. `.trapianto-copy p` (0,1,1) vince su `.etichetta-prezzo`
 (0,1,0) e lo colora `rgba(18,18,18,.72)` sul legno nero. La correzione è una
 riga di CSS.
 
+### Giro 20-ter e 21 — 10/10: la cache delle foto, la targa che si bugga
+
+> «vedo ancora questa immagine» — poi: «migliorare l'animazione del logo che si
+> gira… è troppo sensibile al passaggio del mouse, si bugga molto spesso»
+
+**La foto vecchia** era la cache: `netlify.toml` dà una settimana ad
+`assets/img/*`. I due file si chiamano adesso `ragazzo-prima.jpg` e
+`ragazzo-dopo.jpg` (`79e24a9`).
+
+**La targa.** Ruota in 2D, e a metà giro, larga 1.100 px, sta in verticale e
+copre la riga sopra e quella sotto: con `elementFromPoint` a 90° il punto 60 px
+sopra il titolo e quello 90 px sotto davano la targa. Il puntatore vicino se la
+ritrovava sotto e la rotazione invertiva. Adesso l'hover lo prende solo la
+scatola ferma (`h1`, link della barra), la targa ha `pointer-events:none`, parte
+dopo 180 ms di sosta e torna dopo 350 ms, e da telefono resta capovolta. Il
+gesto è lo stesso di prima. Provato con hover vero a 1280 e tocco a 375,
+console pulita, `4770d16`, online.
+
 ## Non verificato, e aperto
 
 - ✅ **Link buono dal 18/09: <https://barber-shop-snia.netlify.app>**. Il vecchio <https://barbershop-snia.netlify.app>, repo
