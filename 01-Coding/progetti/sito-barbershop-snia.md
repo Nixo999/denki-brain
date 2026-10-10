@@ -62,6 +62,19 @@ visibile il nostro logo, deve essere visibile il fatto che l'abbiamo fatto noi
 perché lui vuole aiutarci». Il marchio non è la firmetta del footer: è una
 presenza dichiarata in pagina, e deve leggersi come un pregio del sito.
 
+## La fonte del trapianto — regola di Nicola, 10/10/2026
+
+> «per la parte trapianti le info devono venire solo ed esclusivamente da questa
+> locandina, LE INFORMAZIONI E BASTA, il resto lascialo cosi come è adesso»
+
+La locandina è `fonte-locandina.webp` nel repo (verificare che sia la stessa
+mandata il 10/10). Dice: trapianto capelli Albania, **DHI**, da 1.800 €, gratis
+hotel, navetta aeroporto, visita e analisi, copertura 100%, preventivo
+gratuito, `andreailcarlot@libero.it`, +39 340 416 1806. Quello che non c'è
+(FUE, Tirana, «struttura visitata di persona», consulenza in barberia,
+descrizioni delle tecniche) non va in pagina. Dalla locandina si prendono le
+informazioni, non la grafica né lo slogan.
+
 ## Cosa non c'è, e non si inventa
 
 Listino prezzi (le recensioni dicono solo «onesti»), il nome del suo assistente,
