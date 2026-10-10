@@ -37,7 +37,8 @@ Da far confermare a voce.
 
 1. **Taglio e barba.** Classico e «tattico ultima moda», rasatura barba alla
    vecchia maniera, e una reputazione precisa coi bambini che hanno paura.
-2. **Tramite per i trapianti di capelli in Albania.** DHI e FUE, **da 1.800 €**,
+2. **Tramite per i trapianti di capelli in Albania.** DHI (la FUE veniva da un
+   suo post, e dal 10/10 in pagina vale solo la locandina), **da 1.800 €**,
    copertura 100%, con hotel, navetta dall'aeroporto, visita e analisi compresi.
    Preventivo gratuito. Un suo post del 2025 lo mostra a passeggio in centro a
    Tirana: in Albania ci va.
@@ -860,6 +861,14 @@ nel capitolo Orari. `86c7659`, online.
 In Bottega: «togli questa frase» («Il taglio di un bambino richiede più tempo di
 quello di un adulto…»). Tolta; resta un paragrafo, allineato alla base del
 titolo. `9f41b8c`, online.
+
+**Il trapianto riscritto sulla locandina** (regola in testa alla nota). Fuori
+FUE, Tirana, «visitata di persona», la consulenza in barberia e il paragrafo
+sulle due tecniche; dentro DHI · Albania, «gratis» al posto di «compreso», e
+il preventivo con telefono ed email come sulla locandina. Anche la porta
+dell'hero e la meta description. La colonna si è accorciata di 215 px: il
+binario del prima e dopo tiene `min-height:1095px` sopra i 900 px, così la
+corsa resta 541 px a 1280. `f1370db`, online.
 
 ## Non verificato, e aperto
 
