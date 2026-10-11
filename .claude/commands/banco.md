@@ -212,6 +212,8 @@ server non parte, si legge il log che nomina e si ripara da qui.
    perché («34 profili, 5 righe: 22 col sito»). Lo legge `prossimo-giro.py`.
 3. **[[registro-interventi]]** (database: nessuno), poi
    `python3 01-Coding/strumenti/genera-indice.py`, `add`, `commit`, `push`.
+   Nel commit entra anche **`02-Sales/strumenti/lista-corrente.csv`**: è il
+   banco, e online ci arriva solo col push.
 
 ## 10 · Come si risponde, e poi si tace
 
