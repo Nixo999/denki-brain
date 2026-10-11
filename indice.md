@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **287 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **288 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -214,6 +214,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-10-07-siti-e-ricerca-bs-mi-lc-lo]] — Per Patrick - il /banco del 7/10 finito l'8/10, 117 righe sul banco (siti 68, ricerca 49) da 11 celle, cosa guardare prima di mandare
 - [[2026-10-09-siti-e-ricerca-co-lc-bs-mi]] — Per Patrick - il /banco del 9/10 finito il 10/10, siti 100 e ricerca 60 da 20 celle, cosa guardare prima di mandare
 - [[2026-10-10-siti-e-ricerca-no-mi-pc-co]] — Per Patrick - il /banco del 10/10, siti 94 e ricerca 60 da 16 celle, cosa guardare prima di mandare
+- [[2026-10-11-siti-e-ricerca-giro-mattina]] — Per Patrick - il primo giro del mattino (11/10, partito alle 18:23), siti 18 e ricerca 29 da 11 celle, fonti quasi tutte ferme
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.

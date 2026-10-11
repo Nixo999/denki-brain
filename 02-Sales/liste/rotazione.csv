@@ -47,7 +47,7 @@ siti,NO,parrucchieri,parziale,3,2026-09-23,
 siti,NO,unghie,parziale,1,2026-09-17,
 siti,NO,fotografi e videomaker,esaurito,4,2026-10-10,"10/10: 30 profili, 1 riga. Finito per resa: 16 col sito, 7 sotto i 200, 3 fermi; altri ~20 di matrimonio.com col sito prima di aprire il profilo"
 siti,NO,trucco sposa e wedding,parziale,1,2026-09-23,
-siti,VB,tatuatori e piercing,parziale,1,2026-09-21,
+siti,VB,tatuatori e piercing,esaurito,2,2026-10-11,"11/10: 4 profili, 1 riga. Finito per bacino: 4 studi in provincia su PagineBianche, 1 privato, 1 fermo"
 siti,VB,barbieri,parziale,4,2026-09-25,
 siti,VB,"ciglia, sopracciglia e PMU",parziale,5,2026-09-29,
 siti,VB,parrucchieri,parziale,1,2026-09-19,
@@ -124,7 +124,7 @@ ricerca,MI,impiantisti,parziale,7,2026-09-25,
 ricerca,MI,officine e carrozzerie,esaurito,28,2026-10-07,"7/10: 48 profili, 8 righe. Finito per resa: 18 fermi, 16 piccoli; le strutturate sono concessionarie"
 ricerca,MI,meccanica e carpenterie,parziale,4,2026-09-25,
 ricerca,MI,edilizia e serramenti,esaurito,53,2026-10-09,"9/10: 44 profili, 6 righe. Finito per resa: 12 handle gia contattati, il resto fermi o piccoli"
-ricerca,MI,ingrossi e distribuzione,parziale,28,2026-10-05,"5/10: 81 profili, 19 righe. Aperta, fonti finite a una riga dalla quota"
+ricerca,MI,ingrossi e distribuzione,parziale,38,2026-10-11,"11/10: 38 profili, 10 righe. Aperta, rende 1 su 4; fonti nuove: elenco SoGeMi, soci Assodimi, PagineBianche"
 ricerca,MI,trasporti e logistica,parziale,7,2026-09-23,
 ricerca,MI,alimentari artigianali,esaurito,28,2026-10-09,"9/10: 31 profili, 5 righe. Finito per resa: 15 fermi, 8 piccoli, 3 troppo grandi"
 ricerca,MI,aziende agricole con vendita,parziale,23,2026-10-05,"5/10: 57 profili, 20 righe. Aperta, rende 1 su 3: restano nomi nel Parco Sud e Ticino"
@@ -186,11 +186,11 @@ ricerca,BS,edilizia e serramenti,esaurito,26,2026-10-05,"5/10: 30 profili, 5 rig
 ricerca,BS,ingrossi e distribuzione,parziale,12,2026-10-09,"9/10: 9 profili, 2 righe. Aperta, quota da riserva raggiunta"
 ricerca,BS,trasporti e logistica,parziale,2,2026-09-25,
 ricerca,BS,alimentari artigianali,parziale,11,2026-10-09,"9/10: 34 profili, 7 righe. Aperta, quota piena; restano @macelleriasaleepepe e @pastificiogerolasnc"
-ricerca,BS,aziende agricole con vendita,parziale,4,2026-09-23,
+ricerca,BS,aziende agricole con vendita,parziale,18,2026-10-11,"11/10: 24 profili, 14 righe. Aperta, rende 1 su 2; fonte: dati.lombardia.it e i tag di @coldiretti_brescia e @campagnamica_brescia"
 ricerca,BS,altro,parziale,46,2026-09-25,righe sparse di settori fuori elenco
 ricerca,CR,impiantisti,parziale,2,2026-09-29,
 ricerca,CR,officine e carrozzerie,parziale,6,2026-09-25,
-ricerca,CR,edilizia e serramenti,parziale,3,2026-09-29,
+ricerca,CR,edilizia e serramenti,esaurito,7,2026-10-11,"11/10: 113 profili, 4 righe. Finito per resa: ~90 fuori provincia dai motori, il resto fermi"
 ricerca,CR,alimentari artigianali,parziale,2,2026-09-29,
 ricerca,CR,aziende agricole con vendita,parziale,3,2026-09-29,
 ricerca,MN,falegnamerie,parziale,1,2026-09-12,
@@ -223,7 +223,7 @@ siti,LC,fotografi e videomaker,esaurito,10,2026-10-09,"9/10: 30 profili, 0 righe
 siti,MI,"sartorie, atelier e tappezzieri",esaurito,27,2026-10-07,"7/10: 30 profili, 4 righe. Finito per resa: 15 col sito"
 siti,MI,"personal trainer, pilates e yoga",esaurito,10,2026-10-09,"9/10: 30 profili, 3 righe. Finito per resa: 12 col sito, 4 catene o reception, motori fermi"
 siti,MI,fotografi e videomaker,esaurito,7,2026-10-05,"5/10: 40 profili, 7 righe. Finito per resa: 12 col sito, 8 sotto i 200 follower, 7 morti; 20 fotografi MI stanno gia nella lista sartorie del 2/10"
-siti,MI,fioristi e wedding planner,parziale,44,2026-10-10,"10/10: 124 profili, 25 righe. Aperta, rende 1 su 5 al limite: ~32 col sito, ~23 sotto i 200, ~14 fuori provincia; 42 nomi di matrimonio.com col dominio vivo"
+siti,MI,fioristi e wedding planner,esaurito,47,2026-10-11,"11/10: 30 profili, 3 righe. Finito per resa e fonti: matrimonio.com 403, Interflora da quasi tutti col sito, handle solo indovinati"
 siti,BG,toelettature e dog trainer,parziale,23,2026-10-05,"5/10: 108 profili, 23 righe. Fermata per fonti finite: 46 fuori provincia, 16 col sito"
 siti,MI,pasticcerie e cake designer,parziale,8,2026-10-05,"5/10: 20 profili, 8 righe. Riserva da 8, rende 2 su 5; Pagine Gialle 397 schede, restano nomi (Lambertini e Micake col gancio 6 tenuti fuori)"
 siti,LC,fioristi e wedding planner,parziale,7,2026-10-05,"5/10: 25 profili, 7 righe. Riserva da 7, rende 1 su 3,5; su matrimonio.com restano 10 fioristi e tutti i wedding planner"
@@ -246,3 +246,9 @@ ricerca,PV,falegnamerie,esaurito,0,2026-10-10,"10/10: 36 profili, 0 righe. Finit
 siti,VC,toelettature e dog trainer,esaurito,4,2026-10-10,"10/10: 53 profili, 4 righe. Finito per resa: 35 omonimi fuori provincia, in VC 4 sotto i 200, 3 col sito, 2 fermi, 2 negozi; 7 solo Facebook"
 siti,NO,fioristi e wedding planner,parziale,11,2026-10-10,"10/10: 49 profili, 11 righe. Aperta, quota piena: 14 col sito, 10 fuori zona o grossi; restano nomi senza sito da Google e Pagine Gialle da cercare su Instagram"
 siti,TO,toelettature e dog trainer,esaurito,20,2026-10-10,"10/10: circa 116 profili, 20 righe (1 su 5,8). Finito per resa, quota piena: 27 sotto i 200, 18 col sito, 13 fuori provincia; restano ~55 schede di toelettature.net e Pagine Gialle"
+siti,BI,toelettature e dog trainer,parziale,3,2026-10-11,"11/10: 18 profili, 3 righe. Aperta, chiusa per fonti: ~33 nomi in provincia, 15 senza handle trovabile con Instagram sloggato e motori fermi"
+siti,SO,toelettature e dog trainer,parziale,5,2026-10-11,"11/10: 17 profili, 5 righe. Aperta, chiusa per fonti (motori fermi, Instagram sloggato)"
+siti,LO,tatuatori e piercing,esaurito,3,2026-10-11,"11/10: 16 profili, 3 righe. Finito per bacino: le directory danno 6 studi in provincia, meta degli handle Lodi sono omonimi esteri"
+siti,LO,"personal trainer, pilates e yoga",esaurito,3,2026-10-11,"11/10: 89 profili, 3 righe. Finito per resa: ~55 omonimi fuori provincia, 4 col sito, 6 palestre con reception, 4 piccoli o fermi"
+siti,LO,fotografi e videomaker,esaurito,0,2026-10-11,"11/10: 46 profili, 0 righe. Finito: solo omonimi Lodi e account di comuni; fonti di ricerca bloccate"
+ricerca,LO,ingrossi e distribuzione,esaurito,1,2026-10-11,"11/10: 62 profili, 1 riga. Finito per resa: omonimi Lodi esteri, restano negozi piccoli"
