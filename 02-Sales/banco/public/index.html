@@ -5,76 +5,110 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="apple-touch-icon" href="/icone/apple-touch-icon.png">
-<meta name="theme-color" content="#0d0f13">
 <title>Banco DM — Instagram</title>
+<meta name="theme-color" content="#0b0d12">
+<link rel="icon" href="/icone/icona.svg" type="image/svg+xml">
 <style>
+  /* Banco DM — lo strato visivo. Un banco da lavoro, non una vetrina: si usa
+     cento volte al giorno, da computer e da telefono. Ogni colore ha un
+     mestiere (un prodotto, uno stato) e niente decora per decorare. */
   :root{
-    --sfondo:#0d0f13; --carta:#151922; --alto:#1b2029; --bordo:#232936; --bordo2:#303849;
-    --testo:#e9ecf1; --tenue:#98a2b3; --fioco:#6b7485;
+    color-scheme:dark;
+    --sfondo:#0b0d12; --carta:#141821; --alto:#1b2029; --bordo:#222836; --bordo2:#303848;
+    --testo:#eef1f6; --tenue:#9aa4b5; --fioco:#6b7484;
     --siti:#5b8cff; --denkishift:#a07cf8; --ricerca:#2bb8a3; --recuperi:#e3a008; --fatti:#8892a4;
     --accento:var(--siti); --ok:#3fb950; --allarme:#e3a008; --no:#e0705f;
+    --marchio-1:#923adf; --marchio-2:#da2f9b;
     --raggio:14px; --ombra:0 10px 30px -18px rgba(0,0,0,.9);
+    --testa:112px;                 /* altezza della testata, per lo sticky delle azioni */
+    --molla:cubic-bezier(.2,.8,.2,1);
   }
   @media (prefers-color-scheme: light){
-    :root{ --sfondo:#f4f6f9; --carta:#fff; --alto:#f0f2f6; --bordo:#e1e5ec; --bordo2:#cdd4e0;
-           --testo:#12151b; --tenue:#59616f; --fioco:#818a99;
-           --siti:#2b58e8; --denkishift:#7442e0; --ricerca:#0d8a7a; --recuperi:#9a6700;
-           --ok:#1a7f37; --allarme:#9a6700; --no:#c9483a; --ombra:0 8px 24px -18px rgba(15,20,30,.5); }
+    :root{ color-scheme:light;
+           --sfondo:#f3f5f9; --carta:#fff; --alto:#f0f2f6; --bordo:#e1e5ec; --bordo2:#cbd2de;
+           --testo:#12151b; --tenue:#59616f; --fioco:#7f8896;
+           --siti:#2b58e8; --denkishift:#7442e0; --ricerca:#0d8a7a; --recuperi:#9a6700; --fatti:#5f6a7d;
+           --ok:#1a7f37; --allarme:#9a6700; --no:#c9483a; --ombra:0 8px 24px -18px rgba(15,20,30,.45); }
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{margin:0;background:var(--sfondo);color:var(--testo);
-       font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;
-       -webkit-font-smoothing:antialiased}
+       font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;
+       -webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom)}
+  [hidden]{display:none!important}
   body[data-pagina=denkishift]{--accento:var(--denkishift)}
   body[data-pagina=ricerca]{--accento:var(--ricerca)}
   body[data-pagina=recuperi]{--accento:var(--recuperi)}
   body[data-pagina=fatti]{--accento:var(--fatti)}
 
   /* ---------- testata ---------- */
-  header{position:sticky;top:0;z-index:8;background:color-mix(in srgb,var(--sfondo) 88%,transparent);
-         backdrop-filter:saturate(1.6) blur(12px);border-bottom:1px solid var(--bordo)}
-  .testata{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:12px 22px 10px;
-           max-width:1180px;margin:0 auto}
-  .marchio{font-size:15px;font-weight:650;letter-spacing:.01em;display:flex;align-items:baseline;gap:9px}
-  .marchio small{font-weight:400;font-size:12px;color:var(--fioco)}
+  header{position:sticky;top:0;z-index:8;background:color-mix(in srgb,var(--sfondo) 86%,transparent);
+         backdrop-filter:saturate(1.6) blur(14px);-webkit-backdrop-filter:saturate(1.6) blur(14px);
+         border-bottom:1px solid var(--bordo)}
+  .testata{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:10px 22px 8px;
+           max-width:1140px;margin:0 auto}
+  .marchio{font-size:15px;font-weight:700;letter-spacing:-.01em;display:flex;align-items:baseline;gap:9px;
+           white-space:nowrap}
+  /* il segno: la goccia di DenkiCode, viola → magenta, tre millimetri */
+  .marchio::before{content:"";width:9px;height:9px;border-radius:50% 50% 50% 2px;align-self:center;
+                   background:linear-gradient(135deg,var(--marchio-1),var(--marchio-2))}
+  .marchio small{font-weight:450;font-size:12px;color:var(--fioco);overflow:hidden;text-overflow:ellipsis;max-width:22ch}
   .cresci{flex:1}
-  .misure{display:flex;gap:16px;align-items:center;font-size:12.5px;color:var(--tenue);
-          max-width:1180px;margin:0 auto;padding:0 22px 11px}
-  .misure b{color:var(--testo);font-size:14px;font-variant-numeric:tabular-nums}
+  /* la barra: linguette a sinistra, misure a destra, sulla stessa riga */
+  .barra{display:flex;align-items:stretch;gap:12px;max-width:1140px;margin:0 auto;padding:0 18px 0 14px}
+  nav.pagine{order:1;flex:1;min-width:0}
+  .misure{order:2;display:flex;gap:14px;align-items:center;font-size:12px;color:var(--fioco);
+          white-space:nowrap;overflow-x:auto;scrollbar-width:none;padding:0 4px}
+  .misure::-webkit-scrollbar{display:none}
+  .misure span{display:inline-flex;gap:5px;align-items:baseline}
+  .misure b{color:var(--testo);font-size:13.5px;font-variant-numeric:tabular-nums;display:inline-block}
   .misure b.corri{color:var(--allarme)}
 
   /* ---------- controlli ---------- */
-  button{font:inherit;font-size:13px;padding:8px 13px;border-radius:10px;
+  button{font:inherit;font-size:13px;padding:8px 13px;border-radius:10px;min-height:36px;
          border:1px solid var(--bordo2);background:var(--carta);color:var(--testo);cursor:pointer;
-         transition:border-color .15s,background .15s,transform .06s}
+         transition:border-color .15s,background .15s,color .15s,transform .08s var(--molla)}
   button:hover:not(:disabled){border-color:var(--accento)}
-  button:active:not(:disabled){transform:translateY(1px)}
+  button:active:not(:disabled){transform:scale(.98)}
   button:disabled{opacity:.38;cursor:not-allowed}
-  button.primario{background:var(--accento);border-color:var(--accento);color:#fff;font-weight:620;
-                  padding:10px 16px;box-shadow:var(--ombra)}
+  button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{
+    outline:2px solid var(--accento);outline-offset:2px}
+  button.primario{background:var(--accento);border-color:transparent;color:#fff;font-weight:650;
+                  padding:11px 16px;min-height:44px;font-size:14px;letter-spacing:.005em;
+                  box-shadow:inset 0 1px 0 rgba(255,255,255,.14)}
   button.primario:hover:not(:disabled){filter:brightness(1.08)}
-  button.fatto{background:var(--ok);border-color:var(--ok)}
-  button.piccolo{font-size:12.5px;padding:7px 11px;color:var(--tenue);background:transparent}
+  button.fatto{background:var(--ok);border-color:transparent}
+  button.piccolo{font-size:12.5px;padding:7px 11px;color:var(--tenue);background:transparent;min-height:34px}
   select,input[type=search],input[type=text]{font:inherit;font-size:13px;padding:8px 11px;border-radius:10px;
-         border:1px solid var(--bordo2);background:var(--carta);color:var(--testo)}
-  input[type=search]{width:190px}
+         border:1px solid var(--bordo2);background:var(--carta);color:var(--testo);min-height:36px}
+  input[type=search]{width:200px;padding-left:30px;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%238a93a3' stroke-width='2.4' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.5-3.5'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:10px center}
   input[type=search]::-webkit-search-cancel-button{filter:grayscale(1) opacity(.5)}
   .scorciatoia{font-size:11px;color:var(--fioco);border:1px solid var(--bordo);border-radius:5px;
                padding:0 4px;margin-left:6px;font-family:ui-monospace,monospace}
+  #annulla{max-width:34ch;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
-  /* ---------- pagine ---------- */
-  nav.pagine{display:flex;gap:4px;max-width:1180px;margin:0 auto;padding:0 18px;overflow-x:auto}
-  nav.pagine button{border:0;background:transparent;color:var(--tenue);border-radius:0;
-                    padding:11px 13px 12px;border-bottom:2px solid transparent;font-size:13.5px;white-space:nowrap}
+  /* ---------- pagine: le linguette, con l'indicatore che scorre ---------- */
+  nav.pagine{display:flex;gap:2px;overflow-x:auto;position:relative;scrollbar-width:none;
+             --ix:0px;--iw:0px}
+  nav.pagine::-webkit-scrollbar{display:none}
+  nav.pagine::after{content:"";position:absolute;left:0;bottom:0;height:2px;border-radius:2px 2px 0 0;
+                    width:var(--iw);transform:translateX(var(--ix));background:var(--accento);
+                    transition:transform .32s var(--molla),width .32s var(--molla),background .2s}
+  nav.pagine button{border:0;background:transparent;color:var(--tenue);border-radius:0;min-height:0;
+                    padding:11px 12px 12px;font-size:13.5px;white-space:nowrap;display:inline-flex;align-items:center}
   nav.pagine button:hover{color:var(--testo)}
-  nav.pagine button b{margin-left:7px;font-variant-numeric:tabular-nums;color:var(--fioco);font-weight:600}
-  nav.pagine button.attiva{color:var(--testo);font-weight:640;border-bottom-color:var(--tinta)}
-  nav.pagine button.attiva b{color:var(--tinta)}
+  nav.pagine button:active{transform:none}
+  nav.pagine button b{margin-left:7px;font-variant-numeric:tabular-nums;color:var(--fioco);font-weight:600;
+                      font-size:12px;padding:1px 7px;border-radius:99px;background:var(--alto);display:inline-block;
+                      transition:color .2s,background .2s}
+  nav.pagine button.attiva{color:var(--testo);font-weight:650}
+  nav.pagine button.attiva b{color:#fff;background:var(--tinta)}
   #p-siti{--tinta:var(--siti)} #p-ricerca{--tinta:var(--ricerca)}
   #p-recuperi{--tinta:var(--recuperi)} #p-fatti{--tinta:var(--fatti)}
 
-  main{padding:22px;max-width:1180px;margin:0 auto}
+  main{padding:20px 22px 48px;max-width:1140px;margin:0 auto}
   .nota{color:var(--tenue);font-size:13px;margin:0 0 16px;max-width:78ch}
   .nota b{color:var(--testo)}
   .nota a{color:var(--accento)}
@@ -84,70 +118,153 @@
   .sezione b{color:var(--testo)}
   .sezione::after{content:"";flex:1;height:1px;background:var(--bordo)}
 
-  /* ---------- cartella ---------- */
+  /* ---------- cartella ----------
+     Si legge dall'alto: chi e` (handle grande), poi il suo mondo (nome,
+     comune, follower), poi perche` gli si scrive (etichette, e per i recuperi
+     il motivo, che sta sopra tutto), poi il messaggio, e a destra il tasto.
+     La riga colorata a sinistra e` il prodotto: si distingue anche fra i gia`
+     contattati, dove si mescolano. Niente ombre: ce ne sono a centinaia. */
   .riga{background:var(--carta);border:1px solid var(--bordo);border-radius:var(--raggio);
-        padding:15px 17px;margin-bottom:11px;display:grid;
-        grid-template-columns:minmax(0,1fr) 190px;gap:16px;align-items:start;
-        transition:border-color .15s,box-shadow .15s}
+        padding:16px 18px 16px 20px;margin-bottom:10px;display:grid;position:relative;
+        grid-template-columns:minmax(0,1fr) 200px;gap:18px;align-items:start;
+        transition:border-color .15s}
+  .riga::before{content:"";position:absolute;left:-1px;top:14px;bottom:14px;width:3px;border-radius:0 3px 3px 0;
+                background:var(--tinta,var(--accento))}
   .riga:hover{border-color:var(--bordo2)}
-  .riga.fatta{opacity:.55}
-  .riga.recupero{border-left:3px solid var(--recuperi)}
-  .riga.scartata{opacity:.6;border-style:dashed}
-  .riga.riaperta{border-color:var(--accento);box-shadow:0 0 0 1px var(--accento) inset}
-  @keyframes lampo{0%{background:color-mix(in srgb,var(--accento) 22%,var(--carta))}100%{background:var(--carta)}}
-  .riga.lampo{animation:lampo 1.6s ease-out}
-  .chi{min-width:0}
-  .capo{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-  .capo b{font-size:15.5px;letter-spacing:.01em}
+  .riga.fatta{opacity:.6}
+  .riga.fatta::before{background:var(--fatti)}
+  .riga.recupero::before{background:var(--recuperi)}
+  .riga.scartata{opacity:.55;border-style:dashed}
+  .riga.scartata::before{background:var(--no)}
+  .riga.riaperta{border-color:var(--accento)}
+  .riga.riaperta::before{background:var(--accento)}
+  /* il lampo di chi torna con ⌘Z: un anello che si apre e un fondo che sbianca */
+  @keyframes lampo{
+    0%{background:color-mix(in srgb,var(--accento) 26%,var(--carta));box-shadow:0 0 0 0 color-mix(in srgb,var(--accento) 60%,transparent)}
+    40%{box-shadow:0 0 0 10px transparent}
+    100%{background:var(--carta);box-shadow:0 0 0 10px transparent}}
+  /* l'ingresso al cambio pagina: breve, a scalare sulle prime dieci */
+  @keyframes entra{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  #lista.entra>:nth-child(-n+10){animation:entra .34s var(--molla) both;animation-delay:calc(var(--i,0)*28ms)}
+  /* sta dopo l'ingresso e con la stessa specificita`: la riga riaperta e` la
+     prima della pagina, e il lampo deve vincere sull'ingresso */
+  :is(#lista,#lista-vecchie) .riga.lampo{animation:lampo 1.6s ease-out}
+  .chi{min-width:0;display:flex;flex-direction:column}
+  .capo{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+  .capo b{font-size:17px;letter-spacing:-.01em;margin-right:2px}
   .capo a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
   .capo a:hover{border-bottom-color:var(--accento)}
-  .meta{color:var(--tenue);font-size:13px;margin-top:3px}
+  .meta{color:var(--tenue);font-size:13px;margin-top:4px;display:flex;flex-wrap:wrap;gap:0 4px;align-items:baseline}
+  .meta b{color:var(--testo);font-weight:600}
+  .meta span:empty{display:none}
+  .meta span+span::before,.meta b+span::before{content:"·";color:var(--fioco);margin-right:4px}
   /* perche` una riga sta fra i recuperi: e` la riga che si legge per prima, e
      va letta come una frase, non come un dato */
-  .motivo{margin-top:6px;font-size:12.8px;line-height:1.5;color:var(--recuperi);font-weight:600}
-  .prova{color:var(--fioco);font-size:12.5px;margin-top:5px;cursor:pointer;
+  .motivo{order:-1;margin:0 0 10px;padding:8px 12px;border-radius:9px;font-size:13px;line-height:1.45;
+          color:var(--recuperi);font-weight:600;background:color-mix(in srgb,var(--recuperi) 12%,transparent);
+          border:1px solid color-mix(in srgb,var(--recuperi) 35%,transparent)}
+  .motivo:empty{display:none}
+  .prova{color:var(--fioco);font-size:12.5px;margin-top:6px;cursor:pointer;
          display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .prova:empty{display:none}
   .prova.tutta{-webkit-line-clamp:unset}
-  .scheda{margin-top:10px;padding:9px 12px;border-radius:10px;font-size:12.8px;line-height:1.6;
+  .scheda{margin-top:10px;padding:9px 12px;border-radius:10px;font-size:12.8px;line-height:1.55;
           white-space:pre-line;background:var(--alto);border:1px solid var(--bordo);color:var(--tenue)}
-  .msg{margin-top:12px;font:inherit;font-size:13.5px;line-height:1.6;color:var(--testo);
+  .msg{margin-top:12px;font:inherit;font-size:13.5px;line-height:1.6;color:var(--testo);max-width:72ch;
        background:transparent;border:0;border-left:2px solid var(--bordo);padding:2px 0 2px 14px;
-       width:100%;resize:none;overflow:hidden;display:block}
+       width:100%;resize:none;overflow:hidden;display:block;transition:border-color .15s}
   .msg:focus{outline:none;border-left-color:var(--accento)}
   .msg:disabled{color:var(--tenue)}
-  .azioni{display:flex;flex-direction:column;gap:8px;align-items:stretch;position:sticky;top:120px}
+  .azioni{display:flex;flex-direction:column;gap:8px;align-items:stretch;position:sticky;top:calc(var(--testa) + 12px)}
+  .azioni .meta{font-size:12.5px;color:var(--no)}
   .buco{margin-top:11px;display:flex;gap:8px;align-items:center}
-  .buco label{color:var(--allarme);font-size:12.5px;white-space:nowrap}
+  .buco label{color:var(--allarme);font-size:12.5px;white-space:nowrap;font-weight:600}
   .buco input{border-color:var(--allarme);width:100%}
-  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:99px;
-       border:1px solid var(--bordo2);color:var(--tenue);letter-spacing:.02em}
-  .tag.prod{border-color:var(--tinta,var(--accento));color:var(--tinta,var(--accento))}
-  .tag.rec{border-color:var(--recuperi);color:var(--recuperi)}
-  .tag.ok{border-color:var(--ok);color:var(--ok)}
-  .tag.no{border-color:var(--no);color:var(--no)}
-  .tag.riaperta{border-color:var(--accento);color:var(--accento)}
+  .tag{display:inline-flex;align-items:center;font-size:11px;padding:2px 8px;border-radius:99px;line-height:1.5;
+       border:1px solid var(--bordo2);color:var(--tenue);letter-spacing:.02em;font-variant-numeric:tabular-nums}
+  .tag.prod{border-color:transparent;color:var(--tinta,var(--accento));
+            background:color-mix(in srgb,var(--tinta,var(--accento)) 14%,transparent);font-weight:600}
+  .tag.rec{border-color:transparent;color:var(--recuperi);background:color-mix(in srgb,var(--recuperi) 14%,transparent);font-weight:600}
+  .tag.ok{border-color:transparent;color:var(--ok);background:color-mix(in srgb,var(--ok) 13%,transparent)}
+  .tag.no{border-color:transparent;color:var(--no);background:color-mix(in srgb,var(--no) 13%,transparent);font-weight:600}
+  .tag.riaperta{border-color:transparent;color:var(--accento);background:color-mix(in srgb,var(--accento) 14%,transparent);font-weight:600}
 
-  /* ---------- avvisi, vuoti, brindisi ---------- */
-  .stop{background:color-mix(in srgb,var(--no) 16%,var(--sfondo));border:1px solid var(--no);
-        color:var(--testo);padding:13px 16px;border-radius:12px;margin-bottom:18px;font-size:13.5px}
+  /* ---------- avvisi, vuoti, caricamento, brindisi ---------- */
+  #lista > .altri{display:block;width:100%;margin:6px 0 14px;padding:12px}
+  .stop{background:color-mix(in srgb,var(--no) 14%,var(--sfondo));border:1px solid color-mix(in srgb,var(--no) 55%,transparent);
+        color:var(--testo);padding:12px 16px;border-radius:12px;margin-bottom:16px;font-size:13.5px;line-height:1.5}
+  /* i gesti non ancora salvati: ambra, non rosso — ci riprova da solo */
+  #nonsalvati{background:color-mix(in srgb,var(--allarme) 13%,var(--sfondo));
+              border-color:color-mix(in srgb,var(--allarme) 50%,transparent);padding:9px 14px;font-size:13px;
+              display:flex;align-items:center;gap:10px}
+  #nonsalvati::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--allarme);flex:none;
+                      animation:pulsa 1.4s ease-in-out infinite}
+  @keyframes pulsa{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.8)}}
+  /* lo scheletro: tre cartelle finte dipinte col gradiente, un bagliore che passa */
+  .caricamento{position:relative;min-height:390px;border-radius:var(--raggio);overflow:hidden;
+    font-size:12.5px;color:var(--fioco);padding:0 0 0 2px;
+    background:
+      linear-gradient(var(--carta),var(--carta)) 0 28px/100% 112px no-repeat,
+      linear-gradient(var(--carta),var(--carta)) 0 150px/100% 112px no-repeat,
+      linear-gradient(var(--carta),var(--carta)) 0 272px/100% 112px no-repeat;
+    }
+  .caricamento::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(100deg,transparent 30%,color-mix(in srgb,var(--testo) 6%,transparent) 50%,transparent 70%);
+    animation:bagliore 1.6s linear infinite}
+  @keyframes bagliore{from{transform:translateX(-60%)}to{transform:translateX(60%)}}
   .vuoto{color:var(--tenue);text-align:center;padding:54px 22px;border:1px dashed var(--bordo2);
-         border-radius:16px;font-size:14px}
+         border-radius:16px;font-size:14px;line-height:1.6}
   .vuoto b{color:var(--testo)}
   .vuoto code{background:var(--alto);padding:2px 6px;border-radius:6px;font-size:12.5px}
   body.trascina .vuoto{border-color:var(--accento);color:var(--testo)}
   details.piega{margin-top:26px;border-top:1px solid var(--bordo);padding-top:14px}
   details.piega summary{cursor:pointer;color:var(--tenue);font-size:13.5px;margin-bottom:14px}
   details.piega summary b{color:var(--testo)}
-  #brindisi{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(14px);
+  /* il brindisi: una pillola con la riga del tempo che si consuma (3,2 s, come
+     il timeout in brindisi()) */
+  #brindisi{position:fixed;left:50%;bottom:max(22px,env(safe-area-inset-bottom));
+            transform:translateX(-50%) translateY(16px) scale(.96);
             background:var(--carta);border:1px solid var(--bordo2);box-shadow:var(--ombra);
-            padding:11px 16px;border-radius:12px;font-size:13.5px;opacity:0;pointer-events:none;
-            transition:opacity .2s,transform .2s;z-index:20;max-width:82vw}
-  #brindisi.vedi{opacity:1;transform:translateX(-50%) translateY(0)}
+            padding:11px 18px 13px;border-radius:14px;font-size:13.5px;opacity:0;pointer-events:none;
+            transition:opacity .22s,transform .32s var(--molla);z-index:20;max-width:min(82vw,520px);overflow:hidden}
+  #brindisi::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:100%;background:var(--accento);
+                   transform-origin:left;transform:scaleX(0)}
+  #brindisi.vedi{opacity:1;transform:translateX(-50%) translateY(0) scale(1)}
+  #brindisi.vedi::after{animation:consuma 3.2s linear forwards}
+  @keyframes consuma{from{transform:scaleX(1)}to{transform:scaleX(0)}}
+
+  /* ---------- telefono ---------- */
   @media (max-width:720px){
-    .riga{grid-template-columns:minmax(0,1fr)}
-    .azioni{position:static;flex-direction:row;flex-wrap:wrap}
-    .azioni button{flex:1}
-    input[type=search]{width:100%}
+    :root{--testa:150px}
+    .testata{padding:8px 12px 6px;gap:6px}
+    .marchio{font-size:14px;order:0}
+    .marchio small{max-width:16ch}
+    #account{order:1;font-size:12.5px;padding:6px 8px;max-width:42vw}
+    .cresci{order:0}
+    #cerca{order:3;flex:1 1 120px;width:auto;min-width:0}
+    #annulla{order:4;max-width:38vw}
+    #scarica,#esci{order:5;font-size:0;padding:0;width:36px;flex:none}
+    #scarica::before,#esci::before{font-size:15px;line-height:1}
+    #scarica::before{content:"⤓"} #esci::before{content:"⎋"}
+    .barra{flex-direction:column;gap:0;padding:0 8px}
+    .misure{order:1;gap:12px;padding:0 6px 4px;font-size:11.5px}
+    nav.pagine{order:2;padding:0 2px}
+    nav.pagine button{padding:10px 10px 11px;font-size:13px}
+    main{padding:14px 12px 40px}
+    .riga{grid-template-columns:minmax(0,1fr);gap:12px;padding:14px 14px 14px 16px;border-radius:12px}
+    .capo b{font-size:16px}
+    .azioni{position:static;flex-direction:row;flex-wrap:wrap;gap:6px}
+    .azioni button{flex:1 1 30%}
+    .azioni button.primario{flex:1 1 100%;min-height:50px;font-size:15px}
+    .azioni .meta{flex:1 1 100%}
+    .msg{max-width:none}
+    #brindisi{max-width:calc(100vw - 24px);width:max-content}
+  }
+
+  /* ---------- niente movimento, se l'ha chiesto il sistema ---------- */
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{animation:none!important;transition:none!important}
   }
 </style>
 </head>
@@ -166,6 +283,7 @@
     <button id="scarica" disabled title="Il CSV con le date di invio di oggi, da rimettere nel vault">Scarica il CSV</button>
     <button id="esci" class="piccolo" title="Esci da questo dispositivo">Esci</button>
   </div>
+  <div class="barra">
   <div class="misure">
     <span>oggi <b id="oggi">0</b></span>
     <span>ultima ora <b id="ora">0</b></span>
@@ -179,6 +297,7 @@
     <button id="p-recuperi">Da ricontattare <b>0</b></button>
     <button id="p-fatti">Già contattati <b>0</b></button>
   </nav>
+  </div>
 </header>
 
 <main>
@@ -501,7 +620,7 @@ const oggiISO = () => new Date().toLocaleDateString("sv-SE");   // 2026-09-02
 const pulito = (s) => (s || "").trim().replace(/^@/, "").toLowerCase();
 
 let intestazione = [], dati = [], nomeFile = "lista.csv", col = {};
-let pagina = "siti", filtro = "";
+let pagina = "siti", filtro = "", quantiFatti = 100;
 
 /* Gli orari degli invii stanno solo qui, non nel CSV: servono a leggere il
    ritmo dell'ultima ora e non sono un dato della lista. */
@@ -930,7 +1049,19 @@ function disegna(){
       (pagina === "fatti"
         ? ' <a href="/api/esporta?file=contattati" download>L\'elenco nel brain</a>.'
         : "");
-    voci.forEach(v => lista.appendChild(cartella(v)));
+    /* «Già contattati» passa le 2.000 righe: disegnarle tutte bloccava la scheda
+       per piu` di 45 secondi (misurato l'11/10/2026, anche sul banco vecchio).
+       Si disegnano a blocchi di 100, gli ultimi in cima. */
+    const mostrate = pagina === "fatti" ? voci.slice(0, quantiFatti) : voci;
+    mostrate.forEach(v => lista.appendChild(cartella(v)));
+    if (mostrate.length < voci.length){
+      const altri = document.createElement("button");
+      altri.className = "piccolo altri";
+      altri.textContent = "Mostra altri " + Math.min(100, voci.length - mostrate.length) +
+                          " (" + mostrate.length + " di " + voci.length + ")";
+      altri.addEventListener("click", () => { quantiFatti += 100; disegna(); });
+      lista.appendChild(altri);
+    }
     if (!voci.length) vuotoDi(pagina, secchi[pagina].length);
     if (pagina === "fatti" && secchi.scartate.length){
       piega.hidden = false;
@@ -959,7 +1090,7 @@ function disegna(){
     const liste = [...new Set(mostrate.map(v => v.lista))];
     nota.innerHTML = PRODOTTI[pagina].nota +
       (liste.length ? "<br>" + (liste.length > 1 ? "Liste di oggi: " : "Lista di oggi: ") +
-        liste.map(l => "<b>" + l.replace(/\.csv$/i, "") + "</b>").join(" e ") + "." : "");
+        liste.map(l => "<b>" + corto(l) + "</b>").join(" e ") + "." : "");
     let corrente = null;
     mostrate.forEach(v => {
       if (v.lista !== corrente && liste.length > 1){
@@ -967,7 +1098,7 @@ function disegna(){
         const h = document.createElement("div");
         h.className = "sezione";
         h.innerHTML = "<b>" + mostrate.filter(x => x.lista === v.lista).length + "</b> da scrivere · " +
-                      v.lista.replace(/\.csv$/i, "");
+                      corto(v.lista);
         lista.appendChild(h);
       }
       lista.appendChild(cartella(v));
@@ -999,6 +1130,10 @@ function disegna(){
 
 /* il filtro della testata: handle, nome, comune. Serve a ritrovare un profilo
    di cui ci si ricorda il nome — per esempio quello che si e` appena chiuso. */
+/* il nome della lista senza data, «instagram» ed estensione: sono «di oggi»
+   per definizione, e sul telefono i nomi interi riempivano mezzo schermo */
+function corto(l){ return l.replace(/\.csv$/i, "").replace(/^\d{4}-\d{2}-\d{2}-(instagram-)?/, ""); }
+
 function passa(v){
   if (!filtro) return true;
   const campi = [v.r[col.account], v.r[col.nome], v.r[col.comune], v.r[col.segmento]];
@@ -1037,6 +1172,7 @@ function riempiPiega(quali){
 /* ---- il cambio pagina, anche da tastiera ---- */
 function mostraPagina(p){
   pagina = p;
+  quantiFatti = 100;
   document.getElementById("piega").open = false;
   document.getElementById("lista-vecchie").innerHTML = "";
   disegna();
@@ -1048,6 +1184,7 @@ function mostraPagina(p){
 const cerca = document.getElementById("cerca");
 cerca.addEventListener("input", () => {
   filtro = cerca.value.trim().toLowerCase().replace(/^@/, "");
+  quantiFatti = 100;
   document.getElementById("lista-vecchie").innerHTML = "";
   disegna();
 });
@@ -1124,7 +1261,7 @@ function cartella(v){
         ${inviato && !daRecuperare ? '<span class="tag ok">' + inviato + (ricontattato ? " + recupero" : "") + "</span>" : ""}
         ${prodotto === "siti" ? '<span class="tag">gancio ' + (codice || "?") + "</span>" : ""}
       </div>
-      <div class="meta">${nome} — ${r[col.comune] || ""} · ${r[col.follower] || "?"} follower${(r[col.segmento] || "").trim() ? " · " + r[col.segmento].trim() : ""}</div>
+      <div class="meta"><b>${nome}</b><span>${r[col.comune] || ""}</span><span>${r[col.follower] || "?"} follower</span>${(r[col.segmento] || "").trim() ? "<span>" + r[col.segmento].trim() + "</span>" : ""}</div>
       ${daRecuperare ? '<div class="motivo"></div>' : ""}
       <div class="prova" title="clicca per leggerla tutta"></div>
       ${(r[col.scheda] || "").trim() ? '<div class="scheda"></div>' : ""}
@@ -1264,6 +1401,7 @@ function cartella(v){
       segnaOra();
       annota(r, "contattati", "aggiungi", "recupero");
       ricorda_gesto(r, "contattati", "recupero");
+      congeda(el);
       setTimeout(() => { disegna(); brindisi("Recupero segnato per @" + utente + ". Ora sta fra i già contattati."); }, 400);
       return;
     }
@@ -1273,6 +1411,7 @@ function cartella(v){
       annota(r, "contattati", "aggiungi", "primo");
       ricorda_gesto(r, "contattati", "primo");
       togliRiaperta();
+      congeda(el);
       /* mezzo secondo prima di ridisegnare: la cartella sparisce dalla pagina e
          senza quella pausa non si vede nemmeno che tasto si e` premuto */
       setTimeout(() => { disegna(); brindisi("@" + utente + " segnato. Chiuso per sbaglio? ⌘Z lo rimette in cima."); }, 400);
@@ -1323,6 +1462,74 @@ document.getElementById("scarica").addEventListener("click", () => {
   a.click();
   URL.revokeObjectURL(a.href);
 });
+
+/* ---- il movimento ----------------------------------------------------------
+   Solo CSS e Web Animations API, e tutto si spegne con prefers-reduced-motion.
+   Niente qui tocca i dati: osserva quello che disegna() ha gia` fatto. */
+const FERMO = matchMedia("(prefers-reduced-motion: reduce)");
+
+/* la cartella che esce: si stringe e scivola nei 400 ms che il tasto aspetta
+   gia` prima di ridisegnare */
+function congeda(el){
+  if (FERMO.matches || !el.isConnected) return;
+  const h = el.offsetHeight;
+  el.style.overflow = "hidden"; el.style.pointerEvents = "none";
+  el.animate([
+    {height: h + "px", opacity: 1, transform: "none", marginBottom: getComputedStyle(el).marginBottom},
+    {height: h + "px", opacity: 0, transform: "translateX(28px) scale(.98)", offset: .55},
+    {height: "0px", opacity: 0, transform: "translateX(28px) scale(.98)", marginBottom: "0px",
+     paddingTop: "0px", paddingBottom: "0px", borderTopWidth: "0px", borderBottomWidth: "0px"}
+  ], {duration: 380, easing: "cubic-bezier(.4,0,.2,1)", fill: "forwards"});
+}
+
+/* l'indicatore sotto la linguetta attiva: misura e scorre */
+function indicatore(){
+  const nav = document.querySelector("nav.pagine");
+  const b = nav.querySelector("button.attiva");
+  if (!b) return;
+  nav.style.setProperty("--ix", b.offsetLeft + "px");
+  nav.style.setProperty("--iw", b.offsetWidth + "px");
+  b.scrollIntoView({block: "nearest", inline: "nearest", behavior: FERMO.matches ? "instant" : "smooth"});
+}
+indicatore();
+addEventListener("resize", indicatore);
+
+/* al cambio pagina le prime dieci cartelle entrano a scalare (solo quelle:
+   fra i gia` contattati ce ne sono duemila); il filtro e i gesti sulla stessa
+   pagina ridisegnano senza animare, che sarebbe rumore */
+new MutationObserver(ms => {
+  indicatore();
+  if (!ms.some(m => m.oldValue !== document.body.dataset.pagina)) return;
+  const lista = document.getElementById("lista");
+  lista.classList.remove("entra");
+  void lista.offsetWidth;
+  Array.from(lista.children).slice(0, 10).forEach((el, i) => el.style.setProperty("--i", i));
+  lista.classList.add("entra");
+}).observe(document.body, {attributes: true, attributeFilter: ["data-pagina"], attributeOldValue: true});
+
+/* lo scheletro se ne va appena c'e` qualcosa da leggere: una cartella, o un
+   vuoto. Chi carica i dati puo` nasconderlo prima; questo e` solo il ripiego */
+new MutationObserver(() => {
+  const c = document.getElementById("caricamento");
+  /* il controllo evita di riscrivere l'attributo: ogni scrittura e` una
+     mutazione, e l'osservatore si richiamerebbe da solo all'infinito */
+  if (!c.hidden && (document.getElementById("lista").childElementCount ||
+      !document.getElementById("niente").hidden || !document.getElementById("vuoto").hidden))
+    c.hidden = true;
+}).observe(document.querySelector("main"), {childList: true, subtree: true, attributes: true, attributeFilter: ["hidden"]});
+
+/* i contatori scattano quando il numero cambia: in testata e sulle linguette */
+new MutationObserver(ms => {
+  if (FERMO.matches) return;
+  ms.forEach(m => {
+    const b = m.target;
+    if (!(b instanceof HTMLElement) || b.tagName !== "B") return;
+    const prima = Array.from(m.removedNodes).map(n => n.textContent).join("");
+    if (prima === b.textContent) return;
+    b.animate([{transform: "translateY(-7px)", opacity: 0}, {transform: "none", opacity: 1}],
+              {duration: 280, easing: "cubic-bezier(.2,.8,.2,1)"});
+  });
+}).observe(document.querySelector("header"), {childList: true, subtree: true});
 </script>
 </body>
 </html>

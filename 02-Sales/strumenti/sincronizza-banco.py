@@ -78,7 +78,7 @@ def main():
         vault = righe(p.read_text(encoding="utf-8")) if p.exists() else []
         online = righe(scarica(url, token, nome))
         tutte, n = unisci(vault, online)
-        print(f"{nome}: vault {len(vault)}, online {len(online)}, nuove {n}")
+        print(f"{nome}: vault {len(vault)}, online {len(online)}, nuove {n}", flush=True)
         if n and not prova:
             with p.open("w", encoding="utf-8", newline="") as f:
                 w = csv.DictWriter(f, fieldnames=CAMPI, lineterminator="\n")

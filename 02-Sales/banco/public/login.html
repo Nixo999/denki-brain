@@ -6,22 +6,42 @@
 <meta name="robots" content="noindex, nofollow">
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="apple-touch-icon" href="/icone/apple-touch-icon.png">
-<meta name="theme-color" content="#0d0f13">
+<meta name="theme-color" content="#0b0d12">
+<link rel="icon" href="/icone/icona.svg" type="image/svg+xml">
 <title>Banco DM — Entra</title>
 <style>
-  :root{color-scheme:dark light}
-  body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0d0f13;color:#e9ecf1;
-       font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
-  form{display:grid;gap:10px;width:min(320px,88vw)}
-  h1{font-size:16px;font-weight:650;margin:0 0 6px}
-  input,button{font:inherit;padding:11px 13px;border-radius:10px;border:1px solid #303849;background:#151922;color:inherit}
-  button{background:#5b8cff;border-color:#5b8cff;color:#fff;font-weight:620;cursor:pointer}
-  #errore{margin:0;color:#e0705f;font-size:13.5px}
+  /* Stesso banco, stessi colori: inchiostro e carta, la goccia di DenkiCode. */
+  :root{color-scheme:dark;--sfondo:#0b0d12;--carta:#141821;--bordo2:#303848;--testo:#eef1f6;--fioco:#6b7484;
+        --accento:#5b8cff;--no:#e0705f;--marchio-1:#923adf;--marchio-2:#da2f9b}
+  @media (prefers-color-scheme: light){
+    :root{color-scheme:light;--sfondo:#f3f5f9;--carta:#fff;--bordo2:#cbd2de;--testo:#12151b;--fioco:#7f8896;
+          --accento:#2b58e8;--no:#c9483a}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;min-height:100dvh;display:grid;place-items:center;padding:16px;
+       background:var(--sfondo);color:var(--testo);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;
+       -webkit-font-smoothing:antialiased}
+  form{display:grid;gap:10px;width:min(320px,100%);animation:entra .5s cubic-bezier(.2,.8,.2,1) both}
+  h1{font-size:20px;font-weight:700;letter-spacing:-.015em;margin:0;display:flex;align-items:center;gap:10px}
+  h1::before{content:"";width:12px;height:12px;border-radius:50% 50% 50% 2px;
+             background:linear-gradient(135deg,var(--marchio-1),var(--marchio-2))}
+  .sotto{margin:0 0 12px;color:var(--fioco);font-size:13px}
+  input,button{font:inherit;font-size:16px;padding:12px 14px;border-radius:12px;border:1px solid var(--bordo2);
+               background:var(--carta);color:inherit;transition:border-color .15s,transform .08s,filter .15s}
+  input:focus{outline:none;border-color:var(--accento);box-shadow:0 0 0 3px color-mix(in srgb,var(--accento) 22%,transparent)}
+  button{background:var(--accento);border-color:transparent;color:#fff;font-weight:650;cursor:pointer;margin-top:4px}
+  button:hover{filter:brightness(1.08)}
+  button:active{transform:translateY(1px)}
+  #errore{margin:0;color:var(--no);font-size:13.5px;animation:scuoti .32s ease}
+  @keyframes entra{from{opacity:0;transform:translateY(10px)}}
+  @keyframes scuoti{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+  @media (prefers-reduced-motion: reduce){form,#errore{animation:none}}
 </style>
 </head>
 <body>
 <form id="accesso">
   <h1>Banco DM</h1>
+  <p class="sotto">DenkiCode · i DM del giorno</p>
   <input name="utente" autocomplete="username" required aria-label="Nome" placeholder="nome">
   <input name="password" type="password" autocomplete="current-password" required aria-label="Password" placeholder="password">
   <button type="submit">Entra</button>

@@ -8,7 +8,9 @@
   # diff e' vuoto e il primo build verrebbe saltato. I commit del giro
   # automatico (banco-sync.yml) non ricostruiscono: portano solo le date degli
   # invii dentro le liste, e la pagina quelle date le prende gia' dallo stato.
-  ignore = 'test "$CACHED_COMMIT_REF" != "$COMMIT_REF" || exit 1; git log -1 --format=%s | grep -q "^Banco online: contattati allineati" && exit 0; git diff --quiet "$CACHED_COMMIT_REF" "$COMMIT_REF" -- . ../strumenti/lista-corrente.csv ../strumenti/lista-denkicode.csv'
+  # Si guarda TUTTO l'intervallo dall'ultimo deploy, non l'ultimo commit: se una
+  # lista nuova e un giro automatico arrivano insieme, la lista deve passare.
+  ignore = 'test "$CACHED_COMMIT_REF" != "$COMMIT_REF" || exit 1; git log --format=%s "$CACHED_COMMIT_REF..$COMMIT_REF" -- . ../strumenti/lista-corrente.csv ../strumenti/lista-denkicode.csv | grep -qv "^Banco online: contattati allineati" && exit 1; exit 0'
 
 # Strumento interno: fuori dagli indici, sempre.
 [[headers]]

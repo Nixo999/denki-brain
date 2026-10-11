@@ -180,9 +180,10 @@ for op in json.load(open(d / "ops.json")): bs.segna(op)
   console.log('✓ segna uguale a banco-server.py al byte (contattati e gia-col-sito)');
 
   // 4. venticinque gesti insieme da due telefoni: nessuno si perde. Il
-  // BlobsServer locale non manda l'ETag in lettura, quindi qui la scrittura
-  // condizionata si prova su un archivio finto che la rispetta; quella vera
-  // di Netlify si prova online con `node prova.mjs online <url>`.
+  // BlobsServer locale non manda l'ETag in lettura, quindi qui si prova su un
+  // archivio finto che, come quello vero sotto carico, a volte accetta un ETag
+  // vecchio: il controllo dopo la scrittura deve ritrovare tutti i gesti.
+  // Quello vero di Netlify si prova con `node prova.mjs online <url>`.
   let finto = null, versione = 0;
   const archivioFinto = {
     async getWithMetadata() { await pausa(Math.random() * 5); return finto && { ...finto }; },
