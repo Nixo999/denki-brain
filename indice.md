@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **286 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **287 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -258,6 +258,10 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[script-gestionali-brianza]] — ⚠️ Lo script di Patrick sulle 100 aziende +1M della Brianza. Qui si vende - l'obiettivo e' l'appuntamento conoscitivo, non il modulo.
 - [[script-indagine]] — ⚠️ Lo usano tutti e tre. Dove c'è [nome] ci va il proprio.
 - [[script-siti-vetrina]] — ⚠️ Lo usa Giulia, unica al telefono dal 15/09/2026.
+
+**strumenti/**
+
+- [[giro-mattina]] — ⚠️ Il prompt del giro del mattino - la lista del giorno parte da sola alle 8 dal Mac di Nicola, alle 8:30 da quello di Patrick se la conferma non c'e'.
 
 ## 03-Storage
 

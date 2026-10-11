@@ -55,6 +55,15 @@ Perché il banco locale si rompeva, letto sul codice:
    disegna 100 righe per volta: con 2.265 righe bloccava la scheda per più di 45
    secondi, anche sul banco vecchio.
 
+6. **Un banco solo, «DenkiCode»** (Nicola, 11/10: «Rinomina»). Dal 30/09
+   Patrick manda tutto dall'account DenkiCode, ma le liste stavano sotto
+   «Patrick Sappa». Il selettore sparisce, `lista-denkicode.csv` (9 righe del
+   7/09) non si apre più, i nuovi invii si scrivono con `Da` = `DenkiCode`.
+7. **Sopra la lista non si scrive niente**: la nota della pagina e i nomi delle
+   liste stanno dietro un tasto «Spiegazioni». Nicola: «questa parte sopra non
+   mi piace per niente, lascia solo un tasto al massimo chiamato spiegazioni».
+8. **La lista del giorno parte da sola alle 8** → [[giro-mattina]].
+
 ## Cosa si è scartato
 
 - **Supabase**: un progetto nuovo, un account e chiavi in più per uno stato che

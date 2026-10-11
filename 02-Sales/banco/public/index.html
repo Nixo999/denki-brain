@@ -109,6 +109,12 @@
   #p-recuperi{--tinta:var(--recuperi)} #p-fatti{--tinta:var(--fatti)}
 
   main{padding:20px 22px 48px;max-width:1140px;margin:0 auto}
+  .spiegazioni{margin:0 0 14px}
+  .spiegazioni summary{display:inline-block;list-style:none;cursor:pointer;font-size:12.5px;color:var(--fioco);
+                       padding:5px 11px;border:1px solid var(--bordo);border-radius:99px;transition:color .15s,border-color .15s}
+  .spiegazioni summary::-webkit-details-marker{display:none}
+  .spiegazioni summary:hover,.spiegazioni[open] summary{color:var(--testo);border-color:var(--bordo2)}
+  .spiegazioni .nota{margin:12px 0 4px}
   .nota{color:var(--tenue);font-size:13px;margin:0 0 16px;max-width:78ch}
   .nota b{color:var(--testo)}
   .nota a{color:var(--accento)}
@@ -273,10 +279,6 @@
 <header>
   <div class="testata">
     <div class="marchio">Banco DM <small id="quale"></small></div>
-    <select id="account" title="Da quale account si scrive">
-      <option value="patrick">Patrick Sappa</option>
-      <option value="denkicode">DenkiCode</option>
-    </select>
     <span class="cresci"></span>
     <input type="search" id="cerca" placeholder="cerca un profilo   /" title="Cerca fra handle, nome, comune e segmento della pagina aperta. Scorciatoia: /">
     <button id="annulla" disabled title="Rimette in cima l'ultimo profilo segnato. Anche ⌘Z">↩ Annulla l'ultimo</button>
@@ -305,7 +307,9 @@
     la pagina, quello che hai segnato da adesso sparisce. Prima di chiuderla premi <b>Scarica il CSV</b>.</div>
   <div id="caricamento" class="caricamento">Carico il banco…</div>
   <div id="nonsalvati" class="stop" hidden></div>
-  <p class="nota" id="nota"></p>
+  <!-- Nicola, 11/10/2026: sopra la lista di base non si scrive niente, al massimo
+       un tasto «Spiegazioni» che apre il testo della pagina -->
+  <details class="spiegazioni"><summary>Spiegazioni</summary><p class="nota" id="nota"></p></details>
   <div id="lista"></div>
   <div id="niente" class="vuoto" hidden></div>
   <details class="piega" id="piega" hidden>
@@ -325,16 +329,20 @@
    conversazione giusta e tiene il conto. L'invio resta un gesto di Patrick —
    e` la riga che separa un aiuto da una violazione delle regole di Meta. */
 
-/* I due account che scrivono. Il tetto giornaliero non c'e` piu`: tolto
+/* L'account che scrive. Il tetto giornaliero non c'e` piu`: tolto
    l'11 settembre 2026 su richiesta di Patrick — «togli il limite giornaliero»
    (metodo-liste.md). Il contatore di quanti ne sono partiti oggi e quello
    dell'ultima ora restano, perche` sono misure e non freni: quanti mandarne
    lo decide lui. */
+/* Dall'11/10/2026 un banco solo, «DenkiCode»: dal 30/09 Patrick manda tutto
+   dall'account DenkiCode e le liste del giorno stavano sotto «Patrick Sappa».
+   Scelta di Nicola: «Rinomina». La chiave resta `patrick` perche` e` quella
+   della memoria del browser e dei testi corretti salvati online;
+   lista-denkicode.csv (9 righe del 7/09) non si apre piu`. */
 const ACCOUNT = {
-  patrick:   {etichetta: "Patrick Sappa", file: "lista-corrente.csv"},
-  denkicode: {etichetta: "DenkiCode",     file: "lista-denkicode.csv"}
+  patrick: {etichetta: "DenkiCode", file: "lista-corrente.csv"}
 };
-let attivo = localStorage.getItem("banco-dm-account") || "patrick";
+let attivo = "patrick";
 const att = () => ACCOUNT[attivo];
 
 /* Il ritmo resta l'unica cosa che il banco segnala: sessanta messaggi in venti
@@ -736,7 +744,6 @@ function prodottoDi(r){
    pieno o cambiato voleva dire invii persi. */
 let stato = null;
 async function avvio(){
-  document.getElementById("account").value = attivo;
   intestazione = []; dati = []; col = {}; orari = []; storico = []; riaperte = []; stato = null;
   document.getElementById("lista").innerHTML = "";
   document.getElementById("lista-vecchie").innerHTML = "";
@@ -920,11 +927,6 @@ document.getElementById("esci").addEventListener("click", async () => {
 
 avvio();
 
-document.getElementById("account").addEventListener("change", (e) => {
-  attivo = e.target.value;
-  localStorage.setItem("banco-dm-account", attivo);
-  avvio();
-});
 
 let timeoutBrindisi = null;
 function brindisi(testo){

@@ -16,7 +16,8 @@ OGGI = datetime.date.today()
 # il tetto giornaliero non esiste piu': tolto l'11/09/2026 su richiesta di
 # Patrick, «togli il limite giornaliero». Qui restava solo per stamparlo.
 
-ACCOUNT = [("Patrick Sappa", "lista-corrente.csv"), ("DenkiCode", "lista-denkicode.csv")]
+# un banco solo dall'11/10/2026 (Nicola: «Rinomina»): dal 30/09 si manda tutto da DenkiCode
+ACCOUNT = [("DenkiCode", "lista-corrente.csv")]
 
 
 def lavorativi_da(iso):
@@ -86,7 +87,14 @@ def stato(nome, file):
     # «Recupero (data)»: una riga recuperata non e` piu` un recupero maturo, o
     # i due conti dicono numeri diversi sullo stesso file
     rec = next((c for c in righe[0] if c.lower().startswith("recupero")), None) if righe else None
-    recuperi = sum(1 for r in righe if e_un_recupero(r, inv, rec))
+    # la colonna «Recupero (data)» non arriva mai nel CSV: il recupero mandato
+    # sta in liste/contattati.csv come Tipo=recupero. Senza questo, l'11/10/2026
+    # qui uscivano 7 recuperi maturi che avevano gia` avuto il secondo messaggio
+    c = QUI.parent / "liste" / "contattati.csv"
+    gia = {x["Account IG"].strip().lstrip("@").lower() for x in csv.DictReader(c.open(encoding="utf-8"))
+           if x.get("Tipo") == "recupero"} if c.exists() else set()
+    recuperi = sum(1 for r in righe if e_un_recupero(r, inv, rec)
+                   and (r.get("Account IG") or "").strip().lstrip("@").lower() not in gia)
     return (f"{nome}: {da_mandare} da mandare, {oggi} partiti oggi, "
             f"{recuperi} recuperi maturi — {len(righe)} righe in {file}")
 
