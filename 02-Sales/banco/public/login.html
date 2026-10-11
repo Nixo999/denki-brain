@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/icone/apple-touch-icon.png">
+<meta name="theme-color" content="#0d0f13">
+<title>Banco DM — Entra</title>
+<style>
+  :root{color-scheme:dark light}
+  body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0d0f13;color:#e9ecf1;
+       font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+  form{display:grid;gap:10px;width:min(320px,88vw)}
+  h1{font-size:16px;font-weight:650;margin:0 0 6px}
+  input,button{font:inherit;padding:11px 13px;border-radius:10px;border:1px solid #303849;background:#151922;color:inherit}
+  button{background:#5b8cff;border-color:#5b8cff;color:#fff;font-weight:620;cursor:pointer}
+  #errore{margin:0;color:#e0705f;font-size:13.5px}
+</style>
+</head>
+<body>
+<form id="accesso">
+  <h1>Banco DM</h1>
+  <input name="utente" autocomplete="username" required aria-label="Nome" placeholder="nome">
+  <input name="password" type="password" autocomplete="current-password" required aria-label="Password" placeholder="password">
+  <button type="submit">Entra</button>
+  <p id="errore" hidden></p>
+</form>
+<script>
+document.getElementById("accesso").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const f = new FormData(e.target), errore = document.getElementById("errore");
+  errore.hidden = true;
+  const r = await fetch("/api/login", {method:"POST", headers:{"Content-Type":"application/json"},
+    body: JSON.stringify({utente: f.get("utente"), password: f.get("password")})}).catch(() => null);
+  if (r && r.ok) return location.replace("/");
+  errore.textContent = r && r.status === 401 ? "Nome o password sbagliati." : "Il server non risponde. Riprova tra poco.";
+  errore.hidden = false;
+});
+</script>
+</body>
+</html>

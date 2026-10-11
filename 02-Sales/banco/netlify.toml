@@ -1,0 +1,38 @@
+# Il banco DM online. La cartella base del sito e' 02-Sales/banco (impostata
+# nel sito Netlify, non qui): build, funzioni e pagina stanno tutte qui dentro.
+[build]
+  publish = "public"
+  command = "node build.mjs"
+  # Si ricostruisce solo se cambia il banco o una delle due liste. Al primo
+  # build CACHED_COMMIT_REF e' uguale a COMMIT_REF: senza il primo test il
+  # diff e' vuoto e il primo build verrebbe saltato. I commit del giro
+  # automatico (banco-sync.yml) non ricostruiscono: portano solo le date degli
+  # invii dentro le liste, e la pagina quelle date le prende gia' dallo stato.
+  ignore = 'test "$CACHED_COMMIT_REF" != "$COMMIT_REF" || exit 1; git log -1 --format=%s | grep -q "^Banco online: contattati allineati" && exit 0; git diff --quiet "$CACHED_COMMIT_REF" "$COMMIT_REF" -- . ../strumenti/lista-corrente.csv ../strumenti/lista-denkicode.csv'
+
+# Strumento interno: fuori dagli indici, sempre.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "same-origin"
+
+# Pagine e liste si rivalidano a ogni apertura (ETag): una lista appena
+# pubblicata da /banco si vede alla prima ricarica.
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "no-cache"
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "no-cache"
+[[headers]]
+  for = "/login"
+  [headers.values]
+    Cache-Control = "no-cache"
+[[headers]]
+  for = "/dati/*"
+  [headers.values]
+    Cache-Control = "no-cache"

@@ -1,0 +1,14 @@
+{
+  "name": "banco-dm",
+  "private": true,
+  "type": "module",
+  "description": "Il banco DM online: la pagina, il login e lo stato su Netlify Blobs. L'unica dipendenza serve alle funzioni.",
+  "scripts": {
+    "build": "node build.mjs",
+    "prova": "node prova.mjs",
+    "serve": "node prova.mjs serve"
+  },
+  "dependencies": {
+    "@netlify/blobs": "11.1.4"
+  }
+}

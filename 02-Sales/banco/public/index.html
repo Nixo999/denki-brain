@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/icone/apple-touch-icon.png">
+<meta name="theme-color" content="#0d0f13">
 <title>Banco DM — Instagram</title>
 <style>
   :root{
@@ -161,6 +164,7 @@
     <input type="search" id="cerca" placeholder="cerca un profilo   /" title="Cerca fra handle, nome, comune e segmento della pagina aperta. Scorciatoia: /">
     <button id="annulla" disabled title="Rimette in cima l'ultimo profilo segnato. Anche ⌘Z">↩ Annulla l'ultimo</button>
     <button id="scarica" disabled title="Il CSV con le date di invio di oggi, da rimettere nel vault">Scarica il CSV</button>
+    <button id="esci" class="piccolo" title="Esci da questo dispositivo">Esci</button>
   </div>
   <div class="misure">
     <span>oggi <b id="oggi">0</b></span>
@@ -178,11 +182,10 @@
 </header>
 
 <main>
-  <div id="vecchio" class="stop" hidden>Il server sotto questa pagina è vecchio: i messaggi che segni
-    restano solo in questo browser e non arrivano in <code>contattati.csv</code>. Chiudi la finestra del
-    terminale e riapri il banco con <b>«Banco DM.command»</b>: il server vecchio lo spegne da solo.</div>
   <div id="memoria" class="stop" hidden>Il browser non riesce più a salvare il banco: se chiudi o ricarichi
     la pagina, quello che hai segnato da adesso sparisce. Prima di chiuderla premi <b>Scarica il CSV</b>.</div>
+  <div id="caricamento" class="caricamento">Carico il banco…</div>
+  <div id="nonsalvati" class="stop" hidden></div>
   <p class="nota" id="nota"></p>
   <div id="lista"></div>
   <div id="niente" class="vuoto" hidden></div>
@@ -191,11 +194,10 @@
     <div id="lista-vecchie"></div>
   </details>
   <div id="vuoto" class="vuoto">
-    <b>Trascina qui il CSV della lista</b> — quelli di <code>02-Sales/liste/</code>.<br>
-    Da qui in poi se lo ricorda: riaprendo la pagina la lista è già dov'era, coi messaggi già segnati.<br><br>
-    Aperto dall'icona <code>Banco DM.command</code> la lista se la prende da solo.
+    <b>Il banco non si è caricato.</b><br>
+    Controlla la connessione e ricarica la pagina. I gesti già segnati restano in questo browser
+    e partono da soli appena il banco risponde.
   </div>
-  <input type="file" id="file" accept=".csv" hidden>
 </main>
 <div id="brindisi"></div>
 
@@ -498,7 +500,7 @@ function motivoRecupero(r){
 const oggiISO = () => new Date().toLocaleDateString("sv-SE");   // 2026-09-02
 const pulito = (s) => (s || "").trim().replace(/^@/, "").toLowerCase();
 
-let intestazione = [], dati = [], nomeFile = "lista.csv", col = {}, fonte = "";
+let intestazione = [], dati = [], nomeFile = "lista.csv", col = {};
 let pagina = "siti", filtro = "";
 
 /* Gli orari degli invii stanno solo qui, non nel CSV: servono a leggere il
@@ -529,10 +531,8 @@ if (localStorage.getItem("banco-dm") && !localStorage.getItem("banco-dm:patrick"
   localStorage.removeItem("banco-dm");
 }
 
-/* Aperto con doppio click la pagina sta su file:// e non puo` leggersi da sola
-   i CSV che ha accanto: il browser lo vieta. Quindi la lista si trascina qui
-   una volta, e da li` in poi se la ricorda — anche a meta` giro, che con 50
-   messaggi al giorno succede sempre. */
+/* La lista pubblicata, letta riga per riga, con lo stato online posato sopra
+   (applicaStato) prima del primo disegno. */
 function carica(testo, nome){
   nomeFile = nome || nomeFile;
   const righe = leggiCSV(testo);
@@ -581,6 +581,7 @@ function carica(testo, nome){
     alert("Non riconosco le colonne: servono almeno «Account IG» e «Gancio (1-6)».");
     return;
   }
+  applicaStato();
   document.getElementById("vuoto").hidden = true;
   document.getElementById("scarica").disabled = false;
   document.getElementById("quale").textContent = nomeFile;
@@ -607,32 +608,21 @@ function prodottoDi(r){
   return "siti";
 }
 
-document.getElementById("file").addEventListener("change", async (e) => {
-  const f = e.target.files[0];
-  if (f) carica(await f.text(), f.name);
-});
-
-/* trascinare il CSV sulla pagina: e` il gesto piu` corto che c'e` */
-document.addEventListener("dragover", (e) => { e.preventDefault(); document.body.classList.add("trascina"); });
-document.addEventListener("dragleave", (e) => { if (e.relatedTarget === null) document.body.classList.remove("trascina"); });
-document.addEventListener("drop", async (e) => {
-  e.preventDefault();
-  document.body.classList.remove("trascina");
-  const f = e.dataTransfer.files[0];
-  if (f) carica(await f.text(), f.name);
-});
-
-/* All'avvio: se la pagina e` servita (cioe` e` partita dall'icona sul Desktop)
-   prende da sola `lista-corrente.csv`, che e` la lista che /banco pubblica nel
-   vault. Il lavoro gia` fatto vince sulla lista pubblicata finche` e` la
-   stessa: si riparte da dove si era rimasti, non da capo. Quando ne esce una
-   nuova, il file cambia e questa la sostituisce. */
+/* All'avvio la lista arriva da /dati/ (la copia la build di Netlify dal vault,
+   ogni volta che /banco ne pubblica una) e lo stato da /api/stato: chi e` gia`
+   stato scritto, i recuperi, gli scartati, i testi corretti a mano. Lo stato
+   vive online, in Netlify Blobs, e si posa sulla lista a ogni apertura: nel
+   browser restano solo il ritmo, l'annulla e la coda dei gesti non partiti.
+   Fino all'11/10/2026 la lista intera stava nel localStorage, e un browser
+   pieno o cambiato voleva dire invii persi. */
+let stato = null;
 async function avvio(){
   document.getElementById("account").value = attivo;
-  intestazione = []; dati = []; col = {}; orari = []; fonte = ""; storico = []; riaperte = [];
+  intestazione = []; dati = []; col = {}; orari = []; storico = []; riaperte = []; stato = null;
   document.getElementById("lista").innerHTML = "";
   document.getElementById("lista-vecchie").innerHTML = "";
-  document.getElementById("vuoto").hidden = false;
+  document.getElementById("vuoto").hidden = true;
+  document.getElementById("caricamento").hidden = false;
   document.getElementById("scarica").disabled = true;
   document.getElementById("quale").textContent = "";
   let salvata = null;
@@ -641,157 +631,181 @@ async function avvio(){
   if (salvata && Array.isArray(salvata.orari)) orari = salvata.orari;
   if (salvata && Array.isArray(salvata.storico)) storico = salvata.storico;
   if (salvata && Array.isArray(salvata.riaperte)) riaperte = salvata.riaperte;
-
-  if (location.protocol.startsWith("http")){
-    try {
-      const risposta = await fetch(att().file, {cache:"no-store"});
-      if (risposta.ok){
-        const testo = await risposta.text();
-        if (!salvata || salvata.fonte !== impronta(testo)){
-          fonte = impronta(testo);
-          const quando = risposta.headers.get("Last-Modified");
-          carica(testo, "lista del " + (quando ? new Date(quando).toLocaleDateString("it-IT") : "giorno"));
-          if (salvata) unisci(salvata);
-          ricorda();
-          aggiornaAnnulla();
-          return;
-        }
-        fonte = salvata.fonte;
-      }
-    } catch (e) {}
-  }
-  if (salvata){
-    fonte = salvata.fonte || "";
-    carica(scriviCSV([salvata.intestazione, ...salvata.dati]), salvata.nomeFile);
-  }
   aggiornaAnnulla();
-}
 
-/* Quando il file pubblicato cambia, il lavoro gia` fatto nel browser non si
-   butta: per ogni handle si tengono la data di invio, il recupero, l'esito e il
-   testo corretto a mano che stavano nella memoria. Fino al 9 settembre 2026 la
-   lista nuova SOSTITUIVA la memoria, e gli invii dal 4 al 7 settembre sono
-   spariti dal banco a ogni pubblicazione. */
-function unisci(salvata){
-  const vh = salvata.intestazione || [];
-  const vc = {};
-  vh.forEach((n, i) => {
-    const l = String(n).toLowerCase();
-    if (l.startsWith("account")) vc.account = i;
-    else if (l.startsWith("dm inviato")) vc.inviato = i;
-    else if (l.startsWith("recupero")) vc.recupero = i;
-    else if (l.startsWith("esito dm")) vc.esito = i;
-    else if (l.startsWith("messaggio")) vc.messaggio = i;
-  });
-  if (vc.account === undefined) return;
-  const vecchie = new Map();
-  (salvata.dati || []).forEach(r => {
-    const h = pulito(r[vc.account]);
-    if (h) vecchie.set(h, r);
-  });
-  let tenuti = 0;
-  dati.forEach(r => {
-    const v = vecchie.get(pulito(r[col.account]));
-    if (!v) return;
-    const inv = vc.inviato !== undefined ? (v[vc.inviato] || "").trim() : "";
-    const ric = vc.recupero !== undefined ? (v[vc.recupero] || "").trim() : "";
-    const es  = vc.esito   !== undefined ? (v[vc.esito]   || "").trim() : "";
-    const msg = vc.messaggio !== undefined ? (v[vc.messaggio] || "") : "";
-    /* si tiene solo una data vera: un valore strano nella memoria non deve
-       diventare un invio */
-    if (/^\d{4}-\d{2}-\d{2}$/.test(inv) && !(r[col.inviato] || "").trim()){ r[col.inviato] = inv; tenuti++; }
-    if (/^\d{4}-\d{2}-\d{2}$/.test(ric) && !(r[col.recupero] || "").trim()) r[col.recupero] = ric;
-    if (es  && !(r[col.esito]   || "").trim())  r[col.esito] = es;
-    if (msg.trim() && inv) r[col.messaggio] = msg;    // il testo che e` partito davvero
-  });
-  if (tenuti){ console.info("banco: tenute " + tenuti + " date di invio dalla memoria del browser"); disegna(); }
-}
-
-avvio().then(riallinea);
-
-document.getElementById("account").addEventListener("change", (e) => {
-  attivo = e.target.value;
-  localStorage.setItem("banco-dm-account", attivo);
-  avvio().then(riallinea);
-});
-
-/* Quello che il browser ricorda e contattati.csv non sa, ci rientra da solo
-   all'apertura: un invio per riga, primi messaggi e recuperi, con la data vera.
-   Dal 19/09 al 2/10/2026 il server sotto la pagina non scriveva niente, ~877
-   invii vivevano solo qui, e farli rientrare voleva dire chiedere a Patrick
-   di scaricare un file e passarlo a qualcuno. */
-async function riallinea(){
-  if (!location.protocol.startsWith("http") || col.account === undefined) return;
-  let noti, giaScritti;
+  const chiesto = attivo;
   try {
-    const t = await fetch("/liste/contattati.csv", {cache:"no-store"}).then(x => x.ok ? x.text() : Promise.reject());
-    const righe = leggiCSV(t), h = righe[0] || [];
-    const iD = h.indexOf("Data"), iDa = h.indexOf("Da"), iA = h.indexOf("Account IG");
-    noti = new Set(righe.slice(1).map(x => [x[iD], x[iDa], pulito(x[iA])].join("|")));
-    giaScritti = new Set(righe.slice(1).map(x => pulito(x[iA])));   // un primo messaggio si conta una volta sola
-  } catch (e) { return; }
-  const da = att().etichetta, mancano = [];
+    await svuota();      // i gesti rimasti indietro arrivano prima di rileggere lo stato
+    const [lista, st] = await Promise.all([
+      fetch("/dati/" + att().file, {cache:"no-cache"}),
+      fetch("/api/stato", {cache:"no-cache"})
+    ]);
+    if (lista.status === 401 || st.status === 401){ location.href = "/login"; return; }
+    if (!lista.ok || !st.ok) throw new Error("lista " + lista.status + ", stato " + st.status);
+    const testo = await lista.text(), letto = await st.json();
+    if (chiesto !== attivo) return;      // nel frattempo si e` cambiato account
+    stato = letto;
+    const quando = lista.headers.get("Last-Modified");
+    carica(testo, "lista del " + (quando ? new Date(quando).toLocaleDateString("it-IT") : "giorno"));
+  } catch (e) {
+    if (chiesto !== attivo) return;
+    console.error("banco:", e);
+    document.getElementById("vuoto").hidden = false;
+  }
+  document.getElementById("caricamento").hidden = true;
+}
+
+/* Lo stato sulla lista. Le chiavi sono il solo handle, come in
+   allinea-contattati.py: chi e` stato scritto da un account resta scritto.
+   - data del primo messaggio: la colonna della lista se c'e`, altrimenti la
+     prima riga «primo» di contattati.csv; se manca anche quella, la prima riga
+     qualunque (fino all'11/10/2026 un recupero prendeva la data del primo
+     messaggio e la sua riga ne prendeva il posto)
+   - recupero: la riga «recupero»
+   - gia-col-sito.csv: la riga che non ha un esito diventa SCARTATO
+   - il testo corretto a mano, se c'e`
+   I gesti ancora in coda ci passano sopra, come se fossero gia` arrivati. */
+function applicaStato(){
+  if (!stato) return;
+  const tabella = (t) => {
+    const righe = leggiCSV(t || ""), h = righe[0] || [];
+    return righe.slice(1).map(r => Object.fromEntries(h.map((k, i) => [k, r[i] || ""])));
+  };
+  const file = {contattati: tabella(stato.contattati), "gia-col-sito": tabella(stato["gia-col-sito"])};
+  const testi = Object.assign({}, (stato.messaggi || {})[attivo]);
+  const chiave = (x) => [(x.Data || "").trim(), (x.Da || "").trim(), (x["Account IG"] || "").trim().toLowerCase()].join("|");
+  coda.forEach(({url, corpo}) => {
+    if (url === "/api/messaggio"){ if (corpo.account === attivo) testi[corpo.handle] = corpo.testo; return; }
+    file[corpo.file] = file[corpo.file].filter(x => chiave(x) !== chiave(corpo.riga));
+    if (corpo.azione === "aggiungi") file[corpo.file].push(corpo.riga);
+  });
+  const primo = new Map(), qualsiasi = new Map(), recupero = new Map(), scartato = new Map();
+  const tieni = (m, h, d) => { if (!m.has(h) || d < m.get(h)) m.set(h, d); };
+  const date = (righe, fai) => righe.forEach(x => {
+    const h = pulito(x["Account IG"]), d = (x.Data || "").trim();
+    if (h && /^\d{4}-\d{2}-\d{2}$/.test(d)) fai(h, d, (x.Tipo || "").trim());
+  });
+  date(file.contattati, (h, d, tipo) => {
+    tieni(qualsiasi, h, d);
+    if (tipo === "primo") tieni(primo, h, d);
+    if (tipo === "recupero") tieni(recupero, h, d);
+  });
+  date(file["gia-col-sito"], (h, d) => tieni(scartato, h, d));
   dati.forEach(r => {
     const h = pulito(r[col.account]);
     if (!h) return;
-    [["primo", (r[col.inviato] || "").trim()], ["recupero", col.recupero !== undefined ? (r[col.recupero] || "").trim() : ""]]
-      .forEach(([tipo, data]) => {
-        if (!/^\d{4}-\d{2}-\d{2}$/.test(data) || noti.has([data, da, h].join("|"))) return;
-        if (tipo === "primo" && giaScritti.has(h)) return;
-        mancano.push({Data: data, Da: da, "Account IG": "@" + h, Nome: (r[col.nome] || "").trim(),
-          Comune: r[col.comune] || "", Segmento: r[col.segmento] || "", Tipo: tipo,
-          Lista: (col.lista !== undefined && (r[col.lista] || "").trim()) || nomeFile});
-      });
+    if (!(r[col.inviato] || "").trim()) r[col.inviato] = primo.get(h) || qualsiasi.get(h) || "";
+    if (!(r[col.recupero] || "").trim() && recupero.has(h)) r[col.recupero] = recupero.get(h);
+    if (!(r[col.esito] || "").trim() && scartato.has(h))
+      r[col.esito] = "SCARTATO: ha già il sito (visto dal banco il " + scartato.get(h) + ")";
+    if (Object.hasOwn(testi, h)) r[col.messaggio] = testi[h];
   });
-  if (!mancano.length) return;
-  try {
-    const x = await fetch("/segna-tanti", {method:"POST", headers:{"Content-Type":"application/json"},
-                          body: JSON.stringify({file: "contattati", righe: mancano})});
-    if (!x.ok) throw new Error(x.status);
-    document.getElementById("vecchio").hidden = true;
-    brindisi(mancano.length + " invii che stavano solo nel browser ora sono nel vault.");
-  } catch (e) {
-    document.getElementById("vecchio").hidden = false;
-  }
 }
 
-/* Ogni invio segnato va anche nel brain: il server (banco-server.py) lo
-   scrive in liste/contattati.csv e committa. Da file:// non c'e` nessun
-   server e il gesto resta solo nel browser, come prima. */
+/* ---- la coda dei gesti ----------------------------------------------------
+   Ogni gesto si scrive nel localStorage PRIMA di partire, e ne esce solo
+   quando il server ha risposto che l'ha salvato. Se la linea cade o il server
+   risponde male resta qui, e riparte all'apertura, quando torna la linea e al
+   gesto dopo. Sempre in ordine: un «togli» non deve arrivare prima del suo
+   «aggiungi». E` la parte del banco che non deve perdere niente. */
+const CODA = "banco-dm:coda";
+let coda = [];
+try { coda = JSON.parse(localStorage.getItem(CODA) || "[]"); } catch (e) {}
+let inViaggio = null;
+
+function salvaCoda(){
+  try { localStorage.setItem(CODA, JSON.stringify(coda)); }
+  catch (e) { document.getElementById("memoria").hidden = false; }
+}
+function mostraCoda(){
+  const b = document.getElementById("nonsalvati");
+  b.hidden = !coda.length;
+  b.innerHTML = "<b>" + (coda.length === 1 ? "Un gesto non è ancora arrivato" : coda.length + " gesti non sono ancora arrivati") +
+    " al banco online.</b> Sono salvati in questo browser e ripartono da soli appena la connessione torna.";
+}
+function manda(url, corpo){
+  coda.push({url, corpo});
+  salvaCoda();
+  return svuota();
+}
+async function gira(){
+  while (coda.length){
+    let r;
+    try {
+      r = await fetch(coda[0].url, {method:"POST", keepalive:true, headers:{"Content-Type":"application/json"},
+                                    body: JSON.stringify(coda[0].corpo)});
+    } catch (e) { return false; }
+    if (r.status === 401){ location.href = "/login"; return false; }
+    /* 400 vuol dire un gesto malformato: riprovarlo non lo aggiusta, e
+       lasciarlo in testa fermerebbe tutti quelli dopo */
+    if (r.status === 400) console.error("banco: gesto rifiutato", coda[0]);
+    else if (!r.ok) return false;
+    coda.shift();
+    salvaCoda();
+  }
+  return true;
+}
+function svuota(){
+  if (!inViaggio) inViaggio = gira().then(ok => {
+    inViaggio = null;
+    mostraCoda();
+    if (ok && coda.length) return svuota();   // un gesto arrivato mentre il giro si chiudeva
+  });
+  return inViaggio;
+}
+addEventListener("online", svuota);
+mostraCoda();
+
+/* Ogni invio segnato va online: /api/segna lo scrive in contattati.csv (o in
+   gia-col-sito.csv) dentro Netlify Blobs, e banco-sync.yml lo riporta nel
+   vault ogni mezz'ora. La data e` quella del gesto che si segna o si toglie:
+   del primo messaggio, del recupero, o del giorno in cui si e` scartato. */
 function annota(r, file, azione, tipo){
-  if (!location.protocol.startsWith("http")) return;
+  const scartato = ((r[col.esito] || "").match(/il (\d{4}-\d{2}-\d{2})\)$/) || [])[1];
   const riga = {
-    Data: r[col.inviato] || oggiISO(), Da: att().etichetta,
+    Data: (file === "contattati" ? (tipo === "recupero" ? r[col.recupero] : r[col.inviato]) : scartato) || oggiISO(),
+    Da: att().etichetta,
     "Account IG": (r[col.account] || "").trim(), Nome: (r[col.nome] || "").trim(),
     Comune: r[col.comune] || "", Segmento: r[col.segmento] || "",
     Tipo: file === "contattati" ? (tipo || "primo") : "scartato dal banco",
     Lista: (col.lista !== undefined && (r[col.lista] || "").trim()) || nomeFile
   };
-  fetch("/segna", {method:"POST", keepalive:true, headers:{"Content-Type":"application/json"},
-        body: JSON.stringify({file, azione: azione === "togli" ? "togli" : "aggiungi", riga})})
-    .then(r => { if (!r.ok) throw new Error(r.status); document.getElementById("vecchio").hidden = true; })
-    .catch(() => { document.getElementById("vecchio").hidden = false; });
+  manda("/api/segna", {file, azione: azione === "togli" ? "togli" : "aggiungi", riga});
 }
 
-/* La memoria tiene un'impronta della lista pubblicata, non il testo intero:
-   fino al 7/10/2026 ci teneva il CSV due volte (testo e righe), a 2.000 righe
-   passava i 5 MB che il browser concede, il salvataggio falliva in silenzio e
-   ogni invio segnato spariva alla riapertura. 160 DM del 5/10 persi cosi`. */
-function impronta(t){
-  let h = 5381;
-  for (let i = 0; i < t.length; i++) h = ((h << 5) + h + t.charCodeAt(i)) | 0;
-  return t.length + ":" + (h >>> 0).toString(36);
+/* Il testo corretto a mano va online 800 ms dopo l'ultimo tasto: uno per
+   pausa, non uno per lettera. Chiudendo la pagina parte subito. */
+const testiInAttesa = new Map();
+function salvaTesto(r){
+  const account = attivo, handle = pulito(r[col.account]), k = account + "|" + handle;
+  clearTimeout((testiInAttesa.get(k) || {}).t);
+  const parti = () => { testiInAttesa.delete(k); manda("/api/messaggio", {account, handle, testo: r[col.messaggio] || ""}); };
+  testiInAttesa.set(k, {t: setTimeout(parti, 800), parti});
 }
+addEventListener("pagehide", () => testiInAttesa.forEach(x => { clearTimeout(x.t); x.parti(); }));
 
+/* Nel browser restano il ritmo e l'annulla, non la lista. */
 function ricorda(){
   try {
-    localStorage.setItem(MEMORIA(), JSON.stringify(
-      {nomeFile, intestazione, dati, fonte, orari, storico: storico.slice(-40), riaperte}));
+    localStorage.setItem(MEMORIA(), JSON.stringify({orari, storico: storico.slice(-40), riaperte}));
     document.getElementById("memoria").hidden = true;
   } catch (e) {
     document.getElementById("memoria").hidden = false;
   }
 }
+
+document.getElementById("esci").addEventListener("click", async () => {
+  await fetch("/api/logout", {method:"POST"}).catch(() => {});
+  location.href = "/login";
+});
+
+avvio();
+
+document.getElementById("account").addEventListener("change", (e) => {
+  attivo = e.target.value;
+  localStorage.setItem("banco-dm-account", attivo);
+  avvio();
+});
 
 let timeoutBrindisi = null;
 function brindisi(testo){
@@ -828,11 +842,11 @@ function annullaUltimo(){
   const r = dati.find(x => pulito(x[col.account]) === ultimo.h);
   if (!r){ brindisi("@" + ultimo.h + " non è più in questa lista."); ricorda(); return; }
   if (ultimo.file === "gia-col-sito"){
+    annota(r, "gia-col-sito", "togli");             // prima di svuotare l'esito: la data e` li` dentro
     r[col.esito] = "";
-    annota(r, "gia-col-sito", "togli");
   } else if (ultimo.tipo === "recupero"){
+    annota(r, "contattati", "togli", "recupero");   // resta contattato: torna solo fra i recuperi
     r[col.recupero] = "";
-    annota(r, "contattati", "aggiungi", "primo");   // resta contattato: torna solo fra i recuperi
   } else {
     annota(r, "contattati", "togli");
     r[col.inviato] = "";
@@ -914,7 +928,7 @@ function disegna(){
       : b.inviato.localeCompare(a.inviato));
     nota.innerHTML = PRODOTTI[pagina].nota +
       (pagina === "fatti"
-        ? ' <a href="../liste/contattati.csv" download>L\'elenco nel brain</a>.'
+        ? ' <a href="/api/esporta?file=contattati" download>L\'elenco nel brain</a>.'
         : "");
     voci.forEach(v => lista.appendChild(cartella(v)));
     if (!voci.length) vuotoDi(pagina, secchi[pagina].length);
@@ -1232,7 +1246,7 @@ function cartella(v){
     r[col.messaggio] = testoMsg.value;
     btn.disabled = false;
     misura(testoMsg);
-    ricorda();
+    salvaTesto(r);
   });
 
   function togliRiaperta(){
@@ -1276,6 +1290,7 @@ function cartella(v){
       ricorda_gesto(r, "contattati", "recupero");
     } else if (inviato){
       annota(r, "contattati", "togli");
+      if (ricontattato) annota(r, "contattati", "togli", "recupero");
       r[col.inviato] = "";
       r[col.recupero] = "";
     } else {

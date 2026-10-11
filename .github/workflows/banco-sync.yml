@@ -1,0 +1,40 @@
+# Il banco DM online scrive in Netlify Blobs: ogni mezz'ora i contattati e gli
+# scartati tornano nel vault (02-Sales/liste/), e le date dentro le liste del
+# banco. Il commit «Banco online: contattati allineati» non fa ripubblicare il
+# sito: lo salta l'ignore di 02-Sales/banco/netlify.toml.
+name: Banco online nel vault
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: banco-sync
+  cancel-in-progress: false
+
+jobs:
+  sincronizza:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Scarica e unisci
+        env:
+          BANCO_URL: ${{ secrets.BANCO_URL }}
+          BANCO_TOKEN: ${{ secrets.BANCO_TOKEN }}
+        run: python3 02-Sales/strumenti/sincronizza-banco.py
+
+      - name: Commit, solo se cambia qualcosa
+        run: |
+          git add 02-Sales/liste/contattati.csv 02-Sales/liste/gia-col-sito.csv \
+                  02-Sales/strumenti/lista-corrente.csv 02-Sales/strumenti/lista-denkicode.csv
+          if git diff --cached --quiet; then echo "niente di nuovo"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Banco online: contattati allineati"
+          git pull --rebase
+          git push
