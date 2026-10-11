@@ -1,7 +1,7 @@
 ---
 riga: Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
 type: area
-updated: 2026-10-07
+updated: 2026-10-11
 source: claude
 prodotto: denkishift
 ---
@@ -210,6 +210,10 @@ in [[metriche]]:
 
 
 ## Regole
+
+### 11/10/2026 — Nicola: «imposta che da adesso tutte le mattina alle 8 sia sul mio pc sia su quello di patrik partr in automatico la creazione tramite dela nuova lista, fai in modo che mandino una conferma il mio pc prima sul voul, che dice che parte a farla a lui, mentre se dopo una certo orario non parte sul mio quello di atrick controlla se ce il messaggio del mio che dice che è partito a farla, se non ce quel masseggio di conferma fa partire dal pc di patrick la crezione tramite sempre te la lista, da adesso in poi deve andare cosi»
+
+La lista del giorno parte da sola alle 8 dal Mac di Nicola, che lo scrive nel vault; il Mac di Patrick la fa solo se quella conferma non c'e'.
 
 ### 07/10/2026 — Patrick: «continui a chiedermi autorizzazioni»
 
