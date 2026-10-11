@@ -36,9 +36,15 @@ SALTA_PROSA = ("#", ">", "-", "|", "`", "!", "[!", "⬜", "✅")
 FUORI_VAULT = {"sito V-BAG"}
 
 
+# cartelle di macchina, non note: i README di node_modules (2.178 nel build
+# locale del banco, 11/10/2026) finivano nell'indice come note del vault
+SALTA = {".git", "node_modules", ".netlify"}
+
+
 def note(cartella):
     return sorted(
-        (VAULT / cartella).rglob("*.md"), key=lambda p: (str(p.parent), p.name)
+        (p for p in (VAULT / cartella).rglob("*.md") if not SALTA & set(p.parts)),
+        key=lambda p: (str(p.parent), p.name),
     )
 
 
@@ -135,12 +141,12 @@ def controlli():
     problemi = []
 
     # anche i CSV e gli altri file: [[lista.csv]] e' un link buono
-    _file = [p for p in VAULT.rglob("*") if p.is_file() and ".git" not in p.parts]
+    _file = [p for p in VAULT.rglob("*") if p.is_file() and not SALTA & set(p.parts)]
     esistenti = {p.stem for p in _file if p.suffix == ".md"} | {p.name for p in _file}
     rotti = {}
     for p in VAULT.rglob("*.md"):
         # i template e il README contengono segnaposto finti apposta
-        if ".git" in p.parts or p.name in ("indice.md", "README.md") or "99-Templates" in p.parts:
+        if SALTA & set(p.parts) or p.name in ("indice.md", "README.md") or "99-Templates" in p.parts:
             continue
         for link in re.findall(r"\[\[([^\]|#]+)", testo(p)):
             link = link.strip().rstrip("\\").split("\\|")[0].strip()
