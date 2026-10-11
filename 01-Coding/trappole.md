@@ -878,6 +878,18 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   `404` per `/catture/*` e `/assets/img/vere/*`, verificata con `curl`; e
   `MONDO.md`, `PRODUCT.md`, `LEGGIMI.md` si controllano allo stesso modo.
   (25/09/2026, [[sito-leibeautyroom]])
+- `[TRAPPOLA]` **L'hook «Chiusura automatica» committa e pusha il lavoro degli
+  agenti a metà.** L'11/10 ha pushato due volte il banco online mentre gli
+  operatori lavoravano, compreso un workflow che da quel momento girava ogni 30
+  minuti senza i suoi secret. Il vault è pubblico: un file di prova con un
+  valore vero, anche per un minuto, finisce su GitHub. → i segreti degli agenti
+  stanno fuori dal vault (`~/.config/denkicode/`), e quello che un agente scrive
+  nel vault si considera pubblicato. ([[2026-10-11-banco-online]])
+- `[TRAPPOLA]` **L'`ignore` di Netlify che guarda solo l'ultimo commit salta le
+  liste.** Se una lista nuova e un commit automatico arrivano insieme, conta
+  l'ultimo e la lista non va online. → si guarda tutto l'intervallo
+  `$CACHED_COMMIT_REF..$COMMIT_REF` e si costruisce se un commit qualunque, che
+  non sia quello automatico, ha toccato i file. ([[2026-10-11-banco-online]])
 
 ## Far modificare il sito al cliente
 
@@ -940,6 +952,14 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   nel browser prima di partire. Il Fiftynine ne manda fino a 12 da 1,5 MB nella
   stessa richiesta: con più di tre foto grandi insieme rischia il rifiuto, mai
   provato online. ([[sito-barbershop-snia]], 10 ottobre 2026)
+- `[TRAPPOLA]` **La scrittura condizionata di Netlify Blobs (`onlyIfMatch`)
+  perde scritture sotto carico, con risposta 200.** Online, con 3-5 scrittori
+  insieme, 2-7 righe su 40 sparivano: più scrittori passavano con lo stesso
+  ETag. → dopo la scrittura si aspettano ~400 ms, si rilegge e, se il gesto non
+  c'è, si riscrive: 40/40, 48/48, 25/25. E il `BlobsServer` locale non manda
+  l'ETag in lettura: in locale la concorrenza non si prova, serve un archivio
+  finto che perde scritture apposta. (`@netlify/blobs` 11.1.4, 11/10/2026,
+  [[2026-10-11-banco-online]])
 
 ## Supabase e chiavi nel browser
 
@@ -1173,6 +1193,17 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   percorso. Fix: `sudo xcode-select -s /Library/Developer/CommandLineTools`
   (o `sudo xcodebuild -license accept` se Xcode serve davvero). Serve la
   password: lo lancia la persona, non Trevis. (Mac di Patrick, 28/09/2026)
+- `[TRAPPOLA]` **«Già contattati» con 2.265 righe bloccava la scheda per più
+  di 45 secondi**, anche sul banco vecchio: `disegna()` creava ogni cartella e
+  `misura()` forzava un reflow per ogni `textarea`. → 100 righe per volta e un
+  bottone «Mostra altri»: 0,1 s. Una pagina che cresce ogni giorno si misura
+  col numero di righe di fra un mese, non di oggi. (11/10/2026)
+- `[TRAPPOLA]` **Il recupero cancellava il primo messaggio.** In `annota()` il
+  recupero usava la data del primo invio come chiave `(Data, Da, handle)`, cioè
+  la stessa della riga `primo`, e il server la sostituiva: in `contattati.csv`
+  ci sono 43 recuperi su 25 handle senza più la riga del primo messaggio. La
+  data del primo si ricava dalla prima riga di qualunque tipo, come fa
+  `allinea-contattati.py`. Corretto nel banco online. (11/10/2026)
 
 ## Skill e strumenti di processo
 

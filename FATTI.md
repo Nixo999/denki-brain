@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura. Max 80 righe.
-updated: 2026-10-10
+updated: 2026-10-11
 verificato: 2026-09-16
 source: denkicode
 tags: [stato, fatti]
@@ -60,6 +60,7 @@ Nails Mania, Tarilli, Fiftynine, Castiglione, NG Barber (repo **pubblica**), Lob
 
 ## Altro aperto
 
+- **Banco DM online** (11/10): <https://banco-denkicode.netlify.app>, stessa pagina ridisegnata, stato su Netlify Blobs, deploy da solo a ogni lista. Mancano i secret GitHub del giro di sincronizzazione, il primo accesso di Nicola e la password a Patrick; fino al passaggio `/banco` apre ancora quello locale → [[2026-10-11-banco-online]]
 - **Edilida** (edile, Travagliato): modulo compilato il 18/09, Patrick punta a una videochiamata; il riepilogo di zona promesso a Penta ed Edilida **non esiste** → [[edilida]]
 - **V-BAG**, gestionale con login pushato il 16/09: spento finché Nicola non mette `ADMIN_PASSWORD` e `GITHUB_TOKEN` su Netlify → [[2026-09-16-vbag-gestionale-login]]
 - **OperO, CO-OPERO** (30/09, Patrick e Seba): portale gratuito, Clienti in entrata e Fornitori in uscita; supera il Receive a pagamento; lavoro nuovo fuori dai 2.400 €. **Il ramo `coopero` e' su `main` dall'8/10 (`3c255e6`, pushato alle 18:38)**: il portale clienti e' su `cooperotest.netlify.app`, **il lato ufficio e' online su `operotest.netlify.app/segreteria/richieste` e su `operoworkspace.com`** (stesso sito Netlify) (versione `3c255e6` vista dal vivo l'8/10), tutti e due sul database di sviluppo, dove la migrazione c'e' dal 4/10. Accesso di prova `NOTT001` (Notturno Logistics) dentro `ALLUS-001`, Allus Multiservice. **Secondo giro online dal 10/10** (`50a23a9`, migrazione sullo sviluppo): filtri, conti per mansione, mansioni del cliente, inviti, referente obbligatorio e le regole di Seba; la segreteria di OperO non è ancora stata guardata nel browser → [[co-opero-prototipo]]. ⚠️ Per strada: in OperO **un lavoratore puo' farsi Super Admin** (provato sul banco), da chiudere → `docs/handoff.md` del repo
