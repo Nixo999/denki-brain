@@ -76,7 +76,10 @@ vale oltre oggi si sposta dove verrà riletto.**
 `FATTI.md` **si riscrive**, non si accumula, e sta **sotto le 80 righe**: un
 fatto che cambia sostituisce la riga vecchia, un sito ha una riga sola nella
 tabella e il racconto dei giri sta nella sua nota progetto. Ogni numero porta
-la data accanto, o la freccia verso dove vive.
+la data accanto, o la freccia verso dove vive. Lo si scrive come
+[[italiano-chiaro]]: è il primo testo che ogni sessione legge, e lo stile di
+`FATTI.md` diventa lo stile delle risposte. Una riga corta si fa togliendo
+informazioni, non verbi.
 
 **Non si promuove niente a regola per conto tuo.** In `trappole.md` va l'errore;
 se il modo giusto va reso dottrina lo proponi in una riga e ti fermi.

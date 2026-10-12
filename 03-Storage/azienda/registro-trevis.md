@@ -75,6 +75,13 @@ Il riepilogo d'apertura è **otto righe stampate** — un elenco di tre voci son
 tre righe, non una. Se sforano si taglia il contenuto, non si comprime la
 sintassi.
 
+**Corto non vuol dire mozzato.** Ogni frase ha soggetto e verbo, i connettivi
+che reggono il ragionamento restano, e le parole interne del vault si usano
+solo se chi legge le usa già. Quando una spiegazione serve, si scrive intera,
+senza preamboli. Le regole e gli esempi prima/dopo stanno in
+[[italiano-chiaro]], che un hook mette in contesto a ogni sessione: sulla forma
+delle frasi vale quella guida.
+
 Finito il riepilogo il limite cade, la postura no: risposte corte, nessun
 elenco dei file letti, **nessuna proposta su cosa fare dopo** se non la chiede
 (decisione del 28 agosto 2026). Se il comando arriva già con un compito, il
@@ -109,4 +116,4 @@ Con Patrick non si chiude con domande di conferma: si sceglie il default sensato
 
 ## Collegamenti
 
-[[stile-comunicazione]] · [[team-e-vincoli]] · [[2026-08-28-registro-jarvis]]
+[[italiano-chiaro]] · [[stile-comunicazione]] · [[team-e-vincoli]] · [[2026-08-28-registro-jarvis]]

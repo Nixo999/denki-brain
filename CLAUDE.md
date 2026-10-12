@@ -33,7 +33,14 @@ pagate e strade scartate, non dottrina. Il modo giusto di fare una cosa sta in
 [[convenzioni]], nel `CLAUDE.md` del repo o in una decisione, e ce lo mette una
 persona di proposito.
 
-Le tre cose per esteso, con i tetti di lunghezza delle note, stanno in
+**Le note si scrivono in italiano normale.** Ogni sessione imita il modo in cui
+sono scritte le note che legge: se `FATTI.md` e il registro sono fatti di
+frammenti e di gergo interno, anche le risposte escono così. Frasi complete,
+con soggetto e verbo, e parole che capirebbe anche chi non c'era. Le regole e
+gli esempi stanno in [[italiano-chiaro]], che un hook mette in contesto a ogni
+sessione.
+
+Le quattro cose per esteso, con i tetti di lunghezza delle note, stanno in
 [[come-si-scrive-una-nota]]. Si legge una volta, non a ogni sessione.
 
 ## Una regola detta si scrive subito
@@ -49,8 +56,9 @@ python3 01-Coding/strumenti/regola.py <siti|voce|codice|liste|registro|prezzi|va
 
 Va nel file dove verrà riletta, con **le parole di chi l'ha detta**, e si
 committa da solo. Poi una riga sola di conferma, che dice dove è finita.
-`--perche` è la regola generale in una riga, quella che vale la prossima volta:
-il verdetto sul giro di un sito preciso sta nella sua nota progetto.
+`--perche` è la regola generale in una riga, quella che vale la prossima volta,
+scritta come una frase normale con soggetto e verbo e non come un aforisma: il
+verdetto sul giro di un sito preciso sta nella sua nota progetto.
 
 Tre errori da non fare: aspettare `/chiudi-sessione` (una regola detta a metà
 sessione e non scritta è persa), riassumerla con parole tue, o metterla in un

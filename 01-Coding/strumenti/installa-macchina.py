@@ -10,7 +10,7 @@ push, ma qualcuno deve portarle dentro. Finche' era un passaggio a mano restava
 indietro, come la firma nel footer. Adesso e' un comando.
 
 Non tocca niente di terze parti: plugin, skill di design e le altre voci di
-settings.json restano come sono. Degli hook registra solo i nostri due, e li
+settings.json restano come sono. Degli hook registra solo i nostri tre, e li
 riconosce dal nome dello script.
 
 Gli hook stanno a livello di account e non di progetto dall'11/09/2026: legati
@@ -35,10 +35,14 @@ CARTELLE = ["commands", "skills", "hooks", "mods"]
 # Gli hook stanno a livello di ACCOUNT, non di progetto: Patrick apre Claude
 # dove capita, e un hook legato alla cartella del vault non scatterebbe mai.
 # Trovano il vault da soli (trova-vault.sh) e toccano solo lui.
-HOOK = {
-    "SessionStart": ("allinea-claude.sh", 15, "Controllo che ~/.claude/ sia allineato al vault"),
-    "Stop": ("pusha-da-solo.sh", 60, "Chiudo e pusho il vault"),
-}
+# italiano-chiaro.sh (12/10/2026) mette in contesto la guida alla scrittura,
+# anche agli operatori: per questo sta pure su SubagentStart.
+HOOK = [
+    ("SessionStart", "allinea-claude.sh", 15, "Controllo che ~/.claude/ sia allineato al vault"),
+    ("SessionStart", "italiano-chiaro.sh", 10, "Carico la guida all'italiano chiaro"),
+    ("SubagentStart", "italiano-chiaro.sh", 10, "Carico la guida all'italiano chiaro"),
+    ("Stop", "pusha-da-solo.sh", 60, "Chiudo e pusho il vault"),
+]
 FIRMA = "denki-brain"      # marcatore: cosi' non si tocca quello che c'era gia'
 
 
@@ -68,7 +72,7 @@ def registra_hook(check, fatti):
     dati = json.loads(s.read_text(encoding="utf-8")) if s.exists() else {}
     hooks = dati.setdefault("hooks", {})
     cambiato = False
-    for evento, (script, timeout, messaggio) in HOOK.items():
+    for evento, script, timeout, messaggio in HOOK:
         comando = f'"$HOME/.claude/hooks/{script}"'
         voce = {"type": "command", "command": comando,
                 "timeout": timeout, "statusMessage": messaggio}

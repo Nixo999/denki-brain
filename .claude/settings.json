@@ -32,5 +32,8 @@
       "Bash(git push -f:*)",
       "Bash(git reset --hard:*)"
     ]
+  },
+  "enabledPlugins": {
+    "ponytail@claude-community": false
   }
 }

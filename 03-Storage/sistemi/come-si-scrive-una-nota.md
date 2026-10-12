@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Le regole di scrittura del vault - riga, verificato, marcatura per affermazione, tre classi di memoria, tetti di lunghezza.
-updated: 2026-09-27
+updated: 2026-10-12
 verificato: 2026-09-11
 source: denkicode
 tags: [convenzioni, memoria, frontmatter, verifica]
@@ -117,6 +117,18 @@ proposito puo' essere lunga quanto serve, purche' ogni riga cambi qualcosa.
 | Daily | *superato il 27/09/2026* | Era 40 righe. Le daily non si scrivono piu': la giornata sta nel registro interventi → [[2026-09-27-daily-abolita]] |
 
 Fuori tetto si taglia il contenuto, non si comprime la sintassi.
+
+## 5. La lingua delle note
+
+Ogni sessione imita il modo in cui sono scritte le note che legge. Il 27/09/2026
+`FATTI.md` e il registro sono diventati righe di frammenti e di gergo interno
+(«giro 3», «la testa», «cella chiusa»), e due settimane dopo anche le risposte
+in chat uscivano così: Nicola, 12/10/2026, «parla come se non sapesse
+l'italiano». Da allora le note si scrivono come [[italiano-chiaro]]: frasi
+complete con soggetto e verbo, parole che capirebbe anche chi non c'era, e le
+parole nate qui dentro solo se sono già di uso comune fra noi. Vale anche per la
+`riga:` del frontmatter, per il `--perche` di `regola.py` e per le celle delle
+tabelle: una cella può essere corta, ma deve dire una cosa che si capisce.
 
 `genera-indice.py` misura questi tetti e stampa chi li sfora: dal 27/09/2026 un
 tetto e' una cosa che si controlla, non un'intenzione.

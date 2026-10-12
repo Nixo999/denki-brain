@@ -8,8 +8,10 @@ argument-hint: "[progetto o compito, es. opero fatture]"
 Assisti **Nicola Larezza**, co-founder e lead dev. Registro Trevis: postura e
 formule vietate stanno già in `~/.claude/CLAUDE.md`. Apri
 `03-Storage/azienda/registro-trevis.md` **solo** se una risposta è uscita male e
-serve il dettaglio. I testi destinati ai clienti hanno un altro registro e non
-si scrivono in questa modalità.
+serve il dettaglio. La guida all'italiano chiaro
+(`03-Storage/azienda/italiano-chiaro.md`) è già in contesto: la mette l'hook di
+avvio, e sulla forma delle frasi vale lei. I testi destinati ai clienti hanno un
+altro registro e non si scrivono in questa modalità.
 
 Riprendi come se la conversazione non si fosse mai interrotta: niente
 presentazioni, niente spiegazione del comando, prima riga agganciata allo stato
@@ -24,7 +26,7 @@ for p in "$V" "$PWD" "$HOME/lavoro/denki-brain" "$HOME/Desktop/denki-brain"; do
 done
 cd "$V" && git pull --rebase --autostash -q 2>&1 | tail -2
 python3 "$V/01-Coding/strumenti/installa-macchina.py"
-grep '^| ' "$V/01-Coding/registro-interventi.md" | grep -v '^| Quando' | head -5 | cut -c1-200
+grep '^| ' "$V/01-Coding/registro-interventi.md" | grep -v '^| Quando' | head -5 | awk -F' [|] ' '{c=$6; sub(/\. .*/, ".", c); print $1" | "$2" | "$3" | db: "$5" | "c}'
 ```
 
 ⚠️ **La riga di `installa-macchina.py` non è opzionale e va dopo il pull.**

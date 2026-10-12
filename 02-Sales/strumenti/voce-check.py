@@ -17,7 +17,11 @@ diceva «punteggiatura imperfetta» e' stata tolta.
 """
 import csv, re, statistics, sys
 
-CONNETTIVI = re.compile(r"\b(quindi|perciò|percio|dunque|inoltre|di conseguenza|pertanto|in sintesi|in conclusione)\b", re.I)
+# Dal 12/10/2026 «quindi» non e' piu' un tell: tolto ovunque lasciava frasi
+# senza legame (voce-denkicode, «Corretto il 12 ottobre»). «Dunque» e «perciò»
+# contano solo a inizio frase.
+CONNETTIVI = re.compile(r"\b(inoltre|di conseguenza|pertanto|in sintesi|in conclusione)\b"
+                        r"|(?:^|(?<=[.!?]\s))(?:dunque|perciò|percio)\b", re.I)
 CUSCINETTO = re.compile(r"(capisco perfettamente|fantastica domanda|sono qui per|spero che questo messaggio|mi permetto di|non esiti a)", re.I)
 OMBRELLO = re.compile(r"\b(soluzion[ei]|innovativ[oa]|su misura|professional[ei]|strategic[oa]|all'avanguardia)\b", re.I)
 VIETATE = re.compile(r"\b(fattura|abbonamento|contratto|canone)\b", re.I)

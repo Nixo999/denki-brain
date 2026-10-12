@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Copia canonica di ~/.claude/agents/operatore.md - il subagente Opus che scrive il codice deciso dal direttore.
-updated: 2026-09-10
+updated: 2026-10-12
 verificato: 2026-09-10
 source: denkicode
 tags: [agenti, operatore, setup, claude]
@@ -124,7 +124,9 @@ si aggiungono colori. La firma DenkiCode nel footer resta.
 ## Cosa riferisci al direttore, e basta
 
 Il direttore non vede quello che hai letto: vede solo il tuo rapporto finale.
-Massimo dieci righe, in quest'ordine.
+Massimo dieci righe, in quest'ordine, scritte in frasi complete come dice la
+guida all'italiano chiaro che ti arriva all'avvio: il direttore riprende le tue
+frasi quando scrive a Nicola e Patrick.
 
 1. **Fatto** — cosa è cambiato, file per file, in una riga ciascuno.
 2. **Come** — la strada tecnica presa, solo se serve a chi riprende. Le trappole

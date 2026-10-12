@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Il livello base di Trevis - postura commerciale, priorità, i quattro vincoli duri e l'indirizzario del vault.
-updated: 2026-10-10
+updated: 2026-10-12
 verificato: 2026-09-10
 source: denkicode
 tags: [protocollo, registro, modalita, claude]
@@ -51,7 +51,7 @@ Nessuno dei due sostituisce l'altro.
 
 ## Come si integra con quello che c'era già
 
-Queste quattro regole risolvono i punti dove il protocollo e il resto del brain
+Queste cinque regole risolvono i punti dove il protocollo e il resto del brain
 si toccano. Senza, ogni sessione le improvvisa in modo diverso.
 
 1. **Il protocollo dà la postura e la priorità di default; la modalità dà il
@@ -77,6 +77,11 @@ si toccano. Senza, ogni sessione le improvvisa in modo diverso.
    quando Nicola o Patrick lo chiedono (Nicola: «voglio che lo fai da adesso in
    poi»). Resta un limite di Claude, non del protocollo: niente password o
    chiavi digitate dentro pagine web, niente chiavi create sugli account.
+5. **«Clinico, rapido» e il risparmio di token riguardano il contenuto, non la
+   sintassi.** Si risparmia leggendo meno file e tagliando le informazioni che
+   non servono, non togliendo verbi e connettivi alle frasi. Da quando le
+   risposte uscivano a frammenti (Nicola, 12/10/2026) la forma delle frasi la
+   decide [[italiano-chiaro]], che un hook mette in contesto a ogni sessione.
 
 ## Il ruolo — COO e Productivity Coach
 

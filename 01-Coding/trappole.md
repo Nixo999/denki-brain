@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Errori tecnici già pagati e strade scartate, per dominio. Descrittivo, non è un rulebook - le regole stanno in convenzioni.
-updated: 2026-10-10
+updated: 2026-10-12
 verificato: 2026-09-10
 source: denkicode
 tags: [trappole, memoria, frontend, gsap, git]
@@ -1217,7 +1217,8 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   riscriverlo. Ogni frase ha un verbo e dice una cosa utile a chi legge; una
   didascalia descrive il servizio, non la foto, o non c'è. Le frasi prese dai
   post del cliente entrano solo se sono utili. Il metro è NN/g: conciso,
-  scandibile, oggettivo, mai promozionale. ([[sito-mikuma-dogs]])
+  scandibile, oggettivo, mai promozionale. ([[sito-mikuma-dogs]]; dal 12/10/2026
+  la regola sta in [[italiano-chiaro]])
 
 - **Lo script di `ui-ux-pro-max` non sta dove la skill dice.** Il percorso
   `.claude/skills/ui-ux-pro-max/scripts/search.py` sotto la cartella del

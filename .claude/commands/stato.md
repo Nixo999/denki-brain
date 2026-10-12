@@ -30,7 +30,7 @@ Allinea la sessione allo stato attuale di DenkiCode. **Deve costare poco.**
 ```bash
 git pull --rebase --autostash -q 2>&1 | tail -2
 python3 01-Coding/strumenti/installa-macchina.py
-grep '^| ' 01-Coding/registro-interventi.md | grep -v '^| Quando' | head -10 | cut -c1-300
+grep '^| ' 01-Coding/registro-interventi.md | grep -v '^| Quando' | head -10 | awk -F' [|] ' '{c=$6; sub(/\. .*/, ".", c); print $1" | "$2" | "$3" | db: "$5" | "c}'
 ```
 
 `installa-macchina.py` va **dopo** il pull: `~/.claude/` è locale e il pull non

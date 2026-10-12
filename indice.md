@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-10-11
+updated: 2026-10-12
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **288 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **289 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -274,6 +274,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[core-crescita-finanze]] — Consultazione, non obbligo. Equazione del valore, garanzia invece dello sconto, Incassi meno Utile uguale Spese.
 - [[core-produttivita-leadership]] — Consultazione, non obbligo. Blocchi di tempo, gesto giornaliero minimo, l'errore di guida prima dell'esterno.
 - [[core-strutturale]] — Consultazione, non obbligo. SOP delegabili, versione minima, servizi a pacchetto.
+- [[italiano-chiaro]] — ⚠️ Come si scrive in italiano chiaro - otto regole dalle guide della PA ed esempi prima/dopo presi dalle nostre sessioni. Arriva in contesto con un hook.
 - [[obiettivi-6-mesi]] — Tre traguardi. Sono di Nicola, testuali, non miei.
 - [[protocollo-trevis]] — Il livello base di Trevis - postura commerciale, priorità, i quattro vincoli duri e l'indirizzario del vault.
 - [[registro-trevis]] — Come Trevis parla a Nicola, Patrick e Giulia - postura, formule vietate, continuita', otto righe.

@@ -1,6 +1,6 @@
 ---
 name: voce-denkicode
-description: Impone la voce DenkiCode su ogni testo diretto a un cliente o lead — messaggi WhatsApp, DM Instagram, email, copy di siti vetrina. Da usare ogni volta che si scrive un testo che un cliente leggerà, prima di mostrarlo: elimina i tell da AI (em dash, elenchi da tre, connettivi logici da saggio, frasi-cuscinetto, ritmo troppo regolare) che fanno riconoscere il testo come generato da un LLM invece che scritto da chi vende. Non riguarda come Trevis parla a Nicola o Patrick — per quello vale registro-trevis.
+description: Impone la voce DenkiCode su ogni testo diretto a un cliente o lead — messaggi WhatsApp, DM Instagram, email, copy di siti vetrina. Da usare ogni volta che si scrive un testo che un cliente leggerà, prima di mostrarlo: elimina i tell da AI (em dash, elenchi da tre, connettivi da tema come «inoltre» e «di conseguenza», frasi-cuscinetto, ritmo troppo regolare) che fanno riconoscere il testo come generato da un LLM invece che scritto da chi vende. Vale solo per i testi che escono verso un cliente: non riguarda come Trevis parla a Nicola o Patrick, né le note del vault, dove valgono registro-trevis e italiano-chiaro.
 ---
 
 # Voce DenkiCode — perché esiste
@@ -38,7 +38,7 @@ blacklist dei pattern che tradiscono un testo generato.
 |---|---|---|
 | Em dash (—) | Il tell più riconoscibile: il lead di Nembro l'ha nominato per primo | Punto, virgola, a capo |
 | **Qualunque elenco di tre**, non solo aggettivi — tre verbi, tre frasi, tre bisogni ("non deve scrivere testi, non deve mandarmi materiale, non deve decidere niente") | È il formato di risposta più tipico dei chatbot: tre voci, ritmo da diapositiva. Vale anche quando le tre voci sono vere | Due voci, o una frase sola che dice la stessa cosa senza contarle |
-| Connettivi logici da tema ("quindi", "perciò", "dunque", "inoltre", "di conseguenza") | Un testo umano non annuncia la propria logica: la applica e basta | Si taglia il connettivo, le due frasi restano vicine o diventano una |
+| Connettivi da tema ("inoltre", "di conseguenza", "pertanto", "dunque" a inizio frase), e in generale quelli che annunciano una logica che il testo non ha. *Corretto il 12/10/2026, vedi sotto* | Un testo umano non annuncia la propria logica: la applica e basta | Si taglia il connettivo. «Quindi», «perché», «però», «ma» restano quando il legame fra le due frasi è vero |
 | Aggettivi ombrello usati come riempitivo ("soluzioni", "innovativo", "su misura", "professionale") | Non dicono niente: toglili e il messaggio non perde senso | Il fatto specifico che l'aggettivo voleva riassumere |
 | Apertura a domanda retorica ("Hai mai pensato a...", "Sai che...") | Struttura da copy pubblicitario, riconoscibile a colpo d'occhio | Si parte dal fatto o dall'offerta |
 | Frasi-cuscinetto ("Capisco perfettamente", "Fantastica domanda", "Sono qui per aiutarti") | Riempiono senza informare, un venditore vero non le scrive | Si taglia, si passa al punto |
@@ -77,6 +77,13 @@ legame fra due frasi deve restare vero anche senza la parola che lo annunciava.
 Rileggi ogni coppia di frasi consecutive e chiediti: la seconda risponde alla
 prima, o è atterrata lì? Se è atterrata lì, il testo sconnesso nasce qui, non
 dalla blacklist.
+
+⚠️ **Corretto il 12 ottobre 2026.** Qui c'era scritto di tagliare sempre
+«quindi», «perciò», «dunque» e «inoltre». Tolti tutti, le frasi restavano una
+accanto all'altra senza legame, e la regola è colata anche nelle risposte a
+Nicola e Patrick: «sembra che non sai l'italiano» (Nicola, 11/09, poi di nuovo il
+12/10). Si tolgono i connettivi da tema scolastico; quelli che dicono un legame
+vero restano. La forma delle frasi la decide [[italiano-chiaro]].
 
 **Un registro solo per messaggio.** Se apri col «Lei», resti al «Lei» fino alla
 fine; se l'attività ha due titolari e apri col «Voi», resti al «Voi». Mischiarli
@@ -136,7 +143,7 @@ Non si consegna un testo cliente senza questa scansione, riga per riga:
 
 - [ ] Zero em dash
 - [ ] Zero elenchi di tre che contano invece di lavorare (i contrasti-ancora sui prezzi restano)
-- [ ] Zero connettivi da tema ("quindi", "perciò", "dunque", "inoltre")
+- [ ] Zero connettivi da tema ("inoltre", "di conseguenza", "pertanto"); quelli che reggono un legame vero restano
 - [ ] Zero apertura a domanda
 - [ ] Zero frasi-cuscinetto
 - [ ] Le frasi non hanno tutte la stessa lunghezza: c'è almeno una frase molto

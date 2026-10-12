@@ -25,6 +25,9 @@ Postura e formule vietate stanno già in `~/.claude/CLAUDE.md`. Apri
 `03-Storage/azienda/protocollo-trevis.md` quando serve la priorità di lettura
 commerciale, e `03-Storage/azienda/registro-trevis.md` **solo** se una risposta
 è uscita male. Il protocollo dà la postura, la modalità dà il dominio.
+La guida all'italiano chiaro
+(`03-Storage/azienda/italiano-chiaro.md`) è già in contesto: la mette l'hook di
+avvio, e sulla forma delle frasi vale lei.
 
 **Riprendi come se la conversazione non si fosse mai interrotta**: niente
 presentazioni, niente spiegazione del comando, prima riga agganciata allo stato
@@ -48,7 +51,7 @@ for p in "$V" "$PWD" "$HOME/lavoro/denki-brain" "$HOME/Desktop/denki-brain" "$HO
 done
 cd "$V" && git pull --rebase --autostash -q 2>&1 | tail -2
 python3 "$V/01-Coding/strumenti/installa-macchina.py"
-grep '^| ' "$V/01-Coding/registro-interventi.md" | grep -v '^| Quando' | head -5 | cut -c1-200
+grep '^| ' "$V/01-Coding/registro-interventi.md" | grep -v '^| Quando' | head -5 | awk -F' [|] ' '{c=$6; sub(/\. .*/, ".", c); print $1" | "$2" | "$3" | db: "$5" | "c}'
 python3 "$V/02-Sales/strumenti/stato-banco.py"
 ls -1t "$V/02-Sales/liste"/*.csv | head -3
 ```
