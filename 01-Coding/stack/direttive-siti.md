@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 12/10/2026 — Nicola: «rifallo praticamente da capo, la frase fatta così della libera tira ecc... non ha senso, non mi piace lo stile e non mi sembra neanche per sbaglio vicino al livello di quelli ai quali ti ho detto di prendere spunto»
+
+Una parola o una frase a effetto che cambia allo scroll non è un racconto: il livello di NG Barber, Fiftynine e Snia si raggiunge con una pagina composta davvero, con foto trattate, tipografia a più voci, sezioni ricche e motion sulle cose vere del posto, e prima di scrivere la direzione si guardano quei siti a larghezza telefono.
+
 ### 12/10/2026 — Nicola: «non va bene che da telefono ci sia questo effetto della scritta che si vede tutta dietro, falla che sparisce in qualche modo con un gradiente al massimo o trova una soluzione migliore, poi durante l'animazione la scritta libertà viene tagliata perché troppo grande»
 
 Quando una fascia fissa resta ferma e il testo le scorre sotto, il testo deve sparire sotto la fascia (sfondo opaco e un gradiente al bordo), mai vedersi attraverso la parola; e una parola grande animata deve stare dentro i bordi a ogni larghezza di telefono, calcolando il corpo invece di allargarla.
