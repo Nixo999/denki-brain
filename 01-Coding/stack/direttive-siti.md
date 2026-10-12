@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-10-08
+updated: 2026-10-12
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 12/10/2026 — Nicola: «non mi piace per niente il fatto che disegni cose così, non farlo, togli il disegno del guinzaglio e del cane. non disegnare niente tu, trova qualcos'altro da fare animato»
+
+Trevis non disegna illustrazioni in SVG (oggetti, animali, scene come un guinzaglio, un cane o una collina): il racconto allo scroll si fa con la tipografia, il colore, le foto e il testo.
 
 ### 08/10/2026 — Nicola: «non doveva consegnare a 25 min? a me sembra stia andando da 45min, e poi perche usi sempre e solo fable? non si puo risparmiare un po'»
 
