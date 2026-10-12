@@ -608,6 +608,15 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   fascia non si muoveva più. → `fromTo` col valore di partenza scritto e
   `immediateRender: false`. (25/09/2026, [[sito-perunpelo]])
 
+- **Con `scrub` la timeline deve durare esattamente 1** (12/10/2026, Giulia Pregnolato):
+  se l'ultimo tween finisce a .86, tutto arriva in ritardo del 14% rispetto allo scroll.
+  Si chiude con un tween vuoto che finisce a 1.
+- **`transform:translateY(110%)` scritto in CSS, GSAP lo legge come `y` in pixel e non
+  come `yPercent`** (12/10/2026): nel `fromTo` va messo `y:0` esplicito, oltre a `yPercent`.
+- **`clip-path` si interpola solo se la stringa ha la stessa forma del valore calcolato**
+  (`inset(0% 0px 0px round …)`), e la proprietà CSS `scale` non è quella che GSAP tocca
+  con `scale`: serve `transform:scale()` (12/10/2026).
+
 ## CSS e layout
 
 **`sticky` non entra nel padding del contenitore.** Su [[sito-barbershop-snia]]
