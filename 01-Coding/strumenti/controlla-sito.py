@@ -76,7 +76,9 @@ def controlla(d):
     robots = (d / "robots.txt").read_text(encoding="utf-8", errors="ignore") if (d / "robots.txt").exists() else ""
     toml = (d / "netlify.toml").read_text(encoding="utf-8", errors="ignore") if (d / "netlify.toml").exists() else ""
     piccole = foto_piccole(d)
-    tipografica = ("scrub" in t) and ("font-variation-settings" in t)
+    # il JS sta in assets/*.js e testo() non lo legge: qui serve
+    js = "".join(p.read_text(encoding="utf-8", errors="ignore") for p in sorted(d.glob("assets/*.js")))
+    tipografica = ("scrub" in (t + js)) and ("font-variation-settings" in (t + js))
 
     return {
         "nome": d.name,
