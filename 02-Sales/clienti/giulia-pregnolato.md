@@ -2,7 +2,7 @@
 type: cliente
 riga: Giulia Pregnolato, educatrice cinofila a Torino senza sito. Ha risposto al DM di Patrick il 12/10: vuole sentirlo al telefono.
 status: lead
-progetti: ["[[sito-giulia-pregnolato]]"]
+progetti: [sito-giulia-pregnolato]
 updated: 2026-10-12
 source: claude
 verificato: 2026-10-12

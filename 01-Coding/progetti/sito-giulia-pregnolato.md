@@ -88,3 +88,7 @@ La distingue il racconto dei suoi cani difficili, Aaron e Nutella, che usa come 
 ## Collegamenti
 
 [[giulia-pregnolato]] · [[convenzioni]] · [[trappole]]
+
+## Direzione scelta (12/10/2026, Fable)
+
+Il mondo è **«il guinzaglio che si allenta»** e sta per esteso in `DIREZIONE.md` nel repo. Un solo guinzaglio arancione attraversa la pagina: in cima è teso e vibra (il problema, con le parole del proprietario), a metà si allenta (capirsi: «il cane che non ascolta non è COMPRESO»), in fondo il moschettone si apre e resta la traccia del cane libero sulla collina verde. Le foto non reggono (due, con scritte sopra), quindi il sito regge su grafica inventata, tipografia e colore, e le foto vere si chiedono in telefonata. Palette: carta `#F3EDE2`, nero caldo `#1B1917`, arancione corda `#E4551B`, verde campo `#27422A`, pelo `#C9A36B`. Font: tre terne provate a 375 px con il suo testo (Mona Sans, Bricolage Grotesque, Sofia Sans), la scelta e il perché stanno in testa a `assets/stile.css`.
