@@ -76,12 +76,18 @@ def controlla(d):
     robots = (d / "robots.txt").read_text(encoding="utf-8", errors="ignore") if (d / "robots.txt").exists() else ""
     toml = (d / "netlify.toml").read_text(encoding="utf-8", errors="ignore") if (d / "netlify.toml").exists() else ""
     piccole = foto_piccole(d)
+    tipografica = ("scrub" in t) and ("font-variation-settings" in t)
 
     return {
         "nome": d.name,
         "esiti": [
-            ("grafica inventata", t.count("<svg") >= MIN_SVG,
-             f"{t.count('<svg')} <svg> inline, ne servono {MIN_SVG}. Senza, la pagina dipende tutta dalle foto"),
+            # Dal 12/10/2026 (Nicola, su Giulia Pregnolato: «non disegnare niente tu,
+            # trova qualcos'altro da fare animato», in direttive-siti) la grafica
+            # inventata puo' essere tipografica e cromatica invece che disegnata:
+            # racconto con `scrub` e un asse variabile in `font-variation-settings`.
+            ("grafica inventata", t.count("<svg") >= MIN_SVG or tipografica,
+             f"{t.count('<svg')} <svg> inline, ne servono {MIN_SVG}, oppure un racconto tipografico "
+             "(scrub + font-variation-settings). Senza, la pagina dipende tutta dalle foto"),
             ("racconto allo scroll", ("ScrollTrigger" in t) or ("animation-timeline" in t),
              "niente GSAP/ScrollTrigger ne' animation-timeline: e' un impaginato, non un racconto"),
             ("animazione d'apertura", (".js:not(.cattura)" in t) or ("gsap.timeline" in t),
@@ -89,7 +95,7 @@ def controlla(d):
             # o le foto reggono, o il sito non dipende da loro. Fiftynine ha foto
             # da 640 e piace lo stesso: regge su dieci SVG inventati. Mikuma no.
             ("foto, oppure grafica che le sostituisca",
-             (not piccole) or t.count("<svg") >= 6,
+             (not piccole) or t.count("<svg") >= 6 or tipografica,
              f"{len(piccole)} foto sotto {MIN_FOTO}px e solo {t.count('<svg')} <svg> inventati: "
              "il sito dipende da foto che non reggono. O le chiedi al cliente, o disegni "
              "una pagina che non ne abbia bisogno (" +
