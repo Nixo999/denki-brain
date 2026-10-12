@@ -617,6 +617,11 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   (`inset(0% 0px 0px round …)`), e la proprietà CSS `scale` non è quella che GSAP tocca
   con `scale`: serve `transform:scale()` (12/10/2026).
 
+- **`overwrite:true` su un tween uccide anche i tween con `scrub` sullo stesso elemento**, e con
+  loro i loro ScrollTrigger: la sezione resta ferma su un solo stato (12/10/2026, Giulia
+  Pregnolato). Con `overwrite:'auto'` sopravvivono. E con lo scrub sul colore chi si ferma a
+  metà vede il colore misto: i cambi di stato scattano a tempo, lo scrub resta sui valori continui.
+
 ## CSS e layout
 
 **`sticky` non entra nel padding del contenitore.** Su [[sito-barbershop-snia]]
