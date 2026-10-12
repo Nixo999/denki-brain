@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 12/10/2026 — Nicola: «non va bene che da telefono ci sia questo effetto della scritta che si vede tutta dietro, falla che sparisce in qualche modo con un gradiente al massimo o trova una soluzione migliore, poi durante l'animazione la scritta libertà viene tagliata perché troppo grande»
+
+Quando una fascia fissa resta ferma e il testo le scorre sotto, il testo deve sparire sotto la fascia (sfondo opaco e un gradiente al bordo), mai vedersi attraverso la parola; e una parola grande animata deve stare dentro i bordi a ogni larghezza di telefono, calcolando il corpo invece di allargarla.
+
 ### 12/10/2026 — Nicola: «non mi piace per niente il fatto che disegni cose così, non farlo, togli il disegno del guinzaglio e del cane. non disegnare niente tu, trova qualcos'altro da fare animato»
 
 Trevis non disegna illustrazioni in SVG (oggetti, animali, scene come un guinzaglio, un cane o una collina): il racconto allo scroll si fa con la tipografia, il colore, le foto e il testo.
