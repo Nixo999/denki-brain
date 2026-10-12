@@ -124,7 +124,7 @@ ricerca,MI,impiantisti,parziale,7,2026-09-25,
 ricerca,MI,officine e carrozzerie,esaurito,28,2026-10-07,"7/10: 48 profili, 8 righe. Finito per resa: 18 fermi, 16 piccoli; le strutturate sono concessionarie"
 ricerca,MI,meccanica e carpenterie,parziale,4,2026-09-25,
 ricerca,MI,edilizia e serramenti,esaurito,53,2026-10-09,"9/10: 44 profili, 6 righe. Finito per resa: 12 handle gia contattati, il resto fermi o piccoli"
-ricerca,MI,ingrossi e distribuzione,parziale,38,2026-10-11,"11/10: 38 profili, 10 righe. Aperta, rende 1 su 4; fonti nuove: elenco SoGeMi, soci Assodimi, PagineBianche"
+ricerca,MI,ingrossi e distribuzione,esaurito,45,2026-10-12,"12/10: ~120 profili, 7 righe. Finito per resa: ~50 fuori provincia dai motori, Ortomercato senza Instagram vivo"
 ricerca,MI,trasporti e logistica,parziale,7,2026-09-23,
 ricerca,MI,alimentari artigianali,esaurito,28,2026-10-09,"9/10: 31 profili, 5 righe. Finito per resa: 15 fermi, 8 piccoli, 3 troppo grandi"
 ricerca,MI,aziende agricole con vendita,parziale,23,2026-10-05,"5/10: 57 profili, 20 righe. Aperta, rende 1 su 3: restano nomi nel Parco Sud e Ticino"
@@ -135,7 +135,7 @@ ricerca,LC,impiantisti,parziale,3,2026-09-29,
 ricerca,LC,officine e carrozzerie,esaurito,9,2026-10-07,"7/10: 44 profili, 8 righe. Finito per resa: 15 fermi, 12 piccoli"
 ricerca,LC,meccanica e carpenterie,parziale,1,2026-09-25,
 ricerca,LC,edilizia e serramenti,esaurito,20,2026-10-05,"5/10: 72 profili, 15 righe. Finito per resa e Pagine Gialle finita: 22 fermi, 14 sotto i 200 follower"
-ricerca,LC,alimentari artigianali,parziale,2,2026-10-05,"5/10: 1 profilo, 1 riga. Riserva da una riga; scorta da Pagine Gialle: Butti, Bonfanti, Marco d Oggiono, 5 caseifici, 8 torrefazioni"
+ricerca,LC,alimentari artigianali,parziale,14,2026-10-12,"12/10: ~55 profili, 12 righe. Aperta, rende 1 su 4,5; fonti finite: 10 fermi, ~10 negozi o piccoli"
 ricerca,LC,aziende agricole con vendita,parziale,22,2026-10-09,"9/10: 77 profili, 20 righe. Aperta ma fonti quasi finite: 28 fermi, 17 fuori provincia; le ultime 4 righe sono deboli"
 ricerca,LC,altro,parziale,1,2026-09-23,righe sparse di settori fuori elenco
 ricerca,VA,falegnamerie,parziale,3,2026-09-29,
@@ -161,7 +161,7 @@ ricerca,BG,aziende agricole con vendita,parziale,3,2026-09-17,
 ricerca,BG,altro,parziale,17,2026-09-25,righe sparse di settori fuori elenco
 ricerca,LO,officine e carrozzerie,parziale,2,2026-09-12,
 ricerca,LO,edilizia e serramenti,esaurito,8,2026-10-09,"9/10: 37 profili, 7 righe. Finito per resa: provincia piccola, meta dei risultati fuori provincia"
-ricerca,LO,alimentari artigianali,parziale,2,2026-09-29,
+ricerca,LO,alimentari artigianali,esaurito,7,2026-10-12,"12/10: ~25 profili, 5 righe. Finito per fonti: ~20 produttori PagineBianche senza Instagram, 6 fermi"
 ricerca,LO,aziende agricole con vendita,parziale,2,2026-09-29,
 ricerca,LO,altro,parziale,1,2026-09-29,righe sparse di settori fuori elenco
 ricerca,PV,studi tecnici,parziale,1,2026-09-29,
@@ -175,7 +175,7 @@ ricerca,PV,aziende agricole con vendita,parziale,2,2026-09-29,
 ricerca,PV,altro,parziale,2,2026-09-16,righe sparse di settori fuori elenco
 ricerca,SO,falegnamerie,parziale,2,2026-09-29,
 ricerca,SO,officine e carrozzerie,parziale,2,2026-09-23,
-ricerca,SO,edilizia e serramenti,parziale,4,2026-09-29,
+ricerca,SO,edilizia e serramenti,esaurito,18,2026-10-12,"12/10: 78 profili, 14 righe. Finito per resa: ~35 fuori provincia, ~15 fermi"
 ricerca,SO,altro,parziale,3,2026-09-29,righe sparse di settori fuori elenco
 ricerca,BS,falegnamerie,parziale,16,2026-10-07,"7/10: 44 profili, 12 righe. Aperta, rende 1 su 4; fermata per tempo"
 ricerca,BS,studi tecnici,parziale,1,2026-09-13,
@@ -225,12 +225,12 @@ siti,MI,"personal trainer, pilates e yoga",esaurito,10,2026-10-09,"9/10: 30 prof
 siti,MI,fotografi e videomaker,esaurito,7,2026-10-05,"5/10: 40 profili, 7 righe. Finito per resa: 12 col sito, 8 sotto i 200 follower, 7 morti; 20 fotografi MI stanno gia nella lista sartorie del 2/10"
 siti,MI,fioristi e wedding planner,esaurito,47,2026-10-11,"11/10: 30 profili, 3 righe. Finito per resa e fonti: matrimonio.com 403, Interflora da quasi tutti col sito, handle solo indovinati"
 siti,BG,toelettature e dog trainer,parziale,23,2026-10-05,"5/10: 108 profili, 23 righe. Fermata per fonti finite: 46 fuori provincia, 16 col sito"
-siti,MI,pasticcerie e cake designer,parziale,8,2026-10-05,"5/10: 20 profili, 8 righe. Riserva da 8, rende 2 su 5; Pagine Gialle 397 schede, restano nomi (Lambertini e Micake col gancio 6 tenuti fuori)"
+siti,MI,pasticcerie e cake designer,parziale,33,2026-10-12,"12/10: ~115 profili, 25 righe. Aperta, quota piena: ~30 fuori provincia, ~22 col sito, ~12 fermi; Yahoo trova ancora 1-2 profili per ricerca"
 siti,LC,fioristi e wedding planner,parziale,7,2026-10-05,"5/10: 25 profili, 7 righe. Riserva da 7, rende 1 su 3,5; su matrimonio.com restano 10 fioristi e tutti i wedding planner"
 siti,BS,"sartorie, atelier e tappezzieri",esaurito,4,2026-10-07,"7/10: 33 profili, 4 righe. Finito per resa: 10 sotto i 200 follower, 8 col sito, 7 fuori zona"
 siti,BS,"personal trainer, pilates e yoga",parziale,26,2026-10-07,"7-8/10: 105 profili, 26 righe. Aperta, rende 1 su 4; 33 col sito. Startpage era la fonte migliore, ora esclusa (chiede autorizzazioni)"
 siti,LO,toelettature e dog trainer,esaurito,6,2026-10-07,"7-8/10: 35 profili, 6 righe. Finito per resa e fonti finite: 11 sotto i 200 follower"
-ricerca,LC,ingrossi e distribuzione,parziale,18,2026-10-07,"7/10: circa 65 profili, 18 righe. Aperta, rende 1 su 3-4; fermata per fonti finite (Pagine Gialle in 429)"
+ricerca,LC,ingrossi e distribuzione,parziale,18,2026-10-12,"12/10: ~4 profili, 0 righe. Fermata per fonti: 36 ricerche PagineBianche, 31 domini, solo un gia contattato"
 ricerca,CO,alimentari artigianali,esaurito,13,2026-10-09,"9/10: 66 profili, 13 righe. Finito per resa: 25 fuori provincia o omonimi, 11 fermi, 9 morti o sotto i 200"
 siti,BS,pasticcerie e cake designer,parziale,25,2026-10-09,"9/10: 91 profili, 25 righe. Aperta, rende 1 su 4: i cake designer e la Bassa non sono finiti"
 siti,BS,fotografi e videomaker,esaurito,4,2026-10-09,"9/10: 43 profili, 4 righe. Finito per resa: 14 col sito, 10 sotto i 200, 6 fermi"
@@ -252,3 +252,9 @@ siti,LO,tatuatori e piercing,esaurito,3,2026-10-11,"11/10: 16 profili, 3 righe. 
 siti,LO,"personal trainer, pilates e yoga",esaurito,3,2026-10-11,"11/10: 89 profili, 3 righe. Finito per resa: ~55 omonimi fuori provincia, 4 col sito, 6 palestre con reception, 4 piccoli o fermi"
 siti,LO,fotografi e videomaker,esaurito,0,2026-10-11,"11/10: 46 profili, 0 righe. Finito: solo omonimi Lodi e account di comuni; fonti di ricerca bloccate"
 ricerca,LO,ingrossi e distribuzione,esaurito,1,2026-10-11,"11/10: 62 profili, 1 riga. Finito per resa: omonimi Lodi esteri, restano negozi piccoli"
+siti,VB,"sartorie, atelier e tappezzieri",esaurito,4,2026-10-12,"12/10: 30 profili, 4 righe. Finito per resa: 17 fuori provincia, 3 sotto i 200, 2 negozi; ~30 sarte su PagineBianche quasi tutte senza Instagram"
+siti,PV,"sartorie, atelier e tappezzieri",esaurito,1,2026-10-12,"12/10: 32 profili, 1 riga. Finito per resa: 5 col sito, 3 fermi, ~10 fuori regione"
+siti,CR,toelettature e dog trainer,esaurito,7,2026-10-12,"12/10: ~50 profili, 7 righe. Finito per fonti: toelettature.net e toelettapp.it battuti, 4 col sito, ~10 fermi, 4 negozi"
+siti,PR,toelettature e dog trainer,parziale,7,2026-10-12,"12/10: ~55 profili, 7 righe. Aperta ma rende poco: 4 col sito, molti fuori regione da Yahoo"
+siti,PV,tatuatori e piercing,esaurito,11,2026-10-12,"12/10: 84 profili, 11 righe: 7 col sito, 6 fermi, ~30 omonimi esteri. Finito per bacino (~35 studi in provincia)"
+ricerca,MN,edilizia e serramenti,parziale,6,2026-10-12,"12/10: 25 profili, 7 righe valide (6 usate, @gilioli_poggiorusco pronta). Aperta, rende 1 su 4"
