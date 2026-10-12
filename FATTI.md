@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura. Max 80 righe.
-updated: 2026-10-11
+updated: 2026-10-12
 verificato: 2026-09-16
 source: denkicode
 tags: [stato, fatti]
@@ -34,6 +34,7 @@ cosa aperta. Il racconto dei giri sta nella nota progetto, la giornata nel
 
 | Sito | Online su | Stato (data) | Prossimo passo |
 |---|---|---|---|
+| [[sito-giulia-pregnolato]] | giuliapregnolato.netlify.app | giro 1 «Il guinzaglio che si allenta» (12/10) costruito da Fable, 8/8, guardato a 375 e 1440 da Trevis; lei ha risposto a Patrick «sì mi farebbe piacere parlarne al telefono» (12/10) | verdetto di Nicola, poi la telefonata di Patrick (l'11/10 ha perso il cane Nutella: si sa prima di chiamare); da chiederle prezzi, WhatsApp, campo, comuni, formazione, foto originali |
 | [[sito-claudia-dogsitter]] | **non ancora online**: il deploy lo lancia Nicola | giro 1 «Una giornata da Claudia» (08/10) committato, 8/8, guardato a 375 e 1440 da Trevis; lei ha risposto «se vuoi mandarmela qui» | `netlify sites:create` + deploy da Nicola, poi verdetto e DM col link; prezzi, cognome, comuni, ok sulle foto dei matrimoni da chiederle |
 | [[sito-ciglia-di-luiza]] | cigliadiluiza.netlify.app | giro 3 «Da 1 a mega» (07/10 sera) dopo due bocciature; lei ha risposto «ciao sì!»; 375 e 1440 guardati, iPhone mai | verdetto di Nicola, poi DM col link; prezzi, indirizzo, foto originali da chiedere |
 | [[sito-jpp-merate]] | jppmerate.netlify.app | giro 1 del mondo C «Il libro fustellato» online e ripubblicato dopo il verdetto di Nicola (06/10: «principalmente va bene», apertura tutta d'un fiato, elenchi bianchi sulle schede scure); **chiamata con Stefania il 06/10 alle 17**; hanno già una pagina Canva | giro 2: i tre controlli, polish da computer, iPhone vero; liberatoria minori e prezzi veri da chiederle |

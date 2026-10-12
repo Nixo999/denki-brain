@@ -56,3 +56,7 @@ Ha risposto in due giorni e ha scelto lei il telefono. Il resto si impara dalla 
 ## Collegamenti
 
 [[sito-giulia-pregnolato]] · [[stile-comunicazione]] · [[vincoli-fiscali]]
+
+## Bozza del sito (12/10/2026)
+
+La bozza è online su <https://giuliapregnolato.netlify.app>, con i tre sbarramenti finché non è sua. Patrick la mostra in telefonata o nel DM dopo il verdetto di Nicola. In telefonata le chiede: prezzi e numero di incontri, dove e quanto dura il primo incontro, WhatsApp o telefono da mettere sul sito, il campo cinofilo e i comuni serviti, la formazione, due o tre voci di proprietari, le foto originali senza scritte.
