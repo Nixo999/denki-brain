@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-10-12
+updated: 2026-10-13
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **290 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **292 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -64,6 +64,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-dragonfly]] — ⚠️ Raccolta materiale per sito vetrina di Dragonfly Beauty&Relax, centro estetico a Casale Monferrato, lead da Instagram.
 - [[sito-dsi-advertising]] — ⚠️ Sito vetrina in una pagina per D.S.I. Advertising di Piras Sebastiano, Merate (LC) - dal 1992 progetta e produce articoli promozionali per il...
 - [[sito-fiftynine]] — ⚠️ Sito vetrina in una pagina per Bar Tabacchi Fiftynine, bar tabaccheria e pizzeria in via Nazionale dei Giovi 59, Cesano Maderno (MB).
+- [[sito-giulia-pregnolato]] — Sito vetrina per Giulia Pregnolato, educatrice cinofila a Torino. Raccolta del 12/10 da Instagram, due foto sole e con testo sopra.
 - [[sito-hairstylebrescia]] — Hair Style Parrucchieri @hairstyle_brescia, salone a Brescia, gancio sposa - bozza online su hairstylebrescia.netlify.app dal 16/9, mondo A «La prova», 8/8, DM non partito.
 - [[sito-icaarus]] — ⚠️ Bozza sito ICAARUS ASD, centro cinofilo a Brembate-Grignano (BG). Giro 1 «Il percorso» del 09/10, direzione Trevis, costruzione Opus.
 - [[sito-jpp-merate]] — Bozza sito Studio fotografico JPP, Merate. Mondo C «Il libro fustellato», giro 1 online su jppmerate.netlify.app dal 06/10; chiusura su Fable, verdetto di Nicola da avere.
@@ -141,6 +142,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[design-capelli]] — Parrucchiere a Nichelino (TO), @designcapelli, 203 follower, dal 2015 in via XXV Aprile, nessun sito. Ha risposto «Buonasera qui grazie» al DM del 20/9. Bozza online su designcapelli.netlify.app dal 21/9, il DM col link e' di Patrick.
 - [[dsi-advertising]] — ⚠️ D.S.I. Advertising di Piras Sebastiano, Merate (LC).
 - [[edilida]] — Edilida SRL, impresa edile di Travagliato (BS). Ha compilato il modulo della ricerca il 18/09. Si punta a una videochiamata sulle scadenze di cantiere, mail di lunedì 21.
+- [[giulia-pregnolato]] — Giulia Pregnolato, educatrice cinofila a Torino senza sito. Ha risposto al DM di Patrick il 12/10: vuole sentirlo al telefono.
 - [[il-salone-di-andrea]] — ⚠️ Parrucchiere donna e uomo di Andrea Bielli, Viale Natale Betelli 58, Dalmine.
 - [[jpp-merate]] — Studio fotografico JPP (Just Pure Portraits), Merate, @jppmerate. Stefania ha risposto al DM il 05/10 e vuole una chiamata. Ha già una pagina Canva.
 - [[laurafranzoni]] — Extension ciglia a Brescia, @laurafranzoni_lashmaker, 452 follower. Bozza online dal 14/9, il DM non è mai partito.

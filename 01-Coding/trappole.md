@@ -1219,6 +1219,24 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   data del primo si ricava dalla prima riga di qualunque tipo, come fa
   `allinea-contattati.py`. Corretto nel banco online. (11/10/2026)
 
+- `[TRAPPOLA]` **Il task pianificato dell'app parte in modalità permessi
+  «default», non «auto», e nessun campo del task la cambia.** Le sessioni
+  normali di Nicola partono in `auto`, dove il classificatore approva da solo;
+  la sessione di `banco-mattina` parte in `default` (log dell'app:
+  `requested=default effective=default`) e si ferma al primo comando che nessuna
+  regola di `permissions.allow` copre. Il 12/10 ha aspettato dalle 8:04 alle
+  17:43 su `python3 02-Sales/strumenti/giro-mattina.py --ruolo primo; echo
+  "EXIT $?"`, il 13/10 dalle 8:10 sullo stesso comando scritto con `EXIT=$?`.
+  L'app memorizza sul task le regole approvate durante un giro («Added 1
+  approved permission rule on task»), ma la regola è il testo del comando: una
+  coda diversa non combacia, e un comando con `$VAR` o `$(...)` non produce
+  nessuna regola («no suggestions on request»), quindi non si memorizza mai.
+  L'11/10 e il 12/10 il giro è andato avanti solo perché Nicola ha messo la
+  sessione in `auto` a mano; in `auto` il classificatore ha poi negato
+  `pubblica-lista.py` («Real-World Transactions») e il push («External System
+  Writes»). → Le regole di `settings.json` da sole non bastano, perché il
+  modello cambia la coda dei comandi a ogni giro. (13/10/2026, [[giro-mattina]])
+
 ## Skill e strumenti di processo
 
 - **Mod di Claude Code: nel terminale `'Svg' in $.ui.resolve(e)` è sempre vero.** La tabella degli elementi viene completata, e un elemento che la superficie non ha disegna un frammento vuoto: il ripiego «se non c'è Svg uso il testo» non scatta mai e il pannello resta muto. Si decide da `e.surface`. Il `claude` nel PATH (2.1.261) non ha `plugin test`: si usa il binario dell'app, `~/Library/Application Support/Claude/claude-code/<versione>/…/MacOS/claude`. ([[registro-interventi]], 10/10)

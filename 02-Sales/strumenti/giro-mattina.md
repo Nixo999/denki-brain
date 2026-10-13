@@ -30,6 +30,9 @@ perché lo faccia da solo è stato fermato dal classificatore dei permessi
 (11/10/2026): un comando che crea task pianificati senza chiedere non passa.
 Subito dopo, **«Esegui ora» una volta con qualcuno davanti**: i permessi
 approvati durante un giro restano sul task e valgono per i giri dopo.
+⚠️ Corretto il 13/10/2026: restano, ma legati al testo esatto del comando, e il
+modello lo cambia a ogni giro. Il dettaglio sta in [[trappole]], sezione «Liste e
+banco DM».
 `giro-mattina.py --installato` dice se su una macchina il task c'è.
 
 ## Il prompt del task
@@ -65,5 +68,11 @@ risposte.**
   è chiusa, parte alla riapertura e trova la conferma dell'altro, se c'è.
 - Un giro senza i permessi già approvati si ferma alla prima richiesta: per
   questo il primo «Esegui ora» si fa con qualcuno davanti, su ogni Mac.
+- **Verificato il 13/10/2026**: la sessione del task parte in modalità permessi
+  `default`, non `auto`, e il task non ha un campo per cambiarla. Il 12/10 e il
+  13/10 il giro si è fermato alle 8 sul primo comando, `giro-mattina.py --ruolo
+  primo`, e il 12/10 è ripartito alle 17:43 solo perché Nicola ha messo la
+  sessione in `auto` a mano. Finché la modalità non è risolta, il giro delle 8
+  non è autonomo.
 
 [[2026-10-11-banco-online]] · [[metodo-liste]]
