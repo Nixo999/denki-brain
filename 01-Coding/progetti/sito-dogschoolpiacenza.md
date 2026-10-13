@@ -15,8 +15,8 @@ deadline: TODO
 
 Bozza di sito vetrina da costruire in un'ora per Roberta Borsaro, che il 13/10/2026 ha risposto a Patrick su Instagram. Cliente: [[dogschoolpiacenza]].
 
-**Cartella**: `~/lavoro/dogschoolpiacenza-site` (per ora `assets/img/` e `foto.md`)
-**Online**: nessuno. Esiste un sito Wix gratuito, `robertaborsaro.wixsite.com/dogschoolpiacenza`, di cinque pagine. I domini `dogschoolpiacenza.it` e `.com` non rispondono (verifica del 10/10 fatta dal coordinatore).
+**Cartella**: `~/lavoro/dogschoolpiacenza-site` (repo privato `Nixo999/dogschoolpiacenza-site`)
+**Online**: <https://dogschoolpiacenza.netlify.app>, con i tre sbarramenti. Esiste un sito Wix gratuito, `robertaborsaro.wixsite.com/dogschoolpiacenza`, di cinque pagine. I domini `dogschoolpiacenza.it` e `.com` non rispondono (verifica del 10/10 fatta dal coordinatore).
 
 ## Chi è
 
@@ -145,6 +145,7 @@ Letti il 13/10/2026 dalla homepage, con il metodo «cosa mostra e cosa no». Nes
 
 ## Storia del lavoro
 
+- 13/10/2026, mattina: giro 1 «dalla prima telefonata all'attestato» online in un'ora. Direzione di Fable in `DIREZIONE.md`, costruzione su Opus in 11 minuti (terna Fraunces + Hanken Grotesk + Permanent Marker: su 335 px PIACENZA entra fino a 64 px, VALUTAZIONE fino a 46 px). 8/8, slop 0 con 4 avvisi, testo 0 con 1 avviso. Catture in `prove/giro1-375.png` e `giro1-1440.png`. Trevis ha rifatto il ritaglio del ritratto tondo, che il costruttore aveva tagliato dentro il cerchio. Da vedere su un iPhone vero: l'apertura, le schede che si impilano e la linea del percorso.
 - 13/10/2026: l'operatore ha raccolto la bio e le didascalie di 8 post da Instagram sloggato, i testi delle cinque pagine del sito Wix, la scheda Google Maps con tre recensioni, la pagina Facebook, sei siti di concorrenti e 7 foto a 1440 pixel di larghezza.
 
 ## Direzione (13/10/2026, Fable)
