@@ -29,7 +29,8 @@ from pathlib import Path
 
 TAG = re.compile(r'<scheduled-task name="([^"]+)"')
 TASK_NOSTRI = {"banco-mattina"}   # ponytail: lista fissa, si allunga quando nasce un altro task
-VIETATO = re.compile(r"git\s+push\b[^|;&]*(--force|\s-f\b)|git\s+reset\s+--hard|\bsudo\b|\brm\s+-[a-z]*r[a-z]*\s+[/~]")
+VIETATO = re.compile(r"git\s+push\b[^|;&]*(--force|\s-f\b)|git\s+reset\s+--hard|\bsudo\b")
+RM = re.compile(r"\brm\s+((?:-\S+\s+)+)(\S+)")   # (opzioni, bersaglio): un rm ricorsivo fuori dalla scratchpad non passa
 MCP_AMMESSI = ("mcp__Claude_Browser__", "mcp__remote-devices__Claude_Browser__")
 SCRATCH = ("/tmp/", "/private/tmp/", "/var/folders/", tempfile.gettempdir().rstrip("/") + "/")
 
@@ -81,8 +82,14 @@ def decidi(e):
     if nome not in TASK_NOSTRI:
         return None
     strumento, ing = e.get("tool_name", ""), e.get("tool_input") or {}
-    if strumento == "Bash" and VIETATO.search(ing.get("command", "")):
-        return None
+    if strumento == "Bash":
+        cmd = ing.get("command", "")
+        if VIETATO.search(cmd):
+            return None
+        for opzioni, bersaglio in RM.findall(cmd):
+            bersaglio = bersaglio.strip("'\"")
+            if "r" in opzioni.lower() and bersaglio.startswith(("/", "~")) and not bersaglio.startswith(SCRATCH):
+                return None
     if strumento in ("Write", "Edit", "MultiEdit", "NotebookEdit"):
         f = ing.get("file_path") or ing.get("notebook_path") or ""
         dentro = (e.get("cwd") or "\0").rstrip("/") + "/"
