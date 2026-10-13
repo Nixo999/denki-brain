@@ -1,8 +1,9 @@
 ---
 type: risorsa
 riga: Ecosistema OperO + CO-OPERO (30/09) sopra Intermediar + Receive (24/09) - da conoscere, non da fare. Modello, cosa dice il repo oggi, buchi.
-updated: 2026-10-10
+updated: 2026-10-13
 source: claude
+verificato: 2026-10-13
 progetto: opero
 tags: [opero, intermediar, receive, co-opero, specifica, sebastian-torres]
 ---
@@ -96,6 +97,35 @@ toccato.
 - **I 40 facchini** non esistono come entità: manca il fabbisogno padre, e con lui il «40 su 40 coperti».
 - **Fatture**: se fattura il fornitore, cosa ci sta dentro, un PDF caricato o un dato?
 - **Il referente del fornitore** è un nome libero o un accesso (§26)?
+
+## Collaudo del 13/10/2026: il flusso 2 nel browser
+
+Nicola ha fatto il login della segreteria sul banco locale e Trevis ha
+percorso il flusso con un fornitore di prova (Prova Trevis, richieste 11-15).
+Il percorso minimo di Seba (§39 del testo) passa da capo a fondo: azienda
+creata col solo nome, richiesta a tre ruoli con un ruolo nuovo, ingresso del
+fornitore dal link, spunte di apertura, accettazione con referente obbligatorio
+e squadra, modifica dell'ora che invalida la conferma e riconferma, cambio del
+solo messaggio che non la invalida, chiusura dal portale e dall'ufficio, rifiuto
+con motivo e ripresa verso un'altra azienda, annullamento, storico. Il collaudo
+SQL (`strumenti/verifica-intermediar.sh`) dà 267 controlli verdi.
+
+Dove il giro 1 si scosta da Seba:
+
+- Intermediar è la sesta voce della barra in basso di OperO, non un controllo
+  separato a destra (§4); dentro, «Torna a OperO» è la quarta voce della stessa barra.
+- «In attesa» e «Da valutare» sono blu; Seba le voleva gialle (§14, §23). Solo
+  «Modificata» è gialla.
+- Alla riconferma dopo una modifica il fornitore ridigita referente e squadra,
+  anche se il piano precedente è salvato in `previous`.
+- Nel dettaglio dell'ufficio la risposta del fornitore (referente, squadra) sta
+  dopo luogo, data e ruoli, non sopra con i dettagli sotto «Dettagli richiesta ›» (§18).
+- Conti, allegati, comunicazioni fra aziende e OTP sono fuori per scelta, come
+  scritto in `docs/intermediar.md`.
+- Il bottone «Ricarica i dati» non aggiorna il dettaglio aperto: serve rientrare.
+
+Restano aperti i due buchi già noti del codice (accettare o rifiutare dopo
+l'inizio, annullare a lavoro iniziato) e i `TODO Seba` sulle tariffe.
 
 ## Collegamenti
 
