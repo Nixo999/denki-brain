@@ -1135,9 +1135,13 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   `naturalWidth >= 700` e si controlla l'ID. Le foto arrivano in WebP, non JPEG.
   (08/10/2026, [[sito-claudia-dogsitter]])
 
-### 13/10/2026 — Instagram nel browser dell'app: le immagini a 1440 px non arrivano se la scheda sta in secondo piano
-
-Durante la raccolta su `@dogschoolpiacenza` l'operatore leggeva la pagina del post con la scheda in secondo piano e l'elenco delle immagini a 1440 px restava vuoto: Instagram le carica solo quando la scheda è in primo piano. Si risolve con `tabs_select` sulla scheda, aprendo il post direttamente, e poi scaricando gli indirizzi con `curl`, che funzionano senza login. Un indirizzo a cui si toglie un parametro risponde 403: si usa intero, e scade dopo poco. Il caso sta in [[sito-dogschoolpiacenza]].
+- `[TRAPPOLA]` **Nel browser dell'app le immagini di Instagram a 1440 px non
+  arrivano se la scheda sta in secondo piano.** Durante la raccolta su
+  `@dogschoolpiacenza` l'elenco delle immagini grandi restava vuoto finché la
+  scheda non era in primo piano (`tabs_select`) e il post aperto direttamente.
+  Gli indirizzi si scaricano poi con `curl` senza login, ma interi: a un
+  indirizzo a cui si toglie un parametro Instagram risponde 403, e scadono dopo
+  poco. (13/10/2026, [[sito-dogschoolpiacenza]])
 
 ## Liste e banco DM
 
