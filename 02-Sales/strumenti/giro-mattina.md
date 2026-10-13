@@ -66,6 +66,14 @@ risposte.**
   `giri-mattina.csv`.
 - Il task gira solo con l'app Claude aperta e il Mac acceso. Se all'ora giusta
   è chiusa, parte alla riapertura e trova la conferma dell'altro, se c'è.
+- **E il Mac deve restare sveglio per tutto il giro, circa due ore.** Il
+  13/10/2026 il giro delle 11:04 è passato dall'hook senza una richiesta di
+  permesso, ma il Mac si è addormentato alle 12:46; al risveglio delle 13:48 la
+  rete non c'era e i sette operatori sono morti insieme («Can't reach the API
+  server»). Li ha ripresi Nicola alle 15:31 con un «Riprova» nella sessione.
+  L'opzione dell'app «Keep computer awake while Claude works» impedisce il sonno
+  da inattività mentre una sessione lavora; il coperchio chiuso addormenta
+  comunque.
 - Un giro senza i permessi già approvati si ferma alla prima richiesta: per
   questo il primo «Esegui ora» si fa con qualcuno davanti, su ogni Mac.
 - **Verificato il 13/10/2026**: la sessione del task parte in modalità permessi
