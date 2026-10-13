@@ -42,6 +42,12 @@ HOOK = [
     ("SessionStart", "italiano-chiaro.sh", 10, "Carico la guida all'italiano chiaro"),
     ("SubagentStart", "italiano-chiaro.sh", 10, "Carico la guida all'italiano chiaro"),
     ("Stop", "pusha-da-solo.sh", 60, "Chiudo e pusho il vault"),
+    # permessi-giro.py (13/10/2026): la sessione del task pianificato parte in
+    # modalita' `default` e si fermava alla prima conferma; l'hook approva da
+    # solo gli strumenti di quella sessione e di nessun'altra. Il quinto campo
+    # e' il matcher: l'hook si sveglia solo per questi strumenti.
+    ("PreToolUse", "permessi-giro.py", 10, "Permessi del giro del mattino",
+     "Bash|Read|Write|Edit|MultiEdit|NotebookEdit|Glob|Grep|Agent|TodoWrite|WebFetch|WebSearch|Skill|ToolSearch|mcp__Claude_Browser__.*|mcp__remote-devices__Claude_Browser__.*"),
 ]
 FIRMA = "denki-brain"      # marcatore: cosi' non si tocca quello che c'era gia'
 
@@ -72,20 +78,25 @@ def registra_hook(check, fatti):
     dati = json.loads(s.read_text(encoding="utf-8")) if s.exists() else {}
     hooks = dati.setdefault("hooks", {})
     cambiato = False
-    for evento, script, timeout, messaggio in HOOK:
+    for evento, script, timeout, messaggio, *matcher in HOOK:
         comando = f'"$HOME/.claude/hooks/{script}"'
+        if script.endswith(".py"):      # niente shebang sul PC Windows
+            comando = "python3 " + comando
         voce = {"type": "command", "command": comando,
                 "timeout": timeout, "statusMessage": messaggio}
+        gruppo = {"hooks": [voce]}
+        if matcher:
+            gruppo["matcher"] = matcher[0]
         gruppi = hooks.setdefault(evento, [])
         # i nostri si riconoscono dal nome dello script: gli altri restano dove sono
         nostri = [g for g in gruppi
                   if any(FIRMA in h.get("command", "") or script in h.get("command", "")
                          for h in g.get("hooks", []))]
-        if nostri and nostri[0]["hooks"] == [voce]:
+        if nostri and nostri[0] == gruppo:
             continue
         for g in nostri:
             gruppi.remove(g)
-        gruppi.append({"hooks": [voce]})
+        gruppi.append(gruppo)
         cambiato = True
         fatti.append(("registra hook", CLAUDE / f"settings.json ({evento})"))
     if cambiato and not check:
@@ -104,12 +115,12 @@ def main(check):
         # gli hook sono script, non note: servono anche il bit di esecuzione
         # le mod sono codice (plugin di Claude Code): si caricano da
         # CLAUDE_CODE_PLUGIN_DIRS nel settings.json della macchina, messo a mano
-        modelli = {"hooks": ("*.sh",), "mods": ("*.tsx", "*.ts", "*.json")}.get(cartella, ("*.md",))
+        modelli = {"hooks": ("*.sh", "*.py"), "mods": ("*.tsx", "*.ts", "*.json")}.get(cartella, ("*.md",))
         for modello in modelli:
             for q in radice.rglob(modello):
                 dest = CLAUDE / cartella / q.relative_to(radice)
                 scrivi(dest, q.read_text(encoding="utf-8"), check, fatti)
-                if modello == "*.sh" and dest.exists() and not check:
+                if cartella == "hooks" and dest.exists() and not check:
                     dest.chmod(0o755)
 
     registra_hook(check, fatti)
