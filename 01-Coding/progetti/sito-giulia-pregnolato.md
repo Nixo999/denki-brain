@@ -1,7 +1,7 @@
 ---
 type: progetto
 riga: Sito vetrina per Giulia Pregnolato, educatrice cinofila a Torino. Raccolta del 12/10 da Instagram, due foto sole e con testo sopra.
-updated: 2026-10-12
+updated: 2026-10-13
 source: claude
 verificato: 2026-10-12
 status: attivo
@@ -93,3 +93,4 @@ La distingue il racconto dei suoi cani difficili, Aaron e Nutella, che usa come 
 
 I giri 1 e 2 («il guinzaglio che si allenta», poi la parola TIRA · CAPIRE · LIBERTÀ che cambiava larghezza) sono stati bocciati da Nicola: i disegni non vanno, la parola a effetto non ha senso e il livello non era quello di NG Barber, Fiftynine e Snia. La v3 sta in `DIREZIONE.md` nel repo (la bocciata in `prove/DIREZIONE-giro1-2-bocciata.md`). L'idea è **il percorso con Giulia, tappa per tappa**: un binario con un punto che avanza allo scroll, come il binario del giorno di Fiftynine, e quattro tappe in schede (primo messaggio, primo incontro, lezioni, in libertà). Campi pieni: verde bosco `#1E3B2B`, crema `#F2EBDD`, rosso `#C8321E` (la sua felpa), sabbia `#D9C9A6`. Tre voci di font provate a 375 con il suo testo (Alfa Slab One, Dela Gothic One o Bebas Neue come display, più un testo pulito e un accento a mano). Niente svg disegnati. Il confronto affiancato con Fiftynine a 375 è obbligatorio prima di riferire.
 
+- 13/10, notte: giro 3 online, rifatto da capo sulla direzione v3 (commit `4269a35` e `47a6de4`). Terna Bebas Neue + Source Sans 3 + Kalam (il perché in testa a `assets/stile.css`); catture in `prove/giro3-375.png` e `giro3-1440.png`; i file bocciati in `prove/giro2-bocciato/`. Da vedere da Nicola su un iPhone: l'apertura, lo scrub del binario e il pin non sono stati visti in un browser vero.
