@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Errori tecnici già pagati e strade scartate, per dominio. Descrittivo, non è un rulebook - le regole stanno in convenzioni.
-updated: 2026-10-12
+updated: 2026-10-13
 verificato: 2026-09-10
 source: denkicode
 tags: [trappole, memoria, frontend, gsap, git]
@@ -1134,6 +1134,10 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   con alt «Photo by» è la griglia dietro il modale, non il post: si filtra per
   `naturalWidth >= 700` e si controlla l'ID. Le foto arrivano in WebP, non JPEG.
   (08/10/2026, [[sito-claudia-dogsitter]])
+
+### 13/10/2026 — Instagram nel browser dell'app: le immagini a 1440 px non arrivano se la scheda sta in secondo piano
+
+Durante la raccolta su `@dogschoolpiacenza` l'operatore leggeva la pagina del post con la scheda in secondo piano e l'elenco delle immagini a 1440 px restava vuoto: Instagram le carica solo quando la scheda è in primo piano. Si risolve con `tabs_select` sulla scheda, aprendo il post direttamente, e poi scaricando gli indirizzi con `curl`, che funzionano senza login. Un indirizzo a cui si toglie un parametro risponde 403: si usa intero, e scade dopo poco. Il caso sta in [[sito-dogschoolpiacenza]].
 
 ## Liste e banco DM
 
