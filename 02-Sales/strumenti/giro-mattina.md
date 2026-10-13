@@ -74,5 +74,11 @@ risposte.**
   primo`, e il 12/10 è ripartito alle 17:43 solo perché Nicola ha messo la
   sessione in `auto` a mano. Finché la modalità non è risolta, il giro delle 8
   non è autonomo.
+- **La correzione (13/10/2026)**: l'hook `permessi-giro.py` (PreToolUse, a
+  livello di account come gli altri tre) riconosce una sessione avviata dal task
+  dal tag `<scheduled-task>` nel suo primo messaggio e approva da solo i suoi
+  strumenti dentro il vault; fuori da un task non decide niente. Lo mette in
+  opera Nicola, perché il classificatore ferma un modello che si scrive da solo
+  un hook sui permessi. Finché non è installato, vale il punto sopra.
 
 [[2026-10-11-banco-online]] · [[metodo-liste]]

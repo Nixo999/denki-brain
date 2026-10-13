@@ -1235,7 +1235,10 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   sessione in `auto` a mano; in `auto` il classificatore ha poi negato
   `pubblica-lista.py` («Real-World Transactions») e il push («External System
   Writes»). → Le regole di `settings.json` da sole non bastano, perché il
-  modello cambia la coda dei comandi a ogni giro. (13/10/2026, [[giro-mattina]])
+  modello cambia la coda dei comandi a ogni giro: serve un hook `PreToolUse`
+  che riconosca la sessione del task (`permessi-giro.py`). E l'hook lo installa
+  una persona: il classificatore ferma il modello che prova a scriverlo
+  («Self-Modification»). (13/10/2026, [[giro-mattina]])
 
 ## Skill e strumenti di processo
 

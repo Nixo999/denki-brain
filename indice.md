@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **292 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **294 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -61,6 +61,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-denkicode]] — Sito di DenkiCode. È qui che sta la galleria dei lavori - il posto dove si mostra a un cliente cosa abbiamo già fatto.
 - [[sito-designcapelli]] — Bozza sito per Design Capelli (Nichelino, TO) - mondo «la luce della via», la pagina schiarisce di un tono a sezione, marchio composto in Pinyon Script, Cabinet Grotesk + Gambetta, apertura a 0,80 s. Online su designcapelli.netlify.app dal 21/9, giro 6, 8/8, slop 0 e testo 0.
 - [[sito-dianails]] — Diana @dianails_brescia, onicotecnica e PMU a Brescia: bozza creata in C:\Users\User\Desktop\dianails-site, mondo A «la regola del 90°», 8/8 sbarramenti verificati.
+- [[sito-dogschoolpiacenza]] — Sito vetrina per Roberta Borsaro, Dog School Piacenza (Ziano Piacentino). Raccolta del 13/10 da Instagram, Wix, Google Maps; 7 foto a 1440 px.
 - [[sito-dragonfly]] — ⚠️ Raccolta materiale per sito vetrina di Dragonfly Beauty&Relax, centro estetico a Casale Monferrato, lead da Instagram.
 - [[sito-dsi-advertising]] — ⚠️ Sito vetrina in una pagina per D.S.I. Advertising di Piras Sebastiano, Merate (LC) - dal 1992 progetta e produce articoli promozionali per il...
 - [[sito-fiftynine]] — ⚠️ Sito vetrina in una pagina per Bar Tabacchi Fiftynine, bar tabaccheria e pizzeria in via Nazionale dei Giovi 59, Cesano Maderno (MB).
@@ -140,6 +141,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[custom-beauty-nails]] — Onicotecnica a Treviglio (BG), @custombeautynailstreviglio, 1.033 follower. Bozza online dal 16/9, il DM non e' ancora partito.
 - [[davidemilan]] — Davide Milan, fotografo di diciottesimi e matrimoni, Milano, @davidemilan.ph. Il 05/10 ha risposto al DM: «Manda pure qui, sono curioso».
 - [[design-capelli]] — Parrucchiere a Nichelino (TO), @designcapelli, 203 follower, dal 2015 in via XXV Aprile, nessun sito. Ha risposto «Buonasera qui grazie» al DM del 20/9. Bozza online su designcapelli.netlify.app dal 21/9, il DM col link e' di Patrick.
+- [[dogschoolpiacenza]] — Roberta Borsaro, educatrice cinofila a Ziano Piacentino (Dog School Piacenza), sito Wix gratuito. Ha risposto a Patrick il 13/10: le interessa.
 - [[dsi-advertising]] — ⚠️ D.S.I. Advertising di Piras Sebastiano, Merate (LC).
 - [[edilida]] — Edilida SRL, impresa edile di Travagliato (BS). Ha compilato il modulo della ricerca il 18/09. Si punta a una videochiamata sulle scadenze di cantiere, mail di lunedì 21.
 - [[giulia-pregnolato]] — Giulia Pregnolato, educatrice cinofila a Torino senza sito. Ha risposto al DM di Patrick il 12/10: vuole sentirlo al telefono.
