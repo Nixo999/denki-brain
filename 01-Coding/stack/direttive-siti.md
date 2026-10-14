@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-10-12
+updated: 2026-10-14
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 14/10/2026 — Nicola: «lanimazione dei pannelli che scorrono uno sopra laltro per qualche motivo sul telefono da un po di problemi e non riulta fluda, rendila piu fluida e meno problematica»
+
+Sul telefono le schede che si impilano allo scroll non si animano con GSAP in scrub su scale e filtro: restano sticky con un piccolo scarto fisso, e l'effetto in scrub si accende solo da computer, perché su un iPhone ogni cosa che si ridisegna a ogni fotogramma scatta.
 
 ### 12/10/2026 — Nicola: «rifallo praticamente da capo, la frase fatta così della libera tira ecc... non ha senso, non mi piace lo stile e non mi sembra neanche per sbaglio vicino al livello di quelli ai quali ti ho detto di prendere spunto»
 
