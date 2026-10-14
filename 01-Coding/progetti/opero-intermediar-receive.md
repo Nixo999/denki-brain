@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ecosistema OperO + CO-OPERO (30/09) sopra Intermediar + Receive (24/09) - da conoscere, non da fare. Modello, cosa dice il repo oggi, buchi.
-updated: 2026-10-13
+updated: 2026-10-14
 source: claude
 verificato: 2026-10-13
 progetto: opero
@@ -112,8 +112,9 @@ SQL (`strumenti/verifica-intermediar.sh`) dà 267 controlli verdi.
 
 Dove il giro 1 si scosta da Seba:
 
-- Intermediar è la sesta voce della barra in basso di OperO, non un controllo
-  separato a destra (§4); dentro, «Torna a OperO» è la quarta voce della stessa barra.
+- *Sistemato il 14/10 (`778363b`)*: Intermediar era la sesta voce della barra in
+  basso di OperO; ora è un controllo a parte a destra dell'isola, sotto il
+  binario da PC (§4). Dentro, «Torna a OperO» resta la quarta voce della barra.
 - «In attesa» e «Da valutare» sono blu; Seba le voleva gialle (§14, §23). Solo
   «Modificata» è gialla.
 - Alla riconferma dopo una modifica il fornitore ridigita referente e squadra,
