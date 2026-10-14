@@ -128,6 +128,19 @@ Dove il giro 1 si scosta da Seba:
 Restano aperti i due buchi già noti del codice (accettare o rifiutare dopo
 l'inizio, annullare a lavoro iniziato) e i `TODO Seba` sulle tariffe.
 
+## Il sito di prova, dal 14/10/2026
+
+Prima di pushare su `main` le modifiche si fanno vedere a Seba su
+<https://opero-prova.netlify.app> (portale su <https://coopero-prova.netlify.app>),
+una copia del ramo `intermediar` con un progetto Supabase suo
+(`qjawewmmgxyrguxajvgf`, organizzazione NicolaOpero), dati inventati e account
+`*@opero.dev` con password `test1234` e codice azienda `ALLUS-001`. Lo sviluppo
+`oyoltwisdwujitsryzax` resta il database di operotest e non è stato toccato. Il
+deploy si rifà con `npm run deploy:prova` e `npm run deploy:coopero-prova`, il
+database con `strumenti/db-prova.sh`: tutto in `docs/prova.md` del ramo. La
+password del database di prova sta in `.env.prova.local` del worktree, fuori
+da git, e non va scritta qui.
+
 ## Collegamenti
 
 [[opero]] · [[co-opero-clienti]] · [[sebastian-torres]] · [[opero-intermediar-receive-testo]] ·
