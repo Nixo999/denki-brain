@@ -46,5 +46,4 @@ permesso di citare recensioni e nomi dei clienti, link a video completi.
 
 ## Storia
 
-- 16/10: raccolta e concorrenti su Sonnet, direzione su Fable, costruzione su
-  Opus.
+- 16/10: raccolta e concorrenti su Sonnet, direzione su Fable, costruzione su Opus. Online il giro 1 (`8dee0e0`): nove sezioni, font Antonio, Hanken Grotesk e Marck Script, controlli 8/8. iPhone vero mai; da PC il primo schermo ha un vuoto in alto a destra.
