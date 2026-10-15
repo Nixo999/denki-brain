@@ -1008,6 +1008,12 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   `sips -g pixelWidth`: un file da 22 byte non è una foto.
   (21/09/2026, [[sito-designcapelli]])
 
+- `[TRAPPOLA]` **Le foto di `cdn0.matrimonio.com` rispondono 403 a `curl`**,
+  perché le protegge Akamai. Funziona il `fetch` fatto dentro la pagina aperta
+  nel browser dell'app: l'operatore ha passato i byte al disco con un piccolo
+  server su localhost, poi spento. Le foto della galleria arrivano a 1230x820.
+  (16/10/2026, [[sito-nocloudsproduction]])
+
 - **Gli URL delle foto Instagram scadono** (firme CDN a giorni). → si scaricano
   in locale subito, nella stessa sessione.
 - **La bio troncata e le caption si leggono senza login.** La bio intera sta
