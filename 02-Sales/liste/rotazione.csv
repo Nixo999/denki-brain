@@ -135,7 +135,7 @@ ricerca,LC,impiantisti,parziale,3,2026-09-29,
 ricerca,LC,officine e carrozzerie,esaurito,9,2026-10-07,"7/10: 44 profili, 8 righe. Finito per resa: 15 fermi, 12 piccoli"
 ricerca,LC,meccanica e carpenterie,parziale,1,2026-09-25,
 ricerca,LC,edilizia e serramenti,esaurito,20,2026-10-05,"5/10: 72 profili, 15 righe. Finito per resa e Pagine Gialle finita: 22 fermi, 14 sotto i 200 follower"
-ricerca,LC,alimentari artigianali,parziale,14,2026-10-12,"12/10: ~55 profili, 12 righe. Aperta, rende 1 su 4,5; fonti finite: 10 fermi, ~10 negozi o piccoli"
+ricerca,LC,alimentari artigianali,esaurito,17,2026-10-15,"15/10: 35 profili, 3 righe: chi produce era già nelle liste del 5/10 e 12/10"
 ricerca,LC,aziende agricole con vendita,parziale,22,2026-10-09,"9/10: 77 profili, 20 righe. Aperta ma fonti quasi finite: 28 fermi, 17 fuori provincia; le ultime 4 righe sono deboli"
 ricerca,LC,altro,parziale,1,2026-09-23,righe sparse di settori fuori elenco
 ricerca,VA,falegnamerie,parziale,3,2026-09-29,
@@ -153,7 +153,7 @@ ricerca,BG,studi tecnici,parziale,3,2026-09-29,
 ricerca,BG,impiantisti,parziale,7,2026-09-29,
 ricerca,BG,officine e carrozzerie,parziale,13,2026-09-25,
 ricerca,BG,meccanica e carpenterie,parziale,3,2026-09-13,
-ricerca,BG,edilizia e serramenti,parziale,25,2026-09-25,
+ricerca,BG,edilizia e serramenti,parziale,42,2026-10-15,"15/10: 143 profili, 17 righe. Aperta, finita per fonti (Yahoo in 500, PagineGialle ripete gli stessi nomi), non per resa"
 ricerca,BG,ingrossi e distribuzione,parziale,8,2026-09-29,
 ricerca,BG,trasporti e logistica,parziale,4,2026-09-25,
 ricerca,BG,alimentari artigianali,parziale,4,2026-09-25,
@@ -168,9 +168,9 @@ ricerca,PV,studi tecnici,parziale,1,2026-09-29,
 ricerca,PV,impiantisti,parziale,1,2026-09-23,
 ricerca,PV,officine e carrozzerie,esaurito,3,2026-10-13,"13/10: ~40 profili, 2 righe. Finito per resa: Pagine Gialle 490 schede quasi senza Instagram; fermata anche per tempo"
 ricerca,PV,edilizia e serramenti,parziale,15,2026-10-10,"10/10: 142 profili, 12 righe. Aperta, quota piena: ~80 fuori provincia dal chaining, 22 fermi; restano Google serramenti in 5 comuni e coperture"
-ricerca,PV,ingrossi e distribuzione,parziale,1,2026-09-19,
+ricerca,PV,ingrossi e distribuzione,parziale,6,2026-10-15,"15/10: ~45 profili, 5 righe. Rende 1 su 9: fermi, sede altrove, negozi"
 ricerca,PV,trasporti e logistica,parziale,3,2026-09-23,
-ricerca,PV,alimentari artigianali,parziale,3,2026-09-29,
+ricerca,PV,alimentari artigianali,parziale,13,2026-10-15,"15/10: ~40 profili, 10 righe. Aperta, rende 1 su 4; fermata per Yahoo e tempo"
 ricerca,PV,aziende agricole con vendita,parziale,2,2026-09-29,
 ricerca,PV,altro,parziale,2,2026-09-16,righe sparse di settori fuori elenco
 ricerca,SO,falegnamerie,esaurito,4,2026-10-13,"13/10: ~43 profili, 2 righe. Finito per resa: quasi tutte ferme dal 2022-2024"
@@ -226,11 +226,11 @@ siti,MI,fotografi e videomaker,esaurito,7,2026-10-05,"5/10: 40 profili, 7 righe.
 siti,MI,fioristi e wedding planner,esaurito,47,2026-10-11,"11/10: 30 profili, 3 righe. Finito per resa e fonti: matrimonio.com 403, Interflora da quasi tutti col sito, handle solo indovinati"
 siti,BG,toelettature e dog trainer,esaurito,35,2026-10-13,"13/10: 98 profili, 12 righe. Finito per resa: 16 fuori provincia, 7 col sito, 7 sotto i 200, 4 fermi; educatori e pensioni non lavorati"
 siti,MI,pasticcerie e cake designer,esaurito,49,2026-10-13,"13/10: ~160 profili, 16 righe. Finito per resa: ~27 col sito, 19 già nel vault, ~8 fuori provincia o sede incerta"
-siti,LC,fioristi e wedding planner,parziale,7,2026-10-05,"5/10: 25 profili, 7 righe. Riserva da 7, rende 1 su 3,5; su matrimonio.com restano 10 fioristi e tutti i wedding planner"
+siti,LC,fioristi e wedding planner,esaurito,20,2026-10-15,"15/10: 44 profili, 2 righe (più 11 del 13/10 pubblicate oggi). Finito per fonti: ~70 fiorai in provincia, 29 già in lista, quasi tutti gli altri col sito o senza Instagram"
 siti,BS,"sartorie, atelier e tappezzieri",esaurito,4,2026-10-07,"7/10: 33 profili, 4 righe. Finito per resa: 10 sotto i 200 follower, 8 col sito, 7 fuori zona"
-siti,BS,"personal trainer, pilates e yoga",parziale,26,2026-10-07,"7-8/10: 105 profili, 26 righe. Aperta, rende 1 su 4; 33 col sito. Startpage era la fonte migliore, ora esclusa (chiede autorizzazioni)"
+siti,BS,"personal trainer, pilates e yoga",esaurito,29,2026-10-15,"15/10: 30 profili, 3 righe: 9 col sito, 5 fermi, 5 morti, il resto fuori provincia o segmento"
 siti,LO,toelettature e dog trainer,esaurito,6,2026-10-07,"7-8/10: 35 profili, 6 righe. Finito per resa e fonti finite: 11 sotto i 200 follower"
-ricerca,LC,ingrossi e distribuzione,parziale,18,2026-10-12,"12/10: ~4 profili, 0 righe. Fermata per fonti: 36 ricerche PagineBianche, 31 domini, solo un gia contattato"
+ricerca,LC,ingrossi e distribuzione,esaurito,19,2026-10-15,"15/10: ~30 profili, 1 riga: i grossisti di Lecco non stanno su Instagram, chi c'è è già contattato o fermo"
 ricerca,CO,alimentari artigianali,esaurito,13,2026-10-09,"9/10: 66 profili, 13 righe. Finito per resa: 25 fuori provincia o omonimi, 11 fermi, 9 morti o sotto i 200"
 siti,BS,pasticcerie e cake designer,parziale,25,2026-10-09,"9/10: 91 profili, 25 righe. Aperta, rende 1 su 4: i cake designer e la Bassa non sono finiti"
 siti,BS,fotografi e videomaker,esaurito,4,2026-10-09,"9/10: 43 profili, 4 righe. Finito per resa: 14 col sito, 10 sotto i 200, 6 fermi"
@@ -259,3 +259,8 @@ siti,PR,toelettature e dog trainer,parziale,7,2026-10-12,"12/10: ~55 profili, 7 
 siti,PV,tatuatori e piercing,esaurito,11,2026-10-12,"12/10: 84 profili, 11 righe: 7 col sito, 6 fermi, ~30 omonimi esteri. Finito per bacino (~35 studi in provincia)"
 ricerca,MN,edilizia e serramenti,parziale,6,2026-10-12,"12/10: 25 profili, 7 righe valide (6 usate, @gilioli_poggiorusco pronta). Aperta, rende 1 su 4"
 ricerca,CR,falegnamerie,esaurito,1,2026-10-13,"13/10: 42 profili, 1 riga. Finito per resa: Pagine Gialle 62 schede, quasi tutti artigiani senza Instagram o fermi"
+siti,LO,fioristi e wedding planner,parziale,5,2026-10-15,"15/10: ~28 profili, 5 righe. Aperta ma nomi finiti; @fiorifantasie e @fioriefantasie_ da riprendere se si conferma la sede"
+siti,VB,"personal trainer, pilates e yoga",parziale,7,2026-10-15,"15/10: ~40 profili, 7 righe. Aperta: molti omonimi esteri (Omegna, Ghiffa), Yahoo fermo prima di una decina di comuni; yogapills.it è la fonte migliore"
+siti,VB,fotografi e videomaker,esaurito,6,2026-10-15,"15/10: 55 profili, 6 righe: ~20 fuori provincia o omonimi, 9 col sito, 6 community, 6 negozi; PG/PB solo 20 schede"
+siti,PV,fotografi e videomaker,parziale,3,2026-10-15,"15/10: ~25 profili, 3 righe: 5 col sito; cercato poco, Yahoo fermo"
+siti,PC,"sartorie, atelier e tappezzieri",esaurito,6,2026-10-15,"15/10: 38 profili, 6 righe: 8 col sito, 8 negozi, 6 fermi, 6 sotto i 200, elenchi finiti"

@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-10-13
+updated: 2026-10-15
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **294 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **295 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -44,7 +44,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[denkishift-interfaccia]] — ⚠️ Obiettivo dichiarato - un'interfaccia che si venda da sola durante la demo di Patrick, calibrata su due utenti che non sono due gradini dello...
 - [[denkishift]] — Prodotto di punta, turni per squadre a orario variabile. Dimostrabile, NON installabile in produzione.
 - [[opero-intermediar-receive-testo]] — Testi integrali: specifica Intermediar + Receive di Seba (24/09) e riassetto CO-OPERO portato da Patrick (30/09). La sintesi sta altrove.
-- [[opero-intermediar-receive]] — ⚠️ Ecosistema OperO + CO-OPERO (30/09) sopra Intermediar + Receive (24/09) - da conoscere, non da fare. Modello, cosa dice il repo oggi, buchi.
+- [[opero-intermediar-receive]] — Ecosistema OperO + CO-OPERO (30/09) sopra Intermediar + Receive (24/09) - da conoscere, non da fare. Modello, cosa dice il repo oggi, buchi.
 - [[opero]] — Il prodotto che Sebastian rivende, non un gestionale nostro. Chi tocca il Super Admin tocca il suo conto economico.
 - [[sito-adelinanails]] — Bozza sito per Adelina Nails (Alessandria) in ~/lavoro/adelinanails-site - contenuto solo da profilo + inventario competitor, giro 3 «lacca, oro e rilievo», Melodrama + Grape Nuts, apertura in 4 tempi, 8/8 - online su adelinanails-site.netlify.app dal 19/9 (deploy da GitHub).
 - [[sito-albybike]] — Sito vetrina per Albybike, negozio di biciclette - vendita, assistenza, riparazione, abbigliamento e integratori.
@@ -220,6 +220,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-10-10-siti-e-ricerca-no-mi-pc-co]] — Per Patrick - il /banco del 10/10, siti 94 e ricerca 60 da 16 celle, cosa guardare prima di mandare
 - [[2026-10-11-siti-e-ricerca-giro-mattina]] — Per Patrick - il primo giro del mattino (11/10, partito alle 18:23), siti 18 e ricerca 29 da 11 celle, fonti quasi tutte ferme
 - [[2026-10-12-siti-e-ricerca-giro-mattina]] — Per Patrick - giro del mattino del 12/10 (partito 17:43), siti 55 e ricerca 44 da 13 celle; pubblicazione sul banco fermata dal classificatore
+- [[2026-10-15-siti-e-ricerca-giro-mattina]] — Per Patrick - giro del mattino del 15/10 (partito 9:10), siti 43 e ricerca 36 pubblicati sul banco; quasi tutte le celle esaurite per resa o fonti
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
