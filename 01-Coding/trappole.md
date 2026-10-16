@@ -604,6 +604,17 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   pannello; se sono pochi, il giudizio sulla motion va su un browser vero o sul
   telefono. (16/10/2026, [[sito-ohana-special-dog]])
 
+- `[TRAPPOLA]` **Il sito «lagga» sul telefono anche se Chrome senza interfaccia misura
+  fotogrammi da 17 ms**: i costi veri sono quelli di iPhone. Su Ohana c'erano una barra
+  fissa con `backdrop-filter: blur`, ricalcolata a ogni fotogramma dello scroll; il
+  `resize` che iPhone manda quando la barra degli indirizzi entra ed esce, che faceva
+  `ScrollTrigger.refresh()` a metà scroll; un filo in `scrub` anche sul telefono; un
+  controllo con `getBoundingClientRect` su tutte le schede ogni 80 ms; maschere `clip-path`
+  e `filter` sulle foto. → barre fisse a fondo pieno, `ScrollTrigger.config({
+  ignoreMobileResize: true })` e resize ignorato se cambia solo l'altezza, scrub solo da
+  PC, misure solo a scroll fermo. Patrick l'ha visto prima di noi. (16/10/2026,
+  [[sito-ohana-special-dog]])
+
 - `[TRAPPOLA]` **Un elemento chiuso da `clip-path` ha area zero e
   l'IntersectionObserver non lo vede mai entrare**: la porta chiusa non si
   apriva perché l'osservatore aspettava un'intersezione che non poteva
