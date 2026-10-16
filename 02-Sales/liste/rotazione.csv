@@ -127,7 +127,7 @@ ricerca,MI,edilizia e serramenti,esaurito,53,2026-10-09,"9/10: 44 profili, 6 rig
 ricerca,MI,ingrossi e distribuzione,esaurito,45,2026-10-12,"12/10: ~120 profili, 7 righe. Finito per resa: ~50 fuori provincia dai motori, Ortomercato senza Instagram vivo"
 ricerca,MI,trasporti e logistica,parziale,7,2026-09-23,
 ricerca,MI,alimentari artigianali,esaurito,28,2026-10-09,"9/10: 31 profili, 5 righe. Finito per resa: 15 fermi, 8 piccoli, 3 troppo grandi"
-ricerca,MI,aziende agricole con vendita,parziale,35,2026-10-13,"13/10: 69 profili, 12 righe. Aperta, fermata per tempo: rende 1 su 2,5 sui profili in provincia; Yahoo mescola altre province, Parco Sud serve JavaScript"
+ricerca,MI,aziende agricole con vendita,esaurito,41,2026-10-16,"16/10: ~77 profili, 6 righe. Finito per resa (1 su 13): 22 fuori provincia, 16 fuori segmento, 14 fermi, 11 già in lista"
 ricerca,MI,altro,parziale,21,2026-09-25,righe sparse di settori fuori elenco
 ricerca,LC,falegnamerie,esaurito,4,2026-10-07,"7/10: 30 profili, 3 righe. Finito per resa: 12 fermi, 7 fuori provincia, 5 negozi"
 ricerca,LC,studi tecnici,parziale,3,2026-09-29,
@@ -177,7 +177,7 @@ ricerca,SO,falegnamerie,esaurito,4,2026-10-13,"13/10: ~43 profili, 2 righe. Fini
 ricerca,SO,officine e carrozzerie,parziale,2,2026-09-23,
 ricerca,SO,edilizia e serramenti,esaurito,18,2026-10-12,"12/10: 78 profili, 14 righe. Finito per resa: ~35 fuori provincia, ~15 fermi"
 ricerca,SO,altro,parziale,3,2026-09-29,righe sparse di settori fuori elenco
-ricerca,BS,falegnamerie,parziale,16,2026-10-07,"7/10: 44 profili, 12 righe. Aperta, rende 1 su 4; fermata per tempo"
+ricerca,BS,falegnamerie,parziale,19,2026-10-16,"16/10: 24 profili, 3 righe. Fermata dal blocco Instagram (resa 1 su 8): 7 fermi, 5 fuori provincia, 4 piccoli; 17 handle trovati da leggere"
 ricerca,BS,studi tecnici,parziale,1,2026-09-13,
 ricerca,BS,impiantisti,parziale,7,2026-09-29,
 ricerca,BS,officine e carrozzerie,esaurito,25,2026-10-10,"10/10: 120 profili, 14 righe. Finito per fonti (Pagine Gialle 429, Googlebot sui profili rimanda al login): ~45 fuori provincia dagli account simili, ~22 fermi, ~12 concessionarie"
@@ -189,7 +189,7 @@ ricerca,BS,alimentari artigianali,parziale,11,2026-10-09,"9/10: 34 profili, 7 ri
 ricerca,BS,aziende agricole con vendita,parziale,18,2026-10-11,"11/10: 24 profili, 14 righe. Aperta, rende 1 su 2; fonte: dati.lombardia.it e i tag di @coldiretti_brescia e @campagnamica_brescia"
 ricerca,BS,altro,parziale,46,2026-09-25,righe sparse di settori fuori elenco
 ricerca,CR,impiantisti,parziale,2,2026-09-29,
-ricerca,CR,officine e carrozzerie,parziale,6,2026-09-25,
+ricerca,CR,officine e carrozzerie,esaurito,11,2026-10-16,"16/10: 28 profili, 5 righe. Finito per resa (1 su 5,6): 9 fermi, 5 vuoti o privati, 3 fuori provincia, 2 concessionarie"
 ricerca,CR,edilizia e serramenti,esaurito,7,2026-10-11,"11/10: 113 profili, 4 righe. Finito per resa: ~90 fuori provincia dai motori, il resto fermi"
 ricerca,CR,alimentari artigianali,parziale,2,2026-09-29,
 ricerca,CR,aziende agricole con vendita,parziale,3,2026-09-29,
@@ -264,3 +264,7 @@ siti,VB,"personal trainer, pilates e yoga",parziale,7,2026-10-15,"15/10: ~40 pro
 siti,VB,fotografi e videomaker,esaurito,6,2026-10-15,"15/10: 55 profili, 6 righe: ~20 fuori provincia o omonimi, 9 col sito, 6 community, 6 negozi; PG/PB solo 20 schede"
 siti,PV,fotografi e videomaker,parziale,3,2026-10-15,"15/10: ~25 profili, 3 righe: 5 col sito; cercato poco, Yahoo fermo"
 siti,PC,"sartorie, atelier e tappezzieri",esaurito,6,2026-10-15,"15/10: 38 profili, 6 righe: 8 col sito, 8 negozi, 6 fermi, 6 sotto i 200, elenchi finiti"
+siti,PC,tatuatori e piercing,esaurito,7,2026-10-16,"16/10: 45 profili, 7 righe. Finito per resa (1 su 6,4) e bacino: ~30 studi in provincia; 19 fuori provincia, 5 fermi, 4 resident; 11 handle non letti per il blocco Instagram"
+siti,GE,toelettature e dog trainer,parziale,0,2026-10-16,"16/10: 4 profili, 0 righe. Fermata dal blocco Instagram: 13 nomi con dominio già verificato da leggere (scratchpad perso), 12 col sito scartati"
+siti,NO,pasticcerie e cake designer,parziale,3,2026-10-16,"16/10: 26 profili, 3 righe. Fermata dal blocco Instagram (resa 1 su 9): 11 fermi, 9 col sito, 4 piccoli; 27 handle trovati da leggere"
+siti,VB,fioristi e wedding planner,parziale,2,2026-10-16,"16/10: 17 profili, 2 righe. Fermata dal blocco Instagram: 8 fuori provincia, 2 col sito, 2 fermi; 10 handle e ~26 nomi da leggere, stima finale 8-12 righe"

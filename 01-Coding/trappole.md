@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Errori tecnici già pagati e strade scartate, per dominio. Descrittivo, non è un rulebook - le regole stanno in convenzioni.
-updated: 2026-10-13
+updated: 2026-10-16
 verificato: 2026-09-10
 source: denkicode
 tags: [trappole, memoria, frontend, gsap, git]
@@ -1272,6 +1272,23 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   che riconosca la sessione del task (`permessi-giro.py`). E l'hook lo installa
   una persona: il classificatore ferma il modello che prova a scriverlo
   («Self-Modification»). (13/10/2026, [[giro-mattina]])
+
+- **Sette operatori che leggono Instagram in parallelo chiudono l'indirizzo
+  in venti minuti.** Giro del 16/10, dalle 18:55 alle 19:16: Cremona ha
+  sondato 848 handle indovinati dai nomi di Pagine Gialle con 8 richieste in
+  parallelo, Milano 350 letture con 10, Brescia ~100 con 6, Novara 280 con 3,
+  Genova 135 con 6; più di 1.700 richieste, e alle 19:16 ogni `curl` Googlebot
+  e ogni pagina del browser sloggato rimandava al login con `is_from_rle`. Il
+  blocco è durato oltre 40 minuti e il giro ha chiuso con 26 righe su 160.
+  Nei giri precedenti le stesse ~1.200 letture, fatte una alla volta in
+  un'ora e mezza, erano passate. Due operatori hanno anche lanciato `pkill -f`
+  per nome di file (`yahoo.sh`, `xargs -P 6`) e possono aver fermato lo script
+  di un altro. → Il brief degli operatori fissa il ritmo prima di partire: una
+  lettura alla volta, mai in parallelo, almeno 3 secondi fra una e l'altra,
+  nessun handle indovinato a centinaia (si sondano solo quelli che una fonte dà
+  già come esistenti: siti aziendali, menzioni, elenchi), e durante un blocco
+  una sola sonda ogni 2 minuti. I processi si fermano solo per PID, mai per
+  nome. (16/10/2026, [[2026-10-16-siti-e-ricerca-giro-mattina]])
 
 ## Skill e strumenti di processo
 
