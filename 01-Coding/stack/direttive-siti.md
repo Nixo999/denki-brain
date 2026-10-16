@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 16/10/2026 — Nicola: «allora adesso pero troppo semplice e vuoto, le sottolineature dalle scritte toglile che fanno schifo. dagli un po di vita sensa usare colori troppo accessi o troppo diversi tra di loro»
+
+Una pagina con pochi colori non deve diventare vuota: la vita si dà con dettagli, tipografia, foto e animazioni piccole dentro la stessa famiglia di colore, e le righe sotto le parole non si usano come decorazione.
+
 ### 16/10/2026 — Nicola: «bello ma il verde all inizio non mi piace, fai colori un po piu semplici cosi un po troppo contrasto, e poi mi sembra ci sia un po troppa roba scittta fa un po di confisuie, semplificalo»
 
 Su un sito vetrina i colori restano semplici e poco contrastati, con un fondo chiaro e un accento solo, e il testo si taglia fino a una frase per blocco perché troppe scritte confondono chi apre dal telefono.
