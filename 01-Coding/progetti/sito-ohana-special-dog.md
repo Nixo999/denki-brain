@@ -41,4 +41,4 @@ bastano.
 
 ## Storia
 
-- 16/10: raccolta e concorrenti su Sonnet, direzione su Fable, costruzione su Opus.
+- 16/10: raccolta e concorrenti su Sonnet, direzione su Fable, costruzione su Opus in tre passaggi. Online il giro 2 (`2a42cf4`): dieci sezioni, font Lilita One, Nunito e Pacifico scelti con le prove a 375 (gli altri due titoli sbordavano), bottone principale «Chiama Daniela» sul cellulare, servizi a schede colorate, la seduta in sei tappe con il binario sotto la barra sul telefono, recensioni vere. Controlli 8/8, 0 e 0. Il nastro di parole che scorre, chiesto per errore nel brief, è stato tolto prima della pubblicazione. Motion mai vista a velocità vera (il pannello dell'app girava a 2 fotogrammi al secondo), iPhone mai. Due frasi sulla tecnica sono generiche e non confermate da Daniela.

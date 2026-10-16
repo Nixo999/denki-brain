@@ -596,6 +596,14 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   entro 800 ms non arriva un `requestAnimationFrame` la pagina passa a uno stato
   senza motion, tutto rivelato. (24/09/2026, [[sito-p0t-tattoo]])
 
+- `[TRAPPOLA]` **Il pannello del browser dell'app può essere visibile e girare a 2
+  fotogrammi al secondo** (misurato con un ciclo di `requestAnimationFrame` di un secondo,
+  con `document.hidden` falso). Dopo uno scroll veloce le apparizioni restano vuote
+  per più di un secondo e l'apertura sembra ferma a metà, ma su un telefono vero girano
+  a 60. → prima di correggere un'animazione «lenta» si misurano i fotogrammi del
+  pannello; se sono pochi, il giudizio sulla motion va su un browser vero o sul
+  telefono. (16/10/2026, [[sito-ohana-special-dog]])
+
 - `[TRAPPOLA]` **Un elemento chiuso da `clip-path` ha area zero e
   l'IntersectionObserver non lo vede mai entrare**: la porta chiusa non si
   apriva perché l'osservatore aspettava un'intersezione che non poteva

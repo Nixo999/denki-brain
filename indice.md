@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-10-15
+updated: 2026-10-16
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **295 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **299 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -78,6 +78,8 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-nails-robyy]] — Roberta @nails.robyy, nail artist e educator a Brescia: bozza online su nailsrobyy.netlify.app dal 14/9, mondo A «la sezione quotata», 8/8, sbarramenti verificati.
 - [[sito-newfantasy]] — New Fantasy Parrucchieri @newfantasy_parrucchieri, Lurate Caccivio (CO): bozza online su newfantasy-parrucchieri.netlify.app dal 16/9, mondo B «l'agenda a tre colonne», prenotazioni e gestionale su localStorage.
 - [[sito-ngbarber]] — ⚠️ Bozza vetrina per ng-barber, riga 2 dell'anello 1-b delle liste Instagram, gancio 5.
+- [[sito-nocloudsproduction]] — Bozza di sito vetrina per No Clouds Production, videomaker e fotografo a Biella. Costruita il 16/10 dopo il suo «Mi faccia pure vedere».
+- [[sito-ohana-special-dog]] — Bozza di sito vetrina per Ohana Special Dog, toelettatura di Daniela Esposito a Levate (BG). Costruita il 16/10 in un'ora.
 - [[sito-osteria-tarilli]] — ⚠️ Osteria Tarilli, Via Ronco Nuovo 2, 6949 Comano (TI), a 300 m dalla RSI.
 - [[sito-p0t-tattoo]] — Bozza sito per p0t_tattoo (Ruben, tatuatore anime e cartoon, Collegno TO) - mondo «Rodovetro × Retino», linea → puntinato → colore, Unbounded + Hanken Grotesk. Online su p0t-tattoo.netlify.app dal 24/9, giro 9 (mobile per primo, desktop pieno, testa con spessore), 8/8, slop 0, testo 0.
 - [[sito-perunpelo]] — Bozza sito Per un Pelo (toelettatura di Ambra Longoni, Nembro BG), lettere che si pettinano. Giro 3 online su perunpelo.netlify.app.
@@ -155,6 +157,8 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[nails-mania]] — ⚠️ Centro di ricostruzione unghie mani e piedi di Lory Frosio, onicotecnica dal 2005.
 - [[newfantasy]] — New Fantasy Parrucchieri, Lurate Caccivio (CO), @newfantasy_parrucchieri, 2.606 follower. Bozza online dal 16/9 su newfantasy-parrucchieri.netlify.app; il link va su WhatsApp, da Patrick.
 - [[ng-barber]] — ⚠️ Barbershop, @ngbarberstudio123. Riga 2 dell'anello 1-b, gancio 5 - l'unico link in bio è ngbarber.my-booking-app.com, cioè un'app di prenotaz...
+- [[nocloudsproduction]] — No Clouds Production, videomaker e fotografo a Biella senza sito. Ha risposto al DM di Patrick il 16/10: «Mi faccia pure vedere».
+- [[ohana-special-dog]] — Ohana Special Dog, toelettatura e pet shop di Daniela Esposito a Levate (BG), senza sito. DM di Patrick il 07/10; bozza costruita il 16/10.
 - [[p0t-tattoo]] — Ruben, tatuatore anime e cartoon (@p0t_tattoo, 307 follower) da K-Ink Studio Tattoo, via Adua 9b Collegno (TO). Ha risposto al DM del 24/09 - la bozza la vuole su Instagram.
 - [[parrucchiere-morgan]] — Portato da Morgan il 15/9: espone volantini e biglietti e parla coi clienti in cambio del sito gratis, zero percentuali. Nome TODO.
 - [[perunpelo]] — Ambra Longoni, groomer di Per un Pelo Toelettatura, Nembro (BG), @toelettatura.perunpelo. 5,0 su 102 su Google. Ha risposto al DM il 25/09 - vuole la bozza.
