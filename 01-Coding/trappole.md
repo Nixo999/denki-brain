@@ -1289,6 +1289,15 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   già come esistenti: siti aziendali, menzioni, elenchi), e durante un blocco
   una sola sonda ogni 2 minuti. I processi si fermano solo per PID, mai per
   nome. (16/10/2026, [[2026-10-16-siti-e-ricerca-giro-mattina]])
+- **Sette operatori nella stessa scratchpad si sovrascrivono gli script.**
+  Giro del 17/10: un operatore ha scritto `ig.py`, `sito.sh` e `pgparse.py`
+  nella radice della scratchpad condivisa e per qualche minuto ha riempito le
+  cartelle `ig/` di un altro. → il brief assegna a ogni operatore una cartella
+  propria (`scratchpad/op-<cella>/`) e nessuno scrive nella radice. Nello
+  stesso giro Pagine Gialle ha risposto 429 in cinque celle su sette dopo
+  5-50 richieste: sette operatori sullo stesso indirizzo la saturano, mentre
+  Instagram a una lettura ogni 5 secondi per operatore ha retto 196 letture.
+  (17/10/2026, [[2026-10-17-siti-e-ricerca-giro-mattina]])
 
 ## Skill e strumenti di processo
 
