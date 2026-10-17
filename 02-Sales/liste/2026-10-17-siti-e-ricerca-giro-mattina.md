@@ -1,5 +1,5 @@
 ---
-riga: Per Patrick - giro del mattino del 17/10 (partito 11:01), siti 36 e ricerca 37 pubblicati sul banco; Instagram ha retto, Pagine Gialle e i motori no
+riga: Per Patrick - giro del 17/10, siti 36 e ricerca 37 sul banco; posta letta da Brave dopo 16 giorni, 4 lead caldi, 3 chiedono il modulo via mail, 59 DM mai consegnati
 type: area
 updated: 2026-10-17
 source: claude
@@ -43,6 +43,49 @@ di settore e dai siti aziendali.
 
 Tre riserve aperte su quattro assegnate (TO, MN, CR; AO solo sondata); la cella
 delle pasticcerie non ne aveva una.
+
+## La posta, letta il 17/10 da Brave (account denkicode)
+
+La posta non veniva letta dal 1° ottobre: in mezzo ci sono circa 1.000 DM. Si
+è letta dall'account `denkicode` collegato in **Brave** sul Mac di Nicola, con
+l'estensione Claude in Chrome: l'API `direct_v2/inbox` risponde 404 da oggi,
+quindi la lista si è scorsa dal DOM (3.390 conversazioni fino a tre settimane
+fa) e le chat con una risposta vera si sono aperte una per una.
+
+**I lead caldi, prima di tutto:**
+- **Educazione Cinofila Piacenza** (nome del thread; handle non abbinato):
+  **appuntamento fissato lunedì 20/10 alle 17:30**, confermato giovedì 16/10.
+- **@flordelislegnano** (Jessica, Legnano): vuole sentirsi su WhatsApp al
+  349 7154431; l'8/10 ha detto «tranne il lunedì va bene quasi sempre»,
+  Patrick ha proposto martedì o mercoledì alle 18 e da allora c'è solo la sua
+  autorisposta. **Ferma da 9 giorni: si chiama lei.**
+- **@cakeroyal.bs** (Brescia): «appena ho un attimo vado a guardare», l'11/10.
+  Nessun rilancio, 6 giorni.
+- **@dragonfly_estetica** (Casale): bozza vista il 18/09, «Grazie» il 29/09,
+  niente da 18 giorni. **@soul_ink_torino_city**: «Darò un occhiata» il 28/09.
+
+**Tre aziende della ricerca chiedono il modulo per email**, perché il link
+nel DM non si apre o Instagram lo segna come possibile truffa:
+cascina.madonnina@gmail.com (7/10), info@laquintalina.it (13/10),
+info@labevera.it (13/10). Nessuna ha ancora ricevuto la mail.
+
+**I no**: @pelosamente, @manuelghezzitattooer, @sartoriamora,
+@marghefotomilano (sito in elaborazione). **Errori di lista**:
+@musetto_perfetto_toelettatura ha il sito, @vivaiosaronno è un progetto
+immobiliare. Tutti in `risposte-dm.csv` e in `Esito DM` sul banco.
+
+**I numeri che pesano più delle risposte:**
+- **92 DM non sono mai arrivati**: Instagram risponde «Questo account non può
+  ricevere il tuo messaggio perché non consente nuove richieste di messaggi
+  da tutti». Sono circa il 9% degli invii dal 25/09; 59 abbinati a righe del
+  banco e segnati `non consegnato` (32 siti, 27 ricerca). I 33 non abbinati
+  vengono da invii più vecchi o da liste fuori banco.
+- **85 autorisposte** (50 abbinate e segnate), 37 ancora «Unread».
+- **Il link del modulo nel primo messaggio è il difetto della ricerca**: tre
+  risposte su tre dicono che non si apre o che Instagram lo segnala come
+  truffa. La regola 5 di [[metodo-instagram]] («niente link nel primo
+  messaggio») vale anche qui: il primo DM della ricerca deve chiedere se va
+  bene mandare il modulo, e il link parte nel secondo messaggio o per email.
 
 ## Da guardare prima di mandare
 

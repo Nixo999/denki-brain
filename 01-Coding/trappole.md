@@ -1298,6 +1298,18 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   5-50 richieste: sette operatori sullo stesso indirizzo la saturano, mentre
   Instagram a una lettura ogni 5 secondi per operatore ha retto 196 letture.
   (17/10/2026, [[2026-10-17-siti-e-ricerca-giro-mattina]])
+- **Il link del modulo nel primo DM della ricerca non si apre.** Posta del
+  17/10: tre aziende su tre che hanno risposto dicono «non riesco a cliccare
+  il link», «da Instagram non si riesce ad aprire», «Instagram sconsiglia
+  l'apertura del link perché possibile truffa», e hanno chiesto il modulo per
+  email. Instagram blocca i link nelle richieste di messaggio da sconosciuti,
+  come dice già la regola 5 di [[metodo-instagram]] per i siti. → il primo DM
+  della ricerca chiede se va bene mandare il modulo; il link parte nel secondo
+  messaggio o per email. Nello stesso giro: 92 DM dal 25/09 risultano «non
+  consegnati» (l'account non accetta richieste da tutti), e l'API
+  `direct_v2/inbox` che leggeva la posta risponde 404: la posta si legge
+  scorrendo il DOM dell'inbox, dall'account denkicode collegato in Brave sul
+  Mac di Nicola. (17/10/2026, [[2026-10-17-siti-e-ricerca-giro-mattina]])
 
 ## Skill e strumenti di processo
 

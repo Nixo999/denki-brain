@@ -1,7 +1,7 @@
 ---
 riga: Il prompt del giro del mattino - la lista del giorno parte da sola alle 8 dal Mac di Nicola, alle 8:30 da quello di Patrick se la conferma non c'e'.
 type: risorsa
-updated: 2026-10-11
+updated: 2026-10-17
 source: claude
 tags: [banco, liste, automazione]
 ---
@@ -60,6 +60,11 @@ risposte.**
 4. La risposta ha il formato del passo 10 di `banco.md`.
 
 ## Limiti noti
+
+- **La posta (passo 6) dal Mac di Nicola si legge da Brave**, dove l'account
+  `denkicode` è collegato, con gli strumenti di Claude in Chrome; il browser
+  dell'app non è collegato. L'API `direct_v2/inbox` risponde 404 dal 17/10: si
+  scorre la lista dell'inbox nel DOM e si aprono le chat una per una.
 
 - Se il giro del Mac di Nicola parte e si pianta a metà, quello di Patrick non
   lo rifà: la conferma c'è. Lo dice la riga `partito` senza `finito` in
