@@ -84,7 +84,7 @@ siti,AT,unghie,parziale,3,2026-09-17,
 siti,AT,estetica,parziale,2,2026-09-17,
 siti,AT,fotografi e videomaker,parziale,1,2026-09-23,
 siti,AT,trucco sposa e wedding,parziale,1,2026-09-23,
-siti,TO,tatuatori e piercing,parziale,42,2026-10-17,"17/10: 16 profili, 12 righe. Aperta (riserva di VC), rende 3 su 4; 8 handle da leggere"
+siti,TO,tatuatori e piercing,parziale,52,2026-10-17,"17/10: 16+60 profili, 12+10 righe. Aperta, rende 1 su 6 dagli account simili; 7 handle da leggere (tempoanimatattoo, inkspace_tattoostudio, antigosprincipi, veracruz_tattoo, tiga_tattoo_studio, caspertattoostudio, apomorphy_tattoo_gallery)"
 siti,TO,barbieri,parziale,44,2026-09-25,
 siti,TO,"ciglia, sopracciglia e PMU",parziale,49,2026-09-29,
 siti,TO,parrucchieri,parziale,17,2026-09-23,
@@ -136,7 +136,7 @@ ricerca,LC,officine e carrozzerie,esaurito,9,2026-10-07,"7/10: 44 profili, 8 rig
 ricerca,LC,meccanica e carpenterie,parziale,1,2026-09-25,
 ricerca,LC,edilizia e serramenti,esaurito,20,2026-10-05,"5/10: 72 profili, 15 righe. Finito per resa e Pagine Gialle finita: 22 fermi, 14 sotto i 200 follower"
 ricerca,LC,alimentari artigianali,esaurito,17,2026-10-15,"15/10: 35 profili, 3 righe: chi produce era già nelle liste del 5/10 e 12/10"
-ricerca,LC,aziende agricole con vendita,esaurito,24,2026-10-17,"17/10: 7 profili, 2 righe. Finito per fonti: dati.lombardia e Virgilio battuti, Pagine Gialle 429, Campagna Amica solo JavaScript"
+ricerca,LC,aziende agricole con vendita,esaurito,25,2026-10-17,"17/10: 7+10 profili, 2+1 righe. Finito: account simili 7 su 10 fuori provincia; @l.m.b.birradivalsassina da leggere"
 ricerca,LC,altro,parziale,1,2026-09-23,righe sparse di settori fuori elenco
 ricerca,VA,falegnamerie,parziale,3,2026-09-29,
 ricerca,VA,studi tecnici,parziale,1,2026-09-29,
@@ -183,9 +183,9 @@ ricerca,BS,impiantisti,parziale,7,2026-09-29,
 ricerca,BS,officine e carrozzerie,esaurito,25,2026-10-10,"10/10: 120 profili, 14 righe. Finito per fonti (Pagine Gialle 429, Googlebot sui profili rimanda al login): ~45 fuori provincia dagli account simili, ~22 fermi, ~12 concessionarie"
 ricerca,BS,meccanica e carpenterie,parziale,6,2026-09-25,
 ricerca,BS,edilizia e serramenti,esaurito,26,2026-10-05,"5/10: 30 profili, 5 righe. Finito per resa: 13 sotto i 200 follower, 5 morti, 10 gia contattati"
-ricerca,BS,ingrossi e distribuzione,esaurito,26,2026-10-17,"17/10: 23 profili, 14 righe. Finito per fonti, non per resa: finiti i siti con link a Instagram (Beverfood, PagineBianche)"
+ricerca,BS,ingrossi e distribuzione,esaurito,27,2026-10-17,"17/10: 23+22 profili, 14+1 righe. Finito per fonti: account simili quasi tutti fuori provincia; @agrigelontheroadsrl da leggere con login"
 ricerca,BS,trasporti e logistica,parziale,2,2026-09-25,
-ricerca,BS,alimentari artigianali,parziale,31,2026-10-17,"17/10: 30 profili, 20 righe. Aperta, rende 2 su 3: elenco cantine del Consorzio Franciacorta, 14 handle da leggere"
+ricerca,BS,alimentari artigianali,parziale,45,2026-10-17,"17/10: 30+36 profili, 20+14 righe. Aperta, rende 2 su 5: 10 cantine Franciacorta dal Consorzio, 4 dagli account simili; da rileggere @terredaenor"
 ricerca,BS,aziende agricole con vendita,parziale,18,2026-10-11,"11/10: 24 profili, 14 righe. Aperta, rende 1 su 2; fonte: dati.lombardia.it e i tag di @coldiretti_brescia e @campagnamica_brescia"
 ricerca,BS,altro,parziale,46,2026-09-25,righe sparse di settori fuori elenco
 ricerca,CR,impiantisti,parziale,2,2026-09-29,
@@ -193,7 +193,7 @@ ricerca,CR,officine e carrozzerie,esaurito,11,2026-10-16,"16/10: 28 profili, 5 r
 ricerca,CR,edilizia e serramenti,esaurito,7,2026-10-11,"11/10: 113 profili, 4 righe. Finito per resa: ~90 fuori provincia dai motori, il resto fermi"
 ricerca,CR,alimentari artigianali,parziale,2,2026-09-29,
 ricerca,CR,aziende agricole con vendita,parziale,3,2026-09-29,
-ricerca,MN,falegnamerie,parziale,2,2026-10-17,"17/10: 1 profilo, 1 riga. Aperta (riserva di LC), appena iniziata; 4 siti senza link a Instagram"
+ricerca,MN,falegnamerie,esaurito,3,2026-10-17,"17/10: 1+9 profili, 1+1 righe. Finito per candidati: 6 su 9 fuori provincia, Bisi è un negozio"
 ricerca,MN,impiantisti,parziale,1,2026-09-29,
 ricerca,MN,officine e carrozzerie,parziale,3,2026-09-21,
 ricerca,MN,ingrossi e distribuzione,parziale,1,2026-09-23,
@@ -232,9 +232,9 @@ siti,BS,"personal trainer, pilates e yoga",esaurito,29,2026-10-15,"15/10: 30 pro
 siti,LO,toelettature e dog trainer,esaurito,6,2026-10-07,"7-8/10: 35 profili, 6 righe. Finito per resa e fonti finite: 11 sotto i 200 follower"
 ricerca,LC,ingrossi e distribuzione,esaurito,19,2026-10-15,"15/10: ~30 profili, 1 riga: i grossisti di Lecco non stanno su Instagram, chi c'è è già contattato o fermo"
 ricerca,CO,alimentari artigianali,esaurito,13,2026-10-09,"9/10: 66 profili, 13 righe. Finito per resa: 25 fuori provincia o omonimi, 11 fermi, 9 morti o sotto i 200"
-siti,BS,pasticcerie e cake designer,esaurito,28,2026-10-17,"17/10: 30 profili, 3 righe. Finito per resa (1 su 10): 19 handle indovinati inesistenti, Pagine Gialle e motori bloccati"
+siti,BS,pasticcerie e cake designer,esaurito,34,2026-10-17,"17/10: 30+29 profili, 3+6 righe. Secondo giro dagli account simili (Brave): 10 fuori provincia, 6 col sito, 4 fermi. Finita per candidati"
 siti,BS,fotografi e videomaker,esaurito,4,2026-10-09,"9/10: 43 profili, 4 righe. Finito per resa: 14 col sito, 10 sotto i 200, 6 fermi"
-siti,BS,fioristi e wedding planner,esaurito,21,2026-10-17,"17/10: 56 profili, 10 righe. Finito per fonti: fioreriadaelisa battuta (470 schede); 17 handle morti, 11 sotto i 200"
+siti,BS,fioristi e wedding planner,esaurito,26,2026-10-17,"17/10: 56+46 profili, 10+5 righe. Secondo giro dagli account simili: 17 fuori provincia, 9 col sito. Finita per candidati"
 siti,PV,toelettature e dog trainer,esaurito,4,2026-10-09,"9/10: 30 profili, 4 righe. Finito per resa: 9 sotto i 200, 4 negozi, 4 col sito, 4 fuori provincia"
 siti,NO,"sartorie, atelier e tappezzieri",esaurito,4,2026-10-09,"9/10: 40 profili, 4 righe. Finito per resa: 21 fuori provincia, 7 sotto i 200, 4 fermi"
 siti,LO,"sartorie, atelier e tappezzieri",esaurito,3,2026-10-09,"9/10: 30 profili, 3 righe. Finito per resa: 12 sotto i 200, 7 fuori provincia"
@@ -269,6 +269,6 @@ siti,GE,toelettature e dog trainer,parziale,0,2026-10-16,"16/10: 4 profili, 0 ri
 siti,NO,pasticcerie e cake designer,parziale,3,2026-10-16,"16/10: 26 profili, 3 righe. Fermata dal blocco Instagram (resa 1 su 9): 11 fermi, 9 col sito, 4 piccoli; 27 handle trovati da leggere"
 siti,VB,fioristi e wedding planner,parziale,2,2026-10-16,"16/10: 17 profili, 2 righe. Fermata dal blocco Instagram: 8 fuori provincia, 2 col sito, 2 fermi; 10 handle e ~26 nomi da leggere, stima finale 8-12 righe"
 siti,VC,tatuatori e piercing,esaurito,10,2026-10-17,"17/10: 18 profili, 10 righe. Finito per bacino: 21 studi in provincia, tutti letti; 1 col sito, 1 resident, 1 privato"
-siti,AT,toelettature e dog trainer,esaurito,1,2026-10-17,"17/10: 9 profili, 1 riga. Finito per bacino: 10 schede su toelettature.net, 2 catene, 4 handle inesistenti; motori tutti bloccati"
+siti,AT,toelettature e dog trainer,esaurito,3,2026-10-17,"17/10: 9+18 profili, 1+2 righe. Finito per bacino: dagli account simili 13 su 18 fuori provincia"
 siti,AO,toelettature e dog trainer,parziale,0,2026-10-17,"17/10: 1 profilo, 0 righe. Fonti bloccate (toelettature.net 403, Pagine Gialle 429): da riaprire"
 ricerca,CR,ingrossi e distribuzione,esaurito,0,2026-10-17,"17/10: 5 profili, 0 righe. Finito per fonti: i siti dei grossisti cremonesi non linkano Instagram, 2 fermi, 1 sede a Bergamo"

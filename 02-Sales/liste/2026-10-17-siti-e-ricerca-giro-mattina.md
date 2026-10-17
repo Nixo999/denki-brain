@@ -1,5 +1,5 @@
 ---
-riga: Per Patrick - giro del 17/10, siti 36 e ricerca 37 sul banco; posta letta da Brave dopo 16 giorni, 4 lead caldi, 3 chiedono il modulo via mail, 59 DM mai consegnati
+riga: Per Patrick - 17/10 in due giri, siti 59 e ricerca 54 sul banco (il secondo dagli account simili via Brave); posta letta dopo 16 giorni, 4 lead caldi, 59 DM mai consegnati
 type: area
 updated: 2026-10-17
 source: claude
@@ -9,7 +9,7 @@ canale: instagram
 stato: pubblicata
 ---
 
-# 17 ottobre, giro del mattino: siti 36 su 100, ricerca 37 su 60
+# 17 ottobre: siti 59 su 100, ricerca 54 su 60, in due giri
 
 Settimo giro di [[giro-mattina]], ruolo `primo`, dal Mac di Nicola. Il task è
 partito alle 11:01 invece che alle 8, perché il primo `git fetch` di
@@ -43,6 +43,46 @@ di settore e dai siti aziendali.
 
 Tre riserve aperte su quattro assegnate (TO, MN, CR; AO solo sondata); la cella
 delle pasticcerie non ne aveva una.
+
+## Il secondo giro (12:30-12:55): 40 righe dagli «account simili» di Instagram
+
+Nicola: «sul mio browser sono loggato», «sono su brave». Da Brave, con
+l'account `denkicode`, la ricerca interna di Instagram risponde ancora:
+`/api/v1/fbsearch/account_serp/?query=…` trasforma un nome in handle (il vecchio
+`topsearch` risponde 404) e `/api/v1/discover/chaining/?target_id=<pk>` dà fino
+a 80 account simili a un profilo. `users/{pk}/info/` risponde 429: il profilo si
+legge ancora con curl Googlebot. Dai 60 profili pubblicati al mattino, usati
+come semi, sono usciti 1.700 candidati; filtrati per parola nel nome e letti
+dagli operatori (una lettura ogni 5 secondi, 280 letture, zero blocchi) hanno
+dato 40 righe. Il filtro che costa è la provincia: il «simile» di Instagram è
+dello stesso mestiere ma di tutta Italia.
+
+| Lista | Candidati letti | Righe | Perché il resto è fuori |
+|---|---|---|---|
+| siti BS pasticcerie -2 | 29 | 6 | 10 fuori provincia, 6 col sito, 4 fermi |
+| siti BS fioristi -2 | 46 | 5 | 17 fuori provincia, 9 col sito, 6 location |
+| siti TO tatuatori -2 | 60 | 10 | 17 resident senza studio, 15 fuori provincia, 5 col sito |
+| siti AT toelettature -2 | 18 | 2 | 13 fuori provincia |
+| ricerca BS alimentari -2 | 36 | 14 | 10 cantine del Consorzio, 11 fuori provincia |
+| ricerca BS ingrossi -2 | 22 | 1 | 8 fuori provincia, 4 fuori mestiere |
+| ricerca LC agricole -2 | 10 | 1 | 7 fuori provincia |
+| ricerca MN falegnamerie -2 | 9 | 1 | 6 fuori provincia, Bisi è un negozio |
+
+Da guardare prima di mandare, oltre alla bio di tutte: @fattoriadassogno
+(21.000 follower, sul dominio una pagina di login), @ottonetti_legnami (un
+solo post nel 2026, il 26/05: entra al limite), @alporifesta (sede legale forse
+a Milano, post non letti), @theclubdoggo (il dominio clubdoggo.it in «Coming
+Soon» potrebbe essere di un omonimo di Bergamo: il messaggio non lo nomina),
+@p_isabau (pensione per cani, non toelettatura), @ziliani_franciacorta e
+@costaripa (grandi), @_flaco_tattoo (atelier di Rivoli aperto il 10/09, da
+confermare), @tattoodoubletrucks (ci lavora Diegoskull, già contattato il 21/09),
+@creativeink_tattoo (il «prenota» in bio può essere Fresha: gancio da rivedere).
+Gli otto messaggi della ricerca non portano il link del modulo: chiedono se
+mandarlo qui o per email.
+
+Due commit automatici hanno pushato versioni intermedie con righe poi tolte
+(@pasticceriadesiree, @giuliana_fiori_offlaga, @ilmercatopiantefiori hanno il
+sito): sul banco sono entrate solo le versioni finali.
 
 ## La posta, letta il 17/10 da Brave (account denkicode)
 
@@ -120,7 +160,7 @@ immobiliare. Tutti in `risposte-dm.csv` e in `Esito DM` sul banco.
 
 ## Da riprendere al prossimo giro, senza rifare la ricerca
 
-- **BS alimentari**, 14 cantine dall'elenco del Consorzio Franciacorta:
+- **BS alimentari** (lette nel secondo giro, 10 entrate), 14 cantine dall'elenco del Consorzio Franciacorta:
   @cola_franciacorta, @tenutaambrosini_franciacorta, @faccolifranciacorta,
   @santalucia_franciacorta, @mantifranciacorta, @sullali_franciacorta,
   @terredaenor, @ziliani_franciacorta, @corteaurafranciacorta,

@@ -1310,6 +1310,17 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   `direct_v2/inbox` che leggeva la posta risponde 404: la posta si legge
   scorrendo il DOM dell'inbox, dall'account denkicode collegato in Brave sul
   Mac di Nicola. (17/10/2026, [[2026-10-17-siti-e-ricerca-giro-mattina]])
+- **La pagina che Instagram dà a Googlebot non porta più il link in bio né le
+  date dei post.** Dal 17/10 `external_url`, `bio_links` e `taken_at_timestamp`
+  mancano: le righe scritte con «nessun link in bio» non l'hanno verificato, e
+  la data di un post si ricava dal suo ID (spostato di 23 bit più l'epoca di
+  Instagram, 1314220021721 ms). → il link in bio si apre nell'app prima di
+  scrivere; da Brave, con l'account collegato, `/api/v1/fbsearch/account_serp/`
+  trasforma un nome in handle (`topsearch` risponde 404) e
+  `/api/v1/discover/chaining/?target_id=` dà fino a 80 account simili, mentre
+  `users/{pk}/info/` e `web_profile_info` rispondono 429. Il chaining rende
+  bene sul mestiere e male sulla provincia: su 230 candidati letti il 17/10, 90
+  erano di un'altra provincia. (17/10/2026, [[2026-10-17-siti-e-ricerca-giro-mattina]])
 
 ## Skill e strumenti di processo
 
