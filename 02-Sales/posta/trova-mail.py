@@ -82,6 +82,12 @@ industriale italia italiana italiano group gruppo impianti service servizi comme
 nuova nuovo general generale international internazionale europa euro sistemi system systems tecno metal
 metalli lavorazioni lavorazione trading forniture fornitura distribuzione ingrosso'''.split())
 
+# Sigle di paese che, in coda a una casella (info.de@, sales.il@) o come sottodominio (de.helu.com),
+# dicono che la casella è di un'altra filiale. Fuori le sigle che sono anche province italiane
+# (BG, CO, CR, LC, MN, SO, VA, BS ...), perché info.bg@ può essere l'ufficio di Bergamo.
+PAESI = set('''de fr es uk gb us cn ch at nl be pl cz ro hu pt se dk fi no jp kr in br mx tr ru ae sg au ca il
+za ar cl gr ie lu sk si hr rs ua ma eg sa qa hk tw th my id ph vn nz'''.split())
+
 TLD = ('.it', '.com', '.eu', '.net')
 PAGINE_UTILI = re.compile(r'contatt|contact|chi[-_ ]?siamo|chisiamo|about|azienda|company|dove[-_ ]?siamo|'
                           r'dovesiamo|where|storia|profilo|who-we-are|impressum|sede', re.I)
@@ -272,6 +278,16 @@ def contiene_piva(pagina, piva):
     return re.search(r'(?<!\d)' + piva + r'(?!\d)', t) is not None
 
 
+RX_PIVA_DICHIARATA = re.compile(r'(?:p\.?\s?iva|partita\s+iva|p\.\s?i\.|vat(?:\s+(?:no|number|n|code))?\.?|'
+                                r'c\.?\s?f\.?\s*(?:e|/|-)\s*p\.?\s?iva)\s*[:.]?\s*(?:it)?\s?(\d{11})(?!\d)', re.I)
+
+
+def piva_dichiarate(pagina):
+    """Le partite IVA scritte sulla pagina dopo un'etichetta (P.IVA, Partita IVA, P.I., VAT)."""
+    t = re.sub(r'(?<=\d)[\s.\-/](?=\d)', '', testo_visibile(pagina))
+    return list(dict.fromkeys(RX_PIVA_DICHIARATA.findall(t)))
+
+
 def estratto(pagine):
     """Frasi vere dalla home e dalla pagina chi siamo, senza menu, cookie e piè di pagina."""
     righe, viste = [], set()
@@ -341,9 +357,15 @@ def classifica(email, sito, parole):
         return None, 'PEC'
     proprio = stesso_sito(dom, sito)
     if not proprio:
+        # info@rmli.it per il sito rmliconstructionengineeringsrl.it sì; info@flir.cn per flir.com no
         etichetta = dom.split('.')[-2] if dom.count('.') >= 1 else dom
-        if not any(len(w) >= 4 and w in etichetta for w in parole):
+        if dom.rsplit('.', 1)[-1] not in ('it', 'com', 'eu', 'net') or \
+                not any(len(w) >= 4 and w in etichetta for w in parole):
             return None, 'altro dominio'
+    # le caselle di un'altra filiale del gruppo: info.de@baumerhhs.com, info-hcsb@de.helu.com
+    paese = re.search(r'[._-]([a-z]{2})$', locale)
+    if (paese and paese.group(1) in PAESI) or (dom.count('.') >= 2 and dom.split('.')[0] in PAESI):
+        return None, 'casella di un altro paese'
     m = RX_GENERICA.match(locale)
     if not m:
         # sarg@sarg.it, agom@agom.it: la casella col nome della società è dell'azienda, non di una persona.
@@ -474,6 +496,7 @@ def esamina(dominio, az, parole, fonte):
                 pagine.append((f2, t2))
                 break
     piva_url = next((u for u, t in pagine if contiene_piva(t, az['piva'])), None)
+    altrui = [(u, x) for u, t in pagine for x in piva_dichiarate(t) if x != az['piva']]
     if not piva_url:
         # la partita IVA spesso sta solo nella privacy o nelle note legali: si guardano, non entrano nell'estratto
         for u in [x for x in pagine_interne(fin, home, sito, PAGINE_LEGALI) if x not in dict(pagine)][:3]:
@@ -481,6 +504,12 @@ def esamina(dominio, az, parole, fonte):
             if f2 and contiene_piva(t2, az['piva']):
                 piva_url = f2
                 break
+            if f2:
+                altrui += [(f2, x) for x in piva_dichiarate(t2) if x != az['piva']]
+    if not piva_url and altrui:
+        # 18/10/2026: comapsrl.com porta «Comap» e la parola Milano, ma la P.IVA è di una Comap di Fidenza
+        return dict(stato='altro', nota=f'{dominio} vivo, ma la P.IVA del sito è {altrui[0][1]} ({altrui[0][0]}), '
+                                         f'non {az["piva"]}')
     comune = ascii_basso(az['comune'] or '')
     tutto = ascii_basso(' '.join(testo_visibile(t) for _, t in pagine))
     tutte_parole = parole and all(re.search(r'\b' + re.escape(w), tutto) for w in parole)
