@@ -33,11 +33,15 @@ nell'`estratto` del loro sito, e si salva tutto in
 `02-Sales/posta/dati/scritte.json`:
 
 ```json
-[{"piva": "01234567890", "riga": "Ho visto sul vostro sito che fate taglio laser e piegatura della lamiera per conto terzi."}]
+[{"piva": "01234567890", "nome": "Elsap", "riga": "Ho visto che dal 1978 distribuite componenti di elettronica industriale alle PMI, dai connettori agli alimentatori."}]
 ```
 
-La frase va subito dopo la presentazione di Patrick e prima del problema del
-settore. Le regole, che `mattina.py dopo` controlla da solo:
+`nome` è il nome breve che va nell'oggetto («Elsap: a gestionale c'è, a
+scaffale no»), scritto come lo scrive l'azienda sul suo sito: senza Srl o SpA,
+senza maiuscole urlate. Se non si capisce, si lascia `nome_breve` com'è.
+
+La frase chiude il primo paragrafo, subito dopo la presentazione di Patrick.
+Le regole, che `mattina.py dopo` controlla da solo:
 
 - **una frase sola**, fra 8 e 30 parole, chiusa dal punto, al «voi»;
 - **un fatto, non un giudizio**: cosa fanno, per chi, con quali macchine o

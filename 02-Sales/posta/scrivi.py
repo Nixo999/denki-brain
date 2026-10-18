@@ -6,7 +6,9 @@
     python3 02-Sales/posta/scrivi.py mostra [--n 3]       stampa le ultime mail composte
 
 Claude legge `da-scrivere.json` (nome, settore, attività, comune, estratto del
-sito) e scrive `scritte.json`, una lista di {"piva": ..., "riga": ...}. La riga
+sito) e scrive `scritte.json`, una lista di {"piva": ..., "nome": ..., "riga": ...}.
+`nome` è il nome breve per l'oggetto, come l'azienda lo scrive sul sito («Elsap»,
+non «ELSAP SPA»); se manca vale `nome_breve`, ricavato da solo. La riga
 è UNA frase, al «voi», che dice una cosa vera del loro lavoro letta
 nell'estratto: cosa fanno, per chi, con cosa. Esempio buono: «Ho visto sul
 vostro sito che fate taglio laser e piegatura della lamiera per conto terzi.»
@@ -59,12 +61,13 @@ def prepara(n):
         for s in list(per_settore):
             if per_settore[s] and len(scelte) < n:
                 scelte.append(per_settore[s].pop(0))
-    out = [dict(piva=r['piva'], nome=r['nome'], settore=r['settore'], attivita=r['attivita'],
+    out = [dict(piva=r['piva'], nome=r['nome'], nome_breve=testi.nome_breve(r['nome']), settore=r['settore'],
+                attivita=r['attivita'],
                 comune=r['comune'], sito=r['sito'], estratto=(r['estratto'] or '')[:1500]) for r in scelte]
     os.makedirs(db.DATI, exist_ok=True)
     json.dump(out, open(DA_SCRIVERE, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     print(f'{len(out)} aziende in {DA_SCRIVERE}')
-    print('Per ognuna una riga in dati/scritte.json: [{"piva": "...", "riga": "..."}]. Regole in testa a scrivi.py.')
+    print('Per ognuna in dati/scritte.json: [{"piva": "...", "nome": "...", "riga": "..."}]. Regole in testa a scrivi.py.')
 
 
 def controlla_riga(riga):
@@ -102,7 +105,11 @@ def importa(file):
             if errore:
                 scarti.append((s['piva'], f'{errore} → «{riga}»'))
                 continue
-            oggetto, corpo = testi.primo(a['settore'], riga, tel)
+            nome = (s.get('nome') or '').strip() or testi.nome_breve(a['nome'])
+            if len(nome) > 40 or testi.FORME.search(nome):
+                scarti.append((s['piva'], f'nome per l\'oggetto da accorciare: «{nome}»'))
+                continue
+            oggetto, corpo = testi.primo(a['settore'], riga, tel, nome)
             p = problemi_voce(corpo)
             if p:
                 scarti.append((s['piva'], 'voce-check: ' + '; '.join(p)[:200]))
