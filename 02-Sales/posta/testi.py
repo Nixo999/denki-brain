@@ -19,6 +19,10 @@ e dallo script di Patrick sui gestionali (02-Sales/script/script-gestionali-bria
 - Script di Patrick: Patrick è «del commerciale», l'obiettivo è mezz'ora, e a
   una casella generica si chiede solo il nome della persona giusta.
 
+Oggetto: professionale, dice di cosa parla la mail, col nome dell'azienda.
+Nicola, 18/10: «il titolo deve essere professionale», dopo aver bocciato
+«Elsap: a gestionale c'è, a scaffale no». Niente battute nell'oggetto.
+
 Registro: «voi» dall'inizio alla fine, perché scrive a info@, cioè all'azienda.
 Lingua: le regole di 03-Storage/azienda/italiano-chiaro.md e la blacklist di
 voce-denkicode. La riga in fondo (da dove viene l'indirizzo, come non ricevere
@@ -28,7 +32,7 @@ import re
 
 SETTORI = {
     'Officine e carpenterie': dict(
-        oggetto='{nome}: a che punto è la commessa?',
+        oggetto='{nome}: avanzamento delle commesse in produzione',
         problema=('Nelle officine che lavorano su commessa succede spesso una cosa. Un cliente chiama per '
                   'sapere a che punto è il suo ordine, e qualcuno deve andare in reparto a chiederlo.'),
         domanda=('Se quella risposta la vedeste dal telefono, già aggiornata, quanti giri in reparto vi '
@@ -37,7 +41,7 @@ SETTORI = {
         tema='sapere a che punto è una commessa senza andare in reparto',
     ),
     'Manifattura': dict(
-        oggetto='{nome}: gli ordini ricopiati a mano',
+        oggetto='{nome}: gestione degli ordini di produzione',
         problema=('Nelle aziende di produzione lo stesso ordine viene ricopiato a mano più volte, '
                   "dall'ufficio al reparto fino alla spedizione."),
         domanda=('Quando qualcuno sbaglia a ricopiarlo, ve ne accorgete prima che la merce parta o '
@@ -46,7 +50,7 @@ SETTORI = {
         tema="non ricopiare più a mano gli ordini, dall'ufficio alla spedizione",
     ),
     'Impiantistica': dict(
-        oggetto='{nome}: i rapportini della sera',
+        oggetto='{nome}: rapportini e ore di cantiere',
         problema=('Nelle imprese di impianti i rapportini con ore e materiali arrivano spesso su carta, '
                   'la sera. Poi in ufficio qualcuno li deve ribattere.'),
         domanda=('A fine commessa, quando fate il conto delle ore, torna sempre o qualcosa si perde per '
@@ -55,7 +59,7 @@ SETTORI = {
         tema="ricevere i rapportini di ore e materiali dal telefono, senza ribatterli in ufficio",
     ),
     'Costruzioni': dict(
-        oggetto='{nome}: quanto è fatto di ogni cantiere',
+        oggetto='{nome}: avanzamento e contabilità dei cantieri',
         problema=('Nelle imprese edili, per sapere quanto è fatto di un cantiere, spesso bisogna '
                   'chiamare il capocantiere.'),
         domanda=('Se lo stato di ogni cantiere fosse aggiornato ogni sera, quanto prima riuscireste a '
@@ -64,7 +68,7 @@ SETTORI = {
         tema='vedere lo stato di ogni cantiere aggiornato ogni sera, senza chiamare il capocantiere',
     ),
     'Ingrosso': dict(
-        oggetto="{nome}: a gestionale c'è, a scaffale no",
+        oggetto='{nome}: gestione di ordini e magazzino',
         problema=('Nella distribuzione capita spesso che il gestionale dica che un articolo c\'è, e in '
                   'magazzino non ci sia.'),
         domanda=('Quando succede con un cliente al telefono, cosa fate: rimandate la spedizione o lo '
@@ -73,7 +77,7 @@ SETTORI = {
         tema='avere una giacenza vera, la stessa a gestionale e sugli scaffali',
     ),
     'Trasporti': dict(
-        oggetto='{nome}: quando un autista manca alle sei',
+        oggetto='{nome}: pianificazione di giri e turni degli autisti',
         problema=('Nelle aziende di trasporto i giri e i turni degli autisti si decidono spesso la sera '
                   'prima, al telefono e su un foglio in ufficio.'),
         domanda=('Quando un autista si ammala alle sei del mattino, quanto ci mettete a riorganizzare '
@@ -82,7 +86,7 @@ SETTORI = {
         tema='assegnare giri e turni degli autisti dal telefono, senza il foglio in ufficio',
     ),
     'Magazzinaggio e logistica': dict(
-        oggetto="{nome}: dov'è il carico del cliente",
+        oggetto='{nome}: tracciamento di spedizioni e magazzino',
         problema=('Nella logistica conto terzi i clienti chiamano spesso per sapere dov\'è il loro '
                   'carico. E qualcuno deve chiederlo al magazzino.'),
         domanda=('Se lo stato di ogni carico lo vedesse direttamente il cliente, quante di quelle '
@@ -91,7 +95,7 @@ SETTORI = {
         tema='far vedere ai clienti lo stato dei carichi, senza telefonate al magazzino',
     ),
     'Pulizie e servizi': dict(
-        oggetto='{nome}: chi va dove domani',
+        oggetto='{nome}: turni e ore delle squadre',
         problema=('Nelle imprese di pulizie con molti cantieri, chi va dove domani si decide spesso su '
                   'fogli e messaggi.'),
         domanda=("Quando manca qualcuno all'ultimo momento, quanto tempo vi porta via trovare il "
@@ -102,7 +106,7 @@ SETTORI = {
 }
 
 GENERICO = dict(
-    oggetto='{nome}: i fogli Excel di tutti i giorni',
+    oggetto='{nome}: organizzazione del lavoro',
     problema=('In molte aziende della vostra dimensione le informazioni di tutti i giorni stanno su '
               'fogli Excel e nella testa di due o tre persone.'),
     domanda='Se una di quelle persone si assenta per una settimana, il lavoro va avanti uguale?',

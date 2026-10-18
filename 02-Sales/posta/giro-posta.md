@@ -36,8 +36,8 @@ nell'`estratto` del loro sito, e si salva tutto in
 [{"piva": "01234567890", "nome": "Elsap", "riga": "Ho visto che dal 1978 distribuite componenti di elettronica industriale alle PMI, dai connettori agli alimentatori."}]
 ```
 
-`nome` è il nome breve che va nell'oggetto («Elsap: a gestionale c'è, a
-scaffale no»), scritto come lo scrive l'azienda sul suo sito: senza Srl o SpA,
+`nome` è il nome breve che va nell'oggetto («Elsap: gestione di ordini e
+magazzino»), scritto come lo scrive l'azienda sul suo sito: senza Srl o SpA,
 senza maiuscole urlate. Se non si capisce, si lascia `nome_breve` com'è.
 
 La frase chiude il primo paragrafo, subito dopo la presentazione di Patrick.
