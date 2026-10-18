@@ -1,7 +1,7 @@
 ---
 riga: Il registro dei testi che legge un cliente - Lei o Tu, voce di Patrick. Non e' il registro di Trevis.
 type: risorsa
-updated: 2026-10-03
+updated: 2026-10-18
 source: denkicode
 ---
 
@@ -103,6 +103,10 @@ Vincolo fiscale attivo, dettaglio in [[vincoli-fiscali]]:
 ## Regole date a voce
 
 Scritte da `regola.py` nel momento in cui sono state dette.
+
+### 18/10/2026 — Nicola: «non mi piace che ci siano tutti questi spazi tra le righe, dai importanza all impaginazione e anche al titolo.»
+
+Una mail a un cliente si impagina in pochi paragrafi veri, con le frasi che stanno insieme nello stesso blocco e non una frase per riga, e l'oggetto si scrive con la stessa cura del testo.
 
 ### 03/10/2026 — Nicola: «per quanto riguarda le prossime storie tieni conto della ricerca di mercato che hai fatto su cosa postare quando quanto e come postare. mi raccomando analizza i profili che fanno la stessa cosa nostra anche se sono all'estero»
 
