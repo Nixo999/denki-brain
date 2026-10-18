@@ -143,20 +143,20 @@ def get(url):
             return t
         except urllib.error.HTTPError as e:
             if e.code not in (429, 502, 503, 504):
-                return None     # codiceateco.it risponde 500 per le classi che nel 2025 non esistono
+                return ''       # risposta netta: codiceateco.it dà 500 per le classi che nel 2025 non esistono
             print('  errore', url, e, file=sys.stderr)
             time.sleep(10 * (tentativo + 1))
         except Exception as e:
             print('  errore', url, e, file=sys.stderr)
             time.sleep(3 * (tentativo + 1))
-    return None
+    return None     # nessuna risposta (rete, DNS): non vuol dire «lista vuota»
 
 
 def pagina(codice, n):
     """Le righe di una pagina di lista: copiato da cr_ateco.page()."""
     t = get(f'https://www.companyreports.it/ateco/{codice}' + ('' if n == 1 else f'/{n}'))
     if t is None:
-        return None
+        return None     # chi chiama distingue: None = non scaricata, [] = vuota
     out = []
     for blk in t.split('class="row aziende-row"')[1:]:
         m = re.search(r'href="https://www\.companyreports\.it/([a-z0-9-]+-(\d{11}))" title="Bilancio ([^"]+)"', blk)
@@ -214,7 +214,9 @@ def albero_2007():
 
 def sottocategorie_2025(classe):
     """Le sottocategorie ATECO 2025 della classe, dalla pagina di codiceateco.it (in cache)."""
-    t = get('https://codiceateco.it/classe?q=' + classe) or ''
+    t = get('https://codiceateco.it/classe?q=' + classe)
+    if t is None:
+        return None
     return sorted(set(re.findall(re.escape(classe) + r'\.\d\d', t)))
 
 
@@ -226,11 +228,18 @@ def liste_della_classe(classe, scoperte):
     for k in sorted(albero_2007()):
         if k.startswith(classe + '.'):
             prove += [k, k + '0'] if len(k) == len(classe) + 2 else [k]
-    for k in sottocategorie_2025(classe):
+    nuove = sottocategorie_2025(classe)
+    for k in nuove or []:
         prove += [k, k[:-1] + '0']
     prove = list(dict.fromkeys(prove))
     with ThreadPoolExecutor(2) as ex:
-        piene = [c for c, righe in zip(prove, ex.map(lambda c: pagina(c, 1), prove)) if righe]
+        esiti = list(ex.map(lambda c: pagina(c, 1), prove))
+    piene = [c for c, righe in zip(prove, esiti) if righe]
+    if nuove is None or any(r is None for r in esiti):
+        # 18/10/2026: il DNS del Mac è caduto per qualche minuto e la scoperta di 28.41-28.96 è
+        # uscita vuota. Una scoperta con buchi non si salva: si rifà alla passata dopo.
+        print(f'  {classe}: scoperta incompleta (rete), non salvata', file=sys.stderr)
+        return piene
     scoperte[classe] = piene
     os.makedirs(os.path.dirname(LISTE), exist_ok=True)
     json.dump(scoperte, open(LISTE, 'w'), indent=1, sort_keys=True)
@@ -242,6 +251,8 @@ def righe_in_fascia(codice):
     n = 1
     while True:
         righe = pagina(codice, n)
+        if righe is None:
+            raise RuntimeError(f'pagina {n} della lista {codice} non scaricata')
         if not righe:
             return
         yield from righe
@@ -325,7 +336,13 @@ def main():
             print(f'{classe} {settore}: liste {", ".join(liste) or "nessuna"}', flush=True)
             for codice in liste:
                 candidati = []
-                for r in righe_in_fascia(codice):
+                try:
+                    righe_lista = list(righe_in_fascia(codice))
+                except RuntimeError as e:
+                    print(f'  {codice}: {e}, la lista si riprende alla prossima passata', file=sys.stderr)
+                    conta('lista interrotta dalla rete')
+                    continue
+                for r in righe_lista:
                     if r['piva'] in gia:
                         conta('già in base dati')
                         continue
