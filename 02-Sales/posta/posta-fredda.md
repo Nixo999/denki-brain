@@ -108,9 +108,8 @@ git ignora: il vault è un repository **pubblico** su GitHub (controllato il
       modalità automatica. Se il primo giro si ferma ad aspettare un permesso,
       serve la parola `"posta-mattina"` in `TASK_NOSTRI` di `.claude/hooks/permessi-giro.py`,
       e la mette Nicola a mano.
-- [ ] **DMARC e DKIM su `denkicode.it`** (Nicola, dal pannello di register.it):
-      oggi mancano tutti e due. Le due prove nella Gmail di Nicola sono comunque
-      arrivate in Posta in arrivo.
+- [x] **DMARC e DKIM su `denkicode.it`**, messi da Nicola il 19/10: DMARC `p=none` con
+      i rapporti a `nicola@`, DKIM `key-regi001` allineato. Antispam di register.it da 0,43 a −1,60.
 - [ ] Le prime 10 mail vere, in `dati/prime-10-da-rileggere.txt`, rilette da
       Nicola; poi `ATTIVO=1` in `~/.config/denki-posta/caselle.env`.
 - [ ] Il numero di Patrick sotto la firma, se lo vuole (`TELEFONO`).

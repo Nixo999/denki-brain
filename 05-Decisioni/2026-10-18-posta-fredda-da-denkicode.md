@@ -50,12 +50,12 @@ mostrato da Nicola). Controllato da Trevis con `dig` e con una mail di prova da
 | Invio e lettura | SMTP `authsmtp.securemail.pro:465`, IMAP `imap.register.it:993`, provati su tutte e tre |
 | Limite di register.it | 500 invii al giorno per casella (pannello) |
 | SPF | c'è, `v=spf1 include:spf.webapps.net ~all`; nella prova risulta `pass` |
-| DMARC | **manca** |
-| Firma DKIM | **manca** nella mail di prova, e non c'è sui nomi più comuni del DNS |
-| Antispam di register.it sulla prova | 0,43 su una soglia di 10, arrivata in posta in arrivo |
+| DMARC | mancava; **c'è dal 19/10**, messo da Nicola: `v=DMARC1; p=none; rua=mailto:nicola@denkicode.it` |
+| Firma DKIM | mancava; **attiva dal 19/10**, accesa da Nicola nel pannello: `d=denkicode.it`, selettore `key-regi001`, chiave pubblicata (CNAME verso securemail.pro) |
+| Antispam di register.it sulla prova | 0,43 su una soglia di 10 senza DKIM; **−1,60** con DKIM (19/10) |
 
-Senza DKIM e DMARC Gmail e Outlook si fidano meno anche a volume basso: vanno
-aggiunti prima di accendere l'invio (`TODO` Nicola, dal pannello di register.it).
+Il 19/10 Nicola ha aggiunto DMARC e acceso DKIM dal pannello di register.it:
+dal giorno dopo SPF, DKIM e DMARC sono a posto, con DKIM allineato al dominio del mittente.
 
 ## Le contromisure, visto che il dominio è quello vero
 
