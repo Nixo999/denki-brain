@@ -143,12 +143,12 @@ ricerca,VA,studi tecnici,parziale,1,2026-09-29,
 ricerca,VA,impiantisti,parziale,4,2026-09-29,
 ricerca,VA,officine e carrozzerie,parziale,4,2026-09-25,
 ricerca,VA,meccanica e carpenterie,parziale,1,2026-09-23,
-ricerca,VA,edilizia e serramenti,parziale,8,2026-09-23,
+ricerca,VA,edilizia e serramenti,parziale,9,2026-10-18,"18/10 riserva: 8 profili, 1 riga, ferma per tempo; 5 fermi; @uguccioniponteggi, @lafinestrasrl, @vetrerialucca da leggere"
 ricerca,VA,ingrossi e distribuzione,parziale,2,2026-09-29,
 ricerca,VA,alimentari artigianali,parziale,1,2026-09-25,
 ricerca,VA,aziende agricole con vendita,parziale,2,2026-09-29,
 ricerca,VA,altro,parziale,3,2026-09-19,righe sparse di settori fuori elenco
-ricerca,BG,falegnamerie,parziale,6,2026-09-29,
+ricerca,BG,falegnamerie,parziale,7,2026-10-18,"18/10 riserva: 3 profili, 1 riga, ferma per tempo; Virgilio BG senza siti"
 ricerca,BG,studi tecnici,parziale,3,2026-09-29,
 ricerca,BG,impiantisti,parziale,7,2026-09-29,
 ricerca,BG,officine e carrozzerie,parziale,13,2026-09-25,
@@ -167,7 +167,7 @@ ricerca,LO,altro,parziale,1,2026-09-29,righe sparse di settori fuori elenco
 ricerca,PV,studi tecnici,parziale,1,2026-09-29,
 ricerca,PV,impiantisti,parziale,1,2026-09-23,
 ricerca,PV,officine e carrozzerie,esaurito,3,2026-10-13,"13/10: ~40 profili, 2 righe. Finito per resa: Pagine Gialle 490 schede quasi senza Instagram; fermata anche per tempo"
-ricerca,PV,edilizia e serramenti,parziale,15,2026-10-10,"10/10: 142 profili, 12 righe. Aperta, quota piena: ~80 fuori provincia dal chaining, 22 fermi; restano Google serramenti in 5 comuni e coperture"
+ricerca,PV,edilizia e serramenti,parziale,27,2026-10-18,"18/10: 40 profili, 12 righe. Aperta (rende 1 su 3,3), finita per fonti: PG e ANCE esauriti; 8 siti senza handle (Aedificat, Reda, Edilquattro, Sclavi, Asiotti, Cugini, Mave, Pavia Ponteggi)"
 ricerca,PV,ingrossi e distribuzione,parziale,6,2026-10-15,"15/10: ~45 profili, 5 righe. Rende 1 su 9: fermi, sede altrove, negozi"
 ricerca,PV,trasporti e logistica,parziale,3,2026-09-23,
 ricerca,PV,alimentari artigianali,parziale,13,2026-10-15,"15/10: ~40 profili, 10 righe. Aperta, rende 1 su 4; fermata per Yahoo e tempo"
@@ -197,7 +197,7 @@ ricerca,MN,falegnamerie,esaurito,3,2026-10-17,"17/10: 1+9 profili, 1+1 righe. Fi
 ricerca,MN,impiantisti,parziale,1,2026-09-29,
 ricerca,MN,officine e carrozzerie,parziale,3,2026-09-21,
 ricerca,MN,ingrossi e distribuzione,parziale,1,2026-09-23,
-ricerca,MN,aziende agricole con vendita,parziale,3,2026-09-29,
+ricerca,MN,aziende agricole con vendita,parziale,19,2026-10-18,"18/10: 31 profili, 16 righe. Aperta (rende 1 su 2), finita per fonti: consorzi vini e melone esauriti; 14 su 16 sono cantine; @cantinaviadana, @cantinelebovitz senza post leggibili"
 siti,MB,toelettature e dog trainer,esaurito,6,2026-09-29,"29-30/09: 36 profili, 6 righe. Finito per resa: sotto i 200 follower, franchising, dentro i pet shop"
 siti,MB,"personal trainer, pilates e yoga",esaurito,3,2026-09-29,"30/09: 31 profili, 3 righe. Finito per resa. Dagli hashtag restano una quindicina di insegnanti mai aperti"
 siti,MB,pasticcerie e cake designer,esaurito,3,2026-09-29,"30/09: 30 profili, 3 righe. Finito per resa, 4 gia contattate"
@@ -272,3 +272,12 @@ siti,VC,tatuatori e piercing,esaurito,10,2026-10-17,"17/10: 18 profili, 10 righe
 siti,AT,toelettature e dog trainer,esaurito,3,2026-10-17,"17/10: 9+18 profili, 1+2 righe. Finito per bacino: dagli account simili 13 su 18 fuori provincia"
 siti,AO,toelettature e dog trainer,parziale,0,2026-10-17,"17/10: 1 profilo, 0 righe. Fonti bloccate (toelettature.net 403, Pagine Gialle 429): da riaprire"
 ricerca,CR,ingrossi e distribuzione,esaurito,0,2026-10-17,"17/10: 5 profili, 0 righe. Finito per fonti: i siti dei grossisti cremonesi non linkano Instagram, 2 fermi, 1 sede a Bergamo"
+ricerca,SO,aziende agricole con vendita,parziale,4,2026-10-18,"18/10 riserva: 8 profili, 4 righe. Aperta: elenco Consorzio Vini di Valtellina con 40 handle, 26 ancora da leggere"
+ricerca,MN,alimentari artigianali,parziale,13,2026-10-18,"18/10: 36 profili, 13 righe. Aperta (rende 1 su 3), finita per fonti: PG 429, caseifici senza Instagram; @misterbbrewery, @panificioada da rileggere"
+siti,AL,"sartorie, atelier e tappezzieri",esaurito,4,2026-10-18,"18/10: 30 profili, 4 righe. Finito per resa: 15 fuori provincia, 3 fermi, 2 sotto i 200; Brave unica fonte di handle"
+siti,VC,"sartorie, atelier e tappezzieri",parziale,2,2026-10-18,"18/10 riserva: 14 profili, 2 righe. Ferma per fonti (Brave 429); @casaesposa gancio 6 al limite dei 6 mesi"
+siti,VB,pasticcerie e cake designer,parziale,10,2026-10-18,"18/10: 34 profili, 10 righe. Aperta (rende 1 su 3,4), finita per fonti: 147 schede PG senza handle; da cercare Ai Castelli, Il Camino, Ciocolà, Casa del Dolce"
+siti,AL,pasticcerie e cake designer,parziale,2,2026-10-18,"18/10 riserva: 11 profili, 2 righe. Ferma per fonti; senza handle con gancio pronto: Casali Tortona (Jimdo), Bonadeo (dominio a un casinò), La Dolce Vito"
+siti,AL,"personal trainer, pilates e yoga",parziale,6,2026-10-18,"18/10: 27 profili, 6 righe. Finita per fonti (WebSearch esaurito): 6 fermi, 5 fuori provincia, 3 col sito"
+siti,PC,"personal trainer, pilates e yoga",parziale,7,2026-10-18,"18/10 riserva: 20 profili, 7 righe. Ferma per fonti; 4 palestre di Piacenza forse fuori target"
+siti,PC,fotografi e videomaker,parziale,11,2026-10-18,"18/10: 51 profili, 11 righe. Aperta (rende 1 su 4,6), finita per fonti (WebSearch esaurito); 13 handle trovati da leggere (marcobernardiphotography, nicolacampisi, matteo_scorza_fotografo, silviamercoliphotostudio...)"

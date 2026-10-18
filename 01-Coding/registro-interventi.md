@@ -1,7 +1,7 @@
 ---
 riga: Una riga per intervento - chi, quando, progetto, repository e QUALE DATABASE. La colonna database e' il motivo del file.
 type: risorsa
-updated: 2026-10-17
+updated: 2026-10-18
 source: denkicode
 tags: [registro, interventi, repo, database]
 ---
@@ -42,6 +42,7 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
 |---|---|---|---|---|---|---|
+| 18/10 | Claude per Patrick (giro del mattino, Fable; celle su Opus) | banco DM (liste) | Nixo999/denki-brain | nessuno | Giro del mattino partito alle 9:27: sette celle più sei riserve aperte, 89 righe pubblicate (siti 42, ricerca 47) su 160. Instagram ha retto (300 letture, una alla volta, zero blocchi); le celle si sono chiuse per fonti: Pagine Gialle in 429 su cinque celle, Yahoo e DuckDuckGo anti-bot alla prima richiesta, e il tetto di 200 ricerche WebSearch condiviso fra gli operatori esaurito a metà giro. Posta non letta: Brave chiede un'approvazione e nessuno era davanti. Nota: 2026-10-18-siti-e-ricerca-giro-mattina. |
 | 17/10 | Claude per Patrick (Fable; celle su Opus) | banco DM (liste) | Nixo999/denki-brain | nessuno | Secondo giro alle 12:30 su richiesta di Nicola: da Brave (account denkicode) la ricerca interna account_serp e il chaining degli account simili hanno dato 1.700 candidati dai 60 profili del mattino; 8 operatori, 280 letture senza blocchi, 40 righe pubblicate (siti 23, ricerca 17). Totale del giorno 113 su 160. | — |
 | 17/10 | Claude per Patrick (giro del mattino, Fable; celle su Opus) | banco DM (liste) | Nixo999/denki-brain | nessuno | Giro del mattino partito alle 11:01 (il primo `git fetch` è rimasto appeso senza rete dalle 8): sette celle più tre riserve aperte, 73 righe pubblicate (siti 36, ricerca 37) su 160. Instagram ha retto (196 letture, una alla volta, zero blocchi); le righe mancano perché Pagine Gialle ha risposto 429 in cinque celle e i motori si sono chiusi alla prima richiesta. Cinque celle esaurite per bacino o fonti, tre aperte. Posta letta da Brave (account denkicode, Claude in Chrome) dopo 16 giorni: 13 risposte vere in risposte-dm.csv, 4 lead caldi (un appuntamento lunedì 20/10 17:30), 3 chiedono il modulo via mail, 59 DM mai consegnati e 50 autorisposte segnati in Esito DM sul banco. Nota [[2026-10-17-siti-e-ricerca-giro-mattina]] | — |
 | 16/10 | Claude per Patrick (giro del mattino, Fable; celle su Opus) | banco DM (liste) | Nixo999/denki-brain | nessuno | Giro del mattino partito alle 18:48 (Mac chiuso alle 8): sette celle, 26 righe pubblicate (siti 12, ricerca 14) su 160. Instagram ha chiuso le letture alle 19:16 per le raffiche in parallelo degli operatori (più di 1.700 richieste in venti minuti) e non ha riaperto; tre celle esaurite per resa, quattro fermate dal blocco con gli handle da riprendere scritti nella nota. Trappola nuova in [[trappole]] (ritmo delle letture nel brief). Posta non letta. Nota [[2026-10-16-siti-e-ricerca-giro-mattina]] | — |
