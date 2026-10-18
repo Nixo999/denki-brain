@@ -104,6 +104,10 @@ Vincolo fiscale attivo, dettaglio in [[vincoli-fiscali]]:
 
 Scritte da `regola.py` nel momento in cui sono state dette.
 
+### 18/10/2026 — Nicola: «il titolo deve essere professionale non va bene la scrita: lsap: a gestionale c'è, a scaffale no»
+
+L'oggetto di una mail a un'azienda è professionale e dice in modo chiaro di cosa parla la mail, senza battute e senza frasi a effetto.
+
 ### 18/10/2026 — Nicola: «non mi piace che ci siano tutti questi spazi tra le righe, dai importanza all impaginazione e anche al titolo.»
 
 Una mail a un cliente si impagina in pochi paragrafi veri, con le frasi che stanno insieme nello stesso blocco e non una frase per riga, e l'oggetto si scrive con la stessa cura del testo.
