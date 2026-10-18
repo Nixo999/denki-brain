@@ -1,5 +1,5 @@
 ---
-riga: Nicola, 18/10 - la posta a freddo per i gestionali parte dalle tre caselle di denkicode.com per non pagare niente. Riapre il «mai da denkicode.com» del 2/09.
+riga: Nicola, 18/10 - la posta a freddo per i gestionali parte dalle tre caselle di denkicode.it per non pagare niente. Riapre il «mai dal dominio vero» del 2/09.
 type: decisione
 data: 2026-10-18
 progetto: azienda
@@ -9,7 +9,7 @@ updated: 2026-10-18
 tags: [email, outreach, gestionali, deliverability]
 ---
 
-# La posta a freddo per i gestionali parte dalle caselle di denkicode.com, per ora
+# La posta a freddo per i gestionali parte dalle caselle di denkicode.it, per ora
 
 ## Il contesto
 
@@ -27,24 +27,35 @@ Workspace.
 
 Nicola: «voglio fare con le mail di denkicode intanto per non pagare niente».
 
-1. **Si manda dalle tre caselle di `denkicode.com`.** La casella personale di
+1. **Si manda dalle tre caselle di `denkicode.it`**: `info@`, `patrick@` e
+   `nicola@`, su register.it. Tutte firmano Patrick Sappa, e le risposte
+   arrivano a `patrick@` (intestazione Reply-To). La casella personale di
    Patrick resta fuori: se Google la chiude, Patrick perde la sua posta.
 2. **Il rischio è accettato apposta.** Se le aziende segnano le mail come spam,
-   Gmail e Outlook si fidano meno di `denkicode.com`, e nello spam finiscono
+   Gmail e Outlook si fidano meno di `denkicode.it`, e nello spam finiscono
    anche le mail a Seba, i preventivi e le risposte ai lead.
 3. **«Intanto»**: quando il canale porta il primo incasso, o al primo segnale
    di spam, si passa a un dominio secondario.
 
 ## Com'era il dominio il 18/10
 
-Controllato da Trevis con `host` sul DNS pubblico:
+⚠️ Corretto la sera stessa: la prima versione di questa tabella guardava
+`denkicode.com`, ma le caselle stanno su `denkicode.it` (pannello di register.it
+mostrato da Nicola). Controllato da Trevis con `dig` e con una mail di prova da
+`info@` a `nicola@`:
 
 | Cosa | Stato |
 |---|---|
 | Server di posta (MX) | `mail.register.it` |
-| SPF | c'è: `v=spf1 include:spf.webapps.net ~all` |
-| DMARC | c'è, `p=none`, ma i rapporti vanno a `dmarcreports@lovable.dev` e non a noi |
-| Firma DKIM | non trovata sui nomi più comuni; si controlla nell'intestazione di una mail vera |
+| Invio e lettura | SMTP `authsmtp.securemail.pro:465`, IMAP `imap.register.it:993`, provati su tutte e tre |
+| Limite di register.it | 500 invii al giorno per casella (pannello) |
+| SPF | c'è, `v=spf1 include:spf.webapps.net ~all`; nella prova risulta `pass` |
+| DMARC | **manca** |
+| Firma DKIM | **manca** nella mail di prova, e non c'è sui nomi più comuni del DNS |
+| Antispam di register.it sulla prova | 0,43 su una soglia di 10, arrivata in posta in arrivo |
+
+Senza DKIM e DMARC Gmail e Outlook si fidano meno anche a volume basso: vanno
+aggiunti prima di accendere l'invio (`TODO` Nicola, dal pannello di register.it).
 
 ## Le contromisure, visto che il dominio è quello vero
 

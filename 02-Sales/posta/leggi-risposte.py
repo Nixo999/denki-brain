@@ -109,14 +109,24 @@ def trova_azienda(c, msg, mittente):
 def leggi_casella(cfg, casella, password, dal):
     im = imaplib.IMAP4_SSL(cfg.get('IMAP_HOST', ''), int(cfg.get('IMAP_PORT', '993')), timeout=60)
     im.login(casella, password)
-    im.select('INBOX', readonly=True)
-    _, uv = im.status('INBOX', '(UIDVALIDITY)')
+    _, elenco = im.list()
+    nuovi = 0
+    # anche lo Spam: una risposta o un rimbalzo possono finire lì
+    for nome in ['INBOX'] + [x for x in [manda.cartella(elenco, 'spam', 'junk')] if x]:
+        nuovi += leggi_cartella(im, casella, nome, dal)
+    im.logout()
+    return nuovi
+
+
+def leggi_cartella(im, casella, nome, dal):
+    im.select(nome, readonly=True)
+    _, uv = im.status(nome, '(UIDVALIDITY)')
     uidvalidity = re.search(rb'UIDVALIDITY (\d+)', uv[0]).group(1).decode()
     _, dati = im.uid('search', None, 'SINCE', dal.strftime('%d-%b-%Y'))
     nuovi = 0
     with db.connessione() as c:
         for uid in (dati[0] or b'').split():
-            chiave = f'{casella}:{uidvalidity}:{uid.decode()}'
+            chiave = f'{casella}:{nome}:{uidvalidity}:{uid.decode()}'
             if c.execute('SELECT 1 FROM eventi WHERE uid=?', (chiave,)).fetchone():
                 continue
             _, d = im.uid('fetch', uid, '(BODY.PEEK[])')
@@ -135,8 +145,7 @@ def leggi_casella(cfg, casella, password, dal):
             c.execute('INSERT INTO eventi(quando, piva, casella, tipo, da, oggetto, testo, uid) VALUES (?,?,?,?,?,?,?,?)',
                       (db.adesso(), piva, casella, tipo, mittente, oggetto[:300], testo[:4000], chiave))
             nuovi += 1
-            manda.log('letto', casella, tipo, mittente, '|', oggetto[:80])
-    im.logout()
+            manda.log('letto', casella, nome, tipo, mittente, '|', oggetto[:80])
     return nuovi
 
 

@@ -1,0 +1,98 @@
+---
+riga: La posta a freddo per i gestionali - trova aziende B2B lombarde da 1 a 15 M€, scrive con la voce di Patrick e manda da sola dalle caselle di denkicode.it.
+type: risorsa
+updated: 2026-10-18
+source: claude
+tags: [posta, outreach, gestionali, automazione]
+---
+
+# La posta a freddo per i gestionali
+
+Chiesta da Nicola il 18/10/2026: trovare aziende B2B fra 1 e 15 milioni di
+fatturato e scrivere loro per un gestionale su misura, da sole e ogni giorno,
+con più mail possibile. Si manda dalle caselle di `denkicode.it` per non
+pagare niente ([[2026-10-18-posta-fredda-da-denkicode]]).
+
+## Come gira
+
+| Quando | Chi | Cosa |
+|---|---|---|
+| ogni mattina feriale, 7:30 | Claude, task `posta-mattina` | legge le risposte, scrive una frase personale per ogni azienda dei due giorni dopo ([[giro-posta]]) |
+| ogni 5 minuti, 9:00-17:30 feriali | launchd, `giro.py` | ogni casella manda al massimo una mail, spalmando la quota sulla giornata |
+| ogni 30 minuti, 8-20 | launchd, `giro.py` | legge posta in arrivo e Spam: risposte, fuori sede, rimbalzi, «no grazie» |
+| quando una risposta è vera | Patrick | risponde lui, dalla sua casella: le risposte arrivano tutte a `patrick@` |
+
+## I numeri che decidono il volume
+
+- **Rampa per casella**: 10 mail al giorno la prima settimana, 20 la seconda,
+  30 dalla terza (`config.py`, `RAMPA`). Register.it ne permetterebbe 500, ma
+  oltre 30-50 i filtri cominciano a buttare in spam ([[2026-09-02-cold-email-gestionali]]).
+- **Tre caselle**: circa 90 mail al giorno a regime, seguiti compresi. Ogni
+  azienda ne riceve due, quindi sono **circa 45 aziende nuove al giorno**.
+  Per salire servono più caselle, cioè domini secondari.
+- **Due mail per azienda al massimo**: la prima e un seguito dopo 4 giorni
+  lavorativi, nello stesso filo. Chi risponde, anche solo «fuori sede», non
+  riceve il seguito se la risposta è vera.
+- **Freno**: sopra il 5% di rimbalzi in un giorno, o al primo rifiuto per spam,
+  l'invio si ferma da solo. Si riparte con `manda.py --togli-freno` dopo aver
+  letto il motivo in `dati/manda.log`.
+
+## Chi riceve la mail
+
+Solo **persone giuridiche** (Srl, SpA, cooperative, consorzi), attive, in
+Lombardia, fra 1 e 15 milioni di fatturato dall'ultimo bilancio depositato
+(companyreports.it), con almeno 6 dipendenti, nei settori dove un gestionale
+morde: officine, manifattura, impianti, edilizia, ingrosso, trasporti,
+logistica, pulizie. Solo **caselle generiche** (`info@`, `commerciale@`)
+trovate sul sito dell'azienda, mai PEC e mai nomi di persona: è il perimetro
+che la decisione del 2 settembre giudica difendibile.
+
+## La mail
+
+Lo scheletro fisso sta in `testi.py`, con una variante per settore; Claude
+scrive solo una frase personale presa dal sito dell'azienda. Le scelte e i
+libri da cui vengono sono scritti in testa a `testi.py`: Gitomer per la frase
+personale, Challenger per il problema del settore, SPIN per la domanda,
+Klaff e Voss per la richiesta di mezz'ora («se state già bene così, ve lo dico
+e vi saluto»), lo script di Patrick per il resto ([[script-gestionali-brianza]]).
+Ogni mail passa da `voce-check.py` prima di entrare in coda.
+
+In fondo a ogni mail c'è da dove viene l'indirizzo e come non ricevere altro:
+non è una traccia del processo, la chiede la legge.
+
+## I file
+
+| File | Cosa fa |
+|---|---|
+| `aziende.py` | scarica le aziende da companyreports.it per codice ATECO e applica i filtri |
+| `trova-mail.py` | trova il sito (la prova forte è la P.IVA nel piè di pagina) e la casella generica |
+| `scrivi.py` | prepara le aziende per Claude, importa le frasi, compone e controlla le mail |
+| `manda.py` | manda, con rampa, finestra, freno e copia nella posta inviata |
+| `leggi-risposte.py` | riconosce risposte, automatiche, disiscrizioni e rimbalzi |
+| `mattina.py` | i due comandi fissi del giro del mattino |
+| `giro.py` + `com.denkicode.posta.plist` | il giro ogni cinque minuti, via launchd |
+| `testi.py` | i testi fissi: si cambiano solo qui |
+| `config.py`, `caselle.example.env` | rampa, orari, feste; il modello del file delle caselle |
+
+**Le password e i dati stanno fuori da git.** Le caselle sono in
+`~/.config/denki-posta/caselle.env` (permessi 600). La base dati, il registro
+degli invii e il riassunto delle risposte stanno in `02-Sales/posta/dati/`, che
+git ignora: il vault è un repository **pubblico** su GitHub (controllato il
+18/10/2026), e lì dentro ci sono indirizzi, nomi e testi di chi risponde.
+
+## Prima di accendere — `TODO`
+
+- [ ] **DMARC e DKIM su `denkicode.it`** (Nicola, dal pannello di register.it):
+      oggi mancano tutti e due, e SPF da solo regge poco con Gmail e Outlook.
+- [ ] Una prova verso una casella esterna (Gmail), per leggere nell'originale
+      se SPF e DKIM passano.
+- [ ] La parola `"posta-mattina"` in `TASK_NOSTRI` di `.claude/hooks/permessi-giro.py`:
+      la mette Nicola a mano, il classificatore non la fa scrivere a Claude.
+- [ ] launchd (`com.denkicode.posta.plist`) e il task `posta-mattina` sul Mac di Nicola.
+- [ ] Le prime mail vere rilette da Nicola o Patrick, poi `ATTIVO=1`.
+- [ ] Il numero di Patrick sotto la firma, se lo vuole (`TELEFONO`).
+
+## Collegamenti
+
+[[2026-10-18-posta-fredda-da-denkicode]] · [[2026-09-02-cold-email-gestionali]] ·
+[[giro-posta]] · [[core-commerciale]] · [[generazione-lead]] · [[italiano-chiaro]]

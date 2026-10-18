@@ -60,9 +60,12 @@ def metti_freno(motivo):
 
 # --- composizione ----------------------------------------------------------
 
-def componi(m, casella, a=None):
+def componi(m, casella, a=None, rispondi_a=None):
     msg = EmailMessage()
     msg['From'] = formataddr(('Patrick Sappa', casella))
+    if rispondi_a and rispondi_a != casella:
+        # le mail partono da tre caselle, le risposte arrivano tutte a Patrick
+        msg['Reply-To'] = formataddr(('Patrick Sappa', rispondi_a))
     msg['To'] = a or m['a']
     msg['Subject'] = m['oggetto']
     msg['Date'] = formatdate(localtime=True)
@@ -91,6 +94,15 @@ def smtp(cfg, casella, password):
     return s
 
 
+def cartella(elenco, *parole):
+    """Il nome della cartella IMAP che finisce con una delle parole (su register.it: INBOX.Sent, INBOX.Spam)."""
+    for r in elenco or []:
+        nome = r.decode(errors='ignore').rsplit(' ', 1)[-1].strip().strip('"')
+        if any(nome.lower().endswith(p) or p in nome.lower().rsplit('.', 1)[-1] for p in parole):
+            return nome
+    return None
+
+
 def copia_in_inviata(cfg, casella, password, msg):
     """Mette la mail nella cartella della posta inviata, così Patrick la vede nella casella.
     Se non ci riesce lo scrive nel log e va avanti: la mail è già partita."""
@@ -98,13 +110,8 @@ def copia_in_inviata(cfg, casella, password, msg):
         im = imaplib.IMAP4_SSL(cfg.get('IMAP_HOST', ''), int(cfg.get('IMAP_PORT', '993')), timeout=60)
         im.login(casella, password)
         _, cartelle = im.list()
-        nome = None
-        for r in cartelle or []:
-            riga = r.decode(errors='ignore')
-            if '\\Sent' in riga or any(x in riga.lower() for x in ('"sent"', 'inviat', 'sent items', '.sent"')):
-                nome = riga.rsplit(' ', 1)[-1].strip()
-                break
-        im.append(nome or 'Sent', '\\Seen', imaplib.Time2Internaldate(_time.time()), msg.as_bytes())
+        nome = cartella(cartelle, 'sent', 'inviat') or 'INBOX.Sent'
+        im.append(nome, '\\Seen', imaplib.Time2Internaldate(_time.time()), msg.as_bytes())
         im.logout()
     except Exception as e:
         log('copia in inviata non riuscita', casella, e)
@@ -236,7 +243,7 @@ def giro():
                 log('PROVA (ATTIVO=0), non parte:', casella, '→', m['a'], '|', m['tipo'], '|', m['oggetto'])
                 prossimo[casella] = (datetime.now() + timedelta(minutes=intervallo(st['quota']))).isoformat(timespec='seconds')
                 continue
-            msg = componi(m, casella)
+            msg = componi(m, casella, rispondi_a=cfg.get('RISPONDI_A'))
             try:
                 s = smtp(cfg, casella, password)
                 s.send_message(msg)
@@ -275,7 +282,7 @@ def prova(mid):
         m = c.execute('SELECT * FROM messaggi WHERE id=?', (mid,)).fetchone()
         if not m:
             sys.exit(f'messaggio {mid} non trovato')
-        msg = componi(dict(m, message_id=None), casella, a=a)
+        msg = componi(dict(m, message_id=None), casella, a=a, rispondi_a=cfg.get('RISPONDI_A'))
         msg.replace_header('Subject', '[PROVA per ' + m['a'] + '] ' + m['oggetto'])
     s = smtp(cfg, casella, password)
     s.send_message(msg)
