@@ -346,6 +346,11 @@ def classifica(email, sito, parole):
             return None, 'altro dominio'
     m = RX_GENERICA.match(locale)
     if not m:
+        # sarg@sarg.it, agom@agom.it: la casella col nome della società è dell'azienda, non di una persona.
+        # Vale solo se il nome sta tutto nel dominio, così rossi@ di «Rossi Mario Srl» su mariorossi.it resta fuori.
+        etichetta = dom.split('.')[-2] if dom.count('.') >= 1 else dom
+        if proprio and re.sub(r'[._-]', '', locale) == etichetta.replace('-', ''):
+            return 1000, None
         return None, 'non generica'
     rango = GENERICHE.index(m.group(1)) * 10 + (0 if not m.group(2) else 1) + (0 if proprio else 5)
     return rango, None
@@ -457,7 +462,7 @@ def esamina(dominio, az, parole, fonte):
     pagine = [(fin, home)]
     for u in pagine_interne(fin, home, sito)[:MAX_PAGINE - 1]:
         f2, t2 = scarica(u)
-        if f2:
+        if f2 and f2 not in dict(pagine):
             pagine.append((f2, t2))
         time.sleep(0.2)
     if not any(re.search(r'contatt|contact', u, re.I) for u, _ in pagine[1:]):
