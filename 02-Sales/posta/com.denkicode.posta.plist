@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Il giro della posta a freddo: launchd lancia giro.py ogni cinque minuti.
+  giro.py fuori orario non manda niente, e con ATTIVO=0 non manda mai.
+  Si installa sul Mac che manda (quello di Nicola):
+    cp 02-Sales/posta/com.denkicode.posta.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.denkicode.posta.plist
+  Si ferma con:
+    launchctl unload ~/Library/LaunchAgents/com.denkicode.posta.plist
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.denkicode.posta</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/Users/nicola/lavoro/denki-brain/02-Sales/posta/giro.py</string>
+  </array>
+  <key>StartInterval</key>
+  <integer>300</integer>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>/Users/nicola/lavoro/denki-brain/02-Sales/posta/dati/launchd.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/nicola/lavoro/denki-brain/02-Sales/posta/dati/launchd.log</string>
+</dict>
+</plist>

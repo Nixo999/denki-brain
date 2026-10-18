@@ -33,3 +33,6 @@ node_modules/
 # sono quelli della macchina che la scrive, quindi resta locale.
 .claude/launch.json
 .cache/
+
+# --- Posta a freddo: base dati e cache locali del Mac che manda ---
+02-Sales/posta/dati/
