@@ -108,7 +108,7 @@ GENERICO = dict(
     tema='avere le informazioni di tutti i giorni in un programma solo',
 )
 
-PIEDE = ('Ho trovato questo indirizzo nella pagina contatti del vostro sito. Se non volete ricevere '
+PIEDE = ('Ho trovato questo indirizzo sul vostro sito. Se non volete ricevere '
          'altre mail da noi, rispondete a questa e non vi scrivo più.')
 
 
