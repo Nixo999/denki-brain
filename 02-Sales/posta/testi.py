@@ -19,9 +19,13 @@ e dallo script di Patrick sui gestionali (02-Sales/script/script-gestionali-bria
 - Script di Patrick: Patrick è «del commerciale», l'obiettivo è mezz'ora, e a
   una casella generica si chiede solo il nome della persona giusta.
 
-Oggetto: professionale, dice di cosa parla la mail, col nome dell'azienda.
-Nicola, 18/10: «il titolo deve essere professionale», dopo aver bocciato
-«Elsap: a gestionale c'è, a scaffale no». Niente battute nell'oggetto.
+Oggetto e anteprima sono la prima cosa che si legge, prima di aprire la mail.
+- Oggetto: «Una domanda per Elsap su ordini e magazzino». Nicola, 18/10: «il
+  titolo deve essere professionale», dopo aver bocciato «Elsap: a gestionale
+  c'è, a scaffale no»; il 19/10 ha scelto «Una domanda per…» fra tre forme.
+- Anteprima: la mail comincia dalla frase su di loro, e Patrick si presenta
+  subito dopo (scelta di Nicola, 19/10). Così le prime parole in grigio nella
+  casella parlano della loro azienda, non di noi.
 
 Registro: «voi» dall'inizio alla fine, perché scrive a info@, cioè all'azienda.
 Lingua: le regole di 03-Storage/azienda/italiano-chiaro.md e la blacklist di
@@ -32,7 +36,7 @@ import re
 
 SETTORI = {
     'Officine e carpenterie': dict(
-        oggetto='{nome}: avanzamento delle commesse in produzione',
+        oggetto='Una domanda per {nome} sulle commesse in produzione',
         problema=('Nelle officine che lavorano su commessa succede spesso una cosa. Un cliente chiama per '
                   'sapere a che punto è il suo ordine, e qualcuno deve andare in reparto a chiederlo.'),
         domanda=('Se quella risposta la vedeste dal telefono, già aggiornata, quanti giri in reparto vi '
@@ -41,7 +45,7 @@ SETTORI = {
         tema='sapere a che punto è una commessa senza andare in reparto',
     ),
     'Manifattura': dict(
-        oggetto='{nome}: gestione degli ordini di produzione',
+        oggetto='Una domanda per {nome} sugli ordini di produzione',
         problema=('Nelle aziende di produzione lo stesso ordine viene ricopiato a mano più volte, '
                   "dall'ufficio al reparto fino alla spedizione."),
         domanda=('Quando qualcuno sbaglia a ricopiarlo, ve ne accorgete prima che la merce parta o '
@@ -50,7 +54,7 @@ SETTORI = {
         tema="non ricopiare più a mano gli ordini, dall'ufficio alla spedizione",
     ),
     'Impiantistica': dict(
-        oggetto='{nome}: rapportini e ore di cantiere',
+        oggetto='Una domanda per {nome} sui rapportini di cantiere',
         problema=('Nelle imprese di impianti i rapportini con ore e materiali arrivano spesso su carta, '
                   'la sera. Poi in ufficio qualcuno li deve ribattere.'),
         domanda=('A fine commessa, quando fate il conto delle ore, torna sempre o qualcosa si perde per '
@@ -59,7 +63,7 @@ SETTORI = {
         tema="ricevere i rapportini di ore e materiali dal telefono, senza ribatterli in ufficio",
     ),
     'Costruzioni': dict(
-        oggetto='{nome}: avanzamento e contabilità dei cantieri',
+        oggetto="Una domanda per {nome} sull'avanzamento dei cantieri",
         problema=('Nelle imprese edili, per sapere quanto è fatto di un cantiere, spesso bisogna '
                   'chiamare il capocantiere.'),
         domanda=('Se lo stato di ogni cantiere fosse aggiornato ogni sera, quanto prima riuscireste a '
@@ -68,7 +72,7 @@ SETTORI = {
         tema='vedere lo stato di ogni cantiere aggiornato ogni sera, senza chiamare il capocantiere',
     ),
     'Ingrosso': dict(
-        oggetto='{nome}: gestione di ordini e magazzino',
+        oggetto='Una domanda per {nome} su ordini e magazzino',
         problema=('Nella distribuzione capita spesso che il gestionale dica che un articolo c\'è, e in '
                   'magazzino non ci sia.'),
         domanda=('Quando succede con un cliente al telefono, cosa fate: rimandate la spedizione o lo '
@@ -77,7 +81,7 @@ SETTORI = {
         tema='avere una giacenza vera, la stessa a gestionale e sugli scaffali',
     ),
     'Trasporti': dict(
-        oggetto='{nome}: pianificazione di giri e turni degli autisti',
+        oggetto='Una domanda per {nome} sui giri degli autisti',
         problema=('Nelle aziende di trasporto i giri e i turni degli autisti si decidono spesso la sera '
                   'prima, al telefono e su un foglio in ufficio.'),
         domanda=('Quando un autista si ammala alle sei del mattino, quanto ci mettete a riorganizzare '
@@ -86,7 +90,7 @@ SETTORI = {
         tema='assegnare giri e turni degli autisti dal telefono, senza il foglio in ufficio',
     ),
     'Magazzinaggio e logistica': dict(
-        oggetto='{nome}: tracciamento di spedizioni e magazzino',
+        oggetto='Una domanda per {nome} sul tracciamento delle spedizioni',
         problema=('Nella logistica conto terzi i clienti chiamano spesso per sapere dov\'è il loro '
                   'carico. E qualcuno deve chiederlo al magazzino.'),
         domanda=('Se lo stato di ogni carico lo vedesse direttamente il cliente, quante di quelle '
@@ -95,7 +99,7 @@ SETTORI = {
         tema='far vedere ai clienti lo stato dei carichi, senza telefonate al magazzino',
     ),
     'Pulizie e servizi': dict(
-        oggetto='{nome}: turni e ore delle squadre',
+        oggetto='Una domanda per {nome} sui turni delle squadre',
         problema=('Nelle imprese di pulizie con molti cantieri, chi va dove domani si decide spesso su '
                   'fogli e messaggi.'),
         domanda=("Quando manca qualcuno all'ultimo momento, quanto tempo vi porta via trovare il "
@@ -106,7 +110,7 @@ SETTORI = {
 }
 
 GENERICO = dict(
-    oggetto='{nome}: organizzazione del lavoro',
+    oggetto="Una domanda per {nome} sull'organizzazione del lavoro",
     problema=('In molte aziende della vostra dimensione le informazioni di tutti i giorni stanno su '
               'fogli Excel e nella testa di due o tre persone.'),
     domanda='Se una di quelle persone si assenta per una settimana, il lavoro va avanti uguale?',
@@ -151,13 +155,21 @@ def primo(settore, riga='', telefono='', nome=''):
     `nome` il nome breve dell'azienda per l'oggetto.
 
     Impaginazione (Nicola, 18/10: «non mi piace che ci siano tutti questi spazi tra
-    le righe»): tre paragrafi veri, chi siamo e cosa abbiamo visto, il problema e la
-    domanda, la richiesta. Poi la firma attaccata al saluto e la riga di legge."""
+    le righe»): tre paragrafi veri. Il primo comincia da cosa abbiamo visto sul
+    loro sito e poi dice chi siamo; il secondo è il problema con la domanda; il
+    terzo la richiesta. Poi la firma attaccata al saluto e la riga di legge."""
     p = pezzi(settore)
-    chi = ('sono Patrick, del commerciale di DenkiCode. Siamo a Seveso e scriviamo gestionali costruiti '
-           'sul modo in cui lavora ogni azienda, non programmi standard da adattare.')
-    if riga.strip():
-        chi += ' ' + riga.strip()
+    presentazione = ('sono Patrick, del commerciale di DenkiCode: siamo a Seveso e scriviamo gestionali '
+                     'costruiti sul modo in cui lavora ogni azienda, non programmi standard da adattare.')
+    riga = riga.strip()
+    if riga:
+        # dopo «Buongiorno,» si va avanti in minuscolo: «ho visto che...», non «Ho visto che...»
+        prima = riga.split(' ', 1)[0]
+        if prima in ('Ho', 'Sul', 'Dal', 'Da', 'Leggo', 'Guardando', 'Leggendo', 'Mi'):
+            riga = riga[0].lower() + riga[1:]
+        chi = riga + ' S' + presentazione[1:]
+    else:
+        chi = presentazione
     richiesta = ("Sarebbe un problema se ci sentissimo mezz'ora, da voi o in videochiamata? Guardo come "
                  "lavorate adesso e vi dico se c'è qualcosa da automatizzare. Se state già bene così, ve lo "
                  f"dico e vi saluto. E se non siete voi a seguire {p['chi_segue']}, mi basta il nome della "

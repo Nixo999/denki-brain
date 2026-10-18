@@ -3,6 +3,7 @@
 
     python3 02-Sales/posta/scrivi.py prepara [--n 60]     scrive dati/da-scrivere.json
     python3 02-Sales/posta/scrivi.py importa dati/scritte.json
+    python3 02-Sales/posta/scrivi.py ricomponi             rifà le mail in coda coi testi fissi di adesso
     python3 02-Sales/posta/scrivi.py mostra [--n 3]       stampa le ultime mail composte
 
 Claude legge `da-scrivere.json` (nome, settore, attività, comune, estratto del
@@ -114,13 +115,37 @@ def importa(file):
             if p:
                 scarti.append((s['piva'], 'voce-check: ' + '; '.join(p)[:200]))
                 continue
-            c.execute("INSERT INTO messaggi(piva, tipo, a, oggetto, corpo, scritto) VALUES (?,?,?,?,?,?)",
-                      (a['piva'], 'primo', a['email'], oggetto, corpo, db.adesso()))
+            c.execute("INSERT INTO messaggi(piva, tipo, a, oggetto, corpo, scritto, riga, nome) VALUES (?,?,?,?,?,?,?,?)",
+                      (a['piva'], 'primo', a['email'], oggetto, corpo, db.adesso(), riga, nome))
             db.metti_fase(c, a['piva'], 'scritta')
             ok += 1
     print(f'importate {ok}, scartate {len(scarti)}')
     for piva, motivo in scarti:
         print(' -', piva, motivo)
+
+
+def ricomponi(file=None):
+    """Riscrive oggetto e corpo delle prime mail non ancora partite con i testi fissi di adesso.
+    Serve quando cambia testi.py: la frase personale e il nome breve restano quelli scritti."""
+    vecchie = {}
+    if file and os.path.exists(file):
+        vecchie = {x['piva']: x for x in json.load(open(file, encoding='utf-8'))}
+    tel = config.leggi().get('TELEFONO', '')
+    n = 0
+    with db.connessione() as c:
+        for m in c.execute("SELECT m.id, m.piva, m.riga, m.nome, a.settore, a.nome AS ragione FROM messaggi m "
+                           "JOIN aziende a ON a.piva=m.piva WHERE m.tipo='primo' AND m.inviato IS NULL").fetchall():
+            riga = m['riga'] if m['riga'] is not None else (vecchie.get(m['piva'], {}).get('riga') or '')
+            nome = m['nome'] or vecchie.get(m['piva'], {}).get('nome') or testi.nome_breve(m['ragione'])
+            oggetto, corpo = testi.primo(m['settore'], riga, tel, nome)
+            p = problemi_voce(corpo)
+            if p:
+                print(' -', m['piva'], 'voce-check:', '; '.join(p)[:200], '(lasciata com\'era)')
+                continue
+            c.execute('UPDATE messaggi SET oggetto=?, corpo=?, riga=?, nome=? WHERE id=?',
+                      (oggetto, corpo, riga, nome, m['id']))
+            n += 1
+    print(f'ricomposte {n} mail in coda')
 
 
 def mostra(n):
@@ -133,7 +158,7 @@ def mostra(n):
 
 if __name__ == '__main__':
     ap = argparse.ArgumentParser()
-    ap.add_argument('azione', choices=['prepara', 'importa', 'mostra'])
+    ap.add_argument('azione', choices=['prepara', 'importa', 'ricomponi', 'mostra'])
     ap.add_argument('file', nargs='?')
     ap.add_argument('--n', type=int, default=60)
     x = ap.parse_args()
@@ -141,5 +166,7 @@ if __name__ == '__main__':
         prepara(x.n)
     elif x.azione == 'importa':
         importa(x.file or os.path.join(db.DATI, 'scritte.json'))
+    elif x.azione == 'ricomponi':
+        ricomponi(x.file)
     else:
         mostra(x.n if x.n != 60 else 3)

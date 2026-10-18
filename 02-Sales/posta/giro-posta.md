@@ -36,12 +36,13 @@ nell'`estratto` del loro sito, e si salva tutto in
 [{"piva": "01234567890", "nome": "Elsap", "riga": "Ho visto che dal 1978 distribuite componenti di elettronica industriale alle PMI, dai connettori agli alimentatori."}]
 ```
 
-`nome` è il nome breve che va nell'oggetto («Elsap: gestione di ordini e
-magazzino»), scritto come lo scrive l'azienda sul suo sito: senza Srl o SpA,
+`nome` è il nome breve che va nell'oggetto («Una domanda per Elsap su ordini
+e magazzino»), scritto come lo scrive l'azienda sul suo sito: senza Srl o SpA,
 senza maiuscole urlate. Se non si capisce, si lascia `nome_breve` com'è.
 
-La frase chiude il primo paragrafo, subito dopo la presentazione di Patrick.
-Le regole, che `mattina.py dopo` controlla da solo:
+La frase **apre la mail**, subito dopo «Buongiorno,», e Patrick si presenta
+dopo: è l'anteprima che si legge nella casella prima di aprire. Per questo
+comincia con «Ho visto che…». Le regole, che `mattina.py dopo` controlla da solo:
 
 - **una frase sola**, fra 8 e 30 parole, chiusa dal punto, al «voi»;
 - **un fatto, non un giudizio**: cosa fanno, per chi, con quali macchine o
