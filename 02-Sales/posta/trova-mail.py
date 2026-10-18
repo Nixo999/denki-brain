@@ -279,7 +279,7 @@ def contiene_piva(pagina, piva):
 
 
 RX_PIVA_DICHIARATA = re.compile(r'(?:p\.?\s?iva|partita\s+iva|p\.\s?i\.|vat(?:\s+(?:no|number|n|code))?\.?|'
-                                r'c\.?\s?f\.?\s*(?:e|/|-)\s*p\.?\s?iva)\s*[:.]?\s*(?:it)?\s?(\d{11})(?!\d)', re.I)
+                                r'c\.?\s?f\.?\s*(?:e|/|-)\s*p\.?\s?iva)[\s:.\-–]{0,6}(?:it)?\s?(\d{11})(?!\d)', re.I)
 
 
 def piva_dichiarate(pagina):
@@ -673,7 +673,45 @@ def lavora(az, usa_pg=True):
         motivi = '; '.join(f'{e} ({p})' for e, p in list(scartate.items())[:8]) or 'nessun indirizzo nelle pagine'
         out.update(fase='senza_mail', email_prova=(f'lette {len(pagine)} pagine: {lette} · scartati: {motivi}'
                                                     + (' · ' + '; '.join(mx_note) if mx_note else ''))[:1500])
+    motivo = filiale_estera(az['nome'], out['sito'], out['estratto'])
+    if motivo:
+        out['note'] = f'trova-mail.py: filiale di gruppo estero ({motivo})' + \
+                      (f' · casella {out["email"]}' if out.get('email') else '')
+        out.update(fase='scartata', email=None)
     return out
+
+
+def inglese(testo):
+    """True se il testo è soprattutto in inglese: conta le parole vuote delle due lingue."""
+    p = re.findall(r"[a-zàèéìòù']+", (testo or '').lower())
+    en = sum(w in {'the', 'and', 'of', 'to', 'for', 'with', 'our', 'we', 'is', 'are', 'your', 'from', 'that', 'by'}
+             for w in p)
+    it = sum(w in {'il', 'la', 'di', 'che', 'per', 'con', 'e', 'dei', 'delle', 'della', 'nostro', 'nostri',
+                   'sono', 'una', 'le', 'gli', 'del', 'nel', 'alla'} for w in p)
+    return en >= 8 and en > 1.5 * it
+
+
+def filiale_estera(nome, url, testo):
+    """Il motivo se l'azienda è la filiale italiana di un gruppo estero, altrimenti None.
+    Hanno il gestionale della casa madre: non comprano un software su misura (direttore, 18/10/2026).
+    Segnali: (1) dominio non .it ed estratto in inglese; (2) sito in una cartella /it/ o /it-it/ di un
+    dominio internazionale; (3) nome che finisce con Italia, Italy o Italiana e sito di gruppo (dominio
+    non .it o cartella di lingua); (4) dominio .it con cartella di lingua /it/ ed estratto in inglese,
+    il caso di turckbanner.it/it/, che con i primi tre segnali passava."""
+    u = urllib.parse.urlparse(url or '')
+    dom = u.netloc.lower()
+    tld_it = dom.endswith('.it')
+    cartella = re.match(r'^/(?:[a-z]{2}/)?it(?:[-_]it)?(?:/|$)', u.path.lower()) is not None
+    en = inglese(testo)
+    if not tld_it and en:
+        return f'dominio {dom} non .it e testo del sito in inglese'
+    if not tld_it and cartella:
+        return f'sito nella cartella italiana {u.path} del dominio internazionale {dom}'
+    if re.search(r'\b(italia|italy|italiana)\b[\s.,]*(s\.?r\.?l|s\.?p\.?a|$)', nome.strip(), re.I) and (not tld_it or cartella):
+        return f'nome «{nome}» e sito di gruppo {dom}{u.path}'
+    if tld_it and cartella and en:
+        return f'sito {dom}{u.path} con cartella di lingua e testo in inglese'
+    return None
 
 
 # ---------------------------------------------------------------- base dati
@@ -684,10 +722,10 @@ FASI_VIVE = ('pronta', 'senza_mail')
 def salva(c, az, r):
     ora = db.adesso()
     piva = az['piva']
-    fase, nota = r['fase'], None
+    fase, nota = r['fase'], r.get('note')
     email = r.get('email')
     # doppioni: stesso sito o stessa casella → resta il fatturato più alto
-    if r.get('dominio'):
+    if r.get('dominio') and fase in FASI_VIVE:
         for o in c.execute('SELECT piva, nome, fatturato, fase, sito, email FROM aziende WHERE piva != ? AND sito IS NOT NULL '
                            "AND fase NOT IN ('nuova', 'scartata', 'senza_sito')", (piva,)).fetchall():
             stesso_dom = stesso_sito(dominio_di(o['sito']), r['dominio'])
