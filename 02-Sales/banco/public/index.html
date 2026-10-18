@@ -313,7 +313,7 @@
   <div id="lista"></div>
   <div id="niente" class="vuoto" hidden></div>
   <details class="piega" id="piega" hidden>
-    <summary>Liste dei giorni scorsi</summary>
+    <summary>Liste senza data</summary>
     <div id="lista-vecchie"></div>
   </details>
   <div id="vuoto" class="vuoto">
@@ -1073,26 +1073,32 @@ function disegna(){
       riempiPiega(() => secchi.scartate.filter(passa));
     }
   } else {
-    /* La pagina di un prodotto: in pagina le liste del giorno piu` recente di
-       QUEL prodotto (la colonna «Lista» comincia con la data), il resto sotto,
-       chiuso. Dal 10 settembre ogni giorno escono piu` liste: stanno una sotto
-       l'altra, ognuna col suo titolo. */
+    /* La pagina di un prodotto: in pagina tutte le liste con la data (la colonna
+       «Lista» comincia con la data), sotto e chiuse solo quelle senza, che sono
+       di settembre. Fino al 18/10/2026 in pagina c'era solo il giorno piu`
+       recente e le righe non mandate finivano nella piega; Nicola: «quelli che
+       non manda non vanno eliminati, ma vanno mantenuti per il giorno dopo».
+       Prima le liste piu` vecchie: chi aspetta da piu` giorni si scrive per primo. */
     const voci = secchi[pagina];
-    const conLista = voci.map(v => v.lista).filter(l => /^\d{4}-\d{2}-\d{2}/.test(l)).sort();
-    const giorno = conLista.length ? conLista[conLista.length - 1].slice(0, 10) : "";
+    const conData = l => /^\d{4}-\d{2}-\d{2}/.test(l);
+    const giorni = voci.map(v => v.lista).filter(conData).sort();
+    const ultimo = giorni.length ? giorni[giorni.length - 1].slice(0, 10) : "";
     const dentro = [], fuori = [];
-    voci.forEach(v => (giorno && v.lista.slice(0, 10) === giorno ? dentro : fuori).push(v));
+    voci.forEach(v => (conData(v.lista) ? dentro : fuori).push(v));
     /* chi e` stato riaperto con l'annulla va in cima a tutto: e` la riga che si
        sta cercando in quel momento */
     const ordina = (a, b) =>
       (riaperte.includes(pulito(b.r[col.account])) ? 1 : 0) - (riaperte.includes(pulito(a.r[col.account])) ? 1 : 0)
-      || b.lista.localeCompare(a.lista) || a.idx - b.idx;
+      || a.lista.localeCompare(b.lista) || a.idx - b.idx;
     dentro.sort(ordina);
     const mostrate = dentro.filter(passa);
     const liste = [...new Set(mostrate.map(v => v.lista))];
+    const ferme = mostrate.filter(v => v.lista.slice(0, 10) !== ultimo).length;
+    const delGiorno = l => { const [, m, g] = l.slice(0, 10).split("-"); return +g + "/" + m; };
     nota.innerHTML = PRODOTTI[pagina].nota +
-      (liste.length ? "<br>" + (liste.length > 1 ? "Liste di oggi: " : "Lista di oggi: ") +
-        liste.map(l => "<b>" + corto(l) + "</b>").join(" e ") + "." : "");
+      (liste.length ? "<br>" + (liste.length > 1 ? "Liste sul banco: " : "Lista sul banco: ") +
+        liste.map(l => "<b>" + corto(l) + "</b>").join(" e ") + "." : "") +
+      (ferme ? " Le prime <b>" + ferme + "</b> sono dei giorni prima: non le hai mandate e sono rimaste qui." : "");
     let corrente = null;
     mostrate.forEach(v => {
       if (v.lista !== corrente && liste.length > 1){
@@ -1100,7 +1106,7 @@ function disegna(){
         const h = document.createElement("div");
         h.className = "sezione";
         h.innerHTML = "<b>" + mostrate.filter(x => x.lista === v.lista).length + "</b> da scrivere · " +
-                      corto(v.lista);
+                      corto(v.lista) + (v.lista.slice(0, 10) !== ultimo ? " · del " + delGiorno(v.lista) : "");
         lista.appendChild(h);
       }
       lista.appendChild(cartella(v));
@@ -1109,7 +1115,7 @@ function disegna(){
     if (fuori.length){
       piega.hidden = false;
       piega.querySelector("summary").innerHTML =
-        "Liste dei giorni scorsi — <b>" + fuori.length + "</b> senza data di invio nel file. " +
+        "Liste senza data — <b>" + fuori.length + "</b> senza data di invio nel file. " +
         "Attenzione: gli invii dal 4 al 7 settembre non sono mai stati salvati nel vault, qui dentro " +
         "c'è gente a cui hai già scritto.";
       piega.open = apertaPrima;
@@ -1132,8 +1138,9 @@ function disegna(){
 
 /* il filtro della testata: handle, nome, comune. Serve a ritrovare un profilo
    di cui ci si ricorda il nome — per esempio quello che si e` appena chiuso. */
-/* il nome della lista senza data, «instagram» ed estensione: sono «di oggi»
-   per definizione, e sul telefono i nomi interi riempivano mezzo schermo */
+/* il nome della lista senza data, «instagram» ed estensione: sul telefono i
+   nomi interi riempivano mezzo schermo. Il giorno, per le liste rimaste dai
+   giorni prima, lo aggiunge il titolo della sezione («· del 16/10») */
 function corto(l){ return l.replace(/\.csv$/i, "").replace(/^\d{4}-\d{2}-\d{2}-(instagram-)?/, ""); }
 
 function passa(v){

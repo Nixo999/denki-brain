@@ -1,5 +1,5 @@
 ---
-description: Apre il banco DM e, se oggi non ci sono, costruisce e pubblica le due liste del giorno — 100 siti e 60 ricerca di mercato
+description: Apre il banco DM e lo porta a 170 righe da mandare — le non mandate restano, si cercano solo quelle che mancano (110 siti, 60 ricerca di mercato)
 argument-hint: "[apri | siti | ricerca | un numero, es. «siti 30»]"
 ---
 
@@ -17,9 +17,17 @@ mandare messaggi in terminale»*.
 è passato si dice in **una riga**, nella risposta finale. Il 25/09: zero righe
 alle 00:04, 163 all'01:43 dopo *«sono stanco di dirtelo, crea i lead»*.
 
-**100 siti e 60 ricerca, ogni volta** (Patrick, 24/09), anche con righe vecchie
-ferme sul banco. Se le liste di **oggi** esistono già: passo 8 e si risponde.
-Se no: passi 2-9. `/banco apri` salta la costruzione, `/banco siti` e `/banco
+**170 righe da mandare sul banco, fisse: 110 siti e 60 ricerca.** Nicola,
+18/10/2026: *«quando patrick manda meno messaggi, quelli che non manda non vanno
+eliminati, ma vanno mantenuti per il giorno dopo, e vanno aggiunti solo i
+rimanenti per arrivare alla cifra che serve per avere fissi 170 messaggi da
+mandare»*. Il conto lo fa `prossimo-giro.py` al passo 2: le righe mai mandate
+restano sul banco, in pagina, e si cerca solo quello che manca. Se sul banco ce
+ne sono già 170 o più, non si costruisce niente: passi 6, 8 e 10. Supera i «100
+siti e 60 ricerca, ogni volta, anche con righe vecchie ferme sul banco» di
+Patrick (19/09 e 24/09).
+
+Se le liste di **oggi** esistono già: passo 8 e si risponde. Se no: passi 2-9. `/banco apri` salta la costruzione, `/banco siti` e `/banco
 ricerca` ne rifanno una sola, un numero cambia le righe (`/banco siti 30`).
 
 ## 1 · Aggancio
@@ -47,8 +55,9 @@ Il conto vero degli invii sta nel browser di Patrick: se non torna, ha ragione l
 python3 "$V/02-Sales/strumenti/prossimo-giro.py"
 ```
 
-Stampa le celle del giorno (4 siti, 3 ricerca) come **luogo · settore · quota
-righe**, 3 riserve, i settori «al telefono, non in DM» e quelli in pausa, le
+Stampa quante righe sono ferme sul banco e quante se ne cercano oggi per
+arrivare a 170, poi le celle del giorno (fino a 4 siti e 3 ricerca, una ogni 10
+righe da cercare) come **luogo · settore · quota righe**, 3 riserve, i settori «al telefono, non in DM» e quelli in pausa, le
 righe mai mandate sul banco. Legge `02-Sales/liste/settori.csv`, **l'unico
 elenco dei settori**, e `rotazione.csv`.
 
@@ -219,8 +228,8 @@ server non parte, si legge il log che nomina e si ripara da qui.
 
 ```
 Patrick — <data>. <se ci sono lead fermi: quanti e da quanto, per primi>
-Banco DM aperto: <da mandare per account, recuperi>
-Liste di oggi: siti <n> · ricerca <n>. <celle: luogo · settore · righe, quali chiuse>
+Banco DM aperto: <da mandare, di cui rimaste dai giorni prima; recuperi>
+Liste di oggi: siti <n> · ricerca <n>, per arrivare a 170. <celle: luogo · settore · righe, quali chiuse>
 <una riga solo se qualcosa non è passato: fonte bloccata, posta non letta, righe fuori>
 <una riga solo se sul banco giacciono più di 300 righe mai mandate: quante>
 ```

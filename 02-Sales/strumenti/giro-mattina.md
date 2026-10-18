@@ -1,7 +1,7 @@
 ---
 riga: Il prompt del giro del mattino - la lista del giorno parte da sola alle 8 dal Mac di Nicola, alle 8:30 da quello di Patrick se la conferma non c'e'.
 type: risorsa
-updated: 2026-10-17
+updated: 2026-10-18
 source: claude
 tags: [banco, liste, automazione]
 ---
@@ -54,7 +54,9 @@ risposte.**
    avesse scritto `/banco`. Il passo 8 si salta: il banco è online su
    <https://banco-denkicode.netlify.app> e la lista ci arriva da sola col push.
    Un blocco non ferma la lista (passo 0): si cambia fonte e lo si dice in una
-   riga.
+   riga. Se `prossimo-giro.py` dice che sul banco ci sono già 170 righe da
+   mandare, non si costruisce niente: si legge la posta (passo 6) e si va al
+   punto 3 (Nicola, 18/10/2026, in [[metodo-liste]]).
 3. A giro finito, anche con liste corte:
    `python3 02-Sales/strumenti/giro-mattina.py --fine`.
 4. La risposta ha il formato del passo 10 di `banco.md`.

@@ -215,6 +215,8 @@ in [[metriche]]:
 
 Il banco del giorno riporta le righe non mandate del giorno prima e cerca solo quelle che mancano per arrivare a 170 messaggi.
 
+La divisione l'ha scelta Nicola lo stesso giorno: 110 siti e 60 ricerca. Il conto lo fa `prossimo-giro.py`; le righe dei giorni prima restano in pagina sul banco, le più vecchie in cima.
+
 ### 11/10/2026 — Nicola: «imposta che da adesso tutte le mattina alle 8 sia sul mio pc sia su quello di patrik partr in automatico la creazione tramite dela nuova lista, fai in modo che mandino una conferma il mio pc prima sul voul, che dice che parte a farla a lui, mentre se dopo una certo orario non parte sul mio quello di atrick controlla se ce il messaggio del mio che dice che è partito a farla, se non ce quel masseggio di conferma fa partire dal pc di patrick la crezione tramite sempre te la lista, da adesso in poi deve andare cosi»
 
 La lista del giorno parte da sola alle 8 dal Mac di Nicola, che lo scrive nel vault; il Mac di Patrick la fa solo se quella conferma non c'e'.
@@ -255,9 +257,13 @@ il 25 settembre /banco si e' fermato a zero righe e ha riferito i blocchi (API d
 
 da ora /banco costruisce due liste, 100 siti e 60 ricerca, e DenkiShift esce dal banco. Supera il 50-50-50 del 12 settembre solo nei numeri e nel numero di liste: zone, settori e niente scuse restano come prima
 
+⚠️ **Superata nei numeri il 18/10/2026** dalla regola di Nicola: il banco ha 170 righe da mandare fisse (110 siti, 60 ricerca), le righe non mandate restano e si cerca solo quello che manca. DenkiShift resta fuori.
+
 ### 19/09/2026 — Patrick: «Come sempre hai fatto solo siti e non le altre due.»
 
 Terza volta in quattro giorni: il 14, il 17 e il 19 settembre la sessione ha consegnato la sola lista siti e ha giustificato le altre due con le righe vecchie ancora sul banco. Quella giustificazione e' esattamente la scusa che la regola del 12 settembre vieta. 50 per tipologia si consegnano sempre, anche se sul banco ci sono righe ferme: se restano ferme e' un problema di invii, non un motivo per non costruirle.
+
+⚠️ **Superata il 18/10/2026** dalla regola di Nicola: le righe ferme contano nei 170 del banco, e si costruisce solo quello che manca. Resta vero che una lista non si consegna corta per un blocco: le righe che mancano a 170 si cercano tutte.
 
 ### 17/09/2026 — Patrick: «guarda meglio, ricerca e denkishift non hanno righe 1, e 2 ci siamo già detti che se faccio quel comando tu mi fai 150 lead 50 per tipologia no scuse»
 

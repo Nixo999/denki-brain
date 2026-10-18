@@ -9,6 +9,11 @@ conversione, tenendo conto del metodo di contatto. Qui le scelte sono numeri.
     python3 prossimo-giro.py [--lista siti|ricerca] [--n N] [--oggi YYYY-MM-DD]
     python3 prossimo-giro.py --autotest
 
+Quante righe cercare lo dice il banco, non un numero fisso. Nicola, 18/10/2026
+(metodo-liste.md): le righe che Patrick non manda restano sul banco per il
+giorno dopo, e si cerca solo quello che manca per avere 170 messaggi da
+mandare, 110 siti e 60 ricerca. --n scavalca il conto.
+
 Sola lettura: settori.csv, rotazione.csv, lista-corrente.csv, risposte-dm.csv.
 Priorita' di una cella (luogo, settore) = resa_settore x resa_luogo x freschezza
 x vicinanza a Seveso. Le celle esaurite tornano in gioco 30 giorni dopo.
@@ -19,7 +24,7 @@ from pathlib import Path
 SALES = Path(__file__).resolve().parent.parent
 ORDINE = {"siti": "MB CO MI LC VA BG NO LO PV VB VC PC SO BS BI CR AL AT TO PR GE MN AO VR".split(),
           "ricerca": "MB CO MI LC VA BG LO PV SO BS CR MN".split()}
-RIGHE = {"siti": 100, "ricerca": 60}
+RIGHE = {"siti": 110, "ricerca": 60}  # 170 fissi sul banco (Nicola, 18/10/2026)
 CELLE = {"siti": 4, "ricerca": 3}
 POSITIVI = {"caldo", "CHIEDE", "tiepido", "rimanda", "ricerca", "siti"}
 RIAPRE, MEDIA_COSTR, PER_LUOGO, RISERVE = 30, 0.14, 2, 3
@@ -83,8 +88,8 @@ def costruzione(nota):
     return (int(m[2]), int(m[1])) if m else None
 
 
-def piano(lista, D, oggi, righe):
-    """(celle del piano, celle di riserva), ciascuna un dict."""
+def piano(lista, D, oggi, quante):
+    """(le prime `quante` celle del piano, celle di riserva), ciascuna un dict."""
     ordine = ORDINE[lista]
     rot = {(r["Luogo"], r["Settore"]): r for r in D["rot"] if r["Lista"] == lista}
     attivi = [s["Settore"] for s in D["sett"] if s["Lista"] == lista and s["Stato"] == "attivo" and s["Canale"] == "dm"]
@@ -126,8 +131,22 @@ def piano(lista, D, oggi, righe):
             if len(out) == k:
                 break
         return out
-    p = scegli(CELLE[lista])
+    p = scegli(quante)
     return p, scegli(RISERVE, p)
+
+
+def da_cercare(mai):
+    """Righe nuove per lista: quelle che mancano alla sua quota, senza che il banco
+    superi sum(RIGHE). Se una lista ha piu' righe ferme della sua quota, il di
+    piu' si toglie alle altre: 130 siti fermi e 0 ricerca danno 40 ricerca, non 60."""
+    manca = {l: max(0, RIGHE[l] - mai[l][1]) for l in ORDINE}
+    # mai[""] sono le righe senza Prodotto: non stanno in nessuna pagina ma occupano il banco
+    libere = max(0, sum(RIGHE.values()) - sum(v[1] for v in mai.values()))
+    if sum(manca.values()) <= libere:
+        return manca
+    out = {l: manca[l] * libere // sum(manca.values()) for l in manca}
+    out[max(manca, key=manca.get)] += libere - sum(out.values())
+    return out
 
 
 def data_it(d):
@@ -136,12 +155,23 @@ def data_it(d):
 
 def testo(oggi, liste, n, D):
     mai = D["mai"]
-    elide = "dell'" if oggi.day in (1, 8, 11, 18) else "del "
+    nuove = da_cercare(mai)
+    elide = "dell'" if oggi.day in (1, 8, 11) else "del "
     out = [f"Giro {elide}{oggi.day}/{oggi.month}/{oggi.year} — sul banco {sum(v[1] for v in mai.values())} righe mai "
-           f"mandate (siti {mai['siti'][1]} · ricerca {mai['ricerca'][1]})"]
+           f"mandate (siti {mai['siti'][1]} · ricerca {mai['ricerca'][1]})" +
+           (", che restano lì. " if any(v[1] for v in mai.values()) else ". ") +
+           (f"Chiesto a mano: {n} righe per lista, senza guardare il banco" if n else
+            f"Per arrivare a {sum(RIGHE.values())} se ne cercano {sum(nuove.values())} "
+            f"(siti {nuove['siti']} · ricerca {nuove['ricerca']})" if any(nuove.values()) else
+            f"Sono già {sum(RIGHE.values())} o più: oggi non si cerca niente")]
     for lista in liste:
-        tot = n or RIGHE[lista]
-        p, riserva = piano(lista, D, oggi, tot)
+        tot = n or nuove[lista]
+        if not tot:
+            out.append(f"\n{lista.upper()} — niente da cercare: sul banco ce ne sono {mai[lista][1]}, "
+                       f"la quota è {RIGHE[lista]}")
+            continue
+        # una cella ogni 10 righe: aprire un settore per 2 righe costa quanto aprirlo per 25
+        p, riserva = piano(lista, D, oggi, max(1, min(CELLE[lista], tot // 10)))
         base, resto = divmod(tot, len(p))
         out.append(f"\n{lista.upper()} — {tot} righe")
         for k, c in enumerate(p, 1):
@@ -170,7 +200,7 @@ def autotest():
     riaperte = 0
     for data_, tot in ((oggi, 0), (datetime.date(2026, 11, 15), 1)):
         for lista in ORDINE:
-            p, r = piano(lista, D, data_, RIGHE[lista])
+            p, r = piano(lista, D, data_, CELLE[lista])
             assert len(p) == CELLE[lista] and len({c["settore"] for c in p}) == len(p), "settore doppio nel piano"
             for c in p + r:
                 assert stato[(lista, c["settore"])] == ("attivo", "dm"), f"settore non attivo: {c['settore']}"
@@ -180,6 +210,14 @@ def autotest():
                 riaperte += tot * c["riaperta"]
     assert riaperte, "il 15/11 nessuna cella riaperta"
     assert testo(oggi, list(ORDINE), 0, D) == testo(oggi, list(ORDINE), 0, D), "non deterministico"
+    m = lambda **k: collections.defaultdict(lambda: [0, 0], {l: [0, v] for l, v in k.items()})
+    for fermi, atteso in (({}, {"siti": 110, "ricerca": 60}),
+                          ({"siti": 30, "ricerca": 20}, {"siti": 80, "ricerca": 40}),
+                          ({"siti": 130}, {"siti": 0, "ricerca": 40}),
+                          ({"siti": 113, "ricerca": 115}, {"siti": 0, "ricerca": 0}),
+                          ({"": 10}, {"siti": 104, "ricerca": 56})):
+        assert da_cercare(m(**fermi)) == atteso, f"da_cercare({fermi}) = {da_cercare(m(**fermi))}"
+        assert sum(fermi.values()) + sum(atteso.values()) == max(170, sum(fermi.values())), "il banco non fa 170"
     print(f"autotest ok (celle riaperte al 15/11 fra piano e riserva: {riaperte})")
 
 
