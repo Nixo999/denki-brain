@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-10-18
+updated: 2026-10-19
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **302 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **305 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -233,6 +233,11 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
 - [[metodo-nuove-aperture]] — ⚠️ Tre differenze rispetto a una lista normale di metodo-instagram, e la terza è quella che conta -
 
+**posta/**
+
+- [[giro-posta]] — ⚠️ Il prompt del giro della posta a freddo - ogni mattina feriale Claude legge le risposte e scrive le frasi personali delle mail.
+- [[posta-fredda]] — ⚠️ La posta a freddo dei gestionali - aziende B2B lombarde da 1 a 15 M€, mail con la voce di Patrick dalle caselle di denkicode.it.
+
 **processo/**
 
 - [[bozze-social-2026-10-03]] — ⚠️ Bozze del 03/10/2026 - sei storie linea siti (Come funziona, Cose che succedono) e la linea gestionali del brief Sarto - analisi, calendario, due post, quattro sequenze. Da rileggere Nicola, poi Patrick.
@@ -376,6 +381,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-10-01-banco-ricircolo]] — /banco riscritto l'1 ottobre - perche' la lista non usciva al primo colpo, il piano del giorno lo stampa uno script, Patrick non lancia piu' niente, e la resa misurata dei DM.
 - [[2026-10-01-coopero-prototipo]] — ⚠️ Prototipo di CO-OPERO chiesto da Nicola il 1/10 - quattro scelte tecniche proposte da Claude, in attesa del suo verdetto. Niente pubblicato.
 - [[2026-10-11-banco-online]] — ⚠️ Il banco DM esce dal Mac di Patrick e va online su Netlify - stato in Blobs, login, giro ogni 30 minuti che riporta contattati.csv nel vault.
+- [[2026-10-18-posta-fredda-da-denkicode]] — Nicola, 18/10 - la posta a freddo dei gestionali parte dalle caselle di denkicode.it per non pagare niente. Riapre la decisione del 2/09.
 
 ## 06-Daily
 

@@ -64,6 +64,8 @@ Nails Mania, Tarilli, Fiftynine, Castiglione, NG Barber (repo **pubblica**), Lob
 
 ## Altro aperto
 
+- **Posta a freddo dei gestionali** (18-19/10): costruita e provata, **invio spento**. Parte dalle tre caselle di denkicode.it, fino a circa 90 mail al giorno (45 aziende nuove); 48 aziende pronte e 10 mail scritte in coda. Mancano DMARC e DKIM, la parola `posta-mattina` nell'hook dei permessi, launchd e il task del mattino, e `ATTIVO=1` dopo la rilettura → [[posta-fredda]]
+- ⚠️ **Il vault `Nixo999/denki-brain` è pubblico su GitHub** (controllato con `gh` il 18/10): incassi, provvigioni e clienti sono leggibili da chiunque. Renderlo privato è una scelta di Nicola
 - **Banco DM online** (11/10): <https://banco-denkicode.netlify.app>, stessa pagina ridisegnata, stato su Netlify Blobs, deploy da solo a ogni lista. Giro di sincronizzazione acceso (11/10, primo giro manuale ok, mai ancora con un invio vero); mancano il primo accesso di Nicola e la password a Patrick; fino al passaggio `/banco` apre ancora quello locale → [[2026-10-11-banco-online]]
 - **Edilida** (edile, Travagliato): modulo compilato il 18/09, Patrick punta a una videochiamata; il riepilogo di zona promesso a Penta ed Edilida **non esiste** → [[edilida]]
 - **V-BAG**, gestionale con login pushato il 16/09: spento finché Nicola non mette `ADMIN_PASSWORD` e `GITHUB_TOKEN` su Netlify → [[2026-09-16-vbag-gestionale-login]]

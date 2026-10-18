@@ -1168,6 +1168,27 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   indirizzo a cui si toglie un parametro Instagram risponde 403, e scadono dopo
   poco. (13/10/2026, [[sito-dogschoolpiacenza]])
 
+- `[TRAPPOLA]` **Sotto carico il DNS del Mac risponde «il dominio non esiste»
+  anche per domini vivi, e `host -t mx` dà SERVFAIL.** Con sei ricerche in
+  parallelo `trova-mail.py` perdeva siti veri e segnava «senza MX» caselle
+  buone, per esempio `elsap.it`. → i siti si risolvono col DNS di Cloudflare
+  via HTTPS (1.1.1.1), gli errori di rete si ritentano, e una ricerca con buchi
+  di rete non si salva come negativa. (19/10/2026, [[posta-fredda]])
+- `[TRAPPOLA]` **Pagine Gialle mostra il sito solo nelle schede a pagamento.**
+  Su 87 aziende cercate, 34 volte ha trovato l'azienda ma non il sito: «nessun
+  sito su Pagine Gialle» non vuol dire che il sito non c'è.
+  (19/10/2026, [[posta-fredda]])
+- `[TRAPPOLA]` **Su companyreports le stringhe ATECO 2007 e 2025 si scontrano.**
+  `25.62.00` (2025) oggi contiene le serrature, mentre le officine di meccanica
+  generale stanno in `25.53.00`. → il settore lo decide la classe a quattro
+  cifre, e lo script scopre da solo tutte le liste di ogni classe.
+  (19/10/2026, [[posta-fredda]])
+- `[TRAPPOLA]` **«Sito su un dominio non .it e testo in inglese» non vuol dire
+  filiale di un gruppo estero.** La regola aveva scartato Cospal, Berta,
+  Contech, Ramallumin e Sprinx, che sono italiane ed esportano. Le separa la
+  partita IVA: un'azienda italiana la scrive sul suo sito anche se è in
+  inglese, il sito del gruppo estero no. (19/10/2026, [[posta-fredda]])
+
 ## Liste e banco DM
 
 - **Una frase di verifica ripetuta su sessanta righe è un modello, non un

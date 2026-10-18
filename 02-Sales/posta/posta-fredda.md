@@ -1,5 +1,5 @@
 ---
-riga: La posta a freddo per i gestionali - trova aziende B2B lombarde da 1 a 15 M€, scrive con la voce di Patrick e manda da sola dalle caselle di denkicode.it.
+riga: La posta a freddo dei gestionali - aziende B2B lombarde da 1 a 15 M€, mail con la voce di Patrick dalle caselle di denkicode.it.
 type: risorsa
 updated: 2026-10-18
 source: claude
@@ -59,6 +59,25 @@ Ogni mail passa da `voce-check.py` prima di entrare in coda.
 
 In fondo a ogni mail c'è da dove viene l'indirizzo e come non ricevere altro:
 non è una traccia del processo, la chiede la legge.
+
+## Quante aziende ci sono — misurato il 19/10
+
+Sul campione di Milano e Monza (officine 25.53 e 25.62, ingrosso 46.64 e 46.69):
+
+| | |
+|---|---|
+| In filtro dopo la lista | 158 |
+| Sito trovato | 65, cioè il 41%; 54 provati con la partita IVA |
+| **Pronte, con casella generica** | **48**, dopo aver rimesso dentro cinque esportatrici italiane |
+| Senza sito / senza casella | 93 / 9 |
+| Filiali di gruppi esteri, scartate | 8 |
+| Tempo | circa 14 minuti ogni 100 aziende, 6 in parallelo |
+
+Stima per la Lombardia, più o meno il 20%: circa **40.000 aziende nei filtri**,
+quindi circa 10.000 pronte a questa resa. A 45 aziende nuove al giorno sono più
+di un anno di invii: il collo di bottiglia sono le caselle, non le aziende.
+Ogni sera alle 19 `giro.py` cerca un settore nuovo, a turno, se la scorta di
+pronte scende sotto 200.
 
 ## I file
 

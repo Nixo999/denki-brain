@@ -673,7 +673,7 @@ def lavora(az, usa_pg=True):
         motivi = '; '.join(f'{e} ({p})' for e, p in list(scartate.items())[:8]) or 'nessun indirizzo nelle pagine'
         out.update(fase='senza_mail', email_prova=(f'lette {len(pagine)} pagine: {lette} · scartati: {motivi}'
                                                     + (' · ' + '; '.join(mx_note) if mx_note else ''))[:1500])
-    motivo = filiale_estera(az['nome'], out['sito'], out['estratto'])
+    motivo = filiale_estera(az['nome'], out['sito'], out['estratto'], bool(trovato.get('piva')))
     if motivo:
         out['note'] = f'trova-mail.py: filiale di gruppo estero ({motivo})' + \
                       (f' · casella {out["email"]}' if out.get('email') else '')
@@ -691,10 +691,10 @@ def inglese(testo):
     return en >= 8 and en > 1.5 * it
 
 
-def filiale_estera(nome, url, testo):
+def filiale_estera(nome, url, testo, piva_trovata=False):
     """Il motivo se l'azienda è la filiale italiana di un gruppo estero, altrimenti None.
     Hanno il gestionale della casa madre: non comprano un software su misura (direttore, 18/10/2026).
-    Segnali: (1) dominio non .it ed estratto in inglese; (2) sito in una cartella /it/ o /it-it/ di un
+    Segnali: (1) dominio non .it, estratto in inglese e nessuna P.IVA italiana sul sito; (2) sito in una cartella /it/ o /it-it/ di un
     dominio internazionale; (3) nome che finisce con Italia, Italy o Italiana e sito di gruppo (dominio
     non .it o cartella di lingua); (4) dominio .it con cartella di lingua /it/ ed estratto in inglese,
     il caso di turckbanner.it/it/, che con i primi tre segnali passava."""
@@ -703,8 +703,10 @@ def filiale_estera(nome, url, testo):
     tld_it = dom.endswith('.it')
     cartella = re.match(r'^/(?:[a-z]{2}/)?it(?:[-_]it)?(?:/|$)', u.path.lower()) is not None
     en = inglese(testo)
-    if not tld_it and en:
-        return f'dominio {dom} non .it e testo del sito in inglese'
+    # un'azienda italiana che esporta ha il sito in inglese su un .com, ma ci scrive la SUA partita IVA:
+    # il sito di un gruppo estero no. Senza questa condizione uscivano Cospal, Berta, Contech, Ramallumin (19/10)
+    if not tld_it and en and not piva_trovata:
+        return f'dominio {dom} non .it, testo in inglese e nessuna partita IVA italiana'
     if not tld_it and cartella:
         return f'sito nella cartella italiana {u.path} del dominio internazionale {dom}'
     if re.search(r'\b(italia|italy|italiana)\b[\s.,]*(s\.?r\.?l|s\.?p\.?a|$)', nome.strip(), re.I) and (not tld_it or cartella):

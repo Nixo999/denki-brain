@@ -1,5 +1,5 @@
 ---
-riga: Nicola, 18/10 - la posta a freddo per i gestionali parte dalle tre caselle di denkicode.it per non pagare niente. Riapre il «mai dal dominio vero» del 2/09.
+riga: Nicola, 18/10 - la posta a freddo dei gestionali parte dalle caselle di denkicode.it per non pagare niente. Riapre la decisione del 2/09.
 type: decisione
 data: 2026-10-18
 progetto: azienda

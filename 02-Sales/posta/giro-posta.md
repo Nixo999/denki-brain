@@ -1,5 +1,5 @@
 ---
-riga: Il prompt del giro della posta a freddo - ogni mattina feriale Claude legge le risposte e scrive le righe personali delle mail. Niente entra in git.
+riga: Il prompt del giro della posta a freddo - ogni mattina feriale Claude legge le risposte e scrive le frasi personali delle mail.
 type: risorsa
 updated: 2026-10-18
 source: claude
