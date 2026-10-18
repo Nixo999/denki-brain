@@ -26,9 +26,17 @@ Ogni stringa di codice è una lista a sé, e le stringhe sono di quattro tipi:
 Le stringhe a 6 cifre si scontrano: `25.62.00` oggi contiene le serrature
 (ATECO 2025), mentre le officine di meccanica generale stanno in `25.53.00`.
 Per questo lo script non usa una lista fissa di stringhe: per ogni CLASSE
-della tabella sotto prova la classe nuda, le 10 categorie `.0`-`.9` e le 100
-sottocategorie `.00`-`.99`, e tiene quelle che hanno righe. La scoperta costa
-111 richieste per classe una volta sola, poi sta in `dati/cache/liste-ateco.json`.
+della tabella sotto prova
+
+- la classe nuda, `.00` e le dieci categorie `.0`-`.9`;
+- le sottocategorie ATECO 2007 dell'albero di companyreports (/settori-economici/);
+- le sottocategorie ATECO 2025 della classe su codiceateco.it, più la loro forma
+  `.X0` (companyreports ha liste come `46.64.10` e `46.64.90`);
+
+e tiene quelle che hanno righe. Il 18/10/2026, sulle classi 25.53, 25.62, 46.64
+e 46.69, questa scoperta ha trovato tutte le liste trovate provando le 111
+combinazioni possibili, con circa 20 richieste per classe invece di 111.
+Il risultato resta in `dati/cache/liste-ateco.json`.
 
 ## Tabella classe → settore
 
@@ -36,7 +44,7 @@ Il settore dipende dalle prime cifre del codice, che per i gruppi scelti
 coincidono fra ATECO 2007 e 2025: per questo una classe vale per tutte e due
 le classificazioni. Le classi che esistono solo nel 2025 sono segnate «2025».
 """
-import argparse, hashlib, html, json, os, re, sys, time, urllib.request
+import argparse, hashlib, html, json, os, re, sys, time, urllib.error, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
 QUI = os.path.dirname(os.path.abspath(__file__))
@@ -133,6 +141,11 @@ def get(url):
                 out.write(t)
             time.sleep(PAUSA)
             return t
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 502, 503, 504):
+                return None     # codiceateco.it risponde 500 per le classi che nel 2025 non esistono
+            print('  errore', url, e, file=sys.stderr)
+            time.sleep(10 * (tentativo + 1))
         except Exception as e:
             print('  errore', url, e, file=sys.stderr)
             time.sleep(3 * (tentativo + 1))
@@ -185,11 +198,37 @@ def scheda(x):
     return x
 
 
+_albero = None
+
+
+def albero_2007():
+    """I codici ATECO 2007 dell'albero di companyreports, es. 46.69.99 e 25.73.1."""
+    global _albero
+    if _albero is None:
+        _albero = set()
+        for n in [''] + [str(i) for i in range(1, 60)]:
+            t = get('https://www.companyreports.it/settori-economici/' + n) or ''
+            _albero |= {k.replace('-', '.') for k in re.findall(r'companyreports\.it/ateco/([0-9-]+)"', t)}
+    return _albero
+
+
+def sottocategorie_2025(classe):
+    """Le sottocategorie ATECO 2025 della classe, dalla pagina di codiceateco.it (in cache)."""
+    t = get('https://codiceateco.it/classe?q=' + classe) or ''
+    return sorted(set(re.findall(re.escape(classe) + r'\.\d\d', t)))
+
+
 def liste_della_classe(classe, scoperte):
     """Le stringhe di codice con righe per una classe, scoperte una volta e poi in cache."""
     if classe in scoperte:
         return scoperte[classe]
-    prove = [classe] + [f'{classe}.{d}' for d in range(10)] + [f'{classe}.{d:02d}' for d in range(100)]
+    prove = [classe, classe + '.00'] + [f'{classe}.{d}' for d in range(10)]
+    for k in sorted(albero_2007()):
+        if k.startswith(classe + '.'):
+            prove += [k, k + '0'] if len(k) == len(classe) + 2 else [k]
+    for k in sottocategorie_2025(classe):
+        prove += [k, k[:-1] + '0']
+    prove = list(dict.fromkeys(prove))
     with ThreadPoolExecutor(2) as ex:
         piene = [c for c, righe in zip(prove, ex.map(lambda c: pagina(c, 1), prove)) if righe]
     scoperte[classe] = piene
@@ -228,9 +267,13 @@ def forma_giuridica(etichetta):
 
 
 def pochi_dipendenti(banda):
-    """True se la banda dichiarata sta tutta sotto i 6. Banda assente: non dichiarata, si tiene."""
+    """True se la banda dichiarata sta tutta sotto i 6. Etichette viste sulle schede il 18/10/2026:
+    «nessuno», «1», «da 2 a 5», «da 6 a 9», «da 10 a 19», «da 20 a 49», «da 50 a 99», «da 100 a 249»;
+    sulle schede senza la riga «N. Dipendenti» la banda manca: non dichiarata, si tiene."""
     if not banda:
         return False
+    if re.fullmatch(r'\s*(nessuno|0)\s*', banda, re.I):
+        return True     # «nessuno» è un'etichetta vera della scheda: zero dipendenti
     numeri = [int(n) for n in re.findall(r'\d+', banda)]
     return bool(numeri) and max(numeri) < 6
 
