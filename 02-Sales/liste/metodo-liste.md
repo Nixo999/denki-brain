@@ -1,7 +1,7 @@
 ---
 riga: Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
 type: area
-updated: 2026-10-11
+updated: 2026-10-18
 source: claude
 prodotto: denkishift
 ---
@@ -210,6 +210,10 @@ in [[metriche]]:
 
 
 ## Regole
+
+### 18/10/2026 — Nicola: «Nel banco DM, quando Patrick manda meno messaggi, quelli che non manda non vanno eliminati, ma vanno mantenuti per il giorno dopo, e vanno aggiunti solo i rimanenti per arrivare alla cifra che serve per avere fissi 170 messaggi da mandare»
+
+Il banco del giorno riporta le righe non mandate del giorno prima e cerca solo quelle che mancano per arrivare a 170 messaggi.
 
 ### 11/10/2026 — Nicola: «imposta che da adesso tutte le mattina alle 8 sia sul mio pc sia su quello di patrik partr in automatico la creazione tramite dela nuova lista, fai in modo che mandino una conferma il mio pc prima sul voul, che dice che parte a farla a lui, mentre se dopo una certo orario non parte sul mio quello di atrick controlla se ce il messaggio del mio che dice che è partito a farla, se non ce quel masseggio di conferma fa partire dal pc di patrick la crezione tramite sempre te la lista, da adesso in poi deve andare cosi»
 
