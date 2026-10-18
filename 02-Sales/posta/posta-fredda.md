@@ -101,15 +101,23 @@ git ignora: il vault è un repository **pubblico** su GitHub (controllato il
 
 ## Prima di accendere — `TODO`
 
+- [x] launchd installato il 19/10 (`~/Library/LaunchAgents/com.denkicode.posta.plist`):
+      il primo avvio è uscito senza errori. Si ferma con
+      `launchctl unload ~/Library/LaunchAgents/com.denkicode.posta.plist`.
+- [x] Task `posta-mattina` creato il 19/10, alle 7:30 dei giorni feriali, salvato in
+      modalità automatica. Se il primo giro si ferma ad aspettare un permesso,
+      serve la parola `"posta-mattina"` in `TASK_NOSTRI` di `.claude/hooks/permessi-giro.py`,
+      e la mette Nicola a mano.
 - [ ] **DMARC e DKIM su `denkicode.it`** (Nicola, dal pannello di register.it):
-      oggi mancano tutti e due, e SPF da solo regge poco con Gmail e Outlook.
-- [ ] Una prova verso una casella esterna (Gmail), per leggere nell'originale
-      se SPF e DKIM passano.
-- [ ] La parola `"posta-mattina"` in `TASK_NOSTRI` di `.claude/hooks/permessi-giro.py`:
-      la mette Nicola a mano, il classificatore non la fa scrivere a Claude.
-- [ ] launchd (`com.denkicode.posta.plist`) e il task `posta-mattina` sul Mac di Nicola.
-- [ ] Le prime mail vere rilette da Nicola o Patrick, poi `ATTIVO=1`.
+      oggi mancano tutti e due. Le due prove nella Gmail di Nicola sono comunque
+      arrivate in Posta in arrivo.
+- [ ] Le prime 10 mail vere, in `dati/prime-10-da-rileggere.txt`, rilette da
+      Nicola; poi `ATTIVO=1` in `~/.config/denki-posta/caselle.env`.
 - [ ] Il numero di Patrick sotto la firma, se lo vuole (`TELEFONO`).
+- [ ] Patrick sa che le risposte arrivano in `patrick@denkicode.it` e la legge.
+
+Finché `ATTIVO=0` il giro del mattino scrive le mail per i due giorni dopo e
+si ferma lì: la coda arriva a circa 60 mail e non cresce oltre.
 
 ## Collegamenti
 

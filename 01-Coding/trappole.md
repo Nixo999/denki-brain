@@ -1293,6 +1293,11 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   che riconosca la sessione del task (`permessi-giro.py`). E l'hook lo installa
   una persona: il classificatore ferma il modello che prova a scriverlo
   («Self-Modification»). (13/10/2026, [[giro-mattina]])
+  ⚠️ **Cambiato il 19/10/2026**: creato dall'app da una sessione in modalità
+  automatica, il task `posta-mattina` è stato salvato in modalità automatica
+  («This task was saved in Auto mode because this session is in it»). La
+  modalità del task si cambia modificandolo nell'app. Se il primo giro gira
+  senza fermarsi, l'hook non serve più per i task nuovi. ([[posta-fredda]])
 
 - **Sette operatori che leggono Instagram in parallelo chiudono l'indirizzo
   in venti minuti.** Giro del 16/10, dalle 18:55 alle 19:16: Cremona ha

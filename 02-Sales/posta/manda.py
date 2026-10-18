@@ -240,7 +240,8 @@ def giro():
             if not m:
                 continue
             if not cfg['attivo']:
-                log('PROVA (ATTIVO=0), non parte:', casella, '→', m['a'], '|', m['tipo'], '|', m['oggetto'])
+                # solo a schermo: dal giro di launchd ogni cinque minuti riempirebbe il log
+                print('PROVA (ATTIVO=0), non parte:', casella, '→', m['a'], '|', m['tipo'], '|', m['oggetto'])
                 prossimo[casella] = (datetime.now() + timedelta(minutes=intervallo(st['quota']))).isoformat(timespec='seconds')
                 continue
             msg = componi(m, casella, rispondi_a=cfg.get('RISPONDI_A'))
