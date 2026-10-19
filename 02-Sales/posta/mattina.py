@@ -118,3 +118,14 @@ def dopo():
         fasi = dict(c.execute('SELECT fase, COUNT(*) FROM aziende GROUP BY fase').fetchall())
     print('Fasi adesso:', ', '.join(f'{k} {v}' for k, v in sorted(fasi.items())))
     print('Registro e risposte stanno in', db.DATI, '(fuori da git: il vault è pubblico).')
+
+
+if __name__ == '__main__':
+    passo = sys.argv[1] if len(sys.argv) > 1 else ''
+    if passo == 'prima':
+        prima()
+    elif passo == 'dopo':
+        dopo()
+    else:
+        print('Uso: python3 02-Sales/posta/mattina.py prima | dopo')
+        sys.exit(2)
