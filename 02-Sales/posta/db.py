@@ -109,7 +109,7 @@ def apri():
     # 19/10: la frase personale e il nome breve si tengono, così le mail ancora in coda
     # si ricompongono quando cambiano i testi fissi (`scrivi.py ricomponi`)
     colonne = {r[1] for r in c.execute('PRAGMA table_info(messaggi)')}
-    for col in ('riga', 'nome'):
+    for col in ('riga', 'nome', 'variante'):   # variante: quale dei tre oggetti (testi.VARIANTI)
         if col not in colonne:
             c.execute(f'ALTER TABLE messaggi ADD COLUMN {col} TEXT')
     return c

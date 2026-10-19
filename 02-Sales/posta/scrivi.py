@@ -15,14 +15,21 @@ nell'estratto: cosa fanno, per chi, con cosa. Esempio buono: «Ho visto sul
 vostro sito che fate taglio laser e piegatura della lamiera per conto terzi.»
 
 Le regole che `importa` controlla, e per cui scarta la riga:
-- una frase sola, fra 8 e 30 parole, che finisce col punto;
+- una frase sola, fra 12 e 30 parole, che finisce col punto: è l'anteprima
+  che si legge prima di aprire la mail, e deve riempirla da sola;
+- niente parole di vendita e niente link: software, gestionale, proposta,
+  offerta, preventivo, programma, digitalizzazione;
 - niente complimenti e niente aggettivi vuoti (eccellenza, leader, qualità,
   professionale, innovativo, su misura...);
 - niente fatturato, dipendenti, milioni, bilancio: si sa, ma dirlo fa sembrare
   uno che li ha schedati (script di Patrick);
 - niente em dash e niente di quello che ferma voce-check.py.
-Se l'estratto non ha un fatto concreto, la riga si lascia vuota ("riga": ""):
-la mail funziona anche senza, e una frase inventata è peggio di nessuna.
+Se l'estratto non ha un fatto concreto, la frase si scrive dall'attività del
+registro e dal comune («Ho visto che la vostra azienda di Seregno si occupa di
+lavori di meccanica generale dei metalli.»), senza aggiungere niente: una frase
+inventata è peggio di una frase semplice. Se il sito dice che l'azienda è fuori
+bersaglio (fa software, è filiale di un gruppo estero, ha chiuso), al posto
+della riga si scrive "escludi": "motivo" e l'azienda esce dalla coda.
 """
 import argparse
 import importlib.util
@@ -44,7 +51,9 @@ voce = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(voce)
 
 VIETATE = re.compile(r'(complimenti|eccellen|leader|qualit[àa]|professional|innovativ|su misura|soluzion|'
-                     r'all\'avanguardia|punto di riferimento|fatturat|dipendent|milioni|bilancio|addetti|—|–)', re.I)
+                     r'all\'avanguardia|punto di riferimento|fatturat|dipendent|milioni|bilancio|addetti|—|–|'
+                     # la frase è l'anteprima che si legge prima di aprire: niente parole di vendita, niente link (19/10)
+                     r'software|gestional|proposta|offert|preventiv|programm|digitalizz|https?:|www\.)', re.I)
 
 
 def prepara(n):
@@ -73,12 +82,14 @@ def prepara(n):
 
 def controlla_riga(riga):
     if not riga:
-        return None
+        # senza frase l'anteprima comincerebbe da «sono Patrick... scriviamo gestionali», cioè dalla vendita
+        return "frase vuota: se il sito non dice niente, scrivila dall'attività del registro e dal comune"
     if VIETATE.search(riga):
         return 'parola vietata: ' + VIETATE.search(riga).group(0)
     parole = len(riga.split())
-    if not 8 <= parole <= 30:
-        return f'{parole} parole, servono fra 8 e 30'
+    if not 12 <= parole <= 30:
+        # sotto le 12 parole l'anteprima arriva alla presentazione di Patrick, cioè alla vendita
+        return f'{parole} parole, servono fra 12 e 30'
     if not riga.endswith('.') or re.search(r'[.!?]\s+\S', riga[:-1]):
         return 'deve essere una frase sola, chiusa dal punto'
     if riga.endswith('?') or riga.lower().startswith(('sai ', 'avete mai', 'hai mai')):
@@ -101,6 +112,12 @@ def importa(file):
             if not a or a['fase'] != 'pronta':
                 scarti.append((s['piva'], 'azienda non in fase pronta'))
                 continue
+            if s.get('escludi'):
+                # Claude ha letto sul sito che l'azienda è fuori bersaglio: fa software, è la filiale
+                # di un gruppo estero, ha chiuso. Si toglie e basta, non si scrive.
+                db.metti_fase(c, a['piva'], 'scartata', 'esclusa nel giro di scrittura: ' + str(s['escludi'])[:200])
+                scarti.append((s['piva'], 'esclusa: ' + str(s['escludi'])[:100]))
+                continue
             riga = (s.get('riga') or '').strip()
             errore = controlla_riga(riga)
             if errore:
@@ -110,13 +127,16 @@ def importa(file):
             if len(nome) > 40 or testi.FORME.search(nome):
                 scarti.append((s['piva'], f'nome per l\'oggetto da accorciare: «{nome}»'))
                 continue
-            oggetto, corpo = testi.primo(a['settore'], riga, tel, nome)
+            variante = min(testi.VARIANTI, key=lambda v: c.execute(
+                "SELECT COUNT(*) FROM messaggi WHERE tipo='primo' AND variante=?", (v,)).fetchone()[0])
+            oggetto, corpo = testi.primo(a['settore'], riga, tel, nome, variante)
             p = problemi_voce(corpo)
             if p:
                 scarti.append((s['piva'], 'voce-check: ' + '; '.join(p)[:200]))
                 continue
-            c.execute("INSERT INTO messaggi(piva, tipo, a, oggetto, corpo, scritto, riga, nome) VALUES (?,?,?,?,?,?,?,?)",
-                      (a['piva'], 'primo', a['email'], oggetto, corpo, db.adesso(), riga, nome))
+            c.execute("INSERT INTO messaggi(piva, tipo, a, oggetto, corpo, scritto, riga, nome, variante) "
+                      "VALUES (?,?,?,?,?,?,?,?,?)",
+                      (a['piva'], 'primo', a['email'], oggetto, corpo, db.adesso(), riga, nome, variante))
             db.metti_fase(c, a['piva'], 'scritta')
             ok += 1
     print(f'importate {ok}, scartate {len(scarti)}')
@@ -133,17 +153,23 @@ def ricomponi(file=None):
     tel = config.leggi().get('TELEFONO', '')
     n = 0
     with db.connessione() as c:
-        for m in c.execute("SELECT m.id, m.piva, m.riga, m.nome, a.settore, a.nome AS ragione FROM messaggi m "
-                           "JOIN aziende a ON a.piva=m.piva WHERE m.tipo='primo' AND m.inviato IS NULL").fetchall():
+        for m in c.execute("SELECT m.id, m.piva, m.riga, m.nome, m.variante, a.settore, a.nome AS ragione FROM messaggi m "
+                           "JOIN aziende a ON a.piva=m.piva WHERE m.tipo='primo' AND m.inviato IS NULL ORDER BY m.id").fetchall():
             riga = m['riga'] if m['riga'] is not None else (vecchie.get(m['piva'], {}).get('riga') or '')
             nome = m['nome'] or vecchie.get(m['piva'], {}).get('nome') or testi.nome_breve(m['ragione'])
-            oggetto, corpo = testi.primo(m['settore'], riga, tel, nome)
+            variante = m['variante'] or min(testi.VARIANTI, key=lambda v: c.execute(
+                "SELECT COUNT(*) FROM messaggi WHERE tipo='primo' AND variante=?", (v,)).fetchone()[0])
+            errore = controlla_riga(riga)
+            if errore:
+                print(' -', m['piva'], 'frase da riscrivere:', errore, '(lasciata com\'era)')
+                continue
+            oggetto, corpo = testi.primo(m['settore'], riga, tel, nome, variante)
             p = problemi_voce(corpo)
             if p:
                 print(' -', m['piva'], 'voce-check:', '; '.join(p)[:200], '(lasciata com\'era)')
                 continue
-            c.execute('UPDATE messaggi SET oggetto=?, corpo=?, riga=?, nome=? WHERE id=?',
-                      (oggetto, corpo, riga, nome, m['id']))
+            c.execute('UPDATE messaggi SET oggetto=?, corpo=?, riga=?, nome=?, variante=? WHERE id=?',
+                      (oggetto, corpo, riga, nome, variante, m['id']))
             n += 1
     print(f'ricomposte {n} mail in coda')
 

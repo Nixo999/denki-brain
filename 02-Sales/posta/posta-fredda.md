@@ -50,7 +50,11 @@ che la decisione del 2 settembre giudica difendibile.
 ## La mail
 
 Lo scheletro fisso sta in `testi.py`, con una variante per settore; Claude
-scrive solo una frase personale presa dal sito dell'azienda. Le scelte e i
+scrive solo una frase personale presa dal sito dell'azienda, che apre la mail
+ed è l'anteprima letta prima di aprirla. L'oggetto ruota fra tre forme, A
+«Una domanda per Elsap su ordini e magazzino», B «Chi segue ordini e magazzino
+in Elsap?», C «Domanda veloce per Elsap», e `stato.py` conta le risposte per
+forma: dopo qualche centinaio di mail per forma si tiene la migliore. Le scelte e i
 libri da cui vengono sono scritti in testa a `testi.py`: Gitomer per la frase
 personale, Challenger per il problema del settore, SPIN per la domanda,
 Klaff e Voss per la richiesta di mezz'ora («se state già bene così, ve lo dico
@@ -110,8 +114,10 @@ git ignora: il vault è un repository **pubblico** su GitHub (controllato il
       e la mette Nicola a mano.
 - [x] **DMARC e DKIM su `denkicode.it`**, messi da Nicola il 19/10: DMARC `p=none` con
       i rapporti a `nicola@`, DKIM `key-regi001` allineato. Antispam di register.it da 0,43 a −1,60.
-- [ ] Le prime 10 mail vere, in `dati/prime-10-da-rileggere.txt`, rilette da
+- [ ] Le mail in coda, in `dati/mail-in-coda-da-rileggere.txt`, rilette da
       Nicola; poi `ATTIVO=1` in `~/.config/denki-posta/caselle.env`.
+- [x] Primo giro del mattino (19/10, 7:52): partito da solo in modalità
+      automatica, finito in cinque minuti, 38 mail scritte, nessun permesso chiesto.
 - [ ] Il numero di Patrick sotto la firma, se lo vuole (`TELEFONO`).
 - [ ] Patrick sa che le risposte arrivano in `patrick@denkicode.it` e la legge.
 

@@ -20,9 +20,15 @@ e dallo script di Patrick sui gestionali (02-Sales/script/script-gestionali-bria
   una casella generica si chiede solo il nome della persona giusta.
 
 Oggetto e anteprima sono la prima cosa che si legge, prima di aprire la mail.
-- Oggetto: «Una domanda per Elsap su ordini e magazzino». Nicola, 18/10: «il
-  titolo deve essere professionale», dopo aver bocciato «Elsap: a gestionale
-  c'è, a scaffale no»; il 19/10 ha scelto «Una domanda per…» fra tre forme.
+- Oggetto: tre forme a rotazione, per misurare quale fa rispondere di più
+  (`stato.py` le conta). Nicola, 18/10: «il titolo deve essere professionale»,
+  dopo aver bocciato «Elsap: a gestionale c'è, a scaffale no»; il 19/10 ha
+  scelto «Una domanda per…» e poi ha chiesto di applicare i consigli di un'altra
+  AI, da cui vengono la B e la C. Scartati di proposito gli oggetti che fingono
+  una collaborazione o un inoltro: ingannano chi legge su cosa sta aprendo.
+    A  Una domanda per Elsap su ordini e magazzino
+    B  Chi segue ordini e magazzino in Elsap?
+    C  Domanda veloce per Elsap
 - Anteprima: la mail comincia dalla frase su di loro, e Patrick si presenta
   subito dopo (scelta di Nicola, 19/10). Così le prime parole in grigio nella
   casella parlano della loro azienda, non di noi.
@@ -36,6 +42,7 @@ import re
 
 SETTORI = {
     'Officine e carpenterie': dict(
+        oggetto_chi='Chi segue la produzione in {nome}?',
         oggetto='Una domanda per {nome} sulle commesse in produzione',
         problema=('Nelle officine che lavorano su commessa succede spesso una cosa. Un cliente chiama per '
                   'sapere a che punto è il suo ordine, e qualcuno deve andare in reparto a chiederlo.'),
@@ -45,6 +52,7 @@ SETTORI = {
         tema='sapere a che punto è una commessa senza andare in reparto',
     ),
     'Manifattura': dict(
+        oggetto_chi='Chi segue gli ordini di produzione in {nome}?',
         oggetto='Una domanda per {nome} sugli ordini di produzione',
         problema=('Nelle aziende di produzione lo stesso ordine viene ricopiato a mano più volte, '
                   "dall'ufficio al reparto fino alla spedizione."),
@@ -54,6 +62,7 @@ SETTORI = {
         tema="non ricopiare più a mano gli ordini, dall'ufficio alla spedizione",
     ),
     'Impiantistica': dict(
+        oggetto_chi='Chi segue i rapportini di cantiere in {nome}?',
         oggetto='Una domanda per {nome} sui rapportini di cantiere',
         problema=('Nelle imprese di impianti i rapportini con ore e materiali arrivano spesso su carta, '
                   'la sera. Poi in ufficio qualcuno li deve ribattere.'),
@@ -63,6 +72,7 @@ SETTORI = {
         tema="ricevere i rapportini di ore e materiali dal telefono, senza ribatterli in ufficio",
     ),
     'Costruzioni': dict(
+        oggetto_chi="Chi segue l'avanzamento dei cantieri in {nome}?",
         oggetto="Una domanda per {nome} sull'avanzamento dei cantieri",
         problema=('Nelle imprese edili, per sapere quanto è fatto di un cantiere, spesso bisogna '
                   'chiamare il capocantiere.'),
@@ -72,6 +82,7 @@ SETTORI = {
         tema='vedere lo stato di ogni cantiere aggiornato ogni sera, senza chiamare il capocantiere',
     ),
     'Ingrosso': dict(
+        oggetto_chi='Chi segue ordini e magazzino in {nome}?',
         oggetto='Una domanda per {nome} su ordini e magazzino',
         problema=('Nella distribuzione capita spesso che il gestionale dica che un articolo c\'è, e in '
                   'magazzino non ci sia.'),
@@ -81,6 +92,7 @@ SETTORI = {
         tema='avere una giacenza vera, la stessa a gestionale e sugli scaffali',
     ),
     'Trasporti': dict(
+        oggetto_chi='Chi organizza i giri degli autisti in {nome}?',
         oggetto='Una domanda per {nome} sui giri degli autisti',
         problema=('Nelle aziende di trasporto i giri e i turni degli autisti si decidono spesso la sera '
                   'prima, al telefono e su un foglio in ufficio.'),
@@ -90,6 +102,7 @@ SETTORI = {
         tema='assegnare giri e turni degli autisti dal telefono, senza il foglio in ufficio',
     ),
     'Magazzinaggio e logistica': dict(
+        oggetto_chi='Chi segue le spedizioni in {nome}?',
         oggetto='Una domanda per {nome} sul tracciamento delle spedizioni',
         problema=('Nella logistica conto terzi i clienti chiamano spesso per sapere dov\'è il loro '
                   'carico. E qualcuno deve chiederlo al magazzino.'),
@@ -99,6 +112,7 @@ SETTORI = {
         tema='far vedere ai clienti lo stato dei carichi, senza telefonate al magazzino',
     ),
     'Pulizie e servizi': dict(
+        oggetto_chi='Chi organizza i turni delle squadre in {nome}?',
         oggetto='Una domanda per {nome} sui turni delle squadre',
         problema=('Nelle imprese di pulizie con molti cantieri, chi va dove domani si decide spesso su '
                   'fogli e messaggi.'),
@@ -110,6 +124,7 @@ SETTORI = {
 }
 
 GENERICO = dict(
+    oggetto_chi="Chi segue l'organizzazione del lavoro in {nome}?",
     oggetto="Una domanda per {nome} sull'organizzazione del lavoro",
     problema=('In molte aziende della vostra dimensione le informazioni di tutti i giorni stanno su '
               'fogli Excel e nella testa di due o tre persone.'),
@@ -139,6 +154,19 @@ def nome_breve(nome):
     return n or (nome or '').strip()
 
 
+VARIANTI = ('A', 'B', 'C')
+
+
+def oggetto(settore, nome, variante='A'):
+    p = pezzi(settore)
+    nome = nome_breve(nome) or 'voi'
+    if variante == 'B':
+        return p['oggetto_chi'].format(nome=nome)
+    if variante == 'C':
+        return f'Domanda veloce per {nome}'
+    return p['oggetto'].format(nome=nome)
+
+
 def pezzi(settore):
     return SETTORI.get(settore or '', GENERICO)
 
@@ -150,7 +178,7 @@ def firma(telefono=''):
     return '\n'.join(righe)
 
 
-def primo(settore, riga='', telefono='', nome=''):
+def primo(settore, riga='', telefono='', nome='', variante='A'):
     """Oggetto e corpo della prima mail. `riga` è la frase personale scritta da Claude,
     `nome` il nome breve dell'azienda per l'oggetto.
 
@@ -175,7 +203,7 @@ def primo(settore, riga='', telefono='', nome=''):
                  f"dico e vi saluto. E se non siete voi a seguire {p['chi_segue']}, mi basta il nome della "
                  'persona giusta.')
     corpo = '\n\n'.join(['Buongiorno,', chi, p['problema'] + ' ' + p['domanda'], richiesta, firma(telefono), PIEDE])
-    return p['oggetto'].format(nome=nome_breve(nome) or 'Una domanda'), corpo
+    return oggetto(settore, nome, variante), corpo
 
 
 def seguito(settore, oggetto_primo, telefono=''):

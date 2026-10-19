@@ -37,6 +37,15 @@ def main():
     print('\nOggi per casella:')
     for a, st in caselle.items():
         print(f"  {a:32} {st['oggi']:>3} su {st['quota']}")
+    with db.connessione() as c:
+        per_oggetto = c.execute(
+            "SELECT m.variante, COUNT(*) AS mandate, SUM(a.fase IN ('risposta','disiscritta')) AS risposte "
+            "FROM messaggi m JOIN aziende a ON a.piva=m.piva WHERE m.tipo='primo' AND m.inviato IS NOT NULL "
+            "GROUP BY m.variante ORDER BY m.variante").fetchall()
+    if per_oggetto:
+        print('\nRisposte per oggetto (prime mail mandate; servono qualche centinaio per forma prima di scegliere):')
+        for r in per_oggetto:
+            print(f"  {r['variante'] or '-'}  {r['risposte'] or 0} su {r['mandate']}  ({(r['risposte'] or 0) / r['mandate']:.1%})")
     print('\nRitorni (oggi / in tutto):')
     for t in ('risposta', 'disiscrizione', 'automatica', 'rimbalzo', 'freno', 'errore'):
         if ev.get(t):

@@ -35,7 +35,7 @@ def scrivi(nome, intestazione, righe):
 def esporta():
     with db.connessione() as c:
         inviate = c.execute(
-            "SELECT m.inviato, m.casella, m.tipo, a.nome, a.piva, m.a, a.settore, a.comune, a.prov, "
+            "SELECT m.inviato, m.casella, m.tipo, m.variante, a.nome, a.piva, m.a, a.settore, a.comune, a.prov, "
             "a.email_prova, m.oggetto FROM messaggi m JOIN aziende a ON a.piva=m.piva "
             "WHERE m.inviato IS NOT NULL ORDER BY m.inviato").fetchall()
         eventi = c.execute(
@@ -44,7 +44,7 @@ def esporta():
             "WHERE e.tipo IN ('risposta','rimbalzo','disiscrizione','automatica','freno') ORDER BY e.quando").fetchall()
         disiscritti = c.execute('SELECT dominio, quando, substr(replace(motivo, char(10), \' \'), 1, 200) '
                                 'FROM disiscritti ORDER BY quando').fetchall()
-    scrivi('inviate.csv', ['quando', 'casella', 'tipo', 'azienda', 'piva', 'email', 'settore', 'comune', 'prov',
+    scrivi('inviate.csv', ['quando', 'casella', 'tipo', 'oggetto A/B/C', 'azienda', 'piva', 'email', 'settore', 'comune', 'prov',
                            'origine indirizzo', 'oggetto'], inviate)
     scrivi('risposte.csv', ['quando', 'tipo', 'azienda', 'piva', 'da', 'oggetto', 'testo'], eventi)
     scrivi('disiscritti.csv', ['dominio', 'quando', 'motivo'], disiscritti)
