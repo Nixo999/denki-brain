@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **305 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **306 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -237,6 +237,10 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 - [[giro-posta]] — ⚠️ Il prompt del giro della posta a freddo - ogni mattina feriale Claude legge le risposte e scrive le frasi personali delle mail.
 - [[posta-fredda]] — ⚠️ La posta a freddo dei gestionali - aziende B2B lombarde da 1 a 15 M€, mail con la voce di Patrick dalle caselle di denkicode.it.
+
+**posta/dati/**
+
+- [[risposte]] — Questo file sta in dati/, fuori da git. Una riga per risposta vera: azienda, chi ha scritto, cosa dice, cosa deve fare Patrick.
 
 **processo/**
 
