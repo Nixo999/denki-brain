@@ -114,8 +114,8 @@ git ignora: il vault è un repository **pubblico** su GitHub (controllato il
       e la mette Nicola a mano.
 - [x] **DMARC e DKIM su `denkicode.it`**, messi da Nicola il 19/10: DMARC `p=none` con
       i rapporti a `nicola@`, DKIM `key-regi001` allineato. Antispam di register.it da 0,43 a −1,60.
-- [ ] Le mail in coda, in `dati/mail-in-coda-da-rileggere.txt`, rilette da
-      Nicola; poi `ATTIVO=1` in `~/.config/denki-posta/caselle.env`.
+- [x] Le 45 mail in coda rilette da Nicola; **`ATTIVO=1` il 19/10 alle 8:45**
+      («puo andare procedi con il mandarle»). Le prime partono alle 9.
 - [x] Primo giro del mattino (19/10, 7:52): partito da solo in modalità
       automatica, finito in cinque minuti, 38 mail scritte, nessun permesso chiesto.
 - [ ] Il numero di Patrick sotto la firma, se lo vuole (`TELEFONO`).
