@@ -187,7 +187,6 @@ e find-skills ([[2026-10-20-prova-astro-react-bits]]).
 ## Storia del lavoro
 
 - 20/10/2026: giro 2, vedi la sezione sopra. Commit `ceb7a02`, `65e3aa8`, `f92c361` sul ramo `giro2`.
-
 - 14/10/2026, mattina: Nicola ha guardato il sito sul telefono: «l'animazione dei pannelli che scorrono uno sopra l'altro … non risulta fluida». Corretto: sul telefono le schede restano sticky con uno scarto fisso di 8 px, senza scrub su scala e filtro e senza letture di layout a ogni scroll; la scala in scrub resta solo da computer; `ScrollTrigger.config({ ignoreMobileResize: true })`. Regola in [[direttive-siti]]. Da rivedere su un iPhone vero.
 - 13/10/2026, mattina: giro 1 «dalla prima telefonata all'attestato» online in un'ora. Direzione di Fable in `DIREZIONE.md`, costruzione su Opus in 11 minuti (terna Fraunces + Hanken Grotesk + Permanent Marker: su 335 px PIACENZA entra fino a 64 px, VALUTAZIONE fino a 46 px). 8/8, slop 0 con 4 avvisi, testo 0 con 1 avviso. Catture in `prove/giro1-375.png` e `giro1-1440.png`. Trevis ha rifatto il ritaglio del ritratto tondo, che il costruttore aveva tagliato dentro il cerchio. Da vedere su un iPhone vero: l'apertura, le schede che si impilano e la linea del percorso.
 - 13/10/2026: l'operatore ha raccolto la bio e le didascalie di 8 post da Instagram sloggato, i testi delle cinque pagine del sito Wix, la scheda Google Maps con tre recensioni, la pagina Facebook, sei siti di concorrenti e 7 foto a 1440 pixel di larghezza.
