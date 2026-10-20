@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Gestionale dell'officina Albybike - bici dei clienti con scheda tecnica, lavori fatti, promemoria di manutenzione nel gestionale e via mail. Locale, non ancora online.
+riga: Gestionale dell'officina Albybike - bici dei clienti con scheda tecnica, lavori fatti, promemoria di manutenzione nel gestionale e via mail. Online con dati inventati su albybike-officina.netlify.app.
 status: attivo
 client: albybike
 stack: HTML statico senza librerie, Netlify Functions, Netlify Blobs, Resend, skill stile-apple
@@ -21,13 +21,19 @@ scheda tecnica e i lavori fatti, con un avviso quando tocca la manutenzione:
 una mail al cliente e una sezione apposta nel gestionale. Stile di
 albybike.com, ma premium, con la skill [[stile-apple]]. Cliente: [[albybike]].
 
-**Repo**: `~/lavoro/albybike-gestionale`, ramo `main`, **solo locale**: nessun
-remote, nessun sito Netlify. Come è fatto, come si prova e come si pubblica sta
+**Online**: <https://albybike-officina.netlify.app> dal 20/10/2026, progetto
+`albybike-officina` sul team `denkicode`, deploy dal CLI. **Dentro ci sono dati
+inventati** (7 clienti, 8 bici), messi per farlo vedere a Patrick: prima di
+darlo ad Alby si cancellano, i comandi sono nel `CLAUDE.md` del repo.
+**Repo**: `~/lavoro/albybike-gestionale`, ramo `main`, **nessun remote**. Come è fatto, come si prova e come si pubblica sta
 nel `CLAUDE.md` del repo, che sul tecnico ha ragione lui.
 
 ## Stato al 20/10/2026
 
-- 🟡 **Costruito e provato in locale**, non online. `node prova.mjs`: 59/59
+- 🟢 **Online dal 20/10, sera**: pagina, tre sbarramenti e `/api` verificati con
+  `curl`, badge Netlify spento. ⚠️ Il primo accesso `admin`/`admin` non è
+  ancora stato fatto.
+- 🟡 **Costruito e provato in locale**: `node prova.mjs`: 59/59
   controlli (date, scadenze, API con l'archivio locale di Netlify, mail del
   mattino con un Resend finto). Guardato da Trevis nel browser dell'app a
   1440×900 in scuro e in chiaro e a 375×812: niente scorrimento orizzontale,

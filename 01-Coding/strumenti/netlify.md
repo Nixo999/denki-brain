@@ -1,7 +1,7 @@
 ---
 riga: Detto da Patrick il 31 agosto 2026 - *«il sito di Castiglione, come tutti i siti bozza, viene messo su Netlify per farlo vedere»*.
 type: risorsa
-updated: 2026-09-24
+updated: 2026-10-20
 source: denkicode
 tags: [strumenti, hosting, bozze, siti-vetrina]
 ---
@@ -66,6 +66,7 @@ Vale per tutti i canali:
 | [[sito-minniminerva]] | Minerva Esposito, make-up artist, Alessandria — Instagram `@minniminerva_make.up`, ha risposto al DM «curioso vederlo anche se sono un po titubante» | ✅ **online su <https://minervaesposito.netlify.app>** dal 4 ottobre 2026, progetto `minervaesposito` sul team `denkicode` (slug `nicola-la-rezza`, id `b65feb44-f910-459f-a359-89fec5fcd600`), deploy dal CLI `--prod --no-build` **da una cartella di soli file pubblici** (`index.html`, `assets`, `robots.txt`, `netlify.toml`: `catture/` pesa 321 MB), lanciato da Nicola; **repo solo locale**; tre sbarramenti verificati con `curl` sul deploy pubblicato, file di lavoro 404, badge spento dall'API |
 | [[sito-mitril-tattoo]] | Mitril Tattoo & Piercing, Giovi Salvi e Jennifer Galli, Rovato (BS) — Instagram `@mitril_tattoo_studio`, ha chiesto la bozza nel DM il 09/10 | ✅ **online su <https://mitril-tattoo.netlify.app>** dal 9 ottobre 2026, sito `mitril-tattoo` (id `f2fa2e5a`), badge spento |
 | [[sito-icaarus]] | ICAARUS ASD, centro cinofilo, Brembate-Grignano (BG) — Instagram `@icaarus_asd_centro_cinofilo`, ha risposto «Buongiorno, chiamami pure» | ✅ **online su <https://icaarus.netlify.app>** dal 9 ottobre 2026, sito `icaarus` sul team `denkicode` (slug `nicola-la-rezza`, id `98913259-2cc8-4490-b6a9-12c6e190b8b4`), deploy dal CLI `--prod --no-build` da una cartella di soli file pubblici, lanciato da Trevis su richiesta di Nicola; **repo solo locale**; tre sbarramenti e file di lavoro a 404 verificati con `curl` sul permalink, badge spento dall'API |
+| [[gestionale-albybike]] | Albybike, il gestionale dell'officina di Alby (papà di Patrick) — non è una bozza, ma si pubblica allo stesso modo | ✅ **online su <https://albybike-officina.netlify.app>** dal 20 ottobre 2026, progetto `albybike-officina` sul team `denkicode` (slug `nicola-la-rezza`, id `70efc926-371d-459e-8593-2db7c1dd870b`), deploy dal CLI `--prod --no-build` con le funzioni, lanciato da Trevis su richiesta di Nicola; **repo solo locale**; dati inventati in Netlify Blobs; tre sbarramenti, file di lavoro a 404 e `/api` a 401 verificati con `curl`, badge spento dall'API |
 | sito NG Barber | NG Barber Studio, Como + Erba + Mendrisio (CH) — riga 2 dell'[[2026-09-01-instagram-anello-1-b\|anello 1-b]] | ⬜ **pronto, non pubblicato**: `netlify.toml` scritto. il codice è su **`patricksappa26/ng-barber`** (pubblica, `main`, allineata). Resta indietro `Nixo999/ngbarber-site` (privata, primo tentativo). **Manca solo il login Netlify**, che è di Nicola — in alternativa, essendo la repo pubblica, **GitHub Pages** la pubblica senza altri accessi |
 
 > [!note] Analisi di Claude — 2026-09-01
