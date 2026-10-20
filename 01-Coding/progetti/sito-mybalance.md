@@ -66,7 +66,7 @@ Il profilo del Pilates parla da insegnante, non da palestra: ogni Reel pone una 
 
 ## Le foto
 
-Tutto quello che si prende da Instagram senza login è a **640 px al massimo**, e i fotogrammi dei Reel sono a 360 px: sotto il minimo di 1080 del [[processo-siti]]. Le tre foto di Google Maps sono nella cartella di lavoro e vanno misurate. Strada dichiarata: **il sito non dipende dalle foto** (tipografia, colore, grafica inventata prodotta con uno strumento), e le foto originali si chiedono nel DM insieme al logo. File scaricati il 20/10 nello scratchpad della sessione (`ig/`): 12 immagini della griglia, la foto profilo (150 px), il volantino dei corsi e i due manifesti dei Balance Days.
+Tutto quello che si prende da Instagram senza login è a **640 px al massimo**, e i fotogrammi dei Reel sono a 360 px: sotto il minimo di 1080 del [[processo-siti]]. Le tre foto di Google Maps (1080-2048 px) sono saggi di danza con bambine e un volantino: soggetto sbagliato per il Pilates e volti di minori, quindi restano in `riferimenti/maps/` e non vanno in pagina. Strada dichiarata: **il sito non dipende dalle foto** (tipografia, colore, grafica inventata prodotta con uno strumento), e le foto originali si chiedono nel DM insieme al logo. File scaricati il 20/10 nello scratchpad della sessione (`ig/`): 12 immagini della griglia, la foto profilo (150 px), il volantino dei corsi e i due manifesti dei Balance Days.
 
 ## Cosa non c'è, e si dichiara
 
