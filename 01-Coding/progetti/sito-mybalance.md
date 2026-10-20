@@ -128,7 +128,11 @@ Già sul Mac e utili: React Bits (sfondi e componenti WebGL pronti, usati su Dog
 
 ## La direzione
 
-TODO: la propone l'operatore di direzione su Opus (processo-siti, passo 2), il direttore sceglie e la scrive qui col seed di impeccable.
+L'operatore di direzione (Opus, 20/10 sera, 13 minuti) ha proposto tre mondi, scritti in `~/lavoro/mybalance-site/direzione/mondi.md`: A «La palla sul palmo» (Ballpit di React Bits, la palla che accompagna la pagina), B «Cinque molle» (un Reformer prodotto con anatomy che si carica e si apre allo scroll, cinque molle per cinque insegnanti), C «Sezione Pilates» (il loro manifesto dei Balance Days fatto pagina). Seme di impeccable `6974fafa`, modo Persuade; il dado aveva assegnato A, la scelta registrata è `--kind pick`.
+
+**Il direttore ha scelto B, incrociato con C in due punti**: True Focus sulle domande dei Reel per aprire la sezione delle discipline, e sabbia con petrolio del manifesto Pilates sulla fascia degli eventi. Motivo: in B il racconto allo scroll e la grafica inventata sono la stessa cosa, il Reformer è un oggetto del mestiere riconoscibile e lo produce uno strumento, come ha chiesto Nicola il 20/10; A rischia la piscina di palline e il «filo» bocciato il 17/09; C è il più piatto e il 20/10 Nicola ha appena bocciato un sito «vuoto da pc». Vincoli dati ai costruttori: il primo schermo è il loro mondo (nome, parole loro, elenco del volantino, prova gratuita), il Reformer entra dopo; sul telefono niente pin e niente scrub; nessun orario pubblicato finché Maps e Reservio non coincidono.
+
+Palette: avorio #F7EDE4, sabbia chiara #DFD6CA, sabbia #C3AD98, inchiostro #1E2A2E, petrolio #1E6E87, turchese #1F8FA0 (solo testi grandi sul bianco: 3,9:1). Font: Mona Sans (titoli 700 a larghezza 75, testo 400/500) e Martian Mono 400 per il cartellino della figura. Stack: Astro 5 con isole React (Text Pressure, True Focus), GSAP ScrollTrigger, figure di anatomy costruite in Node e messe in pagina come SVG. Skill di stile per la costruzione: `high-end-visual-design`.
 
 ## Collegamenti
 

@@ -62,6 +62,7 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Catture e verifica in headless
 
+- `[TRAPPOLA]` **Brave in headless con `--screenshot` si blocca e non scrive niente.** Per fotografare un file HTML locale funziona `node ~/.claude/skills/anatomy/scripts/capture.mjs <file.html> --out <png>` con `CHROME_PATH="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"`; per i siti restano `cattura-fette.mjs` e `cattura-apertura.mjs` via CDP. ([[sito-mybalance]], 20/10)
 - `[TRAPPOLA]` **Uno zero di `grep -c` su un `curl` non distingue «non c'è»
   da «non è arrivato niente».** Sei giri su `vbag.it/styles.css` davano `0`
   occorrenze della regola nuova e l'ho riferito come «forse il deploy non è
@@ -355,6 +356,7 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Immagini e `sips`
 
+- `[TRAPPOLA]` **`python3 -I` non trova PIL.** `-I` esclude i pacchetti installati per l'utente, e Pillow sta lì: per gli script che leggono immagini scaricate si usa `-I` solo se Pillow è nel sistema, altrimenti `python3 -s`-less normale con il file passato come argomento. ([[sito-mybalance]], 20/10)
 - `[TRAPPOLA]` **`cwebp` e `magick` non ci sono sul Mac di Nicola, ma Pillow scrive WebP e AVIF** (`features.check('webp')` è vero). Su Materia il primo giro è uscito con JPEG da 376 KB serviti anche al telefono perché «non c'è il convertitore», e Nicola ha notato subito che le foto ci mettevano tanto. Con Pillow, WebP a 480/800/1080 px qualità 72 e `srcset`, il peso delle foto sul telefono è sceso da 6,8 a 1,7 MB. ([[sito-materia]], 20/10)
 
 - **Una texture specchiata sui due assi da una foto in prospettiva fa chevron
@@ -1358,6 +1360,7 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Skill e strumenti di processo
 
+- `[TRAPPOLA]` **La skill `uiux-pro-max` sul Mac ha solo `SKILL.md`**, senza gli script e i dati (palette, 74 coppie di font, 17 preset GSAP), sia nel plugin `anthropic-skills` sia in `~/.claude/skills/synced/`: le ricerche promesse dalla descrizione non rispondono. Gli effetti si prendono da React Bits e dai plugin GSAP ufficiali; gli abbinamenti di font si provano con specimen renderizzati. ([[sito-mybalance]], 20/10)
 - `[TRAPPOLA]` **In Astro uno `slot={`c${i}`}` dentro un `.map` viene compilato fuori dal ciclo** e la build si ferma con `j is not defined`. Le schede di una pila si passano come dati a un componente React. ([[sito-dogschoolpiacenza]], 20/10)
 - **Mod di Claude Code: nel terminale `'Svg' in $.ui.resolve(e)` è sempre vero.** La tabella degli elementi viene completata, e un elemento che la superficie non ha disegna un frammento vuoto: il ripiego «se non c'è Svg uso il testo» non scatta mai e il pannello resta muto. Si decide da `e.surface`. Il `claude` nel PATH (2.1.261) non ha `plugin test`: si usa il binario dell'app, `~/Library/Application Support/Claude/claude-code/<versione>/…/MacOS/claude`. ([[registro-interventi]], 10/10)
 - **`voce-denkicode` sulle didascalie e sul copy di un sito produce frasi da
