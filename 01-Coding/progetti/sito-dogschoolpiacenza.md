@@ -1,12 +1,12 @@
 ---
 type: progetto
-riga: Sito vetrina per Roberta Borsaro, Dog School Piacenza (Ziano Piacentino). Raccolta del 13/10 da Instagram, Wix, Google Maps; 7 foto a 1440 px.
-updated: 2026-10-14
+riga: Sito di Roberta Borsaro, Dog School Piacenza (Ziano Piacentino), che vuole comprarlo. Giro 2 del 20/10 in tre pagine, Astro con React Bits, eventi.
+updated: 2026-10-20
 source: claude
 verificato: 2026-10-13
 status: attivo
 client: dogschoolpiacenza
-stack: HTML statico, GSAP, Netlify
+stack: Astro 5 con isole React, React Bits, GSAP, Netlify (giro 1 in HTML statico)
 started: 2026-10-13
 deadline: TODO
 ---
@@ -16,7 +16,7 @@ deadline: TODO
 Bozza di sito vetrina da costruire in un'ora per Roberta Borsaro, che il 13/10/2026 ha risposto a Patrick su Instagram. Cliente: [[dogschoolpiacenza]].
 
 **Cartella**: `~/lavoro/dogschoolpiacenza-site` (repo privato `Nixo999/dogschoolpiacenza-site`)
-**Online**: <https://dogschoolpiacenza.netlify.app>, con i tre sbarramenti. Esiste un sito Wix gratuito, `robertaborsaro.wixsite.com/dogschoolpiacenza`, di cinque pagine. I domini `dogschoolpiacenza.it` e `.com` non rispondono (verifica del 10/10 fatta dal coordinatore).
+**Online**: <https://dogschoolpiacenza.netlify.app>, con i tre sbarramenti, è ancora il giro 1. Il giro 2 è sul ramo `giro2` e in anteprima su <https://6ad7350f886192475b0345ec--dogschoolpiacenza.netlify.app> (20/10): si pubblica con `npm run build` e `netlify deploy --dir dist --prod` dopo il verdetto di Nicola, e il ramo va unito a `main`. Esiste un sito Wix gratuito, `robertaborsaro.wixsite.com/dogschoolpiacenza`, di cinque pagine. I domini `dogschoolpiacenza.it` e `.com` non rispondono (verifica del 10/10 fatta dal coordinatore).
 
 ## Chi è
 
@@ -143,7 +143,50 @@ Letti il 13/10/2026 dalla homepage, con il metodo «cosa mostra e cosa no». Nes
 
 **Cosa Dog School Piacenza oggi non comunica da nessuna parte:** il costo (nemmeno quello della valutazione), le qualifiche, il WhatsApp e gli orari, e il percorso in tappe (il Wix dice solo «ti proponiamo il progetto»). Le 47 recensioni a 4,9 stelle di Google non compaiono sul sito. Siccome nessun competitor locale mostra i prezzi, mostrarli sarebbe un vantaggio.
 
+## Giro 2 (20/10/2026): tre pagine, gli eventi, il suo Instagram
+
+Roberta vuole comprare il sito. Nicola ha chiesto di rifarlo quasi da capo con
+più spazio agli eventi che organizza, al massimo tre pagine e un aspetto più
+vicino al suo Instagram, e di provare sullo stesso sito magic-ui-ux, React Bits
+e find-skills ([[2026-10-20-prova-astro-react-bits]]).
+
+- **Raccolta**: le didascalie di 112 post lette da Instagram con l'account
+  denkicode. Gli eventi sono 39 dal 2022, in `RACCOLTA-EVENTI.md` nel repo,
+  con i partner (Mirko Bucci di MontescuDog, Davide Poggi, Elena Cornelli,
+  Desirée Ciampa, Associazione 44 Zampe). In arrivo: la seconda edizione di
+  «…Strada Facendo…» con Davide Poggi (incontri il 24/10 e il 07/11/2026) e
+  «Il paradosso della socializzazione» con Mirko Bucci (date `TODO`).
+- **Foto**: 128 immagini in `assets/img/ig/`, descritte in `foto-eventi.md`:
+  84 foto vere a 1080 o 1440 px, 39 locandine, 5 copertine di reel da 360 px.
+  Online ne vanno solo le 18 usate (`scripts/copia-foto.mjs`), scelte fra
+  quelle con soli cani o persone senza il viso.
+- **Direzione** (Fable, `DIREZIONE.md`): mondo «Il cerchio bianco», cioè il
+  suo feed diventato un sito. Campi pieni petrolio `#267A90` e lime `#9BCE51`,
+  foto dentro cerchi bianchi, titoli Outfit 900, nomi dei progetti in Kaushan
+  Script. Token in `.ui-ux/tokens.json`.
+- **Pagine**: la home apre sull'appuntamento in arrivo e ha servizi, numeri,
+  recensioni e contatti; Eventi ha in arrivo, i formati che tornano e
+  l'archivio per anno; la Storia racconta Nerone, Maiki e il metodo. Gli
+  eventi sono una content collection (`src/content/eventi/`), spiegata in
+  `EVENTI-COME-SI-AGGIUNGONO.md`.
+- **Verdetto di Nicola sulla prima anteprima** (20/10): da computer l'anno si
+  sovrapponeva alle schede e la pila di ScrollStack si sballava; dal telefono
+  l'archivio era un muro lunghissimo e la barra era scomoda e attaccata al
+  titolo; gli spazi non erano uniformi. Corretto: pila con `sticky` e GSAP,
+  anno in una colonna sua, carosello per anno sul telefono con
+  `scroll-snap` e `animation-timeline: view(inline)`, menu a tutto schermo,
+  una scala di spazi sola. Le due regole sul telefono sono in
+  [[direttive-siti]].
+- **Misure**: 8/8, slop 0 con un avviso, testo 0. A 375 px la home è alta
+  7.011 px, Eventi 7.940, Storia 4.820. Il carosello con il dito, lo snap su
+  iOS e la motion su Safari non sono stati provati su un telefono vero.
+- **Da chiedere a Roberta**: il consenso per le foto dei partecipanti, le date
+  del Paradosso, il tema della serata del 02/09, il programma del 2027, il
+  file del logo, oltre a prezzi, qualifiche e orari che mancavano già.
+
 ## Storia del lavoro
+
+- 20/10/2026: giro 2, vedi la sezione sopra. Commit `ceb7a02`, `65e3aa8`, `f92c361` sul ramo `giro2`.
 
 - 14/10/2026, mattina: Nicola ha guardato il sito sul telefono: «l'animazione dei pannelli che scorrono uno sopra l'altro … non risulta fluida». Corretto: sul telefono le schede restano sticky con uno scarto fisso di 8 px, senza scrub su scala e filtro e senza letture di layout a ogni scroll; la scala in scrub resta solo da computer; `ScrollTrigger.config({ ignoreMobileResize: true })`. Regola in [[direttive-siti]]. Da rivedere su un iPhone vero.
 - 13/10/2026, mattina: giro 1 «dalla prima telefonata all'attestato» online in un'ora. Direzione di Fable in `DIREZIONE.md`, costruzione su Opus in 11 minuti (terna Fraunces + Hanken Grotesk + Permanent Marker: su 335 px PIACENZA entra fino a 64 px, VALUTAZIONE fino a 46 px). 8/8, slop 0 con 4 avvisi, testo 0 con 1 avviso. Catture in `prove/giro1-375.png` e `giro1-1440.png`. Trevis ha rifatto il ritaglio del ritratto tondo, che il costruttore aveva tagliato dentro il cerchio. Da vedere su un iPhone vero: l'apertura, le schede che si impilano e la linea del percorso.

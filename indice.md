@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-10-19
+updated: 2026-10-20
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **306 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **307 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -61,7 +61,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-denkicode]] — Sito di DenkiCode. È qui che sta la galleria dei lavori - il posto dove si mostra a un cliente cosa abbiamo già fatto.
 - [[sito-designcapelli]] — Bozza sito per Design Capelli (Nichelino, TO) - mondo «la luce della via», la pagina schiarisce di un tono a sezione, marchio composto in Pinyon Script, Cabinet Grotesk + Gambetta, apertura a 0,80 s. Online su designcapelli.netlify.app dal 21/9, giro 6, 8/8, slop 0 e testo 0.
 - [[sito-dianails]] — Diana @dianails_brescia, onicotecnica e PMU a Brescia: bozza creata in C:\Users\User\Desktop\dianails-site, mondo A «la regola del 90°», 8/8 sbarramenti verificati.
-- [[sito-dogschoolpiacenza]] — Sito vetrina per Roberta Borsaro, Dog School Piacenza (Ziano Piacentino). Raccolta del 13/10 da Instagram, Wix, Google Maps; 7 foto a 1440 px.
+- [[sito-dogschoolpiacenza]] — Sito di Roberta Borsaro, Dog School Piacenza (Ziano Piacentino), che vuole comprarlo. Giro 2 del 20/10 in tre pagine, Astro con React Bits, eventi.
 - [[sito-dragonfly]] — ⚠️ Raccolta materiale per sito vetrina di Dragonfly Beauty&Relax, centro estetico a Casale Monferrato, lead da Instagram.
 - [[sito-dsi-advertising]] — ⚠️ Sito vetrina in una pagina per D.S.I. Advertising di Piras Sebastiano, Merate (LC) - dal 1992 progetta e produce articoli promozionali per il...
 - [[sito-fiftynine]] — ⚠️ Sito vetrina in una pagina per Bar Tabacchi Fiftynine, bar tabaccheria e pizzeria in via Nazionale dei Giovi 59, Cesano Maderno (MB).
@@ -386,6 +386,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-10-01-coopero-prototipo]] — ⚠️ Prototipo di CO-OPERO chiesto da Nicola il 1/10 - quattro scelte tecniche proposte da Claude, in attesa del suo verdetto. Niente pubblicato.
 - [[2026-10-11-banco-online]] — ⚠️ Il banco DM esce dal Mac di Patrick e va online su Netlify - stato in Blobs, login, giro ogni 30 minuti che riporta contattati.csv nel vault.
 - [[2026-10-18-posta-fredda-da-denkicode]] — Nicola, 18/10 - la posta a freddo dei gestionali parte dalle caselle di denkicode.it per non pagare niente. Riapre la decisione del 2/09.
+- [[2026-10-20-prova-astro-react-bits]] — ⚠️ Prova del 20/10/2026 sul sito di Dog School Piacenza - Astro con isole React per usare React Bits, magic-ui-ux per i token, find-skills.
 
 ## 06-Daily
 
