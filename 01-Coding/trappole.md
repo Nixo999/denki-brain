@@ -643,6 +643,8 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## CSS e layout
 
+- `[TRAPPOLA]` **Una regola sugli `span` di un contenitore azzera i numeri di CountUp** (React Bits): il componente annida i suoi `span` dentro, e `.numeri-lista span{font-size:17px}` li porta a 17 px. Si mira la regola a una classe. ([[sito-dogschoolpiacenza]], 20/10)
+
 **`sticky` non entra nel padding del contenitore.** Su [[sito-barbershop-snia]]
 (23/09) la foto del prima e dopo doveva restare ferma per 70vh sotto di sé: con
 `padding-bottom:70vh` sul contenitore scorreva via lo stesso, perché lo sticky
@@ -1011,6 +1013,8 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Scraping
 
+- `[TRAPPOLA]` **Claude in Chrome non restituisce indirizzi con parametri.** Un `javascript_tool` che rende l'URL di un'immagine di Instagram (firmato con `?stp=…&oh=…`) risponde «BLOCKED: Cookie/query string data», e l'API interna di Instagram risponde con la pagina HTML. Le didascalie si leggono dall'`alt` delle immagini della griglia scrivendole nel DOM e leggendole con `get_page_text`; i file si scaricano dal browser dell'app sloggato più `curl`. ([[sito-dogschoolpiacenza]], 20/10)
+
 - `[TRAPPOLA]` **In zsh una variabile di ciclo che si chiama `path` cancella il
   `PATH`.** `while IFS='|' read -r q host path name` e dalla riga dopo `curl`,
   `ls` e `sed` rispondono `command not found`: in zsh `path` è l'array legato a
@@ -1350,6 +1354,7 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Skill e strumenti di processo
 
+- `[TRAPPOLA]` **In Astro uno `slot={`c${i}`}` dentro un `.map` viene compilato fuori dal ciclo** e la build si ferma con `j is not defined`. Le schede di una pila si passano come dati a un componente React. ([[sito-dogschoolpiacenza]], 20/10)
 - **Mod di Claude Code: nel terminale `'Svg' in $.ui.resolve(e)` è sempre vero.** La tabella degli elementi viene completata, e un elemento che la superficie non ha disegna un frammento vuoto: il ripiego «se non c'è Svg uso il testo» non scatta mai e il pannello resta muto. Si decide da `e.surface`. Il `claude` nel PATH (2.1.261) non ha `plugin test`: si usa il binario dell'app, `~/Library/Application Support/Claude/claude-code/<versione>/…/MacOS/claude`. ([[registro-interventi]], 10/10)
 - **`voce-denkicode` sulle didascalie e sul copy di un sito produce frasi da
   bambino.** Taglia connettivi e verbi e lascia frasi nominali che descrivono
