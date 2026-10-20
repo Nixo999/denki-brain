@@ -10,7 +10,7 @@ import { existsSync, mkdtempSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 const argv = process.argv.slice(2); const ridotta = argv.includes('--ridotta')
 const [url, W = 1440, H = 900, durata = 9000, distanza = 0] = argv.filter(a => !a.startsWith('--'))
-const PORTA = 9338, profilo = mkdtempSync(tmpdir() + '/misura-')
+const PORTA = 9340 + Math.floor(Math.random() * 400), profilo = mkdtempSync(tmpdir() + '/misura-')
 const CANDIDATI = [process.env.BROWSER_CATTURE, '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser', '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'].filter(Boolean)
 const eseguibile = CANDIDATI.find(p => existsSync(p)); if (!eseguibile) throw new Error('nessun browser headless')
 const brave = spawn(eseguibile, ['--headless=new', '--disable-gpu', '--hide-scrollbars', `--remote-debugging-port=${PORTA}`, `--user-data-dir=${profilo}`, '--no-first-run', '--no-default-browser-check', 'about:blank'], { stdio: 'ignore' })
@@ -46,4 +46,4 @@ console.log(`media ${r.media} ms · p50 ${r.p50} · p95 ${r.p95} · max ${r.max}
 for (const [k, v] of Object.entries(r.fasce)) console.log(`  ${String(k).padStart(5)}-${String(+k + 999).padStart(5)} px: ${String(v.n).padStart(3)} fotogrammi, ${String(v.lunghi).padStart(2)} lunghi, max ${v.max} ms`)
 console.log('peggiori:', r.peggiori.join(' '))
 console.log(`lavoro del thread principale durante lo scroll: layout ${r.lavoro.layout} ms in ${r.lavoro.layoutN} passate · stile ${r.lavoro.stile} ms in ${r.lavoro.stileN} passate · script ${r.lavoro.script} ms · nodi DOM ${r.lavoro.nodi}`)
-ws.close(); brave.kill(); rmSync(profilo, { recursive: true, force: true })
+ws.close(); const uscito = new Promise(r => brave.on('exit', r)); brave.kill(); await uscito; rmSync(profilo, { recursive: true, force: true })
