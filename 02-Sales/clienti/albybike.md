@@ -2,8 +2,8 @@
 riga: Negozio di biciclette - vendita, assistenza e riparazione, abbigliamento e integratori per ciclismo.
 type: cliente
 status: attivo
-progetti: [sito-albybike]
-updated: 2026-08-28
+progetti: [sito-albybike, gestionale-albybike]
+updated: 2026-10-20
 source: denkicode
 settore: negozio di biciclette
 ---
@@ -25,6 +25,7 @@ online: [[sito-albybike]] → `albybike.com`.
 | Cosa | Quando | Stato |
 |---|---|---|
 | Sito vetrina `albybike.com` | `TODO` | 🟢 Online |
+| Gestionale dell'officina → [[gestionale-albybike]] | 20/10/2026 | 🟡 Solo in locale |
 
 ## Perché conta comunque
 
