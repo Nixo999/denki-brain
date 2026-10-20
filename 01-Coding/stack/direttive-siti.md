@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-10-16
+updated: 2026-10-20
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 20/10/2026 — Nicola: «da telefono la navbar non va bene perche è appiccicata al titolo e comunque è scomoda una nav bar così da telefono»
+
+Sul telefono la barra con tre voci e un bottone non va bene: serve una barra compatta con il menu che si apre a parte, e spazio vero tra la barra e il titolo.
 
 ### 16/10/2026 — Nicola: «allora adesso pero troppo semplice e vuoto, le sottolineature dalle scritte toglile che fanno schifo. dagli un po di vita sensa usare colori troppo accessi o troppo diversi tra di loro»
 
