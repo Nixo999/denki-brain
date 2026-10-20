@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Sito di Studio Danza My Balance (Acqui Terme), lato Pilates di Giorgia Zunino. Giro 2 online il 20/10 su mybalance-pilates.netlify.app: mondo «Cinque molle», Reformer fatto con anatomy, Astro con React Bits; motion agganciata allo scroll dopo il verdetto di Nicola.
+riga: Sito di Studio Danza My Balance (Acqui Terme), lato Pilates di Giorgia Zunino. Giro 3 online il 20/10 su mybalance-pilates.netlify.app: mondo «Cinque molle», Reformer fatto con anatomy, Astro con React Bits; motion agganciata allo scroll dopo il verdetto di Nicola.
 updated: 2026-10-20
 source: claude
 verificato: 2026-10-20
@@ -16,7 +16,7 @@ deadline: TODO
 Bozza di sito vetrina per Studio Danza My Balance, Acqui Terme, chiesta da Nicola il 20/10/2026 dopo la risposta al DM: «nuovo sito da fare, deve essere fatto bene sia per telefono che per pc, deve avere un bell'effetto wow». Cliente: [[mybalance]].
 
 **Cartella**: `~/lavoro/mybalance-site` (repo privato `Nixo999/mybalance-site`)
-**Online**: <https://mybalance-pilates.netlify.app>, con i tre sbarramenti, dal 20/10/2026 sera (giro 2, commit `067bc98`; il giro 1 era `aa00897`). Progetto Netlify `mybalance-pilates`, id `6b539385-047b-475f-9127-7d69b5fd25b9`, team `denkicode`; si ripubblica con `npm run build` e `netlify deploy --dir dist --prod --no-build --site 6b539385-047b-475f-9127-7d69b5fd25b9` (Netlify non è collegato a git, e il link della CLI è globale: vedi [[trappole]]).
+**Online**: <https://mybalance-pilates.netlify.app>, con i tre sbarramenti, dal 20/10/2026 sera (giro 3, commit `231266d`; giro 2 `067bc98`, giro 1 `aa00897`). Progetto Netlify `mybalance-pilates`, id `6b539385-047b-475f-9127-7d69b5fd25b9`, team `denkicode`; si ripubblica con `npm run build` e `netlify deploy --dir dist --prod --no-build --site 6b539385-047b-475f-9127-7d69b5fd25b9` (Netlify non è collegato a git, e il link della CLI è globale: vedi [[trappole]]).
 
 ## Chi è
 
@@ -151,3 +151,7 @@ Scelte dell'operatore contro la lettera del brief, da far giudicare a Nicola: l'
 Verdetto di Nicola dal computer: «lanimazione allo scrol da pc bella ma sembra troppo lenta e che si avvii in ritardo rispoetto al mio scrool, sopratutto i testi nella sezione devo vengono tipo messi a fuoco, quando vengono messi a fuoco dall animazione io ho pratocamente gia scrollato via». La regola che ne è uscita sta in [[direttive-siti]]. Cause trovate nei file: True Focus cambiava domanda ogni 2,4 secondi a tempo, il pin del Reformer durava quattro schermi e il modulo della figura si caricava solo quando la sezione era a uno schermo di distanza.
 
 Correzioni dello stesso operatore (Opus, 2 minuti): da 1024 px True Focus è guidato dallo scroll (ScrollTrigger in scrub su `.fuoco`, tre terzi per tre domande) e sul telefono resta a tempo con passo 1,6 s; il pin finisce a 2,4 schermi (da 3600 a 2160 px a 1440×900) con le stesse proporzioni; transizioni delle domande da 0,6 a 0,22 s, molle da 0,6 a 0,3 s, schede da 0,45/0,6 a 0,25/0,3 s, rivelazioni da 0,8 a 0,4 s con soglia all'88%; la figura si carica a pagina ferma con `requestIdleCallback`; l'isola True Focus è `client:idle`. A 375 la pagina è identica tranne il passo. Controlli 8/8, slop 0, testo 0; online con `curl`: 200, sbarramenti, badge spento. Resta da sentire con la mano su un computer vero: le misure vengono da Brave senza interfaccia.
+
+## Giro 3, 20/10 notte: il lag
+
+Nicola: «ok adesso prova ad aggiustare il fatto che lagga un pochettino». Misura prima del lavoro con `01-Coding/strumenti/misura-fotogrammi.mjs` (nato qui): in Brave headless a 1440×900 la pagina scorre a 60 fps costanti, nessun fotogramma sopra i 19 ms, con motion viva 354 passate di layout e 692 di stile in 9 secondi contro zero con la motion ridotta. Il headless non ha GPU: il lag sentito su un Mac Retina sta nel raster e nel compositing, che da qui non si misurano. Le sette correzioni dell'operatore della pagina stanno nella riga del registro; tra queste una causa vera trovata per strada: Text Pressure partiva da −9999 px e teneva acceso il ciclo per un secondo a ogni ingresso dell'hero, anche durante lo scroll. Dopo: layout da 425 a 227 passate, nodi DOM al caricamento da 2862 a 1626, aspetto identico nelle catture (`pin-*`, `domande-*` in `v3/` dello scratchpad della sessione). Nel modulo della figura resta il riordino di tutti i 137 nodi a ogni cambio d'ordine della vista esplosa (1096 spostamenti in 3 secondi): l'operatore della figura lo rende minimo. Il giudizio con la mano è di Nicola; il browser dell'app era nascosto e non disegnava fotogrammi, quindi la misura sul suo Mac non è stata fatta.
