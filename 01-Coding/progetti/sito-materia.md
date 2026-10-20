@@ -45,6 +45,10 @@ ricerca sui competitor (`ricerca-competitor.md`) di uno su Sonnet.
 
 Dal 20/10/2026 è su <https://materia-rezzato.netlify.app> (inglese su `/en/`), progetto Netlify `materia-rezzato`, id `7e3825b6-9951-43aa-b868-a765caa24ddf`, team `nicola-la-rezza`. Si ripubblica con `./pubblica.sh` dalla cartella del repo, che carica solo i file pubblici. I tre sbarramenti sono verificati con `curl` sul sito pubblicato, e `FATTI.md`, `DIREZIONE.md`, la ricerca e il provino rispondono 404.
 
+## Secondo giro, 20/10 sera
+
+Nicola ha guardato il sito online e ha bocciato due cose: il disegno del tavolo in prospettiva (due linee a V con i cerchi) e la sequenza della giornata allo scroll, cioè il pin con il fondo che passa a notte e le foto che scendono dal festone. Restano le entrate leggere e le lampadine. Ha chiesto anche di riempire la pagina sul computer, che risultava vuota, e di sistemare le spaziature sul telefono. La frase esatta è in [[direttive-siti]]. Il secondo giro lo costruisce un operatore su Opus.
+
 ## Buchi da chiudere con la cliente
 
 - Telefono, WhatsApp, email e orari: l'unico contatto in pagina è il DM Instagram.
