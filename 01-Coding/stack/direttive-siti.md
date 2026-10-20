@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 20/10/2026 — Nicola: «da telefono nella pagina eventi al posto di fare un muro lunghissimo di eventi mettili divisi per anno con un carosello animato in maniera particolare»
+
+Una lista lunga sul telefono non si mette in colonna: si divide per gruppi, per esempio per anno, e ogni gruppo scorre di lato in un carosello animato.
+
 ### 20/10/2026 — Nicola: «da telefono la navbar non va bene perche è appiccicata al titolo e comunque è scomoda una nav bar così da telefono»
 
 Sul telefono la barra con tre voci e un bottone non va bene: serve una barra compatta con il menu che si apre a parte, e spazio vero tra la barra e il titolo.
