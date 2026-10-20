@@ -16,7 +16,7 @@ deadline: TODO
 Bozza di sito vetrina da costruire in un'ora per Roberta Borsaro, che il 13/10/2026 ha risposto a Patrick su Instagram. Cliente: [[dogschoolpiacenza]].
 
 **Cartella**: `~/lavoro/dogschoolpiacenza-site` (repo privato `Nixo999/dogschoolpiacenza-site`)
-**Online**: <https://dogschoolpiacenza.netlify.app>, con i tre sbarramenti, è ancora il giro 1. Il giro 2 è sul ramo `giro2` e in anteprima su <https://6ad7391bc715f38ea9f811e9--dogschoolpiacenza.netlify.app> (20/10): si pubblica con `npm run build` e `netlify deploy --dir dist --prod` dopo il verdetto di Nicola, e il ramo va unito a `main`. Esiste un sito Wix gratuito, `robertaborsaro.wixsite.com/dogschoolpiacenza`, di cinque pagine. I domini `dogschoolpiacenza.it` e `.com` non rispondono (verifica del 10/10 fatta dal coordinatore).
+**Online**: <https://dogschoolpiacenza.netlify.app>, con i tre sbarramenti, è ancora il giro 1. Il giro 2 è sul ramo `giro2` e in anteprima su <https://6ad7444f9de06f5dfaa4f282--dogschoolpiacenza.netlify.app> (20/10): si pubblica con `npm run build` e `netlify deploy --dir dist --prod` dopo il verdetto di Nicola, e il ramo va unito a `main`. Esiste un sito Wix gratuito, `robertaborsaro.wixsite.com/dogschoolpiacenza`, di cinque pagine. I domini `dogschoolpiacenza.it` e `.com` non rispondono (verifica del 10/10 fatta dal coordinatore).
 
 ## Chi è
 
@@ -180,6 +180,10 @@ e find-skills ([[2026-10-20-prova-astro-react-bits]]).
   mezzo schermo (488 px a 400 di larghezza): nome, con chi e dove, le
   prossime date come blocchi di locandina, un bottone; il programma intero si
   apre a richiesta. Le tre regole sul telefono sono in [[direttive-siti]].
+  Dal suo iPhone, sulla foto di «Chi è Roberta» (Roberta col meticcio grigio,
+  ritagliata da una grafica a 440 px), Nicola: «questa foto da cambiare,
+  mettine una solo di un cane». Ora c'è Maiki da solo tra le margherite
+  (post `DIqG8u4Nha0`, 1080 px), il cane di cui parla il testo accanto.
 - **Misure**: 8/8, slop 0 con un avviso, testo 0. A 375 px la home è alta
   7.011 px, Eventi 7.940, Storia 4.820. Il carosello con il dito, lo snap su
   iOS e la motion su Safari non sono stati provati su un telefono vero.
