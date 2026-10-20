@@ -49,6 +49,8 @@ Dal 20/10/2026 è su <https://materia-rezzato.netlify.app> (inglese su `/en/`), 
 
 Nicola ha guardato il sito online e ha bocciato due cose: il disegno del tavolo in prospettiva (due linee a V con i cerchi) e la sequenza della giornata allo scroll, cioè il pin con il fondo che passa a notte e le foto che scendono dal festone. Restano le entrate leggere e le lampadine. Ha chiesto anche di riempire la pagina sul computer, che risultava vuota, e di sistemare le spaziature sul telefono. La frase esatta è in [[direttive-siti]]. Il secondo giro lo costruisce un operatore su Opus.
 
+Poi Nicola ha bocciato anche le luci dell'apertura e dell'hero e ha chiesto un effetto più forte preso da skill già pronte. Con `find-skills` sono state installate sul Mac di Nicola le skill ufficiali GreenSock `gsap-plugins` e `gsap-core` (da `npx skills add greensock/gsap-skills@…`, finiscono in `~/.agents/skills` con un link in `~/.claude/skills`; non sono nel vault, quindi sul Mac di Patrick non ci sono). La nuova apertura è la scritta MATERIA con la foto della tavolata dentro le lettere, che si ingrandisce fino a diventare l'hero a tutto schermo; poi SplitText sui titoli e ScrollSmoother con le foto a velocità diverse sul computer.
+
 ## Buchi da chiudere con la cliente
 
 - Telefono, WhatsApp, email e orari: l'unico contatto in pagina è il DM Instagram.
