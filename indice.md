@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **307 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **308 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -228,6 +228,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-10-16-siti-e-ricerca-giro-mattina]] — Per Patrick - giro del mattino del 16/10 (partito 18:48), siti 12 e ricerca 14 pubblicati sul banco; Instagram ha chiuso le letture alle 19:16 per le raffiche degli operatori
 - [[2026-10-17-siti-e-ricerca-giro-mattina]] — Per Patrick - 17/10 in due giri, siti 59 e ricerca 54 sul banco (il secondo dagli account simili via Brave); posta letta dopo 16 giorni, 4 lead caldi, 59 DM mai consegnati
 - [[2026-10-18-siti-e-ricerca-giro-mattina]] — Per Patrick - giro del mattino del 18/10, siti 42 e ricerca 47 sul banco (89 su 160); Instagram ha retto, le celle si sono chiuse per fonti; posta non letta
+- [[2026-10-20-posta-giro-mattina]] — Per Patrick - giro del 20/10, nessuna lista (banco a 228 righe); posta letta da Brave dopo tre giorni, 4 lead caldi con bozza in mano, 2 no, 2 DM non consegnati
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
