@@ -61,3 +61,5 @@ Poi Nicola ha bocciato anche le luci dell'apertura e dell'hero e ha chiesto un e
 ## Collegamenti
 
 [[sito-ngbarber]] · [[sito-fiftynine]] · [[sito-barbershop-snia]] · [[processo-siti]]
+
+**Nota del 20/10 sera (Trevis, sessione My Balance)**: il collegamento globale della Netlify CLI puntava a `materia-rezzato` da ogni cartella ed è stato tolto. Per ripubblicare: `netlify deploy --dir <cartella> --prod --site materia-rezzato` (vedi [[trappole]], sezione pubblicazione).

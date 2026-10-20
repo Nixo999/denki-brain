@@ -862,6 +862,7 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Git, account e pubblicazione
 
+- `[TRAPPOLA]` **Netlify CLI 27 su questo Mac salva il collegamento del progetto in `~/.netlify/state.json`, non nella cartella del sito**: `netlify link` da qualunque cartella sovrascrive un solo stato globale, e `netlify status` o `netlify deploy` in `mybalance-site` risultavano collegati a `materia-rezzato` (l'ultimo link fatto). Il 20/10 il `siteId` globale è stato tolto, quindi un deploy senza sito dichiarato si ferma. → **si pubblica sempre con `netlify deploy --dir dist --prod --site <nome-o-id del sito>`**, e si legge l'URL che la CLI stampa prima di dirlo fatto. ([[sito-mybalance]], 20/10)
 - **`netlify deploy --prod` resta fermo un minuto e mezzo su «Installing extensions · baseline»** (09/10/2026,
   [[sito-mitril-tattoo]]): non è piantato, ma sembra, e chi apre il link nel frattempo non trova niente. Il sito è
   statico → `netlify deploy --prod --no-build --dir <copia>` esce in pochi secondi. La copia si fa con `rsync` senza
