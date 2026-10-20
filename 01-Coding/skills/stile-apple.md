@@ -53,6 +53,15 @@ Due scelte vanno contro le app native, e sono volute:
 - `python3 controlla-apple.py --prova` trova i 15 errori di un esempio sbagliato
   e passa sulla skill stessa.
 
+## Usata su
+
+- **OperO e CO-OPERO**, 20/10/2026, prova solo in locale: worktree
+  `~/lavoro/opero-apple`, ramo `design/stile-apple`, mai pushato. Lo stile
+  e` entrato da token, classi globali e stringhe delle classi, senza
+  spostare niente. Il confronto prima/dopo sta in
+  `.claude/catture/confronto.html` del worktree. Riga nel
+  [[registro-interventi]].
+
 ## Cosa resta aperto
 
 - Se Safari regola da solo la spaziatura di SF con il font di sistema. Su
