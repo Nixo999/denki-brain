@@ -1,0 +1,522 @@
+/* stile-apple · apple.css
+   Token e componenti per interfacce web nello stile delle app Apple.
+   Ogni blocco dice da dove vengono i valori:
+     [HIG]    Human Interface Guidelines, lette dal JSON di developer.apple.com il 20/10/2026
+     [macOS]  colori NSColor misurati su macOS 26.6.2 il 20/10/2026
+     [apple]  fogli di stile di apple.com, letti il 20/10/2026
+     [nostra] scelta DenkiCode, dove Apple non pubblica il numero
+   I contrasti sono calcolati con la formula WCAG 2 (soglia 4,5:1 per il testo, 3:1 per i bordi).
+   Serve light-dark(): Safari 17.5, Chrome 123, Firefox 120.
+   Il tema segue il sistema; per forzarlo si mette data-theme="light|dark" su <html>
+   o su una sezione, e i token si adattano da soli. */
+
+:root {
+  color-scheme: light dark;
+
+  /* ---------- Font: quello di sistema, nessun file da caricare ----------
+     Su Mac e iPhone il browser mostra SF; altrove il font di sistema locale.
+     SF Pro non si può servire come font web: lo vieta la licenza Apple.
+     Niente letter-spacing a mano: il font di sistema applica da sé dimensione ottica e tracking. */
+  --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* ---------- Testo ----------
+     Apple usa grigi trasparenti che sul web scendono sotto 4,5:1 (iOS 3,44:1, macOS 3,95:1).
+     Qui ci sono gli equivalenti opachi di apple.com, che passano. */
+  --label: light-dark(#1d1d1f, #f5f5f7);   /* [apple] 16,8:1 su bianco, 15,6:1 su #1c1c1e */
+  --label-2: light-dark(#6e6e73, #98989d); /* [apple] 5,07:1 su bianco · [macOS] systemGray scuro, 5,93:1 su #1c1c1e */
+  --label-3: light-dark(#86868b, #6e6e73); /* solo disabilitati e decorazioni: 3,6:1 e 3,4:1 non bastano per leggere */
+  --link: light-dark(#0066cc, #2997ff);    /* [apple] 5,57:1 su bianco, 5,64:1 su #1c1c1e */
+
+  /* ---------- Sfondi ----------
+     page: il fondo dietro i gruppi; surface: card, liste, tabelle; elevated: menu, popover, sheet. */
+  --bg-page: light-dark(#f5f5f7, #000000);     /* [apple] fascia chiara · [HIG] systemGroupedBackground scuro */
+  --bg-surface: light-dark(#ffffff, #1c1c1e);  /* [HIG] secondarySystemGroupedBackground */
+  --bg-elevated: light-dark(#ffffff, #2c2c2e); /* [HIG] sfondo elevato scuro */
+
+  /* ---------- Riempimenti dei controlli [HIG iOS systemFill … quaternarySystemFill] ---------- */
+  --fill-1: light-dark(rgb(120 120 128 / .20), rgb(120 120 128 / .36));
+  --fill-2: light-dark(rgb(120 120 128 / .16), rgb(120 120 128 / .32));
+  --fill-3: light-dark(rgb(118 118 128 / .12), rgb(118 118 128 / .24));
+  --fill-4: light-dark(rgb(116 116 128 / .08), rgb(118 118 128 / .18));
+
+  /* ---------- Linee ---------- */
+  --separator: light-dark(rgb(0 0 0 / .1), rgb(255 255 255 / .1)); /* [macOS] separatorColor */
+  --border-input: light-dark(#86868b, #7c7c80); /* [apple] bordo dei campi, 3,6:1 · [HIG] gray2 ad alto contrasto, 4,1:1 */
+
+  /* ---------- Accento e selezione ---------- */
+  --accent: #0071e3;        /* [apple] sfondo del bottone primario: testo bianco 4,70:1 */
+  --accent-hover: #0076df;  /* [apple] */
+  --accent-active: #006edb; /* [apple] */
+  --on-accent: #ffffff;
+  --selection: light-dark(#0064e1, #0059d1);       /* [macOS] selectedContentBackgroundColor, testo bianco 5,4:1 e 6,3:1 */
+  --selection-muted: light-dark(#dcdcdc, #464646); /* [macOS] selezione in una finestra non attiva */
+  --selection-text: light-dark(#b3d7ff, #3f638b);  /* [macOS] selectedTextBackgroundColor */
+  --focus: light-dark(#0071e3, #2997ff);           /* [apple] anello di focus, 4,7:1 e 5,6:1 */
+
+  /* ---------- Colori di sistema [HIG, valori del 9 giugno 2025] ----------
+     Per riempimenti, icone, pallini di stato e grafici. Come testo su bianco non passano. */
+  --red: light-dark(#ff383c, #ff4245);
+  --orange: light-dark(#ff8d28, #ff9230);
+  --yellow: light-dark(#ffcc00, #ffd600);
+  --green: light-dark(#34c759, #30d158);
+  --mint: light-dark(#00c8b3, #00dac3);
+  --teal: light-dark(#00c3d0, #00d2e0);
+  --cyan: light-dark(#00c0e8, #3cd3fe);
+  --blue: light-dark(#0088ff, #0091ff);
+  --indigo: light-dark(#6155f5, #6d7cff);
+  --purple: light-dark(#cb30e0, #db34f2);
+  --pink: light-dark(#ff2d55, #ff375f);
+  --brown: light-dark(#ac7f5e, #b78a66);
+  --gray: light-dark(#8e8e93, #8e8e93);
+
+  /* Gli stessi colori quando sono TESTO: colonna «contrasto aumentato» delle HIG.
+     In chiaro Apple li ha tarati tutti fra 4,54:1 e 6,1:1 su bianco (su #f5f5f7 scendono a 4,2:1:
+     il testo colorato va sulle superfici bianche). In scuro restano sopra 4,5:1 anche su #2c2c2e. */
+  --red-text: light-dark(#e9152d, #ff6165);
+  --orange-text: light-dark(#c55300, #ffa056);
+  --yellow-text: light-dark(#a16a00, #fedf43);
+  --green-text: light-dark(#008932, #4ad968);
+  --mint-text: light-dark(#008575, #54dfcb);
+  --teal-text: light-dark(#008198, #3bddec);
+  --cyan-text: light-dark(#007eae, #6dd9ff);
+  --blue-text: light-dark(#1e6ef4, #5cb8ff);
+  --indigo-text: light-dark(#564ade, #a7aaff);
+  --purple-text: light-dark(#b02fc2, #ea8dff);
+  --pink-text: light-dark(#e7124d, #ff8ac4);
+  --brown-text: light-dark(#956d51, #dba679);
+
+  /* ---------- Materiale (il vetro di apple.com) ----------
+     Il Liquid Glass vero, con la rifrazione, sul web non si fa: questo è il materiale della barra di apple.com. */
+  --glass-bg: light-dark(rgb(250 250 252 / .8), rgb(22 22 23 / .8)); /* [apple] barra globale; scuro: [apple] barra locale, alfa [nostra] */
+  --glass-solid: light-dark(#fafafc, #161617);                        /* ripiego senza vetro */
+  --glass-filter: saturate(180%) blur(20px);                          /* [apple] */
+
+  /* ---------- Forme [nostra, con la regola concentrica delle HIG] ----------
+     Un angolo dentro un altro: raggio interno = raggio esterno meno lo spazio fra i due. */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 18px;   /* [apple] tile */
+  --radius-xl: 28px;   /* [apple] card e bento */
+  --radius-full: 980px; /* [apple] capsula */
+
+  /* ---------- Spazi [nostra, base 4] ---------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* ---------- Ombre: morbide, alfa al massimo 0,22 in chiaro [apple] ---------- */
+  --shadow-pop: 0 0 0 .5px light-dark(rgb(0 0 0 / .1), rgb(255 255 255 / .12)),
+                0 8px 28px light-dark(rgb(0 0 0 / .14), rgb(0 0 0 / .5));
+  --shadow-sheet: 0 0 0 .5px light-dark(rgb(0 0 0 / .08), rgb(255 255 255 / .1)),
+                  0 24px 64px light-dark(rgb(0 0 0 / .22), rgb(0 0 0 / .6));
+  --shadow-knob: 0 1px 3px rgb(0 0 0 / .2), 0 0 0 .5px rgb(0 0 0 / .06);
+
+  /* ---------- Movimento ----------
+     Le HIG non pubblicano durate in millisecondi: si usano i valori di SwiftUI e di apple.com. */
+  --ease: cubic-bezier(.4, 0, .6, 1);  /* [apple] la curva più usata su apple.com */
+  --ease-out: cubic-bezier(0, 0, .5, 1); /* [apple] hover delle card */
+  /* [HIG] la molla predefinita di SwiftUI: response 0,55 e smorzamento 1, cioè senza rimbalzo. Campionata su 600 ms. */
+  --spring: linear(0, .077, .233, .398, .545, .666, .759, .829, .88, .916, .942, .96, .973, .982, .988, 1);
+  --dur-1: 150ms;      /* colori di hover e pressione */
+  --dur-2: 250ms;      /* switch, controlli segmentati, popover */
+  --dur-3: 350ms;      /* [HIG] durata predefinita di easeInOut in SwiftUI */
+  --dur-spring: 600ms;
+  --enter-y: 16px;     /* spostamento di sheet e pannelli in entrata; 0 con Riduci movimento */
+  --enter-scale: .97;
+
+  /* ---------- Misure: telefono e tablet = iOS [HIG, Dynamic Type «Large»] ---------- */
+  --t-large-title: 700 34px/41px var(--font); /* peso enfatizzato: è il titolo delle barre */
+  --t-title-1: 400 28px/34px var(--font);
+  --t-title-2: 400 22px/28px var(--font);
+  --t-title-3: 400 20px/25px var(--font);
+  --t-headline: 600 17px/22px var(--font);
+  --t-body: 400 17px/22px var(--font);
+  --t-callout: 400 16px/21px var(--font);
+  --t-subhead: 400 15px/20px var(--font);
+  --t-footnote: 400 13px/18px var(--font);
+  --t-caption-1: 400 12px/16px var(--font);
+  --t-caption-2: 400 11px/13px var(--font);
+  --control-h: 44px;     /* [HIG] bersaglio predefinito iOS 44×44 */
+  --control-h-sm: 36px;  /* [nostra] controlli segmentati, bottoni piccoli */
+  --control-h-lg: 50px;  /* [nostra] capsula grande */
+  --row-h: 44px;
+  --radius-control: var(--radius-full); /* [HIG] su telefono i controlli grandi sono capsule */
+  --radius-field: var(--radius-md);
+  --icon: 22px;
+  --pad-x: 16px;         /* [nostra] margine laterale */
+  --switch-w: 51px;
+  --switch-h: 31px;
+}
+
+/* ---------- Computer con mouse = macOS [HIG] ----------
+   Corpo a 13 px e controlli da 28 px, come le app del Mac. */
+@media (pointer: fine) and (min-width: 1024px) {
+  :root {
+    --t-large-title: 700 26px/32px var(--font);
+    --t-title-1: 400 22px/26px var(--font);
+    --t-title-2: 400 17px/22px var(--font);
+    --t-title-3: 400 15px/20px var(--font);
+    --t-headline: 700 13px/16px var(--font);
+    --t-body: 400 13px/16px var(--font);
+    --t-callout: 400 12px/15px var(--font);
+    --t-subhead: 400 11px/14px var(--font);
+    --t-footnote: 400 10px/13px var(--font);
+    --t-caption-1: 400 10px/13px var(--font);
+    --t-caption-2: 500 10px/13px var(--font);
+    --control-h: 28px;    /* [HIG] bersaglio predefinito macOS 28×28 */
+    --control-h-sm: 24px;
+    --control-h-lg: 36px;
+    --row-h: 28px;
+    --radius-control: 8px; /* [HIG] su Mac i controlli piccoli e medi sono rettangoli arrotondati */
+    --radius-field: var(--radius-sm);
+    --icon: 16px;
+    --pad-x: 20px;
+    --switch-w: 38px;     /* [nostra] */
+    --switch-h: 22px;
+  }
+}
+
+:root[data-theme="light"], .theme-light { color-scheme: light; }
+:root[data-theme="dark"], .theme-dark { color-scheme: dark; }
+
+/* ---------- Accessibilità: le preferenze di sistema ---------- */
+@media (prefers-contrast: more) {
+  :root {
+    --label-2: light-dark(#424245, #c7c7cc); /* [nostra] */
+    --label-3: light-dark(#6e6e73, #98989d);
+    --separator: light-dark(rgb(0 0 0 / .3), rgb(255 255 255 / .3));
+    --border-input: light-dark(#6e6e73, #aeaeb2);
+    --fill-1: light-dark(rgb(120 120 128 / .28), rgb(120 120 128 / .44)); /* [HIG] */
+    --fill-2: light-dark(rgb(120 120 128 / .24), rgb(120 120 128 / .40));
+    --fill-3: light-dark(rgb(118 118 128 / .20), rgb(118 118 128 / .32));
+    --fill-4: light-dark(rgb(116 116 128 / .16), rgb(118 118 128 / .26));
+    --red: var(--red-text); --orange: var(--orange-text); --yellow: var(--yellow-text);
+    --green: var(--green-text); --mint: var(--mint-text); --teal: var(--teal-text);
+    --cyan: var(--cyan-text); --blue: var(--blue-text); --indigo: var(--indigo-text);
+    --purple: var(--purple-text); --pink: var(--pink-text); --brown: var(--brown-text);
+    --glass-bg: var(--glass-solid);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --enter-y: 0px; --enter-scale: 1; --spring: ease; --dur-spring: var(--dur-2); }
+}
+
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; } /* i componenti con display proprio non devono vincere su hidden */
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font: var(--t-body);
+  color: var(--label);
+  background: var(--bg-page);
+  -webkit-font-smoothing: antialiased;
+}
+.theme-light, .theme-dark { color: var(--label); }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+::selection { background: var(--selection-text); }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.num { font-variant-numeric: tabular-nums; }
+
+.t-large-title { font: var(--t-large-title); }
+.t-title-1 { font: var(--t-title-1); }
+.t-title-2 { font: var(--t-title-2); }
+.t-title-3 { font: var(--t-title-3); }
+.t-headline { font: var(--t-headline); }
+.t-body { font: var(--t-body); }
+.t-callout { font: var(--t-callout); }
+.t-subhead { font: var(--t-subhead); }
+.t-footnote { font: var(--t-footnote); }
+.t-caption-1 { font: var(--t-caption-1); }
+.t-caption-2 { font: var(--t-caption-2); }
+.label-2 { color: var(--label-2); }
+
+/* Icone: un set solo (Lucide), tratto uniforme, dimensione legata al testo. */
+.icon {
+  width: var(--icon); height: var(--icon); flex: none;
+  fill: none; stroke: currentColor; stroke-width: 1.75;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* ---------- Vetro: solo su barre, menu, popover, sheet. Mai su card, righe, sezioni. ---------- */
+.glass { background: var(--glass-solid); }
+@supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass {
+    background: var(--glass-bg);
+    -webkit-backdrop-filter: var(--glass-filter);
+    backdrop-filter: var(--glass-filter);
+  }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .glass { background: var(--glass-solid); -webkit-backdrop-filter: none; backdrop-filter: none; }
+}
+@media (prefers-contrast: more) {
+  .glass { -webkit-backdrop-filter: none; backdrop-filter: none; }
+}
+
+/* ---------- Bottoni ----------
+   Uno o due primari per vista [HIG]. La pressione cambia colore, non scala [apple]. */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  height: var(--control-h); padding: 0 calc(var(--control-h) / 2.4);
+  border: 0; border-radius: var(--radius-control);
+  font: var(--t-body); color: var(--label); background: var(--fill-2);
+  cursor: pointer; white-space: nowrap; text-decoration: none;
+  transition: background-color var(--dur-1) var(--ease), opacity var(--dur-1) var(--ease);
+}
+.btn:hover { background: var(--fill-1); text-decoration: none; }
+.btn:active { opacity: .7; }
+.btn:disabled, .btn[aria-disabled="true"] { opacity: .4; cursor: default; pointer-events: none; }
+.btn-primary { background: var(--accent); color: var(--on-accent); }
+.btn-primary:hover { background: var(--accent-hover); }
+.btn-primary:active { background: var(--accent-active); opacity: 1; }
+.btn-plain { background: transparent; color: var(--link); }
+.btn-plain:hover { background: var(--fill-4); }
+.btn-destructive { color: var(--red-text); }
+.btn-lg { height: var(--control-h-lg); padding: 0 22px; border-radius: var(--radius-full); }
+.btn-sm { height: var(--control-h-sm); padding: 0 12px; font: var(--t-subhead); }
+.btn-icon { width: var(--control-h); padding: 0; background: transparent; color: var(--label-2); border-radius: var(--radius-full); }
+.btn-icon:hover { background: var(--fill-3); color: var(--label); }
+
+/* ---------- Campi ---------- */
+.field {
+  display: block; width: 100%;
+  height: var(--control-h); padding: 0 10px;
+  font: var(--t-body); color: var(--label);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-input); border-radius: var(--radius-field);
+}
+textarea.field { height: auto; min-height: calc(var(--control-h) * 3); padding: 8px 10px; resize: vertical; }
+select.field {
+  appearance: none; padding-right: 28px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238e8e93' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m7 15 5 5 5-5M7 9l5-5 5 5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 8px center; background-size: 14px;
+}
+.field::placeholder { color: var(--label-2); } /* [macOS] il segnaposto ha il colore del testo secondario */
+.field:focus { outline: 3px solid color-mix(in srgb, var(--focus) 40%, transparent); outline-offset: 0; border-color: var(--focus); }
+.field[aria-invalid="true"] { border-color: var(--red-text); }
+.field-label { display: block; margin-bottom: 6px; font: var(--t-subhead); color: var(--label-2); }
+.field-error { margin-top: 6px; font: var(--t-footnote); color: var(--red-text); }
+
+.search { position: relative; display: flex; align-items: center; }
+.search .icon { position: absolute; left: 9px; color: var(--label-2); pointer-events: none; }
+.search input {
+  width: 100%; height: var(--control-h-sm); padding: 0 12px 0 calc(var(--icon) + 14px);
+  font: var(--t-body); color: var(--label);
+  background: var(--fill-4); border: 0; border-radius: var(--radius-full);
+}
+.search input::placeholder { color: var(--label-2); }
+.search input:focus { outline: 3px solid color-mix(in srgb, var(--focus) 40%, transparent); outline-offset: 0; }
+
+/* ---------- Switch: <input type="checkbox" role="switch" class="switch"> ----------
+   Su telefono verde [HIG iOS], su Mac il colore d'accento [HIG macOS]. */
+.switch {
+  appearance: none; position: relative; flex: none; margin: 0;
+  width: var(--switch-w); height: var(--switch-h);
+  border-radius: var(--radius-full); background: var(--fill-2);
+  cursor: pointer; transition: background-color var(--dur-2) var(--ease);
+}
+.switch::after {
+  content: ""; position: absolute; top: 2px; left: 2px;
+  width: calc(var(--switch-h) - 4px); height: calc(var(--switch-h) - 4px);
+  border-radius: 50%; background: #fff; box-shadow: var(--shadow-knob);
+  transition: transform var(--dur-2) var(--ease);
+}
+.switch:checked { background: var(--green); }
+.switch:checked::after { transform: translateX(calc(var(--switch-w) - var(--switch-h))); }
+.switch:disabled { opacity: .4; cursor: default; }
+@media (pointer: fine) and (min-width: 1024px) {
+  .switch:checked { background: var(--accent); }
+}
+
+/* ---------- Controllo segmentato: bottoni con aria-pressed ----------
+   Segmenti larghi uguali, solo testo o solo icone, da 2 a 5-7 [HIG]. */
+.segmented {
+  display: inline-grid; grid-auto-flow: column; grid-auto-columns: 1fr;
+  padding: 2px; gap: 2px; border-radius: var(--radius-control); background: var(--fill-3);
+}
+.segmented > button {
+  height: calc(var(--control-h-sm) - 4px); padding: 0 12px;
+  font: 400 13px/1 var(--font); color: var(--label); /* 13 pt su iPhone e su Mac */
+  background: transparent; border: 0; border-radius: calc(var(--radius-control) - 2px);
+  cursor: pointer; transition: background-color var(--dur-2) var(--ease);
+}
+.segmented > button[aria-pressed="true"] {
+  font-weight: 600;
+  background: light-dark(#ffffff, #636366); /* [HIG] segmento scelto: bianco, in scuro gray2 */
+  box-shadow: 0 1px 3px rgb(0 0 0 / .12), 0 0 0 .5px rgb(0 0 0 / .04);
+}
+
+/* ---------- Liste raggruppate (le Impostazioni di iPhone e Mac) ----------
+   Titolo del gruppo in maiuscolo/minuscolo, non tutto maiuscolo [HIG, da iOS 26]. */
+.group { background: var(--bg-surface); border-radius: var(--radius-lg); overflow: hidden; }
+.group-title { margin: 0; padding: 0 var(--pad-x) 6px; font: var(--t-footnote); color: var(--label-2); }
+.group-footer { margin: 0; padding: 6px var(--pad-x) 0; font: var(--t-footnote); color: var(--label-2); }
+.row {
+  position: relative; display: flex; align-items: center; gap: var(--space-3);
+  min-height: var(--row-h); padding: 6px var(--pad-x);
+  color: var(--label); text-decoration: none;
+}
+.row + .row::before, li + li > .row::before {
+  content: ""; position: absolute; top: 0; right: 0;
+  left: var(--sep-inset, var(--pad-x)); height: 1px; background: var(--separator);
+}
+.row .value { margin-left: auto; color: var(--label-2); text-align: right; }
+.row .chevron { color: var(--label-3); }
+a.row:hover, button.row:hover { background: var(--fill-4); text-decoration: none; }
+button.row { width: 100%; border: 0; background: none; font: inherit; text-align: left; cursor: pointer; }
+.row[aria-current="true"], .row[aria-selected="true"] {
+  background: var(--selection); color: #fff;
+  --label: #fff; --label-2: rgb(255 255 255 / .9); --label-3: rgb(255 255 255 / .6); /* testo bianco; il grigio al 90 % fa 4,7:1 sul blu */
+}
+
+/* ---------- Sidebar ----------
+   Icone nel colore d'accento, selezione grigia, al massimo due livelli [HIG]. */
+.sidebar { display: flex; flex-direction: column; gap: 2px; padding: var(--space-3) var(--space-2); }
+.sidebar-title { margin: var(--space-4) var(--space-2) var(--space-1); font: var(--t-caption-1); font-weight: 600; color: var(--label-2); }
+.nav-item {
+  display: flex; align-items: center; gap: var(--space-2);
+  min-height: var(--row-h); padding: 0 var(--space-2); border-radius: var(--radius-sm);
+  color: var(--label); text-decoration: none;
+}
+.nav-item .icon { color: var(--accent); }
+.nav-item:hover { background: var(--fill-4); text-decoration: none; }
+.nav-item[aria-current="page"] { background: var(--fill-2); --label-2: var(--label); } /* sul grigio il secondario scende a 3,9:1 */
+.nav-item .count { margin-left: auto; font: var(--t-subhead); color: var(--label-2); }
+
+/* ---------- Barra degli strumenti ----------
+   Titolo a sinistra, azioni a destra, una sola azione primaria, al massimo tre gruppi [HIG]. */
+.toolbar {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; align-items: center; gap: var(--space-2);
+  min-height: calc(var(--control-h) + 16px); padding: 8px var(--pad-x);
+  box-shadow: 0 1px 0 var(--separator);
+}
+.toolbar-title { margin: 0; font: var(--t-headline); }
+.toolbar .spacer { flex: 1; }
+
+/* ---------- Tabelle (macOS): intestazione piccola, righe alternate, selezione blu ---------- */
+.table { width: 100%; border-collapse: separate; border-spacing: 0; font: var(--t-body); }
+.table th {
+  position: sticky; top: 0; height: var(--row-h); padding: 0 var(--space-2);
+  font: var(--t-subhead); color: var(--label-2); text-align: left;
+  background: var(--bg-surface); border-bottom: 1px solid var(--separator);
+}
+.table td { height: var(--row-h); padding: 0 var(--space-2); }
+.table tbody tr:nth-child(even) td { background: light-dark(#f4f5f5, rgb(255 255 255 / .047)); } /* [macOS] */
+.table tbody tr[aria-selected="true"] td { background: var(--selection); color: #fff; }
+.table .num, .table th.num { text-align: right; }
+.table th[aria-sort]::after { content: " ⌃"; } /* il carattere ⌃ è nel font di sistema */
+.table th[aria-sort="descending"]::after { content: " ⌄"; }
+
+/* ---------- Stato: pallino colorato + testo. Mai solo il colore [HIG]. ---------- */
+.status { display: inline-flex; align-items: center; gap: 6px; }
+.status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--dot, var(--gray)); }
+.status[data-tone="green"] { --dot: var(--green); }
+.status[data-tone="orange"] { --dot: var(--orange); }
+.status[data-tone="red"] { --dot: var(--red); }
+.status[data-tone="blue"] { --dot: var(--blue); }
+.badge {
+  display: inline-grid; place-items: center; min-width: 18px; height: 18px; padding: 0 5px;
+  border-radius: var(--radius-full); font: 600 11px/1 var(--font); color: #fff;
+  background: light-dark(#e9152d, #d70015); /* [HIG] rosso ad alto contrasto: testo bianco 4,6:1 e 5,4:1 */
+}
+
+/* ---------- Menu e popover: <div popover class="menu"> ----------
+   Sul Mac la voce sotto il puntatore prende il colore di selezione con testo bianco. */
+.menu {
+  inset: auto; /* il popover si posiziona con top e left */
+  min-width: 200px; margin: 0; padding: 5px;
+  color: var(--label); background: var(--bg-elevated);
+  border: 0; border-radius: 12px; box-shadow: var(--shadow-pop);
+}
+.menu-item {
+  display: flex; align-items: center; gap: var(--space-2); width: 100%;
+  min-height: calc(var(--row-h) - 4px); padding: 0 10px; border: 0; border-radius: 7px; /* 12 − 5: concentrico */
+  font: var(--t-body); color: inherit; background: none; text-align: left; cursor: default;
+}
+.menu-item:hover, .menu-item:focus-visible { background: var(--selection); color: #fff; outline: 0; }
+.menu-item.destructive { color: var(--red-text); }
+.menu-item.destructive:hover, .menu-item.destructive:focus-visible { background: var(--red-text); color: #fff; }
+.menu-item kbd { margin-left: auto; font: inherit; color: var(--label-2); }
+.menu-item:hover kbd { color: inherit; }
+.menu-sep { height: 1px; margin: 5px 10px; background: var(--separator); }
+
+/* ---------- Sheet e avvisi: <dialog class="sheet|alert"> ----------
+   Una sheet alla volta, sempre con Annulla accanto a Salva o Fine [HIG]. */
+dialog.sheet, dialog.alert {
+  padding: 0; border: 0; color: var(--label); background: var(--bg-elevated);
+  box-shadow: var(--shadow-sheet);
+}
+dialog.sheet[open], dialog.alert[open] { animation: enter var(--dur-spring) var(--spring); }
+dialog.sheet::backdrop, dialog.alert::backdrop { background: rgb(0 0 0 / .35); animation: fade var(--dur-3) var(--ease); }
+dialog.sheet { width: min(560px, 100% - 32px); max-height: min(720px, 100% - 64px); border-radius: var(--radius-xl); }
+.sheet-header { display: flex; align-items: center; gap: var(--space-2); padding: var(--space-4) var(--space-5) var(--space-2); }
+.sheet-header h2 { margin: 0; font: var(--t-headline); }
+.sheet-body { padding: var(--space-2) var(--space-5) var(--space-4); overflow: auto; }
+.sheet-footer { display: flex; justify-content: flex-end; gap: var(--space-2); padding: var(--space-3) var(--space-5) var(--space-5); }
+dialog.alert { width: min(300px, 100% - 32px); padding: var(--space-5); border-radius: var(--radius-lg); }
+.alert h2 { margin: 0 0 var(--space-2); font: var(--t-headline); }
+.alert p { margin: 0 0 var(--space-4); font: var(--t-subhead); color: var(--label-2); }
+.alert .actions { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: var(--space-2); }
+.alert .actions .btn { width: 100%; }
+@media not all and (pointer: fine), (max-width: 1023.98px) {
+  /* Su telefono la sheet sale dal basso, con la maniglia. */
+  dialog.sheet {
+    width: 100%; max-width: 100%; margin: auto 0 0; max-height: calc(100% - 24px);
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  dialog.sheet::before {
+    content: ""; display: block; width: 36px; height: 5px; margin: 6px auto 0;
+    border-radius: 3px; background: var(--fill-1);
+  }
+  .alert .actions { grid-auto-flow: row; }
+}
+@keyframes enter { from { opacity: 0; transform: translateY(var(--enter-y)) scale(var(--enter-scale)); } }
+@keyframes fade { from { opacity: 0; } }
+
+/* ---------- Stato vuoto: simbolo, titolo, una riga, un'azione ---------- */
+.empty {
+  display: grid; justify-items: center; gap: var(--space-2);
+  max-width: 360px; margin: 0 auto; padding: var(--space-12) var(--space-4); text-align: center;
+}
+.empty .icon { width: 40px; height: 40px; stroke-width: 1.5; color: var(--label-2); }
+.empty h2 { margin: var(--space-2) 0 0; font: var(--t-title-3); font-weight: 600; }
+.empty p { margin: 0 0 var(--space-2); color: var(--label-2); }
+
+/* ---------- Caricamento: scheletro della stessa forma del contenuto ---------- */
+.skeleton { border-radius: var(--radius-xs); background: var(--fill-3); animation: pulse 1.4s var(--ease) infinite; }
+@keyframes pulse { 50% { opacity: .5; } }
+@media (prefers-reduced-motion: reduce) { .skeleton { animation: none; } }
+
+/* ---------- Tab bar (solo telefono): capsula di vetro che galleggia in basso [HIG iOS 26] ---------- */
+.tabbar {
+  position: fixed; left: 50%; bottom: calc(12px + env(safe-area-inset-bottom)); z-index: 20;
+  transform: translateX(-50%);
+  display: flex; gap: 2px; padding: 4px; border-radius: var(--radius-full);
+  box-shadow: var(--shadow-pop);
+}
+.tabbar a {
+  display: grid; justify-items: center; gap: 1px; min-width: 64px; padding: 6px 10px 5px;
+  border-radius: var(--radius-full); font: var(--t-caption-2); font-weight: 500;
+  color: var(--label); text-decoration: none;
+}
+.tabbar a[aria-current="page"] { color: var(--link); background: var(--fill-3); }
+@media (pointer: fine) and (min-width: 1024px) { .tabbar { display: none; } }
+
+/* ---------- Colori forzati (Windows ad alto contrasto) ---------- */
+@media (forced-colors: active) {
+  .glass, .menu, dialog.sheet, dialog.alert, .tabbar { background: Canvas; border: 1px solid CanvasText; box-shadow: none; }
+  .btn, .segmented > button, .switch { border: 1px solid ButtonText; }
+  .switch::after { background: ButtonText; }
+}

@@ -1,7 +1,7 @@
 ---
 riga: Quattro skill di design sono installate a livello di account (~/.claude/skills/), quindi valgono in ogni cartella - OperO, DenkiShift, cococa...
 type: area
-updated: 2026-09-06
+updated: 2026-10-20
 source: claude
 tags: [skills, design, frontend]
 ---
@@ -28,6 +28,7 @@ costava di più. Dettaglio in [[2026-09-06-mac-nicola-in-lavoro]].
 | `emilkowalski-motion` | `github.com/nexu-io/open-design`, cartella `skills/` |
 | `frontend-design`, `ui-ux-pro-max` | skill di account, arrivano da sole |
 | `processo-siti` | **nessuno**: scritta da Nicola, vive solo sul PC Windows |
+| `stile-apple` | **il vault**: `.claude/skills/stile-apple/`, si ricopia in `~/.claude/skills/` ([[stile-apple]]) |
 
 ## La tabella che serve
 
@@ -39,6 +40,7 @@ costava di più. Dettaglio in [[2026-09-06-mac-nicola-in-lavoro]].
 | Un'interfaccia **che esiste già** e va migliorata, auditata, resa accessibile | `impeccable` | La più grossa (133 file), ha **agenti e script** suoi, ed è l'unica pensata per l'iterazione dal vivo nel browser |
 | **Grafici e cruscotti** | `dataviz` | Sceglie la forma prima del colore, e ha un validatore della palette |
 | Una pagina pubblicata su claude.ai | `artifact-design` | È la skill degli Artifact, non dei siti |
+| Uno **stile Apple** chiesto apposta, su un'app o su una pagina prodotto | `stile-apple` | Token verificati sulle linee guida Apple e su apple.com, componenti, vetro con i ripieghi, revisione e script di controllo ([[stile-apple]]) |
 
 ## Per i nostri due prodotti
 
@@ -81,4 +83,4 @@ prima che serva davvero.
 
 ## Collegamenti
 
-[[skills]] · [[opero]] · [[denkishift]] · [[cococat]] · [[stack]]
+[[skills]] · [[stile-apple]] · [[opero]] · [[denkishift]] · [[cococat]] · [[stack]]

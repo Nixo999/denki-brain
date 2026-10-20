@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Clienti</title>
+<!-- Esempio della skill stile-apple: una schermata di gestionale fatta solo con apple.css.
+     Si apre direttamente nel browser. Le icone sono di Lucide (ISC, lucide-static 1.60.0). -->
+<link rel="stylesheet" href="apple.css">
+<style>
+  /* Solo l'impaginazione di questa pagina: tutto il resto viene da apple.css. */
+  .app { display: grid; grid-template-columns: 232px 340px 1fr; height: 100dvh; }
+  .app > aside { overflow: auto; border-right: 1px solid var(--separator); }
+  .list-pane { display: flex; flex-direction: column; min-height: 0; background: var(--bg-surface); border-right: 1px solid var(--separator); }
+  .list-head { padding: var(--space-4) var(--pad-x) var(--space-3); display: grid; gap: var(--space-3); }
+  .list-head .top { display: flex; align-items: center; justify-content: space-between; }
+  .list-head h1 { margin: 0; font: var(--t-large-title); }
+  .list { margin: 0; padding: 0 var(--space-2) var(--space-4); list-style: none; overflow: auto; }
+  .list .row { border-radius: var(--radius-sm); --sep-inset: var(--space-2); }
+  .list .row .who { display: grid; min-width: 0; }
+  .list .row .who span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .list .row .when { align-self: start; margin-left: auto; font: var(--t-footnote); color: var(--label-2); }
+  .detail-pane { overflow: auto; }
+  .detail { max-width: 640px; margin: 0 auto; padding: var(--space-6) var(--pad-x) var(--space-12); display: grid; gap: var(--space-6); }
+  .person { display: flex; align-items: center; gap: var(--space-4); }
+  .person h2 { margin: 0; font: var(--t-title-1); font-weight: 600; }
+  .monogram { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; flex: none;
+              font: 600 24px/1 var(--font); color: #fff; background: linear-gradient(#8e939c, #6f737c); }
+  .form { display: grid; gap: var(--space-4); }
+  .form .pair { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); }
+  .back { display: none; }
+  @media not all and (pointer: fine), (max-width: 1023.98px) {
+    .app { display: block; height: auto; }
+    .app > aside, .detail-pane { display: none; }
+    .list-pane { min-height: 100dvh; }
+    .app.show-detail .list-pane { display: none; }
+    .app.show-detail .detail-pane { display: block; }
+    .back { display: inline-flex; padding-left: 4px; }
+    .list { padding-bottom: 104px; }
+    .detail { padding-bottom: 120px; }
+  }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-archive" viewBox="0 0 24 24"><rect width="20" height="5" x="2" y="3" rx="1"/><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/></symbol>
+<symbol id="i-calendar" viewBox="0 0 24 24"><path d="M8 2v3"/><path d="M16 2v3"/><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></symbol>
+<symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+<symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+<symbol id="i-ellipsis" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></symbol>
+<symbol id="i-file-text" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></symbol>
+<symbol id="i-settings" viewBox="0 0 24 24"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-share" viewBox="0 0 24 24"><path d="M12 2v13"/><path d="m16 6-4-4-4 4"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/></symbol>
+<symbol id="i-square-pen" viewBox="0 0 24 24"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"/></symbol>
+<symbol id="i-trash-2" viewBox="0 0 24 24"><path d="M10 11v6"/><path d="M14 11v6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></symbol>
+</svg>
+
+<div class="app" id="app">
+  <aside>
+    <nav class="sidebar" aria-label="Sezioni">
+      <p class="sidebar-title">Gestione</p>
+      <a class="nav-item" href="#" aria-current="page"><svg class="icon"><use href="#i-users"/></svg>Clienti<span class="count num">8</span></a>
+      <a class="nav-item" href="#"><svg class="icon"><use href="#i-calendar"/></svg>Appuntamenti<span class="count num">23</span></a>
+      <a class="nav-item" href="#"><svg class="icon"><use href="#i-file-text"/></svg>Preventivi</a>
+      <p class="sidebar-title">Altro</p>
+      <a class="nav-item" href="#"><svg class="icon"><use href="#i-archive"/></svg>Archivio</a>
+      <a class="nav-item" href="#"><svg class="icon"><use href="#i-settings"/></svg>Impostazioni</a>
+    </nav>
+  </aside>
+
+  <section class="list-pane" aria-label="Elenco clienti">
+    <div class="list-head">
+      <div class="top">
+        <h1>Clienti</h1>
+        <button class="btn btn-icon" type="button" aria-label="Nuovo cliente" onclick="nuovo.showModal()"><svg class="icon"><use href="#i-plus"/></svg></button>
+      </div>
+      <label class="search"><svg class="icon"><use href="#i-search"/></svg>
+        <input id="cerca" type="search" placeholder="Cerca per nome o email" aria-label="Cerca clienti"></label>
+      <div class="segmented" role="group" aria-label="Filtro">
+        <button type="button" aria-pressed="true" data-f="tutti">Tutti</button>
+        <button type="button" aria-pressed="false" data-f="attivo">Attivi</button>
+        <button type="button" aria-pressed="false" data-f="archiviato">Archiviati</button>
+      </div>
+    </div>
+    <ul class="list" id="lista"></ul>
+    <div class="empty" id="vuoto" hidden>
+      <svg class="icon"><use href="#i-archive"/></svg>
+      <h2>Nessun cliente archiviato</h2>
+      <p>Quando archivi un cliente lo trovi qui, con tutti i suoi appuntamenti.</p>
+      <button class="btn" type="button" onclick="filtra('tutti')">Mostra tutti</button>
+    </div>
+  </section>
+
+  <section class="detail-pane" aria-label="Scheda cliente">
+    <header class="toolbar glass">
+      <button class="btn btn-plain back" type="button" onclick="app.classList.remove('show-detail')"><svg class="icon"><use href="#i-chevron-left"/></svg>Clienti</button>
+      <span class="spacer"></span>
+      <button class="btn" type="button"><svg class="icon"><use href="#i-square-pen"/></svg>Modifica</button>
+      <button class="btn btn-icon" type="button" id="altro" aria-label="Altre azioni" aria-haspopup="menu"><svg class="icon"><use href="#i-ellipsis"/></svg></button>
+    </header>
+    <div class="detail">
+      <div class="person">
+        <span class="monogram" id="sigla" aria-hidden="true"></span>
+        <div><h2 id="nome"></h2><span class="status" id="stato"></span></div>
+      </div>
+
+      <div>
+        <h3 class="group-title">Contatti</h3>
+        <div class="group">
+          <a class="row" id="tel" href="#"><span>Telefono</span><span class="value num"></span></a>
+          <a class="row" id="mail" href="#"><span>Email</span><span class="value"></span></a>
+          <div class="row"><span>Indirizzo</span><span class="value">Via Roma 12, Seveso</span></div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="group-title">Promemoria</h3>
+        <div class="group">
+          <label class="row"><span>SMS il giorno prima</span><input class="switch" type="checkbox" role="switch" checked style="margin-left:auto"></label>
+          <label class="row"><span>Email di conferma</span><input class="switch" type="checkbox" role="switch" style="margin-left:auto"></label>
+        </div>
+        <p class="group-footer">Il cliente riceve il promemoria alle 18 del giorno prima dell'appuntamento.</p>
+      </div>
+
+      <div>
+        <h3 class="group-title">Ultimi appuntamenti</h3>
+        <div class="group">
+          <table class="table">
+            <thead><tr><th aria-sort="descending">Data</th><th>Servizio</th><th class="num">Importo</th></tr></thead>
+            <tbody>
+              <tr><td>14/10/2026</td><td>Taglio e piega</td><td class="num">45,00 €</td></tr>
+              <tr aria-selected="true"><td>23/09/2026</td><td>Colore</td><td class="num">68,00 €</td></tr>
+              <tr><td>02/09/2026</td><td>Taglio</td><td class="num">28,00 €</td></tr>
+              <tr><td>29/07/2026</td><td>Trattamento</td><td class="num">35,00 €</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<nav class="tabbar glass" aria-label="Sezioni">
+  <a href="#" aria-current="page"><svg class="icon"><use href="#i-users"/></svg>Clienti</a>
+  <a href="#"><svg class="icon"><use href="#i-calendar"/></svg>Agenda</a>
+  <a href="#"><svg class="icon"><use href="#i-file-text"/></svg>Preventivi</a>
+  <a href="#"><svg class="icon"><use href="#i-settings"/></svg>Altro</a>
+</nav>
+
+<div popover class="menu" id="menu" role="menu">
+  <button class="menu-item" role="menuitem"><svg class="icon"><use href="#i-share"/></svg>Condividi scheda…</button>
+  <button class="menu-item" role="menuitem"><svg class="icon"><use href="#i-calendar"/></svg>Nuovo appuntamento<kbd>⌘N</kbd></button>
+  <div class="menu-sep" role="separator"></div>
+  <button class="menu-item" role="menuitem"><svg class="icon"><use href="#i-archive"/></svg>Archivia</button>
+  <button class="menu-item destructive" role="menuitem" onclick="menu.hidePopover(); elimina.showModal()"><svg class="icon"><use href="#i-trash-2"/></svg>Elimina cliente…</button>
+</div>
+
+<dialog class="sheet" id="nuovo" aria-labelledby="nuovo-t">
+  <form method="dialog">
+    <div class="sheet-header"><h2 id="nuovo-t">Nuovo cliente</h2></div>
+    <div class="sheet-body form">
+      <div class="pair">
+        <label><span class="field-label">Nome</span><input class="field" autocomplete="given-name" required></label>
+        <label><span class="field-label">Cognome</span><input class="field" autocomplete="family-name"></label>
+      </div>
+      <label><span class="field-label">Email</span><input class="field" type="email" placeholder="nome@esempio.it" autocomplete="email"></label>
+      <label><span class="field-label">Telefono</span><input class="field" type="tel" inputmode="tel" autocomplete="tel"></label>
+      <label><span class="field-label">Stato</span><select class="field"><option>Attivo</option><option>In attesa</option><option>Archiviato</option></select></label>
+    </div>
+    <div class="sheet-footer">
+      <button class="btn" value="annulla" formnovalidate>Annulla</button>
+      <button class="btn btn-primary" value="salva">Salva</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog class="alert" id="elimina" aria-labelledby="elimina-t">
+  <form method="dialog">
+    <h2 id="elimina-t">Eliminare questo cliente?</h2>
+    <p>La scheda e i suoi appuntamenti vengono cancellati. Non si può annullare.</p>
+    <div class="actions">
+      <button class="btn" value="annulla" autofocus>Annulla</button>
+      <button class="btn btn-destructive" value="elimina">Elimina</button>
+    </div>
+  </form>
+</dialog>
+
+<script>
+  const clienti = [
+    ['Marta Ferri', 'marta.ferri@esempio.it', '333 412 7781', 'attivo', '14/10'],
+    ['Luca Brambilla', 'luca.b@esempio.it', '347 220 1934', 'attivo', '12/10'],
+    ['Giulia Sala', 'giulia.sala@esempio.it', '340 889 0021', 'attesa', '09/10'],
+    ['Andrea Colombo', 'a.colombo@esempio.it', '338 117 4502', 'attivo', '03/10'],
+    ['Sara Galli', 'sara.galli@esempio.it', '329 645 7710', 'attivo', '28/09'],
+    ['Paolo Riva', 'paolo.riva@esempio.it', '345 300 9187', 'attesa', '21/09'],
+    ['Elena Fumagalli', 'elena.f@esempio.it', '349 552 0408', 'attivo', '15/09'],
+    ['Davide Cattaneo', 'd.cattaneo@esempio.it', '331 774 2290', 'attivo', '30/08'],
+  ];
+  const toni = { attivo: ['green', 'Attivo'], attesa: ['orange', 'In attesa'], archiviato: ['gray', 'Archiviato'] };
+  let filtro = 'tutti', scelto = 0;
+
+  function mostra(i) {
+    scelto = i;
+    const [nome, mail, tel, stato] = clienti[i];
+    document.getElementById('nome').textContent = nome;
+    document.getElementById('sigla').textContent = nome.split(' ').map(p => p[0]).join('');
+    const s = document.getElementById('stato');
+    s.dataset.tone = toni[stato][0]; s.textContent = toni[stato][1];
+    document.querySelector('#tel .value').textContent = tel;
+    document.querySelector('#mail .value').textContent = mail;
+    disegna();
+  }
+
+  function disegna() {
+    const q = document.getElementById('cerca').value.toLowerCase();
+    const righe = clienti.map((c, i) => [c, i]).filter(([c]) =>
+      (filtro === 'tutti' || c[3] === filtro) && (c[0] + c[1]).toLowerCase().includes(q));
+    document.getElementById('lista').innerHTML = righe.map(([c, i]) =>
+      `<li><button class="row" type="button" data-i="${i}" ${i === scelto ? 'aria-current="true"' : ''}>
+        <span class="who"><span class="t-headline">${c[0]}</span><span class="label-2">${c[1]}</span></span>
+        <span class="when num">${c[4]}</span></button></li>`).join('');
+    document.getElementById('vuoto').hidden = righe.length > 0;
+  }
+
+  function filtra(f) {
+    filtro = f;
+    document.querySelectorAll('.segmented button').forEach(b => b.setAttribute('aria-pressed', b.dataset.f === f));
+    disegna();
+  }
+
+  document.getElementById('lista').addEventListener('click', e => {
+    const b = e.target.closest('.row'); if (!b) return;
+    mostra(+b.dataset.i); app.classList.add('show-detail');
+  });
+  document.querySelector('.segmented').addEventListener('click', e => e.target.dataset.f && filtra(e.target.dataset.f));
+  document.getElementById('cerca').addEventListener('input', disegna);
+  document.getElementById('altro').addEventListener('click', e => {
+    const r = e.currentTarget.getBoundingClientRect();
+    menu.style.top = r.bottom + 6 + 'px';
+    menu.style.left = Math.max(8, Math.min(r.right - 220, innerWidth - 228)) + 'px';
+    menu.togglePopover();
+  });
+  mostra(0);
+</script>
+</body>
+</html>

@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **308 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **309 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -97,6 +97,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[processo-siti]] — ⚠️ Nota di catalogo, non la skill. È il wikilink più citato del vault (quindici richiami e nessun file, fino al 7 settembre 2026) perché ogni s...
 - [[proposta-commerciale]] — Nota di catalogo della skill proposta-commerciale, non la skill - preventivi WhatsApp per i siti, PDF «Piano di Sviluppo» per i gestionali.
 - [[skills]] — ⚠️ Quale strumento di Claude si usa per quale lavoro.
+- [[stile-apple]] — Catalogo della skill stile-apple - interfacce web nello stile delle app Apple e di apple.com, token verificati, script di controllo.
 - [[voce-denkicode]] — Nota di catalogo della skill voce-denkicode, non la skill. Esisteva solo come wikilink rotto, il piu' citato del vault (27 richiami al 27/09/2026).
 
 **stack/**
