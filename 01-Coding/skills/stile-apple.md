@@ -61,6 +61,15 @@ Due scelte vanno contro le app native, e sono volute:
   spostare niente. Il confronto prima/dopo sta in
   `.claude/catture/confronto.html` del worktree. Riga nel
   [[registro-interventi]].
+- **Seconda passata, stessa sera**: Nicola ha trovato la prima troppo
+  timida e ha chiesto Liquid Glass e animazioni Apple ovunque (la frase è
+  in cima a `SKILL.md`). Commit locali `31d3380` e `d4057ce`. Tre cose
+  imparate: il testo sopra il vetro va misurato contro il punto peggiore
+  del fondo colorato, non contro il fondo pieno; se l'`<html>` ha un suo
+  colore, il body deve diventare trasparente, altrimenti copre il bagliore
+  su `body::before`; il vetro sui pannelli che esistono solo da computer va
+  dietro la stessa media query, se no da telefono diventano rettangoli
+  bianchi.
 
 ## Cosa resta aperto
 
