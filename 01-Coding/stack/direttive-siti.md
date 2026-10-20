@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 20/10/2026 — Nicola: «lanimazione allo scrol da pc bella ma sembra troppo lenta e che si avvii in ritardo rispoetto al mio scrool, sopratutto i testi nella sezione devo vengono tipo messi a fuoco, quando vengono messi a fuoco dall animazione io ho pratocamente gia scrollato via.»
+
+Da computer un'animazione legata allo scroll segue lo scroll senza ritardo: scrub senza smorzamento lungo, pin corti e transizioni sotto il mezzo secondo; un effetto che va a tempo da solo, come la messa a fuoco dei testi, si aggancia allo scroll oppure finisce prima che chi legge abbia già scrollato via.
+
 ### 20/10/2026 — Nicola: «sopraitto se vuoi creare tu dei disegni di qualcosa nel sito trova qulche strumento o qualche skill specializzata in quello perche se no non sai farlo bene da solo»
 
 Un disegno per un sito non si inventa a mano in SVG: lo produce uno strumento o una skill specializzata nel disegno (dal 20/10/2026 è installata anatomy, che costruisce figure isometriche di oggetti veri), oppure si usa un asset già fatto.
