@@ -19,6 +19,20 @@ esempio usano grigi che sul web non passano il contrasto, mettono un tracking
 negativo su tutti i titoli e danno per supportata ovunque una preferenza di
 sistema che Safari non legge. Ogni numero in `apple.css` dice da dove viene.
 
+## Direttive di Nicola: valgono sopra le regole qui sotto
+
+### 20/10/2026 — Nicola: «no allora cosi troppo poco, migliorato rispetto alla base, ma voglio molto piu simile a apple, voglio il liquid glass in giro e vogio animziomi stile apple ovunque»
+
+Verdetto sulla prima prova su OperO e CO-OPERO, che aveva tenuto il vetro solo
+su barre e isole e il movimento al minimo. Quando si applica lo stile Apple a
+un'app si va fino in fondo: il Liquid Glass si vede sulle superfici (barre,
+isole, pannelli, card, menu, tasti), con il fondo colorato che serve a farlo
+leggere, e ogni interazione ha un'animazione Apple a molla. Le regole
+«Vetro e materiali» 1 e 6 e «Movimento» 1 e 5 qui sotto sono **superate**
+per le app: restano valide la leggibilità (4,5:1 anche sul vetro), i ripieghi
+per Riduci trasparenza e Riduci movimento, e il divieto di toccare la
+struttura.
+
 ## Cosa c'è nella cartella
 
 | File | A cosa serve |
@@ -132,8 +146,10 @@ Per un'app nuova si parte da `esempio.html` e se ne sostituisce il contenuto.
 
 ### Vetro e materiali
 
-1. Il vetro è lo strato dei controlli: barre, tab bar, menu, popover, sheet.
-   Non va mai su card, righe di lista, sezioni o sfondi.
+1. ~~Il vetro è lo strato dei controlli: barre, tab bar, menu, popover, sheet.
+   Non va mai su card, righe di lista, sezioni o sfondi.~~ *Superata il
+   20/10/2026 per le app (direttiva di Nicola in cima): il vetro va anche
+   sulle card e sui pannelli, con il fondo colorato dietro.*
 2. La ricetta è quella della barra di apple.com: `rgba(250,250,252,.8)` con
    `saturate(180%) blur(20px)`. Ha sempre un ripiego a sfondo pieno per
    `@supports`, Riduci trasparenza, Aumenta contrasto e colori forzati, e la
@@ -144,7 +160,8 @@ Per un'app nuova si parte da `esempio.html` e se ne sostituisce il contenuto.
    sfocatura non si vede, quindi lì si usa uno sfondo pieno.
 5. Il Liquid Glass di iOS 26, con la rifrazione, sul web non si fa: funziona
    solo su Chrome e costa a ogni fotogramma.
-6. Si vedono al massimo due o tre superfici di vetro alla volta.
+6. ~~Si vedono al massimo due o tre superfici di vetro alla volta.~~ *Superata
+   il 20/10/2026 per le app (direttiva di Nicola in cima).*
 
 ### Forme e ombre
 
@@ -168,15 +185,19 @@ Per un'app nuova si parte da `esempio.html` e se ne sostituisce il contenuto.
 
 ### Movimento
 
-1. Sulle azioni frequenti il movimento è poco e breve, come chiedono le HIG:
+1. ~~Sulle azioni frequenti il movimento è poco e breve, come chiedono le HIG:
    hover e pressione cambiano il colore in 150 ms. Il bottone non si
-   rimpicciolisce.
+   rimpicciolisce.~~ *Superata il 20/10/2026 per le app (direttiva di Nicola
+   in cima): ogni interazione ha una molla Apple, compresa la pressione.*
 2. Sheet e pannelli entrano con `--spring`, la molla predefinita di SwiftUI
    (response 0,55, smorzamento 1, nessun rimbalzo), campionata in CSS.
 3. Il resto usa `cubic-bezier(.4, 0, .6, 1)`, la curva più usata su apple.com.
 4. Con Riduci movimento gli spostamenti diventano dissolvenze, e `apple.css` lo
    fa da solo.
-5. Niente rimbalzi, contatori che salgono o scene allo scroll dentro un'app.
+5. ~~Niente rimbalzi, contatori che salgono o scene allo scroll dentro un'app.~~
+   *Superata il 20/10/2026 per le app (direttiva di Nicola in cima): le molle
+   con un rimbalzo leggero, come `.snappy` e `.bouncy` di SwiftUI, sono
+   ammesse. Restano vietati i contatori che salgono.*
 
 ### Stati e testi
 
