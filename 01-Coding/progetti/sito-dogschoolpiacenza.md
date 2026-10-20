@@ -16,7 +16,7 @@ deadline: TODO
 Bozza di sito vetrina da costruire in un'ora per Roberta Borsaro, che il 13/10/2026 ha risposto a Patrick su Instagram. Cliente: [[dogschoolpiacenza]].
 
 **Cartella**: `~/lavoro/dogschoolpiacenza-site` (repo privato `Nixo999/dogschoolpiacenza-site`)
-**Online**: <https://dogschoolpiacenza.netlify.app>, con i tre sbarramenti, è ancora il giro 1. Il giro 2 è sul ramo `giro2` e in anteprima su <https://6ad7350f886192475b0345ec--dogschoolpiacenza.netlify.app> (20/10): si pubblica con `npm run build` e `netlify deploy --dir dist --prod` dopo il verdetto di Nicola, e il ramo va unito a `main`. Esiste un sito Wix gratuito, `robertaborsaro.wixsite.com/dogschoolpiacenza`, di cinque pagine. I domini `dogschoolpiacenza.it` e `.com` non rispondono (verifica del 10/10 fatta dal coordinatore).
+**Online**: <https://dogschoolpiacenza.netlify.app>, con i tre sbarramenti, è ancora il giro 1. Il giro 2 è sul ramo `giro2` e in anteprima su <https://6ad7391bc715f38ea9f811e9--dogschoolpiacenza.netlify.app> (20/10): si pubblica con `npm run build` e `netlify deploy --dir dist --prod` dopo il verdetto di Nicola, e il ramo va unito a `main`. Esiste un sito Wix gratuito, `robertaborsaro.wixsite.com/dogschoolpiacenza`, di cinque pagine. I domini `dogschoolpiacenza.it` e `.com` non rispondono (verifica del 10/10 fatta dal coordinatore).
 
 ## Chi è
 
@@ -175,8 +175,11 @@ e find-skills ([[2026-10-20-prova-astro-react-bits]]).
   titolo; gli spazi non erano uniformi. Corretto: pila con `sticky` e GSAP,
   anno in una colonna sua, carosello per anno sul telefono con
   `scroll-snap` e `animation-timeline: view(inline)`, menu a tutto schermo,
-  una scala di spazi sola. Le due regole sul telefono sono in
-  [[direttive-siti]].
+  una scala di spazi sola. Poi, sulla scheda «In arrivo» vista dal telefono,
+  Nicola: «questo non va bene fatto così, occupa troppo spazio». Ora sta in
+  mezzo schermo (488 px a 400 di larghezza): nome, con chi e dove, le
+  prossime date come blocchi di locandina, un bottone; il programma intero si
+  apre a richiesta. Le tre regole sul telefono sono in [[direttive-siti]].
 - **Misure**: 8/8, slop 0 con un avviso, testo 0. A 375 px la home è alta
   7.011 px, Eventi 7.940, Storia 4.820. Il carosello con il dito, lo snap su
   iOS e la motion su Safari non sono stati provati su un telefono vero.
@@ -186,7 +189,7 @@ e find-skills ([[2026-10-20-prova-astro-react-bits]]).
 
 ## Storia del lavoro
 
-- 20/10/2026: giro 2, vedi la sezione sopra. Commit `ceb7a02`, `65e3aa8`, `f92c361` sul ramo `giro2`.
+- 20/10/2026: giro 2, vedi la sezione sopra. Commit da `ceb7a02` a `244510d` sul ramo `giro2`, pushato.
 - 14/10/2026, mattina: Nicola ha guardato il sito sul telefono: «l'animazione dei pannelli che scorrono uno sopra l'altro … non risulta fluida». Corretto: sul telefono le schede restano sticky con uno scarto fisso di 8 px, senza scrub su scala e filtro e senza letture di layout a ogni scroll; la scala in scrub resta solo da computer; `ScrollTrigger.config({ ignoreMobileResize: true })`. Regola in [[direttive-siti]]. Da rivedere su un iPhone vero.
 - 13/10/2026, mattina: giro 1 «dalla prima telefonata all'attestato» online in un'ora. Direzione di Fable in `DIREZIONE.md`, costruzione su Opus in 11 minuti (terna Fraunces + Hanken Grotesk + Permanent Marker: su 335 px PIACENZA entra fino a 64 px, VALUTAZIONE fino a 46 px). 8/8, slop 0 con 4 avvisi, testo 0 con 1 avviso. Catture in `prove/giro1-375.png` e `giro1-1440.png`. Trevis ha rifatto il ritaglio del ritratto tondo, che il costruttore aveva tagliato dentro il cerchio. Da vedere su un iPhone vero: l'apertura, le schede che si impilano e la linea del percorso.
 - 13/10/2026: l'operatore ha raccolto la bio e le didascalie di 8 post da Instagram sloggato, i testi delle cinque pagine del sito Wix, la scheda Google Maps con tre recensioni, la pagina Facebook, sei siti di concorrenti e 7 foto a 1440 pixel di larghezza.
