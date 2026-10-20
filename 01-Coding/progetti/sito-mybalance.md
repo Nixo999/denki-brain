@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Sito di Studio Danza My Balance (Acqui Terme), lato Pilates di Giorgia Zunino. Giro 1 online il 20/10 su mybalance-pilates.netlify.app: mondo «Cinque molle», Reformer fatto con anatomy, Astro con React Bits.
+riga: Sito di Studio Danza My Balance (Acqui Terme), lato Pilates di Giorgia Zunino. Giro 2 online il 20/10 su mybalance-pilates.netlify.app: mondo «Cinque molle», Reformer fatto con anatomy, Astro con React Bits; motion agganciata allo scroll dopo il verdetto di Nicola.
 updated: 2026-10-20
 source: claude
 verificato: 2026-10-20
@@ -16,7 +16,7 @@ deadline: TODO
 Bozza di sito vetrina per Studio Danza My Balance, Acqui Terme, chiesta da Nicola il 20/10/2026 dopo la risposta al DM: «nuovo sito da fare, deve essere fatto bene sia per telefono che per pc, deve avere un bell'effetto wow». Cliente: [[mybalance]].
 
 **Cartella**: `~/lavoro/mybalance-site` (repo privato `Nixo999/mybalance-site`)
-**Online**: <https://mybalance-pilates.netlify.app>, con i tre sbarramenti, dal 20/10/2026 sera (giro 1, commit `aa00897`). Progetto Netlify `mybalance-pilates`, id `6b539385-047b-475f-9127-7d69b5fd25b9`, team `denkicode`; si ripubblica con `npm run build` e `netlify deploy --dir dist --prod --no-build --site 6b539385-047b-475f-9127-7d69b5fd25b9` (Netlify non è collegato a git, e il link della CLI è globale: vedi [[trappole]]).
+**Online**: <https://mybalance-pilates.netlify.app>, con i tre sbarramenti, dal 20/10/2026 sera (giro 2, commit `067bc98`; il giro 1 era `aa00897`). Progetto Netlify `mybalance-pilates`, id `6b539385-047b-475f-9127-7d69b5fd25b9`, team `denkicode`; si ripubblica con `npm run build` e `netlify deploy --dir dist --prod --no-build --site 6b539385-047b-475f-9127-7d69b5fd25b9` (Netlify non è collegato a git, e il link della CLI è globale: vedi [[trappole]]).
 
 ## Chi è
 
@@ -145,3 +145,9 @@ Tre operatori su Opus: la direzione (tre mondi in `direzione/mondi.md`, 13 minut
 Misurato: overflow zero da 320 a 1600 px, console pulita, `controlla-sito` 8/8, `controlla-slop` 0 blocchi e 4 avvisi (il «davvero» è nella domanda della cliente, il titolo lungo è un falso positivo di Text Pressure), `controlla-testo` 0; online con `curl`: 200, `noindex` nel meta e nell'header, `robots.txt` chiuso, `PRODUCT.md`, `DESIGN.md`, `package.json`, `direzione/` e `figura/` a 404. Il direttore ha guardato le fette a 1440 e a 375, le pose del pin e la pagina viva nel browser dell'app; nessun iPhone vero.
 
 Scelte dell'operatore contro la lettera del brief, da far giudicare a Nicola: l'apertura parte a ogni caricamento (direttiva del 18/09); sul telefono le sei discipline scorrono di lato; sotto i 480 px il tasto dice «Prenota la prova gratuita»; sulla barra del telefono resta solo il logo. Aperto: il `tour()` sul telefono torna a 0 prima dei 7 secondi; la vista esplosa da computer è moderata; dedotti dall'operatore e da confermare con la cliente gli attrezzi accanto a ogni disciplina e l'abbinamento «a chi serve».
+
+## Giro 2, 20/10 notte: la motion segue lo scroll
+
+Verdetto di Nicola dal computer: «lanimazione allo scrol da pc bella ma sembra troppo lenta e che si avvii in ritardo rispoetto al mio scrool, sopratutto i testi nella sezione devo vengono tipo messi a fuoco, quando vengono messi a fuoco dall animazione io ho pratocamente gia scrollato via». La regola che ne è uscita sta in [[direttive-siti]]. Cause trovate nei file: True Focus cambiava domanda ogni 2,4 secondi a tempo, il pin del Reformer durava quattro schermi e il modulo della figura si caricava solo quando la sezione era a uno schermo di distanza.
+
+Correzioni dello stesso operatore (Opus, 2 minuti): da 1024 px True Focus è guidato dallo scroll (ScrollTrigger in scrub su `.fuoco`, tre terzi per tre domande) e sul telefono resta a tempo con passo 1,6 s; il pin finisce a 2,4 schermi (da 3600 a 2160 px a 1440×900) con le stesse proporzioni; transizioni delle domande da 0,6 a 0,22 s, molle da 0,6 a 0,3 s, schede da 0,45/0,6 a 0,25/0,3 s, rivelazioni da 0,8 a 0,4 s con soglia all'88%; la figura si carica a pagina ferma con `requestIdleCallback`; l'isola True Focus è `client:idle`. A 375 la pagina è identica tranne il passo. Controlli 8/8, slop 0, testo 0; online con `curl`: 200, sbarramenti, badge spento. Resta da sentire con la mano su un computer vero: le misure vengono da Brave senza interfaccia.
