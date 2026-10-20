@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 20/10/2026 — Nicola: «questo non va bene fatto così, occupa troppo spazio (la scheda «In arrivo» di Strada Facendo nella pagina Eventi, dal telefono)»
+
+Sul telefono una scheda in evidenza sta in uno schermo: titolo, le prossime date, il luogo e un bottone; il programma intero e le citazioni si aprono a richiesta o non ci sono.
+
 ### 20/10/2026 — Nicola: «da telefono nella pagina eventi al posto di fare un muro lunghissimo di eventi mettili divisi per anno con un carosello animato in maniera particolare»
 
 Una lista lunga sul telefono non si mette in colonna: si divide per gruppi, per esempio per anno, e ogni gruppo scorre di lato in un carosello animato.
