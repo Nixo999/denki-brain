@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 20/10/2026 — Nicola: «sopraitto se vuoi creare tu dei disegni di qualcosa nel sito trova qulche strumento o qualche skill specializzata in quello perche se no non sai farlo bene da solo»
+
+Un disegno per un sito non si inventa a mano in SVG: lo produce uno strumento o una skill specializzata nel disegno (dal 20/10/2026 è installata anatomy, che costruisce figure isometriche di oggetti veri), oppure si usa un asset già fatto.
+
 ### 20/10/2026 — Nicola: «in piu neache la roba delle luci fatta cosi mi piace al avvio e nella hero section, cerca qualcosa di gia fatto magati tra le skill che esitono che ti permettano di fare qiualcosa che faccia piu effetto»
 
 Per l'apertura e per l'hero si parte da un effetto già pronto nelle skill installate, scelto perché fa colpo, invece di inventare da zero un disegno SVG semplice come un festone di lampadine.
