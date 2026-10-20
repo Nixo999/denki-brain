@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **311 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **313 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -76,6 +76,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-mikuma-dogs]] — Online su mikumadogs.netlify.app per Martina Carneli (mikuma.dogs), Como - giro 7 'il bianco e il nero', logo vero, Nicola: 'mi piace molto'.
 - [[sito-minniminerva]] — Bozza sito Minerva Esposito, MUA ad Alessandria. Online dal 05/10 il giro 3 «Il velo» (bianco su bianco), verdetto di Nicola da avere.
 - [[sito-mitril-tattoo]] — ⚠️ Bozza sito Mitril Tattoo & Piercing (Rovato BS, Giovi Salvi e Jennifer Galli). Giro 1 «Due mani, una pelle» del 09/10, direzione Fable, costruzione Opus.
+- [[sito-mybalance]] — Sito di Studio Danza My Balance (Acqui Terme), lato Pilates e benessere di Giorgia Zunino. Ricerca del 20/10 su profilo, concorrenti e strumenti per i disegni; bozza col processo-siti.
 - [[sito-nails-mania]] — ⚠️ Sito vetrina in una pagina per Nails Mania, centro di ricostruzione unghie mani e piedi di Lory Frosio a Seriate (BG).
 - [[sito-nails-robyy]] — Roberta @nails.robyy, nail artist e educator a Brescia: bozza online su nailsrobyy.netlify.app dal 14/9, mondo A «la sezione quotata», 8/8, sbarramenti verificati.
 - [[sito-newfantasy]] — New Fantasy Parrucchieri @newfantasy_parrucchieri, Lurate Caccivio (CO): bozza online su newfantasy-parrucchieri.netlify.app dal 16/9, mondo B «l'agenda a tre colonne», prenotazioni e gestionale su localStorage.
@@ -157,6 +158,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[minniminerva]] — Minerva Esposito, MUA ad Alessandria, @minniminerva_make.up. Ha risposto al DM il 04/10 - curiosa, titubante sull'utilità. Bozza online: minervaesposito.netlify.app.
 - [[mitril-tattoo]] — ⚠️ Mitril Tattoo & Piercing, piazza Don G. Racheli 6, Rovato (BS), @mitril_tattoo_studio, 11,4K follower. Ha chiesto la bozza nel DM il 09/10.
 - [[ms-service]] — ⚠️ Lead caldo - ha chiesto lui il materiale.
+- [[mybalance]] — Studio Danza My Balance di Giorgia Zunino, Acqui Terme (AL), danza e Pilates; dal lato Pilates (@mybalance_training) ha risposto al DM il 20/10 alle 19:51 «Ciao! Se vuoi mandare qui do un'occhiata».
 - [[nails-mania]] — ⚠️ Centro di ricostruzione unghie mani e piedi di Lory Frosio, onicotecnica dal 2005.
 - [[newfantasy]] — New Fantasy Parrucchieri, Lurate Caccivio (CO), @newfantasy_parrucchieri, 2.606 follower. Bozza online dal 16/9 su newfantasy-parrucchieri.netlify.app; il link va su WhatsApp, da Patrick.
 - [[ng-barber]] — ⚠️ Barbershop, @ngbarberstudio123. Riga 2 dell'anello 1-b, gancio 5 - l'unico link in bio è ngbarber.my-booking-app.com, cioè un'app di prenotaz...
