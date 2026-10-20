@@ -355,6 +355,8 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Immagini e `sips`
 
+- `[TRAPPOLA]` **`cwebp` e `magick` non ci sono sul Mac di Nicola, ma Pillow scrive WebP e AVIF** (`features.check('webp')` è vero). Su Materia il primo giro è uscito con JPEG da 376 KB serviti anche al telefono perché «non c'è il convertitore», e Nicola ha notato subito che le foto ci mettevano tanto. Con Pillow, WebP a 480/800/1080 px qualità 72 e `srcset`, il peso delle foto sul telefono è sceso da 6,8 a 1,7 MB. ([[sito-materia]], 20/10)
+
 - **Una texture specchiata sui due assi da una foto in prospettiva fa chevron
   e occhi simmetrici**, e le correzioni automatiche della pendenza erano rumore
   (tre tentativi). → tessera tagliata fra due giunti trovati sui profili
