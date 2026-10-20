@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 20/10/2026 — Nicola: «il disegno qui in foto non mi piace, rimuovi lanimazioe allo scrool fatta cosi non mi piace per niente. e il sito risulta un po vuoto da pc da telefno migliora le spaziature»
+
+Un disegno SVG fatto di linee e cerchi che non si riconosce come un oggetto del mestiere non va in pagina, e una vetrina sul computer non deve lasciare grandi spazi vuoti attorno a poco contenuto.
+
 ### 20/10/2026 — Nicola: «sostituisci anche la foto nella hero section, deve essere solo un cane senza faccia delle persone (Dog School Piacenza, dopo la foto di Chi è Roberta: «mettine una solo di un cane»)»
 
 Sul sito di un educatore cinofilo le foto in evidenza mostrano un cane solo: niente visi di persone, nemmeno quello del titolare.
