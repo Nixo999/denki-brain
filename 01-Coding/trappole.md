@@ -62,6 +62,7 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Catture e verifica in headless
 
+- `[TRAPPOLA]` **`cattura-fette.mjs` taglia a metà le schede dentro un contenitore che scorre di lato** (un carosello orizzontale sul telefono): la fetta non sa dello scorrimento interno. → per quelle sezioni uno scatto diretto via CDP con il contenitore scrollato, o si giudicano dal browser. ([[sito-mybalance]], 20/10)
 - `[TRAPPOLA]` **Brave in headless con `--screenshot` si blocca e non scrive niente.** Per fotografare un file HTML locale funziona `node ~/.claude/skills/anatomy/scripts/capture.mjs <file.html> --out <png>` con `CHROME_PATH="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"`; per i siti restano `cattura-fette.mjs` e `cattura-apertura.mjs` via CDP. ([[sito-mybalance]], 20/10)
 - `[TRAPPOLA]` **Uno zero di `grep -c` su un `curl` non distingue «non c'è»
   da «non è arrivato niente».** Sei giri su `vbag.it/styles.css` davano `0`
@@ -649,6 +650,9 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## CSS e layout
 
+- `[TRAPPOLA]` **`main>section>*{margin-inline:auto}` restringe e centra i figli di una griglia**: la regola pensata per i blocchi di testo arriva anche alle celle di `grid`, che si stringono alla larghezza del contenuto. → la si limita ai blocchi di testo o la si spegne sulle griglie. ([[sito-mybalance]], 20/10)
+- `[TRAPPOLA]` **Con `line-height: .92` l'accento di «È» tocca la riga sopra** nei titoli in maiuscolo stretto. → sopra le righe con lettere accentate l'interlinea sta almeno a 1. ([[sito-mybalance]], 20/10)
+- `[TRAPPOLA]` **Il petrolio #1E6E87 sulla sabbia #C3AD98 fa 2,7:1**, sotto AA: per i titoli su quella fascia serve #165A6F. Si misura ogni coppia fondo-testo, non solo quella sul bianco. ([[sito-mybalance]], 20/10)
 - `[TRAPPOLA]` **Una regola sugli `span` di un contenitore azzera i numeri di CountUp** (React Bits): il componente annida i suoi `span` dentro, e `.numeri-lista span{font-size:17px}` li porta a 17 px. Si mira la regola a una classe. ([[sito-dogschoolpiacenza]], 20/10)
 
 **`sticky` non entra nel padding del contenitore.** Su [[sito-barbershop-snia]]
