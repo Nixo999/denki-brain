@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 20/10/2026 — Nicola: «sostituisci anche la foto nella hero section, deve essere solo un cane senza faccia delle persone (Dog School Piacenza, dopo la foto di Chi è Roberta: «mettine una solo di un cane»)»
+
+Sul sito di un educatore cinofilo le foto in evidenza mostrano un cane solo: niente visi di persone, nemmeno quello del titolare.
+
 ### 20/10/2026 — Nicola: «questo non va bene fatto così, occupa troppo spazio (la scheda «In arrivo» di Strada Facendo nella pagina Eventi, dal telefono)»
 
 Sul telefono una scheda in evidenza sta in uno schermo: titolo, le prossime date, il luogo e un bottone; il programma intero e le citazioni si aprono a richiesta o non ci sono.
