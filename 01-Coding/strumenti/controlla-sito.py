@@ -90,7 +90,9 @@ def controlla(d):
             ("grafica inventata", t.count("<svg") >= MIN_SVG or tipografica,
              f"{t.count('<svg')} <svg> inline, ne servono {MIN_SVG}, oppure un racconto tipografico "
              "(scrub + font-variation-settings). Senza, la pagina dipende tutta dalle foto"),
-            ("racconto allo scroll", ("ScrollTrigger" in t) or ("animation-timeline" in t),
+            # anche nel JS (20/10/2026): con Astro GSAP non sta in un <script src>
+            # dell'HTML ma nei file impacchettati in assets/*.js
+            ("racconto allo scroll", ("ScrollTrigger" in t + js) or ("animation-timeline" in t),
              "niente GSAP/ScrollTrigger ne' animation-timeline: e' un impaginato, non un racconto"),
             ("animazione d'apertura", (".js:not(.cattura)" in t) or ("gsap.timeline" in t),
              "nessuna apertura: manca il primo secondo"),
