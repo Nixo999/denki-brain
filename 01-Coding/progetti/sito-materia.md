@@ -41,6 +41,10 @@ giornata di un matrimonio dalla cerimonia di giorno alla tavolata di notte, con
 la pietra di Botticino come fondo. La costruzione è di un operatore su Opus; la
 ricerca sui competitor (`ricerca-competitor.md`) di uno su Sonnet.
 
+## Online
+
+Dal 20/10/2026 è su <https://materia-rezzato.netlify.app> (inglese su `/en/`), progetto Netlify `materia-rezzato`, id `7e3825b6-9951-43aa-b868-a765caa24ddf`, team `nicola-la-rezza`. Si ripubblica con `./pubblica.sh` dalla cartella del repo, che carica solo i file pubblici. I tre sbarramenti sono verificati con `curl` sul sito pubblicato, e `FATTI.md`, `DIREZIONE.md`, la ricerca e il provino rispondono 404.
+
 ## Buchi da chiudere con la cliente
 
 - Telefono, WhatsApp, email e orari: l'unico contatto in pagina è il DM Instagram.
