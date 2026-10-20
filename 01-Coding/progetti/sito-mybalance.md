@@ -1,12 +1,12 @@
 ---
 type: progetto
-riga: Sito di Studio Danza My Balance (Acqui Terme), lato Pilates e benessere di Giorgia Zunino. Ricerca del 20/10 su profilo, concorrenti e strumenti per i disegni; bozza col processo-siti.
+riga: Sito di Studio Danza My Balance (Acqui Terme), lato Pilates di Giorgia Zunino. Giro 1 online il 20/10 su mybalance-pilates.netlify.app: mondo «Cinque molle», Reformer fatto con anatomy, Astro con React Bits.
 updated: 2026-10-20
 source: claude
 verificato: 2026-10-20
 status: attivo
 client: mybalance
-stack: da decidere con la direzione (starter statico o Astro con React Bits), GSAP, Netlify
+stack: Astro 5 con isole React (React Bits), GSAP ScrollTrigger, figura SVG prodotta con anatomy, Netlify
 started: 2026-10-20
 deadline: TODO
 ---
@@ -15,8 +15,8 @@ deadline: TODO
 
 Bozza di sito vetrina per Studio Danza My Balance, Acqui Terme, chiesta da Nicola il 20/10/2026 dopo la risposta al DM: «nuovo sito da fare, deve essere fatto bene sia per telefono che per pc, deve avere un bell'effetto wow». Cliente: [[mybalance]].
 
-**Cartella**: `~/lavoro/mybalance-site` (creata dallo starter il 20/10, repo da pubblicare)
-**Online**: non ancora.
+**Cartella**: `~/lavoro/mybalance-site` (repo privato `Nixo999/mybalance-site`)
+**Online**: <https://mybalance-pilates.netlify.app>, con i tre sbarramenti, dal 20/10/2026 sera (giro 1, commit `aa00897`). Progetto Netlify `mybalance-pilates`, id `6b539385-047b-475f-9127-7d69b5fd25b9`, team `denkicode`; si ripubblica con `npm run build` e `netlify deploy --dir dist --prod --no-build --site 6b539385-047b-475f-9127-7d69b5fd25b9` (Netlify non è collegato a git, e il link della CLI è globale: vedi [[trappole]]).
 
 ## Chi è
 
@@ -137,3 +137,11 @@ Palette: avorio #F7EDE4, sabbia chiara #DFD6CA, sabbia #C3AD98, inchiostro #1E2A
 ## Collegamenti
 
 [[mybalance]] · [[processo-siti]] · [[direttive-siti]] · [[livello-siti]] · [[trappole]]
+
+## Giro 1, 20/10 sera
+
+Tre operatori su Opus: la direzione (tre mondi in `direzione/mondi.md`, 13 minuti), la figura (`figura/reformer/`, 40 minuti, 135 parti, `node build.mjs --audit` a zero, `lines.mjs` a zero, 333 KB fra SVG e modulo) e la pagina (27 minuti più 7 per integrare). La pagina è `src/pages/index.astro` con `src/scripts/spina.js` (GSAP), le isole `TextPressure.jsx` e `TrueFocus.jsx` riscritte dal sorgente di React Bits senza la libreria `motion`, le icone Phosphor inline, il logo ritagliato dal volantino. Da computer il Reformer è in pin per quattro schermi: il carrello esce da 0 a 60 cm con le molle che si agganciano fermata per fermata, rientra, poi la vista esplosa si apre e si richiude; alle insegnanti una seconda istanza ritagliata sulle molle le aggancia una per volta. Sul telefono niente pin: la figura fa un giro da sola all'ingresso e le discipline scorrono di lato. Senza JavaScript la figura è inline a riposo. Peso compresso senza font circa 227 KB.
+
+Misurato: overflow zero da 320 a 1600 px, console pulita, `controlla-sito` 8/8, `controlla-slop` 0 blocchi e 4 avvisi (il «davvero» è nella domanda della cliente, il titolo lungo è un falso positivo di Text Pressure), `controlla-testo` 0; online con `curl`: 200, `noindex` nel meta e nell'header, `robots.txt` chiuso, `PRODUCT.md`, `DESIGN.md`, `package.json`, `direzione/` e `figura/` a 404. Il direttore ha guardato le fette a 1440 e a 375, le pose del pin e la pagina viva nel browser dell'app; nessun iPhone vero.
+
+Scelte dell'operatore contro la lettera del brief, da far giudicare a Nicola: l'apertura parte a ogni caricamento (direttiva del 18/09); sul telefono le sei discipline scorrono di lato; sotto i 480 px il tasto dice «Prenota la prova gratuita»; sulla barra del telefono resta solo il logo. Aperto: il `tour()` sul telefono torna a 0 prima dei 7 secondi; la vista esplosa da computer è moderata; dedotti dall'operatore e da confermare con la cliente gli attrezzi accanto a ogni disciplina e l'abbinamento «a chi serve».
