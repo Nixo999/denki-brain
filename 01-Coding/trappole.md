@@ -421,6 +421,8 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## GSAP e motion
 
+- `[TRAPPOLA]` **Con ScrollSmoother le ancore non portano più alla sezione.** Un link `#sezione` o un indirizzo con `#sezione` restano fermi, perché il contenuto scorre dentro `#smooth-content`: li deve gestire il JS con `ScrollSmoother.get().scrollTo('#sezione')`. Dopo un salto le foto in `loading="lazy"` restano grigie per un attimo, e in una cattura fatta subito sembrano mancanti. ([[sito-materia]], 20/10)
+
 - `[TRAPPOLA]` **`html{scroll-behavior:smooth}` sposta tutti gli ScrollTrigger di quanto
   si è già scrollato.** Su Cake Royal i tre piani della torta partivano a −517 px con la
   sezione a 792: a 375 la torta era già montata prima di arrivarci, e `refresh()` peggiorava
