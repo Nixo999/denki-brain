@@ -68,10 +68,14 @@ Il profilo del Pilates parla da insegnante, non da palestra: ogni Reel pone una 
 
 Tutto quello che si prende da Instagram senza login è a **640 px al massimo**, e i fotogrammi dei Reel sono a 360 px: sotto il minimo di 1080 del [[processo-siti]]. Le tre foto di Google Maps (1080-2048 px) sono saggi di danza con bambine e un volantino: soggetto sbagliato per il Pilates e volti di minori, quindi restano in `riferimenti/maps/` e non vanno in pagina. Strada dichiarata: **il sito non dipende dalle foto** (tipografia, colore, grafica inventata prodotta con uno strumento), e le foto originali si chiedono nel DM insieme al logo. File scaricati il 20/10 nello scratchpad della sessione (`ig/`): 12 immagini della griglia, la foto profilo (150 px), il volantino dei corsi e i due manifesti dei Balance Days.
 
+## Reservio, letto il 20/10
+
+La pagina pubblica <https://studio-danza-my-balance.reservio.com/> non elenca i corsi settimanali, ma mostra gli abbonamenti dei Balance Days e tre nomi dello staff: **Bernadette, Giorgia, Tatiana**. Prezzi dell'evento (non dei corsi, quindi non si mettono come listino): una lezione da un'ora di Pilates o heels 12 €, un Mini Lab da 30 minuti 8 €, tre Mini Lab 20 €, cinque lezioni più un Mini Lab 50 €, open delle due giornate 90 €, assicurazione Pilates annuale 8 €. Gli orari di Reservio (lunedì 8-21, martedì 13-21, mercoledì 17-21, giovedì 9-21, venerdì 17-20, chiuso il fine settimana) non coincidono con quelli di Google Maps (lunedì-venerdì 16:30-20:30): nel sito si scrive l'orario che conferma la cliente, finché non lo conferma si mette «su prenotazione» e il telefono.
+
 ## Cosa non c'è, e si dichiara
 
 - Prezzi e listino: «si richiede al 339 520 6920», mai pubblicato.
-- Orario settimanale dei corsi di Pilates: il calendario Reservio pubblico è vuoto; le storie «I corsi» chiedono il login.
+- Orario settimanale dei corsi di Pilates: il calendario Reservio pubblico è vuoto; le storie «I corsi» chiedono il login; gli orari di apertura di Reservio e di Maps non coincidono.
 - Chi tiene le lezioni di Pilates e chi è nei Reel.
 - Foto originali sopra i 1080 px, file del logo.
 - Durata delle lezioni, numero di posti per lezione, cosa portare alla prova.
