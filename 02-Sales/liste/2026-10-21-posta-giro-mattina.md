@@ -1,5 +1,5 @@
 ---
-riga: Per Patrick - giro del 21/10, posta letta da Brave; 95 DM del 20/10 non segnati sul banco ora segnati, 7 risposte (2 calde, 3 no, 2 col sito), 3 celle siti lanciate
+riga: Per Patrick - giro del 21/10, 95 DM del 20/10 segnati sul banco, 7 risposte (2 calde), 17 righe siti pubblicate su 37 (banco a 150); Instagram si legge solo da Brave
 type: area
 updated: 2026-10-21
 source: claude
@@ -59,8 +59,50 @@ richieste), quattro autorisposte (@mysticabodyartstudio,
 Tutto sta in `Esito DM` sul banco (12 righe) e in `risposte-dm.csv` (7 righe).
 Nessun messaggio è partito da qui.
 
-## Le celle di oggi
+## Le celle di oggi: 17 righe su 37, pubblicate sul banco
 
-TODO: si scrive a operatori finiti.
+Alle 10:26 Instagram ha smesso di rispondere a `curl`: con lo User-Agent di un
+browser la pagina del profilo torna una pagina di errore senza follower né bio,
+e anche l'API interna dalla sessione di Brave risponde 404 (ricerca) e 429
+(profilo). Due operatori su tre si sono fermati; il terzo aveva letto i profili
+presentandosi come Googlebot, un trucco che il giro del 18/10 aveva lasciato
+scritto come «funzionante». **Presentarsi come un crawler per passare un blocco
+anti-bot non si fa**: l'ho fermato, nessuna riga di oggi viene da quelle
+letture, e i profili che aveva letto così sono stati riletti dalla sessione
+vera. Da decidere con Nicola come si leggono i profili dal prossimo giro: oggi
+l'unica strada è stata la pagina del profilo aperta in Brave con l'account
+`denkicode`, una alla volta, con la ricerca interna di Instagram per
+trasformare i nomi di Pagine Gialle in handle.
+
+Il giro è andato così: i tre operatori hanno raccolto i candidati (Pagine
+Gialle, toelettature.net, toelettatura.info, WebSearch con `site:instagram.com`),
+io ho letto 47 profili da Brave (bio espansa, pannello dei link, follower), e
+due operatori hanno scritto le righe dai profili letti, verificando il sito con
+WebSearch e curl. Le tre liste passano `controlla-lista.py` a 0 e
+`voce-check.py` senza segnalazioni; `verifica-sito.py` è girato con
+`--senza-motori` perché i motori rispondevano 429, e i «probabili siti» sono
+stati aperti a mano uno per uno.
+
+| Lista | Cella | Righe | Profili | Stato |
+|---|---|---|---|---|
+| siti | BG · personal trainer, pilates e yoga | 11 | 57 | aperta, rende 1 su 5; WebSearch finito, 9 col sito vivo, 7 fuori provincia, 3 morti |
+| siti | AL · toelettature (riserva di BI) | 5 | 14 | aperta: restano nomi di toelettature.net senza handle |
+| siti | BI · toelettature e dog trainer | 0 | 19 | esaurita per resa: tutti sotto i 200 follower o col sito |
+| siti | BI · fioristi e wedding planner | 1 | 12 | esaurita: 13 fiorerie di Pagine Gialle senza handle, i planner piccoli o col sito |
+
+Il banco è a 150 righe mai mandate (siti 35, ricerca 115): ne mancano 20 ai
+170, tutte siti.
+
+**Da guardare prima di mandare**: @chiara.generali_yoga (380 follower, non si
+sa se insegna solo in strutture altrui), @ultimatefitnessbergamo (si chiama
+palestra, lavora in gruppi da sei; ultimo post visto l'1/9), @cristian._f
+(studio privato o palestra altrui), @crystal_massoterapista_pt (a domicilio,
+328 follower), @larossa.inpale (gancio 6: mariagandossi.com fermo al 2023, in
+bio una pagina Canva), @qualazampa_2020 (un post parla di un ricovero della
+titolare: il messaggio non lo cita, ma conviene controllare che il negozio sia
+aperto), @puccioso.it (date dei post non lette), @beautifuldogacqui e
+@ilpettinediester (sede solo da toelettature.net), @pilateshouse_bergamo
+(pilateshouse.it risponde con una pagina di controllo Cloudflare: un'occhiata a
+mano).
 
 [[2026-10-20-posta-giro-mattina]] · [[metodo-liste]] · [[banco-dm]]
