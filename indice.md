@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-10-20
+updated: 2026-10-21
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **313 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **314 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -76,7 +76,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-mikuma-dogs]] — Online su mikumadogs.netlify.app per Martina Carneli (mikuma.dogs), Como - giro 7 'il bianco e il nero', logo vero, Nicola: 'mi piace molto'.
 - [[sito-minniminerva]] — Bozza sito Minerva Esposito, MUA ad Alessandria. Online dal 05/10 il giro 3 «Il velo» (bianco su bianco), verdetto di Nicola da avere.
 - [[sito-mitril-tattoo]] — ⚠️ Bozza sito Mitril Tattoo & Piercing (Rovato BS, Giovi Salvi e Jennifer Galli). Giro 1 «Due mani, una pelle» del 09/10, direzione Fable, costruzione Opus.
-- [[sito-mybalance]] — Sito di Studio Danza My Balance (Acqui Terme), lato Pilates di Giorgia Zunino. Giro 1 online il 20/10 su mybalance-pilates.netlify.app: mondo «Cinque molle», Reformer fatto con anatomy, Astro con React Bits.
+- [[sito-mybalance]] — Sito di Studio Danza My Balance (Acqui Terme), lato Pilates di Giorgia Zunino. Giro 3 online il 20/10 su mybalance-pilates.netlify.app: mondo «Cinque molle», Reformer fatto con anatomy, Astro con React Bits; motion agganciata allo scroll dopo il verdetto di Nicola.
 - [[sito-nails-mania]] — ⚠️ Sito vetrina in una pagina per Nails Mania, centro di ricostruzione unghie mani e piedi di Lory Frosio a Seriate (BG).
 - [[sito-nails-robyy]] — Roberta @nails.robyy, nail artist e educator a Brescia: bozza online su nailsrobyy.netlify.app dal 14/9, mondo A «la sezione quotata», 8/8, sbarramenti verificati.
 - [[sito-newfantasy]] — New Fantasy Parrucchieri @newfantasy_parrucchieri, Lurate Caccivio (CO): bozza online su newfantasy-parrucchieri.netlify.app dal 16/9, mondo B «l'agenda a tre colonne», prenotazioni e gestionale su localStorage.
@@ -234,6 +234,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-10-17-siti-e-ricerca-giro-mattina]] — Per Patrick - 17/10 in due giri, siti 59 e ricerca 54 sul banco (il secondo dagli account simili via Brave); posta letta dopo 16 giorni, 4 lead caldi, 59 DM mai consegnati
 - [[2026-10-18-siti-e-ricerca-giro-mattina]] — Per Patrick - giro del mattino del 18/10, siti 42 e ricerca 47 sul banco (89 su 160); Instagram ha retto, le celle si sono chiuse per fonti; posta non letta
 - [[2026-10-20-posta-giro-mattina]] — Per Patrick - giro del 20/10, nessuna lista (banco a 228 righe); posta letta da Brave dopo tre giorni, 4 lead caldi con bozza in mano, 2 no, 2 DM non consegnati
+- [[2026-10-21-posta-giro-mattina]] — Per Patrick - giro del 21/10, posta letta da Brave; 95 DM del 20/10 non segnati sul banco ora segnati, 7 risposte (2 calde, 3 no, 2 col sito), 3 celle siti lanciate
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
