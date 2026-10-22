@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-10-21
+updated: 2026-10-22
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **314 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **315 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -235,6 +235,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-10-18-siti-e-ricerca-giro-mattina]] — Per Patrick - giro del mattino del 18/10, siti 42 e ricerca 47 sul banco (89 su 160); Instagram ha retto, le celle si sono chiuse per fonti; posta non letta
 - [[2026-10-20-posta-giro-mattina]] — Per Patrick - giro del 20/10, nessuna lista (banco a 228 righe); posta letta da Brave dopo tre giorni, 4 lead caldi con bozza in mano, 2 no, 2 DM non consegnati
 - [[2026-10-21-posta-giro-mattina]] — Per Patrick - giro del 21/10, 95 DM del 20/10 segnati sul banco, 7 risposte (2 calde), 17 righe siti pubblicate su 37 (banco a 150); Instagram si legge solo da Brave
+- [[2026-10-22-posta-giro-mattina]] — Per Patrick - giro del 22/10, posta letta da Brave (2 no, nessun lead nuovo); 14 righe siti pubblicate (BI pasticcerie 10, BI fotografi 4), banco a 164
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
