@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-10-20
+updated: 2026-10-23
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 23/10/2026 — Nicola: «cerca delle skills per farlo al meglio. non disegnare mai tu a meno che non trovi una skills che ti auti a farlo in maniera perfetta»
+
+Prima di costruire un sito si cercano le skill installabili con npx skills find per l'apertura, la motion e i disegni, e si tengono quelle con più di mille installazioni; un disegno entra in pagina solo se lo produce una skill che lo fa bene.
 
 ### 20/10/2026 — Nicola: «lanimazione allo scrol da pc bella ma sembra troppo lenta e che si avvii in ritardo rispoetto al mio scrool, sopratutto i testi nella sezione devo vengono tipo messi a fuoco, quando vengono messi a fuoco dall animazione io ho pratocamente gia scrollato via.»
 
