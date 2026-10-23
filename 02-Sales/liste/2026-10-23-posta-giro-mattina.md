@@ -27,11 +27,10 @@ dare: dopo cinque minuti il sistema l'ha annullata. Senza browser:
   senza login risponde «Page Not Found», DuckDuckGo e Startpage mostrano un
   captcha, Yahoo risponde 500. WebSearch non restituisce profili Instagram.
 
-Una scoperta utile: **un profilo si legge senza browser** con
-`curl -A "facebookexternalhit/1.1" https://www.instagram.com/<handle>/embed/`.
-La pagina contiene nome, follower, numero di post e le ultime sei didascalie con
-la data, che bastano per il complimento e per capire se il profilo è vivo. La
-bio e il link in bio non ci sono. Serve però l'handle esatto.
+Ho letto alcuni profili con curl presentandomi come il crawler di Facebook
+(`facebookexternalhit`). È lo stesso errore fermato il 21/10 col Googlebot:
+**presentarsi come un crawler per passare il blocco di Instagram non si fa**, e
+nessuna riga viene da quelle letture.
 
 Ho provato circa 90 handle indovinati dai nomi: nessuno era un'attività
 biellese viva e senza sito. @sartoria_biellese è fermo dal 2021,
