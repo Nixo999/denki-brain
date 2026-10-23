@@ -10,7 +10,11 @@
   # invii dentro le liste, e la pagina quelle date le prende gia' dallo stato.
   # Si guarda TUTTO l'intervallo dall'ultimo deploy, non l'ultimo commit: se una
   # lista nuova e un giro automatico arrivano insieme, la lista deve passare.
-  ignore = 'test "$CACHED_COMMIT_REF" != "$COMMIT_REF" || exit 1; git log --format=%s "$CACHED_COMMIT_REF..$COMMIT_REF" -- . ../strumenti/lista-corrente.csv ../strumenti/lista-denkicode.csv | grep -qv "^Banco online: contattati allineati" && exit 1; exit 0'
+  # Se il commit dell'ultimo build non c'e' nel clone, git log non stampa
+  # niente e il build verrebbe saltato: dal 20 al 23/10/2026 il banco online e'
+  # rimasto con le liste del 20 e Patrick vedeva zero righe. Nel dubbio si
+  # ricostruisce.
+  ignore = 'test "$CACHED_COMMIT_REF" != "$COMMIT_REF" || exit 1; git cat-file -e "$CACHED_COMMIT_REF^{commit}" 2>/dev/null || exit 1; git log --format=%s "$CACHED_COMMIT_REF..$COMMIT_REF" -- . ../strumenti/lista-corrente.csv ../strumenti/lista-denkicode.csv | grep -qv "^Banco online: contattati allineati" && exit 1; exit 0'
 
 # Strumento interno: fuori dagli indici, sempre.
 [[headers]]
