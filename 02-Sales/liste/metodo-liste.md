@@ -1,7 +1,7 @@
 ---
 riga: Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
 type: area
-updated: 2026-10-18
+updated: 2026-10-23
 source: claude
 prodotto: denkishift
 ---
@@ -210,6 +210,10 @@ in [[metriche]]:
 
 
 ## Regole
+
+### 23/10/2026 — Nicola: «ok ma allra riprendi e finisci, trovane abbastanza, non finire il giro finche non ce ne sono abbastaza»
+
+Il giro delle liste finisce solo quando sul banco ci sono le righe che servono per arrivare a 170; una lista corta non si chiude con un resoconto, si continua a cercare.
 
 ### 18/10/2026 — Nicola: «Nel banco DM, quando Patrick manda meno messaggi, quelli che non manda non vanno eliminati, ma vanno mantenuti per il giorno dopo, e vanno aggiunti solo i rimanenti per arrivare alla cifra che serve per avere fissi 170 messaggi da mandare»
 
