@@ -355,6 +355,17 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   E sulla macchina possono girare Brave headless di altre sessioni sulle porte
   9334 e 9341: si parte da 9377 in su (Soul Ink, 26/09).
 
+- `[TRAPPOLA]` **Il pannello browser dell'app, quando la sua scheda non è in primo
+  piano, non esegue `requestAnimationFrame`, non manda eventi di scroll e non
+  fa scattare `IntersectionObserver`.** Un'animazione GSAP o uno shader letti da
+  lì sembrano fermi o a metà anche dopo tre secondi, e un reveal allo scroll non
+  parte mai. → per misurare la motion si sostituisce `requestAnimationFrame` con
+  un `setTimeout` nella pagina di prova, si chiama `ScrollTrigger.update()` a
+  mano e si scatta uno screenshot per far passare un fotogramma; per giudicare
+  l'apertura si usa `cattura-apertura.mjs` (Chrome headless), e con `--disable-gpu`
+  lì il WebGL non disegna: si vede il campo CSS di riserva, non lo shader.
+  (23/10/2026, [[sito-laperegina]])
+
 ## Immagini e `sips`
 
 - `[TRAPPOLA]` **`python3 -I` non trova PIL.** `-I` esclude i pacchetti installati per l'utente, e Pillow sta lì: per gli script che leggono immagini scaricate si usa `-I` solo se Pillow è nel sistema, altrimenti `python3 -s`-less normale con il file passato come argomento. ([[sito-mybalance]], 20/10)
