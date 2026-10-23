@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-10-22
+updated: 2026-10-23
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **315 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **317 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -110,6 +110,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[competitor-siti-estetica]] — ⚠️ 18 siti di centri estetici (5 locali AL/VC/AT, 5 boutique italiane, 3 specialistici, 5 Torino collina) - sezioni, info reali, stile, per Dragonfly e Lei Beauty Room.
 - [[competitor-siti-fotografi-eventi]] — 50 siti: diciottesimi (16), matrimoni documentari (6), eventi corporate/concerti (24), 4 premiati. Prezzi, extra, FAQ, cliché, motion.
 - [[competitor-siti-fotografi]] — ⚠️ 48 siti di fotografi famiglia/newborn/maternità (16 zona Merate, 15 Italia, 12 estero, 5 premiati): sezioni, prezzi, FAQ, cliché.
+- [[competitor-siti-gelaterie]] — ⚠️ "Ricerca del 23/10/2026 su 6 siti di gelaterie vicine a Calcinato e 8 di riferimento in Italia: cosa mettono, in che ordine, i 12 contenuti che servono a una gelateria gourmet."
 - [[competitor-siti-nail]] — ⚠️ Inventario di cosa pubblicano 15 siti di nail studio (5 Piemonte, 6 Italia, 4 estero) - sezioni, formati, FAQ ricorrenti, errori. Si riusa per ogni sito nail.
 - [[competitor-siti-tattoo]] — ⚠️ Inventario di cosa pubblicano 24 siti di studi/tatuatori tattoo (5 Piemonte, 5 Italia, 4 estero, + 10 Torino/giapponese) - sezioni, FAQ, parole anime/giapponese, errori.
 - [[competitor-siti-toelettatura]] — ⚠️ Inventario di 15 siti di toelettatura (5 Bergamo/Val Seriana, 6 Italia curati, 4 estero) - sezioni, FAQ, vocabolario, errori. Per il sito di Ambra Longoni, Nembro.
@@ -236,6 +237,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-10-20-posta-giro-mattina]] — Per Patrick - giro del 20/10, nessuna lista (banco a 228 righe); posta letta da Brave dopo tre giorni, 4 lead caldi con bozza in mano, 2 no, 2 DM non consegnati
 - [[2026-10-21-posta-giro-mattina]] — Per Patrick - giro del 21/10, 95 DM del 20/10 segnati sul banco, 7 risposte (2 calde), 17 righe siti pubblicate su 37 (banco a 150); Instagram si legge solo da Brave
 - [[2026-10-22-posta-giro-mattina]] — Per Patrick - giro del 22/10, posta letta da Brave (2 no, nessun lead nuovo); 14 righe siti pubblicate (BI pasticcerie 10, BI fotografi 4), banco a 164
+- [[2026-10-23-posta-giro-mattina]] — Per Patrick - giro del 23/10, 0 righe pubblicate (browser fermo, motori in captcha), posta non letta; 31 sartorie biellesi senza sito da cercare su IG
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
