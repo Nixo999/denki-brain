@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza di sito per la Gelateria L'Ape Regina (Calcinato, BS). Giro 1 del 23/10 col mondo «Prima l'ingrediente»: crema in shader all'avvio, cartellini del banco, binario delle stagioni, esagono; Astro con GSAP.
+riga: Bozza di sito per la Gelateria L'Ape Regina (Calcinato, BS). Giro 1 online il 23/10 su laperegina.netlify.app, mondo «Prima l'ingrediente»: crema in shader all'avvio, cartellini del banco, stagioni, esagono; Astro con GSAP.
 updated: 2026-10-23
 source: claude
 verificato: 2026-10-23
@@ -15,8 +15,8 @@ deadline: TODO
 
 Bozza di sito vetrina per la Gelateria L'Ape Regina, chiesta da Nicola il 23/10/2026 dopo la risposta al DM: «dobbiamo fare il sito per questa gelateria, deve essere impattante e creativo, animazione all'avvio, e animato bene». Cliente: [[laperegina]].
 
-**Cartella**: `~/lavoro/laperegina-site` (git locale su `main`, nessun remote ancora).
-**Online**: TODO (il giro 1 è in costruzione mentre scrivo).
+**Cartella**: `~/lavoro/laperegina-site` (repo privato `Nixo999/laperegina-site`, ramo `main`).
+**Online**: <https://laperegina.netlify.app>, con i tre sbarramenti, dal 23/10/2026 alle 10:42 (commit `edae28b`; giro 1 `5f97c25`, scheletro `7040661`). Progetto Netlify `laperegina`, id `cf56ad3e-738b-4b85-88fd-3a7ae4894efc`, team denkicode; si ripubblica con `npm run build` e `netlify deploy --dir dist --prod --no-build --site cf56ad3e-738b-4b85-88fd-3a7ae4894efc` (il link della CLI è globale, vedi [[trappole]]).
 
 ## Chi è
 
@@ -56,6 +56,12 @@ La direzione l'ha scritta Trevis (Fable) in `direzione/DIREZIONE.md` dopo aver g
 - **Font**: Fraunces (titoli, assi per l'apertura), Hanken Grotesk (testo), Caveat solo sui cartellini.
 - **Skill cercate e installate** il 23/10 con `npx skills find` su dieci parole chiave, tenute solo quelle con più di mille installazioni: `awwwards-animations`, `cinematic-scroll-storytelling`, `cinematic-gsap-lenis-motion-system`, `shader-glsl`, `threejs-animation`, `animation-performance`, `animated-component-libraries` ([[design-frontend]]). Per «gelato» e «sito di ristorazione» non esiste nessuna skill.
 - **Lasciato fuori**: la figura del carretto dei gelati con `anatomy` (70-85 parti, 1-2 ore), possibile al giro 2.
+
+## Com'è andata la verifica
+
+`controlla-sito` 8/8, `controlla-slop` OK con tre avvisi (la parola «eccellenza» è nella loro bio, «Lunedì» nella tabella degli orari, una sezione senza un numero), `controlla-testo` OK con una frase di 31 parole. Catture a fette a 1440 e a 375 guardate da Trevis (Chrome headless, dove lo shader non disegna e si vede il campo miele di riserva); la pagina viva guardata nel pannello dell'app a 1440 e a 375. Dopo il primo sguardo la vena antracite della crema era troppo pesante sul telefono: ora è una sola, tonale, e sotto 1024 px è spenta. Non provati: iPhone vero, Safari, tablet fra 768 e 1023 px, la pagina senza JavaScript (solo `?cattura`).
+
+Da sistemare se Nicola lo chiede: la frase «torte gelato e semifreddi su ordinazione» è nostra, non loro; la pillola dell'orario usa zaap.bio; Tripadvisor è senza link.
 
 ## Da chiedere nel DM
 

@@ -70,7 +70,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-hairstylebrescia]] — Hair Style Parrucchieri @hairstyle_brescia, salone a Brescia, gancio sposa - bozza online su hairstylebrescia.netlify.app dal 16/9, mondo A «La prova», 8/8, DM non partito.
 - [[sito-icaarus]] — ⚠️ Bozza sito ICAARUS ASD, centro cinofilo a Brembate-Grignano (BG). Giro 1 «Il percorso» del 09/10, direzione Trevis, costruzione Opus.
 - [[sito-jpp-merate]] — Bozza sito Studio fotografico JPP, Merate. Mondo C «Il libro fustellato», giro 1 online su jppmerate.netlify.app dal 06/10; chiusura su Fable, verdetto di Nicola da avere.
-- [[sito-laperegina]] — Bozza di sito per la Gelateria L'Ape Regina (Calcinato, BS). Giro 1 del 23/10 col mondo «Prima l'ingrediente»: crema in shader all'avvio, cartellini del banco, binario delle stagioni, esagono; Astro con GSAP.
+- [[sito-laperegina]] — Bozza di sito per la Gelateria L'Ape Regina (Calcinato, BS). Giro 1 online il 23/10 su laperegina.netlify.app, mondo «Prima l'ingrediente»: crema in shader all'avvio, cartellini del banco, stagioni, esagono; Astro con GSAP.
 - [[sito-laurafranzoni]] — Laura Franzoni @laurafranzoni_lashmaker, ciglia a Brescia: bozza online su laurafranzoni.netlify.app dal 14/9, mondo «Dall'alto». Online c'è il giro 2, il giro 3 è fermo in locale.
 - [[sito-leibeautyroom]] — Bozza sito per Lei Beauty Room (Torino Cavoretto) - mondo «La stanza». Online su leibeautyroom.netlify.app, giro 7: da PC il pin, sul telefono menu con i nomi e cinque stanze a scomparsa con porte diverse e tre foto vere, 8/8.
 - [[sito-materia]] — ⚠️ Bozza vetrina per Materia, laboratorio di fiori per matrimoni a Rezzato (BS), lead Instagram @materia_rezzato che ha risposto «Proviamo a vedere» il 20/10.

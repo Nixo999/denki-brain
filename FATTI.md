@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura. Max 80 righe.
-updated: 2026-10-20
+updated: 2026-10-23
 verificato: 2026-09-16
 source: denkicode
 tags: [stato, fatti]
@@ -34,6 +34,7 @@ cosa aperta. Il racconto dei giri sta nella nota progetto, la giornata nel
 
 | Sito | Online su | Stato (data) | Prossimo passo |
 |---|---|---|---|
+| [[sito-laperegina]] | laperegina.netlify.app | **giro 1 (23/10 mattina)**: mondo «Prima l'ingrediente», crema in shader all'avvio, cartellini del banco, binario delle stagioni, esagono; Astro con GSAP; costruito da tre operatori in parallelo con un contratto di DOM; 8/8, 1440 e 375 guardati in cattura, iPhone mai; loro hanno risposto il 23/10 «Se vuole mandare la bozza possiamo visionarla e parlarne con chi ci segue come marketing» | verdetto di Nicola dal computer e dal telefono, poi il link da Patrick (danno del lei; c'è un marketing che li segue); da chiedere: prezzi, titolari, orari veri (zaap.bio e Maps non coincidono), anticipo torte, logo vettoriale, foto del carretto |
 | [[sito-mybalance]] | mybalance-pilates.netlify.app | **giro 3 (20/10 notte)**: mondo «Cinque molle», Reformer isometrico di 135 parti prodotto con la skill `anatomy`, Astro con React Bits e GSAP; dopo il verdetto di Nicola dal computer («troppo lenta, in ritardo rispetto al mio scroll») la motion segue lo scroll e il pin è più corto del 40%; dopo «lagga un pochettino» tolte sette cause di ridisegno, da sentire con la mano; 8/8, 1440 e 375 guardati, iPhone mai; lei ha risposto al DM alle 19:51 «Ciao! Se vuoi mandare qui do un'occhiata» | verdetto di Nicola sul giro 2 dal computer e dal telefono, poi il link da Patrick; da chiedere: foto originali, file del logo, orari dei corsi, listino, cosa portare alla prova, chi tiene le lezioni di Pilates |
 | [[sito-ohana-special-dog]] | ohanaspecialdog.netlify.app | giro 4 (16/10): colori semplici, testo tagliato, poi «vita» con dettagli e tinte della stessa famiglia dopo tre verdetti di Nicola e il «lagga» di Patrick; 8/8, iPhone vero da riprovare; 5 foto buone, prese da Instagram e Google; DM di Patrick del 07/10, risposta `TODO` | verdetto di Nicola dal telefono, poi il link da Patrick; civico (10 o 12), orari, WhatsApp, prezzi, durata, gatti, pet shop, foto originali e permessi da chiedere a Daniela |
 | [[sito-nocloudsproduction]] | nocloudsproduction.netlify.app | giro 1 (16/10), costruito in un'ora dopo il suo «Mi faccia pure vedere»; 8/8, 375 e 1440 guardati, iPhone mai; foto prese da matrimonio.com | verdetto di Nicola, poi il DM col link da Patrick; nome, contatti, prezzi, tempi, foto originali e permessi da chiedergli |
