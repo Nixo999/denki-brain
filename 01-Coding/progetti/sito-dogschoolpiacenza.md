@@ -184,6 +184,12 @@ e find-skills ([[2026-10-20-prova-astro-react-bits]]).
   ritagliata da una grafica a 440 px), Nicola: «questa foto da cambiare,
   mettine una solo di un cane». Ora c'è Maiki da solo tra le margherite
   (post `DIqG8u4Nha0`, 1080 px), il cane di cui parla il testo accanto.
+  Poi, a sito online: «sostituisci anche la foto nella hero section, deve
+  essere solo un cane senza faccia delle persone». La regola è stata
+  applicata a tutto il sito: tre foto di Maiki dal suo profilo (davanti al
+  cartello del campo, tra le margherite, addormentato accanto a due Crocs) e
+  foto del campo con solo cani al posto dei ritagli di Roberta e delle foto di
+  fine corso con le partecipanti. Online ci sono 17 foto (commit `3523170`).
 - **Misure**: 8/8, slop 0 con un avviso, testo 0. A 375 px la home è alta
   7.011 px, Eventi 7.940, Storia 4.820. Il carosello con il dito, lo snap su
   iOS e la motion su Safari non sono stati provati su un telefono vero.
