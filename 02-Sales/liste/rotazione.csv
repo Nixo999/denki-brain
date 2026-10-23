@@ -20,24 +20,24 @@ siti,LC,unghie,parziale,5,2026-09-10,
 siti,LC,estetica,parziale,1,,
 siti,LC,toelettature e dog trainer,esaurito,6,2026-09-30,"30/09: 31 profili, 5 righe. Finito per resa"
 siti,LC,ristorazione,parziale,19,2026-09-09,
-siti,VA,tatuatori e piercing,parziale,26,2026-09-10,
+siti,VA,tatuatori e piercing,parziale,28,2026-10-23,"23/10: 6 profili, 2 righe; handle trovati con la ricerca di Instagram in Brave"
 siti,VA,barbieri,parziale,8,2026-09-10,
 siti,VA,"ciglia, sopracciglia e PMU",parziale,5,2026-09-10,
 siti,VA,parrucchieri,parziale,13,2026-09-10,
 siti,VA,unghie,parziale,10,2026-09-10,
 siti,VA,estetica,parziale,10,2026-09-10,
-siti,VA,fotografi e videomaker,parziale,1,,
+siti,VA,fotografi e videomaker,parziale,2,2026-10-23,"23/10: 3 profili, 1 righe; handle trovati con la ricerca di Instagram in Brave"
 siti,VA,trucco sposa e wedding,parziale,3,,
 siti,VA,toelettature e dog trainer,parziale,3,2026-09-10,
 siti,VA,ristorazione,parziale,31,2026-09-09,
 siti,VA,altro,parziale,1,2026-09-10,righe sparse di settori fuori elenco
-siti,BG,tatuatori e piercing,parziale,14,2026-09-10,
+siti,BG,tatuatori e piercing,parziale,20,2026-10-23,"23/10: 15 profili, 6 righe; handle trovati con la ricerca di Instagram in Brave"
 siti,BG,barbieri,parziale,4,2026-09-14,
 siti,BG,"ciglia, sopracciglia e PMU",parziale,20,2026-09-16,
 siti,BG,parrucchieri,parziale,10,2026-09-14,
 siti,BG,unghie,parziale,17,2026-09-16,
 siti,BG,estetica,parziale,22,2026-09-16,
-siti,BG,fotografi e videomaker,parziale,1,2026-10-22,"22/10 riserva: 18 handle, 0 righe. 13 col sito vivo (Ceribelli con iltuoricordoperlavita.it, Betelli, Angeri, NK...), Un Attimo Wedding a 113 follower, Cornici con un sito Aruba semplice ma vivo"
+siti,BG,fotografi e videomaker,parziale,2,2026-10-23,"23/10: 6 profili, 1 righe; handle trovati con la ricerca di Instagram in Brave"
 siti,BG,trucco sposa e wedding,parziale,2,,
 siti,BG,ristorazione,parziale,12,2026-09-09,
 siti,NO,tatuatori e piercing,esaurito,13,2026-10-10,"10/10: 93 profili, 11 righe. Finito per resa: 45 fuori provincia dagli hashtag, 14 resident o guest, 8 col sito; Pagine Gialle ne dà 22 in provincia"
@@ -74,7 +74,7 @@ siti,AL,"ciglia, sopracciglia e PMU",parziale,15,2026-09-29,
 siti,AL,parrucchieri,parziale,10,2026-09-19,
 siti,AL,unghie,parziale,8,2026-09-17,
 siti,AL,estetica,parziale,1,2026-09-17,
-siti,AL,fotografi e videomaker,parziale,2,2026-09-23,
+siti,AL,fotografi e videomaker,parziale,4,2026-10-23,"23/10: 10 profili, 2 righe; handle trovati con la ricerca di Instagram in Brave"
 siti,AL,trucco sposa e wedding,parziale,2,2026-09-23,
 siti,AT,tatuatori e piercing,parziale,1,2026-09-21,
 siti,AT,barbieri,parziale,6,2026-09-25,
@@ -154,9 +154,9 @@ ricerca,BG,impiantisti,parziale,7,2026-09-29,
 ricerca,BG,officine e carrozzerie,parziale,13,2026-09-25,
 ricerca,BG,meccanica e carpenterie,parziale,3,2026-09-13,
 ricerca,BG,edilizia e serramenti,parziale,48,2026-10-23,"23/10: 31 profili, 6 righe: 8 fuori provincia o fuori settore dagli handle dell'operatore, 9 fermi, 4 già contattati"
-ricerca,BG,ingrossi e distribuzione,parziale,8,2026-09-29,
+ricerca,BG,ingrossi e distribuzione,parziale,19,2026-10-23,"23/10: 20 profili, 11 righe; handle trovati con la ricerca di Instagram in Brave"
 ricerca,BG,trasporti e logistica,parziale,4,2026-09-25,
-ricerca,BG,alimentari artigianali,parziale,4,2026-09-25,
+ricerca,BG,alimentari artigianali,parziale,15,2026-10-23,"23/10: 21 profili, 11 righe; handle trovati con la ricerca di Instagram in Brave"
 ricerca,BG,aziende agricole con vendita,parziale,21,2026-10-23,"23/10: 33 profili, 18 righe. Aperta, rende 1 su 2; i fermi sono soprattutto caseifici di montagna"
 ricerca,BG,altro,parziale,17,2026-09-25,righe sparse di settori fuori elenco
 ricerca,LO,officine e carrozzerie,esaurito,4,2026-10-13,"13/10: ~45 profili, 2 righe. Finito per resa e fonti: Pagine Gialle 173 schede, 2 con Instagram; ~10 fermi, 5 concessionarie"
@@ -186,7 +186,7 @@ ricerca,BS,edilizia e serramenti,esaurito,26,2026-10-05,"5/10: 30 profili, 5 rig
 ricerca,BS,ingrossi e distribuzione,esaurito,27,2026-10-17,"17/10: 23+22 profili, 14+1 righe. Finito per fonti: account simili quasi tutti fuori provincia; @agrigelontheroadsrl da leggere con login"
 ricerca,BS,trasporti e logistica,parziale,2,2026-09-25,
 ricerca,BS,alimentari artigianali,parziale,45,2026-10-17,"17/10: 30+36 profili, 20+14 righe. Aperta, rende 2 su 5: 10 cantine Franciacorta dal Consorzio, 4 dagli account simili; da rileggere @terredaenor"
-ricerca,BS,aziende agricole con vendita,parziale,18,2026-10-11,"11/10: 24 profili, 14 righe. Aperta, rende 1 su 2; fonte: dati.lombardia.it e i tag di @coldiretti_brescia e @campagnamica_brescia"
+ricerca,BS,aziende agricole con vendita,parziale,29,2026-10-23,"23/10: 13 profili, 11 righe; handle trovati con la ricerca di Instagram in Brave"
 ricerca,BS,altro,parziale,46,2026-09-25,righe sparse di settori fuori elenco
 ricerca,CR,impiantisti,parziale,2,2026-09-29,
 ricerca,CR,officine e carrozzerie,esaurito,11,2026-10-16,"16/10: 28 profili, 5 righe. Finito per resa (1 su 5,6): 9 fermi, 5 vuoti o privati, 3 fuori provincia, 2 concessionarie"
@@ -262,7 +262,7 @@ ricerca,CR,falegnamerie,esaurito,1,2026-10-13,"13/10: 42 profili, 1 riga. Finito
 siti,LO,fioristi e wedding planner,parziale,5,2026-10-15,"15/10: ~28 profili, 5 righe. Aperta ma nomi finiti; @fiorifantasie e @fioriefantasie_ da riprendere se si conferma la sede"
 siti,VB,"personal trainer, pilates e yoga",parziale,7,2026-10-15,"15/10: ~40 profili, 7 righe. Aperta: molti omonimi esteri (Omegna, Ghiffa), Yahoo fermo prima di una decina di comuni; yogapills.it è la fonte migliore"
 siti,VB,fotografi e videomaker,esaurito,6,2026-10-15,"15/10: 55 profili, 6 righe: ~20 fuori provincia o omonimi, 9 col sito, 6 community, 6 negozi; PG/PB solo 20 schede"
-siti,PV,fotografi e videomaker,parziale,3,2026-10-15,"15/10: ~25 profili, 3 righe: 5 col sito; cercato poco, Yahoo fermo"
+siti,PV,fotografi e videomaker,parziale,4,2026-10-23,"23/10: 6 profili, 1 righe; handle trovati con la ricerca di Instagram in Brave"
 siti,PC,"sartorie, atelier e tappezzieri",esaurito,6,2026-10-15,"15/10: 38 profili, 6 righe: 8 col sito, 8 negozi, 6 fermi, 6 sotto i 200, elenchi finiti"
 siti,PC,tatuatori e piercing,esaurito,7,2026-10-16,"16/10: 45 profili, 7 righe. Finito per resa (1 su 6,4) e bacino: ~30 studi in provincia; 19 fuori provincia, 5 fermi, 4 resident; 11 handle non letti per il blocco Instagram"
 siti,GE,toelettature e dog trainer,parziale,0,2026-10-16,"16/10: 4 profili, 0 righe. Fermata dal blocco Instagram: 13 nomi con dominio già verificato da leggere (scratchpad perso), 12 col sito scartati"
@@ -279,12 +279,25 @@ siti,VC,"sartorie, atelier e tappezzieri",parziale,2,2026-10-18,"18/10 riserva: 
 siti,VB,pasticcerie e cake designer,parziale,10,2026-10-18,"18/10: 34 profili, 10 righe. Aperta (rende 1 su 3,4), finita per fonti: 147 schede PG senza handle; da cercare Ai Castelli, Il Camino, Ciocolà, Casa del Dolce"
 siti,AL,pasticcerie e cake designer,parziale,2,2026-10-18,"18/10 riserva: 11 profili, 2 righe. Ferma per fonti; senza handle con gancio pronto: Casali Tortona (Jimdo), Bonadeo (dominio a un casinò), La Dolce Vito"
 siti,AL,"personal trainer, pilates e yoga",parziale,6,2026-10-18,"18/10: 27 profili, 6 righe. Finita per fonti (WebSearch esaurito): 6 fermi, 5 fuori provincia, 3 col sito"
-siti,PC,"personal trainer, pilates e yoga",parziale,7,2026-10-18,"18/10 riserva: 20 profili, 7 righe. Ferma per fonti; 4 palestre di Piacenza forse fuori target"
-siti,PC,fotografi e videomaker,parziale,11,2026-10-18,"18/10: 51 profili, 11 righe. Aperta (rende 1 su 4,6), finita per fonti (WebSearch esaurito); 13 handle trovati da leggere (marcobernardiphotography, nicolacampisi, matteo_scorza_fotografo, silviamercoliphotostudio...)"
+siti,PC,"personal trainer, pilates e yoga",parziale,8,2026-10-23,"23/10: 3 profili, 1 righe; handle trovati con la ricerca di Instagram in Brave"
+siti,PC,fotografi e videomaker,parziale,12,2026-10-23,"23/10: 2 profili, 1 righe; handle trovati con la ricerca di Instagram in Brave"
 siti,AL,toelettature e dog trainer,parziale,5,2026-10-21,"21/10 riserva di BI: 14 profili, 5 righe. Aperta: restano Vanity Dog Tortona, Team Ferrer Novi e altri nomi di toelettature.net senza handle; Instagram si legge solo da Brave"
 siti,BI,fioristi e wedding planner,esaurito,1,2026-10-21,"21/10: 12 profili, 1 riga (Flor'art). Finito per fonti e resa: 13 fiorerie di Pagine Gialle senza handle trovabile, i wedding planner trovati stanno sotto i 200 follower o hanno il sito (Canterino)"
-siti,BG,"personal trainer, pilates e yoga",parziale,11,2026-10-21,"21/10: 57 profili (36 dal primo operatore, 21 riletti da Brave), 11 righe, resa 1 su 5. Aperta: WebSearch finito, 9 scartati col sito vivo, 7 fuori provincia, 3 morti"
+siti,BG,"personal trainer, pilates e yoga",parziale,13,2026-10-23,"23/10: 8 profili, 2 righe; handle trovati con la ricerca di Instagram in Brave"
 siti,BI,pasticcerie e cake designer,parziale,10,2026-10-22,"22/10: 20 profili, 10 righe. Aperta (rende 1 su 2): restano senza handle Pasticceria Daniele e Piccoli Piaceri (dominio di PG morto), del Viale, Pezzaro, Vallese, Crovella"
 siti,BI,"sartorie, atelier e tappezzieri",parziale,1,2026-10-23,"23/10: 38 nomi dagli elenchi, 33 senza sito, ma solo 2 handle trovati (motori in captcha), 1 riga. Aperta: manca la ricerca per nome in Brave"
 siti,BI,tatuatori e piercing,parziale,5,2026-10-23,"23/10: 9 profili, 5 righe. Aperta, rende bene"
 siti,PC,fioristi e wedding planner,parziale,3,2026-10-23,"23/10: 9 profili, 3 righe: 2 col sito, 1 fuori regione, 3 piccoli o fermi. Aperta"
+siti,AL,fioristi e wedding planner,parziale,1,2026-10-23,"23/10: 4 profili, 1 righe; handle trovati con la ricerca di Instagram in Brave"
+siti,BG,fioristi e wedding planner,esaurito,15,2026-10-23,"23/10: 81 profili, 15 righe (finita per resa: col sito, sotto i 200 follower o fermi)"
+siti,BG,pasticcerie e cake designer,parziale,6,2026-10-23,"23/10: 22 profili, 6 righe; handle trovati con la ricerca di Instagram in Brave"
+siti,BI,"personal trainer, pilates e yoga",parziale,2,2026-10-23,"23/10: 5 profili, 2 righe; handle trovati con la ricerca di Instagram in Brave"
+siti,CR,pasticcerie e cake designer,parziale,2,2026-10-23,"23/10: 5 profili, 2 righe; handle trovati con la ricerca di Instagram in Brave"
+siti,CR,"personal trainer, pilates e yoga",parziale,5,2026-10-23,"23/10: 9 profili, 5 righe; handle trovati con la ricerca di Instagram in Brave"
+siti,CR,tatuatori e piercing,parziale,4,2026-10-23,"23/10: 8 profili, 4 righe; handle trovati con la ricerca di Instagram in Brave"
+siti,PC,pasticcerie e cake designer,parziale,3,2026-10-23,"23/10: 10 profili, 3 righe; handle trovati con la ricerca di Instagram in Brave"
+siti,VA,pasticcerie e cake designer,parziale,1,2026-10-23,"23/10: 5 profili, 1 righe; handle trovati con la ricerca di Instagram in Brave"
+siti,VA,"personal trainer, pilates e yoga",parziale,3,2026-10-23,"23/10: 8 profili, 3 righe; handle trovati con la ricerca di Instagram in Brave"
+siti,VR,pasticcerie e cake designer,parziale,1,2026-10-23,"23/10: 1 profili, 1 righe; handle trovati con la ricerca di Instagram in Brave"
+siti,VR,tatuatori e piercing,parziale,1,2026-10-23,"23/10: 3 profili, 1 righe; handle trovati con la ricerca di Instagram in Brave"
+siti,VR,toelettature e dog trainer,esaurito,7,2026-10-23,"23/10: 57 profili, 7 righe (finita per resa: col sito, sotto i 200 follower o fermi)"

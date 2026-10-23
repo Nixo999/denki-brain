@@ -1,5 +1,5 @@
 ---
-riga: Per Patrick - giro del 23/10: banco online fermo al 20/10 e vault sul ramo sbagliato; 38 righe nuove, banco a 69; L'Ape Regina vuole la bozza
+riga: Per Patrick - giro del 23/10: banco online fermo al 20/10 e vault sul ramo sbagliato; 139 righe nuove, banco a 170; L'Ape Regina vuole la bozza
 type: area
 updated: 2026-10-23
 source: claude
@@ -9,7 +9,7 @@ canale: instagram
 stato: pubblicata
 ---
 
-# 23 ottobre: il banco era vuoto, ora ha 69 righe
+# 23 ottobre: il banco era vuoto, ora ha 170 righe
 
 Giro di [[giro-mattina]], ruolo `primo`, dal Mac di Nicola, partito alle 9:50.
 Il giro automatico ha pubblicato zero righe. Patrick ha poi trovato il banco
@@ -80,6 +80,31 @@ non si fa**, e nessuna riga viene da quelle letture.
 Kink Tattoo, non dello studio; @amygdala_tattoo.temple ha la scheda su Fresha;
 @lebolledimia ha l'ultimo post ad aprile; @aziendaagricola_previtalimarco ha
 221 mila follower.
+
+## La ripresa: altre 101 righe, banco a 170
+
+Nicola ha chiesto di non chiudere il giro finché le righe non bastavano
+(regola scritta in [[metodo-liste]]). Il piano ricalcolato chiedeva 101 righe,
+68 siti e 33 ricerca. Sono entrate 101 righe in tre tornate: 33 di ricerca
+(BG alimentari, BG ingrossi, BS aziende agricole, 11 ciascuna) e 68 di siti.
+
+**Il metodo che ha funzionato**: io ho cercato gli handle nella casella di
+Instagram della mia scheda di Brave, a desktop, con «settore + comune». Gli
+operatori Sonnet hanno letto i profili in schede loro. Nelle schede aperte dagli
+operatori la finestra è stretta e Instagram mostra il layout da telefono, dove
+la ricerca non elenca gli account: due operatori lasciati a cercare da soli
+hanno trovato zero righe. La lettura dei profili invece funziona anche lì.
+
+**Dove rende**: Bergamo e Cremona molto più dei capoluoghi piccoli. Tatuatori
+e pasticcerie rendono circa una riga ogni tre profili; fotografi di matrimonio e
+studi di pilates hanno quasi sempre un sito. Biella, Piacenza e Novara danno
+pochi risultati nella ricerca. Esaurite oggi: BG fioristi (81 profili, 15
+righe) e VR toelettature (57 profili, 7 righe).
+
+**Da guardare prima di mandare**: @uomo_e_cane_verona ha un secondo link in bio
+non verificato; @up_pilates_varese e @soffiovitalepiacenza hanno un dominio
+quasi uguale che sembra di altri; le cantine grandi della Franciacorta nella
+ricerca (Ca' del Bosco, Bellavista, Berlucchi) hanno un marketing interno.
 
 ## I candidati delle sartorie, da cercare per nome
 
