@@ -1,7 +1,7 @@
 ---
-riga: Quattro skill di design sono installate a livello di account (~/.claude/skills/), quindi valgono in ogni cartella - OperO, DenkiShift, cococa...
+riga: Le skill di design e di motion installate a livello di account (~/.claude/skills/), quindi valgono in ogni cartella - OperO, DenkiShift, cococa...
 type: area
-updated: 2026-10-20
+updated: 2026-10-23
 source: claude
 tags: [skills, design, frontend]
 ---
@@ -29,6 +29,13 @@ costava di più. Dettaglio in [[2026-09-06-mac-nicola-in-lavoro]].
 | `frontend-design`, `ui-ux-pro-max` | skill di account, arrivano da sole |
 | `processo-siti` | **nessuno**: scritta da Nicola, vive solo sul PC Windows |
 | `stile-apple` | **il vault**: `.claude/skills/stile-apple/`, si ricopia in `~/.claude/skills/` ([[stile-apple]]) |
+| `gsap-core`, `gsap-scrolltrigger`, `gsap-plugins` | `npx skills add greensock/gsap-skills@<nome> -g -y` (skill ufficiali GreenSock, 65-73 mila installazioni) |
+| `anatomy` | installata il 20/10/2026 per le figure isometriche di oggetti veri (il Reformer di My Balance); origine da riscrivere qui se la si reinstalla |
+| `awwwards-animations` | `npx skills add devmartinese/awwwards-animations-skill@awwwards-animations -g -y` (23/10/2026, 2,8 mila installazioni) |
+| `cinematic-scroll-storytelling`, `cinematic-gsap-lenis-motion-system` | `npx skills add mengto/skills@<nome> -g -y` (23/10/2026, Meng To, 2-2,3 mila) |
+| `shader-glsl`, `threejs-animation` | `npx skills add iart-ai/webgl-animation-skills@<nome> -g -y` (23/10/2026, 1,3 mila) |
+| `animation-performance` | `npx skills add emilkowalski/skills@animation-performance -g -y` (23/10/2026, 29 mila) |
+| `animated-component-libraries` | `npx skills add freshtechbro/claudedesignskills@animated-component-libraries -g -y` (23/10/2026, 2,8 mila; descrive Magic UI e React Bits, ma i componenti WebGL di React Bits si prendono da `reactbits.dev/r/<Nome>-JS-CSS.json`) |
 
 ## La tabella che serve
 
@@ -41,6 +48,7 @@ costava di più. Dettaglio in [[2026-09-06-mac-nicola-in-lavoro]].
 | **Grafici e cruscotti** | `dataviz` | Sceglie la forma prima del colore, e ha un validatore della palette |
 | Una pagina pubblicata su claude.ai | `artifact-design` | È la skill degli Artifact, non dei siti |
 | Uno **stile Apple** chiesto apposta, su un'app o su una pagina prodotto | `stile-apple` | Token verificati sulle linee guida Apple e su apple.com, componenti, vetro con i ripieghi, revisione e script di controllo ([[stile-apple]]) |
+| L'**apertura e la spina allo scroll** di una vetrina: preloader, Lenis, pin, scrub, sfondo in shader | `cinematic-scroll-storytelling`, `shader-glsl`, `animation-performance` | Installate il 23/10/2026 per [[sito-laperegina]]; le regole di Nicola del 14 e 20/10 (scrub senza ritardo, pin corti, niente blur, niente Lenis sul telefono) battono quello che le skill consigliano; il riassunto con i percorsi sta in `direzione/skill-digest.md` del repo `laperegina-site` |
 
 ## Per i nostri due prodotti
 

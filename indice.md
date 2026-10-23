@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **317 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **319 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -70,6 +70,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-hairstylebrescia]] — Hair Style Parrucchieri @hairstyle_brescia, salone a Brescia, gancio sposa - bozza online su hairstylebrescia.netlify.app dal 16/9, mondo A «La prova», 8/8, DM non partito.
 - [[sito-icaarus]] — ⚠️ Bozza sito ICAARUS ASD, centro cinofilo a Brembate-Grignano (BG). Giro 1 «Il percorso» del 09/10, direzione Trevis, costruzione Opus.
 - [[sito-jpp-merate]] — Bozza sito Studio fotografico JPP, Merate. Mondo C «Il libro fustellato», giro 1 online su jppmerate.netlify.app dal 06/10; chiusura su Fable, verdetto di Nicola da avere.
+- [[sito-laperegina]] — Bozza di sito per la Gelateria L'Ape Regina (Calcinato, BS). Giro 1 del 23/10 col mondo «Prima l'ingrediente»: crema in shader all'avvio, cartellini del banco, binario delle stagioni, esagono; Astro con GSAP.
 - [[sito-laurafranzoni]] — Laura Franzoni @laurafranzoni_lashmaker, ciglia a Brescia: bozza online su laurafranzoni.netlify.app dal 14/9, mondo «Dall'alto». Online c'è il giro 2, il giro 3 è fermo in locale.
 - [[sito-leibeautyroom]] — Bozza sito per Lei Beauty Room (Torino Cavoretto) - mondo «La stanza». Online su leibeautyroom.netlify.app, giro 7: da PC il pin, sul telefono menu con i nomi e cinque stanze a scomparsa con porte diverse e tre foto vere, 8/8.
 - [[sito-materia]] — ⚠️ Bozza vetrina per Materia, laboratorio di fiori per matrimoni a Rezzato (BS), lead Instagram @materia_rezzato che ha risposto «Proviamo a vedere» il 20/10.
@@ -96,7 +97,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 **skills/**
 
-- [[design-frontend]] — ⚠️ Quattro skill di design sono installate a livello di account (~/.claude/skills/), quindi valgono in ogni cartella - OperO, DenkiShift, cococa...
+- [[design-frontend]] — ⚠️ Le skill di design e di motion installate a livello di account (~/.claude/skills/), quindi valgono in ogni cartella - OperO, DenkiShift, cococa...
 - [[processo-siti]] — ⚠️ Nota di catalogo, non la skill. È il wikilink più citato del vault (quindici richiami e nessun file, fino al 7 settembre 2026) perché ogni s...
 - [[proposta-commerciale]] — Nota di catalogo della skill proposta-commerciale, non la skill - preventivi WhatsApp per i siti, PDF «Piano di Sviluppo» per i gestionali.
 - [[skills]] — ⚠️ Quale strumento di Claude si usa per quale lavoro.
@@ -154,6 +155,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[giulia-pregnolato]] — Giulia Pregnolato, educatrice cinofila a Torino senza sito. Ha risposto al DM di Patrick il 12/10: vuole sentirlo al telefono.
 - [[il-salone-di-andrea]] — ⚠️ Parrucchiere donna e uomo di Andrea Bielli, Viale Natale Betelli 58, Dalmine.
 - [[jpp-merate]] — Studio fotografico JPP (Just Pure Portraits), Merate, @jppmerate. Stefania ha risposto al DM il 05/10 e vuole una chiamata. Ha già una pagina Canva.
+- [[laperegina]] — Gelateria L'Ape Regina, Calcinato (BS), gelato gourmet dal 2015; ha risposto al DM il 23/10 «Se vuole mandare la bozza possiamo visionarla e parlarne con chi ci segue come marketing».
 - [[laurafranzoni]] — Extension ciglia a Brescia, @laurafranzoni_lashmaker, 452 follower. Bozza online dal 14/9, il DM non è mai partito.
 - [[lei-beauty-room]] — Centro estetico a Torino Cavoretto (via alla Parrocchia 4/c), @lei_beauty_room_, 671 follower, aperto dal 23/10/2025. Ha risposto «Grazie manda pure qui» al DM di Patrick del 24/9. Bozza in lavorazione, non ancora inviata.
 - [[minniminerva]] — Minerva Esposito, MUA ad Alessandria, @minniminerva_make.up. Ha risposto al DM il 04/10 - curiosa, titubante sull'utilità. Bozza online: minervaesposito.netlify.app.
