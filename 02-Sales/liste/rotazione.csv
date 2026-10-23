@@ -153,11 +153,11 @@ ricerca,BG,studi tecnici,parziale,3,2026-09-29,
 ricerca,BG,impiantisti,parziale,7,2026-09-29,
 ricerca,BG,officine e carrozzerie,parziale,13,2026-09-25,
 ricerca,BG,meccanica e carpenterie,parziale,3,2026-09-13,
-ricerca,BG,edilizia e serramenti,parziale,42,2026-10-15,"15/10: 143 profili, 17 righe. Aperta, finita per fonti (Yahoo in 500, PagineGialle ripete gli stessi nomi), non per resa"
+ricerca,BG,edilizia e serramenti,parziale,48,2026-10-23,"23/10: 31 profili, 6 righe: 8 fuori provincia o fuori settore dagli handle dell'operatore, 9 fermi, 4 già contattati"
 ricerca,BG,ingrossi e distribuzione,parziale,8,2026-09-29,
 ricerca,BG,trasporti e logistica,parziale,4,2026-09-25,
 ricerca,BG,alimentari artigianali,parziale,4,2026-09-25,
-ricerca,BG,aziende agricole con vendita,parziale,3,2026-09-17,
+ricerca,BG,aziende agricole con vendita,parziale,21,2026-10-23,"23/10: 33 profili, 18 righe. Aperta, rende 1 su 2; i fermi sono soprattutto caseifici di montagna"
 ricerca,BG,altro,parziale,17,2026-09-25,righe sparse di settori fuori elenco
 ricerca,LO,officine e carrozzerie,esaurito,4,2026-10-13,"13/10: ~45 profili, 2 righe. Finito per resa e fonti: Pagine Gialle 173 schede, 2 con Instagram; ~10 fermi, 5 concessionarie"
 ricerca,LO,edilizia e serramenti,esaurito,8,2026-10-09,"9/10: 37 profili, 7 righe. Finito per resa: provincia piccola, meta dei risultati fuori provincia"
@@ -177,7 +177,7 @@ ricerca,SO,falegnamerie,esaurito,4,2026-10-13,"13/10: ~43 profili, 2 righe. Fini
 ricerca,SO,officine e carrozzerie,parziale,2,2026-09-23,
 ricerca,SO,edilizia e serramenti,esaurito,18,2026-10-12,"12/10: 78 profili, 14 righe. Finito per resa: ~35 fuori provincia, ~15 fermi"
 ricerca,SO,altro,parziale,3,2026-09-29,righe sparse di settori fuori elenco
-ricerca,BS,falegnamerie,parziale,19,2026-10-16,"16/10: 24 profili, 3 righe. Fermata dal blocco Instagram (resa 1 su 8): 7 fermi, 5 fuori provincia, 4 piccoli; 17 handle trovati da leggere"
+ricerca,BS,falegnamerie,esaurito,21,2026-10-23,"23/10: 18 profili, 2 righe (con il 16/10: 42 profili, 5 righe): fermi, negozi di mobili, ferro e maniglie invece del legno"
 ricerca,BS,studi tecnici,parziale,1,2026-09-13,
 ricerca,BS,impiantisti,parziale,7,2026-09-29,
 ricerca,BS,officine e carrozzerie,esaurito,25,2026-10-10,"10/10: 120 profili, 14 righe. Finito per fonti (Pagine Gialle 429, Googlebot sui profili rimanda al login): ~45 fuori provincia dagli account simili, ~22 fermi, ~12 concessionarie"
@@ -255,9 +255,9 @@ ricerca,LO,ingrossi e distribuzione,esaurito,1,2026-10-11,"11/10: 62 profili, 1 
 siti,VB,"sartorie, atelier e tappezzieri",esaurito,4,2026-10-12,"12/10: 30 profili, 4 righe. Finito per resa: 17 fuori provincia, 3 sotto i 200, 2 negozi; ~30 sarte su PagineBianche quasi tutte senza Instagram"
 siti,PV,"sartorie, atelier e tappezzieri",esaurito,1,2026-10-12,"12/10: 32 profili, 1 riga. Finito per resa: 5 col sito, 3 fermi, ~10 fuori regione"
 siti,CR,toelettature e dog trainer,esaurito,7,2026-10-12,"12/10: ~50 profili, 7 righe. Finito per fonti: toelettature.net e toelettapp.it battuti, 4 col sito, ~10 fermi, 4 negozi"
-siti,PR,toelettature e dog trainer,parziale,7,2026-10-12,"12/10: ~55 profili, 7 righe. Aperta ma rende poco: 4 col sito, molti fuori regione da Yahoo"
+siti,PR,toelettature e dog trainer,esaurito,9,2026-10-23,"23/10: 15 profili, 2 righe (in tutto ~70 profili, 9 righe): 4 col sito, 4 sotto i 200 follower, 3 fermi"
 siti,PV,tatuatori e piercing,esaurito,11,2026-10-12,"12/10: 84 profili, 11 righe: 7 col sito, 6 fermi, ~30 omonimi esteri. Finito per bacino (~35 studi in provincia)"
-ricerca,MN,edilizia e serramenti,parziale,6,2026-10-12,"12/10: 25 profili, 7 righe valide (6 usate, @gilioli_poggiorusco pronta). Aperta, rende 1 su 4"
+ricerca,MN,edilizia e serramenti,parziale,7,2026-10-23,"23/10: 1 riga trovata cercando la Bergamasca (Bergamaschi Serramenti, Asola)"
 ricerca,CR,falegnamerie,esaurito,1,2026-10-13,"13/10: 42 profili, 1 riga. Finito per resa: Pagine Gialle 62 schede, quasi tutti artigiani senza Instagram o fermi"
 siti,LO,fioristi e wedding planner,parziale,5,2026-10-15,"15/10: ~28 profili, 5 righe. Aperta ma nomi finiti; @fiorifantasie e @fioriefantasie_ da riprendere se si conferma la sede"
 siti,VB,"personal trainer, pilates e yoga",parziale,7,2026-10-15,"15/10: ~40 profili, 7 righe. Aperta: molti omonimi esteri (Omegna, Ghiffa), Yahoo fermo prima di una decina di comuni; yogapills.it è la fonte migliore"
@@ -285,3 +285,6 @@ siti,AL,toelettature e dog trainer,parziale,5,2026-10-21,"21/10 riserva di BI: 1
 siti,BI,fioristi e wedding planner,esaurito,1,2026-10-21,"21/10: 12 profili, 1 riga (Flor'art). Finito per fonti e resa: 13 fiorerie di Pagine Gialle senza handle trovabile, i wedding planner trovati stanno sotto i 200 follower o hanno il sito (Canterino)"
 siti,BG,"personal trainer, pilates e yoga",parziale,11,2026-10-21,"21/10: 57 profili (36 dal primo operatore, 21 riletti da Brave), 11 righe, resa 1 su 5. Aperta: WebSearch finito, 9 scartati col sito vivo, 7 fuori provincia, 3 morti"
 siti,BI,pasticcerie e cake designer,parziale,10,2026-10-22,"22/10: 20 profili, 10 righe. Aperta (rende 1 su 2): restano senza handle Pasticceria Daniele e Piccoli Piaceri (dominio di PG morto), del Viale, Pezzaro, Vallese, Crovella"
+siti,BI,"sartorie, atelier e tappezzieri",parziale,1,2026-10-23,"23/10: 38 nomi dagli elenchi, 33 senza sito, ma solo 2 handle trovati (motori in captcha), 1 riga. Aperta: manca la ricerca per nome in Brave"
+siti,BI,tatuatori e piercing,parziale,5,2026-10-23,"23/10: 9 profili, 5 righe. Aperta, rende bene"
+siti,PC,fioristi e wedding planner,parziale,3,2026-10-23,"23/10: 9 profili, 3 righe: 2 col sito, 1 fuori regione, 3 piccoli o fermi. Aperta"

@@ -1217,6 +1217,13 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Liste e banco DM
 
+- **Il giro del mattino lavora sul ramo in cui il vault si trova.** Dal 20 al
+  23/10/2026 il vault del Mac di Nicola era su `skill/stile-apple`: i giri
+  hanno pushato lì, mentre Netlify e `banco-sync.yml` lavorano su `main`. Il
+  banco online è rimasto con la lista del 20, i DM del 22 non sono tornati nel
+  vault e `prossimo-giro.py` ha contato 164 righe invece di 31. → prima del
+  giro va controllato `git branch --show-current`; se non è `main`, lo stato del
+  banco va letto da `origin/main`. [[2026-10-23-posta-giro-mattina]]
 - **Una frase di verifica ripetuta su sessanta righe è un modello, non un
   controllo.** Lista dell'8 settembre: 62 righe su 68 con la stessa frase,
   almeno 20 su 72 col sito. → ogni riga dice cosa è stato cercato e cosa è
