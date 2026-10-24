@@ -65,7 +65,7 @@ API a pagamento). Già installate e usate: `shader-glsl`, `gsap-plugins`,
 
 Tre mondi proposti da un operatore su Fable (`direzione/MONDI.md`): «Lo
 stencil», «Il foglio di flash», «Il bestiario». Nicola ha scelto il 24/10 il
-bestiario con dentro la scena dello stencil: sipario nero sul nome, campo
+bestiario con dentro la scena dello stencil: sipario sul nome, campo
 d'inchiostro in shader, la falena che si disegna nel viola dello stencil
 (`#9185D1`, misurato sull'anteprima del reel del 21/10) e diventa nero pieno,
 poi le sue creature I-VI, poi il DM. Font Metamorphous e Cormorant. La
