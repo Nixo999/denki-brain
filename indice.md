@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-10-23
+updated: 2026-10-24
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **319 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **322 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -91,6 +91,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-pinkploy]] — Online su pinkploy.netlify.app per @nails_art_by_pinkploy, onicotecnica a Brescia centro - mondo B «lo spessore», l'unghia in quota.
 - [[sito-pizzeria-lobidu]] — ⚠️ Pizzeria Lobidù, pizzeria siciliana, Via IV Novembre 13, 21049 Tradate (VA).
 - [[sito-salone-di-andrea]] — ⚠️ Sito vetrina in una pagina per Il Salone di Andrea, parrucchiere donna e uomo di Andrea Bielli a Dalmine (BG), Viale Natale Betelli 58.
+- [[sito-satatttvision]] — Bozza di sito per Satatttvision (studio di tatuaggi, via Tadino 3, Milano). Giro 1 in costruzione dal 24/10, mondo «La vetrina di via Tadino»: saracinesca a strisce all'avvio, insegna che si disegna, flash tipografici, macchina con anatomy; Astro con GSAP.
 - [[sito-shaddai]] — Bozza di sito vetrina non commissionata per Shaddai Extension Lash, lash artist a Bergamo, costruita il 16 settembre 2026 dai contenuti veri del profilo Instagram.
 - [[sito-soul-ink]] — Bozza sito per Soul Ink Torino City (studio tattoo, via Cremona 27/b Torino, Franco Roggia giapponese + Alessandro Audino tradizionale) - mondo «Munewari × cartigli», giro 3 online su soul-ink-torino.netlify.app dal 26/09, 8/8, slop 0, testo 0.
 - [[sito-whitelilium]] — ⚠️ Bozza sito White Lilium Photography, fotografa maternity/newborn/famiglia, Trezzano sul Naviglio. Giro 1 «Il controluce» del 07/10, una testa sola su Fable.
@@ -108,6 +109,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 
 - [[anti-slop-siti]] — ⚠️ Cosa fa sembrare un sito fatto con l'AI, dalla ricerca del 17/09/2026 - segni visivi e di testo, cosa blocca controlla-slop, cosa va guardato.
 - [[competitor-siti-barber]] — ⚠️ Inventario di 15 siti (6 barber Brianza, 5 barbershop italiani noti, 4 trapianto Albania) per il sito di Barbershop SNIA (Cesano Maderno).
+- [[competitor-siti-bomboniere]] — ⚠️ "Ricerca del 24/10/2026 su 6 siti di bomboniere, partecipazioni e allestimenti (4 Bergamo/Brescia, 2 Italia): sezioni, info mancanti, 3 errori comuni. Per Mon Amour, Dalmine."
 - [[competitor-siti-estetica]] — ⚠️ 18 siti di centri estetici (5 locali AL/VC/AT, 5 boutique italiane, 3 specialistici, 5 Torino collina) - sezioni, info reali, stile, per Dragonfly e Lei Beauty Room.
 - [[competitor-siti-fotografi-eventi]] — 50 siti: diciottesimi (16), matrimoni documentari (6), eventi corporate/concerti (24), 4 premiati. Prezzi, extra, FAQ, cliché, motion.
 - [[competitor-siti-fotografi]] — ⚠️ 48 siti di fotografi famiglia/newborn/maternità (16 zona Merate, 15 Italia, 12 estero, 5 premiati): sezioni, prezzi, FAQ, cliché.
@@ -172,6 +174,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[perunpelo]] — Ambra Longoni, groomer di Per un Pelo Toelettatura, Nembro (BG), @toelettatura.perunpelo. 5,0 su 102 su Google. Ha risposto al DM il 25/09 - vuole la bozza.
 - [[petliving]] — Pet Living Toelettatura, Giussano (MB) + Bovisio Masciago, @petlivingtoelettatura. Ha risposto al DM il 30/09, vuole vedere qualcosa. Bozza in sito-petliving.
 - [[pinkploy]] — Onicotecnica a Brescia centro, @nails_art_by_pinkploy, 832 follower. Bozza online dal 14/9, il secondo DM col link tocca a Patrick.
+- [[satatttvision]] — Satatttvision, studio di tatuaggi a Milano (via Tadino 3, 49K follower, resident e guest); ha risposto al DM il 23/10 «vedremmo volentieri la vostra bozza qui su Instagram ed eventualmente ci piacerebbe poi incontrarvi di persona».
 - [[sebastian-torres]] — Privato, non un'azienda. Sta aprendo la sua attività, e l'attività è opero - l'app che stiamo costruendo noi è la sua idea imprenditoriale.
 - [[shaddai-extension-lash]] — Lash artist a domicilio a Bergamo, 736 follower, nessun sito - bozza costruita il 16 settembre 2026, DM non ancora inviato.
 - [[shari-piras]] — ⚠️ Shari Piras, tatuatrice, Merate (LC). Due account - @shari_tattooer (4.504 follower, 493 post) è la persona, @atelierselva_ (593 follower, 41...

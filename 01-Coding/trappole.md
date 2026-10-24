@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Errori tecnici già pagati e strade scartate, per dominio. Descrittivo, non è un rulebook - le regole stanno in convenzioni.
-updated: 2026-10-16
+updated: 2026-10-24
 verificato: 2026-09-10
 source: denkicode
 tags: [trappole, memoria, frontend, gsap, git]
@@ -1214,6 +1214,10 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   Contech, Ramallumin e Sprinx, che sono italiane ed esportano. Le separa la
   partita IVA: un'azienda italiana la scrive sul suo sito anche se è in
   inglese, il sito del gruppo estero no. (19/10/2026, [[posta-fredda]])
+
+- `[TRAPPOLA]` **Dal browser dell'app le pagine di Instagram e Facebook bloccano `fetch` e le immagini verso `127.0.0.1`**: non si può passare un file a un server locale per salvarlo. Si leggono gli URL dalla pagina e si scarica con `curl`. ([[sito-satatttvision]], 24/10/2026)
+- **Le foto della scheda Foto di Facebook arrivano a 1440 px alzando il parametro `cstp` a `mx1440x1440`**, ma possono essere due fotogrammi di video impilati in un quadrato con una barra nera in mezzo: si guardano prima di tenerle, e se ne ritaglia uno. Le didascalie dei post Instagram con `curl` dall'`og:title` funzionano ancora il 24/10/2026, anche sul post dello studio. ([[sito-satatttvision]])
+- `[TRAPPOLA]` **Vettorializzare un tatuaggio da una miniatura a 640 px non regge**: con `vtracer` (installabile con `pip` in un venv, senza toccare il Mac) dopo una soglia le linee fini escono spezzate e la pelle diventa macchia. Il tracciato funziona bene solo su un'immagine piatta e pulita, come il lettering di un logo (16 tracciati puliti dalla copertina Facebook di Satatttvision). Per i disegni dai lavori servono gli originali a 1080+. ([[sito-satatttvision]], 24/10/2026)
 
 ## Liste e banco DM
 
