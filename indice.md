@@ -93,7 +93,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-pinkploy]] — Online su pinkploy.netlify.app per @nails_art_by_pinkploy, onicotecnica a Brescia centro - mondo B «lo spessore», l'unghia in quota.
 - [[sito-pizzeria-lobidu]] — ⚠️ Pizzeria Lobidù, pizzeria siciliana, Via IV Novembre 13, 21049 Tradate (VA).
 - [[sito-salone-di-andrea]] — ⚠️ Sito vetrina in una pagina per Il Salone di Andrea, parrucchiere donna e uomo di Andrea Bielli a Dalmine (BG), Viale Natale Betelli 58.
-- [[sito-satatttvision]] — Bozza sito Satatttvision (tatuatori, Milano). Giro 1 dal 24/10, mondo «La vetrina di via Tadino»: saracinesca, insegna disegnata, flash.
+- [[sito-satatttvision]] — Bozza sito Satatttvision (tatuatori, Milano). Giro 1 online dal 24/10 su satatttvision.netlify.app, mondo «La vetrina di via Tadino».
 - [[sito-shaddai]] — Bozza di sito vetrina non commissionata per Shaddai Extension Lash, lash artist a Bergamo, costruita il 16 settembre 2026 dai contenuti veri del profilo Instagram.
 - [[sito-soul-ink]] — Bozza sito per Soul Ink Torino City (studio tattoo, via Cremona 27/b Torino, Franco Roggia giapponese + Alessandro Audino tradizionale) - mondo «Munewari × cartigli», giro 3 online su soul-ink-torino.netlify.app dal 26/09, 8/8, slop 0, testo 0.
 - [[sito-whitelilium]] — ⚠️ Bozza sito White Lilium Photography, fotografa maternity/newborn/famiglia, Trezzano sul Naviglio. Giro 1 «Il controluce» del 07/10, una testa sola su Fable.
