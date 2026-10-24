@@ -62,6 +62,7 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Catture e verifica in headless
 
+- `[TRAPPOLA]` **Con il pannello del browser dell'app nascosto non arrivano `requestAnimationFrame` né eventi di scroll, e le transizioni CSS restano ferme**: un banco di prova di motion sembra rotto quando è solo in secondo piano. → si porta il pannello davanti, oppure il banco gira con un `requestAnimationFrame` a timer e `ScrollTrigger.update()` chiamato a mano. ([[sito-monamour]], 24/10)
 - `[TRAPPOLA]` **`cattura-fette.mjs` taglia a metà le schede dentro un contenitore che scorre di lato** (un carosello orizzontale sul telefono): la fetta non sa dello scorrimento interno. → per quelle sezioni uno scatto diretto via CDP con il contenitore scrollato, o si giudicano dal browser. ([[sito-mybalance]], 20/10)
 - `[TRAPPOLA]` **Brave in headless con `--screenshot` si blocca e non scrive niente.** Per fotografare un file HTML locale funziona `node ~/.claude/skills/anatomy/scripts/capture.mjs <file.html> --out <png>` con `CHROME_PATH="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"`; per i siti restano `cattura-fette.mjs` e `cattura-apertura.mjs` via CDP. ([[sito-mybalance]], 20/10)
 - `[TRAPPOLA]` **Uno zero di `grep -c` su un `curl` non distingue «non c'è»
@@ -368,6 +369,7 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Immagini e `sips`
 
+- `[TRAPPOLA]` **`sips --cropOffset` con uno zero su un asse centra il ritaglio su quell'asse invece di partire dal bordo.** Chi vuole tagliare dal bordo mette 1 al posto di 0, e poi misura dove è caduto il taglio. ([[sito-monamour]], 24/10)
 - `[TRAPPOLA]` **`python3 -I` non trova PIL.** `-I` esclude i pacchetti installati per l'utente, e Pillow sta lì: per gli script che leggono immagini scaricate si usa `-I` solo se Pillow è nel sistema, altrimenti `python3 -s`-less normale con il file passato come argomento. ([[sito-mybalance]], 20/10)
 - `[TRAPPOLA]` **`cwebp` e `magick` non ci sono sul Mac di Nicola, ma Pillow scrive WebP e AVIF** (`features.check('webp')` è vero). Su Materia il primo giro è uscito con JPEG da 376 KB serviti anche al telefono perché «non c'è il convertitore», e Nicola ha notato subito che le foto ci mettevano tanto. Con Pillow, WebP a 480/800/1080 px qualità 72 e `srcset`, il peso delle foto sul telefono è sceso da 6,8 a 1,7 MB. ([[sito-materia]], 20/10)
 
