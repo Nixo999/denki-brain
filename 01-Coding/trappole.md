@@ -437,6 +437,8 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   allegando il dopo, un minuto; poi si riallinea su occhi, naso e bocca e si
   pareggiano i toni del fondo. (10/10/2026, [[sito-barbershop-snia]])
 
+- `[TRAPPOLA]` **Un tatuaggio vettorializzato con potrace diventa una sagoma nera piena se in pagina si copia solo il `d`.** potrace scrive i buchi come sottotracciati con `fill-rule="evenodd"` sul `<path>`; il costruttore aveva estratto il `d` con una regex per riusarlo in `<use>` e nei sigilli, e la falena usciva come una macchia nera con il teschio bianco. → quando si estrae il `d` si riporta anche `fill-rule="evenodd"`. Lo strumento è `scripts/traccia.mjs` di jadetattoo-site (soglia adattiva sull'inchiostro più potrace): linee nette e nero pieno escono puliti, il puntinato fine e i petti pelosi no. ([[sito-jadetattoo]], 24/10/2026)
+
 ## GSAP e motion
 
 - `[TRAPPOLA]` **Con ScrollSmoother le ancore non portano più alla sezione.** Un link `#sezione` o un indirizzo con `#sezione` restano fermi, perché il contenuto scorre dentro `#smooth-content`: li deve gestire il JS con `ScrollSmoother.get().scrollTo('#sezione')`. Dopo un salto le foto in `loading="lazy"` restano grigie per un attimo, e in una cattura fatta subito sembrano mancanti. ([[sito-materia]], 20/10)
@@ -1228,6 +1230,9 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 - **Le foto della scheda Foto di Facebook arrivano a 1440 px alzando il parametro `cstp` a `mx1440x1440`**, ma possono essere due fotogrammi di video impilati in un quadrato con una barra nera in mezzo: si guardano prima di tenerle, e se ne ritaglia uno. Le didascalie dei post Instagram con `curl` dall'`og:title` funzionano ancora il 24/10/2026, anche sul post dello studio. ([[sito-satatttvision]])
 - `[TRAPPOLA]` **Vettorializzare un tatuaggio da una miniatura a 640 px non regge**: con `vtracer` (installabile con `pip` in un venv, senza toccare il Mac) dopo una soglia le linee fini escono spezzate e la pelle diventa macchia. Il tracciato funziona bene solo su un'immagine piatta e pulita, come il lettering di un logo (16 tracciati puliti dalla copertina Facebook di Satatttvision). Per i disegni dai lavori servono gli originali a 1080+. ([[sito-satatttvision]], 24/10/2026)
 
+- `[TRAPPOLA]` **Il fotogramma di copertina di un reel non è l'anteprima della griglia.** Per misurare il viola dello stencil la `video_additional_cover_frame` del reel (640 px) mostrava un selfie allo specchio, mentre la griglia del profilo mostrava lo stencil. L'anteprima giusta è il `currentSrc` dell'`<img>` dentro `a[href*="/reel/<id>/"]` della pagina profilo (361 px, `CLIPS.best_image_urlgen`): basta per un colore, non per una foto. ([[sito-jadetattoo]], 24/10/2026)
+- `[TRAPPOLA]` **In 7 post su 11 il testo di `<main>` non contiene «Segui»**, quindi la didascalia letta dopo «Segui» resta vuota. La didascalia di chi pubblica sta subito dopo la data relativa («3 g», «12 sett»), prima dei commenti. ([[sito-jadetattoo]], 24/10/2026)
+
 ## Liste e banco DM
 
 - **Il giro del mattino lavora sul ramo in cui il vault si trova.** Dal 20 al
@@ -1491,6 +1496,10 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   `read_page` tornava vuoto e uno dei due si è fermato due volte all'apertura. →
   un agente alla volta nel browser, o ciascuno con `tabs_create` e il suo `tabId`.
   (10/10/2026)
+
+- `[TRAPPOLA]` **Le porte 4321 e 4322 possono essere già prese dal server di un altro sito**, e `astro dev` scivola da solo sulla porta successiva, che può essere quella di un altro operatore. → `--strictPort` e una porta diversa per ogni operatore. ([[sito-jadetattoo]], 24/10/2026)
+- `[TRAPPOLA]` **Con il pannello del browser nascosto `requestAnimationFrame` non gira**, quindi apertura, shader e scrub sembrano fermi. Le animazioni si guardano con Chrome headless pilotato via CDP (come `cattura-fette.mjs`), oppure con `scripts/video-telefono.mjs` di jadetattoo-site, che registra la pagina a 390×844 con lo screencast di CDP e la monta in MP4 con `ffmpeg-static` installato nello scratchpad. Il video serve anche da consegna quando il cliente vuole vedere la bozza su Instagram. ([[sito-jadetattoo]], 24/10/2026)
+- `[TRAPPOLA]` **`controlla-slop.py` legge un h1 diviso in uno `<span>` per lettera come un «titolo di 10 parole»**, ed è un falso positivo; blocca invece la ✦ usata come segno al posto di un'icona, quindi va sostituita con un'icona Phosphor (`star-four`). ([[sito-jadetattoo]], 24/10/2026)
 
 ## Collegamenti
 
