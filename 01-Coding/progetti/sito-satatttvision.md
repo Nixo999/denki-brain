@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito per Satatttvision (tatuatori, Milano). Giro 1 dal 24/10, mondo «La vetrina di via Tadino»: saracinesca, insegna che si disegna, flash tipografici.
+riga: Bozza sito Satatttvision (tatuatori, Milano). Giro 1 dal 24/10, mondo «La vetrina di via Tadino»: saracinesca, insegna disegnata, flash.
 updated: 2026-10-24
 source: claude
 verificato: 2026-10-24

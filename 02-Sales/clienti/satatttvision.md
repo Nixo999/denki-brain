@@ -1,6 +1,6 @@
 ---
 type: cliente
-riga: Satatttvision, studio di tatuaggi a Milano (via Tadino 3, 49K follower); il 23/10 ha risposto al DM: vuole la bozza su Instagram e poi incontrarci.
+riga: Satatttvision, studio di tatuaggi a Milano (via Tadino 3, 49K follower); il 23/10 ha risposto: vuole la bozza su Instagram, poi incontrarci.
 status: lead
 progetti: [sito-satatttvision]
 updated: 2026-10-24
