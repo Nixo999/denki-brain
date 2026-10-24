@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito Jade Tattoo (blackwork, Bergamo): giro 1 «Bestiario + stencil» in locale, 8/8, disegni = suoi tatuaggi vettorializzati.
+riga: Bozza sito Jade Tattoo (blackwork, Bergamo): giro 1 «Bestiario + stencil» su jadetattoo.netlify.app, 8/8, disegni = suoi tatuaggi.
 status: attivo
 client: jadetattoo
 stack: astro
@@ -13,8 +13,8 @@ tags: [sito, bozza, tattoo, bergamo, instagram]
 
 # Sito Jade Tattoo — bozza, Bergamo
 
-Cartella `~/lavoro/jadetattoo-site`, ramo `main`, solo locale (nessun remoto
-GitHub al 24/10). Scheletro Astro estratto da laperegina-site al commit
+Cartella `~/lavoro/jadetattoo-site`, ramo `main`, nessun remoto GitHub
+(24/10). Online su <https://jadetattoo.netlify.app>. Scheletro Astro estratto da laperegina-site al commit
 `7040661`. Lei viene dalla lista del 23/10
 (`02-Sales/liste/2026-10-23-instagram-siti-bg-tatuatori.csv`): il 24/10 ha
 risposto a Patrick che la bozza la vuole vedere su Instagram.
@@ -73,7 +73,7 @@ direzione per esteso sta in `direzione/DIREZIONE.md` del repo.
 
 ## Giro 1 (24/10, sera) — com'è fatto
 
-Commit `1a5b9f5`, non pubblicato. Costruito da due operatori Opus in parallelo
+Commit `1a5b9f5`. Online su <https://jadetattoo.netlify.app> dal 24/10 (progetto Netlify `jadetattoo`, id `0175938f-a64f-421f-aa37-0231654c4485`, team denkicode; si ripubblica con `npm run build` e `netlify deploy --dir dist --prod --no-build --site 0175938f-…`), con i tre sbarramenti verificati con `curl`. Costruito da due operatori Opus in parallelo
 («pagina» e «motion», contratto di DOM in `direzione/contratto.md`).
 
 - **Apertura** (1,7 s, CSS): sipario color osso con la falena stampata a
