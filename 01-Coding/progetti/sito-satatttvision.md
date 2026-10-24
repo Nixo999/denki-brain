@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito Satatttvision (tatuatori, Milano). Giro 1 dal 24/10, mondo «La vetrina di via Tadino»: saracinesca, insegna disegnata, flash.
+riga: Bozza sito Satatttvision (tatuatori, Milano). Giro 1 online dal 24/10 su satatttvision.netlify.app, mondo «La vetrina di via Tadino».
 updated: 2026-10-24
 source: claude
 verificato: 2026-10-24
@@ -15,8 +15,8 @@ deadline: TODO
 
 Bozza di sito vetrina per Satatttvision, chiesta da Nicola il 24/10/2026 dopo la risposta al DM: «ce da fare questo sito fatto molto bene, trova delle skills per farlo in maniera particolare e dargli la personalità giusta che prendi dal suo Instagram, usa delle skill per fare dei disegni da mettere nel sito rispettando il suo stile di tatuaggi. deve essere fatto molto bene sia da telefono che da pc, e animalo il giusto e fai una bella animazione all'avvio». Cliente: [[satatttvision]].
 
-**Cartella**: `~/lavoro/satatttvision-site` (git locale, ramo `main`; repo GitHub `TODO`).
-**Online**: `TODO` (Netlify, con i tre sbarramenti).
+**Cartella**: `~/lavoro/satatttvision-site` (repo privato `Nixo999/satatttvision-site`, ramo `main`).
+**Online**: <https://satatttvision.netlify.app>, con i tre sbarramenti, dal 24/10/2026 alle 20:30 (giro 1 `4b116d7`, correzioni `2f0a50a`, `9ca45d3`, `a222988`). Progetto Netlify `satatttvision`, id `d4eb440c-49f4-4225-a86e-d482c1112548`, team di Nicola; si ripubblica con `npm run build` e `netlify deploy --dir dist --prod --no-build --site d4eb440c-49f4-4225-a86e-d482c1112548` (il link della CLI è globale e resta su laperegina, vedi [[trappole]]).
 
 ## Chi è
 
@@ -50,7 +50,9 @@ La direzione l'ha scritta Trevis (Fable) in `direzione/DIREZIONE.md` dopo aver g
 
 ## Com'è andata la verifica
 
-`TODO`: si scrive a fine giro.
+Giro 1, 24/10/2026. I tre controlli passano: `controlla-sito` 8/8, `controlla-slop` 0 (due avvisi voluti: le etichette #001–#011 dei flash e il bagliore del neon), `controlla-testo` 0 (un avviso su un elenco di link). Build verde, nessuno scorrimento laterale a 375, 800 e 1440, console pulita, tasti sopra i 44 px, contrasti 6:1 sul grigio e 12,5:1 sul nero su verde. Trevis ha guardato le catture a fette di Brave headless a 375 e a 1440 (hero, artisti, flash, stencil con la figura, dicono, dove) e i fotogrammi dell'apertura a 1440 (0,6 s saracinesca a metà, 1,2 s insegna tracciata in verde, 1,8 s hero completo). Due verdetti di Trevis corretti nel giro: sul telefono la pillola dell'orario e la riga del DM stavano a sinistra della foto con un buco sopra (ora in colonna, foto da 220 px); da computer l'hero lasciava un terzo di schermo vuoto (ora riempie lo schermo fino alla banda a strisce).
+
+**Non verificato**: un iPhone e Safari veri; la fluidità dell'apertura e dei flash su un telefono lento (il pannello dell'app non disegna fotogrammi: le sonde `getComputedStyle` dal pannello dicevano «ferma» mentre il Chrome headless la mostrava in corsa); la pagina senza JavaScript (dedotta dal CSS); il tablet fra 1024 e 1280 px dopo l'ultima modifica dell'hero; la finish review di impeccable (l'operatore non può lanciare sotto-agenti). Con `?cattura` a 1280×720 l'hero resta alto 808 px perché `base.css` fissa `--vh` a 9 px: riguarda solo le catture.
 
 ## Da chiedere allo studio
 
