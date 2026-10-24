@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza di sito per Mon Amour (Dalmine, BG). Giro 1 in costruzione dal 24/10, «Il giorno della festa, in ordine»; Astro con GSAP; non online.
+riga: Bozza di sito per Mon Amour (Dalmine, BG). Giro 1 del 24/10, «Il giorno della festa, in ordine»; Astro con GSAP; online su monamour-dalmine.netlify.app.
 updated: 2026-10-24
 source: claude
 status: attivo
@@ -15,7 +15,7 @@ deadline: TODO
 Bozza di sito vetrina a una pagina per il negozio Mon Amour di Dalmine, costruita il 24/10/2026 dopo la risposta al DM di Patrick. Cliente: [[monamour]]. Il processo è quello di [[processo-siti]]; le bocciature già date stanno in [[direttive-siti]], e il lavoro gemello del giorno prima è [[sito-laperegina]].
 
 **Cartella**: `~/lavoro/monamour-site`, repo privato `Nixo999/monamour-site`, ramo `main`.
-**Online**: non ancora. Nessun sito Netlify creato.
+**Online**: <https://monamour-dalmine.netlify.app> dal 24/10/2026, sito Netlify `monamour-dalmine` (id `66a827b7-4e2d-4358-ac4b-2ea27f048d56`), deploy a mano; i tre sbarramenti sono attivi.
 
 ## Cosa c'è da sapere sul cliente
 

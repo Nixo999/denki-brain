@@ -78,7 +78,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-mikuma-dogs]] — Online su mikumadogs.netlify.app per Martina Carneli (mikuma.dogs), Como - giro 7 'il bianco e il nero', logo vero, Nicola: 'mi piace molto'.
 - [[sito-minniminerva]] — Bozza sito Minerva Esposito, MUA ad Alessandria. Online dal 05/10 il giro 3 «Il velo» (bianco su bianco), verdetto di Nicola da avere.
 - [[sito-mitril-tattoo]] — ⚠️ Bozza sito Mitril Tattoo & Piercing (Rovato BS, Giovi Salvi e Jennifer Galli). Giro 1 «Due mani, una pelle» del 09/10, direzione Fable, costruzione Opus.
-- [[sito-monamour]] — ⚠️ Bozza di sito per Mon Amour (Dalmine, BG). Giro 1 in costruzione dal 24/10, «Il giorno della festa, in ordine»; Astro con GSAP; non online.
+- [[sito-monamour]] — ⚠️ Bozza di sito per Mon Amour (Dalmine, BG). Giro 1 del 24/10, «Il giorno della festa, in ordine»; Astro con GSAP; online su monamour-dalmine.netlify.app.
 - [[sito-mybalance]] — Sito di Studio Danza My Balance (Acqui Terme), lato Pilates di Giorgia Zunino. Giro 3 online il 20/10 su mybalance-pilates.netlify.app: mondo «Cinque molle», Reformer fatto con anatomy, Astro con React Bits; motion agganciata allo scroll dopo il verdetto di Nicola.
 - [[sito-nails-mania]] — ⚠️ Sito vetrina in una pagina per Nails Mania, centro di ricostruzione unghie mani e piedi di Lory Frosio a Seriate (BG).
 - [[sito-nails-robyy]] — Roberta @nails.robyy, nail artist e educator a Brescia: bozza online su nailsrobyy.netlify.app dal 14/9, mondo A «la sezione quotata», 8/8, sbarramenti verificati.
