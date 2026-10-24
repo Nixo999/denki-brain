@@ -32,7 +32,9 @@ Negozio di bomboniere che segue l'evento intero: partecipazioni, palloncini e fi
 
 ## Com'è andata la verifica
 
-In corso, si aggiorna a fine giro.
+`controlla-sito` 8/8, `controlla-slop` OK con quattro avvisi (parole da densità e il superlativo «straordinarie» dentro una recensione citata alla lettera), `controlla-testo` OK con una frase di 34 parole. Trevis ha guardato l'apertura campionata a cinque istanti con `cattura-apertura.mjs`, le catture a fette a 1440 e a 375 e la pagina viva nel pannello dell'app a 1440 (pin delle tappe, bokeh, console) e a 375 (hero, carosello delle feste, negozio). Dopo il primo sguardo: il cambio di tappa nel pin faceva vedere i due testi sovrapposti a metà dissolvenza (ora quella che esce sparisce in 0,12 s e quella che entra appare con 0,1 s di ritardo) e la foto dell'hero da computer era grande (colonna a 340 px). Online dal 24/10 su <https://monamour-dalmine.netlify.app> (Netlify `monamour-dalmine`, id `66a827b7-4e2d-4358-ac4b-2ea27f048d56`, deploy a mano: `npm run build` e `netlify deploy --dir dist --prod --no-build --site 66a827b7-4e2d-4358-ac4b-2ea27f048d56`); i tre sbarramenti verificati con `curl`. Non provati: iPhone vero, Safari, tablet fra 768 e 1023 px, la pagina senza JavaScript.
+
+Da sapere se Nicola lo chiede: l'avorio sul malva del logo fa 3,6:1, quindi sul malva c'è solo testo grande e il piede è in malva scuro; l'oro non porta mai testo; la recensione di Sara Rigamonti è tagliata con «[…]» per togliere un «Inoltre»; 11 ritagli hanno un nome di cliente leggibile, elencati in `assets/img/LEGGIMI.md`; la copertina Facebook con la ragazza non è usata.
 
 ## Da chiedere nel DM
 
