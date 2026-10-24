@@ -1,7 +1,7 @@
 ---
 riga: Le skill di design e di motion installate a livello di account (~/.claude/skills/), quindi valgono in ogni cartella - OperO, DenkiShift, cococa...
 type: area
-updated: 2026-10-23
+updated: 2026-10-24
 source: claude
 tags: [skills, design, frontend]
 ---
@@ -36,6 +36,8 @@ costava di più. Dettaglio in [[2026-09-06-mac-nicola-in-lavoro]].
 | `shader-glsl`, `threejs-animation` | `npx skills add iart-ai/webgl-animation-skills@<nome> -g -y` (23/10/2026, 1,3 mila) |
 | `animation-performance` | `npx skills add emilkowalski/skills@animation-performance -g -y` (23/10/2026, 29 mila) |
 | `animated-component-libraries` | `npx skills add freshtechbro/claudedesignskills@animated-component-libraries -g -y` (23/10/2026, 2,8 mila; descrive Magic UI e React Bits, ma i componenti WebGL di React Bits si prendono da `reactbits.dev/r/<Nome>-JS-CSS.json`) |
+| `svg-animation` | `npx skills add iart-ai/web-animation-skills@svg-animation -g -y` (24/10/2026, 2,4 mila; tratto che si disegna con `pathLength="1"`, morphing con MorphSVG, MotionPath; cercata per il sito di Satatttvision, affianca `svg-animations`) |
+| `logo-animation` | `npx skills add iart-ai/motion-design-skills@logo-animation -g -y` (24/10/2026, 2,7 mila; logo che si disegna a tratto, morphing icona-scritta, ultimo fotogramma statico di riserva) |
 
 ## La tabella che serve
 
