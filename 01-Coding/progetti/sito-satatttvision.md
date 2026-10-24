@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza di sito per Satatttvision (studio di tatuaggi, via Tadino 3, Milano). Giro 1 in costruzione dal 24/10, mondo «La vetrina di via Tadino»: saracinesca a strisce all'avvio, insegna che si disegna, flash tipografici, macchina con anatomy; Astro con GSAP.
+riga: Bozza sito per Satatttvision (tatuatori, Milano). Giro 1 dal 24/10, mondo «La vetrina di via Tadino»: saracinesca, insegna che si disegna, flash tipografici.
 updated: 2026-10-24
 source: claude
 verificato: 2026-10-24
