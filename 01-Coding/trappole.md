@@ -659,6 +659,10 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   Pregnolato). Con `overwrite:'auto'` sopravvivono. E con lo scrub sul colore chi si ferma a
   metà vede il colore misto: i cambi di stato scattano a tempo, lo scrub resta sui valori continui.
 
+- `[TRAPPOLA]` **`clearProps: 'all'` di GSAP cancella anche gli stili in linea messi dalla pagina**, non solo quelli dell'animazione: si elencano le proprietà toccate (`clearProps: 'opacity,transform'`). E su un `<path>` SVG GSAP riscrive l'attributo `transform`: con `clearProps` lo cancella e tutte le lettere di un logo tracciato finiscono nell'angolo in alto a sinistra. → la traslazione di ogni glifo sta su un `<g>` attorno al path, non sul path. ([[sito-satatttvision]], 24/10/2026)
+- `[TRAPPOLA]` **Dopo una ricarica a metà pagina gli elementi `[data-entra]` rimasti sopra lo schermo non entrano mai** (il trigger è già passato) e restano invisibili. → a scroll fermo, un controllo porta allo stato finale tutto ciò che sta sopra la finestra. ([[sito-satatttvision]], 24/10/2026)
+- **Le sonde `getComputedStyle` lanciate dal pannello del browser dell'app durante un'apertura GSAP possono dire «transform: none» mentre in un Chrome vero l'animazione gira**: il pannello non disegna fotogrammi mentre è nascosto o rallenta a 3 al secondo. L'apertura si giudica con `cattura-apertura.mjs` (Brave headless via CDP), non con le sonde dal pannello. ([[sito-satatttvision]], 24/10/2026)
+
 ## CSS e layout
 
 - `[TRAPPOLA]` **`main>section>*{margin-inline:auto}` restringe e centra i figli di una griglia**: la regola pensata per i blocchi di testo arriva anche alle celle di `grid`, che si stringono alla larghezza del contenuto. → la si limita ai blocchi di testo o la si spegne sulle griglie. ([[sito-mybalance]], 20/10)
@@ -870,6 +874,9 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   sull'elemento che gira, hover sulla scatola ferma che lo contiene, un ritardo
   d'ingresso, e niente rotazione sotto `(hover:none),(pointer:coarse)`.
   (10/10/2026, [[sito-barbershop-snia]])
+
+- `[TRAPPOLA]` **Un `position: absolute` dentro una scheda di un carosello senza un antenato posizionato allarga il documento** (a 375 px `html` arrivava a 2.558 px): la scheda vuole `position: relative`. ([[sito-satatttvision]], 24/10/2026)
+- **Lo `<style>` dentro un SVG messo inline vale per tutta la pagina**: le regole di una figura di `anatomy` colpiscono tutto ciò che ha le sue classi (`.iso-*`). Le classi della figura restano con un prefisso suo. ([[sito-satatttvision]], 24/10/2026)
 
 ## Git, account e pubblicazione
 
