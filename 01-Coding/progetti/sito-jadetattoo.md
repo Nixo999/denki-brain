@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito per Jade Tattoo (@jadetattoo.ink_, blackwork e dark fantasy, Bergamo) - mondo «Bestiario + stencil», disegni = suoi tatuaggi vettorializzati.
+riga: Bozza sito Jade Tattoo (blackwork, Bergamo): giro 1 «Bestiario + stencil» in locale, 8/8, disegni = suoi tatuaggi vettorializzati.
 status: attivo
 client: jadetattoo
 stack: astro
@@ -70,6 +70,33 @@ d'inchiostro in shader, la falena che si disegna nel viola dello stencil
 (`#9185D1`, misurato sull'anteprima del reel del 21/10) e diventa nero pieno,
 poi le sue creature I-VI, poi il DM. Font Metamorphous e Cormorant. La
 direzione per esteso sta in `direzione/DIREZIONE.md` del repo.
+
+## Giro 1 (24/10, sera) — com'è fatto
+
+Commit `1a5b9f5`, non pubblicato. Costruito da due operatori Opus in parallelo
+(«pagina» e «motion», contratto di DOM in `direzione/contratto.md`).
+
+- **Apertura** (1,7 s, CSS): sipario color osso con la falena stampata a
+  contorno viola e «Jade Tattoo» in nero; le lettere salgono, poi le due metà
+  si aprono e sotto il nome è già in osso sull'hero nero.
+- **Hero**: nome a tutta larghezza (91 px a 375), foto di Jade 200×250 che
+  entra sotto «Tattoo», striscia dei sei sigilli che porta alle voci.
+- **Spina**: «Dal viola al nero» (la falena prima contorno viola, poi nero
+  pieno; da computer pin di una schermata in scrub, sul telefono una volta
+  sola), il bestiario I-VI a campi alternati nero e osso, «Prenota il tuo
+  pezzo» con il campo d'inchiostro. Poi lo studio, nero pieno e filigrana, le
+  storie in evidenza, il piede.
+- **Testi** in prima persona, come lei su Instagram; «Booking aperte» è di una
+  didascalia di luglio e non si usa.
+- **Misure**: overflow zero a 375 e 1440, controlli 8/8, testo 0, slop 0
+  blocchi; apertura e scena guardate dal video a 390×844.
+- **Per il DM**: `consegna/jade-tattoo-telefono.mp4` (28 s, 1080 di
+  larghezza) e quattro fermi, fatti con `scripts/video-telefono.mjs`.
+
+Correzioni del direttore dopo il primo giro dei costruttori: la falena usciva
+come sagoma nera piena (mancava `fill-rule="evenodd"`), il sipario era nero su
+nero e invisibile, l'hero era una scatola vuota, il bestiario da computer era
+troppo piccolo. Safari e iPhone veri mai provati.
 
 ## Collegamenti
 
