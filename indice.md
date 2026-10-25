@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-10-24
+updated: 2026-10-25
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **325 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **326 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -182,7 +182,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[shaddai-extension-lash]] — Lash artist a domicilio a Bergamo, 736 follower, nessun sito - bozza costruita il 16 settembre 2026, DM non ancora inviato.
 - [[shari-piras]] — ⚠️ Shari Piras, tatuatrice, Merate (LC). Due account - @shari_tattooer (4.504 follower, 493 post) è la persona, @atelierselva_ (593 follower, 41...
 - [[soul-ink-torino-city]] — Soul Ink Torino City, studio di tatuaggi in via Cremona 27/b Torino (@soul_ink_torino_city, 738 post) - Franco Roggia (giapponese, dal 1999) e Alessandro Audino (tradizionale). Bozza in costruzione dal 26/09, DM non confermato.
-- [[whitelilium]] — ⚠️ White Lilium Photography, fotografa maternity/newborn/famiglia a Trezzano sul Naviglio (MI). Lead Instagram del 05/10, ha risposto sì alla bozza il 07/10.
+- [[whitelilium]] — White Lilium Photography, Isidora Francescati, fotografa maternity/newborn/famiglia a Trezzano sul Naviglio (MI). Lead Instagram del 05/10, il 22/10 ha mandato foto e bio: vuole il sito.
 
 **contratti/**
 
@@ -246,6 +246,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-10-21-posta-giro-mattina]] — Per Patrick - giro del 21/10, 95 DM del 20/10 segnati sul banco, 7 risposte (2 calde), 17 righe siti pubblicate su 37 (banco a 150); Instagram si legge solo da Brave
 - [[2026-10-22-posta-giro-mattina]] — Per Patrick - giro del 22/10, posta letta da Brave (2 no, nessun lead nuovo); 14 righe siti pubblicate (BI pasticcerie 10, BI fotografi 4), banco a 164
 - [[2026-10-23-posta-giro-mattina]] — Per Patrick - giro del 23/10: banco online fermo al 20/10 e vault sul ramo sbagliato; 139 righe nuove, banco a 170; L'Ape Regina vuole la bozza
+- [[2026-10-25-giro-mattina-fermo]] — Giro del 25/10 - zero righe nuove: Instagram e Brave non leggibili senza una persona, motori in captcha; banco a 60 righe di ricerca
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
