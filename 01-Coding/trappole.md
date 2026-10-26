@@ -669,6 +669,8 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 - `[TRAPPOLA]` **Dopo una ricarica a metà pagina gli elementi `[data-entra]` rimasti sopra lo schermo non entrano mai** (il trigger è già passato) e restano invisibili. → a scroll fermo, un controllo porta allo stato finale tutto ciò che sta sopra la finestra. ([[sito-satatttvision]], 24/10/2026)
 - **Le sonde `getComputedStyle` lanciate dal pannello del browser dell'app durante un'apertura GSAP possono dire «transform: none» mentre in un Chrome vero l'animazione gira**: il pannello non disegna fotogrammi mentre è nascosto o rallenta a 3 al secondo. L'apertura si giudica con `cattura-apertura.mjs` (Brave headless via CDP), non con le sonde dal pannello. ([[sito-satatttvision]], 24/10/2026)
 
+- `[TRAPPOLA]` **Animare con GSAP una variabile CSS (`--campo`) su una sezione fa ricalcolare lo stile di tutta la sezione a ogni fotogramma**, perché la variabile si eredita: su Groavel il ricalcolo costava 131-135 ms in 5 s di scroll e scendeva a 16 ms spegnendo lo script. → si anima `background-color` sull'elemento e la variabile si scrive una volta sola a fine passaggio (26/10/2026, sito-groavel).
+
 ## CSS e layout
 
 - `[TRAPPOLA]` **`main>section>*{margin-inline:auto}` restringe e centra i figli di una griglia**: la regola pensata per i blocchi di testo arriva anche alle celle di `grid`, che si stringono alla larghezza del contenuto. → la si limita ai blocchi di testo o la si spegne sulle griglie. ([[sito-mybalance]], 20/10)
@@ -1503,6 +1505,8 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 - `[TRAPPOLA]` **Le porte 4321 e 4322 possono essere già prese dal server di un altro sito**, e `astro dev` scivola da solo sulla porta successiva, che può essere quella di un altro operatore. → `--strictPort` e una porta diversa per ogni operatore. ([[sito-jadetattoo]], 24/10/2026)
 - `[TRAPPOLA]` **Con il pannello del browser nascosto `requestAnimationFrame` non gira**, quindi apertura, shader e scrub sembrano fermi. Le animazioni si guardano con Chrome headless pilotato via CDP (come `cattura-fette.mjs`), oppure con `scripts/video-telefono.mjs` di jadetattoo-site, che registra la pagina a 390×844 con lo screencast di CDP e la monta in MP4 con `ffmpeg-static` installato nello scratchpad. Il video serve anche da consegna quando il cliente vuole vedere la bozza su Instagram. ([[sito-jadetattoo]], 24/10/2026)
 - `[TRAPPOLA]` **`controlla-slop.py` legge un h1 diviso in uno `<span>` per lettera come un «titolo di 10 parole»**, ed è un falso positivo; blocca invece la ✦ usata come segno al posto di un'icona, quindi va sostituita con un'icona Phosphor (`star-four`). ([[sito-jadetattoo]], 24/10/2026)
+
+- `[TRAPPOLA]` **Gli operatori lanciati in parallelo condividono la stessa cartella temporanea della sessione**: su Groavel uno ha sovrascritto il `fette.mjs` di un altro. → ogni operatore lavora in una sottocartella sua (`/tmp/<sito>-<ruolo>`), scritta nel contratto fra operatori (26/10/2026, sito-groavel).
 
 ## Collegamenti
 

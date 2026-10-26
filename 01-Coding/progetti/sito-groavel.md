@@ -33,7 +33,7 @@ Il sito attuale `groavel.com` è su Squarespace, quindi non ha repo. Era in gall
 
 ## Stato
 
-TODO (la compila il direttore a fine giro).
+**Giro 1 online dal 26/10/2026 (pomeriggio)** su <https://groavel.netlify.app>, con i tre sbarramenti; commit `ad5ce91`. Misurato: `controlla-sito` 8/8, `controlla-slop` 0 blocchi (4 avvisi: «vanta» è nel cognome Vantadori, «passione» è la loro frase), `controlla-testo` 0; overflow zero da 375 a 1440; apertura 1,8 s sulla build statica senza fotogrammi vuoti, badge sulla sede con scarto 0,5 px; 57-60 fps a 1440 in 5 s di scroll; foto ridotte sotto i 250 KB. Guardato dal direttore nel pannello a 375 e a 1440: iPhone vero e Safari mai. Verdetto di Nicola: `TODO`.
 
 ## Da chiedere al cliente
 
@@ -50,7 +50,7 @@ Elenco preso da `PRODUCT.md`, da portare a Patrick.
 
 ## Aperto
 
-- [ ] Stato di fine giro (lo scrive il direttore)
+- [x] Stato di fine giro (26/10: online, verdetto di Nicola `TODO`)
 - [ ] Contatto di Groavel e primo messaggio (decide Patrick)
 - [ ] Repo remoto e pubblicazione: decisione del direttore
 
