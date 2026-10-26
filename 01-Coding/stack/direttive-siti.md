@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-10-23
+updated: 2026-10-26
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 26/10/2026 — Nicola: «ok bello ma da telefono risulta un po troppo ripetitivo e muro di foto, prova magari a disporle in modi piu particolari in base alla pagine, e da telelfono togline magari giustoun paio in modo che non semnbri un muro di foto»
+
+Sul telefono una galleria non è una griglia uguale su ogni pagina: ogni pagina dispone le sue foto con uno schema suo, e a 375 px se ne mostrano un paio in meno, perché una colonna di foto tutte della stessa misura legge come un muro.
 
 ### 23/10/2026 — Nicola: «cerca delle skills per farlo al meglio. non disegnare mai tu a meno che non trovi una skills che ti auti a farlo in maniera perfetta»
 
