@@ -1,5 +1,5 @@
 ---
-riga: Giro del 26/10 - 34 righe di siti in due giri; ricerca per parola chiave di Instagram da Brave, poi blocco delle letture senza login
+riga: Giro del 26/10 - 108 righe di siti in tre passaggi, banco a 168; il metodo che funziona: parola chiave e profili letti da Brave
 type: area
 updated: 2026-10-26
 source: claude
@@ -96,5 +96,27 @@ Le schede degli operatori in attesa hanno tenuto occupato più di un core
 ciascuna e hanno scaldato il Mac: Nicola ha scelto di non leggere i profili
 dall'account denkicode, e gli operatori sono stati fermati. I candidati di GE
 stanno nello scratchpad della sessione, non nel vault.
+
+## Il terzo passaggio: profili letti da Brave
+
+Nicola ha chiesto di leggere i profili dal suo browser. Un operatore alla
+volta ha aperto le pagine profilo in Brave con l'account denkicode, con almeno
+12 secondi fra l'una e l'altra e nessuna chiamata alle API. Da collegati le
+descrizioni delle immagini dei post portano la didascalia, e l'elenco dei link
+dietro «e altri N» si apre. Su circa 280 pagine Instagram non ha mostrato
+nessun avviso. I candidati li ha raccolti la ricerca per parola chiave.
+
+| Cella | Profili | Righe |
+|---|---|---|
+| GE · pasticcerie | 47 | 13 |
+| GE · fotografi | 66 | 13 |
+| GE · tatuatori | 106 | 37 |
+| AL · toelettature | 30 | 2 |
+| VA · toelettature | 33 | 9 |
+
+Il banco è a 168 righe da mandare (108 siti e 60 ricerca): ne mancano 2. La
+posta è stata letta solo dall'anteprima dell'inbox, perché Patrick ci stava
+già lavorando: ARPEPE chiede di scrivere a info@arpepe.com, la wedding planner
+di Bergamo rimanda la telefonata.
 
 [[metodo-liste]] · [[metodo-instagram]] · [[2026-10-25-giro-mattina-fermo]]

@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **329 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **330 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -178,6 +178,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[parrucchiere-morgan]] — Portato da Morgan il 15/9: espone volantini e biglietti e parla coi clienti in cambio del sito gratis, zero percentuali. Nome TODO.
 - [[perunpelo]] — Ambra Longoni, groomer di Per un Pelo Toelettatura, Nembro (BG), @toelettatura.perunpelo. 5,0 su 102 su Google. Ha risposto al DM il 25/09 - vuole la bozza.
 - [[petliving]] — Pet Living Toelettatura, Giussano (MB) + Bovisio Masciago, @petlivingtoelettatura. Ha risposto al DM il 30/09, vuole vedere qualcosa. Bozza in sito-petliving.
+- [[pilates-district]] — Pilates District di Alessandro Manzo, studio Reformer a Buccinasco (@pilates_district): il 26/10/2026 ha risposto «mandami pure», sito nuovo in costruzione.
 - [[pinkploy]] — Onicotecnica a Brescia centro, @nails_art_by_pinkploy, 832 follower. Bozza online dal 14/9, il secondo DM col link tocca a Patrick.
 - [[satatttvision]] — Satatttvision, studio di tatuaggi a Milano (via Tadino 3, 49K follower); il 23/10 ha risposto: vuole la bozza su Instagram, poi incontrarci.
 - [[sebastian-torres]] — Privato, non un'azienda. Sta aprendo la sua attività, e l'attività è opero - l'app che stiamo costruendo noi è la sua idea imprenditoriale.
@@ -249,7 +250,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-10-22-posta-giro-mattina]] — Per Patrick - giro del 22/10, posta letta da Brave (2 no, nessun lead nuovo); 14 righe siti pubblicate (BI pasticcerie 10, BI fotografi 4), banco a 164
 - [[2026-10-23-posta-giro-mattina]] — Per Patrick - giro del 23/10: banco online fermo al 20/10 e vault sul ramo sbagliato; 139 righe nuove, banco a 170; L'Ape Regina vuole la bozza
 - [[2026-10-25-giro-mattina-fermo]] — Giro del 25/10 - zero righe nuove: Instagram e Brave non leggibili senza una persona, motori in captcha; banco a 60 righe di ricerca
-- [[2026-10-26-giro-mattina-siti]] — Giro del 26/10 - 34 righe di siti in due giri; ricerca per parola chiave di Instagram da Brave, poi blocco delle letture senza login
+- [[2026-10-26-giro-mattina-siti]] — Giro del 26/10 - 108 righe di siti in tre passaggi, banco a 168; il metodo che funziona: parola chiave e profili letti da Brave
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
