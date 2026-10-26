@@ -247,7 +247,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-10-22-posta-giro-mattina]] — Per Patrick - giro del 22/10, posta letta da Brave (2 no, nessun lead nuovo); 14 righe siti pubblicate (BI pasticcerie 10, BI fotografi 4), banco a 164
 - [[2026-10-23-posta-giro-mattina]] — Per Patrick - giro del 23/10: banco online fermo al 20/10 e vault sul ramo sbagliato; 139 righe nuove, banco a 170; L'Ape Regina vuole la bozza
 - [[2026-10-25-giro-mattina-fermo]] — Giro del 25/10 - zero righe nuove: Instagram e Brave non leggibili senza una persona, motori in captcha; banco a 60 righe di ricerca
-- [[2026-10-26-giro-mattina-siti]] — Giro del 26/10 - 24 righe di siti su 110 in sette celle, tutte chiuse; nomi da Pagine Gialle e handle indovinati, profili letti senza login
+- [[2026-10-26-giro-mattina-siti]] — Giro del 26/10 - 34 righe di siti in due giri; ricerca per parola chiave di Instagram da Brave, poi blocco delle letture senza login
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.

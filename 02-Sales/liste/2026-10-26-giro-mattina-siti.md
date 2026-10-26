@@ -1,5 +1,5 @@
 ---
-riga: Giro del 26/10 - 24 righe di siti su 110 in sette celle, tutte chiuse; nomi da Pagine Gialle e handle indovinati, profili letti senza login
+riga: Giro del 26/10 - 34 righe di siti in due giri; ricerca per parola chiave di Instagram da Brave, poi blocco delle letture senza login
 type: area
 updated: 2026-10-26
 source: claude
@@ -67,5 +67,34 @@ Gli scarti per cella stanno nella colonna `Nota` di `rotazione.csv`.
   rende di più cambiare categoria che comune.
 - Alcuni domini vecchi di pasticcerie rimandano a siti di casinò
   (pasticceriabonadeo.it, pasticceriacasali.it).
+
+## Il secondo giro, con Nicola davanti
+
+Il piano nuovo chiedeva 86 righe: AL tatuatori, VC fotografi, SO toelettature,
+GE pasticcerie. Brave è stato approvato. La ricerca di Instagram per nome
+(`topsearch`) risponde 404 anche col login, ma **la ricerca per parola chiave**
+(`/explore/search/keyword/?q=<settore> <comune>`) funziona: la risposta GraphQL
+della pagina porta autore e didascalia di 24 post. Un raccoglitore in pagina ha
+fatto circa 190 ricerche e ha tenuto gli account che citano un comune della
+provincia. L'interfaccia `users/{pk}/info` ha risposto 429 sull'account
+denkicode, quindi da Brave si è fatta solo la ricerca. Instagram ricarica la
+pagina ogni 30-40 ricerche: lo stato va tenuto nel `localStorage`.
+
+| Cella | Candidati | Righe |
+|---|---|---|
+| AL · tatuatori | 63 | 8 |
+| VC · fotografi | 19 | 0 |
+| SO · toelettature | 15 | 2, interrotta |
+| GE · pasticcerie | 107 | interrotta, nessuna riga |
+| GE · fotografi (riserva) | 71 | interrotta, nessuna riga |
+| GE · tatuatori (riserva) | 85 | non partita |
+
+Dopo circa 80 letture senza login il browser dell'app è stato bloccato: ogni
+profilo rimanda al login, e la pagina che torna è identica a quella di un
+handle inesistente. Si riconosce provando un handle noto ogni 15 richieste.
+Le schede degli operatori in attesa hanno tenuto occupato più di un core
+ciascuna e hanno scaldato il Mac: Nicola ha scelto di non leggere i profili
+dall'account denkicode, e gli operatori sono stati fermati. I candidati di GE
+stanno nello scratchpad della sessione, non nel vault.
 
 [[metodo-liste]] · [[metodo-instagram]] · [[2026-10-25-giro-mattina-fermo]]
