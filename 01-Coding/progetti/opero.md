@@ -6,7 +6,7 @@ client: sebastian-torres
 stack: [react-19, typescript, vite-8, tailwind-3, react-router-7, tanstack-query, supabase, capacitor-6]
 started: 2026-07-20
 deadline: TODO
-updated: 2026-09-30
+updated: 2026-10-26
 source: repo
 valore: 2400
 incassato: 1400
@@ -35,6 +35,8 @@ workspace paga a OperO** (`lib/pianoWorkspace.ts`, listino datato in
 Seba**. Chi le tocca sta toccando il suo conto economico.
 
 **Repo**: `github.com/Nixo999/opero-sito` (npm: `opero-core`)
+Collaboratore con permesso di scrittura dal 26/10/2026: `SebastianOperO`, l'account
+di Sebastian (invito mandato da Nicola, da accettare).
 **OperO 1**: `github.com/SebastianOperO/sebapp-bolanos`, clonato in
 `~/lavoro/sebapp-bolanos`. **Sola lettura**: è la specifica, e il suo `types.ts`
 è l'unico posto dove lo schema di produzione è scritto
