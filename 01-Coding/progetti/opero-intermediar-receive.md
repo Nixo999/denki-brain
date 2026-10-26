@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ecosistema OperO + CO-OPERO (30/09) sopra Intermediar + Receive (24/09) - da conoscere, non da fare. Modello, cosa dice il repo oggi, buchi.
-updated: 2026-10-14
+updated: 2026-10-26
 source: claude
 verificato: 2026-10-13
 progetto: opero
@@ -140,6 +140,20 @@ deploy si rifà con `npm run deploy:prova` e `npm run deploy:coopero-prova`, il
 database con `strumenti/db-prova.sh`: tutto in `docs/prova.md` del ramo. La
 password del database di prova sta in `.env.prova.local` del worktree, fuori
 da git, e non va scritta qui.
+
+**26/10/2026, sera.** Nicola ha ripubblicato il sito di prova alle 20:23 con i
+sette commit del 20/10 (`d552853`..`53c99ac`, la lista «Appunti OperO»). Seba,
+entrato alle 20:05, ha segnato mancanti il calendario di Intermediar come OperO
+e il cambio delle persone del fornitore senza storico: guardava ancora il deploy
+del 20/10 delle 10:58, fatto prima di quei commit, perché OperO sostituisce la
+versione solo quando si preme «Aggiorna» sul banner (`lib/aggiornamentoApp.ts`)
+e il portale fornitori, senza service worker, resta sulla scheda caricata finché
+non si ricarica. Trevis ha confrontato i bundle online con il `dist` locale e con
+il permalink del deploy del 20/10, poi ha provato dal vivo il portale fornitori
+entrando in Alpha Service dal link d'invito: «Cambia le persone» c'è sulla
+richiesta confermata #50 e il salvataggio non scrive righe nello storico (quattro
+eventi prima e dopo). La persona di prova è stata cancellata. Il calendario di
+Intermediar dentro OperO non è stato visto loggato.
 
 ## Collegamenti
 

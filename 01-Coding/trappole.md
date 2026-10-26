@@ -890,6 +890,17 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Git, account e pubblicazione
 
+- `[TRAPPOLA]` **Chi ha OperO aperto prima di un deploy continua a vedere la
+  versione vecchia finché non preme «Aggiorna».** La PWA aggiorna solo a
+  comando (`registerType: 'prompt'`, scelto apposta per non ricaricare la
+  pagina sotto una bozza di fattura), e il portale coOperO, senza service
+  worker, resta sulla scheda caricata. Il 26/10 Seba è entrato nel sito di
+  prova alle 20:05, il deploy è arrivato alle 20:23 e lui ha segnato mancanti
+  due punti che erano online. → prima di chiedere a Seba di controllare si fa
+  il deploy e gli si dice di premere «Aggiorna» o di ricaricare; per sapere
+  cosa ha visto davvero si rilegge il bundle dal permalink del deploy
+  (`https://<id>--opero-prova.netlify.app`, id da `netlify api
+  listSiteDeploys`) e si cercano le stringhe nuove. ([[opero-intermediar-receive]], 26/10)
 - `[TRAPPOLA]` **Netlify CLI 27 su questo Mac salva il collegamento del progetto in `~/.netlify/state.json`, non nella cartella del sito**: `netlify link` da qualunque cartella sovrascrive un solo stato globale, e `netlify status` o `netlify deploy` in `mybalance-site` risultavano collegati a `materia-rezzato` (l'ultimo link fatto). Il 20/10 il `siteId` globale è stato tolto, quindi un deploy senza sito dichiarato si ferma. → **si pubblica sempre con `netlify deploy --dir dist --prod --site <nome-o-id del sito>`**, e si legge l'URL che la CLI stampa prima di dirlo fatto. ([[sito-mybalance]], 20/10)
 - **`netlify deploy --prod` resta fermo un minuto e mezzo su «Installing extensions · baseline»** (09/10/2026,
   [[sito-mitril-tattoo]]): non è piantato, ma sembra, e chi apre il link nel frattempo non trova niente. Il sito è
