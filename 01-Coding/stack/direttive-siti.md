@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 26/10/2026 — Nicola: «lagga tantissimo»
+
+Una pagina che muove allo scroll pannelli, cuciture e parallasse dentro sezioni alte migliaia di pixel, con grana e blend sopra, lagga sul Mac di Nicola anche se in headless fa 60 fps: prima di pubblicare si scorre la pagina nel browser vero del Mac misurando i fotogrammi lunghi, e ogni elemento mosso a ogni fotogramma sta su un livello suo o si toglie.
+
 ### 26/10/2026 — Nicola: «meglio ma sistema questa separazione della quale ti mando lo screen, e poi fai in modo che laggi di meno, perche lagga parecchio al cambiare colore e immagini»
 
 Il cambio di colore di un campo e il cambio di foto in una scena si fanno con proprietà che il compositore gestisce da solo (opacità e transform su livelli propri), mai ridipingendo una sezione intera che ha sotto maschere, texture o blend: i fotogrammi al secondo misurati in headless senza GPU non dicono niente del Mac di Nicola, dove lagga; e una cucitura fra due campi deve chiudersi esattamente sul colore della sezione che entra, altrimenti resta la riga dritta.
