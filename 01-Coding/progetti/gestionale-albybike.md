@@ -30,18 +30,20 @@ nel `CLAUDE.md` del repo, che sul tecnico ha ragione lui.
 
 ## Stato al 26/10/2026
 
-- 🟡 **Quattro modifiche chieste da Nicola il 26/10, committate (`700c8b6`) e
-  non ancora pubblicate**: online c'è ancora la versione del 20/10. Alby
+- 🟢 **Quattro modifiche chieste da Nicola il 26/10, committate (`700c8b6`) e
+  online dalla notte del 26/10** (deploy `6adfac75`, verificato con `curl`;
+  i dati inventati sono rimasti nell'archivio). Alby
   aggiunge voci di manutenzione sue dalle Impostazioni (nome, intervallo,
   tipologie); ogni scadenza si chiude voce per voce con «Fatta», «Non voluta»
   (salta al giro dopo) o «Rinvia…» (data a scelta); dal promemoria un menu
   «…» per riga, con «Il cliente mi ha contattato»; le bici si filtrano per
   cliente, tipologia e marca. Sul telefono la sheet sta di nuovo a tutta
   larghezza. 97 controlli in `node prova.mjs`, flussi provati nel browser
-  dell'app a 1440 e 375; Safari e iPhone vero mai. Per pubblicare:
-  `netlify deploy --prod --no-build` dalla radice del repo; il documento
-  online non ha bisogno di migrazioni (la lista `voci` nasce vuota alla prima
-  lettura).
+  dell'app a 1440 e 375; Safari e iPhone vero mai. Il documento online non ha
+  avuto bisogno di migrazioni: la lista `voci` nasce vuota alla prima lettura.
+  ⚠️ `netlify deploy` va lanciato **dalla cartella del repo**: dal vault chiede
+  una cartella da pubblicare, perché quella cartella non è collegata a nessun
+  sito.
 
 ## Stato al 20/10/2026
 
