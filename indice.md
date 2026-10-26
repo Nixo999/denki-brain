@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **327 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **329 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -67,6 +67,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-dsi-advertising]] — ⚠️ Sito vetrina in una pagina per D.S.I. Advertising di Piras Sebastiano, Merate (LC) - dal 1992 progetta e produce articoli promozionali per il...
 - [[sito-fiftynine]] — ⚠️ Sito vetrina in una pagina per Bar Tabacchi Fiftynine, bar tabaccheria e pizzeria in via Nazionale dei Giovi 59, Cesano Maderno (MB).
 - [[sito-giulia-pregnolato]] — Sito vetrina per Giulia Pregnolato, educatrice cinofila a Torino. Raccolta del 12/10 da Instagram, due foto sole e con testo sopra.
+- [[sito-groavel]] — ⚠️ Sito nuovo di Groavel (uscite guidate in bici, Cesano Maderno): giro 1 «Da 0 a 40 km» in Astro con GSAP, costruito il 26/10/2026.
 - [[sito-hairstylebrescia]] — Hair Style Parrucchieri @hairstyle_brescia, salone a Brescia, gancio sposa - bozza online su hairstylebrescia.netlify.app dal 16/9, mondo A «La prova», 8/8, DM non partito.
 - [[sito-icaarus]] — ⚠️ Bozza sito ICAARUS ASD, centro cinofilo a Brembate-Grignano (BG). Giro 1 «Il percorso» del 09/10, direzione Trevis, costruzione Opus.
 - [[sito-jadetattoo]] — ⚠️ Bozza sito Jade Tattoo (blackwork, Bergamo): giro 1 «Bestiario + stencil» su jadetattoo.netlify.app, 8/8, disegni = suoi tatuaggi.
@@ -157,6 +158,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[dsi-advertising]] — ⚠️ D.S.I. Advertising di Piras Sebastiano, Merate (LC).
 - [[edilida]] — Edilida SRL, impresa edile di Travagliato (BS). Ha compilato il modulo della ricerca il 18/09. Si punta a una videochiamata sulle scadenze di cantiere, mail di lunedì 21.
 - [[giulia-pregnolato]] — Giulia Pregnolato, educatrice cinofila a Torino senza sito. Ha risposto al DM di Patrick il 12/10: vuole sentirlo al telefono.
+- [[groavel]] — ⚠️ Groavel, uscite guidate in bici a Cesano Maderno (@groavel): sito nuovo in costruzione dal 26/10/2026, contatto ancora da trovare.
 - [[il-salone-di-andrea]] — ⚠️ Parrucchiere donna e uomo di Andrea Bielli, Viale Natale Betelli 58, Dalmine.
 - [[jpp-merate]] — Studio fotografico JPP (Just Pure Portraits), Merate, @jppmerate. Stefania ha risposto al DM il 05/10 e vuole una chiamata. Ha già una pagina Canva.
 - [[laperegina]] — Gelateria L'Ape Regina, Calcinato (BS), gelato gourmet dal 2015; ha risposto al DM il 23/10 «Se vuole mandare la bozza possiamo visionarla e parlarne con chi ci segue come marketing».
