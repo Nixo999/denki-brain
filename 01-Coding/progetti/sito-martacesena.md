@@ -52,7 +52,18 @@ sull'Arda, Fiorenzuola, Gambaro). La pagina risponde alla prima domanda di chi l
 
 ## Stato
 
-**Giro 1 in costruzione** (26/10/2026, sera). Misure, verdetto e pubblicazione: `TODO` a fine giro.
+**Giro 1 online dal 26/10/2026 (sera)** su <https://martacesena.netlify.app>, con i tre sbarramenti e i 404 sui file di
+lavoro verificati con `curl`; commit `3e8dddc`. Misurato: `controlla-sito` 8/8, `controlla-slop` 0 blocchi (3 avvisi:
+«su misura», i numeri 01-03 della prenotazione, Instrument Serif), `controlla-testo` 0 blocchi (2 avvisi); overflow 0 a
+375 e 1440; apertura 1,87 s campionata in otto fotogrammi senza vuoti; pittura peggiore 4,8 ms a fotogramma in 5 s di
+scroll nella scena (headless, senza GPU: il Mac di Nicola dirà la verità); console pulita. Guardato dal direttore dal
+vivo nel pannello a 1440 (apertura, percorso che si traccia, Farnese su notte, cross-fade) e a 375 (hero, tappe,
+carosello, contatti); iPhone e Safari veri mai. Tempo: 17:44-20:40, con il lavoro fermo dalle 17:58 alle 20:01 per il
+limite d'uso.
+**Deboli**: nell'hero, nel velo e nelle miniature il percorso è una linea continua e non tratteggiata (resta
+`pathLength="1"`); fra Rivalta e Castell'Arquato il tratto avanza del 21% in una tappa sola, perché la strada è lunga
+davvero; la via della Cattolica («via Emilia Parmense») l'ha scritta il direttore e non viene dalla raccolta; la
+lightbox non c'è. **Verdetto di Nicola sul giro 1: `TODO`.**
 
 ## Da chiedere a lei (via Patrick)
 

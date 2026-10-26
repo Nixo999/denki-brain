@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Errori tecnici già pagati e strade scartate, per dominio. Descrittivo, non è un rulebook - le regole stanno in convenzioni.
-updated: 2026-10-24
+updated: 2026-10-26
 verificato: 2026-09-10
 source: denkicode
 tags: [trappole, memoria, frontend, gsap, git]
@@ -441,6 +441,8 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## GSAP e motion
 
+- `[TRAPPOLA]` **`pathLength="1"` più `vector-effect: non-scaling-stroke` rompe il tratto che si disegna allo scroll.** Chromium legge `stroke-dasharray` e `stroke-dashoffset` in pixel di schermo e ignora `pathLength`: i valori fra 0 e 1 diventano trattini sotto il pixel e il percorso appare già tutto disegnato, a pezzi. Si calcola in pixel: `L = getTotalLength() * getScreenCTM().a`, tratteggio «3 4» ripetuto fino a L più un gap «0 2L» in coda, offset da L a 0, ricalcolato a ogni `refresh`. E una lista di dash con un numero dispari di valori viene raddoppiata dal browser: l'ultimo valore da solo diventa un tratto pieno. ([[sito-martacesena]], 26/10/2026)
+- `[TRAPPOLA]` **`astro dev` risponde `504 Outdated Optimize Dep` dopo un `npm install` di font o librerie nuove fatto mentre il server gira**: la pagina si vede ma i moduli della motion non caricano, e le misure fatte lì valgono senza motion. Si riavvia il server, o si misura su `astro preview` della build. ([[sito-martacesena]], 26/10/2026)
 - `[TRAPPOLA]` **`gsap.matchMedia().add({ grande: '(min-width: 1024px)', ridotto: '(prefers-reduced-motion: reduce)' }, fn)` non chiama `fn` se nessuna condizione vale**: sotto 1024 px con motion normale non partiva niente, nemmeno le rivelazioni e gli split, che dovevano valere sempre. → si aggiunge una condizione che copra il resto (`piccolo: '(max-width: 1023px)'`) e dentro `fn` si legge `conditions.grande`. `monamour-site/src/scripts/spina.js` ha lo stesso difetto: sul telefono non fa rivelazioni, da correggere. ([[sito-whitelilium]], 26/10)
 
 - `[TRAPPOLA]` **Con ScrollSmoother le ancore non portano più alla sezione.** Un link `#sezione` o un indirizzo con `#sezione` restano fermi, perché il contenuto scorre dentro `#smooth-content`: li deve gestire il JS con `ScrollSmoother.get().scrollTo('#sezione')`. Dopo un salto le foto in `loading="lazy"` restano grigie per un attimo, e in una cattura fatta subito sembrano mancanti. ([[sito-materia]], 20/10)
@@ -1407,6 +1409,7 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## Skill e strumenti di processo
 
+- `[TRAPPOLA]` **`controlla-slop.py` e `controlla-testo.py` lanciati sulla radice di un repo Astro escono 0 senza controllare niente**, perché lì non c'è `index.html`: un operatore ha riportato «testo 0» tre volte mentre su `dist` c'erano 16 blocchi. Si lanciano sempre su `dist`, dove `controlla-sito.py` almeno avvisa («nessun index.html»). ([[sito-martacesena]], 26/10/2026)
 - `[TRAPPOLA]` **anatomy: un attributo senza valore (`data-car`) passa nell'SVG inline ma rompe il file `.svg` aperto da solo**, che mostrava 30 parti su 137: come XML l'attributo nudo non è valido. → si scrive sempre `data-car=""`, e il file `.svg` statico si apre da solo almeno una volta prima di consegnarlo. Il Reformer di My Balance (135 parti) è nato così il 20/10 in circa 40 minuti, con `CHROME_PATH` su Brave per i controlli. ([[sito-mybalance]], 20/10)
 - `[TRAPPOLA]` **La skill `uiux-pro-max` sul Mac ha solo `SKILL.md`**, senza gli script e i dati (palette, 74 coppie di font, 17 preset GSAP), sia nel plugin `anthropic-skills` sia in `~/.claude/skills/synced/`: le ricerche promesse dalla descrizione non rispondono. Gli effetti si prendono da React Bits e dai plugin GSAP ufficiali; gli abbinamenti di font si provano con specimen renderizzati. ([[sito-mybalance]], 20/10)
 - `[TRAPPOLA]` **In Astro uno `slot={`c${i}`}` dentro un `.map` viene compilato fuori dal ciclo** e la build si ferma con `j is not defined`. Le schede di una pila si passano come dati a un componente React. ([[sito-dogschoolpiacenza]], 20/10)

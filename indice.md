@@ -92,7 +92,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-p0t-tattoo]] — Bozza sito per p0t_tattoo (Ruben, tatuatore anime e cartoon, Collegno TO) - mondo «Rodovetro × Retino», linea → puntinato → colore, Unbounded + Hanken Grotesk. Online su p0t-tattoo.netlify.app dal 24/9, giro 9 (mobile per primo, desktop pieno, testa con spessore), 8/8, slop 0, testo 0.
 - [[sito-perunpelo]] — Bozza sito Per un Pelo (toelettatura di Ambra Longoni, Nembro BG), lettere che si pettinano. Giro 3 online su perunpelo.netlify.app.
 - [[sito-petliving]] — Bozza sito Pet Living Toelettatura (Giussano MB, seconda sede Bovisio), lo stripping come mestiere. Chiesta da Nicola il 30/09, metodo a più modelli.
-- [[sito-pilates-district]] — Sito nuovo di Pilates District (studio Reformer, Buccinasco): giro 1 «La prima lezione» in Astro con GSAP, costruito il 26/10/2026.
+- [[sito-pilates-district]] — Sito nuovo di Pilates District (studio Reformer, Buccinasco): giro 1 «La prima lezione» online dal 26/10/2026 su pilates-district.netlify.app, Astro con GSAP.
 - [[sito-pinkploy]] — Online su pinkploy.netlify.app per @nails_art_by_pinkploy, onicotecnica a Brescia centro - mondo B «lo spessore», l'unghia in quota.
 - [[sito-pizzeria-lobidu]] — ⚠️ Pizzeria Lobidù, pizzeria siciliana, Via IV Novembre 13, 21049 Tradate (VA).
 - [[sito-salone-di-andrea]] — ⚠️ Sito vetrina in una pagina per Il Salone di Andrea, parrucchiere donna e uomo di Andrea Bielli a Dalmine (BG), Viale Natale Betelli 58.
@@ -181,7 +181,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[parrucchiere-morgan]] — Portato da Morgan il 15/9: espone volantini e biglietti e parla coi clienti in cambio del sito gratis, zero percentuali. Nome TODO.
 - [[perunpelo]] — Ambra Longoni, groomer di Per un Pelo Toelettatura, Nembro (BG), @toelettatura.perunpelo. 5,0 su 102 su Google. Ha risposto al DM il 25/09 - vuole la bozza.
 - [[petliving]] — Pet Living Toelettatura, Giussano (MB) + Bovisio Masciago, @petlivingtoelettatura. Ha risposto al DM il 30/09, vuole vedere qualcosa. Bozza in sito-petliving.
-- [[pilates-district]] — Pilates District di Alessandro Manzo, studio Reformer a Buccinasco (@pilates_district): il 26/10/2026 ha risposto «mandami pure», sito nuovo in costruzione.
+- [[pilates-district]] — Pilates District di Alessandro Manzo, studio Reformer a Buccinasco (@pilates_district): il 26/10/2026 ha risposto «mandami pure», bozza del sito online la sera stessa.
 - [[pinkploy]] — Onicotecnica a Brescia centro, @nails_art_by_pinkploy, 832 follower. Bozza online dal 14/9, il secondo DM col link tocca a Patrick.
 - [[satatttvision]] — Satatttvision, studio di tatuaggi a Milano (via Tadino 3, 49K follower); il 23/10 ha risposto: vuole la bozza su Instagram, poi incontrarci.
 - [[sebastian-torres]] — Privato, non un'azienda. Sta aprendo la sua attività, e l'attività è opero - l'app che stiamo costruendo noi è la sua idea imprenditoriale.
