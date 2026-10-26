@@ -441,6 +441,8 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 ## GSAP e motion
 
+- `[TRAPPOLA]` **`gsap.matchMedia().add({ grande: '(min-width: 1024px)', ridotto: '(prefers-reduced-motion: reduce)' }, fn)` non chiama `fn` se nessuna condizione vale**: sotto 1024 px con motion normale non partiva niente, nemmeno le rivelazioni e gli split, che dovevano valere sempre. → si aggiunge una condizione che copra il resto (`piccolo: '(max-width: 1023px)'`) e dentro `fn` si legge `conditions.grande`. `monamour-site/src/scripts/spina.js` ha lo stesso difetto: sul telefono non fa rivelazioni, da correggere. ([[sito-whitelilium]], 26/10)
+
 - `[TRAPPOLA]` **Con ScrollSmoother le ancore non portano più alla sezione.** Un link `#sezione` o un indirizzo con `#sezione` restano fermi, perché il contenuto scorre dentro `#smooth-content`: li deve gestire il JS con `ScrollSmoother.get().scrollTo('#sezione')`. Dopo un salto le foto in `loading="lazy"` restano grigie per un attimo, e in una cattura fatta subito sembrano mancanti. ([[sito-materia]], 20/10)
 
 - `[TRAPPOLA]` **`html{scroll-behavior:smooth}` sposta tutti gli ScrollTrigger di quanto
