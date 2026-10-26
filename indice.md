@@ -75,7 +75,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-laperegina]] — Bozza di sito per la Gelateria L'Ape Regina (Calcinato, BS). Giro 1 online il 23/10 su laperegina.netlify.app, mondo «Prima l'ingrediente»: crema in shader all'avvio, cartellini del banco, stagioni, esagono; Astro con GSAP.
 - [[sito-laurafranzoni]] — Laura Franzoni @laurafranzoni_lashmaker, ciglia a Brescia: bozza online su laurafranzoni.netlify.app dal 14/9, mondo «Dall'alto». Online c'è il giro 2, il giro 3 è fermo in locale.
 - [[sito-leibeautyroom]] — Bozza sito per Lei Beauty Room (Torino Cavoretto) - mondo «La stanza». Online su leibeautyroom.netlify.app, giro 7: da PC il pin, sul telefono menu con i nomi e cinque stanze a scomparsa con porte diverse e tre foto vere, 8/8.
-- [[sito-martacesena]] — ⚠️ Bozza sito Marta Cesena, fotografa a Piacenza: giro 1 «Dove ti porto» (la carta della provincia dai dati OSM con i posti veri dei suoi servizi), Astro con GSAP, 26/10/2026.
+- [[sito-martacesena]] — ⚠️ Bozza sito Marta Cesena, fotografa a Piacenza: «Dove ti porto» con la carta OSM della provincia, Astro e GSAP; giro 2 online dal 26/10/2026.
 - [[sito-materia]] — ⚠️ Bozza vetrina per Materia, laboratorio di fiori per matrimoni a Rezzato (BS), lead Instagram @materia_rezzato che ha risposto «Proviamo a vedere» il 20/10.
 - [[sito-mikuma-dogs]] — Online su mikumadogs.netlify.app per Martina Carneli (mikuma.dogs), Como - giro 7 'il bianco e il nero', logo vero, Nicola: 'mi piace molto'.
 - [[sito-minniminerva]] — Bozza sito Minerva Esposito, MUA ad Alessandria. Online dal 05/10 il giro 3 «Il velo» (bianco su bianco), verdetto di Nicola da avere.

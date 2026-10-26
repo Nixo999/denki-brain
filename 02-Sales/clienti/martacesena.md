@@ -37,7 +37,7 @@ portare il link e basta.
 
 | Cosa | Quando | Stato |
 |---|---|---|
-| Bozza del sito → [[sito-martacesena]] | 26/10/2026 | 🟢 Online su martacesena.netlify.app con i tre sbarramenti; verdetto di Nicola, poi il link lo manda Patrick nel DM |
+| Bozza del sito → [[sito-martacesena]] | 26/10/2026 | 🟢 Giro 2 online su martacesena.netlify.app con i tre sbarramenti (il giro 1 laggava e l'apertura andava a scatti); verdetto di Nicola sul giro 2, poi il link lo manda Patrick nel DM |
 
 ## Da chiederle (quando risponde al link)
 

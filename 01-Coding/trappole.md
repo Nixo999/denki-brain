@@ -367,6 +367,11 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   lì il WebGL non disegna: si vede il campo CSS di riserva, non lo shader.
   (23/10/2026, [[sito-laperegina]])
 
+- `[TRAPPOLA]` **Con `html{scroll-behavior:smooth}` lo scroll programmato per fotogramma non avanza**: `window.scrollTo(0, y)` a ogni rAF riavvia uno scroll animato e in 9 s la pagina arriva a 1.100 px su 11.000, così `misura-fotogrammi.mjs` dal 20/10 ha misurato solo il primo schermo dei siti con smooth scroll (su Marta Cesena la fascia 0-999 aveva 488 fotogrammi, la 1000-1999 ne aveva 53, oltre niente). → `scrollTo({top, behavior:'instant'})` e `scrollBehavior='auto'` prima di partire, corretto il 26/10. (26/10/2026, [[sito-martacesena]])
+- `[TRAPPOLA]` **Il pannello del browser dell'app non disegna fotogrammi se la sessione non è aperta in una finestra**: un campionatore `requestAnimationFrame` restituisce 0 fotogrammi e ogni misura di motion esce vuota, mentre gli screenshot escono normali. → `misura-fotogrammi.mjs --vivo` apre un Brave con GPU via CDP e misura lì. (26/10/2026, [[sito-martacesena]])
+- `[TRAPPOLA]` **La finestra di Claude in Chrome su questo Mac nasce a 400×781 sotto il bordo dello schermo** (screenY 982 su uno schermo alto 982) e `resize_window` risponde «fatto» senza cambiare niente: da lì si misura solo a larghezza telefono. → per la larghezza computer si usa `--vivo`. (26/10/2026)
+- `[TRAPPOLA]` **Un `let` al livello globale dentro `Runtime.evaluate` rompe la evaluate successiva** che lo ridichiara (SyntaxError «already been declared»), e il secondo campionamento restituisce i dati del primo. → proprietà di `window` o una IIFE. Nello stesso script, prima di ogni `Tracing.end` si svuota la lista degli eventi su cui si aspetta `Tracing.tracingComplete`, altrimenti la seconda traccia esce vuota. (26/10/2026)
+
 ## Immagini e `sips`
 
 - `[TRAPPOLA]` **`sips --cropOffset` con uno zero su un asse centra il ritaglio su quell'asse invece di partire dal bordo.** Chi vuole tagliare dal bordo mette 1 al posto di 0, e poi misura dove è caduto il taglio. ([[sito-monamour]], 24/10)
@@ -673,6 +678,8 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 - `[TRAPPOLA]` **Animare con GSAP una variabile CSS (`--campo`) su una sezione fa ricalcolare lo stile di tutta la sezione a ogni fotogramma**, perché la variabile si eredita: su Groavel il ricalcolo costava 131-135 ms in 5 s di scroll e scendeva a 16 ms spegnendo lo script. → si anima `background-color` sull'elemento e la variabile si scrive una volta sola a fine passaggio (26/10/2026, sito-groavel).
 
+- `[TRAPPOLA]` **Un fotogramma lungo con `blockingDuration` 0 e senza script è raster e GPU, non JavaScript**: su Marta Cesena l'apertura a freddo aveva fotogrammi da 400-500 ms mentre il main thread era pulito (scroll a 120 fps), perché al caricamento nascevano tre livelli compositi grandi quanto la sezione (`will-change: opacity` su campi da 1440×5928 px) e sei luci da 1000 px con `will-change: transform`, e il badge di Netlify registrava un rAF a ogni fotogramma. → i campi di colore stanno in uno schermo sticky alto una finestra; `will-change` si mette da JavaScript quando la sezione è vicina e si toglie dopo; si misura con `--vivo --traccia` guardando `GPUTask` e `RasterTask`. (26/10/2026, [[sito-martacesena]])
+
 ## CSS e layout
 
 - `[TRAPPOLA]` **`main>section>*{margin-inline:auto}` restringe e centra i figli di una griglia**: la regola pensata per i blocchi di testo arriva anche alle celle di `grid`, che si stringono alla larghezza del contenuto. → la si limita ai blocchi di testo o la si spegne sulle griglie. ([[sito-mybalance]], 20/10)
@@ -975,6 +982,8 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   l'ultimo e la lista non va online. → si guarda tutto l'intervallo
   `$CACHED_COMMIT_REF..$COMMIT_REF` e si costruisce se un commit qualunque, che
   non sia quello automatico, ha toccato i file. ([[2026-10-11-banco-online]])
+
+- `[TRAPPOLA]` **Il badge «Powered by Netlify» dei siti gratuiti inietta `hud?variant=public`**: 44 ms di script all'avvio e un callback a ogni fotogramma. → `netlify api updateSite` con `built_with_badge_enabled: false` lo spegne anche sul piano gratuito (fatto su `martacesena` il 26/10). (26/10/2026, [[sito-martacesena]])
 
 ## Far modificare il sito al cliente
 

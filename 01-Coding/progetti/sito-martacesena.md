@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Bozza sito Marta Cesena, fotografa a Piacenza: giro 1 «Dove ti porto» (la carta della provincia dai dati OSM con i posti veri dei suoi servizi), Astro con GSAP, 26/10/2026.
+riga: Bozza sito Marta Cesena, fotografa a Piacenza: «Dove ti porto» con la carta OSM della provincia, Astro e GSAP; giro 2 online dal 26/10/2026.
 status: attivo
 client: martacesena
 stack: [astro, gsap, netlify]
@@ -63,7 +63,30 @@ limite d'uso.
 **Deboli**: nell'hero, nel velo e nelle miniature il percorso è una linea continua e non tratteggiata (resta
 `pathLength="1"`); fra Rivalta e Castell'Arquato il tratto avanza del 21% in una tappa sola, perché la strada è lunga
 davvero; la via della Cattolica («via Emilia Parmense») l'ha scritta il direttore e non viene dalla raccolta; la
-lightbox non c'è. **Verdetto di Nicola sul giro 1: `TODO`.**
+lightbox non c'è.
+
+**Verdetto di Nicola sul giro 1 (26/10, 22:20)**: «lagga, l'animazione iniziale va a scatti decisamente, e da telefono si
+vede come in immagine che ti allego». L'immagine è Brave con DevTools in modalità dispositivo a 400×781, con il titolo
+dell'hero enorme e tagliato a destra. Regola scritta in [[direttive-siti]]: il sito si misura nel suo Brave prima di
+mostrarglielo.
+
+**Giro 2 online dalle 23:05 del 26/10/2026** (deploy `6adfce1f`, commit `d52f93b`). La diagnosi è stata fatta nel Brave
+vero del Mac di Nicola, con GPU (`misura-fotogrammi.mjs --vivo`, nato stasera): il main thread era pulito (scroll a
+120 fps, p95 10 ms), ma l'apertura a freddo aveva fotogrammi da 400-500 ms senza script, cioè raster e GPU. Le cause:
+tre campi di colore di «Dove ti porto» grandi quanto la sezione (1440×5928 px, tre livelli compositi), sei luci da
+1000 px, il badge «Powered by Netlify» con un callback a ogni fotogramma, i font che arrivavano a metà apertura. Cosa
+è cambiato: i tre campi stanno in uno schermo sticky alto una finestra (1440×763); i `will-change` si mettono solo
+quando la sezione è vicina (IntersectionObserver, margine 50%) e le luci sono al massimo 640 px; i font sono locali in
+`public/font/` e precaricati; spina, cuciture e galleria partono a fine apertura; il badge è spento
+(`built_with_badge_enabled` con `netlify api updateSite`, anche sul piano gratuito); `shrink-to-fit=no` e `overflow-x:
+clip` come reti sul telefono. Misurato prima e dopo, tre corse a testa: apertura a 1440 da 1-4 fotogrammi lunghi (fino a
+695 ms sommati) a uno solo da circa 200 ms a 0,2-0,3 s, che è il primo disegno della pagina; scroll a rotella a 1440 da
+un massimo di 133 ms a 18 ms, p95 9 ms; area composita da 58,8 a 27,7 Mpx. Controlli 8/8, slop 0, testo 0; overflow 0
+da 360 a 1440; i tre sbarramenti e i 404 riverificati; Farnese su notte guardato nelle catture a 1440 e a 375.
+**Aperto**: il telefono «zummato» non si riproduce in sei scenari (pannello a 400, 1440→400 senza ricaricare, preset
+mobile, Brave vero in finestra da 400, emulazione DevTools diretta e dopo ridimensionamento), quindi servono i passi
+esatti di Nicola; lo scroll del giro 2 è stato guardato da catture e numeri, non a occhio dal vivo; il fotogramma del
+primo disegno resta. **Verdetto di Nicola sul giro 2: `TODO`.**
 
 ## Da chiedere a lei (via Patrick)
 
