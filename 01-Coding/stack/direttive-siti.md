@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 26/10/2026 — Nicola: «meglio ma sistema questa separazione della quale ti mando lo screen, e poi fai in modo che laggi di meno, perche lagga parecchio al cambiare colore e immagini»
+
+Il cambio di colore di un campo e il cambio di foto in una scena si fanno con proprietà che il compositore gestisce da solo (opacità e transform su livelli propri), mai ridipingendo una sezione intera che ha sotto maschere, texture o blend: i fotogrammi al secondo misurati in headless senza GPU non dicono niente del Mac di Nicola, dove lagga; e una cucitura fra due campi deve chiudersi esattamente sul colore della sezione che entra, altrimenti resta la riga dritta.
+
 ### 26/10/2026 — Nicola: «le linne tutte un po spichedeliche non sono male maun po troppo, le immagini messe come sfondo delgli alberi cosi non vano bene perche si vedono sgranate, e poi fai in modo di non far vedere lattaccatura dei diversi livelli della pagina, in alcuni punti si vede propio la separazione delle sezioni dalla differenza degli sfondi, invece metti gli sfodni in modo che si mischino tra loto con delle righe disegnate colorate o altro, animanfo magari anche la transzione»
 
 Due sezioni con due campi di colore diversi non si attaccano con un bordo dritto: il passaggio da un campo all'altro è una cucitura disegnata (righe colorate, un bordo che segue una forma, una dissolvenza) e se si può è animata allo scroll; una foto usata come sfondo a tutta larghezza non si allarga oltre i suoi pixel, altrimenti si vede sgranata e si toglie; una texture generata dietro al testo resta leggera, perché una trama fitta su tutta la pagina è troppo anche quando piace.
