@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 26/10/2026 — Nicola: «le linne tutte un po spichedeliche non sono male maun po troppo, le immagini messe come sfondo delgli alberi cosi non vano bene perche si vedono sgranate, e poi fai in modo di non far vedere lattaccatura dei diversi livelli della pagina, in alcuni punti si vede propio la separazione delle sezioni dalla differenza degli sfondi, invece metti gli sfodni in modo che si mischino tra loto con delle righe disegnate colorate o altro, animanfo magari anche la transzione»
+
+Due sezioni con due campi di colore diversi non si attaccano con un bordo dritto: il passaggio da un campo all'altro è una cucitura disegnata (righe colorate, un bordo che segue una forma, una dissolvenza) e se si può è animata allo scroll; una foto usata come sfondo a tutta larghezza non si allarga oltre i suoi pixel, altrimenti si vede sgranata e si toglie; una texture generata dietro al testo resta leggera, perché una trama fitta su tutta la pagina è troppo anche quando piace.
+
 ### 26/10/2026 — Nicola: «un po troppo piatto fatto cosi, non ha personalita e lo sfondo sempre cosi piatto sensa niente non mi piace»
 
 Un sito con i campi di colore pieni e niente dietro al testo è piatto anche se i controlli passano: ogni campo porta dietro una texture o una grafica del mestiere (foto vera, pattern generato da una skill, tipografia grande), legata allo scroll, e la personalità sta anche nello sfondo, non solo nei titoli e nelle animazioni di entrata.
