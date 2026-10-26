@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 26/10/2026 — Nicola: «un po troppo piatto fatto cosi, non ha personalita e lo sfondo sempre cosi piatto sensa niente non mi piace»
+
+Un sito con i campi di colore pieni e niente dietro al testo è piatto anche se i controlli passano: ogni campo porta dietro una texture o una grafica del mestiere (foto vera, pattern generato da una skill, tipografia grande), legata allo scroll, e la personalità sta anche nello sfondo, non solo nei titoli e nelle animazioni di entrata.
+
 ### 26/10/2026 — Nicola: «ok bello ma da telefono risulta un po troppo ripetitivo e muro di foto, prova magari a disporle in modi piu particolari in base alla pagine, e da telelfono togline magari giustoun paio in modo che non semnbri un muro di foto»
 
 Sul telefono una galleria non è una griglia uguale su ogni pagina: ogni pagina dispone le sue foto con uno schema suo, e a 375 px se ne mostrano un paio in meno, perché una colonna di foto tutte della stessa misura legge come un muro.
