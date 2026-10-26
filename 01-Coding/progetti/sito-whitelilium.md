@@ -1,5 +1,5 @@
 ---
-riga: Sito White Lilium Photography (Isidora Francescati, fotografa maternity/newborn/famiglia, Trezzano). Giro 2 «Un anno in sei capitoli» del 26/10, Astro a otto pagine con le sue 59 foto.
+riga: Sito White Lilium Photography (Isidora Francescati, fotografa maternity/newborn/famiglia, Trezzano). Giro 2-bis del 26/10: otto pagine Astro, gallerie con uno schema per pagina sul telefono.
 type: progetto
 status: attivo
 client: whitelilium
@@ -60,7 +60,20 @@ dal vivo nel pannello a 1440 e a 375: home, Maternity, Chi sono. Peso del 800 px
 **Deboli**: da computer la colonna dei capitoli ha poco testo accanto alla scena sticky (un occhiello, un titolo, una riga);
 la foto di testa delle schede e le rivelazioni nel pannello nascosto arrivano in ritardo (artefatto del pannello, non del
 sito). Non visto: iPhone e Safari veri, il passaggio da 1440 a 375 senza ricaricare, la finish review di impeccable.
-**Verdetto di Nicola**: TODO.
+**Verdetto di Nicola sul giro 2** (26/10, dal telefono): «ok bello ma da telefono risulta un po troppo ripetitivo e muro di foto,
+prova magari a disporle in modi piu particolari in base alla pagine, e da telelfono togline magari giustoun paio in modo che non
+semnbri un muro di foto». Regola in [[direttive-siti]].
+
+## Giro 2-bis (26/10, stessa mattina)
+Sotto 768 px ogni scheda ha il suo schema di galleria, calcolato da `src/components/scheda/FotoGriglia.astro` sulle sole foto
+che si vedono dal telefono: Maternity «la rivista» (una intera, due 3:4; 12 foto su 16), Editorial «la pellicola» (colonna al
+72% alternata; 6 su 8), Newborn «l'album» (3:2, due quadrate; 8 su 11), Oldborn «le cartoline» (4), Baby «la striscia» (tre
+quadrati, una grande; 6 su 8), Smash cake «il carosello» (scroll-snap, puntini in CSS; 5 su 7), Family «il racconto» (3 su 4).
+Le foto tolte sono le più deboli del catalogo (`riferimenti/foto.md`) e restano da 768 in su. Home sotto 1024: i capitoli pari
+hanno la foto al 56% con il numero a sinistra, Dove e Come si svolge hanno la seconda foto ridotta. Da computer niente è
+cambiato. Controlli 8/8, slop 0, testo 0; le sette gallerie guardate a 375 nel pannello e in cattura headless. Online, commit
+`2aabc60`. **Verdetto di Nicola sul 2-bis**: TODO. Da computer resta aperto: sotto le due foto orizzontali nella griglia a 3-4
+colonne c'è una striscia vuota di circa 20 px.
 
 ## Da chiedere a lei (via Patrick: «sentiamoci per capire i dettagli»)
 Prezzi o «a partire da»; durata, numero di foto e tempi di consegna; quando prenotare maternity e newborn; le età di
