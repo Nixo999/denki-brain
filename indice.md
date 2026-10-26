@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **330 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **333 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -75,6 +75,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-laperegina]] — Bozza di sito per la Gelateria L'Ape Regina (Calcinato, BS). Giro 1 online il 23/10 su laperegina.netlify.app, mondo «Prima l'ingrediente»: crema in shader all'avvio, cartellini del banco, stagioni, esagono; Astro con GSAP.
 - [[sito-laurafranzoni]] — Laura Franzoni @laurafranzoni_lashmaker, ciglia a Brescia: bozza online su laurafranzoni.netlify.app dal 14/9, mondo «Dall'alto». Online c'è il giro 2, il giro 3 è fermo in locale.
 - [[sito-leibeautyroom]] — Bozza sito per Lei Beauty Room (Torino Cavoretto) - mondo «La stanza». Online su leibeautyroom.netlify.app, giro 7: da PC il pin, sul telefono menu con i nomi e cinque stanze a scomparsa con porte diverse e tre foto vere, 8/8.
+- [[sito-martacesena]] — ⚠️ Bozza sito Marta Cesena, fotografa a Piacenza: giro 1 «Dove ti porto» (la carta della provincia dai dati OSM con i posti veri dei suoi servizi), Astro con GSAP, 26/10/2026.
 - [[sito-materia]] — ⚠️ Bozza vetrina per Materia, laboratorio di fiori per matrimoni a Rezzato (BS), lead Instagram @materia_rezzato che ha risposto «Proviamo a vedere» il 20/10.
 - [[sito-mikuma-dogs]] — Online su mikumadogs.netlify.app per Martina Carneli (mikuma.dogs), Como - giro 7 'il bianco e il nero', logo vero, Nicola: 'mi piace molto'.
 - [[sito-minniminerva]] — Bozza sito Minerva Esposito, MUA ad Alessandria. Online dal 05/10 il giro 3 «Il velo» (bianco su bianco), verdetto di Nicola da avere.
@@ -91,6 +92,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-p0t-tattoo]] — Bozza sito per p0t_tattoo (Ruben, tatuatore anime e cartoon, Collegno TO) - mondo «Rodovetro × Retino», linea → puntinato → colore, Unbounded + Hanken Grotesk. Online su p0t-tattoo.netlify.app dal 24/9, giro 9 (mobile per primo, desktop pieno, testa con spessore), 8/8, slop 0, testo 0.
 - [[sito-perunpelo]] — Bozza sito Per un Pelo (toelettatura di Ambra Longoni, Nembro BG), lettere che si pettinano. Giro 3 online su perunpelo.netlify.app.
 - [[sito-petliving]] — Bozza sito Pet Living Toelettatura (Giussano MB, seconda sede Bovisio), lo stripping come mestiere. Chiesta da Nicola il 30/09, metodo a più modelli.
+- [[sito-pilates-district]] — Sito nuovo di Pilates District (studio Reformer, Buccinasco): giro 1 «La prima lezione» in Astro con GSAP, costruito il 26/10/2026.
 - [[sito-pinkploy]] — Online su pinkploy.netlify.app per @nails_art_by_pinkploy, onicotecnica a Brescia centro - mondo B «lo spessore», l'unghia in quota.
 - [[sito-pizzeria-lobidu]] — ⚠️ Pizzeria Lobidù, pizzeria siciliana, Via IV Novembre 13, 21049 Tradate (VA).
 - [[sito-salone-di-andrea]] — ⚠️ Sito vetrina in una pagina per Il Salone di Andrea, parrucchiere donna e uomo di Andrea Bielli a Dalmine (BG), Viale Natale Betelli 58.
@@ -164,6 +166,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[laperegina]] — Gelateria L'Ape Regina, Calcinato (BS), gelato gourmet dal 2015; ha risposto al DM il 23/10 «Se vuole mandare la bozza possiamo visionarla e parlarne con chi ci segue come marketing».
 - [[laurafranzoni]] — Extension ciglia a Brescia, @laurafranzoni_lashmaker, 452 follower. Bozza online dal 14/9, il DM non è mai partito.
 - [[lei-beauty-room]] — Centro estetico a Torino Cavoretto (via alla Parrocchia 4/c), @lei_beauty_room_, 671 follower, aperto dal 23/10/2025. Ha risposto «Grazie manda pure qui» al DM di Patrick del 24/9. Bozza in lavorazione, non ancora inviata.
+- [[martacesena]] — ⚠️ Marta Cesena, fotografa a Piacenza (@martacesena.ph, lauree, ritratti, coppie, battesimi): lead dal DM di Patrick del 24/10, diffidente; bozza del sito dal 26/10/2026.
 - [[minniminerva]] — Minerva Esposito, MUA ad Alessandria, @minniminerva_make.up. Ha risposto al DM il 04/10 - curiosa, titubante sull'utilità. Bozza online: minervaesposito.netlify.app.
 - [[mitril-tattoo]] — ⚠️ Mitril Tattoo & Piercing, piazza Don G. Racheli 6, Rovato (BS), @mitril_tattoo_studio, 11,4K follower. Ha chiesto la bozza nel DM il 09/10.
 - [[monamour]] — ⚠️ Mon Amour, Dalmine (BG), bomboniere e allestimenti. Ha risposto al DM il 24/10: «Va bene, me la mandi qui». Bozza in costruzione.

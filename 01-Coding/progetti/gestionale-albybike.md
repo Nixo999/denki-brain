@@ -6,7 +6,7 @@ client: albybike
 stack: HTML statico senza librerie, Netlify Functions, Netlify Blobs, Resend, skill stile-apple
 started: 2026-10-20
 deadline:
-updated: 2026-10-20
+updated: 2026-10-26
 source: claude
 valore: 0
 incassato: 0
@@ -27,6 +27,21 @@ inventati** (7 clienti, 8 bici), messi per farlo vedere a Patrick: prima di
 darlo ad Alby si cancellano, i comandi sono nel `CLAUDE.md` del repo.
 **Repo**: `~/lavoro/albybike-gestionale`, ramo `main`, **nessun remote**. Come è fatto, come si prova e come si pubblica sta
 nel `CLAUDE.md` del repo, che sul tecnico ha ragione lui.
+
+## Stato al 26/10/2026
+
+- 🟡 **Quattro modifiche chieste da Nicola il 26/10, committate (`700c8b6`) e
+  non ancora pubblicate**: online c'è ancora la versione del 20/10. Alby
+  aggiunge voci di manutenzione sue dalle Impostazioni (nome, intervallo,
+  tipologie); ogni scadenza si chiude voce per voce con «Fatta», «Non voluta»
+  (salta al giro dopo) o «Rinvia…» (data a scelta); dal promemoria un menu
+  «…» per riga, con «Il cliente mi ha contattato»; le bici si filtrano per
+  cliente, tipologia e marca. Sul telefono la sheet sta di nuovo a tutta
+  larghezza. 97 controlli in `node prova.mjs`, flussi provati nel browser
+  dell'app a 1440 e 375; Safari e iPhone vero mai. Per pubblicare:
+  `netlify deploy --prod --no-build` dalla radice del repo; il documento
+  online non ha bisogno di migrazioni (la lista `voci` nasce vuota alla prima
+  lettura).
 
 ## Stato al 20/10/2026
 
