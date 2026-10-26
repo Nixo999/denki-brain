@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 26/10/2026 — Nicola: «lagga, lanimazione iniziale va a scatti decisamente, e da telefono si vede come in immagine che ti allego»
+
+Un sito non si mostra a Nicola finché l'apertura e lo scroll non sono stati misurati nel suo Brave, a larghezza computer e a larghezza telefono, con Claude in Chrome: il pannello dell'app e l'headless non contano, e una regola scritta oggi per il sito precedente vale già per il sito dopo.
+
 ### 26/10/2026 — Nicola: «lagga tantissimo»
 
 Una pagina che muove allo scroll pannelli, cuciture e parallasse dentro sezioni alte migliaia di pixel, con grana e blend sopra, lagga sul Mac di Nicola anche se in headless fa 60 fps: prima di pubblicare si scorre la pagina nel browser vero del Mac misurando i fotogrammi lunghi, e ogni elemento mosso a ogni fotogramma sta su un livello suo o si toglie.
