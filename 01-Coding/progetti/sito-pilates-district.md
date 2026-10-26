@@ -37,7 +37,7 @@ Studio aperto nel giugno 2026 al secondo piano del Centro Commerciale Emilia (vi
 
 ## Stato
 
-**Giro 1 online dalle 20:30 del 26/10/2026**, commit `5940674`. Misurato: `controlla-sito` 8/8, `controlla-slop` 0 blocchi (4 avvisi: gruppi di tre nelle loro frasi, i numeri «Segnale 01-03» che sono il loro formato, Instrument Serif segnalato come font abusato ma scelto su specimen perché è il più vicino al serif delle loro grafiche), `controlla-testo` 0; overflow zero a 375 e 1440; apertura 1,7 s campionata in sei fotogrammi; 60 fps in 5 s di scroll a 1440; i tre sbarramenti e i file di lavoro a 404 verificati con `curl` sul permalink del deploy. Guardato dal direttore nel pannello a 375 (dal vivo) e nelle catture a 1440; iPhone vero e Safari mai. Durante la costruzione: il raccoglitore e i concorrenti si sono fermati dalle 17:50 alle 19:20 per il limite d'uso di Opus e Sonnet; i nastri ritagliati come JPEG lasciavano un quadrato chiaro sulle schede e sono stati rifatti in PNG con trasparenza; tre frasi «non è X, è Y» (loro) bloccavano l'anti-slop e sono state tagliate; `scroll-behavior: smooth` tolto perché blocca le misure. Verdetto di Nicola: `TODO`.
+**Giro 1 online dalle 20:30 del 26/10/2026**, commit `5940674`. Misurato: `controlla-sito` 8/8, `controlla-slop` 0 blocchi (4 avvisi: gruppi di tre nelle loro frasi, i numeri «Segnale 01-03» che sono il loro formato, Instrument Serif segnalato come font abusato ma scelto su specimen perché è il più vicino al serif delle loro grafiche), `controlla-testo` 0; overflow zero a 375 e 1440; apertura 1,7 s campionata in sei fotogrammi; 60 fps in 5 s di scroll a 1440; i tre sbarramenti e i file di lavoro a 404 verificati con `curl` sul permalink del deploy. Guardato dal direttore nel pannello a 375 (dal vivo) e nelle catture a 1440; iPhone vero e Safari mai. Durante la costruzione: il raccoglitore e i concorrenti si sono fermati dalle 17:50 alle 19:20 per il limite d'uso di Opus e Sonnet; i nastri ritagliati come JPEG lasciavano un quadrato chiaro sulle schede e sono stati rifatti in PNG con trasparenza; tre frasi «non è X, è Y» (loro) bloccavano l'anti-slop e sono state tagliate; `scroll-behavior: smooth` tolto perché blocca le misure. **Verdetto di Nicola (26/10, 20:35)**: «lagga tantissimo» e «da telefono non si apre bene ma tutto zummato». Regola scritta in `direttive-siti.md`. **Giro 1b online dalle 20:40** (commit `c70b391`, deploy `6adfac3f`): tolto `mix-blend-mode: multiply` dai nastri (forzava una superficie di composizione grande quanto la sezione, anche quella della lezione alta 4.400 px) e tolta la parallasse delle dieci bande degli specchi (dieci livelli alti quanto la sezione mossi a ogni fotogramma); restano le cuciture, la riga oro e la parallasse della foto dell'hero, che sono livelli piccoli. Per il telefono: viewport con `shrink-to-fit=no` e `overflow-x: clip` su `html` come rete; la causa vera dello «zummato» non è riprodotta, perché il simulatore iOS non c'è (manca Xcode) e il pannello del browser non è Safari. Il lag dopo la correzione **non è misurato sul Mac**: la sessione non era aperta in nessuna finestra, quindi il pannello non disegnava fotogrammi. Verdetto sul giro 1b: `TODO`, con lo screenshot del telefono.
 
 ## Da chiedere al cliente
 
@@ -53,7 +53,8 @@ Elenco preso da `PRODUCT.md`, da portare a Patrick.
 ## Aperto
 
 - [x] Controlli (8/8, slop 0, testo 0) e pubblicazione (26/10 sera)
-- [ ] Verdetto di Nicola dal telefono e dal Mac
+- [x] Verdetto di Nicola sul giro 1 (lag, telefono zummato), giro 1b online
+- [ ] Verdetto di Nicola sul giro 1b dal Mac e lo screenshot del telefono «zummato» (da quale app ha aperto il link)
 - [ ] Il link nel DM lo manda Patrick
 
 ## Collegamenti
