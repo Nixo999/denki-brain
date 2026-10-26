@@ -1,58 +1,72 @@
 ---
-riga: Bozza sito White Lilium Photography, fotografa maternity/newborn/famiglia, Trezzano sul Naviglio. Giro 1 «Il controluce» del 07/10, una testa sola su Fable.
+riga: Sito White Lilium Photography (Isidora Francescati, fotografa maternity/newborn/famiglia, Trezzano). Giro 2 «Un anno in sei capitoli» del 26/10, Astro a otto pagine con le sue 59 foto.
 type: progetto
 status: attivo
 client: whitelilium
-stack: [html, css, gsap, netlify]
+stack: [astro, gsap, webgl, netlify]
 started: 2026-10-07
 deadline: TODO
-updated: 2026-10-07
+updated: 2026-10-26
 source: claude
+verificato: 2026-10-26
 valore: 0
 incassato: 0
 ---
 
 # Sito White Lilium Photography
 
-Bozza vetrina per [[whitelilium]], fotografa di famiglia, gravidanza e newborn a Trezzano sul Naviglio (MI). Esca del
-flusso A: lei ha risposto al DM di Patrick il 07/10 («Stavo già pensando di fare un sito»), la bozza è la risposta.
+Sito per [[whitelilium]], Isidora Francescati, fotografa di maternità, neonati, bambini e famiglia a Trezzano sul Naviglio
+(MI). Esca del flusso A diventata lavoro vero: il 07/10 ha risposto al DM di Patrick («Stavo già pensando di fare un sito»),
+il 22/10 ha mandato per mail 59 foto a piena risoluzione, il suo ritratto, la sua storia in PDF e le sei schede che vuole.
 
-**Repo**: `~/lavoro/whitelilium-site`, **solo locale** (nessun remoto, come Luiza).
-**Online**: whiteliliumphotography.netlify.app (dal 07/10 sera; Netlify site `e96a0b8a`, team `nicola-la-rezza`). Tre sbarramenti + 404 su `PRODUCT.md`, `DIREZIONE.md`, `raccolta/*`, `prove/*`.
-**Memoria tecnica**: `PRODUCT.md`, `DIREZIONE.md`, `raccolta/` nel repo.
+**Repo**: `~/lavoro/whitelilium-site`, **solo locale** (nessun remoto). Astro 5 a uscita statica, GSAP con ScrollTrigger e
+SplitText, WebGL nudo per la luce, nessun React.
+**Online**: whiteliliumphotography.netlify.app (sito Netlify `e96a0b8a-791a-45e2-b98e-a5ee472ad53e`, team denkicode). Si
+ripubblica con `npm run build && netlify deploy --dir dist --prod --no-build --site e96a0b8a-791a-45e2-b98e-a5ee472ad53e`.
+Tre sbarramenti attivi, più 404 forzato su `PRODUCT.md`, `direzione/*`, `riferimenti/*`, `raccolta/*`, `prove/*`, `scripts/*`.
+**Memoria tecnica nel repo**: `PRODUCT.md` (verità di prodotto), `direzione/DIREZIONE.md` (il mondo del giro 2),
+`direzione/contratto.md` (il DOM fra gli operatori), `direzione/{scheletro,pagina,schede,motion,skill-digest}.md` (i
+rapporti), `riferimenti/foto.md` (una riga per foto, scritta guardandola), `riferimenti/concorrenti-schede.md`,
+`raccolta/` (07/10). Il giro 1 «Il controluce» sta in `direzione/giro1-il-controluce.md`.
 
-## Il metodo (07/10, richiesta di Nicola: un'ora, pochi agenti, poco Fable)
-Raccolta e concorrenti su **Sonnet in parallelo** (raccolta 7 min, concorrenti 4) → direzione scritta da **Fable** senza
-agente (`DIREZIONE.md`, 95 righe: mondo, palette, tre coppie di font da provare a 375, apertura, spina, sezioni, mappa dei
-file) → **una testa sola su Fable** costruisce tutto (la direttiva del 07/10 vuole il design su Fable; «il meno possibile»
-è stato letto come: zero costruttori in parallelo, Sonnet dove non serve giudizio).
+## Le otto pagine
+Home, `/maternity` (Classico e, su campo bruno, Editorial), `/newborn`, `/oldborn`, `/baby`, `/smash-cake`, `/family`,
+`/chi-sono`. Le sei schede sono quelle che ha scritto lei nella mail, nel suo ordine e con i suoi nomi («oldborn» è parola
+sua: gli altri fotografi dicono «sitter»). Ogni scheda: testa con la sua frase e una foto come stampa, «Com'è la sessione»
+scritto guardando le sue foto, «Quando» e «Cosa indossare» senza dati inventati, galleria con tutte le foto della cartella
+senza didascalie, «Prossimo capitolo», Scrivimi.
 
-## Cosa sappiamo e cosa manca (dalla raccolta, `raccolta/RACCOLTA.md`)
-- 18 foto a 1440 dal singolo post Instagram sloggato (la griglia dà 640, il post 1440). Nessuna orizzontale.
-- Facebook: email pubblica, sito `whiteliliumphotography.it` dichiarato ma **morto** (NXDOMAIN 07/10), 6 recensioni tutte
-  positive, una leggibile (2020). mondozampa.com è dirottato: non è una fonte.
-- Il nome della fotografa non è scritto da nessuna parte: l'email lo suggerisce, **non si scrive** finché non lo dice lei.
-- Non ci sono: prezzi, durata, foto consegnate, tempi, telefono, orari, studio, logo. Nel sito: «scrivimi e lo decidiamo».
-- Concorrenti: 2 siti letti su 8 (Moxedano Milano, Nico Bologna), il resto schede di portale; sintesi «da confermare».
-  Nessuna fotografa vera mette i prezzi in home.
+## Giro 2 «Un anno in sei capitoli» (24-26/10)
+La metafora è sua: «Il tempo non possiamo fermarlo, ma possiamo scegliere come custodire ciò che conta». Le sei schede
+sono un anno di una famiglia, dall'attesa alla famiglia che cresce, e la home li legge come capitoli con sei campi che si
+scaldano (avorio → miele chiaro). Apertura «la tenda»: le tende bianche del suo studio (stanno in venti foto) coprono lo
+schermo, il nome si scrive, una luce WebGL (fbm dal ricettario di `shader-glsl`) si accende dietro, i teli si aprono di
+lato e le tre stampe dell'hero (pancione, primi giorni, primo anno) si aprono a ventaglio: 1,7 s, un gesto solo. Da computer
+la scena dei capitoli è sticky e la foto cambia con una tendina a ogni capitolo (0,45 s, senza scrub); sul telefono sei
+blocchi colorati, niente scrub. Lenis spento: scroll nativo (Nicola, 20/10). Font del giro 1: Fraunces, Figtree, Pinyon.
+Nessun disegno: luce, tipografia e le sue foto.
 
-## Giro 1 «Il controluce» (07/10)
-La pagina è una famiglia che cresce in controluce: pancione → primi giorni → primo anno → anni dopo (sue parole: «rivedere
-le "mie famiglie" a distanza di anni, più numerosi»). Palette latte/avorio/bruno/miele dalle sue foto, nessun disegno di
-soggetti: la grafica è luce e linee (sole che scorre, binario del tempo, orizzonte). Apertura «il telo» in CSS.
-Font: **Fraunces** (opsz 144, SOFT 50) + **Figtree** + **Pinyon Script**, scelti su `prove/font-375.png` contro Instrument Serif+Albert Sans+Corinthia
-e Gloock+Nunito Sans+Birthstone (Pinyon è l'unico script che tiene «fotografa di famiglia e gravidanza» su una riga a 375).
-Spina: sole fisso che attraversa la pagina, binario del tempo in nav e hero, da 900 px **un pin** (`+=1600`) con f01→f14→f10→f06
-e le sue frasi; sotto 900 colonna. Apertura «il telo»: due teli avorio con alone miele in `multiply`, 1,05 s, righe h1 .35/.47 s, tutto
-in un fiato, rete a 2,6 s. Misurato: controlla-sito **8/8**, slop 0 bloccanti (5 avvisi su frasi sue verbatim), testo 0/0, overflow 0 a
-375 e 1440, console vuota. Catture `prove/giro1-375.png` e `giro1-1440.png`, guardate da Trevis. Tempi: raccolta 7 min, concorrenti 4,
-direzione 6, costruzione 24, controllo e deploy 10: **circa 55 minuti**.
-Deboli (costruttore e direttore d'accordo): a 1440 la hero ha molto latte vuoto a destra del testo; «Come si svolge» è quattro righe senza
-un fatto (non ci sono fatti: durata, foto, tempi mancano); «Cosa fotografo» ripete lo stesso ritmo in tre blocchi; Newborn usa f11 (bimba,
-non neonata). Non visto: iPhone e Safari veri, pagina con JS disattivato. Verdetto di Nicola: TODO.
-Trappola nuova scritta in [[trappole]]: `controlla-sito.py` conta le `-800.jpg` in `assets/img/` come foto piccole; le versioni mobile
-stanno in `assets/img/800/`.
+**Metodo**: Fable dirige e non costruisce. Quattro Sonnet in parallelo (foto in WebP con provini e catalogo, scheletro
+Astro, digest delle skill con `npx skills find`, concorrenti al volo), direzione e contratto scritti da Fable, poi tre
+Opus in parallelo su un contratto di DOM («pagina»: home, Chi sono, `stile.css`; «schede»: le sei pagine; «motion»: i
+quattro moduli). Il 24/10 alle 21:40 il limite di utilizzo ha fermato «pagina» e «motion»; ripresi il 26/10 da dove
+erano. Tempo di lavoro: circa 55 minuti il 24/10 più 25 il 26/10.
 
-## Da chiedere a lei (via Patrick)
-Nome da mettere sul sito; prezzi o «da»; durata e numero di foto; quando prenotare maternity e newborn; studio (dove);
-WhatsApp; logo se esiste; il dominio `.it` è suo e scaduto?; via libera sulle foto dei clienti usate.
+**Misurato** (26/10): `controlla-sito` **8/8**, `controlla-slop` 0 blocchi e 4 avvisi (il «davvero» è in una frase sua, i
+gruppi di tre sono frasi sue e la barra, i numeri 01-06 sono i capitoli), `controlla-testo` 0/0. Apertura 1.671 ms in home
+e 597 ms sulle schede, nessun fotogramma vuoto (309-9091 tinte a 100-1600 ms), 57 fotogrammi al secondo in 5 s di scroll a
+1440 (un fotogramma da 133 ms), overflow 0 a 1440 e 375 su home, Chi sono e Maternity, console pulita (headless). Guardato
+dal vivo nel pannello a 1440 e a 375: home, Maternity, Chi sono. Peso del 800 px: 41 KB in media.
+**Deboli**: da computer la colonna dei capitoli ha poco testo accanto alla scena sticky (un occhiello, un titolo, una riga);
+la foto di testa delle schede e le rivelazioni nel pannello nascosto arrivano in ritardo (artefatto del pannello, non del
+sito). Non visto: iPhone e Safari veri, il passaggio da 1440 a 375 senza ricaricare, la finish review di impeccable.
+**Verdetto di Nicola**: TODO.
+
+## Da chiedere a lei (via Patrick: «sentiamoci per capire i dettagli»)
+Prezzi o «a partire da»; durata, numero di foto e tempi di consegna; quando prenotare maternity e newborn; le età di
+oldborn e baby; se il bagnetto fa parte di ogni smash cake; dove sta lo studio; WhatsApp; logo; il dominio `.it`; il via
+libera sui visi dei bambini nelle gallerie; se vuole le recensioni Google; se l'editorial resta scuro.
+
+## Trappole pagate qui
+`Astro.url.pathname` con `format: 'file'` in build porta `.html`; `gsap.matchMedia` con sole condizioni «grande» e
+«ridotto» non parte sotto 1024 px (anche Mon Amour ha il difetto). Tutte e due in [[trappole]].

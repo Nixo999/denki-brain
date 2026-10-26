@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Lo stato di DenkiCode adesso - chi, soldi, cosa e' aperto, cosa e' bloccato. Si legge a ogni sessione, si riscrive a ogni chiusura. Max 80 righe.
-updated: 2026-10-24
+updated: 2026-10-26
 verificato: 2026-09-16
 source: denkicode
 tags: [stato, fatti]
@@ -34,6 +34,7 @@ cosa aperta. Il racconto dei giri sta nella nota progetto, la giornata nel
 
 | Sito | Online su | Stato (data) | Prossimo passo |
 |---|---|---|---|
+| [[sito-whitelilium]] | whiteliliumphotography.netlify.app | **lei vuole il sito** (mail del 22/10 con 59 foto, la bio e le sei schede). **Giro 2 (26/10)**: mondo «Un anno in sei capitoli», Astro a otto pagine (home, sei schede, Chi sono), tenda d'apertura con luce WebGL, scena sticky dei capitoli da computer; Fable dirige, quattro Sonnet e tre Opus costruiscono; 8/8, slop 0, testo 0; 1440 e 375 guardati nel pannello, iPhone mai | verdetto di Nicola dal telefono e dal computer, poi Patrick la sente per i dettagli (lei: «sentiamoci per capire i dettagli»): prezzi, durata e foto consegnate, quando prenotare, età di oldborn e baby, studio, WhatsApp, logo, dominio `.it`, via libera sui visi dei bambini |
 | [[sito-satatttvision]] | satatttvision.netlify.app | **giro 1 (24/10 sera)**: mondo «La vetrina di via Tadino», saracinesca a strisce all'avvio, insegna vera tracciata che si disegna, flash tipografici con `fontkit`, macchina rotativa con `anatomy`; Astro con GSAP; quattro operatori in parallelo; 8/8, slop 0, testo 0; 375 e 1440 guardati in cattura headless, iPhone mai; nessuna foto di tatuaggio finito sopra i 640 px; loro hanno risposto il 23/10 «vedremmo volentieri la vostra bozza qui su Instagram ed eventualmente ci piacerebbe poi incontrarvi di persona» | verdetto di Nicola dal telefono e dal computer, poi il link da Patrick (danno del tu, stanno vagliando altre opzioni, vogliono un incontro a Milano); da chiedere: resident e guest, foto originali a 1080+, prezzi e caparra, domenica, prossime Flash Night, titolari, logo vettoriale |
 | [[sito-monamour]] | monamour-dalmine.netlify.app | **giro 1 (24/10)**: mondo «Il giorno della festa, in ordine», apertura col nastro che si scioglie, bokeh di palloncini in shader, binario delle cinque tappe, sei feste con la loro tinta; Astro con GSAP; pagina e motion su due operatori Opus con un contratto di DOM; 8/8, apertura campionata, 1440 e 375 guardati dal vivo nel pannello, iPhone mai; lei ha risposto il 24/10 «Buongiorno, Va bene, me la mandi qui» | verdetto di Nicola dal computer e dal telefono, poi il link da Patrick nel DM; da chiedere: prezzi, cognome di Noemi e ruoli, anno di apertura, orari di lunedì e domenica, chi gestisce `monamourbomboniere.it`, permessi per le 11 foto con nomi di clienti, logo vettoriale |
 | [[sito-jadetattoo]] | jadetattoo.netlify.app | **giro 1 (24/10 sera)**: mondo «Bestiario + stencil», sipario osso con la sua falena in viola stencil, i suoi tatuaggi vettorializzati, Astro con GSAP; 8/8, 375 e 1440 guardati in video e catture, iPhone mai; lei vuole vedere la bozza su Instagram | verdetto di Nicola dal telefono, poi il DM di Patrick con link e video (`consegna/` del repo); da chiedere: dove tatua (K-woky Ink o The Factory), prezzi, flash disponibili, ok sulle foto in studio e sui clienti riconoscibili |
