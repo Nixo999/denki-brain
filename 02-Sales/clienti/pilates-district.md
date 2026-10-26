@@ -1,6 +1,6 @@
 ---
 type: cliente
-riga: Pilates District di Alessandro Manzo, studio Reformer a Buccinasco (@pilates_district): il 26/10/2026 ha risposto «mandami pure», sito nuovo in costruzione.
+riga: Pilates District di Alessandro Manzo, studio Reformer a Buccinasco (@pilates_district): il 26/10/2026 ha risposto «mandami pure», bozza del sito online la sera stessa.
 status: lead
 progetti: [sito-pilates-district]
 updated: 2026-10-26
@@ -36,7 +36,7 @@ Studio di Pilates di Alessandro Manzo in via Romagna 1 a Buccinasco (MI), con Re
 
 | Cosa | Quando | Stato |
 |---|---|---|
-| Bozza del sito → [[sito-pilates-district]] | 26/10/2026 | 🟡 in costruzione |
+| Bozza del sito → [[sito-pilates-district]] | 26/10/2026 | 🟢 online su pilates-district.netlify.app, con i tre sbarramenti; aspetta il verdetto di Nicola e poi il DM di Patrick |
 
 ## Come si comporta
 

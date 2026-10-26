@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Sito nuovo di Pilates District (studio Reformer, Buccinasco): giro 1 «La prima lezione» in Astro con GSAP, costruito il 26/10/2026.
+riga: Sito nuovo di Pilates District (studio Reformer, Buccinasco): giro 1 «La prima lezione» online dal 26/10/2026 su pilates-district.netlify.app, Astro con GSAP.
 status: attivo
 client: pilates-district
 stack: Astro 5, GSAP ScrollTrigger e SplitText; Netlify
@@ -17,7 +17,7 @@ tags: [sito, pilates, buccinasco, astro, gsap]
 Bozza di sito vetrina per Pilates District, lo studio di Pilates Reformer di Alessandro Manzo a Buccinasco (MI), chiesta da Nicola il 26/10/2026 dopo la risposta al DM («Ciao Patrick, si mandami pure il pros…»), «seguendo le stesse istruzioni degli ultimi siti». Cliente: [[pilates-district]].
 
 **Cartella**: `~/lavoro/pilates-district-site`, ramo `main`, nessun remoto per ora.
-**Online**: TODO (sito Netlify `pilates-district`, vedi sotto).
+**Online**: <https://pilates-district.netlify.app> dal 26/10/2026 sera, con i tre sbarramenti; progetto Netlify `pilates-district` (id `115aac03-a88a-4fd7-a6f0-68bdc060088f`, team denkicode), cartella non collegata: si ripubblica con `npm run build && netlify deploy --prod --dir dist --site 115aac03-a88a-4fd7-a6f0-68bdc060088f`.
 **Memoria tecnica**: `CLAUDE.md` del repo, `PRODUCT.md`, `direzione/DIREZIONE.md`, `direzione/contratto.md`.
 
 ## Chi è, in breve
@@ -37,7 +37,7 @@ Studio aperto nel giugno 2026 al secondo piano del Centro Commerciale Emilia (vi
 
 ## Stato
 
-Giro 1 in costruzione dalle 20:15 del 26/10/2026. TODO: esito dei controlli, pubblicazione, verdetto di Nicola.
+**Giro 1 online dalle 20:30 del 26/10/2026**, commit `5940674`. Misurato: `controlla-sito` 8/8, `controlla-slop` 0 blocchi (4 avvisi: gruppi di tre nelle loro frasi, i numeri «Segnale 01-03» che sono il loro formato, Instrument Serif segnalato come font abusato ma scelto su specimen perché è il più vicino al serif delle loro grafiche), `controlla-testo` 0; overflow zero a 375 e 1440; apertura 1,7 s campionata in sei fotogrammi; 60 fps in 5 s di scroll a 1440; i tre sbarramenti e i file di lavoro a 404 verificati con `curl` sul permalink del deploy. Guardato dal direttore nel pannello a 375 (dal vivo) e nelle catture a 1440; iPhone vero e Safari mai. Durante la costruzione: il raccoglitore e i concorrenti si sono fermati dalle 17:50 alle 19:20 per il limite d'uso di Opus e Sonnet; i nastri ritagliati come JPEG lasciavano un quadrato chiaro sulle schede e sono stati rifatti in PNG con trasparenza; tre frasi «non è X, è Y» (loro) bloccavano l'anti-slop e sono state tagliate; `scroll-behavior: smooth` tolto perché blocca le misure. Verdetto di Nicola: `TODO`.
 
 ## Da chiedere al cliente
 
@@ -52,7 +52,8 @@ Elenco preso da `PRODUCT.md`, da portare a Patrick.
 
 ## Aperto
 
-- [ ] Controlli (8/8, slop 0, testo 0), pubblicazione, verdetto di Nicola
+- [x] Controlli (8/8, slop 0, testo 0) e pubblicazione (26/10 sera)
+- [ ] Verdetto di Nicola dal telefono e dal Mac
 - [ ] Il link nel DM lo manda Patrick
 
 ## Collegamenti
