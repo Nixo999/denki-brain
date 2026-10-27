@@ -36,7 +36,7 @@ Seba**. Chi le tocca sta toccando il suo conto economico.
 
 **Repo**: `github.com/Nixo999/opero-sito` (npm: `opero-core`)
 Collaboratore con permesso di scrittura dal 26/10/2026: `SebastianOperO`, l'account
-di Sebastian (invito mandato da Nicola, da accettare). Lo stesso account è invitato
+di Sebastian (invito mandato da Nicola, accettato il 27/10). Lo stesso account è invitato
 con scrittura anche su `github.com/Nixo999/opero-prova`, la copia di prova: un repo
 personale non ammette il ruolo di amministratore, per quello servirebbe un'organizzazione.
 **OperO 1**: `github.com/SebastianOperO/sebapp-bolanos`, clonato in
