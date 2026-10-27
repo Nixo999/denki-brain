@@ -6,7 +6,7 @@ client: emozionidicasa
 stack: [astro, gsap, netlify]
 started: 2026-10-27
 deadline: TODO
-updated: 2026-10-27
+updated: 2026-10-28
 source: claude
 tags: [sito, fotografa, casale-monferrato, alessandria, astro, gsap]
 ---
@@ -19,7 +19,9 @@ ultimi, deve andare bene soprattutto per telefono ma anche da pc, studio dei com
 deve laggare, cerca le skill più adeguate al sito per farlo nello stile e personalità della cliente».
 
 **Cartella**: `~/lavoro/emozionidicasa-site`, ramo `main`, nessun remoto per ora.
-**Online**: `TODO` (sito Netlify `emozionidicasa`, team denkicode, in creazione).
+**Online**: sito Netlify `emozionidicasa` (id `22b8d6bc-16fb-4ee4-84d7-93506e78c0aa`, team denkicode, badge spento),
+indirizzo <https://emozionidicasa.netlify.app>. Si ripubblica con `npm run build && npx netlify-cli deploy --prod --dir dist
+--site 22b8d6bc-16fb-4ee4-84d7-93506e78c0aa` (sempre con `--site`: la cartella non è collegata).
 **Memoria tecnica nel repo**: `PRODUCT.md` (verità di prodotto), `direzione/DIREZIONE.md` (il mondo),
 `direzione/contratto.md` (il DOM fra gli operatori), `direzione/{skill-digest,colline,pagina,motion}.md` (i rapporti),
 `raccolta/` (Instagram con 106 foto a 1080+, il sito Pixieset verbatim, Google, concorrenti del 27/10),
@@ -53,7 +55,21 @@ opacità; sul telefono tre blocchi con uno schema di foto ciascuno, niente scrub
 
 ## Stato
 
-**Giro 1 in costruzione** (27/10/2026, dalle 22:30). Misure, verdetto e indirizzo: `TODO` a fine giro.
+**Giro 1 online dalla notte del 27/10/2026** su <https://emozionidicasa.netlify.app> (deploy `6ae129c3`, commit `5e329e6`),
+con i tre sbarramenti, i 404 sui file di lavoro, `og:image` e la firma verificati con `curl` sul permalink. Misurato:
+`controlla-sito` 8/8, `controlla-slop` 0 blocchi (3 avvisi: «davvero» e «passione» stanno nelle sue frasi, i gruppi di tre
+sono «gravidanza, neonati e famiglia» e gli indirizzi), `controlla-testo` 0/0; overflow 0 da 320 a 1440; nessun
+`will-change` nel CSS; apertura 1,79 s e p95 18 ms allo scroll in Brave headless (operatore motion); i tre campi della
+giornata messi in uno schermo sticky alto una finestra prima del deploy (la lezione del giro 2 di Marta Cesena);
+la pila di stampe a 375 era sopra il titolo e ora sta sotto i bottoni (giro 1b, stesso deploy). Guardato dal direttore
+nel pannello a 375 (hero, la mattina) e a 1440 (hero): tre catture in tutto. **Misura nel Brave vero di Nicola:
+MISURA_VIVO.** iPhone e Safari veri mai.
+**Deboli**: nessuna foto di lei (il ritratto dentro la grafica non regge: 470×627 col nastro adesivo); le quattro foto
+Pixieset sono a 1000 px e stanno al massimo a 500 px CSS; quasi tutte le foto mostrano visi di bambini e le liberatorie
+non sono note; il Flip dell'apertura verso la pila sotto il titolo (telefono) non è stato visto girare; il primo
+tentativo di misura `--vivo` si è bloccato perché lo script ha lanciato il Brave appena aggiornato (156) mentre quello
+aperto era il 155.
+**Verdetto di Nicola sul giro 1: `TODO`.**
 
 ## Da chiedere a lei (via Patrick)
 

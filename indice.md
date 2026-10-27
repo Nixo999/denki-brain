@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **334 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **336 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -65,6 +65,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-dogschoolpiacenza]] — Sito di Roberta Borsaro, Dog School Piacenza (Ziano Piacentino), che vuole comprarlo. Giro 2 del 20/10 in tre pagine, Astro con React Bits, eventi.
 - [[sito-dragonfly]] — ⚠️ Raccolta materiale per sito vetrina di Dragonfly Beauty&Relax, centro estetico a Casale Monferrato, lead da Instagram.
 - [[sito-dsi-advertising]] — ⚠️ Sito vetrina in una pagina per D.S.I. Advertising di Piras Sebastiano, Merate (LC) - dal 1992 progetta e produce articoli promozionali per il...
+- [[sito-emozionidicasa]] — ⚠️ Bozza sito Emozioni di casa (Elisabetta Ramondini, fotografa di famiglia a Casale Monferrato): «Dalla porta di casa ai campi», Astro e GSAP, colline dai dati SRTM; giro 1 del 27/10/2026.
 - [[sito-fiftynine]] — ⚠️ Sito vetrina in una pagina per Bar Tabacchi Fiftynine, bar tabaccheria e pizzeria in via Nazionale dei Giovi 59, Cesano Maderno (MB).
 - [[sito-giulia-pregnolato]] — Sito vetrina per Giulia Pregnolato, educatrice cinofila a Torino. Raccolta del 12/10 da Instagram, due foto sole e con testo sopra.
 - [[sito-groavel]] — ⚠️ Sito nuovo di Groavel (uscite guidate in bici, Cesano Maderno): giro 1 «Da 0 a 40 km» in Astro con GSAP, costruito il 26/10/2026.
@@ -159,6 +160,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[dogschoolpiacenza]] — Roberta Borsaro, educatrice cinofila a Ziano Piacentino (Dog School Piacenza), sito Wix gratuito. Ha risposto a Patrick il 13/10: le interessa.
 - [[dsi-advertising]] — ⚠️ D.S.I. Advertising di Piras Sebastiano, Merate (LC).
 - [[edilida]] — Edilida SRL, impresa edile di Travagliato (BS). Ha compilato il modulo della ricerca il 18/09. Si punta a una videochiamata sulle scadenze di cantiere, mail di lunedì 21.
+- [[emozionidicasa]] — ⚠️ Elisabetta Ramondini, «Emozioni di casa», fotografa di gravidanza, neonati e famiglia a Casale Monferrato (@emozionidicasa_elisabetta); bozza del sito dal 27/10/2026, DM di Patrick da mandare.
 - [[giulia-pregnolato]] — Giulia Pregnolato, educatrice cinofila a Torino senza sito. Ha risposto al DM di Patrick il 12/10: vuole sentirlo al telefono.
 - [[groavel]] — ⚠️ Groavel, uscite guidate in bici a Cesano Maderno (@groavel): sito nuovo in costruzione dal 26/10/2026, contatto ancora da trovare.
 - [[il-salone-di-andrea]] — ⚠️ Parrucchiere donna e uomo di Andrea Bielli, Viale Natale Betelli 58, Dalmine.

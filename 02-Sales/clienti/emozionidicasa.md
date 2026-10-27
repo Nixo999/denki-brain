@@ -3,7 +3,7 @@ type: cliente
 riga: Elisabetta Ramondini, «Emozioni di casa», fotografa di gravidanza, neonati e famiglia a Casale Monferrato (@emozionidicasa_elisabetta); bozza del sito dal 27/10/2026, DM di Patrick da mandare.
 status: lead
 progetti: [sito-emozionidicasa]
-updated: 2026-10-27
+updated: 2026-10-28
 source: claude
 settore: fotografi
 tags: [cliente, lead, fotografa, casale-monferrato, alessandria, instagram]
@@ -41,7 +41,7 @@ generale: non pubblico.
 
 | Cosa | Quando | Stato |
 |---|---|---|
-| Bozza del sito → [[sito-emozionidicasa]] | 27/10/2026 | 🟡 Giro 1 in costruzione |
+| Bozza del sito → [[sito-emozionidicasa]] | 27/10/2026 | 🟢 Giro 1 online su emozionidicasa.netlify.app con i tre sbarramenti; verdetto di Nicola, poi il link lo manda Patrick nel DM |
 
 ## Da chiederle (quando risponde al link)
 
