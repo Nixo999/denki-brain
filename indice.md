@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-10-26
+updated: 2026-10-27
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **333 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **334 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -254,6 +254,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[2026-10-23-posta-giro-mattina]] — Per Patrick - giro del 23/10: banco online fermo al 20/10 e vault sul ramo sbagliato; 139 righe nuove, banco a 170; L'Ape Regina vuole la bozza
 - [[2026-10-25-giro-mattina-fermo]] — Giro del 25/10 - zero righe nuove: Instagram e Brave non leggibili senza una persona, motori in captcha; banco a 60 righe di ricerca
 - [[2026-10-26-giro-mattina-siti]] — Giro del 26/10 - 108 righe di siti in tre passaggi, banco a 168; il metodo che funziona: parola chiave e profili letti da Brave
+- [[2026-10-27-giro-mattina-siti]] — Giro del 27/10 - 42 righe di siti su 101, banco a 111; Brave non approvato, Instagram senza login bloccato dopo circa 100 letture
 - [[contattati]] — ⚠️ Due CSV, scritti dal banco e non a mano.
 - [[metodo-instagram]] — ⚠️ Serve a produrre, ogni giorno, fino a 65 account Instagram verificati a cui Patrick può scrivere il messaggio di dm-instagram-vetrina senza...
 - [[metodo-liste]] — ⚠️ Come si costruisce una lista - il sito si verifica aprendolo, mai dedotto da Pagine Gialle.
