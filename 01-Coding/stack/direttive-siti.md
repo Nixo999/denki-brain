@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-10-26
+updated: 2026-10-27
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 27/10/2026 — Patrick: «è bello ma cerca di aggiustare le frasi, alcune non hanno senso, prendi informazioni e stile di scrittura dal sito groavel originale»
+
+Il testo di un sito rifatto prende i fatti e il modo di scrivere dal sito o dai testi che il cliente ha già: le frasi inventate per riempire una sezione si riconoscono e non hanno senso per chi conosce l'attività, quindi si rileggono una per una contro le parole originali prima di consegnare.
 
 ### 26/10/2026 — Nicola: «lagga, lanimazione iniziale va a scatti decisamente, e da telefono si vede come in immagine che ti allego»
 
