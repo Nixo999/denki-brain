@@ -3,7 +3,7 @@ type: cliente
 riga: Groavel, uscite guidate in bici a Cesano Maderno (@groavel): sito nuovo in costruzione dal 26/10/2026, contatto ancora da trovare.
 status: lead
 progetti: [sito-groavel]
-updated: 2026-10-26
+updated: 2026-10-27
 source: claude
 settore: sport e uscite in bici
 tags: [cliente, lead, bici, cesano-maderno, instagram]
@@ -48,3 +48,13 @@ Nessun rapporto in corso risulta dal vault, quindi lo stato è `lead`.
 ## Collegamenti
 
 [[sito-groavel]] · [[albybike]] · [[stile-comunicazione]] · [[vincoli-fiscali]]
+
+## Dal cliente, 27/10/2026 (via Nicola)
+
+- **Vuole il sito scuro**: «principalmente scuro, quindi colori dal nero al grigio scuro e chiaro».
+- Ha mandato il **badge della Social Ride di novembre 2026** e il **manifesto degli adesivi**: le uscite si chiamano
+  edizioni e ognuna ha il suo adesivo (Edizioni 01 + 02, Dark Edition, Pink Edition Giro d'Italia, Crazy Offroad, 15
+  novembre 2026). «Groavel premia i fedelissimi»: chi ha tutti gli adesivi e partecipa alla Social Ride ha un premio.
+- **Social Ride, domenica 15 novembre 2026**: ritrovo 8:45 da Alby Bike Store, Cesano Maderno; circa 40 km; partenza
+  dalle 9:15; «in gruppo a manetta» 9:40. Prezzo e modo di iscrizione: `TODO`.
+- Chi ha parlato con loro e come: `TODO` (Nicola riporta, il canale non è scritto).
