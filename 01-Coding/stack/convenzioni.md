@@ -1,7 +1,7 @@
 ---
 riga: Le REGOLE tecniche di casa - naming, commit, firma Powered by DenkiCode. Qui sta il modo giusto, non gli errori.
 type: risorsa
-updated: 2026-10-10
+updated: 2026-10-27
 source: repo
 ---
 
@@ -109,6 +109,10 @@ Presenti in tutti e due i repo, quindi valgono per DenkiCode:
 - `.env.local` e simili fuori da git, sempre
 - Una chiave di servizio **non deve mai avere il prefisso `NEXT_PUBLIC_`**:
   quel prefisso la manda nel browser, e quella chiave scavalca ogni regola
+
+### 27/10/2026 — Nicola: «basta fare foto»
+
+Le misure che aprono finestre sul Mac di Nicola (misura-fotogrammi --vivo) e le catture dello schermo a raffica si fanno una volta sola e a fine giro, non mentre lui sta lavorando; quando dice basta si fermano subito e il giro si chiude con quello che si ha.
 
 ### 10/10/2026 — Nicola: «il design deve sempre rimanere in linea con quello di adesso»
 
