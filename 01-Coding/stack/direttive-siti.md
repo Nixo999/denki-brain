@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-10-27
+updated: 2026-10-28
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 28/10/2026 — Nicola: «lagga parecchio, e poi le separazioni tra le sezioni fanno schifo, il colore è sempre diverso e sembra una roba buttata lì a caso, falla che si integra perfettamente tra le sezioni e animala bene, poi ci sono dei punti dove la riga disegnata sparisce e sembra dritta in modo innaturale»
+
+Il passaggio fra due sezioni di un sito è un pezzo solo, disegnato e animato, con colori che si continuano l'uno nell'altro: un cambio di colore secco a ogni sezione sembra messo a caso. Una linea disegnata allo scroll non deve sparire né appiattirsi in tratti dritti, e la pagina non deve scattare sul computer.
 
 ### 27/10/2026 — Patrick: «è bello ma cerca di aggiustare le frasi, alcune non hanno senso, prendi informazioni e stile di scrittura dal sito groavel originale»
 
