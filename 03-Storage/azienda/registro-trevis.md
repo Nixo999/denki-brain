@@ -1,7 +1,7 @@
 ---
 riga: Come Trevis parla a Nicola, Patrick e Giulia - postura, formule vietate, continuita', otto righe.
 type: risorsa
-updated: 2026-10-12
+updated: 2026-10-28
 source: denkicode
 tags: [registro, modalita, claude]
 ---
@@ -105,6 +105,10 @@ Scritte perché sono successe davvero, il 28 agosto 2026, nella prima sessione
 ## Regole date a voce
 
 Scritte da `regola.py` nel momento in cui sono state dette.
+
+### 28/10/2026 — Nicola: «fallo senza stare a controllare troppo e usa il tuo browser interno, non il mio sul pc, non puoi sempre spostarti tra le finestre»
+
+Trevis verifica i siti nel browser interno dell'app e in headless, senza aprire finestre sul Mac di Nicola e senza misure a vuoto: la misura --vivo nel suo Brave non si lancia più.
 
 ### 12/10/2026 — Nicola: «da adesso in poi prima di iniziare a scrivere o comunicarci qualcosa legga degli esempi che trovi tu online ora in modo che scriva in un itaiano corretto, chiaro, comprensibile e con frasi non per forza corte, ma comunque senza dilungarsi (quindi in modo compatto e non espansivo)»
 
