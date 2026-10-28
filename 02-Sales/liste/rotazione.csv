@@ -148,10 +148,10 @@ ricerca,VA,ingrossi e distribuzione,parziale,2,2026-09-29,
 ricerca,VA,alimentari artigianali,parziale,1,2026-09-25,
 ricerca,VA,aziende agricole con vendita,parziale,2,2026-09-29,
 ricerca,VA,altro,parziale,3,2026-09-19,righe sparse di settori fuori elenco
-ricerca,BG,falegnamerie,parziale,7,2026-10-18,"18/10 riserva: 3 profili, 1 riga, ferma per tempo; Virgilio BG senza siti"
+ricerca,BG,falegnamerie,parziale,14,2026-10-28,"28/10: 34 profili, 7 righe. Nomi da Pagine Gialle (505 schede) e siti: 11 fermi, 6 fuori settore (PVC, negozi), 3 già contattati; da leggere @fcfalegnameria, @falegnameriast, @redaelli_falegnameria"
 ricerca,BG,studi tecnici,parziale,3,2026-09-29,
 ricerca,BG,impiantisti,parziale,7,2026-09-29,
-ricerca,BG,officine e carrozzerie,parziale,13,2026-09-25,
+ricerca,BG,officine e carrozzerie,parziale,26,2026-10-28,"28/10 riserva: 32 profili, 13 righe. Aperta: Pagine Gialle 1495 schede, 51 siti con Instagram; 10 handle trovati e non letti (elenco nella nota del 28/10)"
 ricerca,BG,meccanica e carpenterie,parziale,3,2026-09-13,
 ricerca,BG,edilizia e serramenti,parziale,48,2026-10-23,"23/10: 31 profili, 6 righe: 8 fuori provincia o fuori settore dagli handle dell'operatore, 9 fermi, 4 già contattati"
 ricerca,BG,ingrossi e distribuzione,parziale,19,2026-10-23,"23/10: 20 profili, 11 righe; handle trovati con la ricerca di Instagram in Brave"
@@ -162,7 +162,7 @@ ricerca,BG,altro,parziale,17,2026-09-25,righe sparse di settori fuori elenco
 ricerca,LO,officine e carrozzerie,esaurito,4,2026-10-13,"13/10: ~45 profili, 2 righe. Finito per resa e fonti: Pagine Gialle 173 schede, 2 con Instagram; ~10 fermi, 5 concessionarie"
 ricerca,LO,edilizia e serramenti,esaurito,8,2026-10-09,"9/10: 37 profili, 7 righe. Finito per resa: provincia piccola, meta dei risultati fuori provincia"
 ricerca,LO,alimentari artigianali,esaurito,7,2026-10-12,"12/10: ~25 profili, 5 righe. Finito per fonti: ~20 produttori PagineBianche senza Instagram, 6 fermi"
-ricerca,LO,aziende agricole con vendita,parziale,2,2026-09-29,
+ricerca,LO,aziende agricole con vendita,esaurito,9,2026-10-28,"28/10: 11 profili, 7 righe. Finito per nomi: su Pagine Gialle quasi tutte società agricole senza spaccio; fonti Parco Adda Sud, fattorie didattiche, agriturismi.it"
 ricerca,LO,altro,parziale,1,2026-09-29,righe sparse di settori fuori elenco
 ricerca,PV,studi tecnici,parziale,1,2026-09-29,
 ricerca,PV,impiantisti,parziale,1,2026-09-23,
@@ -185,7 +185,7 @@ ricerca,BS,meccanica e carpenterie,parziale,6,2026-09-25,
 ricerca,BS,edilizia e serramenti,esaurito,26,2026-10-05,"5/10: 30 profili, 5 righe. Finito per resa: 13 sotto i 200 follower, 5 morti, 10 gia contattati"
 ricerca,BS,ingrossi e distribuzione,esaurito,27,2026-10-17,"17/10: 23+22 profili, 14+1 righe. Finito per fonti: account simili quasi tutti fuori provincia; @agrigelontheroadsrl da leggere con login"
 ricerca,BS,trasporti e logistica,parziale,2,2026-09-25,
-ricerca,BS,alimentari artigianali,parziale,45,2026-10-17,"17/10: 30+36 profili, 20+14 righe. Aperta, rende 2 su 5: 10 cantine Franciacorta dal Consorzio, 4 dagli account simili; da rileggere @terredaenor"
+ricerca,BS,alimentari artigianali,parziale,65,2026-10-28,"28/10: 50 profili, 20 righe, 16 sono cantine Franciacorta. Aperta: 14 alimentari di Pagine Gialle col sito ma senza handle; 4 cantine con restrizione d'età da leggere col login"
 ricerca,BS,aziende agricole con vendita,parziale,29,2026-10-23,"23/10: 13 profili, 11 righe; handle trovati con la ricerca di Instagram in Brave"
 ricerca,BS,altro,parziale,46,2026-09-25,righe sparse di settori fuori elenco
 ricerca,CR,impiantisti,parziale,2,2026-09-29,
@@ -272,7 +272,7 @@ siti,VC,tatuatori e piercing,esaurito,10,2026-10-17,"17/10: 18 profili, 10 righe
 siti,AT,toelettature e dog trainer,esaurito,3,2026-10-17,"17/10: 9+18 profili, 1+2 righe. Finito per bacino: dagli account simili 13 su 18 fuori provincia"
 siti,AO,toelettature e dog trainer,esaurito,2,2026-10-26,"26/10 riserva: 8 profili, 2 righe. Finito per nomi: in tutta la regione le fonti danno circa 12 attività del settore; 267 handle indovinati, 22 esistenti"
 ricerca,CR,ingrossi e distribuzione,esaurito,0,2026-10-17,"17/10: 5 profili, 0 righe. Finito per fonti: i siti dei grossisti cremonesi non linkano Instagram, 2 fermi, 1 sede a Bergamo"
-ricerca,SO,aziende agricole con vendita,parziale,4,2026-10-18,"18/10 riserva: 8 profili, 4 righe. Aperta: elenco Consorzio Vini di Valtellina con 40 handle, 26 ancora da leggere"
+ricerca,SO,aziende agricole con vendita,parziale,17,2026-10-28,"28/10 riserva: 31 profili, 13 righe. Consorzio quasi finito; restano latterie, mieli, agriturismi; da leggere @le_strie, @bastian.c_cantina, @cantinamenegola_official"
 ricerca,MN,alimentari artigianali,parziale,13,2026-10-18,"18/10: 36 profili, 13 righe. Aperta (rende 1 su 3), finita per fonti: PG 429, caseifici senza Instagram; @misterbbrewery, @panificioada da rileggere"
 siti,AL,"sartorie, atelier e tappezzieri",esaurito,4,2026-10-18,"18/10: 30 profili, 4 righe. Finito per resa: 15 fuori provincia, 3 fermi, 2 sotto i 200; Brave unica fonte di handle"
 siti,VC,"sartorie, atelier e tappezzieri",parziale,2,2026-10-18,"18/10 riserva: 14 profili, 2 righe. Ferma per fonti (Brave 429); @casaesposa gancio 6 al limite dei 6 mesi"
@@ -318,3 +318,8 @@ siti,PR,fotografi e videomaker,esaurito,0,2026-10-27,"27/10: 55 profili, 0 righe
 siti,PR,pasticcerie e cake designer,parziale,0,2026-10-27,"27/10: 0 righe, fermata da Instagram (login) prima di leggere un profilo. Da aprire: @pasticceriaquagliotti (dominio morto), @pasticceriadazeglio (dominio parcheggiato), @arteinzucchero (Vercel morto), @pasticceriasoleparma, @iltempio_parma, @dolcimomentiparma; da confermare il comune di @pasticceria_pagani, @pasticcerialady, @giuliapasticceria, @dolceneve"
 siti,AO,fioristi e wedding planner,parziale,1,2026-10-27,"27/10: 2 profili letti, 1 riga, fermata da Instagram (login). ~25 fioristi e 13 wedding planner in regione; 6 col sito. Da leggere @fiordalisomorgex (gancio 1), @vivaivaldostani, @fiori_e_fantasie, @alicealpigianiweddingplanner"
 siti,PR,fioristi e wedding planner,parziale,0,2026-10-27,"27/10: 0 righe, fermata da Instagram (login) prima di leggere i profili. Da leggere @renatafioriparma, @leschosesparma, @fioraia_maria_monteverdi, @arteideashop, @oltre_fiori_fidenza, @calycantus_fiori_fidenza, @clorofilla.noceto, @labottegadibai, @fioristaclaudio; nomi da fioreriadaelisa.it (84)"
+siti,AO,"personal trainer, pilates e yoga",esaurito,11,2026-10-28,"28/10: 40 profili, 11 righe. Finito per nomi: 11 col sito, 5 fuori regione, 4 fermi; nomi da DuckDuckGo via r.jina.ai"
+siti,VR,fotografi e videomaker,esaurito,1,2026-10-28,"28/10: 59 profili, 1 riga: 26 sotto i 200, 14 col sito, 7 fermi o privati"
+siti,SO,pasticcerie e cake designer,parziale,11,2026-10-28,"28/10: 34 profili, 11 righe. Fermata per nomi: 13 col sito, 7 fermi, 5 fuori provincia; restano quasi solo gelaterie"
+siti,VR,fioristi e wedding planner,parziale,14,2026-10-28,"28/10 riserva: 36 profili, 14 righe. Aperta: ~45 fioristi di fioreriadaelisa.it senza sito e senza handle trovato"
+siti,PR,"personal trainer, pilates e yoga",esaurito,10,2026-10-28,"28/10 riserva: 37 profili, 10 righe. Finito per nomi: secondo giro 2 righe su 16 profili; 8 col sito, 5 fuori provincia"
