@@ -62,8 +62,7 @@ sono «gravidanza, neonati e famiglia» e gli indirizzi), `controlla-testo` 0/0;
 `will-change` nel CSS; apertura 1,79 s e p95 18 ms allo scroll in Brave headless (operatore motion); i tre campi della
 giornata messi in uno schermo sticky alto una finestra prima del deploy (la lezione del giro 2 di Marta Cesena);
 la pila di stampe a 375 era sopra il titolo e ora sta sotto i bottoni (giro 1b, stesso deploy). Guardato dal direttore
-nel pannello a 375 (hero, la mattina) e a 1440 (hero): tre catture in tutto. **Misura nel Brave vero di Nicola:
-MISURA_VIVO.** iPhone e Safari veri mai.
+nel pannello a 375 (hero, la mattina) e a 1440 (hero): tre catture in tutto. **Misura in finestra vera con GPU (Chrome, 28/10)**: sul computer a 1440 px l'apertura fa 263 fotogrammi con max 9 ms e lo scroll 883 fotogrammi con max 17 ms; sul telefono emulato a 400 px l'apertura fa max 9 ms e lo scroll 1012 fotogrammi con max 17 ms; nessun fotogramma oltre 20 ms in nessuna delle quattro misure. Chrome al posto di Brave perché il Brave appena aggiornato (156) non partiva accanto al 155 aperto di Nicola; le prime due corse sul computer non valevano perché la finestra era rimasta dietro l'app. iPhone e Safari veri mai.
 **Deboli**: nessuna foto di lei (il ritratto dentro la grafica non regge: 470×627 col nastro adesivo); le quattro foto
 Pixieset sono a 1000 px e stanno al massimo a 500 px CSS; quasi tutte le foto mostrano visi di bambini e le liberatorie
 non sono note; il Flip dell'apertura verso la pila sotto il titolo (telefono) non è stato visto girare; il primo
