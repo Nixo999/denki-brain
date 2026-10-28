@@ -36,7 +36,9 @@
 // decisamente»): un sito non si mostra a Nicola finche' apertura e scroll non sono misurati nel suo Brave, a
 // larghezza computer e a larghezza telefono. Quello e' --vivo, e --vivo --mobile.
 // Browser: BROWSER_CATTURE, poi Brave, poi Chrome. Nato su sito-mybalance, 20/10/2026 («lagga un pochettino»).
-import { spawn } from 'node:child_process'
+// Dal 28/10/2026 in --vivo lo script porta la propria finestra davanti con System Events: un browser lanciato da un
+// processo di sfondo resta dietro l'app, la pagina si vede nascosta (document.hidden) e i fotogrammi non valgono.
+import { spawn, execFileSync } from 'node:child_process'
 import { existsSync, mkdtempSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 
@@ -86,6 +88,7 @@ async function avvia({ headless, finestra }) {
     s.metriche = async () => Object.fromEntries((await s.cdp('Performance.getMetrics')).metrics.map(m => [m.name, m.value]))
     await s.cdp('Page.enable'); await s.cdp('Performance.enable')
     if (!headless) { try { await s.cdp('Page.bringToFront') } catch {} }
+    if (!headless && process.platform === 'darwin') { try { execFileSync('osascript', ['-e', `tell application "System Events" to set frontmost of (first process whose unix id is ${brave.pid}) to true`], { stdio: 'ignore', timeout: 5000 }); await attesa(400) } catch {} }
     if (ridotta) await s.cdp('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-reduced-motion', value: 'reduce' }] })
     return s
   } catch (e) { await s.chiudi(); throw e }
@@ -203,6 +206,7 @@ async function misuraVivo() {
     if (traccia) await riassuntoTraccia(s, 'apertura (dalla navigazione a 2,2 s dopo load)', ap.ev)
     // 2) scroll a rotella
     await attesa(800); await s.js('scrollTo(0,0)'); await attesa(600)
+    if (await s.js('document.hidden')) console.log('  AVVISO: la finestra risulta nascosta anche prima dello scroll, i fotogrammi non sono affidabili')
     const altezza = await s.js('document.documentElement.scrollHeight-innerHeight')
     const tot = distanzaScelta > 0 ? Math.min(distanzaScelta, altezza) : altezza, passi = Math.ceil(tot / 50) + 6
     const [cx, cy] = await s.js('[Math.round(innerWidth/2),Math.round(innerHeight/2)]')
