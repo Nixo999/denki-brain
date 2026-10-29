@@ -690,6 +690,7 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 - `[TRAPPOLA]` **Il tetto duro dell'apertura in `Base.astro` (2 s) taglia la sequenza quando il modulo arriva tardi** (font, rete): `apertura.js` legge `performance.now()` all'avvio e comprime la timeline per finire prima del tetto, invece di partire da zero. ([[sito-emozionidicasa]], 27/10/2026)
 - `[TRAPPOLA]` **Una `transition` CSS su `stroke-dashoffset` scritta per il telefono ritarda lo scrub da computer**: con lo scrub GSAP scrive il valore a ogni fotogramma e la transizione lo insegue con 0,9 s di ritardo. Da 1024 px si spegne in linea (`transition: none`) e resta solo sotto. ([[sito-emozionidicasa]], 27/10/2026)
 - `[TRAPPOLA]` **Nel cambio di campo a livelli di opacità, se il livello che esce e quello che entra svaniscono insieme, a metà passaggio traspare il fondo della sezione**: il livello che esce aspetta che quello nuovo sia a 1 (0,4 s) e poi svanisce. ([[sito-emozionidicasa]], 27/10/2026)
+- `[TRAPPOLA]` **Dentro una timeline GSAP, un `fromTo` con `stagger` porta subito allo stato di partenza solo il primo elemento**: gli altri restano come sono finché non arriva il loro turno, e sul sito di OperO le bolle della mattina e la svolta restavano accese sopra l'hero. → lo stato iniziale si mette prima con un `gsap.set` su tutti gli elementi, e il `fromTo` nella timeline serve solo a muoverli. (29/10/2026, [[sito-opero-presentazione]])
 
 ## CSS e layout
 
