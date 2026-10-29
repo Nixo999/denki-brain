@@ -1,5 +1,5 @@
 ---
-riga: Sito White Lilium Photography (Isidora Francescati, fotografa maternity/newborn/famiglia, Trezzano). Otto pagine Astro; il 29/10 le frasi rifatte con il verbo, online.
+riga: Sito White Lilium Photography (Isidora Francescati, fotografa maternity/newborn/famiglia, Trezzano). Otto pagine Astro; il 29/10 le frasi rifatte due volte, corte e impersonali; deploy da lanciare.
 type: progetto
 status: attivo
 client: whitelilium
@@ -82,7 +82,11 @@ una frase intera con il verbo sotto ogni servizio. Fatto: le sei righe dei capit
 verbo (le citazioni sue restano nelle schede), «Dove ti fotografo» senza righe sotto le foto, «Come lavoro», «Quando
 prenotare», le teste di Baby e Smash cake e la riga dell'editorial come fatti, Family con la sola prima frase sua. Controlli
 testo 0/0 e slop 0, guardato a 375 nel browser interno. Commit `1a323fb`, online dal 29/10 (deploy lanciato da Nicola dal
-terminale). Verdetto di Nicola: TODO.
+terminale). **Secondo passaggio alle 13:10**, Nicola: «continuano a non piacermi le frasi di descrizioni delle foto, accorciale e
+rendile più semplici, scritte così sono un po' imbarazzanti, scrivi cose professionali». Tutte le righe nostre sono ora corte e
+impersonali («Si svolge in studio, con il bambino da solo e con i genitori»; «Come si svolge» in una o due frasi; «Quando
+prenotare» e «Cosa indossare» impersonali); le frasi sue restano. Commit `63fac06`, **da pubblicare**: il deploy lo lancia
+Nicola. Verdetto di Nicola: TODO.
 
 ## Da chiedere a lei (via Patrick: «sentiamoci per capire i dettagli»)
 Prezzi o «a partire da»; durata, numero di foto e tempi di consegna; quando prenotare maternity e newborn; le età di

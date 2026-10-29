@@ -107,7 +107,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-satatttvision]] — Bozza sito Satatttvision (tatuatori, Milano). Giro 1 online dal 24/10 su satatttvision.netlify.app, mondo «La vetrina di via Tadino».
 - [[sito-shaddai]] — Bozza di sito vetrina non commissionata per Shaddai Extension Lash, lash artist a Bergamo, costruita il 16 settembre 2026 dai contenuti veri del profilo Instagram.
 - [[sito-soul-ink]] — Bozza sito per Soul Ink Torino City (studio tattoo, via Cremona 27/b Torino, Franco Roggia giapponese + Alessandro Audino tradizionale) - mondo «Munewari × cartigli», giro 3 online su soul-ink-torino.netlify.app dal 26/09, 8/8, slop 0, testo 0.
-- [[sito-whitelilium]] — Sito White Lilium Photography (Isidora Francescati, fotografa maternity/newborn/famiglia, Trezzano). Otto pagine Astro; il 29/10 le frasi rifatte con il verbo, online.
+- [[sito-whitelilium]] — Sito White Lilium Photography (Isidora Francescati, fotografa maternity/newborn/famiglia, Trezzano). Otto pagine Astro; il 29/10 le frasi rifatte due volte, corte e impersonali; deploy da lanciare.
 
 **skills/**
 
