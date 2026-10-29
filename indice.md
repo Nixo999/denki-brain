@@ -1,13 +1,13 @@
 ---
 type: risorsa
-updated: 2026-10-27
+updated: 2026-10-29
 source: claude
 tags: [indice]
 ---
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **336 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **340 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -44,6 +44,9 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[denkishift-interfaccia]] — ⚠️ Obiettivo dichiarato - un'interfaccia che si venda da sola durante la demo di Patrick, calibrata su due utenti che non sono due gradini dello...
 - [[denkishift]] — Prodotto di punta, turni per squadre a orario variabile. Dimostrabile, NON installabile in produzione.
 - [[gestionale-albybike]] — ⚠️ Gestionale dell'officina Albybike - bici dei clienti con scheda tecnica, lavori fatti, promemoria di manutenzione nel gestionale e via mail. Online con dati inventati su albybike-officina.netlify.app.
+- [[gps-mezzi-ricerca-hardware]] — ⚠️ Rapporto integrale del 29/10/2026 su tracker GPS per mezzi di lavoro - famiglie, reti 2G/3G in Italia, prezzi nei negozi, SIM, installazione, legge. Sintesi in gps-mezzi.
+- [[gps-mezzi-ricerca-piattaforma]] — ⚠️ Rapporto integrale del 29/10/2026 su come ricevere le posizioni dei tracker - Codec 8, Traccar e inoltro, Supabase, tessere, costi, fase zero coi telefoni. Sintesi in gps-mezzi.
+- [[gps-mezzi]] — ⚠️ Localizzazione GPS dei mezzi di lavoro, idea di Seba per più avanti - ricerca del 29/10/2026 su dispositivi, negozi, SIM, piattaforma e legge. Non iniziato.
 - [[opero-intermediar-receive-testo]] — Testi integrali: specifica Intermediar + Receive di Seba (24/09) e riassetto CO-OPERO portato da Patrick (30/09). La sintesi sta altrove.
 - [[opero-intermediar-receive]] — Ecosistema OperO + CO-OPERO (30/09) sopra Intermediar + Receive (24/09) - da conoscere, non da fare. Modello, cosa dice il repo oggi, buchi.
 - [[opero]] — Il prodotto che Sebastian rivende, non un gestionale nostro. Chi tocca il Super Admin tocca il suo conto economico.
@@ -89,6 +92,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-ngbarber]] — ⚠️ Bozza vetrina per ng-barber, riga 2 dell'anello 1-b delle liste Instagram, gancio 5.
 - [[sito-nocloudsproduction]] — Bozza di sito vetrina per No Clouds Production, videomaker e fotografo a Biella. Costruita il 16/10 dopo il suo «Mi faccia pure vedere».
 - [[sito-ohana-special-dog]] — Bozza di sito vetrina per Ohana Special Dog, toelettatura di Daniela Esposito a Levate (BG). Costruita il 16/10 in un'ora.
+- [[sito-opero-presentazione]] — ⚠️ Sito di presentazione di OperO per Seba (29/10/2026) - «Una mattina, messa in ordine», stile pagina prodotto Apple, schermi di OperO ricostruiti in DOM, Astro e GSAP; bozza su Netlify.
 - [[sito-osteria-tarilli]] — ⚠️ Osteria Tarilli, Via Ronco Nuovo 2, 6949 Comano (TI), a 300 m dalla RSI.
 - [[sito-p0t-tattoo]] — Bozza sito per p0t_tattoo (Ruben, tatuatore anime e cartoon, Collegno TO) - mondo «Rodovetro × Retino», linea → puntinato → colore, Unbounded + Hanken Grotesk. Online su p0t-tattoo.netlify.app dal 24/9, giro 9 (mobile per primo, desktop pieno, testa con spessore), 8/8, slop 0, testo 0.
 - [[sito-perunpelo]] — Bozza sito Per un Pelo (toelettatura di Ambra Longoni, Nembro BG), lettere che si pettinano. Giro 3 online su perunpelo.netlify.app.

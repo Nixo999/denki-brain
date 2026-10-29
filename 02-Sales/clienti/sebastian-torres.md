@@ -2,8 +2,8 @@
 riga: Privato, non un'azienda. Sta aprendo la sua attività, e l'attività è opero - l'app che stiamo costruendo noi è la sua idea imprenditoriale.
 type: cliente
 status: attivo
-progetti: [opero]
-updated: 2026-09-30
+progetti: [opero, gps-mezzi]
+updated: 2026-10-29
 source: denkicode
 settore: software, in fase di avvio
 ---
@@ -32,6 +32,11 @@ funzione di comodo: **è il suo modello di ricavo**.
 
 L'app precedente, `sebapp-bolanos`, è quella che gira **oggi** presso l'azienda
 del padre. È la sua prima installazione reale, non un prototipo.
+
+**Idea per più avanti (29/10/2026)**: un GPS sui mezzi delle aziende che
+lavorano col padre, offerto come servizio e collegato a OperO o a un'altra
+piattaforma. La ricerca su dispositivi, costi, piattaforma e legge sta in
+[[gps-mezzi]]; nessuna data, nessun preventivo.
 
 ## Il rapporto
 
