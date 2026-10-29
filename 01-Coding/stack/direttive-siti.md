@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 29/10/2026 — Nicola: «forse 4 slide di presentazioni con solo un centro da leggere come una conversazione non è il massimo, prova qualcosa che faccia intendere lo stesso significato semore in stile fumetto, ma che sfrutti megio il fattore del sito e lo spazio sullo schermo»
+
+Una scena a fumetti non si fa con un quadro solo al centro dello schermo per volta, come una conversazione: si usa lo spazio dello schermo come una tavola, con più vignette insieme, e il mezzo del sito (lo scroll, le vignette che si riempiono).
+
 ### 29/10/2026 — Nicola: «doc-coauthoring, technical-writing e reviewing-technical-prose a livello globale. ho istalato queste skill dovrebbero aiutarti a scrivere meglio, aggiusta tutte le scritte soo difficili da seguire e non è una lettura piacevole, poi le frasei sono troppo lunge le ultime»
 
 Prima di scrivere i testi di un sito si caricano le skill technical-writing e reviewing-technical-prose (e doc-coauthoring per i documenti): i testi del giro 3 di OperO erano difficili da seguire, non piacevoli, con le frasi finali troppo lunghe.
