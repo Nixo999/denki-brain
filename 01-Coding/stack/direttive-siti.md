@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 29/10/2026 — Nicola: «e poi allo scroll non risulota abastanza fluido per essere una presentazione allo sroll»
+
+Una presentazione allo scroll deve sembrare fluida nel browser vero di Nicola: i passaggi fra le scene non si legano uno a uno alla rotella, che va a scatti, ma scattano a una soglia e si completano da soli con una curva morbida; i fotogrammi in headless non bastano a dirlo.
+
 ### 29/10/2026 — Nicola: «poi linizio con solo la scritta grande non mi pice, metti delle immagini p dei disegni e accorcia le frasi, fai tipo fumetti magari»
 
 Una scena fatta solo di frasi grandi che cambiano non basta: ci vanno immagini o disegni con frasi corte, come i fumetti, una per quadro.
