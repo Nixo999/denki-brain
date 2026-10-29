@@ -104,6 +104,10 @@ Vincolo fiscale attivo, dettaglio in [[vincoli-fiscali]]:
 
 Scritte da `regola.py` nel momento in cui sono state dette.
 
+### 29/10/2026 — Nicola: «non parlare come se fossi tu, parla come se fossi già io a parlare»
+
+Una presentazione o un testo che espone Nicola o Patrick è scritto nella loro voce, in prima persona, non in quella di Trevis.
+
 ### 29/10/2026 — Nicola: «l'ultima slide con le domande non ha senso in una presentazione. l'ultima slide fai un resoconto di cosa sarebbe da fare per iniziare a fare un progetto del genere»
 
 Una presentazione chiude con il resoconto di cosa serve per partire, non con domande al pubblico.
