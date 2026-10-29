@@ -95,7 +95,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[sito-ngbarber]] — ⚠️ Bozza vetrina per ng-barber, riga 2 dell'anello 1-b delle liste Instagram, gancio 5.
 - [[sito-nocloudsproduction]] — Bozza di sito vetrina per No Clouds Production, videomaker e fotografo a Biella. Costruita il 16/10 dopo il suo «Mi faccia pure vedere».
 - [[sito-ohana-special-dog]] — Bozza di sito vetrina per Ohana Special Dog, toelettatura di Daniela Esposito a Levate (BG). Costruita il 16/10 in un'ora.
-- [[sito-opero-presentazione]] — ⚠️ Sito di presentazione di OperO per Seba (29/10/2026) - giro 2 scuro con la scena ferma (logo che ruota, cinque slide), schermi di OperO in DOM, testi riscritti con schema e regole; bozza su Netlify.
+- [[sito-opero-presentazione]] — ⚠️ Sito di presentazione di OperO per Seba (29/10/2026) - giro 3: scuro, hero con pezzi veri dell'app, mattina a fumetti con tre figure anatomy, scena ferma con il logo che ruota, passaggi a soglia; bozza su Netlify.
 - [[sito-osteria-tarilli]] — ⚠️ Osteria Tarilli, Via Ronco Nuovo 2, 6949 Comano (TI), a 300 m dalla RSI.
 - [[sito-p0t-tattoo]] — Bozza sito per p0t_tattoo (Ruben, tatuatore anime e cartoon, Collegno TO) - mondo «Rodovetro × Retino», linea → puntinato → colore, Unbounded + Hanken Grotesk. Online su p0t-tattoo.netlify.app dal 24/9, giro 9 (mobile per primo, desktop pieno, testa con spessore), 8/8, slop 0, testo 0.
 - [[sito-perunpelo]] — Bozza sito Per un Pelo (toelettatura di Ambra Longoni, Nembro BG), lettere che si pettinano. Giro 3 online su perunpelo.netlify.app.

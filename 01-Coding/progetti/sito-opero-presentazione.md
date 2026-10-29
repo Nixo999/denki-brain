@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Sito di presentazione di OperO per Seba (29/10/2026) - giro 2 scuro con la scena ferma (logo che ruota, cinque slide), schermi di OperO in DOM, testi riscritti con schema e regole; bozza su Netlify.
+riga: Sito di presentazione di OperO per Seba (29/10/2026) - giro 3: scuro, hero con pezzi veri dell'app, mattina a fumetti con tre figure anatomy, scena ferma con il logo che ruota, passaggi a soglia; bozza su Netlify.
 status: attivo
 client: sebastian-torres
 stack: [astro, gsap, netlify]
@@ -11,7 +11,7 @@ source: claude
 tags: [opero, sito, presentazione, astro, gsap, apple]
 ---
 
-# Sito di presentazione di OperO — giro 2 «scuro, una scena ferma»
+# Sito di presentazione di OperO — giro 3 «pezzi veri, fumetti, passaggi a soglia»
 
 Sito che presenta [[opero]] alle aziende a cui [[sebastian-torres]] lo vende. Nicola il 29/10/2026: «deve spiegare in
 modo molto semplificato cosa fa OperO e come funziona, Seba vuole che non sia per niente un muro di testo, colori di
@@ -96,6 +96,40 @@ metti in ordine cosa vuoi dire, poi come vuoi dirlo e poi scrivilo seguendo dell
 ⚠️ Le misure del giro 1 attribuite al direttore erano fatte sulla porta sbagliata (un'anteprima di Marta Cesena di
 un'altra sessione rispondeva su 4342): valgono solo quelle dell'operatore motion sulla sua copia. Trappola scritta in
 [[trappole]]. Sul telefono il corpo della slide 1 occupa sette righe e lo schermo è piccolo (148×306): da guardare.
+
+## Giro 3 (29/10, tarda mattina): il verdetto sul giro 2 e cosa è cambiato
+
+Nicola: «la frase sotto il titolo OperO nella hero section non mi piace, dai un po' più di dettaglio alla hero section
+aggiungendo qualche elemento decorativo preso da qualcosa di reale in OperO, poi l'inizio con solo la scritta grande non
+mi piace, metti delle immagini o dei disegni e accorcia le frasi, fai tipo fumetti magari. e poi allo scroll non risulta
+abbastanza fluido per essere una presentazione allo scroll». Le tre frasi sono regole in [[direttive-siti]].
+
+- **L'hero**: occhiello `Facchinaggio · Allestimenti · Traslochi`, riga nuova («Il gestionale che organizza le squadre
+  in cantiere e trasforma le ore in fatture.»), e attorno al simbolo cinque componenti veri dell'app (scheda Turni, riga
+  Richieste che passa da In attesa ad Accettata, etichette della squadra, isola di navigazione, riga dei conti) in
+  prospettiva, che galleggiano e hanno una parallasse allo scroll; due sotto 768 px.
+- **La mattina a fumetti**: tre quadri, ognuno con una figura isometrica prodotta dalla skill `anatomy` (l'unico disegno
+  ammesso dalla direttiva del 23/10): la scrivania alle sei con il telefono sganciato e l'orologio su 06:00, il furgone
+  con le porte aperte e il transpallet, il foglio delle ore sotto la lampada con la calcolatrice. Tre operatori Opus in
+  parallelo con un contratto di stile (quattro toni per materiale, stessa camera a 35,26°, 53-59 KB l'una, nessun
+  filtro, una o due animazioni CSS). Nuvoletta con chi parla e frase corta («Chi va a Rho stamattina?»), didascalia di
+  una frase. Le righe lunghe del giro 2 e le bolle di chat sono sparite.
+- **I passaggi a soglia**: slide, disco, fumetti e svolta non sono più legati alla rotella in scrub, ma scattano a una
+  soglia e si completano in 0,5-0,6 s con una curva morbida; il disco va sempre alla rotazione assoluta (0, 72, 144,
+  216, 288 letti dopo scatti di rotella da 100 px e dopo salti con `scrollTo`); l'hero e la parallasse dei pezzi restano
+  in scrub. Scena ferma a 60vh per slide, mattina a 340vh: pagina da 9.573 a 8.763 px.
+
+| Misurato il 29/10 in headless, porta e titolo controllati | 1440×900 | 375×812 |
+|---|---|---|
+| fotogramma peggiore nello scroll | 20 ms | 23 ms (uno) |
+| fotogrammi oltre 32 ms | 0 | 0 |
+| peso di `dist/` | 588 KB | |
+| controlli sito / slop / testo | 8/8, 0 blocca (3 avvisi), 0 | |
+
+La fluidità vera si giudica solo con la rotella sul Mac di Nicola: in headless e nel pannello nascosto dell'app la
+motion non gira. Trappole nuove in [[trappole]]: lo `<style>` di un SVG inline vale per tutta la pagina (prefissi su
+classi e id), Chrome headless sul Mac non scende sotto i 500 px, gli operatori in parallelo condividono pannello e
+scratchpad.
 
 ## Aperto
 
