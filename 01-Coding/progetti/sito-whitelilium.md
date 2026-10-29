@@ -1,14 +1,14 @@
 ---
-riga: Sito White Lilium Photography (Isidora Francescati, fotografa maternity/newborn/famiglia, Trezzano). Giro 2-bis del 26/10: otto pagine Astro, gallerie con uno schema per pagina sul telefono.
+riga: Sito White Lilium Photography (Isidora Francescati, fotografa maternity/newborn/famiglia, Trezzano). Otto pagine Astro; il 29/10 le frasi rifatte con il verbo, deploy da lanciare.
 type: progetto
 status: attivo
 client: whitelilium
 stack: [astro, gsap, webgl, netlify]
 started: 2026-10-07
 deadline: TODO
-updated: 2026-10-26
+updated: 2026-10-29
 source: claude
-verificato: 2026-10-26
+verificato: 2026-10-29
 valore: 0
 incassato: 0
 ---
@@ -74,6 +74,15 @@ hanno la foto al 56% con il numero a sinistra, Dove e Come si svolge hanno la se
 cambiato. Controlli 8/8, slop 0, testo 0; le sette gallerie guardate a 375 nel pannello e in cattura headless. Online, commit
 `2aabc60`. **Verdetto di Nicola sul 2-bis**: TODO. Da computer resta aperto: sotto le due foto orizzontali nella griglia a 3-4
 colonne c'è una striscia vuota di circa 20 px.
+
+## Le frasi (29/10)
+Nicola dal telefono: «La torta con i fiori e le mani dentro fino ai polsi» e «In studio o nel campo» non vanno bene, «frasi
+sensate, se una frase non serve piuttosto non metterla». Le tre fotografe lette (Miele, Pellengo Gatti, Real Dreamers) mettono
+una frase intera con il verbo sotto ogni servizio. Fatto: le sei righe dei capitoli in home dicono com'è la sessione con un
+verbo (le citazioni sue restano nelle schede), «Dove ti fotografo» senza righe sotto le foto, «Come lavoro», «Quando
+prenotare», le teste di Baby e Smash cake e la riga dell'editorial come fatti, Family con la sola prima frase sua. Controlli
+testo 0/0 e slop 0, guardato a 375 nel browser interno. Commit `1a323fb`, **da pubblicare**: il deploy lo lancia Nicola con
+il comando qui sopra. Verdetto di Nicola: TODO.
 
 ## Da chiedere a lei (via Patrick: «sentiamoci per capire i dettagli»)
 Prezzi o «a partire da»; durata, numero di foto e tempi di consegna; quando prenotare maternity e newborn; le età di
