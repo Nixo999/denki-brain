@@ -1,5 +1,5 @@
 ---
-riga: Sito White Lilium Photography (Isidora Francescati, fotografa maternity/newborn/famiglia, Trezzano). Otto pagine Astro; il 29/10 in home i testi incollati da Nicola, schede corte e impersonali; gallerie senza buchi da computer, deploy da lanciare.
+riga: Sito White Lilium Photography (Isidora Francescati, fotografa maternity/newborn/famiglia, Trezzano). Otto pagine Astro; il 29/10 in home i testi incollati da Nicola, schede corte e impersonali; gallerie senza buchi da computer, online.
 type: progetto
 status: attivo
 client: whitelilium
@@ -97,7 +97,7 @@ di `stile.css`: `FotoGriglia.astro` divide le foto in righe sempre piene (da 120
 2; una larga vale due posti e riempie l'altezza della riga) e scrive su ogni `li` lo span (`--m`, `--l`) e le proporzioni
 (`--rm`, `--rl`), che `schede.css` legge in una griglia a 12 colonne. Sul telefono lo scalino di 40 px delle cartoline è
 tolto. Controllo JS senza buchi su tutte le gallerie a 768, 1024 e 1440; `controlla-sito` 8/8. La striscia vuota di 20 px
-segnata nel giro 2-bis non c'è più. Commit `e660e3d`, **da pubblicare**: il deploy lo lancia Nicola.
+segnata nel giro 2-bis non c'è più. Commit `e660e3d`, online dalle 22:25 del 29/10 (deploy lanciato da Nicola dal terminale).
 
 ## Da chiedere a lei (via Patrick: «sentiamoci per capire i dettagli»)
 Prezzi o «a partire da»; durata, numero di foto e tempi di consegna; quando prenotare maternity e newborn; le età di
