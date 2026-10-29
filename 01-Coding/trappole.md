@@ -450,6 +450,8 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
   pareggiano i toni del fondo. (10/10/2026, [[sito-barbershop-snia]])
 
 - `[TRAPPOLA]` **Un tatuaggio vettorializzato con potrace diventa una sagoma nera piena se in pagina si copia solo il `d`.** potrace scrive i buchi come sottotracciati con `fill-rule="evenodd"` sul `<path>`; il costruttore aveva estratto il `d` con una regex per riusarlo in `<use>` e nei sigilli, e la falena usciva come una macchia nera con il teschio bianco. → quando si estrae il `d` si riporta anche `fill-rule="evenodd"`. Lo strumento è `scripts/traccia.mjs` di jadetattoo-site (soglia adattiva sull'inchiostro più potrace): linee nette e nero pieno escono puliti, il puntinato fine e i petti pelosi no. ([[sito-jadetattoo]], 24/10/2026)
+- `[TRAPPOLA]` **Chrome headless sul Mac non scende sotto i 500 px di finestra con `--window-size`**: una cattura «a 375» esce a 500. → le catture da telefono si fanno con `cattura-fette.mjs` (CDP, `Emulation.setDeviceMetricsOverride`), non con `--screenshot`. (29/10/2026, [[sito-opero-presentazione]])
+
 
 ## GSAP e motion
 
@@ -907,6 +909,8 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 
 - `[TRAPPOLA]` **Un `position: absolute` dentro una scheda di un carosello senza un antenato posizionato allarga il documento** (a 375 px `html` arrivava a 2.558 px): la scheda vuole `position: relative`. ([[sito-satatttvision]], 24/10/2026)
 - **Lo `<style>` dentro un SVG messo inline vale per tutta la pagina**: le regole di una figura di `anatomy` colpiscono tutto ciò che ha le sue classi (`.iso-*`). Le classi della figura restano con un prefisso suo. ([[sito-satatttvision]], 24/10/2026)
+- `[TRAPPOLA]` **Lo `<style>` dentro un SVG messo inline vale per tutta la pagina, e le classi `iso-*` del kit di `anatomy` portano colori propri e un `filter: blur`.** Sul sito di OperO tre figure isometriche nella stessa pagina si sarebbero pestate le classi e avrebbero acceso un filtro a ogni fotogramma. → ogni figura ha un prefisso suo su id **e** classi (`sc-`, `fu-`, `fo-`), i colori stanno in classi proprie mappate sui toni del contratto, e prima di consegnare `grep -c 'iso-\|filter\|<script'` sull'SVG dà 0. (29/10/2026, [[sito-opero-presentazione]])
+
 
 ## Git, account e pubblicazione
 
@@ -1549,6 +1553,8 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 - `[TRAPPOLA]` **`controlla-slop.py` legge un h1 diviso in uno `<span>` per lettera come un «titolo di 10 parole»**, ed è un falso positivo; blocca invece la ✦ usata come segno al posto di un'icona, quindi va sostituita con un'icona Phosphor (`star-four`). ([[sito-jadetattoo]], 24/10/2026)
 
 - `[TRAPPOLA]` **Gli operatori lanciati in parallelo condividono la stessa cartella temporanea della sessione**: su Groavel uno ha sovrascritto il `fette.mjs` di un altro. → ogni operatore lavora in una sottocartella sua (`/tmp/<sito>-<ruolo>`), scritta nel contratto fra operatori (26/10/2026, sito-groavel).
+- `[TRAPPOLA]` **Gli operatori in parallelo condividono il pannello del browser dell'app e la cartella temporanea della sessione**: su OperO «pagina» ha cambiato pagina alla scheda di «motion» e ha sovrascritto due suoi file con lo stesso nome (`sonda.mjs`, `riposo.js`). → ogni operatore lavora in una scheda sua del pannello e in una sottocartella sua dello scratchpad, e un file di appoggio porta il nome dell'operatore. (29/10/2026, [[sito-opero-presentazione]])
+
 
 ## Collegamenti
 
