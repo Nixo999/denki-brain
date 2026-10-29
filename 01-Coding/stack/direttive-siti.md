@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 29/10/2026 — Nicola: «fai una ricerca vera sia di skills che onile, perche devi risolvere come scrivi le frasi, ho detto di scrivere come un professionista ma e me sembrano frasi di un bambino cin poco senso tra laltro. prima magari fatti uno schema tuo dove metti in ordina cosa vuoi dirlo, poi come vuoi dirlo e poi scrivilo segueno delle regole in modo che sembri scritto da uno scrittore professionista»
+
+Prima di scrivere i testi di un sito si fa uno schema di cosa dire e in che ordine, poi si decide come dirlo, poi si scrive seguendo regole prese da una ricerca vera su skill e fonti online; le frasi corte e allusive del giro 1 di OperO sono state bocciate come frasi di un bambino.
+
 ### 29/10/2026 — Nicola: «non mi piace su sfondo bianco, e va bene la teatralita fatta cosi ma forse un po troppo tutto il sito che score sempre, a un certo punto fai stare fremo il sito e anima qualcosa magari con il logo in granfe a sinistra che si gira o che su muove e a destra delle slide che spiegno, non troppo lungo»
 
 In un sito di presentazione non tutto deve scorrere: almeno una scena tiene ferma la pagina e cambia il contenuto sul posto, per esempio il logo grande a sinistra che si muove e le slide che spiegano a destra, e dura poco. Lo sfondo bianco su OperO non piace: il sito è scuro.
