@@ -28,6 +28,11 @@ campione (prezzo dell'FMC130 su Getic, prezzo del VPS Hetzner, nomi delle
 opzioni di inoltro di Traccar); il resto l'hanno letto gli agenti, non una
 persona. Nessun dispositivo è stato comprato né provato.
 
+**Le cinque opzioni da comprare oggi**, dalla spina OBD a 103 € al camion con
+tacografo a 471 €, con distinte, negozi e manodopera: [[gps-mezzi-opzioni]].
+Il riferimento italiano è Trackyup (Brescia): kit Teltonika con SIM e 12 mesi
+da 143 a 237 €, poi 6 € + IVA al mese a mezzo.
+
 ## La risposta corta
 
 - **Dispositivo**: Teltonika **FMC130** (cablato, 4G, da 10 a 30 V, lettore

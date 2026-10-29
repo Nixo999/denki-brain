@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **341 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **344 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -44,8 +44,11 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 - [[denkishift-interfaccia]] — ⚠️ Obiettivo dichiarato - un'interfaccia che si venda da sola durante la demo di Patrick, calibrata su due utenti che non sono due gradini dello...
 - [[denkishift]] — Prodotto di punta, turni per squadre a orario variabile. Dimostrabile, NON installabile in produzione.
 - [[gestionale-albybike]] — ⚠️ Gestionale dell'officina Albybike - bici dei clienti con scheda tecnica, lavori fatti, promemoria di manutenzione nel gestionale e via mail. Online con dati inventati su albybike-officina.netlify.app.
+- [[gps-mezzi-opzioni]] — ⚠️ Cinque kit GPS Teltonika da comprare oggi, dalla spina OBD al camion con tacografo - prezzi letti il 29/10/2026 su Getic.it e gpstelematics.eu, manodopera, cosa si ottiene.
 - [[gps-mezzi-ricerca-hardware]] — ⚠️ Rapporto integrale del 29/10/2026 su tracker GPS per mezzi di lavoro - famiglie, reti 2G/3G in Italia, prezzi nei negozi, SIM, installazione, legge. Sintesi in gps-mezzi.
+- [[gps-mezzi-ricerca-kit]] — ⚠️ Rapporto integrale del 29/10/2026 sui prezzi di cinque kit Teltonika (OBD, cablato, iButton e relè, CAN, FMC650) con le distinte, i negozi e la SIM. Sintesi in gps-mezzi-opzioni.
 - [[gps-mezzi-ricerca-piattaforma]] — ⚠️ Rapporto integrale del 29/10/2026 su come ricevere le posizioni dei tracker - Codec 8, Traccar e inoltro, Supabase, tessere, costi, fase zero coi telefoni. Sintesi in gps-mezzi.
+- [[gps-mezzi-ricerca-professionisti]] — ⚠️ Rapporto integrale del 29/10/2026 su cosa montano gli operatori italiani di telematica, le funzioni per livello, il tacografo, FMC650 e telecamere, tempi di installazione. Sintesi in gps-mezzi-opzioni.
 - [[gps-mezzi]] — ⚠️ Localizzazione GPS dei mezzi di lavoro, idea di Seba per più avanti - ricerca del 29/10/2026 su dispositivi, negozi, SIM, piattaforma e legge. Non iniziato.
 - [[opero-intermediar-receive-testo]] — Testi integrali: specifica Intermediar + Receive di Seba (24/09) e riassetto CO-OPERO portato da Patrick (30/09). La sintesi sta altrove.
 - [[opero-intermediar-receive]] — Ecosistema OperO + CO-OPERO (30/09) sopra Intermediar + Receive (24/09) - da conoscere, non da fare. Modello, cosa dice il repo oggi, buchi.
