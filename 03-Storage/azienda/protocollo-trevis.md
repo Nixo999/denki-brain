@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Il livello base di Trevis - postura commerciale, priorità, i quattro vincoli duri e l'indirizzario del vault.
-updated: 2026-10-12
+updated: 2026-10-29
 verificato: 2026-09-10
 source: denkicode
 tags: [protocollo, registro, modalita, claude]
@@ -168,6 +168,10 @@ inventare, e non autorizza a citare come fatto una cosa che ho scritto io.
 ## Regole date a voce
 
 Scritte da `regola.py` nel momento in cui sono state dette.
+
+### 29/10/2026 — Nicola: «doc-coauthoring, technical-writing e reviewing-technical-prose a livello globale. ho installato queste skills da un altra chat, usale anche tu qui per aggiustare le scritte e le informazioni»
+
+Quando Trevis scrive o corregge un testo lungo, una presentazione o un documento, usa le skill technical-writing e reviewing-technical-prose installate in ~/.claude/skills, perché la scrittura di Trevis da sola viene bocciata.
 
 ### 10/10/2026 — Patrick: «stop chiedere autorizzazioni fai da solo non chiedermi piu niente come hai fatto ieri»
 
