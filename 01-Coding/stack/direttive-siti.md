@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 29/10/2026 — Nicola: «poi linizio con solo la scritta grande non mi pice, metti delle immagini p dei disegni e accorcia le frasi, fai tipo fumetti magari»
+
+Una scena fatta solo di frasi grandi che cambiano non basta: ci vanno immagini o disegni con frasi corte, come i fumetti, una per quadro.
+
 ### 29/10/2026 — Nicola: «la frase sotto il titolo opero nella hero section non mi piace, dai un po piu di dettaglio alla hero section aggiungendo qualche elemento dcorativo preso da qualcosa di reale in opero»
 
 La hero di un sito prodotto non resta nuda con logo, nome e una riga: attorno ci vanno elementi decorativi presi da cose vere del prodotto, per esempio pezzi della sua interfaccia.
