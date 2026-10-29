@@ -1,5 +1,5 @@
 ---
-riga: Sito White Lilium Photography (Isidora Francescati, fotografa maternity/newborn/famiglia, Trezzano). Otto pagine Astro; il 29/10 in home i testi incollati da Nicola, schede corte e impersonali; online.
+riga: Sito White Lilium Photography (Isidora Francescati, fotografa maternity/newborn/famiglia, Trezzano). Otto pagine Astro; il 29/10 in home i testi incollati da Nicola, schede corte e impersonali; gallerie senza buchi da computer, deploy da lanciare.
 type: progetto
 status: attivo
 client: whitelilium
@@ -90,6 +90,14 @@ pronto («più eleganti, professionali e d'impatto emotivo») per la home (hero,
 lavoro») e va messo alla lettera: è il testo che vale, anche dove contraddice `DIREZIONE.md` (hero e «Come lavoro» non sono più
 le frasi sue, «bagnetto per terminare la sessione» e «in totale sicurezza» non sono confermati da lei). Le schede restano corte e
 impersonali. Commit `37e1240`, online dalle 21:55 del 29/10 (deploy lanciato da Nicola dal terminale). Verdetto di Nicola: TODO.
+
+## Le gallerie da computer (29/10 sera)
+Nicola: «troppi buchi bianchi, principalmente la pagina Oldborn». Da 768 px le gallerie non usano più la griglia a 3-4 colonne
+di `stile.css`: `FotoGriglia.astro` divide le foto in righe sempre piene (da 1200 righe da 4, 3 o 2 foto; fra 768 e 1199 da 3 o
+2; una larga vale due posti e riempie l'altezza della riga) e scrive su ogni `li` lo span (`--m`, `--l`) e le proporzioni
+(`--rm`, `--rl`), che `schede.css` legge in una griglia a 12 colonne. Sul telefono lo scalino di 40 px delle cartoline è
+tolto. Controllo JS senza buchi su tutte le gallerie a 768, 1024 e 1440; `controlla-sito` 8/8. La striscia vuota di 20 px
+segnata nel giro 2-bis non c'è più. Commit `e660e3d`, **da pubblicare**: il deploy lo lancia Nicola.
 
 ## Da chiedere a lei (via Patrick: «sentiamoci per capire i dettagli»)
 Prezzi o «a partire da»; durata, numero di foto e tempi di consegna; quando prenotare maternity e newborn; le età di
