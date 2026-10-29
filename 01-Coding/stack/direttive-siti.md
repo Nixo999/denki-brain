@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 29/10/2026 — Nicola: «doc-coauthoring, technical-writing e reviewing-technical-prose a livello globale. ho istalato queste skill dovrebbero aiutarti a scrivere meglio, aggiusta tutte le scritte soo difficili da seguire e non è una lettura piacevole, poi le frasei sono troppo lunge le ultime»
+
+Prima di scrivere i testi di un sito si caricano le skill technical-writing e reviewing-technical-prose (e doc-coauthoring per i documenti): i testi del giro 3 di OperO erano difficili da seguire, non piacevoli, con le frasi finali troppo lunghe.
+
 ### 29/10/2026 — Nicola: «ce da aggiustare le frasi nel sto di whitelilium, queste sono degli esempi di frasi che non vanno bene, cerca una skill o su internet e cerca di mettere frasi sensate, se una frase non serve piuttosto non metterla non scrivere robe inutili»
 
 Sul sito di White Lilium le righe sotto i capitoli e i titoli di sezione erano frammenti senza verbo che descrivevano la foto accanto («La torta con i fiori e le mani dentro fino ai polsi», «In studio o nel campo»): ogni frase di un sito ha soggetto e verbo e dice una cosa che serve a chi legge, e una riga che non ha niente da dire si toglie invece di riempire lo spazio.
