@@ -1,7 +1,7 @@
 ---
 riga: I quattro prodotti e i prezzi. I prezzi sono indicativi - l'aggancio, non la cifra finale.
 type: risorsa
-updated: 2026-08-28
+updated: 2026-10-29
 source: denkicode
 ---
 
@@ -100,6 +100,15 @@ cosa, mai su quello che paga per *tenerla*. Dettaglio in
 > Nota sui vincoli: incassare canoni **annuali anticipati** ([[vincoli-fiscali]])
 > concentra l'incasso nello stesso mese della vendita. Ottimo per il cashflow
 > che finanzia la P.IVA, pericoloso per il tetto dei 5.000 €.
+
+
+## Regole date a voce
+
+Scritte da `regola.py` nel momento in cui sono state dette.
+
+### 29/10/2026 — Nicola: «non dire quanto lo dobbiamo far pagare noi, a quello ci sta pensando patrick»
+
+Nei documenti tecnici e nelle guide si scrivono i costi che paga il cliente a terzi, mentre il prezzo di DenkiCode lo decide Patrick.
 
 ## Collegamenti
 
