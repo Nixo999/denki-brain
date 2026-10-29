@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 29/10/2026 — Nicola: «continuano a non piacermi le frasi di descrizioni delle foto, accorciale e rendile piu semplici, piu che altro scritte cosi poi sono un po imbarazzanti anche, cerca di scrivere cose professionali»
+
+Le frasi che raccontano la sessione in prima persona e con i dettagli delle foto (la ciotola di legno, le mani nella torta, il bambino che ride) suonano imbarazzanti anche quando hanno il verbo: il testo di un sito si scrive corto, semplice e in registro professionale, come le schede dei servizi dei fotografi veri («Si svolge in studio, con i genitori»), e un dettaglio che non serve a chi prenota si toglie.
+
 ### 29/10/2026 — Nicola: «forse 4 slide di presentazioni con solo un centro da leggere come una conversazione non è il massimo, prova qualcosa che faccia intendere lo stesso significato semore in stile fumetto, ma che sfrutti megio il fattore del sito e lo spazio sullo schermo»
 
 Una scena a fumetti non si fa con un quadro solo al centro dello schermo per volta, come una conversazione: si usa lo spazio dello schermo come una tavola, con più vignette insieme, e il mezzo del sito (lo scroll, le vignette che si riempiono).
