@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-10-28
+updated: 2026-10-29
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 29/10/2026 — Nicola: «non mi piace su sfondo bianco, e va bene la teatralita fatta cosi ma forse un po troppo tutto il sito che score sempre, a un certo punto fai stare fremo il sito e anima qualcosa magari con il logo in granfe a sinistra che si gira o che su muove e a destra delle slide che spiegno, non troppo lungo»
+
+In un sito di presentazione non tutto deve scorrere: almeno una scena tiene ferma la pagina e cambia il contenuto sul posto, per esempio il logo grande a sinistra che si muove e le slide che spiegano a destra, e dura poco. Lo sfondo bianco su OperO non piace: il sito è scuro.
 
 ### 28/10/2026 — Nicola: «lagga parecchio, e poi le separazioni tra le sezioni fanno schifo, il colore è sempre diverso e sembra una roba buttata lì a caso, falla che si integra perfettamente tra le sezioni e animala bene, poi ci sono dei punti dove la riga disegnata sparisce e sembra dritta in modo innaturale»
 
