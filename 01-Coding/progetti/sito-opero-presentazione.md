@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Sito di presentazione di OperO per Seba (29/10/2026) - giro 3: scuro, hero con pezzi veri dell'app, mattina a fumetti con tre figure anatomy, scena ferma con il logo che ruota, passaggi a soglia; bozza su Netlify.
+riga: Sito di presentazione di OperO per Seba (29/10/2026) - giro 4: scuro, hero con pezzi veri dell'app, la mattina come tavola a fumetti con tre figure anatomy, scena ferma, testi riscritti con le skill di scrittura; bozza su Netlify.
 status: attivo
 client: sebastian-torres
 stack: [astro, gsap, netlify]
@@ -11,7 +11,7 @@ source: claude
 tags: [opero, sito, presentazione, astro, gsap, apple]
 ---
 
-# Sito di presentazione di OperO — giro 3 «pezzi veri, fumetti, passaggi a soglia»
+# Sito di presentazione di OperO — giro 4 «la tavola a fumetti, i testi leggeri»
 
 Sito che presenta [[opero]] alle aziende a cui [[sebastian-torres]] lo vende. Nicola il 29/10/2026: «deve spiegare in
 modo molto semplificato cosa fa OperO e come funziona, Seba vuole che non sia per niente un muro di testo, colori di
@@ -130,6 +130,36 @@ La fluidità vera si giudica solo con la rotella sul Mac di Nicola: in headless 
 motion non gira. Trappole nuove in [[trappole]]: lo `<style>` di un SVG inline vale per tutta la pagina (prefissi su
 classi e id), Chrome headless sul Mac non scende sotto i 500 px, gli operatori in parallelo condividono pannello e
 scratchpad.
+
+## Giro 4 (29/10, primo pomeriggio): il verdetto sul giro 3 e cosa è cambiato
+
+Nicola: «doc-coauthoring, technical-writing e reviewing-technical-prose a livello globale. ho installato queste skill
+dovrebbero aiutarti a scrivere meglio, aggiusta tutte le scritte sono difficili da seguire e non è una lettura
+piacevole, poi le frasi sono troppo lunghe le ultime, e forse 4 slide di presentazioni con solo un centro da leggere
+come una conversazione non è il massimo, prova qualcosa che faccia intendere lo stesso significato sempre in stile
+fumetto, ma che sfrutti meglio il fattore del sito e lo spazio sullo schermo». Le due frasi sono regole in
+[[direttive-siti]]; le tre skill stanno nella tabella di [[design-frontend]].
+
+- **La tavola a fumetti**: la mattina non è più un quadro alla volta al centro, ma una pagina di fumetto che riempie
+  lo schermo: quattro vignette con bordo e canali (griglia 7+5 / 5+7 da 1024 px, colonna sotto), didascalia nel
+  riquadro in alto a sinistra, nuvoletta con chi parla, la figura; la quarta vignetta è la risposta di OperO con il
+  disco. Le vignette si riempiono a soglia e restano accese; a 375 se ne vedono due per schermata. Senza scorrimento
+  interno a 1440×900, 1280×650 e 1024×768.
+- **I testi, versione 4.1**: riscritti con `technical-writing` e `reviewing-technical-prose` (frasi fra 6 e 20
+  parole, una cosa per frase, soggetto scritto, niente chiuse a effetto) e corretti dopo una **prova di lettura** con
+  un agente Sonnet senza contesto che ha letto solo `testi.md` come un titolare dal telefono: «chiamata» ora è
+  spiegata nella slide 1 prima di comparire nell'indice della 3, «CO-OPERO» non sta più nella barra («Per i clienti»)
+  e il titolo della sezione lo spiega, «app» contro «senza installare» chiarito («OperO è un sito»), quattro frasi
+  da 21-22 parole spezzate, un soggetto rimesso, il «noi» tolto dalla chiusura.
+
+| Misurato il 29/10 in headless, porta e titolo controllati | 1440×900 | 375×812 |
+|---|---|---|
+| fotogramma peggiore nello scroll | 19 ms | 19 ms |
+| peso di `dist/` | 592 KB | |
+| controlli sito / slop / testo | 8/8, 0 blocca (3 avvisi), 0 | |
+
+Trappole nuove in [[trappole]]: `max-height` in percentuale dentro una griglia si calcola sulla riga; `gsap.set`
+scrive dentro l'oggetto che riceve. Resta da guardare in un browser vero come entrano le vignette.
 
 ## Aperto
 

@@ -694,6 +694,8 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 - `[TRAPPOLA]` **Una `transition` CSS su `stroke-dashoffset` scritta per il telefono ritarda lo scrub da computer**: con lo scrub GSAP scrive il valore a ogni fotogramma e la transizione lo insegue con 0,9 s di ritardo. Da 1024 px si spegne in linea (`transition: none`) e resta solo sotto. ([[sito-emozionidicasa]], 27/10/2026)
 - `[TRAPPOLA]` **Nel cambio di campo a livelli di opacità, se il livello che esce e quello che entra svaniscono insieme, a metà passaggio traspare il fondo della sezione**: il livello che esce aspetta che quello nuovo sia a 1 (0,4 s) e poi svanisce. ([[sito-emozionidicasa]], 27/10/2026)
 - `[TRAPPOLA]` **Dentro una timeline GSAP, un `fromTo` con `stagger` porta subito allo stato di partenza solo il primo elemento**: gli altri restano come sono finché non arriva il loro turno, e sul sito di OperO le bolle della mattina e la svolta restavano accese sopra l'hero. → lo stato iniziale si mette prima con un `gsap.set` su tutti gli elementi, e il `fromTo` nella timeline serve solo a muoverli. (29/10/2026, [[sito-opero-presentazione]])
+- `[TRAPPOLA]` **`gsap.set(el, obj)` scrive `duration: 0` e `parent` dentro l'oggetto `obj` che gli passi**: se lo stesso oggetto finisce poi in un `tl.to`, il tween dura zero e salta allo stato finale (sulla tavola di OperO la figura che si spegneva scattava a scala 0,96). → gli stati di partenza si passano sempre come copia (`{ ...PARTENZA.figura }`). (29/10/2026, [[sito-opero-presentazione]])
+
 
 ## CSS e layout
 
@@ -910,6 +912,7 @@ non un'idea scartata a tavolino: quella sta in `05-Decisioni/`, sezione «Cosa s
 - `[TRAPPOLA]` **Un `position: absolute` dentro una scheda di un carosello senza un antenato posizionato allarga il documento** (a 375 px `html` arrivava a 2.558 px): la scheda vuole `position: relative`. ([[sito-satatttvision]], 24/10/2026)
 - **Lo `<style>` dentro un SVG messo inline vale per tutta la pagina**: le regole di una figura di `anatomy` colpiscono tutto ciò che ha le sue classi (`.iso-*`). Le classi della figura restano con un prefisso suo. ([[sito-satatttvision]], 24/10/2026)
 - `[TRAPPOLA]` **Lo `<style>` dentro un SVG messo inline vale per tutta la pagina, e le classi `iso-*` del kit di `anatomy` portano colori propri e un `filter: blur`.** Sul sito di OperO tre figure isometriche nella stessa pagina si sarebbero pestate le classi e avrebbero acceso un filtro a ogni fotogramma. → ogni figura ha un prefisso suo su id **e** classi (`sc-`, `fu-`, `fo-`), i colori stanno in classi proprie mappate sui toni del contratto, e prima di consegnare `grep -c 'iso-\|filter\|<script'` sull'SVG dà 0. (29/10/2026, [[sito-opero-presentazione]])
+- `[TRAPPOLA]` **In una griglia CSS, `max-height` in percentuale su un figlio si calcola sulla sua riga, non sull'altezza della cella del genitore**: sulla tavola a fumetti di OperO le figure con `max-height: 78%` uscivano più piccole del dovuto. → si dà alla riga un minimo (`grid-template-rows: minmax(22%, auto) 1fr`) e si toglie il limite dal figlio. (29/10/2026, [[sito-opero-presentazione]])
 
 
 ## Git, account e pubblicazione
