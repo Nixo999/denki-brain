@@ -1,7 +1,7 @@
 ---
 riga: Le skill di design e di motion installate a livello di account (~/.claude/skills/), quindi valgono in ogni cartella - OperO, DenkiShift, cococa...
 type: area
-updated: 2026-10-24
+updated: 2026-10-29
 source: claude
 tags: [skills, design, frontend]
 ---
@@ -51,6 +51,7 @@ costava di più. Dettaglio in [[2026-09-06-mac-nicola-in-lavoro]].
 | Una pagina pubblicata su claude.ai | `artifact-design` | È la skill degli Artifact, non dei siti |
 | Uno **stile Apple** chiesto apposta, su un'app o su una pagina prodotto | `stile-apple` | Token verificati sulle linee guida Apple e su apple.com, componenti, vetro con i ripieghi, revisione e script di controllo ([[stile-apple]]) |
 | L'**apertura e la spina allo scroll** di una vetrina: preloader, Lenis, pin, scrub, sfondo in shader | `cinematic-scroll-storytelling`, `shader-glsl`, `animation-performance` | Installate il 23/10/2026 per [[sito-laperegina]]; le regole di Nicola del 14 e 20/10 (scrub senza ritardo, pin corti, niente blur, niente Lenis sul telefono) battono quello che le skill consigliano; il riassunto con i percorsi sta in `direzione/skill-digest.md` del repo `laperegina-site` |
+| I **testi** di un sito o di un documento | `technical-writing`, `reviewing-technical-prose`, `doc-coauthoring` (installate da Nicola il 29/10/2026) | Nicola: «dovrebbero aiutarti a scrivere meglio». Le prime due danno le regole di frase (una cosa per frase, soggetto e verbo, niente frammenti in fila, niente costruzioni da modello) e la lista di controllo prima di consegnare; la terza è il metodo per scrivere un documento insieme a chi lo chiede, con la prova di lettura di un lettore senza contesto. Si caricano prima di scrivere, insieme a `scrittura-sito` e `voce-denkicode` |
 
 ## Per i nostri due prodotti
 
