@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 29/10/2026 — Nicola: «la frase sotto il titolo opero nella hero section non mi piace, dai un po piu di dettaglio alla hero section aggiungendo qualche elemento dcorativo preso da qualcosa di reale in opero»
+
+La hero di un sito prodotto non resta nuda con logo, nome e una riga: attorno ci vanno elementi decorativi presi da cose vere del prodotto, per esempio pezzi della sua interfaccia.
+
 ### 29/10/2026 — Nicola: «fai una ricerca vera sia di skills che onile, perche devi risolvere come scrivi le frasi, ho detto di scrivere come un professionista ma e me sembrano frasi di un bambino cin poco senso tra laltro. prima magari fatti uno schema tuo dove metti in ordina cosa vuoi dirlo, poi come vuoi dirlo e poi scrivilo segueno delle regole in modo che sembri scritto da uno scrittore professionista»
 
 Prima di scrivere i testi di un sito si fa uno schema di cosa dire e in che ordine, poi si decide come dirlo, poi si scrive seguendo regole prese da una ricerca vera su skill e fonti online; le frasi corte e allusive del giro 1 di OperO sono state bocciate come frasi di un bambino.
