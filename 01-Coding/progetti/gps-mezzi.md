@@ -33,6 +33,11 @@ tacografo a 471 €, con distinte, negozi e manodopera: [[gps-mezzi-opzioni]].
 Il riferimento italiano è Trackyup (Brescia): kit Teltonika con SIM e 12 mesi
 da 143 a 237 €, poi 6 € + IVA al mese a mezzo.
 
+**Presentazione per Seba** (29/10/2026, slide in stile OperO, solo dati
+letti): <https://claude.ai/artifact/6F8ctcrNH31Bv9QKNKyGzg>. È privata finché
+Nicola non la condivide dal menu Share; nessuno l'ha ancora guardata slide per
+slide.
+
 ## La risposta corta
 
 - **Dispositivo**: Teltonika **FMC130** (cablato, 4G, da 10 a 30 V, lettore
