@@ -1,7 +1,7 @@
 ---
 riga: Il registro dei testi che legge un cliente - Lei o Tu, voce di Patrick. Non e' il registro di Trevis.
 type: risorsa
-updated: 2026-10-18
+updated: 2026-10-29
 source: denkicode
 ---
 
@@ -103,6 +103,10 @@ Vincolo fiscale attivo, dettaglio in [[vincoli-fiscali]]:
 ## Regole date a voce
 
 Scritte da `regola.py` nel momento in cui sono state dette.
+
+### 29/10/2026 — Nicola: «l'ultima slide con le domande non ha senso in una presentazione. l'ultima slide fai un resoconto di cosa sarebbe da fare per iniziare a fare un progetto del genere»
+
+Una presentazione chiude con il resoconto di cosa serve per partire, non con domande al pubblico.
 
 ### 18/10/2026 — Nicola: «il titolo deve essere professionale non va bene la scrita: lsap: a gestionale c'è, a scaffale no»
 
