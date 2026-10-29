@@ -1,6 +1,6 @@
 ---
 type: progetto
-riga: Sito di presentazione di OperO per Seba (29/10/2026) - «Una mattina, messa in ordine», stile pagina prodotto Apple, schermi di OperO ricostruiti in DOM, Astro e GSAP; bozza su Netlify.
+riga: Sito di presentazione di OperO per Seba (29/10/2026) - giro 2 scuro con la scena ferma (logo che ruota, cinque slide), schermi di OperO in DOM, testi riscritti con schema e regole; bozza su Netlify.
 status: attivo
 client: sebastian-torres
 stack: [astro, gsap, netlify]
@@ -11,7 +11,7 @@ source: claude
 tags: [opero, sito, presentazione, astro, gsap, apple]
 ---
 
-# Sito di presentazione di OperO — giro 1 «Una mattina, messa in ordine»
+# Sito di presentazione di OperO — giro 2 «scuro, una scena ferma»
 
 Sito che presenta [[opero]] alle aziende a cui [[sebastian-torres]] lo vende. Nicola il 29/10/2026: «deve spiegare in
 modo molto semplificato cosa fa OperO e come funziona, Seba vuole che non sia per niente un muro di testo, colori di
@@ -63,10 +63,45 @@ contratto fra gli operatori), `direzione/testi.md` (ogni frase del sito, parola 
 L'apertura è ferma a 1,1 s (i fotogrammi a 1100 e 1400 ms sono identici). **Mai visto su un browser vero né su un
 iPhone**, e Seba non l'ha ancora visto.
 
+## Giro 2 (29/10, mattina): il verdetto di Nicola e cosa è cambiato
+
+Nicola sul giro 1: «non mi piace su sfondo bianco, e va bene la teatralità fatta così ma forse un po' troppo tutto il
+sito che scorre sempre, a un certo punto fai stare fermo il sito e anima qualcosa magari con il logo in grande a
+sinistra che si gira o che si muove e a destra delle slide che spiegano, non troppo lungo», e sui testi: «ho detto di
+scrivere come un professionista ma a me sembrano frasi di un bambino con poco senso. prima fatti uno schema tuo dove
+metti in ordine cosa vuoi dire, poi come vuoi dirlo e poi scrivilo seguendo delle regole». Tutte e due le frasi sono in
+[[direttive-siti]].
+
+- **Tutta la pagina è scura**, sul blu notte del disco del logo (`#08141C`), con tre luci ciano; gli schermi usano il
+  tema scuro vero di OperO (`.dark` in `src/index.css`), il foglio della fattura resta chiaro.
+- **La scena ferma** (`#presentazione`): la pagina sta ferma, a sinistra il disco con il simbolo ruota di 72° a ogni
+  passaggio (ghiera con cinque tacche), a destra cinque slide nell'ordine del ciclo di un lavoro: Nuovo lavoro, Turni,
+  Chiudi chiamata, Conti e fattura, Calendario. I sette quadri e la sezione «L'ordine» del giro 1 spariscono; la
+  mattina scende a tre righe. La pagina passa da 13.766 a 9.573 px a 1440.
+- **I testi, in tre passi**: `direzione/schema-testi.md` (cosa dire, in che ordine), `direzione/regole-scrittura.md`
+  (ricerca di un operatore Opus su otto pagine prodotto italiane misurate, Apple compresa, e sulle guide di Carrada,
+  Sapienza, Microsoft, più le skill `scrittura-sito`, `voce-denkicode`, `copy-generation` e `copywriting` di Corey
+  Haines, trovata e non installata), poi `direzione/testi.md` v2. La diagnosi: il giro 1 aveva copiato da Apple i
+  titoli corti senza il paragrafo da 30 parole che Apple mette sotto, metà delle righe senza soggetto o verbo,
+  metafore da decifrare («entrano dalla porta giusta»), «chiamata» mai spiegata. Nella v2 ogni frase ha soggetto e
+  verbo, i titoli dicono un fatto, si dà del tu al titolare e i ruoli restano in terza persona.
+
+| Misurato il 29/10 in headless, sulla porta giusta | 1440×900 | 375×812 |
+|---|---|---|
+| fotogramma peggiore nello scroll | 18 ms | 18 ms |
+| fotogrammi oltre 20 ms | 0 | 0 |
+| controlli sito / slop / testo | 8/8, 0 blocca (3 avvisi: gruppi di tre, Inter, sezioni senza numero), 0 | |
+| contrasti (titoli / corpo / indici) | 17,7 / 9,4 / 5,1 | |
+
+⚠️ Le misure del giro 1 attribuite al direttore erano fatte sulla porta sbagliata (un'anteprima di Marta Cesena di
+un'altra sessione rispondeva su 4342): valgono solo quelle dell'operatore motion sulla sua copia. Trappola scritta in
+[[trappole]]. Sul telefono il corpo della slide 1 occupa sette righe e lo schermo è piccolo (148×306): da guardare.
+
 ## Aperto
 
 - Il bottone «Chiedi una dimostrazione» punta a `#domani`: manca l'indirizzo mail a cui mandare chi chiede. Lo dà Nicola
   (o Seba).
+- Resta da guardare su un browser vero e su un iPhone; Seba non l'ha visto.
 - Nessun prezzo nel sito, di proposito: il listino di OperO è di Seba ([[opero]]).
 - CO-OPERO è presentato come portale gratuito dei clienti (flusso 1, online sul sito di prova dall'8/10): la pagina
   Gruppo e i fornitori non ci sono, perché stanno su un ramo locale ([[opero-intermediar-receive]]).
