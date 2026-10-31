@@ -17,10 +17,8 @@ Lancia in fila:
 Senza --url serve la cartella (o la sua dist/, se e' un sito Astro) su 127.0.0.1 per il tempo della misura.
 Esce 1 se un cancello blocca. Gli avvisi non bloccano: si guardano.
 
-CONTRADDIZIONE APERTA (31/10/2026): controlla-sito.py chiede almeno 3 <svg> inline o un racconto
-tipografico («grafica inventata»), mentre Nicola ha scritto piu' volte di non disegnare niente noi
-(direttive-siti, 12/10 e 23/10). Finche' Nicola non decide, quei due controlli si stampano come
-CONTRADDIZIONE e non bloccano. Nato il 31/10/2026 dalla pipeline dei siti.
+Nato il 31/10/2026 dalla pipeline dei siti. Lo stesso giorno Nicola ha tolto la grafica inventata
+obbligatoria («Sì, toglila»): controlla-sito non conta piu' gli <svg>.
 """
 import functools
 import http.server
@@ -32,8 +30,6 @@ import threading
 from pathlib import Path
 
 QUI = Path(__file__).resolve().parent
-# i controlli di controlla-sito.py che spingono a disegnare: vedi CONTRADDIZIONE APERTA
-SPINGONO_A_DISEGNARE = ("grafica inventata", "foto, oppure grafica che le sostituisca")
 SBARRAMENTI = ("sbarramento meta", "sbarramento header", "sbarramento robots")
 
 
@@ -57,7 +53,7 @@ def lancia(cmd):
 
 
 def controlla_sito(cartella, consegnato=False):
-    """controlla-sito.py, con i due controlli che spingono a disegnare separati dagli altri."""
+    """controlla-sito.py; con consegnato gli sbarramenti tolti di proposito non bloccano."""
     sys.path.insert(0, str(QUI))
     import importlib.util
     spec = importlib.util.spec_from_file_location("controlla_sito", QUI / "controlla-sito.py")
@@ -70,11 +66,8 @@ def controlla_sito(cartella, consegnato=False):
     for nome, passa, msg in r["esiti"]:
         if passa or (consegnato and nome in SBARRAMENTI):
             continue
-        if nome in SPINGONO_A_DISEGNARE:
-            righe.append(f"  CONTRADDIZIONE  {nome}: {msg}")
-        else:
-            ok = False
-            righe.append(f"  BLOCCA  {nome}: {msg}")
+        ok = False
+        righe.append(f"  BLOCCA  {nome}: {msg}")
     righe += [f"  avvisa  {a}" for a in r["avvisi"]]
     return ok, righe or ["  tutto a posto"]
 

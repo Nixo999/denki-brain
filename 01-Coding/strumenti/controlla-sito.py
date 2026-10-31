@@ -19,7 +19,6 @@ import subprocess
 import sys
 from pathlib import Path
 
-MIN_SVG = 3        # NG Barber 8, Fiftynine 10, Mikuma 4, Lobidu 0
 MIN_FOTO = 1080    # lato lungo. Le copertine dei Reel sono 360 e si vedono
 
 # loghi, avatar e icone possono essere piccoli: non sono fotografia di contenuto
@@ -59,6 +58,11 @@ def foto_piccole(d):
             continue
         if any(x in p.name.lower() for x in NON_FOTO):
             continue
+        # foto-800.jpg accanto a foto.jpg e' la taglia piccola del srcset, non la foto
+        m = re.match(r"(.+)-\d{3,4}$", p.stem)
+        if m and any(q != p and (q.stem == m.group(1) or q.stem.startswith(m.group(1) + "-"))
+                     for q in p.parent.iterdir()):
+            continue
         try:
             lato = lato_lungo(p)
             if lato is not None and lato < MIN_FOTO:
@@ -78,31 +82,25 @@ def controlla(d):
     piccole = foto_piccole(d)
     # il JS sta in assets/*.js e testo() non lo legge: qui serve
     js = "".join(p.read_text(encoding="utf-8", errors="ignore") for p in sorted(d.glob("assets/*.js")))
+    # racconto tipografico: scrub e un asse variabile. Regge una pagina con foto piccole
     tipografica = ("scrub" in (t + js)) and ("font-variation-settings" in (t + js))
 
     return {
         "nome": d.name,
         "esiti": [
-            # Dal 12/10/2026 (Nicola, su Giulia Pregnolato: «non disegnare niente tu,
-            # trova qualcos'altro da fare animato», in direttive-siti) la grafica
-            # inventata puo' essere tipografica e cromatica invece che disegnata:
-            # racconto con `scrub` e un asse variabile in `font-variation-settings`.
-            ("grafica inventata", t.count("<svg") >= MIN_SVG or tipografica,
-             f"{t.count('<svg')} <svg> inline, ne servono {MIN_SVG}, oppure un racconto tipografico "
-             "(scrub + font-variation-settings). Senza, la pagina dipende tutta dalle foto"),
-            # anche nel JS (20/10/2026): con Astro GSAP non sta in un <script src>
-            # dell'HTML ma nei file impacchettati in assets/*.js
+            # «grafica inventata» (almeno MIN_SVG <svg> inline o un racconto tipografico)
+            # e' stata tolta il 31/10/2026. Nicola, alla domanda se toglierla: «Sì, toglila»
+            # (direttive-siti). Un sito non deve piu' contenere disegni nostri per passare.
             ("racconto allo scroll", ("ScrollTrigger" in t + js) or ("animation-timeline" in t),
              "niente GSAP/ScrollTrigger ne' animation-timeline: e' un impaginato, non un racconto"),
             ("animazione d'apertura", (".js:not(.cattura)" in t) or ("gsap.timeline" in t),
              "nessuna apertura: manca il primo secondo"),
-            # o le foto reggono, o il sito non dipende da loro. Fiftynine ha foto
-            # da 640 e piace lo stesso: regge su dieci SVG inventati. Mikuma no.
-            ("foto, oppure grafica che le sostituisca",
-             (not piccole) or t.count("<svg") >= 6 or tipografica,
-             f"{len(piccole)} foto sotto {MIN_FOTO}px e solo {t.count('<svg')} <svg> inventati: "
-             "il sito dipende da foto che non reggono. O le chiedi al cliente, o disegni "
-             "una pagina che non ne abbia bisogno (" +
+            # Fiftynine ha foto da 640 e piace lo stesso: regge su dieci SVG. Dal 31/10/2026
+            # i disegni non sono piu' una strada da consigliare, ma un sito che ce li ha gia'
+            # non si boccia per questo: passa con un avviso (vedi sotto).
+            ("foto da almeno 1080 px", (not piccole) or tipografica or t.count("<svg") >= 6,
+             f"{len(piccole)} foto sotto {MIN_FOTO}px: si chiedono al cliente, o la pagina si regge "
+             "su un racconto tipografico (scrub + font-variation-settings) (" +
              ", ".join(f"{n} {w}px" for n, w in piccole[:3]) + ")"),
             ("firma DenkiCode", "firma-denkicode" in t or "Powered by" in t,
              "manca la firma nel footer"),
@@ -112,7 +110,10 @@ def controlla(d):
         ],
         "avvisi": ([] if (d / "assets" / "base.css").exists() else
                    ["nato prima dello starter: niente base.css, le trappole del reset "
-                    "vanno verificate a mano"]),
+                    "vanno verificate a mano"]) +
+                  ([f"{len(piccole)} foto sotto {MIN_FOTO}px coperte da {t.count('<svg')} disegni inline: "
+                    "dal 31/10/2026 la grafica inventata non e' piu' obbligatoria e non va usata per "
+                    "coprire foto deboli"] if piccole and not tipografica and t.count("<svg") >= 6 else []),
     }
 
 

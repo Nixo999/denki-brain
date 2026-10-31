@@ -1,9 +1,16 @@
 ---
 name: processo-siti
-description: Come si costruisce un sito vetrina DenkiCode. Da usare prima di scrivere una riga di HTML per un sito cliente o una bozza. La direzione la propone un operatore su Opus che ha letto le skill di design, il direttore sceglie e non scrive codice. Impeccable guida la costruzione, lo scroll-telling e la grafica inventata sono obbligatori. Non vale per OperO e DenkiShift, dove comanda il CLAUDE.md del repo.
+description: Come si costruisce un sito vetrina DenkiCode. Da usare prima di scrivere una riga di HTML per un sito cliente o una bozza. La direzione la propone un operatore su Opus che ha letto le skill di design, il direttore sceglie e non scrive codice. Impeccable guida la costruzione e lo scroll-telling è obbligatorio; la grafica inventata non lo è più dal 31/10/2026. Per un sito nuovo da un profilo Instagram si parte da /nuovo-sito. Non vale per OperO e DenkiShift, dove comanda il CLAUDE.md del repo.
 ---
 
 # Il processo, in ordine
+
+> **Dal 31/10/2026 un sito vetrina nuovo passa da `/nuovo-sito`** (skill
+> `nuovo-sito`): raccolta dal profilo Instagram, tre tavole di direzione, una
+> sola testa che costruisce partendo dal catalogo delle sezioni approvate,
+> cancelli e catture. Nicola, alla domanda: «Sì». Questo file resta la
+> referenza per tutto il resto (foto, catena delle skill, verifica, consegna) e
+> per i siti che non nascono da un profilo. Le parti superate sono marcate.
 
 Il metro sono **NG Barber** e **Fiftynine**. Non si copiano: si eguaglia il
 livello. Cos'hanno che i siti di settembre non hanno, misurato:
@@ -12,6 +19,8 @@ livello. Cos'hanno che i siti di settembre non hanno, misurato:
 |---|---|---|---|---|---|
 | `<svg>` inline | 8 | 10 | 4 | 0 | 0 |
 | scroll-telling (GSAP/ScrollTrigger) | sì | sì | no | no | no |
+
+⚠️ **SUPERATA il 31/10/2026 per la grafica inventata**: Nicola, alla domanda se togliere la grafica inventata obbligatoria e il minimo di tre `<svg>`: «Sì, toglila». Il racconto allo scroll resta obbligatorio. Il testo sotto resta perché è stato la regola fino ad allora.
 
 **Grafica inventata e racconto allo scroll.** Le pagine che piacciono hanno un
 globo che gira, una mappa con le città che pulsano, una tenda che scorre, una
@@ -50,13 +59,17 @@ fotogrammi di video, dominanti diverse — ci sono due strade, e si **dichiara
 quale**:
 
 1. **Si chiedono le foto buone al cliente.** È anche un motivo per scrivergli.
-2. **Si disegna un sito che non dipende dalle foto**: grafica inventata,
-   tipografia, colore. NG Barber ha otto foto e regge sul globo e sulla mappa.
+2. **Si disegna un sito che non dipende dalle foto**: tipografia, colore,
+   movimento. Dal 31/10/2026 la grafica inventata non è più una strada:
+   Nicola ha scritto più volte di non disegnare niente noi (direttive-siti,
+   12/10 e 23/10).
 
 Quello che non si fa mai è impaginare foto brutte e sperare. Un trattamento
 solo per tutte (taglio, grana, duotone, cornice) o nessuno.
 
 ## 2. La direzione la propone chi ha letto le skill
+
+⚠️ **Per i siti nuovi da un profilo, SUPERATO il 31/10/2026** da `/nuovo-sito`: una sola testa e tre tavole di direzione. Sotto, il processo di prima.
 
 Il direttore lancia **un operatore di direzione** (agente `operatore`, Opus).
 Quell'operatore carica la catena — `impeccable context`, poi
@@ -69,7 +82,7 @@ Ogni mondo, in dieci righe:
   cliente non è quella giusta.
 - **La spina dello scroll**: cosa racconta la pagina mentre scendi, in tre
   battute. È la cosa che rende NG Barber NG Barber.
-- **I tre o quattro pezzi di grafica inventata** che nascono da quella metafora.
+- ~~**I tre o quattro pezzi di grafica inventata** che nascono da quella metafora.~~ Tolto il 31/10/2026.
 - Palette e famiglia tipografica, con i valori.
 
 **Il direttore sceglie uno** e può chiedere di incrociarne due. Da lì, e solo da
@@ -145,8 +158,10 @@ Se esce 1 il sito non si consegna. Le regole stanno nella skill `scrittura-sito`
 ricerca del 17/09/2026: se esce 1 il sito non si consegna, e gli avvisi si guardano
 uno per uno. Cosa controlla e perché: `01-Coding/stack/anti-slop-siti.md`.
 
-Misura grafica inventata, racconto allo scroll, apertura, foto, firma e
-sbarramenti. **NG Barber e Fiftynine passano 8 su 8**: è tarato su quelli. Se
+Misura racconto allo scroll, apertura, foto, firma e sbarramenti. Dal
+31/10/2026 non conta più gli `<svg>`. **NG Barber e Fiftynine passano 7 su
+7**: è tarato su quelli. Tutti i controlli insieme, più il telefono simulato,
+si lanciano con `python3 01-Coding/strumenti/cancelli-sito.py <cartella>`. Se
 esce 1 il sito non si pubblica.
 
 E si legge `01-Coding/stack/direttive-siti.md`, che raccoglie ogni bocciatura di
