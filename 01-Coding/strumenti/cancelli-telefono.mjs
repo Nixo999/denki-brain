@@ -14,7 +14,7 @@
 // LIMITE MISURATO il 31/10/2026: in headless il lag che Nicola sente nel suo Brave non si vede. Su quattro siti
 // approvati (NG Barber, Fiftynine, Mikuma, Davide Milan) e cinque bocciati per il lag lo scroll da' a tutti un p95
 // di 17-18 ms, con o senza GPU, e il lavoro del thread principale non li separa. Le soglie di SOGLIE fermano
-// solo il lag grossolano; il segnale che separava i due gruppi e' il numero di elementi (controllo «peso»).
+// solo il lag grossolano. Il segnale misurato su una causa vera e' l'area dei livelli will-change (controllo «livelli»).
 // Esce 1 se qualcosa BLOCCA. Con --json stampa solo l'esito, per cancelli-sito.py. Nato il 31/10/2026.
 import { spawn } from 'node:child_process'
 import { existsSync, mkdtempSync, rmSync } from 'node:fs'
@@ -119,12 +119,19 @@ function bocciature() {
   let distanza = null
   if (barra && titolo && visibile(titolo)) distanza = Math.round(titolo.getBoundingClientRect().top - barra.getBoundingClientRect().bottom)
   out.push({ id: 'barra', direttiva: '20/10', blocca: false, ok: distanza === null || distanza >= 16, msg: distanza === null ? 'nessuna barra fissa sopra il titolo' : `fra la barra fissa e il titolo ci sono ${distanza} px` })
-  // 9. peso della pagina. Il lag che Nicola vede nel suo Brave headless non si riproduce (31/10/2026: approvati e
-  // bocciati hanno lo stesso p95 di 17-18 ms). L'unico segnale che li separava: gli elementi del DOM, 181-450 negli
-  // approvati, 500-1625 nei bocciati per il lag (mybalance, emozionidicasa, groavel, pilates-district, martacesena).
+  // 9. livelli grafici. La causa del lag di Groavel, trovata e tolta al giro 4b (27/10/2026): will-change su livelli
+  // grandi, 44 livelli composti e 1,4 GB di GPU all'apertura. Misurato il 31/10: prima del 4b gli elementi con
+  // will-change coprivano 20 schermi a 375 px (29 a 1440), dopo 0; negli approvati da 0 a 14.
+  const V = vw * vh
+  const wc = [...document.querySelectorAll('*')].filter(e => /transform|opacity|filter/.test(getComputedStyle(e).willChange))
+  const areaWc = wc.reduce((a, e) => { const b = e.getBoundingClientRect(); return a + b.width * b.height }, 0) / V
+  out.push({ id: 'livelli', direttiva: '26/10 «lagga tantissimo» (Groavel, giro 4b)', blocca: false, ok: areaWc <= 15, msg: `${wc.length} elementi con will-change, grandi in tutto ${areaWc.toFixed(1)} schermi (Groavel prima del 4b: 20; approvati 0-14)` })
+
+  // 10. peso della pagina. Segnale debole: il 31/10 gli approvati avevano 181-450 elementi e quattro siti bocciati per
+  // il lag 500-1625, ma Groavel, che a Nicola piace, ne ha 693. Si guarda, non si conta come lag.
   const nodi = document.querySelectorAll('*').length
   const infinite = document.getAnimations().filter(a => a.effect?.getComputedTiming?.().iterations === Infinity).length
-  out.push({ id: 'peso', direttiva: '26/10 «lagga tantissimo»', blocca: false, ok: nodi <= 480 && infinite <= 4, msg: `${nodi} elementi nella pagina (approvati 181-450, bocciati per il lag 500-1625), ${infinite} animazioni infinite` })
+  out.push({ id: 'peso', direttiva: '26/10 «lagga tantissimo»', blocca: false, ok: nodi <= 480 && infinite <= 4, msg: `${nodi} elementi nella pagina (approvati 181-450, Groavel 693, bocciati per il lag 500-1625), ${infinite} animazioni infinite` })
   return out
 }
 

@@ -3,6 +3,9 @@
 
     python3 01-Coding/strumenti/cancelli-sito.py ~/lavoro/<nome>-site
     python3 01-Coding/strumenti/cancelli-sito.py ~/lavoro/<nome>-site --url https://<nome>.netlify.app
+    python3 01-Coding/strumenti/cancelli-sito.py ~/lavoro/<nome>-site --consegnato
+
+--consegnato vale per un sito gia' passato al cliente, che non ha piu' i tre sbarramenti di proposito.
 
 Lancia in fila:
 1. controlla-sito.py   il livello minimo misurato su NG Barber e Fiftynine, sbarramenti e firma;
@@ -31,6 +34,7 @@ from pathlib import Path
 QUI = Path(__file__).resolve().parent
 # i controlli di controlla-sito.py che spingono a disegnare: vedi CONTRADDIZIONE APERTA
 SPINGONO_A_DISEGNARE = ("grafica inventata", "foto, oppure grafica che le sostituisca")
+SBARRAMENTI = ("sbarramento meta", "sbarramento header", "sbarramento robots")
 
 
 def servi(radice):
@@ -52,7 +56,7 @@ def lancia(cmd):
     return r.returncode, (r.stdout + r.stderr).rstrip()
 
 
-def controlla_sito(cartella):
+def controlla_sito(cartella, consegnato=False):
     """controlla-sito.py, con i due controlli che spingono a disegnare separati dagli altri."""
     sys.path.insert(0, str(QUI))
     import importlib.util
@@ -64,7 +68,7 @@ def controlla_sito(cartella):
         return True, ["  (nessun index.html: controlla-sito non si applica)"]
     righe, ok = [], True
     for nome, passa, msg in r["esiti"]:
-        if passa:
+        if passa or (consegnato and nome in SBARRAMENTI):
             continue
         if nome in SPINGONO_A_DISEGNARE:
             righe.append(f"  CONTRADDIZIONE  {nome}: {msg}")
@@ -85,7 +89,7 @@ def main(argv):
     file_da_leggere = cartella if (cartella / "index.html").exists() else radice
 
     esiti = []
-    ok, righe = controlla_sito(file_da_leggere)
+    ok, righe = controlla_sito(file_da_leggere, "--consegnato" in argv)
     esiti.append(("livello minimo (controlla-sito)", ok, "\n".join(righe)))
     for nome, script in (("segni da AI (controlla-slop)", "controlla-slop.py"),
                          ("testo (controlla-testo)", "controlla-testo.py")):
