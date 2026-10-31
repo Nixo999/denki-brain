@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 31/10/2026 — Nicola: «[mettere accanto allo starter un catalogo di sezioni approvate, anche se il LEGGIMI dice «nessuna sezione»?] Sì, cambialo»
+
+Accanto allo starter c'è un catalogo di sezioni già approvate da Nicola, parametriche su palette, font e foto, e un sito nuovo parte da lì invece che da zero. La frase del LEGGIMI «nessuna sezione, nessun componente» è superata; i colori, i font e le foto restano del cliente.
+
 ### 31/10/2026 — Nicola: «[un sito nuovo si fa con /nuovo-sito, una sola testa che costruisce e tre tavole di direzione?] Sì»
 
 Un sito vetrina nuovo passa dalla skill /nuovo-sito: raccolta dal profilo Instagram, tre tavole di direzione fra cui sceglie Nicola, una sola testa che costruisce, i cancelli e le catture a 1440 e a 375. Per i siti nuovi supera la divisione fra operatore di direzione e operatori di costruzione scritta in processo-siti.
