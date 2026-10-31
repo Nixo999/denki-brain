@@ -19,10 +19,10 @@ Nicola: la pipeline non sceglie la direzione al posto suo.
 
 | Pezzo | Stato al 31/10 | File |
 |---|---|---|
-| 1. Raccolta da Instagram | gira, provata su `@mikuma.dogs` | `raccogli-instagram.js`, `raccogli-instagram.py` |
-| 2. Catalogo di sezioni approvate | fermo: cambia lo starter, aspetta Nicola | — |
+| 1. Raccolta da Instagram | gira, provata su `@mikuma.dogs` e `@groavel` | `raccogli-instagram.js`, `raccogli-instagram.py` |
+| 2. Catalogo di sezioni approvate | approvato da Nicola il 31/10, in costruzione | `catalogo-sezioni/` |
 | 3. Cancelli | gira, provata su Mikuma e Davide Milan | `cancelli-sito.py`, `cancelli-telefono.mjs` |
-| 4. Skill `/nuovo-sito @profilo` | fermo: cambia il processo, aspetta Nicola | — |
+| 4. Skill `/nuovo-sito @profilo` | approvata da Nicola il 31/10, scritta | `.claude/skills/nuovo-sito/SKILL.md` |
 
 ## 1. Raccolta
 
@@ -44,6 +44,12 @@ Il giro è questo:
 
 Gli URL delle foto sono firmati e scadono in pochi giorni, quindi il passo 3 si
 fa nella stessa sessione. Lo script esce 1 se le foto buone sono meno di sei.
+
+**Instagram da solo può non bastare.** Su `@groavel` (31/10) la griglia da
+sloggati mostra 12 post su 34: 9 sono Reel e 2 dei 3 post con foto sono
+locandine con testo sopra. Le foto buone del sito Groavel che piace a Nicola
+venivano dal vecchio sito del cliente su Squarespace. Per questo `/nuovo-sito`
+raccoglie anche il vecchio sito, quando c'è.
 
 Limiti verificati: il contenuto delle storie in evidenza da sloggati non si
 apre, quindi la scheda ha solo i titoli. La pagina di Instagram non può
@@ -113,19 +119,22 @@ Cosa ne ricavo per la pipeline:
   `Foto.astro` (formato e larghezze responsive) e `Cucitura.astro` (colore di
   partenza e di arrivo) sono già parametrici.
 
-## Contraddizioni aperte con processo-siti
+## Contraddizioni con processo-siti: decise da Nicola il 31/10
 
-- `processo-siti` rende obbligatori «la grafica inventata e lo scroll-telling»,
-  e `controlla-sito.py` chiede almeno 3 `<svg>` inline o un racconto
-  tipografico. Nicola ha scritto più volte di non disegnare niente noi
-  ([[direttive-siti]], 12/10 e 23/10). In `cancelli-sito.py` quei due
-  controlli escono come CONTRADDIZIONE e non bloccano, finché Nicola non
-  decide.
-- Lo starter dice «nessun componente, nessuna sezione». Il catalogo di sezioni
-  approvate lo contraddice per costruzione.
-- `processo-siti` divide la direzione e la costruzione fra più operatori. NG
-  Barber, Fiftynine e Mikuma li ha fatti una sola testa, Groavel tre operatori
-  con un contratto di DOM: la regola da scrivere è ancora da decidere.
+Nicola ha risposto alle tre domande il 31/10/2026; le frasi sono in
+[[direttive-siti]].
+- **La grafica inventata obbligatoria è tolta** («Sì, toglila»).
+  `controlla-sito.py` non conta più gli `<svg>`; i siti che coprivano foto
+  piccole con dei disegni passano con un avviso, così nessun sito che prima
+  passava adesso si ferma. In `processo-siti` le parti sono marcate superate.
+- **Lo starter ha accanto un catalogo di sezioni** («Sì, cambialo»).
+- **Un sito nuovo si fa con `/nuovo-sito`**: tre tavole, una sola testa che
+  costruisce («Sì»). La lezione di Groavel entra come contratto scritto prima
+  di costruire, tenuto dalla stessa testa.
+
+Resta aperto: se un disegno ricalcato da dati veri (la mappa Strava di
+Groavel) conta come «disegno nostro». Il controllo `disegni-nostri` di
+`cancelli-telefono.mjs` lo segnala come avviso, non lo blocca.
 
 ## Collegamenti
 
