@@ -6,7 +6,7 @@ client: interno
 stack: [vite, react, netlify, cloudflare]
 started: TODO
 deadline: TODO
-updated: 2026-09-12
+updated: 2026-10-31
 source: denkicode
 valore: 0
 incassato: 0
@@ -49,6 +49,10 @@ raggiungibili dai due bottoni dell'hero. La barra in alto ha quattro voci:
 **Bar Tabacchi Fiftynine** (`bartabacchi59.it`), **V-BAG** (`vbag.it`),
 Bellastoria (`bellastoria.netlify.app`), [[sito-dropout]] (`dropoutevents.com`).
 **Groavel e' uscito**, per richiesta di Nicola.
+**Dal 31 ottobre 2026** in testa ci sono il **Groavel nuovo** (`www.groavel.com`,
+il sito rifatto da noi, ora su Netlify) e **Barbershop Snia**
+(`barbershopsnia.com`), su richiesta di Nicola (`4d2cf0a`). Erano gli unici
+siti vetrina usciti dal 12/09 su un dominio loro.
 
 ⚠️ **La regola della galleria: ci va solo un sito che sta su un dominio suo.**
 Una bozza su `*.netlify.app` non e' un lavoro pubblicato e non si mostra a un
