@@ -1,7 +1,7 @@
 ---
 type: risorsa
-riga: Come si usa lo starter dei siti - cosa porta dentro (le trappole gia' pagate) e cosa non porta mai (il gusto).
-updated: 2026-09-10
+riga: Come si usa lo starter dei siti - le trappole gia' pagate, e accanto il catalogo delle sezioni approvate da Nicola (dal 31/10).
+updated: 2026-10-31
 verificato: 2026-09-10
 source: denkicode
 tags: [siti, starter, strumenti]
@@ -26,7 +26,23 @@ inizializzato e il primo commit. Poi si progetta.
 | `robots.txt` | Sbarramento 3 di 3 |
 | `assets/logo-simbolo*.svg` | 4,5 KB. **Mai `logo-lockup.svg`**: 151 KB |
 
+## Accanto: il catalogo delle sezioni approvate (dal 31/10/2026)
+
+Nicola, 31/10/2026, alla domanda se mettere accanto allo starter un catalogo
+di sezioni approvate: «Sì, cambialo» ([[direttive-siti]]). Le sezioni stanno
+in `01-Coding/strumenti/catalogo-sezioni/`: barra, hero, prossima uscita,
+scena allo scroll, galleria, sedi, orari, recensioni, contatto, piede e altre,
+prese da Groavel, NG Barber, Fiftynine, Mikuma e Davide Milan. Ognuna legge
+solo le variabili di `token.css`, quindi i colori, i font e le foto restano
+del cliente. Come si usano: il `LEGGIMI.md` del catalogo. La skill
+`/nuovo-sito` parte da lì.
+
 ## Cosa NON porta dentro, di proposito
+
+⚠️ **Superato in parte il 31/10/2026**: le sezioni e i componenti adesso
+esistono, nel catalogo qui accanto. Colori, font e spaziature restano fuori:
+nascono ancora dal cliente. Il testo sotto resta perché è stato la regola.
+
 
 **Nessun colore, nessun font, nessuna spaziatura, nessuna sezione, nessun
 componente.** Quelli nascono dall'essenza del cliente ogni volta, e sono il
