@@ -1,0 +1,42 @@
+<!-- ===== servizio-tre-foto =====
+  Origine: Davide Milan, ~/lavoro/davidemilan-site, commit b39dde4 (index.html «3. Diciottesimi: un foglio per
+  festa» e «4. Matrimoni»; stile.css «.tre-foto», «.testo», «.resta»; sito.js «INGRESSI dopo il pin»).
+  Nicola sul giro 1 di Davide Milan: «va bene» (06/10, nota sito-davidemilan.md), con due correzioni che qui non
+  servono (la foto della testa e il segnale «scorri» della selezione).
+  Cosa e': un servizio raccontato con tre foto dello stesso lavoro (una grande verticale e due piccole accanto),
+  tre paragrafi su come si svolge e un blocco con quello che il cliente riceve. Da computer le foto stanno a
+  sinistra e il testo a destra; sul telefono le foto vanno sopra.
+  Il blocco «cosa ricevi» usa .manca per i dati che il cliente deve ancora dare (ore, numero, prezzo): restano
+  visibili in pagina, evidenziati, e la pagina non esce finche' ci sono. Su Davide Milan e' andata cosi'.
+  Cosa e' cambiato rispetto a Davide Milan: tolta l'etichetta sopra il titolo («DICIOTTESIMI»), tolto il 18
+  gigante dietro (Nicola l'ha fatto togliere il 06/10), tolto il filtro di luminosita' all'entrata delle foto.
+  Le foto entrano scoprendosi dal basso, una dopo l'altra, con un clip-path una volta sola.
+  Foto: 3 dello stesso lavoro, almeno 1080 px: una verticale 3:4 e due qualsiasi (si ritagliano a riempire).
+  Testi da scrivere: titolo (h2), da 2 a 3 paragrafi impersonali e professionali (direttive 17/09 e 29/10:
+  «cerca di scrivere cose professionali»), il titolo del blocco e da 2 a 4 righe con i dati, il bottone.
+  File: servizio-tre-foto.html + .css. Nessun JS: l'entrata usa .rivela di base.css. Si ripete una volta per
+  servizio, alternando il campo o l'ordine delle colonne (servizio--specchio). -->
+<section id="servizio" class="servizio sezione sezione--fondo" aria-labelledby="servizio-titolo">
+  <div class="contenuto servizio__dentro">
+    <h2 class="h2 servizio__titolo rivela" id="servizio-titolo">TODO Nome del servizio</h2>
+    <div class="servizio__foto rivela">
+      <img class="servizio__grande" src="assets/img/TODO-servizio-1-1080.jpg" width="810" height="1080" sizes="(min-width: 900px) 34vw, 60vw" alt="TODO: cosa si vede" loading="lazy" decoding="async">
+      <img src="assets/img/TODO-servizio-2-1080.jpg" width="1080" height="720" sizes="(min-width: 900px) 20vw, 36vw" alt="TODO: cosa si vede" loading="lazy" decoding="async">
+      <img src="assets/img/TODO-servizio-3-1080.jpg" width="864" height="1080" sizes="(min-width: 900px) 20vw, 36vw" alt="TODO: cosa si vede" loading="lazy" decoding="async">
+    </div>
+    <div class="servizio__testo">
+      <p class="corpo">TODO: come comincia il lavoro, detto in modo impersonale e con i fatti del cliente.</p>
+      <p class="corpo">TODO: come si svolge, quanto dura (<b class="manca">TODO ore</b>), cosa serve sapere prima.</p>
+      <p class="corpo">TODO: un dettaglio del metodo preso dai testi del cliente.</p>
+    </div>
+    <div class="servizio__resta">
+      <h3 class="h3">TODO Cosa ricevi</h3>
+      <p><b class="manca">TODO numero</b> TODO: cosa si consegna.</p>
+      <p>TODO: entro quanto arriva, <b class="manca">TODO giorni</b>.</p>
+      <p>TODO: il servizio costa <b class="manca">TODO prezzo</b>.</p>
+    </div>
+    <div class="azioni servizio__azioni">
+      <a class="bottone bottone--pieno" href="TODO-link-contatto" target="_blank" rel="noopener">TODO Chiedi la tua data<span class="bottone__freccia"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></span></a>
+    </div>
+  </div>
+</section>

@@ -11,7 +11,7 @@
 .hero-fl__corpo{display:grid;gap:22px;align-content:start}
 .hero-fl__foto{width:min(62vw, 340px);--rapporto:4/5}
 /* il logo del cliente dietro al testo, fermo e appena visibile */
-.hero-fl__marchio{position:absolute;right:-6%;bottom:-10%;width:min(42vw, 560px);height:auto;opacity:.08;z-index:0;pointer-events:none}
+.hero-fl__marchio{position:absolute;right:0;bottom:-10%;width:min(42vw, 560px);height:auto;opacity:.08;z-index:0;pointer-events:none}
 
 @media (min-width:900px){
   .hero-fl__griglia{grid-template-columns:minmax(0,1fr) auto;column-gap:clamp(32px,6vw,96px);row-gap:clamp(28px,4vw,48px)}

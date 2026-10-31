@@ -37,7 +37,7 @@ a{color:inherit;text-underline-offset:.25em;text-decoration-thickness:1px}
 .contenuto{max-width:var(--largo);margin-inline:auto;padding-inline:var(--pad)}
 /* Un dato che il cliente non ha ancora dato (prezzo, orario, numero): si vede in pagina e non si consegna.
    Viene da Davide Milan (.manca), commit b39dde4. */
-.manca{font-family:var(--font-dettaglio);font-size:.82em;letter-spacing:.02em;background:color-mix(in srgb, var(--accento) 16%, transparent);color:var(--accento-testo);padding:0 .3em;border-radius:4px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.manca{font-family:var(--font-dettaglio);font-size:max(.82em, 12px);letter-spacing:.02em;background:color-mix(in srgb, var(--accento) 16%, transparent);color:var(--accento-testo);padding:0 .3em;border-radius:4px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 
 /* ---------- Campi di sfondo ----------
    Tre campi vicini fra loro. Due sezioni di campo diverso si raccordano con sezioni/passaggio-curva, mai con un

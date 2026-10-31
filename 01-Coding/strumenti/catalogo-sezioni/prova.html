@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catalogo delle sezioni DenkiCode: pagina di prova</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<!-- Generata da monta-prova.py: non si modifica a mano. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=JetBrains+Mono:wght@400..700&amp;display=swap">
+<link rel="stylesheet" href="../starter-sito/assets/base.css">
+<link rel="stylesheet" href="token.css">
+<link rel="stylesheet" href="comuni.css">
+<link rel="stylesheet" href="sezioni/barra-fissa.css">
+<link rel="stylesheet" href="sezioni/contatto-finale.css">
+<link rel="stylesheet" href="sezioni/contrari-scorrevoli.css">
+<link rel="stylesheet" href="sezioni/galleria-irregolare.css">
+<link rel="stylesheet" href="sezioni/hero-foto-laterale.css">
+<link rel="stylesheet" href="sezioni/orari-adesso.css">
+<link rel="stylesheet" href="sezioni/passaggio-curva.css">
+<link rel="stylesheet" href="sezioni/piede-firma.css">
+<link rel="stylesheet" href="sezioni/prossima-uscita.css">
+<link rel="stylesheet" href="sezioni/recensioni-voto.css">
+<link rel="stylesheet" href="sezioni/righe-foto-piccole.css">
+<link rel="stylesheet" href="sezioni/scena-tappe.css">
+<link rel="stylesheet" href="sezioni/sedi-elenco.css">
+<link rel="stylesheet" href="sezioni/servizio-tre-foto.css">
+<script>
+(function(d){
+  var cattura = new URLSearchParams(location.search).has('cattura');
+  d.classList.add('js');
+  if (cattura) d.classList.add('cattura');
+})(document.documentElement);
+</script>
+</head>
+<body>
+<!-- ===== barra-fissa =====
+  Origine: Groavel, ~/lavoro/groavel-site, commit a6a1751 (src/components/Barra.astro, stile.css «Barra»).
+  Nicola: «da telefono la navbar non va bene perche è appiccicata al titolo e comunque è scomoda una nav bar
+  così da telefono» (20/10, direttive-siti). Da qui: sotto 1024 px le voci stanno in un menu che si apre a
+  parte, e fra la barra e il titolo ci sono almeno 16 px (la sezione sotto parte da var(--barra) + 32 px).
+  Foto: nessuna. Serve il logo del cliente in PNG o SVG, quadrato, almeno 96 px (88 px a schermo da computer
+  su un telefono a doppia densita'). Il logo vero, mai ridisegnato (direttive 16/09 e 19/09).
+  Testi da scrivere: il nome del cliente, da 3 a 5 voci di menu che puntano alle sezioni, il bottone di
+  contatto (un verbo e il canale: «Scrivici», «Prenota»).
+  File: barra-fissa.html + barra-fissa.css + barra-fissa.js. Il JS e' facoltativo: senza, il menu si apre e
+  si chiude lo stesso (<details>), manca solo l'ombra quando si scende e la chiusura con Esc.
+  La barra va subito dentro <body>, prima di <main>. -->
+<div class="barra__sentinella" data-sentinella aria-hidden="true"></div>
+<header class="barra" data-barra>
+  <div class="barra__dentro">
+    <a class="barra__marchio" href="#inizio" aria-label="TODO nome del cliente, torna su">
+      <img class="barra__logo" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2044%2044%27%3E%3Crect%20width%3D%2744%27%20height%3D%2744%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2710%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Elogo-cliente%201%3A1%3C/text%3E%3C/svg%3E" width="44" height="44" alt="">
+      <span class="barra__nome" aria-hidden="true">TODO Nome</span>
+    </a>
+    <nav class="barra__voci" aria-label="Sezioni del sito">
+      <a href="#TODO-sezione-1">TODO voce</a>
+      <a href="#TODO-sezione-2">TODO voce</a>
+      <a href="#TODO-sezione-3">TODO voce</a>
+      <a href="#contatti">TODO Contatti</a>
+    </nav>
+    <a class="bottone bottone--pieno barra__azione" href="TODO-link-contatto" target="_blank" rel="noopener">
+      <span>TODO Scrivici</span><span class="bottone__freccia"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></span>
+    </a>
+    <details class="barra__menu" data-menu>
+      <summary aria-label="Apri il menu">
+        <svg class="icona barra__apri" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H40a6,6,0,0,1,0-12H216A6,6,0,0,1,222,128ZM40,70H216a6,6,0,0,0,0-12H40a6,6,0,0,0,0,12ZM216,186H40a6,6,0,0,0,0,12H216a6,6,0,0,0,0-12Z"/></svg>
+        <svg class="icona barra__chiudi" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M204.24,195.76a6,6,0,1,1-8.48,8.48L128,136.49,60.24,204.24a6,6,0,0,1-8.48-8.48L119.51,128,51.76,60.24a6,6,0,0,1,8.48-8.48L128,119.51l67.76-67.75a6,6,0,0,1,8.48,8.48L136.49,128Z"/></svg>
+      </summary>
+      <nav class="barra__foglio" aria-label="Sezioni del sito, telefono">
+        <a href="#TODO-sezione-1">TODO voce</a>
+        <a href="#TODO-sezione-2">TODO voce</a>
+        <a href="#TODO-sezione-3">TODO voce</a>
+        <a href="#contatti">TODO Contatti</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main>
+<!-- ===== hero-foto-laterale =====
+  Origine: Groavel, ~/lavoro/groavel-site, commit a6a1751 (src/pages/index.astro «Ritrovo», stile.css «Hero»).
+  Nicola su Groavel, dal telefono (29/10, commit 14b57be e 9df4fe5): testo e bottoni al centro sotto i 900 px,
+  e via la foto dall'hero. Sul sito intero: «con quello siamo sulla strada giusta» (30/10).
+  Regole che la forma rispetta: l'h1 e' il nome del cliente e la sua frase sta sotto, piccola (14/09: «un titolo
+  con il suo nome e una frase sotto in piccolo»); la foto e' piccola e di lato, mai a tutta larghezza (07/10);
+  da computer lo spazio si usa su due colonne (07/10).
+  ATTENZIONE, due direttive tirano in versi opposti. Groavel sul telefono non ha la foto (Nicola, 29/10), ma lo
+  stesso giorno su OperO: «linizio con solo la scritta grande non mi pice, metti delle immagini». Per questo qui
+  sotto i 900 px la foto resta, piccola, sotto i bottoni, ed entra nel primo schermo a 375x812. La classe
+  hero-fl--senza-foto-telefono rifa' Groavel com'e': si usa solo se nel primo schermo c'e' comunque un'immagine.
+  Foto: 1, verticale 4:5, almeno 1080 px sul lato lungo (a schermo e' larga al massimo 340 px). Sul telefono
+  la stessa foto si vede in 3:2: il soggetto va tenuto al centro, o si sposta con object-position. Facoltativo:
+  il logo del cliente in PNG trasparente da 512 px, che sta dietro al testo all'8% (la «ruota» di Groavel).
+  Testi da scrivere: il nome (h1), una frase sotto (una sola, con soggetto e verbo), una riga in carattere di
+  dettaglio con citta' e fatti verificabili, due bottoni (contatto e sezione principale).
+  File: hero-foto-laterale.html + .css. Nessun JS: l'entrata vive in CSS sotto .js:not(.cattura) e a riposo
+  la pagina e' gia' nello stato finale. Va subito dopo la barra-fissa. -->
+<section id="inizio" class="hero-fl sezione sezione--fondo">
+  <img class="hero-fl__marchio" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20512%20512%27%3E%3Crect%20width%3D%27512%27%20height%3D%27512%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2742%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Elogo-cliente-512%201%3A1%3C/text%3E%3C/svg%3E" width="512" height="512" alt="" aria-hidden="true">
+  <div class="contenuto hero-fl__griglia">
+    <h1 class="h1 hero-fl__nome"><span>TODO Nome</span></h1>
+    <div class="hero-fl__corpo">
+      <p class="guida">TODO: una frase sola, con soggetto e verbo, su cosa fa il cliente.</p>
+      <p class="mono">TODO citta' · un fatto verificabile · un altro fatto</p>
+      <div class="azioni">
+        <a class="bottone bottone--pieno" href="TODO-link-contatto" target="_blank" rel="noopener">TODO Scrivi su Instagram<span class="bottone__freccia"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></span></a>
+        <a class="bottone bottone--vuoto" href="#TODO-sezione-principale">TODO La sezione principale<span class="bottone__freccia"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M204.24,148.24l-72,72a6,6,0,0,1-8.48,0l-72-72a6,6,0,0,1,8.48-8.48L122,201.51V40a6,6,0,0,1,12,0V201.51l61.76-61.75a6,6,0,0,1,8.48,8.48Z"/></svg></span></a>
+      </div>
+    </div>
+    <figure class="foto hero-fl__foto">
+      <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20864%201080%27%3E%3Crect%20width%3D%27864%27%20height%3D%271080%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2772%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Ehero%204%3A5%3C/text%3E%3C/svg%3E"
+        sizes="(min-width: 900px) 340px, 62vw" width="864" height="1080" alt="TODO: cosa si vede nella foto" fetchpriority="high" decoding="async">
+    </figure>
+  </div>
+</section>
+
+<div class="passaggio passaggio--da-fondo passaggio--a-superficie rivela" aria-hidden="true">
+  <svg class="passaggio__svg" viewBox="0 0 1600 140" preserveAspectRatio="none" focusable="false">
+    <path class="passaggio__campo" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06 L1600,140 L0,140 Z"/>
+    <path class="passaggio__riga passaggio__riga--1" pathLength="1" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06"/>
+    <path class="passaggio__riga passaggio__riga--2" pathLength="1" transform="translate(0 -14)" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06"/>
+    <path class="passaggio__riga passaggio__riga--3" pathLength="1" transform="translate(0 -28)" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06"/>
+  </svg>
+</div>
+
+<!-- ===== prossima-uscita =====
+  Origine: Groavel, ~/lavoro/groavel-site, commit a6a1751 (index.astro «La prossima uscita», stile.css giro 4 e 5).
+  Nicola su questa sezione: la locandina non ha parallasse e resta intera, «senza il 12% in piu' che tagliava la
+  testa» (27/10, commento in stile.css); giro 5 del 29/10: «meno testo», le due partenze in due schede.
+  Regola di telefono (20/10, Strada Facendo): una scheda in evidenza sta in uno schermo, con titolo, data, luogo
+  e un bottone; il programma intero non ci va.
+  Serve a un'attivita' che ha un appuntamento datato: un evento, un'uscita, un corso che parte, una serata.
+  Se il cliente non ha una data vera, la sezione non si mette.
+  Foto: 1 locandina o foto dell'evento, quadrata o 4:5, almeno 1080 px. Si mostra intera, mai ritagliata: se e'
+  una locandina con scritte, ogni dato che contiene va anche nel testo (regola di Fiftynine, 08/09). Facoltativo:
+  il badge o l'adesivo dell'evento in PNG da 320 px.
+  Testi da scrivere: il nome dell'evento (h2), la data in lettere, da 2 a 4 coppie per la striscia (ritrovo,
+  per chi, arrivo, quota), una riga di motto se il cliente ce l'ha gia' scritta, il bottone d'iscrizione,
+  e da 0 a 2 schede di partenza (ora, nome, una frase).
+  Tolti da Groavel perche' non si parametrizzano: la forma del percorso (un SVG ricalcato dalla mappa Strava
+  dell'evento, serve la traccia vera) e la fila dei cinque adesivi delle edizioni.
+  File: prossima-uscita.html + .css. Nessun JS: le entrate usano .rivela di base.css. -->
+<section id="prossima" class="evento sezione sezione--superficie" aria-labelledby="evento-titolo">
+  <div class="contenuto">
+    <div class="evento__griglia">
+      <div class="evento__testo">
+        <img class="evento__badge" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20160%20160%27%3E%3Crect%20width%3D%27160%27%20height%3D%27160%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2713%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Ebadge-evento%201%3A1%3C/text%3E%3C/svg%3E" width="160" height="160" alt="TODO: il badge dell'evento, se c'e'" loading="lazy">
+        <h2 class="h2 rivela" id="evento-titolo">TODO Nome dell'evento</h2>
+        <p class="dato evento__data rivela">TODO Domenica 15 novembre 2026</p>
+        <dl class="striscia evento__striscia rivela">
+          <div><dt>Ritrovo</dt><dd><b class="manca">TODO ora, luogo</b></dd></div>
+          <div><dt>Per chi</dt><dd><b class="manca">TODO</b></dd></div>
+          <div><dt>Arrivo</dt><dd><b class="manca">TODO ora, luogo</b></dd></div>
+          <div><dt>Quota</dt><dd><b class="manca">TODO €</b></dd></div>
+        </dl>
+        <p class="evento__motto rivela">TODO: il motto dell'evento, solo se il cliente l'ha gia' scritto.</p>
+        <div class="azioni rivela">
+          <a class="bottone bottone--pieno" href="TODO-link-iscrizione" target="_blank" rel="noopener">TODO Partecipa<span class="bottone__freccia"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></span></a>
+        </div>
+      </div>
+      <figure class="foto evento__locandina rivela">
+        <a href="assets/img/TODO-locandina-1600.jpg" target="_blank" rel="noopener" aria-label="Apri la locandina a tutta grandezza">
+          <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%201080%201080%27%3E%3Crect%20width%3D%271080%27%20height%3D%271080%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2790%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Elocandina%201%3A1%3C/text%3E%3C/svg%3E"
+            sizes="(min-width: 1024px) 560px, 100vw" width="1080" height="1080" alt="TODO: la locandina, con i dati che contiene" loading="lazy" decoding="async">
+        </a>
+      </figure>
+    </div>
+    <ul class="evento__partenze">
+      <li class="evento__partenza rivela">
+        <p class="evento__ora">TODO 9:15</p>
+        <h3 class="h3">TODO Prima partenza</h3>
+        <p class="corpo">TODO: una frase che dice per chi e' questa partenza.</p>
+      </li>
+      <li class="evento__partenza rivela">
+        <p class="evento__ora">TODO 9:40</p>
+        <h3 class="h3">TODO Seconda partenza</h3>
+        <p class="corpo">TODO: una frase che dice per chi e' questa partenza.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<div class="passaggio passaggio--da-superficie passaggio--a-fondo rivela" aria-hidden="true">
+  <svg class="passaggio__svg" viewBox="0 0 1600 140" preserveAspectRatio="none" focusable="false">
+    <path class="passaggio__campo" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06 L1600,140 L0,140 Z"/>
+    <path class="passaggio__riga passaggio__riga--1" pathLength="1" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06"/>
+    <path class="passaggio__riga passaggio__riga--2" pathLength="1" transform="translate(0 -14)" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06"/>
+    <path class="passaggio__riga passaggio__riga--3" pathLength="1" transform="translate(0 -28)" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06"/>
+  </svg>
+</div>
+
+<!-- ===== scena-tappe =====
+  Origine: Groavel, ~/lavoro/groavel-site, commit a6a1751 («Le uscite, per distanza»: index.astro #uscite,
+  stile.css «Le uscite (la spina)», src/scripts/spina.js funzione scena). E' la spina dello scroll di Groavel.
+  Nicola: sul telefono la scena fissa non c'e' e ogni tappa ha uno schema suo («da telefono risulta un po troppo
+  ripetitivo e muro di foto, prova magari a disporle in modi piu particolari», 26/10); il cambio di foto si fa
+  con opacita' e transform su livelli propri, mai ridipingendo la sezione («lagga parecchio al cambiare colore e
+  immagini», 26/10); niente will-change fisso (la causa del lag, giro 4b del 27/10).
+  Serve a una sequenza vera del cliente: distanze, livelli, servizi in ordine, fasi di un percorso. Da 3 a 5 tappe.
+  Da computer (da 1024 px) a sinistra c'e' una cornice ferma con la foto della tappa che si sta leggendo e il suo
+  dato; a destra scorrono le tappe. Sotto 1024 px la cornice sparisce e ogni tappa porta la sua foto, ognuna con
+  una disposizione diversa (tappa--a, --b, --c, --d).
+  Foto: una per tappa, almeno 1080 px. Nella cornice si vedono in 4:5 (il soggetto va al centro); sul telefono
+  la tappa a in 3:2, la b in 4:3, la c in 16:9, la d senza foto. La stessa foto si scrive due volte: una nella
+  cornice (alt vuoto, la cornice e' aria-hidden) e una nella tappa (con alt).
+  Testi da scrivere: titolo della sezione (h2) e una frase, poi per ogni tappa il nome (h3), il dato (data-dato,
+  per esempio «10 km», «2 ore», «livello base»), da 2 a 4 coppie della striscia, una frase, un link.
+  Tolti da Groavel perche' erano suoi: i numeri giganti al chilometro dietro al testo, le isoipse, il velo del
+  frontalino sulla tappa notturna, i livelli che cambiavano il colore del campo a ogni tappa.
+  File: scena-tappe.html + .css + .js. Senza JS resta la prima foto nella cornice e tutte le tappe leggibili.
+  Il JS usa IntersectionObserver, non GSAP: la scena cambia a meta' schermo, con una dissolvenza di 0,45 s. -->
+<section id="tappe" class="scena sezione sezione--fondo" data-scena aria-labelledby="scena-titolo">
+  <div class="contenuto scena__griglia">
+    <div class="scena__testa">
+      <h2 class="h2 rivela" id="scena-titolo">TODO Titolo della sequenza</h2>
+      <p class="corpo rivela">TODO: una o due frasi su come funziona la sequenza, con i fatti del cliente.</p>
+    </div>
+
+    <div class="scena__palco" aria-hidden="true">
+      <figure class="scena__cornice">
+        <img class="scena__foto" data-scena-foto="0" data-visibile src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20864%201080%27%3E%3Crect%20width%3D%27864%27%20height%3D%271080%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2772%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Etappa-1%204%3A5%3C/text%3E%3C/svg%3E" width="864" height="1080" alt="" loading="lazy" decoding="async">
+        <img class="scena__foto" data-scena-foto="1" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20864%201080%27%3E%3Crect%20width%3D%27864%27%20height%3D%271080%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2772%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Etappa-2%204%3A5%3C/text%3E%3C/svg%3E" width="864" height="1080" alt="" loading="lazy" decoding="async">
+        <img class="scena__foto" data-scena-foto="2" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20864%201080%27%3E%3Crect%20width%3D%27864%27%20height%3D%271080%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2772%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Etappa-3%204%3A5%3C/text%3E%3C/svg%3E" width="864" height="1080" alt="" loading="lazy" decoding="async">
+        <img class="scena__foto" data-scena-foto="3" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20864%201080%27%3E%3Crect%20width%3D%27864%27%20height%3D%271080%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2772%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Etappa-4%204%3A5%3C/text%3E%3C/svg%3E" width="864" height="1080" alt="" loading="lazy" decoding="async">
+        <p class="scena__dato"><span class="dato" data-scena-dato>TODO 0 km</span> <span class="h3" data-scena-nome>TODO Tappa 1</span></p>
+      </figure>
+    </div>
+
+    <ol class="scena__lista">
+      <li class="tappa tappa--a" data-tappa data-dato="TODO 0 km" data-nome="TODO Tappa 1">
+        <figure class="foto tappa__foto"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%201080%20720%27%3E%3Crect%20width%3D%271080%27%20height%3D%27720%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2760%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Etappa-1%203%3A2%3C/text%3E%3C/svg%3E" width="1080" height="720" alt="TODO: cosa si vede" loading="lazy" decoding="async"></figure>
+        <div class="tappa__testa">
+          <div class="tappa__nome"><h3 class="h3">TODO Tappa 1</h3><span class="pillola">TODO etichetta</span></div>
+          <p class="dato tappa__dato">TODO 0 km</p>
+        </div>
+        <dl class="striscia">
+          <div><dt>TODO Per chi</dt><dd><b class="manca">TODO</b></dd></div>
+          <div><dt>TODO Dove</dt><dd><b class="manca">TODO</b></dd></div>
+          <div><dt>TODO Orario</dt><dd><b class="manca">TODO</b></dd></div>
+          <div><dt>TODO Quota</dt><dd><b class="manca">TODO €</b></dd></div>
+        </dl>
+        <p class="corpo">TODO: una frase che dice cos'e' questa tappa e per chi.</p>
+        <a class="link-freccia" href="TODO-link" target="_blank" rel="noopener">TODO Chiedi su Instagram<svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></a>
+      </li>
+
+      <li class="tappa tappa--b" data-tappa data-dato="TODO 10 km" data-nome="TODO Tappa 2">
+        <div class="tappa__testa">
+          <div class="tappa__nome"><h3 class="h3">TODO Tappa 2</h3></div>
+          <p class="dato tappa__dato">TODO 10 km</p>
+        </div>
+        <dl class="striscia">
+          <div><dt>TODO Ritrovo</dt><dd><b class="manca">TODO</b></dd></div>
+          <div><dt>TODO Partenza</dt><dd><b class="manca">TODO</b></dd></div>
+          <div><dt>TODO Quota</dt><dd><b class="manca">TODO €</b></dd></div>
+        </dl>
+        <figure class="foto tappa__foto"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%201080%20810%27%3E%3Crect%20width%3D%271080%27%20height%3D%27810%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2767%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Etappa-2%204%3A3%3C/text%3E%3C/svg%3E" width="1080" height="810" alt="TODO: cosa si vede" loading="lazy" decoding="async"></figure>
+        <p class="corpo">TODO: una frase che dice cos'e' questa tappa e per chi.</p>
+        <a class="link-freccia" href="TODO-link" target="_blank" rel="noopener">TODO Chiedi su Instagram<svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></a>
+      </li>
+
+      <li class="tappa tappa--c" data-tappa data-dato="TODO 25 km" data-nome="TODO Tappa 3">
+        <figure class="foto tappa__foto"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%201080%20608%27%3E%3Crect%20width%3D%271080%27%20height%3D%27608%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2750%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Etappa-3%20135%3A76%3C/text%3E%3C/svg%3E" width="1080" height="608" alt="TODO: cosa si vede" loading="lazy" decoding="async"></figure>
+        <div class="tappa__testa">
+          <div class="tappa__nome"><h3 class="h3">TODO Tappa 3</h3></div>
+          <p class="dato tappa__dato">TODO 25 km</p>
+        </div>
+        <p class="citazione tappa__citazione">TODO: la frase del cliente su questa tappa, se ce l'ha scritta.</p>
+        <dl class="striscia">
+          <div><dt>TODO Partenza</dt><dd><b class="manca">TODO</b></dd></div>
+          <div><dt>TODO Quota</dt><dd><b class="manca">TODO €</b></dd></div>
+        </dl>
+        <a class="link-freccia" href="TODO-link" target="_blank" rel="noopener">TODO Chiedi su Instagram<svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></a>
+      </li>
+
+      <li class="tappa tappa--d" data-tappa data-dato="TODO giorni" data-nome="TODO Tappa 4">
+        <div class="tappa__testa">
+          <h3 class="h3">TODO Tappa 4</h3>
+          <p class="dato tappa__dato">TODO giorni</p>
+        </div>
+        <p class="corpo">TODO: una frase che dice cos'e' questa tappa e per chi.</p>
+        <div class="azioni">
+          <a class="bottone bottone--pieno" href="TODO-link">TODO Scrivi per questa tappa<span class="bottone__freccia"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></span></a>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== contrari-scorrevoli =====
+  Origine: Mikuma Dogs, ~/lavoro/mikuma-site, giro 7 «il bianco e il nero», commit 38bb1bb (HEAD, che e' il
+  giro 7 con le correzioni di Nicola: bead704 -> 45f3b31 -> 38bb1bb). index.html #contrari, stile.css «.contrari».
+  Nicola sul giro 7: «per il resto mi piace molto» (11/09, nota sito-mikuma-dogs.md). DESIGN.md del repo lo
+  chiama «il momento della pagina, e non consuma una foto».
+  Cosa e': da 3 a 6 coppie di parole opposte del mestiere del cliente, in grande e strette, che scorrono di lato
+  mentre si scende, una riga verso destra e la successiva verso sinistra. Ogni parola viene da un fatto vero
+  del lavoro (su Mikuma: FERMO / VAI, ASCIUTTO / BAGNATO, RING / RIVA).
+  Cosa e' cambiato rispetto a Mikuma: tolto il ribaltamento della pagina dal nero al bianco (era legato al suo
+  marchio e sfarfallava, correzione della sera dell'11/09); scrub legato allo scroll senza smorzamento, perche'
+  lo smorzamento si legge come ritardo (20/10: «sembra troppo lenta e che si avvii in ritardo»); niente
+  will-change sulle righe (27/10, giro 4b di Groavel).
+  Attenzione: Nicola ha bocciato «una parola o una frase a effetto che cambia allo scroll» come racconto (12/10).
+  Qui le parole non cambiano e non raccontano da sole: e' un intermezzo fra due sezioni piene, non la spina.
+  Se il mestiere non ha coppie di contrari vere, la sezione non si mette.
+  Foto: nessuna.
+  Testi da scrivere: da 3 a 6 coppie, una o due parole per lato. A 375 px ogni coppia va a capo sullo slash:
+  la meta' piu' lunga deve stare in una riga (Mikuma tarava il corpo su «VENTI METRI»).
+  File: contrari-scorrevoli.html + .css + .js. Il JS usa GSAP e ScrollTrigger da CDN (gli stessi dello starter).
+  Senza JS, in ?cattura e con reduced-motion le coppie stanno ferme al centro. -->
+<section class="contrari sezione sezione--fondo" data-contrari aria-label="TODO: di cosa parlano le coppie, in una frase">
+  <ol class="contrari__lista">
+    <li class="contro"><span class="contro__traccia"><b>TODO A</b><i aria-hidden="true">/</i><b>TODO B</b></span></li>
+    <li class="contro"><span class="contro__traccia"><b>TODO C</b><i aria-hidden="true">/</i><b>TODO D</b></span></li>
+    <li class="contro"><span class="contro__traccia"><b>TODO E</b><i aria-hidden="true">/</i><b>TODO F</b></span></li>
+    <li class="contro"><span class="contro__traccia"><b>TODO G</b><i aria-hidden="true">/</i><b>TODO H</b></span></li>
+  </ol>
+</section>
+
+<!-- ===== servizio-tre-foto =====
+  Origine: Davide Milan, ~/lavoro/davidemilan-site, commit b39dde4 (index.html «3. Diciottesimi: un foglio per
+  festa» e «4. Matrimoni»; stile.css «.tre-foto», «.testo», «.resta»; sito.js «INGRESSI dopo il pin»).
+  Nicola sul giro 1 di Davide Milan: «va bene» (06/10, nota sito-davidemilan.md), con due correzioni che qui non
+  servono (la foto della testa e il segnale «scorri» della selezione).
+  Cosa e': un servizio raccontato con tre foto dello stesso lavoro (una grande verticale e due piccole accanto),
+  tre paragrafi su come si svolge e un blocco con quello che il cliente riceve. Da computer le foto stanno a
+  sinistra e il testo a destra; sul telefono le foto vanno sopra.
+  Il blocco «cosa ricevi» usa .manca per i dati che il cliente deve ancora dare (ore, numero, prezzo): restano
+  visibili in pagina, evidenziati, e la pagina non esce finche' ci sono. Su Davide Milan e' andata cosi'.
+  Cosa e' cambiato rispetto a Davide Milan: tolta l'etichetta sopra il titolo («DICIOTTESIMI»), tolto il 18
+  gigante dietro (Nicola l'ha fatto togliere il 06/10), tolto il filtro di luminosita' all'entrata delle foto.
+  Le foto entrano scoprendosi dal basso, una dopo l'altra, con un clip-path una volta sola.
+  Foto: 3 dello stesso lavoro, almeno 1080 px: una verticale 3:4 e due qualsiasi (si ritagliano a riempire).
+  Testi da scrivere: titolo (h2), da 2 a 3 paragrafi impersonali e professionali (direttive 17/09 e 29/10:
+  «cerca di scrivere cose professionali»), il titolo del blocco e da 2 a 4 righe con i dati, il bottone.
+  File: servizio-tre-foto.html + .css. Nessun JS: l'entrata usa .rivela di base.css. Si ripete una volta per
+  servizio, alternando il campo o l'ordine delle colonne (servizio--specchio). -->
+<section id="servizio" class="servizio sezione sezione--fondo" aria-labelledby="servizio-titolo">
+  <div class="contenuto servizio__dentro">
+    <h2 class="h2 servizio__titolo rivela" id="servizio-titolo">TODO Nome del servizio</h2>
+    <div class="servizio__foto rivela">
+      <img class="servizio__grande" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20810%201080%27%3E%3Crect%20width%3D%27810%27%20height%3D%271080%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2767%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Eservizio-1%203%3A4%3C/text%3E%3C/svg%3E" width="810" height="1080" sizes="(min-width: 900px) 34vw, 60vw" alt="TODO: cosa si vede" loading="lazy" decoding="async">
+      <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%201080%20720%27%3E%3Crect%20width%3D%271080%27%20height%3D%27720%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2760%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Eservizio-2%203%3A2%3C/text%3E%3C/svg%3E" width="1080" height="720" sizes="(min-width: 900px) 20vw, 36vw" alt="TODO: cosa si vede" loading="lazy" decoding="async">
+      <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20864%201080%27%3E%3Crect%20width%3D%27864%27%20height%3D%271080%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2772%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Eservizio-3%204%3A5%3C/text%3E%3C/svg%3E" width="864" height="1080" sizes="(min-width: 900px) 20vw, 36vw" alt="TODO: cosa si vede" loading="lazy" decoding="async">
+    </div>
+    <div class="servizio__testo">
+      <p class="corpo">TODO: come comincia il lavoro, detto in modo impersonale e con i fatti del cliente.</p>
+      <p class="corpo">TODO: come si svolge, quanto dura (<b class="manca">TODO ore</b>), cosa serve sapere prima.</p>
+      <p class="corpo">TODO: un dettaglio del metodo preso dai testi del cliente.</p>
+    </div>
+    <div class="servizio__resta">
+      <h3 class="h3">TODO Cosa ricevi</h3>
+      <p><b class="manca">TODO numero</b> TODO: cosa si consegna.</p>
+      <p>TODO: entro quanto arriva, <b class="manca">TODO giorni</b>.</p>
+      <p>TODO: il servizio costa <b class="manca">TODO prezzo</b>.</p>
+    </div>
+    <div class="azioni servizio__azioni">
+      <a class="bottone bottone--pieno" href="TODO-link-contatto" target="_blank" rel="noopener">TODO Chiedi la tua data<span class="bottone__freccia"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<div class="passaggio passaggio--da-fondo passaggio--a-superficie rivela" aria-hidden="true">
+  <svg class="passaggio__svg" viewBox="0 0 1600 140" preserveAspectRatio="none" focusable="false">
+    <path class="passaggio__campo" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06 L1600,140 L0,140 Z"/>
+    <path class="passaggio__riga passaggio__riga--1" pathLength="1" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06"/>
+    <path class="passaggio__riga passaggio__riga--2" pathLength="1" transform="translate(0 -14)" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06"/>
+    <path class="passaggio__riga passaggio__riga--3" pathLength="1" transform="translate(0 -28)" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06"/>
+  </svg>
+</div>
+
+<!-- ===== righe-foto-piccole =====
+  Origine: Groavel, ~/lavoro/groavel-site, commit a6a1751 (index.astro «I nostri corsi» e «Le nostre guide»,
+  stile.css «La tecnica» e «Chi pedala con te»).
+  Nicola: le foto stanno piccole e accanto al testo, cosi' si leggono insieme («nella parte con le 4 sezioni
+  cliccabili le foto sono troppo grandi, non riesco a leggere il testo e vedere la foto insieme», 06/10);
+  la vetrina si riempie di dettagli, non di foto piu' grandi (14/09).
+  Serve per un elenco corto di cose dello stesso tipo: corsi, servizi, persone dello staff. Da 2 a 6 righe.
+  Due varianti nello stesso file: la prima lista (corsi) ha foto 4:5 e tre colonne da computer; la seconda
+  (righe-foto--persone) ha foto quadrate, la bio e un dato a destra. Si tiene quella che serve.
+  Foto: una per riga, almeno 1080 px (a schermo 96-120 px: la soglia vale perche' la stessa foto puo' servire
+  altrove). Corsi 4:5, persone 1:1 con il viso al centro.
+  Testi da scrivere: titolo (h2); facoltativa una citazione del cliente con il suo nome; per ogni riga il nome
+  (h3), una riga in carattere di dettaglio (luogo, livello), una o due frasi, un link o un dato.
+  File: righe-foto-piccole.html + .css. Nessun JS. -->
+<section id="corsi" class="righe-foto sezione sezione--superficie" aria-labelledby="corsi-titolo">
+  <div class="contenuto">
+    <div class="testa-sezione">
+      <h2 class="h2 rivela" id="corsi-titolo">TODO I corsi</h2>
+      <a class="link-freccia" href="#TODO">TODO Tutti i dettagli<svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></a>
+    </div>
+    <figure class="righe-foto__citazione rivela">
+      <blockquote class="citazione">«TODO: una domanda o una frase presa dalle parole del cliente.»</blockquote>
+      <figcaption class="mono">TODO Nome, ruolo</figcaption>
+    </figure>
+    <ul class="righe-foto__lista">
+      <li class="righe-foto__voce rivela">
+        <figure class="foto"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20512%20640%27%3E%3Crect%20width%3D%27512%27%20height%3D%27640%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2742%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Ecorso-1%204%3A5%3C/text%3E%3C/svg%3E" width="512" height="640" alt="TODO: cosa si vede" loading="lazy" decoding="async"></figure>
+        <div class="righe-foto__testa">
+          <h3 class="h3">TODO Corso 1</h3>
+          <p class="mono">TODO luogo · livello</p>
+        </div>
+        <div class="righe-foto__testo">
+          <p class="corpo">TODO: una o due frasi su cosa si impara e per chi e' pensato.</p>
+          <a class="link-freccia" href="TODO-mailto">TODO Date e prezzi: scrivi<svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224,50H32a6,6,0,0,0-6,6V192a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A6,6,0,0,0,224,50ZM208.58,62,128,135.86,47.42,62ZM216,194H40a2,2,0,0,1-2-2V69.64l86,78.78a6,6,0,0,0,8.1,0L218,69.64V192A2,2,0,0,1,216,194Z"/></svg></a>
+        </div>
+      </li>
+      <li class="righe-foto__voce rivela">
+        <figure class="foto"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20512%20640%27%3E%3Crect%20width%3D%27512%27%20height%3D%27640%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2742%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Ecorso-2%204%3A5%3C/text%3E%3C/svg%3E" width="512" height="640" alt="TODO: cosa si vede" loading="lazy" decoding="async"></figure>
+        <div class="righe-foto__testa">
+          <h3 class="h3">TODO Corso 2</h3>
+          <p class="mono">TODO luogo · livello</p>
+        </div>
+        <div class="righe-foto__testo">
+          <p class="corpo">TODO: una o due frasi su cosa si impara e per chi e' pensato.</p>
+          <a class="link-freccia" href="TODO-mailto">TODO Date e prezzi: scrivi<svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224,50H32a6,6,0,0,0-6,6V192a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A6,6,0,0,0,224,50ZM208.58,62,128,135.86,47.42,62ZM216,194H40a2,2,0,0,1-2-2V69.64l86,78.78a6,6,0,0,0,8.1,0L218,69.64V192A2,2,0,0,1,216,194Z"/></svg></a>
+        </div>
+      </li>
+    </ul>
+
+    <!-- Variante persone: foto quadrate, bio e un dato a destra -->
+    <div class="testa-sezione righe-foto__seconda">
+      <h2 class="h2 rivela" id="persone-titolo">TODO Le persone</h2>
+    </div>
+    <ul class="righe-foto__lista righe-foto--persone" aria-labelledby="persone-titolo">
+      <li class="righe-foto__voce rivela">
+        <figure class="foto"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20640%20640%27%3E%3Crect%20width%3D%27640%27%20height%3D%27640%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2753%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Epersona-1%201%3A1%3C/text%3E%3C/svg%3E" width="640" height="640" alt="TODO: chi e' e cosa sta facendo" loading="lazy" decoding="async"></figure>
+        <div class="righe-foto__testo">
+          <h3 class="h3">TODO Nome Cognome</h3>
+          <p class="corpo">TODO: ruolo e specialita', in una o due frasi prese da quello che la persona scrive di se'.</p>
+        </div>
+        <p class="mono righe-foto__dato">TODO Dal 2024</p>
+      </li>
+      <li class="righe-foto__voce rivela">
+        <figure class="foto"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20640%20640%27%3E%3Crect%20width%3D%27640%27%20height%3D%27640%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2753%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Epersona-2%201%3A1%3C/text%3E%3C/svg%3E" width="640" height="640" alt="TODO: chi e' e cosa sta facendo" loading="lazy" decoding="async"></figure>
+        <div class="righe-foto__testo">
+          <h3 class="h3">TODO Nome Cognome</h3>
+          <p class="corpo">TODO: ruolo e specialita', in una o due frasi prese da quello che la persona scrive di se'.</p>
+        </div>
+        <p class="mono righe-foto__dato">TODO Dal 2010</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<div class="passaggio passaggio--da-superficie passaggio--a-fondo rivela" aria-hidden="true">
+  <svg class="passaggio__svg" viewBox="0 0 1600 140" preserveAspectRatio="none" focusable="false">
+    <path class="passaggio__campo" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06 L1600,140 L0,140 Z"/>
+    <path class="passaggio__riga passaggio__riga--1" pathLength="1" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06"/>
+    <path class="passaggio__riga passaggio__riga--2" pathLength="1" transform="translate(0 -14)" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06"/>
+    <path class="passaggio__riga passaggio__riga--3" pathLength="1" transform="translate(0 -28)" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06"/>
+  </svg>
+</div>
+
+<!-- ===== sedi-elenco =====
+  Origine: NG Barber Studio, ~/lavoro/ngbarber-site, commit 648187b (index.html, capitolo «SEDI», l'unico pin
+  della pagina: la sede attiva si accende mentre si scorre, le altre restano spente).
+  Nicola: «NG Barber e Fiftynine passano, gli altri no» (il metro, direttive-siti); «per NG Barber non gli ho
+  detto niente e ha fatto un sito bellissimo» (11/09).
+  Cosa e' cambiato rispetto a NG Barber, e perche':
+  - al posto del globo del logo ridisegnato in SVG c'e' la foto della sede attiva: il logo del cliente non si
+    ridisegna (16/09 e 19/09) e Trevis non disegna (12/10);
+  - niente pin con scrub: la cornice sta ferma con position:sticky e la sede attiva cambia a meta' schermo, come
+    in scena-tappe. Lo scrub a 1 trascinava («lanimazione allo scrol [...] sembra troppo lenta», 20/10);
+  - sul telefono niente cornice: ogni sede porta la sua foto piccola, e sono tutte accese (come in NG Barber);
+  - via la numerazione «02 — Dove siamo» sopra la lista (07/10), e il paese passa sotto il nome della citta':
+    un'etichetta sopra il titolo e' fra le cose che craft-floor di impeccable rifiuta.
+  Serve a un cliente con due o piu' sedi, o con piu' luoghi di lavoro fissi. Con una sede sola si usa
+  orari-adesso.
+  Foto: una per sede, la facciata o l'interno, almeno 1080 px, verticale 4:5.
+  Testi da scrivere: titolo (h2), per ogni sede il paese o la zona, la citta' (h3), l'indirizzo, il link a
+  Google Maps con l'indirizzo vero; facoltativa una riga col telefono.
+  File: sedi-elenco.html + .css + .js. Senza JS tutte le sedi sono accese e la cornice mostra la prima foto. -->
+<section id="sedi" class="sedi sezione sezione--fondo" data-sedi aria-labelledby="sedi-titolo">
+  <div class="contenuto sedi__griglia">
+    <div class="sedi__palco" aria-hidden="true">
+      <figure class="sedi__cornice">
+        <img class="sedi__foto" data-sede-foto="0" data-visibile src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20864%201080%27%3E%3Crect%20width%3D%27864%27%20height%3D%271080%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2772%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Esede-1%204%3A5%3C/text%3E%3C/svg%3E" width="864" height="1080" alt="" loading="lazy" decoding="async">
+        <img class="sedi__foto" data-sede-foto="1" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20864%201080%27%3E%3Crect%20width%3D%27864%27%20height%3D%271080%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2772%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Esede-2%204%3A5%3C/text%3E%3C/svg%3E" width="864" height="1080" alt="" loading="lazy" decoding="async">
+        <img class="sedi__foto" data-sede-foto="2" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20864%201080%27%3E%3Crect%20width%3D%27864%27%20height%3D%271080%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2772%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Esede-3%204%3A5%3C/text%3E%3C/svg%3E" width="864" height="1080" alt="" loading="lazy" decoding="async">
+      </figure>
+    </div>
+    <div class="sedi__lista">
+      <h2 class="h2 rivela" id="sedi-titolo">TODO Dove siamo</h2>
+      <article class="sede" data-sede>
+        <figure class="foto sede__foto"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20512%20640%27%3E%3Crect%20width%3D%27512%27%20height%3D%27640%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2742%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Esede-1%204%3A5%3C/text%3E%3C/svg%3E" width="512" height="640" alt="TODO: la sede, da fuori o da dentro" loading="lazy" decoding="async"></figure>
+        <div class="sede__testo">
+          <h3 class="h3">TODO Citta' 1</h3>
+          <p class="mono">TODO Italia</p>
+          <p class="sede__indirizzo"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M128,66a38,38,0,1,0,38,38A38,38,0,0,0,128,66Zm0,64a26,26,0,1,1,26-26A26,26,0,0,1,128,130Zm0-112a86.1,86.1,0,0,0-86,86c0,30.91,14.34,63.74,41.47,94.94a252.32,252.32,0,0,0,41.09,38,6,6,0,0,0,6.88,0,252.32,252.32,0,0,0,41.09-38c27.13-31.2,41.47-64,41.47-94.94A86.1,86.1,0,0,0,128,18Zm0,206.51C113,212.93,54,163.62,54,104a74,74,0,0,1,148,0C202,163.62,143,212.93,128,224.51Z"/></svg>TODO Via e numero</p>
+          <a class="pillola sede__mappa" href="TODO-link-google-maps" target="_blank" rel="noopener">Apri in Maps</a>
+        </div>
+      </article>
+      <article class="sede" data-sede>
+        <figure class="foto sede__foto"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20512%20640%27%3E%3Crect%20width%3D%27512%27%20height%3D%27640%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2742%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Esede-2%204%3A5%3C/text%3E%3C/svg%3E" width="512" height="640" alt="TODO: la sede, da fuori o da dentro" loading="lazy" decoding="async"></figure>
+        <div class="sede__testo">
+          <h3 class="h3">TODO Citta' 2</h3>
+          <p class="mono">TODO Italia</p>
+          <p class="sede__indirizzo"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M128,66a38,38,0,1,0,38,38A38,38,0,0,0,128,66Zm0,64a26,26,0,1,1,26-26A26,26,0,0,1,128,130Zm0-112a86.1,86.1,0,0,0-86,86c0,30.91,14.34,63.74,41.47,94.94a252.32,252.32,0,0,0,41.09,38,6,6,0,0,0,6.88,0,252.32,252.32,0,0,0,41.09-38c27.13-31.2,41.47-64,41.47-94.94A86.1,86.1,0,0,0,128,18Zm0,206.51C113,212.93,54,163.62,54,104a74,74,0,0,1,148,0C202,163.62,143,212.93,128,224.51Z"/></svg>TODO Via e numero</p>
+          <a class="pillola sede__mappa" href="TODO-link-google-maps" target="_blank" rel="noopener">Apri in Maps</a>
+        </div>
+      </article>
+      <article class="sede" data-sede>
+        <figure class="foto sede__foto"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20512%20640%27%3E%3Crect%20width%3D%27512%27%20height%3D%27640%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2742%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Esede-3%204%3A5%3C/text%3E%3C/svg%3E" width="512" height="640" alt="TODO: la sede, da fuori o da dentro" loading="lazy" decoding="async"></figure>
+        <div class="sede__testo">
+          <h3 class="h3">TODO Citta' 3</h3>
+          <p class="mono">TODO Svizzera</p>
+          <p class="sede__indirizzo"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M128,66a38,38,0,1,0,38,38A38,38,0,0,0,128,66Zm0,64a26,26,0,1,1,26-26A26,26,0,0,1,128,130Zm0-112a86.1,86.1,0,0,0-86,86c0,30.91,14.34,63.74,41.47,94.94a252.32,252.32,0,0,0,41.09,38,6,6,0,0,0,6.88,0,252.32,252.32,0,0,0,41.09-38c27.13-31.2,41.47-64,41.47-94.94A86.1,86.1,0,0,0,128,18Zm0,206.51C113,212.93,54,163.62,54,104a74,74,0,0,1,148,0C202,163.62,143,212.93,128,224.51Z"/></svg>TODO Via e numero</p>
+          <a class="pillola sede__mappa" href="TODO-link-google-maps" target="_blank" rel="noopener">Apri in Maps</a>
+        </div>
+      </article>
+      <p class="sedi__telefono">TODO Citta' 1: <a href="TODO-tel"><b class="manca">TODO telefono</b></a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== galleria-irregolare =====
+  Origine: Groavel, ~/lavoro/groavel-site, commit a6a1751 (index.astro «Memories» e memories.astro, stile.css
+  «.griglia-foto», schede.css «/memories»).
+  Nicola: «da telefono risulta un po troppo ripetitivo e muro di foto, prova magari a disporle in modi piu
+  particolari in base alla pagina, e da telefono togline giusto un paio in modo che non sembri un muro di foto»
+  (26/10). Da qui: lo schema cambia a ogni riga, mai piu' di tre foto di fila da computer e due sul telefono,
+  e una foto si nasconde sotto i 900 px. Niente didascalie sotto le foto (17/09: «frasi sotto le foto dei tagli»
+  nell'elenco delle cose da togliere; 21/09: una didascalia che descrive la foto non aggiunge niente).
+  Schema con 6 foto. Da 900 px tre colonne a righe larga+stretta, stretta+larga, larga+stretta: la larga prende
+  due colonne in 3:2, la stretta accanto riempie l'altezza della riga. Sotto 900 px due colonne: larga, coppia,
+  larga, larga; la sesta non si mostra. Per piu' foto si ripete il gruppo di sei (l'ordine e' calcolato per
+  chiudere le righe senza buchi: schede.css di Groavel spiega il caso a 22 foto).
+  Foto: 6, almeno 1080 px. Le larghe orizzontali (3:2), le strette verticali (4:5). Un trattamento solo per
+  tutte: nessun filtro diverso foto per foto.
+  Testi da scrivere: il titolo (h2) e il link al profilo o alla pagina con tutte le foto. Solo il testo
+  alternativo per ogni foto, che dice cosa si vede.
+  File: galleria-irregolare.html + .css. Nessun JS: le foto entrano con .rivela di base.css. -->
+<section id="galleria" class="galleria sezione sezione--fondo" aria-labelledby="galleria-titolo">
+  <div class="contenuto">
+    <div class="testa-sezione">
+      <h2 class="h2 rivela" id="galleria-titolo">TODO Le foto</h2>
+      <a class="link-freccia" href="TODO-profilo" target="_blank" rel="noopener">TODO Tutte le foto su Instagram<svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></a>
+    </div>
+    <ul class="galleria__griglia">
+      <li class="galleria__voce galleria__voce--larga galleria__voce--larga-telefono rivela"><figure class="foto"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%201080%20720%27%3E%3Crect%20width%3D%271080%27%20height%3D%27720%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2760%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Egalleria-1%203%3A2%3C/text%3E%3C/svg%3E" width="1080" height="720" sizes="(min-width: 900px) 62vw, 100vw" alt="TODO: cosa si vede" loading="lazy" decoding="async"></figure></li>
+      <li class="galleria__voce galleria__voce--accanto rivela"><figure class="foto"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20864%201080%27%3E%3Crect%20width%3D%27864%27%20height%3D%271080%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2772%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Egalleria-2%204%3A5%3C/text%3E%3C/svg%3E" width="864" height="1080" sizes="(min-width: 900px) 31vw, 50vw" alt="TODO: cosa si vede" loading="lazy" decoding="async"></figure></li>
+      <li class="galleria__voce galleria__voce--accanto rivela"><figure class="foto"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20864%201080%27%3E%3Crect%20width%3D%27864%27%20height%3D%271080%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2772%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Egalleria-3%204%3A5%3C/text%3E%3C/svg%3E" width="864" height="1080" sizes="(min-width: 900px) 31vw, 50vw" alt="TODO: cosa si vede" loading="lazy" decoding="async"></figure></li>
+      <li class="galleria__voce galleria__voce--larga galleria__voce--larga-telefono rivela"><figure class="foto"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%201080%20720%27%3E%3Crect%20width%3D%271080%27%20height%3D%27720%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2760%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Egalleria-4%203%3A2%3C/text%3E%3C/svg%3E" width="1080" height="720" sizes="(min-width: 900px) 62vw, 100vw" alt="TODO: cosa si vede" loading="lazy" decoding="async"></figure></li>
+      <li class="galleria__voce galleria__voce--larga galleria__voce--larga-telefono rivela"><figure class="foto"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%201080%20720%27%3E%3Crect%20width%3D%271080%27%20height%3D%27720%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2760%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Egalleria-5%203%3A2%3C/text%3E%3C/svg%3E" width="1080" height="720" sizes="(min-width: 900px) 62vw, 100vw" alt="TODO: cosa si vede" loading="lazy" decoding="async"></figure></li>
+      <li class="galleria__voce galleria__voce--accanto galleria__voce--solo-grande rivela"><figure class="foto"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20864%201080%27%3E%3Crect%20width%3D%27864%27%20height%3D%271080%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2772%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Egalleria-6%204%3A5%3C/text%3E%3C/svg%3E" width="864" height="1080" sizes="31vw" alt="TODO: cosa si vede" loading="lazy" decoding="async"></figure></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== recensioni-voto =====
+  Origine: Bar Tabacchi Fiftynine, ~/lavoro/bartabaccheria59, commit 16b3492 (index.html «RECENSIONI»,
+  stile.css «.voto», «.citazioni»).
+  Nicola: «NG Barber e Fiftynine passano, gli altri no» (il metro); sul giro 1 di Dragonfly: «mancano delle belle
+  recensioni scritte affianco alle loro recensioni su google, prendine alcune vere ma belle da lì» (18/09).
+  Regole: le recensioni sono vere e citate con il nome come appare su Google (iniziale del cognome); il voto e il
+  numero di recensioni sono quelli della scheda nel giorno in cui si guarda; niente superlativi aggiunti da noi
+  (14/09). Se la scheda Google non c'e' o ha meno di 10 recensioni, la sezione non si mette.
+  Le stelle sono icone Phosphor (MIT), non disegni nostri; la quinta si riempie per la parte decimale del voto
+  con --pieno (0,4 per un 4,4).
+  Foto: nessuna.
+  Testi da scrivere: il voto con la virgola, il numero di recensioni, il link alla scheda Google, da 2 a 4
+  citazioni corte copiate tali e quali, ognuna con il nome.
+  File: recensioni-voto.html + .css. Nessun JS. -->
+<section id="recensioni" class="recensioni sezione sezione--fondo" aria-labelledby="recensioni-titolo">
+  <div class="contenuto recensioni__griglia">
+    <div class="recensioni__voto rivela">
+      <h2 class="h2 recensioni__titolo" id="recensioni-titolo">TODO Le recensioni</h2>
+      <p class="recensioni__numero"><b class="manca">TODO 4,4</b></p>
+      <div class="recensioni__stelle" role="img" aria-label="TODO 4,4 stelle su 5" style="--pieno:.4">
+        <span><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg></span><span><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg></span><span><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg></span><span><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg></span><span class="recensioni__parziale"><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg></span>
+      </div>
+      <p class="recensioni__fonte">su Google, da <b class="manca">TODO numero</b> recensioni. <a href="TODO-link-scheda-google" target="_blank" rel="noopener">Leggile su Google</a></p>
+    </div>
+    <ul class="recensioni__citazioni">
+      <li class="rivela"><q>TODO: una recensione vera, copiata tale e quale.</q><span class="mono">TODO Nome I. · Google</span></li>
+      <li class="rivela"><q>TODO: una recensione vera, copiata tale e quale.</q><span class="mono">TODO Nome I. · Google</span></li>
+      <li class="rivela"><q>TODO: una recensione vera, copiata tale e quale.</q><span class="mono">TODO Nome I. · Google</span></li>
+    </ul>
+  </div>
+</section>
+
+<div class="passaggio passaggio--da-fondo passaggio--a-superficie rivela" aria-hidden="true">
+  <svg class="passaggio__svg" viewBox="0 0 1600 140" preserveAspectRatio="none" focusable="false">
+    <path class="passaggio__campo" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06 L1600,140 L0,140 Z"/>
+    <path class="passaggio__riga passaggio__riga--1" pathLength="1" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06"/>
+    <path class="passaggio__riga passaggio__riga--2" pathLength="1" transform="translate(0 -14)" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06"/>
+    <path class="passaggio__riga passaggio__riga--3" pathLength="1" transform="translate(0 -28)" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06"/>
+  </svg>
+</div>
+
+<!-- ===== orari-adesso =====
+  Origine: Bar Tabacchi Fiftynine, ~/lavoro/bartabaccheria59, commit 16b3492 (index.html: la «linea del giorno»
+  dell'hero e il capitolo #dove con la lista degli orari; stile.css «.giorno», «.orari»).
+  Nicola: «NG Barber e Fiftynine passano, gli altri no» (il metro, direttive-siti). L'idea del Fiftynine: un sito
+  di un'attivita' con orari deve dire per prima cosa se e' aperta adesso (nota sito-fiftynine.md).
+  Gli orari stanno scritti in un posto solo, la lista qui sotto: lo script legge da li' i giorni (data-giorni,
+  0 = domenica come Date.getDay()) e le fasce (<time datetime>), calcola l'ora di Roma e scrive «Aperto adesso ·
+  chiude alle ...» oppure «Chiuso adesso · riapre ... alle ...». Un giorno senza <time> e' chiuso. Un giorno
+  con la pausa pranzo ha quattro <time>: due fasce. Il Fiftynine diceva «aperto un lunedì alle otto di sera»
+  finche' gli orari stavano in quattro posti a mano (08/09): per questo il posto e' uno.
+  Cosa e' cambiato rispetto al Fiftynine: le fasi del bar (colazione, pranzo, aperitivo) sono tolte perche' erano
+  sue; le fasce per giorno sono diventate piu' di una; la locandina degli orari e la scritta in corsivo sotto il
+  titolo sono tolte. Il binario mostra la giornata di oggi dall'apertura alla chiusura, col punto su adesso.
+  Foto: nessuna (se il cliente ha una foto della facciata, va in un'altra sezione).
+  Testi da scrivere: titolo (h2, il luogo detto come lo dice il cliente), indirizzo e telefono, gli orari VERI
+  (visti sulla scheda Google o sulla porta: se non si sono visti la lista resta TODO e la sezione non esce),
+  una nota corta sotto la lista.
+  File: orari-adesso.html + .css + .js. Senza JS si vede la lista degli orari, e basta: l'indicatore e il binario
+  hanno l'attributo hidden e li accende lo script. -->
+<section id="dove" class="orari sezione sezione--superficie" data-orari aria-labelledby="orari-titolo">
+  <div class="contenuto orari__griglia">
+    <div class="orari__dove rivela">
+      <h2 class="h2" id="orari-titolo">TODO Dove siamo</h2>
+      <address class="orari__indirizzo">
+        TODO Via e numero<br>
+        TODO CAP Citta' (provincia)<br>
+        <a href="TODO-tel">TODO telefono</a>
+      </address>
+      <div class="azioni">
+        <a class="bottone bottone--pieno" href="TODO-link-indicazioni-google-maps" target="_blank" rel="noopener">Indicazioni stradali<span class="bottone__freccia"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></span></a>
+        <a class="bottone bottone--vuoto" href="TODO-profilo" target="_blank" rel="noopener">TODO Foto su Instagram<span class="bottone__freccia"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></span></a>
+      </div>
+    </div>
+
+    <div class="orari__tabella rivela">
+      <h3 class="mono orari__etichetta">Orari di apertura</h3>
+      <p class="orari__adesso" data-orari-adesso hidden><i aria-hidden="true"></i><span>Orari qui sotto</span></p>
+      <div class="orari__binario" data-orari-binario hidden aria-hidden="true">
+        <div class="orari__pieno" data-orari-pieno></div><div class="orari__cursore" data-orari-cursore></div>
+        <span class="orari__estremo" data-orari-apre></span><span class="orari__estremo orari__estremo--fine" data-orari-chiude></span>
+      </div>
+      <ul class="orari__lista" data-orari-lista>
+        <!-- TODO: gli orari veri. Esempio di forma: una fascia, due fasce, chiuso. -->
+        <li data-giorni="1,2,3,4,5"><b>TODO Lunedì - venerdì</b><em><time datetime="09:00">9:00</time> - <time datetime="12:30">12:30</time>, <time datetime="15:00">15:00</time> - <time datetime="19:30">19:30</time></em></li>
+        <li data-giorni="6"><b>TODO Sabato</b><em><time datetime="09:00">9:00</time> - <time datetime="18:00">18:00</time></em></li>
+        <li data-giorni="0"><b>TODO Domenica</b><em>Chiuso</em></li>
+      </ul>
+      <p class="orari__nota corpo">TODO: una nota corta, per esempio dove si parcheggia o se serve prenotare.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== contatto-finale =====
+  Origine: Groavel, ~/lavoro/groavel-site, commit a6a1751 (index.astro «All'arrivo» #contatti, stile.css «All'arrivo»).
+  Nicola sul sito intero: «con quello siamo sulla strada giusta» (30/10). Su questa sezione non ha detto niente
+  di suo: entra perche' chiude la pagina con un'azione sola e i recapiti in righe, senza modulo.
+  Regole che rispetta: niente frasi che dicono da dove vengono i dati (16/09); orari e recapiti solo se visti
+  (se mancano restano TODO, e la riga si toglie piuttosto che inventarla).
+  Foto: nessuna.
+  Testi da scrivere: un titolo corto con un verbo all'imperativo («Scrivici», «Prenota»), una o due frasi su come
+  si prenota, il bottone del canale principale, da 2 a 4 righe di recapito (mail, telefono, orari, luogo) con
+  una nota corta a destra.
+  File: contatto-finale.html + .css. Nessun JS. -->
+<section id="contatti" class="contatto sezione sezione--superficie" aria-labelledby="contatto-titolo">
+  <div class="contenuto contatto__dentro">
+    <h2 class="h1 contatto__titolo rivela" id="contatto-titolo">TODO Scrivici</h2>
+    <div class="contatto__griglia">
+      <div class="contatto__corpo">
+        <p class="guida rivela">TODO: una o due frasi su come si prenota o si chiede un'informazione, e su quale canale risponde prima.</p>
+        <div class="azioni rivela">
+          <a class="bottone bottone--pieno" href="TODO-link-contatto" target="_blank" rel="noopener">TODO DM su Instagram<span class="bottone__freccia"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M128,82a46,46,0,1,0,46,46A46.06,46.06,0,0,0,128,82Zm0,80a34,34,0,1,1,34-34A34,34,0,0,1,128,162ZM176,26H80A54.06,54.06,0,0,0,26,80v96a54.06,54.06,0,0,0,54,54h96a54.06,54.06,0,0,0,54-54V80A54.06,54.06,0,0,0,176,26Zm42,150a42,42,0,0,1-42,42H80a42,42,0,0,1-42-42V80A42,42,0,0,1,80,38h96a42,42,0,0,1,42,42ZM190,76a10,10,0,1,1-10-10A10,10,0,0,1,190,76Z"/></svg></span></a>
+        </div>
+      </div>
+      <ul class="contatto__righe rivela">
+        <li><a href="TODO-mailto">TODO mail@cliente.it</a><span class="mono">TODO per cosa</span></li>
+        <li><a href="TODO-tel">TODO telefono</a><span class="mono">TODO quando rispondono</span></li>
+        <li><span>TODO Orari</span><span class="mono"><b class="manca">TODO</b></span></li>
+        <li><span>TODO Indirizzo, citta'</span><span class="mono">TODO nota</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+<div class="passaggio passaggio--da-superficie passaggio--a-piede rivela" aria-hidden="true">
+  <svg class="passaggio__svg" viewBox="0 0 1600 140" preserveAspectRatio="none" focusable="false">
+    <path class="passaggio__campo" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06 L1600,140 L0,140 Z"/>
+    <path class="passaggio__riga passaggio__riga--1" pathLength="1" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06"/>
+    <path class="passaggio__riga passaggio__riga--2" pathLength="1" transform="translate(0 -14)" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06"/>
+    <path class="passaggio__riga passaggio__riga--3" pathLength="1" transform="translate(0 -28)" d="M0,81.06 C22.22,80.58 44.44,83.64 66.67,86.77 C88.89,89.89 111.11,97.69 133.33,99.81 C155.56,101.93 177.78,101.15 200,99.49 C222.22,97.82 244.44,92.84 266.67,89.82 C288.89,86.79 311.11,86.26 333.33,81.34 C355.56,76.43 377.78,66 400,60.32 C422.22,54.64 444.44,49.2 466.67,47.29 C488.89,45.37 511.11,49.93 533.33,48.81 C555.56,47.69 577.78,43.71 600,40.57 C622.22,37.44 644.44,31.08 666.67,30 C688.89,28.92 711.11,32.23 733.33,34.1 C755.56,35.97 777.78,39.31 800,41.23 C822.22,43.16 844.44,42.53 866.67,45.63 C888.89,48.74 911.11,54.24 933.33,59.86 C955.56,65.48 977.78,74.63 1000,79.38 C1022.22,84.13 1044.44,88.07 1066.67,88.36 C1088.89,88.66 1111.11,82.22 1133.33,81.15 C1155.56,80.09 1177.78,79.58 1200,81.98 C1222.22,84.38 1244.44,92.15 1266.67,95.56 C1288.89,98.96 1311.11,100 1333.33,102.41 C1355.56,104.81 1377.78,109.19 1400,110 C1422.22,110.81 1444.44,110.66 1466.67,107.27 C1488.89,103.89 1511.11,94.03 1533.33,89.66 C1555.56,85.29 1577.78,81.55 1600,81.06"/>
+  </svg>
+</div>
+
+<!-- ===== piede-firma =====
+  Origine: Groavel, ~/lavoro/groavel-site, commit a6a1751 (src/components/Piede.astro, stile.css «Piede»).
+  La firma DenkiCode e' obbligatoria su ogni sito e su ogni bozza e resta anche quando il sito diventa del
+  cliente (01-Coding/stack/convenzioni.md, decisione dell'08/09/2026). La classe e' firma-denkicode, lo stile di
+  base sta gia' in base.css dello starter. Sul fondo scuro si usa logo-simbolo-scuro.svg, sul chiaro
+  logo-simbolo.svg: tutti e due stanno nello starter, in assets/.
+  Foto: nessuna. Serve il logo del cliente, quadrato, almeno 192 px.
+  Testi da scrivere: una riga con citta' e attivita', i recapiti (profilo Instagram, mail), il nome per il
+  copyright. Ragione sociale e partita IVA solo se il cliente le pubblica gia'.
+  File: piede-firma.html + .css. Nessun JS. L'anno si scrive a mano: niente script per una data. -->
+<footer class="piede">
+  <div class="piede__dentro">
+    <div class="piede__alto">
+      <img class="piede__logo" src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2096%2096%27%3E%3Crect%20width%3D%2796%27%20height%3D%2796%27%20fill%3D%27%233a3d42%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20fill%3D%27%23aeb3b8%27%20font-family%3D%27monospace%27%20font-size%3D%2710%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%3Elogo-cliente-512%201%3A1%3C/text%3E%3C/svg%3E" width="96" height="96" alt="" loading="lazy">
+      <div class="piede__righe">
+        <p class="mono">TODO citta' · attivita'</p>
+        <a href="TODO-profilo" target="_blank" rel="noopener">TODO @profilo su Instagram</a>
+        <a href="TODO-mailto">TODO mail@cliente.it</a>
+      </div>
+    </div>
+    <p class="piede__firma">
+      <span>© 2026 TODO Nome</span>
+      <a class="firma-denkicode" href="https://denkicode.com" target="_blank" rel="noopener"><img src="../starter-sito/assets/logo-simbolo-scuro.svg" alt="" width="18" height="18"><span>Powered by <strong>DenkiCode</strong></span></a>
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script>
+/* Le rivelazioni dello starter (index.html dello starter, identiche): .rivela -> .dentro all'ingresso. */
+(function(){
+  var cattura = document.documentElement.classList.contains('cattura');
+  var fermo = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var rivela = document.querySelectorAll('.rivela');
+  if (cattura || fermo || !('IntersectionObserver' in window)) { rivela.forEach(function(el){ el.classList.add('dentro'); }); return; }
+  var oss = new IntersectionObserver(function(voci){
+    voci.forEach(function(v){ if (v.isIntersecting) { v.target.classList.add('dentro'); oss.unobserve(v.target); } });
+  }, { rootMargin: '0px 0px -12% 0px' });
+  rivela.forEach(function(el){ oss.observe(el); });
+  setTimeout(function(){ if (document.visibilityState === 'hidden') rivela.forEach(function(el){ el.classList.add('dentro'); }); }, 1200);
+})();
+</script>
+<script src="sezioni/barra-fissa.js"></script>
+<script src="sezioni/scena-tappe.js"></script>
+<script src="sezioni/sedi-elenco.js"></script>
+<script src="sezioni/orari-adesso.js"></script>
+<script src="sezioni/contrari-scorrevoli.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* contrari-scorrevoli — da Mikuma giro 7, commit 38bb1bb (stile.css «.contrari», «.contro»). */
+.contrari{overflow-x:clip;padding-block:calc(var(--sezione) * 1.2)}
+.contrari__lista{display:grid;gap:.1em}
+.contro{overflow-x:clip}
+.contro__traccia{
+  display:flex;align-items:baseline;gap:.22em;width:max-content;margin-inline:auto;
+  font-family:var(--font-titoli);font-weight:var(--titoli-peso);font-stretch:var(--titoli-larghezza);
+  font-size:clamp(6rem, 15vw, 16.25rem);line-height:.92;letter-spacing:-.035em;
+  text-transform:var(--titoli-maiuscolo);white-space:nowrap;color:var(--inchiostro-forte);
+}
+.contro__traccia b{font-weight:inherit}
+.contro__traccia i{color:var(--accento);font-style:normal}
+/* le righe pari in tinta piu' tenue: il blocco si legge a coppie anche da fermo */
+.contro:nth-child(2n) .contro__traccia b{color:var(--inchiostro)}
+
+/* sotto 900 la coppia si legge intera: va a capo sullo slash e il corpo si tara sulla meta' piu' lunga */
+@media (max-width:900px){
+  .contro__traccia{width:auto;max-width:100%;flex-wrap:wrap;justify-content:center;column-gap:.18em;font-size:min(calc(16.2vw - 7px), 7.5rem);white-space:normal;padding-inline:var(--pad)}
+  .contro__traccia > *{white-space:nowrap}
+  .contro + .contro{margin-top:.38em}
+}

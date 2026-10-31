@@ -1,0 +1,28 @@
+<!-- ===== contrari-scorrevoli =====
+  Origine: Mikuma Dogs, ~/lavoro/mikuma-site, giro 7 «il bianco e il nero», commit 38bb1bb (HEAD, che e' il
+  giro 7 con le correzioni di Nicola: bead704 -> 45f3b31 -> 38bb1bb). index.html #contrari, stile.css «.contrari».
+  Nicola sul giro 7: «per il resto mi piace molto» (11/09, nota sito-mikuma-dogs.md). DESIGN.md del repo lo
+  chiama «il momento della pagina, e non consuma una foto».
+  Cosa e': da 3 a 6 coppie di parole opposte del mestiere del cliente, in grande e strette, che scorrono di lato
+  mentre si scende, una riga verso destra e la successiva verso sinistra. Ogni parola viene da un fatto vero
+  del lavoro (su Mikuma: FERMO / VAI, ASCIUTTO / BAGNATO, RING / RIVA).
+  Cosa e' cambiato rispetto a Mikuma: tolto il ribaltamento della pagina dal nero al bianco (era legato al suo
+  marchio e sfarfallava, correzione della sera dell'11/09); scrub legato allo scroll senza smorzamento, perche'
+  lo smorzamento si legge come ritardo (20/10: «sembra troppo lenta e che si avvii in ritardo»); niente
+  will-change sulle righe (27/10, giro 4b di Groavel).
+  Attenzione: Nicola ha bocciato «una parola o una frase a effetto che cambia allo scroll» come racconto (12/10).
+  Qui le parole non cambiano e non raccontano da sole: e' un intermezzo fra due sezioni piene, non la spina.
+  Se il mestiere non ha coppie di contrari vere, la sezione non si mette.
+  Foto: nessuna.
+  Testi da scrivere: da 3 a 6 coppie, una o due parole per lato. A 375 px ogni coppia va a capo sullo slash:
+  la meta' piu' lunga deve stare in una riga (Mikuma tarava il corpo su «VENTI METRI»).
+  File: contrari-scorrevoli.html + .css + .js. Il JS usa GSAP e ScrollTrigger da CDN (gli stessi dello starter).
+  Senza JS, in ?cattura e con reduced-motion le coppie stanno ferme al centro. -->
+<section class="contrari sezione sezione--fondo" data-contrari aria-label="TODO: di cosa parlano le coppie, in una frase">
+  <ol class="contrari__lista">
+    <li class="contro"><span class="contro__traccia"><b>TODO A</b><i aria-hidden="true">/</i><b>TODO B</b></span></li>
+    <li class="contro"><span class="contro__traccia"><b>TODO C</b><i aria-hidden="true">/</i><b>TODO D</b></span></li>
+    <li class="contro"><span class="contro__traccia"><b>TODO E</b><i aria-hidden="true">/</i><b>TODO F</b></span></li>
+    <li class="contro"><span class="contro__traccia"><b>TODO G</b><i aria-hidden="true">/</i><b>TODO H</b></span></li>
+  </ol>
+</section>
