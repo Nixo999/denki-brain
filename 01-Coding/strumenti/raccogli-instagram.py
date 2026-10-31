@@ -57,7 +57,8 @@ def tag_efg(url):
 
 
 def sips(percorso, *chiavi):
-    out = subprocess.run(["sips", "-g", *chiavi, str(percorso)], capture_output=True, text=True).stdout
+    args = [a for k in chiavi for a in ("-g", k)]     # sips vuole un -g per ogni chiave
+    out = subprocess.run(["sips", *args, str(percorso)], capture_output=True, text=True).stdout
     return {k: v for k, v in re.findall(r"^\s+(\w+): (.+)$", out, re.M)}
 
 
@@ -81,8 +82,17 @@ def colori(percorso, quanti=6):
     conta = Counter(pal.getdata())
     rgb = pal.getpalette()
     tot = sum(conta.values())
-    return [{"hex": "#%02x%02x%02x" % tuple(rgb[i * 3:i * 3 + 3]), "quota": round(n / tot, 2)}
-            for i, n in conta.most_common()]
+    # fonde i colori quasi uguali (due bianchi, due neri): distanza RGB sotto 40
+    fusi = []
+    for i, n in conta.most_common():
+        c = tuple(rgb[i * 3:i * 3 + 3])
+        vicino = next((f for f in fusi if sum((a - b) ** 2 for a, b in zip(f["rgb"], c)) < 1600), None)
+        if vicino:
+            vicino["n"] += n
+        else:
+            fusi.append({"rgb": c, "n": n})
+    return [{"hex": "#%02x%02x%02x" % f["rgb"], "quota": round(f["n"] / tot, 2)}
+            for f in sorted(fusi, key=lambda f: -f["n"])]
 
 
 def leggi_grezzo(cartella):

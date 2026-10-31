@@ -26,7 +26,7 @@ await (async () => {
       if (!visti.has(chiave)) { visti.add(chiave); immagini.push(u) }
     }
     return JSON.stringify({ pagina: 'post', codice, tipo: m.at(-2), data: (d.match(/su ([A-Z][a-z]+ \d{1,2}, \d{4})/) ?? [])[1] ?? '',
-      didascalia: q > 0 ? d.slice(q + 3).replace(/"\.?$/, '') : '', immagini,
+      didascalia: q > 0 ? d.slice(q + 3).replace(/"\.?\s*$/, '') : '', immagini,
       avviso: immagini.length ? '' : 'nessuna foto a taglia piena: scheda in primo piano? carosello? riprova dopo 3 s' })
   }
   const desc = meta('meta[name=description]')

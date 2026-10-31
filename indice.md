@@ -7,7 +7,7 @@ tags: [indice]
 
 # Indice delle note — si legge prima di cercare
 
-Tutte le **345 note** del vault, per cartella, con una riga a testa. Serve a un
+Tutte le **346 note** del vault, per cartella, con una riga a testa. Serve a un
 motivo solo: **leggere questo file costa meno che cercare in tutto il vault**, e
 nove volte su dieci dice già dove sta la cosa.
 
@@ -141,6 +141,7 @@ Come è fatto il vault sta in `CLAUDE.md`; qui c'è solo il catalogo.
 **strumenti/**
 
 - [[netlify]] — Detto da Patrick il 31 agosto 2026 - *«il sito di Castiglione, come tutti i siti bozza, viene messo su Netlify per farlo vedere»*.
+- [[pipeline-siti]] — La pipeline dei siti vetrina da un profilo Instagram - raccolta, catalogo, cancelli, skill. Cosa gira, cosa no, cosa aspetta Nicola.
 - [[plugin-da-valutare]] — ⚠️ Elenco ragionato, non un catalogo. Il marketplace ufficiale (claude-plugins-official, già registrato su questa macchina) ne ha 289 - qui stan...
 - [[strumenti]] — ⚠️ Gli attrezzi con cui si costruisce, e come sono configurati da noi.
 

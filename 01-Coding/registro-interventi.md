@@ -1,7 +1,7 @@
 ---
 riga: Una riga per intervento - chi, quando, progetto, repository e QUALE DATABASE. La colonna database e' il motivo del file.
 type: risorsa
-updated: 2026-10-26
+updated: 2026-10-31
 source: denkicode
 tags: [registro, interventi, repo, database]
 ---
@@ -42,6 +42,7 @@ stato fatto in sessione) · **Progetto** · **Repository** · **Database**
 
 | Quando | Chi | Progetto | Repository | Database | Cosa | Commit |
 |---|---|---|---|---|---|---|
+| 31/10, tarda mattina (10:30-11:30) | Trevis (Opus, sessione avviata da un'altra sessione per Nicola; nessun operatore) | [[pipeline-siti]], primi due pezzi | `denki-brain` (`main`) | nessuno | Raccolta da Instagram (`raccogli-instagram.js` nel browser dell'app + `raccogli-instagram.py`, provata su `@mikuma.dogs`) e cancelli in un comando (`cancelli-sito.py` + `cancelli-telefono.mjs`, provati su Mikuma e Davide Milan). Catalogo di sezioni e skill `/nuovo-sito` fermi: aspettano Nicola | vedi git |
 | 31/10, mattina (08:25) | Trevis (Opus, giro del mattino `primo`, nessuno davanti; nessun operatore) | — banco DM | `denki-brain` (`main`) | nessuno | Sul banco c'erano già 170 righe mai mandate (110 siti e 60 ricerca), quindi il piano non chiedeva liste nuove: nessuna lista, `rotazione.csv` invariata. 309 recuperi maturi. Posta non letta: il browser dell'app non ha Instagram collegato e Brave richiede una finestra sul Mac di Nicola | questo |
 | 30/10, mattina (08:01-08:40) | Trevis (Opus, giro del mattino `primo`, nessuno davanti; nessun operatore) | — banco DM → [[2026-10-30-giro-mattina-siti]] | `denki-brain` (`main`) | nessuno | Il piano chiedeva una sola riga di siti (CO toelettature, riaperta): entrata @cuoriscodinzolanti di Cermenate, banco a 170 da mandare. `rotazione.csv`: CO toelettature parziale. Nomi da toelettature.net (58 schede in provincia), due candidati scartati perché hanno il sito. Posta non letta (Brave richiede una finestra sul Mac di Nicola) | questo |
 | 29/10, primo pomeriggio (12:45-13:20) | Nicola con Trevis (Fable scrive direzione e testi 4.1 con le skill di scrittura; un Sonnet senza contesto fa la prova di lettura; pagina e motion su due Opus) | [[sito-opero-presentazione]], giro 4 «la tavola a fumetti, i testi leggeri» | `~/lavoro/opero-presentazione-site`, ramo `main`, nessun remoto; **ripubblicato su <https://opero-presentazione.netlify.app>** (titolo, sbarramenti, tavola e 404 verificati con `curl` sul permalink) | nessuno | Nicola sul giro 3: testi «difficili da seguire, non una lettura piacevole, frasi troppo lunghe le ultime», da riscrivere con le skill technical-writing, reviewing-technical-prose e doc-coauthoring appena installate; e «4 slide con solo un centro da leggere come una conversazione non è il massimo, sfrutta meglio lo spazio sullo schermo» (due regole in `direttive-siti.md`, skill nella tabella di `design-frontend.md`). La mattina diventa una tavola di quattro vignette con didascalie, nuvolette e figure, che si riempiono a soglia e restano accese; testi riscritti e corretti dopo la prova di lettura (chiamata spiegata prima, «Per i clienti» nella barra, «app» chiarita, frasi spezzate). Headless: 19 ms a 1440 e a 375, 592 KB, 8/8, slop 0, testo 0. Due trappole nuove. Aperto: rotella vera e iPhone, mail del bottone | `e6fe9e6` |
