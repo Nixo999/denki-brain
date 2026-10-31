@@ -1,0 +1,31 @@
+/* sedi-elenco — da NG Barber, commit 648187b (index.html, «SEDI — capitolo pinnato»), senza globo e senza pin. */
+.sedi__palco{display:none}
+.sedi__lista{display:grid;gap:6px}
+.sedi__lista .h2{margin-bottom:clamp(20px,3vw,32px)}
+.sede{border-top:1px solid var(--linea);padding:26px 0;display:grid;grid-template-columns:96px minmax(0,1fr);gap:20px;align-items:start}
+.sede:last-of-type{border-bottom:1px solid var(--linea)}
+.sede__foto{--rapporto:4/5;width:96px}
+.sede__testo{display:grid;gap:8px;justify-items:start;min-width:0}
+.sede .h3{font-size:clamp(30px,4.5vw,52px)}
+.sede__indirizzo{display:flex;align-items:center;gap:10px;flex-wrap:wrap;color:var(--inchiostro);font-size:15px}
+.sede__indirizzo .icona{color:var(--accento);width:16px;height:16px}
+.sede__mappa{margin-top:6px;text-decoration:none;color:var(--inchiostro-forte);transition:box-shadow .25s var(--curva), color .25s var(--curva)}
+.sede__mappa:hover{box-shadow:inset 0 0 0 1px var(--accento);color:var(--accento-testo)}
+.sedi__telefono{margin-top:26px;color:var(--inchiostro-tenue);font-size:14px;letter-spacing:.05em}
+.sedi__telefono a{color:var(--inchiostro-forte);font-weight:700}
+
+@media (min-width:900px){
+  .sedi__griglia{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:start}
+  .sedi__palco{display:block;position:sticky;top:calc(var(--barra) + 40px)}
+  .sedi__cornice{position:relative;margin:0;overflow:hidden;border-radius:var(--raggio);box-shadow:0 0 0 1px var(--linea);height:calc(var(--vh) * 70);max-height:640px;aspect-ratio:4/5;max-width:100%;background:var(--superficie)}
+  .sedi__foto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+  .sedi__foto[data-visibile]{z-index:1}
+  .sede{grid-template-columns:minmax(0,1fr);padding:26px 6px}
+  .sede__foto{display:none}
+  .sede{min-height:calc(var(--vh) * 34)}
+  /* con il JS la sede attiva e' piena e le altre spente; senza JS sono tutte accese */
+  .sedi--viva .sede{opacity:.28;transition:opacity .45s var(--curva)}
+  .sedi--viva .sede[data-attiva]{opacity:1}
+  .sedi--viva .sedi__foto{opacity:0;transition:opacity .45s var(--curva)}
+  .sedi--viva .sedi__foto[data-visibile]{opacity:1}
+}

@@ -1,0 +1,38 @@
+/* passaggio-curva — da Groavel, commit a6a1751 (stile.css «Giro 3 Le cuciture» e giro 4).
+   Il passaggio sta a cavallo del bordo: 70 px nella sezione che esce e 70 in quella che entra (48 e 48 sotto
+   768 px). Sopra la curva e' trasparente, sotto e' pieno del campo che entra. I 70 px in cima alla sezione che
+   entra sono dipinti col campo che esce, cosi' sopra la curva non resta una riga dritta (il difetto del giro 3). */
+.passaggio{position:relative;height:140px;margin-block:-70px;z-index:2;pointer-events:none;overflow:hidden}
+.passaggio__svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.passaggio__campo{fill:var(--a)}
+.passaggio__riga{fill:none;stroke-linecap:round}
+.passaggio__riga--1{stroke:var(--accento);stroke-opacity:.8;stroke-width:2}
+.passaggio__riga--2{stroke:var(--inchiostro-forte);stroke-opacity:.35;stroke-width:1.5}
+.passaggio__riga--3{stroke:var(--accento);stroke-opacity:.3;stroke-width:1}
+
+.passaggio--da-fondo,.passaggio--da-fondo + *{--da:var(--fondo)}
+.passaggio--da-superficie,.passaggio--da-superficie + *{--da:var(--superficie)}
+.passaggio--da-superficie-2,.passaggio--da-superficie-2 + *{--da:var(--superficie-2)}
+.passaggio--a-fondo{--a:var(--fondo)}
+.passaggio--a-superficie{--a:var(--superficie)}
+.passaggio--a-superficie-2{--a:var(--superficie-2)}
+.passaggio--a-piede{--a:var(--fondo-piede)}
+
+.passaggio + .sezione{padding-top:calc(var(--sezione) + 70px)}
+.passaggio + .sezione,.passaggio + .piede{background-image:linear-gradient(var(--da), var(--da));background-size:100% 70px;background-repeat:no-repeat}
+.passaggio + .piede{padding-top:70px}
+@media (max-width:767px){
+  .passaggio{height:96px;margin-block:-48px}
+  .passaggio + .sezione{padding-top:calc(var(--sezione) + 48px)}
+  .passaggio + .sezione,.passaggio + .piede{background-size:100% 48px}
+  .passaggio + .piede{padding-top:48px}
+  /* la curva da 1600 schiacciata in 375 px diventa a punte: lo svg e' largo due volte e mezzo e il bordo lo taglia */
+  .passaggio__svg{width:250%}
+}
+
+/* il passaggio non sparisce mai (base.css nasconderebbe ogni .rivela): si disegnano solo le righe */
+.js:not(.cattura) .passaggio.rivela{opacity:1;translate:none}
+.js:not(.cattura) .passaggio.rivela .passaggio__riga{stroke-dasharray:1 1;stroke-dashoffset:1}
+.js:not(.cattura) .passaggio.rivela.dentro .passaggio__riga{stroke-dashoffset:0;transition:stroke-dashoffset .9s cubic-bezier(.2,.7,0,1)}
+.js:not(.cattura) .passaggio.rivela.dentro .passaggio__riga--2{transition-delay:.12s}
+.js:not(.cattura) .passaggio.rivela.dentro .passaggio__riga--3{transition-delay:.24s}

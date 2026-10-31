@@ -1,0 +1,25 @@
+/* prossima-uscita — da Groavel, commit a6a1751 (stile.css, «La prossima uscita» giri 4 e 5). */
+.evento__griglia{display:grid;gap:40px}
+.evento__testo{display:grid;gap:22px;align-content:start}
+.evento__badge{width:112px;height:112px}
+.evento__data{font-size:clamp(24px, 3vw, 40px);line-height:1.1}
+.evento__striscia,.evento__striscia.striscia{display:grid;grid-template-columns:repeat(2, minmax(0,1fr));border-bottom:0}
+.evento__striscia > div,.evento__striscia > div:nth-child(2n),.evento__striscia > div:first-child{padding:12px 12px 12px 0;border:0;border-bottom:1px solid var(--linea)}
+.evento__striscia dt{text-transform:none;letter-spacing:.02em}
+.evento__motto{font-family:var(--font-dettaglio);font-size:clamp(15px,1.4vw,18px);line-height:1.45;color:var(--accento-testo);max-width:28em}
+/* la locandina si vede intera: nessun ritaglio e nessuna parallasse (Nicola, 27/10) */
+.evento__locandina{--rapporto:1/1}
+.evento__locandina a{display:block;width:100%;height:100%}
+.evento__locandina img{object-fit:contain;background:var(--superficie-2)}
+.evento__partenze{display:grid;gap:16px;margin-top:clamp(40px,6vw,72px)}
+.evento__partenza{
+  display:grid;gap:8px;align-content:start;padding:22px 24px;border-radius:var(--raggio);
+  box-shadow:inset 0 0 0 1px var(--linea);background:color-mix(in srgb, var(--inchiostro-forte) 3%, transparent);
+}
+.evento__ora{font-family:var(--font-titoli);font-weight:600;font-size:clamp(28px,3vw,40px);line-height:1;color:var(--accento);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+@media (min-width:768px){ .evento__partenze{grid-template-columns:repeat(2, minmax(0,1fr))} }
+@media (min-width:1024px){
+  .evento__griglia{grid-template-columns:minmax(0,1fr) minmax(0,560px);gap:clamp(40px,6vw,96px);align-items:start}
+  .evento__badge{width:160px;height:160px}
+}
+@media (max-width:1023px){ .evento__badge{justify-self:center} }

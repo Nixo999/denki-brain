@@ -1,0 +1,47 @@
+/* scena-tappe — da Groavel, commit a6a1751 (stile.css «Le uscite (la spina)», giri 3b e 4b). */
+.scena__testa{display:grid;gap:20px;margin-bottom:clamp(40px,6vw,72px)}
+.scena__palco{display:none}
+.scena__lista{display:grid}
+.tappa{display:grid;gap:18px;align-content:center;position:relative}
+.tappa__testa{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.tappa__nome{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.tappa__citazione{font-size:clamp(22px, 2.4vw, 30px)}
+
+/* Sotto 1024: niente scena, ogni tappa ha la sua disposizione (direttiva 26/10) */
+@media (max-width:1023px){
+  .tappa{padding-block:48px;border-top:1px solid var(--linea)}
+  .tappa:last-child{border-bottom:1px solid var(--linea)}
+  .tappa--a .tappa__foto{--rapporto:3/2;order:-1}            /* a: foto 3:2 sopra, testo sotto */
+  .tappa--b .striscia{order:-1}                              /* b: prima i dati grandi, poi titolo, foto 4:3, testo */
+  .tappa--b .striscia dd{font-size:22px;font-weight:700}
+  .tappa--b .tappa__foto{--rapporto:4/3}
+  .tappa--c .tappa__foto{--rapporto:16/9;order:-1}           /* c: foto 16:9 sopra e la frase del cliente in grande */
+  .tappa--d .h3{font-size:clamp(40px, 12vw, 64px)}           /* d: solo testo e bottone, il titolo piu' grande */
+}
+@media (max-width:599px){ .tappa--b .tappa__testa{order:-2} }
+
+/* Da 1024: due colonne, la cornice ferma a sinistra e le tappe a destra */
+@media (min-width:1024px){
+  .scena__griglia{display:grid;grid-template-columns:5fr 7fr;gap:clamp(40px,5vw,88px);align-items:start}
+  .scena__testa{grid-column:1 / -1}
+  .scena__palco{display:block;position:sticky;top:calc(var(--barra) + 40px)}
+  .scena__cornice{
+    position:relative;overflow:hidden;margin:0;border-radius:var(--raggio);box-shadow:0 0 0 1px var(--linea);
+    height:calc(var(--vh) * 66);aspect-ratio:4/5;max-width:100%;background:var(--superficie);
+  }
+  /* niente will-change: il livello lo crea la transizione solo mentre dura (giro 4b) */
+  .scena__foto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+  .scena__foto[data-visibile]{z-index:1}
+  .scena__dato{
+    position:absolute;left:14px;bottom:14px;z-index:4;display:flex;align-items:baseline;gap:14px;
+    padding:12px 18px;border-radius:10px;background:var(--fondo);color:var(--inchiostro-forte);
+  }
+  .scena__dato .h3{font-size:clamp(22px, 2.2vw, 32px)}
+  .tappa{min-height:calc(var(--vh) * 80);padding-block:48px}
+  .tappa + .tappa{border-top:1px solid var(--linea)}
+  .tappa__foto{display:none}
+  /* con il JS le foto non visibili stanno a 0 e la nuova entra salendo del 6% */
+  .scena--viva .scena__foto{opacity:0;transform:translateY(6%);transition:opacity .45s var(--curva), transform .45s var(--curva)}
+  .scena--viva .scena__foto[data-visibile]{opacity:1;transform:none}
+  .scena--viva .scena__foto[data-uscente]{opacity:0;transform:none;transition-duration:.3s;z-index:1}
+}

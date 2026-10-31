@@ -1,0 +1,12 @@
+/* piede-firma — da Groavel, commit a6a1751 (stile.css «Piede» e giro 4). */
+.piede{background:var(--fondo-piede);color:var(--inchiostro)}
+.piede__dentro{max-width:var(--largo);margin-inline:auto;padding:clamp(48px,7vw,88px) var(--pad) 28px;display:grid;gap:40px}
+.piede__alto{display:grid;gap:28px;grid-template-columns:96px minmax(0,1fr);align-items:center}
+.piede__logo{width:96px;height:96px}
+.piede__righe{display:grid;gap:6px;min-width:0}
+.piede__righe a{font-weight:600;color:var(--inchiostro-forte);text-decoration-color:var(--accento);overflow-wrap:anywhere}
+/* la firma: colore secondario del tema, contrasto almeno 4,5:1, mai sbiadita (convenzioni.md) */
+.piede__firma{display:flex;flex-wrap:wrap;gap:1em;justify-content:space-between;align-items:center;padding-top:20px;border-top:1px solid var(--linea);font-size:14px;color:var(--inchiostro-tenue)}
+.piede__firma a{color:var(--inchiostro-forte)}
+.piede__firma .firma-denkicode img{height:18px;width:auto}
+@media (max-width:359px){ .piede__alto{grid-template-columns:64px minmax(0,1fr)} .piede__logo{width:64px;height:64px} }

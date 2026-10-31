@@ -1,0 +1,73 @@
+<!-- ===== righe-foto-piccole =====
+  Origine: Groavel, ~/lavoro/groavel-site, commit a6a1751 (index.astro «I nostri corsi» e «Le nostre guide»,
+  stile.css «La tecnica» e «Chi pedala con te»).
+  Nicola: le foto stanno piccole e accanto al testo, cosi' si leggono insieme («nella parte con le 4 sezioni
+  cliccabili le foto sono troppo grandi, non riesco a leggere il testo e vedere la foto insieme», 06/10);
+  la vetrina si riempie di dettagli, non di foto piu' grandi (14/09).
+  Serve per un elenco corto di cose dello stesso tipo: corsi, servizi, persone dello staff. Da 2 a 6 righe.
+  Due varianti nello stesso file: la prima lista (corsi) ha foto 4:5 e tre colonne da computer; la seconda
+  (righe-foto--persone) ha foto quadrate, la bio e un dato a destra. Si tiene quella che serve.
+  Foto: una per riga, almeno 1080 px (a schermo 96-120 px: la soglia vale perche' la stessa foto puo' servire
+  altrove). Corsi 4:5, persone 1:1 con il viso al centro.
+  Testi da scrivere: titolo (h2); facoltativa una citazione del cliente con il suo nome; per ogni riga il nome
+  (h3), una riga in carattere di dettaglio (luogo, livello), una o due frasi, un link o un dato.
+  File: righe-foto-piccole.html + .css. Nessun JS. -->
+<section id="corsi" class="righe-foto sezione sezione--superficie" aria-labelledby="corsi-titolo">
+  <div class="contenuto">
+    <div class="testa-sezione">
+      <h2 class="h2 rivela" id="corsi-titolo">TODO I corsi</h2>
+      <a class="link-freccia" href="#TODO">TODO Tutti i dettagli<svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></a>
+    </div>
+    <figure class="righe-foto__citazione rivela">
+      <blockquote class="citazione">«TODO: una domanda o una frase che il cliente ha detto o scritto davvero.»</blockquote>
+      <figcaption class="mono">TODO Nome, ruolo</figcaption>
+    </figure>
+    <ul class="righe-foto__lista">
+      <li class="righe-foto__voce rivela">
+        <figure class="foto"><img src="assets/img/TODO-corso-1-640.jpg" width="512" height="640" alt="TODO: cosa si vede" loading="lazy" decoding="async"></figure>
+        <div class="righe-foto__testa">
+          <h3 class="h3">TODO Corso 1</h3>
+          <p class="mono">TODO luogo · livello</p>
+        </div>
+        <div class="righe-foto__testo">
+          <p class="corpo">TODO: una o due frasi su cosa si impara e per chi e' pensato.</p>
+          <a class="link-freccia" href="TODO-mailto">TODO Date e prezzi: scrivi<svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224,50H32a6,6,0,0,0-6,6V192a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A6,6,0,0,0,224,50ZM208.58,62,128,135.86,47.42,62ZM216,194H40a2,2,0,0,1-2-2V69.64l86,78.78a6,6,0,0,0,8.1,0L218,69.64V192A2,2,0,0,1,216,194Z"/></svg></a>
+        </div>
+      </li>
+      <li class="righe-foto__voce rivela">
+        <figure class="foto"><img src="assets/img/TODO-corso-2-640.jpg" width="512" height="640" alt="TODO: cosa si vede" loading="lazy" decoding="async"></figure>
+        <div class="righe-foto__testa">
+          <h3 class="h3">TODO Corso 2</h3>
+          <p class="mono">TODO luogo · livello</p>
+        </div>
+        <div class="righe-foto__testo">
+          <p class="corpo">TODO: una o due frasi su cosa si impara e per chi e' pensato.</p>
+          <a class="link-freccia" href="TODO-mailto">TODO Date e prezzi: scrivi<svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224,50H32a6,6,0,0,0-6,6V192a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A6,6,0,0,0,224,50ZM208.58,62,128,135.86,47.42,62ZM216,194H40a2,2,0,0,1-2-2V69.64l86,78.78a6,6,0,0,0,8.1,0L218,69.64V192A2,2,0,0,1,216,194Z"/></svg></a>
+        </div>
+      </li>
+    </ul>
+
+    <!-- Variante persone: foto quadrate, bio e un dato a destra -->
+    <div class="testa-sezione righe-foto__seconda">
+      <h2 class="h2 rivela" id="persone-titolo">TODO Le persone</h2>
+    </div>
+    <ul class="righe-foto__lista righe-foto--persone" aria-labelledby="persone-titolo">
+      <li class="righe-foto__voce rivela">
+        <figure class="foto"><img src="assets/img/TODO-persona-1-640.jpg" width="640" height="640" alt="TODO: chi e' e cosa sta facendo" loading="lazy" decoding="async"></figure>
+        <div class="righe-foto__testo">
+          <h3 class="h3">TODO Nome Cognome</h3>
+          <p class="corpo">TODO: ruolo e specialita', in una o due frasi prese da quello che la persona scrive di se'.</p>
+        </div>
+        <p class="mono righe-foto__dato">TODO Dal 2024</p>
+      </li>
+      <li class="righe-foto__voce rivela">
+        <figure class="foto"><img src="assets/img/TODO-persona-2-640.jpg" width="640" height="640" alt="TODO: chi e' e cosa sta facendo" loading="lazy" decoding="async"></figure>
+        <div class="righe-foto__testo">
+          <h3 class="h3">TODO Nome Cognome</h3>
+          <p class="corpo">TODO: ruolo e specialita', in una o due frasi prese da quello che la persona scrive di se'.</p>
+        </div>
+        <p class="mono righe-foto__dato">TODO Dal 2010</p>
+      </li>
+    </ul>
+  </div>
+</section>

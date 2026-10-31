@@ -1,0 +1,22 @@
+/* recensioni-voto — da Fiftynine, commit 16b3492 (stile.css «.recensioni», «.voto», «.citazioni»). */
+.recensioni__griglia{display:grid;gap:clamp(26px,4vw,56px);align-items:start}
+@media (min-width:900px){ .recensioni__griglia{grid-template-columns:.8fr 1.2fr} }
+.recensioni__voto{display:flex;flex-direction:column;gap:10px}
+.recensioni__titolo{font-size:clamp(24px,2.6vw,34px)}
+/* il numero e' la cosa che si vede: il titolo resta piccolo di proposito */
+.recensioni__numero{font-family:var(--font-titoli);font-weight:var(--titoli-peso);font-size:clamp(80px,14vw,170px);line-height:.85;letter-spacing:-.05em;color:var(--accento);font-variant-numeric:tabular-nums}
+.recensioni__numero .manca{font-size:.4em}
+.recensioni__stelle{display:flex;gap:4px;color:var(--accento)}
+.recensioni__stelle > span{display:block;width:22px;height:22px;position:relative}
+.recensioni__stelle svg{width:22px;height:22px;display:block}
+/* la quinta stella: sotto quella vuota (linea), sopra quella piena tagliata alla parte decimale */
+.recensioni__parziale svg:first-child{color:var(--linea)}
+.recensioni__parziale svg:last-child{position:absolute;inset:0;clip-path:inset(0 calc((1 - var(--pieno, 1)) * 100%) 0 0)}
+.recensioni__fonte{color:var(--inchiostro-tenue);font-size:15px}
+.recensioni__fonte a{display:inline-block;padding-block:8px;color:var(--inchiostro-forte);font-weight:600;text-decoration-color:var(--accento)}
+.recensioni__citazioni{display:flex;flex-direction:column}
+.recensioni__citazioni li{padding:22px 0;border-top:1px solid var(--linea)}
+.recensioni__citazioni li:last-child{border-bottom:1px solid var(--linea)}
+.recensioni__citazioni q{display:block;font-family:var(--font-titoli);font-weight:700;font-size:clamp(20px,2.4vw,30px);line-height:1.2;quotes:"«" "»";color:var(--inchiostro-forte);text-wrap:pretty}
+.recensioni__citazioni q::before,.recensioni__citazioni q::after{color:var(--accento)}
+.recensioni__citazioni .mono{display:block;margin-top:10px}

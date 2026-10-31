@@ -1,0 +1,51 @@
+<!-- ===== orari-adesso =====
+  Origine: Bar Tabacchi Fiftynine, ~/lavoro/bartabaccheria59, commit 16b3492 (index.html: la «linea del giorno»
+  dell'hero e il capitolo #dove con la lista degli orari; stile.css «.giorno», «.orari»).
+  Nicola: «NG Barber e Fiftynine passano, gli altri no» (il metro, direttive-siti). L'idea del Fiftynine: un sito
+  di un'attivita' con orari deve dire per prima cosa se e' aperta adesso (nota sito-fiftynine.md).
+  Gli orari stanno scritti in un posto solo, la lista qui sotto: lo script legge da li' i giorni (data-giorni,
+  0 = domenica come Date.getDay()) e le fasce (<time datetime>), calcola l'ora di Roma e scrive «Aperto adesso ·
+  chiude alle ...» oppure «Chiuso adesso · riapre ... alle ...». Un giorno senza <time> e' chiuso. Un giorno
+  con la pausa pranzo ha quattro <time>: due fasce. Il Fiftynine diceva «aperto un lunedì alle otto di sera»
+  finche' gli orari stavano in quattro posti a mano (08/09): per questo il posto e' uno.
+  Cosa e' cambiato rispetto al Fiftynine: le fasi del bar (colazione, pranzo, aperitivo) sono tolte perche' erano
+  sue; le fasce per giorno sono diventate piu' di una; la locandina degli orari e la scritta in corsivo sotto il
+  titolo sono tolte. Il binario mostra la giornata di oggi dall'apertura alla chiusura, col punto su adesso.
+  Foto: nessuna (se il cliente ha una foto della facciata, va in un'altra sezione).
+  Testi da scrivere: titolo (h2, il luogo detto come lo dice il cliente), indirizzo e telefono, gli orari VERI
+  (visti sulla scheda Google o sulla porta: se non si sono visti la lista resta TODO e la sezione non esce),
+  una nota corta sotto la lista.
+  File: orari-adesso.html + .css + .js. Senza JS si vede la lista degli orari, e basta: l'indicatore e il binario
+  hanno l'attributo hidden e li accende lo script. -->
+<section id="dove" class="orari sezione sezione--superficie" data-orari aria-labelledby="orari-titolo">
+  <div class="contenuto orari__griglia">
+    <div class="orari__dove rivela">
+      <h2 class="h2" id="orari-titolo">TODO Dove siamo</h2>
+      <address class="orari__indirizzo">
+        TODO Via e numero<br>
+        TODO CAP Citta' (provincia)<br>
+        <a href="TODO-tel">TODO telefono</a>
+      </address>
+      <div class="azioni">
+        <a class="bottone bottone--pieno" href="TODO-link-indicazioni-google-maps" target="_blank" rel="noopener">Indicazioni stradali<span class="bottone__freccia"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></span></a>
+        <a class="bottone bottone--vuoto" href="TODO-profilo" target="_blank" rel="noopener">TODO Foto su Instagram<span class="bottone__freccia"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></span></a>
+      </div>
+    </div>
+
+    <div class="orari__tabella rivela">
+      <h3 class="mono orari__etichetta">Orari di apertura</h3>
+      <p class="orari__adesso" data-orari-adesso hidden><i aria-hidden="true"></i><span>Orari qui sotto</span></p>
+      <div class="orari__binario" data-orari-binario hidden aria-hidden="true">
+        <div class="orari__pieno" data-orari-pieno></div><div class="orari__cursore" data-orari-cursore></div>
+        <span class="orari__estremo" data-orari-apre></span><span class="orari__estremo orari__estremo--fine" data-orari-chiude></span>
+      </div>
+      <ul class="orari__lista" data-orari-lista>
+        <!-- TODO: gli orari veri. Esempio di forma: una fascia, due fasce, chiuso. -->
+        <li data-giorni="1,2,3,4,5"><b>TODO Lunedì - venerdì</b><em><time datetime="09:00">9:00</time> - <time datetime="12:30">12:30</time>, <time datetime="15:00">15:00</time> - <time datetime="19:30">19:30</time></em></li>
+        <li data-giorni="6"><b>TODO Sabato</b><em><time datetime="09:00">9:00</time> - <time datetime="18:00">18:00</time></em></li>
+        <li data-giorni="0"><b>TODO Domenica</b><em>Chiuso</em></li>
+      </ul>
+      <p class="orari__nota corpo">TODO: una nota corta, per esempio dove si parcheggia o se serve prenotare.</p>
+    </div>
+  </div>
+</section>

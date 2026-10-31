@@ -1,0 +1,56 @@
+<!-- ===== prossima-uscita =====
+  Origine: Groavel, ~/lavoro/groavel-site, commit a6a1751 (index.astro «La prossima uscita», stile.css giro 4 e 5).
+  Nicola su questa sezione: la locandina non ha parallasse e resta intera, «senza il 12% in piu' che tagliava la
+  testa» (27/10, commento in stile.css); giro 5 del 29/10: «meno testo», le due partenze in due schede.
+  Regola di telefono (20/10, Strada Facendo): una scheda in evidenza sta in uno schermo, con titolo, data, luogo
+  e un bottone; il programma intero non ci va.
+  Serve a un'attivita' che ha un appuntamento datato: un evento, un'uscita, un corso che parte, una serata.
+  Se il cliente non ha una data vera, la sezione non si mette.
+  Foto: 1 locandina o foto dell'evento, quadrata o 4:5, almeno 1080 px. Si mostra intera, mai ritagliata: se e'
+  una locandina con scritte, ogni dato che contiene va anche nel testo (regola di Fiftynine, 08/09). Facoltativo:
+  il badge o l'adesivo dell'evento in PNG da 320 px.
+  Testi da scrivere: il nome dell'evento (h2), la data in lettere, da 2 a 4 coppie per la striscia (ritrovo,
+  per chi, arrivo, quota), una riga di motto se il cliente ce l'ha gia' scritta, il bottone d'iscrizione,
+  e da 0 a 2 schede di partenza (ora, nome, una frase).
+  Tolti da Groavel perche' non si parametrizzano: la forma del percorso (un SVG ricalcato dalla mappa Strava
+  dell'evento, serve la traccia vera) e la fila dei cinque adesivi delle edizioni.
+  File: prossima-uscita.html + .css. Nessun JS: le entrate usano .rivela di base.css. -->
+<section id="prossima" class="evento sezione sezione--superficie" aria-labelledby="evento-titolo">
+  <div class="contenuto">
+    <div class="evento__griglia">
+      <div class="evento__testo">
+        <img class="evento__badge" src="assets/img/TODO-badge-evento-320.png" width="160" height="160" alt="TODO: il badge dell'evento, se c'e'" loading="lazy">
+        <h2 class="h2 rivela" id="evento-titolo">TODO Nome dell'evento</h2>
+        <p class="dato evento__data rivela">TODO Domenica 15 novembre 2026</p>
+        <dl class="striscia evento__striscia rivela">
+          <div><dt>Ritrovo</dt><dd><b class="manca">TODO ora, luogo</b></dd></div>
+          <div><dt>Per chi</dt><dd><b class="manca">TODO</b></dd></div>
+          <div><dt>Arrivo</dt><dd><b class="manca">TODO ora, luogo</b></dd></div>
+          <div><dt>Quota</dt><dd><b class="manca">TODO €</b></dd></div>
+        </dl>
+        <p class="evento__motto rivela">TODO: il motto dell'evento, solo se il cliente l'ha gia' scritto.</p>
+        <div class="azioni rivela">
+          <a class="bottone bottone--pieno" href="TODO-link-iscrizione" target="_blank" rel="noopener">TODO Partecipa<span class="bottone__freccia"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></span></a>
+        </div>
+      </div>
+      <figure class="foto evento__locandina rivela">
+        <a href="assets/img/TODO-locandina-1600.jpg" target="_blank" rel="noopener" aria-label="Apri la locandina a tutta grandezza">
+          <img src="assets/img/TODO-locandina-1080.jpg" srcset="assets/img/TODO-locandina-640.jpg 640w, assets/img/TODO-locandina-1080.jpg 1080w"
+            sizes="(min-width: 1024px) 560px, 100vw" width="1080" height="1080" alt="TODO: la locandina, con i dati che contiene" loading="lazy" decoding="async">
+        </a>
+      </figure>
+    </div>
+    <ul class="evento__partenze">
+      <li class="evento__partenza rivela">
+        <p class="evento__ora">TODO 9:15</p>
+        <h3 class="h3">TODO Prima partenza</h3>
+        <p class="corpo">TODO: una frase che dice per chi e' questa partenza.</p>
+      </li>
+      <li class="evento__partenza rivela">
+        <p class="evento__ora">TODO 9:40</p>
+        <h3 class="h3">TODO Seconda partenza</h3>
+        <p class="corpo">TODO: una frase che dice per chi e' questa partenza.</p>
+      </li>
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+<!-- ===== galleria-irregolare =====
+  Origine: Groavel, ~/lavoro/groavel-site, commit a6a1751 (index.astro «Memories» e memories.astro, stile.css
+  «.griglia-foto», schede.css «/memories»).
+  Nicola: «da telefono risulta un po troppo ripetitivo e muro di foto, prova magari a disporle in modi piu
+  particolari in base alla pagina, e da telefono togline giusto un paio in modo che non sembri un muro di foto»
+  (26/10). Da qui: lo schema cambia a ogni riga, mai piu' di tre foto di fila da computer e due sul telefono,
+  e una foto si nasconde sotto i 900 px. Niente didascalie sotto le foto (17/09: «frasi sotto le foto dei tagli»
+  nell'elenco delle cose da togliere; 21/09: una didascalia che descrive la foto non aggiunge niente).
+  Schema con 6 foto. Da 900 px tre colonne a righe larga+stretta, stretta+larga, larga+stretta: la larga prende
+  due colonne in 3:2, la stretta accanto riempie l'altezza della riga. Sotto 900 px due colonne: larga, coppia,
+  larga, larga; la sesta non si mostra. Per piu' foto si ripete il gruppo di sei (l'ordine e' calcolato per
+  chiudere le righe senza buchi: schede.css di Groavel spiega il caso a 22 foto).
+  Foto: 6, almeno 1080 px. Le larghe orizzontali (3:2), le strette verticali (4:5). Un trattamento solo per
+  tutte: nessun filtro diverso foto per foto.
+  Testi da scrivere: il titolo (h2) e il link al profilo o alla pagina con tutte le foto. Solo il testo
+  alternativo per ogni foto, che dice cosa si vede.
+  File: galleria-irregolare.html + .css. Nessun JS: le foto entrano con .rivela di base.css. -->
+<section id="galleria" class="galleria sezione sezione--fondo" aria-labelledby="galleria-titolo">
+  <div class="contenuto">
+    <div class="testa-sezione">
+      <h2 class="h2 rivela" id="galleria-titolo">TODO Le foto</h2>
+      <a class="link-freccia" href="TODO-profilo" target="_blank" rel="noopener">TODO Tutte le foto su Instagram<svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></a>
+    </div>
+    <ul class="galleria__griglia">
+      <li class="galleria__voce galleria__voce--larga galleria__voce--larga-telefono rivela"><figure class="foto"><img src="assets/img/TODO-galleria-1-1080.jpg" width="1080" height="720" sizes="(min-width: 900px) 62vw, 100vw" alt="TODO: cosa si vede" loading="lazy" decoding="async"></figure></li>
+      <li class="galleria__voce galleria__voce--accanto rivela"><figure class="foto"><img src="assets/img/TODO-galleria-2-1080.jpg" width="864" height="1080" sizes="(min-width: 900px) 31vw, 50vw" alt="TODO: cosa si vede" loading="lazy" decoding="async"></figure></li>
+      <li class="galleria__voce galleria__voce--accanto rivela"><figure class="foto"><img src="assets/img/TODO-galleria-3-1080.jpg" width="864" height="1080" sizes="(min-width: 900px) 31vw, 50vw" alt="TODO: cosa si vede" loading="lazy" decoding="async"></figure></li>
+      <li class="galleria__voce galleria__voce--larga galleria__voce--larga-telefono rivela"><figure class="foto"><img src="assets/img/TODO-galleria-4-1080.jpg" width="1080" height="720" sizes="(min-width: 900px) 62vw, 100vw" alt="TODO: cosa si vede" loading="lazy" decoding="async"></figure></li>
+      <li class="galleria__voce galleria__voce--larga galleria__voce--larga-telefono rivela"><figure class="foto"><img src="assets/img/TODO-galleria-5-1080.jpg" width="1080" height="720" sizes="(min-width: 900px) 62vw, 100vw" alt="TODO: cosa si vede" loading="lazy" decoding="async"></figure></li>
+      <li class="galleria__voce galleria__voce--accanto galleria__voce--solo-grande rivela"><figure class="foto"><img src="assets/img/TODO-galleria-6-1080.jpg" width="864" height="1080" sizes="31vw" alt="TODO: cosa si vede" loading="lazy" decoding="async"></figure></li>
+    </ul>
+  </div>
+</section>

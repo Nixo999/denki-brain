@@ -1,0 +1,34 @@
+/* righe-foto-piccole — da Groavel, commit a6a1751 (stile.css «Strutture .righe», «La tecnica», «Chi pedala con te»). */
+.righe-foto__citazione{display:grid;gap:18px;margin-block:clamp(28px,4vw,48px) clamp(40px,6vw,72px)}
+.righe-foto__citazione .citazione{font-size:clamp(26px, 3.6vw, 52px);line-height:1.1;max-width:21em;letter-spacing:-.015em}
+.righe-foto__seconda{margin-top:clamp(64px,9vw,120px)}
+.righe-foto__lista{margin-top:clamp(28px,4vw,48px)}
+.righe-foto__citazione + .righe-foto__lista{margin-top:0}
+.righe-foto__lista > li{border-top:1px solid var(--linea);padding-block:24px}
+.righe-foto__lista > li:last-child{border-bottom:1px solid var(--linea)}
+.righe-foto__testa,.righe-foto__testo{display:grid;gap:10px;min-width:0;align-content:start}
+
+/* corsi: foto 4:5 piccola, nome accanto, testo sotto sul telefono e a destra da computer */
+.righe-foto__voce{display:grid;grid-template-columns:96px minmax(0,1fr);gap:20px;align-items:start}
+.righe-foto__voce > .foto{--rapporto:4/5;width:96px}
+@media (max-width:899px){ .righe-foto__voce > .righe-foto__testo:last-child{grid-column:1 / -1} }
+@media (min-width:900px){
+  .righe-foto__voce{grid-template-columns:120px minmax(0,1.2fr) minmax(0,1fr);align-items:center;gap:40px}
+  .righe-foto__voce > .foto{width:120px}
+}
+
+/* persone: foto quadrata, bio, dato a destra */
+.righe-foto--persone .righe-foto__voce{grid-template-columns:72px minmax(0,1fr);gap:18px}
+.righe-foto--persone .righe-foto__voce > .foto{--rapporto:1/1;width:72px;grid-row:1 / span 2}
+.righe-foto--persone .righe-foto__testo{grid-column:2}
+.righe-foto--persone .righe-foto__dato{grid-column:2;grid-row:1;order:-1}
+@media (max-width:899px){
+  .righe-foto--persone .righe-foto__voce > .righe-foto__testo:last-child{grid-column:2}
+  .righe-foto--persone .righe-foto__testo{grid-row:2}
+}
+@media (min-width:900px){
+  .righe-foto--persone .righe-foto__voce{grid-template-columns:96px minmax(0,1fr) 220px;gap:32px;align-items:center}
+  .righe-foto--persone .righe-foto__voce > .foto{width:96px;grid-row:auto}
+  .righe-foto--persone .righe-foto__testo,.righe-foto--persone .righe-foto__dato{grid-column:auto;grid-row:auto;order:0}
+  .righe-foto--persone .righe-foto__dato{text-align:right}
+}

@@ -1,0 +1,113 @@
+/* comuni.css — la grammatica che tutte le sezioni del catalogo condividono: tipografia, bottoni, foto,
+   contenitore, campi di sfondo, superfici del browser. Viene da Groavel (commit a6a1751, src/styles/stile.css),
+   ripulita dai pezzi che erano solo di Groavel (isoipse, ghiaia, segnali al chilometro, ciclocomputer).
+
+   Ordine dei fogli nel sito: assets/base.css (starter, non si tocca) -> token.css -> comuni.css -> sezioni.
+   Qui non c'e' nessun valore di colore o di font: tutto passa da token.css.
+   Lo stato a riposo e' quello finale: niente opacity:0 in questo file. Le entrate usano .rivela di base.css. */
+
+/* ---------- Margini del browser e superfici che non disegniamo noi ---------- */
+ul,ol{list-style:none;margin:0;padding:0}
+h1,h2,h3,p,figure,blockquote,dl,dd,address{margin:0}
+address{font-style:normal}
+html{
+  color-scheme:var(--schema);
+  background:var(--fondo);
+  scroll-padding-top:calc(var(--barra) + 16px);
+  scrollbar-color:var(--superficie-2) var(--fondo);
+  accent-color:var(--accento);caret-color:var(--accento);
+}
+body{
+  font-family:var(--font-testo);font-size:var(--t-corpo);line-height:1.55;font-weight:400;
+  color:var(--inchiostro);background:var(--fondo);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+::selection{background:var(--accento);color:var(--su-accento)}
+::-webkit-scrollbar{width:12px;height:12px}
+::-webkit-scrollbar-track{background:var(--fondo)}
+::-webkit-scrollbar-thumb{background:var(--superficie-2);border-radius:999px;border:3px solid var(--fondo)}
+a{color:inherit;text-underline-offset:.25em;text-decoration-thickness:1px}
+:focus-visible{outline:2px solid var(--accento);outline-offset:3px;border-radius:6px}
+
+/* ---------- Utilita' ---------- */
+.icona{width:1.1em;height:1.1em;flex:none}
+.solo-lettori{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.salta{position:absolute;left:var(--pad);top:-60px;z-index:120;padding:10px 16px;background:var(--inchiostro-forte);color:var(--fondo);border-radius:999px}
+.salta:focus{top:12px}
+.contenuto{max-width:var(--largo);margin-inline:auto;padding-inline:var(--pad)}
+/* Un dato che il cliente non ha ancora dato (prezzo, orario, numero): si vede in pagina e non si consegna.
+   Viene da Davide Milan (.manca), commit b39dde4. */
+.manca{font-family:var(--font-dettaglio);font-size:.82em;letter-spacing:.02em;background:color-mix(in srgb, var(--accento) 16%, transparent);color:var(--accento-testo);padding:0 .3em;border-radius:4px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+
+/* ---------- Campi di sfondo ----------
+   Tre campi vicini fra loro. Due sezioni di campo diverso si raccordano con sezioni/passaggio-curva, mai con un
+   bordo dritto (direttive 26/10 e 28/10). */
+.sezione{padding-block:var(--sezione);background:var(--campo, var(--fondo));position:relative;isolation:isolate}
+.sezione--fondo{--campo:var(--fondo)}
+.sezione--superficie{--campo:var(--superficie)}
+.sezione--superficie-2{--campo:var(--superficie-2)}
+
+/* ---------- Tipografia ---------- */
+.h1,.h2,.h3{font-family:var(--font-titoli);color:var(--inchiostro-forte);text-transform:var(--titoli-maiuscolo)}
+.h1{font-weight:var(--h1-peso);font-stretch:var(--h1-larghezza);font-size:var(--t-h1);line-height:.9;letter-spacing:-.03em}
+.h2{font-weight:var(--titoli-peso);font-stretch:var(--titoli-larghezza);font-size:var(--t-h2);line-height:.92;letter-spacing:-.01em;text-wrap:balance}
+.h3{font-weight:var(--titoli-peso);font-stretch:var(--titoli-larghezza);font-size:var(--t-h3);line-height:.95}
+.dato{font-family:var(--font-dettaglio);font-weight:600;font-size:var(--t-dato);line-height:1;color:var(--accento);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.mono{font-family:var(--font-dettaglio);font-size:var(--t-piccolo);line-height:1.5;letter-spacing:.08em;text-transform:uppercase;color:var(--inchiostro-tenue);font-variant-numeric:tabular-nums;font-weight:500}
+.corpo{font-size:var(--t-corpo);line-height:1.55;max-width:34em;color:var(--inchiostro)}
+.citazione{font-family:var(--font-titoli);font-weight:500;font-size:var(--t-citazione);line-height:1.2;letter-spacing:-.01em;text-wrap:balance;color:var(--inchiostro-forte)}
+.guida{font-family:var(--font-titoli);font-weight:500;font-size:var(--t-guida);line-height:1.4;max-width:30em;color:var(--inchiostro-forte)}
+
+/* ---------- Bottoni e link ---------- */
+.bottone{
+  display:inline-flex;align-items:center;gap:14px;min-height:48px;
+  padding:6px 6px 6px 22px;border-radius:999px;
+  font-family:var(--font-testo);font-weight:600;font-size:15px;line-height:1.1;
+  text-decoration:none;white-space:nowrap;cursor:pointer;
+  transition:background-color .2s var(--curva), color .2s var(--curva), box-shadow .2s var(--curva), transform .2s var(--curva);
+}
+.bottone__freccia{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;flex:none;transition:transform .2s var(--curva)}
+.bottone__freccia .icona{width:18px;height:18px}
+.bottone:hover .bottone__freccia{transform:translateX(3px)}
+.bottone:active{transform:scale(.98)}
+.bottone--pieno{background:var(--accento);color:var(--su-accento)}
+.bottone--pieno .bottone__freccia{background:var(--su-accento);color:var(--accento)}
+.bottone--pieno:hover{background:var(--accento-hover)}
+.bottone--vuoto{background:transparent;color:var(--inchiostro-forte);box-shadow:inset 0 0 0 1px var(--linea)}
+.bottone--vuoto .bottone__freccia{box-shadow:inset 0 0 0 1px var(--linea)}
+.bottone--vuoto:hover{box-shadow:inset 0 0 0 1px var(--inchiostro)}
+.azioni{display:flex;flex-wrap:wrap;gap:12px}
+/* Il link con la freccia: la riga sotto e' l'affordance del link, non una decorazione (direttiva 16/10 vale per le scritte) */
+.link-freccia{
+  display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:16px;color:var(--inchiostro-forte);
+  text-decoration:underline;text-decoration-color:var(--accento);text-decoration-thickness:2px;text-underline-offset:.3em;
+}
+.link-freccia .icona{transition:transform .2s var(--curva)}
+.link-freccia:hover .icona{transform:translateX(4px)}
+.pillola{
+  display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;
+  font-family:var(--font-dettaglio);font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;
+  color:var(--inchiostro);box-shadow:inset 0 0 0 1px var(--linea);
+}
+
+/* ---------- Striscia di dati (dl): due colonne sul telefono, in riga da 640 ---------- */
+.striscia{display:grid;grid-template-columns:repeat(2, minmax(0,1fr));border-top:1px solid var(--linea)}
+.striscia > div{padding:12px 12px 12px 0;border-bottom:1px solid var(--linea);min-width:0}
+.striscia > div:nth-child(2n){padding-left:12px;border-left:1px solid var(--linea)}
+.striscia dt{font-family:var(--font-dettaglio);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--inchiostro-tenue);font-weight:500}
+.striscia dd{font-family:var(--font-testo);font-weight:600;font-size:17px;line-height:1.3;font-variant-numeric:tabular-nums;color:var(--inchiostro-forte)}
+@media (min-width:640px){
+  .striscia{display:flex;flex-wrap:nowrap;border-bottom:1px solid var(--linea)}
+  .striscia > div,.striscia > div:nth-child(2n){flex:1 1 auto;min-width:0;padding:12px 20px;border:0;border-left:1px solid var(--linea)}
+  .striscia > div:first-child{padding-left:0;border-left:0}
+}
+
+/* ---------- Foto: riempie il suo spazio, un trattamento solo (raggio e filo) ----------
+   Il rapporto va su --rapporto. Mai cornicette, mai foto allargate oltre i loro pixel (direttive 10-11/09, 26/10). */
+.foto{overflow:hidden;border-radius:var(--raggio);aspect-ratio:var(--rapporto, 4/5);box-shadow:0 0 0 1px var(--linea);background:var(--superficie-2)}
+.foto img{width:100%;height:100%;object-fit:cover}
+
+/* ---------- Due colonne da computer ---------- */
+.due{display:grid;gap:40px}
+@media (min-width:900px){ .due{grid-template-columns:repeat(2, minmax(0,1fr));gap:clamp(24px, 4vw, 64px);align-items:center} }
+.testa-sezione{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px 32px}

@@ -1,0 +1,42 @@
+<!-- ===== barra-fissa =====
+  Origine: Groavel, ~/lavoro/groavel-site, commit a6a1751 (src/components/Barra.astro, stile.css «Barra»).
+  Nicola: «da telefono la navbar non va bene perche è appiccicata al titolo e comunque è scomoda una nav bar
+  così da telefono» (20/10, direttive-siti). Da qui: sotto 1024 px le voci stanno in un menu che si apre a
+  parte, e fra la barra e il titolo ci sono almeno 16 px (la sezione sotto parte da var(--barra) + 32 px).
+  Foto: nessuna. Serve il logo del cliente in PNG o SVG, quadrato, almeno 96 px (88 px a schermo da computer
+  su un telefono a doppia densita'). Il logo vero, mai ridisegnato (direttive 16/09 e 19/09).
+  Testi da scrivere: il nome del cliente, da 3 a 5 voci di menu che puntano alle sezioni, il bottone di
+  contatto (un verbo e il canale: «Scrivici», «Prenota»).
+  File: barra-fissa.html + barra-fissa.css + barra-fissa.js. Il JS e' facoltativo: senza, il menu si apre e
+  si chiude lo stesso (<details>), manca solo l'ombra quando si scende e la chiusura con Esc.
+  La barra va subito dentro <body>, prima di <main>. -->
+<div class="barra__sentinella" data-sentinella aria-hidden="true"></div>
+<header class="barra" data-barra>
+  <div class="barra__dentro">
+    <a class="barra__marchio" href="#" aria-label="TODO nome del cliente, torna su">
+      <img class="barra__logo" src="assets/img/logo-cliente.png" width="44" height="44" alt="">
+      <span class="barra__nome" aria-hidden="true">TODO Nome</span>
+    </a>
+    <nav class="barra__voci" aria-label="Sezioni del sito">
+      <a href="#TODO-sezione-1">TODO voce</a>
+      <a href="#TODO-sezione-2">TODO voce</a>
+      <a href="#TODO-sezione-3">TODO voce</a>
+      <a href="#contatti">TODO Contatti</a>
+    </nav>
+    <a class="bottone bottone--pieno barra__azione" href="TODO-link-contatto" target="_blank" rel="noopener">
+      <span>TODO Scrivici</span><span class="bottone__freccia"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></span>
+    </a>
+    <details class="barra__menu" data-menu>
+      <summary aria-label="Apri il menu">
+        <svg class="icona barra__apri" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H40a6,6,0,0,1,0-12H216A6,6,0,0,1,222,128ZM40,70H216a6,6,0,0,0,0-12H40a6,6,0,0,0,0,12ZM216,186H40a6,6,0,0,0,0,12H216a6,6,0,0,0,0-12Z"/></svg>
+        <svg class="icona barra__chiudi" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M204.24,195.76a6,6,0,1,1-8.48,8.48L128,136.49,60.24,204.24a6,6,0,0,1-8.48-8.48L119.51,128,51.76,60.24a6,6,0,0,1,8.48-8.48L128,119.51l67.76-67.75a6,6,0,0,1,8.48,8.48L136.49,128Z"/></svg>
+      </summary>
+      <nav class="barra__foglio" aria-label="Sezioni del sito, telefono">
+        <a href="#TODO-sezione-1">TODO voce</a>
+        <a href="#TODO-sezione-2">TODO voce</a>
+        <a href="#TODO-sezione-3">TODO voce</a>
+        <a href="#contatti">TODO Contatti</a>
+      </nav>
+    </details>
+  </div>
+</header>

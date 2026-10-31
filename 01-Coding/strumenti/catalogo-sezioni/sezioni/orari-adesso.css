@@ -1,0 +1,31 @@
+/* orari-adesso — da Fiftynine, commit 16b3492 (stile.css «.giorno», «.binario», «.dove», «.orari»). */
+.orari__griglia{display:grid;gap:clamp(26px,4vw,56px)}
+@media (min-width:900px){ .orari__griglia{grid-template-columns:1.05fr .95fr;align-items:start} }
+.orari__dove{display:grid;gap:22px;align-content:start}
+.orari__indirizzo{font-size:clamp(18px,2vw,22px);line-height:1.45;color:var(--inchiostro-forte)}
+.orari__indirizzo a{display:inline-block;padding-block:8px;font-weight:600;text-decoration-color:var(--accento)}
+.orari__tabella{display:grid;gap:14px;align-content:start;max-width:460px}
+.orari__etichetta{font-weight:600}
+
+/* «Aperto adesso»: il punto batte piano quando e' aperto, e' spento quando e' chiuso */
+.orari__adesso{display:flex;align-items:center;gap:10px;font-family:var(--font-titoli);font-weight:700;font-size:clamp(20px,2.2vw,26px);line-height:1.2;color:var(--inchiostro-forte)}
+.orari__adesso i{width:10px;height:10px;border-radius:50%;flex:none;background:var(--accento);box-shadow:0 0 0 0 color-mix(in srgb, var(--accento) 60%, transparent);animation:orari-batte 2s ease-out infinite}
+.orari__adesso.chiuso i{background:var(--inchiostro-tenue);animation:none}
+@keyframes orari-batte{70%{box-shadow:0 0 0 10px transparent}100%{box-shadow:0 0 0 0 transparent}}
+
+/* il binario della giornata di oggi: dall'apertura alla chiusura, col punto su adesso */
+.orari__binario{position:relative;height:4px;margin:6px 0 30px;background:var(--linea);border-radius:4px}
+.orari__pieno{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--accento);border-radius:4px;transform-origin:left center}
+.orari__cursore{position:absolute;top:50%;left:0;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:var(--fondo);border:3px solid var(--accento);display:none}
+.orari__cursore.visibile{display:block}
+.orari__estremo{position:absolute;top:12px;left:0;font-family:var(--font-dettaglio);font-size:12px;letter-spacing:.06em;color:var(--inchiostro-tenue);font-variant-numeric:tabular-nums}
+.orari__estremo--fine{left:auto;right:0}
+.js:not(.cattura) .orari__pieno{transition:width 1.4s var(--curva)}
+
+.orari__lista{display:flex;flex-direction:column}
+.orari__lista li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:12px 0;border-top:1px solid var(--linea)}
+.orari__lista li:last-child{border-bottom:1px solid var(--linea)}
+.orari__lista b{font-weight:600;color:var(--inchiostro-forte)}
+.orari__lista em{font-style:normal;font-family:var(--font-dettaglio);font-weight:600;font-size:15px;color:var(--accento-testo);text-align:right;font-variant-numeric:tabular-nums}
+.orari__lista li[data-oggi] b::after{content:" · oggi";font-weight:400;color:var(--inchiostro-tenue)}
+.orari__nota{max-width:44ch}

@@ -1,0 +1,41 @@
+/* barra-fissa — da Groavel, commit a6a1751 (stile.css, «Barra»). Legge solo token.css e comuni.css. */
+.barra{position:fixed;inset:0 0 auto 0;z-index:50;height:var(--barra);background:var(--fondo);transition:box-shadow .3s var(--curva)}
+.barra.scesa{box-shadow:0 1px 0 var(--linea), 0 12px 24px -18px rgba(0,0,0,.6)}
+.barra__sentinella{position:absolute;top:80px;left:0;width:1px;height:1px;pointer-events:none}
+.barra__dentro{display:flex;align-items:center;gap:20px;height:100%;padding-inline:var(--pad);max-width:1440px;margin-inline:auto}
+.barra__marchio{display:inline-flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto;min-width:0}
+.barra__logo{width:36px;height:36px;flex:none}
+.barra__nome{font-family:var(--font-titoli);font-weight:800;font-size:19px;letter-spacing:-.01em;color:var(--inchiostro-forte);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.barra__voci{display:none;gap:28px}
+/* la voce sotto il puntatore cambia colore: niente riga che cresce sotto la parola (direttiva 16/10) */
+.barra__voci a{text-decoration:none;font-weight:500;font-size:15px;padding-block:8px;color:var(--inchiostro);transition:color .2s var(--curva)}
+.barra__voci a:hover,.barra__voci a[aria-current="true"]{color:var(--accento-testo)}
+.barra__azione{min-height:40px;padding:4px 4px 4px 16px;font-size:14px;gap:10px}
+.barra__azione .bottone__freccia{width:32px;height:32px}
+.barra__menu{position:relative}
+.barra__menu > summary{
+  list-style:none;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;cursor:pointer;
+  color:var(--inchiostro-forte);box-shadow:inset 0 0 0 1px var(--linea);
+}
+.barra__menu > summary::-webkit-details-marker{display:none}
+.barra__menu > summary .icona{width:22px;height:22px}
+.barra__chiudi,.barra__menu[open] .barra__apri{display:none}
+.barra__menu[open] .barra__chiudi{display:block}
+.barra__menu:not([open]) .barra__foglio{display:none}
+.barra__foglio{
+  position:fixed;left:0;right:0;top:var(--barra);z-index:49;
+  display:grid;padding:8px var(--pad) 28px;background:var(--fondo);
+  box-shadow:0 1px 0 var(--linea), 0 24px 32px -24px rgba(0,0,0,.6);
+}
+.barra__foglio a{
+  display:flex;justify-content:space-between;align-items:center;min-height:56px;text-decoration:none;
+  font-family:var(--font-titoli);font-weight:var(--titoli-peso);font-stretch:var(--titoli-larghezza);font-size:30px;
+  text-transform:var(--titoli-maiuscolo);color:var(--inchiostro-forte);border-bottom:1px solid var(--linea);
+}
+@media (max-width:420px){ .barra__azione{font-size:13px} .barra__nome{font-size:17px} }
+@media (max-width:359px){ .barra__nome{display:none} }
+@media (min-width:1024px){
+  .barra__logo{width:44px;height:44px}
+  .barra__voci{display:flex}
+  .barra__menu{display:none}
+}

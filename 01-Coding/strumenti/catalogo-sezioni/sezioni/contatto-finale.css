@@ -1,0 +1,10 @@
+/* contatto-finale — da Groavel, commit a6a1751 (stile.css «All'arrivo»). */
+.contatto__dentro{container-type:inline-size}
+/* il titolo e' grande quanto il nome dell'hero: 16cqi tara una parola corta sulla larghezza del contenuto */
+.contatto__titolo{font-size:min(200px, 16cqi);line-height:.85;text-wrap:balance}
+.contatto__griglia{display:grid;gap:40px;margin-top:clamp(32px,5vw,56px)}
+.contatto__corpo{display:grid;gap:22px;align-content:start}
+.contatto__righe{display:grid;border-top:1px solid var(--linea)}
+.contatto__righe li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;padding-block:16px;border-bottom:1px solid var(--linea);color:var(--inchiostro-forte)}
+.contatto__righe a{font-weight:600;font-size:clamp(17px, 2vw, 22px);overflow-wrap:anywhere}
+@media (min-width:900px){ .contatto__griglia{grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:start} }

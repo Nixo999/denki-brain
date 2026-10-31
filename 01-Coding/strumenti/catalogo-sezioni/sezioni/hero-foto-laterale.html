@@ -1,0 +1,36 @@
+<!-- ===== hero-foto-laterale =====
+  Origine: Groavel, ~/lavoro/groavel-site, commit a6a1751 (src/pages/index.astro «Ritrovo», stile.css «Hero»).
+  Nicola su Groavel, dal telefono (29/10, commit 14b57be e 9df4fe5): testo e bottoni al centro sotto i 900 px,
+  e via la foto dall'hero. Sul sito intero: «con quello siamo sulla strada giusta» (30/10).
+  Regole che la forma rispetta: l'h1 e' il nome del cliente e la sua frase sta sotto, piccola (14/09: «un titolo
+  con il suo nome e una frase sotto in piccolo»); la foto e' piccola e di lato, mai a tutta larghezza (07/10);
+  da computer lo spazio si usa su due colonne (07/10).
+  ATTENZIONE, due direttive tirano in versi opposti. Groavel sul telefono non ha la foto (Nicola, 29/10), ma lo
+  stesso giorno su OperO: «linizio con solo la scritta grande non mi pice, metti delle immagini». Per questo qui
+  sotto i 900 px la foto resta, piccola, sotto i bottoni, ed entra nel primo schermo a 375x812. La classe
+  hero-fl--senza-foto-telefono rifa' Groavel com'e': si usa solo se nel primo schermo c'e' comunque un'immagine.
+  Foto: 1, verticale 4:5, almeno 1080 px sul lato lungo (a schermo e' larga al massimo 340 px). Sul telefono
+  la stessa foto si vede in 3:2: il soggetto va tenuto al centro, o si sposta con object-position. Facoltativo:
+  il logo del cliente in PNG trasparente da 512 px, che sta dietro al testo all'8% (la «ruota» di Groavel).
+  Testi da scrivere: il nome (h1), una frase sotto (una sola, con soggetto e verbo), una riga in carattere di
+  dettaglio con citta' e fatti verificabili, due bottoni (contatto e sezione principale).
+  File: hero-foto-laterale.html + .css. Nessun JS: l'entrata vive in CSS sotto .js:not(.cattura) e a riposo
+  la pagina e' gia' nello stato finale. Va subito dopo la barra-fissa. -->
+<section id="inizio" class="hero-fl sezione sezione--fondo">
+  <img class="hero-fl__marchio" src="assets/img/logo-cliente-512.png" width="512" height="512" alt="" aria-hidden="true">
+  <div class="contenuto hero-fl__griglia">
+    <h1 class="h1 hero-fl__nome"><span>TODO Nome</span></h1>
+    <div class="hero-fl__corpo">
+      <p class="guida">TODO: una frase sola su cosa fa il cliente e per chi, con soggetto e verbo.</p>
+      <p class="mono">TODO citta' · un fatto verificabile · un altro fatto</p>
+      <div class="azioni">
+        <a class="bottone bottone--pieno" href="TODO-link-contatto" target="_blank" rel="noopener">TODO Scrivi su Instagram<span class="bottone__freccia"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></span></a>
+        <a class="bottone bottone--vuoto" href="#TODO-sezione-principale">TODO La sezione principale<span class="bottone__freccia"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M204.24,148.24l-72,72a6,6,0,0,1-8.48,0l-72-72a6,6,0,0,1,8.48-8.48L122,201.51V40a6,6,0,0,1,12,0V201.51l61.76-61.75a6,6,0,0,1,8.48,8.48Z"/></svg></span></a>
+      </div>
+    </div>
+    <figure class="foto hero-fl__foto">
+      <img src="assets/img/TODO-hero-1080.jpg" srcset="assets/img/TODO-hero-640.jpg 640w, assets/img/TODO-hero-1080.jpg 1080w"
+        sizes="(min-width: 900px) 340px, 62vw" width="864" height="1080" alt="TODO: cosa si vede nella foto" fetchpriority="high" decoding="async">
+    </figure>
+  </div>
+</section>

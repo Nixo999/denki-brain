@@ -1,0 +1,45 @@
+/* hero-foto-laterale — da Groavel, commit a6a1751 (stile.css «Hero» e regole «Sotto 900»). */
+.hero-fl{
+  /* almeno 16 px fra la barra fissa e il nome: qui sono da 32 a 56 (direttiva 20/10) */
+  padding-top:calc(var(--barra) + clamp(32px, 6vw, 56px));
+  padding-bottom:clamp(56px, 8vw, 104px);
+  overflow:clip;
+}
+.hero-fl__griglia{container-type:inline-size;display:grid;gap:28px;position:relative;z-index:1}
+/* il nome sta su una riga quando ci sta: 15.6cqi e' la misura di Groavel (7 lettere). Con un nome lungo va a capo */
+.hero-fl__nome{font-size:min(var(--t-h1), 15.6cqi);text-wrap:balance}
+.hero-fl__corpo{display:grid;gap:22px;align-content:start}
+.hero-fl__foto{width:min(62vw, 340px);--rapporto:4/5}
+/* il logo del cliente dietro al testo, fermo e appena visibile */
+.hero-fl__marchio{position:absolute;right:-6%;bottom:-10%;width:min(42vw, 560px);height:auto;opacity:.08;z-index:0;pointer-events:none}
+
+@media (min-width:900px){
+  .hero-fl__griglia{grid-template-columns:minmax(0,1fr) auto;column-gap:clamp(32px,6vw,96px);row-gap:clamp(28px,4vw,48px)}
+  .hero-fl__nome{grid-column:1 / -1}
+  .hero-fl__corpo{padding-bottom:36px}
+  .hero-fl__corpo .azioni{margin-top:10px}
+  .hero-fl .guida{font-size:clamp(19px, 2vw, 28px);line-height:1.25;max-width:20em;letter-spacing:-.01em}
+  .hero-fl__foto{width:clamp(260px, 26vw, 340px)}
+}
+@media (max-width:899px){
+  .hero-fl__corpo{justify-items:center;text-align:center}
+  .hero-fl__nome{text-align:center}
+  .hero-fl .guida{max-width:22em}
+  .hero-fl .azioni{justify-content:center}
+  /* sul telefono la foto resta piccola, in 3:2, sotto i bottoni: entra nel primo schermo a 375x812 */
+  .hero-fl__foto{--rapporto:3/2;justify-self:center;width:min(78vw, 360px)}
+  .hero-fl--senza-foto-telefono .hero-fl__foto{display:none}
+}
+
+/* Entrata: il nome sale dalla sua riga, poi frase, bottoni e foto. Solo con JS e fuori da ?cattura:
+   senza animazione (o con reduced-motion, che base.css accorcia a 0,01 ms) resta lo stato finale. */
+.hero-fl__nome{overflow:clip;padding-block:.08em;margin-block:-.08em}
+.hero-fl__nome > span{display:inline-block}
+.js:not(.cattura) .hero-fl__nome > span{animation:hero-fl-sale .7s var(--curva) .1s both}
+.js:not(.cattura) .hero-fl__corpo > *,.js:not(.cattura) .hero-fl__foto{animation:hero-fl-entra .55s var(--curva) both}
+.js:not(.cattura) .hero-fl__corpo > :nth-child(1){animation-delay:.35s}
+.js:not(.cattura) .hero-fl__corpo > :nth-child(2){animation-delay:.42s}
+.js:not(.cattura) .hero-fl__corpo > :nth-child(3){animation-delay:.49s}
+.js:not(.cattura) .hero-fl__foto{animation-delay:.45s}
+@keyframes hero-fl-sale{from{transform:translateY(105%)}}
+@keyframes hero-fl-entra{from{opacity:0;transform:translateY(24px)}}

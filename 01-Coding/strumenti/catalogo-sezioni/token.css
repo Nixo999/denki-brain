@@ -1,0 +1,67 @@
+/* token.css — le variabili che ogni sezione del catalogo legge, e nient'altro.
+   Le sezioni non contengono un colore, un font o una misura scritti a mano: li prendono tutti da qui.
+
+   Come si usa: si copia questo file nel sito accanto a base.css dello starter, si carica DOPO base.css e PRIMA
+   di comuni.css e delle sezioni, e si sostituisce ogni valore marcato TODO con quello del cliente (dalla tavola
+   di direzione scelta da Nicola). I valori scritti qui sotto sono quelli di Groavel, giro 4 «Scuro» (commit
+   a6a1751 del 30/10/2026, src/styles/stile.css): servono da esempio e fanno girare prova.html.
+
+   Regole che valgono per qualunque cliente (01-Coding/stack/direttive-siti.md):
+   - un accento solo; i campi di sfondo restano nella stessa famiglia, con poco contrasto fra loro (28/10:
+     «il colore è sempre diverso e sembra una roba buttata lì a caso»);
+   - mai #000 e mai #fff puri: il piu' scuro e il piu' chiaro hanno sempre una tinta;
+   - i contrasti si rimisurano sul sito vero: testo piccolo almeno 4,5:1 su ogni campo dove compare. */
+
+:root{
+  /* ---------- Campi di sfondo: tre superfici vicine fra loro, piu' il piede ---------- */
+  --fondo:#0D0E10;            /* TODO: il campo principale. Groavel: nero, mai #000 */
+  --superficie:#16181B;       /* TODO: il secondo campo, poco piu' chiaro o piu' scuro del fondo. Groavel: grafite */
+  --superficie-2:#212428;     /* TODO: il terzo campo, per una sezione su tre al massimo. Groavel: fumo */
+  --fondo-piede:#050607;      /* TODO: il campo del piede, il piu' profondo. Groavel: notte fonda */
+
+  /* ---------- Inchiostri ---------- */
+  --inchiostro:#C6C9CC;       /* TODO: il testo corrente. Groavel: argento, 10,9:1 sul fondo */
+  --inchiostro-forte:#F1EFE8; /* TODO: titoli e dati importanti. Groavel: gesso */
+  --inchiostro-tenue:#AEB3B8; /* TODO: righe in carattere di dettaglio, etichette. Groavel: cenere, 4,79:1 sul campo piu' chiaro */
+  --linea:rgba(241,239,232,.12); /* TODO: filetti e bordi delle foto. Groavel: gesso al 12% */
+
+  /* ---------- L'accento: uno solo ---------- */
+  --accento:#F4772B;          /* TODO: bottoni pieni, dati, filetti accesi. Groavel: l'arancio del badge della Social Ride */
+  --accento-testo:#FF9A5C;    /* TODO: l'accento quando e' testo piccolo su fondo (voce di menu attiva). Groavel: arancio chiaro */
+  --accento-hover:#FF8A45;    /* TODO: il bottone pieno sotto il puntatore */
+  --su-accento:#0D0E10;       /* TODO: il testo sopra un bottone pieno. Groavel: il nero del fondo */
+  --schema:dark;              /* TODO: dark se il fondo e' scuro, light se e' chiaro (color-scheme del browser) */
+
+  /* ---------- Caratteri ---------- */
+  /* TODO: le due famiglie scelte con lo studio dei font (direttive 18/09: «come su bartabacchi 59»).
+     Groavel: Archivo variabile con l'asse della larghezza, JetBrains Mono per dati e orari. I file si caricano
+     nella testa della pagina (Google Fonts o self-host), non qui. */
+  --font-titoli:'Archivo', system-ui, sans-serif;
+  --font-testo:'Archivo', system-ui, sans-serif;
+  --font-dettaglio:'JetBrains Mono', ui-monospace, 'SFMono-Regular', monospace; /* solo dati, orari, misure */
+  --h1-peso:900;              /* TODO */
+  --h1-larghezza:125%;        /* TODO: font-stretch del nome. 100% se il carattere non ha l'asse wdth */
+  --titoli-peso:800;          /* TODO */
+  --titoli-larghezza:85%;     /* TODO: font-stretch di h2 e h3 */
+  --titoli-maiuscolo:uppercase; /* TODO: none se il carattere dei titoli non regge il maiuscolo */
+
+  /* ---------- Scala tipografica ---------- */
+  --t-h1:clamp(44px, 13vw, 168px);   /* TODO: il nome del cliente. A 375 il nome deve stare su una riga: si misura */
+  --t-h2:clamp(36px, 5.5vw, 76px);   /* TODO */
+  --t-h3:clamp(26px, 3.2vw, 44px);   /* TODO */
+  --t-dato:clamp(28px, 4vw, 56px);   /* TODO: date, chilometri, prezzi in evidenza */
+  --t-citazione:clamp(22px, 3vw, 38px); /* TODO */
+  --t-guida:19px;                    /* TODO: la frase sotto il nome e l'attacco dei paragrafi */
+  --t-corpo:17px;                    /* TODO */
+  --t-piccolo:13px;                  /* TODO: righe in carattere di dettaglio */
+
+  /* ---------- Forme e spazi ---------- */
+  --raggio:12px;                     /* TODO: angoli di foto, schede e locandine. 0 se il mondo e' squadrato */
+  --pad:clamp(20px, 5vw, 72px);      /* margine laterale: si cambia di rado */
+  --sezione:clamp(64px, 10vw, 128px);/* spazio sopra e sotto ogni sezione: una misura sola per tutta la pagina */
+  --largo:1280px;                    /* larghezza massima del contenuto */
+  --barra:64px;                      /* altezza della barra fissa; 72 da 1024, sotto */
+  --curva:cubic-bezier(.16,1,.3,1);  /* uscita esponenziale per entrate e hover */
+  --curva-io:cubic-bezier(.65,0,.35,1);
+}
+@media (min-width:1024px){ :root{ --barra:72px } }

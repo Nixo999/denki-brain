@@ -1,0 +1,18 @@
+/* galleria-irregolare — da Groavel, commit a6a1751 (stile.css «.griglia-foto», schede.css «/memories»). */
+.galleria__griglia{display:grid;grid-template-columns:repeat(2, minmax(0,1fr));gap:12px;margin-top:clamp(32px,5vw,56px)}
+.galleria__voce{min-width:0}
+.galleria__voce > .foto{width:100%;height:auto;--rapporto:4/5}
+.galleria__voce--solo-grande{display:none}
+@media (max-width:899px){
+  .galleria__voce--larga-telefono{grid-column:span 2}
+  .galleria__voce--larga-telefono > .foto{--rapporto:3/2}
+}
+@media (min-width:900px){
+  .galleria__griglia{grid-template-columns:repeat(3, minmax(0,1fr));gap:16px}
+  .galleria__voce--solo-grande{display:block}
+  .galleria__voce--larga{grid-column:span 2}
+  .galleria__voce--larga > .foto{--rapporto:3/2}
+  /* la stretta accanto a una larga riempie l'altezza della riga: non e' lei a decidere quanto e' alta */
+  .galleria__voce--accanto{position:relative;min-height:100%}
+  .galleria__voce--accanto > .foto{position:absolute;inset:0;height:100%;aspect-ratio:auto}
+}

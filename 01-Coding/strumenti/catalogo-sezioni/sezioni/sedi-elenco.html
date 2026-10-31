@@ -1,0 +1,60 @@
+<!-- ===== sedi-elenco =====
+  Origine: NG Barber Studio, ~/lavoro/ngbarber-site, commit 648187b (index.html, capitolo «SEDI», l'unico pin
+  della pagina: la sede attiva si accende mentre si scorre, le altre restano spente).
+  Nicola: «NG Barber e Fiftynine passano, gli altri no» (il metro, direttive-siti); «per NG Barber non gli ho
+  detto niente e ha fatto un sito bellissimo» (11/09).
+  Cosa e' cambiato rispetto a NG Barber, e perche':
+  - al posto del globo del logo ridisegnato in SVG c'e' la foto della sede attiva: il logo del cliente non si
+    ridisegna (16/09 e 19/09) e Trevis non disegna (12/10);
+  - niente pin con scrub: la cornice sta ferma con position:sticky e la sede attiva cambia a meta' schermo, come
+    in scena-tappe. Lo scrub a 1 trascinava («lanimazione allo scrol [...] sembra troppo lenta», 20/10);
+  - sul telefono niente cornice: ogni sede porta la sua foto piccola, e sono tutte accese (come in NG Barber);
+  - via la numerazione «02 — Dove siamo» sopra la lista (07/10).
+  Serve a un cliente con due o piu' sedi, o con piu' luoghi di lavoro fissi. Con una sede sola si usa
+  orari-adesso.
+  Foto: una per sede, la facciata o l'interno, almeno 1080 px, verticale 4:5.
+  Testi da scrivere: titolo (h2), per ogni sede il paese o la zona, la citta' (h3), l'indirizzo, il link a
+  Google Maps con l'indirizzo vero; facoltativa una riga col telefono.
+  File: sedi-elenco.html + .css + .js. Senza JS tutte le sedi sono accese e la cornice mostra la prima foto. -->
+<section id="sedi" class="sedi sezione sezione--fondo" data-sedi aria-labelledby="sedi-titolo">
+  <div class="contenuto sedi__griglia">
+    <div class="sedi__palco" aria-hidden="true">
+      <figure class="sedi__cornice">
+        <img class="sedi__foto" data-sede-foto="0" data-visibile src="assets/img/TODO-sede-1-1080.jpg" width="864" height="1080" alt="" loading="lazy" decoding="async">
+        <img class="sedi__foto" data-sede-foto="1" src="assets/img/TODO-sede-2-1080.jpg" width="864" height="1080" alt="" loading="lazy" decoding="async">
+        <img class="sedi__foto" data-sede-foto="2" src="assets/img/TODO-sede-3-1080.jpg" width="864" height="1080" alt="" loading="lazy" decoding="async">
+      </figure>
+    </div>
+    <div class="sedi__lista">
+      <h2 class="h2 rivela" id="sedi-titolo">TODO Dove siamo</h2>
+      <article class="sede" data-sede>
+        <figure class="foto sede__foto"><img src="assets/img/TODO-sede-1-640.jpg" width="512" height="640" alt="TODO: la sede, da fuori o da dentro" loading="lazy" decoding="async"></figure>
+        <div class="sede__testo">
+          <p class="mono">TODO Italia</p>
+          <h3 class="h3">TODO Citta' 1</h3>
+          <p class="sede__indirizzo"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M128,66a38,38,0,1,0,38,38A38,38,0,0,0,128,66Zm0,64a26,26,0,1,1,26-26A26,26,0,0,1,128,130Zm0-112a86.1,86.1,0,0,0-86,86c0,30.91,14.34,63.74,41.47,94.94a252.32,252.32,0,0,0,41.09,38,6,6,0,0,0,6.88,0,252.32,252.32,0,0,0,41.09-38c27.13-31.2,41.47-64,41.47-94.94A86.1,86.1,0,0,0,128,18Zm0,206.51C113,212.93,54,163.62,54,104a74,74,0,0,1,148,0C202,163.62,143,212.93,128,224.51Z"/></svg>TODO Via e numero</p>
+          <a class="pillola sede__mappa" href="TODO-link-google-maps" target="_blank" rel="noopener">Apri in Maps</a>
+        </div>
+      </article>
+      <article class="sede" data-sede>
+        <figure class="foto sede__foto"><img src="assets/img/TODO-sede-2-640.jpg" width="512" height="640" alt="TODO: la sede, da fuori o da dentro" loading="lazy" decoding="async"></figure>
+        <div class="sede__testo">
+          <p class="mono">TODO Italia</p>
+          <h3 class="h3">TODO Citta' 2</h3>
+          <p class="sede__indirizzo"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M128,66a38,38,0,1,0,38,38A38,38,0,0,0,128,66Zm0,64a26,26,0,1,1,26-26A26,26,0,0,1,128,130Zm0-112a86.1,86.1,0,0,0-86,86c0,30.91,14.34,63.74,41.47,94.94a252.32,252.32,0,0,0,41.09,38,6,6,0,0,0,6.88,0,252.32,252.32,0,0,0,41.09-38c27.13-31.2,41.47-64,41.47-94.94A86.1,86.1,0,0,0,128,18Zm0,206.51C113,212.93,54,163.62,54,104a74,74,0,0,1,148,0C202,163.62,143,212.93,128,224.51Z"/></svg>TODO Via e numero</p>
+          <a class="pillola sede__mappa" href="TODO-link-google-maps" target="_blank" rel="noopener">Apri in Maps</a>
+        </div>
+      </article>
+      <article class="sede" data-sede>
+        <figure class="foto sede__foto"><img src="assets/img/TODO-sede-3-640.jpg" width="512" height="640" alt="TODO: la sede, da fuori o da dentro" loading="lazy" decoding="async"></figure>
+        <div class="sede__testo">
+          <p class="mono">TODO Svizzera</p>
+          <h3 class="h3">TODO Citta' 3</h3>
+          <p class="sede__indirizzo"><svg class="icona" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M128,66a38,38,0,1,0,38,38A38,38,0,0,0,128,66Zm0,64a26,26,0,1,1,26-26A26,26,0,0,1,128,130Zm0-112a86.1,86.1,0,0,0-86,86c0,30.91,14.34,63.74,41.47,94.94a252.32,252.32,0,0,0,41.09,38,6,6,0,0,0,6.88,0,252.32,252.32,0,0,0,41.09-38c27.13-31.2,41.47-64,41.47-94.94A86.1,86.1,0,0,0,128,18Zm0,206.51C113,212.93,54,163.62,54,104a74,74,0,0,1,148,0C202,163.62,143,212.93,128,224.51Z"/></svg>TODO Via e numero</p>
+          <a class="pillola sede__mappa" href="TODO-link-google-maps" target="_blank" rel="noopener">Apri in Maps</a>
+        </div>
+      </article>
+      <p class="sedi__telefono">TODO Citta' 1: <a href="TODO-tel"><b class="manca">TODO telefono</b></a></p>
+    </div>
+  </div>
+</section>

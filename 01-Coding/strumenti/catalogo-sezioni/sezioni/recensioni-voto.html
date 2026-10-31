@@ -1,0 +1,31 @@
+<!-- ===== recensioni-voto =====
+  Origine: Bar Tabacchi Fiftynine, ~/lavoro/bartabaccheria59, commit 16b3492 (index.html «RECENSIONI»,
+  stile.css «.voto», «.citazioni»).
+  Nicola: «NG Barber e Fiftynine passano, gli altri no» (il metro); sul giro 1 di Dragonfly: «mancano delle belle
+  recensioni scritte affianco alle loro recensioni su google, prendine alcune vere ma belle da lì» (18/09).
+  Regole: le recensioni sono vere e citate con il nome come appare su Google (iniziale del cognome); il voto e il
+  numero di recensioni sono quelli della scheda nel giorno in cui si guarda; niente superlativi aggiunti da noi
+  (14/09). Se la scheda Google non c'e' o ha meno di 10 recensioni, la sezione non si mette.
+  Le stelle sono icone Phosphor (MIT), non disegni nostri; la quinta si riempie per la parte decimale del voto
+  con --pieno (0,4 per un 4,4).
+  Foto: nessuna.
+  Testi da scrivere: il voto con la virgola, il numero di recensioni, il link alla scheda Google, da 2 a 4
+  citazioni corte copiate tali e quali, ognuna con il nome.
+  File: recensioni-voto.html + .css. Nessun JS. -->
+<section id="recensioni" class="recensioni sezione sezione--fondo" aria-labelledby="recensioni-titolo">
+  <div class="contenuto recensioni__griglia">
+    <div class="recensioni__voto rivela">
+      <h2 class="h2 recensioni__titolo" id="recensioni-titolo">TODO Le recensioni</h2>
+      <p class="recensioni__numero"><b class="manca">TODO 4,4</b></p>
+      <div class="recensioni__stelle" role="img" aria-label="TODO 4,4 stelle su 5" style="--pieno:.4">
+        <span><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg></span><span><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg></span><span><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg></span><span><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg></span><span class="recensioni__parziale"><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg></span>
+      </div>
+      <p class="recensioni__fonte">su Google, da <b class="manca">TODO numero</b> recensioni. <a href="TODO-link-scheda-google" target="_blank" rel="noopener">Leggile su Google</a></p>
+    </div>
+    <ul class="recensioni__citazioni">
+      <li class="rivela"><q>TODO: una recensione vera, copiata tale e quale.</q><span class="mono">TODO Nome I. · Google</span></li>
+      <li class="rivela"><q>TODO: una recensione vera, copiata tale e quale.</q><span class="mono">TODO Nome I. · Google</span></li>
+      <li class="rivela"><q>TODO: una recensione vera, copiata tale e quale.</q><span class="mono">TODO Nome I. · Google</span></li>
+    </ul>
+  </div>
+</section>
