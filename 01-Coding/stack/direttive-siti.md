@@ -1,7 +1,7 @@
 ---
 type: risorsa
 riga: Ogni correzione che Nicola ha dato su un sito, diventata regola permanente. Si legge prima di costruire e prima di pubblicare.
-updated: 2026-10-29
+updated: 2026-10-31
 verificato: 2026-09-11
 source: denkicode
 tags: [siti, design, direttive, qualita]
@@ -30,6 +30,10 @@ quelle due, non è pronta.
 
 ## Le direttive, dalla più recente
 
+
+### 31/10/2026 — Nicola: «[un sito nuovo si fa con /nuovo-sito, una sola testa che costruisce e tre tavole di direzione?] Sì»
+
+Un sito vetrina nuovo passa dalla skill /nuovo-sito: raccolta dal profilo Instagram, tre tavole di direzione fra cui sceglie Nicola, una sola testa che costruisce, i cancelli e le catture a 1440 e a 375. Per i siti nuovi supera la divisione fra operatore di direzione e operatori di costruzione scritta in processo-siti.
 
 ### 29/10/2026 — Nicola: «continuano a non piacermi le frasi di descrizioni delle foto, accorciale e rendile piu semplici, piu che altro scritte cosi poi sono un po imbarazzanti anche, cerca di scrivere cose professionali»
 
