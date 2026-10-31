@@ -31,6 +31,10 @@ quelle due, non è pronta.
 ## Le direttive, dalla più recente
 
 
+### 31/10/2026 — Nicola: «[togliere dal processo la grafica inventata obbligatoria e il minimo di 3 <svg> in controlla-sito?] Sì, toglila»
+
+Per passare, un sito vetrina non deve più contenere grafica disegnata da noi: si regge sulle foto del cliente, sulla tipografia, sul colore e sul movimento. La regola dell'11/09 in processo-siti che rendeva obbligatoria la grafica inventata è superata, e controlla-sito non conta più gli <svg>.
+
 ### 31/10/2026 — Nicola: «[mettere accanto allo starter un catalogo di sezioni approvate, anche se il LEGGIMI dice «nessuna sezione»?] Sì, cambialo»
 
 Accanto allo starter c'è un catalogo di sezioni già approvate da Nicola, parametriche su palette, font e foto, e un sito nuovo parte da lì invece che da zero. La frase del LEGGIMI «nessuna sezione, nessun componente» è superata; i colori, i font e le foto restano del cliente.
